@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Árbol BIM</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ÁRBOL BIM<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      
+      
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#estructura_general">Estructura general del árbol</a><br />
+      <a href="#seleccion_nodo_actual">Selección del nodo actual: acciones posibles</a><br />
+      <a href="#organizacion_jerarquica">Organización jerárquica de los elementos, vínculos y dependencias</a><br />
+      </div>
+
+      
+      <br />
+<br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+
+      El
+Árbol BIM es el responsable de mostrar toda la
+información sobre la obra y su representación en Virtual 3D de forma
+jerárquica. A través de él se pueden realizar diversas opciones
+de visualización, creación y modificación de elementos.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Está compuesto de diversos nodos o carpetas principales que realizan una
+clasificación inicial muy valiosa. Cada elemento nuevo se crea dentro
+de la carpeta adecuada de forma automática.<br />
+      <br />
+La navegación sobre los elementos almacenados se realiza con el ratón y
+mediante la barra de desplazamiento vertical.<br />
+      <br />
+Además de poder ocultar y mostrar cada sección, y expandir o contraer
+las carpetas, al hacer clic en cualquier elemento este queda
+seleccionado y es destacado con una &#8216;envolvente&#8217; en el espacio 3D. El
+árbol ofrece también un menú contextual personalizado en función del
+nodo
+seleccionado, permitiendo realizar algunas acciones directas de forma
+rápida.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="estructura_general">Estructura general del árbol</a></span><br />
+      
+      <br />
+
+      <img style="width: 189px; height: 200px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario.png" align="right" />La
+composición básica del árbol BIM de un proyecto está vertebrada por una estructura básica representada mediante
+nodos primarios.<br />
+
+      <br />
+
+
+      <ul>
+        <li><span class="Parrafo">El primer nodo (<span style="font-weight: bold;">ED50</span> en el ejemplo a la derecha) contiene información sobre el CRS utilizado en el proyecto.<br />
+          <br />
+          </span></li>
+        <li><span style="font-weight: bold;">Cartografía</span>: contiene las entidades relacionadas con la representación cartográfica y topográfica del terreno: <a href="EDM.html">mapas cartográficos</a>, <a href="EDM_topografia.html#ficheros_temporales">TTPs</a>, <a href="EDM_control_entidades.html#control_superficies">superficies MDT</a>, <a href="EDM_datos_laser.html">nubes densas de puntos</a>...<br />
+
+          <br />
+
+          </li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Virtual 3D</span>:
+contiene las entidades relacionadas con la representación en Virtual
+3D: luces, cámaras, billboards, animaciones, opciones de renderizado...<br />
+          <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Obra</span>:
+contiene las entidades relacionadas con la obra en si misma: ejes,
+tramos de PK y objetos relacionados con la obra como desmontes y
+terraplenes, muros, firmes, excavaciones...<br />
+          <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Importado_IFC</span>: contiene los objetos que se han importado en formato IFC.<br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="seleccion_nodo_actual">Selección del nodo actual: acciones posibles</a></span><br />
+      <br />
+Cuando se selecciona un objeto se ofrecen en la ventana de propiedades sus
+características, pudiendo modificar cualquiera de ellas. La selección
+de un elemento se puede hacer pulsando sobre su nombre en el arbol o bien pulsando sobre el en la ventana de Virtual 3D<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 295px;" alt="" src="Imagenes/V3D_arbol_escenario_actual.png" /><br />
+      </div>
+      <br />De cualquiera de las dos maneras, el objeto seleccionado es resaltado mediante su envolvente o &#8216;caja&#8217;,
+construida en función de las coordenadas mínimas y máximas del objeto.<br />
+      <br />En algunos elementos o nodos se puede modificar el nombre directamente en el
+árbol. Para ello basta con hacer un segundo clic con el ratón sobre él.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Activar y desactivar la visualización de elementos </span><br />
+      <br />
+      <img style="width: 137px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario_activacion.png" align="right" />Junto
+a cada nodo y cada carpeta existe una casilla que permite activar o desactivar su
+visualización. En caso de ser una carpeta, se activa o desactiva la
+visualización de todos los elementos contenidos.<br />
+      <br />
+Esta acción puede ser muy útil en aquellos casos en que por el volumen
+de datos la escena sea <span style="font-style: italic;">pesada</span> o simplemente porque no se desee que
+determinado grupo de objetos "moleste".<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Eliminar elementos</span><br />
+      <br />
+      Además
+de las opciones de eliminación de objetos ofrecidas por el menú
+contextual, el árbol reacciona de forma inmediata cuando se pulsa la
+tecla &lt;Supr&gt; eliminando de forma inmediata los objetos señalados.<br />
+      <br />
+En el caso de que esta acción sea ejecutada en un nodo carpeta se
+pide confirmación al usuario, informándole de que se van a eliminar
+todos los elementos alojados. En este caso, los nodos primarios se
+&#8216;vacían&#8217;, pero siguen existiendo.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Menús contextuales</span><br />
+      <br />
+      <img style="width: 259px; height: 246px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario_contextual.png" align="right" />Cada objeto tiene&nbsp; unas opciones de menú contextual
+particulares, ofrecidas al pulsar el botón derecho del ratón. Todas las
+acciones de edición y organización se llevan a cabo mediante este
+sistema.<br />
+      <br />Dependiendo
+del tipo de nodo seleccionado, cuando se pulsa con el botón secundario
+del ratón se ofrece un menú contextual específico con el que es posible
+realizar algunas acciones de forma muy cómoda y sencilla. <br />
+<br /> En el caso de objetos sencillos (no organizadores) se muestran
+en la primera parte del menú contextual las siguientes opciones:<br />
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold;">Mirar objeto</span>:
+Cambia la referencia de la cámara, de forma que la camara "apunta"
+hacia él: el objeto señalado queda posicionado en el centro de la
+pantalla.</li>
+      </ul><ul>
+        <li><span style="font-weight: bold;">Zoom objeto</span>: Igual que en el caso anterior, pero en este caso además la cámara se acerca al objeto, dejándolo en primer plano.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Autoenfoque</span>:
+Si se activa esta opción, cada vez que se haga clic en un elemento se
+realiza un Zoom objeto de manera automática. Esta opción es muy útil&nbsp; ya que,
+junto con las flechas del teclado, permite ir explorando y averiguando
+qué elementos están en cada lugar.</li>
+      </ul>
+      Algunos objetos tienen una serie de acciones adicionales en el menú contextual, como por ejemplo:<br />
+
+      
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Duplicar</span>: Crea un objeto idéntico al seleccionado pero que se comportará de forma independiente.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eliminar</span>: Borra el elemento. También se puede borrar usando la tecla &lt;Supr&gt; del teclado.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Clonar</span>: Crea un objeto idéntico al seleccionado replicando las propiedades de su predecesor.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Cortar</span>: Guarda el objeto en el portapapeles y lo elimina, listo para pegar en otra carpeta.</li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Copiar</span>: Similar a la anterior pero cuando se realiza la operación &#8216;pegar&#8217; se crea una copia del objeto en la carpeta seleccionada.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Pegar</span>: El objeto cortado o pegado es ubicado dentro de la carpeta señalada en el momento de realizar la acción.</span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Crear carpeta</span>: Crea un nodo carpeta para alojar nuevos elementos.</span></span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Padre activo</span>:
+Al ejecutar esta acción sobre un nodo, se indica al programa que
+cualquier elemento nuevo creado o importado sea &#8216;alojado&#8217; dentro de ese
+nodo, independientemente de si se está posicionados en otro. El nombre
+del organizador activo siempre se visualiza en la parte inferior de la
+ventana de este menú.</span></span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Añadir desde archivo</span>:
+Permite introducir un nuevo elemento proveniente de un fichero. En este
+caso, se inserta en sus coordenadas originales. También es posible
+cargar objetos almacenados en archivos&nbsp;<span class="Archivo">.3do</span> desde el menú de <span style="font-weight: bold;">Herramientas</span>.</span></span></span></span></li>
+      
+      </ul>
+
+      
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="organizacion_jerarquica">Organización jerárquica de los elementos, vínculos y dependencias</a></span><br />
+
+      <br />
+Como se ha visto, existe la posibilidad de mover elementos de una
+carpeta a otra, crear carpetas nuevas y establecer vínculos entre
+elementos. Estas opciones han sido desarrolladas para permitir que la
+organización de un escenario sea una tarea muy sencilla, a la par que
+es la responsable de permitir ciertos comportamientos espaciales que
+son muy útiles a la hora de crear animaciones.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Clonación: Copia de objetos con herencia de propiedades</span><br style="font-weight: bold; font-style: italic;" />
+
+      <br />
+
+La posibilidad de clonar un elemento permite ahorrar tiempo al usuario
+a la hora de diseñar un escenario y al sistema a la hora de calcular
+posiciones, aplicar texturas o modificar un mismo tipo de objetos. <br />
+
+      <br />
+
+La clonación solo funciona a nivel de propiedades físicas: geometría,
+tamaño y material, pero pueden diferir en posición y orientación.<br />
+
+      <br />
+
+Es conveniente usar esta técnica cuando se tengan varios elementos que
+vayan a ser iguales, ya que a nivel computacional son tratados de forma
+muy rápida ya que sólo reside en memoria un elemento original, en tanto
+que el resto de los clones apenas ocupa espacio, pues sólo utilizan una
+referencia.<br />
+
+      <br />
+
+Los objetos clonados son distinguidos inmediatamente en el árbol ya que
+se les antepone el prefijo &#8216;&gt;&gt;&#8217; y conservan el mismo nombre que
+el objeto a partir del cual fueron creados. Su icono también es
+característico.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 542px; height: 252px;" alt="" src="Imagenes/V3D_arbol_escenario_clones.png" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Dependencia espacial entre objetos</span><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span><img style="width: 355px; height: 175px; margin-left: 7px;" alt="" src="Imagenes/V3D_arbol_escenario_dependencia.png" align="right" />La
+creación de dependencias entre objetos es muy útil a la hora de diseñar
+elementos que deban comportarse como una unidad. Así, un automóvil, una
+casa, etc. pueden ser definidos de forma organizada, permitiendo, por
+ejemplo, mover todos los elementos de una sola vez. Así, se podría
+crear un objeto &#8216;casa&#8217; y dentro de él ir ubicando cimientos, pilares,
+ventanas, etc. de modo que tuvieran una dependencia espacial del objeto
+&#8216;casa&#8217;.<br />
+
+      <br />
+
+Cada elemento &#8216;vinculado&#8217; pierde sus coordenadas originales y pasa a
+tener las coordenadas relativas al &#8216;padre&#8217; que lo contiene. En el árbol
+se puede observar que aparece una relación jerárquica de inclusión de
+unos objetos dentro de otros.<br />
+
+      <br />
+
+En el caso mostrado, al mover el vehículo plataforma, que se comporta
+como &#8216;padre&#8217;, se mueve todo el conjunto de forma automática.<br />
+
+      <br />
+
+Otro aspecto muy importante es que la posición y rotación de objetos
+tiene en cuenta la posibilidad de que &#8216;padres e hijos&#8217; sean incluidos
+en elementos de animación independientes, heredando los &#8216;hijos&#8217;
+traslación y rotación pero con la opción de tener ellos las suyas
+propias. La explicación más sencilla de este fenómeno la ofrece el caso
+de un vehículo que se mueve en el escenario, pudiendo las ruedas girar
+de forma independiente.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Elementos compuestos con dependencias jerárquicas</span><br />
+
+      <br />
+
+El necesario y deseable &#8216;orden&#8217; en la organización del escenario puede
+ser logrado, además de con las carpetas, con la posibilidad
+de utilizar relaciones jerárquicas entre objetos con la intención de
+crear &#8216;unidades&#8217; compuestas por varios elementos que dependen de su
+superior jerárquico.<br />
+
+      <br />
+
+Así, por ejemplo, un automóvil estará formado por varios componentes:
+el chasis, las ruedas, etc. Cada uno de ellos puede estar ya presente
+en el escenario o ir siendo construido. Lo mismo puede ocurrir en el
+caso de un aerogenerador, un ventilador para un túnel, un puente
+levadizo, etc.<br />
+
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

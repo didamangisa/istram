@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Organizador</title>
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+
+</head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Organizadores de objetos<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"> </span><span class="Parrafo"><a href="#subraiz">Subraiz</a><br />
+      <a href="#carpeta">Carpeta</a><br />
+      <a href="#obra">Obra y eje</a><br />
+      <a href="#grid">Grid</a><br />
+      <a href="#tren">Tren de objetos</a><br />
+      </span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+      </span>Los
+elementos de un escenario no están "sueltos" sin ningún control. Están
+organizados y clasificados según su tipo y función, como se muestra en
+el árbol de organización jerarquica del escenario. Los nodos
+organizadores pueden tener algunas propiedades configurables.<br />
+      <br />
+Los organizadores trabajan como carpetas en las que se almacena o hace
+referencia a los elementos de la escena.<br />
+Hay organizadores fijos puestos por Virtual 3D para poder encontrar en
+ellos ciertos tipos de datos necesarios para configurar la escena
+(nodos <a href="#subraiz">subraiz</a>). Hay organizadores que se
+generan para mantener juntos elementos generados automáticamente y que
+tienen una vinculación especial (<a href="#obra">nodos de obra, ejes</a>
+o <a href="#grid">grid</a>). Hay organizadores que puede crear el
+usuario para clasificar la geometría como desee (<a href="#carpeta">carpetas</a>).
+Y hay organizadores que dan una calificación específica a los elementos
+que contienen (<a href="#tren">tren de objetos</a>).<br />
+      <br />
+      <br />
+      <a name="subraiz">Subraiz<br />
+      <br />
+Estos nodos son inalterables, deben existir con su nombre y contener
+aquello que les caracteriza: Geometría, Cámaras, Luces, Entorno, Render
+y Animaciones. No hay acceso a sus propiedades, al pulsar con el cursor
+sobre ellos, se accede al primer nodo hijo.<br />
+      <br />
+      <br />
+      </a><a name="carpeta">Carpeta<br />
+      <br />
+Es un organizador de caracter general, sólo se pueden crear dentro de
+Geometría. Se les puede dar un nombre.<br />
+      <br />
+Hay una carpeta especial predefinida dentro de Geometría: "Sólidos 3D"
+a esta carpeta irán, por defecto, todos los objetos que se creen, se
+carguen o se importen en Virtual 3D.<br />
+      <br />
+<img style="width: 339px; height: 171px;" alt="" src="Imagenes/V3D_menu_prop_obra1.png" align="right" />
+Cuando se entra en Virtual 3D desde el menú de Alzado de Obra lineal y
+se muestra la geometría de los ejes activos, se generan automáticamente
+un conjunto de carpetas que organizan la </a><a name="obra">obra. Así
+se
+genera una carpeta principal para la obra, que se ubica directamente en
+el nodo "Geometría", con el nombre del proyecto.<br />
+      <br />
+En ella se pude indicar que se envíen las lineas de borde de obra,
+generadas con la geometría de la misma, a la cartografía. Tambien se
+puede controlar que se pinten o no las marcas viales del proyecto, a
+veces pueden ser tantas que relenticen demasiado el trabajo con el
+visor 3D.<br />
+      <br />
+      <img style="width: 339px; height: 194px;" alt="" src="Imagenes/V3D_menu_prop_obra2.png" align="right" />Dentro de la carpeta de obra, se genera una
+carpeta por cada eje y acuerdo. Cada una de ellas contiene las</a>
+geometrías que se generan a partir de la información de dichos ejes,
+pero también otras carpetas conteniendo cada viaducto y las marcas
+viales. Esas marcas viales a su vez se clasifican en carpetas según el
+típo de línea que las genera.<br />
+      <br />
+En las carpetas de eje se dispone de opciones para ubicar la cámara en
+un punto concreto de un eje definido por su PK, el código y la
+distancia a dicho código.<br />
+
+      <br />
+
+También se generan carpetas especiales cuando se cargan <a name="grid">grid de datos topográficos, ya sean grid binarios o ttps
+que&nbsp; tienen un número de triángulos muy grande.<br />
+      <br />
+      <br />
+      </a><a name="tren">Tren de objetos<br />
+      <br />
+Este tipo de organizador no contiene a otros elementos, simplemente
+hace referncia a ellos y a la </a><a href="V3D_tren_objetos.html">relación
+de contiguidad</a>
+que se establece entre ellos. Su utilidad es agupar actores que van a
+representar el mismo papel: objetos que van a seguir una mismo
+recorrido.<br />
+      <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+</body></html>

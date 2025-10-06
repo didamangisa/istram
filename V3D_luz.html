@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Luz</title>
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+
+</head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Luz<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"> </span><span class="Parrafo"><a href="#opciones">Opciones</a><br />
+      </span></span></span>
+      <div style="margin-left: 40px;"><a href="#direccional"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Direccional</span></span></span></a><br />
+      <a href="#puntual"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Puntual</span></span></span></a><br />
+      <div style="margin-left: 40px;"><a href="#esferica"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esférica</span></span></span></a><br />
+      <a href="#conica"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cónica</span></span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+      </div>
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+      </span>En este menú se pueden establecer todas las propiedades de
+las luces. Debido a las implementaciones actuales de OpenGL no puede
+haber más de 8 luces "encendidas" simultáneamente.<br />
+      <br />
+Las luces pueden ser de 2 tipos principales: direccionales o puntuales.
+Las luces direccionales se parecen a como se recibe la luz del Sol
+desde la Tierra, las luces puntuales pueden ser de dos tipos a su vez,
+esféricas o cónicas. Las luces esféricas se parecen a una bombilla y
+las luces cónicas a un foco.<br />
+      <br />
+Por defecto, Virtual 3D provee de dos luces direccionles que permiten
+que la escena esté iluminada para que se vean todas las cosas con
+claridad.<br />
+      <br />
+      <br />
+      <a name="opciones">Opciones</a><img style="width: 339px; height: 526px; margin-left: 7px;" alt="" src="Imagenes/V3D_menu_prop_luz.png" align="right" /><br />
+      <span style="font-weight: bold;"><br />
+Nombre</span>: permite identificar la luz con un nombre.<br />
+      <span style="font-weight: bold;">Comentario</span>: permite
+adjuntar un comentario explicativo a la luz.<br />
+      <img style="width: 24px; height: 24px;" alt="" src="Imagenes/V3D_salvar.png" /> Permite guardar el la luz fuera
+del
+escenario.<br />
+      <img style="width: 24px; height: 24px;" alt="" src="Imagenes/V3D_abrir.png" /> Carga una luz.<br />
+      <span style="font-weight: bold;">Posicion (X, Y, Z)</span>:
+indica el punto exacto en el que se ubica la luz.<br />
+      <span style="font-weight: bold;">Referencia (X, Y, Z)</span>:
+indica el punto exacto al que se dirige la luz.<br />
+En las luces direccionales y puntuales cónicas indican la dirección de
+la luz.<br />
+      <span style="font-weight: bold;">Componente Ambiente</span>:
+permite
+establecer el color y la intensidad con la que esta luz influye en la
+componente ambiente de los materiales de los objetos.<br />
+      <span style="font-weight: bold;">Componente Difusa</span>: indica
+el color y la intensidad con la que esta luz
+influye en la componete difusa de los materiales de los objetos, es la
+luz que llega a los objetos.<br />
+      <span style="font-weight: bold;">Componente Especular</span>:
+indica el color y la intensidad con la que esta
+luz influye en la
+componete especular de los materiales de los objetos, es la luz que
+reflejan los objetos en las zonas donde hay brillos.<br />
+Estas tres componentes deberían ser de colores coherentes, pero se
+pueden configurar con como le guste al usuario.<br />
+      <br />
+Hasta aquí las opciones generales para todas las luces.<br />
+      <br /><a name="direccional" />
+Luz direccional<br />
+      <img style="width: 339px; height: 216px;" alt="" src="Imagenes/V3D_menu_prop_luz2.png" align="right" /><br />
+Son luces en que todos lo rayos de luz van paralelos independientemente
+de la posición en la escena. La posición de estas luces se puede ubicar
+      <span style="font-weight: bold;">por coordenadas</span>, como en
+la imagen
+del menú anterior, <span style="font-weight: bold;">según una fecha y
+hora</span> que proporciona el usuario o <span style="font-weight: bold;">según la hora del reloj</span> del
+ordenador.<br />
+      <br />
+&nbsp; <br />
+      <span style="font-weight: bold;"><br />
+      <br />
+      <br />
+      </span><a name="puntual" />Luz puntual<br />
+<img style="width: 339px; height: 329px;" alt="" src="Imagenes/V3D_menu_prop_luz3.png" align="right" /><br />
+      Las luces puntuales tienen una posición en la cual su intensidad es
+máxima a partir de ese punto cuanto mayor es la distancia mayor es la
+atenuación de dichas luces.<br />
+      <br />
+Las luces puntuales se pueden <span style="font-weight: bold;">vincular</span> a los objetos de la escena para que se muevan y orienten con dichos objetos.<br />
+      <br />
+Las luces puntuales se definen por un ángulo de apertura, OpenGL admite ángulos de 0 a 180 grados y 360 grados.<br />
+      <br /><a name="esferica" />
+Luz esférica<br />
+      <br />Una
+luz esferica envía rayos en todas direcciones a partir de un punto. Su
+ángulo de apertura es de 360 grados. Son como bombillas.<br />
+      <br />
+      <a name="conica" />Luz cónica<br />
+      <br />
+Una luz cónica enviar rayos según un ángulo de apertura en una dirección concreta.<br />
+      <br />
+      <span style="font-weight: bold;">Apertura</span>: especifica el ángulo de apertura de la luz.<br />
+      <span style="font-weight: bold;">Difusión del borde</span>: indica el si la luz tiene el borde de la zona iluminada definido o difuso.<br />
+      <span style="font-weight: bold;">K atenuación</span>: constante de atenuación de OpenGL.<br />
+      <span style="font-weight: bold;">Atenuación por deistancia</span>: factor de atenuacion según la distancia entre la luz y el punto iluminado.<br />
+      <span style="font-weight: bold;">Atenuación por cuadarado de distancia</span>: factor de atenuacion según el cuadrado de la distancia entre la luz y el punto iluminado.<br />
+Los valores de atenuación por defecto son para que la atenuación sea mínima.<br />
+      <br />
+      <br />
+      <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

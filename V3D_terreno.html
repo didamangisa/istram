@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Terreno</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Terreno<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#opciones">Opciones</a><br />
+      <a href="#avanzada">Edición avanzada</a><br />
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+      </span>El terreno es un objeto de geometría obtenido a partir de
+una triangulación del menú de Topografía. <br />
+      <br />
+Tiene la particularidad de que en él se puede "excavar" la geometría de
+la obra. No se puede mover por la escena, a no ser que se convierta en
+objeto 3D normal, pero entonces dejará de tener el atributo de ser
+terreno.<br />
+      <br />
+Por defecto, se le asigna un color y un material indicado en el <a href="V3D_herramientas_utilidades.html#conv_obra_lineal">archivo de
+configuración de generación de elementos de las obras lineales</a>. En
+los objetos de tipo terreno sólo se puede cambiar las propiedades de
+color y material.<br />
+      <br />
+Simultáneamente sólo puede haber un objeto terreno, para tener varios
+deben añadirse al escenario como objetos de terreno vinculados, o
+transformados en <a href="V3D_objeto.html">objetos 3D</a>.<br />
+      <img src="Imagenes/V3D_menu_prop_terreno.png" style="width: 339px; height: 316px; margin-left: 7px;" alt="" align="right" /><br />
+      <a name="opciones"><span class="Titulo_2">Opciones</span><br />
+      <br />
+      <span style="font-weight: bold;">Nombre</span>: permite
+identificar el terreno con un nombre.<br />
+      <span style="font-weight: bold;">Comentario</span>: permite
+adjuntar un comentario explicativo a este terreno.<br />
+      <img src="Imagenes/V3D_edit.png" style="width: 24px; height: 24px;" alt="" /> Entra en "Edición avanzada" del objeto
+terreno.<br />
+      <img src="Imagenes/V3D_salvar.png" style="width: 24px; height: 24px;" alt="" /> Permite guardar el objeto terreno en
+varios formatos.<br />
+      <img src="Imagenes/V3D_pipeta.png" style="width: 30px; height: 26px;" alt="" />&nbsp; Asigna al objeto el color del pixel que se seleccione en el visor 3D a continuación.<br />
+
+      <img src="Imagenes/V3D_caldero.png" style="width: 30px; height: 26px;" alt="" /> Asigna al objeto el material que se seleccione en el visor 3D a continuación.<br />
+      <span style="font-weight: bold;">Color</span>:
+A través de botón de color (verde en este caso) se puede especificar un
+color para el terreno. El color por defecto es verde.<br />
+      <span style="font-weight: bold;">Triángulos y vértices</span>:
+informa del número de triángulos y vértices del objeto terreno.<br />
+      <span style="font-weight: bold;">Carpeta de Materiales</span>:
+permite seleccionar la carpeta clasificadora en la que se buscarán los
+materiales que se asignen al objeto terreno. En función de la carpeta
+seleccionada se rellena el selector de materiales que está debajo.<br />
+      <span style="font-weight: bold;">Selector de materiales</span>:
+permite seleccionar el material que se aplica al objeto terreno. Los
+botones "<span style="font-weight: bold;">&lt;</span>" y "<span style="font-weight: bold;">&gt;</span>" permiten recorrer la lista de
+materiales de la carpeta seleccionada secuencialmente.<br />
+      <span style="font-weight: bold;">Ángulo de textura</span>: en
+caso de que el material seleccionado incluya una textura, se puede
+cambiar la orientación de la misma sobre su plano de aplicación. El
+valor por defecto es de 0.0º.<br />
+      <span style="font-weight: bold;">Dos caras</span>: al marcar esta
+casilla se indica que los triángulos del objeto terreno se pinten por
+las dos caras. Esto puede ser útil si se va a poner la cámara por
+debajo del terreno. Pintar por las dos caras los triángulos lleva un
+gasto de tiempo. Por defecto no está marcado.<br />
+      <span style="font-weight: bold;">Transparencia (%)</span>: indica
+el porcentaje de transparencia del objeto terreno. Por defecto la
+transparencia es 0%, es decir, es opaco. Este valor se controla también
+con el deslizador horizontal que hay debajo.<br />
+      <span style="font-weight: bold;">Normal por vértice</span>: al
+marcar esta casilla se indica que el objeto tiene un vector normal
+calculado en cada vértice, si no se indica que se calcula un vector
+normal para cada triángulo. Al utilizar normal por vertice el objeto
+tiene una apariencia más "suave" que con normal por triángulo. Por
+defecto está marcado.<br />
+      <span style="font-weight: bold;">Render avanzado del objeto</span>:
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">con
+esta opción se indica la utilización de "shaders" en vez de las
+funciones habituales de OpenGL para la generación del terreno. El
+correcto funcionamiento de esta opción depende de que el hardware
+gráfico admita el uso de dichos "shaders". Por defecto no esta marcado.</span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <br />
+      </a><a name="avanzada"><span class="Parrafo"><span class="Titulo_2">Edición avanzada</span><br />
+<br /></span>
+      </a><img src="Imagenes/V3D_menu_prop_terreno_avan.png" style="width: 339px; height: 334px;" alt="" align="right" />Al
+pulsar la opción de edición avanzada se recogen todas las opciones de
+propiedades habituales del objeto para dar paso a las opciónes
+avanzadas del objeto. Pero pueden ser expandidas en cualquier momento
+sin salir de este modo de edición. En el visor 3D este objeto es el
+único visible.<br />
+      <br />
+La edición avanzada se realiza a nivel de objeto o a nivel de triángulos.<br />
+      <br />
+A nivel de objeto se realizan acciones que afecta a todo el terreno.<br />
+
+      <span style="font-weight: bold;">Convertir en objeto triangulado</span>:
+convierte el objeto terreno en un objeto 3D normal, ya no sería
+considerado como terreno, el resto de propiedades se mantiene. El menú
+de propiedades cambiaría al de un <a href="V3D_objeto.html">objeto 3D</a>.<br />
+A nivel de triángulos se realizan acciones que afectan a unos
+triángulos del terreno pero sin que el objeto tenga que dejar de ser un
+terreno.<br />
+      <span style="font-weight: bold;">Borrar triangulos</span>: al
+pulsar este botón se activa o desactiva el modo de borrar triángulos.
+Al pasar el cursor por encima de algún triángulo del terreno, éste se
+pinta de amarillo y si puslamos sobre dicho triángulo se borra.<br />
+Al volver a pulsar este botón o al pulsar la tecla "Esc" se sale del modo de borrar triángulos.<br />
+      <span style="font-weight: bold;">Borrar triángulos "verticales"</span>:
+sirve para borrar los triángulos verticales que pueden quedar en los
+bordes del terreno. Normalmente estos triángulos no se detectan hasta
+que no se llega a Virtual 3D pues en planta no se aprecian. Como esos
+triángulos pueden no ser exactamente verticales, se muestran un menú en
+el que se puede parametrizar la selección de los triángulos que se van
+a borrar, es decir que deben cumplir las dos condiciones siguientes:<br />
+<br />
+      <div style="text-align: center;"><span style="font-weight: bold;"><img src="Imagenes/V3D_menu_prop_terreno_avan2.png" style="width: 312px; height: 142px;" alt="" /></span><br />
+      </div>
+
+      <span style="font-weight: bold;">Longitud mínima de lado</span>: indica la longitud mínima que debe tener algún lado de un triángulo para se candidato a ser borrado por este método.<br />
+      <span style="font-weight: bold;">Distancia máxima del lado al vertice</span>:
+es la distancia entre el lado más largo del triángulo y el vértice
+opuesto. Si no supera este máximo el triángulo es candidato a ser
+borrado por este método.<br />
+      <span style="font-weight: bold;"><br />
+Aplicar cambios</span>: los posibles cambios que se hayan hecho en el objeto son temporales. Este botón los convierte en fijos.<br />
+      <span style="font-weight: bold;">Descartar cambios</span>: los posibles cambios que se hayan hecho en el objeto son temporales. Este botón los rechaza.<br />
+      <br />
+
+Del modo de edición avanzada se sale pulsando otra vez el botón de
+edición avanzada o pulsando la tecla "Esc". En ese momento, si los hay,
+se pide al usuario que aplique o descarte los cambios que no hayan sido
+aplicados o descartados con anterioridad.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/V3D_ejemplo_prop_terreno.png" style="width: 500px; height: 323px;" alt="" /><br />
+      </div>
+      <br />
+En la imagen un ejemplo de un terreno.<br />
+<br />
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Render</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Render<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Generalidades</a><br />
+      <a href="#imagen">Imagen</a><br />
+      <a href="#video">Vídeo</a><br />
+      </span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br /><img style="width: 300px; height: 194px;" alt="" src="Imagenes/virtual3d_render.png" align="right" hspace="8" />
+Render
+es el proceso de generar imágenes a partir de la geometría, las luces,
+las cámaras y el entorno de una escena. Las imágenes generadas se
+guardan en archivos o se juntan para formar un vídeo.<br />
+      <br />
+Al modo Render se accede a través del botón <img src="Imagenes/V3D_icono_menu_principal_render.png" style="width: 40px; height: 30px;" alt="" />
+del menú de Virtual 3D.<br />
+      </span><br />
+      <span class="Titulo_2">Opciones generales</span><br />
+      <span style="font-weight: bold;"><br />
+      Nombre</span>:
+permite identificar el modo de render con un nombre.<br />
+      <span style="font-weight: bold;"><br />
+      Calidad billboards</span>:
+permite seleccionar la calidad con la que se recogen las texturas de
+las imágenes de los billboards. Puede ser: borrador, media o alta.<br />
+
+      <span style="font-weight: bold;">Muestreo</span>: indican el
+número de pixeles de interpolación de color que se calculan para cada
+pixel de la imagen. Puede ser: Sin muestreo (1x), 2x, 4x u 8x. A mayor
+muestreo se obtiene mejor calidad de la imagen final, pero también se
+consume más tiempo en generarla.<span style="font-weight: bold;"><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 350px; height: 350px;" alt="" src="Imagenes/V3D_menu_render.png" /><br />
+      </div>
+
+      <br />
+      <span class="Titulo_2"><a name="imagen"><span class="Titulo_2">Imagen</span><br />
+      <br /></a></span></span>
+Se muestran a continuación las opciones para generar imágenes estáticas.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">Ancho</span>: especifica el
+ancho de la imagen en pixeles.<br />
+
+      <span style="font-weight: bold;">Alto</span>: indica el alto de
+la imagen en pixeles.<br />
+
+      <span style="font-weight: bold;">Aspecto</span>: indica la
+relacion de aspecto de la imagen resultante (ancho/alto).<br />
+
+      <span style="font-weight: bold;">Mantener aspecto</span>: si está
+marcado al variar el ancho o el alto se recalcula el otro valor para
+que el cociente siga siendo el mismo.<br />
+
+      <span style="font-weight: bold;">Aspecto de ventana 3D</span>:
+indica la relacion de aspecto del visor 3D y permite establecerlo como
+relación de aspecto de la imagen a generar.<span style="font-weight: bold;"><span class="Titulo_2"><a name="imagen"><br />
+      <br />
+      </a></span></span>Las
+imágenes generadas no tienen por qué ser del mismo tamaño de la ventana
+del visor 3D, ni mantener la misma relación de aspecto. Ni siquiera
+tienen por qué ser menores del tamaño de la pantalla. su tamaño máximo
+depende de la memoria y del sistema gráfico, por ejemplo, se han
+obtenido imagenes de 19200x12000 pixeles. El problema es que al variar
+la relación de aspecto entre el visor 3D y la imagen generada, puede
+haber cosas en los bordes de la imagen que no aparezcan en el visor 3D
+y viceversa. El centro del visor 3D y el de la imagen generada sí
+coinciden.<span style="font-weight: bold;"><span class="Titulo_2"><a name="imagen"><br />
+      <br />
+      </a></span>Tamaños</span>: selector para
+indicar un conjunto de tamaños de imágen preconfigurados.<br />
+
+      <span style="font-weight: bold;">Formato</span>: indica el
+formato del archivo que va a guardar la imagen resultante.<br />
+
+      <span style="font-weight: bold;">Archivo</span>: establece el
+nombre del archivo que va a guardar la imagen resultante. En caso de
+que ya se haya hecho, es también el nombre de la última imagen guardada.<br />
+
+      <span style="font-weight: bold;">Logotipo</span>: permite
+especificar una imagen para ser utilizada como logotipo.<br />
+Se puede incluir un logotipo de empresa para que aparezca en imágenes o
+en vídeos de forma automática. Se puede especificar la posición y el
+tamaño del logotipo, así como su transparencia. <br />
+
+      <span style="font-weight: bold;">Fila, Columna</span>: indican la
+posición del logotipo en la imagen resultante.<br />
+
+      <span style="font-weight: bold;">Alto, Ancho</span>: especifican
+el tamaño del logotipo.<br />
+
+      <span style="font-weight: bold;">Transparencia (%)</span>:
+permite dar un grado de transparencia al logotipo para que se vea la
+imagen generada "detras" de dicho logotipo.<br />
+
+      <span style="font-weight: bold;">Generar</span>: una vez
+establecidas las opciones deseadas, este botón genera la imagen
+resultante, con e logo previsto y en el archivo indicado.<span style="font-weight: bold;"><span class="Titulo_2"><a name="imagen"><br />
+      <br />
+      <span class="Titulo_2 Parrafo" /></a><a name="video">Vídeo<br />
+      <br /></a></span></span>
+Se exponen a continuación las opciones de generación de vídeos desde
+Virtual 3D.<br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: bold;">
+      Ancho</span>: especifica el
+ancho de imagen del vídeo en pixeles.<br style="font-weight: normal;" />
+      <span style="font-weight: bold;">
+      Alto</span>: indica el alto de
+imagen del vídeo en pixeles.<br style="font-weight: normal;" />
+      <span style="font-weight: bold;">
+      Aspecto</span>: indica la
+relacion de aspecto de magen del vídeo resultante (ancho/alto).<br style="font-weight: normal;" />
+      <span style="font-weight: bold;">
+      Mantener aspecto</span>: si está
+marcado al variar el ancho o el alto se recalcula el otro valor para
+que el cociente siga siendo el mismo.<br style="font-weight: normal;" />
+      <span style="font-weight: bold;">
+      Tamaños</span>:
+      selector para indicar un conjunto de
+tamaños de imágen de vídeo preconfigurados.<br />
+      <span style="font-weight: bold;">
+
+Formato</span>: permite seleccionar el formato de salida del vídeo. Se
+utiliza
+en formato AVI, pero se puede especificar que se generen las imágenes
+de cada uno de los fotogramas en formato BMP.<br />
+      <span style="font-weight: bold;">
+
+      Codec</span>: selector
+para indicar el códec con el que se va a comprimir el vídeo (para el
+formato AVI). En la ventana de Render vídeo, disponemos de la opción de
+seleccionar el codec de compresión que deseamos usar al terminar la
+generación de las imágenes, evitando así que nos aparezca el cuadro de
+diálogo de selección de codec posteriormente. <span style="font-weight: bold;"><span class="Titulo_2"><a name="video"><span style="font-weight: normal;"><br />
+      <br />
+      </span></a></span>
+      <div style="text-align: center;"><span class="Titulo_2 Parrafo"><span style="font-weight: normal;"><img style="width: 350px; height: 452px;" alt="" src="Imagenes/virtual3d_video_render.png" /></span></span><br />
+      <span class="Titulo_2 Parrafo"><span style="font-weight: normal;" /></span></div>
+      <span class="Titulo_2 Parrafo"><span style="font-weight: normal;">
+
+      <br />
+
+
+      <img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><span style="font-weight: normal;">Los
+codec son programas que están instalados en el ordenador y que permiten
+comprimir el vídeo para que ocupe el menor tamaño de archivo posible
+manteniendo una calidad de imagen aceptable (aunque no todos comprimen
+igual ni dan la misma calidad). Si se selecciona "Ninguno" el vídeo
+consiste en la sucesión de las imágenes de los fotogramas tal cual son
+generadas, pero el tamaño puede ser enorme y la velocidad de
+reproducción puede verse muy mermada. Se pueden buscar por internet,
+pero hay que asegurarse de que quien vaya a reproducir el vídeo dispone
+del mismo codec o no podrá ver nada. No todos los codec admiten
+cualquier tamaño de imagen para vídeo, la mayoría tienen que ser
+múltiplos de 4 para cada dimensión. Por eso se ofercen los tamaños más
+habituales en el selector de tamaño de vídeo. Uno de los tamaños
+seleccionables es conocido como FullHD (1920x1080).</span><br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      Archivo</span><span style="font-weight: normal;">: establece
+el nombre
+del archivo que va a guardar el vídeo resultante. En caso de que ya se
+haya hecho, es también el nombre del último vídeo guardado.</span><br />
+      </span><span style="font-weight: normal;" />Logotipo<span style="font-weight: normal;">:
+permite
+especificar una imagen para ser utilizada como logotipo. Se puede
+incluir un logotipo de empresa para que aparezca en imágenes o en
+vídeos de forma automática. Se puede especificar la posición y el tamño
+del logotipo, así como su transparencia. En el caso de los vídeos, se
+puede especificar el segundo en que empieza a aparecer y durante cuanto
+tiempo va a ser visible.</span><br style="font-weight: normal;" />
+      Fila, Columna<span style="font-weight: normal;">: indican la
+posición del logotipo en la imagen de vídeo resultante.</span><br style="font-weight: normal;" />
+      Alto, Ancho<span style="font-weight: normal;">: especifican
+el tamaño del logotipo.</span><br style="font-weight: normal;" />
+      Empieza (s)<span style="font-weight: normal;">: instante en
+que empieza a verse el logotipo.</span><br style="font-weight: normal;" />
+      Termina (s)<span style="font-weight: normal;">: instante en
+que se termina de ver el logotipo.</span><br style="font-weight: normal;" />
+      Transparencia (%)<span style="font-weight: normal;">:
+permite dar un grado de transparencia al logotipo para que se vea la
+imagen generada "detras" de dicho logotipo.</span><br style="font-weight: normal;" />
+      Mostrar generación animación<span style="font-weight: normal;">:
+indica que se muestre en el visor 3D la generación del mismo fotograma
+que se envia al vídeo.</span><br style="font-weight: normal;" />
+      Generar<span style="font-weight: normal;">: una vez
+establecidas
+las opciones deseadas, este botón genera el video resultante, con e
+logo previsto y en el archivo indicado.</span><br style="font-weight: normal;" />
+      Regenerar avi<span style="font-weight: normal;">: en caso de
+que se hayan guardado y no borrado los archivos temporales, permite con
+ello </span><a style="font-weight: normal;" href="V3D_regenerar_avi.html">generar un vídeo</a> en formato
+AVI.<br style="font-weight: normal;" />
+      <br style="font-weight: normal;" />
+      <img style="width: 32px; height: 32px; font-weight: normal;" alt="" src="Imagenes/icono_aviso.png" /><span style="font-weight: normal;">Es
+importante tener encuenta, a la hora de generar un vídeo, que se deben
+generar cientos, quizá miles de imágenes para hacer ese vídeo (a 25
+imágenes por segundo, 10 segundos de vídeo precisan 250 imágenes, un
+minuto de vídeo 1500 imágenes, 3 minutos 4500 imágenes...) lo cual
+lleva consigo un consumo importante de tiempo y de espacio en disco
+(una imagen FullHD 1920x1080 pixeles por 3 bytes para cada pixel ocupa
+algo más de 5,9 MB). Por tanto es importante contar con un ordenador
+que tenga cierta capacidad gráfica, de procesamiento, memoria y espacio
+en disco, para generar vídeos. También es importante calibrar la
+calidad de generación de imagen para mantener la calidad del vídeo y no
+precisar tiempos muy grandes para generar cada fotograma. Mostrar la
+generación de la animación es una opción muy útil para hacerse una idea
+de cómo avanza la generación del vídeo, pero implica generar cada
+imagen 2 veces, una para el visor 3D y otra para el vídeo. A no ser que
+el vídeo sea muy pequeño o el ordenador muy rápido no es recomendable
+utilizarla.</span><br style="font-weight: normal;" />
+      <br />
+
+      <span class="Parrafo" /></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>
