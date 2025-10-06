@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Ecuaciones de PK</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte.@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ECUACIONES DE PK<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <img style="width: 264px; height: 268px;" alt="" src="Imagenes/dialogo_ecuacionesPK.png" align="right" hspace="5" /><span class="Parrafo">Este
+cuadro de diálogo, accesible desde la pestaña General y, desde Alzado
+&gt; Complementos, permite definir discontinuidades en los PKs&nbsp;
+mediante columnas de PKs. Hay dos modos distintos:<br />
+      <br />
+Con el modo <span style="font-weight: bold;">SALTOS DE PK</span>, tenemos tres columnas. En la primera se muestra el
+PK continuo desde el origen, en la segunda (<span style="font-weight: bold;">PK atrás</span>) el usuario introduce el
+valor de PK donde se va a producir el salto y en la tercera (<span style="font-weight: bold;">PK adelante</span>) el usuario introduce el
+nuevo valor de PK en ese punto. El <span style="font-weight: bold;">PK
+adelante</span> puede ser mayor o menor que el <span style="font-weight: bold;">PK atrás</span>. Este método mantiene las distancias.<br />
+      <br />
+Tenemos dos maneras de introducir los <span style="font-weight: bold;">datos</span>: Usando <span style="font-weight: bold;">PK atrás y PK adelante</span> o usando<span style="font-weight: bold;"> PK y PK adelante</span>. Al utilizar este último podemos introducir el dato <span style="font-weight: bold;">PK</span> bien usando el teclado o picando con el ratón.<br />
+      <br />
+El otro modo es el de <span style="font-weight: bold;">PKs CONTINUOS</span>.
+En este caso solo hay dos columnas: en la izquierda, los PKs
+originales, en la derecha, los PKs de usuario. Asignamos a cada PK
+original un PK de usuario, y el programa reparte los PKs intermedios de
+manera proporcional, reescalando las distancias.<br />
+      <br />
+Se utilice el método que se utilice, el PK de usuario queda grabado como un atributo de cada perfil al
+calcular el&nbsp;<span class="Archivo">ISPOL#.per</span>, y en el <span style="font-style: italic;">Editor de perfiles</span>, al editar
+un&nbsp;<span class="Archivo">ISPOL#.per</span>, en OTROS DATOS se
+muestra el PK continuo y el PK de usuario (entre paréntesis).<br />
+      <br />
+En la ventana gráfica del menú de de Rasantes, se representa junto con la<br />
+rejilla graduada, las ecuaciones de PK.<br />
+<br />
+      Si existen datos en las ecuaciones de PK, entonces también se mostrará el<br />
+PK de usuario, junto al PK matemático, en el eco iformativo de los menus de<br />
+alzado, y en la herramienta de <a href="OL_PK_dist.html">PK,distancia</a> tanto en la rejilla como en los<br />
+listados.<br />
+      <br />
+Si exiaten datos, se mostrará también este PK en la ventana de Sección
+y Sección real al igual que en el eco informativo de los menús de
+alzado.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 573px; height: 311px;" alt="" src="Imagenes/pk_usuario_sec.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Parrafo">Para el <a href="OL_planos_transversales.html">dibujo de perfiles transversales</a>, será
+necesario editar la <a href="OL_gut.html">plantilla</a> de generación de perfiles transversales (<span class="Archivo">.gut</span>) y, desde allí, dirigirse a <a href="OL_gut_pauta_fija.html#rotul_pks"><span style="font-weight: bold;">[ROTULACIÓN DE PK Y DIFER. DE PK]</span></a>
+dentro de </span><span style="font-weight: bold;" class="Parrafo">[PAUTA
+FIJA]</span><span class="Parrafo"> y marcar la opción <span style="font-weight: bold; font-style: italic;">PK usuario</span>.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 297px; height: 123px;" alt="" src="Imagenes/dialogo_rotulacion_pk_usuario2.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Para el <a href="OL_planos_longitudinales.html">dibujo de perfiles longitudinales</a>,
+debe también añadirse a la <a href="OL_gui.html">plantilla</a> correspondiente (<span class="Archivo">.gui</span>) un dato de <span style="font-weight: bold; font-style: italic;">PK usuario</span> en </span><a><span class="Parrafo" /></a><a href="OL_gui_terreno.html#anotaciones_guitarra"><span style="font-weight: bold;">[ANOTACIONES EN LA
+GUITARRA]</span></a> dentro de <span class="Parrafo"><a href="OL_gui_terreno.html"><span style="font-weight: bold;">[TERRENO]</span></a>.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 405px; height: 222px;" alt="" src="Imagenes/dialogo_rotulacion_pk_usuario3.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />Otras configuraciones que se pueden realizar para planos son las siguientes:<br /><br /></span><ul><li><span class="Parrafo">En el <a href="OL_planos_longitudinales.html">dibujo de de perfiles longitudinales</a>: se </span><span class="Parrafo">puede seleccionarse la opción de rotular el PK de usuario deducido de las ecuaciones de PK en las siguientes opciones:</span></li><ul><li><span class="Parrafo">Terreno / Línea de los transversales / PK de inicio y final. Se ha de marcar la casilla <span style="font-weight: bold;">Pk usuario</span>.</span></li></ul><ul><li><span class="Parrafo">Obras de Fábrica / PK. Se ha de marcar la casilla <span style="font-weight: bold;">Pk usuario</span>.</span></li><li><span class="Parrafo">Diagrama de Peraltes. Se ha de activar la casilla P.K. y seleccionar la opción <span class="Parf_negrita">Pk usuario</span>.<br /></span></li></ul><li><span class="Parrafo">En <a target="_blank" href="OL_obras_fabrica.html">OBRAS DE FÁBRICA</a>:</span></li><ul><li><span class="Parrafo">A&nbsp;la hora de genera los archivos OF.per, se pude activar la opción <span class="Parf_negrita">Pk
+usuario</span>, de modo que el PK de corte de la O.F. con los ejes que se
+guarda en los perfiles es el PK deducido de las Ecuaciones de PK. Al
+dibujar los perfiles transversales de las O.F. los PKs que se rotulan
+son entonces estos PKs de usuario.</span></li><li><span class="Parrafo">A la hora de definir las plantillas <span class="Archivo">*.obf</span> en el menú de <a href="OL_obras_fabrica.html#editor_def_avanzada">DEFINICIÓN DE OBRAS DE FÁBRICA</a> activando la casilla <span class="Parf_negrita">Pk usuario</span>:</span></li><ul><li><span class="Parrafo">Símbolos: Para el Pk y el Pk referido al desagüe.</span></li><li><span class="Parrafo">Células: PK en el cuadro de coordenadas.<br /></span></li></ul></ul><li><span class="Parrafo">En <a href="OL_dibujos.html#menu_rotul_avanzado">ROTULACIÓN DE EJES</a>, se puede seleccionar la opción de rotular el <span class="Parf_negrita">PK de usuario</span> deducido de las ecuaciones de PK en:</span></li><ul><li><span class="Parrafo">Alineaciones.
+Los múltiplos para rotular los PKs, las Marcas y las Cotas. (Múltiplos
+de los PKs de usuario&nbsp; y rotulados con el valor del pk de usuario).</span></li><li><span class="Parrafo">Según Perfiles.</span></li><li><span class="Parrafo">Peraltes/Anchos.</span></li><li><span class="Parrafo">Puntos altos y bajos.</span></li></ul><li><span class="Parrafo">En <a href="OL_ficheros_lil.html">DIBUJOS EN PLANTA</a>, </span><span class="Parrafo">se puede seleccionar la opción de rotular el <span class="Parf_negrita">PK de usuario</span> deducido de las ecuaciones de PK en:</span><span class="Parrafo">&nbsp;</span></li><ul><li><span class="Parrafo">Lineas por sup., cod. y S.T.<br /></span></li></ul></ul><span class="Parrafo"><br />
+      </span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La
+información de este menú se guarda, desde la revisión del 2/4/2024 en
+el archivo .cej. cuando carguemos archivos de proyectos anteriores, la
+información, que estaba contenida en el .vol se trasladará
+automáticamente al .cej.<br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

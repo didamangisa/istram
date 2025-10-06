@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Excentricidad y entrevía</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EXCENTRICIDAD Y ENTREVÍA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+En este menú se introducen los datos que definen la <span style="font-weight: bold;">excentricidad</span> del eje geométrico respecto del eje en planta (campo <span style="font-weight: bold;">Excentric.</span>) y el <span style="font-weight: bold;">ancho entre vías</span> como distancia entre el centro de vía de la izquierda (<span style="font-weight: bold;">Ancho izq.</span>) y el de la derecha (<span style="font-weight: bold;">Ancho dcha.</span>) al centro geométrico.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 516px; height: 324px;" alt="" src="Imagenes/modelo_exc_entrevia.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 661px; height: 204px;" alt="" src="Imagenes/dialogo_exc_entrevia.png" /><br />
+      </div>
+      <br />
+Para definir la entrevía, el programa distingue entre varios tipos de geometría:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tipo P = 0</span>: Desde
+el hombro interior se crean dos plataformas de balasto separadas que
+dejan al descubierto el subbalasto. Es posible cortar la capa
+subbalasto y&nbsp;
+la capa de forma formando una cuneta en la entrevía haciendo uso de los
+parámetros <span style="font-weight: bold;">DX I</span>, <span style="font-weight: bold;">DX D</span> y <span style="font-weight: bold;">T</span> tal como se muestra en el modelo.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">La <a href="OL_cunetas.html"><span style="font-weight: bold;">cuneta</span></a>
+se indica por el número de la sección tipo donde esté definida o por el
+valor 0 si no hay cuneta. En la zona interior entre las dos cunetas se
+conserva la capa de forma.<br />
+      <br />
+      <img style="width: 141px; height: 111px;" alt="" src="Imagenes/capa_forma_interna.png" align="right" hspace="6" />Cuando las vías están <span style="font-weight: bold;">muy separadas</span>
+(zona
+de estaciones, etc.) es posible introducir una cuneta de cada lado
+interior que nace de la subrasante al pie del paquete subbalasto +
+capa de forma y definidas por los mismos parámetros. En este caso,
+además, es posible definir un espesor de la capa de forma interior
+diferente a la que va por debajo de las vías. Para ello se pulsa sobre
+el botón <span style="font-weight: bold;">[C.F. int &gt;&gt;]</span>,
+cambiando el cuadro de diálogo de modo que es posible introducir
+valores para la capa de forma interna. Si se introduce un valor
+negativo, a la capa de forma interna le asigna el mismo espesor que a
+la capa de forma general. Si se da un valor diferente en dos PK's, se
+interpolan los valores intermedios.<br />
+      <br />
+Así mismo, en esta parte del menú se establecen las siguientes posibilidades de definición para la zona interior:<br />
+      <br />
+      <table style="text-align: left; width: 440px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[2 lados]<br />
+            </td>
+            <td style="vertical-align: top; width: 348px;">Se crean los dos lados de la sección.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[Anular DR]<br />
+            </td>
+            <td style="vertical-align: top; width: 348px;">Anula el lado derecho de la sección.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[Anular IZ]<br />
+            </td>
+            <td style="vertical-align: top; width: 348px;">Anula el lado izquierdo de la sección.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 72px;">[Anular 2]
+            </td>
+            <td style="vertical-align: top; width: 348px;">Anula la sección completa.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+<li><span style="font-weight: bold;">
+Tipo P = 1</span>: El hombro del cuerpo de balasto más bajo se prolonga hasta que corta el talud interior del otro lado.</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">
+Tipo P = 2</span>: La entrevía se rellena con balasto hasta la línea que une los dos hombros interiores del balasto.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo P = 3</span>: Este
+tipo permite la definición de secciones de vía doble con entrevías
+abierta es decir, secciones mixtas: abierta-abierta, abierta-falso
+túnel, abierta-túnel, falso túnel-falso túnel, falso túnel-túnel y
+túnel-túnel. Es similar a la <a href="OL_excentricidad_mediana.html#mediana_abierta">mediana abierta</a> en carreteras. 
+Cuando se utilicen <span style="font-weight: bold;">[Anular DR]</span> o <span style="font-weight: bold;">[Anular IZ]</span> para ferrocarriles con vía
+doble es posible emplear una sección tipo de entrevía abierta para
+completar por el interior la sección que se genera.
+        </li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">
+Tipo P = 4</span>: Es como el tipo 0, pero el talud interior del subbalasto y
+capa de forma, se prolonga hasta que se cortan ambos lados formando una
+mediana.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo P = 5</span>: Es como
+la de tipo 4, pero la mediana en lugar de utilizar el talud, se
+construye a partir de la cota del longitudinal de la mediana. Para este
+tipo, en la columna T, puede introducirse un valor A, que define el
+ancho del fondo plano de la cuneta.<br />
+        </li>
+      </ul>
+
+
+      En el cuadro de diálogo se distingue además los botones <span style="font-weight: bold;">[ANC
+por línea]</span> y <span style="font-weight: bold;">[Excent. por línea]</span> que ofrecen un método rápido para
+determinar estos valores utilizando líneas presentes en la cartografía.<br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;">
+Sobreanchos de entrevía por cuestión del gálibo</span><br />
+      <br />
+En la librería de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> están disponibles las tablas&nbsp;<span class="Archivo">galiboTB.tsa</span> y&nbsp;<span class="Archivo">galiboTM.tsa</span>, que pueden utilizarse para dar sobreanchos
+por tabla a la entrevía mediante la opción <span style="font-weight: bold;">[ANC x Tabla]</span>. 
+La tabla&nbsp;<span class="Archivo">galiboTM.tsa</span> se ha calculado para el tranvía de Murcia, y es
+similar a la&nbsp;<span class="Archivo">galiboTB.tsa</span>
+correspondiente al tranvía de Bilbao. Existe también una tabla que
+aplica los sobreanchos a partir de un retranqueo en los puntos inicial
+y final de la transición. Esta tabla tiene el nombre&nbsp;<span class="Archivo">GaliboRT.tsa</span> ya comentada en el menú de <a href="OL_ffcc_plataforma.html">Plataforma</a>.<br />
+      <br />
+En curvas a la derecha se aplica el sobreancho exterior a la entrevía
+de la derecha y el interior a la de la izquierda y para curvas a
+izquierda se aplica el sobreancho interior a la entrevía de la derecha
+y el exterior a la de la izquierda. En ambas tablas se emplea el
+comando <span style="font-style: italic;">Exc</span> que permite utilizar el radio real del eje de cada vía
+teniendo en cuenta la excentricidad con el eje en planta y los anchos
+de entrevía.<br />
+      <br />
+Otra tabla existente en la librería de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> es la llamada&nbsp;<span class="Archivo">Galibo_Peralte.tsa</span> la cual se utiliza en anchos de entrevía y para el ancho A2 por tabla en el menú de <a href="OL_ffcc_plataforma.html">Plataforma</a>.<br />
+A partir de esta tabla los sobreanchos interior y exterior se aplican
+en función del peralte en mm. en lugar del radio. Con curvas a derecha
+el sobreancho en función del peralte se aplicará en el semiancho
+izquierdo de la vía y viceversa en caso contrario.<br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,1153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Paquetes de firmes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PAQUETES DE FIRMES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#def_geometrica">Definición geométrica de una sección de firmes</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#ejemplo">Ejemplo</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#vectores">Definición vectorial de una capa de firmes</a><br />
+      </div>
+      <div style="margin-left: 80px;">
+      </div>
+
+      <div style="margin-left: 40px;"><a href="#tramificacion">Tramificación de las secciones de firme. Transición entre secciones</a><br />
+      <a href="#calculo">Cálculo del paquete de firmes</a><br />
+      <a href="#ensanche_refuerzo">Paquetes de firmes para ensanche y refuerzo</a><br />
+      <a href="#pautas">Pautas a seguir para la generación de los paquetes de firmes de un proyecto</a><br />
+      </div>
+      <br />
+      <br />
+      <a name="generalidades"><span class="Titulo_2">Generalidades</span></a><br />
+      <br />
+      <img src="Imagenes/paquete_firme.png" style="width: 111px; height: 162px;" alt="" align="right" hspace="5" />Cuando se pulsa en la opción <span style="font-weight: bold;">[PAQUETE DE FIRME]</span>
+la aplicación ofrece un cuadro de diálogo donde es posible definir la
+geometría de los diferentes paquetes de firmes y tramificar por PK&#8217;s
+dónde se aplica cada uno de ellos.<br />
+
+      <br />
+
+Este menú permite la definición de secciones de paquetes de firmes y su aplicación a un eje que ya esté completamente calculado.<br />
+
+      <br />
+
+      Cada sección admite un máximo de cincuenta
+componentes cuya geometría se define a partir de una serie de
+parámetros que se analizan más adelante. El paquete de firmes de
+ISTRAM®/ISPOL® está además preparado para funcionar correctamente en el
+caso de doble calzada con doble <a href="OL_peraltes.html">peralte</a> (típico de las autopistas canadienses, por ejemplo).<br />
+      <br />
+
+      
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/modelo_firmes.png" style="width: 516px; height: 324px;" alt="" /><br />
+      </div>
+
+      <br />
+Para
+generar el paquete de firmes de un eje, se usa la geometría de
+plataforma y subrasante que está recogida para este eje en el
+fichero&nbsp;ISPOL#.per (siendo # el
+número de eje) como consecuencia del cálculo del eje en el menú ALZADO
+o PROYECTO. La explanada mejorada, <a href="OL_suelo_seleccionado.html">suelo seleccionado</a> o
+sobreexcavación, que de todos estos modos suele llamarse, se define
+aparte.<br />
+
+      <br />
+
+Debe estar, por tanto, completamente definido el alzado y plataforma
+del eje y calculados, antes de generar el paquete de firmes. Los PK de
+inicio y final del subtramo de firmes deben alcanzar el ámbito deseado
+(no se extrapola) para que la generación del paquete de firmes trabaje
+correctamente.<br />
+
+      <br />
+
+Esta descomposición del firme resulta en un listado (firme#.res) de cúbicos desglosados y un fichero de perfiles&nbsp;ISFIR#.per
+con la geometría descompuesta del paquete de firmes para cada eje. La
+línea de relleno de firmes (312) se genera la última en este archivo
+para ser utilizada en la medición de rellenos del firme.<br />
+
+      <br />
+
+Este fichero es independiente del correspondiente&nbsp;ISPOL#.per, si bien
+puede incorporarse uno al otro en una operación posterior de edición de
+perfiles Mezclar.<br />
+
+      <br />
+
+Si el tratamiento es de <a href="#ensanche_refuerzo">ensanche y refuerzo</a>, la generación del paquete de
+firmes debe hacerse antes de la operación de mejora, porque ésta última
+modifica la subrasante para adaptarla al firme existente y la
+subrasante así modificada generaría un paquete de firmes deformado.
+Similar consideración tienen las operaciones de enlace y truncamiento
+de plataformas que alteran el contenido teórico del&nbsp;ISPOL#.per.
+La adaptación del firme a esas modificaciones de la plataforma se hace
+en una segunda operación al recalcular el paquete de firmes, presente
+en ese menú y en el de ALZADO, así como desde PROYECTO al estar
+activada la casilla [RFI].<br />
+
+      <br />
+
+      <img src="Imagenes/firmes_capas.png" style="width: 429px; height: 175px; margin-left: 7px;" alt="" align="right" />Al
+pulsar en la opción [Secci.] del menú vertical se dibuja también la
+superficie L312, equivalente a la L67 de los ficheros&nbsp;ISPOL#.per
+(rasante), de modo que se puede apreciar visualmente si van a existir <a href="#rellenos">rellenos</a>.
+Además, al hacer zoom sobre esta sección se muestran los números
+correspondientes a cada capa de firme, así como los códigos de la
+rasante.<br />
+
+      <br />
+
+Las opciones del menú vertical permiten la visualización con cualquier sección tipo y en cualquier PK.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_firmes.png" style="width: 550px; height: 241px;" alt="" /><br />
+      </div>
+      <br />
+
+      Los datos de
+PK's en este menú se pueden dar tanto gráfica como numéricamente
+(botones <span style="font-weight: bold;">[Clic]/[Numérica]</span>).
+En el caso de darlo gráficamente, la proyección del punto sobre el eje
+puede hacer referencia a un perfil exacto ó interpolado.<br />
+       <br />
+La pestaña <span style="font-weight: bold;">SECCIONES</span> del menú permite la introducción de los valores
+que definen los espesores de cada capa según su cota relativa a la
+subrasante y su disposición con respecto a la subrasante. Cada conjunto
+de estos datos defines una sección de firmes.
+Aunque el cuadro de diálogo muestra 10 capas (1-10), es posible
+visualizar el resto mediante el cursor de desplazamiento de la parte
+derecha del menú.<br />
+
+      <br />
+
+Los botones <span style="font-weight: bold;">[Añadir]</span>, <span style="font-weight: bold;">[Repet]</span> y <span style="font-weight: bold;">[Borrar]</span> permiten crear nuevas
+secciones de firmes, repetir la actual o eliminarla respectivamente.<br />
+
+      <br />
+
+Es en la pestaña <span style="font-weight: bold;">TRAMOS</span> donde
+tramifican las distintas secciones creadas, se declaran transiciones
+entre ellas y se indica cómo se deben aplicar en caso de proyectos de <a href="OL_EyM.html">ensanche y mejora</a>.<br />
+
+      <br />
+Este modo de trabajar con secciones y tramos presenta la ventaja de que, si una sección se repite en diferentes tramos, no es<br />
+
+necesario repetir sus datos.<br />
+
+      
+      <br />
+
+      <br />
+
+      <a name="def_geometrica"><span class="Titulo_2">Definición geométrica de una sección de firmes</span></a><br />
+
+      
+      <br />
+
+La declaración de los distintos materiales que conforman el paquete de
+firmes debe efectuarse en orden constructivo, es decir, los primeros
+datos corresponderán a las capas base, los siguientes a capas
+intermedias y los últimos a capas superiores. Esto es debido a que cada
+componente del paquete de firmes se calcula apoyándose en los
+anteriores (tal y como se construye), por tanto &#8220;la parte de la caja de
+firmes ocupada por una capa ya no será ocupada por las siguientes&#8221;.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/firmes_dato.png" style="width: 618px; height: 42px;" alt="" /><br />
+      </div>
+
+      <br />
+
+A cada capa se le puede asignar un nombre
+(sin espacio en blanco) para identificar el componente en los listados
+de mediciones. Si no se desea que aparezca la medición de un
+determinado componente de firmes, entonces el nombre se debe insertar
+entre los símbolos &#8216;&lt;&#8217; (menor que) y &#8216;&gt;&#8217; (mayor que), así, por
+ejemplo, si como nombre se escribe &lt;zahorra&gt;, dicha medición NO aparecerá en los listados.<br />
+
+      <br />
+
+La lista de nombres de las capas de firme de un eje es única para todas
+las secciones de firme que se definan en el eje. Es por eso que, al
+comienzo de cada fila existe, una casilla de verificación
+que permite aplicar o no un determinado componente del dato actual. El
+número que acompaña a la casilla de verificación indica el número de la
+capa. Esto permite generar una sección que contenga todas las capas que
+se vayan a usar en un proyecto y, tras repetirla en el resto de
+secciones del proyecto, activar sólo aquellas casillas que correspondan
+a materiales usados en cada una de las secciones.<br />
+      <br />
+Mediante la casilla <span style="font-weight: bold;">Nombres -&gt; Todos</span>:&nbsp;
+esta herramienta permite copiar los nombres de las capas de firmes
+definidos en el eje actual, para el resto de ejes del proyecto.<br />
+
+      <br />
+
+El cubicador va acumulando totales según su número de orden, no su
+nombre; así si una sección lleva Zahorra natural (1), capa intermedia
+(2) y rodadura (3) y en otro tramo (obra de fábrica) no se aplican
+zahorras ni capa intermedia, estos lugares 1 y 2 deben dejarse con la
+casilla desactivada y manteniendo la rodadura en el lugar 3 para que se
+totalicen bien todos ellos:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; height: 96px; background-color: white; width: 375px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 83px; font-weight: bold; font-style: italic; text-align: center;">DATO<br />
+            </td>
+            <td style="vertical-align: top; width: 130px; font-weight: bold; font-style: italic; text-align: center;">SECCIÓN 1<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic; text-align: center; width: 136px;">SECCIÓN 2<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 83px; text-align: center;">1<br />
+            </td>
+            <td style="vertical-align: top; width: 130px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Zahorra natural<br />
+            </td>
+            <td style="vertical-align: top; width: 136px;"><img src="Imagenes/checkbox_disabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Zahorra natural<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 83px; text-align: center;">2<br />
+            </td>
+            <td style="vertical-align: top; width: 130px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Capa intermedia<br />
+            </td>
+            <td style="vertical-align: top; width: 136px;"><img src="Imagenes/checkbox_disabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Capa intermedia<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 83px; text-align: center;">3<br />
+            </td>
+            <td style="vertical-align: top; width: 130px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Rodadura<br />
+            </td>
+            <td style="vertical-align: top; width: 136px;"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px; margin-top: 2px;" alt="" align="left" />&nbsp; Rodadura<br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <br />
+Desde la columna TIPO se controla el comportamiento de la capa con
+respecto a la rasante o a la subrasante con las siguientes
+posibilidades:<br />
+
+      
+      
+      <ul>
+
+        <li>Paralela a la rasante (<span style="font-weight: bold;">Rasan_P</span>), es decir, pendiente igual a la rasante y que se prolonga bajo los arcenes.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Pendiente intermedia entre la rasante y subrasante que se prolonga bajo los arcenes (<span style="font-weight: bold;">Intem_P</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Paralela a la subrasante, es decir, pendiente igual a la de la subrasante y que se prolonga bajo los arcenes (<span style="font-weight: bold;">Subras_P</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Paralela a la rasante, acompañando las posibles quiebras de los arcenes (<span style="font-weight: bold;">Rasan_Q</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Paralela a la subrasante, acompañando las posibles quiebras de los arcenes (<span style="font-weight: bold;">Subras_Q</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><a style="font-weight: bold;" href="#vectores">Vectorial</a>.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Paralela a la rasante acompañando todas las posibles quiebras de la rasante hasta el código 50 (<span style="font-weight: bold;">Rasan_QP</span>). Luego se prolonga con la última pendiente hasta cortar al talud (segmento comprendido entre los códigos 50 y 100).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Prolongar la pendiente transversal de la rasante (al igual que Rasan_P), pero bajo el arcén exterior nunca será inferior al 2% (<span style="font-weight: bold;">Rasan_P2</span>).</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>El tipo <span style="font-weight: bold;">Rasan_QP2</span>
+es similar la Rasan_QP, pero se diferencia en la zona de la berma (cod.
+50). En este caso el programa genera el firme paralelo a la rasante
+tomando los quiebros de los arcenes (cod. 11, 12, 13) y prolongando la
+última pendiente del último arcén definido. En el caso de colocar el
+tipo Rasan_QP el firme será paralelo tomando el quiebro en la berma
+además de los arcenes.</li>
+      
+      </ul>
+
+      
+      <div style="margin-left: 40px;">En autovías, por el lado de la
+mediana, también prolonga la última pendiente hacia dentro a partir del
+código -11 (borde de arcén interior).<br />
+      </div>
+
+      
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Profundidad</span>: <br />
+        </li>
+        <ul>
+          <li>Se copia la rasante entre los dos códigos de referencia a la profundidad definida (absoluta desde la superfcie de la rasante).</li>
+          <li>Los sobreanchos se extienden con la pendiente transversal al inicio y al&nbsp;final de este trozo copiado.</li>
+          <li>Y luego se baja con los taludes definidos.</li>
+        </ul>
+      
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Profundidad Normal</span>: Es como Profunddad, pero esta se mide perpendicular a la superficie en lugar de vertical.<br />
+        </li>
+      </ul>
+
+
+
+
+      En la columna <span style="font-weight: bold;">COTA_D</span>
+se establece la distancia mínima en vertical (excepto con la opción Prof_Norma) desde la subrasante, a la
+superficie de la capa. Si se trata de una sección de doble calzada se
+diferencian la del lado izquierdo (<span style="font-weight: bold;">COTA_I</span>) y derecho para que puedan darse distintas. Las cotas de los paquetes de firmes se guardan con cuatro decimales.<br />
+      <br />
+La opción <a style="font-weight: bold;" name="rellenos">Listar rellenos</a>
+provoca la aparición en los listados y perfiles del componente relleno
+como cubicación de la caja de firmes no ocupada por ninguna capa. La
+medición de rellenos se incluye en la tabala ISFIR.dar (y por tanto en
+las combinadas ISPOL4+ISFIR.dar).<br />
+
+Si está activa la opción []<span style="font-weight: bold;">Listar rellenos</span> el nombre de ésta medición
+pasa a ISPOL4+ISFIR.dar como Rellenos y si está&nbsp; desactiva pasa
+como &lt;Rellenos&gt; para que no aparezca en los listados (medición
+auxiliar).<br />
+
+Con la opción de Proyecto []<span style="font-weight: bold;">incluir firmes</span>, en los archivos cvol...
+aparecerá la medición de rellenos si esta activada la opción []<span style="font-weight: bold;">Listar
+rellenos</span>.<br />
+
+      <br />
+A continuación es posible declarar la densidad del material
+correspondiente a esta capa, lo que permite que, si se activa la opción
+<a style="font-weight: bold;" name="toneladas">Listar toneladas</a>,
+en el resumen de mediciones aparezca una columna con las toneladas de
+material y según este valor. Estando activo el listado de toneladas, no
+se imprimen ni acumulan las mediciones para aquellas capas con densidad
+(o volumen) nulo.<br />
+
+      <br />
+
+Al activar la opción <a style="font-weight: bold;" name="riegos">Listar riegos</a>,
+en los listados de firmes también aparecerán el riego total de cada
+capa de firme. Este riego corresponde, por defecto, a la coronación de
+cada capa, aunque se puede modificar para que sea el área inferior
+desde Configuración &#8594; Preferencias &#8594; Obra Lineal &#8594; Alzado &#8594; Medir el riego por la superficie de apoyo.&nbsp; <br />
+Al calcular o re-cubicar los firmes, también se genera un archivo
+adicional ri.res (riXX.res) con el mismo formato que fi.res pero que
+contiene para cada material: Longitud de riego en perfil, Area parcial
+de riego entre perfiles y Area acumulada de riego.<br />
+      <img src="Imagenes/OL_firmes_listado.png" style="width: 700px; height: 156px;" alt="OL_firmes_listado.png" /><br />
+      <br />
+<br />Con las opciones <a style="font-weight: bold;" name="riegos">Riegos BIM</a>,
+es posible seleccionar que riegos se van a generar con el modelo BIM: Imprimación, curado y/o adherencia.<br /><br />La opción <span style="font-weight: bold;">Taludes prolongados</span>
+actúa sobre las capas de tipo Rasan_P, Interm_P, SubRas_P haciendo que
+el punto de referencia para lanzar el talud se encuentra en la rasante
+(en el código utilizado o a la disntacia indicada a éste). De este
+modo, todas las capas refereridas al mismo código y con la misma
+distancia y talud tendrán el talud en prolongación sin producirse
+escalones.<br /><br />Para el diseño de la sección:<br /><br />Aparecen<span style="font-weight: bold;"> doce columnas de datos</span>, seis para la
+izquierda del eje y otras seis para la parte derecha. Desde aquí se
+establecen los anchos de las capas de firmes así como los taludes de cierre laterales.<br />
+
+      <br />Los anchos de las capas de firmes se establecen en función de los
+códigos de la rasante. Como se puede observar, el programa reconoce tanto para el
+lado derecho como para el lado izquierdo, el ancho y talud exterior (A ext / T ext) e interior (A int / T int)
+de cada capa. Además, es posible referirse de esta forma a un código y
+a una distancia respecto a ese código, sumando ese sobreancho a la
+referencia (valores negativos indican que se resta el sobreancho).<br />
+      <br />
+Si los datos que introducimos lo especifican, la parte interior de las
+capas de firmes puede cruzar el eje geométrico. Si eso ocurriera, el
+programa calculará la intersección de los taludes interiores.<br />
+
+      <br />
+
+En la columna <span style="font-weight: bold;">Cod</span> definiremos el código de la plataforma para limitar
+la longitud de las capas de firme. Los codigos que se admiten como codigo de referencia van desde cualquier
+valor comprendido entre -50 y 99 (Ambos incluidos, tened en cuenta que puede existir una <a href="OL_vectores.html">plataforma fija</a> con códigos superiores al 50), incluyendo los&nbsp; codigos 1.1, 1.2, 1.5, 1.6, 1.7 y 1.8.<br />
+Por defecto para el sobreancho interior el códogo de referencia es el 1
+y para el sobreancho exterior el 2, es decir si se refiere un ancho al
+código 1.2 y éste no existe, la referencia salta al código 1 y si se
+refiere un ancho al código 1.5 y éste no existe, la referencia salta al
+código 2.<br />
+
+      <br />
+      <br />
+
+      <a style="font-weight: bold;" name="ejemplo">Ejemplo</a><br />
+
+      <br />
+
+
+Para
+ilustrar cómo declarar la geometría de un paquete de firmes formado por
+varias capas todas ellas paralelas a la rasante, se recomienda seguir
+los siguientes pasos de este ejemplo para uno de los lados:<br />
+
+
+      <br />
+
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 244px; text-align: justify;">Se desea
+declarar una primera capa base de 30 cm de espesor, entre los bordes de
+calzada más un sobreancho de 25 cm hacia el exterior, y con un talud de
+cierre 1:1.</td>
+            <td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_1.png" style="width: 429px; height: 28px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <br style="font-style: italic;" />
+
+      
+      Para
+ello, una vez declarado el espesor y activa la capa, basta con fijarse
+que para que el exterior de la capa llegue al borde de calzada (código
+2), es necesario declarar el valor 0.000 en la columna correspondiente
+a A ext. y el valor 2 en la columna Cod. Como en este caso se
+dice además que debe sobresalir 25 cm hacia el exterior, se debe sumar
+0.250 al valor anterior, por tanto en la casilla A ext deberá quedar 0.000 + 0.250 = 0.250.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">La anterior capa base se completa en los laterales con sendas capas de otro material.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_2.png" style="width: 429px; height: 36px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br style="font-style: italic;" />
+
+      En
+este caso es suficiente con declarar un valor suficientemente elevado
+en la columna A ext como para que llegue a los extremos del paquete de
+firmes. Así, para A ext = 10, el programa creará una capa de 10 m a
+partir del código 2, pero
+como antes se encuentra con el límite del paquete de firmes, no lo
+atravesará. Por otro lado, no es necesario indicar nada en A int, pues
+es &#8216;espacio&#8217; ocupado por las capas previas será respetado por las
+posteriores (orden constructivo).<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">A
+continuación se coloca una capa intermedia, de 15 cm de espesor, entre
+bordes de arcén menos un sobreancho de 20 cm, y talud de cierre 1:1.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_3.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Este
+caso hace referencia a que la parte exterior de la capa debe llegar al
+código 11, con lo que en la columna Cod definiremos el valor 11, menos 20 cm, por tanto A ext = -0.200 (el signo menos
+indica que la distancia de 20 cm es hacia el interior). Se recuerda
+además que en la columna COTA_D no se introduce el espesor, sino la cota, y por tanto su valor será de 0.3 + 0.15 = 0.45.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">Se completa la capa anterior hasta los bordes del paquete de firmes con otro material.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_4.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Similar al caso de la capa base lateral.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">La
+capa superior central está formada por una capa de rodadura de 5 cm de
+espesor entre los bordes de calzada más un sobreancho de 20 cm y talud
+de cierre 1:1.</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_5.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      Por tanto, COTA_D = 0.500 y A ext = 0.200 y Cod = 2.<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 694px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody><tr><td style="vertical-align: top; width: 244px; text-align: justify;">La rodadura en los arcenes se completa con otro material y justamente hasta el borde de arcén, también con talud 1:1.<br />
+
+</td>
+<td style="vertical-align: middle; text-align: right; width: 430px;"><img src="Imagenes/firmes_ejemplo_6.png" style="width: 429px; height: 28px;" alt="" /><br />
+</td>
+</tr></tbody>
+      
+      </table>
+
+      <br />
+
+      La referencia al código exterior será, por tanto, A ext = 0 y Cod = 11.<br />
+
+      <br />
+
+      Para la parte correspondiente a las bermas se usarán rellenos.<br />
+
+      <br />
+
+      Para que se cubiquen, habrá que marcar la casilla Listar rellenos.<br />
+
+      <br />
+Como el paquete de firmes es simétrico, si estos valores se han
+declarado en el lado derecho, se pulsará sobre el botón [Izq &lt;= Der]
+para que se copien al lado izquierdo, o sobre el botón [Izq =&gt; Der]
+en el caso de que se hayan declarado en el lado izquierdo y se desee
+copiarlos al derecho.<br />
+
+      <br /><br />Las superficies que definen los paquetes de firme se codifican de la siguiente manera:<br /><ul><li>Los puntos que definen estrictamente la capa hasta el pie del talud lateral lleva los códigos: 1,2,3,....</li><li>Los puntos exteriores que están sobre otras superficies: 100,101,...</li><li>En secciones de Autovía, los puntos interiores que están sobre&nbsp; otras superficies: ... -102, -101, -100.</li></ul>Ejemplos:<br /><br />Semi_perfil de una capa de firme en carretera: 1,2,3,100,101,102:<br /><ul><li>1= punto de la capa en el eje.</li><li>2= hombro de la capa.</li><li>3= pie de la capa.</li></ul>Semi_perfil de una capa en autovía: -102,-101,-100,1,2,3,4,100,101,102:<br /><ul><li>1= pie interior.</li><li>2= hombro interior.</li><li>3= hombro exterior.</li><li>4= pie exterior.</li></ul><br />
+
+
+      <br />
+
+
+      <a name="vectores"><span class="Titulo_2">Definición vectorial de una capa de firmes</span></a><br />
+
+
+      <br />
+
+
+Las geometrías de las capas que componen una sección de firmes también pueden ser declaradas de forma vectorial.<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_firmes_vectorial.png" style="width: 550px; height: 241px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Cada capa vectorial se define mediante los siguientes datos:<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <div style="margin-left: 40px; height: 10px;">Definición de un origen de coordenadas para el componente mediante<a name="vectores"><br />
+      </a></div>
+
+
+      
+      
+      
+      <div style="margin-left: 40px;">
+      <ul>
+        <li>Código de referencia de la rasante (superficie 67), declarado en la columna Cód.</li></ul>
+      <ul>
+
+        <li>Distancia al código (positiva hacia el exterior), que se define en la columna Dc.</li>
+      </ul>
+      <ul>
+
+        <li>Profundidad
+(positiva hacia abajo), definida en la columna Dz. Si existe un valor
+de Dc distinto de cero, la profundidad se mide desde la superficie de
+la rasante que se prolonga desde el código declarado en Cód.</li>
+      </ul>
+      <ul>
+
+        <li>Número del vector de geometría a utilizar, definido en la columna Vec.</li>
+      
+      </ul>
+
+      </div>
+
+
+      
+      
+      
+      <div style="margin-left: 40px; height: 13px;">Definición de los vectores de geometría<a name="vectores"><br />
+      </a></div>
+
+
+      
+      
+      
+      <div style="margin-left: 40px;">
+      <ul>
+        <li>Nombre para el componente, que permite al usuario identificarlo en la lista de vectores.</li>
+      </ul>
+      <ul>
+        <li>Tipo de aplicación:</li>
+      </ul>
+      <div style="margin-left: 80px;">a) Horizontal.<br />
+      b) Peraltada (se gira desde el punto de referencia).<br />
+      c) Pendiente fija en % (se gira desde el punto de referencia).<br />
+      </div>
+      <ul>
+        <li>Vector.
+En la definición de la geometría vectorial hay que tener en cuenta una
+diferencia con respecto a otro tipo de vectores: Las coordenadas del
+cuadro de diálogo son absolutas respecto al punto de referencia (NO
+relativas al punto anterior, como en el resto de vectores).</li>
+      </ul>
+      </div>
+
+
+      Un
+mismo vector puede utilizarse varias veces en distantas capas de una
+misma sección ó en distintas secciones, lo que simplifica mucho la
+definición de componentes iguales que se repiten varias veces en una
+misma sección o en secciones distintas (por ejemplo, en secciones
+urbanas con aparcamientos, carriles bici, etc. permiten definir los
+bordillos que se colocan para separar unos carriles de otros).<br />
+
+
+      <br />
+
+
+      <br />
+
+      <a name="tramificacion"><span class="Titulo_2">Tramificación de las secciones de firme. Transición entre secciones</span></a><br />
+
+
+      <br />
+
+
+Cada sección de firmes se añade, inserta repetida o borra con los
+botones correspondientes, situados justo debajo del navegador típico de
+datos que permite pasar de una sección a otra.<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/firmes_tramificacion.png" style="width: 550px; height: 241px;" alt="" /><br /><br /><img src="Imagenes/firmes_tramificacion_1.png" style="width: 550px; height: 239px;" alt="" /><br />
+      </div>
+
+
+      <br />
+
+Los valores introducidos en <span style="font-weight: bold;">PK inicial</span> y <span style="font-weight: bold;">PK final</span> definen el tramo que
+comprende la sección tipo que se está definiendo. Por defecto,
+ISTRAM®/ISPOL® no realiza transiciones geométricas del paquete de
+firmes entre dos tramos consecutivos. Para efectuar transiciones, se
+debe indicar en el campo Sec. final
+el número de la sección final, de tal forma que si se da un valor
+diferente de 0, en el tramo comprendido entre el PK inicial y el PK
+final se hace una transición entre las sección de firme actual y
+aquella cuyo número se indique en esta casilla.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+      <br />
+En cada Tramo de aplicación de los paquetes de firmes se pueden definir secciónes diferentes para el caso de desmonte <span style="font-weight: bold;">D</span> y terraplén <span style="font-weight: bold;">T</span>. En un mismo PK puede aplicarse diferente sección al lado derecho y al izquierdo, (Medias laderas).<br />
+
+
+      <br /><span class="Parf_negrita">Reordenar</span>:
+Esta herramienta trabaja al estilo de la herramienta de reordenar de
+zonas de cálculo, es decir que en caso de solape manda el último tramo
+definido. (Esto se hace separadamente para los tramos de ensanche y los
+de refuerzo).<br /><br />
+
+
+La herramienta <span style="font-weight: bold;">Copiar Zonas de Cálculo</span> copia tambíen el número de la sección tipo como sección de firmes a aplicar, siempre que exista esta sección de firmes.<br />
+      <br />
+La opción [Reordenar] permite ordenar los datos de firmes de la siguiente manera:<br />
+
+
+      
+      
+      
+      <ol>
+
+
+        <li>Se colocan delante los definidos para toda la sección o para ensanche.</li>
+        <li>Se colocan al final los definidos para refuerzo.</li>
+        <li>Cada uno de los dos grupos se reordenan según el PK inicial.</li>
+      
+      
+      </ol>
+
+
+      Esta opción también se ejecuta automáticamente al calcular los paquetes de firmes.<br />
+
+
+      <br />
+
+Cada sección puede tener asociado un nombre que aparecerá en los
+listados. Este nombre se indica en el campo correspondiente a <span style="font-weight: bold;">NOM
+SECCIÓN</span>.<br />
+
+
+      <br />
+
+Los botones [<span style="font-weight: bold;">Guardar 1</span>] y [<span style="font-weight: bold;">Cargar 1</span>] permite salvar y recuperar la
+sección de firme actual en un fichero independiente con la
+extensión&nbsp;.1pf, lo que posibilita generar librerías de secciones
+de firme que pueden reutilizarse.<br />
+
+
+      <br />
+
+Las opciones [<span style="font-weight: bold;">Guardar</span>] y [<span style="font-weight: bold;">Cargar</span>] permiten grabar o recuperar en un
+único fichero de nombre&nbsp;.pfm el conjunto de secciones definidas,
+junto con sus tramos de aplicación. En caso de realizar una carga se
+sustituye la definición actual de paquetes de firme y su tramificación
+por la leída<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <a name="calculo"><span class="Titulo_2">Cálculo del paquete de firmes</span></a><br />
+
+
+      <br />
+
+      <img src="Imagenes/paquete_firmes_isfir.png" style="width: 153px; height: 60px;" alt="" align="right" hspace="6" />El
+botón [<span style="font-weight: bold;">Generar PF</span>] (generar paquete de firmes) posee el mismo
+significado que la opción [Genera P. Firme] del menú vertical de
+ALZADO. Aplica esta definición, calcula y genera los listados y el
+archivo de perfiles (ISFIR#.per, siendo # el número de eje). Las
+mediciones se realizan utilizando la tabla&nbsp;ISFIR.dar, si bien se
+respetan los nombres de los componentes que aquí se definen.<br />
+
+
+Puedes editar el fichero&nbsp;ISFIR#.per de una manera directa desde este cuadro de diálogo.<br />
+
+
+      <br />
+
+      <a name="recalcular_PF">La opción [<span style="font-weight: bold;">Recalcular PF</span>] (recubicar
+paquete de firmes) posee el mismo significado que la opción [Recal P.
+Firme] del menú veertical de ALZADO o el botón [RFI] de PROYECTO, y lo
+que hace es comparar el archivo&nbsp;ISFIR#.per con el&nbsp;ISPOL#.per
+(siendo # el número de eje), corrigiendo la geometría del primero si
+encontró modificaciones de la subrasante o truncamiento en los bordes
+del segundo y recubicando y generando los listados de nuevo.<br />
+      <br />
+Las opciones [<span style="font-weight: bold;">Guardar Mod</span>] y [<span style="font-weight: bold;">Cargar Mod</span>] poseen un significado similar
+a [<span style="font-weight: bold;">Guardar M</span>] y [<span style="font-weight: bold;">Cargar M</span>] que aparece en el menú de ALZADO; pero en
+lugar de salvar los ficheros&nbsp;ISPOL#.per, en este caso se salvan
+los&nbsp;ISFIR#.per que contienen las capas de firme, copiándolos en
+otra serie de archivos de nombre&nbsp;NN#.per para protegerlos de
+reescritura por otros cálculos posteriores, siendo NN
+el nombre base que da el usuario y # es el número de eje. Así mismo, el
+fichero donde se graban los nombres del paquete de ficheros salvados se
+denomina&nbsp;NN.mpf. Es necesario por tanto prestar atención al
+efectuar este guardado para que el nombre sea distinto para la serie de
+los&nbsp;ISPOL#.per que para estos&nbsp;ISFIR#.per.<br />
+      <br />
+      <br />
+      </a><a name="ensanche_refuerzo"><span class="Titulo_2">Paquetes de firmes para ensanche y refuerzo</span></a><br />
+
+
+      <br />
+
+
+      <img src="Imagenes/firmes_ensanche_refuerzo.png" style="width: 150px; height: 94px; margin-left: 7px;" alt="" align="right" />En los perfiles&nbsp;ISFIR#.per
+(siendo # el número de eje) se incluyen las superficie de calzada y
+subrasante existentes para facilitar el proceso de diseño e
+interpretación del paquete de firmes.<br />
+
+
+      <br />
+
+
+En cada sección de firme puede definirse su zona de utilización:<br />
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>En toda la sección</li>
+        <li>En ensanche</li>
+        <li>En refuerzo</li>
+      
+      
+      </ul>
+
+
+      Esto
+permite definir para proyectos de <a href="OL_EyM.html">ensanche y mejora</a> y en un mismo
+tramo, diferente sección de firmes en la zona de ensanche y en la zona
+de refuerzo (dos secciones con los mismos PK&#8217;s).<br />
+
+
+      <br />
+
+
+Si una misma capa aparece en las dos secciones (p.ej. rodadura), puede
+tener diferente espesor en la zona de ensanche que en la de refuerzo.
+Los materiales de regularización se incluirán solo en la sección de
+refuerzo y estarán deshabilitados en la casilla correspondiente de la
+sección para ensanche.<br />
+
+
+      <br />
+
+
+Si se desean diferentes secciones de firme en refuerzo y en ensanche se procederá del siguiente modo:<br />
+
+
+
+      
+      
+      <ul>
+
+
+        <li>Definir todas las secciones de firme en sección total o en ensanche en los diferentes tramos, ordenados por PK&#8217;s.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Después
+añadir al final las distintas secciones en refuerzo ordenadas en PK&#8217;s.
+Las secciones en refuerzo no tienen por qué abarcar todos los PK&#8217;s.</li>
+      
+      
+      </ul>
+
+
+      Ejemplo: Supóngase que se desea realizar un ensanche y mejora utilizando las siguientes capas de firme:<br />
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Rodadura de 10 cm en ensanche y 15 cm en refuerzo.</li>
+        <li>Intermedia de 10 cm sólo en ensanche.</li>
+        <li>Zahorra de 30 cm sólo en ensanche.</li>
+        <li>Cuña de regularización en refuerzo si es necesaria bajo la capa de rodadura hasta el firme existente.</li>
+        <li>Espesor mínimo del paquete de firmes de 50 cm (definido en el menú de subrasante).</li>
+      
+      
+      </ul>
+
+
+      Entonces se definirán dos secciones:<br />
+
+
+      <br />
+
+
+      
+      
+      
+      <table style="text-align: left; width: 694px; height: 120px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 321px; font-weight: bold; text-align: center;">Sección 1<br />
+            </td>
+            <td style="vertical-align: top; width: 321px; font-weight: bold; text-align: center;">Sección 2<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 321px; height: 90px;">Capa 1: Zahorra hasta 30 cm<br style="font-style: italic;" />
+            <br style="font-style: italic;" />
+            Capa 5: Intermedia hasta 40cm (10 cm de espesor)<br style="font-style: italic;" />
+            Capa 9: Rodadura hasta 50 cm (10 cm de espesor)<br />
+            </td>
+            <td style="vertical-align: top; width: 321px; height: 90px;"><br />
+            Capa 3: Cuña de regularización hasta 35 cm<br style="font-style: italic;" />
+            &nbsp;&nbsp;  <br style="font-style: italic;" />
+            Capa 9: Rodadura hasta 50 cm (15 cm de espesor)<br style="font-style: italic;" />
+            (si se desea medir por separado la rodadura en Refuerzo, entonces se puede asignar a la capa 8 en lugar de a la 9)<br />
+            </td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+      <br />
+      <div style="text-align: left;">Para perfiles con calzada
+existente, se incluye también en el archivo ISFIR.per, una replica
+(L337)&nbsp; de de la línea de Sobreexcavación (L107). Esto permite una
+medición correcta de los riegos sobre la superficie de apoyo separando
+lo que se asienta sobre firme nuevo o existente. Para obtener esta
+medición se debe ir al menú de Listados &gt; Mediciones &gt; <a href="OL_listados_mediciones.html#riegos">Áreas riegos</a>.<br />
+      </div>
+<br />
+
+
+      <br />
+
+
+      <a name="pautas"><span class="Titulo_2">Pautas a seguir para la generación de los paquetes de firmes de un proyecto</span></a><br />
+
+
+      <br />
+
+
+Como el programa, además de los listados para cada eje también genera
+listados de firmes conjuntos, impone una serie de restricciones a
+seguir por parte del usuario para la correcta definición y obtención de
+cubicaciones del conjunto de todos los paquetes de firmes de todos los
+ejes. Por tanto, se aconseja al usuario que, a la hora de definir los
+firmes del proyecto, siga los siguientes pasos:<br />
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Situado
+en un eje en donde se vayan a declarar firmes, crear el nombre de TODOS
+los materiales que vayan a intervenir en el proyecto,
+independientemente de si se usarán en la sección que se está definiendo
+o no, y respetando el orden constructivo. Es aconsejable dejar alguna
+capa sin usar para tenerla de &#8220;comodín&#8221; ante posibles modificados del
+proyecto.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Guardar esta sección tipo, que de momento sólo
+contendrá los nombres de los distintos materiales. Para ello se usará
+la opción [<span style="font-weight: bold;">Guardar 1</span>].</li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Crear
+las distintas secciones de firmes de cada eje, cargando para cada una
+el listado de materiales guardado en el paso anterior. Una alternativa
+a esto para cada eje es cargar la sección anterior en la primera
+posición y luego pulsar sobre [<span style="font-weight: bold;">Repet</span>] tantas veces como secciones de firmes adicionales vaya a haber en el eje.</li>
+      
+      
+      </ul>
+
+
+      
+      
+      
+      <ul>
+
+
+        <li>Definir la geometría de cada sección.</li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li>Tramficar las distintas secciones definidas.</li>
+
+      
+      
+      
+      </ul>
+
+Una manera rápida de hacer todo esto se puede lograr mediante el botón
+[<span style="font-weight: bold;">SECCION-&gt;GRUPO</span>]. Esta opción toma la sección actual de firmes y
+modifica los ficheros&nbsp;.vol del resto de ejes del mismo <a href="OL_grupos.html">grupo</a> cargando esta sección como la número 1. <br />También
+existe la posibilidad de&nbsp;copia todas las Secciones de Firme del
+eje actual, para todos los ejes de su mismo grupo sin alterar los
+tramos de aplicación, para lo cual se pulsaría el botón [<span class="Parf_negrita">SECCIONES-&gt;GRUPO</span>].<br />
+      <br />
+Tenemos la posibilidad de dar también un nombre a cada tramo de
+aplicación de los paquetes de firmes, de forma que para el BIM a cada
+componente se le pueden añadir dos propiedades: <span style="font-weight: bold;">Nombre de la Sección de Firme</span> y <span style="font-weight: bold;">Nombre del Tramo de aplicación</span>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nombre_firm01.png" style="width: 550px; height: 241px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nombre_firm02.png" style="width: 550px; height: 239px;" alt="" /><br />
+      </div>
+      <br />
+<span class="Parrafo"><span style="font-weight: bold;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

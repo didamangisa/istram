@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Diagrama de velocidades</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>DIAGRAMA DE VELOCIDADES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 6763px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <ul>
+        <li><a href="#carreteras">Diagrama de velocidades para carreteras</a></li>
+      </ul>
+      <ul>
+        <ul>
+          <li><a href="OL_balizamiento_de_curvas.html">Balizamiento en curvas</a><br />
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <li><a href="#ferrocarriles">Diagrama de velocidades para ferrocarriles</a></li>
+      </ul>
+<br />
+      <img src="Imagenes/acceso_diag_velocidades.png" style="width: 116px; height: 78px;" alt="" align="right" hspace="6" /><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL</span><sup><span class="Parrafo">®</span></sup><span class="Parrafo"> permite la
+generación de listados de
+diagramas de velocidades tanto para proyectos de <a href="#carreteras">carreteras</a> como de
+      <a href="#ferrocarriles">ferrocarriles</a>.<br />
+      <br />
+</span><span class="Parrafo Archivo"><span class="Parrafo">La obtención del
+diagrama de velocidades se efectúa a
+través del cuadro de diálogo que se muestra en ALZADO &#8594; <span style="font-weight: bold;">[UTILIDADES]</span> &#8594; <span style="font-weight: bold;">[DIAG. VELOCIDADES]</span>. </span></span><br />
+      <span class="Parrafo"><br />
+El cálculo conduce también a la representación del diagrama con el
+      <a href="OL_gui_terreno.html#diag_velocidades">perfil longitudinal</a> (plantilla&nbsp;<span class="Archivo">DiagVel.gui</span>) y, en el caso de&nbsp; ejes de carreteras, además también se puede hacer uso del diagrama para los <a href="OL_visibilidad.html">estudios de visibilidad</a>.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 691px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 25px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 646px; text-align: justify;"><span class="Parrafo Info">Tanto para la representación del <a href="OL_gui_terreno.html#diag_velocidades">diagrama de velocidades en los planos longitudinales</a>
+como para los estudios de visibilidad, el programa genera los ficheros
+DVdir#.dat y Dvinv#.dat (siendo # el número de eje) en la carpeta tmp
+con información necesaria.<br />
+            </span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /></span>Se permite generar los listados en formato &nbsp;.xlsx de hoja de cálculo.<br /><span class="Parrafo"><br />
+      </span><span class="Parrafo">Los DATOS DE ESTUDIO y los DATOS DEL VEHÍCULO solamente se inicializan al cambiar de eje.</span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="carreteras">Carreteras</a></span><br />
+      <span class="Parrafo"><br />
+Un uso habitual del diagrama de velocidades en el caso de proyectos de carretera es para el diseño de carriles
+de vehículos lentos. También permite realizar los <a href="OL_visibilidad.html">estudios de
+visibilidad</a> teniendo en cuenta las velocidades aquí determinadas. <br />
+      <br />
+El diagrama de velocidades se calcula como la velocidad máxima a la que
+un vehículo puede circular por un eje. Esta velocidad máxima es siempre
+la más pequeña de las siguientes:<br /></span>
+      <ul>
+        <li><span class="Parrafo">
+La máxima velocidad a la que el vehículo puede
+llegar en función de sus características mecánicas. Para un vehículo
+concreto, esta velocidad depende de la velocidad inicial y del perfil
+longitudinal del trazado, es decir, depende de la geometría del EJE EN
+ALZADO (pendientes, rampas y acuerdos verticales).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La velocidad específica, que depende del radio,
+del peralte y del coeficiente de rozamiento transversal, y por lo tanto
+es función de la geometría del EJE EN PLANTA.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Velocidad máxima obligada por otros condicionantes
+en zonas urbanas, cruces, etc., independiente de la geometría del
+trazado.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Velocidad máxima a la que debe circular el
+vehículo para poder ser capaz de frenar antes de llegar a puntos con
+una velocidad especifica inferior.</span></li>
+      </ul>
+      <span class="Parrafo">
+      
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diagrama_velocidades_carreteras.png" style="width: 574px; height: 316px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      El menú permite utilizar cinco diferentes tipos de vehículos:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Vehículo pesado de la norma española 3.1 I.C</span>:
+El comportamiento de este vehículo sigue el gráfico de la citada
+instrucción, donde se representan diferentes curvas longitud/velocidad
+para diferentes pendientes. Si como consecuencia de una disminución de
+la velocidad específica del trazado o de una limitación de velocidad
+impuesta por el usuario el vehículo se ve obligado a frenar, se utiliza
+para el cálculo de la deceleración la fórmula de la distancia de parada
+recogida en la misma instrucción:</span></li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/diag_velocidades_formula.png" style="width: 533px; height: 96px;" alt="" /><br />
+      </div>
+      </span><span class="Parrafo"><br /></span><div style="margin-left: 40px;">Estas curvas vienen dadas por los archivos&nbsp;del Vehículo Pesado 3.1-IC 2016 vp80.gad y 3.1-IC_2016_V100.gad.</div><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span><ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Automóviles</span>: El comportamiento de los automóviles se deduce a partir de las siguientes tres características:<br />
+          <br />
+          </span>
+          <ol>
+            <li><span class="Parrafo">Velocidad máxima en km/h</span></li>
+            <li><span class="Parrafo">Tiempo en segundos para pasar de 0 a 100 km/h</span></li>
+            <li><span class="Parrafo">Tiempo en recorrer 1000 metros desde el reposo</span></li>
+          </ol>
+          <span class="Parrafo"><br />
+Se incluye una tabla con estas características para 13 diferentes
+modelos comerciales. El vehículo ligero de la norma es el SEAT Ibiza de
+100 CV. Adicionalmente se debe introducir un valor de deceleración en
+caso de frenada en m/s<sup>2</sup>. Si no se introduce aquí ningún valor positivo se utiliza la misma fórmula de la distancia de parada.<br />
+          <br />
+El usuario puede introducir otros valores diferentes para estas tres características siempre que sean coherentes entre sí.<br />
+</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Camiones</span>:
+El comportamiento de los camiones se deduce a partir de cuatro datos de
+tiempo empleado en alcanzar cuatro diferentes velocidades desde el
+reposo.<br />
+          <br />
+Se incluye una tabla con ocho diferentes modelos comerciales, para los
+que se incluyen los tiempos en alcanzar 60, 70, 80 y 85 km/h.<br />
+          <br />
+Así mismo debe introducirse en este caso una limitación de velocidad,
+que por defecto es de 90 km/h. Y como en el caso de los automóviles,
+también es posible introducir un valor para la deceleración en caso de
+frenada, de lo contrario se utilizará la fórmula de la distancia de
+parada.</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">Vehículo Pesado Highway Capacity 2000</span>: Este vehículo tiene una velocidad máxima de 90 km/h y puede utilizarse para pendientes comprendidas entre -8.0% y 8.0%.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Gráfico de aceleraciones y deceleraciones</span>: Estos gráficos se definen en archivos de librería&nbsp;<span class="Archivo">.gad</span>. Se incluye el archivo&nbsp;<span class="Archivo">HighwayCapacity2000.gad.</span> Podemos editar el fichero mediante <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" />.<br />
+          <img src="Imagenes/diag_vel_higway.png" style="width: 168px; height: 133px;" alt="" align="right" hspace="6" />El archivo debe incluir:<br />
+          <ul>
+            <li>Nombre del gráfico</li>
+          </ul>
+          <ul>
+            <li>Número de curvas que lo componen</li>
+          </ul>
+          <ul>
+            <li>Para cada una de las curvas:</li>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Pendiente&nbsp; (deben darse las curvas en orden creciente de pendientes,p.e. -5,-4,-3,-2,-1,0,1,2.....)<br />
+              </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Velocidad máxima permitida para esa pendiente.</li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Número de puntos. No es necesario definir muchos puntos, pues las curvas se suavizan antes de utilizarse.<br />
+              </li>
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <li>&nbsp;Puntos de las curvas&nbsp; Velocidad/Distancia recorrida.</li>
+            </ul>
+          </ul>
+Para las pendientes negativas y 0 la velocidad y distancia siempre crecientes, (curva de aceleración).<br />
+No es necesario seguir dando puntos por encima de la velocidad máxima.<br />
+Para las pendientes positivas las distancias crecen hasta la velocidad
+máxima (curva de aceleración) y luego decrecen (curva de deceleración).<br />
+Las curvas de deceleración suelen hacerse todas hasta una misma velocidad inicial 80,90 o 100.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">Datos de estudio</span><br />
+      <span class="Parrafo"><br />
+Debe seleccionarse aquí una tabla de diseño de planta (<span class="Archivo">.dip</span>) que incluya las <span style="font-weight: bold;">velocidades específicas</span> en función del radio, así como el <span style="font-weight: bold;">coeficiente de rozamiento longitudinal y transversal</span> relacionado también con la velocidad.<br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">
+......</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+      </span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp; Radio&nbsp;&nbsp;&nbsp; Peralte&nbsp;&nbsp;
+Arecom&nbsp;&nbsp; Aminimo&nbsp; LonClo&nbsp; VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp; RsMin RsMax&nbsp;&nbsp;&nbsp; fl</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+# ---------&nbsp; -------&nbsp; -------- --------&nbsp; ------- ------ ------ ----- ----- -------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 670.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 291.&nbsp;&nbsp;&nbsp;&nbsp;
+245.&nbsp;&nbsp;&nbsp; 89.6&nbsp; 110.0&nbsp;&nbsp; 0.0955&nbsp; 300.
+2000. 0.30600</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 570.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 258.&nbsp;&nbsp;&nbsp;&nbsp;
+217.&nbsp;&nbsp;&nbsp; 82.7&nbsp; 105.0&nbsp;&nbsp; 0.0999&nbsp; 278.
+2000. 0.31300</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 485.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 229.&nbsp;&nbsp;&nbsp;&nbsp;
+192.&nbsp;&nbsp;&nbsp; 76.3&nbsp; 100.0&nbsp;&nbsp; 0.1039&nbsp; 255.
+2000. 0.32000</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 410.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 202.&nbsp;&nbsp;&nbsp;&nbsp;
+170.&nbsp;&nbsp;&nbsp; 70.1&nbsp;&nbsp; 95.0&nbsp;&nbsp; 0.1083&nbsp;
+231. 2000. 0.32700</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 350.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 179.&nbsp;&nbsp;&nbsp;&nbsp;
+151.&nbsp;&nbsp;&nbsp; 64.8&nbsp;&nbsp; 90.0&nbsp;&nbsp; 0.1122&nbsp;
+208. 2000. 0.33400</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 305.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 162.&nbsp;&nbsp;&nbsp;&nbsp;
+136.&nbsp;&nbsp;&nbsp; 60.5&nbsp;&nbsp; 85.0&nbsp;&nbsp; 0.1165&nbsp;
+188.&nbsp; 670. 0.34100</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 265.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 145.&nbsp;&nbsp;&nbsp;&nbsp;
+122.&nbsp;&nbsp;&nbsp; 56.4&nbsp;&nbsp; 80.0&nbsp;&nbsp; 0.1202&nbsp;
+168.&nbsp; 522. 0.34800</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 225.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 129.&nbsp;&nbsp;&nbsp;&nbsp;
+108.&nbsp;&nbsp;&nbsp; 51.9&nbsp;&nbsp; 75.0&nbsp;&nbsp; 0.1269&nbsp;
+146.&nbsp; 395. 0.35850</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 190.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 113.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+95.&nbsp;&nbsp;&nbsp; 47.7&nbsp;&nbsp; 70.0&nbsp;&nbsp; 0.1331&nbsp;
+125.&nbsp; 309. 0.36900</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 155.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+97.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 82.&nbsp;&nbsp;&nbsp;
+43.1&nbsp;&nbsp; 65.0&nbsp;&nbsp; 0.1446&nbsp; 103.&nbsp; 241. 0.37950</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 130.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+85.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 72.&nbsp;&nbsp;&nbsp;
+39.5&nbsp;&nbsp; 60.0&nbsp;&nbsp; 0.1480&nbsp;&nbsp; 87.&nbsp; 198.
+0.39000</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 105.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+73.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 61.&nbsp;&nbsp;&nbsp;
+35.5&nbsp;&nbsp; 55.0&nbsp;&nbsp; 0.1568&nbsp;&nbsp; 70.&nbsp; 159.
+0.40050</span></span><br />
+      <span class="Parrafo"><span class="Archivo" /></span></div>
+      <span class="Parrafo"><span class="Archivo">
+      <br /></span>
+Existen dos formas de determinar la velocidad específica:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">
+Velocidad específica según el radio</span>: Para el radio
+en planta del trazado se extrae el valor de la velocidad específica que
+le corresponde según la tabla.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+      <span style="font-weight: bold;">Velocidad específica según el radio y el peralte</span>:
+Se determina a partir de la tabla de diseño la pareja Vesp y ft que
+cumplen la fórmula:</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diag_velocidades_formula2.png" style="width: 465px; height: 55px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+Esto sirve para casos en los que el peralte no se corresponde con el
+radio, en proyectos de refuerzo o en aquellos casos en los que no se ha
+podido implementar correctamente el peralte según la norma.<br />
+      <br />
+En el listado, además de la velocidad específica seleccionada, aparece
+una columna que imprime la velocidad específica obtenida a partir
+exclusivamente del radio, para permitir comparaciones.<br />
+      </span><br />
+      <span class="Parrafo">Aparte de lo anterior, se deben declarar los siguientes datos:</span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">PK inicial</span> y <span style="font-weight: bold;">PK final</span>, que delimitan la zona a estudiar.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Equidistancia</span> para la generación de listados y puntos del perfil longitudinal.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Velocidad inicial</span> en el PK inicial para el estudio del diagrama en <span style="font-weight: bold;">sentido directo</span>.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Velocidad inicial</span> en el PK final para el estudio del diagrama en <span style="font-weight: bold;">sentido inverso</span>.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tiempo inicial</span>, que define el origen de tiempos.</span></li>
+        <li><span class="Parrafo">Paso de simulación (<span style="font-weight: bold;">dT</span>),
+que puede variar entre 0.001 y 1.000 segundos. Cuanto mayor sea este valor
+más rápido se genera el listado, pero con menor precisión.</span></li>
+      </ul>
+      <span class="Parrafo">Si se activa la opción <span style="font-weight: bold; font-style: italic;">Anticipar la frenada</span>,
+el programa analiza en aquellos puntos donde baja bruscamente la
+velocidad específica, dónde debe empezar a frenar el vehículo para que
+no pase en ningún momento por encima de la velocidad específica o
+limitada por el usuario. Con la opción desactivada, el vehículo
+comienza a frenar cuando baja la velocidad específica o limitada por el
+usuario, de modo que si la disminución es muy brusca puede estar en
+algunos tramos por encima de ésta.<br />
+      <br />
+El cuadro correspondiente a la <span style="font-weight: bold;">LIMITACIÓN SEGÚN PK</span>
+permite definir dos tablas, una para el estudio en el recorrido en
+sentido directo y otra para el de sentido inverso. En estas tablas el
+usuario puede introducir limitaciones de velocidad en diferentes PK´s
+del trazado. Hay que tener en cuenta que entre dos valores de la tabla
+el programa interpola linealmente los valores de velocidad, por lo que
+si se introducen datos de limitaciones puntuales, hay que introducir
+también datos para restablecer las velocidades nominales. Por ejemplo
+si se desea limitar la velocidad a 50 km/h en los tramos 400-500 y
+800-900, se introducirá:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 154px; height: 160px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 69px; font-weight: bold; text-align: center;">PK<br />
+            </td>
+            <td style="vertical-align: top; width: 65px; font-weight: bold; text-align: center;">Velocidad<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 69px; text-align: center;">0<br />
+399<br />
+400<br />
+500<br />
+501<br />
+799<br />
+800<br />
+900<br />
+901<br />
+            </td>
+            <td style="vertical-align: top; width: 65px; text-align: center;">120<br />
+120<br />
+50<br />
+50<br />
+120<br />
+120<br />
+50<br />
+50<br />
+120<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />El botón <span style="font-weight: bold;">[D-&gt;I]</span> permite copiar los datos de limitación según PK del sentido directo sobre el inverso.<br />
+      <br />
+Si no se introduce ninguna limitación según PK&#8217;s, el programa asume 250 km/h en todo el eje.<br />
+      <br />
+Una vez establecidos los datos del estudio, el botón <span style="font-weight: bold;">[GENERAR]</span>
+calcula el diagrama de velocidades en los sentidos directo e inverso y
+genera el listado&nbsp;<span class="Archivo">diagv.res</span> con la siguiente información:<br /></span>
+      <ul>
+        <li><span class="Parrafo">PK</span></li>
+        <li><span class="Parrafo">Tiempo, en s</span></li>
+        <li><span class="Parrafo">Velocidad, en km/h</span></li>
+        <li><span class="Parrafo">Velocidad específica, en km/h</span></li>
+        <li><span class="Parrafo">Velocidad límite, en km/h</span></li>
+        <li><span class="Parrafo">Radio, en m</span></li>
+        <li><span class="Parrafo">Pendiente, en mm/m (tanto por uno)</span></li>
+        <li><span class="Parrafo">Velocidad específica según el radio, en km/h</span></li>
+        <li><span class="Parrafo">Aceleración instantánea, en m/s<sup>2</sup></span></li>
+      </ul>
+      <span class="Parrafo Archivo">
+      <div style="margin-left: 40px;"><span class="Parrafo Archivo">&nbsp; ******************************************************************************</span><br />
+      <span class="Parrafo Archivo">&nbsp;
+* *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DIAGRAMA DE
+VELOCIDADES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *</span><br />
+      <span class="Parrafo Archivo">&nbsp; * *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PK.
+crecientes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *</span><br />
+      <span class="Parrafo Archivo">&nbsp; ******************************************************************************</span><br />
+      <span class="Parrafo Archivo"><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; DATOS DEL VEHICULO:&nbsp;&nbsp;&nbsp; Vehiculo Pesado de la Norma 3.1-IC</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; P.K. Inicial...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.000</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; P.K. Final.....:&nbsp;&nbsp;&nbsp;&nbsp; 800.510</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; Equidistancia..:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.000</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; Vel. Inicial...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp; T. Inicial.....:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo"><br />
+      <span class="Parrafo Archivo">&nbsp;P.K.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+t (sg)&nbsp;&nbsp; v (km/h) v.espec. v.limit.
+Radio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i(mm/m)&nbsp; v.esp(R) a
+(m/s2)</span><br />
+      <span class="Parrafo Archivo">&nbsp;----------- -------- -------- -------- -------- ----------- -------- -------- --------</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; 168.30&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;
+-8.051&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+20.000&nbsp;&nbsp;&nbsp;&nbsp; 6.03&nbsp;&nbsp;&nbsp; 26.39&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -8.051&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 1.36</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40.000&nbsp;&nbsp;&nbsp;&nbsp; 8.31&nbsp;&nbsp;&nbsp; 36.51&nbsp;&nbsp;
+153.86&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp; 2428.07&nbsp;&nbsp;
+-8.051&nbsp;&nbsp; 153.86&nbsp;&nbsp;&nbsp;&nbsp; 1.17</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+60.000&nbsp;&nbsp;&nbsp; 10.15&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 89.89&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 347.10&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 89.89&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+80.000&nbsp;&nbsp;&nbsp; 11.95&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 69.96&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 186.91&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 69.96&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+100.000&nbsp;&nbsp;&nbsp; 13.75&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+120.000&nbsp;&nbsp;&nbsp; 15.55&nbsp;&nbsp;&nbsp;
+40.00&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-8.051&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+140.000&nbsp;&nbsp;&nbsp; 17.32&nbsp;&nbsp;&nbsp;
+42.89&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-7.168&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 1.09</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+160.000&nbsp;&nbsp;&nbsp; 18.89&nbsp;&nbsp;&nbsp;
+48.41&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150.00&nbsp;&nbsp;
+-5.168&nbsp;&nbsp;&nbsp; 64.00&nbsp;&nbsp;&nbsp;&nbsp; 0.84</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+180.000&nbsp;&nbsp;&nbsp; 20.32&nbsp;&nbsp;&nbsp;
+52.40&nbsp;&nbsp;&nbsp; 64.87&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 155.21&nbsp;&nbsp;
+-4.569&nbsp;&nbsp;&nbsp; 64.87&nbsp;&nbsp;&nbsp;&nbsp; 0.75</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+200.000&nbsp;&nbsp;&nbsp; 21.65&nbsp;&nbsp;&nbsp;
+55.94&nbsp;&nbsp;&nbsp; 78.70&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 251.64&nbsp;&nbsp;
+-4.569&nbsp;&nbsp;&nbsp; 78.70&nbsp;&nbsp;&nbsp;&nbsp; 0.73</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+220.000&nbsp;&nbsp;&nbsp; 22.90&nbsp;&nbsp;&nbsp; 59.17&nbsp;&nbsp;
+109.70&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+664.54&nbsp;&nbsp; -4.569&nbsp;&nbsp; 109.70&nbsp;&nbsp;&nbsp;&nbsp;
+0.71</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+240.000&nbsp;&nbsp;&nbsp; 24.09&nbsp;&nbsp;&nbsp; 62.19&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.70</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+260.000&nbsp;&nbsp;&nbsp; 25.22&nbsp;&nbsp;&nbsp; 65.02&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.69</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+280.000&nbsp;&nbsp;&nbsp; 26.30&nbsp;&nbsp;&nbsp; 67.64&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.66</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+300.000&nbsp;&nbsp;&nbsp; 27.35&nbsp;&nbsp;&nbsp; 70.10&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.67</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+320.000&nbsp;&nbsp;&nbsp; 28.37&nbsp;&nbsp;&nbsp; 70.73&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+340.000&nbsp;&nbsp;&nbsp; 29.39&nbsp;&nbsp;&nbsp; 70.73&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+360.000&nbsp;&nbsp;&nbsp; 30.40&nbsp;&nbsp;&nbsp; 70.73&nbsp;&nbsp;
+168.30&nbsp;&nbsp; 250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp; -4.569&nbsp;&nbsp; 168.30&nbsp;&nbsp;&nbsp;&nbsp; 0.00</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;
+380.000&nbsp;&nbsp;&nbsp; 31.44&nbsp;&nbsp;&nbsp;
+66.19&nbsp;&nbsp;&nbsp; 70.96&nbsp;&nbsp;
+250.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 193.67&nbsp;&nbsp;
+-4.569&nbsp;&nbsp;&nbsp; 70.96&nbsp;&nbsp;&nbsp; -3.16</span><br />
+      <span class="Parrafo Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span><br />
+      <span class="Parrafo Archivo" /></span></span></div>
+      </span></span><br />
+Ahora podríamos pasar a realizar el <a href="OL_balizamiento_de_curvas.html">balizamiento de las curvas</a>.<br /><br /><span class="Parrafo"><span class="Parrafo Archivo"><span class="Archivo">
+<br />
+      </span><span class="Titulo_2"><a name="ferrocarriles">Ferrocarriles</a></span><br />
+      <span class="Parrafo"><br />Para
+el cálculo del diagrama de velocidades en proyectos de ferrocarriles es
+necesario que el eje tenga asociada una tabla de diseño de planta
+(<span class="Archivo">.dip</span>) específica de este tipo de ejes.<br />
+      <br />
+La velocidad Vp que se usa en cada curva es la Vp forzada en el <a href="OL_ffcc_planta.html#peralte_velocidad_obligados">nonograma</a> <span style="font-weight: bold;">[P%]</span> del menú de Planta. Si no está definida, se utiliza la de la <a href="OL_ffcc_planta.html#velocidad_proyecto">tabla de tramos</a> <span style="font-weight: bold;">[Tramos Vp]</span> en la pestaña <a href="OL_general.html">General</a>. Y si no estuviera definida en los casos anteriores se leería la Vp del eje en el menú General.<br />
+Cuando se calculan los peraltes en su tabla, se tienen en cuenta los
+que vienen obligados del nonograma [P%] del menú de Planta (guardados
+en el&nbsp;<span class="Archivo">.cej</span> fichero en el que se guardan los ejes en planta).<br />
+      <br />
+En este diagrama podremos seleccionar dos opciones para el cálculo de la Velocidad específica:<br />
+</span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Radio</span>: Calcula el peralte teórico a partir de la Vp, el Radio...</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Radio + Peralte</span>: Se usa el peralte definido en la <a href="OL_ffcc_peraltes_via.html">ley de peraltes</a> de alzado.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo"><img src="Imagenes/diagrama_velocidades_ferrocarriles.png" style="width: 600px; height: 221px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo Archivo"><span class="Parrafo">
+      <br />
+Para el cálculo de la velocidad especifica que también limita la
+velocidad de recorrido se comprueba también los valores de aceleración
+no compensada definidos en la tabla de diseño.<br />
+<br />
+El botón <span style="font-weight: bold;">[EDITAR DATOS]</span> da
+acceso a otro cuadro de diálogo en el que se deben configurar todos los
+datos relativos al material rodante. Estos datos se pueden <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> en ficheros de extensión&nbsp;<span class="Archivo">.trn</span>.<br />
+      <br />
+En el archivo de configuración para el estudio del diagrama de
+velocidades, se guarda también el fichero .trn empleado con las
+características del tren.<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 29px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 643px; text-align: justify;"><span class="Info">En
+la librería básica del programa se incluyen algunos ejemplos
+orientativos de material rodante (talgo4000_350.trn, alaris_MRM.trn,
+caf444_500.trn, caf_civia2.trn).</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diagrama_velocidades_ferrocarriles2.png" style="width: 615px; height: 273px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Estos datos incluyen:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Pares de puntos <span style="font-weight: bold;">V</span>-<span style="font-weight: bold;">Ft</span>, siendo <span style="font-weight: bold;">V</span> la velocidad (en km/h) y <span style="font-weight: bold;">Ft</span> la fuerza de tracción (en kN), lo que permite definir la curva de tracción (en azul).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Deceleración (en m/s<sup>2</sup>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Peso (<span style="font-weight: bold;">Pl</span>, en Tm) y número de ejes (<span style="font-weight: bold;">ne</span>) de la locomotora.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Coeficientes (A0, A1 ,A2, B, C) para el cálculo de la resistencia al avance de la locomotora (<span style="font-weight: bold;">Rl</span>), de tal forma que:</span></li>
+      </ul>
+      <div style="margin-left: 80px;"><span class="Parrafo">Rl = (A0 + A1&#8226;Pl + A2&#8226;ne) + (B0 + B1&#8226;Pl)&#8226;V + C&#8226;V<sup>2</sup></span></div>
+      <ul>
+        <li><span class="Parrafo">Peso del material remolcado (<span style="font-weight: bold;">Pc</span>, en Tm) del material remolcado.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Coeficientes para el cálculo de la resistencia al avance del material remolcado (<span style="font-weight: bold;">ka</span> y <span style="font-weight: bold;">kb</span>), diferenciando para pasajeros y mercancías.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Coeficiente de adherencia y coeficientes para su cálculo en función de la velocidad (m0, a, b, c).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Masas rotativas (<span style="font-weight: bold;">Mr</span>, en Tm).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Resistencias locales en el paso por curva (<span style="font-weight: bold;">Kc</span>), pendiente (<span style="font-weight: bold;">Rp</span>) y paso por túnel (<span style="font-weight: bold;">Kt</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Aceleración máxima (<span style="font-weight: bold;">a_max</span>, en m/s<sup>2</sup>), como limitación por razón de confort.</span></li>
+      </ul>
+      <span class="Parrafo">El resto de opciones para el cálculo del diagrama de velocidades en
+proyectos de ferrocarril funciona de forma similar al caso de proyectos
+de <a href="OL_diagrama_de_velocidades.html#carreteras">carreteras</a>.<br />
+      <br />
+      <span style="font-weight: bold;">Curvas de Frenado</span>:<br />
+      <br />
+Disponemos en la librería dos archivos TranviaZCC.trn y Tranvia.ZSC.trn
+que incluyen la definición de la curva Velicidad/Fuerza para el freno
+eléctrico. En la simulación, si la deceleración que se consigue es
+mayor que la máxima definida, se utiliza la máxima.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/curvas_fren.png" style="width: 592px; height: 263px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span>
+
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tiempos_parada2.png" style="width: 197px; height: 217px;" alt="" align="left" hspace="6" />El programa también permite simular <span style="font-weight: bold;">tiempos de parada</span>. Se puede definir un tiempo determinado de parada dando un valor negativo en la columna <span style="font-weight: bold;">Vel(km/h)</span>.
+El programa entenderá que es el tiempo en segundos de parada. No es
+necesario poner delante y detrás de estos PKs otros datos para
+recuperar la velocidad. <br />
+En el listado de resultados además de los PKs equidistantes se imprimen los PKs de la tabla de velocidades limitadas y paradas.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <img src="Imagenes/tiempos_parada.png" style="width: 184px; height: 203px;" alt="" align="right" hspace="6" />Otra
+posibilidad de aplicar tiempos de parada podría ser a partir del
+siguiente ejemplo. Sería la detención de un tren en una estación
+situada en el PK 4+000 donde permanecerá cinco minutos, y de tal forma
+que en la frenada se aproveche la máxima capacidad del freno y en el
+arranque la máxima capacidad de tracción. Entonces el cuadro de
+velocidades limitadas por PK&#8217;s presentará el aspecto que se muestra en
+la figura, cuya lectura será:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 50px; width: 512px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 42px; text-align: center; font-weight: bold;">Dato<br />
+            </td>
+            <td style="vertical-align: top; width: 71px; text-align: center; font-weight: bold;">PK<br />
+            </td>
+            <td style="vertical-align: top; width: 79px; text-align: center; font-weight: bold;">Velocidad<br />
+            </td>
+            <td style="vertical-align: top; width: 284px; text-align: center; font-weight: bold;">Significado<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 42px; text-align: center;">1<br />
+2<br />
+3<br />
+4<br />
+            </td>
+            <td style="vertical-align: top; width: 71px; text-align: center;">0.000<br />
+3990.000<br />
+4000.000<br />
+4010.000<br />
+            </td>
+            <td style="vertical-align: top; width: 79px; text-align: center;">200<br />
+200<br />
+-300<br />
+200<br />
+            </td>
+            <td style="vertical-align: top; width: 284px;">Velocidad máxima de este tren<br />
+El tren comenzará a frenar mucho antes de aquí<br />
+Tiempo de espera = 300 segundos, negativo<br />
+Velocidad máxima<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      En el tramo 0-3990, la velocidad máxima será de 200 km/h, pero para
+poder pararse en el PK 4000, el tren comenzará a frenar mucho antes del
+PK 3990, por lo que se pone un PK próximo antes y después del punto de
+parada. Si no se hiciera esto y se hubiera indicado:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 50px; width: 220px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 42px; font-weight: bold; text-align: center;">Dato<br />
+            </td>
+            <td style="vertical-align: top; width: 70px; font-weight: bold; text-align: center;">PK<br />
+            </td>
+            <td style="vertical-align: top; width: 82px; font-weight: bold; text-align: center;">Velocidad<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 42px; text-align: center;">1<br />
+2<br />
+            </td>
+            <td style="vertical-align: top; width: 70px; text-align: center;">0.000<br />
+4000.000<br />
+            </td>
+            <td style="vertical-align: top; width: 82px; text-align: center;">200<br />
+-300<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Entonces el programa interpolará para PK&#8217;s intermedios velocidades máximas comprendidas entre 200 y 0 km/h.<br />
+      <br />
+</span></span><span class="Parrafo"><span class="Parrafo">El botón <span style="font-weight: bold;">[D-&gt;I]</span> permite copiar los datos de tiempos de parada del sentido directo sobre el inverso.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />Una vez establecidos los datos del estudio, el botón [<span class="Parf_negrita">GENERAR</span>]
+calcula el diagrama de velocidades en los sentidos directo e inverso y
+genera los listados. Cuando debido a la pendiente, el tren no puede
+avanzar o no es capaz de anticipar la frenada se muestra un mensaje y
+se abandona la simulación en ese punto.<br /><br /></span><span class="Parrafo">A continuación, se muestra un ejemplo de un diagrama de velocidades para ferrocarriles que incluye los siguientes parámetros:<br /></span></span><ul><li>P.K.</li><li>t (seg) = Tiempo (segundos).</li><li>v (km/h) = Velocidad instantánea (km/h).</li><li>v.espec. = Velocidad específica (km/h).</li><li>v.limt. = Velocidad límite (km/h).</li><li>Radio (m).</li><li>i (mm/m) = Pendiente longitudinal (mm/m).</li><li>F-R (kN) = Tracción - Resistencia al avance (kN).</li><li>a (m/s2) = Aceleración instantánea (m/s2).</li><li>H (mm) = Peralte (mm).</li><li>ANC (m/s2) = Aceleración no compensada (m/s2).</li><li>R (kN) = Resistencia al avance (kN).</li></ul><span class="Parrafo"><span class="Parrafo">
+      <br /></span><div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">&nbsp;<small><br />&nbsp; ******************************************************************************<br />&nbsp;
+* *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DIAGRAMA DE
+VELOCIDADES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *<br />&nbsp; * *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PK.
+crecientes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *<br />&nbsp; ******************************************************************************<br /><br />&nbsp;&nbsp; TREN: Tren imaginario, datos por defecto<br />&nbsp;&nbsp; P.K. Inicial...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 70.000<br />&nbsp;&nbsp; P.K. Final.....:&nbsp;&nbsp; 15979.792<br />&nbsp;&nbsp; Equidistancia..:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.000<br />&nbsp;&nbsp; Vel. Inicial...:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00<br />&nbsp;&nbsp; T. Inicial.....:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00<br /><br /></small></span></span><div style="text-align: justify;"><div style="text-align: left;"><span class="Parrafo"><span class="Archivo"><small>&nbsp;P.K. &nbsp;&nbsp;
+t (sg)&nbsp;&nbsp; v (km/h) v.espec. v.limit.
+Radio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i(mm/m)&nbsp; F-R(kN)&nbsp; a
+(m/s2) H(mm) ANC(m/s2) R (kN)&nbsp; </small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;----
+&nbsp; ------ &nbsp;&nbsp;-------- &nbsp;-------- -------- -----------
+-------- -------- -------- ----- --------- --------</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;70.00 &nbsp; &nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp; 0.00</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;80.00&nbsp; &nbsp; &nbsp; 5.89&nbsp;&nbsp;&nbsp;
+17.64&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 508.11&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-210.52</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;100.00&nbsp;&nbsp;&nbsp;&nbsp; 8.88&nbsp;&nbsp;&nbsp;
+30.55&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 505.67&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-209.85</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;120.00&nbsp;&nbsp;&nbsp;
+10.94&nbsp;&nbsp;&nbsp; 39.44&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 503.80&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-209.20</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;140.00&nbsp;&nbsp;&nbsp;
+12.61&nbsp;&nbsp;&nbsp; 46.66&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 502.17&nbsp;&nbsp;&nbsp;&nbsp;
+1.20&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-208.56</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;160.00&nbsp;&nbsp;&nbsp;
+14.08&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-60.000&nbsp;&nbsp; 501.38&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-208.23</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;180.00&nbsp;&nbsp;&nbsp;
+15.52&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-50.956&nbsp;&nbsp; 468.55&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-175.40</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;200.00&nbsp;&nbsp;&nbsp;
+16.96&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-30.956&nbsp;&nbsp; 395.96&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;
+-102.81</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;220.00&nbsp;&nbsp;&nbsp;
+18.40&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;
+-10.956&nbsp;&nbsp; 323.36&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp; -30.21</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;240.00&nbsp;&nbsp;&nbsp; 19.84&nbsp;&nbsp;&nbsp;
+50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp; 1277.20&nbsp;&nbsp;&nbsp;
+9.044&nbsp;&nbsp; 248.49&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp;&nbsp; 0.075&nbsp;&nbsp;&nbsp; 44.66</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;260.00&nbsp;&nbsp;&nbsp; 21.28&nbsp;&nbsp;&nbsp;
+50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 206.27&nbsp;&nbsp;
+19.000&nbsp;&nbsp; 200.63&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp; 72&nbsp;&nbsp;&nbsp;&nbsp;
+0.467&nbsp;&nbsp;&nbsp; 92.52</small></span></span><br /><span class="Parrafo"><span class="Archivo"><small>&nbsp;280.00&nbsp;&nbsp;&nbsp; 22.72&nbsp;&nbsp;&nbsp;
+50.00&nbsp;&nbsp;&nbsp; 50.00&nbsp;&nbsp;
+500.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 123.00&nbsp;&nbsp;
+19.000&nbsp;&nbsp; 191.02&nbsp;&nbsp;&nbsp;&nbsp; 0.00&nbsp;&nbsp;
+120&nbsp;&nbsp;&nbsp;&nbsp; 0.784&nbsp;&nbsp; 102.13</small></span></span><br /></div><span class="Parrafo"><span class="Archivo" /></span></div><span class="Parrafo"><span class="Archivo"><br /></span></span></div></span></td></tr></tbody></table></body></html>

@@ -1,0 +1,2056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>ES_31IC_rev2016.dip</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css"></head><body class="Archivo">
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio"></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30"></a> <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30"> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30"> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30"> </a><a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30"></a></span> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TABLA DE DISEÑO EN PLANTA
+ES_31IC_rev2016.dip<br>
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<div style="margin-left: 40px;"># TADISPLA<br>
+####################################################################################<br>
+# fichero:&nbsp; ES_31_IC_rev2016.dip, es copia del
+ES_31_IC_rev2015.dip : 2015 rev.&nbsp; a #<br>
+#
+--------------------------------------------------------------------------------
+#<br>
+#
+TIPO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp; .dip&nbsp; :TABLA Y FORMULACIÓN PARA DISEÑO DEL EJE EN
+PLANTA&nbsp;&nbsp;&nbsp; #<br>
+# CONTENIDO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;
+Normativa Española completa GRUPOS I, II y
+III&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>#
+NORMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp; 3.1-IC Marzo
+2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# FECHA DE CREACIÓN :&nbsp; Marzo 2015 (revisión
+a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# FECHA DE MODIF.&nbsp;&nbsp; :&nbsp; Mayo 2018 Corregida tabla de
+calculo de longitud de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# clotoides por la variacion de la aceleracion centrífuga. Los valores
+de la tabla #<br>
+# son de 0.5 para Ve &lt; 80 y de 0.4 para Ve=80 o mayor. Corregida la
+tabla.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#
+--------------------------------------------------------------------------------
+#<br>
+# No utilizar para valores fuera del ámbito
+indicado.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+####################################################################################<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Revision de ISTRAM <br>
+# ---&nbsp; -------------------<br>
+&nbsp; REV&nbsp; 900<br>
+####################################################################################<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Comentario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# ---&nbsp;
+---------------------------------------------------------------------------
+#<br>
+&nbsp; COM&nbsp; Norma Española 3.1 IC 2016 (Grupos I II y III)
+revisión 2016<br>
+&nbsp; NORMA ESPAÑA<br>
+# ---&nbsp;
+---------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+================================================================================
+#<br>
+# DEFINICIÓN DE LOS TIPOS DE TRAZADO (máximo 10) Y SUS
+PARÁMETROS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+================================================================================
+#<br>
+#&nbsp;&nbsp;&nbsp; TÍTULO DEL
+TIPO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VMIN - VMAX&nbsp;&nbsp; V+ *&nbsp; AC**&nbsp;&nbsp; PB***&nbsp; V**** #<br>
+#&nbsp;&nbsp;&nbsp; -------------------------------------
+----&nbsp;&nbsp; ----&nbsp; ----- -----&nbsp; ------&nbsp; ------#<br>
+&nbsp;GR_T&nbsp; &lt;Autov y autop A140 A130 (Gr
+I)&gt;&nbsp;&nbsp;&nbsp;&nbsp; 130&nbsp;&nbsp; 140&nbsp;&nbsp;&nbsp;
+00&nbsp;&nbsp;&nbsp; 7.00&nbsp;&nbsp; 2.0&nbsp;&nbsp;&nbsp;&nbsp; V140 #<br>
+&nbsp;GR_T&nbsp; &lt;Autov y autop A120-A80 (Gr
+II)&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 80&nbsp;&nbsp;
+120&nbsp;&nbsp;&nbsp; 00&nbsp;&nbsp;&nbsp; 7.00&nbsp;&nbsp;
+2.0&nbsp;&nbsp;&nbsp;&nbsp; V120 #<br>
+&nbsp;GR_T&nbsp; &lt;Carreteras C100&nbsp;&nbsp;&nbsp;&nbsp; (Grupo
+II)&gt;&nbsp;&nbsp;&nbsp;&nbsp; 100&nbsp;&nbsp; 100&nbsp;&nbsp;&nbsp;
+00&nbsp;&nbsp;&nbsp; 3.50&nbsp;&nbsp; 2.0&nbsp;&nbsp;&nbsp;&nbsp; V100 #<br>
+&nbsp;GR_T&nbsp; &lt;Carreteras C90-C40 (Grupo
+III)&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40&nbsp;&nbsp;&nbsp;
+90&nbsp;&nbsp;&nbsp; 00&nbsp;&nbsp;&nbsp; 3.50&nbsp;&nbsp;
+2.0&nbsp;&nbsp;&nbsp;&nbsp; V90&nbsp; #<br>
+#
+--------------------------------------------------------------------------------
+#<br>
+# SUBTIPOS: Puede definir los subtipos que necesite, y utilizarlos
+dentro de la&nbsp;&nbsp;&nbsp; # <br>
+# tabla para agrupar diferentes tipos de comportamiento
+&lt;GRS1&gt;&lt;/GRS1&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# GR_S&nbsp; &lt;TERRENO LLANO&gt;&nbsp;&nbsp; (por
+ejemplo)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+--------------------------------------------------------------------------------
+#<br>
+# *&nbsp;&nbsp;&nbsp;&nbsp; Incremento de velocidad sobre la de
+proyecto para definir V de diseño Vd&nbsp;&nbsp; #<br>
+# **&nbsp;&nbsp;&nbsp; Ancho de calzada : utilizado para calcular
+algunos
+parámetros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# ***&nbsp;&nbsp; PB : Pendiente de bombeo : valor de la pendiente de
+bombeo en recta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# ****&nbsp; Velocidad inicial asociada a un eje hasta que se
+modifique&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+--------------------------------------------------------------------------------
+#<br>
+# Algunos parámetros
+generales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+--------------------------------------------------------------------------------
+#<br>
+&nbsp; RedA&nbsp;&nbsp; 5.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Redondeo final para el parametro A de la
+CLOTOIDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; RedL&nbsp;&nbsp; 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Redondeo final para longitud final de la
+CLOTOIDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; RedR&nbsp;&nbsp; 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Redondeo final para radios de
+CIRCULOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; RedM&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Modo de
+Redondeo:&nbsp; 0:Al valor mas proximo 1:Al
+Mayor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# -----&nbsp; ----------
+-------------------------------------------------------------- #<br>
+# Clave&nbsp; Valor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Descripcion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+-------------------------------------------------------------- #<br>
+&nbsp;&nbsp; AC&nbsp;&nbsp;&nbsp; 3.50&nbsp; m&nbsp;&nbsp;&nbsp; :
+ANCHO DE CALZADA&nbsp;&nbsp; : Para calculos de Pendiente de
+borde.&nbsp;&nbsp;&nbsp; #<br>
+# -----&nbsp; ----------
+-------------------------------------------------------------- #<br>
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+# CARACTERISTICAS DE LAS ALINEACIONES RECTAS&nbsp; 4.2
+Pag34&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+&nbsp; LRSmin 1.39 * Vp&nbsp; : Longitud minima de Rectas en S (5
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; LRSmax 16.7 * Vp&nbsp; : Longitud maxima de Rectas en S (60
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; LROmin 2.78 * Vp&nbsp; : Longitud minima de Rectas en Ovalos (10
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; LROmax 16.7 * Vp&nbsp; : Longitud maxima de Rectas en Ovalos (60
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+-------------------------------------------------------------- #<br>
+# 4.2.2 RECTA DE LONGITUD LIMITADA Pag35 Tabla 4.2 Pag
+36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+-------------------------------------------------------------- #<br>
+&nbsp; &lt;040&gt;LRRs&nbsp;&nbsp; 30.&nbsp;&nbsp;&nbsp; : Longitud de
+Recta, por debajo de ella comprobar RsMin-Rsmax #<br>
+&nbsp; &lt;050&gt;LRRs&nbsp;&nbsp;
+50.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;060&gt;LRRs&nbsp;&nbsp;
+85.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;070&gt;LRRs&nbsp;
+175.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;080&gt;LRRs&nbsp;
+230.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;090&gt;LRRs&nbsp;
+300.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;100&gt;LRRs&nbsp;
+400.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;110&gt;LRRs&nbsp;
+400.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;120&gt;LRRs&nbsp;
+400.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;130&gt;LRRs&nbsp;
+400.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; &lt;140&gt;LRRs&nbsp;
+400.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#<br>
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+# CARACTERISTICAS DE LAS ALINEACIONES
+CIRCULARES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; Pbomb&nbsp;&nbsp; 2.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Peralte de
+Bombeo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&lt;GRT1&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo I (A140 -
+A130)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; &lt;140&gt;Rmin 1050.&nbsp;&nbsp; : 4.3.2 Tabla 4.4 Pag 38<br>
+&nbsp; &lt;130&gt;Rmin&nbsp; 850.<br>
+#<br>
+&nbsp; RBomb&nbsp; 7500&nbsp; m&nbsp;&nbsp;&nbsp; : Radio con peralte =
+bombeo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BOMBEO Y PERALTE 4.7
+Pag53&nbsp;&nbsp; #<br>
+&nbsp; RmaxCL 4999.99&nbsp;&nbsp;&nbsp; : Radio maximo con clotoides R
+mayor pueden quitarse 4.4.1 P 39 #<br>
+#<br>
+&nbsp;&nbsp; NC&nbsp;&nbsp;&nbsp; 2.0&nbsp; : NUMERO DE CARRILES POR
+CALZADA. Para calculos de Pendiente de borde.#<br>
+&lt;/GRT1&gt;<br>
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&lt;GRT2&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo II (A120 -
+A80)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; &lt;120&gt;Rmin&nbsp; 700.&nbsp;&nbsp; : 4.3.2 Tabla 4.4 Pag 38<br>
+&nbsp; &lt;110&gt;Rmin&nbsp; 550.<br>
+&nbsp; &lt;100&gt;Rmin&nbsp; 450.<br>
+&nbsp; &lt;090&gt;Rmin&nbsp; 350.<br>
+&nbsp; &lt;080&gt;Rmin&nbsp; 250.<br>
+#<br>
+&nbsp; RBomb&nbsp; 7500&nbsp; m&nbsp;&nbsp;&nbsp; : Radio con peralte =
+bombeo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BOMBEO Y PERALTE 4.7
+Pag53&nbsp;&nbsp; #<br>
+&nbsp; RmaxCL 4999.99&nbsp;&nbsp;&nbsp; : Radio maximo con clotoides R
+mayor pueden quitarse 4.4.1 P 39 #<br>
+#<br>
+# Rrec&nbsp;&nbsp;&nbsp; 700. m&nbsp;&nbsp;&nbsp; : Radio Recomendado
+minimo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# LCmin&nbsp; 1.39 * Vp&nbsp; : Longitud minima de Circulos (5
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# LCmax&nbsp; 8.33 * Vp&nbsp; : Longitud maxima de Circulos (30
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#<br>
+&nbsp;&nbsp; NC&nbsp;&nbsp;&nbsp; 2.0&nbsp; : NUMERO DE CARRILES POR
+CALZADA. Para calculos de Pendiente de borde.#<br>
+&lt;/GRT2&gt;<br>
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&lt;GRT3&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo II
+(C100)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; &lt;120&gt;Rmin&nbsp; 700.&nbsp;&nbsp; : 4.3.2 Tabla 4.4 Pag 38<br>
+&nbsp; &lt;110&gt;Rmin&nbsp; 550.<br>
+&nbsp; &lt;100&gt;Rmin&nbsp; 450.<br>
+&nbsp; &lt;090&gt;Rmin&nbsp; 350.<br>
+&nbsp; &lt;080&gt;Rmin&nbsp; 250.<br>
+#<br>
+&nbsp; RBomb&nbsp; 7500&nbsp; m&nbsp;&nbsp;&nbsp; : Radio con peralte =
+bombeo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BOMBEO Y PERALTE 4.7
+Pag53&nbsp;&nbsp; #<br>
+&nbsp; RmaxCL 4999.99&nbsp;&nbsp;&nbsp; : Radio maximo con clotoides R
+mayor pueden quitarse 4.4.1 P 39 #<br>
+#<br>
+# Rrec&nbsp;&nbsp;&nbsp; 700. m&nbsp;&nbsp;&nbsp; : Radio Recomendado
+minimo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# LCmin&nbsp; 1.39 * Vp&nbsp; : Longitud minima de Circulos (5
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# LCmax&nbsp; 8.33 * Vp&nbsp; : Longitud maxima de Circulos (30
+segundos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#<br>
+&nbsp;&nbsp; NC&nbsp;&nbsp;&nbsp; 1.0&nbsp; : NUMERO DE CARRILES POR
+CALZADA. Para calculos de Pendiente de borde.#<br>
+&lt;/GRT3&gt;<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&lt;GRT4&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo III (C90 -
+C40)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; &lt;090&gt;Rmin&nbsp; 350.&nbsp;&nbsp; : 4.3.2 Tabla 4.4 Pag 38<br>
+&nbsp; &lt;080&gt;Rmin&nbsp; 265.<br>
+&nbsp; &lt;070&gt;Rmin&nbsp; 190.<br>
+&nbsp; &lt;060&gt;Rmin&nbsp; 130.<br>
+&nbsp; &lt;050&gt;Rmin&nbsp;&nbsp; 85.<br>
+&nbsp; &lt;040&gt;Rmin&nbsp;&nbsp; 50.<br>
+#<br>
+&nbsp; RBomb&nbsp; 3500&nbsp; m&nbsp;&nbsp;&nbsp; : Radio con peralte =
+bombeo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BOMBEO Y PERALTE 4.7
+Pag53&nbsp;&nbsp; #<br>
+&nbsp; RmaxCL 2499.99&nbsp;&nbsp;&nbsp; : Radio maximo con clotoides R
+mayor pueden quitarse 4.4.1 P 39 #<br>
+#<br>
+&nbsp;&nbsp; NC&nbsp;&nbsp;&nbsp; 1.0&nbsp; : NUMERO DE CARRILES POR
+CALZADA. Para calculos de Pendiente de borde.#<br>
+&lt;/GRT4&gt;<br>
+#<br>
+# ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+# LONGITUDES MAXIMAS 4.4.4 Pag48<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; LmaxCL 1.5 * Lmin : Longitud Maxima de la clotoide en funcion de
+la minima&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #&nbsp; <br>
+# ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+# DESARROLLO MINIMO 4.4.5 Pag48<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; OCminRec&nbsp; 20. gon : Omega de la circular y sus clotoides
+minimo Recomendable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+&nbsp; OCminAce&nbsp;&nbsp; 6. gon : Omega de la circular y sus
+clotoides minimo
+Aceptable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+&nbsp; Omin&nbsp;&nbsp; 2.0&nbsp;&nbsp;&nbsp; gon : Omega min
+Rectas(poner Radios grandes sin clot) 4.4.8 Pag48&nbsp;&nbsp; #<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+# ANGULOS DE GIRO PEQUEÑOS 4.4.8 Pag48<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; OminCl 6.0&nbsp;&nbsp;&nbsp; gon : Omega minimo para usar
+clotoides&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; LCmin6 325. - 25. * Omega : Longitud minima de Circulos para
+Omega &lt;
+6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#----------------------------------------------------------------------------------
+#<br>
+# DESVANECIMIENTO DEL BOMBEO Y TRANSICION DEL PERALTE 4.7.2
+Pag55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&nbsp; LCminPer&nbsp; 30&nbsp;&nbsp;&nbsp; m : Longitud minima de
+Circulos por Peralte
+constante&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+# COORDINACION ENTRE ALINEACIONES CURVAS CONSECUTIVAS 4.5
+Pag49&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+&lt;GRT1&gt;<br>
+&lt;140&gt;RsMin4&nbsp; 1050.&nbsp; : Radio siguiente Minimo para
+rectas mayores que
+LRRs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+&lt;130&gt;RsMin4&nbsp;&nbsp; 850.&nbsp; : Radio siguiente Minimo para
+rectas mayores que
+LRRs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+&lt;/GRT1&gt;<br>
+&lt;GRT2-3&gt;<br>
+&nbsp; RsMin4&nbsp;&nbsp; 700.&nbsp; : Radio siguiente Minimo para
+rectas mayores que
+LRRs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;/GRT2-3&gt;<br>
+&lt;GRT4&gt;<br>
+&lt;090&gt;RsMin4&nbsp;&nbsp; 700.&nbsp; : Radio siguiente Minimo para
+rectas mayores que
+LRRs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+&lt;080&gt;RsMin4&nbsp;&nbsp; 530.&nbsp;
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;070&gt;RsMin4&nbsp;&nbsp; 380.&nbsp;
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;060&gt;RsMin4&nbsp;&nbsp; 260.&nbsp;
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;050&gt;RsMin4&nbsp;&nbsp; 170.&nbsp;
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;040&gt;RsMin4&nbsp;&nbsp; 100.&nbsp;
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#<br>
+&lt;030&gt;RsMin4&nbsp;&nbsp;&nbsp; 60.&nbsp; :
+Extrapolados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;020&gt;RsMin4&nbsp;&nbsp;&nbsp; 40.&nbsp;
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;/GRT4&gt;<br>
+#<br>
+# ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+# CARACTERISTICAS DE LAS
+CLOTOIDES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+##ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+## Controles de percepcion visual de la curva para Angulos entre rectas
+pequeños&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+## (Quitado en la Norma de 2015)<br>
+##ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+## -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+## Para angulos entre rectas entre 2 y 6 gon la longitud minima de la
+curva circular # <br>
+## (sin clotoides) y el radio minimo son obligados: 3.1 IC 4.4.8 Tabla
+4.9 Norma 2001#<br>
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AngR&nbsp; Lcmin&nbsp;
+Rmin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+## ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+#&nbsp; T2&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;
+275&nbsp;&nbsp;&nbsp;
+9000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T2&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;
+250&nbsp;&nbsp;&nbsp;
+5500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T2&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;
+225&nbsp;&nbsp;&nbsp;
+3500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T2&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;
+200&nbsp;&nbsp;&nbsp;
+2500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T2&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;
+175&nbsp;&nbsp;&nbsp;
+2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+## ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+## Para angulos entre rectas "ligeramente superiores a 6 gon" se
+comprobara que la&nbsp;&nbsp; #<br>
+## longitud de la circular mas las clotoides sean superiores a: ( 3.1
+IC Tabla 4.10) #<br>
+## ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+#&nbsp; Oligsup&nbsp;&nbsp;&nbsp; 9&nbsp; gon : comprobar para Omega
+&lt;= Oligsup (ligemente superior a 6 es 9?)#<br>
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T3&nbsp;&nbsp;&nbsp; 2000&nbsp;&nbsp; 175&nbsp;&nbsp;&nbsp; R
+&gt;= 2000&nbsp;&nbsp; L &gt;=
+175&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T3&nbsp;&nbsp;&nbsp; 2500&nbsp;&nbsp;
+200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T3&nbsp;&nbsp;&nbsp; 3500&nbsp;&nbsp;
+225&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T3&nbsp;&nbsp;&nbsp; 5500&nbsp;&nbsp;
+250&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; T3&nbsp;&nbsp;&nbsp; 9000&nbsp;&nbsp;
+275&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+## ----- ----&nbsp; -----&nbsp;
+---------------------------------------------------------------#<br>
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#####################################################################################<br>
+# PARAMETROS PARA CALCULO DINAMICO DE LOS PARAMETROS DE LA
+CLOTOIDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#####################################################################################<br>
+# VARIACION DE LA ACELERACION CENTRIFUGA 4.4.3.1 Pag 42 Tab 4.6 J
+m/s^3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -------&nbsp; ----&nbsp;&nbsp; -----&nbsp;
+--------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; T1U&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; : 1-&gt;Usar la tabla para
+calculo de J&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0-&gt;No
+Usar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+J&nbsp;&nbsp; Vesp &lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jmaxima de la
+norma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -------&nbsp; ----&nbsp;&nbsp; -----&nbsp;
+--------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 20.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 30.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 40.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 50.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 60.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 70.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp; 80.&nbsp;&nbsp;&nbsp;
+0.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.4&nbsp;&nbsp;&nbsp; 90.&nbsp;&nbsp;&nbsp;
+0.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.4&nbsp;&nbsp;
+100.&nbsp;&nbsp;&nbsp;
+0.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.4&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.4&nbsp;&nbsp;
+120.&nbsp;&nbsp;&nbsp;
+0.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.4&nbsp;&nbsp;
+130.&nbsp;&nbsp;&nbsp;
+0.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; T1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.4&nbsp;&nbsp;
+140.&nbsp;&nbsp;&nbsp;
+0.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -----&nbsp; ----------
+--------------------------------------------------------------- #<br>
+##======= Tabla Velocidad &lt;-&gt; Factor de friccion trasversal&nbsp;
+Sftdip =============== #<br>
+# Si se activa TFT se utilizará la velocidad de proyecto en lugar de la
+especifica&nbsp; #<br>
+## V(km/h)&nbsp;&nbsp;&nbsp; Ft&nbsp;&nbsp;&nbsp; 4.3.3 Tabla 4.4 Pag
+36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+##-------&nbsp;&nbsp;
+------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 210&nbsp;&nbsp;&nbsp;
+0.008&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 200&nbsp;&nbsp;&nbsp;
+0.017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 190&nbsp;&nbsp;&nbsp;
+0.025&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 180&nbsp;&nbsp;&nbsp;
+0.034&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 170&nbsp;&nbsp;&nbsp;
+0.043&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 160&nbsp;&nbsp;&nbsp;
+0.052&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+## ---- Extrapolados
+----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 150&nbsp;&nbsp;&nbsp;
+0.060&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 140&nbsp;&nbsp;&nbsp;
+0.069&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 130&nbsp;&nbsp;&nbsp;
+0.078&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 120&nbsp;&nbsp;&nbsp;
+0.087&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 110&nbsp;&nbsp;&nbsp;
+0.096&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT 100&nbsp;&nbsp;&nbsp;
+0.104&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 90&nbsp;&nbsp;&nbsp;
+0.113&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 80&nbsp;&nbsp;&nbsp;
+0.122&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 70&nbsp;&nbsp;&nbsp;
+0.137&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 60&nbsp;&nbsp;&nbsp;
+0.151&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 50&nbsp;&nbsp;&nbsp;
+0.166&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 40&nbsp;&nbsp;&nbsp;
+0.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 30&nbsp;&nbsp;&nbsp;
+0.194&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFT&nbsp; 20&nbsp;&nbsp;&nbsp;
+0.208&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+##---------------------------------------------------------------------------------
+#<br>
+##======= Tabla Velocidad &lt;-&gt; Factor de friccion longitudinal
+===================== #<br>
+## V(km/h)&nbsp;&nbsp;&nbsp; Fl&nbsp;&nbsp;&nbsp; 4.3.3 Tabla 3.1 Pag
+23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+##-------&nbsp;&nbsp;
+------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 210&nbsp;&nbsp;&nbsp;
+0.165&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 200&nbsp;&nbsp;&nbsp;
+0.179&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 190&nbsp;&nbsp;&nbsp;
+0.193&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 180&nbsp;&nbsp;&nbsp;
+0.207&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 170&nbsp;&nbsp;&nbsp;
+0.221&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 160&nbsp;&nbsp;&nbsp;
+0.235&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 150&nbsp;&nbsp;&nbsp;
+0.249&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+## ---- Extrapolados
+----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 140&nbsp;&nbsp;&nbsp;
+0.263&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 130&nbsp;&nbsp;&nbsp;
+0.277&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 120&nbsp;&nbsp;&nbsp;
+0.291&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 110&nbsp;&nbsp;&nbsp;
+0.306&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL 100&nbsp;&nbsp;&nbsp;
+0.320&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 90&nbsp;&nbsp;&nbsp;
+0.334&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 80&nbsp;&nbsp;&nbsp;
+0.348&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 70&nbsp;&nbsp;&nbsp;
+0.369&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 60&nbsp;&nbsp;&nbsp;
+0.390&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 50&nbsp;&nbsp;&nbsp;
+0.411&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 40&nbsp;&nbsp;&nbsp;
+0.432&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 30&nbsp;&nbsp;&nbsp;
+0.453&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# TFL&nbsp; 20&nbsp;&nbsp;&nbsp;
+0.474&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+# LIMITACION CLOTOIDE POR TRANSICION AL PERALTE 4.4.3.2 Pag43
+--------------------- #<br>
+# IpMax = 0.86 -0.004 *
+Vp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# -Vp----&nbsp;
+-----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;020&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;030&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.74&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;040&gt;IpMax&nbsp;&nbsp;&nbsp; 0.70&nbsp;&nbsp; : Maxima Pendiente
+relativa de
+Borde&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;050&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.66&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;060&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.62&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;070&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.58&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;080&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.54&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;090&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;100&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.46&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;110&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.42&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;120&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.38&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;130&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.34&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&lt;140&gt;IpMax&nbsp;&nbsp;&nbsp;
+0.30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+# AJUSTE POR NUMERO DE CARRILES QUE GIRAN CON EL PERALTE
+-------------------------- #<br>
+# La formula de calculo de la longitud de transicion de peraltes por
+control de la&nbsp; #<br>
+# pendiente relativa de borde, lleva un factor de ajuste por el numero
+de carriles&nbsp; #<br>
+# que giran, de modo que Lp = P*NC*AC*ACfac/IpMax (AC es el ancho de un
+carril)&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# El numero de carriles NC es el numero de carriles desde el Eje de
+Giro al borde&nbsp;&nbsp; #<br>
+# de calzada. Si tenemos el caso de calzada con 3 carriles y eje de
+giro en el&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# centro de esa calzada, NC=1.5. Los valores por defecto son NC=2 para
+autopistas y #<br>
+# NC=1 para carreteras. AC=3.5 m. Si se dan en esta tabla al leerla se
+pasan a la&nbsp;&nbsp; #<br>
+# pestaña GENERAL. Los valores de la pestaña GENERAL son los que se
+usarán.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# El numero de carriles puede darse en una tabla por Pk si hay cambios
+a lo largo&nbsp;&nbsp; #<br>
+# del
+eje.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; Num Carri NC&nbsp;&nbsp;&nbsp; Fact Ajus
+ACfac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; ------------&nbsp;&nbsp;&nbsp;
+---------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; TA&nbsp;
+1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; TA&nbsp;
+1.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.83&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; TA&nbsp;
+2.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.75&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; TA&nbsp;
+2.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.70&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; TA&nbsp;
+3.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp; TA&nbsp;
+3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+#-----------------------------------------------------------------------------------#<br>
+# CLOTOIDE MINIMA 4.4.3.3 Pag44<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K0 : CLOTOIDE MINIMA. PERCEPCION VISUAL. RETRANQUEO MINIMO DE un
+metro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+# K0U&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 0-&gt;No Usar esta formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1-&gt;Usar
+esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# K0&nbsp;&nbsp; 2.213&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: A &gt;= K0 * R ^
+(3/4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K1 : CLOTOIDE MINIMA. PERCEPCION VISUAL. RETRANQUEO MINIMO DE medio
+metro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+&nbsp; K1U&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 1-&gt;Usar esta formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0-&gt;No Usar
+esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; K1&nbsp;&nbsp;
+1.861&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : A &gt;= K1 * R
+^
+(3/4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K2 : CLOTOIDE MINIMA. PERCEPCION VISUAL. DESARROLLO ANGULAR MINIMO
+1/18 RADIANES&nbsp; #<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+&nbsp; K2U&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 1-&gt;Usar esta formula&nbsp;&nbsp;&nbsp;&nbsp; 0-&gt;No Usar esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; K2&nbsp;&nbsp;
+0.333&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : A &gt;= K2 *
+R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K3 : CLOTOIDE MINIMA. PERCEPCION VISUAL. DESARROLLO MINIMO 1/5 de
+OMEGA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+&nbsp; K3U&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 1-&gt;Usar esta formula&nbsp;&nbsp;&nbsp; 0-&gt;No Usar esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; K3&nbsp;&nbsp;
+0.079&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : A &gt;= K3 * R
+*
+sqrt(omega)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K4 :&nbsp; LIMITACION DE LA VARIACION DE LA PENDIENTE TRASVERSAL AL
+4% por segundo&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+# Quitado en la revision del
+2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# K4U&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 1-&gt;Usar esta formula&nbsp;&nbsp;&nbsp;&nbsp; 0-&gt;No Usar esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# K4&nbsp;&nbsp; 0.2635&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : A
+&gt;= K4 * sqrt(Peralte * Ve *
+R)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K5 :&nbsp; LIMITACION DE LA VARIACION DE LA ACELERACION CENTRIFUGA EN
+EL PLANO HORIZ.&nbsp; #<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+&nbsp; K5U&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 1-&gt;Usar esta formula&nbsp;&nbsp;&nbsp; 0-&gt;No Usar esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; K5&nbsp;&nbsp; 46.656&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: A &gt;= sqrt{ Ve*R/(K5*J) * [Ve*Ve/R - 1.27 * Peralte]
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#&nbsp; Para Curvas en C&nbsp; : A &gt;= sqrt{ Ve*R/(K5*J) * [Ve*Ve/R -
+1.27*(Po-P1)/(1-Ro/R1)]} #<br>
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - #<br>
+# K6 :&nbsp; LIMITACION POR LONGITUD DE TRANSICION AL
+PERALTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#
+---------------------------------------------------------------------------------
+#<br>
+&nbsp; K6U&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 1-&gt;Usar esta formula&nbsp;&nbsp;&nbsp;&nbsp; 0-&gt;No Usar esta
+formula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# K6&nbsp;&nbsp;
+1.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : A
+&gt;= sqrt{Radio * Peralte * AC / (K6 - 0.01 *
+Vp)}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# Norma 2015 4.4.3.2 Pag43&nbsp; IpMax = 0.86 -0.004 *
+Vp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp; K6C&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: A= sqrt(R*PER*NC*AC*ACfac/Ipmax) ; Ipmax de la tabla V-IpMax #<br>
+# Se usan NC y AC de la solapa PLANTA &gt; GENERAL y ACfac de la tabla
+TA: NC - AC&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# No se debe congelar este cálculo porque las tablas de clotoides estan
+hechas sin&nbsp; #<br>
+# considerar esta limitación y, a radios bajos, es la limitacion
+dominante.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+# T0 :&nbsp; TABLA DE
+RADIOS/PERALTES/CLOTOIDES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo#<br>
+&nbsp; T0U&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+1-&gt;Usar la tabla para calculo de A_min&nbsp;&nbsp;&nbsp; 0-&gt;No
+Usar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#----------------------------------------------------------------------------------
+#<br>
+# Para calcular la clotoide en funcion del radio se utilizan los
+valores de la&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# tabla y las formulas K0 a
+K6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# En el calculador de peraltes obligados, la Velocidad Espec. y el ft
+se interpolan #<br>
+# siempre. ft y fl se dan en tablas
+aparte.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# Si se activa el comando siguiente (T0I), se usan valores
+interpolados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#----------------------------------------------------------------------------------
+#<br>
+# T0I&nbsp; : Quitando el # inicial de esta linea se usan valores
+interpolados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#####################################################################################<br>
+&lt;GRT1&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo I (A140 -
+A130)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#----------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Radio&nbsp;
+Peral&nbsp; Arecom Amin LonClo VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp;&nbsp;&nbsp;&nbsp; RsMin&nbsp; RsMax&nbsp;&nbsp;&nbsp;
+fl&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# -------- -----&nbsp; ----- ------- ---- ------ ------&nbsp;
+------&nbsp;&nbsp; -----&nbsp; -----&nbsp;&nbsp; ------&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7500&nbsp;
+2.00&nbsp;&nbsp; 2500&nbsp;&nbsp; 2500&nbsp; 833.3&nbsp; 195.9&nbsp;
+0.0203&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1847&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7000&nbsp;
+2.00&nbsp;&nbsp; 2333&nbsp;&nbsp; 2333&nbsp; 777.8&nbsp; 193.5&nbsp;
+0.0221&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1882&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6500&nbsp;
+2.00&nbsp;&nbsp; 2167&nbsp;&nbsp; 2167&nbsp; 722.2&nbsp; 191.0&nbsp;
+0.0242&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1916&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6000&nbsp;
+2.00&nbsp;&nbsp; 2000&nbsp;&nbsp; 2000&nbsp; 666.7&nbsp; 188.2&nbsp;
+0.0265&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1955&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5500&nbsp;
+2.00&nbsp;&nbsp; 1833&nbsp;&nbsp; 1833&nbsp; 611.1&nbsp; 185.4&nbsp;
+0.0292&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1995&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5000&nbsp;
+2.00&nbsp;&nbsp; 1667&nbsp;&nbsp; 1667&nbsp; 555.6&nbsp; 182.1&nbsp;
+0.0322&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2041&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4750&nbsp;
+2.10&nbsp;&nbsp; 1583&nbsp;&nbsp; 1583&nbsp; 527.8&nbsp; 180.8&nbsp;
+0.0332&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2059&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4500&nbsp;
+2.21&nbsp;&nbsp; 1500&nbsp;&nbsp; 1500&nbsp; 500.0&nbsp; 179.5&nbsp;
+0.0343&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2077&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4250&nbsp;
+2.34&nbsp;&nbsp; 1417&nbsp;&nbsp; 1417&nbsp; 472.2&nbsp; 178.3&nbsp;
+0.0355&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2094&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4000&nbsp;
+2.48&nbsp;&nbsp; 1333&nbsp;&nbsp; 1333&nbsp; 444.4&nbsp; 176.9&nbsp;
+0.0368&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2113&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3750&nbsp;
+2.63&nbsp;&nbsp; 1250&nbsp;&nbsp; 1250&nbsp; 416.7&nbsp; 175.3&nbsp;
+0.0382&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2136&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3500&nbsp;
+2.81&nbsp;&nbsp; 1167&nbsp;&nbsp; 1167&nbsp; 388.9&nbsp; 173.6&nbsp;
+0.0397&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2160&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3250&nbsp;
+3.02&nbsp;&nbsp; 1083&nbsp;&nbsp; 1083&nbsp; 361.1&nbsp; 171.8&nbsp;
+0.0413&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2185&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3000&nbsp;
+3.25&nbsp;&nbsp; 1000&nbsp;&nbsp; 1000&nbsp; 333.3&nbsp; 169.8&nbsp;
+0.0432&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2212&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2750&nbsp;
+3.53&nbsp;&nbsp;&nbsp; 917&nbsp;&nbsp;&nbsp; 917&nbsp; 305.6&nbsp;
+167.6&nbsp; 0.0451&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2244&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2500&nbsp;
+3.86&nbsp;&nbsp;&nbsp; 833&nbsp;&nbsp;&nbsp; 833&nbsp; 277.8&nbsp;
+165.1&nbsp; 0.0473&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2278&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2400&nbsp;
+4.01&nbsp;&nbsp;&nbsp; 800&nbsp;&nbsp;&nbsp; 800&nbsp; 266.7&nbsp;
+164.1&nbsp; 0.0483&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2292&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2300&nbsp;
+4.17&nbsp;&nbsp;&nbsp; 767&nbsp;&nbsp;&nbsp; 767&nbsp; 255.6&nbsp;
+163.0&nbsp; 0.0493&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2307&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2200&nbsp;
+4.35&nbsp;&nbsp;&nbsp; 733&nbsp;&nbsp;&nbsp; 733&nbsp; 244.4&nbsp;
+161.9&nbsp; 0.0503&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2324&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2100&nbsp;
+4.54&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp; 700&nbsp; 233.3&nbsp;
+160.7&nbsp; 0.0514&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2341&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2000&nbsp;
+4.74&nbsp;&nbsp;&nbsp; 667&nbsp;&nbsp;&nbsp; 667&nbsp; 222.2&nbsp;
+159.3&nbsp; 0.0525&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2360&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1900&nbsp;
+4.97&nbsp;&nbsp;&nbsp; 637&nbsp;&nbsp;&nbsp; 633&nbsp; 211.1&nbsp;
+158.0&nbsp; 0.0537&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2379&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1800&nbsp;
+5.22&nbsp;&nbsp;&nbsp; 612&nbsp;&nbsp;&nbsp; 600&nbsp; 200.0&nbsp;
+156.5&nbsp; 0.0549&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2399&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1700&nbsp;
+5.49&nbsp;&nbsp;&nbsp; 586&nbsp;&nbsp;&nbsp; 567&nbsp; 188.9&nbsp;
+154.8&nbsp; 0.0561&nbsp;&nbsp;&nbsp;&nbsp;
+670&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2423&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1600&nbsp;
+5.79&nbsp;&nbsp;&nbsp; 560&nbsp;&nbsp;&nbsp; 533&nbsp; 177.8&nbsp;
+153.1&nbsp; 0.0575&nbsp;&nbsp;&nbsp;&nbsp;
+641&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2446&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1500&nbsp;
+6.12&nbsp;&nbsp;&nbsp; 533&nbsp;&nbsp;&nbsp; 500&nbsp; 166.7&nbsp;
+151.3&nbsp; 0.0590&nbsp;&nbsp;&nbsp;&nbsp;
+611&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2472&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1400&nbsp;
+6.49&nbsp;&nbsp;&nbsp; 507&nbsp;&nbsp;&nbsp; 467&nbsp; 155.6&nbsp;
+149.4&nbsp; 0.0606&nbsp;&nbsp;&nbsp;&nbsp;
+582&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2499&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1300&nbsp;
+6.90&nbsp;&nbsp;&nbsp; 479&nbsp;&nbsp;&nbsp; 433&nbsp; 144.4&nbsp;
+147.3&nbsp; 0.0624&nbsp;&nbsp;&nbsp;&nbsp;
+552&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2528&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1200&nbsp;
+7.34&nbsp;&nbsp;&nbsp; 451&nbsp;&nbsp;&nbsp; 400&nbsp; 133.3&nbsp;
+145.0&nbsp; 0.0645&nbsp;&nbsp;&nbsp;&nbsp;
+522&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2560&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1100&nbsp;
+7.81&nbsp;&nbsp;&nbsp; 423&nbsp;&nbsp;&nbsp; 367&nbsp; 122.2&nbsp;
+142.3&nbsp; 0.0669&nbsp;&nbsp;&nbsp;&nbsp;
+493&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2597&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1050&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 408&nbsp;&nbsp;&nbsp; 350&nbsp; 116.7&nbsp;
+140.7&nbsp; 0.0684&nbsp;&nbsp;&nbsp;&nbsp;
+478&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2621&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1000&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 394&nbsp;&nbsp;&nbsp; 333&nbsp; 111.1&nbsp;
+138.3&nbsp; 0.0706&nbsp;&nbsp;&nbsp;&nbsp;
+463&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2654&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 950&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 379&nbsp;&nbsp;&nbsp; 318&nbsp; 106.8&nbsp;
+135.8&nbsp; 0.0728&nbsp;&nbsp;&nbsp;&nbsp;
+448&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2689&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 900&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 364&nbsp;&nbsp;&nbsp; 306&nbsp; 103.9&nbsp;
+133.1&nbsp; 0.0751&nbsp;&nbsp;&nbsp;&nbsp;
+433&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2726&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 850&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 348&nbsp;&nbsp;&nbsp; 293&nbsp; 101.0&nbsp;
+130.4&nbsp; 0.0776&nbsp;&nbsp;&nbsp;&nbsp;
+419&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2764&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 800&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 333&nbsp;&nbsp;&nbsp; 280&nbsp;&nbsp; 98.0&nbsp;
+127.6&nbsp; 0.0802&nbsp;&nbsp;&nbsp;&nbsp;
+404&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2804&nbsp; #<br>
+#----------------------------------------------------------------------------------
+#<br>
+&lt;/GRT1&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo I (A140 -
+A130)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#####################################################################################<br>
+#----------------------------------------------------------------------------------
+#<br>
+&lt;GRT2&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo II (A120 -
+A80)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#----------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Radio&nbsp;
+Peral&nbsp; Arecom Amin LonClo VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp;&nbsp;&nbsp;&nbsp; RsMin&nbsp; RsMax&nbsp;&nbsp;&nbsp;
+fl&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# -------- -----&nbsp; ----- ------- ---- ------ ------&nbsp;
+------&nbsp;&nbsp; -----&nbsp; -----&nbsp;&nbsp; ------&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7500&nbsp;
+2.00&nbsp;&nbsp; 2500&nbsp;&nbsp; 2500&nbsp; 833.3&nbsp; 195.9&nbsp;
+0.0203&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1847&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7000&nbsp;
+2.00&nbsp;&nbsp; 2333&nbsp;&nbsp; 2333&nbsp; 777.8&nbsp; 193.5&nbsp;
+0.0221&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1882&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6500&nbsp;
+2.00&nbsp;&nbsp; 2167&nbsp;&nbsp; 2167&nbsp; 722.2&nbsp; 191.0&nbsp;
+0.0242&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1916&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6000&nbsp;
+2.00&nbsp;&nbsp; 2000&nbsp;&nbsp; 2000&nbsp; 666.7&nbsp; 188.2&nbsp;
+0.0265&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1955&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5500&nbsp;
+2.00&nbsp;&nbsp; 1833&nbsp;&nbsp; 1833&nbsp; 611.1&nbsp; 185.4&nbsp;
+0.0292&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1995&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5000&nbsp;
+2.00&nbsp;&nbsp; 1667&nbsp;&nbsp; 1667&nbsp; 555.6&nbsp; 182.1&nbsp;
+0.0322&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2041&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4750&nbsp;
+2.07&nbsp;&nbsp; 1583&nbsp;&nbsp; 1583&nbsp; 527.8&nbsp; 180.7&nbsp;
+0.0334&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2061&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4500&nbsp;
+2.14&nbsp;&nbsp; 1500&nbsp;&nbsp; 1500&nbsp; 500.0&nbsp; 179.2&nbsp;
+0.0348&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2081&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4250&nbsp;
+2.22&nbsp;&nbsp; 1417&nbsp;&nbsp; 1417&nbsp; 472.2&nbsp; 177.5&nbsp;
+0.0362&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2104&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4000&nbsp;
+2.32&nbsp;&nbsp; 1333&nbsp;&nbsp; 1333&nbsp; 444.4&nbsp; 175.9&nbsp;
+0.0377&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2128&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3750&nbsp;
+2.42&nbsp;&nbsp; 1250&nbsp;&nbsp; 1250&nbsp; 416.7&nbsp; 174.0&nbsp;
+0.0394&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2153&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3500&nbsp;
+2.54&nbsp;&nbsp; 1167&nbsp;&nbsp; 1167&nbsp; 388.9&nbsp; 172.1&nbsp;
+0.0412&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2181&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3250&nbsp;
+2.67&nbsp;&nbsp; 1083&nbsp;&nbsp; 1083&nbsp; 361.1&nbsp; 169.9&nbsp;
+0.0432&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2212&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3000&nbsp;
+2.83&nbsp;&nbsp; 1000&nbsp;&nbsp; 1000&nbsp; 333.3&nbsp; 167.5&nbsp;
+0.0453&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2246&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2750&nbsp;
+3.02&nbsp;&nbsp;&nbsp; 917&nbsp;&nbsp;&nbsp; 917&nbsp; 305.6&nbsp;
+164.8&nbsp; 0.0476&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2282&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2500&nbsp;
+3.24&nbsp;&nbsp;&nbsp; 833&nbsp;&nbsp;&nbsp; 833&nbsp; 277.8&nbsp;
+161.9&nbsp; 0.0502&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2323&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2400&nbsp;
+3.34&nbsp;&nbsp;&nbsp; 800&nbsp;&nbsp;&nbsp; 800&nbsp; 266.7&nbsp;
+160.7&nbsp; 0.0513&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2341&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2300&nbsp;
+3.45&nbsp;&nbsp;&nbsp; 767&nbsp;&nbsp;&nbsp; 767&nbsp; 255.6&nbsp;
+159.4&nbsp; 0.0525&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2358&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2200&nbsp;
+3.56&nbsp;&nbsp;&nbsp; 733&nbsp;&nbsp;&nbsp; 733&nbsp; 244.4&nbsp;
+158.0&nbsp; 0.0537&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2379&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2100&nbsp;
+3.69&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp; 700&nbsp; 233.3&nbsp;
+156.5&nbsp; 0.0549&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2399&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2000&nbsp;
+3.83&nbsp;&nbsp;&nbsp; 667&nbsp;&nbsp;&nbsp; 667&nbsp; 222.2&nbsp;
+154.8&nbsp; 0.0561&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2422&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1900&nbsp;
+3.98&nbsp;&nbsp;&nbsp; 637&nbsp;&nbsp;&nbsp; 633&nbsp; 211.1&nbsp;
+153.1&nbsp; 0.0574&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2446&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1800&nbsp;
+4.15&nbsp;&nbsp;&nbsp; 612&nbsp;&nbsp;&nbsp; 600&nbsp; 200.0&nbsp;
+151.4&nbsp; 0.0588&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2470&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1700&nbsp;
+4.34&nbsp;&nbsp;&nbsp; 586&nbsp;&nbsp;&nbsp; 567&nbsp; 188.9&nbsp;
+149.6&nbsp; 0.0603&nbsp;&nbsp;&nbsp;&nbsp;
+670&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2495&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1600&nbsp;
+4.54&nbsp;&nbsp;&nbsp; 560&nbsp;&nbsp;&nbsp; 533&nbsp; 177.8&nbsp;
+147.7&nbsp; 0.0620&nbsp;&nbsp;&nbsp;&nbsp;
+641&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2522&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1500&nbsp;
+4.78&nbsp;&nbsp;&nbsp; 533&nbsp;&nbsp;&nbsp; 500&nbsp; 166.7&nbsp;
+145.8&nbsp; 0.0638&nbsp;&nbsp;&nbsp;&nbsp;
+611&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2549&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1400&nbsp;
+5.04&nbsp;&nbsp;&nbsp; 507&nbsp;&nbsp;&nbsp; 467&nbsp; 155.6&nbsp;
+143.7&nbsp; 0.0657&nbsp;&nbsp;&nbsp;&nbsp;
+582&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2579&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1300&nbsp;
+5.33&nbsp;&nbsp;&nbsp; 479&nbsp;&nbsp;&nbsp; 433&nbsp; 144.4&nbsp;
+141.4&nbsp; 0.0678&nbsp;&nbsp;&nbsp;&nbsp;
+552&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2610&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1200&nbsp;
+5.66&nbsp;&nbsp;&nbsp; 451&nbsp;&nbsp;&nbsp; 400&nbsp; 133.3&nbsp;
+138.9&nbsp; 0.0700&nbsp;&nbsp;&nbsp;&nbsp;
+522&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2645&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1100&nbsp;
+6.04&nbsp;&nbsp;&nbsp; 423&nbsp;&nbsp;&nbsp; 367&nbsp; 122.2&nbsp;
+136.2&nbsp; 0.0724&nbsp;&nbsp;&nbsp;&nbsp;
+493&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2683&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1050&nbsp;
+6.25&nbsp;&nbsp;&nbsp; 408&nbsp;&nbsp;&nbsp; 350&nbsp; 116.7&nbsp;
+134.8&nbsp; 0.0737&nbsp;&nbsp;&nbsp;&nbsp;
+478&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2703&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1000&nbsp;
+6.47&nbsp;&nbsp;&nbsp; 394&nbsp;&nbsp;&nbsp; 333&nbsp; 111.1&nbsp;
+133.2&nbsp; 0.0751&nbsp;&nbsp;&nbsp;&nbsp;
+463&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2725&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 950&nbsp;
+6.71&nbsp;&nbsp;&nbsp; 379&nbsp;&nbsp;&nbsp; 318&nbsp; 106.8&nbsp;
+131.6&nbsp; 0.0765&nbsp;&nbsp;&nbsp;&nbsp;
+448&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2747&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 900&nbsp;
+6.97&nbsp;&nbsp;&nbsp; 364&nbsp;&nbsp;&nbsp; 306&nbsp; 103.9&nbsp;
+129.9&nbsp; 0.0780&nbsp;&nbsp;&nbsp;&nbsp;
+433&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2771&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 850&nbsp;
+7.23&nbsp;&nbsp;&nbsp; 348&nbsp;&nbsp;&nbsp; 293&nbsp; 101.0&nbsp;
+128.1&nbsp; 0.0797&nbsp;&nbsp;&nbsp;&nbsp;
+419&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2797&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 800&nbsp;
+7.51&nbsp;&nbsp;&nbsp; 333&nbsp;&nbsp;&nbsp; 280&nbsp;&nbsp; 98.0&nbsp;
+126.1&nbsp; 0.0815&nbsp;&nbsp;&nbsp;&nbsp;
+404&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2824&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 750&nbsp;
+7.78&nbsp;&nbsp;&nbsp; 317&nbsp;&nbsp;&nbsp; 267&nbsp;&nbsp; 94.9&nbsp;
+124.0&nbsp; 0.0835&nbsp;&nbsp;&nbsp;&nbsp;
+389&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2855&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 700&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 301&nbsp;&nbsp;&nbsp; 253&nbsp;&nbsp; 91.7&nbsp;
+121.4&nbsp; 0.0858&nbsp;&nbsp;&nbsp;&nbsp; 374&nbsp;&nbsp;
+1800&nbsp;&nbsp; 0.2890&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 650&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 285&nbsp;&nbsp;&nbsp; 240&nbsp;&nbsp; 88.3&nbsp;
+118.0&nbsp; 0.0888&nbsp;&nbsp;&nbsp;&nbsp; 359&nbsp;&nbsp;
+1580&nbsp;&nbsp; 0.2939&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 600&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 268&nbsp;&nbsp;&nbsp; 226&nbsp;&nbsp; 84.9&nbsp;
+114.5&nbsp; 0.0920&nbsp;&nbsp;&nbsp;&nbsp; 344&nbsp;&nbsp;
+1360&nbsp;&nbsp; 0.2993&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 550&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 251&nbsp;&nbsp;&nbsp; 211&nbsp;&nbsp; 81.2&nbsp;
+110.7&nbsp; 0.0954&nbsp;&nbsp;&nbsp;&nbsp; 330&nbsp;&nbsp;
+1140&nbsp;&nbsp; 0.3050&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 525&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 243&nbsp;&nbsp;&nbsp; 204&nbsp;&nbsp; 79.4&nbsp;
+108.7&nbsp; 0.0971&nbsp;&nbsp;&nbsp;&nbsp; 322&nbsp;&nbsp;
+1030&nbsp;&nbsp; 0.3079&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 500&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 234&nbsp;&nbsp;&nbsp; 197&nbsp;&nbsp; 77.5&nbsp;
+106.6&nbsp; 0.0988&nbsp;&nbsp;&nbsp;&nbsp; 315&nbsp;&nbsp;&nbsp;
+920&nbsp;&nbsp; 0.3108&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 475&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 225&nbsp;&nbsp;&nbsp; 189&nbsp;&nbsp; 75.5&nbsp;
+104.3&nbsp; 0.1005&nbsp;&nbsp;&nbsp;&nbsp; 307&nbsp;&nbsp;&nbsp;
+810&nbsp;&nbsp; 0.3139&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 450&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 216&nbsp;&nbsp;&nbsp; 182&nbsp;&nbsp; 73.5&nbsp;
+102.1&nbsp; 0.1023&nbsp;&nbsp;&nbsp;&nbsp; 300&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp; 0.3171&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 425&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 207&nbsp;&nbsp;&nbsp; 174&nbsp;&nbsp;
+71.4&nbsp;&nbsp; 99.7&nbsp; 0.1042&nbsp;&nbsp;&nbsp;&nbsp;
+284&nbsp;&nbsp;&nbsp; 660&nbsp;&nbsp; 0.3204&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 400&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 198&nbsp;&nbsp;&nbsp; 168&nbsp;&nbsp;
+70.5&nbsp;&nbsp; 97.3&nbsp; 0.1064&nbsp;&nbsp;&nbsp;&nbsp;
+268&nbsp;&nbsp;&nbsp; 621&nbsp;&nbsp; 0.3238&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 375&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 189&nbsp;&nbsp;&nbsp; 162&nbsp;&nbsp;
+70.1&nbsp;&nbsp; 94.8&nbsp; 0.1087&nbsp;&nbsp;&nbsp;&nbsp;
+251&nbsp;&nbsp;&nbsp; 581&nbsp;&nbsp; 0.3273&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 350&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 179&nbsp;&nbsp;&nbsp; 156&nbsp;&nbsp;
+69.7&nbsp;&nbsp; 92.2&nbsp; 0.1111&nbsp;&nbsp;&nbsp;&nbsp;
+235&nbsp;&nbsp;&nbsp; 541&nbsp;&nbsp; 0.3310&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 325&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 169&nbsp;&nbsp;&nbsp; 150&nbsp;&nbsp;
+69.1&nbsp;&nbsp; 89.4&nbsp; 0.1136&nbsp;&nbsp;&nbsp;&nbsp;
+219&nbsp;&nbsp;&nbsp; 502&nbsp;&nbsp; 0.3349&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 300&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 160&nbsp;&nbsp;&nbsp; 143&nbsp;&nbsp;
+68.4&nbsp;&nbsp; 86.5&nbsp; 0.1162&nbsp;&nbsp;&nbsp;&nbsp;
+203&nbsp;&nbsp;&nbsp; 462&nbsp;&nbsp; 0.3390&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 275&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 149&nbsp;&nbsp;&nbsp; 136&nbsp;&nbsp;
+67.5&nbsp;&nbsp; 83.4&nbsp; 0.1190&nbsp;&nbsp;&nbsp;&nbsp;
+186&nbsp;&nbsp;&nbsp; 422&nbsp;&nbsp; 0.3433&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 250&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 139&nbsp;&nbsp;&nbsp; 129&nbsp;&nbsp;
+66.4&nbsp;&nbsp; 80.1&nbsp; 0.1219&nbsp;&nbsp;&nbsp;&nbsp;
+170&nbsp;&nbsp;&nbsp; 382&nbsp;&nbsp; 0.3479&nbsp; #<br>
+# -------- -----&nbsp; ----- ------- ---- ------ ------&nbsp;
+------&nbsp;&nbsp; -----&nbsp; -----&nbsp;&nbsp; ------&nbsp; #<br>
+&lt;/GRT2&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo II (A120 -
+A80)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#####################################################################################<br>
+#----------------------------------------------------------------------------------
+#<br>
+&lt;GRT3&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo II (C100) peraltes
+como GRT2 Clot trans per 1 calz. #<br>
+#----------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Radio&nbsp;
+Peral&nbsp; Arecom Amin LonClo VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp;&nbsp;&nbsp;&nbsp; RsMin&nbsp; RsMax&nbsp;&nbsp;&nbsp;
+fl&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# -------- -----&nbsp; ----- ------- ---- ------ ------&nbsp;
+------&nbsp;&nbsp; -----&nbsp; -----&nbsp;&nbsp; ------&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7500&nbsp;
+2.00&nbsp;&nbsp; 2500&nbsp;&nbsp; 2500&nbsp; 833.3&nbsp; 195.9&nbsp;
+0.0203&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1847&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7000&nbsp;
+2.00&nbsp;&nbsp; 2333&nbsp;&nbsp; 2333&nbsp; 777.8&nbsp; 193.5&nbsp;
+0.0221&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1882&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6500&nbsp;
+2.00&nbsp;&nbsp; 2167&nbsp;&nbsp; 2167&nbsp; 722.2&nbsp; 191.0&nbsp;
+0.0242&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1916&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6000&nbsp;
+2.00&nbsp;&nbsp; 2000&nbsp;&nbsp; 2000&nbsp; 666.7&nbsp; 188.2&nbsp;
+0.0265&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1955&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5500&nbsp;
+2.00&nbsp;&nbsp; 1833&nbsp;&nbsp; 1833&nbsp; 611.1&nbsp; 185.4&nbsp;
+0.0292&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1995&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5000&nbsp;
+2.00&nbsp;&nbsp; 1667&nbsp;&nbsp; 1667&nbsp; 555.6&nbsp; 182.1&nbsp;
+0.0322&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2041&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4750&nbsp;
+2.07&nbsp;&nbsp; 1583&nbsp;&nbsp; 1583&nbsp; 527.8&nbsp; 180.7&nbsp;
+0.0334&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2061&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4500&nbsp;
+2.14&nbsp;&nbsp; 1500&nbsp;&nbsp; 1500&nbsp; 500.0&nbsp; 179.2&nbsp;
+0.0348&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2081&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4250&nbsp;
+2.22&nbsp;&nbsp; 1417&nbsp;&nbsp; 1417&nbsp; 472.2&nbsp; 177.5&nbsp;
+0.0362&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2104&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4000&nbsp;
+2.32&nbsp;&nbsp; 1333&nbsp;&nbsp; 1333&nbsp; 444.4&nbsp; 175.9&nbsp;
+0.0377&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2128&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3750&nbsp;
+2.42&nbsp;&nbsp; 1250&nbsp;&nbsp; 1250&nbsp; 416.7&nbsp; 174.0&nbsp;
+0.0394&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2153&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3500&nbsp;
+2.54&nbsp;&nbsp; 1167&nbsp;&nbsp; 1167&nbsp; 388.9&nbsp; 172.1&nbsp;
+0.0412&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2181&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3250&nbsp;
+2.67&nbsp;&nbsp; 1083&nbsp;&nbsp; 1083&nbsp; 361.1&nbsp; 169.9&nbsp;
+0.0432&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2212&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3000&nbsp;
+2.83&nbsp;&nbsp; 1000&nbsp;&nbsp; 1000&nbsp; 333.3&nbsp; 167.5&nbsp;
+0.0453&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2246&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2750&nbsp;
+3.02&nbsp;&nbsp;&nbsp; 917&nbsp;&nbsp;&nbsp; 917&nbsp; 305.6&nbsp;
+164.8&nbsp; 0.0476&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2282&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2500&nbsp;
+3.24&nbsp;&nbsp;&nbsp; 833&nbsp;&nbsp;&nbsp; 833&nbsp; 277.8&nbsp;
+161.9&nbsp; 0.0502&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2323&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2400&nbsp;
+3.34&nbsp;&nbsp;&nbsp; 800&nbsp;&nbsp;&nbsp; 800&nbsp; 266.7&nbsp;
+160.7&nbsp; 0.0513&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2341&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2300&nbsp;
+3.45&nbsp;&nbsp;&nbsp; 767&nbsp;&nbsp;&nbsp; 767&nbsp; 255.6&nbsp;
+159.4&nbsp; 0.0525&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2358&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2200&nbsp;
+3.56&nbsp;&nbsp;&nbsp; 733&nbsp;&nbsp;&nbsp; 733&nbsp; 244.4&nbsp;
+158.0&nbsp; 0.0537&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2379&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2100&nbsp;
+3.69&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp; 700&nbsp; 233.3&nbsp;
+156.5&nbsp; 0.0549&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2399&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2000&nbsp;
+3.83&nbsp;&nbsp;&nbsp; 667&nbsp;&nbsp;&nbsp; 667&nbsp; 222.2&nbsp;
+154.8&nbsp; 0.0561&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2422&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1900&nbsp;
+3.98&nbsp;&nbsp;&nbsp; 637&nbsp;&nbsp;&nbsp; 633&nbsp; 211.1&nbsp;
+153.1&nbsp; 0.0574&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2446&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1800&nbsp;
+4.15&nbsp;&nbsp;&nbsp; 612&nbsp;&nbsp;&nbsp; 600&nbsp; 200.0&nbsp;
+151.4&nbsp; 0.0588&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2470&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1700&nbsp;
+4.34&nbsp;&nbsp;&nbsp; 586&nbsp;&nbsp;&nbsp; 567&nbsp; 188.9&nbsp;
+149.6&nbsp; 0.0603&nbsp;&nbsp;&nbsp;&nbsp;
+670&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2495&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1600&nbsp;
+4.54&nbsp;&nbsp;&nbsp; 560&nbsp;&nbsp;&nbsp; 533&nbsp; 177.8&nbsp;
+147.7&nbsp; 0.0620&nbsp;&nbsp;&nbsp;&nbsp;
+641&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2522&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1500&nbsp;
+4.78&nbsp;&nbsp;&nbsp; 533&nbsp;&nbsp;&nbsp; 500&nbsp; 166.7&nbsp;
+145.8&nbsp; 0.0638&nbsp;&nbsp;&nbsp;&nbsp;
+611&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2549&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1400&nbsp;
+5.04&nbsp;&nbsp;&nbsp; 507&nbsp;&nbsp;&nbsp; 467&nbsp; 155.6&nbsp;
+143.7&nbsp; 0.0657&nbsp;&nbsp;&nbsp;&nbsp;
+582&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2579&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1300&nbsp;
+5.33&nbsp;&nbsp;&nbsp; 479&nbsp;&nbsp;&nbsp; 433&nbsp; 144.4&nbsp;
+141.4&nbsp; 0.0678&nbsp;&nbsp;&nbsp;&nbsp;
+552&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2610&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1200&nbsp;
+5.66&nbsp;&nbsp;&nbsp; 451&nbsp;&nbsp;&nbsp; 400&nbsp; 133.3&nbsp;
+138.9&nbsp; 0.0700&nbsp;&nbsp;&nbsp;&nbsp;
+522&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2645&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1100&nbsp;
+6.04&nbsp;&nbsp;&nbsp; 423&nbsp;&nbsp;&nbsp; 367&nbsp; 122.2&nbsp;
+136.2&nbsp; 0.0724&nbsp;&nbsp;&nbsp;&nbsp;
+493&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2683&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1050&nbsp;
+6.25&nbsp;&nbsp;&nbsp; 408&nbsp;&nbsp;&nbsp; 350&nbsp; 116.7&nbsp;
+134.8&nbsp; 0.0737&nbsp;&nbsp;&nbsp;&nbsp;
+478&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2703&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1000&nbsp;
+6.47&nbsp;&nbsp;&nbsp; 394&nbsp;&nbsp;&nbsp; 333&nbsp; 111.1&nbsp;
+133.2&nbsp; 0.0751&nbsp;&nbsp;&nbsp;&nbsp;
+463&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2725&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 950&nbsp;
+6.71&nbsp;&nbsp;&nbsp; 379&nbsp;&nbsp;&nbsp; 318&nbsp; 106.8&nbsp;
+131.6&nbsp; 0.0765&nbsp;&nbsp;&nbsp;&nbsp;
+448&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2747&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 900&nbsp;
+6.97&nbsp;&nbsp;&nbsp; 364&nbsp;&nbsp;&nbsp; 306&nbsp; 103.9&nbsp;
+129.9&nbsp; 0.0780&nbsp;&nbsp;&nbsp;&nbsp;
+433&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2771&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 850&nbsp;
+7.23&nbsp;&nbsp;&nbsp; 348&nbsp;&nbsp;&nbsp; 293&nbsp; 101.0&nbsp;
+128.1&nbsp; 0.0797&nbsp;&nbsp;&nbsp;&nbsp;
+419&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2797&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 800&nbsp;
+7.51&nbsp;&nbsp;&nbsp; 333&nbsp;&nbsp;&nbsp; 280&nbsp;&nbsp; 98.0&nbsp;
+126.1&nbsp; 0.0815&nbsp;&nbsp;&nbsp;&nbsp;
+404&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2824&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 750&nbsp;
+7.78&nbsp;&nbsp;&nbsp; 317&nbsp;&nbsp;&nbsp; 267&nbsp;&nbsp; 94.9&nbsp;
+124.0&nbsp; 0.0835&nbsp;&nbsp;&nbsp;&nbsp;
+389&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2855&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 700&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 301&nbsp;&nbsp;&nbsp; 253&nbsp;&nbsp; 91.7&nbsp;
+121.4&nbsp; 0.0858&nbsp;&nbsp;&nbsp;&nbsp; 374&nbsp;&nbsp;
+1800&nbsp;&nbsp; 0.2890&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 650&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 285&nbsp;&nbsp;&nbsp; 240&nbsp;&nbsp; 88.3&nbsp;
+118.0&nbsp; 0.0888&nbsp;&nbsp;&nbsp;&nbsp; 359&nbsp;&nbsp;
+1580&nbsp;&nbsp; 0.2939&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 600&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 268&nbsp;&nbsp;&nbsp; 226&nbsp;&nbsp; 84.9&nbsp;
+114.5&nbsp; 0.0920&nbsp;&nbsp;&nbsp;&nbsp; 344&nbsp;&nbsp;
+1360&nbsp;&nbsp; 0.2993&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 550&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 251&nbsp;&nbsp;&nbsp; 211&nbsp;&nbsp; 81.2&nbsp;
+110.7&nbsp; 0.0954&nbsp;&nbsp;&nbsp;&nbsp; 330&nbsp;&nbsp;
+1140&nbsp;&nbsp; 0.3050&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 525&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 243&nbsp;&nbsp;&nbsp; 204&nbsp;&nbsp; 79.4&nbsp;
+108.7&nbsp; 0.0971&nbsp;&nbsp;&nbsp;&nbsp; 322&nbsp;&nbsp;
+1030&nbsp;&nbsp; 0.3079&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 500&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 234&nbsp;&nbsp;&nbsp; 197&nbsp;&nbsp; 77.5&nbsp;
+106.6&nbsp; 0.0988&nbsp;&nbsp;&nbsp;&nbsp; 315&nbsp;&nbsp;&nbsp;
+920&nbsp;&nbsp; 0.3108&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 475&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 225&nbsp;&nbsp;&nbsp; 189&nbsp;&nbsp; 75.5&nbsp;
+104.3&nbsp; 0.1005&nbsp;&nbsp;&nbsp;&nbsp; 307&nbsp;&nbsp;&nbsp;
+810&nbsp;&nbsp; 0.3139&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 450&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 216&nbsp;&nbsp;&nbsp; 182&nbsp;&nbsp; 73.5&nbsp;
+102.1&nbsp; 0.1023&nbsp;&nbsp;&nbsp;&nbsp; 300&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp; 0.3171&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 425&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 207&nbsp;&nbsp;&nbsp; 174&nbsp;&nbsp;
+71.4&nbsp;&nbsp; 99.7&nbsp; 0.1042&nbsp;&nbsp;&nbsp;&nbsp;
+284&nbsp;&nbsp;&nbsp; 660&nbsp;&nbsp; 0.3204&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 400&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 198&nbsp;&nbsp;&nbsp; 168&nbsp;&nbsp;
+70.5&nbsp;&nbsp; 97.3&nbsp; 0.1064&nbsp;&nbsp;&nbsp;&nbsp;
+268&nbsp;&nbsp;&nbsp; 621&nbsp;&nbsp; 0.3238&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 375&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 189&nbsp;&nbsp;&nbsp; 162&nbsp;&nbsp;
+70.1&nbsp;&nbsp; 94.8&nbsp; 0.1087&nbsp;&nbsp;&nbsp;&nbsp;
+251&nbsp;&nbsp;&nbsp; 581&nbsp;&nbsp; 0.3273&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 350&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 179&nbsp;&nbsp;&nbsp; 156&nbsp;&nbsp;
+69.7&nbsp;&nbsp; 92.2&nbsp; 0.1111&nbsp;&nbsp;&nbsp;&nbsp;
+235&nbsp;&nbsp;&nbsp; 541&nbsp;&nbsp; 0.3310&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 325&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 169&nbsp;&nbsp;&nbsp; 150&nbsp;&nbsp;
+69.1&nbsp;&nbsp; 89.4&nbsp; 0.1136&nbsp;&nbsp;&nbsp;&nbsp;
+219&nbsp;&nbsp;&nbsp; 502&nbsp;&nbsp; 0.3349&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 300&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 160&nbsp;&nbsp;&nbsp; 143&nbsp;&nbsp;
+68.4&nbsp;&nbsp; 86.5&nbsp; 0.1162&nbsp;&nbsp;&nbsp;&nbsp;
+203&nbsp;&nbsp;&nbsp; 462&nbsp;&nbsp; 0.3390&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 275&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 149&nbsp;&nbsp;&nbsp; 136&nbsp;&nbsp;
+67.5&nbsp;&nbsp; 83.4&nbsp; 0.1190&nbsp;&nbsp;&nbsp;&nbsp;
+186&nbsp;&nbsp;&nbsp; 422&nbsp;&nbsp; 0.3433&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 250&nbsp;
+8.00&nbsp;&nbsp;&nbsp; 139&nbsp;&nbsp;&nbsp; 129&nbsp;&nbsp;
+66.4&nbsp;&nbsp; 80.1&nbsp; 0.1219&nbsp;&nbsp;&nbsp;&nbsp;
+170&nbsp;&nbsp;&nbsp; 382&nbsp;&nbsp; 0.3479&nbsp; #<br>
+# -------- -----&nbsp; ----- ------- ---- ------ ------&nbsp;
+------&nbsp;&nbsp; -----&nbsp; -----&nbsp;&nbsp; ------&nbsp; #<br>
+&lt;/GRT3&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo II
+(C100)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#####################################################################################<br>
+#----------------------------------------------------------------------------------
+#<br>
+&lt;GRT4&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo III (C90 -
+C40)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#----------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Radio&nbsp;
+Peral&nbsp; Arecom Amin LonClo VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp;&nbsp;&nbsp;&nbsp; RsMin&nbsp; RsMax&nbsp;&nbsp;&nbsp;
+fl&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+# -------- -----&nbsp; ----- ------- ---- ------ ------&nbsp;
+------&nbsp;&nbsp; -----&nbsp; -----&nbsp;&nbsp; ------&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7500&nbsp;
+2.00&nbsp;&nbsp; 2500&nbsp;&nbsp; 2500&nbsp; 833.3&nbsp; 195.9&nbsp;
+0.0203&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1847&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 7000&nbsp;
+2.00&nbsp;&nbsp; 2333&nbsp;&nbsp; 2333&nbsp; 777.8&nbsp; 193.5&nbsp;
+0.0221&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1882&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6500&nbsp;
+2.00&nbsp;&nbsp; 2167&nbsp;&nbsp; 2167&nbsp; 722.2&nbsp; 191.0&nbsp;
+0.0242&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1916&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 6000&nbsp;
+2.00&nbsp;&nbsp; 2000&nbsp;&nbsp; 2000&nbsp; 666.7&nbsp; 188.2&nbsp;
+0.0265&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1955&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5500&nbsp;
+2.00&nbsp;&nbsp; 1833&nbsp;&nbsp; 1833&nbsp; 611.1&nbsp; 185.4&nbsp;
+0.0292&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.1995&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 5000&nbsp;
+2.00&nbsp;&nbsp; 1667&nbsp;&nbsp; 1667&nbsp; 555.6&nbsp; 182.1&nbsp;
+0.0322&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2041&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4750&nbsp;
+2.00&nbsp;&nbsp; 1583&nbsp;&nbsp; 1583&nbsp; 527.8&nbsp; 180.2&nbsp;
+0.0338&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2068&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4500&nbsp;
+2.00&nbsp;&nbsp; 1500&nbsp;&nbsp; 1500&nbsp; 500.0&nbsp; 178.3&nbsp;
+0.0356&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2094&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4250&nbsp;
+2.00&nbsp;&nbsp; 1417&nbsp;&nbsp; 1417&nbsp; 472.2&nbsp; 176.2&nbsp;
+0.0375&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2124&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 4000&nbsp;
+2.00&nbsp;&nbsp; 1333&nbsp;&nbsp; 1333&nbsp; 444.4&nbsp; 173.9&nbsp;
+0.0395&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2156&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3750&nbsp;
+2.00&nbsp;&nbsp; 1250&nbsp;&nbsp; 1250&nbsp; 416.7&nbsp; 171.4&nbsp;
+0.0417&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2190&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3500&nbsp;
+2.00&nbsp;&nbsp; 1167&nbsp;&nbsp; 1167&nbsp; 388.9&nbsp; 168.8&nbsp;
+0.0441&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2227&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3250&nbsp;
+2.00&nbsp;&nbsp; 1083&nbsp;&nbsp; 1083&nbsp; 361.1&nbsp; 165.9&nbsp;
+0.0467&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2267&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 3000&nbsp;
+2.00&nbsp;&nbsp; 1000&nbsp;&nbsp; 1000&nbsp; 333.3&nbsp; 162.7&nbsp;
+0.0495&nbsp;&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp; 0.2312&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2750&nbsp;
+2.00&nbsp;&nbsp;&nbsp; 917&nbsp;&nbsp;&nbsp; 917&nbsp; 305.6&nbsp;
+159.2&nbsp; 0.0526&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2361&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2500&nbsp;
+2.00&nbsp;&nbsp;&nbsp; 833&nbsp;&nbsp;&nbsp; 833&nbsp; 277.8&nbsp;
+155.2&nbsp; 0.0559&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2417&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2400&nbsp;
+2.07&nbsp;&nbsp;&nbsp; 800&nbsp;&nbsp;&nbsp; 800&nbsp; 266.7&nbsp;
+153.8&nbsp; 0.0569&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2437&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2300&nbsp;
+2.14&nbsp;&nbsp;&nbsp; 767&nbsp;&nbsp;&nbsp; 767&nbsp; 255.6&nbsp;
+152.4&nbsp; 0.0581&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2457&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2200&nbsp;
+2.22&nbsp;&nbsp;&nbsp; 733&nbsp;&nbsp;&nbsp; 733&nbsp; 244.4&nbsp;
+150.9&nbsp; 0.0593&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2477&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2100&nbsp;
+2.30&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp;&nbsp; 700&nbsp; 233.3&nbsp;
+149.3&nbsp; 0.0606&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2500&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 2000&nbsp;
+2.39&nbsp;&nbsp;&nbsp; 667&nbsp;&nbsp;&nbsp; 667&nbsp; 222.2&nbsp;
+147.7&nbsp; 0.0620&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2522&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1900&nbsp;
+2.48&nbsp;&nbsp;&nbsp; 637&nbsp;&nbsp;&nbsp; 633&nbsp; 211.1&nbsp;
+146.1&nbsp; 0.0636&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2545&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1800&nbsp;
+2.59&nbsp;&nbsp;&nbsp; 612&nbsp;&nbsp;&nbsp; 600&nbsp; 200.0&nbsp;
+144.3&nbsp; 0.0652&nbsp;&nbsp;&nbsp;&nbsp;
+700&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2570&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1700&nbsp;
+2.71&nbsp;&nbsp;&nbsp; 586&nbsp;&nbsp;&nbsp; 567&nbsp; 188.9&nbsp;
+142.4&nbsp; 0.0668&nbsp;&nbsp;&nbsp;&nbsp;
+670&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2597&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1600&nbsp;
+2.84&nbsp;&nbsp;&nbsp; 560&nbsp;&nbsp;&nbsp; 533&nbsp; 177.8&nbsp;
+140.4&nbsp; 0.0686&nbsp;&nbsp;&nbsp;&nbsp;
+641&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2624&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1500&nbsp;
+2.99&nbsp;&nbsp;&nbsp; 533&nbsp;&nbsp;&nbsp; 500&nbsp; 166.7&nbsp;
+138.3&nbsp; 0.0705&nbsp;&nbsp;&nbsp;&nbsp;
+611&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2654&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1400&nbsp;
+3.15&nbsp;&nbsp;&nbsp; 507&nbsp;&nbsp;&nbsp; 467&nbsp; 155.6&nbsp;
+136.0&nbsp; 0.0726&nbsp;&nbsp;&nbsp;&nbsp;
+582&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2685&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1300&nbsp;
+3.34&nbsp;&nbsp;&nbsp; 479&nbsp;&nbsp;&nbsp; 433&nbsp; 144.4&nbsp;
+133.6&nbsp; 0.0747&nbsp;&nbsp;&nbsp;&nbsp;
+552&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2720&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1200&nbsp;
+3.55&nbsp;&nbsp;&nbsp; 451&nbsp;&nbsp;&nbsp; 400&nbsp; 133.3&nbsp;
+131.0&nbsp; 0.0771&nbsp;&nbsp;&nbsp;&nbsp;
+522&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2756&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1100&nbsp;
+3.79&nbsp;&nbsp;&nbsp; 423&nbsp;&nbsp;&nbsp; 367&nbsp; 122.2&nbsp;
+128.2&nbsp; 0.0797&nbsp;&nbsp;&nbsp;&nbsp;
+493&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2796&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1050&nbsp;
+3.92&nbsp;&nbsp;&nbsp; 408&nbsp;&nbsp;&nbsp; 350&nbsp; 116.7&nbsp;
+126.6&nbsp; 0.0810&nbsp;&nbsp;&nbsp;&nbsp;
+478&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2818&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp; 1000&nbsp;
+4.07&nbsp;&nbsp;&nbsp; 394&nbsp;&nbsp;&nbsp; 333&nbsp; 111.1&nbsp;
+125.0&nbsp; 0.0824&nbsp;&nbsp;&nbsp;&nbsp;
+463&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2840&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 950&nbsp;
+4.22&nbsp;&nbsp;&nbsp; 379&nbsp;&nbsp;&nbsp; 318&nbsp; 106.8&nbsp;
+123.4&nbsp; 0.0840&nbsp;&nbsp;&nbsp;&nbsp;
+448&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2862&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 900&nbsp;
+4.39&nbsp;&nbsp;&nbsp; 364&nbsp;&nbsp;&nbsp; 306&nbsp; 103.9&nbsp;
+121.6&nbsp; 0.0855&nbsp;&nbsp;&nbsp;&nbsp;
+433&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2887&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 850&nbsp;
+4.57&nbsp;&nbsp;&nbsp; 348&nbsp;&nbsp;&nbsp; 293&nbsp; 101.0&nbsp;
+119.8&nbsp; 0.0872&nbsp;&nbsp;&nbsp;&nbsp;
+419&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2913&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 800&nbsp;
+4.77&nbsp;&nbsp;&nbsp; 333&nbsp;&nbsp;&nbsp; 280&nbsp;&nbsp; 98.0&nbsp;
+117.9&nbsp; 0.0890&nbsp;&nbsp;&nbsp;&nbsp;
+404&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2942&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 750&nbsp;
+4.99&nbsp;&nbsp;&nbsp; 317&nbsp;&nbsp;&nbsp; 267&nbsp;&nbsp; 94.9&nbsp;
+115.8&nbsp; 0.0908&nbsp;&nbsp;&nbsp;&nbsp;
+389&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 0.2974&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 700&nbsp;
+5.22&nbsp;&nbsp;&nbsp; 301&nbsp;&nbsp;&nbsp; 253&nbsp;&nbsp; 91.7&nbsp;
+113.5&nbsp; 0.0928&nbsp;&nbsp;&nbsp;&nbsp; 374&nbsp;&nbsp;
+1800&nbsp;&nbsp; 0.3007&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 650&nbsp;
+5.47&nbsp;&nbsp;&nbsp; 285&nbsp;&nbsp;&nbsp; 240&nbsp;&nbsp; 88.3&nbsp;
+111.2&nbsp; 0.0950&nbsp;&nbsp;&nbsp;&nbsp; 359&nbsp;&nbsp;
+1580&nbsp;&nbsp; 0.3043&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 600&nbsp;
+5.74&nbsp;&nbsp;&nbsp; 268&nbsp;&nbsp;&nbsp; 226&nbsp;&nbsp; 84.9&nbsp;
+108.5&nbsp; 0.0972&nbsp;&nbsp;&nbsp;&nbsp; 344&nbsp;&nbsp;
+1360&nbsp;&nbsp; 0.3080&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 550&nbsp;
+6.03&nbsp;&nbsp;&nbsp; 251&nbsp;&nbsp;&nbsp; 211&nbsp;&nbsp; 81.2&nbsp;
+105.7&nbsp; 0.0995&nbsp;&nbsp;&nbsp;&nbsp; 330&nbsp;&nbsp;
+1140&nbsp;&nbsp; 0.3121&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 525&nbsp;
+6.18&nbsp;&nbsp;&nbsp; 243&nbsp;&nbsp;&nbsp; 204&nbsp;&nbsp; 79.4&nbsp;
+104.1&nbsp; 0.1007&nbsp;&nbsp;&nbsp;&nbsp; 322&nbsp;&nbsp;
+1030&nbsp;&nbsp; 0.3143&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 500&nbsp;
+6.32&nbsp;&nbsp;&nbsp; 234&nbsp;&nbsp;&nbsp; 197&nbsp;&nbsp; 77.5&nbsp;
+102.5&nbsp; 0.1021&nbsp;&nbsp;&nbsp;&nbsp; 315&nbsp;&nbsp;&nbsp;
+920&nbsp;&nbsp; 0.3166&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 475&nbsp;
+6.47&nbsp;&nbsp;&nbsp; 225&nbsp;&nbsp;&nbsp; 189&nbsp;&nbsp; 75.5&nbsp;
+100.7&nbsp; 0.1034&nbsp;&nbsp;&nbsp;&nbsp; 307&nbsp;&nbsp;&nbsp;
+810&nbsp;&nbsp; 0.3190&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 450&nbsp;
+6.62&nbsp;&nbsp;&nbsp; 216&nbsp;&nbsp;&nbsp; 182&nbsp;&nbsp;
+73.5&nbsp;&nbsp; 98.9&nbsp; 0.1050&nbsp;&nbsp;&nbsp;&nbsp;
+300&nbsp;&nbsp;&nbsp; 700&nbsp;&nbsp; 0.3215&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 425&nbsp;
+6.75&nbsp;&nbsp;&nbsp; 207&nbsp;&nbsp;&nbsp; 174&nbsp;&nbsp;
+71.4&nbsp;&nbsp; 97.0&nbsp; 0.1067&nbsp;&nbsp;&nbsp;&nbsp;
+284&nbsp;&nbsp;&nbsp; 660&nbsp;&nbsp; 0.3242&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 400&nbsp;
+6.87&nbsp;&nbsp;&nbsp; 198&nbsp;&nbsp;&nbsp; 166&nbsp;&nbsp;
+69.3&nbsp;&nbsp; 94.9&nbsp; 0.1086&nbsp;&nbsp;&nbsp;&nbsp;
+268&nbsp;&nbsp;&nbsp; 621&nbsp;&nbsp; 0.3271&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 375&nbsp;
+6.96&nbsp;&nbsp;&nbsp; 189&nbsp;&nbsp;&nbsp; 159&nbsp;&nbsp;
+67.1&nbsp;&nbsp; 92.6&nbsp; 0.1106&nbsp;&nbsp;&nbsp;&nbsp;
+251&nbsp;&nbsp;&nbsp; 581&nbsp;&nbsp; 0.3303&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 350&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 179&nbsp;&nbsp;&nbsp; 151&nbsp;&nbsp;
+64.8&nbsp;&nbsp; 90.2&nbsp; 0.1129&nbsp;&nbsp;&nbsp;&nbsp;
+235&nbsp;&nbsp;&nbsp; 541&nbsp;&nbsp; 0.3338&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 325&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 169&nbsp;&nbsp;&nbsp; 142&nbsp;&nbsp;
+62.4&nbsp;&nbsp; 87.5&nbsp; 0.1153&nbsp;&nbsp;&nbsp;&nbsp;
+219&nbsp;&nbsp;&nbsp; 502&nbsp;&nbsp; 0.3376&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 300&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 160&nbsp;&nbsp;&nbsp; 134&nbsp;&nbsp;
+60.0&nbsp;&nbsp; 84.6&nbsp; 0.1179&nbsp;&nbsp;&nbsp;&nbsp;
+203&nbsp;&nbsp;&nbsp; 462&nbsp;&nbsp; 0.3415&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 275&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 149&nbsp;&nbsp;&nbsp; 126&nbsp;&nbsp;
+57.4&nbsp;&nbsp; 81.6&nbsp; 0.1206&nbsp;&nbsp;&nbsp;&nbsp;
+186&nbsp;&nbsp;&nbsp; 422&nbsp;&nbsp; 0.3458&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 250&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 139&nbsp;&nbsp;&nbsp; 117&nbsp;&nbsp;
+54.8&nbsp;&nbsp; 78.5&nbsp; 0.1242&nbsp;&nbsp;&nbsp;&nbsp;
+170&nbsp;&nbsp;&nbsp; 382&nbsp;&nbsp; 0.3511&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 225&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 129&nbsp;&nbsp;&nbsp; 109&nbsp;&nbsp;
+52.9&nbsp;&nbsp; 75.4&nbsp; 0.1289&nbsp;&nbsp;&nbsp;&nbsp;
+154&nbsp;&nbsp;&nbsp; 343&nbsp;&nbsp; 0.3577&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 200&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 118&nbsp;&nbsp;&nbsp; 102&nbsp;&nbsp;
+52.5&nbsp;&nbsp; 72.0&nbsp; 0.1340&nbsp;&nbsp;&nbsp;&nbsp;
+138&nbsp;&nbsp;&nbsp; 303&nbsp;&nbsp; 0.3648&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 175&nbsp;
+7.00&nbsp;&nbsp;&nbsp; 106&nbsp;&nbsp;&nbsp;&nbsp; 95&nbsp;&nbsp;
+51.8&nbsp;&nbsp; 68.2&nbsp; 0.1395&nbsp;&nbsp;&nbsp;&nbsp;
+121&nbsp;&nbsp;&nbsp; 263&nbsp;&nbsp; 0.3727&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 150&nbsp;
+7.00&nbsp;&nbsp;&nbsp;&nbsp; 95&nbsp;&nbsp;&nbsp;&nbsp; 87&nbsp;&nbsp;
+50.7&nbsp;&nbsp; 64.0&nbsp; 0.1453&nbsp;&nbsp;&nbsp;&nbsp;
+105&nbsp;&nbsp;&nbsp; 224&nbsp;&nbsp; 0.3815&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 140&nbsp;
+7.00&nbsp;&nbsp;&nbsp;&nbsp; 90&nbsp;&nbsp;&nbsp;&nbsp; 84&nbsp;&nbsp;
+50.1&nbsp;&nbsp; 62.2&nbsp; 0.1479&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+99&nbsp;&nbsp;&nbsp; 208&nbsp;&nbsp; 0.3853&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 130&nbsp;
+7.00&nbsp;&nbsp;&nbsp;&nbsp; 85&nbsp;&nbsp;&nbsp;&nbsp; 80&nbsp;&nbsp;
+49.4&nbsp;&nbsp; 60.3&nbsp; 0.1505&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+92&nbsp;&nbsp;&nbsp; 192&nbsp;&nbsp; 0.3893&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 120&nbsp;
+7.00&nbsp;&nbsp;&nbsp;&nbsp; 80&nbsp;&nbsp;&nbsp;&nbsp; 77&nbsp;&nbsp;
+48.8&nbsp;&nbsp; 58.4&nbsp; 0.1535&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+86&nbsp;&nbsp;&nbsp; 176&nbsp;&nbsp; 0.3934&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 110&nbsp;
+7.00&nbsp;&nbsp;&nbsp;&nbsp; 75&nbsp;&nbsp;&nbsp;&nbsp; 73&nbsp;&nbsp;
+48.0&nbsp;&nbsp; 56.3&nbsp; 0.1566&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+79&nbsp;&nbsp;&nbsp; 160&nbsp;&nbsp; 0.3978&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp; 100&nbsp;
+7.00&nbsp;&nbsp;&nbsp;&nbsp; 70&nbsp;&nbsp;&nbsp;&nbsp; 69&nbsp;&nbsp;
+47.0&nbsp;&nbsp; 54.0&nbsp; 0.1599&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+73&nbsp;&nbsp;&nbsp; 144&nbsp;&nbsp; 0.4025&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+90&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 65&nbsp;&nbsp;&nbsp;&nbsp;
+64&nbsp;&nbsp; 46.0&nbsp;&nbsp; 51.7&nbsp;
+0.1635&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 66&nbsp;&nbsp;&nbsp;
+128&nbsp;&nbsp; 0.4075&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+80&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 60&nbsp;&nbsp;&nbsp;&nbsp;
+60&nbsp;&nbsp; 44.7&nbsp;&nbsp; 49.1&nbsp;
+0.1673&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 60&nbsp;&nbsp;&nbsp;
+113&nbsp;&nbsp; 0.4129&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+70&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 55&nbsp;&nbsp;&nbsp;&nbsp;
+55&nbsp;&nbsp; 43.2&nbsp;&nbsp; 46.3&nbsp;
+0.1712&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53&nbsp;&nbsp;&nbsp;&nbsp;
+97&nbsp;&nbsp; 0.4188&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+60&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp; 41.3&nbsp;&nbsp; 43.3&nbsp;
+0.1755&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 47&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp; 0.4252&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 44&nbsp;&nbsp;&nbsp;&nbsp;
+44&nbsp;&nbsp; 39.1&nbsp;&nbsp; 39.9&nbsp;
+0.1802&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40&nbsp;&nbsp;&nbsp;&nbsp;
+65&nbsp;&nbsp; 0.4323&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 38&nbsp;&nbsp;&nbsp;&nbsp;
+38&nbsp;&nbsp; 36.4&nbsp;&nbsp; 36.0&nbsp;
+0.1856&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 34&nbsp;&nbsp;&nbsp;&nbsp;
+49&nbsp;&nbsp; 0.4403&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+30&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp; 33.0&nbsp;&nbsp; 31.6&nbsp;
+0.1918&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27&nbsp;&nbsp;&nbsp;&nbsp;
+33&nbsp;&nbsp; 0.4497&nbsp; #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T0&nbsp;&nbsp;&nbsp;&nbsp;
+20&nbsp; 7.00&nbsp;&nbsp;&nbsp;&nbsp; 26&nbsp;&nbsp;&nbsp;&nbsp;
+24&nbsp;&nbsp; 28.4&nbsp;&nbsp; 26.2&nbsp;
+0.1994&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21&nbsp;&nbsp;&nbsp;&nbsp;
+17&nbsp;&nbsp; 0.4611&nbsp; #<br>
+#----------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Radio&nbsp;
+Peral&nbsp; Arecom Amin LonClo VelEsp&nbsp;&nbsp;&nbsp;
+ft&nbsp;&nbsp;&nbsp;&nbsp; RsMin&nbsp; RsMax&nbsp;&nbsp;&nbsp;
+fl&nbsp;&nbsp;&nbsp;&nbsp; #<br>
+#----------------------------------------------------------------------------------
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CONSISTENCIA DEL TRAZADO EN
+PLANTA EN CARRETERAS
+CONVENCIONALES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Articulo 4.6&nbsp; Norma ES31 IC
+2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#-----------------------------------------------------------------------------------#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Evaluación de la consistencia en fase de
+proyecto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; Tasa de cambio de curvatura de una curva i
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CCRi = 63700 * Omega / Li
+[gonios/Km]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; siendo
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+omega = Angulo en radianes entre tangentes
+(circular+clotoides)&nbsp;&nbsp;&nbsp; #<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+L&nbsp;&nbsp;&nbsp;&nbsp; = Longitud total de la curva en
+metros.(circular+clotoides)&nbsp; #<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; Tasa de cmbio de curvatura global de un
+tramo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CCRs&nbsp;&nbsp; = Suma(CCRi * Li) /
+Suma(Li)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp; Se considera que existe una consistencia BUENA en planta si
+para cada elemento&nbsp;&nbsp; #<br>
+#&nbsp; se
+cumple:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|CCRi - CCRs|&nbsp; &lt;=&nbsp; 180
+gonios/Km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# Se considera ACEPTABLE si cada elemnto
+cumple:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+180 gonios/Km &lt; |CCri - CCRs| &lt;= 360
+gonios/KM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#-----------------------------------------------------------------------------------#<br>
+# Estudia C.T.P.&nbsp;&nbsp;&nbsp; BUENA&nbsp;&nbsp;&nbsp;
+ACEPTABLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+# --------------&nbsp;&nbsp;&nbsp; -----&nbsp;&nbsp;&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CTP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 360<br>
+#-----------------------------------------------------------------------------------#<br>
+&lt;/GRT4&gt;&nbsp;&nbsp;&nbsp; PARÁMETROS PARA Grupo III(C90 -
+C40)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br>
+#----------------------------------------------------------------------------------
+#<br>
+#####################################################################################<br>
+&nbsp;FIN&nbsp;&nbsp; DEL FICHERO<br>
+##################<br>
+<br>
+<br>
+</div>
+
+<br>
+
+<br>
+
+</body></html>

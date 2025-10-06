@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Desmonte en roca</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GEOMETRÍA DE DESMONTE EN ROCA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Cuando
+en los tramos de cálculo en los que se utiliza una determinada sección
+tipo está declarada una profundidad determinada para el techo de las
+rocas que puedan ser alcanzadas por los desmontes, debe preverse una
+sección para aplicar en el tramo de la sección que esté en roca.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 549px; height: 204px;" alt="" src="Imagenes/geometria_bermas_roca.png" /><br />
+      </div>
+      <br /></span><img style="width: 226px; height: 128px; margin-left: 7px;" alt="" src="Imagenes/modelo_desmonte_roca.png" align="right" /><span class="Parrafo">Esta
+sección de desmonte en roca se aplica después de la cuneta y antes del
+desmonte en tierra. Análogamente a los otros el desmonte en roca puede
+definirse de forma paramétrica, de <a href="definicion_vectorial.html">forma vectorial</a> o mediante 6 vectores como veremos a continuación. En la definición
+paramétrica se emplean dos variables por cada tipo de roca:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">El talud para desmonte en roca (<span style="font-weight: bold;">DR</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La distancia horizontal de roca descubierta (<span style="font-weight: bold;">RD</span>).
+Desde la intersección de los taludes en roca con el horizonte de la
+roca, se deja el ancho aquí especificado con la geometría del techo de
+roca antes de aplicar los desmontes en la siguiente roca o en la tierra.</span></li>
+      </ul>
+      <img style="width: 251px; height: 118px; margin-left: 7px;" alt="" src="Imagenes/desm_roca_def_vect.png" align="right" /><span class="Parrafo">En la <a href="definicion_vectorial.html">definición vectorial</a>, el vector puede ubicarse por el pie o por la cabeza. El desmonte en roca vectorial utiliza el ancho de roca descubierta (<span style="font-weight: bold;">RD</span>) de la primera roca. También utiliza el talud de desmonte <span style="font-weight: bold;">DR1</span>
+para completar el vector cuando su altura es insuficiente. Si la
+ubicación es fija por el pie lo completa por arriba, pero si es fija
+por la cabeza lo completa por abajo.<br />
+      <br /><br />
+      <br />
+      <br />
+      <img style="width: 251px; height: 118px;" alt="" src="Imagenes/roca_6vectores.png" align="left" hspace="6" />Otra forma de definición vectorial es 6 vectores que permite definir un
+vector diferente para cada nivel de roca además del valor de roca
+descubierta (<span style="font-weight: bold;">RD</span>).<br /><br /><br /><br /><br /><br /><br /><br />Para el caso de que cada roca tenga definido un vector con bermas y bancos<br />de
+diferentes alturas y taludes y no se ha definido un ancho de roca
+descubierta entre dos rocas: si una roca tiene incompleto su banco mas
+alto, la suma de esta altura residual más la del primer banco de la
+roca superior no puede exceder a la altura prevista para los bancos de
+la roca inferior.<br /><br />P.e:&nbsp; Roca 2 con bancos cada 10m y
+Roca 1 con bancos cada 6m (y RD=0). Si el ultimo banco de la Roca 2
+tiene una altura de 7m, la primera berma de la Roca 1 aparecerá a los
+3m (7+3=10) , en lugar de los 6 m previstos para evitar así un banco de
+7+6=13m.<br />
+      <br />
+      Independientemente del tipo de definición del desmonte en roca, en el
+desplegable de la parte inferior el programa presenta las siguientes
+opciones:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Usar esta geometría</span>: El programa ejecuta para roca la geometría definida según las opciones explicadas.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Usar geometría de desmonte en tierra</span>:
+Al activar esta opción la geometría del desmonte se ejecuta como si
+sólo existiese <a href="OL_desmonte_tierra.html">desmonte en tierra</a>, lo que permite controlar las alturas
+de las bermas desde abajo o arriba independientemente del terreno. Las
+mediciones contemplan los distintos terrenos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Usar bermas de desmonte en tierra</span>:
+Se utiliza para el desmonte en roca las bermas del desmonte en tierra,
+es decir, en este caso cada roca lleva su propio talud definido
+paramétricamente, pero el desnivel, ancho y pendiente de las bermas se
+toma del definido con el desmonte en tierra. El desnivel entre bermas
+se conserva en el cambio de roca incluso entre la última berma de roca
+y la primera en tierra.</span></li>
+      </ul>
+      <div style="margin-left: 40px;">En este caso se puede elegir a partir de que nivel de roca se utilizan esas bermas.<br />
+      <br />
+      <img style="width: 270px; height: 127px;" alt="" src="Imagenes/desm_roca_desdea.png" /><br />
+      </div>
+      <br />
+Si se activa la opción <span style="font-weight: bold; font-style: italic;">Limitar altura</span> entonces se incluye la altura real del desmonte en roca en el control de la altura máxima del desmonte que hace saltar a la <a href="OL_desmonte_tierra.html#STAlt">sección tipo alternativa</a>. Debe estar definida esta <a href="OL_desmonte_tierra.html#STAlt">sección alternativa</a> y además debe estar activa también la opción de que esta <a href="OL_desmonte_tierra.html#STAlt">sección alternativa</a>
+incluya todas las partes (control, berma, cuneta, roca, tierra,..).
+Para ilustrar el funcionamiento de esta opción puede servir el
+siguiente ejemplo:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic;">Se
+tiene definida en la sección tipo 1 una altura máxima para el desmonte
+en tierra ZD3 = 50 m. Se tiene como seccion alternativa la 2 y activada
+la opción de que ésta incluya toda las partes de la sección.</span><span style="font-style: italic;"> En un PK concreto la altura del desmonte en tierra es de 25 m y la del desmonte en roca de 30 m.<br />
+      <br />
+En este contexto y con esta opción desactivada se utilizaría en ese PK
+la sección tipo 1 mientra que con la opción activada se utilizaría la
+sección tipo 2.</span><br />
+      </div>
+      <br />
+
+<span class="Parrafo"><span class="Parrafo">
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

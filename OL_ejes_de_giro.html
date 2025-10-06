@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Ejes de giro</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EJES DE GIRO<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Este
+menú permite la definición de la posición del eje de giro (ejes de giro
+en autovías) en el espacio, a lo largo del eje. El eje de giro es el
+punto de la sección transversal de la plataforma en el que se aplica la
+rasante.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+      <br />
+Para el caso de calzada única, la posición del eje de giro en un PK
+determinado se define por su distancia <span style="font-weight: bold;">D</span>
+al eje geométrico (positiva hacia la derecha y negativa hacia la
+izquierda) y la diferencia de altura <span style="font-weight: bold;">H</span>
+con la rasante (positiva baja la plataforma respecto de la rasante).<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_ejes_giro.png" style="width: 549px; height: 204px;" alt="" /><br />
+      </div>
+      <br />
+En
+caso de calzada doble (autovías o autopistas), por defecto la posición del eje de
+giro está en las bandas blancas interiores y en caso de calzada única
+estará en el centro de la calzada, a no ser que datos en
+este menú desplacen la posición del eje de giro a otro lugar. Sobre el
+eje de giro se aplicará la cota definida en el longitudinal (o
+longitudinales si hay dos). En el caso de autovías con <a href="OL_peraltes.html#doble_peralte">calzadas de doble peralte</a>, el programa adapta el cálculo de la posición del eje de giro.<br />
+      <br />
+</span>Posibilidad de utilizar el peralte del arcen interior, cuando se
+definen ejes de giro con distancia horizontal negativa en autovías.<br />
+Deberemos activar la casilla adjunta en la columna de los desplazamientos a derecha e izquierda.<br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_ejes_giro.png" style="width: 319px; height: 259px; margin-left: 7px; margin-top: 7px;" alt="" align="right" /><span class="Parrafo">Si la altura del eje de giro no es nula, se descuenta <span style="font-weight: bold;">H</span> de la cota de la rasante para
+obtener la cota de la plataforma en el eje de giro (notar que <span style="font-weight: bold;">H</span> positivo hace bajar la
+plataforma). Estos dos valores <span style="font-weight: bold;">D</span>
+y <span style="font-weight: bold;">H</span> pueden variar en función
+del PK, teniendo en cuenta que:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Si en dos puntos consecutivos, se dan
+valores diferentes de <span style="font-weight: bold;">D</span> o <span style="font-weight: bold;">H</span>, se considera que la variación
+entre ambos puntos es lineal.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si la definición no cubre el tramo de
+cálculo, se extrapola.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si no es preciso mover el eje de giro
+de su posición por defecto, basta dejar un dato todo a cero.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los
+datos de
+PK's en este menú se pueden dar tanto gráfica como numéricamente
+(botones <span style="font-weight: bold;">[Clic]</span>/<span style="font-weight: bold;">[Teclado]</span>).
+En el caso de darlo gráficamente, la proyección del punto sobre el eje
+puede hacer referencia a un perfil exacto ó interpolado.</span></span><br />
+      <span class="Parrafo"> <br />
+Además, están disponibles las siguientes opciones:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">[Automático]</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Inicializa
+dos datos con los PK de inicio y final del eje en curso.<br />
+Para carreteras en las que se desee conservar el eje de giro, por el
+eje en planta, a pesar de haber definido diferentes excentricidades en
+diferentes PKs; la herramienta Automático rellena la tabla con los
+mismos PKs e igual desplazamiento horizontal que la excentricidad pero
+de signo contrario. Si aparece un salto brusco debido a un salto
+lateral el eje en planta se debe compensar la diferencia de cota debida
+al peralte con un salto vertical de la rasante.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">[Guardar] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /><br />
+[Cargar] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Permite
+salvar y recuperar los datos de esta tabla mediante archivos de
+extensión&nbsp;<span class="Archivo">.egi</span>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold;">[Por
+línea]</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify;">Con
+esta opción se puede definir la distancia <span style="font-weight: bold;">D</span> del eje de giro mediante la
+selección de una línea en planta.<br />
+Se crea un cuadro de diálogo que permite en autovías seleccionar una
+línea diferente para determinar la posición del eje de giro en cada
+calzada. En este caso los datos se calculan en la zona donde ambas
+líneas tienen proyección sobre el eje y en pks múltiplos de un valor
+concreto.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/OL_eje_giro_linea.png" style="width: 320px; height: 168px;" alt="" /><br />
+            </div>
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Dibujar EG</span><br />
+            </td>
+            <td style="vertical-align: top;">Activando esta casilla se
+puede marcar en los perfiles la posición del eje de giro.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Referencia en el eje geométrico</span><br />
+            </td>
+            <td style="vertical-align: top;">Usa como referencia el eje geométrico de la autovía en vez de la banda blanca interior.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

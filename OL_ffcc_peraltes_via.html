@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Peraltes de vía</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PERALTES DE VÍA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 695px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 693px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#tabla_dip">Cálculo automático usando la tabla .dip</a><br />
+      <a href="#auto_tabla">Peraltes según tabla .tpe</a><br />
+      <a href="#tpv">Peraltes tramificados según velocidad</a><br />
+      <a href="#proyeccion">Peralte obtenidos por proyección desde otro
+eje</a><br />
+      <a href="#peraltes_por_linea">Peraltes por línea</a><br />
+      <a href="#promediar">Promediar</a><br />
+      <a href="#modos">Modos de cálculo de peraltes</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#hilo_bajo_ras">Hilo
+bajo por la rasante</a><br />
+      <a href="#mantener_cdg_curvas_s">Mantener centro de gravedad en
+clotoides en S</a><br />
+      <a href="#norma_francesa">Norma francesa</a><br />
+      <a href="#matener_cdg_espirales_cortas">Mantener centro de
+gravedad en espirales cortas</a><br />
+      <a href="#cota_entrecarril">Cota rasante por el eje del
+entrecarril</a><br />
+      <a href="#curvas_S_Z_entrecarril">Grupo de curvas en S, mantener
+la cota de la rasante en el entrecarril</a><br /><a href="#Norma_metro_Mexico"><span style="color: rgb(0, 79, 175);">Norma Metro México</span></a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="OL_ffcc_peraltes_via.html#via_doble_placa">Peralte para vía doble</a><br />
+      <div style="margin-left: 40px;"><a href="#via_doble_independiente">Vía
+doble independiente</a><br />
+      <a href="#via_doble_en_placa">Vía doble en placa</a><br />
+      <a href="#via_doble_en_placa_cota_en_eje">Vía doble en placa,
+Cota en Eje Geométrico</a><br />
+      </div>
+      <a href="OL_ffcc_planta.html#peralte_velocidad_obligados">Peralte
+obligado</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+      <img style="width: 288px; height: 181px; margin-left: 7px;" alt="" src="Imagenes/modelo_peraltes_ferrocarriles.png" align="right" />En
+ferrocarriles los peraltes se dan en milímetros. <br />
+      <br />
+En
+recta son cero y en curva se aplican según el eje de giro haciendo
+subir el carril exterior. Por convenio, sin embargo, se anotan con
+valor positivo en curva a la derecha y negativo en curva a la izquierda.<br />
+      <br />
+El funcionamiento del menú de peraltes para ferrocarriles es muy
+similar al de <a href="OL_peraltes.html">peraltes para carreteras</a>,
+aunque en el primer caso existen varias formas de declarar y calcular
+los peraltes de forma automática y según se comenta en los siguientes
+epígrafes.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 550px; height: 257px;" alt="" src="Imagenes/dialogo_peraltes_ffcc.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="tabla_dip">Cálculo automático
+usando la tabla .dip</a></span><br />
+      <br />
+Al pulsar el botón <span style="font-weight: bold;">[Auto DIP] </span>los
+peraltes son calculados automáticamente utilizando los parámetros
+definidos en la <a href="OL_ffcc_planta.html#tablas_dip">tabla&nbsp;<span class="Archivo">.dip</span></a> usando los valores de radio, velocidad
+de circulación, modo y peralte obligado.<br />
+      <br />
+Las transiciones de peralte se corresponden con la longitud de las <a href="OL_planta_curvas_transicion.html">curvas de transición</a>
+calculadas. Si no existe <a href="OL_planta_curvas_transicion.html">curva
+de transición</a> entre dos alineaciones la tabla trata de calcular la
+transición según la longitud necesaria extraída de la <a href="OL_ffcc_planta.html#tablas_dip">tabla&nbsp;<span class="Archivo">.dip</span></a>
+de la siguiente forma:<br />
+      <ul>
+        <li>Recta - curva: Mete toda la transición en la recta.</li>
+        <li>Curva - curva (del mismo sentido): Mete la transición en la
+curva de menor peralte.</li>
+        <li>Curva
+- contracurva: Mete en cada curva su propia transición, pasando por
+peralte cero en el punto de tangencia de ambas curvas (en el caso de
+que no entre toda la longitud de la transición, se utiliza todo el
+espacio disponible).</li>
+      </ul>
+Por otro lado, si se han definido tramos de <a href="OL_ffcc_planta.html#peralte_velocidad_obligados">velocidades o
+peraltes obligados</a>, el cálculo de peraltes según la <a href="OL_ffcc_planta.html#tablas_dip">tabla&nbsp;<span class="Archivo">.dip</span></a>
+utiliza como datos los correspondientes a cada PK allí declarados.<br /><br /><img style="width: 109px; height: 61px; float: right;" alt="" src="Imagenes/doucines_ffcc.png" hspace="5" />Tipo de transición&nbsp;<span class="Parf_negrita">Doucines</span>
+que suaviza la entrada y salida de las rampas del peralte, es posible configurar el KV de la
+parábola y la longitud máxima.<br />
+      <br />
+      <span class="Titulo_2"><a name="auto_tabla">Peraltes según tabla
+.tpe</a></span><br />
+      <br />
+En el caso de ejes de ferrocarril, lo habitual es calcular los peraltes
+usando la <a href="OL_ffcc_planta.html#tablas_dip">tabla&nbsp;<span class="Archivo">.dip</span></a> asociada al eje. Aún así, y para casos
+muy concretos, también es posible hacer uso de archivos&nbsp;<span class="Archivo">.tpe</span> al igual que ocurre en el caso de <a href="OL_peraltes.html">carreteras</a>.<br />
+      <br />
+A modo de ejemplo se suministran los ficheros de la librería&nbsp;<span class="Archivo">FER.tpe</span> y&nbsp;<span class="Archivo">FFCC.tpe</span>
+con un caso típico de configuración de tabla para ferrocarriles:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;"># TABLA DE
+PERALTES FF.CC ancho normal<br />
+# Maximo numero de datos en la tabla P-r = 100<br />
+# Para radio mayor que el primer dato se<br />
+# aplica bombeo del valor expresado.<br />
+# Para datos segundo y siguientes se interpola<br />
+# en la tabla el valor del peralte:<br />
+# peralte de ... para radio &gt;= a ...<br />
+# ------&nbsp;&nbsp; ----&nbsp;&nbsp;&nbsp; ------<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6000.<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5700<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp;
+20.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4662<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp; 50.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3544<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp; 80.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2694<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;&nbsp; 90.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2048<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp; 110.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1557<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp; 130.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1184<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp; 160.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+900<br />
+&nbsp; P-r&nbsp;&nbsp;&nbsp;
+160.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+# interpolacion y precision<br />
+# ------&nbsp; ----<br />
+&nbsp; Inter&nbsp;&nbsp;&nbsp; 1.0&nbsp; comentada no interpola<br />
+# valor del bombeo en recta (2 - 2.5)<br />
+# ------&nbsp; ----<br />
+&nbsp; Bom&nbsp;&nbsp;&nbsp;&nbsp; 0.0<br />
+# maximo peralte en curva (160 mm)<br />
+# ------&nbsp; ----<br />
+&nbsp; Maxp&nbsp;&nbsp; 160.0<br />
+# peralte en el punto del infinito de<br />
+# clotoides en S&nbsp; (0 - 2)<br />
+# ------&nbsp; ----<br />
+&nbsp; Sbo&nbsp;&nbsp;&nbsp;&nbsp; 0.0<br />
+# minima longitud de peralte constante en<br />
+# clotoides de vertice o curvas cortas<br />
+# ------&nbsp; ----<br />
+&nbsp; Lmcur&nbsp;&nbsp; 30.0<br />
+# minima longitud de transicion recta curva<br />
+# sin clotoide. Fraccion en recta (menor peralte)<br />
+# long =&nbsp;&nbsp; L0&nbsp; + L1 * per_cur<br />
+# ------&nbsp; ----&nbsp; ----<br />
+&nbsp; Rmtr&nbsp;&nbsp;&nbsp; 30.0&nbsp;&nbsp; 0.0<br />
+# minima longitud de transicion recta curva<br />
+# sin clotoide. Fraccion en curva (mayor peralte)<br />
+# long =&nbsp;&nbsp; L0&nbsp; + L1 * per_cur<br />
+# ------&nbsp; ----&nbsp; ----<br />
+&nbsp; Cmtr&nbsp;&nbsp;&nbsp; 30.0&nbsp;&nbsp; 0.0<br />
+# transicion de bombeo dentro de la clotoide (0)<br />
+# o mitad dentro mitad fuera (1)<br />
+# En FF.CC. no hay transiciones de bombeo<br />
+# ------&nbsp; ----<br />
+&nbsp; Trbo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<br />
+# repaso automatico de transicion de bombeo ? si = 1<br />
+# En FF.CC. no hay transiciones de bombeo<br />
+# ------&nbsp; ----<br />
+&nbsp; A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0<br />
+# OBLIGATORIO TERMINAR LA TABLA CON (FIN)<br />
+# ------<br />
+&nbsp; FIN<br />
+      </div>
+      <br />
+Para ferrocarriles los ficheros&nbsp;<span class="Archivo">.tpe</span>
+tienen las siguientes particularidades:<br />
+      <ul>
+        <li>Cada tabla se define para cierta velocidad de diseño.</li>
+        <li>Los peraltes se dan en milímetros.</li>
+        <li>El comando <span style="font-weight: bold;">Bom</span>
+debe estar a cero.</li>
+        <li>El comando <span style="font-weight: bold;">Sbo</span>
+también debe valer cero.</li>
+        <li>Los comandos <span style="font-weight: bold;">Lmcur</span>,
+          <span style="font-weight: bold;">Rmtr</span> y <span style="font-weight: bold;">Cmtr</span> no deberían trabajar nunca en
+las condiciones en que se diseña un eje en planta en ferrocarriles.</li>
+        <li>El comando <span style="font-weight: bold;">A</span> debe
+valer siempre cero, pues no hay bombeo ni transiciones de bombeos en
+ejes de ferrocarril. </li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="tpv">Peraltes tramificados según
+velocidad</a></span><br />
+      <br />
+En el menú de PERALTES se existen dos opciones relacionadas entre si:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 98px; font-weight: bold;">[VELOCIDADES]
+            </td>
+            <td style="vertical-align: top; width: 574px; text-align: justify;"><img style="width: 225px; height: 235px; margin-left: 7px;" alt="" src="Imagenes/peraltes_velocidad.png" align="right" />Da paso a un
+menú que permite definir una serie de velocidades según
+tramos de PK. <span class="Parrafo">Esta información se guarda el
+fichero&nbsp;<span class="Archivo">.vol</span> del eje, aunque también
+es posible guardarla en
+ficheros&nbsp;<span class="Archivo">.tpv</span> independientes.</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 98px; font-weight: bold;">[Auto
+TablaV]</td>
+            <td style="vertical-align: top; width: 574px; text-align: justify;">Trabaja
+como <a href="#auto_tabla"><span style="font-weight: bold;">[Auto
+tabla]</span></a> pero busca tabla con la
+extensión&nbsp;<span class="Archivo">.tpv</span>,
+de modo que el peralte depende además del radio, de la
+velocidad definida en el tramo. Cuando una curva empieza y termina en
+distinto tramo de velocidad, se le asigna el peralte correspondiente a
+la velocidad del tramo en el que se encuentra el PK de inicio de la
+curva.<br />
+            <br />
+Se dispone en la librería de la tabla&nbsp;<span class="Archivo">FEVE.tpv</span>
+que utiliza esta opción. Este tipo de tablas puede utilizar entre 1 y
+14 columnas de diferente velocidad.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="proyeccion">Peralte obtenidos por
+proyección desde otro eje</a></span><br />
+      <br />
+      <img style="width: 171px; height: 75px;" alt="" src="Imagenes/proyectar_vol_peraltes_ffcc.png" align="right" hspace="6" />Para
+ferrocarriles de doble vía existe una utilidad en el menú de peraltes
+que permite deducir, para cada vía, una ley de peraltes proyectada (al
+estilo de la opción <span style="font-weight: bold;">[Proyectar .vol]</span>
+de ALZADO) desde otro eje.<br />
+      <br />
+Esta funcionalidad es útil para componer un único eje de vía doble a
+partir de dos ejes de vía simple.<br />
+      <br />
+      <a name="peraltes_por_linea"><span class="Titulo_2">Peraltes por
+línea</span><br />
+      <br />
+Permite extraer la ley de peraltes y/o la rasante a partir de dos
+líneas 3D que representan los carriles. El peralte se extrae por la
+diferencia de cota en milímetros. Para la rasante se toma la cota más
+baja de las dos (hilo bajo). Se pueden extraer datos en los puntos de
+la primera línea o a partir de equidistancias.<br />
+Se puede realizar un ajuste automático de la rasante por parábolas.<br />
+      <br />
+      <img style="width: 309px; height: 169px;" alt="" src="Imagenes/peralte_linea_ffcc.png" /><br /><br />Para
+peraltes de vía doble existen dos opciones: aplicar el mismo peralte en
+ambas vías seleccionando dos líneas o utilizar 4 líneas para calcular
+los peraltes a izquierda y derecha por separado.<br />
+      <br />
+</a><a name="promediar"><span class="Titulo_2">Promediar</span><br />
+      <br />
+Esta herramienta crea una nueva ley de peraltes a partir de una obtenida por ejemplo con la opción <span style="font-weight: bold; font-style: italic;">Por linea</span>,
+asignando en las rectas un valor cero y, en las curvas, el valor
+promedio de los peraltes obtenidos dentro de cada una de ellas.<br />
+
+      <br />
+
+      </a><a name="modos"><span class="Titulo_2">Modos de cálculo de
+peraltes</span></a><br />
+      <br />
+      ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+admite varios modos para el cálculo de peraltes en proyectos de
+ferrocarril:<br /><img style="width: 195px; height: 160px; float: right;" alt="" src="Imagenes/modos_peraltes_ffcc.png" hspace="0" /><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="hilo_bajo_ras">Hilo bajo por la rasante</a></span><br />
+      <br />
+La rasante se aplica en el carril interno de la curva, siendo el carril
+externo el que sube para crear el peralte. Es el modo de cálculo
+establecido por defecto.<br />
+      <br />
+Como ejemplo del funcionamiento de este modo, supóngase como ejemplo un
+tramo de eje en con rasante horizontal y con los siguientes puntos
+singulares en planta:<br />
+      <ul style="font-style: italic;">
+        <li>En el PK=1000. Acaba una alineación circular a la derecha
+con un peralte de +160 mm.</li>
+      </ul>
+      <ul style="font-style: italic;">
+        <li>A continuación vienen dos ramas de clotoide en S de 400 m
+de longitud, de tal forma que:</li>
+      </ul>
+      <div style="margin-left: 40px; font-style: italic;">
+      <ul style="list-style-type: circle;">
+        <li>En el PK=1200. Se encuentra el infinito de la clotoide con
+un peralte de 0 mm.</li>
+        <li>En el PK=1400. Comienza una circular a la izquierda con un
+peralte de -160 mm.</li>
+      </ul>
+      </div>
+Entonces la aplicación del peralte sería:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px; margin-left: auto; margin-right: auto;" border="0" cellpadding="10" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 221px; text-align: center;"><img style="width: 192px; height: 60px;" alt="" src="Imagenes/peralte_hilo_bajo_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 222px; text-align: center;"><img style="width: 192px; height: 57px;" alt="" src="Imagenes/peralte_hilo_bajo_2.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 221px;"><img style="width: 192px; height: 62px;" alt="" src="Imagenes/peralte_hilo_bajo_3.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 221px; text-align: justify;">En el
+PK=1000 el carril derecho está a la cota de la rasante y el izquierdo a
++160 mm.</td>
+            <td style="vertical-align: top; width: 222px; text-align: justify;">Entre
+PK=1000 y PK=1200 el carril derecho se mantiene a la cota de la
+rasante y el izquierdo baja desde +160mm hasta la cota de rasante.</td>
+            <td style="vertical-align: top; width: 221px; text-align: justify;">Entre
+el PK=1200 y PK=1400 el carril izquierdo se mantiene en la cota de
+rasante y el derecho sube hasta alcanzar los +160 mm.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Esta forma de aplicación supone que para una rasante horizontal, el
+centro de gravedad del tren baja desde el PK=1000 al PK=1200 y sube
+desde este hasta el PK=1400.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="mantener_cdg_curvas_s">Mantener centro de gravedad en clotoides
+en S</a></span><br />
+      <br />
+En este modo, el comportamiento del ejemplo anterior sería como sigue:<br />
+      <br />
+      <table style="text-align: left; width: 688px; height: 225px; margin-left: auto; margin-right: auto;" border="0" cellpadding="6" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 177px; text-align: center;"><img style="width: 192px; height: 60px;" alt="" src="Imagenes/peralte_hilo_bajo_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center;"><img style="width: 230px; height: 58px;" alt="" src="Imagenes/peralte_hilo_bajo_4.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 229px;"><img style="width: 215px; height: 68px;" alt="" src="Imagenes/peralte_hilo_bajo_5.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 177px; text-align: justify;">En el
+PK=1000 el carril derecho está a la cota de la rasante y el izquierdo a
++160 mm.</td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">El
+carril izquierdo empieza a bajar en el PK 1000 y, simultáneamente, el
+carril derecho sube, de tal forma que en el PK=1200 los dos carriles
+están a cota de rasante +80 mm, por lo
+que el peralte en este punto sigue siendo +0 mm (o, si se quiere, de
++80 mm en ambos carriles).</td>
+            <td style="vertical-align: top; width: 229px; text-align: justify;">El
+carril izquierdo continúa bajando hasta alcanzar la cota de rasante en
+el PK 1400 mientras que el carril derecho sigue subiendo hasta alcanzar
+los +160 mm también en el PK 1400.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+En esta forma los dos carriles están por encima de la cota de la
+rasante durante toda la transición (es decir, el hilo bajo se "separa"
+de la rasante), pero con ello se consigue que el centro de gravedad del
+tren se mueva uniformemente bajando si el peralte final es menor, o
+subiendo en caso contrario, sin pasar por un mínimo de cota en el
+centro de la S.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="norma_francesa">Norma francesa</a></span><br />
+      <br />
+La norma francesa de peraltes busca disminuir el volumen de balasto del
+eje mediante el siguiente criterio (siendo <span style="font-style: italic;">p</span> el peralte, <span style="font-style: italic;">Zras</span> la cota de rasante y <span style="font-style: italic;">D</span> la distancia entre carril y eje
+geométrico):<br />
+      <ul>
+        <li>En el caso de vía doble:</li>
+      </ul>
+      <div style="margin-left: 80px;"><span style="font-style: italic;">Z
+del carril bajo interor = Zras -&nbsp; p/3</span><br style="font-style: italic;" />
+      <span style="font-style: italic;">Z del carril alto interor =
+Zras + 2p/3</span><br />
+      </div>
+      <ul>
+        <li>Para curvas con p &lt; menor o igual a 100 mm:</li>
+      </ul>
+      <div style="margin-left: 80px;"><span style="font-style: italic;">Z
+del carril bajo exterior = Zras </span><br style="font-style: italic;" />
+      <span style="font-style: italic;">Z del carril alto exterior =
+Zras + p</span><br />
+      </div>
+      <ul>
+        <li>Para curvas con p &gt; 100mm:</li>
+      </ul>
+      <div style="margin-left: 80px;"><span style="font-style: italic;">Z
+del carril bajo exterior = Zras + (D-0.75)*0.08&nbsp; </span><br style="font-style: italic;" />
+      <span style="font-style: italic;">Z del carril alto exterior =
+Zras + (D-0.75)*0.08 + p</span><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 590px; height: 304px;" alt="" src="Imagenes/ffcc_norma_francesa.png" /><br />
+      </div>
+      <br />
+Una vez aplicados los peraltes según esta norma, deberían generarse las
+pendientes de la <a href="OL_ffcc_capa_forma.html#norma_francesa">capa
+de forma según la norma francesa</a>.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="matener_cdg_espirales_cortas">Mantener centro de gravedad en
+espirales cortas</a></span><br />
+      <br />
+En
+este caso hay que dar también la rampa máxima (por defecto 1:300, es
+decir, 3.33 mm/m). Una vez establecido este valor, entonces el programa
+comprueba si las rampas de transición al peralte superan este valor. En
+este caso el hilo bajo baja durante la transición un cantidad igual a
+la mitad el peralte mientras el otro carril sube en la misma cantidad.
+Así en la curva se mantiene el peralte total, pero la rampa se reduce a
+la mitad.<br />
+      <br />
+En este caso, la cota de la rasante está en la mitad de la cota de los
+dos carriles.<br />
+      <br />
+      <span style="font-style: italic; font-weight: bold;"><a name="cota_entrecarril">Cota rasante por el eje del entrecarril</a></span><a name="cota_entrecarril"><br />
+      <br />
+      </a>La cota de la rasante se mantiene en el punto medio entre los
+carriles.
+El carril que sube, sube la mitad del peralte y el que baja, baja la
+mitad del peralte.<br />
+Este comportamiento puede ser apantallado en vía doble, si utilizamos
+las opciones:<a name="cota_entrecarril"><br />
+      </a>
+      <ul>
+        <li>Vía doble en Placa.</li>
+        <li>Vía doble en Placa con la cota de Rasante en el eje
+Geométrico.</li>
+      </ul>
+      <br />
+      <a style="font-weight: bold;" name="curvas_S_Z_entrecarril">Grupo
+de curvas en S, mantener la cota
+de la rasante en el entrecarril</a><br />
+      <br />
+Cuando aparece una sucesión de curvas entre dos rectas entre
+las que se incluyen un par de curvas en S, los peraltes se aplican
+subiendo uno de los carriles la mitad del peralte y bajando el otro la
+otra mitad con respecto a la cota de la rasante. Un par de curvas se
+consideran curvas en S incluso cuando entre la curva y la contracurva
+exista una recta (siempre que esta sea menor de 10 cm).<br /><br /><span style="font-weight: bold;"><a name="Norma_metro_Mexico"></a>Norma metro México<br /><br /></span>Este modo, similar al de Norma francesa,&nbsp; en los casos de vía doble tendremos:<br /><br />Z_Carril_Bajo_interor = Zras -&nbsp; p/2&nbsp; (p=peralte)<br />Z_Carril_Alto_interor = Zras + p/2<br />Independientemente del valor de p:<br />Z_Carril_Bajo_exterior = Zras <br />Z_Carril_Alto_exterior = Zras + p<br /><br />En
+Capa de Forma luego también se puede usar el botón "Norma Francesa" que
+genera las pendientes de la Capa de Forma, de modo que para curvas con
+peralte superior a (100mm) la capa de forma pasa tener pendiente a una
+sola agua hacia el interior de la curva. (Debe utilizarse después de
+haber definido los peraltes) .<br /><span style="font-weight: bold;"><br /></span>
+      <br />
+      <br />
+      <span class="Titulo_2">Peralte para vía doble</span><br />
+      <br />
+      <span style="font-weight: bold;"><a name="via_doble_independiente">Vía
+doble independiente</a></span><a name="via_doble_independiente"><br />
+      <br />
+      </a>En cada una de las dos vías se aplica el modo seleccionado.<a name="via_doble_independiente"><br />
+      <br />
+      <span style="font-style: italic; font-weight: bold;"></span></a><a name="via_doble_en_placa"><span style="font-weight: bold; font-style: italic;">Vía doble en placa</span><br />
+      <br />
+Con esta opción se pueden poner los cuatro carriles en un mismo plano
+transversal, conservando la cota de la rasante el más bajo de los
+cuatro.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img style="width: 539px; height: 227px;" alt="" src="Imagenes/peralte_via_placa.png" /><br />
+      </div>
+      <br />
+      <a name="via_doble_en_placa_cota_en_eje"><span style="font-weight: bold; font-style: italic;">Vía doble en placa,
+cota en eje geométrico</span><br />
+      <br />
+Se alinean los cuatro carriles pero la cota de la rasante se aplica en
+el eje geométrico.<br />
+      <br />
+Las opciones de peraltes en vía doble se pueden definir según los Pks
+en donde se definan los valores de los peraltes.<br />
+      <br />
+      </a><img style="width: 238px; height: 122px;" alt="" src="Imagenes/peralte_ffcc_datos_viadoble.png" /><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

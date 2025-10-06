@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Obras de fábrica</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: OBRAS DE FÁBRICA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />Permite representar en el longitudinal las <a href="OL_obras_fabrica.html">obras de fábrica</a> declaradas en el eje desde el siguiente cuadro de diálogo:<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 318px;" alt="" src="Imagenes/gui_obras_de_fabrica.png" /><br />
+      </div>
+      <br />Al marcar la primera casilla, se representa la obra de fábrica en el longitudinal con el símbolo indicado tras el comando <span style="font-style: italic;">LSC</span> del fichero&nbsp;<span class="Archivo">.obf</span> correspondiente. En el siguiente ejemplo, correspondiente al fichero&nbsp;<span class="Archivo">C1.obf</span>, el tipo de símbolo a usar será el 309:<br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">
+# OBRA DE FABRICA DE PRUEBA</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#&nbsp; nombre</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; N&nbsp; TUBO DE 1 m</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+# para dibujar en la planta</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; PL&nbsp; 64&nbsp;&nbsp; .5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; linea paralela al eje de la obra</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; PL&nbsp; 64&nbsp; -.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; linea paralela al eje de la obra</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; PSE 90&nbsp;&nbsp; 1.&nbsp; 0&nbsp;&nbsp;&nbsp; simbolo en embocadura tamano 1 angulo eje de of</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; PSD 91&nbsp;&nbsp; 1.&nbsp; 0&nbsp;&nbsp;&nbsp; simbolo en desague&nbsp;&nbsp;&nbsp; tamano 1 angulo eje de of</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+# para dibujar en longitudinal de ejes</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; LSC 309&nbsp; 1.&nbsp; 0&nbsp;&nbsp;&nbsp; simbolo en corte con Eje,tamano,...</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+#--------------------------</span></span><br />
+      <span class="Parrafo"><span class="Archivo">
+&nbsp; FIN</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo">
+      <br />
+En cuanto al resto de los datos, son los declarados o calculados en el
+menú <a href="OL_obras_fabrica.html">OBRAS DE FÁBRICA</a> de ALZADO. Así, el <span style="font-weight: bold;">nombre</span> de cada obra se
+mostrará en el longitudinal con el <span style="font-weight: bold;">estilo</span> de texto seleccionado y con
+un <span style="font-weight: bold;">desplazamiento</span> vertical y horizontal respecto al punto de <span style="font-weight: bold;">enganche</span>
+del símbolo con el que se dibuja. También es posible indicar un <span style="font-weight: bold;">ángulo</span>,
+un factor de escala (<span style="font-weight: bold;">tamaño</span>) y especificar el punto de inserción del
+rótulo (<span style="font-weight: bold;">enganches</span> horizontal y vertical).<br />
+      <br />
+Activando las correspondientes casillas, se representarán en el
+longitudinal o en la guitarra, con el tipo de símbolo, desplazamientos vertical y
+horizontal y ángulos indicados, los siguientes datos:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Esviaje,
+en grados centesimales/sexagesimales. Además se puede sumar 200/180
+grados para cumplir con el criterio de medición de esviajes de algunos
+países. Se puede ver más información en el menú de <a target="_blank" href="OL_obras_fabrica.html">OBRAS DE FÁBRICA</a>.</span></li>
+        <li><span class="Parrafo">PK. Con posiblidad de utilizar al pk deducido de las Ecuaciones de Pk. Se puede ver más información en &nbsp;el menú de <a target="_blank" href="OL_ecuaciones_de_PK.html">ECUACIONES DE PK</a>.</span></li>
+        <li><span class="Parrafo">Longitud</span></li>
+        <li><span class="Parrafo">Cota de la embocadura y del desagüe</span></li>
+        <li><span class="Parrafo">Número de obra</span></li>
+        <li><span class="Parrafo">Cota del eje de la obra de fábrica en la intersección con el eje principal</span></li>
+        <li><span class="Parrafo">Símbolo:&nbsp;dibujar un símbolo fijo.</span></li>
+        <li><span class="Parrafo">Estaca: Permite rotular la estaca</span></li><li><span class="Parrafo">Pendiente: Permite rotular la pendiente longitudinal de la O.F.<br /></span></li>
+
+
+
+      </ul>Tenemos la posibilidad de dibujar las obras de fábrica
+desde el propio longitudinal o a partir de la guitarra referido al
+plano de comparación.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 403px; height: 60px;" alt="" src="Imagenes/gui_obras_de_fabrica_perfil.png" /><br />
+      </div>
+      <br />
+
+      <span class="Parrafo">
+
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+</body></html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Gálibos</title>
+
+<link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a>
+<a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a> <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a> <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span> </td>
+</tr>
+</tbody>
+</table>
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>Gálibos<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td style="width: 694px;" class="obsolete Parrafo"><br />Desde esta ventana se puede realizar un análisis de gálibos entre 2 ejes. <br /><br /><div style="text-align: center;"><img style="width: 470px; height: 216px;" alt="" src="Imagenes/completo_galibo.png" /><br /></div><br /><br />Al
+seleccionar dos ejes, se calcula la intersección de los mismos y se
+dibujan los bordes de calzada y arcenes en un entorno del punto de
+intersección (±<span class="Parf_negrita">Margen</span>).<br /><br />Si los ejes tienen más de una intersección se puede cambiar con la orden [<span class="Parf_negrita">Otro cruce</span>].<br /><br />La orden [<span class="Parf_negrita">Calcular</span>] analiza las intersecciones entre la opción elegida de las disponibles en el siguiente deplegable:<br /><br /><div style="text-align: center;"><img style="width: 170px; height: 131px;" alt="" src="Imagenes/completo_galibo_op.png" /><br /></div><br />Con
+la&nbsp;opción por superficie, código y lado&nbsp; (Como en gálibo con
+líneas) la superficie será siempre la 67 hasta el código 100 y la 68
+para códigos superiores. Respecto al lado, se estudiará siempre ambos.<br /><br />Además, manualmente se puede Añadir puntos, haciendo clic sobre el botón <span class="Parf_negrita">Añadir punto</span>. &nbsp;Permite llegar hasta los pies/cabezas de los taludes donde coinciden los dos ejes. <br /><br />El
+gálibo resultante se muestra en Valor absoluto (diferencia entre líneas
+L67 de los 2 ejes). También se le puede descontar una cantidad fija
+(casilla <span class="Parf_negrita">Descontar</span>) si previamente se ha introducido un valor en ella.<br /><br />La opción [<span class="Parf_negrita">Gálibo mínimo</span>] busca el punto donde se produce el valor mínimo de gálibo.<br /><br />Los resultados se van dibujando gráficamente en pantalla, añadiendo a una rejilla de datos e incorporando a un listado <span class="Archivo">galibos.res</span>. Esta información también se puede guardar en una hoja de cálculo.<br /><br /><div style="text-align: center;"><img style="width: 550px; height: 404px;" alt="" src="Imagenes/completo_galibo_rejilla.png" /><br /></div><br /><br />Se permite configurar los parámetros a mostrar en la rejilla y los listados:<br /><ul><li>X, Y.</li><li>PK.</li><li>Distancia</li><li>Cota.</li><li>Azimut</li><li>Pendiente.</li><li>Peraltes de cada eje.</li></ul>Se puede&nbsp;generar también archivos de puntos de paso de cada eje sobre el otro (activando la casilla <span class="Parf_negrita">Puntos de Paso</span>), p.e:<span class="Archivo"> <br /></span><ul><li><span class="Archivo">gal_1_(2).pas</span> galibos del eje 2 proyectados sobre el eje 1 (Para cargar con la rasante del 1).</li><li>Si uno de los eje es de calzada doble se generan para él dos archivos: <span class="Archivo">gal_1D_(2).pas</span> y <span class="Archivo">gal_1I_(2).pas</span> para comparar con la rasante derecha e izquierda respectivamente.</li></ul>La
+cota de los puntos de paso es la proyección del punto sobre el eje de
+giro del lado correspondiente y usando el peralte del eje sobre el que
+se proyecta, de modo que la diferencia de cota que se muestra, se
+producirá realmente bajo el punto y no en la rasante.<br /><br />Se genera también un archivo <span class="Archivo">*.pkd</span> con los pks y distancias al eje de los puntos calculados. (res/<span class="Archivo">galibos.pkd</span>). En transversales, PKs singulares, Ficheros, ahora se permite cargar archivos <span class="Archivo">*.pkd</span>, <span class="Archivo">*.pkz</span> o <span class="Archivo">*.pk</span> que tengan el pk en la primera columna, para cortar perfiles en estos pks.<br /><br /><br /></td>
+</tr>
+</tbody>
+</table>
+<br />
+</body></html>

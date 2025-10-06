@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Cruces a nivel</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CRUCES A NIVEL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo"><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo">
+      <a href="#tipos">Definición de los tipos de acuerdo</a></span><br />
+      <span class="Parrafo">
+      <a href="#acuerdos">Uso de los acuerdos: Definición de los cruces y ajuste automático de peraltes y rasante</a></span><br />
+      <span class="Parrafo"><a href="#calculo">Cálculo de los cruces</a><br />
+      <a href="#generar_crz_pol">Creación de un proyecto con ejes de acuerdos</a><br />
+</span>
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+Este menú se utiliza para definir la geometría de los acuerdos entre ejes en los cruces a nivel de una forma rápida y eficaz.<br />
+      <br />
+      </span><img src="Imagenes/cruces_acuerdo_concavo_convexo.png" style="width: 321px; height: 135px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Los cruces entre dos ejes se definen en el eje de menor importancia, almacenándose los datos en el fichero&nbsp;<span class="Archivo">.vol</span>.
+Esta utilidad calcula los datos necesarios para que un eje &#8216;pase&#8217; por
+el otro, intercalando en rasante los tramos cóncavo &#8211; convexo
+necesarios para que la transición en cota sea correcta. <br />
+<br /> El programa también calcula los peraltes necesarios para que las
+plataformas de los dos ejes sean conectadas de manera exacta.<br />
+      <br />
+      </span><img src="Imagenes/cruce.png" style="width: 268px; height: 195px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Además
+se realizan todos los cálculos necesarios para conseguir una
+interpolación correcta de los elementos de la sección transversal
+definidos en cada eje, como arcén o aceras. <br />
+El programa admite calcular cruces entre ejes con <a href="OL_cunetas.html#fija_y_porLongitudinal">cunetas</a>
+definidas por longitudinal. El longitudinal para la cuneta de los
+acuerdos se crea con una rasante única que toma las cotas de las
+cunetas de los ejes al inicio y final del acuerdo. Tanto el eje
+principal como el que enlazamos deberían estar definidas sus cunetas
+por
+longitudinal. De la misma manera también se aplica a las <a href="OL_cuneta_guarda_caballon.html#cun_fija">cunetas de guarda</a>.<br />
+      <br />Si
+el eje del que sale el acuerdo tiene declarada Sección Tipo Alternativa
+en Desmonte o Terraplén, esta Sección Tipo es heredada por el eje del
+acuerdo.<br /><br />
+Los paquetes de firmes deben ser similares en cuanto a la concepción
+geométrica, ya que de lo contrario no es factible su correcta
+interpretación.<br />
+<br />La definición de los cruces se realiza en dos submenús. En un primer menú <a href="#tipos">TIPOS</a>
+de acuerdos, se definen una serie tipos con todas las posibles
+combinaciones de los parámetros que definen un acuerdo (radio,...) que
+se vayan a emplear.<br />
+      <br />
+En el menú de <a href="#acuerdos">ACUERDOS</a> entre ejes se definen
+los tipos que se van a utilizar en cada uno de los cuatro posibles
+acuerdos que puede tener cada uno de los cruces entre dos ejes (cada
+pareja de ejes puede tener varios cruces). <br /><br />Las
+líneas de frontera que estén definidas previamente al cálculo de los
+acuerdos se truncan según el lado definido en la línea de frontera,
+teniendo en cuenta que si el eje del acuerdo va en sentido contrario al
+principal se truncará entonces por el lado contrario. (Acuerdos DA y DP
+por el mismo lado y acuerdos IA e&nbsp; IP por el lado contrario).<br />
+      <br />
+Nota: </span><span><span data-testid="comment-base-item-11029">cuando el eje que 
+cruza no llega a cortar al eje principal, el PK de definición del cruce 
+debe darse un valor que ya haya rebasado al arcén del eje principal.</span></span><br />
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="tipos">Definición de los tipos de acuerdo</a></span><br />
+      <span class="Parrafo"><br />
+En una primera fase se definen las características que van a tener los
+tipos de conexión, para posteriormente asociar a cada posible conexión
+su tipo. El cuadro de diálogo es el siguiente:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cruces_tipos.png" style="width: 575px; height: 176px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_cruces.png" style="width: 247px; height: 247px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">El
+modelo describe la codificación izquierda &#8211; derecha, anterior y
+posterior que permite definir las cuatro posibles conexiones entre dos
+ejes.<br />
+      <br />
+En cada cruce hay cuatro posibles acuerdos:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 434px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">DA<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Acuerdo por el lado derecho del eje actual, antes de cruzar al otro eje (Derecha Anterior).</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">IA<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Acuerdo por el lado izquiedo del eje actual, antes de cruzar al otro eje (Izquierda Anterior).</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">DP<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Acuerdo por el lado derecho del eje actual, después de cruzar al otro eje (Derecha Posterior).</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 17px;">IP<br />
+            </td>
+            <td style="vertical-align: top; width: 397px; text-align: justify;"><span class="Parrafo">Acuerdo por el lado izquierdo del eje actual, después de cruzar al otro eje (Izquierda Posterior).</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Los valores a introducir son los siguientes:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Radio/s</span>: El programa genera para cada acuerdo, un eje compuesto por una alineación circular, con el radio que aquí se le indique.</span></li>
+      </ul>
+      <div style="margin-left: 40px;"><img src="Imagenes/cruces_3R.png" style="width: 183px; height: 123px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Si se marca la casilla <span style="font-weight: bold; font-style: italic;">3R</span>, entonces el acuerdo será de <span style="font-weight: bold;">tres centros</span>. Este tipo se define por los siguientes parámetros:</span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo">El <span style="font-weight: bold;">radio central</span> en función del ángulo del cruce.</span></li>
+        <li><span class="Parrafo">La <span style="font-weight: bold;">relación de radios</span> R1:R2:R3. El valor por defecto es 2:1:3.</span></li>
+        <li><span class="Parrafo">Los <span style="font-weight: bold;">ángulos de los radios laterales</span> a1 y a3 (en el caso de que a1+a3 sea mayor que el ángulo disponible, se utilizará solamente el radio central), o bien el <span style="font-weight: bold;">retranqueo</span> del <span style="font-weight: bold;">círculo central</span>.</span></li>
+      </ul><span class="Parrafo"><span class="Parrafo">
+Este tipo de acuerdo sólo es utilizable:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Para cruces entre ejes rectos, es decir, en la zona del cruce las alineaciones deben ser rectas.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cuando el eje que cruza tiene una variación lineal
+del borde de calzada, de forma que este borde siga una recta no
+paralela al eje.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      En caso contrario sólo se utilizará el radio central.</span></span><br />
+
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Código</span>:
+Indica a qué punto de la sección es
+tangente el eje del acuerdo. Este valor&nbsp;corresponde por defecto
+al código 2 (borde de calzada). Se admite cambiar a los códigos 2,11,12
+y 13. Si utilizamos por ejemplo el código 11, el primer arcén debería
+estar en prolongación de la calzada principal, etc.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="equidistancia">Equidistancia</a></span><span class="Parrafo"><span class="Parrafo">: Es la equidistancia máxima para
+extraer perfiles transversales al eje del acuerdo. Cuanto menor sea el
+radio, menor habrá de ser la equidistancia. Hay que tener en cuenta que
+el programa extraerá perfiles con el semiancho de banda y contra la
+cartografía o triangulando según esté configurada la <a href="OL_perf_transv.html#menu_extrac">tabla de obtención
+de perfiles transversales</a>.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="margen">Margen</a></span><span class="Parrafo"><span class="Parrafo">: Si la distancia de los derrames de desmonte
+y terraplén es mayor que el radio del acuerdo entonces se da un margen
+para que el programa determine una línea de frontera donde se cortan
+los taludes de los dos ejes implicados y por detrás del centro del
+acuerdo.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="estirar">Estirar</a></span><span class="Parrafo"><span class="Parrafo">: El último segmento de la línea de frontera
+calculada según el margen se puede &#8220;estirar&#8221; la longitud aquí indicada.</span></span></li>
+      </ul><br />
+De cara al cálculo de los diferentes radios de cada elemento de sección
+transversal, es preciso tener en cuenta las siguientes consideraciones:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">El <span style="font-weight: bold;">código</span>&nbsp;que se toma como referencia para calcular el eje del acuerdo.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Para cruces entre ejes con <a href="OL_aceras.html">aceras</a>, el programa ofrece la posibilidad de definir un <span style="font-weight: bold;">radio exterior</span> de acuerdo para los bordes exteriores de las </span></span><span class="Parrafo"><span class="Parrafo"><a href="OL_aceras.html">aceras</a></span></span><span class="Parrafo"><span class="Parrafo">. Es útil definir este radio cuando las </span></span><span class="Parrafo"><span class="Parrafo"><a href="OL_aceras.html">aceras</a></span></span><span class="Parrafo"><span class="Parrafo"> de los dos ejes tienen diferente ancho (si las </span></span><span class="Parrafo"><span class="Parrafo"><a href="OL_aceras.html">aceras</a></span></span><span class="Parrafo"><span class="Parrafo"> tienen un valor de ancho definido en <span style="font-weight: bold;">D2</span> y el ancho <span style="font-weight: bold;">D3</span> es igual a cero, se recomienda pasar el valor de <span style="font-weight: bold;">D2</span> a <span style="font-weight: bold;">D3</span>).</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Para cruces con
+arcenes de ancho superior al radio del acuerdo, se modifica el peralte
+de los arcenes de los acuerdos, para obtener una única cota en los
+bordes de los arcenes que coinciden sobre el centro del arco que
+constituye el eje del acuerdo. Esa cota es el promedio de la que
+correspodería a los dos ejes quese cruzan. <br />
+          </span></span></li>
+
+      
+      </ul>
+
+      <ul>
+        <li>Para cruces con radios pequeños, en los que los anchos de
+arcén son mayores que el radio del acuerdo y en los que se prolonga el
+acuerdo por ambos extremos hasta el punto donde se cortan los bordes
+exteriores de los arcenes, se puede dar una pendiente relativa en % (<span style="font-weight: bold; font-style: italic;">P%</span>) de
+modo que, si en el punto de interseccion la cota de los dos bordes es
+diferente, se asigna una cota promedio y se alarga el eje del acuerdo
+por ambos lados una longitud L = 100 × dZ / P%. durante la cual se recupera
+la cota del borde, en el eje correspondiente.</li></ul>
+      <ul>
+        <li><span class="Parrafo">En el caso de acuerdos con anchos de acera grandes y con un radio de acuerdo propio, se activa automáticamente la <a href="OL_subrasante.html#anchos_normales">corrección de anchos normales</a>.<br />
+          </span></li>
+
+      
+      </ul>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="acuerdos">Uso de los acuerdos: Definición de los cruces y ajuste automático de peraltes y rasante</a></span><br />
+      <span class="Parrafo"><br />
+Una vez que se han definido los tipos de acuerdo, en los que el dato
+más significativo quizás sea el radio con el que se define la conexión,
+se pasa a declarar el uso los acuerdos en cada cruce del eje actual.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cruces_acuerdos.png" style="width: 575px; height: 176px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      Es
+recomendable definir los acuerdos sobre el eje secundario entre otras
+cosas porque éste verá modificados sus datos de rasante y peraltes para
+garantizar que &#8216;pasa al mismo nivel&#8217; y que los vehículos no sufren
+saltos o pongan en peligro su normal circulación.<br />
+      <br />
+Los datos obtenidos tras el cálculo de los cruces son almacenados en una subcarpeta denominada&nbsp;<span class="Archivo">crz</span>, que ha de tenerse en cuenta a la hora de copiar/guardar o compartir datos.<br />
+      <br />
+Las secciones calculadas por el programa para los distintos acuerdos
+son el resultado de hacer una <span style="font-weight: bold;">interpolación lineal</span> entre las secciones
+de los ejes en los que se apoyan, excepto en la interpolación de las
+calzadas auxiliares, que se hace una <span style="font-weight: bold;">transición parabólica</span>.<br /><br />La opción <span class="Parf_negrita">Firmes</span> permite tres valores:<br /></span></span></span></span><ol><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Transición en el acuerdo entre las secciones de los dos ejes.&nbsp;</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Utilizar la sección del eje actual.</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Utilizar la sección del otro eje.</span></span></span></span></li></ol><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción <span class="Parf_negrita">Subrasante</span> permite controlar el espesor mínimo de la subrasante y tiene también las tres mismas opciones:<br /></span></span></span></span><ol><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Transición</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Eje Actual</span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Otro Eje.</span></span></span></span></li></ol><span class="Parf_negrita">S.Seleccionado</span>: modo de incorporar los Suelos Seleccionados a los Acuerdos de modo similar al firme. Dando también 3 opciones: <br /><ol><li>Transición</li><li>Eje Actual</li><li>Otro Eje.</li></ol><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      
+</span></span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 29px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /></span></span></td><td style="vertical-align: top; width: 642px;"><span class="Info">Si
+el eje del que sale el acuerdo y al que llega tienen diferentes
+profundidades en alguno de los datos de sondeo (V, I, R, etc), entonces
+se realiza la transición de un sondeo a otro en el eje del acuerdo en
+el que se define como sondeos independientes.</span><br />
+            </td></tr></tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+A continuación se describe el significado de las entradas presentes en el cuadro de diálogo:</span><span class="Parrafo"><br />
+      <br />
+      <table style="text-align: left; height: 873px; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">EJE</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 613px;">Número del eje con el que se cruza el eje actual.</td>
+          </tr>
+          <tr><td style="text-align: left;"><img style="width: 9px; height: 13px;" alt="" src="Imagenes/icono_cursor_flecha.png" /></td><td>Permite seleccionar graficamente el eje picando por pantalla.</td></tr><tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">PK</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 613px;">PK
+aproximado del cruce sobre el eje actual. Sirve para discriminar la
+posibilidad de que dos ejes se corten varias veces. Si el eje actual es
+un ramal que sale o llega al otro eje sin cortarlo, se puede dar el PK
+inicial o final del eje actual.<br />
+            <br />
+Si en la casilla correspondiente a cada <span style="font-weight: bold;">DA</span>, <span style="font-weight: bold;">IA</span>, <span style="font-weight: bold;">DP</span>, <span style="font-weight: bold;">IP</span> se coloca un 0, indica que no se realizará el acuerdo correspondiente. Un número diferente de 0 indica el <a href="#tipos">TIPO</a> de acuerdo a utilizar.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold;"><a name="vol">Vol</a></td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 613px;"><span class="Parrafo"><span class="Parrafo">Junto al número de cada uno de los acuerdos (<span style="font-weight: bold;">DA</span>, <span style="font-weight: bold;">DP</span>, <span style="font-weight: bold;">IA</span>, <span style="font-weight: bold;">IP</span>), en la columna <span style="font-weight: bold;">vol</span>, aparece seleccionada por defecto la opción <span style="font-weight: bold;">Si</span> con lo que el programa reconstruye el fichero&nbsp;<span class="Archivo">.vol</span> del acuerdo cada vez que se calcule el cruce. Si se escoge la opción <span style="font-weight: bold;">No</span> entonces el programa, al calcular el acuerdo y si ya existe un fichero&nbsp;<span class="Archivo">.vol</span> previo, lo utiliza y no lo reconstruye. <br />
+            <br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/alzado_acuerdos.png" style="width: 180px; height: 135px; margin-left: 7px;" alt="" align="right" /></span></span></span></span>Esto permite al usuario cargar el fichero&nbsp;<span class="Archivo">.vol</span>
+de cada acuerdo desde la ventana flotante de ALZADO (tecla desplegable
+ACUERDO) y modificar sus datos en cuanto a rasantes, peraltes,
+secciones tipo,&#8230; para después guardar los cambios. De este modo y
+estando desactivado este botón, un nuevo cálculo del cruce utilizará el
+fichero&nbsp;<span class="Archivo">.vol</span> modificado por el usuario y no se deducirá uno nuevo.<br />
+            <br />
+La selección del acuerdo que se quiere editar es muy sencilla si se
+tiene en cuenta el sistema con el que se han escrito. Así, por ejemplo,
+el primer elemento 2-1(1).DA significa <span style="font-style: italic;">Eje 2 con el 1, primer cruce, derecha anterior</span>.<br />
+            <br />
+Se debe tener en cuenta que esta edición se efectúa creando un eje n+1
+temporal que es accesible únicamente en este momento (siendo n el
+número de ejes del proyecto).<br />
+            <br />
+Con esto se pueden analizar las rasantes y resto de datos de definición
+del acuerdo, dibujar su planta o generar cualquier listado del menú
+LISTADOS que tenga la opción (G).<br />
+<br />
+            </span></span>
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span><table style="text-align: left; height: 35px; width: 609px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+                  </td><td style="vertical-align: top; width: 543px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info">Este eje temporalmente cargado no debería recalcularse desde el menú de ALZADO, pues el fichero&nbsp;<span class="Archivo">ISPOL#.per</span> que entonces se genera no estará adecuadamente truncado.</span></span></td></tr></tbody>
+            </table>
+            <br />
+            <span class="Parrafo"><span class="Parrafo">Si se elige la opción <span style="font-weight: bold;">No ras</span>, el acuerdo respetará la rasante existente pero modificará el resto (peraltes, etc)<br />
+            </span></span></span></span></span></span></span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Auto_RAS</span><br />
+            </td>
+            <td style="vertical-align: top; width: 613px; text-align: justify;">Si
+se activa esta opción, al realizar el cálculo del proyecto el programa
+modifica las rasantes del eje, realizando una transición mediante dos
+parábolas en la zona de los acuerdos de entrada y otras dos en la zona
+de los acuerdos de salida. En la zona central concilia la parte de
+rasante inicial con la final mediante uno o dos acuerdos verticales
+parabólicos. Estas operaciones son realizadas para pasar de las
+rasantes que el eje trae definidas a la rasante obligada por la
+plataforma del eje que se cruza. A continuación se salva
+automáticamente el fichero&nbsp;<span class="Archivo">.vol</span> con las modificaciones.<br />
+            <br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; height: 44px; width: 613px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+</td>
+<td style="vertical-align: top; width: 559px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info">Esta
+opción funciona cuando el eje que tiene declarado el cruce es una carretera en las que el
+eje de giro es coincidente con el eje en planta, y en autovías de
+rasante única en las que se lleva el eje de giro al eje en planta.</span></span></td>
+</tr></tbody>
+            </table>
+            </span></span></span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Auto_PER</span><br />
+            </td>
+            <td style="vertical-align: top; width: 613px;">
+            <div style="text-align: justify;">Si se activa esta opción,
+al realizar el cálculo del proyecto, el programa modifica los peraltes
+del eje, realizando una transición en la zona del acuerdo, para que el
+borde de la calzada coincida en cota con el borde de la calzada del eje
+al que cruza.<br />
+            <br />
+Hay que distinguir esta opción de lo que son los peraltes de los acuerdos y que se determinan de la siguiente forma:<br />
+            <ul>
+              <li>Para cada PK del eje del acuerdo, se prolonga el
+perfil transversal hasta cortar el borde de calzada de uno de los dos
+ejes del cruce. En ese punto se determina el plano formado por el
+peralte y la rasante de ese eje.</li>
+            </ul>
+            <ul>
+              <li>Entonces se asigna al acuerdo un peralte para que en
+su sección transversal la calzada pase por ese plano. El algoritmo
+trabaja igual que el de ENTRONQUES.</li>
+            </ul>
+            </div>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Tg. al borde</span><br />
+            </td>
+            <td style="vertical-align: top;">Hace
+que el eje del
+acuerdo sea tangente al borde del eje principal, y por lo tanto con un
+azimut diferente al del eje principal.Se usa para ejes en los que el
+ancho es variable en la zona de tangencia del eje del acuerdo. <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Firmes</span><br />
+            </td>
+            <td style="vertical-align: top;">Mantiene en el acuerdo la Sección de Firme del eje que define el acuerdo (No se hace transición).<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Calcular ejes</span><br />
+            </td>
+            <td style="vertical-align: top;">Para utilizar la herramienta Calcular Ejes no es necesario activar la casilla ENL de Proyecto.<br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      
+      
+      </span></span>
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 29px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /></span></span></td>
+            <td style="vertical-align: top; width: 642px;"><span class="Info">Se
+recomienda, si se activa la opción Auto_RAS o Auto_PER, realizar antes
+una copia previa del .vol del eje por si no se aceptan las
+modificaciones automáticas.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 29px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /></span></span></td><td style="vertical-align: top; width: 642px;"><span class="Info">Si en el PK del eje donde nace el acuerdo hay definidos bordillos por PKs, estos se pasan a la sección tipo del acuerdo.</span><br />
+            </td></tr></tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+<span class="Parrafo"><span class="Titulo_2"><a name="calculo">Cálculo de los cruces</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+La primera vez que se calculan los cruces, debe estar presente la
+cartografía para que el programa pueda extraer los perfiles
+transversales del terreno que necesite. Para ello también debe estar
+definida la SUPERFICIE del terreno. El semiancho de banda que utiliza
+es el que está definido en el menú de de obtención de perfiles
+transversales, y si está activada la extracción de perfiles por
+triangulación, aquí se utiliza. No se calcularán los acuerdos de ejes
+que pertenezcan a grupos desactivados.<br />
+      <br />
+      </span></span></span><img src="Imagenes/cruces_proyecto.png" style="width: 268px; height: 148px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción <span style="font-weight: bold; font-style: italic;">Cruces</span> del <a href="OL_proyecto.html">menú PROYECTO</a> debe estar activada para que al pulsar la opción de <span style="font-weight: bold;">[Cálculo]</span>
+el programa genere los cruces definidos, trunque los ejes implicados y
+realice el dibujo de planta de ejes y cruces. Tienen que estar activas
+también las opciones <span style="font-weight: bold;">[CAL]</span>, <span style="font-weight: bold;">[ENL]</span>, <span style="font-weight: bold;">[REC]</span> y <span style="font-weight: bold;">[RFI]</span> y tener definido un modo de dibujo.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+Existen cuatro modos de cálculo de los cruces:<br />
+</span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Calcular todo</span>. En este caso se comprueba que haya cargada una cartografía o un <a href="EDM_topografia.html#ficheros_ttp">TTP</a> y que, por tanto, se pueden extraer los perfiles transversales de los acuerdos de los cruces.<br />
+</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">NO
+.per</span>&nbsp; (no extraer nuevos perfiles del terreno): Al calcular los
+cruces, el programa busca si ya se han generado previamente los
+perfiles de los acuerdos. En caso de que ya exista el fichero de
+perfiles en el directorio&nbsp;<span class="Archivo">crz</span>, se
+utiliza este fichero, y si no existe se intenta generar de nuevo a
+partir de la cartografía. Con esta opción activada, y si ya se han
+calculado anteriormente los cruces, no se necesita tener la cartografía
+presente para el cálculo de los cruces, por lo que el cálculo global
+del proyecto es más rápido.</span></span></span></span></li>
+      </ul>
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">NO Auto_Ras Auto_Per</span>: Incluye NO .per, además no
+modifica el .vol del eje que define el cruce al inhibir las opciones de
+ajuste automático de la rasante y de los peraltes.</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+NO vol</span>: Incluye <span style="font-weight: bold;">NO Auto_Ras Auto_per</span> y además no recalcula los ficheros&nbsp;<span class="Archivo">.vol</span> de los acuerdos de los cruces.</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      El alzado de cada eje del acuerdo se calcula proyectando la rasante del
+eje actual y del otro eje siguiendo sus peraltes, al principio y al
+final del eje del acuerdo, con una zona central de transición. <br />
+En la zona de los acuerdos se permite que en los ejes implicados este
+definida la sección tipo pos subtramificación en C (cunetas), D
+(desmonte), T (Terraplén) y/o V (Vectores plataforma fija,...). Pero al
+igual que cuando se utiliza la tramificación general los puntos de
+tangencia de los acuerdos no deben estar en zonas de transición de
+secciones tipo.<br /><br />Cuando
+el eje que define el acuerdo tiene definida una estructura que empieza
+o termina en la zona del acuerdo, ahora en los ejes de los acuerdos
+aparecen dos tramos de cálculo : uno en la zona de la estructura y otro
+en la zona de terraplén cada uno con la Sección tipo que corresponde.<br />
+      <br />
+Junto con la <a name="cubic"><span style="font-weight: bold;">cubicación</span></a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+de tierras, se
+calculan también los paquetes de firmes y la definición del suelo
+seleccionado y se integra la medición de los mismos en los ejes de cada
+acuerdo. Las cubicaciónes de los acuerdos se disponen, para cada eje
+que tenga declarados cruces, al final del listado de volúmenes (<span class="Archivo">cvol#.res</span>, siendo # el número de eje), justo antes del resumen, y esos cúbicos se añaden al total:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">PROYECTO
+: Cruce &nbsp;
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;
+EJE:&nbsp;&nbsp; 2: Eje secundario</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * MEDICIONES DE LOS ACUERDOS EN LOS CRUCES * * *</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * Cubicacion segun distancias compensadas&nbsp; * * *</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EJE
+AC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MATERIAL&nbsp;&nbsp; VOL.
+PARCIAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MATERIAL&nbsp;&nbsp; VOL. PARCIAL</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ------------- --- --
+--------------- ------------ --------------- ------------</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+DA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53.27</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+125.17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 43.54</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.67</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+IA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 108.27</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+642.55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 88.59</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+168.94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 139.96</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+111.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1118.90</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+IP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+99.45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 67.85</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54.33</span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>En los proyectos que incluyen acuerdos de cruces y glorietas, se
+generan los listados cvol.res, cv.res y cv.xlsx con el nombre de cada
+acuerdo por ejemplo:<br />
+
+      <ul>
+<li>cv_3-2(1004)_DP.xlsx : Acuerdo de Glorieta Derecha_Posterior del Eje 3 con el 2 definido en el dato 4 de Glorietas del eje 3.</li><li>cvol_5-7(2)_DA.res : Acuerdo del cruce Derecha_Anterior del eje 5 con el 7 definido en el dato 2 de Crices del eje 5.</li>
+      </ul>
+
+Los archivos cvol.res y cv.res se generan al calcular y al recubicar
+los ejes para el cv.xlsx debe estar activada la opción en Listados.<br /><br />Al calcular un proyecto con cruces y paquetes de firme, se generan también por cada acuerdo los listados p.e: <span class="Archivo">fi7-1(1001)_DA.res</span> (y <span class="Archivo">fi_7-1(1001)_DA.xlsx</span>) de forma análoga a los cv.<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; text-align: left; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 637px; text-align: justify;">Los listados de cubicaciones de <a href="OL_listados_mediciones.html#list_conjunto">conjunto de tierras</a> y de <a href="OL_listados_mediciones.html#list_firmes_conjunto">conjunto de firmes</a> tienen en consideración los cruces.<br />
+</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Todos los ficheros de definición de ejes en planta (<span class="Archivo">.cej</span>), alzado
+(<span class="Archivo">.vol</span>) perfiles (<span class="Archivo">.per</span>) y otros datos necesarios para la generación de
+los cruces son almacenados en un subdirectorio llamado&nbsp;<span class="Archivo">crz</span> que cuelga
+del directorio de trabajo.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 26px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 645px; text-align: justify;"><span class="Info">Para
+calcular solamente el cruce de dos ejes, una opción es colocarlos
+temporalmente en un grupo independiente y desactivar el resto de los
+grupos, de esta manera sólo serán calculados los cruces de aquellos
+ejes que estén en grupos activos. Este pequeño truco permite ir
+verificando que los datos definidos para un cruce son correctos. </span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span><span class="Titulo_2"><a name="generar_crz_pol">Creación de un proyecto con ejes de acuerdos</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El botón <span style="font-weight: bold;">[Generar crz.pol]</span> del menú de cruces, agrupa a todos los&nbsp;<span class="Archivo">.cej</span> de los distintos acuerdos en uno único y renumera todos los&nbsp;<span class="Archivo">.per</span> y&nbsp;<span class="Archivo">.vol</span> de la carpeta&nbsp;<span class="Archivo">crz</span>, creando en el directorio de trabajo el proyecto&nbsp;<span class="Archivo">crz.pol</span>.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

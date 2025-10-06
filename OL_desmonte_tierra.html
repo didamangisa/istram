@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Desmonte en tierra</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GEOMETRÍA DE DESMONTE EN TIERRA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+<tbody><tr><td class="obsolete Parrafo" style="width: 692px;"><br />
+<span class="Parrafo">Desde esta pestaña se define todo lo relativo a la geometría de desmonte. ISTRAM<sup>®</sup>BIM
+presenta unas posibilidades muy amplias al respecto, desde la simple
+definición paramétrica hasta generación automática de taludes en
+función de tablas, líneas 3D, muros, etc. y que se detallan a
+continuación.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_desmonte_tierra.png" style="width: 550px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#def_param">Definición paramétrica</a></span><br />
+      <span class="Parrafo"><a href="#def_vectorial">Definición vectorial</a></span><br />
+      <span class="Parrafo"><a href="#ubicacion">Definición del talud por el pie y por la cabeza del desmonte</a></span><br />
+      <span class="Parrafo"><a href="#terreno_inadecuado">Desmonte en terreno inadecuado</a></span><br />
+      <span class="Parrafo"><a href="#STAlt">Sección tipo alternativa</a><br />
+      <a href="#punto_obligado">Punto Obligado</a><br />
+</span>
+      <span class="Parrafo"><a href="#def_avanzadas">Definiciones avanzadas</a></span><br />
+      <span class="Parrafo"><a href="#tuneles">Secciones de desmonte para túnel y falso túnel</a></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+En este cuadro de diálogo disponemos de un icono <img src="Imagenes/icono_desplegar.png" style="width: 20px; height: 20px;" alt="" /> que permite expandir o contraer el cuadro de diálogo (Menú largo/corto).<br />
+      <br />
+      </span><span class="Titulo_2"><a name="def_param">Definición paramétrica</a></span><br />
+      <span class="Parrafo">
+<br />
+      </span><img src="Imagenes/modelo_desmonte.png" style="width: 345px; height: 220px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Se
+van introduciendo alturas sucesivas para cuyas etapas se aplican los
+correspondientes taludes. La definición del talud se realiza mediante
+los siguientes parámetros:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 340px; height: 108px;" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 29px;"><span style="font-weight: bold;">ZD1</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">ZD2</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">ZD3</span><br />
+            </td>
+            <td style="vertical-align: top; width: 262px; text-align: justify;">Son
+tres alturas crecientes (acumuladas) en las que se puede dividir la
+sección de desmonte en tierra para aplicar diferentes taludes.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 29px;">
+
+           <span style="font-weight: bold;">D1</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">D2</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">D3<br /><img src="Imagenes/desmonte_sexagesimales.png" style="width: 83px; height: 21px;" alt="" /><br /></span>
+            </td>
+            <td style="vertical-align: top; width: 262px;">Talud entre 0 y <span style="font-weight: bold;">ZD1</span>.<br />
+Talud entre <span style="font-weight: bold;">ZD1</span> y <span style="font-weight: bold;">ZD2</span>.<br />
+Talud entre <span style="font-weight: bold;">ZD2</span> y <span style="font-weight: bold;">ZD3</span>.<br />Taludes en ángulos sexagesimales.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">ABD<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Ancho de las bermas en desmonte.
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">DBD<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Equidistancia entre bermas.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">+</span><br />
+            </td>
+            <td style="vertical-align: top;">Exceso de altura permitido para el último talud.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Pen<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Pendiente de las bermas de desmonte (en % y positiva hacia dentro).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">ZB1</span><br />
+            </td>
+            <td style="vertical-align: top;">Cota para la primera berma.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">máx<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Número máximo de bermas a ejecutar.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Desv</span><br />
+            </td>
+            <td style="vertical-align: top;">Altura para iniciar el desvanecimiento de la primera berma.<br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      <br />
+      Si en el cálculo, la sección de desmonte en tierra NO excede su altura a la mayor de <span style="font-weight: bold;">ZD1</span>, <span style="font-weight: bold;">ZD2</span> ó <span style="font-weight: bold;">ZD3</span>,
+en lugar de los taludes, el programa coloca un talud vertical (o un
+muro si está definido) después
+de la cuneta, o de la berma de despeje si la hubiera, o después de la
+roca descubierta si hubiera roca, y cuya coronación vendrá dada por un
+talud de componente horizontal AMD y con un desnivel ZMD. Por tanto, al
+talud más alto definido
+es necesario indicarle una altura suficiente como para que llegue a
+intersecar al terreno, por lo que se le suele asignar un valor de 100 ó
+1000.<br />
+      <br />
+Es preciso recordar que el talud se da según la relación H:V (unidades
+lineales en horizontal para conseguir una elevación de una unidad
+lineal en vertical), de modo que el talud 0 sería el completamente
+vertical y a medida que se incrementa el número el talud es más tumbado.<br />
+      <br />
+Si sólo se va a emplear un talud, éste deberá figurar en los datos <span style="font-weight: bold;">ZD1</span>, <span style="font-weight: bold;">D1</span>, si son dos, deberán ser <span style="font-weight: bold;">ZD1</span>, <span style="font-weight: bold;">D1</span> y <span style="font-weight: bold;">ZD2</span>, <span style="font-weight: bold;">D2</span> y similar en el caso de tres taludes. Los datos no empleados pueden quedar a cero.<br />
+      <br />
+Se pueden activar las casillas <span style="font-weight: bold;">[ ] Por longitudinal</span> para que tome la cota de la primera berma a partir del longitudinal auxiliar,<br />
+      <span style="font-weight: bold;">[ ] Z Ras</span> para que mida las alturas desde la cota de la rasante o <span style="font-weight: bold;">[ ] Conservar dZ</span> para conservar la diferencia de cota si la primera berma quedara por debajo del pie de desmonte.<br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="def_vectorial">Definición vectorial</a></span><br />
+      <br />
+      <img src="Imagenes/desm_modo_vectorial.png" style="width: 201px; height: 91px;" alt="" align="right" />En lugar de la definición paramétrica es posible realizar aquí la <a href="definicion_vectorial.html">definición por vectores</a>
+(numérica o gráficamente) de las secciones de desmonte en tierra.
+Cuando se define mediante un vector (o un muro si estuviera definido), si al aplicarlo no se alcanza la
+intersección con la superficie del terreno, en lugar del vector se
+coloca un talud vertical, por lo que, en general, la definición de este
+vector ha de ser suficientemente grande para que siempre alcance al
+terreno.<br />
+      <br />
+      <br />
+<span class="Parrafo">
+      </span><span class="Parrafo"><table style="text-align: left; width: 600px; height: 183px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 397px; text-align: center;"><img src="Imagenes/dialogo_def_vect_desmonte.png" style="width: 450px; height: 138px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 278px; text-align: center;"><img src="Imagenes/desm_modo_vectorial2.png" style="width: 190px; height: 120px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+La tercera columna de la <a href="definicion_vectorial.html">definición vectorial</a> corresponde a los códigos asociados a cada vértice del vector.<br />
+<br />Para los taludes en modo Vectorial y Fijos por el pie, distinguimos dos&nbsp;controles:<br /></span></span><ol><li><span class="Parrafo"><span class="Parrafo">Una<span class="Parf_negrita"> tolerancia</span> igual que la permitida en taludes paramétricos que&nbsp;</span></span><span class="Parrafo"><span class="Parrafo">permite un exceso de altura para el último talud para evitar hacer una berma muy próxima al terreno.</span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">Bermas completas</span>: Si el terreno corta a la última berma, entonces se alarga lo necesario el talud anterior para evitar hacer esta berma:</span></span></li></ol><div style="text-align: center;"><img src="Imagenes/desm_vec_tol.png" style="width: 275px; height: 99px;" alt="" /></div><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span class="Titulo_2"><a name="ubicacion">Definición del talud por el pie y por la cabeza del desmonte</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Todo lo explicado hasta ahora es válido cuando la geometría de talud
+está definida por el pie. Pero el programa también permite definir los
+taludes por la cabeza. <br />
+      <br />
+      </span><span class="Parrafo">La opción de <span style="font-weight: bold;">UBICACIÓN</span> permite conmutar entre el modo usual <span style="font-weight: bold;">FIJO POR EL PIE</span> y el <span style="font-weight: bold;">FIJO POR LA CABEZA</span>.<br />
+      <br />
+</span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/desm_ubicacion.png" style="width: 300px; height: 108px;" alt="" /></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span>
+
+      <p class="MsoCaption" style="margin: 0cm 0cm 0.0001pt;"><span style="font-size: 9pt; font-weight: normal;" lang="ES-TRAD">En el primer caso el desmonte en tierra se aplica de
+abajo a arriba, cortándose por arriba el exceso. En el segundo caso, el extremo
+superior se coloca en el terreno y el sobrante de sección, se corta en el borde
+exterior de la cuneta o de la roca, en su caso.</span><span style="font-size: 9pt;" lang="ES-TRAD"><o:p></o:p></span></p>
+
+
+      <br />
+      <img src="Imagenes/desm_fijo_cabeza.png" style="width: 282px; height: 175px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Así,
+por ejemplo, si se tiene un horizonte superficial de suelo de 2 metros,
+roca ripable hasta los 6 metros de profundidad y el resto roca
+competente, una aplicación conveniente de taludes impondría la
+ubicación de fijo por la cabeza con intervalos de 108, 106 y 100 para
+Z1, Z2 y Z3, según indica la figura.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/desm_fijo_cabeza_dialogo.png" style="width: 300px; height: 108px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="terreno_inadecuado">Desmonte en terreno inadecuado</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/desm_inadecuado.png" style="width: 141px; height: 57px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Si se activa la opción <span style="font-weight: bold;">[-&gt;T.I.]</span>,
+el talud definido en el desmonte en tierra se considera válido también
+para el terreno inadecuado y el vegetal. En estas circunstancias el
+tramo de línea del talud de desmonte que pasa por el terreno inadecuado
+y el vegetal se le cambia al tipo utilizado en el desmonte en
+inadecuado. También se considera que no es necesaria la cuña de
+terraplén en la cabeza del desmonte para sostener el terreno inadecuado
+y el vegetal.<br />
+      <br />
+Si en la sección tipo se ha definido un <a href="OL_vectores.html#desmonte_inadecuado">vector de desmonte en inadecuado</a> y simultáneamente en la sección de desmonte en tierra se activa esta opción el programa actúa de la siguiente manera:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Terraplén</span>: El talud baja hasta el terreno competente y luego sube con el vector desmonte en inadecuado hasta la superficie.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Desmonte</span>:
+La geometría definida en el desmonte en tierra sube hasta la superficie
+pero el tramo que pasa por el terreno inadecuado se le cambia el tipo a
+desmonte en terreno inadecuado (L69).</span></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="STAlt">Sección tipo alternativa</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/desm_STAlt.png" style="width: 100px; height: 45px;" alt="" align="right" hspace="8" /><span class="Parrafo">En
+el caso de que al aplicar la sección de desmonte se supere la altura
+prevista y el número de la sección tipo alternativa sea mayor que cero,
+el programa intentará construir la sección de desmonte (desmonte en
+roca + desmonte en tierra) con los datos definidos en esa sección tipo
+alternativa.<br />
+      <br />
+Si con esta sección también se superase la altura máxima prevista, entonces se colocaría el muro de la primera sección.<br />
+      <br />
+Se admiten saltos a secciones alternativas tantas veces como secciones
+existan. De esta forma, pueden definirse una serie de secciones de
+alturas crecientes y que el programa seleccione aquella que necesite en
+función de la altura.<br />
+      <br />
+Las secciones alternativas pueden ser independientes para el desmonte, el terraplén y para cada uno de los lados.<br />
+      <br />
+Si se activa la casilla adjunta, entonces se tomarán todos los
+componentes (vectores, punto de control, berma, cuneta y geometría de
+desmonte y de terraplén) de la sección tipo alternativa y NO sólo la
+geometría de desmonte. Como también se toma el punto de control, es
+posible incluso que una sección que en principio es de terraplén, con
+la alternativa pase a ser de desmonte y viceversa.<br />
+      <br />
+      <span class="Titulo_2"><a name="punto_obligado">Punto Obligado</a></span><br />
+
+      <br />
+
+Se permite definir un número de puntos de generación del talud (paramétrico o vectorial) de forma forzosa. <br />
+
+</span></span>
+      <ul>
+        <li>No se buscan cortes con el terreno hasta después de los puntos obligados.</li>
+        <li>Puede quedar parte de la sección de desmonte por encima del terreno, esto se cubicará como terraplén.</li>
+        <li>Si el último punto obligado queda por encima del terreno, se termina en él la sección.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/desmonte_punt_obl.png" style="width: 480px; height: 366px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><a name="def_avanzadas"><span class="Titulo_2">Definiciones avanzadas</span></a><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Además de los modos paramétrico y vectorial, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+ofrece una batería de modos de definición de geometrías de desmonte muy
+potente y enfocada siempre a reducir los tiempos de introducción de
+datos por parte del usuario.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/desm_avanzado.png" style="width: 600px; height: 278px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Al pulsar en el desplegable <span style="font-weight: bold;">MODO</span> se abre en pantalla un gráfico de ayuda (modelo) con las distintas posibilidades de definición.<br />
+      <br />
+En los casos en que se haga uso de alguna línea EDM, para seleccionar la línea se pulsará el botón <span style="font-weight: bold;">[LÍNEA 0 ptos]</span>
+y a continuación se seleccionará la línea sobre la cartografía. La
+línea seleccionada se presentará en pantalla más gruesa y en color
+cyan, y además en el menú aparecerá el número de puntos de la línea.<br />
+      <br />
+La opción <span style="font-weight: bold;">[Volcar]</span> permite además crear una línea EDM a partir de la línea almacenada en el&nbsp;<span class="Archivo">.vol</span>, lo que posibilita editar la línea sin necesidad de cargar el fichero EDM del que procede.<br />
+      <br /><span style="font-weight: bold; font-style: italic;">(Muro) + Línea en planta</span><br />
+      <br />
+      </span></span><img src="Imagenes/desm_L2D.png" style="width: 264px; height: 144px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><img src="Imagenes/modelo_desm_L2D.png" style="width: 150px; height: 74px; margin-left: 7px;" alt="" align="right" /></span><span class="Parrafo">A
+partir de una línea en planta con coordenadas X e Y, el programa
+calcula el corte con el terreno y une este punto de corte A con el
+último punto de la cuneta B.<br />
+            <br />
+Si hay definido un muro de altura fija (opcional), se ejecuta primero el muro y si
+éste no llega al terreno, entonces a partir de la cabeza del muro se
+traza un talud hasta la posición de la línea 3D o al terreno en la
+posición de la línea en planta.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Parrafo"><br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="L3D">(Muro) + Línea 3D</a><br />
+      <br />
+      </span><span class="Parrafo"><img src="Imagenes/modelo_desm_L3D.png" style="width: 154px; height: 84px; margin-left: 7px;" alt="" align="right" /></span><img src="Imagenes/desm_L3D.png" style="width: 276px; height: 166px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Similar al método anterior, con la salvedad de
+que la línea dará en este caso el punto A que, unido al último punto de
+la cuneta B, origina el talud de desmonte correspondiente. Dicho talud
+quedará interrumpido estrictamente en la línea (punto A).<br />
+<br />
+Si se define un muro de altura fija (opcional) para el modo LÍNEA 3D, se ejecuta
+primero el muro y si éste no llega al terreno entonces, a partir de la
+cabeza del muro, se traza un talud hasta la posición de la línea 3D o
+al terreno en la posición de la línea en planta.<br />
+<br />
+Independientemente de que la sección se haya producido en zona de
+desmonte o de terraplén, el último punto se codifica con 601 si el
+talud es descendente (y no hay cuneta) y 1399 si es ascendente.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><br />
+      </span>
+      <br /></span><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Línea 3D + Muro<br />
+      <br />
+</span></span></span><span class="Parrafo"><img src="Imagenes/modelo_desm_L3D_muro.png" style="width: 153px; height: 83px; margin-left: 7px;" alt="" align="right" /></span><img src="Imagenes/desm_L3D_muro.png" style="width: 288px; height: 169px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">En este caso la línea 3D puede representar el pie
+de un muro. Por tanto, se une el último punto de la cuneta a la línea y
+se continúa el muro en vertical hasta cortar al terreno.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><br />
+      </span>
+      <br /></span><br />
+      <span class="Parrafo"><br />
+      <br />
+En el caso de que la cota de la línea 3D esté por encima del terreno,
+entonces desde este punto se ejecuta el muro de teraplén.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;">Tabla de taludes</span><br />
+      <br />
+</span></span><img src="Imagenes/dialogo_desm_tabla_taludes.png" style="width: 258px; height: 198px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><img src="Imagenes/modelo_desm_tabla_taludes.png" style="width: 150px; height: 92px; margin-left: 7px;" alt="" align="right" /></span><span class="Parrafo">Junto al modo <span style="font-weight: bold;">Tabla de taludes</span> aparece otro botón <span style="font-weight: bold;">[T:n Taludes]</span>. Al pulsar esta tecla, se despliega un menú similar al de definición de vectores, pero con las columnas <span style="font-weight: bold;">TALUD</span> y <span style="font-weight: bold;">ALTURA MÁXIMA</span>.<br />
+<br />
+En el cálculo, el programa empieza probando con el primer talud de la
+tabla. Si no alcanza al terreno con una altura inferior a la máxima
+prevista, entonces el programa empieza a probar con el siguiente dato
+de la tabla, si con este no alcanza al terreno con su altura máxima
+prevista, salta al siguiente dato y así sucesivamente.<br />
+<br />
+Si no se consigue llegar al terreno con ninguno de los datos de la
+tabla, entonces se coloca un talud vertical (o un muro si estuviera
+definido).</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br /></span><span style="font-weight: bold; font-style: italic;">Muro + Talud + Línea</span><br />
+      <span class="Parrafo"><br />
+      </span></span><img src="Imagenes/modelo_desm_muro_talud_L2D.png" style="width: 154px; height: 84px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">En
+esta caso la línea puede ser 2D ó 3D, según seleccione el usuario. Si
+se trata de una línea 2D entonces ésta se lleva al terreno, si es 3D
+entonces se respeta la cota que tiene.<br />
+      <br />
+Desde dicha línea se traza con un talud <span style="font-weight: bold;">AMD</span>/<span style="font-weight: bold;">ZMD</span> (usando los valores de coronación del muro) hasta que corta al muro (por lo tanto el muro es de altura variable).<br />
+      <br />
+Alternativamente, puede sustituirse el talud definido AMD/ZMD por un
+vector. Si el vector tiene algún punto, se utiliza este y no se hace
+caso a los valores AMD/ZMD definidos.<br />
+      <br />
+El muro puede tener a su vez taludes, ancho y profundidad. Si la línea
+cortase al muro por debajo del pie del muro, se elimina el muro,
+quedando un talud más suave.<br />
+      <br />
+Si hay definida coronación de desmonte, el punto de proyección sobre el terreno de la línea 2D se baja una altura <span style="font-weight: bold;">A</span> con el talud <span style="font-weight: bold;">T</span> de coronación de desmonte y a partir de este nuevo punto se ejecuta la geometría del muro + talud.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Muro colgado en desmonte (D) y en terraplén (T)</span><br />
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_muro_colgado.png" style="width: 153px; height: 173px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Este
+tipo requiere la definición de una línea 3D de la que se toma la cota
+en cada PK. No se controla si la sección es de desmonte o terraplén y
+se construye el muro de desmonte hasta la cota de la línea con la
+geometría definida para el muro de desmonte (ancho, profundidad,
+taludes,....).<br />
+      <br />
+El <span style="font-weight: bold;">MURO COLGADO D</span> (tipo
+desmonte) tiene el pie del muro en el borde de la plataforma y la
+cabeza a la cota que resulte de la línea 3D. El muro puede tener una
+sobreelevación, una profundidad y otras características geométricas que
+se definen en el muro de desmonte.<br />
+      <br />
+El <span style="font-weight: bold;">MURO COLGADO T</span> (tipo
+terraplén) tiene la cabeza del muro en el borde de la plataforma y el
+pie a la cota que resulte de la línea 3D. El muro puede tener una
+sobreelevación, una profundidad y otras características geométricas que
+se definen en el muro de terraplén.<br />
+      <br />
+Es necesario observar que si bien las geometrías de los muros se
+definen respectivamente en los submenús de desmonte y terraplén, los
+muros colgados tanto en desmonte como en terraplén se definen desde
+aquí.<br />
+      <br />
+Estos tipos de muros son compatibles con la opción <span style="font-weight: bold; font-style: italic;">Auto</span> de los menús de definición de muros, que buscan automáticamente el muro de la altura adecuada.<br />
+<br />
+      <br /></span></span><span style="font-weight: bold; font-style: italic;"><a name="vector_muro_L3D">
+Vector + Muro + línea 3D</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_vector_muro_L3D.png" style="width: 150px; height: 189px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo">Este modo ejecuta un vector definido por el usuario a partir del borde de la plataforma.<br />
+      <br />
+Si el punto definido por la línea 3D en el perfil está por encima del
+vector, se ejecuta a partir del punto un muro de desmonte hasta cortar
+al vector.<br />
+      <br />
+Si el punto definido por la línea 3D en el perfil está por debajo del
+vector, se sube desde el punto un muro de terraplén hasta cortar al
+vector.<br />
+      <br />
+      Aún
+cuando la línea 3D quede sobre la sobre la cuneta o sobre la
+plataforma, este modo seguirá actuando y en consecuencia el muro
+truncará la parte de la sección transversal correspondiente.<br />
+      <br />
+Se puede activar la opción <span style="font-weight: bold;">[ ] Aplicar solo en caso de desmonte</span> para hacer exactamente eso, aplicar esta definición solo en los desmontes.<br />
+      <br />
+Marcando la casilla sin etiquetar al lado del selector de modo, podemos
+forzar a que el vector se inicie tras el desmonte en roca.<br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;">
+Talud aparente</span><br />
+      <br />
+</span></span><img src="Imagenes/modelo_desm_talud_aparente.png" style="width: 163px; height: 81px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">En
+este modo, se calcula la cabeza de desmonte utilizando el talud D1
+desde el final de cuneta, pero luego se genera la sección con un muro
+de altura variable cerrando al punto previamente calculado y utilizando
+el talud AMD/ZMD. Las alturas resultantes de muro y talud son
+proporcionales.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Alto de muro por línea 3D</span><br />
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_alto_muro_L3D.png" style="width: 138px; height: 93px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">En
+este caso, la cota de la línea 3D marca la cota de la cabeza del muro,
+luego se sigue con la coronación del muro y/o la sección de desmonte en
+tierra paramétrica que se haya definido.<br />
+      <br />
+Si la línea 3D lleva la cabeza del muro por encima del terreno, se
+cierra la sección contra el terreno con el primer talud definido en la
+sección de terraplén.<br />
+      <br />
+El desmonte que se ejecuta a partir de la cabeza del muro, puede ser
+fijo por el pie o fijo por la cabeza. Además, estos tipos de muros son
+compatibles con la opción <span style="font-weight: bold; font-style: italic;">Auto</span> de los menús de definición de muros, que buscan automáticamente el muro de la altura adecuada.<br />
+      <br />
+<br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="muro_losa">Muro + Losa</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span><img src="Imagenes/modelo_desm_muro_losa.png" style="width: 136px; height: 93px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Este
+modo permite realizar un falso túnel a partir de muros en los que se
+coloca una losa de coronación y luego se rellena. Se deben introducir
+dos valores:</span></span><br />
+<ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo">El canto de la losa (<span style="font-weight: bold;">C</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">La altura libre (<span style="font-weight: bold;">H</span>).</span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Se
+puede escoger desde donde se mide la altura libre&nbsp;y también definir una tabla donde podamos
+tramificar esa altura a lo largo del eje a cada uno de los lados. Las alturas se pueden medir desde:<br /></span></span><ul><li>Rasante</li><li>Código 1</li><li>Punto más desfavorable de la calzada</li><li>Punto más desfavorable de la calzada y el arcén.</li><li>Longitudinal auxiliar.</li></ul><span class="Parrafo"><span class="Parrafo">El programa también da la opción de que la losa esté <span style="font-weight: bold;">peraltada</span>
+al activar la casilla correspondiente. En este caso, no es posible
+utilizar la opción de punto más desfavorable (calzada, calzada y
+arcén) y aparecerán entre paréntesis en el desplegable. Cuando nuestra
+losa sea peraltada, podremos definir una tabla independiente para los
+peraltes de la misma a ambos lados del eje, pudiendo copiar a esta los peraltes de las
+calzadas principales, siguiendo estos el mismo criterio clásico /
+internacional.<br /><br />También es posible definir el peralte por <span style="font-weight: bold;">Línea 3D</span> utilizando la opción del mismo nombre del desplegable.<br />
+      <br /></span></span><span class="Parrafo"><span class="Parrafo">Los muros se definen, normalmente dando su ancho, profundidad,
+geometría de las zapatas y de la excavación, etc. La mediciones que
+entrega el programa en este caso son:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">La excavación total (desmonte + excavación zapatas muro).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El relleno total (relleno zapata muro + relleno losa).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">La medición de la losa.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Tenemos la opción
+de escoger cual va a ser la cota de referencia para la altura
+de la losa:<br /><br />En carreteras:<br /></span></span><ul><li>Rasante</li><li>Código 1 (componente dy desde código 1 en el eje geométrico de la calzada)</li><li>Calzada</li><li>Calzada+Arcén</li><li>Longitudinal auxiliar.</li><li>Rasante derecha (en caso de doble rasante diferente se puede seleccionar cuál se quiere utilizar para cada lado).</li><li>Rasante izquierda.</li><li>Sobre código 1&nbsp;(en el caso de autovías y losa peraltada, calcula la altura sobre el
+código 1 y aplica esa cota a la losa en la vertical al código&nbsp;1).</li>
+        <li>Igualar al otro lado ( P. E. Si en el lado derecho se pone
+la opción Sobre el código 1, la cota en el eje dependerá del peralte,
+usando esta opción la cota en el lado izquierdo será la misma
+independientemente del peralte en ese lado)<br />
+        </li>
+</ul><br /><span class="Parrafo"><span class="Parrafo">En ferrocarril:<br />
+</span></span>
+      <ul>
+        <li>Rasante</li>
+        <li>Hilo bajo (que puede diferir de la rasante en casos de mantener el C.D.G., en caso de eje tipo ferrocarril).</li>
+        <li>Entrecarril (definido este como la cota media de los dos carriles, en caso de eje tipo ferrocarril).</li>
+        <li>Hilo alto (más desfavorable, en caso de eje tipo ferrocarril).</li><li>Longitudinal auxiliar.</li><li>Rasante derecha (en caso de doble rasante diferente se puede seleccionar cuál se quiere utilizar para cada lado).</li><li>Rasante izquierda.</li><li>Sobre código 1 (en el caso de doble vía y losa peraltada, calcula la altura sobre el
+código 1 y aplica esa cota a la losa en la vertical al código&nbsp;1).</li>
+        <li>Igualar al otro lado ( P. E. Si en el lado derecho se pone la opción Sobre el código 1, la
+cota en el eje dependerá del peralte, usando esta opción la cota en el
+lado izquierdo será la misma independientemente del peralte en ese lado)</li>
+
+      </ul>Cuando la sección Muro + Losa en desmonte el Muro está constituido por una <a href="OL_muro_desmonte.html#Pilotes">Pantalla de Pilotes</a>,
+es posible subir la altura del pilote hasta una profundidad definida
+desde la superficie del terreno. Para esto en la definición del muro:<br /><ul><li>Hc: altura de coronación del muro por exceso.</li><li>ZMD: profundidad medida desde el terreno a la que cortará el muro.</li></ul>En
+secciones de doble calzada se puede incluir un muro o pantalla de
+pilotes en la mediana, indicando de qué sección tipo se quieren leer
+los datos del muro (o pantalla de pilotes).<br /><br /><img src="Imagenes/muro+losa_calzada_doble_pilotes.png" style="width: 512px; height: 162px;" alt="" /><br /><br /><img src="Imagenes/muro+losa_calzada_doble_pilotes_st.png" style="width: 512px; height: 239px;" alt="" /><br /><br style="font-weight: bold;" /><span style="font-weight: bold;"><a name="vigaspref"></a>Cubierta de vigas prefabricadas:</span><span style="font-style: italic;"><br /><br /><img style="width: 550px; height: 174px;" alt="" src="Imagenes/muro_losa_vigas_prefabricadas.png" /><br /><br /></span>Activando esta opción, se puede sustituir la losa por una cubierta de vigas prefabricadas.<br />Si
+hay datos en la tabla de neoprenos dentro del tramo de cálculo, Se
+generan las vigas y las cuñas (modelo alámbrico y modelo BIM) teniendo
+en cuenta la posición definida en la tabla, siempre que las 2 cuñas de
+cada viga estén dentro del tramo de cálculo definido con cubierta de
+vigas prefabricadas. <br /><br /><img style="width: 400px; height: 233px;" alt="" src="Imagenes/vigas_prefabricadas.png" /><br /><br /><img style="width: 400px; height: 248px;" alt="" src="Imagenes/mono_vigas_prefabricadas.png" /><br /><br />La altura de la losa H, será hasta la base de la viga.<br />Al activar la opción, se habilita un cuadro de diálogo en el que se definen:<br /><ul><li>El
+tipo de viga (mismo formato que el editor de vigas del menú
+Estructuras. Se pueden crear y editar desde el menú Editor de vigas
+dentro de Elementos de las estructuras). Los parámetros a rellenar
+serán la entrega en el apoyo exterior <span style="font-style: italic;">ge</span>, la entrega en el apoyo de la mediana&nbsp;<span style="font-style: italic;">gm&nbsp;</span>y la distancia entre ejes de vigas.</li><li>La geometría de los cargaderos: mediante el semiancho del cargadero exterior<span style="font-style: italic;"> ae</span> desde el eje del pilar hacia el exterior; el semiancho del cargadero exterior desde el eje del pilar hacia el interior &nbsp;<span style="font-style: italic;">ai</span> y el semiancho del cargadero de la mediana&nbsp;<span style="font-style: italic;">am</span>, la altura&nbsp;<span style="font-style: italic;">h</span> y el espesor&nbsp;<span style="font-style: italic;">ee.</span></li><li>La geometría de las cuñas mediante la altura&nbsp;<span style="font-style: italic;">hc</span>, el&nbsp;<span style="font-style: italic;">Largo</span>, el ancho&nbsp;<span style="font-style: italic;">ac</span>, la distancia entre el eje del apoyo y el del pilar exterior&nbsp;<span style="font-style: italic;">de&nbsp;</span>y la distancia entre el eje del apoyo interior y el eje geométrico&nbsp;<span style="font-style: italic;">dm.</span></li><li>El espesor de la losa sobre las vigas <span style="font-style: italic;">el.</span></li></ul>En
+el perfil se representan las nuevas superficies Cargadero, Viga y Cuña.
+El cargadero y la losa se miden como el resto de materiales del perfil.
+Las vigas y las cuñas se generan aparte. Para ello se añaden en la
+tabla Ispol4.dar dándoles la propiedad de Viga_Losa y Cuña_Losa
+respectivamente.<br /><br /><img style="width: 550px; height: 260px;" alt="" src="Imagenes/perfil_vigas_cargadero.png" /><br /><span style="font-style: italic;"><span style="font-style: italic;"></span><br /></span>
+      <span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 291px;" alt="" src="Imagenes/perfil_sup_vigas_cargadero.png" /><br /><br /><img style="width: 601px; height: 292px;" alt="" src="Imagenes/perfil_mediciones_vigas_cargadero.png" /><br /><br />Se
+pueden representar en modelo alámbrico estos elementos. Para ello desde
+el menú Editar .lil -&gt; Tableros y bordillos -&gt; Cubierta de vigas
+prefabricadas:<br /><br /><img style="width: 600px; height: 292px;" alt="" src="Imagenes/dibujo_planta_cubierta_vigas_prefabricadas.png" /><br /><br /><img style="width: 600px; height: 334px;" alt="" src="Imagenes/alambrico_3D_vigas_cargadero.png" /><br /><br />Y también se generan todos los elementos en el modelo BIM:<br /><br /><img style="width: 600px; height: 380px;" alt="" src="Imagenes/bim_vigas_cargadero.png" /><br /><br />Al generar el dibujo o el modelo BIM, se crear un listado <span style="font-weight: bold;">neoprenosX.xlsx</span> que incluye:<br /></span></span><ul><li>Longitud de las vigas.</li><li>Longitud acumulada.</li><li>Coordenadas X,Y del centro de los neoprenos.</li><li>Cota del centro de los neoprenoes en la parte superior (contacto con la viga).</li></ul><span class="Parrafo"><span class="Parrafo"><br /><br /></span></span><span style="font-weight: bold; font-style: italic;"><a name="vector_desm_L3D">
+Vector + Desmonte + Línea 3D</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_vector_desm_L3D.png" style="width: 152px; height: 74px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">En
+este caso, el desmonte vectorial se ejecuta a partir del final de la
+cuneta y el desmonte paramétrico se aplica fijo por la cabeza desde la
+posición de la línea 3D. Marcando la casilla a tal efecto, se puede
+hacer que el vector sea fijo por la cabeza en el punto de intersección
+entre el vector y el desmonte paramétrico.<br />
+      <br />
+Si no hay intersección entre ambos, se une directamente el final de la cuneta con la línea 3D.<br />
+<br />
+      <br />
+</span></span><img src="Imagenes/vector_desm_L3D_complejo.png" style="width: 351px; height: 182px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo">Cuando
+de la cuneta sale una sección de desmonte y de la línea 3D una
+seudoexplanada, la sección del desmonte se ha de definir vectorialmente
+y la explanada utilizando los valores ZD1 y D1.<br />
+      <br />
+Es posible definir entonces un talud D1 negativo si se desea que esta explanada vierta el agua hacia la línea 3D.<br />
+      <br />
+Si el vector de desmonte cortase al terreno antes de llegar a la explanada, se termina en el terreno.<br />
+      <br />
+      <br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;">
+Vector + Muro + Línea 3D + Desmonte</span><br />
+      <br />
+      Funciona exactamente igual que el modo <a href="#vector_muro_L3D">Vector + Muro + Línea 3D</a>
+pero con la diferencia de que a partir de la posición de la línea 3D se
+aplica la geometría del desmonte paramétrico hasta cortar con el
+terreno.<br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">(Muro) + Línea 3D + Desmonte</span><br />
+      <br />
+Es como <a href="#L3D">Línea 3D</a> pero a partir de la posición de la
+línea 3D se aplica la geometría del desmonte paramétrico hasta cortar
+con el terreno. El muro es opcional.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">(Muro) Linea3D + Desmonte Vectorial</span><br />
+      <br />
+Esta opción es idéntica a la de (Muro)L3D + Desmonte, en vez de definición de desmonte paramétrico, desmonte vectorial.<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;">Línea 3D + Bermas</span><br />
+      <br />
+Este modo permite sustituir el talud que va desde el final de la cuneta hasta la línea 3D por bancos con la siguiente geometría:<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; height: 85px; width: 596px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">D1<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo">Mínimo talud para los bancos. </span></span><span class="Parrafo"><span class="Parrafo">Si el talud aparente es inferior a D1, no se hacen bancos.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">DBD<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo">Desnivel entre bermas (altura de bancos).</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">ABD<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo">Ancho máximo de las bermas.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 73px; font-weight: bold;">Pen<br />
+            </td>
+            <td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo"> Pendiente de las bermas.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Se construyen bancos con el talud D1, hasta que las bermas alcancen una
+anchura de ABD. A partir de entonces se conservan las bermas con un ancho
+ABD, y se va aumentando el talud de los bancos.<br />
+      <br />
+Si se activa la opción <span style="font-weight: bold;">[ ] Bermas de ancho fijo</span>, se añaden otros dos parámetros:<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; height: 27px; width: 636px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td style="vertical-align: top; width: 73px; font-weight: bold;">ZB1<br />
+            </td><td style="vertical-align: top; width: 517px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota de la primera berma.<br />
+</span></span></span></span></td></tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Desvanecimiento última berma</span><br />
+            </td>
+            <td style="vertical-align: top;">Coeficiente de desvanecimiento para la última berma (entre 0.0 y 1.0)<br />
+            </td>
+          </tr>
+</tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;">Desmonte + Vector + Línea 3D</span><br />
+      <br />
+      </span></span><img src="Imagenes/modelo_desm_desm_vector_L3D.png" style="width: 129px; height: 86px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Se
+genera el desmonte paramétrico fijo por el pié a partir de la cuneta o
+berma de despeje y el demonte vectorial también fijo por el pié a
+partir de la intersección con el anterior,&nbsp; terminando en la línea
+3D. Lo que el programa calcula, por tanto, es la intersección entre
+ambos.<br />
+      <br />
+La opción es similar a <a href="#vector_desm_L3D">Vector + Desmonte + L3D</a>,
+pero al llevar el desmonte paramétrico enganchado por el pié puede
+definirse la cota de la primera berma con un valor fijo o por
+longitudinal mediante la rasante auxiliar. <br />
+      <br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="alto_muro_tabla">Alto de muro por tabla</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Este modo, aplicable tanto en desmonte como en <a href="OL_terraplen_geometria.html">terraplén</a>, da acceso a una tabla de cotas de cabeza de muro, que permite definir para cada lado una tabla de tramos dados por un <span style="font-weight: bold;">PK inicial</span> y un <span style="font-weight: bold;">PK final</span> y la cota de la cabeza de muro en esos PKs, de tal forma que el valor de dicha cota va variando linealmente desde <span style="font-weight: bold;">Z inicial</span> a <span style="font-weight: bold;">Z final</span>. Si elegimos la opción <span style="font-weight: bold;">Por Longitudinal</span> en el desplegable, la cota del muro será definida por los datos introducidos en <a href="OL_rasantes_diseno.html#tipo_rasante">Rasante</a> &gt; Cabeza de muro. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si no hay líneas de datos, se crea una desde el PK de inicio hasta el final del eje.</span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold;">Copiar al otro lado</span>: Tenemos la posibilidad de copiar los datos de un lado para el otro.<br />
+      <br />
+La tabla es única aunque existan varias secciones tipo con este modo.
+Si un PK definido con este modo, está fuera de los tramos de la tabla,
+se genera el muro con la altura definida para él en la pestaña <a href="OL_muro_desmonte.html">MURO</a>.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/cota_cabeza_muro.png" style="width: 460px; height: 214px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      La tabla de cotas de cabeza muro también es accesible desde ALZADO </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">COMPLEMENTOS</span> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">COTA CABEZA DE MURO</span>, y es muy similar a la tabla de <a href="OL_muro_desmonte.html#cota_base_muro">cota base de muro</a>,
+siendo la diferencia más significativa que la tabla de cota cabeza de
+muro no afecta a todos los muros sino solamente aquellos definidos con
+este modo (tanto en desmonte oterraplén). <br />
+      <br />
+Para este caso es necesario haber definido en la pestaña de Terraplén
+un alto (ZT1) y un talud de muro (T1), como mínimo. Además no se
+deberán haber definido valores a las casillas AMT y ZMT de la pestaña
+de Muros.<br />
+      <br />
+Cuando la cabeza de Muro Sobrepasa al terreno. Y se define un talud de
+cierre del muro AMD/ZMD. Si al trazar desde la cabeza del Muro el talud
+AMD/ZMD este no corta al terreno y queda por encima de él entonces se
+utiliza un segmento que vaya hasta el terreno a la distancia AMD aunque
+su talud sea inferior. Se comprueba si este segmento tiene algún corte
+con el terreno antes de esa distancia y entonces se deja en este punto.<br />
+      <br />
+</span></span></span></span></span></span><span class="Parrafo">Estos datos podrán guardarse mediante archivos de extensión&nbsp;<span class="Archivo">.ccm</span> a partir de la casilla <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y podrán cargarse mediante la casilla <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" />. Con el icono inicializar <img src="Imagenes/icono_toolbarEstandar_nuevo.png" style="width: 16px; height: 17px;" alt="" /> me descargará todos los datos que pudiera haber en la pantalla.<br />
+      <br />
+El modo <span style="font-weight: bold;">Alto de muro por tabla + Línea 3D</span> funciona de manera muy similar, colocando la cabeza del muro con una tabla pero luego cerrando la sección hacia una linea 3D.<br />
+      <br />
+</span>
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Muro + Talud + Línea 3D</span></span></span> <span style="font-style: italic; font-weight: bold;">+ Vector</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Se coloca el muro de una altura tal que llegue con el talud AMD/ZMD
+hasta la línea 3D. Luego si la línea 3D está bajo tierra se añade el
+vector hasta cortar el terreno.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Línea 2D + Alto muro por tabla</span><br />
+      <br />
+La línea 2D posiciona el intrados del muro. Si la línea está más lejos
+que el último punto de la cuneta, se prolonga ésta hasta el muro con un
+segmento horizontal.<br />
+Si la línea cae en la zona&nbsp; de la cuneta se trunca ésta en ese punto.<br />
+Si la línea cae dentro de la plataforma, no se hace caso a la línea y el muro se adosa a la plataforma.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/l2d_muro_tabla_ej.png" style="width: 410px; height: 366px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+</span></span><span style="font-style: italic;" class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Transición de taludes</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Cuando aparece el desmonte, se inicia con un talud (de valor <span style="font-weight: bold;">D1o</span>) hasta que este primer banco alcanza la altura <span style="font-weight: bold;">H1</span>. En ese PK ocurre lo siguiente:<br />
+      </span></span>
+      <ul>
+        <li>Se añade la berma de ancho <span style="font-weight: bold;">ABD</span> y pendiente <span style="font-weight: bold;">Pen</span>.</li>
+        <li>Se inicia el estudio del siguiente banco.</li>
+        <li>Durante una longitud en PKs de <span style="font-weight: bold;">LT1</span> se realiza una transición entre el talud inicial <span style="font-weight: bold;">D1o</span> (más tendido) y el definitivo <span style="font-weight: bold;">D1 </span>(más pendiente), conservando la altura <span style="font-weight: bold;">H</span>.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Para el segundo banco y sucesivos, se inician con un talud <span style="font-weight: bold;">Do</span> hasta que el banco alcanza la altura completa <span style="font-weight: bold;">H</span>, y a partir de ahí:<br />
+      </span></span>
+      <ul>
+<li>Se añade la berma de ancho <span style="font-weight: bold;">ABD</span> y pendiente <span style="font-weight: bold;">Pen</span>.</li><li>Se inicia el estudio del siguiente banco.</li><li>Durante una longitud en PKs de <span style="font-weight: bold;">LT</span> se realiza una transición hasta el talud definitivo <span style="font-weight: bold;">D</span>, conservando siempre la altura <span style="font-weight: bold;">H</span>.<br />
+  </li>
+      </ul>
+
+Las transiciones de taludes de los bancos pueden solaparse en PKs o no,
+en función de los datos introducidos y lo rapido que aumente/disminuya
+el desmonte.<br />
+      <br />
+A diferencia de otros tipos de desmonte, la geometría en un PK concreto
+no depende solamente del terreno en ese PK sino también de su evolución
+en todo el tramo. Por ello antes de realizar el cálculo de la geometría
+para los archivos&nbsp;<span class="Archivo">ISPOLn.per</span> se requiere un precálculo que determina que sección se aplica
+en cada PK en función de los PKs anteriores y siguientes. Este
+precálculo se realiza automáticamente al calcular desde ALZADO o desde
+PROYECTO. Pero si no se ha efectuado ninguno de estos, o se ha
+modificado algún parámetro, antes de navegar por el eco de <span style="font-weight: bold;">[Sección]</span> o <span style="font-weight: bold;">[Sección Real]</span> debemos forzar el precálculo desde el cuadro de diálogo en el que se define este tipo de sección.<br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">Alabeo de taludes</span><br />
+      <br />
+Este tipo de generación de taludes es utilizado en algunas normativas de carreteras (Perú, Paraguay,...). <br />
+Se define mediante los siguientes parámetros: <br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">En los desmontes con alturas superiores a un valor <span style="font-weight: bold;">Hmin</span> (p.e 4m) y un Talud nominal <span style="font-weight: bold;">D</span> (p.e 2:1).Se hace una transición de este talud desde el punto donde </span></span><span class="Parrafo"><span class="Parrafo">el desmonte tiene una altura <span style="font-weight: bold;">Ht</span> (p.e. 2m) hasta el punto donde el desmonte tiene una altura nula donde se asigna otro talud <span style="font-weight: bold;">Do</span> (p.e 4:1).</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si el talud no llega alcanzar la altura <span style="font-weight: bold;">Ht</span>, no se realiza el alabeo.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si la altura máxima del talud esta entre <span style="font-weight: bold;">Ht</span> y <span style="font-weight: bold;">Hmin</span>, entonces la altura para </span></span><span class="Parrafo"><span class="Parrafo">iniciar la transición será Hmin/2.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">La longitud de la zona de transición será como mínimo <span style="font-weight: bold;">LTmin</span> (p.e 10m).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si la longitud total del desmonte es inferior a <span style="font-weight: bold;">Lmin</span> (p.e 40m) tampoco se </span></span><span class="Parrafo"><span class="Parrafo">realiza el alabeo.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Se añade también un parámetro <span style="font-weight: bold;">Hmáx</span> para limitar la altura máxima del talud.</span></span></li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/alabeo_desm.png" style="width: 270px; height: 82px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">Vector +L2D + Muro</span><br />
+      <br />
+La cuneta y a continuación la sección de desmonte vectorial se llevan
+hasta la posición de la línea 2D, a partir de este punto, con la cota
+correspondiente del vector se inicia el Muro. La línea 2d puede cortar
+la sección a partir del fondo de la cuneta hasta el final del desmonte
+vectorial, si este se quedara corto, se alarga en horizontal hasta la
+posición de la línea 2D. Si el vector se queda por encima del terreno
+en la posición de la línea 2D, el muro podría quedar en el aire,
+apareciendo terraplén por debajo de la zapata.<br />
+<br />
+      </span></span><span class="Titulo_2"><a name="tuneles">Secciones de desmonte para túnel y falso túnel</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />Este tipo de secciones se pueden declarar desde este menú o desde el mismo menú de <a href="OL_tuneles.html">túneles</a>, tal y como se describe <a href="OL_tuneles.html#declaracion">aquí</a>.<br />
+      </span></span><br />
+</span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

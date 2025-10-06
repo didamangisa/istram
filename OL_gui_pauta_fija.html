@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Pauta fija</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: PAUTA FIJA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span><span class="Parrafo">Desde
+este menú es posible definir los diferentes elementos fijos en cada
+hoja que son independientes de los PK&#8217;s, cotas o de los elementos
+propios de cada proyecto.<br />
+<br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#simb_cabecera">
+      Símbolos para la cabecera</a></span><br />
+      <span class="Parrafo">
+      <a href="#lineas_horiz_sueltas">Líneas horizontales sueltas</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#lineas_horiz_equidist"><span class="Parrafo">Líneas horizontales equidistantes</span></a><br />
+      <span class="Parrafo"><a href="#lineas_vert_equidist">Líneas verticales equidistantes</a></span><br />
+      <span class="Parrafo"><a href="#rotul_pks_equidist">Rotulación de PK's equidistantes</a></span><br />
+      <span class="Parrafo"><a href="#rotul_nombre_eje"><span class="Parrafo">Rotulación del nombre del eje</span></a><br />
+      <a href="#simb_escalas"><span class="Parrafo">Símbolos para las escalas</span></a><br />
+      <a href="#rotul_multiplos"><span class="Parrafo">Rotulación de múltiplos (km, hm, 20 m)</span></a><br />
+      <a href="#datos_cajetin"><span class="Parrafo">Datos para el cajetín</span></a><br />
+      <a href="#geopak">Geopak</a><br />
+      </span></div>
+      <span class="Parrafo">
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 290px; height: 248px;" alt="" src="Imagenes/gui_pauta_fija.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+<br />
+      Con la opción <span style="font-weight: bold;">Margen de PKs en los extremos</span> podremos separar el inicio y final de nuestra guitarra una magnitud horizontal.<br />
+<br />
+      </span><span class="Titulo_2"><a name="simb_cabecera">Símbolos para la cabecera</a></span>
+	  <span class="Parrafo"><br /><br />
+      Aquí
+se indican qué cabecera/s usar para la guitarra, entendiendo como tal
+desde símbolos en forma tabular con rótulos que informan del tipo de
+datos a representar en cada fila hasta rótulos y etiquetas numéricas
+para indicar algún valor tipo texto (como el nombre del eje) y numérico
+(PK, cota de la rasante, azimut,&#8230;):<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 107px;" alt="" src="Imagenes/gui_simb_cabecera.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      </span><br /><img src="Imagenes/gui_cabecera.png" style="width: 127px; height: 473px; margin-left: 7px;" alt="" align="right" />
+      <table style="text-align: left; height: 142px; width: 552px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">S/R</span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Aquí se indica qué tipo de símbolo (o rótulo en
+caso de que se quiera anotar el nombre del eje) utilizar como elemento
+de cabecera. Por ejemplo, a la derecha se muestra el símbolo&nbsp; de tipo
+111, utilizado en la guitarra&nbsp;<span class="Archivo">ISP03.gui</span> de la librería de
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. Un valor negativo implica que no use ningún símbolo o
+rótulo.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">Dis.PC</span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Distancia en vertical al plano de comparación del punto de
+enganche del símbolo.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">Dist. horiz.<br />
+            </span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Distancia en horizontal del punto de enganche del
+símbolo.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;"><span class="Parrafo">Desde<br />
+            </span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Lugar de colocación del símbolo de cabecera. Ofrece las siguientes opciones:</span><span class="Parrafo"><br /></span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Inicio / Fin</span>: El símbolo se repite al inicio y final de cada página.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Inicio Z / Final Z</span>: Igual que el caso anterior, pero en este caso el
+valor especificado en <span style="font-weight: bold;">Dis.PC</span> no es respecto al plano de comparación,
+sino respecto a al cota más alta entre terreno y rasante. La guitarra&nbsp;<span class="Archivo">ISP02.gui</span> hace uso de esta característica.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+PK inicial / PK final</span>: El símbolo se coloca únicamente en el PK inicial o final, sin repetirse en cada página.</span></li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">PK inicial Z / PK final Z</span>: Pk inicial o final del eje en la posición de la cota mayor entre la rasante o el terreno<br />
+              </li>
+            </ul>
+
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;">Anotar<br />
+            </td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Especifica qué valor mostrar en el caso
+de que en <span style="font-weight: bold;">S/R</span> se especifique un símbolo tipo etiqueta o un rótulo.<br />
+            <br />
+Ofrece las siguientes
+posibilidades: PK, coordenada X, coordenada Y, cota de la rasante,
+azimut, radio, pendiente en tanto por ciento y en tanto por mil, nombre y PK, coordenada X y coordenada Y tanto del
+inicio como del final de eje, PK inicio y final de la hoja (pueden rotularse referidos a cualquier posición).<br />
+            <br />
+Las guitarras&nbsp;<span class="Archivo">ISP08b.gui</span> e&nbsp;<span class="Archivo">ISP08C.gui</span> son
+dos buenos ejemplos de uso de esta característica.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 66px; font-weight: bold;">Ángulo<br />
+            </td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Ángulo de giro del símbolo o rótulo utilizado, en grados sexagesimales.<br />
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 66px;"><span class="Parrafo">Eng.Hor / Eng.Ver</span></td>
+            <td style="vertical-align: top; width: 466px; text-align: justify;"><span class="Parrafo">Punto de inserción (enganche) en el caso de rótulos.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="lineas_horiz_sueltas">Líneas horizontales sueltas</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Aquí se definen líneas horizontales
+de la rejilla de la guitarra en cualquier posición.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><img style="width: 290px; height: 109px;" alt="" src="Imagenes/gui_lineas_horiz_sueltas.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+Para cada línea suelta es preciso indicar su tipo y la distancia al
+plano de comparación. Un valor negativo indicando el tipo hace que no
+se representen estas líneas.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="lineas_horiz_equidist">Líneas horizontales equidistantes</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Se
+indica el tipo y la equidistancia entre las líneas horizontales de la
+cuadrícula de la guitarra (para aquellas líneas que puedan ser
+sistematizadas de esta forma). Un valor negativo indicando el tipo hace
+que no se representen estas líneas.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 290px; height: 109px;" alt="" src="Imagenes/gui_lineas_horiz_equidist.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Además, se indica el número de líneas, a partir del plano de
+comparación, que han de cumplir cada condición de equidistancia así
+como si estas líneas han de representarse sólo por debajo del terreno o
+en toda la zona del longitudinal.<br />
+      <br />
+El número de líneas ahora puede ser automático y se calculará al igual
+que la altura de la&nbsp; verticales equidistantes automáticas, en
+función de las cotas del plano de comparación, de la rasante y del
+terreno y de los parámetros que se hayan definido.<br />
+      <br />
+      Si se crean varios datos de líneas horizontales equidistantes, sólo se rotula la cota a la última serie definida.<br />
+      <br />En el modo <span class="Parf_negrita">Segmento</span> (de la <span class="Parf_negrita">Zona</span>)
+se define también una distancia en mm, para dibujar un segmento
+horizontal hasta esa distancia, a ambos lados del eje vertical. Así
+podemos tener por ejemplo: Un segmento cada 5 y una línea Completa cada
+25. Como la última de la lista es a las que se le añaden la rotulación
+de las cotas, en función del orden se podrían rotular todos los
+segmentos o solo las completas.<br /><br />Posibilidad de dibujar un segmento en la parte final de la guitarra (<span class="Parf_negrita">Seg.Final</span>), de forma análoga a la opción Segmento.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="lineas_vert_equidist">Líneas verticales equidistantes</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Se
+indica el tipo de y la equidistancia entre las líneas verticales de la
+cuadrícula de la guitarra (para aquellas líneas que puedan ser
+sistematizadas de esta forma). Con <span style="font-weight: bold;">Dist. PC ini/fin</span>
+se puede indicar a que altura vertical empiezan y acaban estas lineas,
+se puede activar que se calcule automáticamente para cada hoja en
+función de las cotas máximas de la rasante y el terreno. Un valor
+negativo en el tipo hace
+que no se representen estas líneas. Existe la posibilidad de
+seleccionar que se tomen los múltiplos de los PKs de usuario deducidos
+de las ecuaciones de PK<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><img style="width: 290px; height: 109px;" alt="" src="Imagenes/gui_lineas_vert_equidist.png" /><br />
+      </div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="rotul_pks_equidist">Rotulación de PK's equidistantes</a></span><br />
+      <span class="Parrafo">
+      <br />
+Aquí es posible establecer una pauta de rotulación de PK&#8217;s con un tipo
+de símbolo. Se pueden usar las siguientes opciones:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 491px; height: 183px;" alt="" src="Imagenes/gui_rotul_pks_equidist.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <span class="Parrafo">
+      <br /></span></span>
+      <table style="text-align: left; height: 218px; width: 668px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">Símbolo</span></td>
+            <td style="vertical-align: top;"><span class="Parrafo">Tipo de símbolo que se usará para rotular los PKs.</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Dist. PC</span><br />
+            </td>
+            <td style="vertical-align: top;">Distancia vertical al plano de control.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Desp. horiz.</span><br />
+            </td>
+            <td style="vertical-align: top;">Distancia horizontal al punto de origen.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Ángulo</span><br />
+            </td>
+            <td style="vertical-align: top;">Ángulo al que se muestra el símbolo.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Equidist.</span><br />
+            </td>
+            <td style="vertical-align: top;">Equidistancia a la que se muestran los símbolos.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Simb. PKini/fin</span><br />
+            </td>
+            <td style="vertical-align: top;">Tipo de símbolo a usar en el primer/último PK.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Dist. min</span><br />
+            </td>
+            <td style="vertical-align: top;">Distancia mínima entre símbolos. Cuando dos símbolos estén más cerca entre si de esta distancia, no se dibujará uno de los dos.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Rotular</span><br />
+            </td>
+            <td style="vertical-align: top;">Rotula en el símbolo el dato especificado aquí: PK, X, Y, Z, estaca o E.PK (PK según las <a href="OL_ecuaciones_de_PK.html">ecuaciones de PK</a>).
+El valor que se rotula (PK, EStaca,E.PK) puede hacerse en multiplos del
+PK real, equidistancia y se puede añadir en Múltiplos de los PKs de
+usuario de las <br />
+Ecuaciones de PK.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Múltiplos/Equidistancia</span><br />
+            </td>
+            <td style="vertical-align: top;">La opción Múltiplos rotula
+los PKs que sean múltiplo del valor especificado en Equidist. (usando
+20 nos rotularía el PK 20, 40, 60, 80, ...)<br />
+La opción Equidistancia rotula un PK cada Equidist., a partir del PK
+inicial de la guitarra (usando 20, si la guitarra empieza en el PK 1.57
+nos rotularía el 1.57, el 21.57, el 41.57, el 61.57, ...)<br />
+            </td>
+          </tr>
+</tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="rotul_nombre_eje">Rotulación del nombre del eje</a></span><br />
+      <span class="Parrafo"><br />Permite
+rotular el nombre del eje (y su número, alias, etc) en cada página del
+perfil
+longitudinal con el estilo de rótulo o símbolo indicado. Se puede
+especificar la posición horizontal y vertical desde el origen de la
+página, el tamaño y ángulo del rótulo y el punto de enganche que se va
+a utilizar.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 490px; height: 106px;" alt="" src="Imagenes/gui_rotul_nombre_eje.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="simb_escalas">Símbolos para las escalas</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Desde
+aquí se puede indicar al programa que rotule las escalas
+horizontal y/o vertical, con el símbolo indicado y a cierta distancia
+del plano de comparación. También se puede especificar un
+desplazamiento horizontal y un ángulo.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 300px; height: 68px;" alt="" src="Imagenes/gui_simb_escalas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Por defecto, el programa ofrece el tipo de símbolo 677 para la escala
+horizontal y el 678 para la vertical. Valores negativos indicando el
+tipo provocan que no se representen estos símbolos.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="rotul_multiplos">Rotulación de múltiplos (km, hm, 20 m)</a></span><br />
+      <span class="Parrafo"><br />
+Permite rotular etiquetas numéricas cada kilómetro, hectómetro, 50, 25, 20 o 10 m con el
+símbolo especificado a una determinada distancia del plano de
+comparación, y con un desplazamiento horizontal y ángulo dados.
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 390px; height: 87px;" alt="" src="Imagenes/gui_rotul_multiplos.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+También rotula marcas con el tipo de línea indicado y de longitud
+determinada por distancias al plano de comparación. Valores negativos
+indicando el tipo provocan que no se representen los símbolos y/o las
+líneas.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 372px; height: 101px;" alt="" src="Imagenes/gui_rotul_multiplos_ejemplo.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="datos_cajetin">Datos para el cajetín</a></span><br />
+      <span class="Parrafo"><br />
+Aquí se pueden rotular los PK's de inicio y final de cada hoja en un
+determinado campo de los textos variables del cajetín y con un
+determinado formato.<br />Es posible que los PKs que se rotulan en el cajetín correspondan con los PKs de usuario deducidos de las ecuaciones de PK.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 450px; height: 122px;" alt="" src="Imagenes/gui_datos_cajetin.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="geopak">Geopak</a></span><br />
+
+      <br />
+
+Diseño de guitarras al estilo Geopak.<br />
+
+      <br />
+
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 73px;" alt="" src="Imagenes/gui_geopak.png" /><br />
+
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

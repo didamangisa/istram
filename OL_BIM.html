@@ -1,0 +1,2352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>BIM desde Istram®BIM</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BIM desde
+ISTRAM®BIM<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px; text-align: justify;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#presentacion">Presentación</a><br />
+      
+      <a href="#interfaz">Interfaz</a><br />
+      <div style="margin-left: 40px;"><a href="#Carreteras">Carreteras</a><br />
+      <a href="#inter_ffcc">Ferrocarriles</a><br />
+      <div style="margin-left: 40px;"><a href="#dilatacion">Aparatos de
+dilatación</a><br />
+      </div>
+      <a href="#inter_tub">Tuberías</a><br />
+      <a href="#alineaciones">Alineaciones</a><br />
+      </div>
+      <a href="#generacion">Generación</a><br />
+      <div style="margin-left: 40px;"><a href="#bulones">Generación
+de bulones</a><br />
+      <a href="#superficies_existentes">Superficies
+existentes</a><br />
+      <a href="#elementos_con_espesor">Elementos con
+espesor</a><br />
+      <a href="#imp_shp">Importación de ficheros .shp</a><br />
+      </div>
+      <a href="#traduccion">Clases/Atributos</a><br />
+      <div style="margin-left: 40px;"> <a href="#Nombre_BIM">Nombre BIM</a><br />
+      <a href="#Tipo_IFC">Tipo IFC</a><br />
+      <a href="#Atributos_referidos_a_clasificacion"><span style="color: rgb(0, 79, 175);">Atributos referidos a
+clasificación</span></a><br />
+      </div>
+      <a href="#atributos">Propiedades</a><br />
+      <div style="margin-left: 40px;"><a href="#Origen_de_atributos">Origen
+de atributos</a><br />
+      <a href="#Importacion_.CSV">Importación .CSV</a><br />
+      <a href="#Textos_variables_en_atributos">Textos
+variables en atributos</a><br />
+      <a href="#psetestandar">PSETs del esquema IFC</a><br /><a href="#psetSenalizacion">PSETs de objetos puntuales</a><br />
+      </div>
+      <a href="#visualizacion">Visualización</a><br />
+      <div style="margin-left: 40px;"><a href="#organizacion">Organización
+en el árbol BIM de las
+tongadas de terraplén</a><br />
+      <a href="#Filtro">Filtro de
+selección</a><br />
+      </div>
+      <a href="#archivos">Archivos</a><br />
+      <div style="margin-left: 40px;"><a href="#Exportacion_del_terreno">Exportación
+del terreno</a><br />
+      <a href="#Origen_de_coordenadas">Origen de
+coordenadas e
+Importación IFC</a><br />
+      <a href="#opciones_exp">Opciones de subdividir el
+fichero de
+exportación</a><br />
+      </div>
+      </div>
+      <p class="Standard" style="text-align: justify;"><span class="Titulo_2"><a name="presentacion">PresentaciónOL_svertical.html</a></span></p>
+      <p class="Standard" style="text-align: justify;">Istram
+genera la
+geometría BIM de los proyectos de obra lineal. A partir de la
+infomación de
+dichos proyectos se generan los volúmenes definidos en las tablas del
+programa
+y se asocian otros elementos 3D como marcas viales, estribos, derrames,
+pozos,
+obras de fábrica... entre otros. Esta información puede guardarse en
+múltiples
+formatos.OL_svertical.html</p>
+      <p class="Standard" style="text-align: justify;">Para
+los ejes de
+ferrocarriles, al entrar en BIM o en <a href="V3D_escenario.html">Virtual
+3D</a>
+(en este último caso, si se hace desde el menú de Alzado), se genera,
+de
+forma automática, la geometría de los carriles y las traviesas. No es
+necesario la utilización de líneas con representación sólida 3D.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;">La
+generación de
+la geometría BIM se realiza a partir de los perfiles transversales y la
+tabla DAR que tengan asociada. Esto permite calcular otros atributos
+como el volumen de los elementos.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;">En
+esta pestaña
+se pueden generar, guardar y visualizar los modelos BIM de los ejes y
+acuerdos.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;">El
+acceso a
+estas
+opciones de Istram se realiza en el menú de Obra Lineal. Antes de
+entrar en
+este menú es necesario tener un proyecto calculado, aunque se haya
+calculado en
+otra sesión de trabajo.</p>
+      <div style="text-align: center;"><img src="Imagenes/Menu_BIM.png" style="width: 600px; height: 236px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">El
+menú de BIM
+consta de varias pestañas (Generación, Clases, Atributos,
+Visualización, Archivos) y de un árbol BIM en donde se recoge la
+estructura del proyecto BIM:</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;"><img src="Imagenes/arbol_bim_01.png" style="width: 300px; height: 365px;" alt="" align="right" hspace="8" />Árbol
+BIM</span>, en la
+parte izquierda. En el se muestran los elementos del proyecto.
+Inicialmente,
+sólo se muestra la organización de grupos de ejes.</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">E</span>n la
+parte izquierda. Hay 5 pestañas que permiten trabajar con la
+información BIM, guardarla o manejar la visualización 3D. Estas
+pestañas son: Generación, Clases/Atribuos, Propiedades, Visualización,
+Archivos.</p>
+      
+      <p class="Standard" style="text-align: justify;">La
+ventana <span style="font-weight: bold;">BIM</span>
+3D es una ventana independiente
+en la que se muestra la representación 3D del modelo BIM. Para que se
+pueda mostrar esta ventana es necesario que haya alguna geometría BIM
+generada. Al seleccionar
+cualquier objeto en el árbol se muestran
+sus características disponibles en esta zona.</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Clases/Atributos,</span>
+los elementos BIM pertenecen a una clase que les otorga Istram.
+En esta opción se puede "traducir" ese nombre de clase a otros
+estándares.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Propiedades,</span>
+se puede definir un conjunto de atributos para cada elemento de
+geometría, que recibirán su valor de la información propia del programa.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Visualización</span>, una
+vez generada la
+geometría de un elemento del árbol
+se puede ver en una ventana de OpenGL. En esta zona se definen
+caracteristicas
+de visualización de los elementos del árbol.</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Archivos</span>, una vez
+generada la
+geometría de un elemento del
+árbol se puede exportar en varios formatos, teniendo en cuenta las
+posibilidades de
+cada uno de ellos.</p>
+      <p class="Standard" style="text-align: justify;">En
+el menú de
+BIM de obra lineal disponemos de herramientas para generar:</p>
+      <ul>
+        <li>Todo el proyecto<br />
+        </li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/bim01.png" style="width: 610px; height: 586px;" alt="" /><br />
+      </div>
+      <ul>
+        <li>Todos los ejes y acuerdos</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/bim02.png" style="width: 610px; height: 580px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">Disponemos
+de
+igual modo la posibilidad de generar cada eje o acuerdo por separado.</p><br />
+<p class="Standard" style="text-align: justify;"><a name="interfaz"><span class="Titulo_2">Interfaz</span></a>
+        <br />
+</p>
+      <p class="Standard" style="text-align: justify; font-weight: bold;">El árbol BIM</p>
+
+      <ul>
+      </ul>
+      <p class="Standard" style="text-align: justify;">En
+el árbol se
+puede
+ver la estructura de la información del proyecto.</p>
+      <p class="Standard" style="text-align: justify;">En
+cada nodo del árbol se ofrece un <span class="Parf_negrita">menú
+contextual </span>(utilizando el botón derecho del ratón) que se
+despliega con diferentes herramientas dependiendo del nodo seleccionado.</p>
+      <br />
+      <p class="Standard" style="text-align: center;">&nbsp;<img src="Imagenes/menu_contextual_abim.png" style="border: 1px solid ; width: 422px; height: 332px;" alt="menú contextual" /></p>
+      <br />
+      <ul>
+        <ul>
+          <li><span class="Parf_negrita">Zoom objeto:</span>&nbsp;acerca
+la cámara de la ventana de vista 3D para encuadrarla con el tamaño del objeto seleccionado.
+Si el objeto es una agrupación estructural como un eje, grupo,
+etcétera... se encuentra con la suma de todos los objetos internos del
+nodo.</li>
+          <li><span style="font-weight: bold;">Mirar objeto</span>: gira la cámara de la ventana de vista 3D para encuadrar el objeto seleccionado. Disponible solo en los elementos individuales.<br />
+          </li>
+          <li><span style="font-weight: bold;">Menú</span>: lleva la ventana principal de Obra Lineal a la pestaña o ventana relevante (<a href="OL_planta_diseno.html">Planta</a> para el nodo Obra, <a href="OL_grupos.html">Grupos</a> para los nodos Grupo, <a href="OL_alzado_generalidades.html">Alzado</a> para los nodos Eje, etc.)</li>
+          <li><span style="font-weight: bold;">Generar geometría 3D</span>:
+genera la geometría BIM del nodo seleccionado, desde cada uno de los
+tramos hasta la obra completa. Disponible solo en los nodos Obra,
+Grupo, Eje y Tramo.</li>
+          <li><span style="font-weight: bold;">Guardar/Cargar estado de activación</span>:
+guarda o carga un archivo .act que contiene el estado de activación de
+cada nodo o elemento que penda del nodo sobre el que se ejecuta el
+comando.Disponible solo en los nodos Obra, Grupo, Eje y Tramo. </li>
+          <li><span style="font-weight: bold;">Guardar/Cargar geometría y atributos del proyecto/grupo/eje en archivos .b1m</span>: cuando
+se genera
+la geometría BIM de un eje, grupo o proyecto, se puede guardar en archivos&nbsp;<span class="Archivo">ISPOL&lt;numeroeje&gt;.b1m</span> usando este comando. Estos archivos se mantienen hasta
+que se
+vuelve a calcular el eje al que pertenecen, y permiten
+visualizar esta geometría en Virtual 3D sin necesidad de volver a
+generarla. Disponible solo en los nodos Obra, Grupo y Eje.</li>
+          <li><span style="font-weight: bold;">Añadir/Quitar rotulación de planta</span>: añade o elimina un nodo <span style="font-style: italic;">Rotulación</span> en cada eje que contiene los símbolos generados por la herramienta de <a href="OL_dibujos.html#menu_rotul_avanzado">Rotulación avanzada</a>. Disponible solo en los nodos Obra, Grupo y Eje.</li>
+          <li><span style="font-weight: bold;">Atributos acumulados</span>: mediante dos comandos podemos <span style="font-weight: bold;">Realizar acumulación</span>
+(que crea una serie de atributos que contienen la acumulación de todos
+los atributos del mismo tipo y que dependan del nodo seleccionado) y <span style="font-weight: bold;">Deshacer acumulación</span>
+(que elimina estos atributos acumulados y recalcula los atributos
+acumulados en ramas superiores si fuera necesario). Disponible solo en
+los nodos Obra, Grupo, Eje o Tramo.</li>
+          <li><span style="font-weight: bold;">Exportar</span>: exporta
+el nodo seleccionado (y todos los elementos que pendan de el) a un
+archivo, de la misma manera que lo haríamos desde la pestaña <a href="OL_BIM.html#archivos">Archivos</a>.</li>
+          <li><span style="font-weight: bold;">Asignar propiedades particulares</span>: crea un nuevo PSET con una propiedad que consiste en un número secuencial. Disponible solo en el nodo Obra.</li>
+          <li><span style="font-weight: bold;">Mirar PK</span>:
+secciona el eje por el PK indicado, ocultando los PKs anteriores, y
+lleva la vista 3D hasta ese PK. Disponible solo en los nodos Eje y
+Tramo.</li>
+          <li><span style="font-weight: bold;">Animación</span>: genera una animación sencilla, recorriendo el eje con los parámetros seleccionados. Disponible solo en el nodo Eje.<br />
+          </li>
+          <li><span style="font-weight: bold;">Propiedades</span>: abre la ventana de propiedades del nodo o elemento seleccionado.<br />
+          </li>
+
+        </ul>
+      </ul>
+      
+      
+      <p class="Standard" style="text-align: justify;"><br />
+El
+nodo raiz
+representa todo el proyecto, de él cuelga un elemento que organiza cada
+grupo de ejes.
+También cuelgan de este nodo los organizadores en que se incorporan la
+geometría del terreno (nodo Cartografía),
+las obras de fábrica o los aparatos de vía. Estos organizadores, no se
+generan si no existen los elementos que van a contener.</p>
+
+      <p class="Standard" style="text-align: justify;">De
+cada nodo de
+grupo de ejes, cuelga un elemento por cada eje que pertenece a dicho
+grupo.</p>
+      <div style="text-align: center;"> <img src="Imagenes/arbol_BIM.png" style="width: 377px; height: 820px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">De
+cada eje
+cuelgan
+los nodos que contienen los elementos de geometría: los tramos
+de cada eje y los acuerdos que salen de él. También se añaden los
+elementos de
+geometría de las marcas viales, los conos de derrame, los estribos y
+los pozos.</p>
+      <a name="Carreteras"><span style="font-weight: bold;">Carreteras</span><br />
+      </a>
+      <p class="Standard" style="text-align: justify;">Los <a href="OL_svertical.html#hitos">hitos de arista</a>
+y los hitos kilométricos que estén en la tabla de "Hitos de arista y
+Km" del menú de Alzado pasan automáticamente al árbol BIM al generar el
+tramo (eje, grupo o proyecto) en que se encuentran.<br />
+      </p>
+      <table style="text-align: left; width: 100%;" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 30%;"><img src="Imagenes/bim_hitos_arbol.png" style="width: 200px; height: 228px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/bim_hitos_3d.png" style="width: 400px; height: 194px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><a name="inter_ffcc"><span style="font-weight: bold;">Ferrocarriles</span><br />
+      </a></p>
+      <p class="Standard" style="text-align: justify;">En
+el caso de
+ejes ferroviarios, se generan, también, los carriles de cada vía y las
+traviesas, siguiendo la especificación dada en <a href="OL_ffcc_via_traviesa.html">el menú VÍA y TRAVIESA</a>
+de Obra
+Lineal.</p>
+      <p class="Standard" style="text-align: justify;">Existe
+dentro de
+los elementos organizadores del árbol BIM el nodo tipo ESCAPE: se
+agrupa la vía única de un eje de escape y los aparatos de vía que
+tengan un eje de escape.</p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_escape.png" style="width: 600px; height: 206px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;">A
+la hora de
+exportar el proyecto BIM al formato IFC, si las <a href="OL_ffcc_via_traviesa.html">traviesas</a>
+disponen de una geometría detallada (Definir .TVS), se exportará con
+dicha geometría. En caso contrario, se exportarán con una geometría
+sencilla (cajas).</p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_traviesa_menu.png" style="width: 450px; height: 171px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;">Desde
+el árbol
+se
+puede seleccionar o deseleccionar elementos y ramas enteras para ser
+visualizados en OpenGL o para ser considerados en la exportación.</p>
+      <a name="dilatacion"><span class="Parf_negrita">Aparatos
+de dilatación</span><br />
+      <br />
+Se representan los carriles y las traviesas de estos aparatos con los
+modos de dibujo .lil de </a><a href="OL_ficheros_lil.html#Traviesas_y_Carriles">carriles y
+traviesas</a> y también en el árbol BIM.<br />
+      <p class="Standard" style="text-align: justify;">Recordar
+que para que esto se haga correctamente es necesario seguir los
+siguientes pasos:</p>
+      <ul>
+        <li>Definir en <a href="OL_ffcc_planta.html#cambiadores_de_mano">planta</a>
+la posición de los aparatos.</li>
+        <li>En Alzado-&gt;Vía y Traviesa-&gt;<a href="OL_ffcc_via_traviesa.html#carril"><span class="Parf_negrita">[CARRIL]</span></a>:
+Se han
+de activar las opciones:<br />
+        </li>
+      </ul>
+En Eventos para iniciar un carril:<br />
+      <ul>
+        <li><span class="Parf_negrita">Aparatos de
+vía</span></li>
+      </ul>
+En Soldaduras:<br />
+      <ul>
+        <li><span class="Parf_negrita">Cortar los
+carriles según la tabla de soldaduras</span>.</li>
+        <li><span class="Parf_negrita">Crear objeto
+soldadura en BIM</span></li>
+        <li><span class="Parf_negrita">Apartar las
+traviesas</span>.</li>
+      </ul>
+Ejecutar&nbsp;<span class="Parf_negrita">[Generar
+soldaduras teóricas]</span>.<br />
+Guardar esta información en el archivo<span class="Archivo">.vol</span>.<br />
+Ahora ya se puede calcular el proyecto y generar BIM. Estos apartos
+aparecerán en el árbol en la carpeta Aparatos Vía. En el ejemplo
+Estructura_Doble.isa se incorpora en el eje 2 un aparato de dilatación
+en la vía derecha.<br />
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/dilatacion_bim.png" style="width: 600px; height: 292px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><a name="inter_tub"><span style="font-weight: bold;">Tuberías</span></a></p>
+      
+      <p class="Standard" style="text-align: justify;">Los <span style="font-weight: bold;">tubos</span>
+de cada eje cortados por su
+longitud se crean en una subcarpeta. Se crea también un nodo llamado <span style="font-weight: bold;">Pozos</span>
+de&nbsp; donde pende cada pozo por separado con sus propiedades.</p>
+
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 25%;"><img src="Imagenes/bim_arbol_tub_pozos.png" style="width: 200px; height: 244px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/bim_tubo_3d_pozo.png" style="width: 400px; height: 194px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p class="Standard" style="text-align: justify; font-weight: bold;"><a name="alineaciones">Alineaciones</a></p>
+      <p class="Standard" style="text-align: justify;">El nodo <span style="font-weight: bold;">Alineación</span>
+contiene las alineaciones que componen cada eje, tanto horizontales
+(con sus rectas, curvas y clotoides) como verticales (con sus tramos en
+pendiente constante y sus acuerdos verticales). Todos estos elementos
+contienen los parámetros relevantes (longitudes, azimutes, radio de las
+curvas, parámetro de las clotoides, pendiente de los tramos en rasante,
+parámetro de los acuerdos verticales, etc.), se pueden visualizar en la
+vista 3D y son exportables a formato IFC.<br />
+
+      </p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_alineacion.png" style="width: 381px; height: 285px;" alt="" /><br />
+
+      </p>
+      <p class="Standard" style="text-align: justify;"><br />
+
+      </p>
+
+      <p class="Standard" style="text-align: justify;"> </p>
+      <a name="generacion"><span class="Titulo_2"></span></a><span class="Titulo_inicial"><span class="Titulo_2">Generación</span></span>
+      <ul>
+      </ul>
+      <p class="Standard" style="text-align: justify;">Desde
+esta
+pestaña podremos Generar el proyecto BIM mediante la casilla <span style="font-weight: bold;">Generar Proyecto</span>.<br />
+      </p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_generacion.png" style="width: 600px; height: 236px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Control de generación</span>:
+Permite activar o desactivar la generación de determinados elementos
+BIM del árbol. Está dividido en diversas secciones:<br />
+      </p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_controldegeneracion.png" style="width: 408px; height: 365px;" alt="" /><br />
+      </p>
+      <ul>
+        <li><span style="font-weight: bold;">Configuración de generación</span>: especifica qué módulos se generaran en el modelo BIM.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Configuración de agrupación</span>:
+especifica qué entidades aparecerán desglosadas en el árbol BIM:
+Aparatos de vía, Firmes, Vías únicas, Vías dobles, Estructuras, Obras
+de fábrica y Células de líneas. Si se opta, por ejemplo, por <span style="font-style: italic;">no </span>desglosar
+las obras de fábrica, sus
+elementos aparecerán agrupados en cuatro conjuntos (Arquetas y
+rejillas; Marcos, impostas y tímpanos; Aletas, soleras y zapatas de
+embocadura; idem de desagüe). Existe la posibilidad de desglosar las
+traviesas. El desglose de la geometría de las células, es aplicable a
+las células que genera Istram de señales puntuales en las que se
+distingue "plato", poste y cimentación o en las células que recogen
+geometría de un IFC.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Configuración de tramificación</span>: modifica de manera automática la tramificación BIM del eje según ciertos elementos: la tramificación de <a href="OL_muro_desmonte.html#cota_base_muro">Cota de base
+de muro</a> o la de <a href="OL_ffcc_via_traviesa.html#carril">Carriles y traviesas</a>.</li>
+      </ul>
+      <div style="margin-left: 40px;">Además, permite especificar:<br />
+      </div>
+      <ul>
+        <li>Dónde colocar los nodos de los que cuelgan las obras de fábrica:</li>
+        <ul>
+          <li>Si la casilla <span style="font-weight: bold;">Obras de fábrica</span> está desactivada, las obras de fábrica se colocarán en un único nodo en la parte inferior del nodo <span style="font-weight: bold;">Obra</span>.</li>
+          <li>Si la casilla <span style="font-weight: bold;">Obras de fábrica</span> está activada, las obras de fábrica se colocarán bien en <span style="font-weight: bold;">ejes</span> (cada una colgando del eje al que va asociada) o en<span style="font-weight: bold;"> tramos de ejes</span> (cada una colgando del tramo de eje en la que está situada).</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Dónde colocar los objetos de <span style="font-weight: bold;">rotulación</span>. Con la casilla activa, los objetos de rotulación se colgarán del tramo de eje al que pertenecen, en lugar de del propio eje.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Configuración de conservación</span>:
+permite conservar de cálculo en cálculo las modificaciones que se hayan
+realizado en los comentarios de los objetos, en su color o en el
+material que utilizan.<br />
+        </li>
+      </ul>
+<p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Guarda geo. y atr. proyecto</span>:
+Guarda la geometría ya generada de los elementos BIM en ficheros .b1m
+junto con los posibles atributos asignados en la pestaña Atributos.</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Guardar estado BIM</span>:
+Guarda un fichero de extensión .beg de configuración del menú BIM. Se
+podrán guardar varios estados y posteriormente cargarlos en la pestaña
+Proyecto.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><a href="#OL_seg_OL.html"><span style="font-weight: bold;">Seguimiento
+Obra Lineal</span></a> y <a href="#OL_seg_tun.html"><span style="font-weight: bold;">Seguimiento Túneles</span></a>:
+Al generar la información BIM de un proyecto se puede seleccionar que
+se utilicen los archivos de seguimiento de Obra Lineal o de Túneles
+asociados a los ejes del proyecto. Los ejes que no tengan asociados
+archivos de seguimiento no se generarán.</p>
+      <p class="Standard" style="text-align: justify;">Se
+permite
+generar el proyecto, grupo de ejes, eje, tramos, para que se represente
+la geometría teórica (casilla <span style="font-weight: bold;">Obra
+lineal</span>) y la geometría de seguimiento (casillas de <a href="#OL_seg_OL.html"><span style="font-weight: bold;">Seguimiento
+Obra Lineal</span></a> y <a href="#OL_seg_tun.html"><span style="font-weight: bold;">Seguimiento Tunel</span></a>)
+de forma
+simultánea en el árbol BIM.</p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_proyecto_seg_all.png" style="width: 600px; height: 373px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;">Un
+elemento de
+BIM
+tiene un conjunto de propiedades que se muestran en el área
+correspondiente.
+Siempre tiene un <span style="font-weight: bold;">nombre</span>
+y un <span style="font-weight: bold;">comentario</span>;
+los elementos que no son
+hoja del árbol como el proyecto, los grupos de ejes, los
+ejes, los tramos, los acuerdos y otros organizadores, tienen unicamente
+estas propiedades; la
+geometría (hojas del árbol) puede tener otras propiedades en función de
+su naturaleza: color, longitud, pk de inicio y
+fin, volumen...</p>
+      <p class="Standard" style="text-align: justify;">Algunas
+propiedades son modificables por el usuario, otras son calculadas
+automáticamente desde el proyecto.</p>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/propproy_BIM.png" style="width: 300px; height: 361px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/prop_bim_02.png" style="width: 300px; height: 332px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="text-align: center;">
+      <div style="text-align: left;"> <br />
+      <span style="font-weight: bold;">Tramificar por PKs</span>:
+tramificar cada uno de los ejes por PKs. Esta tramificación es
+compatible con la tramificación por tipos de elementos. <br />
+      <br />
+A partir de la casilla <span style="font-weight: bold;">ZC</span>
+se
+añade a la tramificación que tenga el usuario en la tramificación de <a href="OL_zonas_calculo.html">Zonas de Cálculo</a>.<br />
+      <br />
+      <span style="font-weight: bold;">Tramificar ejes por
+tipos de
+elemento</span>: al generar el modelo BIM, cada elemento se
+separe en
+tantos trozos como lo componen a lo largo del trazado.<br />
+      </div>
+      </div>
+      <p class="Standard" style="text-align: justify;"> </p>
+      <div style="text-align: center;"><img src="Imagenes/bim_tramif_01.png" style="width: 624px; height: 388px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;"> </p>
+      <p class="Standard" style="text-align: justify;">En
+las
+propiedades de los elementos: Proyecto, Grupo, Eje, Tramo y Acuerdo,
+aparece un botón para generar el elemento y todos los que dependan de
+él. En el caso del elemento raiz se genera todo el proyecto, esto
+incluye el
+terreno y las obras de fábrica. Además muestra la geometría generada en
+la
+ventana de OpenGL.</p>
+      <p class="Standard" style="text-align: justify;">Los elementos
+de geometría se pueden activar o desactivar según su tipo. En las
+propiedades de estos elementos aparece su propio tipo. En los elementos
+organizadores aparecen los tipos de todos los elementos que cuelgan de
+dichos organizadores.</p>
+      <a name="bulones"><span class="Parf_negrita">Generación
+de bulones</span><br />
+      </a>
+      <p class="Standard" style="text-align: justify;">Desde
+el nodo Obra y pulsando con el botón
+derecho del ratón sobre este nodo, se permite generar&nbsp;<span class="Parf_negrita">Bulones</span> como objetos BIM a
+partir de archivos con los puntos extremos de dichos bulones.</p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/OL_BIM_bulones_arbol.png" style="width: 550px; height: 410px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;">Estos
+objetos se generan en una carpeta
+llamada&nbsp;<span class="Parf_negrita">Bulones</span>
+que cuelga de la carpeta del eje al que se asocian los bulones.</p>
+      <p class="Standard" style="text-align: justify;">Un
+archivo .csv de ejemplo podría ser el
+siguiente:</p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bulones_csv.png" style="width: 600px; height: 177px;" alt="" /><br />
+      </p>
+      <p class="Standard" style="text-align: justify;">Se
+puede parametrizar el&nbsp;<span class="Parf_negrita">diámetro</span>,
+el&nbsp;<span class="Parf_negrita">color</span> y el&nbsp;<span class="Parf_negrita">eje</span>.</p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bulones_cuadro.png" style="width: 330px; height: 210px;" alt="" /><br />
+      </p>
+      <div style="text-align: center;"><img src="Imagenes/bulones_bim.png" style="width: 600px; height: 208px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <span style="font-weight: bold;"><a name="superficies_existentes">Superficies
+existentes</a></span><br />
+      <br />
+Se puede añadir a los elementos de un eje objetos superficiales
+obtenidos a partir de triangulaciones (TTP) y líneas cerradas que
+delimiten recintos dentro de dichas triangulaciones.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/BIM_superf_exist.png" style="width: 600px; height: 306px;" alt="" /><br />
+      </div>
+      <br />
+      <br style="font-weight: bold;" />
+      <a name="elementos_con_espesor"><span style="font-weight: bold;">Elementos
+con espesor</span><br />
+      <br />
+Desde el nodo del árbol BIM llamado Cartografía, disponemos mediante el
+menú contextual (Clic botón derecho del ratón en dicho nodo) de una
+opción que permite generar objetos 3D a partir de<span style="font-style: italic;"> líneas </span>de la
+cartografía o<span style="font-style: italic;"> TTPs.</span><br />
+Se puede especificar un espesor para cada objeto o conjunto de objetos
+generado. Estos objetos pueden recibir atributos BIM de usuario.<br />
+Otro método sería generar los elementos con espesor <span style="font-style: italic;">desde archivo </span>para ello se
+selecciona un fichero .txt con la siguiente</a><img src="Imagenes/element_espesor_txt.png" style="width: 200px; height: 74px; float: right;" alt="" hspace="5" vspace="5" />
+información: tipo de línea, espesor en metros y nombre que puede ser
+alfanumérico y con espacios en blanco, estas tres columnas separadas de
+un espacio en blanco.<br />
+En este caso los elementos con espesor reciben ese nombre que lee de la
+tercera columna del fichero .txt.<br />
+      <br />
+      <br />
+      <br />
+      <a name="elementos_con_espesor"> </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/BIM_elementos_espesor.png" style="width: 300px; height: 335px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/BIM_elementos_espesor_02.png" style="width: 300px; height: 225px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/BIM_elementos_espesor_03.png" style="width: 599px; height: 191px;" alt="" /><br />
+      </div>
+      <br />Es
+posible borrar los elementos con espesor seleccionando, con el botón
+derecho del ratón, estos elementos en el nodo <span style="font-style: italic;">Elementos con espesor</span>, o seleccionándolos directamente y presionando <span style="font-weight: bold;">Suprimir</span> en el teclado.<br /><br /><div style="text-align: center;"><img src="Imagenes/BIM_borrar_elementos_espesor.png" style="width: 300px; height: 368px;" alt="Borrar elemntos con espesor" /><br /></div><br />Al pulsar botón derecho sobre el nodo <span style="font-style: italic;">Elementos con espesor</span> o sobre uno de estos elementos, podemos usar también la herramienta <span style="font-weight: bold;">Mover al eje...</span> para mover el objeto seleccionado a uno de los ejes.<br /><br />
+      <a name="imp_shp"><span style="font-weight: bold;">Importación
+de
+ficheros .shp</span><br />
+      <br />
+Para abrir un
+fichero shp, se hará clic con el botón derecho del ratón sobre el nodo
+Shp del árbol del proyecto, el cual se encuentra dentro del nodo
+Cartografía. La información del fichero shp se proyectará sobre el
+fichero ttp activo en ese momento. <br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/bim_imp_shp.png" style="width: 320px; height: 364px;" alt="" /><br />
+      </div>
+      <br />
+Al
+realizar la carga del fichero en formato Shape se abre un menú desde el
+que es posible utilizar diferentes modos para las Alturas:<br />
+      <ul>
+        <li>Ninguno:
+Necesita una superficie ttp cargada para proyectar los recintos sobre
+ese ttp. No se tendrán en cuenta las alturas de los campos Altura bajo
+y Altura piso.</li>
+      </ul>
+      <ul>
+        <li>Catastro Nacional: En el caso de haber
+obtenido&nbsp;el fichero Shape desde el Catastro Nacional, es posible
+asignar una altura para bajos y pisos en función de los datos de número
+de pisos y bajos obtenidos del atributo "CONSTRU". Los bloques de los
+edificios se crean con la altura correspondiente según los datos
+asignados. Si existe un ttp cargado,
+se posan dichos bloques sobre el terreno.&nbsp; </li>
+      </ul>
+      <ul>
+        <li>Catastro
+Vizcaya: Si el fichero Shape proviene de Catastro Vizcaya, es posible
+asignar una altura para bajos y pisos en función de los datos de número
+de pisos y bajos obtenidos&nbsp;del atributo "Numero_ALT".Los bloques
+de los edificios se crean con la altura correspondiente según los datos
+asignados. Si existe un ttp cargado,
+se posan dichos bloques sobre el terreno.&nbsp;&nbsp; </li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/bim_imp_shp_2.png" style="width: 320px; height: 443px;" alt="" /><br />
+      </div>
+      <br />
+El
+nombre asignado en la casilla Nombre en árbol&nbsp;se utiliza para los
+diferentes elementos geométricos que se encuentren en el fichero shp.<br /><br />Activando
+la casilla Dentro límites TTP se podrán importar aquellos elementos del
+fichero SHP que se encunetren fuera de los límites del fichero TTP
+previamente cargado.<br />
+      <br />
+      <a name="traduccion"><span class="Titulo_2">Clases/Atributos</span>
+      </a>
+      <p class="Standard" style="text-align: justify;">La ventana de
+Clases está dividida en dos
+secciones: ATRIBUTOS y CLASIFICACIÓN. Para cambiar de una sección a
+otra usamos los botones del mismo nombre.</p>
+      <div style="text-align: center;"><img src="Imagenes/clases_atributos_atributos_new.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/clases_atributos_clasificacion_new.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </div>
+      <br />
+      <p class="Standard" style="text-align: justify;">En
+estas rejillas se va a poder editar manualmente cada uno de sus campos,
+así como salvar/cargar en formato CSV el contenido de éstas, mediante
+los botones con el símbolo Excel.</p><p class="Standard" style="text-align: justify;">Es
+posible realizar un filtrado de las clases Istram de la ventana
+Clases/Atributos para que solo se muestren las que realmente se están
+usando en el proyecto actual:</p><div style="text-align: center;"><img src="Imagenes/clases_atributos_filtrar.png" style="width: 400px; height: 43px;" alt="" /><br />
+      </div><p class="Standard" style="text-align: justify;">
+      </p><p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">ATRIBUTOS:</span></p>
+      <p class="Standard" style="text-align: justify;">Al
+abrir un fichero CSV de este tipo se nos muestra una ventana donde
+podremos establecer la asociación entre las columnas que se encuentran
+en el fichero CSV y las columnas de Istram:</p>
+      <div style="text-align: center;"><img src="Imagenes/atributos_cargar_config_csv.png" style="width: 600px; height: 325px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">Para
+aquellas columnas que no deseamos que se importen, desactivamos su flag
+correspondiente (la clase Istram siempre debe existir en el fichero CSV
+y siempre se debe importar, por lo que no se puede desactivar). El
+número <span style="font-style: italic;">columna CSV </span>indica
+la posición que ocupará la columna del fichero CSV en nuestra tabla de
+atributos.</p>
+      <p class="Standard" style="text-align: justify;">La importación de atributos se hará desde el nodo que tengamos seleccionado en ese momento en el árbol IFC.<br />
+      </p>
+
+      <p class="Standard" style="text-align: justify;">Mediante
+el icono <img src="Imagenes/icono_a%F1a_colum_atributos.png" style="width: 26px; height: 26px;" alt="" /> podremos
+añadir una nueva columna de atributos, y con el icono <img src="Imagenes/icono_elimina_colum_atributos.png" style="width: 26px; height: 26px;" alt="" /> la
+eliminaremos. Las columnas de atributos prefijadas no se pueden
+eliminar.</p>
+      <p class="Standard" style="text-align: justify;">Haciendo
+clic con el botón derecho sobre el título de la columna de un atributo
+podermos ordenarlo alfabéticamente en orden ascendente o descendente:</p>
+      <div style="text-align: center;"><img src="Imagenes/atributos_ordenar.png" style="width: 400px; height: 100px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">Si
+se trata de un atributo añadido por el usuario también nos ofrece la
+posibilidad de cambiar el nombre de la columna:</p>
+      <div style="text-align: center;"><img src="Imagenes/atributos_renombrar.png" style="width: 600px; height: 99px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">Mediante
+el botón derecho en la rejilla obtendremos diferentes funciones
+dependiendo de la columna seleccionada, si clicamos encima del nombre
+de la clase Istram se puede eliminar este registro:</p>
+      <div style="text-align: center;"><img src="Imagenes/clase_istram_eliminar.png" style="width: 250px; height: 119px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">Si
+clicamos sobre la Entidad IFC nos ofrece la posibilidad de seleccionar
+de una lista:</p>
+      <div style="text-align: center;"><img src="Imagenes/clase_seleccionar_lista.png" style="width: 400px; height: 124px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">En
+este caso se nos ofrece la posibilidad de seleccionar la Entidad IFC o
+el TIpo de entidad IFC de una lista:</p>
+      <table style="text-align: left; width: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="text-align: center;"><img src="Imagenes/seleccion_entidad_IFC.png" style="width: 250px; height: 250px;" alt="" /></td>
+            <td style="text-align: center;"><img src="Imagenes/seleccion_tipo_entidad_IFC.png" style="width: 250px; height: 250px;" alt="" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="Standard" style="text-align: justify;">Es
+posible modificar el atributo Tipo Objeto (ObjectType) de los elementos
+del árbol BIM cuyo tipo de entidad IFC sea "UNDERFINED". Dicha
+modificación se efectuará en la ventana de Selección de Entidad IFC.</p><p class="Standard" style="text-align: center;"><img src="Imagenes/configuracion_BIM_objecttype.png" style="width: 600px; height: 279px;" alt="" /></p><p class="Standard" style="text-align: justify;">Mediante
+la opción de configuración de los ficheros BIM podremos indicar los
+ficheros que deseamos utilizar tanto para el idioma como para el
+establecimiento por defecto de la asociación de las clases Istram a
+entidades IFC:</p>
+      <div style="text-align: center;"><img src="Imagenes/configuracion_BIM.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">El
+fichero de idioma se utiliza para mostrar en el idioma correspondiente,
+una indicación de lo que representa cada una de las entidades IFC y sus
+tipos, según se encuentre el botón <img src="Imagenes/boton_idioma_IFC.png" style="width: 80px; height: 25px;" alt="" /> pulsado o no, se
+mostrará esta información en un idioma u otro:</p>
+      <p class="Standard" style="text-align: justify;"> </p>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="text-align: center;"><img src="Imagenes/seleccion_entidad_IFC_idioma.png" style="width: 250px; height: 77px;" alt="" /></td>
+            <td style="text-align: center;"><img src="Imagenes/tipo_entidad_IFC_idioma.png" style="width: 250px; height: 73px;" alt="" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="Standard" style="text-align: justify;">Haciendo
+doble clic sobre la casilla de color podremos seleccionarlo de la tabla
+de colores:</p>
+      <div style="text-align: center;"><img src="Imagenes/color_IFC.png" style="width: 250px; height: 188px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;"><a name="aplicaratributos">En
+la parte inferior derecha de la ventana disponemos de dos botones con
+los que podemos aplicar los atributos de la tabla a todos los objetos
+del árbol BIM, así como inicializarlos, que los eliminaría de dichos
+objetos:</a></p>
+<a name="aplicaratributos">      </a><div style="text-align: center;"><a name="aplicaratributos"><img src="Imagenes/atributos_BIM_inicializar_aplicar.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </a></div>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos"> </a></p>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos">Al aplicar los
+atributos al árbol BIM, aparecerá una ventana que nos
+permitirá selecionar cuales de los atributos deseamos que sean
+aplicados.<br />
+      </a></p><p class="Standard" style="text-align: justify;"><a name="aplicaratributos"><br />
+      </a></p>
+<a name="aplicaratributos">      </a><div style="text-align: center;"><a name="aplicaratributos">&nbsp;<img src="Imagenes/atributos_BIM_aplicables.png" style="width: 210px; height: 221px;" alt="" /></a></div>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"></p><p class="Standard" style="text-align: justify;"><a name="aplicaratributos">Es posible inicializar los valores de las columnas de Atributos de <span style="font-style: italic;">Color, Disciplina y Capa</span>
+obteniendo sus valores de la tabla .dar actual de proyecto, esta opción
+se selecciona al hacer click con el botón derecho del ratón sobre la
+columna correspondiente, resulta muy útil para los casos en los que el
+usuario ha realizado edición de alguna de estas columnas y se quiera
+volver al estado inicial .</a></p><div style="text-align: center;"><a name="aplicaratributos"><img src="Imagenes/atributos_inicializar.png" style="width: 400px; height: 116px;" alt="" />&nbsp;<br /></a></div><p class="Standard" style="text-align: justify;"><span style="font-weight: bold;"><a name="aplicaratributos"><br />
+      </a></span></p>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><span style="font-weight: bold;"><a name="aplicaratributos">CLASIFICACIÓN:</a></span></p>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos">Las clases
+asignadas por Istram a cada tipo de elemento se pueden "traducir" a
+otros estándares de clases. <br />
+      <br />
+Por defecto se genera un conjunto de "clases traducidas" cuya
+traducción coincide con el original de Istram. Estas traduciones se
+pueden guardar y cargar en archivos.&nbsp;</a></p>
+<a name="aplicaratributos">      </a><p style="margin-bottom: 0cm; line-height: 100%;" align="justify"><a name="aplicaratributos">Podremos
+cargar un fichero de clases en formato Uniformat, con la estructura
+siguiente:</a></p>
+<a name="aplicaratributos">      </a><div style="text-align: center;"><a name="aplicaratributos"><br />
+      <img src="Imagenes/OL_BIM_Image02.png" style="width: 614px; height: 306px;" alt="" /></a></div>
+<a name="aplicaratributos">      </a><p class="Standard" style="margin-bottom: 0cm; line-height: 100%; text-align: justify;"><a name="aplicaratributos">Desde
+la pestaña CLASIFICACIÓN&nbsp; podremos asignar los nombres de
+clase a cada entidad seleccionando sobre el botón de identificación con
+el botón derecho del ratón y selecionando de una lista, para ello es
+necesario tener cargado un fichero de clases .fct:</a></p>
+<a name="aplicaratributos">      </a><p style="margin-bottom: 0cm; line-height: 100%;" align="justify">
+<a name="aplicaratributos">      </a></p>
+<a name="aplicaratributos">      </a><div style="text-align: center;"><a name="aplicaratributos"><br />
+      <img src="Imagenes/OL_BIM_Image03.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </a></div>
+<a name="aplicaratributos">      </a><p style="margin-bottom: 0cm; line-height: 100%;" align="left"><a name="aplicaratributos"><br />
+      </a></p>
+<a name="aplicaratributos">      </a><div style="text-align: center;"><a name="aplicaratributos"><br />
+      <img src="Imagenes/OL_BIM_Image01.png" style="width: 600px; height: 318px;" alt="" /><br />
+      </a></div>
+<a name="aplicaratributos">      </a><p style="margin-bottom: 0cm; line-height: 100%;" align="justify"><a name="aplicaratributos">Seleccionamos
+el elemento deseado, y pulsamos el botón Aceptar para que se asigne
+dicha selección.</a></p>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos">Podremos
+salvar las asignaciones efectuadas para su posterior uso en este y
+otros proyectos. A su vez, se van almacenando internamente todas las
+asignaciones realizadas para cada tipo de fichero de clases, de
+manera que al iniciar un nuevo proyecto en el que aparezcan entidades
+ya asignadas previamente en otros proyectos, se usen dichas
+asignaciones, ahorrando así tener que volver a introducirlas de
+nuevo.</a></p>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos">De
+esta forma en
+la exportación y activación de los elementos se utilizará esta
+nomenclatura en vez de las clases de Istram.</a></p>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos">Los
+ficheros que
+guardan toda la configuración de esta pestaña tienen la extensión .FCV.
+Los ficheros .FCT, dentro de la pestaña de Clases/Atributos cargan un
+fichero que
+me permite establecer una clasificación de los elementos BIM. Se
+guardan los ficheros *.fct y *.fcv con los datos de clasificaciones BIM
+en el ISA del proyecto.</a></p>
+<a name="aplicaratributos">      </a><div style="text-align: center;"><a name="aplicaratributos"><img src="Imagenes/bim_fcv_fct.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </a></div>
+<a name="aplicaratributos">      </a><p class="Standard" style="text-align: justify;"><a name="aplicaratributos"><br />
+      </a></p>
+<a name="aplicaratributos">      <br />
+      </a><p class="Standard" style="text-align: justify;"><a name="Nombre_BIM"><span style="font-weight: bold;">Nombre
+BIM</span></a></p>
+      <p class="Standard" style="text-align: justify;">Se
+permite usar
+los nombres de una clasificación BIM como nombres de los objetos BIM.
+Dicha opción se encuentra en CLASIFICACIÓN en la parte inferior de ese
+menú, mediante un desplegable
+en el que seleccionaremos la clase de la que deseamos usar sus nombres.</p>
+      <div style="text-align: center;"><img src="Imagenes/bim_nombre_clases.png" style="width: 600px; height: 302px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;"><a name="Tipo_IFC"><span style="font-weight: bold;">Tipo
+IFC</span></a></p>
+      <p class="Standard" style="text-align: justify;">Se
+permite
+elegir la entidad IFC o el tipo de entidad IFC al que se quiere
+exportar cada uno de los
+objetos ISTRAM desde &nbsp;ATRIBUTOS. Por defecto se exportan como
+IfcBuildingElementProxy.
+Se puede elegir la entidad IFC seleccionando de las entidades
+disponibles de una lista:<br />
+      </p>
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/Tipo_IFC.png" style="width: 250px; height: 250px;" alt="" /><br />
+      </p>
+      <br />
+A&nbsp;los
+objetos BIM, a los cuales se les asocia un "Tipo Entidad
+IFC",&nbsp;se
+corresponden con los tipos predefinidos de las entidades del estándar
+IFC. Su valor se puede
+modificar en la ventana de Propiedades del objeto BIM seleccionado en
+el árbol.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/tipo_ifc_valor.png" style="width: 311px; height: 302px;" alt="" /><br />
+      </div>
+      <br />
+      <p class="Standard" style="text-align: left;"><span class="Titulo_2"><a name="Atributos_referidos_a_clasificacion">Atributos
+referidos a clasificación</a></span></p>
+      <p class="Standard Parrafo" style="text-align: left;">Los
+atributos referidos a la clasificación son: ubicación, edición, fecha,
+descripción y procedencia, los cuales pueden ser editados para su
+exportación a formato IFC:</p>
+      <p class="Standard Parrafo" style="text-align: left;"> </p>
+      <div style="text-align: center;"><img src="Imagenes/clases_atrib.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </div>
+      <p class="Standard Parrafo" style="text-align: left;"><span class="Titulo_2"></span></p>
+      <p class="Standard Parrafo Parrafo" style="text-align: left;"><span class="Titulo_2"><br />
+      </span></p>
+      <a name="atributos"><span class="Titulo_2">Propiedades</span> </a>
+      <p class="Standard" style="text-align: justify;">En
+esta pestaña de Propiedades se van a poder incorporar uno o varios
+PSETs
+que llevan asociados a su vez un conjunto de atributos para poder
+elaborar las plantillas de aplicación de propiedades al modelo BIM de
+Istram.</p>
+      <div style="text-align: center;"><img src="Imagenes/atributos_usuario_bim.png" style="width: 600px; height: 238px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;"><br />
+      </span></p>
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Control de PSETS:</span></p>
+      <div style="text-align: center;"><img src="Imagenes/control_PSETs.png" style="width: 200px; height: 267px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">&nbsp;<img src="Imagenes/icono_bim_a.png" style="width: 25px; height: 25px;" alt="" /> Añadir PSET al final</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/icono_basura2.png" style="width: 27px; height: 27px;" alt="" /> Borrar
+PSET seleccionado</p>
+      <p class="Standard" style="text-align: justify;">&nbsp;<img src="Imagenes/icono_bim_insertar%20PSET.png" style="width: 25px; height: 25px;" alt="" /> Insertar
+PSET delante del seleccionado</p>
+      <p class="Standard" style="text-align: justify;">La
+opción&nbsp; <img src="Imagenes/icono_RepetirConjuntopropiedades.png" style="width: 24px; height: 24px;" alt="icono_RepetirConjuntopropiedades" /> repite un
+conjunto de propiedades dentro de un PSET, permitiendo cambiar el
+alcance.&nbsp; También es posible asignar las propiedades repetidas
+a
+otro PropertySet:</p>
+      <p class="Standard" style="text-align: justify;">Se
+seleccionan las propiedades que se desean duplicar y se pulsa en
+Duplicar:</p>
+      <div style="text-align: center;"><img src="Imagenes/duplicar_conj_propiedades.png" style="width: 600px; height: 295px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">A
+continuación se selecciona en la ventana Duplicar como... la clase (o
+nodo organizador según el modo de menú) y a los PSET que reciben estos
+nuevos atributos, con el botón Duplicar aplica los atributos
+seleccionados previamente a las clases y PSET elegidos en este
+selector. El menú sigue activo para nuevos duplicados con diferentes
+elecciones de clases y PSETs. Para terminar la acción se selecciona
+Cerrar:</p>
+      <div style="text-align: center;"><img src="Imagenes/duplicar_como.png" style="width: 250px; height: 194px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;">En
+ocasiones, al duplicar un conjunto de atributos o al cambiar la clase
+de una propiedad se puede dar el caso de que el valor no exista para la
+clase seleccionada, en este caso el menú muestra la incidencia mediante
+un símbolo de exclamación, las propiedades que no sean válidas no se
+aplicarán.</p>
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <p class="Standard" style="text-align: justify;"> </p>
+      <p class="Standard" style="text-align: justify; font-weight: bold;">Control de
+propiedades dentro de un PSET:</p>
+      <div style="text-align: center;"><img src="Imagenes/control_propiedades.png" style="width: 600px; height: 180px;" alt="" /><br />
+      </div>
+      <p class="Standard" style="text-align: justify;"><span style="font-style: italic;">Nombre del PSET</span>:
+espacio reservado para nombrar el PSET seleccionado (por defecto PSET
+n).</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-style: italic;">Geometría</span>: Listado
+de propiedades que afectan a objetos geométricos.</p>
+      <p class="Standard" style="text-align: justify;"><span style="font-style: italic;">Nodos organizadores(xx)</span>:
+Lista de propiedades que afectan a los nodos organizadores, entre
+paréntesis el número de propiedades en esa lista.</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/icono_a%F1a_propiedad.png" style="width: 25px; height: 25px;" alt="" /> Añadir propiedad</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/icono_a%F1a_propiedad_tabla.png" style="width: 25px; height: 25px;" alt="" /> Añadir
+propiedad desde una tabla predeterminada, la que se usa en el campo
+archivo de valores elegibles para atributos (*.csv)</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/icono_duplicar_propiedades.png" style="width: 25px; height: 25px;" alt="" /> Duplica la
+propiedad</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/icono_borrar_propiedades.png" style="width: 25px; height: 25px;" alt="" /> Borrar la propiedad</p>
+      <p class="Standard" style="text-align: justify;">Estos
+atributos
+se componen en este menú indicando un título, que agrupa a los
+atributos, el nombre del atributo y el valor (o valores encadenados)
+que va a recibir. Los botones con forma de un signo de sumar de color
+verde y los botones con una papelera sirven para añadir o eliminar
+atributos y valores.</p>
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <p class="Standard" style="text-align: justify; font-weight: bold;">Control de
+plantillas:</p>
+      <p class="Standard" style="text-align: justify;">Cada
+plantilla de aplicación de atributos se puede guardar en un archivo<span style="font-style: italic;"> .atf</span> para ser
+recuperada en cualquier momento, a continuación se explican los iconos
+de este menú:</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/nuevo_pset.png" style="width: 30px; height: 30px;" alt="" />Inicializar
+plantilla de
+propiedades</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/abrir_pset.png" style="width: 30px; height: 30px;" alt="" />Cargar
+plantilla de
+propiedades .atf</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/guardar_pset.png" style="width: 30px; height: 30px;" alt="" /> Guardar plantilla de
+propiedades .atf</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/importar_propiedades_BIM.png" style="width: 30px; height: 30px;" alt="" /> Importa datos
+de propiedades al modelo BIM de Istram (archivo .csv)</p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/importar_atributos_IFC.png" style="width: 30px; height: 30px;" alt="" />&nbsp;Importa datos de
+propiedades de un archivo IFC (es necesario
+que tengan los mismos identificadores los objetos en Istram)</p>
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <p class="Standard" style="text-align: justify;"> <span style="font-weight: bold;">Aplicación de las
+plantillas:</span></p>
+      <p class="Standard" style="text-align: justify;">Cada
+plantilla de aplicación se compone por PSETS que son paquetes de
+propiedades, un PSET puede tener una sola propiedad o varias.</p>
+      <p class="Standard" style="text-align: justify;">Los
+atributos definidos pasarán a los elementos BIM correspondientes en
+el momento de su creación; pero, en caso de haber sido creados los
+elementos BIM sin estos atributos, pueden recibirlos desde este menú.<br />
+      </p>
+      <div style="text-align: center;"><img src="Imagenes/atributos_usuario_bim.png" style="width: 600px; height: 238px;" alt="" /><br />
+      </div>
+      <p>Mediante el botón <span style="font-style: italic;">Aplicar
+a </span>situado en la esquina inferior derecha de la pestaña
+Propiedades se abre el siguiente menú:</p>
+      <div style="text-align: center;"><img src="Imagenes/aplicar_propiedades.png" style="width: 300px; height: 235px;" alt="" /><br />
+      </div>
+      <p>Podemos aplicar el PSET actual, todos o seleccionar con
+el flag de la izquierda de cada nombre de PSET los que se van a
+aplicar, además en la parte derecha de esa ventana se selecciona si se
+aplican a todo el árbol o solo a la geometría seleccionada en el árbol
+BIM , es decir, a partir del nodo del árbol BIM en
+que se realiza la generación o aplicación de dichos atributos.</p><p>Si se activa el flag <span style="font-style: italic;">Crea y rellena la propiedad con este texto cuando el valor no esté disponible</span>
+en los casos en los que se aplica una propiedad cuyo valor no existe en
+la clase del objeto ahora se puede crear con el texto que el usuario le
+indique en el campo reservado.</p>
+      <p><span style="font-style: italic;">Inicializar
+atributos</span>
+inicializa los atributos de todo el modelo para los PSETs generados por
+defecto en función del tipo de entidad IFC, así como los atributos que
+se añadan desde la pestaña Clases/Atributos. Los PSETs de usuario que
+se creen en la pestaña Propiedades <span style="font-style: italic;">no</span>
+se verán afectados.<br />
+      </p>
+      <p>Todas las propiedades aplicadas en el modelo o que
+diversos IFC contengan en sus propios modelos se pueden consultar en
+el menú contextual de cada objeto o nodo organizador con la opción
+Propiedades:</p>
+      <div style="text-align: center;"><img src="Imagenes/consultar_propiedades.png" style="width: 600px; height: 322px;" alt="" /><br />
+      </div>
+      <br />
+Conceptualmente existen dos tipos de nodo: los nodos organizadores y
+los nodos de geometría. En el menú se diferencian ambos tipos de nodo
+para trabajar con ellos.<br />
+Los nodos organizadores solo pueden tener valores tipo General.<br />
+Los nodos de geometría pueden tener valores tipo Istram o tipo General.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nodo_organiza_nodo_geometria.png" style="width: 350px; height: 426px;" alt="" /><br />
+      </div>
+      <br />
+      <p><a name="Origen_de_atributos"><span style="font-weight: bold;">Origen
+de atributos</span><br />
+      </a></p>
+      <p>Distinguimos según su Origen dos ramas posibles de
+introducción de atributos: <span style="font-weight: bold;">General</span>
+o <span style="font-weight: bold;">Istram</span>.
+En cada una de ellas
+podremos seleccionar atributos de usuario o atributos de clase
+respectivamente. Se permite la creación de Atributos personalizado por
+el usuario.<br />
+      </p>
+      <ul>
+        <li>General<br />
+        </li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/bim_atributo_general.png" style="width: 600px; height: 246px;" alt="" /><br />
+      </div>
+      <p style="text-align: center;"><br />
+      </p>
+      <br />
+      <ul>
+        <li>Istram</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/bim_origen_istram.png" style="width: 599px; height: 263px;" alt="" /><br />
+      </div>
+      <br />
+      <p style="text-align: center;"><br />
+      </p>
+      <br />
+      <p> </p>
+      <table caption="Valores de Istram asignables a atributos" style="border: 1px solid black; border-collapse: collapse;" border="1">
+        <thead> <tr>
+          <th style="border: 1px solid black; border-collapse: collapse;" height="30" width="24%"> Atributo </th>
+          <th style="border: 1px solid black; border-collapse: collapse;">Menú </th>
+          <th style="border: 1px solid black; border-collapse: collapse;">Campo </th>
+          <th style="border: 1px solid black; border-collapse: collapse;" width="50%">Valor
+y aplicación </th>
+        </tr>
+        </thead> <tbody>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre del proyecto al atributo en todos los elementos del árbol. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Comentario </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Comentario
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+comentario del proyecto al atributo en todos los elementos del árbol. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Fase </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Fase </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica la
+fase del proyecto al atributo en todos los elementos del árbol. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Responsable </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Responsable
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+responsable del proyecto al atributo en todos los elementos del árbol. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Grupos:
+Nombre de grupo </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Grupos </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre del gurpo, al que pertenece el eje que contiene el elemento, al
+atributo en todos los elementos del árbol que pertenecen a un eje. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Número de eje </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">General </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Número </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+número del eje, al que pertenece el elemento, al atributo en todos los
+elementos del árbol que pertenecen a un eje. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Nombre de eje </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">General </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre del eje, al que pertenece el elemento, al atributo en todos los
+elementos del árbol que pertenecen a un eje. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Alias 1 </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">General </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Alias 1 </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+alias 1 del eje, al que pertenece el elemento, al atributo en todos los
+elementos del árbol que pertenecen a un eje. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Alias 2 </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">General </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Alias 2 </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+alias 2 del eje, al que pertenece el elemento, al atributo en todos los
+elementos del árbol que pertenecen a un eje. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Alias 3 </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">General </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Alias 3 </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+alias 3 del eje, al que pertenece el elemento, al atributo en todos los
+elementos del árbol que pertenecen a un eje. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Comentario </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM-&gt;Propiedades
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Comentario
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+comentario que cada elemento tiene asignado en el menú de BIM. </td>
+          </tr>
+<!--
+<tr>
+<td style="border-collapse: collapse; border: 1px solid black;">
+BIM: Nombre de tramo
+</td>
+<td style="border-collapse: collapse; border: 1px solid black;">
+BIM (elementos tipo eje)
+</td>
+<td style="border-collapse: collapse; border: 1px solid black;">
+</td>
+<td style="border-collapse: collapse; border: 1px solid black;">
+Aplica el nombre del tramo asignado en la partición en tramos del eje.
+</td>
+</tr>
+-->
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo: Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Secciones
+tipo-&gt;Nombres </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre de la sección tipo que corresponde con el pk del objeto en el
+eje al que pertenece. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo: Estructura: Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Secciones
+tipo-&gt;Estructuras </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre de la estructura que corresponde con el pk del objeto en el eje
+al que pertenece (si hay alguna estructura en ese pk). </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo firmes: Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Paquete
+de firme </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre
+sección </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre de la sección de paquete de firmes que corresponde con el pk del
+objeto en el eje al que pertenece. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Nombre objeto </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tablas
+cubicación-&gt;Tipos de líneas </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica la
+clase que recibe el elemento por su difinición en la tabla DAR. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Traducción nombre objeto </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM-&gt;Traducción
+Clases </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Clase
+(traducida) </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica la
+clase que recibe el elemento por su traducción en el menú de BIM. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR: Tipo
+de línea </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tablas
+cubicación-&gt;Tipos de líneas </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tipos de
+líneas </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre del tipo de línea que se utiliza para definir la medición en los
+perfiles, en todos los elementos generados desde las mediciones. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Carpeta de material y material </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tablas
+cubicación-&gt;Tipos de líneas </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Carpeta
+Materiales + Material </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre del archivo con la definición de decorarción (textura) del
+elemento, en todos los elementos generados desde las mediciones. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Propiedades </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tablas
+cubicación-&gt;Tipos de líneas </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Propiedades
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre de la propiedad del elemento asignado en el menú de "Tablas de
+cubicación", en todos los elementos generados desde las mediciones. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Disciplina </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tablas
+cubicación-&gt;Tipos de líneas </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Disciplina
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+nombre de la disciplina a la que pertenece la clase del elemento. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM: PK
+inicial </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM-&gt;Propiedades
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Pk
+inicial </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+PK inicial del elemento recibido en su generación desde el menú de BIM.
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM: PK
+final </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM-&gt;Propiedades
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Pk final </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+PK final del elemento recibido en su generación desde el menú de BIM. </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Volumen </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM-&gt;Propiedades
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Volumen </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Aplica el
+volumen del elemento obtenido de las mediciones, generadas desde la
+tabla de cubicacion, en su generación desde el menú de BIM. </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>General</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/BIM_atributos_general_01.png" style="width: 600px; height: 270px;" alt="" /><br />
+      </div>
+      <br />
+      <table style="border: 1px solid black; text-align: left; width: 100%; border-collapse: collapse;" border="1">
+        <tbody>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Código de Clase<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Comentario<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">BIM:
+Comentario de tramo<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">BIM:Descripción
+de Clase<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM: GUID<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Nombre
+de tramo<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM: PK
+final<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM: PK
+Inicial<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Unidad
+de Clase<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Volumen
+geométrico<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">BIM:
+Volumen
+teórico<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Carpeta de
+materiales y material<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Disciplina<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Nombre
+objeto<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:
+Propiedades<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">DAR:Tipo
+de
+línea<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Alias 1<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Alias 2<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Alias 3<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">General:
+Nombre de eje<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Grupos:
+Nombre de grupo<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Nombre:
+objeto<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Comentario<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Fase<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Nombre<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Proyecto:
+Responsable<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo
+firmes: Nombre de sección tipo<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo
+firmes: Nombre tramo<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo:
+Estructura: nombre<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo:
+Nombre<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Sección
+tipo:
+Saneos: nombre de tramo<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Tipo
+Entidad
+IFC<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Área<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario_Boolean<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Conversor de unidades<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;">Este
+atributo
+permite la
+configuración de un conversor de unidades, el cual, tomando el valor
+base de un atributo seleccionado, permitirá convertirlo a otras
+unidades de medida, establecer el número de decimales, seleccionar si
+se quiere truncar o redondear el valor obtenido. Además, se permite
+establecer un prefijo y/o un sufijo, en forma de texto. En el caso de
+que el atributo de origen no sea convertible, sólo podran establecerse
+un prefijo y un sufijo, no se podrán realizar todas las operaciones de
+conversión numérica.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Desde tabla<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Entero<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Etiqueta<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Fecha<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Fecha/Hora<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Longitud<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Masa<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Real<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Texto<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; border-collapse: collapse;">Usuario:
+Volumen<br />
+            </td>
+            <td style="border: 1px solid black; border-collapse: collapse;"><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      Es
+posible crear propiedades compuesta para las entidades BIM presionando
+sobre el botón "Crear valor compuesto" que encontramos dentro del menú
+de gestión de las propiedades<br /><br /><div style="text-align: center;"><img src="Imagenes/bim_propiedades_compuestas.png" style="width: 300px; height: 220px;" alt="" /><br /></div><br /><span class="Parf_negrita"><br />Asociación de atributos
+por tabla</span>:<br />
+      <br />
+El usuario podrá a continuación seleccionar los datos que contendrán
+dichos atributos, ya sea mediante una tabla, que cargará sus datos
+desde un&nbsp;<span class="Archivo">.CSV</span>&nbsp;
+o desde un&nbsp;<span class="Archivo">.FCT</span>
+(fichero que proviene de TCQ), o que los establezca el usuario
+manualmente.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/BIM_tabla_atributos.png" style="width: 600px; height: 238px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Parf_negrita">Valores ISTRAM para
+tipología de clases:</span><br />
+      <br />
+Disciplinas Excavación y Rellenos de la tabla de cubicación.<br />
+      <br />
+      <ul>
+        <li><span class="Parf_negrita">Área 2D
+terreno: </span>parte del objeto en contacto con el terreno</li>
+        <li><span class="Parf_negrita">Área 3D
+terreno: </span>parte del objeto en contacto con el terreno</li>
+        <li><span class="Parf_negrita">Área 2D
+terraplén/desmonte.</span><br />
+        </li>
+        <li><span class="Parf_negrita">Área 3D
+terraplén/desmonte.</span></li>
+        <li><span class="Parf_negrita">Área 2D
+Talud: </span>area del talud de terraplén o desmonte<br />
+        </li>
+        <li><span class="Parf_negrita">Área 3D Talud:</span>&nbsp;area
+del talud de terraplén o desmonte<br />
+        </li>
+        <li><span class="Parf_negrita">Área 3D
+siembra:</span></li>
+      </ul>
+      <br />
+Firmes<br />
+      <ul>
+        <li><span style="font-weight: bold;">Superficie
+superior: </span>superficie superior medida sobre la geometría
+de los firmes, para su posible uso en riegos</li>
+        <li><span style="font-weight: bold;">Superficie
+inferior:</span> superficie inferior medida sobre la geometría de
+los firmes, para su posible uso en riegos</li>
+        <li><span style="font-weight: bold;">Densidad:</span>
+Aplicada
+a los valores asignados en Paquete de firmes: Estos elementos ya tenían
+asignados volumen teórico y geométrico, por lo tanto ahora se generan
+también atributos de masa teórica y geométrica</li>
+      </ul>
+Estructuras:<br />
+Pilares, Estribos, Aletas<br />
+      <ul class="Parf_negrita">
+        <li>Ancho transversal</li>
+        <li>Ancho longitudinal</li>
+        <li>Altura</li>
+      </ul>
+Pilotes:<br />
+      <ul class="Parf_negrita">
+        <li>Longitud</li>
+        <li>Diámetro</li>
+      </ul>
+      <p class="Standard" style="text-align: justify;">Aletas:</p>
+      <ul>
+        <li><span class="Parf_negrita">Longitud</span><br />
+        </li>
+      </ul>
+      <p class="Standard" style="text-align: justify;">Posibilidad
+de
+que el
+valor de los atributos sea un texto especificado por el usuario. Este
+texto pasa a todos los elementos a los que se aplique el atributo.<br />
+En
+cada elemento que reciba este atributo se puede editar su valor de
+forma individual. También se permite desde la ventana de propiedades de
+cada elemento BIM editar los valores de los atributos de usuario.<br />
+      </p>
+Se permite la aplicación de un PSET determinado a <span style="font-weight: bold;">todo el árbol</span> o a la <span style="font-weight: bold;">geometría
+seleccionada</span> desde cada
+PSET del menú de Atributos de BIM:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/BIM_pset_seleccionar.png" style="width: 600px; height: 325px;" alt="" /><br />
+      </div>
+      <br />
+
+      <br />
+
+      <a name="Importacion_.CSV"><span style="font-weight: bold;">Importación
+.CSV</span><br />
+Posibilidad de importar atributos mediante un fichero .CSV <img src="Imagenes/BIM_icono_excel.png" style="width: 30px; height: 30px;" alt="" />,
+bien en formato Filas o Columnas. Disponemos de la opción de importar
+los atributos de usuario desde un fichero *.CSV (generado por Istram a
+la hora de exportar un fichero IFC). De esta manera podremos modificar
+dichos atributos en ese fichero, para posteriormente importarlos de
+nuevo en Istram.<br />
+      <br />
+Recordad que cuando realizábamos la exportación en la casilla de
+configuración de exportación&nbsp;<img src="Imagenes/icono_config.png" style="width: 24px; height: 24px;" alt="" /> puedo
+seleccionar como exportar el
+fichero .CSV que el programa genera en la subcarpeta Bim de mi proyecto.file:///C:/Ispol/util/ayuda/OL_svertical.html<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img src="Imagenes/bim_exportacion_cf.png" style="width: 600px; height: 363px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Es el fichero .CSV que exportamos el que posteriormente se podrá
+importar al programa con los posibles cambios realizados para añadir
+valor a dicho fichero.<br />
+
+      <br />
+
+      <br />
+
+      <a name="Textos_variables_en_atributos"><span class="Titulo_2 Parrafo">Textos variables en atributos</span> </a>
+      
+      <p class="Standard" style="text-align: justify;">Se
+incorporan todos los textos variables de las células como atributos de
+los objetos BIM generados a partir de ellas. Se puede especificar el
+nombre del atributo y el valor para cada célula. Desde el menú de
+definición de tipos de célula puedes dar esos textos variables que
+apareceran como atributos BIM de la célula.</p>
+
+      
+      
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_c3600_text_var.png" style="width: 516px; height: 306px;" alt="" /></p>
+
+
+      
+      <br />
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;"><a name="psetestandar">PSETs del esquema IFC</a></span><a name="psetestandar"><br />
+      </a></p>
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/bim_psetestandar.png" style="width: 320px; height: 400px;" alt="" align="right" hspace="6" />En el estándar BIM hay establecidos algunos PSETs que se aplican por defecto a todos los proyectos: <span style="font-style: italic;">Pset_PavementMillingCommon</span>, <span style="font-style: italic;">Pset_TrenchExcavationCommon</span>, <span style="font-style: italic;">Qto_BodyGeometryValidation</span>...</p>
+      <p class="Standard" style="text-align: justify;">Cada tipo de
+Entidad IFC (ifcBuildingElementProxy, ifcWall, ifcColumn...) tiene un
+cierto juego de PSETs y propiedades estandarizadas. Este juego que se
+aplicará a cada uno de los tipos de entidad se puede configurar en un
+archivo llamado&nbsp;<span class="Archivo">DefaultPsets.csv</span> que se puede encontrar en la librería:<br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><img src="../../../Users/soporte/AppData/Local/Temp/moz-screenshot-1.jpg" alt="" /></p>
+      <p class="Standard" style="text-align: justify;">Istram añade estos PSETs de manera automática a la hora de <a href="#aplicaratributos">aplicar clases y atributos a los objetos</a>.
+A la hora de exportar el archivo IFC, se pueden activar o desactivar
+estos PSETs para que se reflejen o no en el archivo finalmente
+exportado.<br />
+      </p>
+      <br />
+      <p class="Standard" style="text-align: justify;"><br />
+      </p>
+      <br /><br /><br /><br /><br /><br /><br /><br /><p class="Standard" style="text-align: justify;"><span style="font-weight: bold;"><a name="psetSenalizacion">PSETs de objetos puntuales</a></span><a name="psetestandar"><br />
+      </a></p><p class="Standard" style="text-align: justify;">Los <a href="OL_svertical.html">Objetos Puntuales</a> generados a partir de símbolos con modelos IFC asociados, herederán&nbsp;los PSETs definidos en dichos modelos.<br />
+      </p>
+      <p class="Standard" style="text-align: justify;"><br />
+
+      </p>
+
+
+      <a name="visualizacion"><span class="Titulo_2">Visualización</span></a>
+      
+      <ul>
+
+      
+      </ul>
+
+      
+      <p class="Standard" style="text-align: justify;">Pulsando
+el
+botón de
+generación de elementos o el botón "<span style="font-weight: bold;">Virtual
+3D</span>"&nbsp;<img src="Imagenes/icono_virtual3d.png" style="width: 26px; height: 26px;" alt="" /> se
+muestra una
+ventana con la representación 3D de la geometría generada.</p>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/Visualizar_BIM.png" style="width: 600px; height: 221px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Modelo iluminado</span>: la
+geometría puede mostrarse "iluminada" o con color sólido. Si está
+iluminada se aprecia mejor el volumen.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Dos caras</span>: indica
+que se pinten los
+triángulos por las dos caras. Es útil si se pretende ver el interior de
+las geometrías.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Transparencia</span>: al
+activarla todos los objetos obtienen un cierto grado de transparencia,
+el
+objeto sobre el que se situe el cursor en la ventana de OpenGL será un
+poco más
+opaco y el objeto seleccionado será opaco.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Modelo alámbrico</span>:
+permite sobrepintar sobre los triángulos su borde, de esta forma se
+pueden
+apreciar detalles de la geometría que pudieran pasar desapercibidos en
+una
+visualización normal.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Cartografía</span>: añade
+la visualización de la cartografía cargada en la ventana de OpenGL.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Texturado</span>:
+indica que se pinten las texturas de las geometrías. En la instalación
+se incluyen los materiales (texturas) de la biblioteca de Virtual 3D
+necesarios para la visulización de la geometría BIM con texturas.<br />
+      </p>
+
+      
+      <p class="Standard" style="text-align: justify;"><span style="font-weight: bold;">Activación general de objetos</span>:
+permite que se activen o desactiven los objetos en función de los
+tipos: excavaciones, rellenos, superficies y resto.</p>
+
+      
+      <p class="Standard" style="text-align: justify;">Dada
+la
+naturaleza
+de las geometrías de los objetos BIM en el caso de los proyecto de obra
+lineal,
+se permite la activación de un <span style="font-weight: bold;">plano
+de recorte</span> perpendicular a la visual de la
+cámara, para poder ver los objetos que quedan en el interior de otros.</p>
+
+      
+      <ul>
+
+        <li>Ventana de OpenGL</li>
+      
+      </ul>
+
+En esta
+venana se muestra la vista 3D del proyecto. Inicialmente se situa la
+cámara
+para mostrar una vista similar a un plano con orientación Norte.
+Después se
+puede girar o mover la cámara para ver cualquier detalle de la escena.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/OpenGL_BIM1.png" style="width: 589px; height: 444px;" alt="" /><br />
+      </div>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/OpenGL_BIM2.png" style="width: 589px; height: 444px;" alt="" /><br />
+      </div>
+
+      
+      <p class="Standard" style="text-align: justify;">El
+bóton
+izquierdo
+del ratón permite seleccionar objetos y centrar la vista en un punto.
+Si hay
+objetos superpuestos se muestra un menú contextual en el que se puede
+seleccionar cualquiera de los objetos que se encuentran bajo el cursor.</p>
+
+      
+      <p class="Standard" style="text-align: justify;">El
+botón central
+del
+ratón permite girar la vista sobre el punto central de la imagen.</p>
+
+      
+      <p class="Standard" style="text-align: justify;">El
+botón derecho
+del
+ratón permite desplazarse sobre la escena.</p>
+
+      
+      <p class="Standard" style="text-align: justify;">Al
+generar el
+proyecto BIM desde la pestaña de propiedades se crea una subcarpeta en
+nuestra pestaña de proyecto con el nombre BIM. En dicha carpeta se
+guarda un fichero .csv con información BIM.</p>
+
+Se puede visualizar el árbol BIM ordenado por los diferentes&nbsp;<span class="Parf_negrita">tipos</span> de entidades IFC
+encontradas en el proyecto o bien por <span class="Parf_negrita">Clasificaciones</span>,
+que agrupa los elementos por las diferentes clasificaciones activas
+disponibles.<br /><br />Con la Visualización por Clasificaciones activa, es posible exportar el árbol de Clasificaciones a formato IFC .<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/OL_BIM_tipos.png" style="width: 317px; height: 51px;" alt="" /><br />
+      </div>
+
+      
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/OL_BIM_tipos_estructura.png" style="width: 300px; height: 239px;" alt="" /></p>
+
+      <br />
+
+      
+      <p class="Standard" style="text-align: left;"><a name="organizacion"><span class="Parf_negrita">Organización
+en el árbol BIM de las tongadas de terraplén</span><br />
+      <br />
+Inicialmente, al "Generar eje y acuerdos" para cada tramo, o al
+"Calcular proyecto" para todos los tramos, las tongadas se organizan
+para cada tramo en el árbol BIM de la siguiente manera:</a></p>
+
+      <a name="organizacion"> </a>
+      
+      <ul>
+
+        <a name="organizacion"> </a>
+        <li><a name="organizacion">Carpeta Terraplén contiene
+terraplenes
+(Terraplen X)</a></li>
+        <a name="organizacion"> </a>
+        <li><a name="organizacion">Diversas carpetas (Material X)
+contienen
+tongadas (Material X Y)</a></li>
+        <a name="organizacion"> </a>
+      
+      </ul>
+
+      <a name="organizacion">Elementos árbol relevantes:<br />
+      </a>
+      
+      <ul>
+
+        <a name="organizacion"> </a>
+        <li><a name="organizacion">Terraplén: Carpeta que contiene los
+terraplenes</a></li>
+        <a name="organizacion"> </a>
+        <li><a name="organizacion">Terraplén X: Los terraplenes
+(Terraplen
+1, Terraplen 2, etc.)</a></li>
+        <a name="organizacion"> </a>
+        <li><a name="organizacion">Material X: Carpetas que contienen
+las
+tongadas (Material 1, Material 2, etc.)</a></li>
+        <a name="organizacion"> </a>
+        <li><a name="organizacion">Material X Y: Las tongadas (Material
+1
+1, Material 1 2, Material 2 1,&nbsp; etc.)<br />
+          </a></li>
+        <a name="organizacion"> </a>
+      
+      </ul>
+
+      <a name="organizacion"> </a>
+      
+      <p class="Standard" style="text-align: center;"><a name="organizacion"><img src="Imagenes/OL_BIM_tong_terr.png" style="width: 600px; height: 299px;" alt="" /><br />
+      </a></p>
+
+      <a name="organizacion"> </a><a name="Filtro"><span style="font-weight: bold;">Filtro
+de
+selección</span><br />
+      <br />
+La opción Filtro de selección nos permite filtrar los nodos del árbol
+BIM por el tipo de entidad IFC y por su nombre ISTRAM, creando así un
+nuevo nodo con dicha selección, el cual podremos utilizar para la
+asignación de atributos.<br />
+Se permite el filtrado de objetos por el tipo de entidad IFC y por
+clasificación.<br />
+      </a>
+      
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_filtro.png" style="width: 300px; height: 199px;" alt="" /></p>
+
+      
+      <p class="Standard" style="text-align: center;"><img src="Imagenes/bim_filtros_clas.png" style="width: 301px; height: 199px;" alt="" /><br />
+      </p>
+
+Se permite guardar/cargar filtros de selección, así como añadir varios
+filtros para un mismo atributo.<br />
+
+      <br />
+
+      <a name="archivos"><span class="Titulo_2">Archivos</span> </a>
+      
+      <p class="Standard" style="text-align: justify;">La
+información
+generada se puede guardar en los formatos <span style="font-weight: bold;">IFC</span>, <span style="font-weight: bold;">3DO</span>, <span style="font-weight: bold;">DGN</span>, <span style="font-weight: bold;">DWG/DXF</span>,<span style="font-weight: bold;">OBJ, BC3 y XML</span>.</p>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/Exportar_BIM.png" style="width: 600px; height: 283px;" alt="" /><br />
+      </div>
+
+      
+      <p class="Standard" style="text-align: justify;">En
+formato IFC
+se
+guarda la estructura del árbol y todas las propiedades (excepto el
+color y e material) de los elementos del árbol que cuelguen del nodo
+actual
+en un único archivo. Estos archivos se pueden guardar en cuatro
+versiónes
+de este formato: 2x3, 4, 4x1,4x2 y 4x3. Cabe la posibilidad de exportar
+las alineaciones, los perfiles y utilizar el nombre de clase del objeto
+en lugar del nombre que aparece en el árbol.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/bim_export_dwg.png" style="width: 250px; height: 83px;" alt="" align="right" hspace="8" />Exportación
+en formato <span style="font-weight: bold;">DWG</span>:
+se puede
+seleccionar que tipo de objetos se van a crear en el fichero de salida:</p>
+
+      
+      <p class="Standard" style="text-align: justify;">1.Triángulos
+y
+rectángulos sueltos</p>
+
+      
+      <p class="Standard" style="text-align: justify;">2.
+Mallas de
+triángulos y rectángulos (opción por defecto)</p>
+
+      
+      <p class="Standard" style="text-align: justify;">3.
+Sólidos 3D,
+no recomendable para objetos grandes.</p>
+
+Por otra parte en la exportación a fichero .DWG:<br />
+
+      
+      <ul>
+
+        <li>Las superficies vistas generan capas con su nombre en
+vez
+de una úncia capa.</li>
+        <li>Se puede añadir como prefijo el nombre del eje a las
+capas
+de las superficies vistas activando el check "<span style="font-weight: bold;">Añadir Nombre Eje a Sup. vistas</span>"<br />
+        </li>
+      
+      </ul>
+
+      
+      <p class="Standard" style="text-align: justify;">En
+formato OBJ
+se
+guarda la geometría el color y el material del los elementos del árbol
+que cuelguen del nodo actual en un único archivo. <br />
+      </p>
+
+      
+      <p class="Standard" style="text-align: justify;">En
+cualquier
+nodo del árbol de elementos BIM, se puede exportar toda la geometría
+que cuelgue de dicho nodo en formato OBJ. Esto permite guardar un
+elemento de geometria, un eje, un grupo de ejes o todo el proyecto en
+un solo archivo. <br />
+      </p>
+
+      
+      <p class="Standard" style="text-align: justify;">En
+el resto de
+formatos, se guarda un archivo por cada elemento de geometría,
+incluyendo en el
+nombre del archivo información del eje o acuerdo al que pertenece.</p>
+
+      
+      <p class="Standard" style="text-align: justify;"><img src="Imagenes/BIM_guarda_formato.png" style="width: 220px; height: 119px; float: left;" alt="" hspace="8" />Podemos
+guardar los siguientes formatos IFC que mostramos en la imagen adjunta
+y si activamos la casilla <span style="font-weight: bold;">Comprimir
+ifc</span> se podrían guardar en formato comprimido en sus
+diferentes
+versiones (IFCZIP).</p>
+
+      
+      <p class="Standard" style="text-align: justify;">Se
+permite
+exportar todos los TTPs que cuelguen del nodo Cartografía/TTP en un
+único fichero IFC. Para ello basta con hacer clic con el botón derecho
+del ratón sobre el nodo TTP, y seleccionar la opción de exportación que
+corresponda.<br />
+      </p>
+
+      <br />
+
+      <br />
+
+      <br />
+
+      
+      <p class="Standard" style="text-align: justify;"> </p>
+
+Mediante el icono de configuración de la exportación&nbsp;<img src="Imagenes/icono_config.png" style="width: 24px; height: 24px;" alt="" /> de la
+pestaña de Archivos: <br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/bim_config_export.png" alt="" style="width: 600px; height: 363px;" /><br />
+      </div>
+
+      <br />
+
+En la exportación al formato IFC, además de obtener el fichero .IFC se
+genera un fichero .CSV con la información no gráfica del mismo. Esta
+información no gráfica se puede obtener en <span style="font-weight: bold;">Filas</span> o en <span style="font-weight: bold;">Columnas</span>, como se
+ve en la imagen superior. Dicho formato también puede ser importado de
+vuelta en Istram, para recoger posibles cambios de atributos que se
+hagan en dicho fichero .CSV.<br />
+
+      <span style="font-weight: bold;"><br />
+Formato fichero IFC</span>:
+opción de poder escoger el formato de codificación de caracteres para
+el fichero IFC, entre el estándar ISO-10303-21 y el ISO-8859-1 (que
+define la codifcación del alfabeto latino).<br />
+
+      <br />
+
+Exportación <span style="font-weight: bold;">EDM</span>:
+Se permite
+exportar los nodos del árbol BIM al formato EDM. Para ello, haremos
+clic con el botón derecho del ratón sobre el nodo que se desea
+exportar, y seleccionamos la opción Exportar &gt; EDM. Podremos
+elegir
+tanto el modelo como el tipo de línea que se usará en la exportación.
+De esta forma se generarán en pantalla las líneas EDM correspondientes,
+las cuales podrán ser salvadas en fichero si se desea.<br />
+
+Las líneas edm son triángulos o rectángulos cerrados, tipo archivos
+3d-caras. De forma que se pueden definir con ellas superficies
+cartográficas para cortar perfiles con <a href="EDM_control_entidades.html#modo_extrac_perf_transv">extraplomos</a>.<br />
+
+Se permite agrupar los elementos del mismo nombre para su exportación
+conjunta, y también usar el atributo Capa como agrupador de elementos.<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/bim_export_edm.png" style="width: 400px; height: 413px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <img src="Imagenes/bim_export_edm_02.png" style="width: 200px; height: 173px;" alt="" align="middle" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <br />
+
+Exportación <span style="font-weight: bold;">CSV</span>:
+Se permite exportar los nodos del árbol BIM al formato CSV sin
+necesidad de generar el fichero IFC.<br />
+
+      <br />
+
+Disponemos de un listado de <span class="Parf_negrita">volúmenes
+de estructuras</span> del árbol BIM. Se encuentra dentro de la
+pestaña Archivo del menú BIM. <br />
+
+      <br />
+
+      <a name="Exportacion_del_terreno"><span style="font-weight: bold;">Exportación
+del terreno</span><br />
+      <br />
+Se permite exportar el terreno recortado (o no) desde el árbol de BIM
+en formato ttg (Topografía), además de las ya conocidas, IFC, OBJ,
+DWG/DXF...<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img src="Imagenes/bim_export_terreno.png" style="width: 325px; height: 393px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <br />
+
+      <a name="Origen_de_coordenadas"><span style="font-weight: bold;">Origen
+de coordenadas e Importación IFC</span><br />
+      </a>
+      
+      <ul>
+
+        <li>Globales</li>
+        <li>Locales</li>
+        <li>Posicionar: Posibilidad de posicionar un fichero IFC
+en
+unas coordenadas concretas. Dicha opción se encuentra en la pestaña
+"Archivos", en la sección de Origen de coordenadas. Al seleccionar
+dicha opción, podremos introducir las coordenadas XYZ por teclado, o
+bien haciendo clic con el ratón sobre la vista 3D. Una vez hecho esto,
+al importar un fichero IFC, lo situará en dichas coordenadas. <br />
+        </li>
+      
+      </ul>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/bim_posivionar_ifc.png" style="width: 600px; height: 265px;" alt="" /><br />
+      </div>
+
+      <br />
+El botón <img src="Imagenes/icono_config.png" style="width: 24px; height: 24px;" alt="" /> permite configurar la
+importación de ficheros
+IFC. Permite activar/desactivar la importación o no de determinadas
+entidades.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/bim_config_import.png" style="width: 400px; height: 359px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Pulsando el botón derecho en los elementos importados, podemos utilizar la opción <span style="font-weight: bold;">Numerar elementos contenidos</span> para numerar desde el 1 los diversos elementos, en caso de que se hayan importado varios elementos con el mismo nombre.<br />
+      <br />
+El IFC importado puede exportarse a IFC, OBJ, DWG/DXF, DGN, KMZ, 3DO, EDM, CSV, TTG y LandXML.<br />
+
+      <br />
+
+      <a name="opciones_exp"><span style="font-weight: bold;">Opciones
+de subdividir el fichero de exportación</span><br />
+      <br />
+Al exportar una geometría BIM desde el menú BIM-&gt;Archivos, se
+puede
+especificar que se guarde toda la rama seleccionada en un archivo, en
+un archivo por eje o en un archivo por geometria. Sólo se guardan los
+elementos que estén activados en el arbol. Esta selección también
+afecta a la exportación desde los nodos del árbol BIM. La exportación
+en un archivo por elemento de geometría puede llevar mucho tiempo y
+mucho espacio en disco, se recomienda utilizarla con prudencia.<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><a name="opciones_exp"><img src="Imagenes/bim_export_opciones.png" style="width: 600px; height: 265px;" alt="" /><br />
+      </a></div>
+
+      <a name="opciones_exp"><br />
+      <br />
+      </a></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

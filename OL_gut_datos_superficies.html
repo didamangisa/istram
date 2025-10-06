@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Plantillas .gut: Datos de superficies</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE TRANSVERSALES: DATOS DE SUPERFICIES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span><img src="Imagenes/gut_datos_superficies.png" style="width: 288px; height: 246px;" alt="" align="right" hspace="6" /><span class="Parrafo">Desde aquí se define cómo se van a distribuir los diferentes datos que la aplicación puede obtener del fichero de perfiles.<br />
+      <br />
+El programa permite definir en los diferentes apartados qué tipo de
+atributo se extrae, de qué superficie, si utiliza un rótulo, un símbolo
+o ambos, etc.<br />
+<br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">
+      </span><a href="#atrib_superf">Atributos sobre las superficies</a><br />
+      <a href="#atrib_guitarra">Atributos en la guitarra</a><br />
+      <a href="#rotul_2_superf">Atributos que involucran a dos superficies</a><br />
+      <a href="#talud_superf">Talud de las superficies</a><br />
+      <a href="#peraltes">Peraltes</a><br />
+      <a href="#peraltes_cod">Peraltes por código</a><br />
+      <a href="#acota_dist">Acotación de distancias</a><br />
+      <a href="#anota_superf_cod">Anotaciones por superficie y código</a><br />
+      <a href="#cotas_caract">Cotas características</a><br />
+      <a href="#pendiente">Pendiente</a><br />
+      <a href="#acota_superf_cod">Acotación por superficies y códigos (Riegos de firmes)</a><br />
+      <a href="#pend_V_H">Pendiente V:H por superficies y códigos</a><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="atrib_superf">Atributos sobre las superficies</a></span><br />
+      <br />
+Aquí se indican todos aquellos datos que se desean rotular directamente
+en el transversal, haciéndose referencia a un lado de una superficie y,
+dentro de ésta, a unos códigos.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_supef.png" style="width: 461px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Las posibilidades de rotulación son:<br />
+      <ul>
+        <li>Cota.</li>
+        <li>Distancia al eje geométrico.</li>
+        <li>Distancia al eje en planta (o eje matemático).</li>
+        <li>Cota roja.</li>
+        <li>Talud. <br />
+</li></ul>
+      <div style="margin-left: 40px;">Cuando se desea rotular el talud
+con un símbolo del tipo 1.00:1 se permite definir dos nuevos símbolos
+T0.0:1 y T0:1, para valores del talud con un decimal o ninguno.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_superf_talud.png" style="width: 450px; height: 69px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_superf_talud_simb.png" style="width: 295px; height: 97px;" alt="" /><br />
+      </div>
+      </div>
+      <ul>
+
+        <li>Distancia al eje geométrico, pero con signo negativo cuando se trata del lado izquierdo.</li>
+        <li>Distancia al eje en planta, pero con signo negativo cuando se trata del lado izquierdo.</li>
+        <li>Distancia al eje existente (para <a href="OL_EyM.html">proyectos de ensanche y mejora</a>).<br />
+</li>
+        <ul>
+          <li>Se considera la posición del eje existente la definida por el símbolo 196.</li>
+          <li>Éste se puede incluir en los perfiles desde el <a href="OL_perf_transv.html">menú de generación de transversales</a> (opción <span style="font-weight: bold; font-style: italic;">Ens. y mejora (todos)</span> para Ferrocarriles, indicando el tipo de línea para el eje existente) o bien mediante la opción <a href="OL_anadir_linea.html"><span style="font-weight: bold;">[Añadir línea]</span></a> del menú ALZADO.</li>
+        </ul>
+
+        <li>Códigos de la superficie indicada y según el intervalo definido.</li>
+        <li>Diferencia de cota con la cota del terreno en el eje (<span style="font-style: italic;">Z - Zt0</span>).</li><li>Ancho: Ancho de los segmentos pseudohorizontales, como los escalones de los saneos de terraplén.</li><li>Desnivel: Desnivel de los segmentos pseudoverticales como los de los saneos de terraplén.</li>
+
+      
+      </ul>
+
+Como ya se ha dicho, es necesario indicar el lado del eje (derecho o
+izquierdo) y la superficie a rotular. Una vez hecho esto, se indica el
+intervalo de códigos a rotular (desde <span style="font-weight: bold;">Cód Ini</span> hasta <span style="font-weight: bold;">Cód Fin</span>)
+así como el tipo de símbolo a usar como etiqueta, los desplazamientos
+horizontal y vertical de los puntos de inserción de las etiquetas
+respecto a los códigos y un ángulo si fuera necesario.<br />
+      <br />
+Esta opción también se puede utilizar con superficies sin códigos
+(p.ej. línea de terreno competente 66, línea de terreno vegetal 104,&#8230;),
+por lo que, lógicamente, en estos casos no se tiene en cuenta el código
+mínimo ni el máximo.<br />
+      <br />
+Puede establecerse, además, una <span style="font-weight: bold;">distancia mínima entre rótulos</span>
+(en mm de papel), de tal forma que el programa elimine algún rótulo en
+la guitarra cuando disten entre sí menos de este valor, evitando de
+esta manera que se solapen.<br />
+      <br />Activando la casilla <span class="Parf_negrita">[] Usar con las réplicas</span>, las definiciones de este menú también trabajan sobre&nbsp;las réplicas.<br />
+      <br />
+      <span class="Titulo_2"><a name="atrib_guitarra">Atributos en la guitarra</a></span><br />
+      <br />
+Este menú posibilita la rotulación de datos de determinadas superficies (<span style="font-weight: bold;">Sup</span>) del transversal en la zona de guitarra:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_guitarra.png" style="width: 611px; height: 204px;" alt="" /><br />
+      </div>
+      <br />
+Las posibilidades de rotulación son las siguientes:<br />
+      <ul>
+        <li>Cota.</li>
+        <li>Distancia al eje geométrico.</li>
+        <li>Distancia al eje en planta (o eje matemático).</li>
+        <li>Número de vértice de la superficie, de forma creciente desde el eje al que se le asigna el cero hasta el borde.</li>
+        <li>Ancho horizontal de la superficie, desde el eje hasta el borde.</li>
+        <li>Distancia parcial entre un vértice y el inmediatamente anterior.</li>
+        <li>Distancia al eje geométrico, pero con signo negativo cuando se trata del lado izquierdo.</li>
+        <li>Distancia al eje en planta, pero con signo negativo cuando se trata del lado izquierdo.</li>
+        <li>Distancia al eje existente (para <a href="OL_EyM.html">proyectos de ensanche y mejora</a>). Se considera la posición del eje existente la definida por el símbolo 196. Éste se puede incluir en los perfiles desde el <a href="OL_perf_transv.html">menú de generación de transversales</a> (opción <span style="font-weight: bold; font-style: italic;">Ens. y mejora (todos)</span> para Ferrocarriles, indicando el tipo de línea para el eje existente) o bien mediante la opción<span style="font-weight: bold;"> <a href="OL_anadir_linea.html">[Añadir línea]</a></span> del menú ALZADO.</li>
+        <li>Códigos de la superficie (si los tiene).</li>
+        <li>Distancia fija, que permite rotular un dato de distancia,
+cota, etc. según una distancia fija, en lugar de en los vértices de la
+superficie.</li>
+        <li>Diagrama de pendientes. Dibuja en la guitarra entre dos
+códigos seleccionados una línea con la inclinación en el mismo sentido
+que la pendiente entre los puntos.</li>
+        <li>Célula (C55). Encontramos en la librería el archivo
+celula.gut que utiliza como referencia para los puntos de atributos en
+la guitarra una célula (C55) de tres puntos:<br />
+          <ul>
+            <li>El punto de base va sobre la superficie.</li>
+            <li>El primer punto de inserción va a la cota definidad desde el P.C.</li>
+            <li>El segundo punto de inserción mantiene la cota relativa
+al primero pero se desplaza lateralmente, para cumplir la seperación
+mínima entre puntos. Si movemos graficamente este punto, arrastra a los
+símbolos (distancia al eje, cota...) definidos despues de la célula.</li>
+          </ul>
+        </li>
+        <li>Pendiente.&nbsp;</li><li>Distancia Parcial extremo. Anota la distancia parcial ubicada por el punto exterior en lugar de por el centro de los dos puntos.</li>
+
+      </ul>
+Una vez indicado el dato a rotular se indica cuáles son los puntos a rotular. Las opciones son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Todos</span> los vértices de la superficie.</li>
+        <li><span style="font-weight: bold;">Dis.min</span>: Distancia mínima. Vértices que al menos disten en horizontal el valor indicado (en mm de papel). Se activa la casilla <span style="font-style: italic;">Dist.min</span> para que se pueda introducir este valor. Se utiliza para evitar solapes o una gran densidad de datos.</li>
+        <li><span style="font-weight: bold;">DZ.min</span>: Incremento de cota mínimo. También medido en mm de papel, en este caso quedan activas tanto las casillas de <span style="font-style: italic;">Dis.Mín</span> como la de <span style="font-style: italic;">DMín90</span>. Para aquellos vértices de la superficie que disten en horizontal menos de <span style="font-style: italic;">Dis.Mín</span> (si distan más se rotulan siempre) se comprueba que disten en vertical al menos lo indicado <span style="font-style: italic;">DMín90</span>
+para que se representen. Es una opción más completa que la de distancia
+mínima, pues también considera los incrementos verticales, y su
+objetivo es el mismo, es decir, evitar solapes y una elevada densidad
+de rótulos (etiquetas).</li>
+        <li><span style="font-weight: bold;">Banda</span>: Los vértices involucrados son todos aquellos cuyos códigos queden comprendidos entre <span style="font-style: italic;">Cód Ini</span> y <span style="font-style: italic;">Cód Fin</span>.</li>
+        <li><span style="font-weight: bold;">7 ptos</span>: 7 puntos. Válido únicamente para la superficie 67,
+considera los vértices de los extremos (código 100), de los bordes
+exteriores de calzada (código 2), de los interiores (caso de doble
+calzada, código 1) y del eje.</li>
+        <li><span style="font-weight: bold;">F y D</span>: Fresado y demolición. Se consideran los puntos característicos asociados a secciones de <a href="OL_EyM.html">ensanche y mejora</a> (son los mismos puntos referenciados en el <a href="OL_listados_mediciones.html#fresa">listado&nbsp;<span class="Archivo">fresa.res</span></a> de <a href="OL_EyM.html">proyectos de ensanche y mejora</a>).</li>
+        <li><span style="font-weight: bold;">Dis.Fija</span>: Puntos a una distancia fija al eje. Va tomando puntos cada cierto intervalo de distancia, especificado en la columna <span style="font-style: italic;">Dist.Min</span>.<br />
+</li>
+        <li><span style="font-weight: bold;">Lista</span>: Cuando se lista el número, puede hacerse que el
+último número sea un número concreto y dar un ángulo a la referencia
+que va sobre la superficie.<br />
+        </li>
+        <li><span style="font-weight: bold;">Lista DR</span>: Listar por la derecha<br />
+        </li>
+        <li><span style="font-weight: bold;">Lista IZ</span>: Listar por la izquierda<br />
+        </li>
+        <li><span style="font-weight: bold;">Lista
+-IZ</span>: Es similar a la Lista IZ pero los
+desplazamientos se aplican al revés para que quede ordenada desde el
+eje hacia&nbsp; la izquierda. La referencia horizontal no es el borde
+de la hoja sino la línea del eje de cada perfil. Se muestra un ejemplo
+en la figura adjunta:<br />
+</li>
+
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_guitarra_lista_iz.png" style="width: 606px; height: 68px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_guitarra_lista_iz_dibujo.png" style="width: 355px; height: 263px;" alt="" /><br />
+      </div>
+      
+      <ul>
+        <li><span style="font-weight: bold;">Cód IZ-DR</span>: Considera los puntos correspondientes a los códigos marcados en las columnas <span style="font-style: italic;">Cód Ini</span> y <span style="font-style: italic;">Cód Fin</span>, uno a cada lado izquierdo-derecho del perfil.<br />
+</li>
+        <li><span style="font-weight: bold;">1 Dis. Fija</span>: Puntos a una distancia fija al eje. Dos únicos puntos, uno a cada lado del eje.<br />
+        </li>
+
+      </ul>
+
+
+En cuanto a la <span style="font-weight: bold;">superficie</span>, si
+se indica -1, entonces se utiliza la superficie de la calzada existente
+(106) y la completa con las de terreno vegetal (104) o la de terreno
+competente (66). Si el valor indicado fuera -2, se completa la
+superficie de calzada (67) con la de excavación (68) y la de desmonte
+en terreno inadecuado (69).<br />
+      <br />
+Para todas las etiquetas se puede establecer también un <span style="font-weight: bold;">desplazamiento horizontal</span> respecto a los vértices a los que hacen referencia, una <span style="font-weight: bold;">distancia al plano de comparación</span> y un <span style="font-weight: bold;">ángulo de rotación</span>.<br />
+      <br />
+Es posible, además, indicar una <span style="font-weight: bold;">distancia mínima entre rótulos</span>
+(en mm de papel), de tal forma que el programa reubique los rótulos en
+la guitarra cuando disten entre sí un valor inferior a éste, evitando
+que se solapen.<br />
+      <br />
+Si se activa la casilla <span style="font-weight: bold; font-style: italic;">Separar desde el eje</span> y en los casos en los que se ha introducido la <span style="font-weight: bold;">distancia mínima de separación entre rótulos</span>, ésta se aplica desde el eje y tanto a la izquierda como a la derecha del mismo.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rotul_2_superf">Atributos que involucran a dos superficies</a></span><br />
+      <br />
+En muchas ocasiones interesa representar datos que hacen referencia a dos superficies.<br />
+      <br />
+En este menú se posibilita representar:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      <ul>
+        <li>Cota de la superficie 2: Se rotula la cota de la segunda superficie (<span style="font-weight: bold;">Sup2</span>) según los vértices de la superficie 1 (<span style="font-weight: bold;">Sup1</span>), es decir, para cada vértice de la primera superficie se rotula la cota que la segunda superficie tiene en la misma vertical.</li>
+      </ul>
+      <ul>
+        <li>Cota roja: Diferencia de cota entre la superficie 1 (<span style="font-weight: bold;">Sup1</span>) y la superficie 2 (<span style="font-weight: bold;">Sup2</span>), rotulada según los vértices de la primera.</li>
+      </ul>
+      <ul>
+        <li>Cota roja Distancia fija: necesitaremos aplicar una distancia mínima.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Cota de los puntos de intersección entre las dos superficies.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Cota roja multiplicada por -1<br />
+          <br />
+</li>
+        <li>Cota roja solo en desmonte.<br />
+          <br />
+        </li>
+        <li>Cota roja solo en terraplén.<br />
+        </li>
+
+      </ul>
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/gut_atrib_2_superf.png" style="width: 573px; height: 204px;" alt="" /><br />
+      </div>
+      <br /><span style="font-weight: bold;">Lugar</span>: La rotulación puede estar referida a la superficie 1 (<span style="font-weight: bold;">Sup1</span>), a la superficie 2 (<span style="font-weight: bold;">Sup2</span>) o a la <span style="font-weight: bold;">guitarra</span>.<br />
+      <br />
+Para todas las etiquetas se puede establecer también un desplazamiento
+horizontal respecto a los vértices a los que hacen referencia, una
+distancia al plano de comparación, un ángulo de rotación y una
+distancia mínima de separación entre rótulos (en mm de papel) para
+evitar solapes o gran densidad de datos.<br />
+      <br />
+A partir de las columnas <span style="font-weight: bold;">Cód Ini</span> y <span style="font-weight: bold;">Cód Fin</span> se permite definir un código mínimo y máximo de la primera superficie para realizar la operación.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="talud_superf">Talud de las superficies</a></span><br />
+      <br />
+Permite rotular los taludes iguales inferiores al valor <span style="font-weight: bold;">Máx. Talud</span> (cociente horizontal/vertical) de la superficie (<span style="font-weight: bold;">Sup1</span>) especificada. Según la orientación del talud, se usarán los símbolos <span style="font-weight: bold;">Sím-</span> y <span style="font-weight: bold;">Sím+</span> (por defecto 173 y 174 respectivamente).&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_talud_superf.png" style="width: 461px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Adicionalmente se puede indicar un <span style="font-weight: bold;">desplazamiento</span> horizontal y vertical de rotulación (medido desde la mitad del talud), así como un <span style="font-weight: bold;">ángulo</span> (para los símbolos por defecto, 173 y 174, debería ser cero salvo excepciones). También puede establecerse una <span style="font-weight: bold;">distancia mínima de separación entre símbolos</span> (en mm de papel) para evitar solapes.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="peraltes">Peraltes</a></span><br />
+      <br />
+La rotulación de los peraltes en cada perfil transversal puede establecerse desde este menú:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_peraltes.png" style="width: 500px; height: 204px;" alt="" /><br />
+      </div>
+      <br />
+Dicha rotulación puede ser:<br />
+      <ul>
+        <li>En mitad de la calzada principal.</li>
+        <li>Específica para ferrocarriles.</li>
+        <li>En la zona de guitarra. Puede referirse al <span style="font-weight: bold;">Sur</span>, <span style="font-weight: bold;">SW</span> y <span style="font-weight: bold;">NW.</span><br />
+</li>
+      </ul>
+En todos los casos es posible establecer los tipos de símbolo (etiquetas) para la rotulación así como los <span style="font-weight: bold;">desplazamientos</span> a
+derecha e izquierda del eje. En cuanto al desplazamiento vertical, en
+el caso de la guitarra irá referido al plano de comparación, mientras
+que en los otros dos será relativo a la rasante. Se independiza la
+distancia vertical para el peralte derecho y el izquierdo. Además, es
+posible
+indicar un <span style="font-weight: bold;">ángulo</span>
+de rotación.
+Un ángulo de valor cero provoca que los símbolos específicos para
+peraltes, como el 594 y el 595, giren automáticamente a la hora de
+dibujarse en función del peralte. Para la rotulación del peralte a
+mitad de la calzada principal también se puede elegir que se rotule con
+el <span style="font-weight: bold;">signo</span>.<br /><br />La opción <span style="font-weight: bold;">sex</span> disponible en varios campos, cambia el valor de la rotulación a grados sexagesimales.<br />
+      <br />
+Al marcar la casilla <span style="font-weight: bold; font-style: italic;">Texto en guitarra</span>, se representan dos rótulos de la forma B.I.= -2.00&nbsp;&nbsp; B.D. = 2.00, con el estilo y punto de inserción (<span style="font-weight: bold;">enganches</span> horizontal y vertical) que se indiquen. Se puede modificar el formato de rotulación mediante las casillas de <span style="font-weight: bold;">formato</span>. Además, se debe especificar una <span style="font-weight: bold;">distancia</span> al eje y al plano de comparación. En cuanto al valor <span style="font-weight: bold;">DX</span>, éste representa la distancia entre los rótulos correspondientes a derecha e izquierda (B.I. y B.D.). A partir del valor <span style="font-weight: bold;">DY</span> podemos modificar la coordenada Y relativa de los peraltes de la izquierda y la derecha.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="peraltes_cod">Peraltes por código</a></span><br />
+      <br />
+      <img src="Imagenes/gut_peraltes_cod.png" style="width: 391px; height: 174px; float: right;" alt="" hspace="5" />Esta
+opción permite personalizar aún más la colocación de las etiquetas de
+peralte sobre la rasante. En este caso es específica a un <span style="font-weight: bold;">código</span>
+de la rasante (superficie 67), y el programa calcula el peralte
+existente entre ese código y el siguiente y lo rotula en la mitad del
+segmento.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+También se indica si la etiqueta corresponde al lado derecho o
+izquierdo del eje, se especifica un símbolo para peralte a derecha y a
+izquierda y un <span style="font-weight: bold;">desplazamiento</span> horizontal y vertical respecto al punto del segmento que une el código especificado y el inmediatamente superior.<br />
+      <br />
+Además, es posible indicar un <span style="font-weight: bold;">ángulo</span>
+de rotación. Un ángulo de valor cero provoca que los símbolos
+específicos para peraltes, como el 594 y el 595, giren automáticamente
+a la hora de dibujarse en función del peralte.<br />
+      <br />El desplegable <span style="font-weight: bold;">Valor</span> permite seleccionar si el peralte se repreentará en Tanto por 100, Tanto por 1 o Sexagesimal.<br /><br />Activando la casilla <span class="Parf_negrita">[] Usar con las réplicas</span>, las definiciones de este menú también trabajan sobre&nbsp;las réplicas.<br />
+      <br />
+      <span class="Titulo_2"><a name="acota_dist">Acotación de distancias</a></span><br />
+      <br />
+      <img src="Imagenes/gut_acota_dist.png" style="width: 309px; height: 174px;" alt="" align="right" hspace="6" />Rotula
+la distancia real existente entre dos códigos de una superficie. Para
+ello basta con especificar el tipo de símbolo con el que rotular la
+distancia, la superficie y el <span style="font-weight: bold;">lado</span> de la misma respecto al eje (derecho o izquierdo) y desde y hasta qué <span style="font-weight: bold;">códigos</span> se medirá esta distancia.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Hay que tener en cuenta que el símbolo se mostrará paralelo al segmento
+indicado, por tanto el ángulo de giro es automático y consecuente con
+el orden de códigos. Si el símbolo aparece invertido, basta con
+intercambiar <span style="font-weight: bold;">Cód 1</span> y <span style="font-weight: bold;">Cód 2</span>.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="anota_superf_cod">Anotaciones por superficie y código</a></span><br />
+      <br />
+Este menú es muy parecido al de <a href="#atrib_superf">ATRIBUTOS SOBRE LAS SUPERFICIES</a>. En este caso, se indica una característica a rotular, el <span style="font-weight: bold;">lado</span> respecto al eje (derecho o izquierdo), la <span style="font-weight: bold;">superficie</span> y el <span style="font-weight: bold;">código</span> del que se quiere representar un dato con el tipo de símbolo que se especifique.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_anota_superf_cod.png" style="width: 461px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+Las posibilidades de rotulación son:<br />
+      <ul>
+        <li>Cota.</li>
+        <li>Distancia al eje geométrico.</li>
+        <li>Distancia al eje en planta (o eje matemático).</li>
+        <li>Distancia al eje geométrico, pero con signo negativo cuando se trata del lado izquierdo.</li>
+        <li>Distancia al eje en planta, pero con signo negativo cuando se trata del lado izquierdo.</li>
+        <li>Distancia al eje existente (para <a href="OL_EyM.html">proyectos de ensanche y mejora</a>). Se considera la posición del eje existente la definida por el símbolo 196. Éste se puede incluir en los perfiles desde el <a href="OL_perf_transv.html">menú de generación de transversales</a> (opción <span style="font-weight: bold; font-style: italic;">Ens. y Mejora (Todos)</span> para Ferrocarriles, indicando el tipo de línea para el eje existente) o bien mediante la opción <a href="OL_anadir_linea.html"><span style="font-weight: bold;">[Añadir línea]</span></a> del menú ALZADO.</li>
+        <li>Coordenadas X, Y ó Z.</li>
+      </ul>
+Se representa entonces el dato en el transversal, a la <span style="font-weight: bold;">distancia</span> horizontal (<span style="font-weight: bold;">Dist. horiz.</span>) y vertical (<span style="font-weight: bold;">Dist. vert.</span>) medida respecto a la <span style="font-weight: bold;">posición</span> indicada (código, esquina superior izquierda, esquina inferior izquierda o central inferior).<br />
+      <br />
+Para superficies no codificadas, si ponemos <span style="font-weight: bold;">código 0</span> utilizará el primer punto del lado correspondiente y si ponemos un valor <span style="font-weight: bold;">99999</span> o superior utilizará el último punto.<br />
+      <br />
+      <span class="Titulo_2"><a name="cotas_caract">Cotas características</a></span><br />
+      <br />
+Desde este cuadro de diálogo es posible rotular las siguientes cotas características:<br />
+      <ul>
+        <li>Cota de la rasante rotulada en el eje de giro. El usuario
+tiene que tener claro que la rasante SIEMPRE coincide con el eje de
+giro, con lo que cualquier desplazamiento de la plataforma respecto al
+mismo (declarado en el menú <a href="OL_ejes_de_giro.html">EJES DE GIRO</a> provocará que este rótulo quede &#8220;flotando&#8221; en el transversal.</li>
+      </ul>
+      <ul>
+        <li>Cota
+de la rasante rotulada en la guitarra. El valor de la cota se rotula en
+la zona de guitarra (es decir, en una zona fija) para cada perfil
+transversal. El usuario puede escoger si desea que la situación sea
+centrada en la parte inferior (Sur), a la izquierda en la parte
+inferior (SW) o a la izquierda en la parte superior (NW).<br />
+</li>
+      </ul>
+      <ul>
+        <li>Cota de la rasante rotulada en el perfil. A diferencia de
+la primera opción, en este caso la cota de la rasante se rotula sobre
+el código 1 de la superficie 67 cuya cota, como ya se ha explicado, no
+coincidirá con la de la rasante si existen desplazamientos del eje de
+giro. Es, por tanto, una rotulación que puede inducir a error si
+existen dichos desplazamientos.</li>
+      </ul>
+      <ul>
+        <li>Cota del terreno, rotulada en la zona de guitarra. El usuario puede escoger si desea que la situación sea centrada en la
+parte inferior (Sur), a la izquierda en la parte inferior (SW) o a la
+izquierda en la parte superior (NW).</li>
+      </ul>
+      <ul>
+        <li>Cota del terreno, rotulada en el perfil.</li>
+      </ul>
+      <ul>
+        <li>Cota del fondo de excavación rotulada en el perfil y referida al eje.<br />
+          <br />
+</li>
+        <li>Cota del fondo de excavación, rotulada en la guitarra. El usuario puede escoger si desea que la situación sea centrada en la
+parte inferior (Sur), a la izquierda en la parte inferior (SW) o a la
+izquierda en la parte superior (NW).</li>
+
+      </ul>
+      <ul>
+        <li>Cota de la primera superficie existente en el fichero de
+perfiles. Esto es útil, por ejemplo, en el caso de tener un fichero no
+generado desde el módulo de OBRA LINEAL o modificado por algún método,
+y en el que la primera superficie que se lee del archivo puede ser una
+línea de cualquier tipo. Si el usuario tiene claro qué representa esa
+superficie y desea visualizar su cota, ésta opción es la forma de
+conseguirlo.</li>
+      </ul>
+      <ul>
+        <li>Cota roja rotulada en el eje de giro, es decir, diferencia
+de cota entre el o los ejes de giro y el terreno. De nuevo, el usuario
+deberá tener presente si existen desplazamientos de la plataforma
+respecto al eje de giro declarados en el menú <a href="OL_ejes_de_giro.html">EJES DE GIRO</a> de ALZADO.</li>
+      </ul>
+      <ul>
+        <li>Cota del terreno rotulada bajo la posición del eje de giro.<br />
+          <br />
+</li>
+        <li>Cota del terreno bajo el eje de la sección. El usuario puede escoger si desea que la situación sea centrada en la
+parte inferior (Sur), a la izquierda en la parte inferior (SW) o a la
+izquierda en la parte superior (NW).</li>
+
+      </ul>
+      <ul>
+        <li>Cota del hilo bajo en el carril. En vía doble puede definirse un símbolo diferente para la rotulación en la vía izquierda.</li>
+      </ul><ul><li>Posibilidad de rotular el peralte (mm) anotado sobre el hilo alto.</li></ul>
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/gut_cotas_caract.png" style="width: 450px; height: 341px;" alt="" /><br />
+      </div>
+&nbsp;<br />
+En todos los casos, ha de asignarse un tipo de símbolo para efectuar la rotulación, y también es posible indicar <span style="font-weight: bold;">desplazamientos</span> horizontales y verticales así como un <span style="font-weight: bold;">ángulo</span> de rotación. En el caso de <span style="font-weight: bold; font-style: italic;">Z rasante en eje de giro</span> y <span style="font-weight: bold; font-style: italic;">Z roja en eje de giro</span> se diferencia entre derecha e izquierda para el tipo de símbolo y el <span style="font-weight: bold;">desplazamiento</span>
+horizontal. En cuanto al desplazamiento vertical, éste será relativo al
+plano de comparación cuando se trata de rotulación en zona de guitarra.<br />
+      <br />
+Como complemento adicional, los símbolos que representan las cotas
+características se insertan en el plano pasándoles el valor del PK como
+cota del símbolo y el valor de la cota característica como atributo
+para que sea rotulado en los planos. De este modo, si se realiza un
+listado de símbolos desde la opción <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Símbolo</span> &#8594; <span style="font-weight: bold;">Edición numérica (MD)</span>, se puede obtener un listado de la forma:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic;">X&nbsp;&nbsp; Y&nbsp;&nbsp; PK&nbsp;&nbsp; Cota_característica</span><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="pendiente">Pendiente</a></span><br />
+      <br />
+Similar al caso de la rotulación de taludes, es la de pendientes transversales mientras se encuentren dentro el rango indicado <span style="font-weight: bold;">Mín.Pend.</span> - <span style="font-weight: bold;">Máx.Pend.</span>
+(en %). El hecho de usar un intervalo permite utilizar diferentes
+símbolos en función del rango de pendientes.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_pendiente.png" style="width: 536px; height: 174px;" alt="" /><br />
+      </div>
+      <br /><img src="Imagenes/gut_pendiente_donde.png" style="width: 136px; height: 93px;" alt="" align="right" hspace="6" />
+El programa rotulará dichas pendientes referidas a la superficie indicada (<span style="font-weight: bold;">Sup</span>), bien en la propia superficie o en la zona de guitarra, dependiendo de lo indicado en la columna <span style="font-weight: bold;">Dónde</span>.<br />
+      Para la ubicación de las pendientes tendré la posibilidad de situarlas a partir de una <span style="font-weight: bold;">Superficie</span>, en la <span style="font-weight: bold;">Guitarra</span> o mediante <span style="font-weight: bold;">Guitarra Cód</span>, a partir de la cual el dato se rotula en la guitarra bajo el código en lugar de bajo el punto medio del segmento.<br />
+<br />
+Es posible además definir un <span style="font-weight: bold;">código</span> para cada dato. Si el código es diferente de cero, sólo se rotulará el tramo que termina en ese código.<br />
+      <br />
+Habrá que indicar, naturalmente, el tipo de símbolo a utilizar
+(diferenciado símbolo para derecha y para izquierda). Adicionalmente se
+puede indicar un <span style="font-weight: bold;">desplazamiento</span> horizontal y vertical de rotulación (medido desde la mitad de cada segmento), así como un <span style="font-weight: bold;">ángulo</span> (para los símbolos por defecto, 358 y 359, debería ser cero salvo excepciones). También puede establecerse una <span style="font-weight: bold;">distancia mínima de separación entre símbolos</span> (en mm de papel) para evitar solapes.<br />
+      <br />
+Por último, la casilla al principio de cada linea nos permitirá que la
+pendiente se rotule en tanto por uno en vez de en tanto por ciento.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="acota_superf_cod">Acotación por superficies y códigos (Riegos de firmes)</a></span><br />
+      <br />
+El siguiente submenú permite acotar en los transversales la distancia entre dos códigos:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_acota_superf_cod.png" style="width: 609px; height: 189px;" alt="" /><br />
+      </div>
+      <br />
+Para dibujar una acotación, es necesario indicar la <span style="font-weight: bold;">superficie</span>, el <span style="font-weight: bold;">código</span> y el <span style="font-weight: bold;">lado</span> del eje, correspondiente a los extremos izquierdo y derecho. Las líneas
+verticales de acotación quedan referidas a esas superficies y
+comenzarán a la distancia <span style="font-weight: bold;">dy</span> indicada. La flecha de acotación se colocará a una distancia vertical <span style="font-weight: bold;">dy</span>
+del código (derecho o izquierdo) de la superficie de referencia
+especificada. Esto permita representar acotaciones sucesivas en una
+misma horizontal. En la columna <span style="font-weight: bold;">lado </span>podemos
+escoger, en vez de izquierda/derecha, que el extremo sea el eje en
+planta (con lo cual no haría falta especificar superficie ni código).<br />
+      <br />
+Activando la casilla que tenemos en la columna <span style="font-weight: bold;">Código</span>, el programa buscará el código inmediato inferior al valor señalado. <br />
+      <br />
+En la parte superior de la ventana podemos configurar el aspecto de la acotación, especificando tipos de símbolo para la <span style="font-weight: bold;">flecha</span> y la rotulación del <span style="font-weight: bold;">valor</span> y el tipo de <span style="font-weight: bold;">línea</span> de cota.<br />
+<br />
+El siguiente ejemplo, correspondiente a la plantilla <span class="Archivo">ROM_003.gut</span> de la librería de programa correpondiente a Rumanía, ilustra lo anterior:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_acota_superf_cod_ej.png" style="width: 410px; height: 237px;" alt="" /><br />
+      </div>
+      <br />
+Existe un menú adicional para realizar este tipo de acotaciones para <span style="font-weight: bold;">riegos de firmes</span>. Se utiliza de la misma manera que el menú normal, con una columna adicional <span style="font-style: italic;">H/V/R</span> para elegir entre <span style="text-decoration: underline;">H</span>orizontal, <span style="text-decoration: underline;">V</span>ertical o <span style="text-decoration: underline;">R</span>iegos de firmes. Este menú también puede resultar util para acotar zonas de ensanche y/o refuerzo.<br /><br /><span class="Parf_negrita">Anotar en guitarra</span>: se puede añadir una anotación en la guitarra de la distancia acotada.<br />
+      <br />
+      <span class="Titulo_2"><a name="pend_V_H">Pendiente V:H por superficies y códigos</a></span><br />
+      <br />
+Este submenú permite rotular las pendientes de la superficie indicada de la forma V:H:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/gut_pend_V_H.png" style="width: 609px; height: 174px;" alt="" /><br />
+      </div>
+      <br />
+La pendiente que se desea rotular se referencia mediante el <span style="font-weight: bold;">código</span> de superficie y el <span style="font-weight: bold;">lado</span>
+(derecho o izquierdo), de tal forma que el programa rotula el segmento
+comprendido entre ese vértice y el inmediatamente anterior.<br />
+      <br />
+Las siguientes columnas de datos no son más que los tipos de símbolo a
+utilizar, de tal forma que el 1810 rotula pendientes 1:1, el 1811
+pendientes del 1:2, el 1812 pendientes del 1:3, etc. Para el resto de
+casos se usa el símbolo 1809 que permite rotular pendientes del tipo
+x:1, siendo x un número real distinto de 1, 2, 3, 4 y 5.<br />
+      <br />
+El símbolo estará <span style="font-weight: bold;">desplazado</span> respecto al centro del segmento las distancias dx y dy indicadas. Si además se introduce un <span style="font-weight: bold;">ángulo</span> distinto de cero, se usará dicho ángulo, de lo contrario el símbolo se mostrará paralelo al segmento.<br />
+      <br />
+Las plantillas&nbsp;<span class="Archivo">ROM_002.gut</span> y&nbsp;<span class="Archivo">ROM_003.gut</span> incluidas en la librería hacen uso de estas opciones.<br />
+      <br />
+<span class="Parrafo">
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

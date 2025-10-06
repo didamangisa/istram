@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Estructuras</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ESTRUCTURAS. CONOS DE DERRAME Y
+EMBOQUILLES DE TÚNEL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Este
+menú permite definir diferentes estructuras asociadas a un eje para su
+representación tanto en planta (utilizando por ejemplo el modo de
+dibujo derrame4.lil) como en alzado bajo la representación del <a href="OL_planos_longitudinales.html">perfil
+longitudinal</a> (haciendo uso, por ejemplo de la <a href="OL_gui.html">plantilla</a>&nbsp;<span class="Archivo">Estruc.gui</span>) así como los correspondientes conos
+de derrame para su cubicación y dibujo en planta. El cuadro de diálogo
+que permiten definir todos estos datos es el siguiente:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estructura_eje2.png" style="width: 642px; height: 380px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span class="Titulo_2">Estructuras</span><br />
+      <br /><span style="font-weight: bold;">[Automático]</span>: extrae
+las estructuras de la tabla de <a href="OL_zonas_calculo.html">ZONAS
+DE CÁLCULO</a>:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">De los tramos marcados como estructura </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Viaducto.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">De aquellos tramos donde la sección tipo a aplicar sea
+0 </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Viaducto.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">De los tramos con espesor de vegetal &lt; 0 </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Viaducto.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">De los tramos en los que se aplique una sección tipo
+de <a href="OL_tuneles.html">túnel</a> en desmonte </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Túnel.</span></span></span></li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/estruc_zc.png" style="width: 665px; height: 219px;" alt="" /><br />
+      </div>
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Las estructuras se deberían declarar previamente en el
+menú de <a href="OL_zonas_calculo.html">ZONAS DE CÁLCULO</a> por
+coherencia de datos.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;">[Ordenar]</span>: reordena los diferentes datos introducidos en función de sus Pks.<br />
+      <br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Sumar PK]</span>: permite indicar un incremento de PK a todos los datos declarados en el cuadro.<br />
+      <br />
+</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Haciendo click en el icono del viaducto podremos entrar en la ventana <a href="OL_elementos_de_las_estructuras.html">Elementos de las Estructuras</a>, donde podremos&nbsp; definir la geometría de distintos elementos que componen un viaducto.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/estruc_icono.png" style="width: 634px; height: 71px;" alt="" /><br />
+      </div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span class="Titulo_2">Pestaña Tipo<br />
+      <br />
+      </span></span></span></span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><img style="width: 665px; height: 347px;" alt="" src="Imagenes/estruc_tipo.png" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"></span></span></span></span></div>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Tipo</span>: se admiten varios tipos de estructuras:</li>
+      
+      </ul>
+
+
+      
+      <ul>
+
+        
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Viaductos</span></span></span></li>
+        </ul>
+
+        
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Túneles</span></span></span></li>
+        </ul>
+
+        
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Paso superior para ver en el perfil longitudinal
+del eje secundario (PS-LS)</span></span></span></li>
+        </ul>
+
+        
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Paso inferior para ver en el perfil longitudinal
+del eje secundario (PI-LS)</span></span></span></li>
+        </ul>
+
+        
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Paso superior para ver en el perfil longitudinal
+del eje principal (PS-LP)</span></span></span></li>
+        </ul>
+
+        
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Paso inferior para ver en el perfil longitudinal
+del ejes principal (PI-LP)</span></span></span></li>
+        </ul>
+
+      
+      </ul>
+
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Lado</span>: el lado en el que se dibujará la estructura, pudiendo
+ser el derecho (D), izquierdo (I) o ambos (ID).</span></span></span></li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Nombre</span> de la estructura para rotular en el perfil
+longitudinal.</span></span></span></li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eje Prin/Secun</span>: Si se trata de un paso, el eje principal o
+secundario según el tipo declarado. En el caso de tratarse de un paso
+para ver en el perfil longitudinal del eje secundario, el programa hará
+un corte a la sección del eje principal para dibujarlo en el perfil del
+eje actual (secundario) en el tramo especificado.</span></span></span></li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">PKs</span>
+inicial y final de la estructura. Justo debajo se muestra también la
+longitud de la estructura (L=...). En el caso
+de pasos para ver en el longitudinal principal en los que únicamente se
+representa un símbolo, se debe especificar el PK central del
+paso.&nbsp;Para viaductos con un tablero único para ambas calzadas, si
+está seleccionada la opción [ID] correspondiente a ambos lados y ambas
+calzadas con sus arcenes tienen diferente ancho, entonces el PK se
+considera el promedio de los PKs derecho e izquierdo para que el PK
+coincida con el corte del esviaje o con el eje geométrico.</span></span></span></li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Vanos</span>: cantidad de vanos que tendrá la estructura. El
+número de pilares será igual al número de vanos menos uno.</span></span></span></li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SIM</span>: Si se trata de un paso para ver en el perfil
+longitudinal del eje prinscipal, el número del símbolo a insertar así
+como la longitud (<span style="font-weight: bold;">Longi.</span>) para el símbolo y la cota (<span style="font-weight: bold;">Z</span>) de inserción del mismos.</span></span></span> Como ejemplo de símbolos que podríamos utilizar están el S311 y el S310. Estos <a href="EDM_definicion_tipos.html#definir_simbolo">símbolos</a> llevan el comando <span style="font-weight: bold;">Factor de Escala</span>
+colocado en la primera posición y no usarán las opciones FX o FY. El
+símbolo se diseña con las Y en alturas reales en metros, y las X con
+longitud unitaria (para un metro).
+        
+          <div style="margin-left: 40px;">
+      </div>
+
+      </li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Tablero</span>: P</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ara el caso de un viaducto, espesor del tablero</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">. En este campo se puede indicar, por ejemplo, la diferencia de cota entre la cara
+superior del tablero y la rasante, para descontar en
+ferrocarriles la altura del carril y el balasto.</span></span></span></li>
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Bóveda</span>: altura de la bóveda, en el caso de que la
+estructura sea de tipo túnel.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Solera</span>: distancia entre la rasante y la solera del túnel/paso inferior. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el caso del paso inferior, debe estar previamente calculado
+el eje principal de modo que al dibujar el longitudinal del eje
+secundario se dibuja temporalmente el modelo 3D del eje principal en la
+zona del paso inferior y calcula su intersección para dibujarla en el
+perfil.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Si marcamos que la estructura es de tipo Viaducto, podemos definir
+algunos elementos de su composición: <span style="font-weight: bold;">tablero</span>, <span style="font-weight: bold;">viga</span>, <span style="font-weight: bold;">estribo</span> y <span style="font-weight: bold;">pilar</span>.
+Estos elementos serán los genéricos para todos los vanos y pilares si
+no se indica lo contrario, pero se pueden particularizar para partes
+distintas de la estructura desde las pestañas <span style="font-weight: bold;">Estribos </span>(estribo) y <span style="font-weight: bold;">Pilas</span> (tablero, viga y pilar).</li>
+      
+      </ul>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2">Pestaña Estribos</span><br />
+      <br />
+</span></span></span>
+      
+      <div style="text-align: center;"><img src="Imagenes/estribos_i.png" style="width: 630px; height: 144px;" alt="" /><br />
+      </div>
+
+      <span class="Parrafo"><span class="Parrafo"></span><br />
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejemplo_cono_derrame.png" style="width: 234px; height: 128px; margin-left: 7px;" alt="" align="right" /></span></span></span></span></span><span style="font-weight: bold;">Talud</span>: Talud del
+cono de derrame en el frente. Se pueden especificar valores distintos
+para el talud de los conos inicial y final a cada lado del eje, junto
+con casillas para dibujar de manera independiente cada cono, o para que
+solo se dibuje el cono sin el talud en el frente (<span style="font-weight: bold;">Sin frente</span>). Si se deja a 0, <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">el cono se realizará con el talud definido en el <a href="OL_ficheros_lil.html">fichero&nbsp;<span class="Archivo">.lil</span></a>.<br />
+</span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span><span style="font-weight: bold;">Código + Distancia + dZ</span>:
+Permite ubicar el vértice del cono mediante un código, una distancia
+horizontal a ese código y una profundidad. Si se dejan a 0, <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">el cono se realizará según
+esté definido en el <a href="OL_ficheros_lil.html">fichero&nbsp;<span class="Archivo">.lil</span></a>.<br />
+</span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">L</span>: </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia longitudinal </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">del
+vértice del cono </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">al inicio de la estructura, para cuando el vértice del cono se realiza al final
+de la aleta.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Mediana</span>:
+Si marcamos esta casilla, no se harán conos de derrame en la mediana.
+Se dejará un talud vertical sobre la linea que une los bordes
+interiores del tablero de cada lado.<br />
+          </span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Frente</span>: Si marcamos esta casilla, hará un frente recto.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aleta/Estribo inicial/final</span>:
+Especifica qué aleta/estribo se utilizará al principio y al final de la
+estructura. Para el caso del estribo, lo que se ponga aquí tiene
+precedencia sobre el estribo general que se declara en la pestaña <span style="font-weight: bold;">Tipo</span>.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Zp</span>: cota absoluta de la base de la aleta.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Pila</span>: Ancho y largo de las pilas. Para pilares circulares, largo = cero, ancho = diámetro.<br />
+        </li>
+      
+      </ul>
+
+      <br />
+
+      <span class="Titulo_2">Pestaña Pilas</span><br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 630px; height: 140px;" alt="" src="Imagenes/vigas_tableros.png" /><br />
+      </div>
+
+      <br /><span style="font-weight: bold;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Añadir, Inser., Borrrar</span>: Añadir añade al final, Inser. y Borrar trabajan sobre la estructura superior del cuadro de diálogo.<br />
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Tablero</span>: especifica que tablero se utilizará en cada uno de los vanos. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lo que se ponga aquí tiene precedencia sobre el tablero general que se declara en la pestaña <span style="font-weight: bold;">Tipo</span>.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Viga</span>: especifica que viga se utilizará en cada uno de los vanos. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lo que se ponga aquí tiene precedencia sobre la viga general que se declara en la pestaña <span style="font-weight: bold;">Tipo</span>.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Pilar</span>: </span></span></span>especifica que pilar se utilizará entre los vanos indicados. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lo que se ponga aquí tiene precedencia sobre el pilar general que se declara en la pestaña <span style="font-weight: bold;">Tipo</span>.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"><img src="Imagenes/estruc_pk.png" style="width: 285px; height: 161px;" alt="" align="right" hspace="8" /></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">PK pilas</span>: </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si los pilares están
+equidistantes, estas casillas se dejan a cero y el programa los calcula de forma automática. Si no, se declaran aquí los
+PKs de hasta 1000 pilares. Estos valores se pueden introducir numérica o
+gráficamente. En el caso del paso superior, para su dibujo en el perfil
+debe estar previamente calculado el eje principal de modo que al
+dibujar el longitudinal del eje secundario se dibuja temporalmente el
+modelo 3D del eje principal en la zona del paso superior y calcula su
+intersección para dibujarla en el perfil y calcular en su caso la cota
+de los pies de los pilares.</span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Dis. eje</span>: distancia al eje del centro de la pila.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Esviaje</span>: esviaje de la pila.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Zp</span>: cota absoluta de la base del fuste.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Esviaje Zp</span>: esviaje de la zapata.<br />
+          </span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br /><span class="Titulo_2">Ejemplos particulares</span><br />
+      </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />En
+      <span style="font-weight: bold;">estribos cerrados</span> se permite dar un talud en el frente diferente al
+talud de terraplén a los conos de derrame , para ello desde la pestaña
+Estribos en las casillas Talud <span style="font-weight: bold;">Inicial </span>y <span style="font-weight: bold;">Final</span>
+se define el talud H/V del cono en el frente. Se permite la generación
+de taludes de cierre por el frente en estribos &nbsp;cerrados, siempre
+que se desmarque el flag <span style="font-weight: bold;">Solo cono</span> en el menú de estructuras.<br /><br />
+Un caso particular se nos puede dar al querer generar los taludes de
+los conos de derrame para estructuras en autovías con diferente PK en
+los estribos derecho e izquierdo siendo un estribo recto, no esviado.
+Entre ambos PKs se ha definido una <a href="OL_excentricidad_mediana.html#tipos">mediana abierta</a>, de modo que la calzada está totalmente en estructura y la otra en <a href="OL_terraplen_geometria.html#modos">terraplén</a> por ambos lados.<br />
+</span></span></span>En este caso se desdobla el cono de derrame en
+dos, uno en cada estribo, cerrando el talud exterior con el de la
+mediana abierta. El programa calcula la intersección del talud de la
+mediana abierta con el talud del frente en el estribo de la otra<br />
+
+calzada.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_estructuras.png" style="width: 642px; height: 380px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estructura_doble_via_ejemplo.png" style="width: 541px; height: 232px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold;">Emboquille de túnel</span><br />
+
+      <br style="font-style: italic;" />
+</span></span>
+      <img src="Imagenes/ejemplo_emboquille.png" style="width: 241px; height: 184px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"> Se desea que el talud del emboquille de un túnel comience un metro por
+encima de la clave que está a 7 metros de altura. Se podría entonces
+definir para la sección tipo de desmonte de la trinchera de
+entrada/salida del túnel un primer tramo de 8 metros con los valores:</span><br style="font-style: italic;" />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+
+
+      
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; height: 50px; width: 174px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">
+ZD2 = 100 </span></span></span></span></td>
+      <td style="vertical-align: top; width: 85px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">D2 = 0.5</span></span></span></span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">
+ZD1 = 8 <br />
+</span></span></span></span></td>
+      <td style="vertical-align: top; width: 85px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">D1 = 0.5&nbsp; </span></span></span></span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      </div>
+
+      <br style="font-style: italic;" />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esto inserta en el talud de desmonte un punto a 8 metros de altura con
+el código 1301.5. Entonces se anota este valor en el menú de
+Estructuras como código inicial y/o final para el talud del emboquille
+del túnel.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+En el cuadro de diálogo de Estructuras, pestaña <span style="font-weight: bold;">Estribos</span>,
+para el caso de túneles en los que se aplique un silbato (Corte de la
+boveda por un plano con la inclinación del talud), se puede definir:<br />
+</span></span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Hs</span>: altura inicial del silbato (o del plano de corte) en el PK inicial o en el final del tunel.</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Hr</span>: altura inicial para el
+relleno en caso de Falso Túnel. Esta altura ha de ser inferior o igual a Hs.<br />
+          </span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estructuras_silbato_hs.png" style="width: 600px; height: 355px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estribo_silbato_3d.png" style="width: 600px; height: 292px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span>
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Silbato</span>: Se puede
+cortar la bóveda al inicio y/o al final del túnel según el talud
+declarado para el frente del cono de derrame. En el ejemplo
+Estructura_Doble.isa que se adjunta con las actualizaciones, se
+incorpora al final del eje 2 un túnel que utiliza esta opción en la
+boquilla de entrada al túnel.</li><li><span style="font-weight: bold;">Esviaje</span>:
+Permite definir un esviaje para la boca del túnel. Debe tener un valor
+diferente a 100. En esta zona, es recomendable realizar una
+interpolación más fina de perfiles transversales.</li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify;"><img src="Imagenes/act_cono_derrame.png" style="width: 161px; height: 43px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Es preciso recordar que para que los conos
+sean dibujados, es necesario usar un modo de dibujo adecuado
+(<span class="Archivo">derrames4.lil</span> y similares). De todas formas, si en el menú de <a href="OL_proyecto.html">PROYECTO</a>
+está activada la opción <span style="font-weight: bold; font-style: italic;">Conos de derrame</span>, se calculará la medición de
+los mismos aunque no se haya definido un modo de dibujo o éste no tenga
+comandos para dibujar los derrames.&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Estructura esviada</span><br />
+<br />
+Se puede definir una estructura esviada en una carretera (eje de calzada única) de la siguiente forma:<br />
+</span></span></span></span></span></span></span>
+      <ol>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el cuadro de diálogo de estructuras se pueden definir cuatro PKs:</span></span></span></span></span></span></span></li>
+      </ol>
+
+      <ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;PK incio&nbsp; por la derecha</span></span></span></span></span></span></span></li>
+      </ul>
+
+      <ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">PK inicio por la izquierda</span></span></span></span></span></span></span></li>
+      </ul>
+
+      <ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">PK final por la derecha</span></span></span></span></span></span></span></li>
+      </ul>
+
+      <ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">PK final por la izquierda.</span></span></span></span></span></span></span></li>
+      </ul>
+
+      <div style="text-align: center;"><img src="Imagenes/estruc_esviada_pk.png" style="width: 633px; height: 181px;" alt="" /><br />
+      </div>
+
+&nbsp; <br />
+
+      <div style="text-align: left;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+pk de inicio y final para el dibujo en rasante y perfil longitudinal y
+cálculo de la longitud será el promedio de los dos lados.</span></span></span></span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+
+      <ol start="2">
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el cuadro de diálogo de zonas de cálculo, solo es necesario un tramo </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">con
+los PKs aproximados de la estructura y poner en la columna Viaducto
+[SI-&gt;(PKs)]. Si queremos ver los PKs reales de cálculo y subtramos,
+podemos pulsar la opción Reordenar, pero para el cálculo correcto no es
+neceario.</span></span></span></span></span></span></span></li>
+      </ol>
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estruc_esvia_zc.png" style="width: 665px; height: 219px;" alt="" /></span></span></span></span></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En ferrocarriles, en las zonas por donde va apareciendo/desapareciendo
+la estructura por un lado de la sección se construye un escalón similar
+a los ejes de carreteras pero aquí los espesores de subbalasto y capa
+de forma son:<br />
+</span></span></span></span></span></span></span></span></span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el lado del terraplén son los espesores definidos en la tabla de datos del Menú <a href="OL_ffcc_capa_forma.html">CAPA DE FORMA</a>.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para que se genere el escalón se debe activar en este mismo cuadro de diálogo la opción:&nbsp;<span class="Parf_negrita">[]Tramos en Estructura</span>
+y dar aqui los valores para el espesor del subbalasto y capa de forma
+en estas zonas, pueden dejarse a cero, si el balasto asienta
+directamente sobre el tablero.</span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/OL_tramos_estructura.png" style="width: 600px; height: 248px;" alt="" /><br />
+      </div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;">Estructuras dobles en Autovías y Zonas de Cálculo</span><br />
+      <br />
+Se simplifica la definición de los tramos de cálculo, en los proyectos
+de doble calzada en los viaductos con tablero separado para cada
+calzada. Cada uno de los dos viaductos (Uno para la calzada derecha y
+otro para la izquierda) define cuatro PKs: pk de incio por la derecha y
+por la&nbsp; izquierda y pk final por la derecha y por la izquierda.<br />
+Estos 8 PKs pueden ser diferentes si las dos estructuras empiezan y
+terminan en diferente PK y además sus estribos pueden estar esviados.<br />
+      <br />
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estruct_esviada.png" style="width: 629px; height: 372px;" alt="" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En el cuadro de diálogo de Zonas de cálculo ahora solo es necesario
+añadir un dato para toda la estructura y además NO es necesario definir
+Secciones Tipo auxiliares, ni mediana abierta.<br />
+Se incluye en la carpeta DEMO un archivo Estructura_Doble.isa que contiene un ejemplo de utilización:<br />
+      <br />
+En zonas de cálculo aparecen 3 datos:<br />
+1) ST:1 Viaducto:NO(T-T)&nbsp;&nbsp; PKS:0-240 (Zona de terraplén antes de la estructura)<br />
+2) ST:2 Viaductu:SI-&gt;(PKS) PKS:240-460 (Zona afectada por la estructura)<br />
+3) ST:1 Viaducto:NO(T-T)&nbsp;&nbsp; PKS:460-731 (Zona de terraplén tras la estructura)<br />
+      <br />
+Para ver como ISTRAM descompone esta información se puede pulsar la
+tecla [Reordenar], pero para el cálculo normal NO es necesario. Si
+pulsamos Reordenar aparecerán:<br />
+      <br />
+1) ST:1 V:NO(T-T)&nbsp;&nbsp;&nbsp; PKS:0-240<br />
+2) ST:1 V:(T-E)(T-T) PKS:240-245 (Empieza el tablero izquierdo por dentro) <br />
+3) ST:1 V:(E-E)(T-T) PKS:245-285 (Tablero izquierdo completo)<br />
+4) ST:1 V:(E-E)(T-E) PKS:285-290 (Empieza el tablero derecho por fuera)<br />
+5) ST:2 V:(E-E)(E-E) PKS:290-430 (Ambos tableros completos)<br />
+6) ST:1 V:(E-E)(T-T) PKS:430-460 (Terminó el derecho sin esviaje)<br />
+7) ST:1 V:NO(T-T)&nbsp;&nbsp;&nbsp; PKS:460-731 (Se acabo la estructura).<br />
+      <br />
+El espesor de firme de la Sección tipo 2 es utilizada en todos los PKs
+donde aparece parte de la estructura y la Sección tipo 1 en todas las
+zonas de terraplén. Entre los PKS 240 y 460 la mediana es abierta, pero
+no hace falta definirla y se va utilizando la ST 1 cuando hay terraplén
+y la 2 cuando hay estructura.<br />
+Los dos tableros etán esviados al inicio y son ortogonales al final aunque con diferente PK.<br />
+Los conos de derrame del tablero derecho estan retranqueados. </span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /><span style="font-weight: bold;">Listado de Pilotes</span><br /><br />Al
+dibujar la planta con un modo de Dibujo que incluya las estructuras con
+sus pilas/estribos/aletas/cimentación se genera para cada eje el
+listado <span class="Archivo">pilotesX.res</span> (en la carpeta res) que contiene por cada pilote:&nbsp;&nbsp;<br />
+      <br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/estruc_lista_pilotes.png" style="width: 500px; height: 180px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+ </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /><span class="Parf_negrita">Caso de capa de forma para estructura en modo ferrocarril</span><br /><br />En el caso de ferrocarriles, activando la casilla <span class="Parf_negrita">Mantener capa de forma original</span>,
+permite mantener la capa de forma original en viaductos, aun teniendo
+activado el flag de Tramos en Estructura en el menú de Capas de Forma
+(que elimina o reduce la capa de forma en las estructuras).<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/est_mantener_cf.png" style="width: 600px; height: 355px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  <tr><td style="width: 692px;" class="obsolete Parrafo"></td></tr></tbody>
+</table>
+
+</body></html>

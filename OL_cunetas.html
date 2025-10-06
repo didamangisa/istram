@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Cunetas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CUNETAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="Parrafo Parrafo Parrafo"><span class="Parrafo"><br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><a href="#def_parametrica">Definición paramétrica</a></span><br />
+      <span class="Parrafo"><a href="#def_vectorial">Definición vectorial</a><br />
+      <a href="#cun_por_bordillo">Definición por bordillo</a><br />
+      <a href="#Bordillo_por_tipo">Definición bordillo por tipo</a><br />
+</span>
+      <span class="Parrafo"><a href="#fija_y_porLongitudinal">Cuneta fija y cuneta definida por su perfil longitudinal</a></span><br />
+      <span class="Parrafo"><a href="#forzadaTerr_ptoOblidado">Cuneta forzada en terraplén. Punto obligado</a><br /><a href="#cunetapieterraplen"><span style="color: rgb(0, 79, 175);">Cuneta en pie de terraplén</span></a><br /></span>
+      <span class="Parrafo"><a href="#cierre_subras">Cierre de la subrasante con la cuneta</a></span><br />
+      <span class="Parrafo"><a href="#revestimiento">Revestimiento de cuneta</a><br />
+      <a href="#Bascular">Bascular</a><br />
+      <a href="#rejilla">Rejilla</a><br /><a href="#subeTerraplen"> Sube por el Terraplén</a><br /><a href="#material"><span style="color: rgb(0, 78, 175);">Material</span></a><br /><br />
+</span>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+Existen dos formas para definir la cuneta: <a href="#def_parametrica">paramétrica</a>
+y <a href="#def_vectorial">vectorial</a>.
+Además, es posible hacer que el fondo de cuneta tenga su propio
+      <a href="#por_longit">longitudinal</a>, lo que permite controlar el flujo y forzar los puntos de
+desagüe de de las cunetas. El punto de enganche de la cuneta se establece en el <a href="OL_punto_control_y_arranque_cuneta.html">menú CONTROL/CUNETA</a>.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_cunetas.png" alt="" style="width: 549px; height: 174px;" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="def_parametrica">Definición
+paramétrica</a></span> <br />
+      <br />
+Se realiza la definición mediante cinco valores con los que se
+construye una cuneta con fondo plano o sin él. Es el modo por defecto.
+Los cinco valores son los siguientes:<br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">CD</span>: Ancho horizontal de la cara de la
+cuneta que está del lado del desmonte.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">CC</span>: </span></span><span class="Parrafo"><span class="Parrafo">Ancho del fondo plano de la cuneta,
+que valdrá 0 para cunetas triangulares.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">CA</span>: </span></span><span class="Parrafo"><span class="Parrafo">Ancho horizontal de la cara de la
+cuneta que está del lado del arcén.</span></span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">ZC</span>: Profundidad de la cuneta.</span></li>
+
+        
+        
+        <li><span class="Parrafo"><span style="font-weight: bold;">Hm</span>:
+Altura mínima de calado desde el terreno. La diferencia de cota entre
+el código 1399 (o 1103 si la cuneta corta al terreno) y el 600 debe ser
+mayor o igual que este valor. Si no, se estira del fondo de cuneta,
+alargando el primer segmento de la misma hasta obtener la profundidad
+deseada.<br />
+</span></li>
+      </ul>Si se activa la opción <span style="font-weight: bold;">[ ] Mantener</span>, se mantendrán estos valores geométricos en la superficie de las cunetas revestidas.<br />
+
+      <span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="def_vectorial">Definición
+vectorial</a></span> <br />
+      <br />
+Cuando el <span style="font-weight: bold;">MODO</span> de definición
+está en <span style="font-weight: bold;">[VECTORIAL]</span> es posible
+entrar a <a href="definicion_vectorial.html">definir datos para el
+vector</a> pulsando sobre el botón <span style="font-weight: bold;">[VECTOR
+n ptos]</span>, siendo <span style="font-weight: bold;">n</span> el
+número de puntos empleados en
+la definición vectorial de la cuneta.<br />
+      <br />
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 550px; height: 275px;" alt="" src="Imagenes/dialogo_vector_cuneta.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"> <br />
+Puede predefinirse en el vector el punto que marca el <span style="font-weight: bold;">fondo de la cuneta</span>
+identificándolo con un código 600 en la tercera columna. </span>Si la cuneta vectorial está además definida <a style="font-weight: bold;" href="#fija_y_porLongitudinal">por un longitudinal</a>, el comportamiento es más versátil, admitiéndose las siguientes posibilidades:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Código 600</span>:
+Define el fondo de la cuneta, pero el segmento que se estira para que
+este punto pase por el longitudinal es el primer segmento del vector.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Código 601</span>:
+Define el fondo de la cuneta, siendo el segmento que se estira para que
+este punto pase por el longitudinal este mismo segmento (el programa lo
+recodifica luego como 600).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si <span style="font-weight: bold;">no hay código 600 ni 601</span>, el primer segmento marca el fondo de la cuneta, siendo éste el que se estira para que pueda alcanzar la cota del longitudinal.<br />
+          </span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si <span style="font-weight: bold;">hay varios 600 y/o 601</span> se toma el primero de ellos.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Código 1000</span>: En cuneta <a href="#por_longit_cota">por longitudinal a cota</a>, es el punto que recupera la cota que tendría en caso de cuneta fija.</span></span></li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Código 595</span>:
+Se puede indicar un punto que se estira diferente al primero y al fondo
+de cuneta, si además es el primer punto que se reviste entonces se
+puede poner el <span style="font-weight: bold;">código 594</span>.<br /></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Para el caso de <a href="#revestimiento"><span style="font-weight: bold;">cunetas revestidas</span></a>, también se ofrece</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> la posibilidad de definir en el vector el punto a partir del cual ya no se reviste la cuneta.<br />
+</span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Código 90</span>: Los puntos anteriores a este no se revisten</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Código 1100</span>: Este punto y los siguientes no se revisten.</li>
+      </ul><a name="cun_por_bordillo"><span class="Titulo_2">Definición por bordillo</span><br />
+      <br />
+Permite seleccionar un elemento de la tabla de bordillos y genera con
+él la geometria de la cuneta, tomando la línea de base como excavación
+y la línea de la tapa como el revestimiento. En el ejemplo Despejes.isa
+que se instala, se utiliza como cuneta el bordillo: Cuneta_TTR_15.bor
+(Cuneta trnsitable TTR-15). <br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 549px; height: 174px;" alt="" src="Imagenes/cuneta_bordillo.png" /><br />
+
+      </div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      
+      <br />
+      <a name="Bordillo_por_tipo"><span class="Titulo_2">Definición Bordillo por tipo</span><br />
+      <br />
+Un cuarto modo Bordillo+Tipo, es como el modo Bordillo pero en lugar de
+medir esta cuneta como revestimiento de cuneta genérico, utiliza el
+tipo definido en el bordillo y se puede así diferenciar las mediciones
+según el tipo de bordillo.<br />
+<br />
+      </a></span></span></span><a name="fija_y_porLongitudinal"><span class="Titulo_2">Cuneta fija y cuneta definida por su perfil longitudinal</span></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <img style="width: 220px; height: 123px; margin-left: 7px;" src="Imagenes/rasantes_cunetas.png" align="right" />Desde
+RASANTES existe la opción de definir dos longitudinales, uno para la
+cuneta DERECHA y otro para la cuneta IZQUIERDA. Estos longitudinales
+solo se utilizan en zonas donde la cuneta esté definida por
+longitudinal y, además, el longitudinal esté por debajo del punto del
+fondo de la cuneta.<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; width: 461px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 402px; text-align: justify;"><span class="Info">Como
+ayuda, puede calcularse y dibujarse previamente el eje con todas las
+cunetas fijas. Después se podría proyectar la línea del fondo de
+cuneta. Esta opción genera un fichero .lon que puede cargarse en
+RASANTES, con lo que se obtiene en pantalla el perfil longitudinal de
+la cuneta fija que puede servir de guía para generar el longitudinal de
+la cuneta.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 139px; height: 141px;" alt="" src="Imagenes/cuneta_enganche.png" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo">En
+la ventana de datos de la cuneta aparece también un desplegable que
+permite seleccionar cómo se ejecuta la cuneta, es decir, si es fija o
+si sigue su propio longitudinal. En este último existen además varias
+posibilidades para la obtención de la geometría de misma y que se
+detallan a continuación.<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Fija</span>: Ejecuta la cuneta tal y como
+está definida paramétrica o vectorialmente (cuneta teórica).</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="por_longit">Por longitudinal</a></span><span class="Parrafo"><span class="Parrafo">:
+En este caso, si el vértice de la cuneta fija está por encima del
+longitudinal que se define para la cuneta, se prolonga el primer
+segmento de la cuneta hasta que baje a la cota del longitudinal
+definido para la cuneta.</span></span></li>
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><img style="width: 302px; height: 280px;" alt="" src="Imagenes/cuneta_enganche2.png" align="right" />Se
+puede definir vectorialmente. En tal caso, el vértice al que se
+enganchará la cuneta será el que esté identificado con código 600 en la
+tercera columna de la definición vectorial. Si no se utiliza el código
+600, se entenderá que el fondo de la cuneta lo marca el primer punto.
+En cualquier caso, el segmento cuya longitud varía para que el fondo de
+la cuneta tenga la cota del longitudinal, sigue siendo el primer
+segmento de la cuneta.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="por_longit_cota">Por longitudinal a cota</a></span><span class="Parrafo"><span class="Parrafo">:
+Se puede definir vectorialmente y hay que asignar a un punto del vector
+cuneta el código 1000. En este caso, el punto con código 1000 recupera
+su cota relativa con el punto de enganche de la cuneta (como el último
+punto de la cuneta paramétrica) y los puntos posteriores no se ven
+afectados por el longitudinal.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Por longitudinal con igual ancho</span>:
+En este tipo de cuneta el punto del fondo (o los dos en las
+trapezoidales) bajan a la cota del longitudinal, pero el ancho total de
+la cuneta se conserva (varían los taludes laterales).&nbsp;</span></span></li>
+      </ul></span><div style="text-align: center;"><span class="Parrafo"></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/cuneta_linea3d.png" alt="" style="width: 268px; height: 81px;" align="right" hspace="6" />Por línea 3D</span>:
+El fondo de la cuneta va a buscar el punto definido por la línea 3D. Si
+la cuneta es vectorial, funciona de modo similar a la cuneta por
+longitudinal: el punto de código 600 va a buscar la línea 3D y todos
+los puntos de la cuneta se desplazan paralelamente. Si se coloca el
+código 601, este punto va a buscar la línea 3D y sólo se desplaza él y
+los posteriores.<br />
+        </li>
+      </ul>
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo">En las cunetas definidas por longitudinal es posible activar la casilla <span style="font-weight: bold; font-style: italic;">Dibujar L.C. </span>que dibuja en el perfil un símbolo por el punto donde se toma la cota del longitudinal de la cuneta.<br />
+      <br />
+Asimismo, se pueden activar dos casillas al lado del desplegable
+de longitudinal. La primera fuerza a la cuneta a ejecutarse de tal
+manera que el longitudinal pasa por el revestimiento, en vez de por el
+fondo de cuneta. Para el caso de revestimientos vectoriales, es
+necesario indicar el espesor del revestimiento para que se calcule
+correctamente la cota. La segunda casilla permite que el segmento que
+normalmente se estiraría para permitir a la cuneta ajustarse al
+longitudinal se pueda </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">también </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">encoger si fuese necesario.<br /><br />
+      </span></span></span><span class="Titulo_2"><a name="forzadaTerr_ptoOblidado">Cuneta forzada en terraplén. Punto obligado</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span class="Parrafo">En la definición de la geometría de la
+cuneta se puede activar la casilla <span style="font-weight: bold; font-style: italic;">Terraplén</span> para
+forzar la construcción de la cuneta aún en caso de terraplén.<br />
+      <br />
+Cuando se usa la cuneta en la sección de terraplén y se utiliza el
+punto de la cuneta hasta donde va a cerrar la subrasante, si damos un
+número mayor al último punto de la cuneta, entonces la subrasante se
+prolonga con su pendiente hasta cortar el talud del terraplén.<br />
+      <br />
+Por otro lado, la cuneta deja de dibujarse en el punto de intersección
+con el terreno. Es posible modificar este comportamiento indicando
+hasta qué vértice se desea la representación de la cuneta en la
+casilla, denominado <span style="font-weight: bold;">punto obligado</span>:<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 100px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 286px; height: 84px;" alt="" src="Imagenes/cuneta_sin_puntoObligado.png" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Cuneta
+sin punto obligado</span><br />
+            </div>
+            </td>
+            <td style="vertical-align: top;"><img style="width: 295px; height: 85px;" alt="" src="Imagenes/cuneta_con_puntoObligado.png" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Cuneta
+con punto obligado</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Como
+se ve en la imagen, esto produce una recodificación de los vértices de
+la cuneta y un pequeño terraplén cuyo talud corresponderá al definido
+en la sección tipo como talud de terraplén.<br />
+      <br />
+Punto Obligado: Para Desmontes bajos con el terreno bajando, en los que
+los últimos puntos de la cuneta pueden quedar por encima del terreno,
+si ponemos un valor al punto obligado=100, entonces se hace deslizar el
+primer punto de la cuneta con el talud superior de la sección de
+terraplén, para que el último punto de la cuneta coincida con el
+terreno.<br /><br /><span class="Titulo_2" style="font-weight: bold;"><a name="cunetapieterraplen">Cuneta en pie de terraplén<br /><br /></a></span></span></span></span></span><span style="font-weight: normal;"><img style="width: 295px; height: 136px; float: right;" alt="" src="Imagenes/cuneta_pie_terraplen.png" />En las secciones de terraplén se añade la cuneta a partir del pie de terraplén (se cambia el código 601 por el 591).<br />
+      <br />
+</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2" style="font-weight: bold;"><span style="font-weight: bold;"><br />
+</span>
+      <br />
+
+      </span></span></span></span><span class="Titulo_2"><a name="cierre_subras">Cierre de la subrasante con la cuneta</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+A continuación se muestran las distintas posibilidades para las cunetas
+colgadas del borde del arcén o de la berma:<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; margin-left: auto; margin-right: auto; width: 657px;" border="0" cellpadding="2" cellspacing="12">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: left;"><img style="width: 261px; height: 200px;" alt="" src="Imagenes/cuneta_cierre_subras_1.png" /><br />
+            <br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: left; width: 282px;"><img style="width: 251px; height: 229px;" alt="" src="Imagenes/cuneta_cierre_subras_2.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="Info" style="vertical-align: top; text-align: justify;">Por
+defecto, cuando la subrasante tiende a pasar por debajo del vértice de
+la cuneta, se cierra contra el punto de control de la cuneta (<span style="font-weight: bold;">SubRasante</span> = 0) y con talud vertical
+(<span style="font-weight: bold;">Talud</span> = 0).<br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 282px;">Cuando
+se define el cierre de la subrasante a un punto de la cuneta (0, 1,
+2,&#8230;) con un talud y la cuneta corta al terreno antes de alcanzar el
+punto previsto, se cierra la subrasante hacia el punto de corte con el
+terreno y con el talud definido.<br />
+            <br />
+Los puntos de la cuneta que quedan ahora antes de la unión
+rasante-subrasante se recodifican como 90, 91,...<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 290px; height: 216px;" alt="" src="Imagenes/cuneta_cierre_subras_3.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 282px;"><img style="width: 315px; height: 182px;" alt="" src="Imagenes/cuneta_cierre_subras_4.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: justify;"><span class="Info">Se puede llevar también la subrasante hasta el punto
+donde se une la berma de despeje exterior con el inicio del desmonte.</span><br />
+            </td>
+            <td style="vertical-align: top; width: 282px;"><span class="Info">Un
+valor negativo (p .ej., -1 ó -2) hace subir la subrasante a buscar la
+berma (código 50) o el arcén (código 11), el punto de corte sigue
+teniendo código 100. Para evitar desorden en los códigos se recodifican
+los puntos de la plataforma (50,11,..) que ahora quedan después del
+corte de la subrasante (50 pasa a 150, 11 pasa a 111, etc.).</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span><span class="Titulo_2"><a name="revestimiento">Revestimiento de cuneta</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><img style="width: 161px; height: 92px; margin-left: 7px;" alt="" src="Imagenes/cuneta_revestida.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>BIM
+permite definir el revestimiento interior de la cuneta. El valor del
+espesor de revestimiento se indica en el campo <span style="font-weight: bold;">Revest</span>. Es posible defininir un revestimiento diferente para las paredes laterales.Cuando se usan
+valores de revestimiento, el programa obtiene su cubicación en los
+listados de volúmenes.<br />
+      <br /></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/revest_cuneta.png" alt="" style="width: 309px; height: 112px;" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Cuando la cuneta arranca desde el borde de la berma, si el
+revestimiento se inicia con un tramo horizontal, se le da a este tramo
+la misma pendiente de la berma. Si la cara exterior de la cuneta corta
+al terreno, se interrumpe la sección donde el revestimiento corta al
+terreno.<br />
+      <br />
+Como en muchos proyectos el espesor del revestimiento depende de la pendiente
+longitudinal, el programa da la opción de condicionar el espesor de
+revestimiento en función de dicha pendiente. Esto se consigue haciendo
+uso del botón <span style="font-weight: bold;">[%]</span>, lo que
+despliega un cuadro de diálogo donde es posible declarar tres valores
+distintos de revestimiento en función de dos pendientes de corte:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 309px; height: 94px;" alt="" src="Imagenes/dialogo_revestimiento_cuneta.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Puede fijarse un punto del vector apartir del cual se inicia el revestimiento de la cuneta.<br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span><span class="Parrafo">Podemos poner
+en el espesor de revestimiento un
+valor negativo. Con valor&nbsp; negativo se mantiene tambén el ancho
+total.
+(Es valido para cunetas paramétricas y vectoriales asimilables) Es
+conveniente poner SubRasante=1, para que esta alcance a la cuneta
+modificada. Si se utiliza un valor de revestimiento negativo se
+inhabilita la casilla de espesor para el revestimiento de las paredes
+laterales.<br />
+      <br />
+Se puede definir el <span style="font-weight: bold;">revestimiento de cuneta de forma vectorial</span>. El vector se aplica a partir de un código (p.e. 50) hasta que el vector llega a cortar a la superficie de excavación (L68).<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/cuneta_revest_vec.png" alt="" style="width: 320px; height: 115px;" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Puede definirse un código de referencia alternativo, por ejemplo si la cuneta salta a Terraplén y lleva un código diferente.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 184px;" alt="" src="Imagenes/cun_guarda_revest_vec_codigoref.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<br />
+      <a name="Bascular"><span class="Titulo_2">Bascular</span><br />
+      <br /></a></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción <span style="font-weight: bold; font-style: italic;">Bascular (P-P0)</span> permite fijar el comportamiento típico de una <span style="font-weight: bold;">berma-cuneta</span>. Para ello se define aquí un valor de peralte <span style="font-weight: bold;">P0</span>, que puede ser el peralte de bombeo. Si la calzada vierte hacia la cuneta con un peralte <span style="font-weight: bold;">P</span> superior al valor <span style="font-weight: bold;">P0</span>, se hace bascular la cuneta un valor <span style="font-weight: bold;">P-P0</span>. Si el peralte es menor o vierte hacia el otro lado, la cuneta no se mueve.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/cuneta_bascular.png" alt="" style="width: 550px; height: 159px;" /></span><span class="Parrafo"></span></div>
+
+      <span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">
+Para secciones con <span style="font-weight: bold; font-style: italic;">Control/Cuneta</span> = Suelo Seleccionado / Suelo Seleccionado o
+Fondo Cuneta / Suelo Seleccionado, se puede poner <span style="font-weight: bold; font-style: italic;">Bascular</span> = -100.00 % para hacer bascular la cuneta con la
+misma pendiente que trae el suelo seleccionado.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rejilla">Rejilla</a></span><br />
+
+      <br />
+La opción Rejilla permte activar la colocación de una tapa de rejilla
+entre dos puntos de la cuneta. Si la cuneta está revestida, la rejilla
+se colocará entre los hombros del revestimiento.<br />
+
+      <br />
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/cuneta_rejilla.png" alt="" style="width: 226px; height: 91px;" /></span></span></span><a name="rejilla"><br />
+      </a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />La rejilla se genera como un cuerpo. Su geometría se puede configurar desde el menú <a href="OL_parametros.html">PARÁMETROS</a>.<br /><br /></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><a name="subeTerraplen"><span class="Titulo_2">Sube por el Terraplén</span><br />
+      <br /></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para cunetas definidas <span style="font-weight: bold; font-style: italic;">Por Longitudinal</span><span style="font-style: italic;"> </span>y <span style="font-weight: bold; font-style: italic;">Pie Terraplén</span><span style="font-style: italic;"> : </span>si
+se activa esta opción y la cota del longitudinal está por encima del
+fondo de cuneta mínimo la cuneta sube por el talud del terraplén para
+cumplir con el longitudinal conservando la profundidad mínima (la que
+define la geometría teórica de la cuneta). En este caso se genera la
+cuneta completa trasladando automáticamente el valor de punto obligado
+al último punto de la cuneta.<br /><br /></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 550px; height: 174px;" alt="" src="Imagenes/cuneta_sube_por_terraplen.png" /></span><br />
+      </div>
+      <span class="Parrafo"><br /></span><span class="Parrafo"><span class="Titulo_2"><a name="material">Material</a></span><br />
+
+
+      <br class="Parrafo" />
+      <span style="font-weight: normal;" class="Parrafo">
+Es posible revestir la cuneta eligiendo entre cuatro materiales de revestimiento diferentes.</span><br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 549px; height: 225px;" alt="" src="Imagenes/revestimiento_cuneta_material.png" /></span><br /><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>La cuneta revestida aparecerá representada siempre por la
+superficie genérica 176, y además por un tipo específico para cada uno
+de los materiales (446 para el Material 1, 231 para el Material 2, 232
+para el Material 3 y 233 para el Material 4).<span class="Parrafo"><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Aprovechamiento de vía</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>APROVECHAMIENTO DE PLATAFORMA DE VÍA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+      Este
+menú permite definir por tramos la forma en la que se puede aprovechar
+todo o parte de una plataforma existente, para realizar una ampliación
+lateral o un ensanche por ambos lados.<br />
+      <br />
+      <img style="width: 177px; height: 148px; margin-left: 7px;" alt="" src="Imagenes/perf_aprovechamiento.png" align="right" />El
+perfil del terreno debe estar extraído con las opciones que incluyen la
+superficie del balasto existente hasta el hombro. Por tanto la
+extracción de perfiles para aprovechamiento de plataforma de vía es
+similar a la del caso de proyectos de <a href="OL_EyM.html">ensanche y mejora</a>
+con la diferencia de que el tipo de línea a declarar es el
+correspondiente al hombro de balasto, admitiéndose además una distancia
+a una línea de referencia.<br />
+      <br />
+También aparece la posibilidad de seleccionar el tipo de línea que representa el <span style="font-weight: bold;">eje existente</span>. Si se selecciona un tipo válido, se incluye en los perfiles transversales el símbolo S196 en la posición del eje existente.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 554px; height: 218px;" alt="" src="Imagenes/dialogo_ffcc_aprovechamiento.png" /><br />
+      </div>
+      <br />
+      <img style="width: 344px; height: 216px; margin-left: 7px;" alt="" src="Imagenes/modelo_aprovechamiento.png" align="right" />En cada tramo de aprovechamiento se define:<br />
+      <ul>
+        <li>Tramo en la que se aplicaran los datos (<span style="font-weight: bold;">PKi</span>, <span style="font-weight: bold;">PKf</span>).</li>
+      </ul>
+      <ul>
+        <li>Talud teórico del balasto de la plataforma existente (<span style="font-weight: bold;">Te</span>).</li>
+      </ul>
+      <ul>
+        <li>Talud de los escalones de terraplén, suelo seleccionado, capa de forma y subbalasto (<span style="font-weight: bold;">T</span>).</li>
+      </ul>
+      <ul>
+        <li>Ancho del escalón en la base de la capa de forma (<span style="font-weight: bold;">A</span>).</li>
+      </ul>
+      <ul>
+        <li>Es el ancho del escalón en la base del sub-balasto (<span style="font-weight: bold;">A2</span>).</li>
+      </ul>
+      <ul>
+        <li>Distancia mínima en la que se sanea el balasto existente (<span style="font-weight: bold;">P</span>).</li>
+      </ul>
+
+      <br />
+Finalmente, se deben tener en cuenta las siguientes consideraciones:<br />
+      <ul>
+        <li>El balasto proyectado se genera en su totalidad.</li>
+      </ul>
+      <ul>
+        <li>La opción <span style="font-weight: bold; font-style: italic;">No subbalasto</span> se debe activar si no se desea aprovechar el subbalasto existente.</li>
+      </ul>
+      <ul>
+        <li>En el caso de no aprovechar la plataforma existente en
+cuanto a subbalasto se permite definir un espesor de subbalasto en la
+zona central mayor que en los lados y que, sustituye a una parte de la
+capa de forma (<span style="font-weight: bold;">Esub</span>).</li>
+      </ul>
+      <ul>
+        <li>Para el saneo de terraplén se recomienda utilizar un saneo
+de tipo 2 con anchos y talud de escalones coherentes con los datos aquí
+introducidos.</li></ul><ul><li>Casilla&nbsp;<span class="Parf_negrita">Eje</span>:
+Si en el tramo de aprovechamiento escribimos el número de un eje
+previamente calculado, entonces la nueva plataforma se apoya
+aprovechando íntegramente la del eje referido, (balasto, subbalasto,
+capa de forma, terraplén...) En el perfil de ISPOLn.per, se incorporan
+dos nuevas superficies con la geometría original de las superficies 67
+y 68, que se utilizan cuando se han definido algunas capas desde el
+menú de paquetes de firme.</li>
+      </ul>
+<span class="Parrafo"><span class="Parrafo">
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

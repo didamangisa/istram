@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plataforma</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLATAFORMA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br /><img style="width: 336px; height: 280px; margin-left: 7px;" alt="" src="Imagenes/modelo_plataforma.png" align="right" />Este menú se centra en definir la plataforma ferroviaria por tramos de aplicación. El ancho <span style="font-weight: bold;">A2</span> y pendiente <span style="font-weight: bold;">P2</span> del hombro del balasto y el talud exterior del balasto <span style="font-weight: bold;">T3</span> son definidos con un valor de partida en el menú <a href="OL_ffcc_via_traviesa.html">VÍA y TRAVIESA</a> para extraerlos de allí con la opción <span style="font-weight: bold;">[Automático]</span> de este menú.<br />
+      <br />
+En el cuadro de diálogo se ofrece la posibilidad de definir de manera
+automática el ancho del balasto utilizando líneas presentes en la
+cartografía (botón <a href="OL_calzadas_aux.html#a2_linea"><span style="font-weight: bold;">[A2 por línea]</span></a>).<br />
+      <br />
+Utilizando la opción <span style="font-weight: bold;">[A2 por tabla]</span> se pueden definir tablas con diferente sobreancho para el lado interior y exterior (tablas&nbsp;<span class="Archivo">galiboTB.tsa</span> y&nbsp;<span class="Archivo">galiboTM.tsa</span>). El parámetro <span style="font-style: italic;">Exc</span>
+de estas tablas permite utilizar el radio real del eje de cada vía
+teniendo en cuenta la excentricidad con el eje en planta y los anchos
+de entrevía.<br />
+Otra tabla contenida en la librería del programa es la&nbsp;<span class="Archivo">GaliboRT.tsa</span>.
+Esta tabla aplica un retranqueo en los puntos inicial y final de las
+zonas de transición (recta, curva, clotoide) teniendo en cuenta los
+valores definidos en la tabla para las zonas exteriores e interiores de
+las curvas.<br />
+Esta tabla también se puede aplicar en el menú <a href="OL_ffcc_exc_entrevia.html">Excentricidad y entrevía</a> para el caso de definir los sobreanchos de la entrevía mediante estos retranqueos.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 608px; height: 438px;" alt="" src="Imagenes/galiboRT_ejemplo.png" /><br />
+      </div>
+
+      
+      <div style="text-align: center;"><span class="Info">Tabla GaliboRT.tsa</span><br />
+      </div>
+<br />
+En el menú PLATAFORMA se definen también los <span style="font-weight: bold;">pasillos</span> o <span style="font-weight: bold;">paseos</span>. La pendiente transversal del paseo (<span style="font-weight: bold;">P4</span>) puede ser independiente o bien puede aparecer en prolongación del subbalasto haciendo <span style="font-weight: bold;">H3</span> &lt; 0. En ese caso toma la pendiente definida con la limatesa exterior, si ésta está definida.<br />
+Este ancho del pasillo A4 puede darse también a partir de una línea de la cartografía (Botón <a href="OL_calzadas_aux.html#a2_linea"><span style="font-weight: bold;">[A4 por línea]</span></a>).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 631px; height: 316px;" alt="" src="Imagenes/menu_plataforma.png" /><br />
+      </div>
+      <br />
+Es posible utilizar la opción <span style="font-weight: bold;">No hacer transición entre datos</span>. De modo que los valores introducidos para un PK se conservan hasta el siguiente PK.<br />
+<br />
+También se definen los siguientes parámetros:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 124px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">A1<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">En caso de doble vía, define el ancho hasta el hombro interior del balasto.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">P1<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">En caso de doble vía, define la pendiente hasta el hombro interior del balasto (absoluta o relativa al peralte).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">T1<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">En caso de doble vía, define el talud interior para el balasto en la zona de la entrevía.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">A2<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Define el ancho hasta el hombro exterior del balasto.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px;"><span style="font-weight: bold;">P2</span><br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Define la pendiente hasta hombro exterior del balasto (absoluta o relativa al peralte).<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Eje</span><br />
+            </td>
+            <td style="vertical-align: top;">Para dos vías situadas en
+dos ejes que circulan paralelos, tenemos la posibilidad de cerrar el
+hombro del balasto (código 11) sobre el hombro del otro eje (se añade
+un punto con código 11.5) y trasladar el talud del balasto a este
+punto. Simultáneamente se puede cerrar también el hombro del balasto
+del otro eje sobre éste. Y si entra el código 3 del otro eje antes del
+final del pasillo (código 13 propio) lo inserta también con el código
+11.6<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 62px;"><span style="font-weight: bold;">T3</span><br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Talud exterior del balasto. Si se da un valor negativo,
+el valor introducido representará la proyección en planta de ese talud,
+es decir, la distancia horizontal entre el hombro y el pie del balasto.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">H3<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Define el desnivel entre el carril y el paseo. Si se da un valor negativo el paseo se
+coloca en prolongación de la superficie de subbalasto cuyo espesor se
+define en el menú de <a href="OL_ffcc_exc_entrevia.html">EXCENTRICIDAD Y ENTREVÍA</a>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">A4<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Distancia entre el centro de la vía y el extremo del pasillo.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 62px; font-weight: bold;">P4<br />
+            </td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Es la pendiente transversal del paseo. Pero si H3
+&lt; 0 entonces tomará la pendiente que lleve la superficie de
+subbalasto.
+            </td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">min</span></td><td>Valor mínimo para el ancho del pasillo tras el pie del balasto.</td></tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Bombeo (%)</span><br />
+            </td>
+            <td style="vertical-align: top;">Posibilidad
+de definir una pendiente (positiva o negativa) de bombeo para el balasto entre los carriles.
+Si se quiere prolongar esta pendiente hasta el hombro del balasto
+debemos elegir tmbién, origen de pendientes: Traviesa.<br />
+El valor del bombeo del balasto se puede definir por PKs.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 62px;"><span style="font-weight: bold;"><a name="origen_de_pendientes">Origen de pendientes</a></span><a name="origen_de_pendientes"><br />
+            </a></td>
+            <td style="vertical-align: top; width: 610px; text-align: justify;">Esta opción controla los dos modos posibles para
+geometría del balasto desde el fin de la traviesa hasta el hombro y en
+caso de entrevía de tipo 1 en la entrevía hasta el otro cuerpo del
+balasto:<br />
+            <ul>
+              <li><span style="font-weight: bold;">
+Horizontal (Indep.)</span>: Define el hombro del balasto y la entrevía horizontales.</li>
+              <li><span style="font-weight: bold;">
+Traviesa (Subpara)</span>: Extrapola con la misma pendiente transversal que el peralte.</li>
+            </ul>
+El valor P2 para la pendiente del hombro
+del balasto se aplicará desde el plano de la traviesa o desde la
+horizontal, según el caso.
+      
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic;">Sin 3 y 4</td>
+            <td style="vertical-align: top; text-align: justify;">Al activar esta opción se eliminan los puntos 3 y 4 de la
+plataforma (talud del balasto y el pasillo) de modo que la plataforma
+fija, o la berma o la cuneta o la sección de terraplén comienzan desde
+el teórico hombro del balasto. Con esto se puede definir por ejemplo
+secciones en <a href="OL_tuneles.html">túnel</a> o abiertas con andenes cuya altura se mide desde ese
+teórico hombro del balasto.<br />
+Si marcamos esta casilla en el primer dato se arrastra este comportamiento para todos los datos que se definan.<br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[ ] Hombro de Balasto y H3 fijos desde la cota de rasante</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Activando
+esta casilla la cota del hombro del balasto sube/baja en el extremo de
+la traviesa hasta una cota relativa a la rasante&nbsp; Zh = Zrasante -
+Canto_carril - sth (siendo sth la cantidad que sobresale la traviesa
+por encima del balasto). Y H3 se aplica desde la cota de la rasante
+incluso del lado del carril alto. En Vía doble la zona interior se
+mantiene con Zh.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <br />
+      <img style="width: 261px; height: 54px;" alt="" src="Imagenes/plat_ffcc_cambio_eje.png" align="right" hspace="6" />Desde este menú podremos cambiar de eje sin necesidad de salir del mismo.<br />
+      <br />
+<br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

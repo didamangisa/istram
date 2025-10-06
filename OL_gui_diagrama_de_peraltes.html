@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Diagramas de peraltes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: DIAGRAMAS DE PERALTES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Desde
+este cuadro de diálogo es posible establecer el diagrama de peraltes en
+los planos de longitudinales. Las opciones de configuración del mismo
+son las siguientes:<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 324px;" alt="" src="Imagenes/gui_diag_peraltes.png" /><br />
+      </div>
+      <br />
+      </span><span class="Parrafo"><span class="Parf_negrita">Peralte independiente</span>:
+Si tenemos definidos Anchos Independientes y alguno de los anchos tiene
+aquí definido su Peralte independiente, entonces se puede dibujar en la
+guitarra esta ley de peraltes además del <span class="Parf_negrita">peralte principal</span>
+o bien una de las dos leyes. Se define un desplazamiento vertical para
+el dibujo de la ley principal o la independiente, y en el caso de esta
+última se define el número de la calzada (<span class="Parf_negrita">Ancho</span>) que tiene el peralte independiente.<br /><span style="font-weight: bold;">Añade la anotación del peraltes del 3º Hilo</span>: esta opción permite rotular el peralte correspondiente al tercer carril.<br /><span style="font-weight: bold;"><br />Distancia mínima entre rotulos</span>:
+No rotula los valores de PKs, peraltes, etc... si están entre sí a una
+distancia menor que la dada, para evitar que se superpongan muchos
+datos en leyes de peraltes deducidas en entronques o ensanche y mejora.<br />
+      <br />
+Activando la casilla <span style="font-weight: bold; font-style: italic;">Diagrama de peraltes</span>,
+éste se dibuja diferenciando derecha e izquierda y con los tipos de
+línea y a la distancia del plano de comparación especificados. Aunque
+si se da un tipo de línea negativo el diagrama no se dibuja, es posible
+definir el lado que se desea representar con el botón conmutable <span style="font-weight: bold;">Lado</span>,
+pudiendo seleccionarse entre derecha, izquierda y ambos lados. Si
+solamente se ha definido un dato de peralte al inicio del eje, se añade
+otro igual en el último PK al objeto de poder dibujar el diagrama de
+peraltes a lo largo de todas las hojas. También habrá que declarar la <span style="font-weight: bold;">escala</span>
+de dibujo, en milímetros de papel por punto de peralte en % (en el caso
+de carreteras, donde una escala típica es 1) o en milímetros de papel
+por milímetro de peralte (en el caso de ferrocarriles, donde una escala
+apropiada puede ser 0,05 ó 0,1). <br />
+      <br />
+Si se trata de un eje de ferrocarril, se marcará la casilla <span style="font-weight: bold; font-style: italic;">FFCC</span>
+lo que, además de provocar que cambie la escala a mm/mm como ya se ha
+dicho, hace necesario especificar, en el caso de doble vía, cuál es la
+que se quiere representar (derecha, izquierda o ambas) pues en el diagrama se representan las
+diferencias de cota de ambos carriles de la vía respecto al hilo bajo.
+En este caso, por tanto, el <span style="font-weight: bold;">lado</span>
+especificado NO hace referencia a la vía derecha, izquierda o ambas,
+sino al <span style="font-weight: bold;">carril</span> derecho, izquierdo o ambos. Todo esto permite, por
+ejemplo, observar en el diagrama de peraltes para ferrocarriles la
+diferencia de cota entre el hilo bajo y la rasante para las curvas en S
+y compensación del centro de gravedad. La <a href="OL_gui.html">plantilla</a>
+      <span class="Archivo">ffcc02.gui</span>, que se entrega con la
+librería, es un buen ejemplo para ferrocarriles.<br />
+      <br />
+En el caso de tratarse de un diagrama de peraltes en ferrocarriles de vía doble, al activar la casilla <span style="font-weight: bold; font-style: italic;">FFCC</span>
+y seleccionar el dibujo para ambas vías, se puede dar un desplazamiento
+vertical que permite desdoblar el dibujo del diagrama para la vía
+izquierda. Este desplazamiento afecta al diagrama, valor del peralte,
+pendiente de borde, PK's y trazos verticales:<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_diag_peraltes_ffcc.png" style="width: 468px; height: 84px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+También es posible representar el <span style="font-weight: bold;">diagrama
+de cotas relativas de borde</span>,
+con el tipo especificado para cada uno (tipos negativos provocan que no
+se dibuje) y a la distancia al plano de comparación que se indique. En
+es caso la escala se mide en milímetros de papel por metro de
+diferencia de cota.<br />
+      <br />
+A continuación se indica si se desea representar las <span style="font-weight: bold;">etiquetas de peralte</span> y de <span style="font-weight: bold;">cota relativa de borde</span>.
+En tal caso, se especificará el tipo de símbolo a utilizar tanto para
+la derecha como para la izquierda (valores negativos provocan que no se
+representen). Este tipo debe ser coherente con lo se va a representar.
+Así, para el caso de peraltes, el símbolo 569 para la derecha y 570
+para la izquierda son apropiados en el caso de carreteras, mientras que
+si se trata de ferrocarriles, debido a la diferente representación que
+usa, es mejor utilizar el 538 para el carril derecho y el 639 para el
+carril izquierdo.<br />
+      <br />
+La rotulación de las cotas relativas de borde utiliza las etiquetas 569
+y 570, y puede realizarse en cm. En este caso bastará con marcar la
+casilla <span style="font-weight: bold; font-style: italic;">cm</span>
+y usar los tipos 647 y 648 para el borde derecho e izquierdo
+respectivamente, a los que conmuta de forma automática al marcar dicha
+casilla. Puede también marcarse la casilla <span style="font-weight: bold;">Borde de arcén</span> para referir la cota a él.<br />
+      <br />
+Para ambos casos puede indicarse también un desplazamiento horizontal y
+un ángulo. En cuanto a la <span style="font-weight: bold;">escala</span>,
+lo normal será que sea del mismo orden la del diagrama de peraltes con
+la de los símbolos de peraltes, y la del diagrama de cotas relativas de
+borde con la de los símbolos de dichas cotas. Dicha escala se refiere
+al ancho del diagrama y no al tamaño del símbolo, por lo que valores
+diferentes al del diagrama provocarán desplazamientos verticales de las
+etiquetas relativos al diagrama.<br />
+      <br />
+Estos símbolos pueden representar sólo al inicio de tramos de
+peralte/cotas relativas de borde constantes (opción <span style="font-weight: bold;">planos</span>) o para cada dato (opción <span style="font-weight: bold;">todos</span>). Además, en el caso de las etiquetas de peralte, </span><span class="Parrafo">el peralte se puede anotar con su signo</span><span class="Parrafo"> y habrá que indicar, igual
+que para el diagrama, si se trata de ferrocarril y para doble vía, de
+cuál se quieren representar los datos. Si seleccionamos la opción <span style="font-weight: bold;">curva</span>,
+sólo se representará el peralte en las curvas. En este caso el PK de
+referencia para rotular el peralte es el del centro de la curva. En
+este caso se puede acompañar también el rótulo del peralte con otro
+símbolo que incluye el número de la curva.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_diag_peraltes_curva.png" style="width: 601px; height: 33px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br /></span><span class="Parrafo"><span class="Parrafo">Podemos rotular las transiciones de peralte, a partir de los <span style="font-weight: bold;">múltiplos</span> de un determinado valor. </span><span class="Parrafo">Se puede usar con las opciones <span style="font-weight: bold;">Todos</span> o <span style="font-weight: bold;">Todos signo</span>; o se puede usar en combinación con la opción <span style="font-weight: bold;">Interpolar</span>
+para mostrar los valores en PK inicial, PK final y los múltiplos
+indicados del símbolo de anotación del peralte, el PK/estaca, las
+distancias parciales y los trazos verticales.</span><br />
+      <span class="Parrafo">
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_diag_peraltes_multiplos.png" style="width: 633px; height: 37px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_diag_peraltes_multiplos_ejemplo.png" style="width: 545px; height: 131px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      El
+peralte se puede rotular también en grados sexagesimales (a excepción
+de para FFCC), la notación puede ser en formato decimal o en grados,
+minutos y segundos, dependiendo del símbolo elegido para la
+representación.<br />
+<br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 194px; height: 32px;" alt="" src="Imagenes/gui_diag_peraltes_sexagesimal.png" /><br />
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+En cuanto a las <span style="font-weight: bold;">pendientes relativas
+de borde</span>,
+éstas se representarán con el tipo indicado a izquierda y derecha
+(valores negativos provocan que no se representen), a la distancia
+respecto al plano de comparación que se especifique y según la escala
+(que será del mismo orden que para el caso del diagrama de peraltes y
+sus variaciones se traducirán en desplazamientos respecto al diagrama).
+También puede indicarse un desplazamiento horizontal y un ángulo. En
+cuanto a qué diagrama asociar las etiquetas de pendiente relativa de
+borde, se ofrecen tres posibilidades:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Diag.Peraltes</span>:
+Asociar al diagrama de peraltes, para el caso de carreteras.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cot.Rel.Bor</span>:
+Asociar al diagrama de cotas relativas de borde.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">mm/m
+FFCC</span>: Asociar al diagrama de peraltes, para el caso de
+ferrocarriles. En este caso conviene usar el símbolo S321.</span></li>
+      </ul>
+      <span class="Parrafo"><span style="font-weight: bold;">Variación del Peralte/m</span>: rotulación de la variación del peralte por metro lineal.<br />
+      <br />Para la rotulación del Pk, se admiten 3 modos:&nbsp;<span style="font-weight: bold;">PK/Estaca/Pk Usuario</span>. Por lo que
+se representa el PK, la estaca o el Pk Usuario (el Pk deducido de las ecuaciones de Pk) de los puntos dato con la
+distancia al plano de comparación, el desplazamiento horizontal y el
+ángulo indicados. Si se activa la casilla <span class="Parf_negrita">[]Sólo datos</span>
+se inhibe la rotulación en los pasos por el valor cero del peralte.
+Podemos definir además el uso de varios símbolos distintos según el
+tipo de punto:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">BS: PKs en bombeo-bombeo (por defecto, S1060)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">PX: PKs con un lado a peralte 0% y el otro en bombeo (por defecto S0161)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">PY: PKs con el peralte al valor de bombeo (por defecto S1062)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">MS: PKs con el peralte de la curva (por defecto S1063)<br />
+          </span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+El diagrama de peraltes también puede ser <span style="font-weight: bold;">triangular</span>.
+Para ello, el programa usa símbolos (por defecto, el 577 para la
+izquierda y el 578 para la derecha) con forma triangular y que se
+dibujan de forma proporcional al peralte. De todos formas, el programa
+distingue entre peralte positivo y negativo, por lo es posible definir
+un símbolo diferente en cada calzada para peraltes positivos y
+negativos. En este caso el símbolo no debe llevar factor de escala en
+las X (la <a href="OL_gui.html">plantilla</a>&nbsp;<span class="Archivo">ISP06_T.gui</span>
+de la librería hace uso de esta posibilidad). Los símbolos utilizados
+se ubicarán según la distancia al plano de comparación que se indique,
+y también se les puede suministrar un desplazamiento horizontal y un
+ángulo.<br />
+      <br />
+Existe la posibilidad de rotular las <span style="font-weight: bold;">distancias parciales</span> entre puntos singulares. El archivo&nbsp;<span class="Archivo">ISP08T.gui</span> disponible en la librería utiliza esta opción.<br />
+<br />
+Finalmente, se ofrece al usuario la posibilidad de dibujar grupos de <span style="font-weight: bold;">trazos verticales</span> en los PK&#8217;s
+singulares de planta. Basta con especificar su tipo de línea, un
+desplazamiento horizontal si fuera necesario y <span style="font-weight: bold;">desde</span> y <span style="font-weight: bold;">hasta</span> dónde se desean dibujar los
+trazos (referido al plano de comparación).<br />
+      <br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

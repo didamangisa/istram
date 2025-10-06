@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Tablas de alineaciones</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: TABLAS DE ALINEACIONES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span>Posibilidad
+de añadir a cada hoja una Tabla de Alineaciones, como la de el editor
+de .ali, pero con las alineaciones que se ven en esa hoja.<br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">
+Podremos definir una tabla de datos (pestaña <span style="font-weight: bold;">Cabecera</span>) de las alineaciones en planta tales como:<br />
+Número de la alineación, Tipo, PK, Longitud, X tangencia, Y tangencia,
+Azimut, X centro/i, Y centro/i, Radio, Parámetro, Sentido de la curva
+(derecha/izquierda), Subtangente de la curva circular, Tangente larga y
+corta de las clotoides, Externa de la curva, PK del vértice PI de la
+curva, PK final de cada alineación (recta, círculo o clotoide),
+Coordenadas X,Y del vértice PI de la curva, Xc clotoide, Yc clotoide, p
+de la clotoide, k de la clotoide, Peralte de la curva, Sobreancho de la
+curva, Ángulo de deflexión en grados sexagesimales (clotoides y
+circulares).<br />
+      <br />
+Podremos establecer una tabla con la numeración independiente según el tipo (recta, círculo, clotoide) activando la casilla <span style="font-weight: bold;">Numerar por tipos</span>.<br />
+Activando la opción <span style="font-weight: bold;">Saltar las rectas</span> el programa no generará en la tabla aquellas alineaciones rectas.</span></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span><span class="Archivo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Incluir punto inicial y final</span>: En este caso sólo se rotula pk,x,y,azimut.</span></span><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 560px; height: 331px;" alt="" src="Imagenes/gui_tabla_ali.png" /><br />
+      </div>
+      <br />
+Disponemos en la librería de ISPOL la guitarra&nbsp;<span class="Archivo">TABLA_ALI.gui</span> como ejemplo.<br />
+<br />Activando la casilla <span class="Parf_negrita">Modo Replaneo PST,PC.PI.PT</span>, se da acceso a un modo especial:<br /><br /></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 560px; height: 345px;" alt="" src="Imagenes/gui_tabla_ali_Modo_Rep.png" /></span></span><br /><span class="Parrafo"><span class="Parrafo"></span></span></div><span class="Parrafo"><span class="Parrafo"><br />Que
+extrae de cada eje los puntos de los vértices de las curvas (PI), los
+puntos de inicio y final de las curvas (PC, PT) y un punto en los
+múltiplos de 500m que estén sobre las rectas (PST).<br /><br />En este modo se pueden definir los siguientes parámetros:<br /></span></span><ul><li><span class="Parrafo"><span class="Parrafo">X tangencia, Y Tangencia (con las coordenadas del punto, se utiliza el símbolo que se defina en caso de recta)</span></span></li><li><span class="Parrafo"><span class="Parrafo">Angulo
+vértice: En este caso es el ángulo desde la estación a el punto visado
+tomando como origen la visual al punto anterior. (también se utiliza el
+símbolo definido para el caso de recta)</span></span></li><li><span class="Parrafo"><span class="Parrafo">Distancia vértices. La distancia entre estación y punto visado. Símbolo definido para recta.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Estación. Pk utilizando el símbolo según el punto sea PST,PC,PI,PT(editado)</span></span></li><li><span class="Parrafo"><span class="Parrafo">Punto visado. Pk utilizando el símbolo según el punto sea PST,PC,PI,PT</span></span></li><li><span class="Parrafo"><span class="Parrafo">Rumbo. Rumbo entre estación y pinto visado en notación Cuadrantal&nbsp; (N-E, N-W,S-E,S-W).</span></span></li></ul><span class="Parrafo"><span class="Parrafo">Se añade en la librería el archivo <span class="Archivo">PSTS.gui</span> que utiliza esta tabla. Vea también <a href="OL_ficheros_ali.html#tabla_de_alineaciones">Tabla de Alineaciones</a> de <span class="Archivo">*.ali</span>.<br /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+</body></html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Bermas de despeje</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BERMAS DE DESPEJE<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">La berma de despeje es un tramo de la
+sección que se puede intercalar entre la cuneta y el talud de desmonte,
+antes de la cuneta, o antes de la berma en pavimento para alejar el
+talud de la plataforma cuando provoca interrupción del campo visual y
+pérdidas de trazado.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 186px;" alt="" src="Imagenes/dialogo_berma_despeje.png" /><br />
+      </div>
+      <br />
+Los botones <span style="font-weight: bold;">[Guardar]</span> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" />, <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" /> e <span style="font-weight: bold;">[Insertar]</span> pueden utilizarse para
+salvar y recuperar un archivo con definición de bermas de despeje. Los
+archivos tienen extensión&nbsp;<span class="Archivo">.bdj</span>, y
+pueden provenir tanto de este menú como de un <a href="OL_visibilidad.html">estudio de VISIBILIDAD</a>.<br />
+      <br />
+El programa admite varios tipos de bermas de despeje:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tipo
+exterior</span>: La berma se intercala entre la cuneta y el talud de
+desmonte.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tipo
+interior</span>: La berma de despeje se coloca entre el arcén más
+externo y la berma. Esta berma obedece al botón <span style="font-weight: bold;">[NO CONCAVA/CONCAVA] </span>definido en la
+berma de desmonte. Si está definido escalón en la berma de desmonte, el
+escalón se realiza en el inicio de la berma de despeje interior.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tipo
+interior cuneta</span>: La berma de despeje se coloca entre la berma de
+desmonte y la cuneta.</span></li>
+      </ul>
+      <span class="Parrafo">La berma de despeje se define en una tabla
+por PK&#8217;s, definiéndose para cada dato un segmento a cada lado. Cada
+segmento se define por un ancho (<span style="font-weight: bold;">A</span>) y, o bien un desnivel (<span style="font-weight: bold;">H</span>), o bien una pendiente (<span style="font-weight: bold;">P</span>). Así, una berma de despeje
+de 1 m con el 10 % de pendiente hacia la plataforma, se definiría con
+un valor de <span style="font-weight: bold;">A</span>=1.0 y de <span style="font-weight: bold;">H</span>=0.1 ó <span style="font-weight: bold;">P</span>=10.<br /><br />Berma <span style="font-weight: bold;">exterior</span>:
+tenemos la posibilidad de que esta berma exterior se aplique también en
+terraplén y en estructuras. En este caso el orden de las bermas de dentro hacia afuera
+será: <br /></span><ul><li><span class="Parrafo">Berma de despeje interior -&gt; Berma de terraplén -&gt; Berma de la barrera de seguridad -&gt;Berma de despeje exterior.</span></li></ul><span class="Parrafo">Si la Berma de despeje <span style="font-weight: bold;">interior</span> es de tipo interior-cuneta, entonces intercambia su posición con la berma de terraplén.</span><br /><span class="Parrafo">
+      <br />
+La opción <span style="font-weight: bold;">[Por línea]</span> permite calcular los valores <span style="font-weight: bold;">A</span> y <span style="font-weight: bold;">H</span>
+a partir de una línea 3D o una línea 2D y la pendiente de la berma.
+También se pueden escoger los tipos exterior, interior e interior
+cuneta. Los nuevos datos se insertan en la lista de datos actual. Es
+posible dar un valor simultáneo a todos los datos de cada columna <span style="font-weight: bold;">H</span>, <span style="font-weight: bold;">P%</span>, <span style="font-weight: bold;">A</span>, <span style="font-weight: bold;">IC </span>o <span style="font-weight: bold;">T</span>.<br />
+<br />
+      </span>
+      <table style="text-align: left; height: 27px; width: 694px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 637px; text-align: justify;"><span class="Parrafo Info">No es frecuente generar en este menú la tabla de
+despeje. Es mucho más fácil utilizar el <a href="OL_visibilidad.html">menú de VISIBILIDAD</a>. Una vez
+que se ha hecho un primer cálculo de la geometría completa del eje en
+estudio, desde ese herramienta se hacen uno o varios estudios de
+visibilidad y pérdidas de trazado y si se ve necesario el cálculo del
+despeje necesario para cumplir las condiciones de visibilidad. <br />
+            <br />
+Después
+de ese análisis, se ordena generar el archivo de datos de berma de
+despeje (.bdj).
+Se regresa a este menú y se carga o inserta el&nbsp;.bdj
+generado en VISIBILIDAD. Después de repasar los datos y corregir los
+que se crea necesario, se guarda el&nbsp;.bdj corregido y el&nbsp;.vol
+del eje. Un cálculo ahora generará la nueva geometría.<br />
+            <br />
+Si se considera
+necesario, puede volverse al menú de VISIBILIDAD a comprobar gráfica y
+numéricamente que la berma en cálculo cumple las prescripciones de
+visibilidad del proyecto, o a estudiar las pérdidas de trazado
+residuales que condicionarán las limitaciones de velocidad,
+señalización, etc.</span> </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Rasantes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: RASANTES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span><img style="width: 310px; height: 250px; float: right;" alt="" src="Imagenes/gui_rasantes.png" hspace="5" /><span class="Parrafo">Desde
+aquí se establece la representación gráfica de la línea de rasante, los
+acuerdos verticales, líneas verticales de referencia,... asociados a la
+rasante (derecha o izquierda).<br />
+      <br />
+En la parte superior del menú aparece el botón <span style="font-weight: bold;">[Copiar de R.izquierda]</span>,
+que hace una copia de todos los valores indicados en RASANTE IZQUIERDA
+a la rasante derecha. Existe un botón homólogo en RASANTE
+IZQUIERDA.<br />
+      <br />
+Es posible <span style="font-weight: bold;">desdoblar la posición del plano de comparación</span> para la rasante izquierda, para así poder representarlas por separado. La plantilla DobleRas.gui hace uso de esta posibilidad.<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_desdoblar.png" style="width: 298px; height: 49px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Mientras el cuadro de diálogo <span style="font-weight: bold;">EDITAR .gui</span>
+esté abierto, el eco de coordenadas (en la parte inferior de la
+pantalla) nos mostrará los valores (dX, dY) relativos al plano de
+comparación.<br />
+</span><span class="Parrafo"><br />
+      </span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><img src="Imagenes/gui_eco_coord.png" style="width: 300px; height: 57px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+
+      <span class="Parrafo">
+      </span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#eje_alzado"><span class="Parrafo">Eje en alzado. Rasantes y acuerdos</span></a><br />
+      <a href="#simb_anot"><span class="Parrafo">Símbolos y anotaciones en rasante o guitarra</span></a><br />
+      <span class="Parrafo"><a href="#ptos_altos_bajos">Puntos altos y bajos</a></span><br />
+      <span class="Parrafo"><a href="#pozos"><span class="Parrafo">Pozos y saltos verticales</span></a><br />
+      <span class="Parrafo"><a href="#tubos">Tubos</a></span><br />
+      <span class="Parrafo"><a href="#viaductos"><span class="Parrafo">Estructuras: viaductos y pasos superiores</span></a><br />
+      <a href="#tuneles"><span class="Parrafo">Estructuras: túneles y pasos inferiores</span></a><br />
+      <span class="Parrafo"><a href="#codos">Codos</a><br /><a href="#Ecuaciones_de_PK">Ecuaciones de PK</a><br />
+</span>
+      <span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="eje_alzado">Eje en alzado. Rasantes y acuerdos</a></span><br />
+      <span class="Parrafo"><br />
+Desde aquí se establecen los tipos de línea para el diagrama de rasantes.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 272px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <img src="Imagenes/gui_rasantes_eje_alzado.png" style="width: 345px; height: 294px;" alt="" />
+
+            <br />
+</td>
+            <td style="vertical-align: middle; text-align: right;"><img src="Imagenes/gui_rasantes_ejemp_alzado.png" alt="" style="width: 327px; height: 180px;" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <table style="text-align: left; width: 690px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Rasante</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Tipo de línea con el que se representa la rasante. Un valor negativo provoca que no se dibuje.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Verticales PC-Ras</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Tipo de línea con el que se dibujan líneas
+verticales desde la rasante hasta el plano de comparación y con la
+pauta establecida en <span style="font-weight: bold;">Múltiplos</span>.
+Un valor negativo para el tipo de línea hace que no se representen. Se recuerda al usuario
+que la opción equivalente pero para la línea de terreno se encuentra en
+<a style="font-weight: bold;" href="OL_gui_terreno.html">TERRENO</a> &#8594; <a style="font-weight: bold;" href="OL_gui_terreno.html#perfil_terreno">PERFIL DEL TERRENO</a> &#8594; <span style="font-weight: bold;">Vertic</span>.,
+por lo que en muchas ocasiones estas verticales no se representan y sí
+las del terreno para evitar una excesiva densificación de la rejilla.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Entrada-Vértice-Salida</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">La polilínea que une los puntos de tangencia de
+un acuerdo vertical con el vértice del mismo se representa con el tipo
+aquí definido. </span><span class="Parrafo">Un valor negativo provoca que no se dibuje.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Acotación</span><br />
+            </td>
+            <td style="vertical-align: top;">Se puede dibujar una línea
+de acotación formada por dos segmentos verticales que parten de los
+puntos de entrada y salida del acuerdo, unidos por un segmento
+horizontal a una altura dy medida desde el más alto de los puntos
+anteriores.Puede darse un dy diferente para los acuerdos cóncavos y para los convexos.<br />
+Se puede definir un símbolo para las flechas en la acotación de los acuerdos (S97 por defecto).<br />
+<br />
+            <div style="text-align: center;"><img src="Imagenes/gui_rasantes_acotacion_simbolo.png" style="width: 233px; height: 30px;" alt="" /><br />
+            </div>
+            <br />
+También se puede marcar una casilla para que dy se defina desde el plano de comparación.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Rasante derecha - Rasante izquierda</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Tipo de línea con el que se dibujan las líneas
+verticales desde la rasante derecha a la rasante izquierda (cuando se
+representan ambas) y con la pauta establecida en <span style="font-weight: bold;">Múltiplos</span>. </span><span class="Parrafo">Un valor negativo provoca que no se dibuje.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 137px;"><span class="Parrafo"><span style="font-weight: bold;">Rasante - Terreno</span></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 533px;"><span class="Parrafo">Tipo de línea con el que se dibujan las líneas
+verticales desde la rasante al longitudinal del terreno en <span style="font-weight: bold;">terraplén</span> y en <span style="font-weight: bold;">desmonte</span> y con la pauta establecida en <span style="font-weight: bold;">Múltiplos</span>. </span><span class="Parrafo">Un valor negativo provoca que no se dibuje.</span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Dibujar alternativas</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite
+establecer 10 tipos de linea con los que dibujar las diferentes
+rasantes alternativas. Además, se puede activar o desactivar su
+visualización de manera independiente, y también activar una casilla (<span style="font-style: italic;">dibujo de banderolas</span>) que incluye el dibujado de la línea Entrada-Vértice-Salida y los comandos de <a href="#simb_anot">Símbolos y Anotaciones</a>.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo">En cuanto a los <span style="font-weight: bold;">TRAZOS VERTICALES EN PUNTOS SINGULARES</span>, se especifican parámetros que permiten dibujar líneas verticales según puntos singulares de alzado (tangencia de <span style="font-weight: bold;">entrada</span>, <span style="font-weight: bold;">vértice</span> o tangencia de <span style="font-weight: bold;">salida</span> de un acuerdo, o bien el propio vértice en el caso de que <span style="font-weight: bold;">no haya acuerdo</span> como en el caso de tuberías). Dichas líneas pueden partir dibujarse:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Desde el plano de comparación</span>:
+Los trazos verticales se dibujan con el tipo de línea indicado (valores
+negativos provocan que no se dibujen) y desde y hasta las coordenadas
+especificadas referidas al plano de comparación. Además, puede
+definirse un desplazamiento horizontal para estos trazos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Desde un punto de la rasante</span>:
+Establecido un tipo de línea (valores negativos provoca que no se
+dibujen), desde el punto singular se dibuja un trazo vertical hasta el
+plano de comparación. Opcionalmente puede indicarse un desplazamiento
+horizontal para estos trazos, así como el punto final respecto al plano
+de comparación (valores positivos provocarán acortamiento y negativos
+alargamiento).</span></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="simb_anot">Símbolos y anotaciones en rasante o guitarra</a></span><br />
+      <span class="Parrafo"><br />
+Se accede aquí a un cuadro de diálogo muy importante, pues define qué valores de la rasante se van a mostrar. <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_simb_anot.png" style="width: 490px; height: 177px;" alt="" />&nbsp;</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Las opciones de rotulación son:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Un símbolo cualquiera (<span style="font-weight: bold;">Símbolo Cualquiera</span>):
+Representa el símbolo indicado. Por ejemplo, en la captura de pantalla
+anterior el símbolo S3 es un pequeño círculo que resalta los puntos de
+tangencia de los acuerdos así como el vértice.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un símbolo cualquiera en acuerdos cóncavos (<span style="font-weight: bold;">Símbolo A.Cóncavo</span>): Igual que el anterior, pero sólo se representará el símbolo en el caso de acuerdos cóncavos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un símbolo cualquiera en acuerdos convexos (<span style="font-weight: bold;">Símbolo A.Convexo</span>): Igual que el anterior, pero para acuerdos convexos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Etiqueta de PK (<span style="font-weight: bold;">PK (E,V,S)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota del vértice de los acuerdos (<span style="font-weight: bold;">CV (Cota vértice)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Parámetro del acuerdo vertical (<span style="font-weight: bold;">KV Acuerdo</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencia angular entre la pendiente de salida y la de entrada a un acuerdo, en radianes (<span style="font-weight: bold;">W Ángulo Ps-Pe rad</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Longitud del acuerdo vertical, en metros (<span style="font-weight: bold;">Longitud Acuerdo</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Flecha de los acuerdos (<span style="font-weight: bold;">Flecha CV-Zras</span>): Diferencia de cota entre el vértice y la rasante.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota de la rasante en puntos singulares (<span style="font-weight: bold;">Zrasante E,V,S</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota de la rasante en los vértices de acuerdo (<span style="font-weight: bold;">Zras en V Cv-Fl</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Longitud del acuerdo en PK&#8217;s
+(Longitud=2T): El valor mostrado es una distancia entre PK&#8217;s (no tiene
+en cuenta, por tanto, la longitud real del acuerdo).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Flecha del acuerdo (<span style="font-weight: bold;">Flecha=T*T/(2Kv)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Número de vértice (<span style="font-weight: bold;">Contador (GVc,GPc)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Longitud de rasante (<span style="font-weight: bold;">Longitud Rasante</span>): Longitud de cada tramo de pendiente constante.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Pendiente en tanto por ciento (<span style="font-weight: bold;">Pendiente % 131,565</span>): Se aconseja usar los símbolos S131 o S565 para rotular este dato.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Pendiente en tanto por uno (<span style="font-weight: bold;">Pend. Tanto x1 161</span>): Se aconseja usar el símbolo S161 para rotular este dato.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Pendiente en tanto por mil (<span style="font-weight: bold;">P.tanto x1000 525</span>): Se aconseja usar el símbolo S525 para rotular este dato.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Pendiente a la entrada de un vértice sin acuerdo (<span style="font-weight: bold;">TgE Vert. Sin Acue.</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Pendiente a la salida de un vértice sin acuerdo (<span style="font-weight: bold;">TgS Vert. Sin Acue.</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Distancia entre dos vértices de acuerdo consecutivos (<span style="font-weight: bold;">Dist entre Vértices</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Pendiente en la mitad del acuerdo (<span style="font-weight: bold;">Tg=Longitud/2</span>):
+El punto medio del acuerdo calculado según mitad de la distancia entre
+PK&#8217;s de entrada y salida (sin tener en cuenta la longitud real del
+acuerdo).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencia angular entre la pendiente de salida y la de entrada a un acuerdo, en tanto por ciento (<span style="font-weight: bold;">W Ángulo Ps-Pe (%)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencia angular entre la pendiente de salida y la de entrada a un acuerdo, en tanto por uno (<span style="font-weight: bold;">W Ángulo Ps-Pe (x1)</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota del terreno (<span style="font-weight: bold;">Z Terreno</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota roja (<span style="font-weight: bold;">Z Roja</span>): Diferencia de cota entre rasante y terreno.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota roja, en caso de desmonte (<span style="font-weight: bold;">Z Roja Desm.</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota roja, en caso de terraplén (<span style="font-weight: bold;">Z Roja Terr.</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Distancias relativas al hectómetro anterior (<span style="font-weight: bold;">Decenas (PK)</span>).</span></li>
+      </ul></span>
+      <ul style="font-weight: bold;">
+        <li>PK falso (E,V,S)</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>KV Acuerdo / 100</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li><span style="font-weight: normal;"><span style="font-weight: bold;">Contador + 1</span>, número de la curva vertical más una unidad.</span><br />
+</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>Desnivel vértices</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Estaca (E,V,S)</span> Tenemos la posibilidad de rotular con estacas mediante símbolo como por ejemplo S756 o S757.<br />
+        </li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Flecha de los acuerdos </span></span>(Flecha Zras-CV) <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">: Diferencia de cota entre la rasante y el vértice.</span></span></span></span></li>
+      </ul>
+      <ul>
+        
+        <li><span style="font-weight: bold;">W Angulo Ps-Pe (x1000) </span>Podemos rotular el ángulo vertical Ps-Pe en tanto por 1000.<br />
+        </li>
+
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <ul>
+        <li><span style="font-weight: bold;">Distancia de parada</span>:
+Posibilidad de rotular la distancia de visibilidad de parada asociada
+al KV. El valor se extrae de la tabla .dia buscando por la columna de
+acuerdo convexo o cóncavo mínimo respectivamente e interpolando el
+valor de la columna de distancia de parada.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Altura de parábola sobre su cuerda<br />
+          <br />
+          </span></li>
+        <li><span style="font-weight: bold;">Sagita en tramo de 26 m</span></li>
+
+      </ul>
+      <ul><li><span class="Parf_negrita">KV1 Acuerdo asimétrico</span> y <span class="Parf_negrita">KV2 Acuerdo asimétrico</span>: Posibilidad de rotular los dos KVs en acuerdos asimétricos.</li></ul><ul><li>Posibilidad de anotar los <span style="font-weight: bold;">Pks de usuario</span> deducidos de la ecuaciones de PK.</li></ul>
+      <ul>
+        <li>Pendiente en grados minutos y segundos<br />
+        </li>
+      </ul>
+
+      
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+Obviamente, el tipo de símbolo a utilizar
+habrá de ser apropiado para el dato a mostrar. Una vez seleccionado el
+tipo de dato a rotular, a continuación se indica de dónde (o en dónde,
+según el caso) se desea representar ese dato de entre las siguientes
+posibilidades:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Vértices de acuerdos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Puntos de tangencia (entradas y
+salidas de acuerdos). Puede escogerse, además, si colocar el símbolo en
+los puntos de tangencia o en el vértice.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Vértices sin acuerdo.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Mitad de un tramo de pendiente constante.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Según una equidistancia y en tramos de pendiente constante.</span></li>
+      </ul></span>
+      <ul>
+        <li>Acotación: En este caso el dato se ubica sobre el PK del
+vértice y la altura se refiere al punto más alto de entre los puntos de
+entrada y salida del acuerdo.</li>
+      </ul>
+      <ul>
+        <li>Punto inicial (Punto de inicio del eje en alzado P1,Z1 de
+la primera rasante). En estos puntos se puede rotular el PK (PK E,V,S)
+o la cota (Zrasante E,V,S) tanto referido a la rasante como en una
+posición fija en la guitarra.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Punto final (Punto final del eje en alzado P2,Z2 de la
+última rasante). En estos puntos se puede rotular el PK (PK E,V,S) o la
+cota (Zrasante E,V,S) tanto referido a la rasante como en una posición
+fija en la guitarra.<br />
+        </li>
+      </ul>
+
+      <span class="Parrafo">
+      <span class="Parrafo">Los rótulos pueden colocarse bien en la zona del diagrama (para todo el diagrama (<span style="font-weight: bold;">Acuerdo/Rasante</span>), sólo para <span style="font-weight: bold;">Acuerdo cóncavo</span> o sólo para<span style="font-weight: bold;"> Acuerdo convexo</span>), o bien en la zona de guitarra.<br />
+      <br />
+Para cada datos debe de asociarse un tipo de símbolo (valores negativos
+provocan que no se representen) y, si diera lugar, unos desplazamientos
+horizontales y verticales. En el caso del desplazamiento vertical, si
+el lugar donde se va a rotular corresponde a la zona del diagrama
+entonces está referido a los puntos del mismo, pero si corresponde a la
+zona de guitarra entonces es relativo al plano de comparación. Además
+puede cumplimentarse un ángulo y si en la columna <span style="font-weight: bold;">Un dato</span> de se ha escogido <span style="font-weight: bold;">Equid en Rasante</span>, entonces dicha equidistancia se especifica en la columna <span style="font-weight: bold;">Eqd</span>.<br />
+      <br />
+Al rotular la longitud de la rasante, la pendiente u otros parámetros
+sobre ésta y con ángulo = 0, estos datos se orientan según la pendiente
+de la misma. Con los valores que demos en dx y dy se tomarán sobre la
+rasante y perpendicular a ésta.<br />
+      <br />
+La opción <span style="font-weight: bold; font-style: italic;">Evitar solapes en banderolas</span>
+afecta a todos los símbolos que vayan referidos a los vértices de los
+acuerdos, y actúa de tal forma que para aquellos vértices que se
+dibujen a una distancias horizontal y vértical inferiores a la
+definida, todos los símbolo referidos al segundo vértice se desplazan
+verticalmente hasta que se encuentren a la distancia vertical mínima
+(las distancias horizontal y vertical mínimas debe coincidir
+aproximadamente con las dimensiones de la banderola). Se puede indicar
+el tipo de línea que el programa dibujará para unir la nueva posición
+de la banderola con el vértice.<br />
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="ptos_altos_bajos">Puntos altos y bajos</a></span><br />
+      <span class="Parrafo"><br />
+Permite rotular el PK, la cota, la estaca o un símbolo cualquiera correspondiente
+a los puntos altos y bajos de la rasante. Si en la columna <span style="font-weight: bold;">Un dato de</span> se especifica simplemente <span style="font-weight: bold;">punto alto</span> o <span style="font-weight: bold;">punto bajo</span>,
+entonces se rotulan dichos puntos sin importar si se encuentran en un
+acuerdo vertical o en un vértice sin acuerdo. El resto de opciones
+permite discriminar estos casos:<br />
+</span></span>
+      <ul>
+        <li>Punto alto (ACUERDO): Permite rotular el punto alto entre alineaciones con acuerdo.<br />
+        </li>
+        <li>Punto bajo (ACUERDO): Permite rotular el punto bajo entre alineaciones con acuerdo.<br />
+        </li>
+        <li>Punto alto (VERTICE): Permite rotular el punto alto en alineaciones sin acuerdo.<br />
+        </li>
+        <li>Punto bajo (VERTICE): Permite rotular el punto bajo en alineaciones sin acuerdo.<br />
+        </li>
+        <li>Punto inicial: Permite rotular en el punto inicial de la rasante.<br />
+        </li>
+        <li>Punto final: Permite rotular en el punto final de la rasante.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_ptos_altos_bajos.png" style="width: 490px; height: 177px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+La rotulación puede hacerse en la zona del diagrama o en zona de
+guitarra, con el tipo de símbolo (valores negativos provocan que no se
+rotule), desplazamiento horizontal, desplazamiento vertical y ángulo
+indicados. En el caso de que la rotulación sea en la zona de guitarra,
+el desplazamiento vertical es relativo al plano de comparación.<br />
+      <br />
+La anotación de nuestra rotulación puede estar referida (Lugar) al <span style="font-weight: bold;">Acuerdo/Rasante</span>, a la <span style="font-weight: bold;">guitarra</span>, al <span style="font-weight: bold;">vértice</span> o a la <span style="font-weight: bold;">acotación</span> del acuerdo, es decir en el pk del vértice y la cota más alta entre el punto de entrada y salida.<br />
+      <br />
+Con la librería de </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">
+se entregan símbolos específicos para rotular estos puntos. Así, por
+ejemplo, los símbolos S324 y S325 los resalta en amarillo y rotulan <span style="font-style: italic;">PA</span> y <span style="font-style: italic;">PB</span> respectivamente.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="pozos">Pozos y saltos verticales</a></span><br />
+      <span class="Parrafo"><br />
+Para el caso de rasantes en <a href="OL_tuberias.html">proyectos de tuberías</a>, existen rotulaciones específicas de elementos propios de este tipo de proyectos.<br /><br />En
+cuanto a los pozos, también se dibujan también los pozos definidos en
+otros ejes, por los que pasa el eje actual, y se pueden rotular en él
+los mismos parámetros que en los pozos propios (PK, nombre,
+descripción, Cotas,....).<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_pozos.png" style="width: 500px; height: 472px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+Así, desde este menú es posible indicar que, marcando las
+correspondientes casillas, se rotulen los siguientes datos relativos a
+pozos y resaltos:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">PK del pozo (<span style="font-weight: bold;">PK POZO</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Distancia entre pozos (<span style="font-weight: bold;">Dis.POZOS</span>):
+En este caso, la primera distancia que se rotula es la existente entre
+el origen y el primer pozo, y el resto la que hay entre cada pozo y el
+inmediatamente anterior.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota en el punto de entrada al resalto <span style="font-weight: bold;">(Z ent SV</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota en el punto de salida del salto vertical (<span style="font-weight: bold;">Z sal SV</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencia de cota entre el punto de entrada al resalto y el terreno (<span style="font-weight: bold;">Zroj ent SV</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencia de cota entre el punto de salida del resalto y en terreno (<span style="font-weight: bold;">Zroj sal SV</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota de la boca del pozo (<span style="font-weight: bold;">Z boca</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota del fondo del pozo (<span style="font-weight: bold;">Z solera</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota del terreno (<span style="font-weight: bold;">Z Terreno</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota de la rasante (<span style="font-weight: bold;">Z Rasante</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencia de cota entre el fondo de pozo y el terreno (<span style="font-weight: bold;">Zroj solera</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Profundidad del pozo (<span style="font-weight: bold;">Zb - Zs</span>), es decir, diferencia de cota entre boca y solera.</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">Zroj ent Pozo</span> y <span style="font-weight: bold;">Zroj sal Pozo</span>: Se añade la rotulación de la cota roja de la rasante a la entrada y a la salida del pozo.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Z Entrada&nbsp; y Z Salida Pozo</span>:
+Posibilidad de rotular las cotas de entrada y salida del pozo,
+consideradas en la intersección de la rasante del tubo con la cara
+interior del pozo. Las longitudes en planta y real del tubo, tambien
+descuentan la zona interior del pozo. <br />
+        </li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Posibilidad de rotular las cotas de entrada y salida de tubos de <span style="font-weight: bold;">otros ejes</span> que pasen por el pozo.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li><span class="Parf_negrita">Símbolo Asociado</span>: Permite dibujar el símbolo asociado del pozo.</li></ul>
+      <ul>
+        <li>Cota roja en desmonte del fondo de zanja a la entrada y salida de un salto vertical (<span style="font-weight: bold;">Zroj68 ent/sal SV desm</span>).<br />
+        </li>
+      </ul>
+<ul><li>Se puede rotular el nombre del <span style="font-weight: bold;">OTRO EJE</span>. (El archivo Pozos.gui utiliza estos nuevos comandos). <br />
+        </li>
+      </ul>
+      <span class="Parrafo">
+      <span class="Parrafo">Cada uno de estos datos puede ir rotulado
+bien en la zona de guitarra, bien en la zona de rasante o boca del
+pozo (según el caso), y tiene asociado un tipo de etiqueta (valores negativos hace que
+no se representen), una distancia al plano de comparación (si se
+representa en la zona de guitarra) o a la rasante o boca del pozo
+(cuando se representa en la zona del diagrama), un desplazamiento
+horizontal y un ángulo.<br />
+      <br />
+Se puede definir una <span style="font-weight: bold;">célula</span> (C47) tipo banderola y un <span style="font-weight: bold;">dY</span>
+(altura del mástil de la banderola) de modo que ciertos símbolos y
+textos, si están referidos a la boca del pozo, son arrastrados al mover
+en edición el punto superior del mástil de la banderola. Las entidades
+afectadas son: Nombre del pozo, Z boca, Zb-Zs, Z entrada pozo y Z
+salida pozo.<br />
+      <br />
+Si se marca la casilla <span style="font-weight: bold; font-style: italic;">Dibujar pozos</span>,
+se dibuja cada pozo de forma simbólica, con el tipo de <span style="font-weight: bold;">línea</span>, <span style="font-weight: bold;">radio</span>
+(en mm de papel) y <span style="font-weight: bold;">espesor</span>
+de la pared del pozo (también en mm de papel) indicados, excepto que se
+hayan definido los diámetros de los pozos en el menú de Rasantes/Pozos
+en cuyo caso leerá el diámetro que hayamos colocado en dicho menú.
+También es posible indicar que se rotule el <span style="font-weight: bold;">nombre</span> y la <span style="font-weight: bold;">descripción</span>
+de cada pozo, bien en la zona de guitarra, bien en la boca del pozo, y
+con el estilo, distancia al plano de comparación (o a la boca del
+pozo), desplazamiento horizontal, ángulo y tamaño indicados. También ha
+de especificarse el punto de inserción (enganche) del rótulo.<br />
+Para las <span style="font-weight: bold;">arquetas</span> y <span style="font-weight: bold;">excavación de pozos</span> se puede establecer un tipo de línea diferente. <br />
+<br />
+Si se desea dibujar <span style="font-weight: bold;">trazos verticales</span>
+en la zona de guitarra específicos para los pozos, se hará uso de la
+parte inferior de este menú, indicando el tipo de línea de dichos
+trazos (valores negativos provoca que no se representen) y, si fuera
+preciso, el desplazamiento horizontal de los mismos. </span></span><span class="Parrafo"><span class="Parrafo">Si se dan dos valores iguales en <span style="font-weight: bold;">desde</span> y en <span style="font-weight: bold;">hasta</span>, entonces el trazo se realiza desde la rasante. </span></span><span class="Parrafo"><span class="Parrafo">Pueden
+representarse tantos grupos de trazos verticales como se desee, y cada
+uno de estos datos tendrá asociada la longitud de los trazos dada como
+distancias al plano de comparación.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="tubos">Tubos</a></span><br />
+      <span class="Parrafo"><br />
+En línea con el apartado anterior, se ofrece en este cuadro de diálogo todo lo relativo a la representación de <a href="OL_tuberias.html">tubos</a>.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_tubos.png" style="width: 566px; height: 324px;" alt="" />&nbsp;</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Las posibilidades que se ofrecen son:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Longitud 2D de cada tubo (<span style="font-weight: bold;">Longitud (en planta)</span>).</span></li>
+        <li><span class="Parrafo">Longitud 3D de cada tubo (<span style="font-weight: bold;">Longitud (real)</span>).</span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Posibilidad de rotular en la guitarra el <span style="font-weight: bold;">PK</span> de inicio de cada tubo.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Espesor de los tubos (<span class="Parf_negrita">Espesor del tubo</span> y <span class="Parf_negrita">Espesor del tubo IZ</span>).<br /></span></span></li>
+
+        <li><span class="Parrafo">Material y diámetro de cada tubo (<span style="font-weight: bold;">Material y diámetro</span>). Posibilidad de rotular independientemente el material y los diámetros de los tubos.</span></li>
+        <li><span class="Parrafo">Posibilidad de rotular el <span style="font-weight: bold;">material del tubo y del tubo izquierdo</span>.</span></li><li><span class="Parrafo"><span style="font-weight: bold;">Tipo</span> de tubo y tipo de tubo izquierdo.<br /></span></li>
+
+        <li><span class="Parrafo">Descripción de cada tubo (<span style="font-weight: bold;">Descripción</span>).</span></li>
+      </ul>
+      <span class="Parrafo">La posición de cada dato vendrá dada por su
+distancia al plano de comparación (en el caso del material y diámetro y
+de la descripción la distancia es relativa al longitudinal de la
+rasante si su rotulación es en el tubo), desplazamiento horizontal y
+ángulo, y se representará con el tipo de símbolo o de rótulo (estilo)
+especificados. La descripción del tubo puede colocarse referida al PK central del tubo.<br />
+      <br />
+En el caso de rótulos, además de indicar el estilo
+también habrá que especificar un tamaño y el punto de inserción del
+rótulo (enganches horizontal y vertical). Además, los tubos se
+dibujarán con el tipo de línea especificado, pudiendo utilizar un tipo
+de línea con relleno (L73, L74...) y siempre que se marque la
+opción <span style="font-weight: bold; font-style: italic;">Dibujar tubo</span>. Mediante la columna <span style="font-weight: bold;">Exterior</span>
+(Dibujar Tubo) se permite dibujar con un tipo de línea el diámetro
+exterior pudiendo así mostrar el espesor de la tubería.&nbsp; Para el
+caso de dos tubos, se ofrece la posibilidad de dibujar el <span style="font-weight: bold;">tubo izquierdo</span> utilizando otro tipo de línea.<br />
+      <br />
+Si se desea dibujar <span style="font-weight: bold;">trazos verticales</span>
+en la zona de guitarra específicos para los tubos, se hará uso de la
+parte inferior de este menú, indicando el tipo de línea de dichos
+trazos (valores negativos provoca que no se representen) y, si fuera
+preciso, el desplazamiento horizontal de los mismos. Pueden
+representarse tantos grupos de trazos verticales como se desee, y cada
+uno de estos datos tendrá asociada la longitud de los trazos dada como
+distancias al plano de comparación.<br />
+      <br />
+En el menú de rasantes y en el dibujo del perfil longitudinal, los
+tubos se recortan en la zona de los pozos, utilizando el diámetro y
+espesor del pozo definido en el menú de rasantes/pozos/tubos.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="viaductos">Estructuras: viaductos y pasos superiores</a></span><br />
+      <span class="Parrafo"><br />
+Si se han introducidos datos en el <a href="OL_estructuras.html">menú ESTRUCTURAS</a> de ALZADO, esto pueden quedar reflejados en el plano longitudinal a través del siguiente menú:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_viaductos.png" style="width: 520px; height: 256px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+En la zona de diagrama puede rotularse, según se marque, la <span style="font-weight: bold;">longitud</span> y los <span style="font-weight: bold;">PKs de inicio y final</span>
+de la estructura, con los símbolos (etiquetas) especificados y
+desplazados verticalmente respecto a la estructura según los valores
+introducidos en la columna <span style="font-weight: bold;">Dist. vert.</span> También es posible asignar un desplazamiento horizontal y un ángulo a estas etiquetas. Si se marca la opción <span style="font-weight: bold; font-style: italic;">Longitud 3D</span>,
+entonces la longitud de la estructura que se muestra es la real.
+Podremos rotular la estaca en vez del Pk de inicio y final con un
+símbolo correspondiente a las estacas (S757) activando la casilla <span style="font-weight: bold;">Estaca</span>.<br />
+Se puede rotular la <span style="font-weight: bold;">longitud del vano</span>,
+medida por el eje (diferencia de PKs) o por el centro del tablero, y
+para cada una de ellas en 2D (en planta) o en 3D (teniendo en cuenta la
+pendiente).<br />
+      <br />
+También es posible rotular el <span style="font-weight: bold;">nombre de la estructura</span> sin más, <span style="font-weight: bold;">referido al PK final</span> de la misma o <span style="font-weight: bold;">en el centro</span> de la misma; con el estilo, desplazamientos, ángulo, tamaño y punto de inserción especificados.<br />
+      <br />
+En cuanto al <span style="font-weight: bold;">dibujo</span> de la
+estructura, se diferencian estribos, tablero y pilares, representándose
+cada uno con el tipo de línea que se indique (valores negativos
+provocan que no se dibuje). Los pilares se representarán con el radio
+(en mm de papel) especificado. Si en el <a href="OL_estructuras.html">menú ESTRUCTURAS</a> anteriormente mencionado se ha especificado un ancho de pila, se respetará ese valor en lugar del aquí indicado.<br />
+      <br />
+Posibilidad de rotular los PKs de la Pilas<br />
+      <br />
+Posibilidad de utilizar PKs de usuario en los PKs de incio y final y de las pilas de los viaductos.<br />
+      <br />
+La guitarra&nbsp;<span class="Archivo">estruc.gui</span> supone un buen ejemplo de este tipo.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="tuneles">Estructuras: túneles y pasos inferiores</a></span><br />
+      <span class="Parrafo"><br />
+Complementando a lo anterior, este menú está diseñado para representar todo lo relativo a túneles y pasos inferiores.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_tuneles.png" style="width: 520px; height: 161px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Como se puede observar, su funcionamiento es exactamente igual, a
+excepción de que, a la hora de dibuja la estructura, los tipos de línea
+especificados corresponde a la boquilla y a la bóveda.<br />
+      <br />
+De nuevo la guitarra&nbsp;<span class="Archivo">estruc.gui</span> es apropiada como ejemplo de uso de estas representaciones.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="codos">Codos</a></span><br />
+      <span class="Parrafo"><br />
+En el caso de <a href="OL_tuberias.html">proyectos de tuberías</a>, puede ser interesante tener una representación en el longitudinal de los accesorios declarados en el <a href="OL_tuberias.html#planta">diseño de la planta</a> (en modo TUBO). Para ello se dispone del siguiente cuadro de diálogo:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_rasantes_codos.png" style="width: 560px; height: 327px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Desde aquí es posible indicar, marcando la casilla correspondiente, que se rotule el <span style="font-weight: bold;">ángulo real</span>, el <span style="font-weight: bold;">PK</span>, la <span style="font-weight: bold;">cota</span>, un <span style="font-weight: bold;">símbolo cualquiera</span>
+referido a cada accesorio, el <span style="font-weight: bold;">número</span>
+referente al listado de ángulo de los codos en planta (CP), en alzado
+(CA) y referido al ángulo formado por la planta y el alzado (CPA), el
+PK de las piezas especiales para los tipos seleccionados y los ángulos
+de planta y alzado.
+Estos datos pueden representarse tanto en la
+zona de longitudinal como en la zona de guitarra, y se hará con el tipo
+de símbolo especificado y con un desplazamiento vertical (que será
+relativo al plano de comparación en el caso de representación en zona
+de guitarra). Además, puede declararse un desplazamiento horizontal y
+un ángulo.<br />
+      <br />
+También se puede fijar un <span style="font-weight: bold;">ángulo mínimo</span> general para evitar la rotulación de puntos no deseados, y otro más específico para los ángulos de planta y alzado.<br />
+      <br />
+Rotulación del <span style="font-weight: bold;">nombre</span> y un símbolo para los codos, según el tipo, similar a la rotulación en planta. <br />
+      <br />
+Con la opción de rotular el ángulo del codo&nbsp; activada, el programa
+busca en la tabla de codos, si hay alguno que se adapte (ángulo +
+holgura) rotula también su nombre.<br />
+      <br />
+Se permite rotular solamente los codos definidos en planta, exceptuando los libres.<br />
+      <br />
+Posibilidad de rotular los nombres (Tipos) de los codos referidos a la guitarra.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"><span class="Titulo_2">Ecuaciones de PK</span><br /><br />Posibilidad de rotular en el perfil los PKs (atrás y adelante) de las Ecuaciones de PK.<br /><br /></a></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"><img style="width: 322px; height: 166px;" alt="" src="Imagenes/gui_ec_pk.png" /></a></span></span></span><a name="Ecuaciones_de_PK"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></a></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"><br /></a></span></span></span><span class="Parrafo"><span class="Parrafo">
+<a name="Ecuaciones_de_PK"><br />
+      </a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Ecuaciones_de_PK"> </a></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

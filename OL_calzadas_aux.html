@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Calzadas auxiliares</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CALZADAS AUXILIARES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><a href="#pendientes">
+Aspecto y limitación de las pendientes transversales</a></span><br />
+      <span class="Parrafo"><a href="#a2_linea">
+Anchos por línea</a></span><br />
+      <span class="Parrafo"><a href="#tabla">Ley de anchos según tabla</a><br />
+      <a href="#a4a3_en_terraplen">A4/A3 en terraplén</a><br />
+      <a href="#Peraltes_independientes">Peraltes independientes</a><br />
+</span>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+ISTRAM<sup>®</sup>/BIM permite el diseño de hasta ocho calzadas auxiliares con leyes de anchos y peraltes, independientes y distintas.<br /><br /></span>
+      <div style="text-align: center;"><span class="Parrafo">&nbsp;<img src="Imagenes/dialogo_calz_aux.png" style="width: 600px; height: 301px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />Estas calzadas se numeran de la <span style="font-weight: bold;">1</span> a la <span style="font-weight: bold;">4</span> para los dos lados, derecho e izquierdo.<br /><br />La calzada número <span style="font-weight: bold;">1</span> existe sólo en autovías, pues es una calzada interior. La calzada número <span style="font-weight: bold;">2</span> es la calzada auxiliar exterior más próxima a la calzada principal (arcén). Las calzadas <span style="font-weight: bold;">3</span> y <span style="font-weight: bold;">4</span> suelen estar destinadas a carriles bici, aparcamientos, etc.<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modelo_calz_aux.png" style="width: 442px; height: 312px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"><br />
+La definición se realiza dando valores a los anchos y peraltes de las
+distintas calzadas auxiliares en distintos puntos del eje. Si un dato
+varía ente dos puntos consecutivos, se asume una variación lineal entre
+los mismos. Si es preciso se extrapolan los datos, de modo que uno sólo
+es suficiente.<br />
+      <br />
+      <img src="Imagenes/calzadas_aux_interpolar.png" style="width: 146px; height: 46px;" alt="" align="right" hspace="6" />En
+los datos intermedios podemos interpolar los valores Ai, Pi,
+correspondientes a los anchos y a las pendientes, entre los datos
+anterior y posterior del Pk intermedio.<br />
+<br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span><span class="Parrafo">En la ventana gráfica aparecen los valores de anchos <span style="font-weight: bold;">A</span> y pendiente transversal <span style="font-weight: bold;">P</span> de cada una de las 8 calzadas en un punto dato actual. Los botones <span style="font-weight: bold;">[+] [Dato] [-]</span> permiten situarse en cualquier otro dato, que es posible crear con los botones <span style="font-weight: bold;">[Añadir]</span> y <span style="font-weight: bold;">[Repetir]</span>, o eliminar mediante la tecla <span style="font-weight: bold;">[Borrar]</span>.<br /><br />
+Es posible realizar un <span style="font-weight: bold;">escalón vertical</span> (<span style="font-weight: bold;">Esc</span>) entre la calzada principal y el arcén A2. La altura del escalón se introduce debajo de la pendiente del arcén 2: <span style="font-weight: bold;">A2</span>/<span style="font-weight: bold;">P2</span>/<span style="font-weight: bold;">Esc</span>.
+Al pie del escalón (punto debajo o encima del borde de calzada código
+2) se le pone código 10. A este escalón se le puede dar un talud
+mediante la casilla <span style="font-weight: bold;">Talud Escalón</span>.<br /><br />El botón <span style="font-weight: bold;">[Automático]</span>
+crea dos datos, correspondientes al inicio y final del eje, con valores
+de ancho 1 metro para las calzadas A1 y 2,5 metros para las calzadas A2.<br /><br />La ley de definición de calzadas auxiliares puede salvarse y recuperarse con <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> en ficheros con extensión&nbsp;<span class="Archivo">.aux</span> (iconos situados en la parte superior del menú).<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+      <br />
+      <img src="Imagenes/calz_aux_guarda_pk.png" style="width: 141px; height: 59px;" alt="" align="right" hspace="7" />En los PKs de definición de las calzadas auxiliares y las <a href="OL_aceras.html">aceras</a> pueden <span style="font-weight: bold;">guardarse</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> o <span style="font-weight: bold;">cargarse</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> en archivos independientes&nbsp;<span class="Archivo">.pk</span>, así puede transladarse la definición de PKs de un lado a otro de de las aceras a las calzadas auxiliares y viceversa.<br />
+Pueden cargarse de cualquier archivo&nbsp;<span class="Archivo">.pk*</span>
+que contenga el PK en la primera columna. Cuando se carga un archivo de
+PKs, el resto de los valores (anchos,&nbsp; pendientes, alturas, etc..)
+se copian del primer dato. En el caso de las <a href="OL_aceras.html">aceras</a> si no hay ningun dato, entoces se inician a cero.<br /><br /></span><span class="Titulo_2"><a name="pendientes">Aspecto y limitación de las pendientes transversales</a></span><br />
+      <br />
+      <span class="Parrafo">
+      </span><span class="Parrafo">Bajo el ancho <span style="font-weight: bold;">A</span> de cada calzada auxiliar puede especificarse una pendiente <span style="font-weight: bold;">P</span> (en %) para la misma, que irá en función de una <span style="font-weight: bold;">diferencia máxima</span> de pendiente permitida entre esa calzada auxiliar y la contigua.<br />
+      </span><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diferen_max.png" style="width: 622px; height: 67px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />La tabla de <span style="font-weight: bold;">DIFERENCIAS MÁXIMAS (%)</span> situada en la parte inferior del cuadro de diálogo, permite
+definir esa máxima diferencia admisible entre pendientes transversales
+de calzadas contiguas. En particular, si el valor máximo admisible
+entre dos calzadas es 0, la de menor prioridad aparecerá siempre en
+prolongación de la otra, acompañándola en su ley de peraltes.</span><span class="Parrafo"> Por tanto, si una calzada acompaña en el peralte a la
+calzada anterior, no es necesario reproducir la ley de peraltes, basta
+poner su ancho y un 0 en la casilla correspondiente a su diferencia máxima.</span><br />
+      <span class="Parrafo"><br />
+Cuando una calzada auxiliar alcanza la <span style="font-weight: bold;">diferencia máxima</span> de pendientes permitidas, entonces entra en juego el <span style="font-weight: bold;">modo de correción</span>, que puede ser:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">En prolongación</span>: En el caso de que una calzada
+auxiliar exceda en su peralte la diferencia admitida, la pone en
+prolongación de la anterior.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Quiebra</span>: Si se excede el valor permitido, en este caso, se coloca con una diferencia de peralte igual al máximo admitido.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Quiebra + Pendiente Mínima</span>: Se respeta la diferencia de peralte con la calzada contigua pero nunca puede bajar de la pendiente mínima.</li>
+      </ul></span></span>
+      <div style="margin-left: 40px;">Se respeta la diferencia de peralte con la calzada contigua pero nunca puede bajar de la pendiente mínima.<br />
+Ejemplo: Arcenes con una pendiente nominal del 5%.<br />
+Modo de correción&nbsp;<span class="Parf_negrita">[QUIEBRA + PENDIENTE MINIMA]</span>&nbsp;<span class="Parf_negrita">[NO CONCAVA]</span> <br />
+Pendiente mínima 1% Diferencia máxima 7%<br />
+      <ol>
+        <li>Curva&nbsp; de peralte&nbsp; 8% -&gt; arcen derecho 8%&nbsp; (No Concavo).</li>
+        <li>Curva&nbsp; de peralte&nbsp; 5% -&gt; arcen derecho 5%&nbsp; (Nominal).</li>
+        <li>Curva&nbsp; de peralte -2% -&gt; arcen derecho 5%&nbsp; (Nominal).</li>
+        <li>Curva&nbsp; de peralte -6% -&gt; arcen derecho 1%&nbsp; (Quiebra 7%).</li>
+        <li>Curva&nbsp; de peralte -8% -&gt; arcen derecho 1%&nbsp; (Pendiente mínima).<br />
+        </li>
+      </ol>
+      </div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      <span class="Parrafo">Una vez establecida la ley de anchos y
+pendientes de las calzadas auxiliares, puede darse el caso de que, en
+un determinado tramo, se genere una <span style="font-weight: bold;">concavidad</span> entre una calzada auxiliar y la adyacente, con el consiguiente problema de <span style="font-weight: bold;">acumulación de agua</span>
+que ello supone si no hay previsto un sistema de drenaje en esa zona.
+Para evitarlo, el programa establece por defecto el modo de corrección </span><span class="Parrafo"><span style="font-weight: bold;">[NO CÓNCAVO],</span> que impide que el ángulo que forma una
+calzada con la anterior sea cóncavo, y si se diera el caso, la coloca
+en prolongación.</span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Existe la posibilidad de <span style="font-weight: bold;">saltarse</span> las limitaciones
+impuestas por diferencias de pendiente transversal y concavidad
+activando para cada dato la correspondiente casilla de verificación <span style="font-weight: bold; font-style: italic;">No difer. máx.</span>, que viene a significar &#8220;no tener en cuenta los valores
+en los campos de diferencias máximas&#8221;. Esta opción permite al usuario
+alterar el comportamiento genérico de las calzadas auxiliares en alguna
+zona concreta, exisitendo un control específico para las calzadas auxiliares <span style="font-weight: bold;">2</span>, <span style="font-weight: bold;">3</span> y 4 y otro independiente para la calzada auxiliar <span style="font-weight: bold;">1</span> (arcén interior) en caso de ejes de doble calzada.</span><span class="Parrafo"><br />
+      <br />
+El valor <span style="font-weight: bold;">P2mín</span> permite asegurar una pendiente mínima del arcén 2, independientemente de todo lo anterior.<br /><br /><br /><span style="font-style: italic;">Ejemplo</span>:<br /><br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">Se desea
+que el arcén exterior tenga una pendiente hacia fuera del 4%, con una
+diferencia máxima de pendiente con la calzada principal del 4%, cambio
+de pendiente no cóncavo y modo de corrección en prolongación. Además,
+se requiere que la pendiente sea siempre hacia afuera (aunque la
+calzada principal vierta hacia dentro) y con un valor mínimo del 2%. Es
+decir:</span><br />
+      <ul>
+        <li><span class="Parrafo">Para peralte mayor del 4%, P2 será igual al peralte.</span></li>
+        <li><span class="Parrafo">Para peralte entre el 4% y el 0%, P2 será igual al 4%.</span></li>
+        <li><span class="Parrafo">Para peralte entre el 0% y el -2%, P2 cambiará del 4% al 2%.</span></li>
+        <li><span class="Parrafo">Para peralte menor del -2%, P2 será igual al 2%.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Los valores a introducir serían entonces:</span><br />
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; height: 65px; margin-left: 40px; width: 517px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 56px; text-align: center; font-weight: bold;">P2<br />
+            </td>
+            <td style="vertical-align: top; width: 75px; text-align: center; font-weight: bold;">P2mín<br />
+            </td>
+            <td style="vertical-align: top; width: 75px; text-align: center; font-weight: bold;">CP-P2<br />
+            </td>
+            <td style="vertical-align: top; width: 261px; text-align: center; font-weight: bold;">Modo de corrección<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 56px; font-style: italic; text-align: center;"><span class="Parrafo">4.000</span></td>
+            <td style="vertical-align: top; width: 75px; font-style: italic; text-align: center;"><span class="Parrafo">2.000</span></td>
+            <td style="vertical-align: top; width: 75px; font-style: italic; text-align: center;"><span class="Parrafo">4.000</span></td>
+            <td style="vertical-align: top; width: 261px; font-style: italic; text-align: center;"><span class="Parrafo">EN PROLONGACIÓN y NO CÓNCAVO</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+El valor de diferencia maxima de pendiente transversal entre calzadas
+contiguas se desdobla en dos valores diferentes dependiendo de si las
+calzadas vierten hacia el mismo lado: <br />
+</span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Pa x Pb &gt;= 0. <br />
+          </span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">o de si vierten en sentidos contrarios:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Pa x Pb &lt; 0.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span><span class="Titulo_2"><a name="a2_linea">Anchos por línea</a></span><br />
+      <span class="Parrafo"><br /></span><img src="Imagenes/a2_por_linea.png" style="width: 232px; height: 220px; float: right;" alt="" hspace="5" /><span class="Parrafo">El botón <span style="font-weight: bold;">[A2 por línea]</span> permite calcular simultáneamente los anchos del primer arcén exterior <span style="font-weight: bold;">2</span> a
+partir de líneas en planta que representan su borde. La opción funciona
+exactamente igual que en el caso de <a href="OL_anchos.html#por_linea">anchos de calzada principal</a>,
+creando un dato por cada vértice de la línea seleccionada.<br /><br />
+La opción permite introducir también un <span style="font-weight: bold;">incremento sobre la distancia</span>
+resultante (positivo indica un incremento a la derecha y negativo a la
+izquierda de la línea).<br />
+      <br />
+</span><span class="Parrafo">Los datos previos que hubiera en las calzadas <span style="font-weight: bold;">3</span> y <span style="font-weight: bold;">4</span> conservan sus valores, interpolando el programa en los nuevos PK's deducidos con esta opción.</span><br />
+      <span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si activamos la opción </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check_enabled" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"> Deducir peraltes</span>,
+esta utilidad calculará también los peraltes utilizando la cota de la
+linea. Para que esta opción sea efectiva, se han de poner CP-P2 o P2-CP
+a un valor de 1000 y activar el modo cóncavo.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+La opción&nbsp;<img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check_enabled" /><span style="font-weight: bold;"> <span style="font-style: italic;">Restablecer valores en</span></span> permite
+restablecer los valores de los anchos previamente existentes en una
+distancia determinada a partir del primer y último punto de la línea
+insertados.<br />
+      <br />
+La opción <span style="font-style: italic; font-weight: bold;">Distancia de búsqueda</span> permite definir una cierta distancia a partir de la cual los puntos más lejanos seran ignorados.<br />
+      <br />
+La opción <span style="font-weight: bold; font-style: italic;">Tolerancia para filtrar</span>
+permite redondear el valor del ancho con esta tolerancia y se evita que
+haya más de dos datos seguidos en un tramo con el mismo valor de ancho,
+dejando sólo el primero y el último de cada tramo.<br /><br />Posibilidad de utilizar simultáneamente <span class="Parf_negrita">todas las líneas del tipo elegido</span>.<br /><br />
+De forma similar también está disponible la opción <span style="font-weight: bold;">[A3 por linea]</span> y, en el caso de ejes de doble calzada, también la opción <span style="font-weight: bold;">[A1 por línea]</span> para definir el ancho del arcén según una línea presente en la cartografía (por esta línea pasará el código 1).<br />
+<br /><br />
+      </span><span class="Titulo_2"><a name="tabla">Ley de anchos según tabla</a></span><br />
+      <span class="Parrafo"><br />Los botones <span style="font-weight: bold;">[A2
+por tabla]</span> y <span style="font-weight: bold;">[A3 por tabla]</span> permiten determinar automáticamente
+sobreanchos para las calzadas auxliares <span style="font-weight: bold;">2</span> y <span style="font-weight: bold;">3</span> respectivamente, utilizando una
+tabla&nbsp;<span class="Archivo">.tsa</span> de sobreanchos de forma similar al caso de <a href="OL_anchos.html#tabla">calzadas principales</a>.<br />
+      <br />
+Un uso típico de esta opción es cuando en realidad, una de estas
+calzadas auxiliares hace las veces de calzada principal y, por diversos
+motivos, no es posible declararla como tal.<br />
+      <br />
+Los valores de los anchos de las otras
+calzadas auxiliares y de las pendientes se copian del primer dato.<br /></span><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="a4a3_en_terraplen">A4/A3 en terraplén</a></span><br />
+
+      <br />
+
+      <img src="Imagenes/calzadas_aux_a3a4.png" style="width: 234px; height: 143px;" alt="" align="right" hspace="6" />Permite añadir una nueva calzada auxiliar (A3 o A4) sólo en laz zonas de terraplén, según los siguientes parámetros:<br />
+
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Ancho para la calzada auxiliar A3 o A4.<br />
+
+          </span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Altura mínima de terraplén para crear esta calzada.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Longitud de transición cuando aparece o para desvanecer esta calzada.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Analizar PKs múltiplos de un determinado valor.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Activar o Desactivar la interpolación de perfiles en los datos de calzadas auxiliares.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes"><span class="Titulo_2">Peraltes independientes</span><br />
+      <br />
+Para cada una de las calzadas disponemos de dos siguientes herramientas:<br />
+</a></span></span></span></span>
+<a name="Peraltes_independientes">      </a><ul>
+<a name="Peraltes_independientes">        </a><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes">PERALTES C.P. =&gt; PK: Copia los PKs desde la tabla de Peraltes de las Calzadas Principales.</a></span></span></span></span></li>
+<a name="Peraltes_independientes">      </a></ul>
+<a name="Peraltes_independientes">      </a><ul>
+<a name="Peraltes_independientes">        </a><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes">CAZDAS. AUXILIARES =&gt; PK,P: Copia los PKs y Peraltes desde la tabla original de Calzadas auxiliares.</a></span></span></span></span></li>
+<a name="Peraltes_independientes">      </a></ul>
+<a name="Peraltes_independientes">      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Peraltes_independientes"><img src="Imagenes/ol_ca_pi.png" style="width: 600px; height: 301px;" alt="" /></a></span></span></span></span><a name="Peraltes_independientes"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></a></div>
+<a name="Peraltes_independientes">      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+</span></span></span></span><span class="Parrafo">Para la visualización del punto en el que estamos
+aplicando los peraltes se muestra en pantalla una línea resaltada
+coincidente con el PK de los datos actuales de cada lado:<br />
+      <br />
+      </span></a>
+      <div style="text-align: center;"><a name="Peraltes_independientes" /><span class="Parrafo"><img style="width: 672px; height: 194px;" alt="" src="Imagenes/caux_destacada.png" /></span><a name="Peraltes_independientes"><span class="Parrafo" /></a><br />
+      <a name="Peraltes_independientes"><span class="Parrafo" /></a></div>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

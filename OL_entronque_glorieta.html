@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Entronques con glorieta automáticos</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENTRONQUES CON GLORIETA AUTOMÁTICOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"> <br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#fundamentos_geometricos">Fundamentos geométricos</a><br />
+      <a href="#previsualizacion">Previsualización de resultados</a><br />
+      <a href="#modalidades">Modalidades de funcionamiento</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#solo_param">Modo </a><span style="font-style: italic;"><a href="#solo_param">Sólo parámetros</a><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#ejemplo">Ejemplo</a><span style="font-style: italic;"><br />
+      <span style="font-style: italic;" /></span></div>
+      <a href="#un_solo_radio">Modo <span style="font-style: italic;">Un
+sólo radio</span></a><br />
+      <a href="OL_entronque_glorieta.html#un_radio_anchos_ent_sal">Modo
+      <span style="font-style: italic;">Un sólo radio + Anchos de
+entrada y salida</span></a><br />
+      <a href="#ejes">Modo <span style="font-style: italic;">Ejes</span></a><br />
+      <a href="#por_numero">Modo <span style="font-style: italic;">Eje por número</span></a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#otros_datos">Otros datos y opciones</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#cambio_geo">Cambio de geometría en el interior de la isleta</a><br /><a href="#Isleta_con_bordillo">Isleta con bordillo</a><br />
+      <a href="#Transiciones">Transiciones</a><br />
+      </div>
+
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+      <span class="Parrafo"> </span><img src="Imagenes/acceso_glorietas.png" style="width: 121px; height: 87px;" alt="" align="right" hspace="4" /><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ofrece la
+posibilidad de calcular automáticamente el cruce de un eje con una
+glorieta desde el menú ALZADO &#8594; <span style="font-weight: bold;">COMPLEMENTOS</span>
+&#8594; <span style="font-weight: bold;">GLORIETAS</span>.<br />
+      <br />
+Al
+seleccionar esta opción, se despliega un cuadro de diálogo que permite
+definir un conjunto de parámetros para realizar el entronque de un eje
+con una glorieta, mediante el desdoblamiento en dos nuevos ejes
+(acuerdos), uno para realizar la entrada en la glorieta y otro para los
+vehículos que salen de ella:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modelo_ent_glorieta.png" style="width: 509px; height: 331px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+La aplicación de este algoritmo implica las siguientes <span style="font-weight: bold;">consideraciones</span>:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">El eje glorieta, de radio <span style="font-weight: bold;">Rg</span>, ha de estar definido por el
+exterior o por el interior de ésta.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Los datos de entronque con glorieta
+han de ser cumplimentados en cada uno de los ejes que llegan o salen de
+la misma y deben de ser coherentes, pues de lo contrario puede que no
+exista solución geométrica.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Los ejes que llegan a la glorieta
+pueden ser tanto de calzada simple como doble, y rectos o curvos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La rasante del eje que llega a la
+glorieta deberá ser coherente con la definida para la glorieta. Para
+ello, resulta muy útil la opción OTROS EJES y el <a href="OL_rasantes_enganches.html">enganche específico</a> a ellos
+durante el diseño de la rasante del eje que llega o sale de la glorieta.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si el eje tiene continuidad por el
+otro extremo de la glorieta, puede tener definido otro conjunto de
+parámetros para realizar este entronque, por eso se indica para cada
+cruce el PK aproximado del eje en el que se cruza con la glorieta.</span></li>
+      </ul>
+      <ul>
+        <li>En cuanto al cálculo de los entronques con glorieta, se debe tener en cuenta todo lo relativo al <a href="OL_cruces.html#calculo">cálculo de cruces</a>, pues su funcionamiento es similar.</li>
+        <li>
+
+          <p class="" parrafo="" style="margin-left: 0cm;">Las cubicaciones de los
+acuerdos también quedan desglosadas en los listados de la misma manera que en
+el caso de los cruces convencionales. Por tanto, tal y como se puede observar,
+prácticamente todas las consideraciones hechas en el caso de los cruces
+convencionales son también aquí aplicables, incluyendo que toda la información
+de estos cruces automáticos se guarda también en la carpeta <span class="Archivo">\CRZ.</span></p></li>
+        <li><span class="Parrafo">El eje que hace de glorieta puede ser un <span style="font-weight: bold;">eje cualquiera abierto</span>. En este caso y para determinar de qué lado están los acuerdos, se utiliza la posición del punto definido por el <span style="font-weight: bold;">PK</span> en el cuadro de diálogo.&nbsp;</span></li>
+
+      </ul><ul><li>Si
+el eje del que sale el acuerdo tiene declarada Sección Tipo Alternativa
+en Desmonte o Terraplén, esta Sección Tipo es heredada por el eje del
+acuerdo.</li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando
+el eje que define el acuerdo tiene definida una estructura que empieza
+o termina en la zona del acuerdo, ahora en los ejes de los acuerdos
+aparecen dos tramos de cálculo : uno en la zona de la estructura y otro
+en la zona de terraplén cada uno con la Sección tipo que corresponde.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><ul><li>Las
+líneas de frontera que estén definidas previamente al cálculo de los
+acuerdos se truncan según el lado definido en la línea de frontera,
+teniendo en cuenta que si el eje del acuerdo va en sentido contrario al
+principal se truncará entonces por el lado contrario. (Acuerdos DA y DP
+por el mismo lado y acuerdos IA e&nbsp; IP por el lado contrario).</li></ul>
+
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="fundamentos_geometricos">Fundamentos
+geométricos</a></span><br />
+      <span class="Parrafo"><br />
+Una vez tenidas en cuenta las consideraciones comentadas anteriormente
+y establecidos correctamente los parámetros, el programa actúa de la
+siguiente forma:<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 691px; height: 1158px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          
+          <tr>
+            <td style="vertical-align: top; text-align: right;">1º) <br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Tras localizar el punto de intersección entre
+ambos ejes (<span style="font-weight: bold;">punto 1</span>), se
+calcula una recta tangente a la glorieta por
+dicho punto hasta la distancia <span style="font-weight: bold;">A</span>,
+obteniéndose el <span style="font-weight: bold;">punto 2</span>. El
+cometido
+del valor <span style="font-weight: bold;">A</span> es, por tanto,
+descentrar la base <span style="font-weight: bold;">B</span> del <span style="font-style: italic;">triángulo de base</span> o <span style="font-style: italic;">triángulo de referencia</span>.<br />
+            <br />
+            </span></td>
+            <td colspan="1" rowspan="3" style="vertical-align: top;"><img src="Imagenes/triang_base_ent_glorieta.png" style="width: 291px; height: 259px;" alt="" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Obtención
+del triángulo base o de referencia</span><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">2º)<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Desde el <span style="font-weight: bold;">punto 2</span> y sobre la misma recta
+tangente a la glorieta, se obtiene a la distancia <span style="font-weight: bold;">B</span> el <span style="font-weight: bold;">punto 3</span>.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">3º)<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">
+Desde el <span style="font-weight: bold;">punto 1</span> se traza una
+tangente al eje que llega/sale de la glorieta, y se dibuja una línea
+paralela a esta tangente de longitud <span style="font-weight: bold;">H</span>
+(altura del <span style="font-style: italic;">triángulo de base</span>)
+y a la distancia <span style="font-weight: bold;">d</span>,
+obteniéndose así el <span style="font-weight: bold;">punto 4</span>.
+El parámetro <span style="font-weight: bold;">d</span>, por tanto, se
+usa para descentrar el vértice del <span style="font-style: italic;">triángulo
+de base</span>.<br />
+            <br />
+Si se quiere descentrar en la misma medida la base del triángulo y el
+vértice, entonces se debe cumplir que </span><img src="Imagenes/rel_triang_base.png" style="width: 52px; height: 30px; margin-bottom: 7px;" alt="" align="middle" /><span class="Parrafo">, que es el valor que el programa asume por defecto.<br />
+            </span><span class="Parrafo">Los
+parámetros <span style="font-weight: bold;">A</span> y <span style="font-weight: bold;">d</span>
+persiguen favorecer la trayectoria de salida de la glorieta a los
+vehículos, mientras que los que accedan a ella tengan que hacerlo
+disminuyendo la velocidad.</span><br />
+            <span class="Parrafo"><br />
+            </span></td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 60px; text-align: justify;">
+            <div style="margin-left: 40px;">4º)</div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">El <span style="font-weight: bold;">punto 5</span>
+será la intersección entre la tangente
+a la glorieta y la paralela a la tangente al eje de entrada/salida a la
+glorieta, y se corresponde con el centro de la base del <span style="font-style: italic;">triángulo de
+referencia</span>.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px;">
+            <div style="margin-left: 40px;">5º)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">A partir del punto anterior, se calcula el
+triángulo de base según las dimensiones <span style="font-weight: bold;">B</span> de la base y <span style="font-weight: bold;">H</span> de la altura
+(representado en rojo).<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px;">
+            <div style="margin-left: 40px;">6º)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Se dibujan las paralelas al triángulo de referencia en
+función de los anchos de entrada (<span style="font-weight: bold;">Ae</span>)
+y de salida (<span style="font-weight: bold;">As</span>) de la glorieta.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px; text-align: justify;">
+            <div style="margin-left: 40px;">7º)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Se concilian los lados del triángulo de
+referencia con el eje haciendo uso de un arco de radio <span style="font-weight: bold;">Rr</span>, actuando de
+forma similar para conciliar las paralelas calculadas en el punto
+anterior con los bordes de calzada del eje. El programa distingue estos
+radios según sea entrada a la glorieta (<span style="font-weight: bold;">Rre</span>)
+o salida de la misma (<span style="font-weight: bold;">Rrs</span>).<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 60px;">
+            <div style="margin-left: 40px;">8º)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 324px; text-align: justify;"><span class="Parrafo">Igualmente, se concilian las paralelas al
+triángulo de referencia con la glorieta según un arco de radio <span style="font-weight: bold;">Re</span> para
+la entrada a la glorieta y otro arco de radio <span style="font-weight: bold;">Rs</span> para la salida de la
+glorieta.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">9º)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; text-align: justify;"><span class="Parrafo">Quedan
+así obtenidos los acuerdos en planta como dos ejes definidos por el
+exterior.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">10º)<br />
+            </div>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">El programa lee el peralte en el punto de
+intersección de cada acuerdo con el eje de la glorieta, y lo aplica a
+dicho acuerdo (flechas rojas), de forma constante, en el tramo indicado
+en la figura, con lo que el programa puede deducir así el trozo de
+rasante dibujado en verde utilizando el parámetro <span style="font-weight: bold;">ce/cs</span> que es un
+coeficiente de reparto para realizar la transición de la rasante entre
+la glorieta y el eje. Se admiten valores entre 0.1 y 0.9, por defecto
+estos valores son de 0.5. Cuando la transición se hace mediante dos
+parábolas un coeficiente de 0.1 implica que la parábola que está del
+lado de la glorieta ocupa una décima parte de la longitud disponible y
+la otra parábola el resto del espacio.<br />
+            <br />
+El peralte del arcen interior de los ejes de entrada y salida, se
+mantiene en prolongación al peralte de la calzada, hasta la zona de la
+glorieta.<br />
+            </span></td>
+            <td style="vertical-align: top; text-align: center;"><span style="font-style: italic;"><img src="Imagenes/obt_peraltes_ent_glorieta.png" style="width: 222px; height: 165px;" alt="" /><br />
+            <br />
+            </span><span class="Info">Deducción rasante y peraltes
+entre glorieta y acuerdo</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">11º)<br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; text-align: justify;"><span class="Parrafo">A
+continuación, se deduce el resto de rasante del
+acuerdo, conciliando la que tenía del eje con el trozo calculado
+anterior y mediante un acuerdo cóncavo/convexo simple o doble, según
+sea la solución geométrica calculada. En este tramo, además, hace una
+transición de peraltes desde el eje hasta la obtenida en el paso
+anterior.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px;">12º)<br /><br /><br /><br />13º)<br /><br />
+            </div>
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top;"><span class="Parrafo">Finalmente, el programa deduce la geometría de la
+isleta a partir de los valores <span style="font-weight: bold;">ae</span>/<span style="font-weight: bold;">as</span>, <span style="font-weight: bold;">RTe/RTs</span> y <span style="font-weight: bold;">r/rv</span> según se desprende del
+modelo. El valor <span style="font-weight: bold;">ag</span> NO lo
+introduce el usuario, y corresponde con el
+ancho del arcén exterior de la glorieta.<br /><br /></span>Es posible definir unas distancias al borde de la glorieta en el punto
+de tangencia con el eje del acuerdo (<span style="font-weight: bold;">dge</span> y <span style="font-weight: bold;">dgs</span>). Es decir, el eje del
+acuerdo empieza / termina tangente a una paralela al código 2 de la
+glorieta a la distancia definida.</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <span style="font-weight: bold;">Coeficiente de reparto de la rasante ce/cs</span>:
+Con valor -1 la transición se inicia en la tangente con la glorieta. En
+este caso, ya no se respeta el peralte de la glorieta en la zona del
+acuerdo desde el el corte del borde interior con la glorieta hasta la
+tangencia del borde exterior (eje del acuerdo) con la glorieta. La
+transición de la rasante se inicia ya desde el punto de tangencia del
+eje del acuerdo con la glorieta y se recalculan los peraltes en toda la
+zona mencionada.<br />
+      <br />
+Truncamiento de los acuerdos: Los ejes de los acuerdos de una Glorieta, se generan con información en <a href="OL_truncar_por_codigo.html">truncar por codigos</a> (lado izquierdo) ,de modo, que estos ejes pueden copiarse como ejes normales y no requieren lineas de frontera adicionales.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="previsualizacion">Previsualización
+de resultados</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una vez declarados estos datos,
+es posible previsualizar la solución
+geométrica de los ejes y el <span style="font-style: italic;">triángulo de base</span> pulsando el botón <span style="font-weight: bold;">[Calcular ejes]</span>,
+lo que permite
+tantear soluciones para el eje actual
+sin necesidad de calcular el proyecto. Al pulsarlo, además, se mostrará
+el ángulo de acceso a la glorieta que menciona la norma española 3.1-IC
+de Marzo de 2015.</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ent_glorieta_previsual.png" style="width: 349px; height: 342px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Si además se activa la casilla <span style="font-weight: bold; font-style: italic;">Automático</span> se recalculan automáticamente los ejes cada vez que se modifica alguno de los parámetros que intervienen en su geometría.<br />
+      <br />
+Al calcular un proyecto con glorietas, se genera en la carpeta de
+trabajo por cada eje de rotonda, al que lleguen uno o más ejes, un
+fichero Isglo_n.toc, que contiene por cada eje que llega a la rotonda 4
+puntos: <br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Punto donde el borde interior del acuerdo de entrada se separa del eje que llega a la rotonda.</span></li>
+        <li><span class="Parrafo">Punto donde el borde interior del acuerdo de salida se separa del eje que llega a la rotonda.</span></li>
+        <li><span class="Parrafo">Punto donde el borde interior del acuerdo de entrada corta a la rotonda.</span></li>
+        <li><span class="Parrafo">Punto donde el borde interior del acuerdo de salida corta a la rotonda.</span></li>
+      </ul>
+Estos ficheros pueden ser utilizados por la opción: Herramientas,
+Cotas, Cuadro de Coordenadas NXYZ, para crear un plano de replanteo de
+puntos de la glorieta.<br />
+      <br />
+En la subcarpeta crz tambien se crea un fichero glo.top, que contiene todos estos puntos de todas las glorietas del proyecto. <br />
+      <br />
+Para utilizar la herramienta <span style="font-weight: bold;">Calcular Ejes</span> no es necesario activar la casilla <span style="font-weight: bold;">ENL</span> de Proyecto.<br />
+ <span class="Parrafo">
+      </span><br />
+      <span class="Titulo_2"><a name="modalidades">Modalidades de
+funcionamiento</a></span><br />
+      <span class="Parrafo"><br />
+Existen cuatro modos distintos para la definición entronque con
+glorieta: <br />
+      </span>
+      <ul>
+        <li><a href="#solo_param">Modo <span style="font-style: italic;">Sólo parámetros</span></a></li>
+        <li><a href="#un_solo_radio">Modo <span style="font-style: italic;">Un sólo radio</span></a></li>
+        <li><a href="#un_radio_anchos_ent_sal">Modo <span style="font-style: italic;">Un sólo radio + Anchos de entrada y salida</span></a></li>
+        <li><a href="#ejes">Modo <span style="font-style: italic;">Ejes</span></a></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="solo_param">Modo Sólo parámetros</a></span><br />
+      <span class="Parrafo"><br />
+Básicamente, consiste en declarar todos los parámetros geométricos
+necesarios, incluyendo los radios de entrada y de salida de los
+acuerdos.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_param.png" style="width: 575px; height: 246px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+</span>En este modo, al igual que en el <a href="#ejes">modo <span style="font-style: italic;">Ejes</span></a>, <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">los ejes de entrada y salida
+conservan la rasante y el peralte del eje principal hasta el punto
+donde su borde interior se separa una cantidad: </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">ae</span>+<span style="font-weight: bold;">rv</span> del borde interior del eje de entrada y <span style="font-weight: bold;">as</span>+<span style="font-weight: bold;">rv</span>
+del borde interior del eje de salida (es decir, hasta la intersección
+de dos líneas paralelas al borde del arcén interior, una distancia rv).</span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <br />
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-style: italic;"><a name="ejemplo">Ejemplo</a></span><br />
+      <span class="Parrafo"><br />
+Para mayor claridad se desarrolla a continuación un ejemplo con una
+glorieta y dos ejes adicionales que la cruzan de lado a lado:<br />
+      </span>
+      <ol>
+        <li><span class="Parrafo">En primer lugar, se preparan los
+ejes. En este caso, se trata de una glorieta circular (alineación tipo
+5) de radio y de dos ejes formados por una única alineación fija, uno
+recto y otro de radio -750:</span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_ent_glorieta_1.png" style="width: 434px; height: 340px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"> </span>
+      <ol start="2">
+        <li><img src="Imagenes/ejemplo_ent_glorieta_2.png" style="width: 290px; height: 209px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">En cuanto a las rasantes, la de la glorieta se puede
+ejecutar con la ayuda de la opción <a href="OL_rasantes_glorieta_catenaria.html#glorieta"><span style="font-weight: bold;">GLORIETA</span></a>
+disponible en los útiles de RASANTES y la dos los otros dos ejes se
+diseñará con la ayuda de OTROS EJES (para ver el cruce con la glorieta)
+y haciéndola pasar por la traza de la glorieta (o al menos, muy cerca):</span></li>
+      </ol>
+      <span class="Parrafo">
+      <ol start="3">
+        <li><span class="Parrafo">Se dan los elementos de sección
+transversal (en este ejemplo, la glorieta se ha definido por el
+exterior, con lo que se le ha dado un ancho nulo por la derecha).</span></li>
+      </ol>
+      <span class="Parrafo">
+      <ol start="4">
+        <li><span class="Parrafo">Para cada eje, se rellenan los datos
+del cuadro de diálogo que aparece al seleccionar la opción ALZADO &#8594;
+COMPLEMENTOS &#8594; <span style="font-weight: bold;">[GLORIETAS]</span>.
+Por ejemplo, para el eje dos se han dado los siguientes datos:</span></li>
+      </ol>
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_param.png" style="width: 599px; height: 239px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_param_2.png" style="width: 600px; height: 239px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span>
+      <ol start="5">
+        <li><span class="Parrafo">Para obtener el resultado habrá que
+dirigirse, como siempre, a la pestaña PROYECTO y una vez allí, activar la casilla <span style="font-weight: bold; font-style: italic;">Cruces</span> y los
+botones de cálculo pertinentes:</span></li>
+      </ol>
+      </span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ent_glorieta_proyecto.png" style="width: 600px; height: 443px;" alt="" /><br />
+      <br />
+</span></span></span>
+      <div style="text-align: left;"><span class="Parrafo">En la zona
+de los acuerdos se permite que en los ejes implicados este definida la
+sección tipo pos subtramificación en C (cunetas), D (desmonte), T
+(Terraplén) y/o V (Vectores plataforma fija,...). Pero al igual que
+cuando se utiliza la tramificación general los puntos de tangencia de
+los acuerdos no deben estar en zonas de transición de secciones<br />
+tipo.<span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span>
+      <ol start="6">
+        <li><span class="Parrafo">El resultado obtenido deberá ser
+similar al que se muestra a continuación:</span></li>
+      </ol>
+      <span class="Parrafo">
+      <table style="text-align: left; height: 263px; width: 689px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 381px; text-align: right;"><img src="Imagenes/ejemplo_ent_glorieta_3.png" style="width: 336px; height: 259px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 304px; text-align: right;"><img src="Imagenes/ejemplo_ent_glorieta_4.png" style="width: 292px; height: 189px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span>
+      <ol start="7">
+        <li><img src="Imagenes/ent_glorieta_acuerdos.png" style="width: 136px; height: 172px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Es posible trabajar a nivel de
+acuerdo, de forma similar a como ocurre con los <a href="OL_cruces.html#vol">cruces</a> convencionales
+(para diferenciarlos de los acuerdos convencionales, le suma 1000 al
+número del acuerdo).</span></li>
+      </ol>
+      <span class="Parrafo"> </span>
+      <ol start="8">
+        <li><span class="Parrafo">Así, al cargar uno de los acuerdos y
+visualizar su rasante, se puede observar el tramo deducido en la zona
+próxima a la glorieta (a trozos) y como concilia con la rasante del eje
+mediante un doble acuerdo cóncavo-convexo:</span></li>
+      </ol>
+      </span></span>
+      <div style="margin-left: 40px; text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejemplo_ent_glorieta_5.png" style="width: 251px; height: 298px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <ol start="9">
+        <li><span class="Parrafo">Los listados de cubicaciones, son los
+acuerdos desglosados, son similares al caso de <a href="OL_cruces.html#cruces">cruces</a>:</span></li>
+      </ol></span></span></span></span></span>
+      <div style="margin-left: 40px;">En los proyectos que incluyen
+acuerdos de cruces y glorietas, se generan los listados cvol.res,
+cv.res y cv.xlsx con el nombre de cada acuerdo por ejemplo:<br />
+      <ul>
+        <li>cv_3-2(1004)_DP.xlsx : Acuerdo de Glorieta Derecha_Posterior del Eje 3 con el 2 definido en el dato 4 de Glorietas del eje 3.</li>
+        <li>cvol_5-7(2)_DA.res : Acuerdo del cruce Derecha_Anterior del eje 5 con el 7 definido en el dato 2 de Crices del eje 5.</li>
+      </ul>
+Los archivos cvol.res y cv.res se generan al calcular y al recubicar
+los ejes para el cv.xlsx debe estar activada la opción en Listados.<br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">PROYECTO
+: Entronques con glorieta
+automáticos&nbsp;&nbsp;
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;
+EJE:&nbsp;&nbsp; 2: Eje 2</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * MEDICIONES DE LOS ACUERDOS EN LOS CRUCES * * *</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * Cubicacion segun distancias compensadas&nbsp; * * *</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+====================================================</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"> </span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EJE
+AC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MATERIAL&nbsp;&nbsp; VOL.
+PARCIAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MATERIAL&nbsp;&nbsp; VOL. PARCIAL</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ------------- --- --
+--------------- ------------ --------------- ------------</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+DA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53.27</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+125.17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 43.54</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.67</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.000&nbsp;&nbsp; 1
+IA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 108.27</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+642.55&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 88.59</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+DP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+168.94&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 139.96</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+111.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1118.90</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+126.000&nbsp;&nbsp; 1
+IP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FIRME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+99.45&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+INADECUADO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 67.85</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54.33<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+<table style="text-align: left; width: 650px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="vertical-align: middle; text-align: left; width: 34px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+
+            </td>
+
+            <td class="Info" style="vertical-align: middle; width: 637px; text-align: justify;">Los listados de cubicaciones de <a href="OL_listados_mediciones.html#list_conjunto">conjunto de tierras</a> y de <a href="OL_listados_mediciones.html#list_firmes_conjunto">conjunto de firmes</a> tienen en consideración los entronques con glorieta.<br />
+
+      </td>
+
+          </tr>
+
+        
+  </tbody>
+      
+</table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      En
+este tipo de cruces, si el eje en el que se define (eje que atraviesa
+la glorieta), sólo tiene anchos en uno de sus lados, entonces sólo se
+genera el acuerdo de entrada o el de salida de la glorieta, y no se
+genera la isleta.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/glorieta_unancho.png" style="width: 444px; height: 378px;" alt="" /></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="un_solo_radio">Modo
+Un sólo radio</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Este modo es similar al modo <span style="font-style: italic;">Sólo
+parámetros</span>, pero más sencillo, pues permite definir los ramales
+de entrada y salida de la glorieta con un único radio (<span style="font-weight: bold;">Re</span> define el radio de entrada y <span style="font-weight: bold;">Rs</span> define el radio de salida):<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_1_radio.png" style="width: 574px; height: 229px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="un_radio_anchos_ent_sal">Modo Un radio + Anchos de entrada y
+salida</a></span><br />
+      <br />
+Este modo es como el <a href="#un_solo_radio">modo <span style="font-style: italic;">Un radio</span></a>,
+con la diferencia de que el ancho de los ejes de los acuerdos va
+variando desde el ancho de la calzada del eje principal hasta alcanzar
+el ancho de entrada (<span style="font-weight: bold;">Ae</span>) ó de
+salida (<span style="font-weight: bold;">As</span>) en el entronque con
+la glorieta:<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_ejes_Aes.png" style="width: 574px; height: 229px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <br />
+      </span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="ejes">Modo Ejes</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Este modo permite definir los ramales mediante los ejes en planta y las
+líneas que definen los anchos de cada uno de ellos. Los ejes en planta
+tienen que estar definidos en un fichero&nbsp;<span class="Archivo">.cej</span>
+independiente para cada eje:<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_ejes.png" style="width: 574px; height: 229px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Se deben tener en cuenta las siguientes consideraciones:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+eje de entrada, debe iniciarse tangente al borde de la calzada del eje
+principal que llega o sale de la glorieta, y debe finalizar tangente al
+borde de la calzada de la glorieta.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+eje de salida, debe iniciarse tangente al borde de la calzada de la
+glorieta y debe finalizar tangente al borde de la calzada del eje que
+llega o sale de la glorieta.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las
+líneas para definir los anchos, determinan los bordes interiores del
+lado de la isleta y deben abarcar desde el punto del eje que llega
+donde se empiezan a separar las dos calzadas hasta el corte de este
+borde con el borde de la calzada de la glorieta.</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los
+ejes de los acuerdos conservarán la rasante y el peralte del eje
+principal hasta el punto donde su borde interior se separa (inicio de
+la línea de anchos).</span></span></span></span></span></li>
+      </ul>
+      </span></span></span>
+      <ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al igual que en el <a href="#solo_param">modo <span style="font-style: italic;">Sólo parámetros</span></a>, los ejes de entrada y salida
+conservan la rasante y el peralte del eje principal hasta el punto
+donde su borde interior se separa una cantidad: </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">ae</span>+<span style="font-weight: bold;">rv</span> del borde interior del eje de entrada y <span style="font-weight: bold;">as</span>+<span style="font-weight: bold;">rv</span>
+del borde interior del eje de salida (es decir, hasta la intersección
+de dos líneas paralelas al borde del arcén interior, una distancia rv).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="por_numero">Modo Eje por número</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Es similar al <a href="#ejes">modo <span style="font-style: italic;">Ejes</span></a>, pero en lugar de dar los nombres de los ficheros&nbsp;<span class="Archivo">.cej</span>, los ejes de acuerdo se definen por su número, lo que supone que estos ejes son del&nbsp;<span class="Archivo">.cej</span> del proyecto. Estos ejes pueden estar referidos (mediante <a href="OL_planta_conexiones.html#etiquetas">etiquetas</a> o mediante <a href="OL_planta_conexiones.html#conectores">conectores</a>), y en la <a href="OL_proyecto.html">tabla de proyecto</a> no deben tener nada asociado (<span class="Archivo">.vol</span>,&nbsp;<span class="Archivo">.per</span>,...).<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_ent_glorieta_eje_num.png" style="width: 599px; height: 239px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="otros_datos">Otros datos y opciones</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Hay una serie de parámetros que se pueden ajustar en la pestaña <span style="font-weight: bold;">OTROS DATOS</span>:<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/glo_otros.png" style="width: 612px; height: 260px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      </div>
+      <ul>
+        <li><a href="OL_cruces.html#equidistancia">Equidistancia</a>: funciona igual que en la herramienta <span style="font-weight: bold;">CRUCES</span>.</li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="OL_cruces.html#margen"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Margen</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>: funciona igual que en la herramienta <span style="font-weight: bold;">CRUCES</span>,
+excepto por un detalle: si ponemos en esta variable un valor mayor a 25
+m, la línea de frontera del talud izquierdo del eje de acuerdo con el
+talud de la glorieta se determina por la intersección real de los
+taludes (en vez de hacerse mediante la bisectriz de los bordes de
+calzada en la intersección).<br />
+</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="OL_cruces.html#estirar"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Estirar</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>: funciona igual que en la herramienta <span style="font-weight: bold;">CRUCES</span>.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="OL_cruces.html#vol"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Recalcular/mantener .vol</span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>: funciona igual que en la herramienta <span style="font-weight: bold;">CRUCES</span>:</span></span></span></span></li>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">NO</span> : No se toca el .vol del acuerdo (Salvo que no exista).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">SI</span> : Se rehace completamente el .vol del acuerdo.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">No Ras</span> : Si el acuerdo ya tiene un .vol, No se toca la rasante y se rehace el resto.(Peraltes,...)<br />
+            </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando utilizamos la opción vol: <span style="font-weight: bold;">No ras</span>
+para prefijar la rasante que el usuario define o modifica en el archivo&nbsp;<span class="Archivo">.vol</span> del acuerdo, se corrige el cálculo de los peraltes de los acuerdos
+para adaptarlos a la nueva rasante. También se guarda en el&nbsp;<span class="Archivo">.vol</span> del
+acuerdo la posición de la rasante auxiliar, la rasante teórica que
+se hubiera utilizado con la opción vol: <span style="font-weight: bold;">Si</span>.</span></span></span></span></span></span></span></span></li>
+        </ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Ajustar rasante</span>:
+permite ajustar las zonas de rasante poligonal que se generan en el
+entronque con la glorieta y con el eje principal, mediante parábolas,
+dando como tolerancia la diferencia de cota máxima admisible (por
+defecto, 1 cm).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Peralte mínimo 1</span>:
+peralte mínimo copiado de la glorieta en el punto de tangencia.
+Marcando la casilla que aparece a la izquierda, se utilizaran estos
+valores como valores de peralte obligado en estos puntos, por el medio
+se realizará una transición lineal y la rasante se calculará con las
+cotas deducidas por estos peraltes.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Peralte mínimo 2</span>: peralte mínimo copiado de la glorieta en el corte del borde interior con la glorieta.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Auto_RAS</span>:
+modifica la rasante del eje 1 para acomodarla al eje 0. La caja de
+texto adyacente permite especificar una longitud de transición desde el
+borde de la glorieta hacia el eje.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+          <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sin isleta</span>:
+permite que el eje en el que se definen los acuerdos sea utilizado como
+limatesa sobre la que se apoyan los peraltes de los acuerdos hasta la
+intersección del eje con el borde de la glorieta. De esta manera, en
+este tramo el peralte de los acuerdos queda fijado por un lado por la
+cota del eje principal y por el otro por la cota de la rasante del
+acuerdo. Esta opción debe usarse conjuntamente con <span style="font-weight: bold;">Auto_RAS</span>.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Modelo</span>:
+permite definir el modelo en que se van a generar las líneas de las
+isletas. Por defecto se toma el modelo del eje donde está definido.<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_cruces.html#generar_crz_pol"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a>En cualquier momento podemos generar el archivo .pol de la glorieta pulsando en el botón <a href="OL_cruces.html#generar_crz_pol">[Generar crz.pol]</a>.<ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <a name="cambio_geo"><span class="Titulo_2">Cambio de geometría en la zona de la isleta</span><br />
+      <br />
+El programa trunca automáticamente los ejes de los acuerdos de entrada
+y salida por el lado de la isleta en el código 12, que es el punto
+donde se separa el trozo de isleta que se asocia a cada eje.<br />
+El truncado se realizará en el último código que se encuentre menor que
+50 en el caso de definir calzadas auxiliares, aceras o plataforma fija
+en cada acuerdo. Esto permite al usuario cambiar la geometría en la
+zona de la isleta utilizando </a><a href="OL_calzadas_aux.html">calzadas auxiliares</a>, <a href="OL_aceras.html">aceras</a> o <a href="OL_vectores.html#plataforma_fija">plataforma fija</a> cuidando que no se solapen las de los acuerdos de entrada y salida y desmarcando la tecla <a href="OL_cruces.html#vol">[vol]</a> en la definición de la glorieta para que sean respetados estos cambios. <br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/glorieta_bordillo.png" style="width: 559px; height: 342px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /><a name="Isleta_con_bordillo"><span class="Titulo_2">Isleta con bordillo</span><br /><br />Se puede añadir un tipo de bordillo para la isleta. Al calcular los
+cruces esto genera en el eje que define el cruce nuevos datos en su
+lista de bordillos x Línea.<br /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Isleta_con_bordillo"><img src="Imagenes/glor_bord_isl.png" style="width: 580px; height: 231px;" alt="" /><br /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Isleta_con_bordillo"><br /></a><div style="margin-left: 40px;"><a name="Isleta_con_bordillo">Al añadir un bordillo para la isleta. Cuando se genera en BIM este bordillo (</a><a href="OL_bordillos_para_las_st.html#bor_lineas">bordillos por línea</a>),
+si el bordillo tiene la salida a mayor cota que la entrada, se genera
+un material interior a la isleta enrasando el borde interior del
+bordillo. Esta opción se puede descativar en el cuadro de diálogo de
+bordillos por líneas, [ISL] (Generar el interior de la isleta).<br />Cuando
+aparece [ISL]&nbsp; indica que este bordillo fué añadido
+automáticamente al calcular cruces. Si se recalculan los cruces de este
+eje los bordillos [ISL] son sustituidos por los nuevos que se calculen.</div><br />
+</span></span><br />
+      <h1><big><big><big><big><big><big><span class="Parrafo"><span class="Parrafo Titulo_2"><a name="Transiciones" />Tran<span class="Titulo_2"></span>siciones</span></span></big></big></big></big></big></big></h1>
+      <h1><span class="Parrafo"><span class="Parrafo" /></span></h1>
+      <span class="Parrafo"><span class="Parrafo">Permite definir de forma análoga a los acuerdos de los cruces, para los firmes, subrasante y suelo seleccionado, si se realiza<br />
+una transición o se hereda solo del eje actual o se hereda solo del otro eje (rotonda).<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 657px; height: 262px;" alt="" src="Imagenes/glo_transiciones.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Geometría curvas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: GEOMETRÍA DE CURVAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">Desde este
+cuadro es posible hacer que se rotulen los
+parámetros de las curvas en planta correspondientes a cada hoja:<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 592px;" alt="" src="Imagenes/gui_geometria_curvas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />Hay dos posibles formas de mostrar estos parámetros:<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">A modo de <span style="font-weight: bold;">leyenda</span> en cada hoja (muy utilizado en Méjico, Colombia,...). En principio, para utilizar este cuadro debería declararse como <a href="OL_gui_pauta_fija.html#simb_cabecera">símbolo de cabecera</a> adicional el S432, pues se corresponde con un cuadro adaptado a esta leyenda
+tal y como muestra la figura:</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="margin-left: 40px; text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 449px; height: 249px;" alt="" src="Imagenes/gui_geometria_curvas_ejemp.png" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      
+      
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Rotulados en la guitarra, acompañando al <a href="OL_gui_diagrama_de_curvaturas.html">diagrama de curvaturas</a>.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span class="Parrafo"><span class="Parrafo">La plantilla <span class="Archivo">SCT1.gui</span>, incluida en la librería del programa, utiliza esta leyenda. También se incluye el formato&nbsp;<span class="Archivo">S101SCT1</span> para utilizarlo conjuntamente con esta guitarra. Otra plantilla muy útil como ejemplo es&nbsp;<span class="Archivo">COLOM_2.gui</span>, incluida en la librería de Colombia.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br /><img style="width: 206px; height: 95px;" alt="" src="Imagenes/gui_geometria_curva_estaca_pk.png" align="right" hspace="6" />
+El cuadro de diálogo se divide en tres partes, una correspondiente a la ubicación de las etiquetas de <span style="font-weight: bold;">PKs</span> o <span style="font-weight: bold;">Estacas</span>&nbsp; y de las <span style="font-weight: bold;">coordenadas</span>
+de los puntos singulares (parte superior de figura), otra a la
+ubicación de las etiquetas de <span style="font-weight: bold;">geometría</span> de las curvas (parte
+intermedia)&nbsp; y otra a la rotulación de las <span style="font-weight: bold;">curvas verticales</span>
+(parte inferior).<br />
+      <br /><br />
+      <span class="Titulo_2">Datos de PKs o Estacas y coordenadas</span><br />
+      <br />
+Las coordenadas <span style="font-weight: bold;">(X0</span>, <span style="font-weight: bold;">Y0</span>) son el punto de referencia para insertar los datos, y los desplazamientos horizontales y verticales (<span style="font-weight: bold;">dx</span> y <span style="font-weight: bold;">dy</span>) estarán referidos a él.<br />
+      <br />Los valores <span style="font-weight: bold;">dH</span> indican el espaciado vertical u horizontal entre los grupos de datos
+correspondientes a cada curva. Los números de curva se representan con
+el símbolo indicado y el primero se ubica en la posición relativa al
+origen declarado con los valores <span style="font-weight: bold;">dx</span> y <span style="font-weight: bold;">dy</span>.<br />
+      <br />
+El tipo de símbolo indicado en <span style="font-weight: bold;">Curva</span>
+será el usado para rotular el número de curva. Si lo que se desea
+rotular es el número de vértice en lugar del número de curva, entonces
+es necesario activa la opción <span style="font-weight: bold; font-style: italic;">Número de vértice</span>. En este caso, la curva 1 pasa a ser el vértice 2, etc.<br />
+      <img style="width: 94px; height: 39px;" alt="" src="Imagenes/geom_curvas_flag.png" align="right" hspace="4" />Si en la casilla <span style="font-weight: bold;">Curva</span> activamos la casilla adjunta se rotulará el número de la curva como: 1000 x Número de Eje + Número de curva.<br />
+<br />
+Los PKs y las coordenadas X e Y de los puntos singulares se
+representarán con el tipo de símbolo indicado (negativos hacen que no
+se representen), las distancias <span style="font-weight: bold;">dx</span> y <span style="font-weight: bold;">dy</span> referidas al origen (X0, Y0) y el ángulo declarado. En el caso de los PKs correspondientes a <span style="font-weight: bold;">vértices</span>, éstos pueden rotular sólo en el caso de puntos angulosos si se activa la casilla adyacente.<br />
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo">Es posible rotular, de forma adicional, los puntos inicial y final del eje activando la opción <span style="font-weight: bold; font-style: italic;">Incluir punto inicial y final</span>. Al activar esta opción aparecen los campos <span style="font-weight: bold;">dH0</span>, que indica el espaciado vertical para la primera hoja, y que será distinto al de resto de hojas por incluir el punto inicial:</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; width: 690px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 264px; height: 177px;" alt="" src="Imagenes/gui_geometria_curvas_inicio_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 314px; height: 165px;" alt="" src="Imagenes/gui_geometria_curvas_inicio_2.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Tabla de datos de la primera hoja (dH0)</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Tabla de datos del resto de hojas (dH)</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <img style="width: 186px; height: 37px;" alt="" src="Imagenes/gui_geometria_curvas_pkvertice.png" align="right" hspace="8" />Si activamos la casilla <span style="font-weight: bold;">PI (Vértice) PC+ST1</span>
+obtendremos el valor del Pk del inicio de la curva más la subtangente.
+Si activamos la casilla adjunta sólo rotulará el pk en los puntos
+angulosos, es decir, en los puntos de inflexión recta-recta sin curva circular.<br />
+      <br />
+Posibilidad de incluir en el cuadro de geometria de las curvas, los <span style="font-weight: bold;">Puntos Sobre Tangentes</span> o <span style="font-weight: bold;">PST</span>,
+por defecto son los multiplos de 500, pero este valor también se puede
+variar. Disponemos en la librería de México el archivo SCT1+PST.gui que
+utiliza esta posibilidad.<br /><br />
+      <span class="Titulo_2">Datos de geometría</span><br />
+      <br />
+La representación de los datos de <span style="font-weight: bold;">geometría</span> funciona exactamente igual. Habrá, por tanto, que declarar un origen de coordenadas (<span style="font-weight: bold;">X0</span>,<span style="font-weight: bold;">Y0</span>) para estos datos, una separación vertical <span style="font-weight: bold;">dH</span>
+entre curvas y unos tipos de símbolo y distancias al origen para cada
+dato (tipos negativos hacen que no se representen). Los datos que se
+pueden representar son:<br />
+<br />
+</span></span>
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">dt<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Ángulo de deflexión de las tangentes<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">dc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo">Ángulo central de la curva circular</span></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">ST1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Subtangente de entrada<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Lc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Longitud de la curva circular<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Xc1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo">Coordenada X relativa del EC (entrada)</span>
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Yc1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo">Coordenada Y relativa del EC (entrada)</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">E<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Flecha en planta en el vértice<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">T<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Tangente de la curva circular<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">PI-PI<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Distancia entre vértices<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Az2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Azimut
+de salida. Se puede seleccionar que se rotulen en grados sexagesimales
+o centesimales, o también desde el Sur y en sentido horario.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">0e2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ángulo de deflexión de la espiral de salida</span></span></span></span></span>
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Xc2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Coordenada X relativa del CE (salida)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">p2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TL1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Tangente larga de entrada<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TC2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Tangente corta de salida<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">ST2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Subtangente de salida<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">S/A</span><br />
+            </td>
+            <td style="vertical-align: top;">Sobreancho en curva<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">DER</span><br />
+            </td>
+            <td style="vertical-align: top;">Sentido de la curva (derecha)<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">IP1</span><br />
+            </td>
+            <td style="vertical-align: top;">Inclinación de la rampa de peralte a la entrada<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">IP2</span><br />
+            </td>
+            <td style="vertical-align: top;">Inclinación de la rampa de peralte a la salida<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vhi1</span><br />
+            </td>
+            <td style="vertical-align: top;">Variación de la insuficiencia del peralte a la entrada</td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vhi2</span></td>
+            <td style="vertical-align: top;">Variación de la insuficiencia del peralte a la salida</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Az1</span><br />
+            </td>
+            <td style="vertical-align: top;">Azimut
+de entrada. Se puede seleccionar que se rotulen en grados sexagesimales
+o centesimales, o también desde el Sur y en sentido horario.<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><br />
+            </span></td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span>
+      
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Gc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Grado de curvatura de la curva circular<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Rc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Radio de la curva circular<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">0e1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ángulo de deflexión de la espiral de entrada</span></span></span></span>
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Le1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Longitud de la espiral de entrada</span></span></span></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">k1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">p1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Per<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Peralte<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Le2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Longitud de la espiral de salida</span></span></span></span></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">A1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Parámetro de la espiral de entrada<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">A2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Parámetro de la espiral de salida<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">Yc2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Coordenada Y relativa del CE (salida)
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">k2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TL2<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Tangente larga de salida<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">TC1<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Tangente corta de entrada<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">XCc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;">Coordenada X del centro de la curva circular<br />
+            </td>
+            <td style="vertical-align: top; width: 27px; font-weight: bold;">YCc<br />
+            </td>
+            <td style="vertical-align: top; width: 300px;"><span class="Parrafo">Coordenada Y del centro de la curva circular</span>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">IZQ</span><br />
+            </td>
+            <td style="vertical-align: top;">Sentido de la curva. Izquierda<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">VP</span><br />
+            </td>
+            <td style="vertical-align: top;">Velocidad de proyecto asignada a la curva<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">(dt)</span><br />
+            </td>
+            <td style="vertical-align: top;">Ángulo de deflexión de las tangentes en valor absoluto<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">hi</span><br />
+            </td>
+            <td style="vertical-align: top;">Insuficiencia de peralte<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vh1</span><br />
+            </td>
+            <td style="vertical-align: top;">Variación del peralte a la entrada<br />
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Vh2</span><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo">Variación del peralte a la salida</span></span></td>
+          </tr>
+
+
+
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+<ul>
+        
+        
+        
+        
+        
+        <li><span class="Parrafo"><span class="Parrafo">Coordenadas del PC ó del PT (desplazamiento) (<span style="font-weight: bold;">k,p</span>)</span></span></li></ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2">Datos de curvas verticales</span><br />
+      <br />
+</span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 489px; height: 77px;" alt="" src="Imagenes/gui_geometria_curvas_curvas_verticales.png" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+Listado .txt asociado a las tablas de geometría de curvas. Este listado
+imprime solo los valores que se dibujan con el longitudinal.<br />
+      <br />
+</span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 300px; height: 425px;" alt="" src="Imagenes/ol_geometria_curvas_txt.png" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,1046 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Terreno</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: TERRENO<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 696px;" border="0" cellpadding="0" width="700">
+<tbody><tr><td class="obsolete Parrafo" style="width: 691px;"><span class="Parrafo"><br /></span><img src="Imagenes/gui_terreno.png" style="width: 288px; height: 261px;" alt="" align="right" hspace="4" /><span class="Parrafo">Este
+apartado permite definir una variedad de elementos asociados a los
+perfiles transversales del terreno, a los perfiles de&nbsp;<span class="Archivo">ISPOL#.per</span> y a otras entidades.<br />
+      <br />
+Todos los parámetros a definir se aplican de manera general con lo que
+se consigue el objetivo de extraer información del diseño de nuestro
+eje y representar la mayor cantidad posible de datos.<br />
+      <br />
+</span>
+      <div style="margin-left: 40px;"><a href="#parametros"><span class="Parrafo">Parámetros</span></a><br />
+      <a href="#perfil_terreno"><span class="Parrafo">Perfil del terreno</span></a><br />
+      <a href="#lineas_transversales"><span class="Parrafo">Líneas de los transversales</span></a><br /><a href="#simbolos_transversales">
+Símbolos de los transversales</a><br /><a href="#otros_ejes_long_lineas_ptos_paso">
+Otros ejes, otros longitudinales, otras líneas y puntos de paso</a><br />
+      <div style="margin-left: 40px;"><a href="#otros_ejes">Otros ejes</a><br /><a href="#otros_longit_polilineas">
+Otros longitudinales cargados como polilíneas</a><br /><a href="#otros_longit_marcas">
+Otros longitudinales cargados como marcas</a><br /><a href="#rotulos_asociados_otros_longit">
+Rótulos asociados a otros longitudinales</a><br /><a href="#otras_lineas">
+Otras líneas asociadas a la rasante</a><br /><a href="#puntos_de_paso">
+Puntos de paso asociados a la rasante</a><br />
+      </div>
+      <a href="#anotaciones_guitarra"><span class="Parrafo">Anotaciones en la guitarra</span></a><br />
+      <a href="#maxima_pendiente"><span class="Parrafo">Anotaciones y símbolos de máxima pendiente</span></a><br />
+      <a href="#diag_masas"><span class="Parrafo">Diagrama de masas</span></a><br />
+      <a href="#diag_velocidades"><span class="Parrafo">Diagrama de velocidades</span></a><br />
+      <a href="#diag_visibilidad">Diagrama de visibilidad</a><br />
+      <a href="#diag_ent_perf">Diagrama de pendiente entre perfiles</a><br />
+      <a href="OL_gui_terreno.html#diag_seguimiento">Diagrama de seguimiento</a><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="parametros">Parámetros</a></span><br />
+      <span class="Parrafo"><br /></span><span class="Parrafo">Desde aquí se ajustan parámetros generales del perfil longitudinal que
+se describen a continuación. La mayoría de estas opciones se refieren
+al plano de comparación. Éste se calcula automáticamente a partir de la
+cota más baja entre rasante/s y terreno en cada hoja, pero el usuario
+puede intervenir en algunas cuestiones.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><img src="Imagenes/gui_terreno_parametros.png" style="width: 309px; height: 267px; margin-left: 7px;" alt="" /><br />
+      </div>
+      <span class="Parrafo">
+      </span>
+      <ul>
+        <li><img src="Imagenes/gui_salto_plano_comparacion.png" style="width: 188px; height: 317px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Permitir cambio de P.C. dentro de una hoja</span>: Da la posibilidad de modificar el plano de comparación en cada hoja (establecido como <span style="font-weight: bold;">SÍ</span>) o sólo al inicio de cada una (<span style="font-weight: bold;">NO</span>).
+De esta forma, por ejemplo, si el dibujo se sale por arriba, se produce
+un cambio de plano de comparación que permite que el terreno siga
+representándose, tal y como muestra la figura de la derecha.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Permitir dibujo del terreno fuera de la ventana</span>: Si se establece como <span style="font-weight: bold;">SÍ</span>, cuando el terreno sale fuera de los límites establecidos se representa igualmente.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Máx. cota roja para terreno en el P.C.</span>:
+Es la diferencia de cota máxima permitida entre rasante y terreno para
+que éste intervenga en el cálculo del plano de comparación. Superado
+este valor, el plano de comparación sólo considera la cota más baja de
+la rasante/s en la hoja para calcularse.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Distancia mínima entre P.C. y Zmin (mm)</span>: Es la distancia entre el longitudinal y el plano de comparación que al menos se va a respetar para que no se corten.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Distancia máxima entre P.C. y Zmax (mm)</span>:
+Es la distancia máxima permitida del longitudinal respecto al plano de
+comparación para que sea representado (salvo que se permita dibujar el
+terreno fuera de la ventana). Este valor y el anterior definen los
+límites inferior y superior de la ventana de dibujo del longitudinal, y
+ambos se establecen en milímetros de papel.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><img src="Imagenes/gui_franja_papel_libre_arriba.png" style="width: 266px; height: 180px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Franja de papel libre por arriba (mm)</span>:
+Es el ancho, en milímetros de papel, de la franja superior del plano
+dedicada a la representación de la parte correspondiente de planta
+(subpágina). Si se pone un valor negativo, dejará el espacio libre por
+abajo en vez de por arriba. Si no se desea representación de planta
+alguna, aquí
+deberá figurar 0.<br />
+          <br />
+</span><span class="Parrafo"><span class="Parrafo">Los parámetros que figuran bajo <span style="font-weight: bold;">Planta</span> permiten dimensionar la
+subpágina de la planta con dos márgenes laterales. Si se añade alguno
+de estos márgenes, la subpágina del longitudinal engloba a la de planta
+de modo que se pueden añadir en la guitarra del longitudinal, símbolos
+o leyendas que ocupen estas zonas de los márgenes.</span></span><br />
+</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px;">
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Distancia mínima entre rótulos (mm) -&gt; NO ROTULAR</span>:
+En el caso de que los puntos de inserción de dos símbolos de
+anotaciones en la guitarra sean inferiores a este valor, entonces se
+anula uno de ellos para evitar que se solapen.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Distancia mínima entre rótulos (mm) -&gt; SEPARAR</span>:
+Los símbolos de anotaciones en la guitarra se recolocan según este
+valor de distancia mínima, para evitar que se solapen. La guitarra
+ISP01B.gui incluye este parámetro con un valor de 2,5 mm. Tanto este
+parámetro como el anterior se establecen en milímetros de papel.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Plano de comparación múltiplo de</span>:
+Si se introduce un valor diferente de cero, utilizará este valor. Si no
+es así, seguirá haciéndolo teniendo en cuenta que depende de la escala
+vertical y de si se ponen líneas horizontales equidistantes para marcar
+las cotas de referencia, aunque redondeará al entero más próximo.</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Máxima cota roja para terreno en Zmáx</span>. Máxima cota roja para considerar el terreno en cota máxima en metros reales<br />
+          </span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Altura sobre Zmáx</span>. en milímetros de plano sobre la Z máxima<br />
+          </span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="perfil_terreno">Perfil del terreno</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      Desde aquí se configuran varios parámetros relativos a la representación de la línea de terreno:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 492px; height: 451px;" alt="" src="Imagenes/gui_terreno_perfil_del_terreno.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; width: 691px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 82px; font-weight: bold;">Interpolar</td>
+            <td style="vertical-align: top; width: 589px; text-align: justify;">Por
+defecto, sólo se representan datos en aquellos PK&#8217;s en los que existan
+perfiles transversales. Si se activa esta casilla, el programa
+calculará los datos en aquellos PK&#8217;s en los que no existan perfiles a
+partir de una interpolación entre los perfiles inmediatamente anterior
+y posterior.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 82px; font-weight: bold;">Tipo Lín&nbsp; <br />
+            </td>
+            <td style="vertical-align: top; width: 589px; text-align: justify;"><img src="Imagenes/gui_terreno_perfil_terreno_tipo_linea.png" style="width: 130px; height: 56px;" alt="" align="right" hspace="6" />Dos tipos
+de línea con los que se representará el perfil longitudinal del terreno: el primero para desmonte y el segundo para terraplén..
+Un valor negativo provoca que no se represente la línea de terreno.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 82px; font-weight: bold;">Vertic.<br />
+            </td>
+            <td style="vertical-align: top; width: 589px; text-align: justify;">Tipo
+de línea con el que se representarán las líneas verticales de la
+rejilla del longitudinal. Estas líneas se representan por debajo del
+terreno. Un valor negativo hace que no se representen estas líneas.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 82px; font-weight: bold;">Sólo múltiplos de<br />
+            </td>
+            <td style="vertical-align: top; width: 589px; text-align: justify;">Solo se
+representarán los PKs múltiplos del valor aquí indicado. Si este valor
+es 0, entonces se representan todos los PKs donde exista un
+perfil transversal. <br />
+            </td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">Sondeos</span></td><td>Dibuja
+los datos de los sondeos al igual que se representan en el menú
+Rasantes. Hay que tener la precaución&nbsp; de indicarle en<span style="font-style: italic;"> distancia mínima entre P.C. y Z min (mm) </span>un
+valor suficiente para la escala vertical del plano para que se puedan
+representar las rocas más profundas&nbsp;en Terreno - Parámetros.</td></tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">PK Usuario</span><br />
+            </td>
+            <td style="vertical-align: top;">Posibilidad de que al
+rotular solo los múltiplos de un valor, se tome como referencia los PKs
+de usuario deducidos de las ecuaciones de PK. <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">POZOS/CODOS</span><br />
+            </td>
+            <td style="vertical-align: top;">Si se marcan las casillas <span style="font-weight: bold;">POZOS</span> o <span style="font-weight: bold;">CODOS</span>,
+entonces también se representarán aquellos perfiles donde exista un
+pozo/codo. Para evitar que se solapen textos, cuando se marcan alguna
+de estas dos opciones, se activa un cuadro para indicar un valor, en mm
+de papel, de modo que si el perfil múltiplo está
+más cerca de un pozo/codo que ese valor, no se rotula el perfil
+múltiplo.<br />
+Para que funcione correctamente es necesario extraer perfiles del
+terreno, además de los múltiplos, en los PKs de los pozos y en los
+puntos singulares de planta y de alzado.<br />
+</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 82px; font-weight: bold;">Cota PC<br />
+            </td>
+            <td style="vertical-align: top; width: 589px; text-align: justify;">Se
+especifica aquí el tipo y posición del símbolo a utilizar para
+la etiqueta numérica que hace referencia a la posición y cota del plano de comparación.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 82px; font-weight: bold;">Cota PC Final<br />
+            </td>
+            <td style="vertical-align: top; width: 589px; text-align: justify;">Igual que la<span style="font-weight: bold;"> Cota PC</span>, pero rotulándose ésta por el final de la guitarra.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Z Rej. Inicial<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Se
+especifica aquí el tipo y posición del símbolo a utilizar para las etiquetas que representan la cota en las líneas horizontales
+de la rejilla. Se utilizará una etiqueta por
+cada una de las líneas horizontales definidas en <a href="OL_gui_pauta_fija.html#lineas_horiz_equidist"><span style="font-weight: bold;">[PAUTA FIJA]</span> &#8594; <span style="font-weight: bold;">[LINEAS HORIZONTALES EQUIDISTANTES]</span></a>.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Z Rej. Final<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Igual que <span style="font-weight: bold;">Z Rej. Inicial</span>, pero rotulándose por el final de la guitarra.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Z Rej. Inicial Salto P.C.</span><br />
+            </td>
+            <td style="vertical-align: top;">Igual que <span style="font-weight: bold;">Z Rej. Inicial</span>, pero para los casos en que hay un salto del plano de comparación dentro de una hoja<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Z Rej. Final Salto P.C.</span></td>
+            <td style="vertical-align: top;">Igual que <span style="font-weight: bold;">Z Rej. Final</span>, pero para los casos en que hay un salto del plano de comparación dentro de una hoja</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Trazos V<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><img src="Imagenes/gui_trazos_vert.png" style="width: 79px; height: 127px; margin-left: 7px;" alt="" align="right" />Tipo
+de línea de los trazos verticales de la guitarra. Estos trazos se añaden en la
+parte inferior de este cuadro de diálogo. Cada trazo se define por dos
+datos, <span style="font-weight: bold;">desde</span> el límite inferior <span style="font-weight: bold;">hasta</span> el superior. Definida una columna de trazos, ésta se repetirá sistemáticamente acorde con lo indicado en <span style="font-weight: bold; font-style: italic;">Sólo múltiplos de</span><span style="font-style: italic;">.</span> Un valor negativo provoca que no se representen los trazos.<br />
+            <br />
+Para el el primer trazo se puede calcular la altura de forma
+automática, con los mismos parámetros que se utilizan para las líneas
+horizontales y verticales de la pauta fija.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Tipo de linea perfil del terreno bajo eje de giro</span><br />
+            </td>
+            <td style="vertical-align: top;">Tipo de linea con el que se representará el terreno bajo el eje de giro para cada una de las calzadas (derecha e izquierda).<br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">Vertical hasta el terreno alternativa</span></td><td>Define una segunda línea vertical desde el plano de comparación hasta el terreno con un valor de <span style="font-weight: bold; font-style: italic;">Sólo multiplos de</span>.</td></tr><tr><td><span style="font-weight: bold;">Otras superficies</span></td><td>Permite
+dibujar el corte con el eje del resto de superficies que aparecen en
+los perfiles transversales del terreno, incluyendo las superficies
+procedentes de archivos <span style="font-style: italic;">TTP/TTG</span> de cuerpos cerrados como son los perfiles geotécnicos a partir de modelos BIM.</td></tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      <br />
+</span></span><span class="Titulo_2"><a name="lineas_transversales">Líneas de los transversales</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Junto con el perfil longitudinal del terreno, pueden dibujarse otros
+longitudinales correspondientes a puntos que aparezcan en el
+fichero&nbsp;<span class="Archivo">ISPOL#.per</span> (siendo # el
+número de eje). Para ello es necesario declarar cuál o cuáles se
+quieren representar (la superficie y el código identifican el punto del
+transversal) y de qué forma.<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; width: 692px; height: 90px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 36px; height: 34px;"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Lín</span><br />
+</span></span></td>
+            <td style="vertical-align: top; width: 636px; text-align: justify; height: 34px;"><span class="Parrafo"><span class="Parrafo">Tipo de línea con el que se
+va a representar el longitudinal. Un valor negativo provoca que no se
+represente dicho perfil longitudinal.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 36px; height: 29px;"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Sup</span><br />
+</span></span></td>
+            <td style="vertical-align: top; width: 636px; text-align: justify; height: 29px;"><span class="Parrafo"><span class="Parrafo">Superficie de la que se
+define un código y va a ser la que se represente. Si las superficies no
+tienen códigos (terrenos) no se hace caso al campo código, y sólo se
+comprueba que el primer punto esté a distancia cero del eje.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Código</span><br />
+            </td>
+            <td style="vertical-align: top;">Código del punto a representar a lo largo del longitudinal. <br /><br />Para ferrocarriles, se puede extraer:<br /><ul><li>Un punto de las superficies por debajo del Hilo Bajo utilizando código = -1000.</li><li>O&nbsp;por debajo del Hilo Alto utilizando código = -2000.</li></ul>En
+estos casos sólo se utiliza el valor del lado en el caso de doble vía.
+Puede interesar ver también: Dibujos/P.Longitudinal/Terreno/<a href="OL_gui_terreno.html#simbolos_transversales">Símbolos de los transversales</a>, la definición del Símbolo para Hilo Bajo e Hilo Alto.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 36px; height: 17px;"><span style="font-weight: bold;">L</span><br />
+            </td>
+            <td style="vertical-align: top; width: 636px; text-align: justify; height: 17px;"><span class="Parrafo"><span class="Parrafo">Lado, a <span style="font-weight: bold;">izquierda</span> o <span style="font-weight: bold;">derecha</span> del eje, al que hace referencia el código anterior.<br />
+            <img src="Imagenes/gui_long_terr_di.png" style="width: 165px; height: 50px;" alt="" align="right" hspace="6" />Las opciones <span style="font-weight: bold;">Ter D</span> o <span style="font-weight: bold;">Ter I</span></span></span> hacen referencia al terreno en la vertical del código especificado, para dibujarlo, o rotular su cota, etc...<br />Con las opciones <span style="font-weight: bold;">Zmín</span> y <span style="font-weight: bold;">Zmáx</span>
+es posible extraer, en la posición del eje geométrico, la cota mínima y
+máxima de una superficie que puede ser cerrada o con retrocesos, por lo
+que puede pasar varias veces por ese punto. Utilizando para una misma
+superficie dos líneas de datos, una con Zmín y otra con Zmáx, podemos
+obtener una representación, por ejemplo, de un tablero de una
+estructura obtenido cortando perfiles a una superficie con <span style="font-weight: bold;">extraplomos</span>.<br /><span class="Parrafo"><span class="Parrafo">
+            </span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">d. PC</span><br />
+            </td>
+            <td style="vertical-align: top;">Si en esta casilla se
+escribe un valor diferente de cero, no se tiene en cuenta la cota real
+de la línea y se dibuja como un tramo horizontal en la posición
+indicada.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Así, y según el ejemplo mostrado a continuación, se representará, con
+el tipo de línea 10, el longitudinal que pasa por el código 600 de la
+superficie 68 del lado derecho (correspondiente al fondo de cuneta):<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_lineas_transversales.png" style="width: 504px; height: 114px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_lineas_transversales2.png" style="width: 503px; height: 114px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_lineas_transversales3.png" style="width: 503px; height: 114px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span><span class="Parrafo"><span class="Parrafo"><br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_lineas_transversales4.png" style="width: 504px; height: 114px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /><span class="Parrafo"><span class="Parrafo">Además de que se dibuje el perfil correspondiente al punto indicado por
+superficie y código, es posible mostrar datos relativos a ese punto. En
+concreto es posible representar su <span style="font-weight: bold;">cota</span>, los <span style="font-weight: bold;">PKs de inicio y final</span> del longitudinal, <span style="font-weight: bold;">longitud total</span> del mismo, <span style="font-weight: bold;">distancia al eje</span>, <span style="font-weight: bold;">longitud relativa</span>, la <span style="font-weight: bold;">pendiente de tramo</span>, la <span style="font-weight: bold;">cota roja</span> y el <span style="font-weight: bold;">PK y cota de cambio de pendiente</span> (para algunos de estos se accede mediante el botón <span style="font-weight: bold;">[MÁS DATOS&gt;&gt;]</span>).<br />
+      <br />Puede seleccionarse la opción de rotular el PK de usuario deducido de las ecuaciones de PK. <br /><br /></span></span><div style="text-align: left;"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_lineas_transversales_pk_ec.png" style="width: 200px; height: 57px;" alt="" /></span></span><br /></div><span class="Parrafo"><span class="Parrafo"></span></span></div><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img src="Imagenes/gui_lineas_transversales_ptosAB.png" style="width: 137px; height: 77px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Algunas de estas opciones tienen casillas adicionales para</span></span><span class="Parrafo"><span class="Parrafo"> por ejemplo</span></span><span class="Parrafo"><span class="Parrafo"> rotular solamente las cotas de los puntos altos y bajos, rotular la diferencia entre la </span></span><span class="Parrafo"><span class="Parrafo">cota del punto en cuestión y la del punto anterior, etc.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+La <span style="font-weight: bold;">longitud relativa</span> posibilita dar el desarrollo de longitudes de elementos como puede ser un muro o una cuneta. La <span style="font-weight: bold;">pendiente de tramo</span>
+permite rotular sobre la línea extraída del punto de la sección (o
+sobre la guitarra, si se marca la casilla adyacente) la pendiente
+longitudinal (en %). Cuando se rotulan datos asociados al fondo de
+cuneta (código 600/101), si la cota de la cuneta está definida a partir
+de un longitudinal en el menú de rasantes podemos hacer que se rotule
+como pendiente de tramo la pendiente de ese longitudinal marcando la
+casilla que hay a tal efecto en esta sección.<br />
+      <br />
+La <span style="font-weight: bold;">cota roja</span> proporciona la diferencia de cota entre cualquier superficie dada respecto al terreno natural en todos sus puntos.<br />
+      <br />
+Otros valores que podremos rotular son: <span style="font-weight: bold;">PK de cambio de Pendiente </span>y <span style="font-weight: bold;">Z de cambio de Pendiente</span>.<br /><br />
+Es posible marcar con un símbolo los puntos altos y bajos de la línea.<br /><br />
+La representación de cada una de las características anteriores lleva
+asociada una etiqueta (valores negativos provocan que no se
+representen), una distancia al plano de comparación, un desplazamiento
+horizontal y un ángulo, a excepción de la pendiente de tramo, al que se
+le asocia una distancia vertical respecto a cada tramo y al que no
+tiene sentido asignarle un desplazamiento horizontal.<br />
+      <br />
+Posibilidad de dibujar trazos verticales desde el plano de comparación hasta la superficie seleccionada.<br />
+      <br /></span></span><span class="Titulo_2"><a name="simbolos_transversales">Símbolos de los transversales</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      Opción similar a la de <a href="#lineas_transversales">líneas de los transversales</a>,
+con la diferencia de que en este caso el longitudinal se crea a partir
+de un determinado tipo de símbolo que esté presente en los perfiles
+transversales.<br />
+      <br />
+De ese longitudinal obtenido es posible representar los siguientes datos:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Cota</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">PK de inicio y final</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Longitud</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Distancia al eje</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Longtiud relativa</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Pendiente de tramo</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_simb_transv_1.png" style="width: 486px; height: 133px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_simb_transv_2.png" style="width: 486px; height: 133px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+La representación de cada una de las características anteriores lleva
+asociada una etiqueta (valores negativos provocan que no se
+representen), una distancia al plano de comparación, un desplazamiento
+horizontal y un ángulo, a excepción de la pendiente de tramo, al que se
+le asocia una distancia vertical respecto a cada tramo y al que no
+tiene sentido asignarle un desplazamiento horizontal:</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; width: 692px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 51px; font-weight: bold;">Tipo lín<br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;">Tipo de línea del longitudinal. Un valor negativo provoca que no se presente.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 51px; font-weight: bold;">Símbolo<br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;">Tipo de símbolo de los transversales a partir del cual se genera el longitudinal.<br /><br />Para ferrocarriles, se puede extraer:<br /><ul><li>Hilo Bajo: Símbolo = -1000&nbsp; (Sim= -1001 en vía doble para el de la vía izquierda).</li><li>Hilo Alto: Símbolo = -2000&nbsp; (Sim= -2001 en vía doble para el de la vía izquierda).</li></ul>Puede interesar ver también: Dibujos/P.Longitudinal/Terreno/<a href="OL_gui_terreno.html#lineas_transversales">Líneas de los transversales</a>, la definición del Código para Hilo Bajo e Hilo Alto.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Cota</span><br />
+            </td>
+            <td style="vertical-align: top;">Se puede elegir si la cota que se extrae es la del símbolo o la del terreno en la posición del símbolo.<br />
+            <br />
+En caso de Túneles si se elige terreno, debe estar activada la opción
+en Complementos -&gt; Parámetros: [ ] Conservar terreno en perfiles de
+túnel.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 51px; font-weight: bold;">Sím<br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;">Tipo de símbolo (etiqueta) con el que se representará el correspondiente dato del longitudinal.
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 51px; font-weight: bold;">d. PC<br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;">Distancia vertical respecto al plano de comparación en donde se mostrará el correspondiente dato.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 51px; font-weight: bold;">d. Hr<br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;">Desplazamiento horizontal de las etiquetas del dato correspondiente.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 51px;">Áng<br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;">Ángulo con el que mostrar las etiquetas del dato correspondiente.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo">
+La <span style="font-weight: bold;">longitud relativa</span> posibilita dar el desarrollo de longitudes de elementos como puede ser una bionda. La <span style="font-weight: bold;">pendiente de tramo</span>
+permite rotular sobre la línea extraída del punto de la sección (o
+sobre la guitarra, si se marca la casilla adyacente) la pendiente
+longitudinal (en %).<br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+</span></span></span><span class="Titulo_2"><a name="otros_ejes_long_lineas_ptos_paso">Otros ejes, otros longitudinales, otras líneas y puntos de paso</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desde este submenú se define la forma y distribución de la información añadida desde el menú <a href="OL_rasantes_diseno.html">RASANTES</a>.<br /><br /><img style="width: 350px; height: 231px;" alt="" src="Imagenes/otros_ejes_long_lin_ptosPaso.png" /><br />
+      <br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="otros_ejes">Otros ejes</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Permite representar en el plano de longitudinal las intersecciones con otros ejes.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_otros_ejes.png" style="width: 429px; height: 202px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <table style="text-align: left; width: 692px; height: 195px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 49px; font-weight: bold;">Dibujar<br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Es necesario marcar esta casilla para que se representen los ejes.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 49px; font-weight: bold;">TipLin<br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Tipo de línea con el que representarán los otros ejes. Un valor negativo provoca que no se dibujen.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 49px; font-weight: bold;">SimEje<br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Etiqueta con la que identificar a cada eje. Por defecto se sugiere el tipo 47, que es una etiqueta de la forma <span style="font-style: italic;">Eje #</span> (siendo # el número de eje). Un valor negativo provoca que no se vea la etiqueta.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 49px; font-weight: bold;">Gálibo<br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Etiqueta
+numérica con la que representar la diferencia de cota entre la rasante
+y los ejes. Un valor negativo provoca que no se represente este valor.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 49px; font-weight: bold;">d.Vert <br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Desplazamiento vertical de las etiquetas de gálibo.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 49px; font-weight: bold;">d.Hori<br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Desplazamiento horizontal de las etiquetas de gálibo.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 49px;">Áng<br />
+            </td>
+            <td style="vertical-align: top; width: 624px; text-align: justify;">Ángulo con el que representar las etiquetas de gálibo.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Además de lo anterior, es posible indicar un tipo de símbolo (o
+rótulo), unos desplazamientos verticales y horizontales y un ángulo
+para rotular en el punto de intersección y sobre la rasante:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El <span style="font-weight: bold;">PK de intersección</span>
+de ejes o la <span style="font-weight: bold;">Estaca</span>. Se admite un margen de 5 metros que permita rotular el PK o la Estaca de
+intersección de los ejes por fuera de la plataforma cortada del otro
+eje.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una <span style="font-weight: bold;">marca</span>, por defecto el símbolo 11 que es una pequeña línea vertical.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El <span style="font-weight: bold;">nombre</span>
+del otro eje. Aquí además es necesario especificar el tamaño y el punto
+de enganche del rótulo. Ofrece la posibilidad de que dicho rótulo se
+muestre sobre el otro eje en lugar de sobre la rasante del eje actual.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La <span style="font-weight: bold;">cota</span> de la rasante en dicho punto.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En los <span style="font-weight: bold;">otros ejes</span> es posible rotular el <span style="font-weight: bold;">PK de intersección</span> o la <span style="font-weight: bold;">Estaca</span> relativo a ellos, una <span style="font-weight: bold;">marca</span> y la <span style="font-weight: bold;">cota</span> de estos ejes y, adicionalmente, el <span style="font-weight: bold;">azimut</span> y el <span style="font-weight: bold;">esviaje</span> entre los dos ejes.<br />
+
+      <br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="otros_longit_polilineas">Otros longitudinales cargados como polilíneas</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><img src="Imagenes/gui_otros_longit_polilineas.png" style="width: 288px; height: 190px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Permite
+representar longitudinales adicionales al de la/s rasante/s y el
+terreno, en concreto aquellos cargados como polilíneas en la pestaña de
+diseño de RASANTES. Para ello sólo es preciso añadir tantos datos como ficheros&nbsp;<span class="Archivo">.lon</span> hayamos cargado en el menú de Rasantes:<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 420px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 58px; font-weight: bold;">Número<br />
+            </td>
+            <td style="vertical-align: top; width: 340px; text-align: justify;">Hace referencia al longitudinal a mostrar.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 58px; font-weight: bold;">Tipo línea<br />
+            </td>
+            <td style="vertical-align: top; width: 340px; text-align: justify;">Tipo de línea con el que representar dicho longitudinal.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="otros_longit_marcas">Otros longitudinales cargados como marcas</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Permite mostrar las marcas generadas desde RASANTES (opción <span style="font-weight: bold;">[OTROS LONGIT.] </span>&#8594; <span style="font-weight: bold;">Marcas según tipo de línea</span>).
+Es preciso recordar que dichas marcas proceden de los cortes de un
+longitudinal con las diferentes líneas de la superficie contra la que
+ha sido creado, y que los rótulos asociados a dichas marcas son los
+nombres de los tipos de línea intersecadas. <br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_otros_longit_marcas.png" style="width: 490px; height: 177px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Para cada longitudinal de marcas es necesario precisar:<br />
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 691px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 81px;"><span style="font-weight: bold;">Número</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Hace referencia al longitudinal de marcas a mostrar. <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 81px;"><span style="font-weight: bold;">Tipo línea</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Las
+marcas no son más que líneas verticales. Se establece aquí con qué tipo
+han de representarse. Si se especifica un valor negativo, entonces
+dichas líneas se representan con el tipo del que proceden.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 81px;"><span style="font-weight: bold;">Abajo</span> / <span style="font-weight: bold;">Arriba</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Las marcas parten de la rasante y su longitud desde ese punto hacia abajo y hacia arriba es la aquí indicada.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 81px;"><span style="font-weight: bold;">Text X</span> / <span style="font-weight: bold;">Text Y</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">El
+texto (que es el nombre del tipo de línea intersecado cuando se creó el
+longitudinal) se coloca por defecto a continuación de la marca y por
+arriba. Estos valores son desplazamientos horizontal y vertical del
+texto respecto a dicho punto.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 81px;"><span style="font-weight: bold;">Ángulo</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Ángulo del texto respecto al punto en el que comienza a insertarse.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 81px;"><span style="font-weight: bold;">Tamaño</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Factor de escala para el tamaño del texto.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="rotulos_asociados_otros_longit">Rótulos asociados a otros longitudinales</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Una vez declarados los <span style="font-style: italic;">otros longitudinales</span>
+(tanto de tipo polilínea como de tipo marcas), normalmente resultará
+interesante mostrar información adicional sobre ellos. Es desde este
+menú donde se especifica qué se desea rotular y de qué forma.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_rotulos_otros_longit.png" style="width: 490px; height: 177px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En la columna <span style="font-weight: bold;">Num</span> se debe
+especificar el longitudinal a rotular. Si se desean representar varias
+características de un mismo longitudinal, se añadirán en el cuadro de
+diálogo tantos datos como características a representar y se
+especificará el mismo <span style="font-weight: bold;">Num</span> para cada uno de ellos.<br />
+      <br />
+Para cada longitudinal declarado se puede rotular:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota del terreno (<span style="font-weight: bold;">Z Terreno</span>).</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota de la rasante (<span style="font-weight: bold;">Z Rasante</span>).</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota del otro longitudinal (<span style="font-weight: bold;">Z Otro Lon</span>).</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia al eje actual (<span style="font-weight: bold;">Dist. Eje</span>).</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">PK referido al eje actual (<span style="font-weight: bold;">PK</span>).</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Texto asociado a la marca (<span style="font-weight: bold;">Tex. Marca</span>):
+Para el caso de que el otro longitudinal sea de tipo marcas, es posible
+mostrar el texto asociado a dicha marca (que proviene, a su vez, del
+nombre del tipo de línea). En este caso lo que se especifica es el tipo
+(estilo) de rótulo a utilizar. Al tratarse de un texto, tendrán
+asociados datos del enganche horizontal y vertical (punto de inserción
+del rótulo) que se cumplimentará en los desplegables <span style="font-weight: bold;">Eng.Hor</span> y <span style="font-weight: bold;">Eng.Ver</span> respectivamente.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota roja (<span style="font-weight: bold;">Cota Roja</span>): Diferencia de cota entre rasante y el otro longitudinal.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Diferencia de cota con otro longitudinal (<span style="font-weight: bold;">ZN1-ZN2</span>): El otro longitudinal que interviene se especifica en la columna correspondiente al dato <span style="font-weight: bold;">Cod</span>/<span style="font-weight: bold;">N2</span>.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia real entre dos longitudinales (<span style="font-weight: bold;">D3D(N1-N2)</span>): teniendo en cuenta la diferencia de cota y la diferencia entre las distancias al eje.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Observaciones</span>: Una observación, definida en el menú de rasantes, que se rotulará en la primera aparición en cada hoja del otro longitudinal.<br />
+          </span></span></span></li>
+
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Y
+cada uno de estos grupos de rótulos (etiquetas) pueden ubicarse según
+el longitudinal del terreno, de la rasante, del otro longitudinal o en
+la zona de guitarra. Además, en cada dato será necesario indicar el
+tipo de símbolo (etiqueta) a utilizar, desplazamientos verticales y
+horizontales, ángulo y factor de escala (tamaño).<br />
+      <br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="otras_lineas">Otras líneas asociadas a la rasante</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si se activa la casilla correspondiente, en el longitudinal también se representarán las <span style="font-style: italic;">otras líneas</span> definidas desde la pantalla de diseño de RASANTES.<br />
+      <br />
+</span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_otras_lineas.png" style="width: 267px; height: 99px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="puntos_de_paso">Puntos de paso asociados a la rasante</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+También es posible rotular los puntos de paso, los cuales representan
+en ocasiones datos imprescindibles para la interpretación de un diseño.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_puntos_de_paso.png" style="width: 400px; height: 152px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dibujar puntos de paso</span>:
+Al marcar esta casilla, se representa el punto de paso con la etiqueta
+(por defecto, símbolo 550) indicada. El valor numérico que aparece
+corresponde a la distancia al eje en planta.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Atributo</span>:
+Rotula el atributo alfanumérico asociado a cada punto de paso, con el
+estilo de texto, desplazamientos horizontales y verticales respecto al
+punto de paso, ángulo, tamaño y punto de inserción del texto indicados.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Z Roja</span>:
+Permite representar en el perfil longitudinal la diferencia de cota con
+la rasante, con la etiqueta, desplazamientos horizontal y vertical y
+ángulo indicados.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold; font-style: italic;"><a name="long_ssaa"></a>Longitudinales de servicios afectados<br /><br /></span>Permite
+representar los Servicios Afectados cargados desde RASANTES ( [OTROS
+LONIGT.] -&gt; Longit. de Cortes con Servicios Afectados). La
+representación se obtiene del archivo .lon que contiene los esviajes de
+las líneas y de la definción de la línea paramétrica (QA).<span style="font-weight: bold; font-style: italic;"><br /><br /><img style="width: 400px; height: 144px;" alt="" src="Imagenes/gui_serv_afectados.png" /><br /><br /></span>Para cada longitudinal de servicios es necesario precisar:<br /><br /><span style="font-weight: bold;">Número</span> de elemento cargado en el <a href="OL_rasantes_otros_longitudinales.html#ver_menu">Menú</a> de OTROS LONGIT cargados.<br /><br /><span style="font-weight: bold;">Tipo de línea</span> con el que se representará, por defecto utiliza el que se utilizó en la cartografía para generar el .lon.<br /><br /><span style="font-weight: bold;">Posición (X,Y), ángulo y tamaño</span> del texto: se rotulará el nombre L-tipodelínea.<br /><br /><br /><br />
+      </span></span><span class="Titulo_2"><a name="anotaciones_guitarra">Anotaciones en la guitarra</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo">Es uno
+de los menús más importantes de esta herramienta, pues desde aquí se
+especifica qué datos aparecerán en la zona de guitarra.<br />
+      <br />
+Para cada conjunto de datos es necesario indicar el tipo de símbolo
+(etiqueta) con el que se representarán así como la distancia al plano
+de comparación, el desplazamiento horizontal y el ángulo.<br />
+Para todas las cotas rojas y diferencias de cotas se habilita la posibilidad de rotularlas en milímetros.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><img src="Imagenes/gui_anotaciones_guitarra.png" style="width: 386px; height: 172px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Los datos que son posibles mostrar son:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Distancia parcial (<span style="font-weight: bold;">Dis. Parcial</span>): Distancia relativa al perfil inmediatamente anterior.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Distancias relativas al kilómetro (<span style="font-weight: bold;">Dis. al P.K.</span>): Se rotulan distancias relativas al kilómetro anterior.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Distancia al origen (<span style="font-weight: bold;">Dis. Origen</span>): Rotula distancias relativas al origen del eje.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la rasante derecha (<span style="font-weight: bold;">Z Ras. Dr</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Diferencia de cota entre rasante derecha e izquierda (<span style="font-weight: bold;">Z_Dr &#8211; Z_Iz</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la rasante izquierda (<span style="font-weight: bold;">Z Ras. Iz</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Diferencia de cota entre rasante izquierda y derecha (<span style="font-weight: bold;">Z_Iz &#8211; Z_Dr</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota del terreno (<span style="font-weight: bold;">Z Terreno</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en desmonte (<span style="font-weight: bold;">Z Roja Desm.</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en terraplén (<span style="font-weight: bold;">Z Roja Terr.</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en desmonte para la rasante izquierda (<span style="font-weight: bold;">Z Roja Des.Iz</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en terraplén para la rasante izquierda (<span style="font-weight: bold;">Z Roja Ter.Iz</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Coordenadas X e Y del eje en el PK de cada perfil.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota del terreno en la posición de el/los eje/s de giro.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota del <span style="font-weight: bold;">otro longitudinal</span> que especifique el usuario.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en desmonte desde de la superficie de excavación (L68) al terreno (<span style="font-weight: bold;">Z Roja (68) Desm.</span>)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en terraplén desde de la superficie de excavación (L68) al terreno (<span style="font-weight: bold;">Z Roja (68) Terr.</span>)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja en el eje desde la superficie de excavación (L68) <span style="font-weight: bold;">Z(68) en el eje</span>.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Peralte derecho (<span style="font-weight: bold;">Peralte D</span>).<br />
+          </span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Peralte izquierdo (<span style="font-weight: bold;">Peralte I</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja de la subrasante (superficie 68) bajo el eje de giro por la derecha (<span style="font-weight: bold;">Z Roja (68) E.G. D</span>)<br />
+          </span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota roja de la subrasante (superficie 68) bajo el eje de giro por la izquierda </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">(<span style="font-weight: bold;">Z Roja (68) E.G. I</span>)</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Recubrimiento Tubo</span>: posibilidad de rotular el recubrimiento del tubo.(Altura desde la parte externa superior del tubo al terreno).</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota roja de la rasante (superficie 67) bajo el eje de giro por la derecha (<span style="font-weight: bold;">Z Roja (67) E.G. D</span>)</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota roja de la rasante (superficie 67) bajo el eje de giro por la izquierda (<span style="font-weight: bold;">Z Roja (67) E.G. I</span>)</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia relativa al PK de origen (<span style="font-weight: bold;">PK - PK_origen</span>)</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia parcial entre perfiles, anotada en medio de los dos perfiles (<span style="font-weight: bold;">Dis.Parcial en Medio</span>)</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Pendiente de la rasante en % (<span style="font-weight: bold;">Pendiente Ras %</span>)<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+
+
+
+
+
+
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">En el caso de tuberías, es probable que existan saltos verticales (resaltos) en la rasante (generados con la tecla <span style="font-weight: bold;">[V]</span> en el diseño de <a href="OL_rasantes_diseno.html">RASANTES</a>). Para tales casos existen las siguientes opciones:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la rasante derecha inmediatamente antes de un salto vertical (<span style="font-weight: bold;">Z Ras.Dr(ant)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Diferencia de cota entre rasante derecha e izquierda inmediatamente antes de un resalto (<span style="font-weight: bold;">Z_Dr-Z_Iz(ant)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la rasante izquierda inmediatamente antes de un salto vertical (<span style="font-weight: bold;">Z Ras.Iz(ant)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Diferencia de cota entre rasante izquierda y derecha inmediatamente antes de un resalto (<span style="font-weight: bold;">Z_Iz-Z_Dr(ant)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la rasante derecha inmediatamente después de un salto vertical (<span style="font-weight: bold;">Z Ras.Dr(des)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Diferencia de cota entre rasante derecha e izquierda inmediatamente después de un resalto (<span style="font-weight: bold;">Z_Dr-Z_Iz(des)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la rasante izquierda inmediatamente después de un salto vertical (<span style="font-weight: bold;">Z Ras.Iz(des)</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Diferencia de cota entre rasante izquierda y derecha inmediatamente después de un resalto (<span style="font-weight: bold;">Z_Iz-Z_Dr(des)</span>).</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">Otras opciones de representación son:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Cota del fondo de zanja, en ejes de tuberías (<span style="font-weight: bold;">Z Fondo Zanja</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja del fondo de zanja, en ejes de tuberías (<span style="font-weight: bold;">Z Roja Zanja</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Número de perfil (<span style="font-weight: bold;">Número Perfil</span>).
+En el caso de que el perfil del terreno esté numerado, muestra dicho
+número. Se recuerda al usuario que para numerar los perfiles puede
+acudirse al EDITOR DE PERFILES &#8594; <span style="font-weight: bold;">[MODIFICAR 2]</span> &#8594; <span style="font-weight: bold;">Numerar perfil</span>. También se pueden numerar perfiles en PK&#8217;s singulares al cortar perfiles (columna <span style="font-weight: bold;">N</span>
+del cuadro de diálogo correspondiente a la obtención de perfiles del
+terreno) o al importar ciertos ficheros. Por tanto en un fichero de
+perfiles del terreno, algunos de estos perfiles pueden estar numerados
+y otros no. Por defecto, un fichero de perfiles del terreno NO está
+numerado.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja de la rasante derecha (<span style="font-weight: bold;">Z Roja</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota roja de la rasante izquierda (<span style="font-weight: bold;">Z Roja Iz</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Rotulación de decenas (<span style="font-weight: bold;">Decenas (PK)</span>): Funciona igual que en el caso de distancia al PK, sólo que en este caso relativo al hectómetro.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Longitud tridimensional (<span style="font-weight: bold;">Longitud 3D</span>):
+Rotulación de la longitud real, teniendo en cuenta la pendiente, desde
+el origen del eje en planta. Muy útil, por ejemplo, para el caso de
+longitudinales asociados a muros, cunetas, etc.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Distancia parcial 3D</span>: Se puede anotar la distancia parcial 3D. Si los perfiles se han extraido utilizando el evento Longitudes 3D en tubos (<a href="OL_perf_transv.html">menú Transversales</a>), esta distancia coincidirá con las longitudes de los tubos.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Posibilidad de rotular la cota de la Rasante Auxiliar, <span style="font-weight: bold;">Z Ras. Aux.</span> en las zonas donde esta esté definida.<br />
+          </span></span></li>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Cota Roja de una Superficie en Desmonte</span><br />
+          </span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Cota Roja de una Superficie en Terraplén</span>. Hay que dar la superficie p.e. 46 (Techo de subbalasto).</span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">dZ (Ras-Sup)</span>: Posibilidad de anotar la diferencia de Cota entre la Rasante y una superficie cualquiera en el eje</span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">dZ (Ras-Sup)Desm</span>: &nbsp;</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Posibilidad de anotar la diferencia de Cota entre la Rasante y una superficie cualquiera en el eje en caso de desmonte.</span></span></span></span></span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">dZ (Ras-Sup)Terr</span>: </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Posibilidad de anotar la diferencia de Cota entre la Rasante y una superficie cualquiera en el eje en caso de terraplén.</span></span></span></span></span></span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">dZ (Ras - Otro Lon)</span>: Cota roja entre la rasante y Otro longitudinal.</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Z Roja(68)Desmonte.D.P.</span>: Cota roja del fondo de la canja detrás del pozo, si hay un salto vertical que haga que esta cota roja sea distinta a la otra.<br />
+          </span></span></span></span></span></span></span></span></li>
+
+
+
+      </ul>
+      
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="maxima_pendiente">Anotaciones y símbolos de máxima pendiente</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo">Permite
+representar numéricamente (en %) y/o gráficamente (mediante vectores,
+símbolo 152) el valor de la máxima pendiente. Es necesario indicar el
+tipo de símbolo y la distancia al plano de comparación y es posible
+además especificar un desplazamiento horizontal y un ángulo para los
+símbolos. En el caso de usar el símbolo 152 para el vector (o uno
+similar), su sentido y dirección corresponden al de máxima pendiente.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_max_pendiente.png" style="width: 270px; height: 178px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span></span><span class="Parrafo"><span class="Titulo_2"><a name="diag_masas">Diagrama de masas</a></span><br />
+      <span class="Parrafo"><br />Permite representar numéricamente y/o gráficamente el diagrama de masas, bien para el eje actual bien conjunto (<span style="font-weight: bold;">Tipo</span>).
+Para la representación numérica se ha de especificar el tipo de símbolo
+(etiqueta) a utilizar y la distancia respecto al plano de comparación,
+pudiéndose indicar también un desplazamiento horizontal y un ángulo
+para dichas etiquetas.<br /><br />Para la representación gráfica, se ha
+de indicar el tipo de línea para el gráfico, la distancia respecto al
+plano de comparación y la escala (m<sup>3</sup>/mm).<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/gui_diag_masas.png" style="width: 400px; height: 289px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"><br />También cabe la posibilidad de
+rotular en la guitarra las mediciones (área, volumen parcial o volumen
+acumulado) de aquellos materiales que intervienen en el diagrama de
+masas (para una tabla&nbsp;<span class="Archivo">.dar</span> seleccionada) y dicho valor puede estar afectado o no por el coeficiente definido en la tabla&nbsp;<span class="Archivo">.dar</span>
+para ese material. Basta con marcar las casillas correspondientes y los
+tipos de símbolo (etiquetas) para la representación de los valores, así
+como la distancia al plano de comparación y, si es preciso, un
+desplazamiento horizontal y un ángulo de rotación de la etiqueta.<br />
+      <br />
+Los ficheros&nbsp;<span class="Archivo">DiagMasS.gui</span> y&nbsp;<span class="Archivo">DiagMasC.gui</span> son buenos ejemplos de representación del diagrama de masas de un eje y conjunto respectivamente.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="diag_velocidades">Diagrama de velocidades</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span><img src="Imagenes/gui_diag_velocidades.png" style="width: 270px; height: 362px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo">Permite
+representar numéricamente y/o gráficamente el diagrama de velocidades
+tanto directo (PK&#8217;s crecientes) como inverso (PK&#8217;s decrecientes). Es
+necesario haber calculado previamente dicho diagrama <a href="OL_diagrama_de_velocidades.html">desde el correspondiente menú</a>.<br />
+      <br />
+Para los valores numéricos se ha de especificar el tipo de etiqueta
+numérica con el que se van a representar las velocidades (en km/h),
+además de la distancia al plano de comparación y, opcionalmente, un
+desplazamiento horizontal de las etiquetas además de un ángulo.<br />
+      <br />
+Para el gráfico de velocidades, basta con indicar el tipo de línea, la
+distancia al plano de comparación y la escala de dibujo (por defecto, 4
+mm de papel por cada km/h).<br />
+      <br />
+El fichero&nbsp;<span class="Archivo">DiagVel.gui</span> que se entrega con la librería es un buen ejemplo de diagrama de velocidades.<br />
+<br />
+      De forma similar, es posible representar el <span style="font-weight: bold;">diagrama de velocidades específicas</span>.
+En este caso, dicho diagrama puede ser según el radio (asumiendo
+entonces para peraltes los establecidos en la norma) o según radio y
+peralte (haciendo uso del peralte real del proyecto). Si se hace uso de
+ambos, es posible, por tanto, detectar las desviaciones respecto a la
+norma.</span><br />
+      </span><span class="Parrafo"><br />
+      <br />
+</span></span></span></span></span></span><span class="Titulo_2"><a name="diag_visibilidad">Diagrama de visibilidad</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span><img src="Imagenes/gui_diag_visibilidad.png" style="width: 270px; height: 427px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Permite rotular el valor o dibujar un diagrama de:<br />
+      </span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La distancia de visibilidad disponible.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La distancia necesaria.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La velocidad de estudio</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La velocidad reducida.</span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">tanto para el recorrido directo como el inverso.<br />
+      <br />
+Para poder representar estos datos es necesario haber realizado previamente los estudios correspondinetes de <a href="OL_visibilidad.html">visibilidad</a> en los ejes implicados.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <a name="diag_ent_perf"><span class="Titulo_2">Diagrama de pendiente entre perfiles</span><br />
+      <br />
+      </a><img src="Imagenes/gui_diag_pend_ent_perf.png" style="width: 300px; height: 142px;" alt="" align="right" hspace="6" />Permite rotular la pendiente aparente de la <span style="font-weight: bold;">rasante</span> entre cada dos perfiles del terreno, en <span style="font-weight: bold;">tanto por cien</span> y/o <span style="font-weight: bold;">por mil</span> y/o <span style="font-weight: bold;">por uno</span>, y la&nbsp; <span style="font-weight: bold;">longitud parcial</span> de los perfiles.<br />
+      <br />
+Además se puede dibujar un <span style="font-weight: bold;">diagrama</span> tipo serrucho, con
+una linea ascendente, descendente u horizontal segun la pendiente entre
+cada dos perfiles y entre dos alturas fijas.<br />
+      <br />
+
+Este diagrama se complementa dibujando trazos <span style="font-weight: bold;">verticales</span> según los perfiles del terreno entre estas dos alturas y en la <a href="OL_gui_pauta_fija.html#lineas_horiz_sueltas">pauta fija</a> dos líneas horizontales a estas dos alturas.(definidas por su distancia al plano de comparación.)<br />
+      <br />
+      <img src="Imagenes/gui_diag_pend_n1.png" style="width: 152px; height: 52px;" alt="" align="right" hspace="6" />Este diagrama y estos datos pueden asignarse, en vez de la Rasante, al primer dato da las líneas extraidas de los<a href="OL_gui_terreno.html#lineas_transversales"> transversales</a> en lugar de usar la cota de la rasante.<br />
+      <br />
+      <br />
+</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="diag_seguimiento"><span class="Titulo_2">Diagrama de seguimiento<br />
+      <br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/gui_seguimiento.png" style="width: 300px; height: 112px;" alt="" align="right" hspace="6" /></span></span></span></span></span></span></span>Permite
+dibujar un diagrama con el porcentaje de ejecución del último dato de
+campo y los nueve anteriores, así como rotular el valor del último.<span class="Titulo_2"><br />
+      </span></a></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

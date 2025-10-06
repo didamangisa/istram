@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Grupos de ejes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Grupos de ejes<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />Despliega
+un menú que permite dar nombres a los grupos de ejes que se ha definido
+en la planta. Así mismo, este menú permite activar/desactivar algunos
+grupos para inhibir su cálculo y representación en los cálculos del
+proyecto completo. La configuración en cuanto a la activación/desactivación y los nombres de los grupos de ejes puede <span style="font-weight: bold;">guardarse</span> o <span style="font-weight: bold;">cargarse</span> mediante ficheros&nbsp;<span class="Archivo">.gru</span>.<br />
+      <br />
+Desde esta ventana también se pueden ver los nombres de los diversos
+ejes que componen cada grupo, siendo posible cambiar el grupo y el
+nombre de los ejes; para que los cambios sean definitivos aparece la
+opción <span style="font-weight: bold;">[Guardar &lt;proyecto&gt;.cej]</span>. (la asignación del grupo al que pertenece un eje se almacena en el archivo&nbsp;<span class="Archivo">.cej</span>).<br />
+      <br />
+Se puede asignar a cada grupo un eje diferente para proyectar los
+volúmnenes en los archivos pkcvXX.res. Si el valor se deja a 0, se
+utiliza el eje poara proyectar volúmenes general de la tabla de
+Proyecto.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo">&nbsp;<img style="width: 600px; height: 366px;" alt="" src="Imagenes/dialogo_grupos.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /></span><span class="Parrafo">Se puede definir para cada grupo una tabla .dar, en la columna&nbsp;<span class="Parf_negrita">Tabla .dar</span>.<br /><br /></span><span class="Parrafo">Se puede definir para cada grupo una tabla .dar para firmes, en la columna<span style="font-weight: bold;">&nbsp;</span><span class="Parf_negrita">.dar firmes</span>.</span><br /><span class="Parrafo"><br />Se puede definir para cada grupo una sección tipo mediente un archivo&nbsp;.vol, en la columna <span class="Parf_negrita">Sección .vol tipo</span>. Si el eje tiene una propia definida mandaría la del eje, sino se utiliza la del grupo.<br /><br />Se puede definir para cada grupo un nombre de base para los archivos <span class="Archivo">.vol </span>en la columna <span class="Parf_negrita">Nombre de base</span> y si se define aquí, este manda sobre el nombre de base general. <br /><br />Esta información de los grupos se guarda/recupera en el archivo <span class="Archivo">.pol</span> del proyecto.<br /><br />
+Al lado del nombre de cada eje aparece una casilla que por defecto está
+de color cyan. Si se pulsa en esta casilla aparece una ventana de
+selección de color que permite asignar un determinado índice de color a cada eje
+y por ende a cada grupo, pudiendo de esta manera diferenciarse los
+diferentes grupos por colores en los menús de PLANTA, ALZADO y
+COMPLETO, y en el <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">No decorado</span></a>, pues las líneas de tipo 53 (ejes) se dibujan con el color aquí definido.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      El botón <span style="font-weight: bold;">[Agrupar por .dar]</span>
+permite agrupar los ejes segun la tabla de cubicación asociada a cada
+eje. Esto es útil a la hora de generar listados con mediciones
+conjuntas (</span></span></span><a href="OL_listados_mediciones.html#cvoltot"><span class="Archivo">cvoltot.res</span></a>,&nbsp;<a href="OL_listados_mediciones.html#cvolgru"><span class="Archivo">cvolgru.res</span></a>,&nbsp;<a href="OL_listados_mediciones.html#cvolejes"><span class="Archivo">cvolejes.res</span></a>,...)<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">.<br />
+      <br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+la parte inferior de este menú, zona izquierda, se pueden ver todos los
+ejes del proyecto. En ella se pueden hacer las siguientes acciones:<br /><br /></span></span></span><ul><li>Columna <span class="Parf_negrita">Eje</span>: <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Muestra
+el número de todos los ejes del proyecto. Se puede acceder al eje,
+tecleando su número en la primera casilla de esta columna.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Columna <span class="Parf_negrita">Nombre</span>: &nbsp;</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Muestra el nombre de todos los ejes del proyecto. Este nombre puede ser cambiado directamente en esta casilla.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Columna <span class="Parf_negrita">Bloqueado</span>: &nbsp;Muestra si este eje está bloqueado.&nbsp;</span></span></span><span class="Parrafo">Un eje se puede marcar como <span style="font-weight: bold;">bloqueado</span> (también se pueden bloquear ejes desde la <a href="OL_general.html">pestaña GENERAL</a>). Un eje bloqueado puede seleccionarse, pero no es posible modificar su geometría.</span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Columna <span class="Parf_negrita">Grupo</span>:</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Muestra el grupo al que pertenece cada eje del proyecto. Este grupo puede ser cambiado directamente en esta casilla.</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+la parte inferior de este menú, zona derecha, &nbsp;se muestran todos
+los ejes del grupo actual, siendo&nbsp;el grupo actual&nbsp;grupo
+visible primer lugar en la parte superior de este menú <span class="Parf_negrita">Grupos</span>. El grupo actual se puede ir cambiando moviendose con la barra de deslizamiento de la parte superior de este menú de <span class="Parf_negrita">Grupos</span>.<br /><br />El botón <span style="font-weight: bold;">[Renombrar Ejes]</span>
+permite renombrar todos los ejes de un grupo haciendo referencia al PK
+en el que se proyecta su punto inicial (o final) sobre un eje principal.<br />
+      </span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></td></tr></tbody></table></body></html>

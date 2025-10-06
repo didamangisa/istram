@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Cuñas de transición</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CUÑAS DE TRANSICIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+<tbody><tr><td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+Este menú permite generar dos diferentes materiales de transición de
+terraplén (cubicados como MAT_TRANS_1 y MAT_TRANS_2) para el relleno
+tras los estribos de las estructuras.<br />
+      <br />
+</span><span class="Parrafo"><span class="Parrafo">Los datos de
+PK's en este menú se pueden dar tanto gráfica como numéricamente
+(botones <span style="font-weight: bold;">[Clic]</span>/<span style="font-weight: bold;">[Teclado]</span>).
+En el caso de darlo gráficamente, la proyección del punto sobre el eje
+puede hacer referencia a un perfil exacto ó interpolado.</span></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_cunas_transcicion.png" style="margin-right: 7px; width: 349px; height: 250px; float: left;" alt="" /><span class="Parrafo">En primer lugar, desde la pestaña <span style="font-weight: bold;">TIPOS</span> se definen las diferentes geometrías (distancias y taludes). La excavación necesaria se cubicará como excavación de saneo (<span class="Archivo">EXCAVA_SANEO</span>).<br />
+      <br />
+En el menú de <a href="OL_rasantes_diseno.html">RASANTES</a>, si está activado el <a href="OL_rasantes_opciones_visualizacion.html#estructuras">dibujo de estructuras</a>, se
+representan longitudinalmente las líneas que definen los materiales de
+transición (<span style="font-weight: bold;">MT1</span> y <span style="font-weight: bold;">MT2</span>).<br />
+      <br />
+Al calcular el alzado, se interpolan automáticamente perfiles en todos
+los PK&#8217;s singulares donde aparecen o cambian de geometría estos
+materiales.<br />
+      <br />
+      Para eliminar el material de transición 2 (<span style="font-weight: bold;">MT2</span>, cubicado como&nbsp;<span class="Archivo">MAT_TRANS_2</span>), basta con dejar los valores <span style="font-weight: bold;">D3</span>, <span style="font-weight: bold;">D4</span>, <span style="font-weight: bold;">T3</span> y <span style="font-weight: bold;">T4</span> a cero.<br />
+      <br />
+      <br />La opción <span style="font-style: italic; font-weight: bold;">MT0</span> permite dividir el material <span style="font-weight: bold;">MT1</span> en dos materiales: <span style="font-weight: bold;">MT0</span> y <span style="font-weight: bold;">MT1</span>.<br /><br />La casilla <span style="font-weight: bold; font-style: italic;">D4=2H</span> hace que la longitud <span style="font-weight: bold;">D4</span> se hace igual a dos veces la altura <span style="font-weight: bold;">H</span>. Asignando un&nbsp;<span style="font-weight: bold;">D4 min</span> se puede forzar un valor para cuando el resultado de <span style="font-weight: bold;">D4=2H</span> sea inferior a éste.<br />
+      <br />Se puede hacer que la capa <span style="font-weight: bold;">MT0</span> llege hasta una cota determinada por encima del terreno y sobre ella <span style="font-weight: bold;">MT1</span> o <span style="font-weight: bold;">MT2</span>. Para ello definimos en la cuña una cota <span style="font-weight: bold;">Z </span>por encima del terreno y en este caso en el tipo de cuña:<br /></span><ul><li><span class="Parrafo">Marcamos <span style="font-weight: bold;">MT0</span>.</span></li><li><span class="Parrafo">Definimos <span style="font-weight: bold;">D2</span> y <span style="font-weight: bold;">T2</span> con los valores deseados p.e. <span style="font-weight: bold;">D2</span>=10 <span style="font-weight: bold;">T2</span>=2:1.</span></li><li><span class="Parrafo">Definimos&nbsp;<span style="font-weight: bold;">T1</span>=0 y <span style="font-weight: bold;">D1</span>= Distancia desde el estribo hasta el corte con el talud <span style="font-weight: bold;">T2</span> a la cota <span style="font-weight: bold;">Z</span>. (El talud <span style="font-weight: bold;">T2</span> se utilizará también para cerrar <span style="font-weight: bold;">MT0</span> desde <span style="font-weight: bold;">D1</span> hasta el terreno).</span></li></ul><span class="Parrafo">Los taludes <span style="font-weight: bold;">T1</span> y <span style="font-weight: bold;">T3</span> pueden sustituirse por vectores <span style="font-weight: bold;">V1</span> y <span style="font-weight: bold;">V3</span>. El talud <span style="font-weight: bold;">T3</span> (<span style="font-weight: bold;">V3</span>)
+ahora puede prolongarse hasta la subrasante incluso en zonas de
+terraplén provocando que el material de transición se asiente sobre
+terraplén.<br /><br />Cuando el talud <span style="font-weight: bold;">T4</span>
+de una cuña posterior a una estructura se cruza con el de la cuña
+siguiente (que precede a otra estructura), se determina el punto de
+intersección y a partir de este PK, se continua con la cuña siguiente.
+También se interpola un perfil en este punto de intersección.<br /><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cunas_transicion_tipos.png" style="width: 600px; height: 483px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+      Finalmente, desde la pestaña <span style="font-weight: bold;">CUÑAS</span>,
+se tramifica cada una de las geometrías anteriores. Cada cuña se define
+por el PK en el estribo, el sentido de avance y la cota de la base de
+excavación para la zapata del estribo, bien en valor absoluto, bien en
+valor relativo a la superficie del terreno (una cota relativa por
+debajo de la superficie ha de ser negativa).<br />
+      <br />
+También es posible declarar una cota superior para los materiales de
+transición. Esta cota puede definirse de modo absoluto o relativo desde
+la rasante. Por encima de estos materiales se cubre con terraplén.<br />
+      <br />
+Para cada cuña se puede definir el <span style="font-weight: bold;">talud</span> transversal de excavación y un <span style="font-weight: bold;">margen</span>
+de PKs que permite analizar una zona después de que el techo del
+material de transición MT2 corte al terreno en el eje (talud <span style="font-weight: bold;">T4</span>).<br /><br />Se
+implementa un flag en el menú de cuñas de transición, dentro de las
+casillas de definición de D2 y D4 (pestaña cuñas), para que, si se
+activa, dichas distancias se midan en el suelo seleccionado siempre que
+exista.<br /><br /></span>En el cuadro de diálogo se muestra un visor 3D que permite visualizar
+la geometría de la Cuña Actual (Pestaña de Cuñas). Si estamos
+modificando datos en la pestaña de <span style="font-weight: bold;">TIPOS</span>, debemos tener como cuña
+actual una que utilice el dato de tipo que queremos visualizar. El
+visor utiliza PKs y cotas reales del eje y terreno (en el sentido
+longitudinal).<br /><span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_cunas_transicion_cunas.png" style="width: 600px; height: 483px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      
+      <br />Si se activa la casilla <span style="font-weight: bold; font-style: italic;">Anular MT1</span>, se ignora el material <span style="font-weight: bold;">MT1</span> y, por tanto, todo la parte del <span style="font-weight: bold;">MT1</span> será ocupada por el material <span style="font-weight: bold;">MT2</span>.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      <img src="Imagenes/cuna_transicion_nucleo.png" style="width: 359px; height: 225px;" alt="" align="right" hspace="6" />Podremos generar las cuñas en modo <span style="font-weight: bold;">Sólo núcleo</span>.
+En este caso los materiales de transición se aplican en la parte
+interna del terraplén limitado lateralmente por el borde de la
+plataforma (desagüe de la subrasante o del duelo seleccionado).<br />
+Desde la vertical de este punto hacia afuera se rellena con material de terraplén.<br />
+      </span></span></td>
+    </tr><tr class="Parrafo" align="justify"><td><br />Con el flag&nbsp;<span class="Parf_negrita">Sólo núcleo</span> desactivado,&nbsp; los parámetros que se pueden tocar para alterar la excavación de la cuña pueden ser:<br /><ol><li><img style="width: 150px; height: 91px; float: right;" alt="" src="Imagenes/cuna_base_techo.png" hspace="5" />El
+desplegable con el que se decide a qué altura se mide el ancho
+de&nbsp;la excavación: en la base de la excavación o en el techo.</li><li>Desplegable que permite elegir el ancho de la excavación:
+pie de terraplén, cuneta o cuneta de guarda (si no hay cuneta, lo lleva
+al pie del terraplén).</li><li>Casilla en la que se introduce un sobreancho de la excavación respecto al punto anteriormente seleccionado.</li></ol><div style="text-align: center;"><img style="width: 150px; height: 79px;" alt="" src="Imagenes/cuna_sobreancho.png" /><br /></div>Se permite asentar los materiales de las cuñas de transición sobre el relleno de las <a href="OL_obras_fabrica.html">Obras de Fábrica</a>.<br /><br />Se puede asentar la cuña sobre el <a href="OL_saneos_terraplen.html">Saneo de Terraplén</a>.
+Debe estar definido un saneo con capa drenante. Entonces los materiales
+que componen la cuña aparecen por encima de la capa drenante.<br />
+      <br />Con
+el flag "Sólo núcleo" desactivado&nbsp;se permite definir la excavación
+de la cuña en dirección transversal, a través de dos modos:<br /><ul><li><span class="Parf_negrita">Distancia</span>:
+se habilita una casilla para introducir la distancia hasta la
+que&nbsp;llega la sobreexcavación en sección (si es 0, va a pie de
+terraplén) </li></ul><ul><li><span class="Parf_negrita">Hasta cuneta de guarda</span>: la excavación se amplía hasta el extremo de la cuneta&nbsp;de guarda, siempre que la haya. Si no, se lleva a pie de terraplén</li></ul><div style="text-align: center;"><img style="width: 250px; height: 97px;" alt="" src="Imagenes/cuna_trans_cun_g.png" /><br /></div><br />En el caso de sólo núcleo, disponemos de dos modos: <br />
+      <ul>
+        <li><span style="font-weight: bold;">Ancho</span>, en el que se definen los metros de ancho del núcleo.</li>
+        <li><span style="font-weight: bold;">Código + Distancia + Talud</span>,
+en el que se fija el ancho del núcleo mediante código y distancia.
+Asimismo, este modo permite establecer un talud en la cuña, de modo que
+el ancho en el techo y en la base no es el mismo.</li>
+      </ul>
+Por último, a modo orientativo, tenemos la posibilidad de ver la
+superficie de excavación en la previsualización del editor de cuñas.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/cuna_codigo_ancho.png" style="width: 620px; height: 499px;" alt="" /><br />
+      </div>
+<br /></td></tr></tbody></table></body></html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gui: Diagrama de curvaturas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+LONGITUDINALES: DIAGRAMA DE CURVATURAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Desde aquí es posible representar el
+diagrama de curvaturas del longitudinal de forma detallada y con
+diversas opciones.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_gui_diagrama_curvaturas.png" style="width: 571px; height: 525px;" alt="" /><br />
+      </div>
+      <br />
+Marcando la casilla <span style="font-weight: bold; font-style: italic;">Diagrama</span>,
+se dibuja el diagrama de curvaturas con el tipo de línea y a la
+distancia del plano de comparación indicados. Se ofrecen tres
+posibilidades de representación:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Fijo</span>:
+El diagrama que se dibuja es similar al que se puede visualizar en la
+edición de RASANTES o en el menú <a href="OL_peraltes.html">PERALTES</a>,
+es decir, se designa un ancho para el diagrama (<span style="font-weight: bold;">AncMax</span>),
+y los tramos en recta se colocan en la zona central (a la distancia
+definida respecto al plano de comparación), los tramos en curva a
+derecha e izquierda se representan en la parte superior e inferior
+respectivamente (a la distancia <span style="font-weight: bold;">AncMax</span>)
+y los acuerdos (clotoides) como oblicuas.</span></li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/diag_curvaturas_fijo.png" style="width: 571px; height: 55px;" alt="" /><br />
+      </div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Proporcional</span>:
+En este caso, los tramos en curvas no se representan siempre a la
+distancia <span style="font-weight: bold;">AncMax</span>, sino que lo
+hacen de forma proporcional al radio de tal forma que los radios
+menores o iguales a <span style="font-weight: bold;">RadMin</span> se
+colocarán a la distancia <span style="font-weight: bold;">AncMin</span>,
+los iguales o superiores a <span style="font-weight: bold;">R_max</span>
+se dibujarán a la distancia <span style="font-weight: bold;">AncMax</span>
+y los radios intermedios se colocarán a una distancia intermedia entre <span style="font-weight: bold;">AncMin</span> y <span style="font-weight: bold;">AncMax</span> y proporcional al radio.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Curvas</span>: Los círculos y clotoides se
+representan
+como arcos que ocupan en la guitarra toda su longitud y ocupando el
+ancho <span style="font-weight: bold;">AncMax</span>. En este modo se
+recomienda poner un ancho máximo de cero
+para que haya espacio suficiente para rotular la palabra Recta, la
+clotoide y el radio en cada caso, además de la longitud. La
+guitarra&nbsp;<span class="Archivo">POL_001.gui</span>, usada en
+Polonia, hace uso de este tipo de diagrama.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/diag_curvaturas_curvas.png" style="width: 594px; height: 51px;" alt="" /></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />Los campos <span style="font-weight: bold;">Sini</span> y <span style="font-weight: bold;">Sfin</span>
+ofrecen la posibilidad de dibujar un símbolo cualquiera al inicio y al
+final, respectivamente, de cada alineación sobre el eje del diagrama.<br />
+      <br />
+</span></span></span></span>
+      <div style="margin-left: 40px;">Dentro del tipo de diagrama de curvas que podemos diseñar podremos seleccionar la opción <span style="font-weight: bold;">Curvas</span>, <span style="font-weight: bold;">Curvas2</span>, <span style="font-weight: bold;">Curvas3</span>, <span style="font-weight: bold;">Curvas4</span> o <span style="font-weight: bold;">Curvas5</span>, en función del estilo de dibujo de curvas que nos interese. <br />
+      <br />
+      <img src="Imagenes/diagrama_curvaturas_curva4.png" style="width: 577px; height: 145px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Al marcar la casilla <span style="font-weight: bold; font-style: italic;">Vertical</span>, se
+dibujan tramos verticales según los puntos singulares de planta, con el
+tipo de línea indicado en <span style="font-weight: bold;">TipLin</span>
+y con una longitud comprendida entre la distancia al plano de
+comparación (influenciada por los valores especificados en <span style="font-weight: bold;">AncMax</span>, <span style="font-weight: bold;">AncMin</span>, <span style="font-weight: bold;">RadMin</span> y <span style="font-weight: bold;">R_Max</span> de forma similar al diagrama
+proporcional) y el valor especificado en <span style="font-weight: bold;">Hasta</span>.<br />
+<br />
+Los valores de recta, circular y clotoide se rotulan al marcar la
+casilla <span style="font-weight: bold; font-style: italic;">Rect/R/A</span>
+con los símbolos dispuestos en <span style="font-weight: bold;">Rec</span>,
+      <span style="font-weight: bold;">Cir</span> y <span style="font-weight: bold;">Clo</span> respectivamente. Estos símbolos
+pueden colocarse de dos maneras. Si se indica Fijo, se colocarán a la
+distancia dada por <span style="font-weight: bold;">AncMax</span> y si
+se indica <span style="font-weight: bold;">Proporcional</span> se
+colocarán a una distancia comprendida entre <span style="font-weight: bold;">AncMin</span> (para radios iguales o
+inferiores a <span style="font-weight: bold;">RadMin</span>) y <span style="font-weight: bold;">AncMax</span> (para radios iguales o
+superiores a <span style="font-weight: bold;">R_Max</span>) y de forma
+proporcional al radio. Este último caso funciona, por tanto, de forma
+similar al diagrama proporcional. Estos símbolos tendrán, además, el
+desplazamiento horizontal especificado en <span style="font-weight: bold;">De.Hor</span> y que es relativo al punto
+singular, y estará girado el <span style="font-weight: bold;">ángulo</span>
+que se indique.<br /><br />Los
+datos que se rotulan en el centro de una alineación recta, curva o
+clotoide, si esta atraviesa varias hojas, se rotula en el centro del
+tramo que ocupa en cada hoja.<br />
+      <br />
+      <img src="Imagenes/gui_diag_curvaturas_signo_negativo.png" style="width: 97px; height: 49px;" alt="" align="right" hspace="80" />El valor del radio puede ponerse con signo negativo para curvas a izquierda.<br />
+      <br />
+<br />
+      <br />
+También es posible rotular la longitud de cada alineación o acuerdo al
+marcar la casilla <span style="font-weight: bold; font-style: italic;">Longitud</span>.
+Las opciones para esta rotulación son idénticas a lo explicado en el
+párrafo anterior.<br />
+      <br />
+Si se marcan las casillas correspondientes se rotularán con la etiqueta
+y la distancia al plano de comparación especificadas (además se puede
+indicar un desplazamiento horizontal y un ángulo) los siguientes datos:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">PK de los
+puntos singulares de planta (<span style="font-weight: bold;">P.K</span>),&nbsp; decenas de PK si se marca la casilla <span style="font-weight: bold;">Decenas (PK)</span>, <span style="font-weight: bold;">Estaca</span> o <span style="font-weight: bold;">Pks de usuario</span>.<br />
+</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Azimut en los
+puntos singulares de planta (<span style="font-weight: bold;">Azimut</span>), en grados centesimales o sexagesimales.<br />
+</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Coordenadas X e
+Y de los puntos singulares de planta (X/Y).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota de la
+rasante en los puntos singulares de planta (<span style="font-weight: bold;">Z Rasante</span>).</span></span></li>
+        
+        <li><span class="Parrafo"><span class="Parrafo">Omega de las
+curvas (<span style="font-weight: bold;">Omega</span>): Ángulo de giro
+entre alineaciones rectas. Se rotula en la zona central de las
+alineaciones circulares. En la figura se muestra como <span style="font-weight: bold;">&#969;</span>.
+Se puede seleccionar en grados sexagesimales o centesimales. Disponemos
+en la librería el simbolo S1078 que se utiliza por defecto para la
+representación del omega en ángulos centesimales.<br />
+          </span></span></li>
+
+        <li><span class="Parrafo"><span class="Parrafo">Ángulo de giro
+en alineaciones curvas (<span style="font-weight: bold;">Gonios</span>):
+Será necesario especificar un tipo de símbolo para las circulares (<span style="font-weight: bold;">Cir</span>) y otro para las clotoides (<span style="font-weight: bold;">Clo</span>). En la figura se muestra como <span style="font-weight: bold;">&#945;</span>.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Tangente (<span style="font-weight: bold;">T(Circ)</span>): Distancia entre el vértice
+y el punto de tangencia de la recta (inflexión de la clotoide). En la
+figura se muestra como <span style="font-weight: bold;">T</span>.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Distancia entre
+el vértice y la curva circular (<span style="font-weight: bold;">WS(Circ)</span>).
+En la figura se muestra como <span style="font-weight: bold;">ws</span>.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Distancia entre
+el punto de tangencia clotoide-circular y la tangente por el punto de
+inflexión de la clotoide (<span style="font-weight: bold;">H(Clot)</span>).
+En la figura se muestra como <span style="font-weight: bold;">H</span>.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota del
+terreno en los puntos singulares de planta (<span style="font-weight: bold;">Z Terreno</span>).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Velocidad de proyecto.&nbsp;</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Tangente.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Bisectriz.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Ángulo interior.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Longitud total de la curva (suma de las longitudes de las clotoides de entrada y salidad más la longitud de la circular).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Velocidad específica de la curva.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Aceleración no compensada (para proyectos de ferrocarriles).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Variación de la rampa de peralte con el tiempo (también para proyectos de ferrocarriles).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Insuficiencia de peralte (para proyectos de ferrocarriles).<br />
+          </span></span></li>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Número de vértice</span> (<span style="font-weight: bold; font-style: italic;">Número de vértice</span>, <span style="font-weight: bold; font-style: italic;">Número de la curva</span>, <span style="font-weight: bold; font-style: italic;">100xEje+Curva</span>)&nbsp; y <span style="font-weight: bold;">Número de eje</span> (p.ej., <span style="font-style: italic;">V33-12</span> indica vértice 33 del eje 12).</span></span></li></ul></span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/gui_diag_curvaturas_numero_vertice1.png" style="width: 413px; height: 77px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/gui_diag_curvaturas_numero_vertice2.png" style="width: 63px; height: 41px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo">Peralte.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Puntos
+singulares en planta: Posibilidad de rotular con un símbolo EE el punto
+de infinito de dos clotoides en S. Si el valor del símbolo es 0 o
+negativo, entoces se sigue rotulando con dos simbolos&nbsp; (ET,TED) o
+(ET,TEE)<br />
+</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Velocidad de diseño de la curva (Vch).</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Rumbo:
+Posibilidad de rotular el rumbo de las rectas en grados sexagesimales
+utilizando cuatro símbolos diferentes para los angulos&nbsp;<span class="Parf_negrita">NE,NW,SE,SW</span>.<br />
+          </span></span></li>
+
+
+      
+      </ul>
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/curva_transicion.png" style="width: 452px; height: 210px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Finalmente, se ofrece al usuario la posibilidad de dibujar grupos de <span style="font-weight: bold;">trazos verticales</span> en los PK&#8217;s
+singulares de planta. Basta con especificar su tipo de línea, un
+desplazamiento horizontal si fuera necesario y <span style="font-weight: bold;">desde</span> y <span style="font-weight: bold;">hasta</span> dónde se desean dibujar los
+trazos (referido al plano de comparación).<br />
+Estos <span style="font-weight: bold;">trazos verticales</span>
+definidos en los Pks singulares pueden llevarse también hasta el perfil
+del terreno colocando el valor 5000 en la columna "Hasta", hasta la
+rasante derecha colocnado en la columna "Hasta" el valor 6000 o hasta
+la rasante izquierda colocando en la columna "Hasta" el valor 6001.<br />
+</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los
+trazos verticalas en PKs singulares pueden llevarse hasta el diagrama
+(Fijo, Proporcional, Curvas, Curvas2...), para ello ponemos en la
+casilla [Hasta] el valor 7000.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Se podrá identificar con un <span style="font-weight: bold;">tipo de línea</span> distinto estos trazos verticales.<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/diagrama_curv_trazos_vert.png" style="width: 611px; height: 98px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

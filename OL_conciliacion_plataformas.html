@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Conciliación de plataformas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CONCILIACIÓN DE PLATAFORMAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A
+partir de este menú vamos a tratar de concordar la geometría de dos
+ejes previamente enlazados (ramal de entrada o de salida). Este menú
+está ubicado en el menú de Alzado, dentro de las opciones de
+Complementos.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 580px; height: 138px;" alt="" src="Imagenes/alz_compl_conciliacion.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+La conciliación de plataformas modifica la geometría en el lado
+adyacente de dos ejes y en la zona de la <a href="OL_lineas_frontera.html">línea de frontera</a> posterior a
+los puntos característicos de un <a href="OL_entronques.html#menu_entronque">entronque</a> ABCDE. Previo paso a la conciliación de plataformas entre dos ejes deberá haberse definido el entronque en todas sus fases.<br />
+La conciliación se ejecuta, por tanto, como última fase en el cálculo desde <a href="OL_proyecto.html">Proyecto</a> y requiere que:<br />
+      </span></span>
+      <ul>
+        <li><img style="width: 347px; height: 124px;" alt="" src="Imagenes/conciliacion_firmes.png" align="right" hspace="6" />Se incluyan los <a href="OL_firmes.html">firmes</a>
+en la sección. Tanto en el eje Tronco como en el eje Ramal deben tener
+definidos los distintos espesores de firmes. La conciliación de firmes
+se llevará a cabo en los distintos espesores de las capas de los
+          <a href="OL_calzadas_aux.html">arcenes</a> de ambos ejes.</li>
+      </ul>
+      <ul>
+        <li>Exista una <a href="OL_lineas_frontera.html">línea de frontera</a> previa en la zona de conciliación.</li>
+      </ul>
+      <ul>
+        <li>Estén activados los perfiles en RAM. Dentro del menú
+desplegable de Configuración, Preferencias, Opciones, Obra Lineal,
+Cálculos en RAM.</li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 563px; height: 428px;" alt="" src="Imagenes/concil_ram.png" /><br />
+      </div>
+      <br />
+La conciliación entre dos ejes se define en el eje de número menor y se realiza con los siguientes parámetros:<br />
+      <ul>
+        <li>Número del otro <span style="font-weight: bold;">Eje</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Pk inicial</span> y <span style="font-weight: bold;">final</span>
+sobre el eje en el que se define. Se definirá el Pk inicial,
+normalmente antes del primer punto de la línea de frontera y el Pk
+final donde ya no deseemos la conciliación de las plataformas. Ambos
+Pks son aproximados.<br />
+</li>
+      </ul>
+      <ul>
+        <li>Rango de distancias: Dentro de la zona de PKs definidos si los bordes de <a href="OL_anchos.html">calzadas</a> (código 2) se encuentran a una distancia mayor que la <span style="font-weight: bold;">mínima</span> e inferior a la distancia <span style="font-weight: bold;">firmes/tierras</span> se realiza la conciliación de firmes, y si la distancia es mayor a la distancia <span style="font-weight: bold;">firmes/tierras</span> e inferior a la <span style="font-weight: bold;">máxima</span> se realiza la conciliación de tierras.</li>
+      </ul></span>
+      <div style="margin-left: 40px;">En el caso en que el ramal de
+entrada o salida que enlaza con el tronco no tenga código 2, el
+programa analiza el código 1, que es el del eje en carretera de vía
+única.<br />
+      </div>
+      <span class="Parrafo"><br />
+
+      <div style="text-align: center;"><img style="width: 592px; height: 157px;" alt="" src="Imagenes/concil_editar_firmes.png" /><br />
+      </div>
+      <br />
+Para realizar la conciliación es indispensable tener la casilla <span style="font-weight: bold;">Conciliar</span> activada y de la misma forma todos aquellos datos referentes a ejes que necesitemos conciliar como vemos en la imagen anterior.<br />
+      <br />
+Conciliación de <span style="font-weight: bold;">Firmes</span>:<br />
+      <ul>
+        <li>Modifica la geometría de las superficies de la rasante, subrasante y capas de firmes en la zona de los <a href="OL_calzadas_aux.html">arcenes</a>
+adyacentes, alineándolas desde los puntos donde estas capas comienzan
+en la definición de las capas de <a href="OL_firmes.html">firmes</a> de las calzadas principales.</li>
+      </ul>
+      <ul>
+        <li>Para que se realice esta conciliación la <span style="font-weight: bold;">pendiente</span> entre los dos bordes de calzada debe ser inferior a un valor dado.<br />
+        </li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 566px; height: 222px;" alt="" src="Imagenes/concil_firmes_dibujo.png" /><br />
+      </div>
+      <br />
+Conciliación de <span style="font-weight: bold;">Tierras</span>:<br />
+      <ul>
+        <li>Primero se trata de unir las dos plataformas utilizando una
+          <span style="font-weight: bold;">sección tipo deseable</span> para cada eje (ambas secciones definidas en el
+eje actual).</li>
+      </ul>
+      <ul>
+        <li>Se utilizan las secciones de terraplén y la <a href="OL_cunetas.html">cuneta</a> de la sección deseable del eje actual.</li>
+      </ul>
+      <ul>
+        <li>Si no existe intersección entre las secciones de los ejes,
+o el desarrollo horizontal de alguna de las secciones es inferior al
+mínimo (<span style="font-weight: bold;">am</span>) que se define entonces:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>&nbsp;Se prueba a poner en el eje más bajo la <span style="font-weight: bold;">sección deseable</span> hasta el <span style="font-weight: bold;">ancho mínimo</span>
+y luego la cuneta. Entonces se comprueba el talud de cierre con el otro
+eje que debe estar comprendido entre el talud de la sección de
+terraplén deseable y el de la <span style="font-weight: bold;">permitida</span>.</li>
+          <li>Y si no cumple esta condición entonces se utilizan las <span style="font-weight: bold;">secciones alternativas</span>.
+Cuando se aplican las secciones tipo alternativas, el eje con el borde
+más alto aplica la sección de terraplén y el de borde más bajo la de
+desmonte.</li>
+        </ul>
+      </ul>
+      <div style="text-align: center;"><img style="width: 592px; height: 157px;" alt="" src="Imagenes/concil_edit_tierras.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 516px; height: 324px;" alt="" src="Imagenes/cocil_modelo.png" /><br />
+      </div>
+      <br />
+A cada eje se le asignan tierras hasta el fondo de la cuneta.<br />
+      <br />
+Para realizar la conciliación tendremos que hacer el cálculo desde la pestaña <a href="OL_proyecto.html">Proyecto</a>
+una vez hayamos definido al completo este menú. Podremos ayudarnos a
+continuación para la comprobación de esta conciliación del menú <a href="OL_anadir_ramal.html">Añadir Ramal</a> para poder ver en los perfiles del tronco las plataformas de los ramales conciliados.<br />
+      <br />
+Vista en tres dimensiones de una conciliación de un eje tronco con dos ejes ramales:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 536px; height: 312px;" alt="" src="Imagenes/concil_3d.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+Vista de un perfil tronco con dos ramales a partir del menú <a href="OL_anadir_ramal.html">Añadir Ramal:</a><br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 640px; height: 258px;" alt="" src="Imagenes/concil_aramal.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

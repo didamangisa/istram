@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Cuneta de guarda y caballón</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CUNETA DE GUARDA Y CABALLÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      <a href="#Generalidades">Generalidades</a><br />
+      <a href="#cun_vec_para">Cunetas guarda vectoriales o paramétricas</a><br />
+</span><span class="Parrafo"><a href="#def_vectorial">Definición de la cuneta de guarda/caballón vectorial</a><br />
+      <a href="#cun_fija">Cuneta fija, por longitudinal, por longitudinal a cota, fija por su extremo</a><br />
+      <a href="#Revestimiento_de_la_cuneta">Revestimiento de cuneta</a><br />
+      <a href="#Aplicacion">Aplicación de la cuneta de guarda</a><br />
+      <a href="#Cuneta_de_guarda_por_linea">Cuneta de guarda por línea</a><br />
+      <br />
+      <a name="Generalidades"><span class="Titulo_2">Generalidades</span><br />
+<br />
+La
+cuneta de guarda puede ubicarse a una distancia concreta o variable del
+pie de terraplén o de la cabeza de desmonte, condicionando su
+existencia o no en función de un punto de control, que marca la
+pendiente límite que la hace necesaria.<br />
+      <br />
+      </a></span>
+      <div style="text-align: center;"><a href="#linea_cuneta_guarda"><span class="Parrafo"></span></a><img style="width: 610px; height: 242px;" alt="" src="Imagenes/dialogo_cuneta_guarda.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+En este menú puede definirse una tabla con distintas geometrías de <span style="font-weight: bold;">cunetas de guarda</span> o <span style="font-weight: bold;">caballones</span>
+y cuatro listas de datos para colocar estas cunetas en distintos tramos
+en el caso de TERRAPLÉN o en el caso de DESMONTE e independizando los
+lados derecho e izquierdo. En cada tramo puede definirse una cuneta o
+caballón diferente para los PK inicial y PK final en cuyo caso la
+geometría va realizando una transición a lo largo del tramo.<br />
+      <br />
+Se permiten tres posibilidades para su representación en la sección transversal:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">C.G. en el mismo tipo de línea que la plataforma</span> (L68/L69).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">C.G. en tipo de línea separado</span> (Terraplén:L50, Desmonte:L168).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">C.G. en el mismo tipo en desmonte y terraplén</span>. (L168).</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 280px; height: 133px;" alt="" src="Imagenes/cun_guarda_tipolinea.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Si se activa la opción <span style="font-weight: bold; font-style: italic;">Cuneta de guarda por
+terreno competente</span>
+entonces se considera un desbroce previo del terreno donde se va a
+ejecutar la cuneta de guarda. Si hay definida cuneta de guarda en
+terraplén, se coloca ésta y no el vector de desmonte en terreno
+inadecuado. El pie de terraplén llegará al terreno natural o al
+competente en función de por donde esté definida la cuneta de guarda
+con esta opción.<br />
+También se puede definir por el terreno inadecuado.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 128px;" alt="" src="Imagenes/cun_guarda_terreno.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Al activar la opción <span style="font-weight: bold; font-style: italic;">C.G. obligada</span>,
+la cuneta de guarda se ejecuta siempre sin comprobar la posición del
+punto de control respecto al terreno (en el apartado <a href="#def_vectorial"><span style="font-style: italic;">Definición de
+la cuneta de guarda/caballón de forma vectorial</span></a> se explica
+el funcionamiento del punto de control).<br />
+      <br />
+      </span><span class="Parrafo"><span class="Titulo_2">Cunetas de guarda vectoriales o paramétricas</span><br />
+
+      <br />
+
+Las cunetas de guarda pueden definirse de dos modos: <span style="font-weight: bold;">vectorial</span> y <span style="font-weight: bold;">paramétrico</span>.<br />
+
+      <br />
+
+La definición paramétrica se hace directamente sobre un modelo de
+cuneta de guarda, tal como se muestra en la imagen. Basta, por tanto,
+rellenar las dimensiones de los distintos elementos geométricos para
+que quede perfectamente definida. Si la cuneta tiene además un revestimiento, su espesor se define en el cuadro de texto <span style="font-weight: bold;">Revest</span>. La casilla <span style="font-weight: bold;">[ ] Vertical</span>
+hace una copia vertical de la geometría de la cuneta a una altura igual
+que el espesor de revestimiento. En este caso, el revestimiento de
+terraplén se interrumpe donde comienza el de la cuneta; y a su vez, por
+el terreno exterior, esta se interrumpe cuando el revestimiento corta
+al terreno.<br />
+
+      <br />
+
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 420px; height: 306px;" alt="" src="Imagenes/def_cuneta_guarda_caballon.png" /></span><br />
+
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Es posible declarar un <span style="font-weight: bold;">punto obligado</span>,
+de modo que se ejecute siempre como mínimo hasta ese punto aunque ya se
+haya cortado al terreno (de modo similar al caso de las </span><a href="OL_cunetas.html">cunetas</a> convencionales definidas en <a href="OL_desmonte.html">DESMONTE</a>). Si el punto obligado ya ha
+atravesado el terreno a partir de él se ejecuta con el talud de
+desmonte o terraplén.<br />
+      <br />
+Sendas casillas en el modelo de la cuneta permiten seleccionar las
+opciones para, por una parte, añadir la cuneta de guarda después del
+sobreancho de desbroce; y por otra, para que el talud de la cuneta sea
+igual al de terraplén.<br />
+      <br />
+Por supuesto, si se marca la opción&nbsp;<span style="font-weight: bold;"> No tras el muro de terraplén</span>, el programa no colocará la cuneta de guarda en terraplén si hay un muro.<span class="Parrafo"><br />
+      </span><span class="Parrafo"><br />
+Si se activa la opción<span style="font-weight: bold;"> Conservar códigos</span>
+el programa inhibe la modificación automática de los códigos para el
+dibujo de peines.<br />
+      <br />
+Posibilidad de copiar la tramificación de las cunetas de guarda de cada lado, del terraplén al desmonte y viceversa.<br />
+      <br />
+      </span><div style="text-align: center;"><span class="Parrafo"><img style="width: 389px; height: 299px;" alt="" src="Imagenes/cun_guarda_copiar_tramo.png" /></span><br /><span class="Parrafo"></span></div><span class="Parrafo">
+      <br />
+También tenemos la posibilidad de copiar cunetas de guarda dentro de un
+mismo eje o abrir la definición de otro a partir de un archivo .cug sin
+la tramificación.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 80px; height: 200px;" alt="" src="Imagenes/cun_guarda_copiar.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="def_vectorial">Definición
+de la cuneta de guarda/caballón de forma vectorial</a></span><br />
+      <span class="Parrafo"><br />
+Al pulsar en la casilla que marca el número de puntos de la cuneta, se
+accede al típico menú de <a href="definicion_vectorial.html">definición
+vectorial</a> que permite declarar su geometría y comportamiento:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 138px;" alt="" src="Imagenes/def_vectorial_cuneta_guarda.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+En el dato número 1, el valor <span style="font-weight: bold;">delta X</span>
+marca la distancia al pie del terraplén o cabeza de desmonte desde
+donde empieza a excavarse la cuneta (o a generarse el caballón) a
+partir de la superficie del terreno, por lo tanto el <span style="font-weight: bold;">delta Y</span> de este primer punto no se
+considera ya que se recorre el terreno).<br />
+      <br />
+      </span><span class="Parrafo">Los códigos deben estar ordenados, empezando por el
+valor 3000. El punto con el código 3010 es <span style="font-weight: bold;">punto de control</span> y el que se
+&#8220;engancha&#8221; al longitudinal en caso de cuneta de guarda/caballón
+definida por longitudinal.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 129px;" alt="" src="Imagenes/pto_control_cuneta_guarda.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">En función de dicho punto de
+control, al editar la geometría de la cuneta de guarda/caballón, puede
+definirse uno de los cinco tipos siguientes:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cuneta
+de guarda</span>:
+Se coloca la cuneta si el punto de control (3010) está por debajo del
+terreno. El punto de control puede ubicarse en el fondo de la cuneta o
+en cualquier otro punto, por ejemplo en el punto alto opuesto, de este
+modo no se coloca cuneta si la pendiente del terreno vierte las aguas
+hacia afuera.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Caballón</span>:
+Se coloca el caballón si el punto de control (3010) está por encima del
+terreno.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Automático</span>:
+El programa lo trata como cuneta si el punto de control está definido
+al final de un segmento descendente (fondo de cuneta) y lo trata como
+caballón si el punto de control está definido al final de un segmento
+ascendente.</span></li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 540px; height: 157px;" alt="" src="Imagenes/ejemplo_caballon.png" /><br />
+      </div>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Caballón
+(código 100)</span>: Este caballón arranca directamente desde el código
+100 (desagüe de la subrasante).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Caballón
+(código)</span>:
+Permite definir dos códigos. Este caballón arranca directamente desde
+el código definido (y, si no existe, desde el alternativo) y puede
+tener altura fija o guiada por un longitudinal (por defecto se utilizan
+los códigos 102 y 1102 (correspondientes al segundo punto). Es posible
+definir un revestimiento, en este caso hay que defiir el punto inicial
+y final que se revisten, si se quiere hacer la cuneta completa hay que
+indicar como punto obligado el último punto que corresponde a la cuneta.<br />
+          <br />
+</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Caballón (coronación del muro de desmonte)</span>:
+El primer segmento de la cuneta de guarda se lleva a la coronación del
+muro de desmonte (que puede estar por encima o por debajo de la
+superficie del terreno).</span></li>
+
+      </ul><div style="margin-left: 40px;">Para
+las cunetas de tipo de tipo Caballón tras la coronación del Muro de
+Desmonte, si al primer punto se le pone el código de control 3010 y se
+establece el tipo por longitudinal, entonces si la cota del
+longitudinal está por debajo de la<br />coronación del muro, se baja toda la geometría de la cuneta para que comience en esa cota.</div><br /><a name="cun_fija"><span class="Titulo_2">Cuneta Fija, Por longitudinal, Por longitudinal a cota, Fija por su extremo</span><br />
+<br />Podemos utilizar los siguientes <span style="font-weight: bold;">Tipos</span> de cuneta / caballón:<br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 450px; height: 129px;" alt="" src="Imagenes/cuneta_guarda_tipo.png" /><br />
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Fija</span>: como su propio nombre indica, una cuneta con geometría invariable.</li></ul>
+      <ul>
+
+        
+        <li><span class="Parrafo"><img style="width: 179px; height: 115px;" alt="" src="Imagenes/rasante_cunetas_guarda.png" align="right" hspace="8" /></span><span style="font-weight: bold;">Por longitudinal</span>: se define<span class="Parrafo"> la cota
+del fondo de la cuneta o del caballón según el correspondiente </span>longitudinal<span class="Parrafo"> definido desde </span><a href="OL_rasantes_diseno.html">RASANTES</a> (tanto si se trata de
+cuneta de guarda como de caballón se debe de escoger <span style="font-style: italic;">Cunetas de guarda</span>).
+El usuario ha de tener presente el lado (derecho y/o izquierdo) del
+longitudinal que necesita definir.<br />
+          <br />
+Se pueden utilizar las siguientes opciones adicionales:<br />
+          <br />
+          <ul>
+            <li>Si marcamos la casilla adyacente al desplegable <span style="font-weight: bold;">Tipo</span>, hacemos que el <span style="font-weight: bold;">longitudinal pase por el revestimiento</span> en vez de por el fondo de cuneta.</li>
+            <li><span style="font-weight: bold;">Dibujar L.C.</span>: dibuja un símbolo a la cota por la que pasa el longitudinal.<br />
+            </li>
+          </ul>
+          <br />
+El inicio de la cuneta se desliza subiendo por el talud de
+terraplén (para que se conserve la cota del longitudinal y su altura
+nominal) si se cumple lo siguiente:<br />
+          <br />
+        </li>
+        <ul>
+          <li>La cota del longitudinal + la altura nominal de la cuneta esta por encima del pie del terraplén.</li>
+        </ul>
+        <ul>
+          <li>La cuneta nace del pie de terraplén (la primera dX:distancia por el terreno del inicio de la cuneta es 0).</li>
+        </ul>
+        <ul>
+          <li>La cuneta esta definida con algun punto obligado.</li>
+        </ul>
+      </ul>
+      <ul>
+
+        <li><span style="font-weight: bold;">Por longitudinal a cota</span>: después de ubicar el fondo de la cuneta
+según el longitudinal, el siguiente tramo NO horizontal recupera la
+altura relativa con los puntos anteriores al fondo de cuneta.</li>
+      </ul>
+      <ul>
+
+        <li><span style="font-weight: bold;">Fija por su extremo</span>:
+El borde exterior de la cuneta se fija al terreno. Si el terreno no es
+horizontal, el pie de terraplén puede alargarse o acortarse para
+hacerlo coincidir con el borde interior de la cuneta.<br />
+
+        </li>
+      
+      </ul>
+
+      <span class="Parrafo">
+
+      <span class="Parrafo">Es posible definir para cada cuneta de guarda o
+caballón, un <span style="font-weight: bold;">talud</span>
+para desmonte y otro para terraplén, de modo que si con el vector
+definido no llega a cortarse con el terreno se aplica el talud
+correspondiente.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 450px; height: 129px;" alt="" src="Imagenes/cuneta_guarda_vect_talud.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+La tabla de mediciones&nbsp;<span class="Archivo">ISPOL4.dar</span>
+contempla la cubicación&nbsp;<span class="Archivo">CABALLÓN</span> que
+mide el terraplén que produce esta geometría (siempre que la casilla <span style="font-weight: bold; font-style: italic;">Cunetas de guarda en
+tipo de línea separado</span> esté activada).<br />
+      <br />
+El parámetro <span style="font-weight: bold;">Sobreancho desbroce</span>, similar al de Terraplén. Es valido para cunetas de guarda tanto en desmonte como en terraplén.<br />
+      <br />
+Cuneta de Guarda tras el muro de Desmonte: Disponemos de una opción
+para iniciar la cuneta cuando el talud de coronación del muro corta al
+terreno y este corte está antes del final de la excavación de la zapata
+del muro: <span style="font-weight: bold;">Sustituye Relleno de Zapata de Muro</span>.<br />
+<br />
+Para el dibujo de cunetas de guarda en planta existen <a href="OL_ficheros_lil.html#cun_guarda">comandos específicos</a> usados
+en algún <a href="OL_ficheros_lil.html">modo de dibujo&nbsp;<span class="Archivo">.lil</span></a>.<br />
+      </span><span class="Parrafo"><br />
+</span><a name="Revestimiento_de_la_cuneta"><span class="Titulo_2">Revestimiento de la cuneta</span><span class="Parrafo"><br />
+      <br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>BIM
+permite definir el revestimiento interior de la cuneta. El valor del
+espesor de revestimiento se indica en la casilla <span style="font-weight: bold;">Revest</span>. Cuando se usa un
+valor de revestimiento, el programa calcula su cubicación en los
+listados de volúmenes. </span></span></span></span><span class="Parrafo">Si se activa la casilla adyacente, se realiza el revestimiento de manera vertical.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span>
+      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 173px;" alt="" src="Imagenes/cun_guarda_revest.png" /><a name="Revestimiento_de_la_cuneta"></a></span></span></span></span><a name="Revestimiento_de_la_cuneta"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></a></div>
+      <span class="Parrafo"><br />
+Cuando se reviste este tipo de cuneta se puede indicar el primer y el
+último punto que se reviste. (Si el último se deja a 0, se reviste
+hasta el final). Hay que indicarlo en las casillas de <span style="font-weight: bold;">Puntos</span>.<br />
+      <br />
+Además, con el desplegable se pueden utilizar hasta 4 tipos de
+materiales distintos para diferenciar los revestimientos de las
+distintas cunetas de guarda. <br />
+      <br />
+Para las cunetas por longitudinal y Fondo de Cuneta x Línea 3D (modo
+6), si ponemos un -1 en el primer punto que se reviste, entonces del
+tramo inicial que se estira, solo se revestirá la altura teórica.
+(Definida en el vector). <br />
+<br />
+      </span><a name="Aplicacion"><span class="Titulo_2">Aplicación de la cuneta de guarda</span><span class="Parrafo"><br />
+      <br />
+Una vez definida la cuneta y el modo le indicamos dónde se aplica la
+cuneta de guarda añadiendo un dato en Terraplén izquierdo, Terraplén
+derecho, Desmonte izquierdo ó Desmonte derecho y tramificando por PKs
+el ámbito de aplicación de esa cuneta y el número de cuneta a aplicar.<br />
+<br />
+La posición del punto de arranque de la cuneta se puede definir por una
+línea en planta con la opción <span style="font-weight: bold;">Línea</span>
+      , esta opción no es válida para
+Caballón(c100) y Caballón(código).<br />
+      <br />
+      </span>
+      </a><div style="text-align: center;"><span class="Parrafo"><a name="Aplicacion"><img style="width: 300px; height: 115px;" alt="" src="Imagenes/cuneta_guarda_linea.png" /></a></span><a name="Aplicacion"><br />
+      <span class="Parrafo"></span></a></div>
+<a name="Aplicacion">      <span class="Parrafo"><br />
+Si el punto de arranque determinado por la línea dista del pie de
+terraplén o de la cabeza de demonte un valor inferior al definido en el
+primer tramo del vector o definido paramétricamente, entonces prevalece
+este valor definido paramétrica o vectorialmente en vez de la posición
+de la línea.<br />
+Si el punto de arranque determinado por la línea dista del pie de
+terraplén o de la cabeza de desmonte un valor superior al definido en
+el primer tramo del vector o definido paramétricamente, entonces estira
+este primer segmento hasta la posición de la línea.<br />
+      <br />
+Activando la casilla que hay junto a la selección de la línea el
+programa entenderá que la línea seleccionada corresponde al punto final
+de la cuneta en lugar del punto inicial de la misma. En este caso el
+programa actua de la siguiente manera:<br />
+      </span>
+      </a><ul>
+<a name="Aplicacion">        </a><li><span class="Parrafo"><a name="Aplicacion">El punto de inicio de la cuneta utiliza la distancia definida para </a></span><span class="Parrafo"><a name="Aplicacion">el primer tramo como en el caso general.</a></span></li>
+<a name="Aplicacion">        </a><li><span class="Parrafo"><a name="Aplicacion">Después se baja al fondo de cuneta que puede ser una distancia fija o por logitudinal.</a></span></li>
+<a name="Aplicacion">        </a><li><span class="Parrafo"><a name="Aplicacion">Desde el fondo de cuneta (cod 3010) se traza un
+segmento horizontal y se busca la intersección de éste, con otro
+segmento trazado desde el punto que marca sobre el terreno la línea 2D
+y con el talud definido para el lado exterior de la cuneta.</a></span></li>
+<a name="Aplicacion">      </a></ul>
+<a name="Aplicacion">      </a><div style="text-align: center;"><span class="Parrafo"><a name="Aplicacion"><img style="width: 477px; height: 243px;" alt="" src="Imagenes/cuneta_guarda_final_linea.png" /></a></span><a name="Aplicacion"><br />
+      <span class="Parrafo"></span></a></div>
+<a name="Aplicacion">      <span class="Parrafo"><br />
+La opción <span style="font-weight: bold;">[Volcar]</span>&nbsp; crea una línea de cartografía por cada línea
+definida para arranque de las cunetas de guarda.<br />
+Si deseamos deseleccionar una línea previamente seleccionada, se pulsa
+en la tecla donde aparece el número de puntos que contiene y luego
+cuando el programa nos pide elegir línea, picamos en una zona vacía de
+la cartografía.<br />
+      <br />
+Cuando se define una Cuneta de Guarda por el terreno competente, el </span></a><a href="OL_revestimiento_terraplen.html">revestimiento exterior de terraplén</a> y el <a href="OL_revestimiento_desmonte.html">revestimieto de desmonte</a> se prolongan hasta cortar al terreno competente.<br />
+Cuando existe revestimiento exterior de terraplén, la distancia al pié
+de terraplén para el inicio de la cuneta de guarda, se mide desde el
+pié del revestimiento.<br />
+      <br />
+<a name="Cuneta_de_guarda_por_linea"><span class="Titulo_2">Cuneta de guarda por línea</span><span class="Parrafo"><br />
+      <br />
+Cuando se selecciona una línea para definir la cuneta de guarda ahora tenemos seis posibilidades:<br />
+      <br />
+      </span>
+      </a><div style="text-align: center;"><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea"><img style="width: 600px; height: 238px;" alt="" src="Imagenes/cun_guarda_linea.png" /></a></span><a name="Cuneta_de_guarda_por_linea"><br />
+      <span class="Parrafo"></span></a></div>
+<a name="Cuneta_de_guarda_por_linea">      </a><ol>
+<a name="Cuneta_de_guarda_por_linea">        </a><li><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea">La línea 2D marca el inicio de la cuneta.</a></span></li>
+<a name="Cuneta_de_guarda_por_linea">        </a><li><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea">La línea 2D marca el final de la cuneta.</a></span></li>
+<a name="Cuneta_de_guarda_por_linea">        </a><li><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea">La línea 3D marca el cierre del talud.</a></span></li>
+<a name="Cuneta_de_guarda_por_linea">        </a><li><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea">La línea marca el punto final de la
+cuneta pero a ras de tierra. Entoces el primer punto de la cuneta puede
+quedar hundido y se utiliza la pendiente (dX,dY) del primer
+punto(cuneta vectorial) para salir a cortar el terreno o se une
+directamente con el pie de terraplén si la pendiente definida es
+insuficiente.</a></span></li>
+<a name="Cuneta_de_guarda_por_linea">        </a><li><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea">Línea 3D de inicio de caballón: Desde
+el final de las sección normal (pie de terraplén, final de cuneta o de
+desmonte) se une directamente con la posición de la línea 3D y partir
+de aqui se genera la geometría del caballón.</a></span></li>
+<a name="Cuneta_de_guarda_por_linea">        </a><li><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea">Fondo de Cuneta: El fondo de la
+cuneta de guarda, código 3010, se hace pasar por la línea 3D. El primer
+segmento real de la cuneta (se salta el primero que se utiliza para
+fijar el punto inicial), se estira hasta cortar el terreno marcando así
+el inicio de la cuneta.</a></span><span class="Parrafo"><span class="Parrafo"><a name="Cuneta_de_guarda_por_linea"> Si la cuneta es de tipo: por longitudinal, se sustituye la cota de la línea 3D por la cota del longitudinal.</a></span><a name="Cuneta_de_guarda_por_linea"><br />
+        </a></span></li>
+<a name="Cuneta_de_guarda_por_linea">      </a></ol>
+<a name="Cuneta_de_guarda_por_linea">      </a><div style="margin-left: 40px;"><span class="Parrafo"></span></div>
+<a name="Cuneta_de_guarda_por_linea">      <br />
+      <span class="Parrafo">
+      <br />
+      </span></a></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

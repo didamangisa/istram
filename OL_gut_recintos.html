@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Plantillas .gut: Recintos</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTILLAS PARA PLANOS DE
+TRANSVERSALES: RECINTOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 802px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span><img style="width: 260px; height: 45px; margin-left: 7px;" alt="" src="Imagenes/gut_recintos.png" align="right" /><span class="Parrafo">Desde aquí se definen recintos para poder colorearlos con líneas rellenas. Para ello es necesario, en primer lugar, definir las <a href="#superficies">superficies</a> que van a participar en los recintos y, después, definir dichos <a href="#recintos">recintos</a>.<br />
+      <br />
+      La guitarra&nbsp;<span class="Archivo">color.gut</span>, incluida en la librería de programa, es un buen ejemplo de uso de esta característica.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="superficies">Definición de superficies para recintos</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img style="width: 280px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/gut_sup_recintos.png" align="right" /><span class="Parrafo">Desde
+aquí se definen superficies a partir de las existentes siguiendo el
+mismo método que el utilizado por los sistemas de cubicación
+(tablas&nbsp;<span class="Archivo">.dar</span>). Así, en la primera columna se indica al programa el tipo de línea (superficie) a crear y después la <span style="font-weight: bold;">función</span> a utilizar entre las dos superficies involucradas (<span style="font-weight: bold;">Sup 1</span> y <span style="font-weight: bold;">Sup 2</span>).<br />
+      <br />
+El tipo de línea indicado deberá ser uno que NO exista previamente en
+los perfiles, pues ello inducirá a errores. Las funciones disponibles
+para aplicar entre las superficies son:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">1 Superficie</span>: La <span style="font-weight: bold;">Superficie</span> definida coincide con <span style="font-weight: bold;">Sup 1</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">+ Baja</span>: En este caso, la superficie más baja entre las superficies <span style="font-weight: bold;">Sup 1</span> y <span style="font-weight: bold;">Sup 2</span> es una nueva <span style="font-weight: bold;">Superficie</span> que posee datos donde existen simultáneamente <span style="font-weight: bold;">Sup 1</span> y <span style="font-weight: bold;">Sup 2</span> y en este caso coincide con la más baja.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">+ Alta</span>: La superficie más alta entre las superficies <span style="font-weight: bold;">Sup 1</span> y <span style="font-weight: bold;">Sup 2</span> es una nueva <span style="font-weight: bold;">Superficie</span> que posee datos sólo donde existen simultáneamente <span style="font-weight: bold;">Sup 1</span> y <span style="font-weight: bold;">Sup 2</span> y coincide con la más alta.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Recorta</span>r: La superficie resultante de recortar <span style="font-weight: bold;">Sup 1</span> con <span style="font-weight: bold;">Sup 2</span> es una nueva <span style="font-weight: bold;">Superficie</span> que coincide con la superficie <span style="font-weight: bold;">Sup 1</span> en las zonas donde exista <span style="font-weight: bold;">Sup 2</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Completa</span>r: La <span style="font-weight: bold;">Superficie</span> resultante de completar <span style="font-weight: bold;">Sup 1</span> con <span style="font-weight: bold;">Sup 2</span> es una nueva <span style="font-weight: bold;">Superficie</span> que coincide con <span style="font-weight: bold;">Sup 1</span> en todas las zonas donde exista ésta y coincide con <span style="font-weight: bold;">Sup 2</span> en las zonas donde no exista <span style="font-weight: bold;">Sup 1</span> y exista <span style="font-weight: bold;">Sup 2</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Borde Bajo</span>: La <span style="font-weight: bold;">Superficie</span> resultante en una horizontal de cota la más baja entre todas las cotas de todas las superficies existentes.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Borde Alto</span>: La <span style="font-weight: bold;">Superficie</span> resultante en una horizontal de cota la más alta entre todas las cotas de todas las superficies existentes.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ocultar códigos</span>:
+Permite ocultar de una superficie cualquiera aquellos segmentos que
+terminen en un punto cuyo código esté comprendido entre dos valores que
+se definan. En el tipo de superficie indicaremos una de las existentes
+en los perfiles a dibujar. No es necesario definir ningún recinto con
+ella. Por ejemplo: En perfiles de Ferrocarril de vía doble, queremos
+ocultar el segmento de la línea 67 por detrás de la traviesa:
+Superficie 67, Fúnción: Ocultar segmento, Cod.Ini: 1, Cod.fin: 3.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">x Debajo</span>: Se define una superficie resultante en la columna Superficie que está
+compuesta <span style="font-style: italic;">solamente</span> por la parte de la primera superficie que está por debajo de la segunda. <br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">x Encima</span>: Se define una superficie resultante en la columna Superficie que está compuesta <span style="font-style: italic;">solamente</span> por la parte de la primera superficie que está por encima de la segunda. <br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Horizonte</span>: Corta la superficie a (<span style="font-weight: bold;">Sup1</span>) contra la b (<span style="font-weight: bold;">Sup2</span>) que se utiliza como horizonte, quitando los extremos de a que quedan por debajo de b (Igual que la función horizonte de <a href="EDM_editor_perfiles.html#tablas_cubic">tablas de cubicación</a> creada para seguimiento de túneles). Veamos un ejemplo a continuación en la <a href="OL_gut_recintos.html#recintos">definición de recintos</a>.<br />
+        </li>
+      </ul>
+      <br />
+
+
+      <span class="Parrafo">
+Las funciones <span style="font-weight: bold;">Borde Bajo</span> y <span style="font-weight: bold;">Borde Alto</span> se usan para definir los bordes inferior y superior del perfil.<br />
+      <br />
+Para las operaciones: +Baja, +Alta, xDebajo, xEncima, Horizonte,
+Recorta, Completa, Borde bajo, Borde alto ocurre que si el tipo que se
+da para la superficie que se define en la columna Superficie ya existe,
+entonces se sustituye esta superficie en lugar de crear otra nueva.
+Esto ocurre de igual forma con las operaciones de Completar, Recortar,
++Alta y +Baja en el <a href="EDM_editor_perfiles.html#recortar">Editor de Perfiles</a>.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="recintos">Definición de recintos</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img style="width: 280px; height: 93px; margin-left: 7px;" alt="" src="Imagenes/gut_def_recintos.png" align="right" /><span class="Parrafo">Desde
+aquí se definen los recintos a partir de las líneas del perfil o de las
+creadas en el submenú anterior. Para ello se usan tipos de línea
+rellenas (como las del ejemplo) y se indica el modo entre los
+siguientes:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Base+Tapa</span>: El recinto queda definido por dos superficies (base y tapa) y se rellena con el tipo de línea indicado.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cerrada</span>: En este caso se indica una superficie cerrada (por ejemplo, túnel) que se rellenará con el tipo de línea especificado.</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">Interior</span>: Crea un recinto formado por la superficie que a (<span style="font-weight: bold;">Base</span>) deja por dentro de b (<span style="font-weight: bold;">Tapa</span>) (Igual al modo I, de las tablas de cubicación creado para seguimiento de túneles).</li>
+      </ul>Podemos deseleccionar la casilla <span style="font-weight: bold;">Estructuras</span> para que el recinto definido no se genere en secciones en estructura.<br />
+      <br />
+Podemos seleccionar la casilla <span style="font-weight: bold;">Réplicas</span> para usar la definición de recintos en las réplicas de un fichero con ejes generados por <span style="font-style: italic;">Añadir Ramal</span>.<br />
+      <br />
+
+Ejemplo: Queremos colorear la medición DENTRO en un perfil de seguimiento de túneles:<br />
+      <br />
+      <div style="margin-left: 40px;">Defino dos superficies (1001 y 1002) mediante la herramienta Horizonte vista en el apartado anterior.<br />
+      <br />
+      </div>
+      <div style="text-align: center;"><img style="width: 300px; height: 112px;" alt="" src="Imagenes/gut_horiz_ejem.png" /><br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">Defino el recinto DENTRO mediante un tipo de línea sombreada (L74 por ejemplo).<br />
+      </div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 337px; height: 112px;" alt="" src="Imagenes/gut_inter_ejem.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 409px; height: 357px;" alt="" src="Imagenes/gut_dentro.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+
+      <span class="Parrafo">
+      
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>

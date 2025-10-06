@@ -1,0 +1,2345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Modos de dibujo en planta (.lil)</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>MODOS DE DIBUJO EN PLANTA (.lil)<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 696px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 692px; vertical-align: middle;">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="OL_Catalogo_archivos_LIL.html" target="_blank">Catálogo
+de archivos .lil</a><br />
+      <a href="#descripcion">Descripción de los ficheros de modos de
+dibujo .lil</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#formato">Formato de los
+archivos .lil</a><br />
+      <a href="#lineas_longitudinales">Lineas Longitudinales</a><br />
+      <a href="#Peines_de_taludes">Peines de taludes</a><br />
+      <a href="#peines_por_codigos">Peines por códigos</a><br />
+      <a href="#muros_y_cunetas_de_guarda">Muros y cunetas de guarda</a><br />
+      <a href="#estructura">Estructuras</a><br />
+      <a href="#lineas_por">Líneas por Sup., Cod. y ST</a><br />
+      <a href="#lineas_por_pendiente">Líneas y Pendientes</a><br />
+      <a href="#rotulacion_de_taludes">Rotulación de taludes</a><br />
+      <a href="#geopak">Geopak</a><br />
+      <a href="#recintos_dt">Recintos Desmonte/Terraplén</a><br />
+      <a href="OL_ficheros_lil.html#isolineas">Isolineas</a><br />
+      <a href="#Traviesas_y_Carriles">Traviesas y Carriles</a><br />
+      <a href="#lineas_transversales">Líneas Transversales</a><br />
+      <a href="#recintos_de_taludes">Recintos de taludes</a><br />
+      <a href="#bordes">Bordes</a><br />
+      <a href="#pozos_tubos_y_codos">Pozos, Tubos y Codos</a><br />
+      <a href="#tablas_de_textos">Tablas de textos</a><br />
+      <a href="#lineas_por_simbolos">Líneas por símbolos</a><br />
+      <a href="#simbolos_por_simbolos">Símbolos por símbolos</a><br />
+      <a href="#recintos_por_sup_y_cod"><span class="Parrafo">Recintos
+por Sup. y Cod.</span></a><br />
+      <a href="#conos_de_derrame">Conos de derrame</a><br />
+      <a href="#fresado_y_demolicion">Fresado y Demolición</a><br />
+      <a href="#bordillostableros">Bordillos, Tableros</a><br />
+      <a href="#capasfirmes">Capas de firmes</a><br />
+      <a href="#Cambios_de_pendiente"><span style="color: rgb(0, 79, 175);">Cambios de pendiente</span></a><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/editable_lil.png" style="width: 350px; height: 316px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+Mediante este menú podemos editar interactivamente los archivos de
+dibujo de planta .lil. Al entrar en el cuadro de diálogo se carga
+automáticamente el modo de dibujo actual (ISPOL.lil) y los cambios se
+van redibujando sobre el eje actual.<br />
+Si el eje es muy pesado, puede realizarse la edición usando otro eje o
+bien desactivando la opción <span style="font-weight: bold;">Auto</span>,
+para que los redibujados se realicen a petición del usuario.<br />
+Podremos cargar o guardar archivos .lil con las modificaciones que
+hayamos establecido, además de guardar &nbsp;el fichero editado en la
+librería segunda o tercera.<br />
+En este cuadro de diálogo aparecerán unos "tics" en aquellos submenús
+en los que haya alguna entidad definida.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+Los
+modos de dibujo de planta reflejan el tipo de representación con líneas
+3D que se elige para los distintos elementos. Los nombres de muchos de
+los modos existentes en la librería usan una combinación de letras que
+ayudan a identificar los elementos que dibujan:</span><span class="Parrafo"><br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 143px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">L<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Líneas
+longitudinales, a lo largo del eje (el propio eje, bordes de calzada,
+de arcén, etc.)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">B<br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Bordes
+de alcance (pies de terraplén y cabezas de desmonte<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 10px; font-weight: bold;">P<br />
+            </td>
+            <td style="vertical-align: top; height: 10px; text-align: justify;">Peinado
+o peine, pelos o piano de taludes<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; height: 10px;">E<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; height: 10px;">Márgenes
+de Expropiación (por defecto, de 5 metros)<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; height: 14px;">T<br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; text-align: justify; height: 14px;">Transversales
+del terreno, donde existan<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 20px; font-weight: bold;">C<br />
+            </td>
+            <td class="Parrafo" style="vertical-align: top; height: 20px;">Áreas Cerradas para
+representar desmontes y terraplenes por colores<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 16px; font-weight: bold;">M<br />
+            </td>
+            <td style="vertical-align: top; height: 16px; text-align: justify;">Muros<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </span><span class="Parrafo"><br />
+Por ejemplo, el modo&nbsp;<span class="Archivo">LBT.lil</span>
+ordena dibujar las líneas longitudinales de la plataforma, los bordes
+de alcance y los perfiles transversales. Los colores y modos concretos,
+están descritos en líneas de comandos dentro del archivo y en el EDITOR
+DE MODOS DE DIBUJO .lil.<br />
+      <br />
+      </span><span class="Parrafo">Para el peinado de taludes se
+dispone de varios &#8216;apellidos&#8217; para el código P; <span style="font-weight: bold;">P11</span> ordena al programa que dibuje
+los &#8216;pelos&#8217; desde el borde de arcén y <span style="font-weight: bold;">P5</span>
+hace lo mismo pero desde el borde de berma (código 50).</span><br />
+      <span class="Parrafo"><br />
+A continuación se muestran algunos ejemplos gráficos sencillos del
+resultado generado al aplicar diferentes ficheros&nbsp;<span class="Archivo">.lil</span> que ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>&nbsp;
+ofrece por defecto en su directorio&nbsp;<span class="Archivo">\ispol\lib</span>.
+      <br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 641px; height: 271px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 294px;"><img src="Imagenes/ejemplo_lil_lp5.png" style="width: 238px; height: 206px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 327px;">
+            <div style="text-align: right;"><img src="Imagenes/ejemplo_lil_lp5m.png" style="width: 225px; height: 204px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LP5.lil, peinado de taludes desde el borde de berma<br />
+            <br />
+            </span></td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LP5m.lil, dibuja además los muros</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 294px;"><img src="Imagenes/ejemplo_lil_lp11.png" style="width: 242px; height: 231px;" alt="" /><br />
+            <br />
+            </td>
+            <td style="vertical-align: middle; width: 327px;">
+            <div style="text-align: right;"><img src="Imagenes/ejemplo_lil_lbt_3D.png" style="width: 314px; height: 166px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LP11.lil, peinado de taludes desde el arcén</span></td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">LBT.lil, visualización 3D</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="descripcion">Descripción
+de los ficheros de modos de dibujo .lil</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="formato">Formato de los archivos .lil</a></span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 555px;">Estos
+ficheros ASCII son editables utilizando, por ejmplo, el bloc de notas
+de los sistemas Windows<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/editable_simbolo_lil.png" style="width: 34px; height: 34px;" alt="" align="left" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Por defecto estos ficheros utilizan las líneas existentes en la
+librería básica o primaria y por tanto, si ésta ha sido modificada, los
+resultados o el aspecto de los dibujos puede no ser el deseado. Por
+otro lado, se recomienda al usuario que enriquezca la librería editando
+estos archivos o generando otros nuevos a partir de ellos<br />
+      <br />
+A continuación se describe un modo de dibujo simple (<span class="Archivo">LBT.lil</span>) para que el usuario pueda comenzar a
+comprender este tipo de archivos:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># LBT.lil dibuja las
+Linel las Linet y las
+ocupaciones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ORDENES DE DIBUJO
+DE LINEAS L EN FUNCION DE LOS
+CODIGOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; hasta el
+codigo&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-50.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+fondo de
+mediana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bermas y&nbsp; auxiliares mediana&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+calzadas&nbsp;
+principales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bermas y arcenes externos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cuneta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte
+inadecuado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ORDEN DE DIBUJO DE
+LINEAS DE OCUPACION Y
+EXPROPIACION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+65&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+zonas
+alcanzadas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+zona
+expropiacion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+ORDEN DE DIBUJO DE
+LINEAS
+TRANSVERSALES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+61&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+lineas
+transversales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+ORDEN DE DIBUJO
+PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+P&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># DEFINICION DE
+ROTULACION PARA CUNETAS DE GUARDA
+SEPARADAS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GL&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lineas
+Longitudinales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GT&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lineas
+Trasversales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipos de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+----------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GL2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lineas
+Longitudinales
+(Terr,Desm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GT2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lineas
+Trasversales&nbsp;&nbsp;
+(Terr,Desm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+DEFINICION DE
+ROTULACION PARA
+MUROS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+ML&nbsp;&nbsp;&nbsp;&nbsp;
+150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lineas
+Longitudinales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+MT&nbsp;&nbsp;&nbsp;&nbsp;
+150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lineas
+Trasversales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+FIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"><span class="Archivo"> <br />
+      </span>La primera columna es el comando de dibujo. Así, el
+comando <span style="font-weight: bold;">T</span> permite
+dibujar líneas longitudinales. En el ejemplo, se unirán con el tipo de
+línea L39 todos los códigos similares hasta el -50 (esto incluye el
+fondo de mediana que es el código -100). Todos los posibles códigos
+comprendidos entre el -50 (borde de berma interior) y el -10 se
+representarán con el tipo de línea L81, lo que incluye los bordes de
+berma y la línea de arcén interior, así como posibles aceras o
+plataformas fijas interiores. Se hace lo mismo con los distintos
+intervalos de códigos hasta el 3000.<br />
+      <br />
+Para inhibir la representación de cualquiera de estas líneas, basta con
+adjudicar un tipo de línea -1 al código correspondiente. La cuarta
+columna obviamente no es leída por el programa, y únicamente sirve como
+comentarios de cara a una mejor comprensión del fichero para futuras
+ediciones.<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 328px; text-align: justify;"><span class="Parrafo">A continuación aparecen definidos los tipos de línea
+para representar tanto los bordes de alcance (comando <span style="font-weight: bold;">B</span>, tipo de línea L65) como los
+límites de la zona de expropiación (comando <span style="font-weight: bold;">E</span>, tipo de línea L74).</span><br />
+            <span class="Parrafo"><br />
+Toda fila de este fichero que comience con el
+carácter # no será leída por el programa, lo cual es útil para que el
+usuario pueda modificar alguna línea pero preservar la situación
+anterior por si tuviese que recurrir de nuevo a ella. En el ejemplo,
+las líneas longitudinales correspondientes al límite de expropiación no
+se dibujarán porque esa fila comienza con dicho caracter.<br />
+            <br />
+Las líneas que representan los transversales (comando <span style="font-weight: bold;">R</span>)
+se dibujarán con el tipo L61, aunque es posible definir un tipo de
+línea diferente para secciones en estructura mediante el comando <span style="font-weight: bold;">RE</span> (el fichero&nbsp;<span class="Archivo">LT.lil</span> hace uso de él). Este comando tiene en
+cuenta si el eje está en semiestructura y el esviaje de la estructura.</span></td>
+            <td style="vertical-align: top; width: 344px;">
+            <div style="text-align: right;"><img src="Imagenes/ejemplo_lil_lt.png" style="width: 341px; height: 287px;" alt="" /><br />
+            </div>
+            <div style="text-align: center;"><span class="Info">Planta
+dibujada con el modo de dibujo LT.lil</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>Las líneas transversales también se pueden dibujar
+parcialmente entre dos códigos concretos mediante el comando <span style="font-weight: bold;">RS</span>, del que hace uso el modo de
+dibujo&nbsp;<span class="Archivo">LT2.lil</span>:<br />
+      <span class="Archivo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Archivo"> ...</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># DEFINICION DE ROTULACION DE LINEAS
+TRANSVERSALES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#
+POR SUPERFICIE Y
+CODIGOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tipo de
+L&nbsp;
+Superficie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Codigo inicial
+Codigo final&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo"># ---&nbsp; ---------&nbsp;
+----------------&nbsp; -------------- ---------------&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; RS&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; RS&nbsp;&nbsp;&nbsp;&nbsp;
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">...</span><br />
+      <span class="Archivo"></span></div>
+      <span class="Parrafo"><br />
+En este fichero, se dibuja con el tipo de línea 67 la parte de la
+superficie transversal 67 comprendida entre los códigos 2 y 100, y con
+el tipo de línea 68 la parte de la superficie transversal 68
+comprendida entre los códigos 100 y 5000.<br />
+      <br />
+Las líneas transversales también se pueden dibujar parcialmente entre
+dos códigos concretos mediante el comando <span style="font-weight: bold;">RS</span>, del que hace uso el modo de
+dibujo&nbsp;<span class="Archivo">LT2.lil</span>.<br />
+      <br />
+A continuación viene el comando <span style="font-weight: bold;">P</span>
+para el dibujado de peines de talud. Aunque en este ejemplo la línea
+está comentada y por tanto no se dibujan, su funcionamiento sería el
+siguiente:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 49px; width: 692px; margin-left: 0px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 209px;"><img src="Imagenes/peinado.png" style="width: 199px; height: 147px; margin-right: 7px;" alt="" /> </td>
+            <td style="vertical-align: top; width: 477px; text-align: justify;">En el
+peinado de taludes se dibujaría, según este modo, con polilínea
+de tipo L0, con separación de 5 mm de papel entre cada línea (5 metros
+en el terreno, supuesta la escala 1:1000). <br />
+            <br />
+Si el &#8220;palito&#8221; resultante mide menos de 1 mm se obvia su
+representación, puesto que no sería visible. Así mismo, se dibuja largo
+un pelo de cada dos.<br />
+            <br />
+Existen varios comandos relacionados con el &#8220;peinado&#8221; de taludes que se
+detallan <a href="#peinado">más adelante</a>. </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_lil_peine.png" style="width: 346px; height: 102px;" alt="" /><br />
+      <span class="Info">Planta dibujada con el modo de dibujo Peine.lil</span></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+El ejemplo continúa con una serie de comandos para la representación de
+cunetas de guarda y muros que también se comentan <a href="#cunetas">más
+adelante</a>.<br />
+      <br />
+Finalmente, el archivo concluye con la palabra <span style="font-weight: bold;">FIN</span> en letras mayúsculas que
+invalida cualquier línea de comando posterior a la misma.<br />
+      <br />
+Si se emplean varios comandos de un mismo tipo a la vez, la última
+orden leída es la que va a ser usada. Por ejemplo en el siguiente caso,
+sólo <span style="font-weight: bold;">C5</span> será tenida en cuenta:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># DEFINICION DE
+ROTULACION CREACION DE RECINTOS&nbsp;
+CERRADOS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L Desm&nbsp; tipo de L
+Terr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+--------------&nbsp;
+--------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+C11&nbsp;&nbsp;&nbsp;&nbsp;
+72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (desde borde arcen
+c==11)&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (desde
+subrasante)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+C5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (desde Berma
+cod==50)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+Lo correcto, sin embargo sería colocar el carácter # al principio de
+las líneas de comandos <span style="font-weight: bold;">C11</span> y <span style="font-weight: bold;">C</span>.<br />
+      <br />
+A continuación se describen por zonas de la sección todas las
+posibilidades que ofrece la aplicación, definiéndose además modos
+específicos para proyectos de ferrocarril y de tuberías. <br />
+      <br />
+      <a name="lineas_longitudinales"><span style="font-style: italic; font-weight: bold;">Lineas Longitudinales</span><br />
+      <br />
+      </a></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">A partir de este menú
+podremos obtener las líneas longitudinales definiendo el tipo de línea
+y hasta que código queremos que dibuje dicha línea longitudinal.<br />
+            <br />
+Podremos activar la opción <span style="font-weight: bold;">Tipo
+Zanja: Recorre la L68 y no la L67</span> para que en casos de ejes de
+tuberías solo nos recorra los longitudinales de la zanja.<br />
+            <br />
+            <span style="font-weight: bold;">Sigue por el Revestimiento
+de Terraplén</span>: Mediante esta casilla podremos dibujar el
+longitudinal en casos de ejes con revestimiento de terraplén definido.<br />
+            <br />
+            <span style="font-weight: bold;">Utiliza líneas 8D</span>:
+genera el longitudinal con este tipo de línea.<br />
+            <br />
+            <span style="font-weight: bold;">Por Superficie</span>:
+Indicaremos el tipo de línea del dibujo del longitudinal a partir de
+una superficie obtenida en los perfiles. Por ejemplo&nbsp;<span class="Archivo">Bovedas.lil.<br />
+            <br />
+            <span class="Parrafo"><span style="font-weight: bold;">Equivalencia
+de códigos</span>:
+Esta utilidad permite recodificar algunos codigos de la superficie 68,
+al generar las lineas longitudinales, de modo que por ejemplo pueda
+haber continuidad entre una cuneta de desmonte y una cuneta de guarda
+en terraplén: (p.e. 600-&gt;601, 1102-&gt;3010, 1103-&gt; 3011,
+1104-3012).</span><br />
+            </span> </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_lineas_longitudinales.png" style="width: 300px; height: 518px;" alt="" align="right" hspace="8" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span>
+      <table style="text-align: left; width: 692px; height: 220px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 244px;"><img src="Imagenes/ejemplo_lil_comandoLS.png" style="width: 252px; height: 184px; margin-right: 7px;" alt="" /> </td>
+            <td style="vertical-align: top; width: 426px;">
+            <div style="text-align: justify; width: 424px;">.<br />
+            <br />
+            <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejemplo_lil_bovedas.png" style="width: 402px; height: 113px;" alt="" /></span></span></span><br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+            <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Info">Planta dibujada con el modo de
+dibujo Bovedas.lil</span></span></span><br />
+            <span class="Parrafo"><span class="Parrafo"></span></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Archivo"><br />
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+bovedas.lil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># LINEAS
+LONGITUDINALES EXTRAIDAS DE CUALQUIER
+SUPERFICIE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Tipo de L&nbsp; Superficie&nbsp;&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># --- ---------&nbsp;
+----------
+------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sostenimiento (Sin
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sostenimiento (Con
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Revestimiento (Sin
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LL&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Revestimiento (Con
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#--------------------------------------------------------------------#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># LINEAS TRASVERSALES
+EXTRAIDAS DE CUALQUIER
+SUPERFICIE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Tipo de L&nbsp; Superficie&nbsp;&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># --- ---------&nbsp;
+----------
+------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sostenimiento (Sin
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sostenimiento (Con
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Revestimiento (Sin
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+LT&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Revestimiento (Con
+contraboveda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+      <span class="obsolete"><span class="Parrafo"><span style="font-style: italic; font-weight: bold;" class="Parrafo"><a name="Peines_de_taludes">Peines de taludes</a></span><span class="Parrafo"><a name="Peines_de_taludes"><br />
+      </a></span></span><span style="font-weight: bold; font-style: italic;"><br />
+      </span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span class="Parrafo">En
+este menú podremos
+definir el dibujo de los peines de los taludes. Podremos peinar taludes
+desde Subrasante, Borde de berma, Borde de arcén, Borde de calzada,
+modo Automático, Peinar el Balasto, Peinar el talud del firme o Sólo
+peines por códigos.<br />
+            <br />
+Seleccionaremos el tipo de línea de los peines de Desmonte y Terraplén.<br />
+            <br />
+Entre algunos ejemplos que podemos encontrar en la librería
+destacamos&nbsp;<span class="Archivo">Derrame4_medios_peines.lil</span>
+o&nbsp;<span class="Archivo">PF.lil</span>.<br />
+            <br />
+Peinar con símbolos como el&nbsp;<span class="Archivo">LPmuelle.lil</span>,
+            <span style="font-weight: bold;">Medios Peines</span>,
+Peinar la cuneta o Saltar punto de cambio
+competente/inadecuado son otras de las herramientas para facilitar el
+comportamiento final de nuestro fichero de dibujo.<br />
+            <br />
+El archivo derrame4_medios_peines.lil disponible en nuestra librería
+incorpora el comando PM que reduce a la mitad la longitud de los
+segmentos largos y cortos de los peines, en los taludes de desmonte y
+terraplén y en los conos de derrame.<br />
+            </span></td>
+            <td style="vertical-align: top;"><img style="width: 320px; height: 277px;" alt="" src="Imagenes/lil_peines_de_taludes.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>El
+modo de dibujo LPM.lil incluye el comando P11. Éste realiza el peinado
+desde el borde de arcén de manera que no se peinan las cunetas. Tampoco
+se dibujan las líneas de las bermas laterales de la calzada ni el corte
+con la subrasante.<br />
+      <br />
+El fichero LP2.lil contiene el comando P2 que realiza el peinado de los
+taludes de terraplén arrancando desde el código 2 (borde de clazada,
+banda blanca). También se puede observar el comando PT para representar
+con diferente tipo de línea los peines de desmonte y de terraplén.<br />
+      <br />
+Como ejemplo para dibujar el peinado de taludes entre códigos
+específicos, se incluye el fichero PeinaMur.lil que permite peinar sólo
+dos zonas del trasdós de los muros:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_peinamur.png" style="width: 423px; height: 216px;" alt="" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold;">P0</span>: Define los parámetros
+de los peines pero anula todos salvo los definidos mediante <span style="font-weight: bold;">PCD</span> o <span style="font-weight: bold;">PCT</span>.<br />
+      <span style="font-weight: bold;">PCD</span> cód_pie cód_cab: Para
+definir un peine en desmonte entre dos códigos específicos.<br />
+      <span style="font-weight: bold;">PCT</span> cód_cab cód_pie: Para
+definir un peine en terraplén entre dos códigos específicos.<br />
+      <br />
+También existen los comandos <span style="font-weight: bold;">PCTA</span>
+y <span style="font-weight: bold;">PCDA</span>, para terraplén y
+desmonte respectivamente, y cuyo funcionamiento se explica mediante el
+siguiente ejemplo:<br />
+      <br />
+      <span class="Archivo">PCDA 50 600</span>&nbsp; <span style="font-style: italic;">Peinará
+en desmonte desde el código 50 hasta el 600, pero si no encuentra el
+código 50 empezará desde el punto anterior (que podría ser, por ejmplo,
+el código 11)</span>.<br />
+      <br />
+El comando <span style="font-weight: bold;">PI</span> hace saltarse la
+línea de cambio de desmonte en terreno competente a desmonte en terreno
+inadecuado para el dibujo del peinado de taludes y líneas
+longitudinales <span style="font-weight: bold;">L</span>. Este comando
+actúa en aquellas secciones en las que se ha activado la definición del
+      <a href="OL_desmonte_tierra.html" target="_blank">desmonte en
+terreno inadecuado</a>. Se incluye este comando en el fichero&nbsp;<span class="Archivo">PEINE_b.lil</span>:<br />
+      <br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+DEFINICION DE
+ROTULACION PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo L desmonte&nbsp; tipo L
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># SALTAR EL PUNTO
+COMPETENTE/INADECUADO PARA PEINES Y Lineas
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+P5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (desde Berma cod==50)&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+      </span>
+      <table style="text-align: left; width: 597px; height: 50px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 293px; text-align: center;"><img src="Imagenes/ejemplo_lil_peine_.png" style="width: 279px; height: 129px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 284px; text-align: center;"><img src="Imagenes/ejemplo_lil_peine_b.png" style="width: 270px; height: 129px;" alt="" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 293px; text-align: center;"><span class="Info">Planta dibujada con el modo de dibujo Peine.lil</span><br />
+            </td>
+            <td style="vertical-align: top; width: 284px; text-align: center;"><span class="Info">Planta dibujada con el modo de dibujo Peine_b.lil</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+El comando <span style="font-weight: bold;">PA</span> o <span style="font-weight: bold;">CA</span>
+determina automáticamente la cabeza del peine buscando por los códigos
+100, 50, 11, 2. Tiene en cuenta el primero de ellos que exista en el
+perfil y que además no esté desactivado su dibujo en el fichero&nbsp;<span class="Archivo">.lil</span>.&nbsp; En el fichero&nbsp;<span class="Archivo">PeineA.lil</span>
+se ha desactivado el dibujo de la línea de código 100 (desagüe de la
+subrasante) por lo que el peine se iniciará en la línea de berma (50),
+borde de arcén (11) o borde de calzada (2).<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+DEFINICION DE
+ROTULACION PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo L desmonte&nbsp; tipo L
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;
+(Automatico)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+Existe un modo de dibujo específico para ferrocarriles, el fichero&nbsp;<span class="Archivo">LPbalast.lil</span>, que incorpora un comando para el
+dibujado de peines, <span style="font-weight: bold;">PB</span>,
+que permite peinar los taludes del balasto (código 11-12) y capa de
+forma (13-100 ó 50-100):<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Archivo">######################################################################<br />
+#
+DEFINICION DE
+ROTULACION PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tipo de L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+# ---&nbsp; ---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #<br />
+&nbsp;
+PB&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+######################################################################<br />
+      </span> </div>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_lil_lpbalast.png" style="width: 475px; height: 128px;" alt="" /></span><br />
+      <span class="Parrafo"> <span class="Info">Planta dibujada con el
+modo de dibujo LPBalast.lil</span></span><br />
+      <span class="Parrafo"></span></div>
+      <br />
+      <span class="Parf_negrita">&nbsp;</span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="obsolete"><span class="Parrafo"><span class="Parf_negrita">&nbsp;
+Peinar con símbolos:</span>&nbsp;Para sustituir los peines de talud por
+símbolos escalables se sustituye
+el dato&nbsp;<span class="Archivo">1 largo de cada n</span> por el
+valor -1. El modo&nbsp;<span class="Archivo">LPmuelle.lil</span>
+utiliza el símbolo S89:<br />
+      </span> <span class="Parrafo"> <br />
+&nbsp;<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"> Peinar las cunetas</span>:
+Para el caso de peinado de cunetas, también existe un comando
+específico, <span style="font-weight: bold;">PC50</span>, usado en
+el&nbsp;<span class="Archivo">LP50CUN.lil</span>:<br />
+      <br />
+      </span> <span class="Parrafo"><span class="Archivo"> <br />
+      <span class="Parrafo">El comando <span style="font-weight: bold;">PF</span>
+(peinado del firme) realiza un peinado del talud del firme entre los
+códigos 50 y 100 y a continuación peina el terraplén y/o desmonte. El
+fichero&nbsp;<span class="Archivo">PF.lil</span> incluye este comando:</span><br />
+      <br />
+      </span></span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+DEFINICION DE
+ROTULACION PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo L desmonte&nbsp; tipo L
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (desde Berma cod==50)&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span><br />
+      <span class="Parrafo"></span></span></div>
+
+      <span class="Parrafo"> <br />
+      <span class="Archivo"><span class="Parrafo">El fichero&nbsp;<span class="Archivo">zanja.lil</span> permite peinar los taludes hasta el
+
+
+fondo de la zanja:</span><br />
+      <br />
+      </span></span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># Zanja&nbsp;&nbsp; :
+Peinado de Taludes hasta el fondo de la
+zanja&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># DEFINICION DE
+ROTULACION DE LINEAS L EN FUNCION DE LOS
+CODIGOS&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; hasta el
+codigo&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Zanja&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cuneta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte
+inadecuado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+TZ&nbsp;&nbsp;&nbsp; Tipo Zanja: Recorre toda la 68 y no la
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+DEFINICION DE
+ROTULACION PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo L desmonte&nbsp; tipo L
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; -------- -------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+P1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (desde
+cod==100)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;
+FIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span></div>
+
+      <br />
+
+Podemos realizar el peinado de taludes utilizando un símbolo, como
+ejemplo el LPqatar.lil, dibujando un símbolo largo y uno corto, o uno
+largo y dos cortos...<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_LPqatar_peines.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_LPqatar_dibujo.png" style="width: 370px; height: 273px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      <span class="Parf_negrita">&nbsp; </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"> Peinar la excavación del muro de desmonte:</span>&nbsp;Peina
+la superficie (149) entre los códigos 1282-1283.<br />
+No es necesario utilizar peines por códigos.<br />
+      </span></span></span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_peines_taludes_taluddemontemuros.png" style="border: 1px solid ; width: 387px; height: 303px;" alt="img_peine_taludes_taluddesmontemuros" align="middle" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="obsolete"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox" /></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"> Peines normales al borde de la plataforma:&nbsp;&nbsp;</span></span></span></span></span></span><span class="obsolete"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">en las transiciones de anchos de calzada o arcenes.</span></span></span></span></span><br /><span class="obsolete"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="peines_por_codigos">Peines por códigos</a></span><a name="peines_por_códigos"><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Posibilidad a partir de
+este menú de peinar por códigos.<br />
+            <br />
+Como ejemplo en nuestra librería encontraremos el fichero&nbsp;<span class="Archivo">Peinacod.lil</span>,&nbsp;<span class="Archivo">Peinamur.lil</span>
+entre otros.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_peines_codigos.png" style="width: 309px; height: 286px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="muros_y_cunetas_de_guarda"><span style="font-weight: bold; font-style: italic;">Muros y cunetas de
+guarda</span><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Menú específico para el
+dibujo de muros y cunetas de guarda.<br />
+            <br />
+            <span class="Parrafo">Para los muros que tienen ancho y
+profundidad se incluye el fichero&nbsp;<span class="Archivo">lp5m.lil</span>
+que contiene los comandos ML y MT.<br />
+            <br />
+El archivo LP5MuroT.lil que incorpora un nuevo comando que permite
+peinar la cara vista de un muro de terraplén.<br />
+            <br />
+Posibilidad de rotular los PKs de inicio y final de los muros así como
+su longitud.<br />
+            <br />
+            </span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_muros.png" style="width: 309px; height: 354px; float: right;" alt="" hspace="5" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo">En este mismo&nbsp;<span class="Archivo">lp5m.lil</span> se incluye una definición para las
+líneas
+longitudinales de la sección que separa los tipos de línea de las
+bermas en la plataforma y los bordes de arcenes, y que en otros
+ficheros&nbsp;<span class="Archivo">.lil</span> vienen mezclados. Es
+posible separar más tipos insertando
+los códigos correspondientes:<br />
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># DEFINICION DE
+ROTULACION DE LINEAS L EN FUNCION DE LOS
+CODIGOS&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de L&nbsp; hasta el
+codigo&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># ---&nbsp;
+---------&nbsp; ----------------&nbsp;
+------------------------------&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-51.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+fondo de
+mediana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bermas
+mediana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+auxiliares
+mediana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+calzadas&nbsp;
+principales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+arcenes
+externos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bermas&nbsp;
+externas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cuneta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte
+inadecuado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span></div>
+      </span><br />
+Existen dos comandos para dibujar las líneas longitudinales y
+transversales de las cunetas de guarda cuando se definen en un tipo de
+línea separado. Se incluye en la librería el fichero LTG.lil que
+contiene estos comandos (<span style="font-weight: bold;">GL</span>, <span style="font-weight: bold;">GT</span>, <span style="font-weight: bold;">GL2
+      </span>y <span style="font-weight: bold;">GT2</span>):<br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"># DEFINICION DE
+ROTULACION PARA CUNETAS DE GUARDA
+SEPARADAS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GL&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lineas
+Longitudinales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+GT&nbsp;&nbsp;&nbsp;&nbsp;
+50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lineas
+Trasversales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipos de
+L&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">#
+---&nbsp;
+----------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GL2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lineas
+Longitudinales
+(Terr,Desm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">&nbsp;
+GT2&nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;
+168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lineas
+Trasversales&nbsp;&nbsp;
+(Terr,Desm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span></span><br />
+      <span class="Parrafo"><span class="Archivo">######################################################################</span></span><br />
+      <span class="Parrafo"><span class="Archivo"></span></span></div>
+      <span class="Parrafo"> <br />
+Los comandos <span style="font-weight: bold;">GL</span> y <span style="font-weight: bold;">GT</span> (que están comentados y por tanto
+no se usarán) dibujarían las cunetas con el tipo de línea 50 y se
+diferencian de <span style="font-weight: bold;">GL2</span> y <span style="font-weight: bold;">GT2</span> en que éstos permiten definir
+dos tipos diferentes para dibujar las cunetas de guarda en terraplén y
+desmonte (50 y 168).</span></span></span></span></span><br />
+      <br />
+      <a name="estructura"><span style="font-weight: bold; font-style: italic;">Estructuras</span><br />
+      </a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Mediante este menú
+podremos dibujar el nombre, el Pk, la longitud, el Pk de las pilas y
+las mismas pilas que hayamos definido en el menú de Estructuras.<br />
+            <br />Podemos rotular en PKs de usuario (deducidos de las ecuaciones
+de PK) los PKs de inicio y final de la estructura y los PKs de las
+pilas.<br />
+            <br />
+Si activamos la casilla de <span style="font-weight: bold;">Dis.Eje</span> daremos la distancia en mm de papel
+segun la escala gráfica en lugar de dar la distancia real en metros. Si
+nos encontramos en un dibujo con escala 1:1000 ambos valores serán
+coincidentes.<br /><br />Para
+los viaductos del lado izquierdo se puede rotular de forma diferenciada
+el Nombre, PK de inicio y final, Longitud y PK de las pilas.<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 400px; height: 316px;" alt="" src="Imagenes/lil_estructura.png" hspace="8" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+El modo de dibujo&nbsp;<span class="Archivo">derrame2.lil</span> se
+diferencia del anterior en que rellena las áreas de estructura y túnel,
+y el&nbsp;<span class="Archivo">derrame3.lil</span>
+añade además la rotulación del nombre, PK, longitud y PK del dibujo de
+cada pila, datos todos ellos definidos en el menú de ESTRUCTURAS. Para
+ello se hace uso de los comandos <span style="font-weight: bold;">EST_N</span>,
+      <span style="font-weight: bold;">EST_PK</span>, <span style="font-weight: bold;">EST_L</span> y <span style="font-weight: bold;">EST_PILA</span> respectivamente:<br />
+      <span class="Parrafo"><span class="Parrafo"> <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_derrame3.png" style="width: 363px; height: 263px;" alt="" /><br />
+      <br />
+      <span class="Info">Planta dibujada con el modo de dibujo
+Derrame3.lil</span><br />
+      </div>
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo">
+El modo de dibujo&nbsp;<span class="Archivo">derrame4.lil</span> es muy
+parecido al anterior, pero usa el comando <span style="font-weight: bold;">NT5</span> en lugar del <span style="font-weight: bold;">N5</span>,
+lo que indica que los conos de derrame se creen tanto para estructuras
+como para emboquilles de túneles. Para el dibujo de los peines permite
+utilizar los mismos tipos definidos para los peines de desmonte y
+terraplén. Este modo de dibujo pinta también las líneas longitudinales
+y transversales correspondientes a los túneles, de forma similar a como
+hace el modo&nbsp;<span class="Archivo">bovedas.lil</span>.<br />
+      <br />
+      <img src="Imagenes/lil_modelo_pila.png" style="width: 246px; height: 150px; margin-left: 7px;" alt="" align="right" /> El modo de
+dibujo&nbsp;<span class="Archivo">derrame4.lil</span> presenta otras
+singularidades: el uso del comando <span style="font-weight: bold;">TR</span>,
+que permite dibujar las líneas longitudinales y peines por los taludes
+del revestimiento exterior de terraplén en las zonas donde esta
+superficie esté definida, y el uso del comando <span style="font-weight: bold;">EST_P3D</span>, que pinta un modelo
+alámbrico 3D de las pilas siempre que sus dimensiones estén declaradas
+en el </span></span><a href="OL_estructuras.html">menú ESTRUCTURAS</a>.<br />
+      <span class="Parrafo"><br />
+      </span></span><br />
+      <br />
+      <br />
+      <br />
+      <a name="lineas_por"><span style="font-weight: bold; font-style: italic;">Lineas por Sup, Cod y ST</span><br />
+      <br />
+      </a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Usando este menú podremos
+dibujar líneas longitudinales a partir de cualquier superficie y código.<span style="font-style: italic;"><span style="font-weight: bold;"><br />
+      <br />
+      </span></span>Se puede discretizar el <span style="font-weight: bold;">lado</span>
+de la polilínea a dibujar en función del código seleccionando <span style="font-weight: bold;">derecho</span>, <span style="font-weight: bold;">izquierdo</span> o <span style="font-weight: bold;">ambos</span> lados.<br />
+      <br />
+Marcando la casilla en la columna </span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">PK</span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, se puede rotular el PK de
+inicio y final de cada línea.<br />
+      <br />
+En la columna <span style="font-weight: bold;">Zona</span>, podemos elegir si se dibuja siempre o solamente en zonas de desmonte o terraplén.<br />
+      <br />
+En la columna <span style="font-weight: bold;">Sección</span>, podemos
+marcar cada linea según su tipo: C, D o T.<br />
+      <br />
+Como ejemplo tenemos en nuestra librería el fichero&nbsp;<span class="Archivo">Cuneta_ST.lil</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_lineas.png" style="width: 496px; height: 189px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El archivo Cuneta_ST.lil permite asociar a cada sección tipo de cuneta
+un tipo de línea diferente para dibujar el fondo de la cuneta (comando
+LCST):<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_cuneta_ST.png" style="width: 427px; height: 281px;" alt="" /><br />
+      </div>
+      <br />
+Si se activa la casilla <span class="Parf_negrita">Pk usuario</span>,
+deduce los PKs de las <a href="OL_ecuaciones_de_PK.html">Ecuaciones de
+Pk</a>.<br />
+      <br />
+      <br />
+      <a name="lineas_por_pendiente"><span style="font-weight: bold; font-style: italic;">Líneas y Pendientes</span><br />
+      <br />
+      </a><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">A partir de este menú
+podremos dibujar líneas longitudinales por pendiente, por superficie y
+código como es el caso del fichero&nbsp;<span class="Archivo">Cuneta.lil</span>.<br />
+            <br />
+También podremos dibujar líneas por pendiente por símbolo como es el
+caso del fichero&nbsp;<span class="Archivo">Cuneta_S.lil</span>.<br />
+            <br />
+Pendiente por superficie y código: Permite rotular la pendiente
+longitudinal de un punto de la sección. Se da también una distancia
+mínima entre rotulos para que no se solapen rotulos muy próximos en pk.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_linea_pendiente.png" style="width: 384px; height: 414px;" alt="" align="right" hspace="8" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Se pueden dibujar las líneas de cuneta (fondo de cuneta o cualquier
+otra línea característica de la sección) con solo cambiar el tipo de
+línea en función de la pendiente y su orientación dependiendo de la
+dirección de la caída del agua. También inserta un símbolo en los
+puntos altos y otro en los puntos bajos:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_cuneta.png" style="width: 427px; height: 312px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_cuneta.png" style="width: 407px; height: 130px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><span class="Nota"><span class="Info">Ejemplo dibujado con el modo de dibujo cuneta.lil</span></span><a name="lineas_por_pendiente"><br />
+      </a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>El modo de dibujo cuneta_s.lil es similar al cuneta.lil,
+pero utiliza símbolos del perfil para ubicar la posición de la cuneta.
+Igualmente crea tres distintos tipos de línea en función de la
+pendiente y orientados en la dirección de la caída del agua. También
+permite marcar con distintos símbolos los puntos altos y bajos:<span style="font-weight: bold; font-style: italic;"><br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span style="font-weight: bold; font-style: italic;"><img src="Imagenes/lil_cuneta_S.png" style="width: 426px; height: 324px;" alt="" /></span><a name="lineas_por_pendiente"><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span><a name="rotulacion_de_taludes"><span style="font-weight: bold; font-style: italic;">Rotulación de taludes</span><br />
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span> </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">A partir de los comandos
+TaludD y TaludT que aparecen en el fichero&nbsp;<span class="Archivo">Derrame4.lil</span>
+entre otros podremos dibujar un símbolo indicando el tipo númerico de
+talud que hemos realizado. Además, podemos rotular con un símbolo
+diferente un mismo talud en función de su valor gracias a los valores
+talud mínimo y máximo.<br />
+            <br />
+Si marcamos la casilla [ ] utilizar símbolos para H:V se rotularán los taludes de la forma H/1, H/2, H/3, H/4, H/5, H/6.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_rotulacion.png" style="width: 309px; height: 264px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_simbolos_taludes.png" style="width: 443px; height: 196px;" alt="" /><br />
+      </div>
+      <br />
+      <a name="geopak"><span style="font-weight: bold; font-style: italic;">Geopak</span><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Este menú está dirigido a
+dibujos estilo Geopak.<br />
+            <br />
+Tenemos alguna guitarra de este estilo en la librería de Texas.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_geopak.png" style="width: 463px; height: 316px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="recintos_dt"><span style="font-weight: bold; font-style: italic;">Recintos
+Desmonte/Terraplén</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_recintosDT.png" style="width: 309px; height: 227px;" alt="" /><br />
+      </div>
+      <br />
+Se pueden representar los taludes de DESMONTE y TERRAPLÉN en lugar de
+los peines, mediante líneas cerradas que pueden ser rellenadas con
+colores sólidos, con patrones o con rellenos ráster SGL. Se incluyen en
+la librería los ficheros lc.lil y recinto.lil que utilizan esta
+posibilidad:<br />
+      <br />
+      <div style="text-align: center;"><span style="font-weight: bold; font-style: italic;"><img src="Imagenes/lil_recintos.png" style="width: 427px; height: 104px;" alt="" /></span><a name="recintos_dt"><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>Usando el comando C los taludes de terraplén empiezan en
+el código 100, que es el desagüe de la subrasante, con el comando C5
+comienzan en el 50, que es el final de la berma y finalmente con el
+comando C11 comienzan desde el borde del arcén.<br />
+      <br />
+También se pueden dibujar los recintos de desmonte/terraplén deducidos
+de dos superficies cualquiera del perfil usando la opción a tal efecto.<br />
+      <span style="font-weight: bold; font-style: italic;"> <br />
+      </span>
+      <div style="text-align: center;"><span style="font-weight: bold; font-style: italic;"><img src="Imagenes/ejemplo_lil_recinto.png" style="width: 540px; height: 144px;" alt="" /></span><a name="recintos_dt"><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a></div>
+      <span style="font-weight: bold; font-style: italic;"><br />
+      </span>
+      <div style="text-align: center;"><span class="Nota"><span class="Info">Ejemplo realizado con el modo de dibujo recinto.lil</span></span><a name="recintos_dt"><br />
+      </a></div>
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><a name="isolineas">Isolineas</a></span><a name="isolineas"><br />
+      <br />
+      </a></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_isolineas.png" style="margin-left: 7px; width: 310px; height: 160px; float: right;" alt="" /></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mediante
+este menú podremos dibujar las curvas de nivel en la superficie de la
+obra terminada, incluyendo las curvas de nivel en los conos de derrame.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción <span style="font-weight: bold;">[ ] Sin firmes</span> dibuja las curvas de
+nivel pero sin utilizar la superficie de la calzada
+(superficie 67) ni los bordillos. Es decir, crea las curvas de nivel
+pasando por la subrasante (superficie 68).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción <span style="font-weight: bold;">[ ] Estructuras</span>, dibuja también las isolíneas en zonas de estructura.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="Traviesas_y_Carriles">Traviesas y Carriles</a></span><a name="Traviesas_y_Carriles"><br />
+      <br />
+Se elimina la opción de generar traviesas del submenú de líneas por
+símbolos (como se hacía en antiguas versiones del programa anteriores
+al año 2020). Ahora disponemos de un submenu de CARRILES Y TRAVIESAS en
+el que pueden elegirse diferentes tipo de líneas tanto para carriles
+como para traviesas y dependiendo si pertenecen a una vía normal o
+están en un aparato de vía. Los carriles y traviesas que aqui se
+generan tienen la misma geometría que los generados en el modelo BIM,
+es decir, que siguen los parametros definidos en el cuadro de dialogo
+Plataforma-&gt;Via y Traviesa y Carril, generando también las
+soldaduras si se desea y apartando de ellas las traviesas.<br />
+      <br />
+      </a></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_traviesasycarriles.png" style="width: 350px; height: 214px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Traviesas_y_Carriles"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Las traviesas que van detras del talón de los aparatos de vía y cuya
+posición esta definida con el aparato (archivo .apv) se dibujan con el
+tipo de línea definido para las traviesas del aparato de vía.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_traviesas_apv.png" style="width: 400px; height: 616px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="lineas_transversales"><span style="font-weight: bold; font-style: italic;">Líneas Transversales</span><br />
+      </a></span></span>Mediante este menú podremos dibujar las líneas
+transversales provenientes de varios orígenes:<br />
+Podemos dibujar las líneas provenientes de los perfiles transversales,
+con la posibilidad de rotular el <span style="font-weight: bold;">PK</span>
+de cada uno de ellos.<br />
+      <br />
+Podemos dibujar las líneas establecidas por la definición de una
+superficie y
+una pareja de códigos inicial y final. Marcando la casilla en la
+columna <span style="font-weight: bold;">p</span>, podemos hacer que
+se rotule también la pendiente transversal de cada uno de estos
+segmentos. Podemos usar las casillas </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Pend.Min</span> y <span style="font-weight: bold;">Pend.Max</span> para especificar
+dos valores de pendiente mínima y máxima para realizar la rotulación. De este modo se
+puede, por ejemplo, repetir la misma línea de datos utilizando símbolos de&nbsp;
+diferentes colores según el rango de pendientes.</span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+Finalmente, podemos dibujar todas las líneas transversales de una
+superficie, estableciendo aquí la superficie y el tipo de línea con el
+que quedará representada en la planta. Si activamos la casilla <span style="font-weight: bold;">Tubo</span>, podemos hacer que solamente dibuje estas líneas en los perfiles de separación de tubos.<span style="font-weight: bold;"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_lineas_transversales.png" style="width: 600px; height: 467px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <a name="recintos_de_taludes"><span style="font-weight: bold; font-style: italic;">Recintos de Taludes</span><br />
+      <br />
+A partir de este menú podremos dibujar los recintos de los taludes de
+Desmonte y Terraplén. <br />
+Como ejemplo tenemos en nuestra librería los modos de dibujo LC.lil y
+Rec.lil entre otros.<br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_recintos_taludes_dibujo.png" style="width: 351px; height: 167px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_recintos_taludes.png" style="width: 309px; height: 136px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="bordes"><span style="font-weight: bold; font-style: italic;">Bordes</span><br />
+      <br />
+      </a></span>
+Mediante este menú podremos señalar con un tipo de línea los bordes de
+ocupación y de expropiación de nuestra obra. En caso de tener activada
+la casilla <span style="font-weight: bold;">Sigue por el</span> <span style="font-weight: bold;">Revestimiento de Terraplén</span>
+la línea de borde utiliza también la superficie de revestimiento
+exterior de terraplén. Para que el borde tenga en cuenta el
+revestimiento exterior deberemos tener definido algún dato en las <a href="OL_ficheros_lil.html#lineas_longitudinales">Líneas Longitudinales</a>
+junto con su casilla equivalente.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="bordes"><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_bordes_dibujo.png" style="width: 350px; height: 178px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/lil_bordes.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Para el estilo de rotulación de México en algunas ocasiones se necesita
+un escalonado que lo podemos realizar mediante este submenú:<br />
+Se analizan perfiles múltiplos de un valor determinado, por defecto
+50m. En dos perfiles consecutivos se analiza el borde de expropiación
+convencional (por ejemplo, pie de terraplén o cabeza de desmonte más
+1m) y se toma el valor mayor de los dos.<br />
+Este valor puede redondearse por exceso a un valor concreto (1m). Se
+aplica este valor a ambos perfiles y se unen con un segmento.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/lil_bordes_estilo_mex_ejemplo.png" style="width: 299px; height: 222px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/lil_bordes_estilo_mex.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <a name="pozos_tubos_y_codos"><span style="font-weight: bold; font-style: italic;">Pozos, Tubos y Codos</span><br />
+      <br />
+      </a>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Este menú está designado
+para el dibujo de los pozos con sus diferentes propiedades (nombre,
+descripción, símbolo, Z boca, Z solera...), de los Tubos (Material y
+diámetro, Material al final...) y de los Codos (células o símbolos)<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/lil_pozos_tubos_codos.png" style="width: 459px; height: 301px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Antes de numerar las posibilidades de dibujo específicas para este tipo
+de proyectos, conviene indicar que para ejes con puntos angulosos, las
+rutinas de dibujo de planta líneas longitudinales, transversales, etc.,
+realizan la siguiente operación: Si existe un perfil en el punto
+anguloso, este perfil se gira hasta la bisectriz, entre el azimut de
+entrada y el de salida, al mismo tiempo que las distancias al eje se
+multiplican por un coeficiente igual al inverso del coseno del ángulo
+girado. Esto posibilita que los dibujos sean más suaves y mejor
+definidos.<br />
+      <br />
+Activando la casilla <span style="font-weight: bold;">Dibujo</span>
+(pozos) podremos ver en planta con el tipo de línea asignado el dibujo
+en 3D con el diámetro de cada pozo. Si no se ha definido ningún
+diámetro en el menú de Pozos (Rasante) se leerá el <span style="font-weight: bold;">diámetro de Arriba</span> y de <span style="font-weight: bold;">Abajo</span> definido en este menú. También
+se permite establecer un tipo de línea diferente para las arquetas.<br />
+      <br />
+Al dibujar los pozos: Editar .lil, Pozos, <span style="font-weight: bold;">Dibujar</span>: Se generan para cada eje
+dos archivos:<br />
+      </span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">tmp/proyectoPZ_n.3d : Fichero de triángulos con los
+objetos pozos y arquetas.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">tmp/proyectoPZ_n.top : Fichero con la planta del pozo
+o arqueta, para ejecutar </span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">el corte
+con el terreno.</span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Estos
+archivos son utilizados por VIRTUAL 3D y por BIM para la representación
+de estos objetos.<br />
+      <br />
+También tenemos la posibilidad de definir una <span style="font-weight: bold;">celula</span> (p.e. C47) para que arrastre
+las siguientes anotaciones:<br />
+      </span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Nombre del pozo, Cota de la
+boca, Zboca-Zsolera, Zentrada y Zsalida.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Entrando ya en los comandos disponibles para el caso
+de proyectos de
+tuberías, el programa ofrece una serie de comandos específicos como:<br />
+      <br />
+      <div style="text-align: left;"><span style="font-weight: bold;">ZN</span>
+Nombres en planta de los POZOS&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZP</span> Dibujo 3D de boca y
+fondo del pozo&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZT</span> Dibujo 3D de los
+tubos&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZD</span> Descripción del
+pozo&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZM</span> Material y diámetro
+del tubo&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold;">ZS</span> Descripción del tubo<br />
+      </div>
+      <br />
+En archivo tuberias.lil es buen ejemplo de uso de estos comandos:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_pozos.png" style="width: 421px; height: 148px;" alt="" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; height: 238px; width: 543px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 315px;"><img src="Imagenes/ejemplo_lil_tuberias.png" style="width: 324px; height: 115px;" alt="" /><br />
+            </td>
+            <td style="width: 335px; text-align: right;"><img src="Imagenes/ejemplo_lil_tuberias_2.png" style="width: 172px; height: 205px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center;"><span class="Info">Planta y
+vista 3D de un eje representado con el modo tuberias.lil</span><a name="pozos_tubos_y_codos"><br />
+      </a></div>
+      <br />
+El comando ZC permite rotular en grados sexagesimales el ángulo real de
+los codos debidos a puntos angulosos tanto en planta como en alzado. El
+ángulo se calcula en 3D. Estos mismos comandos pero añadiéndoles el
+carácter 'O' (ZNO, ZDO, ZZO,&#8230;) dan la opción de que el ángulo
+representado sea absoluto o relativo al eje (colocando un 0 ó un 1 en
+la columna O). El archivo tuberias3.lil, por ejemplo, hace uso de estos
+comandos:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_tuberias3.png" style="width: 397px; height: 475px;" alt="" /><br />
+      </div>
+      <br />
+Con el comando ZCOM se puede establecer además un ángulo mínimo para no
+rotular los codos cuyos ángulos sean inferiores a este valor. El
+archivo&nbsp;<span class="Archivo">tuberia3.lil</span> también
+contempla esta posibilidad. Tanto para el comando ZCO como para el ZCOM
+se debe especificar el tipo de símbolo que se usará para la rotulación
+(por defecto, el S635).<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_tuberia3.png" style="width: 439px; height: 123px;" alt="" /><br />
+      </div>
+      <div style="text-align: center;"><span class="Info">Planta de un
+eje representado con el modo de dibujo Tuberia3.lil</span><a name="pozos_tubos_y_codos"><br />
+      </a></div>
+      <br />
+En el caso de&nbsp;<span class="Archivo">tuberia4.lil</span>, la
+rotulación se efectúa con células (por defecto de tipo C20), y aparecen
+entonces nuevos comandos:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_tuberias4.png" style="width: 396px; height: 517px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_lil_tuberia4.png" style="width: 579px; height: 146px;" alt="" /><br />
+      </div>
+      <div style="text-align: center;"><span class="Info">Planta de un
+eje representado con el modo de dibujo tuberia4.lil</span><a name="pozos_tubos_y_codos"><br />
+      </a></div>
+      <br />
+Los comandos ZZOB y ZZOS, usados en el modo de dibujo&nbsp;<span class="Archivo">tuberias4p.lil</span>, permiten rotular las cotas de
+la boca y de la solera del pozo respectivamente.<br />
+      <br />
+El modo tuberias4i.lil hace uso de comandos que permiten dibujar en
+zonas de doble tubo, dos símbolos de pozo (comando ZZO2) y/o dibujar
+los dos pozos, uno para cada tubo (comando ZP_2). También pinta el tubo
+izquierdo (comando ZT_I) y el material y el diámetro del tubo izquierdo
+(comando ZMOI).<br />
+      <br />
+Mediante las casillas <span style="font-weight: bold; font-style: italic;">Longitud 2D</span> y <span style="font-weight: bold; font-style: italic;">Longitud (real)</span>
+podremos rotular la longitud del tubo entre pozos en el punto
+intermedio de los mismos.<br />
+      <br />
+Con la casilla <span style="font-weight: bold;">Altura</span> rotulamos la altura total: (Zb - Zs) + Espesor solera.<br />
+      <br />
+En la pestaña tubos:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span><img style="width: 500px; height: 409px;" alt="" src="Imagenes/tubos_lil.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Posibilidad de rotular el material, descripción y&nbsp; tipo del tubo en distintas posiciones.<br />
+      <br />
+Posibilidad de que el tipo de línea particular definido para cada tubo
+se utilice solamente para el dibujo del eje del tubo y el tipo definido
+en editar .lil se aplique para los anchos.<br />
+      <br />
+Dentro de la pestaña Codos el programa permite rotular: Angulo 3D, PK,
+Cota, Símbolo y número diferenciando codos de planta , alzado y
+planta-alzado.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_codos.png" style="width: 459px; height: 219px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <a name="tablas_de_textos"><span style="font-weight: bold; font-style: italic;">Tablas de textos</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_tablas_textos.png" style="width: 406px; height: 237px;" alt="" /><br />
+      </div>
+      <br />
+También en la librería aparece el archivo <span class="Archivo">TABLATEX.lil
+      </span>que
+rotula sobre la planta la información recogida en una tabla de textos.
+Así, por ejemplo, si la tabla está cargada con la opción [Secciones
+tipo] se consigue rotular los PK&#8217;s de los tramos de cálculo, los
+nombres de las secciones tipo aplicadas en cada tramo y la longitud de
+cada tramo (comandos ETT_N, ETT_PK, ETT_L y ETT_T).<br />
+      <br />
+Posibilidad de rotular las tablas de puntos. El dibujo es similar a la
+orden <span style="font-weight: bold;">Volcar</span> del cuadro de
+diálogo de tablas de puntos pero aquí disponemos de: <br />
+Para el símbolo: <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se puede dar un ángulo absoluto
+o relativo a la orientación normal al eje.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se le puede pasar como atributo:
+la Z, El PK o la Estaca. <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para el texto se puede seleccionar:<br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Estilo de texto.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Angulo de orientación absoluto o
+relativo.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desplazamiento dx,dy o en caso
+de ángulo relativo de la distancia al eje y al pk.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Tamaño.</span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Enganches horizontal y vertical.
+          <br />
+          </span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En ambos casos se generan en el modelo del eje, y aquí
+la procedencia es ISPOL.lil</span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+Se puede definir una rotulación independiente para cada una de las 5
+tablas de puntos.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/lil_tablas_5puntos.png" style="width: 406px; height: 77px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Enganche Horizontal del Texto: Además de los típicos enganches a <span style="font-weight: bold;">derecha</span>, <span style="font-weight: bold;">centro</span> o <span style="font-weight: bold;">izquierda</span> disponemos del
+enganche&nbsp; <span style="font-weight: bold;">Lado Eje</span>:
+En este caso los textos de los puntos a la derecha del eje se
+justifican por su lado derecho y los que están a a izquierda por su
+lado izquierdo. En este caso también si el punto esta a la izquierda
+del eje se cambia el signo al valor dX.<br />
+      <br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#
+TABLATEX: Tabla de
+Textos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#
+TABLATEX.lil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># DEFINICION DE ROTULACION DE LINEAS L EN
+FUNCION DE LOS CODIGOS&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo de
+L&nbsp; hasta el
+codigo&nbsp;&nbsp;
+elementos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ---&nbsp; ---------&nbsp;
+----------------&nbsp; ------------------------------&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-50.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+fondo de
+mediana&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bermas y&nbsp; auxiliares mediana&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+calzadas&nbsp;
+principales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+110.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bermas y arcenes externos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1200.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cuneta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;
+T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+69&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3000.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+desmonte
+inadecuado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3012.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Cuneta de
+Guarda&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Desmonte de Cuneta de Guarda&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#
+DEFINICION DE ROTULACION PARA
+PEINES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tipo L
+desmonte&nbsp; tipo L
+terraplen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ---&nbsp;
+---------------&nbsp;
+----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;
+PT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tipo de
+L&nbsp; dis(mm)&nbsp;
+anular&nbsp;&nbsp; 1 largo cada
+n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ---&nbsp; ---------&nbsp; --------
+-------&nbsp; ------------------------------&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; P5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; (desde Berma cod==50)&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># DEFINICION PARA EL CONO DE DERRAME Y
+EMBOQUILLES DE TUNELES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">#
+Admite N,N5 y N11 como los
+peines.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp; TaludDes TaludTer
+AngMaxCono DisMaxFrente TipoBorde TipoPeine&nbsp; #</span><br />
+      <span class="Archivo"># --- -------- -------- ----------
+------------ --------- ---------&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; NT5&nbsp;&nbsp;
+0.50&nbsp;&nbsp;&nbsp;
+1.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.50&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+82&nbsp;&nbsp;&nbsp;&nbsp; -1 (usa PT)#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo"># ROTULACION DE TABLAS DE TEXTOS&nbsp; #</span><br />
+      <span class="Archivo">#--------------------------------------------------------------------#</span><br />
+      <span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Est/Sim Dist_PK&nbsp;
+Dist_Eje Angulo Tamaño TaH
+TaV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo"># ------ ------- -------- -------- ------
+------ ---
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp; ETT_N&nbsp;&nbsp;&nbsp;&nbsp;
+7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+25.0&nbsp;&nbsp;&nbsp; 0.0&nbsp;&nbsp;&nbsp; 2.0&nbsp;&nbsp;
+0&nbsp;&nbsp; 2&nbsp;&nbsp; NOMBRE&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; ETT_PK&nbsp;&nbsp;
+383&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PK INICIO&nbsp; #</span><br />
+      <span class="Archivo">&nbsp; ETT_L&nbsp;&nbsp;&nbsp;
+553&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 35.0&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+LONGITUD&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">&nbsp;
+ETT_T
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TABLA 1&nbsp;&nbsp;&nbsp; #</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <span class="Archivo">#&nbsp;
+fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">&nbsp;&nbsp;
+FIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+      <span class="Archivo">######################################################################</span><br />
+      <br />
+      <a name="lineas_por_simbolos"><span style="font-weight: bold; font-style: italic;">Líneas por símbolos</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_lineas_por_simbolos.png" style="width: 428px; height: 351px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+Se encuentra en la librería el modo de dibujo biondas.lil que permite
+dibujar las biondas interiores y exteriores. La bionda interior para la
+calzada derecha se coloca en curvas a la derecha, y en la calzada
+izquierda en las curvas a la izquierda.<br />
+      <br />
+El modo de dibujo en planta Carriles_Y_Traviesas.lil contiene el
+comando S que
+permite extraer del perfil un símbolo (carriles) y construir con ellos
+una línea 3D a lo largo del eje. Si en un perfil no aparece el símbolo
+buscado, el programa interrumpe la línea. A partir de este modo de
+dibujo se permite dibujar las traviesas en tres dimensiones teniendo en
+cuenta el peralte, la pendiente, el canto, el ancho y el largo de la
+traviesa así como la separación entre las mismas.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_carriles.png" style="width: 459px; height: 376px;" alt="" /><br />
+      </div>
+      <a name="lineas_por_simbolos"> <br />
+El modo de dibujo CentroTun.lil también utiliza el comando anterior, lo
+que permite representar los centros de los túneles como una línea 3D.
+Se puede aplicar tanto para carreteras como para ferrocarriles. De esta
+línea puede extraerse información, proyectándola sobre el eje,
+generando un .top/.toc, etc.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_centrotun.png" style="width: 399px; height: 177px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+Existen comandos más avanzados que permiten explotar un símbolo del
+perfil en las líneas que los componen y unir entre sí los vértices
+homólogos, tanto transversalmente (comando ST) como longitudinalmente
+(comando SLT). Así, por ejemplo, el fichero CARRILES_LT.lil dibuja las
+traviesas (unión transversal de los vértices que las definen) y los
+carriles (unión longitudinal de los vértices que los componen):<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_carrilesLT_dibujo.png" style="width: 394px; height: 286px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_carrilesLT.png" style="width: 273px; height: 193px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> </a>
+      <div style="text-align: center;"><span class="Info"><a name="lineas_por_simbolos">Planta dibujada con el modo de dibujo
+carrilesLT.lil</a></span><a name="lineas_por_simbolos"><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+Punto crítico (estudios de gálibos):<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_punto_critico.png" style="width: 428px; height: 351px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+El comando SS permite extraer la posición de un símbolo asociado dentro
+de otro y generar una línea 3D y un fichero .pmt para su posterior uso
+en el estudio de gálibos. Cuando se añaden varios comandos SS se crea
+la posibilidad de añadir los puntos en el mismo fichero .pmt&nbsp;
+(pmt=2) donde se numera cada punto, con su tipo de símbolo. Si en un
+perfil no aparece el símbolo buscado, el programa interrumpe la línea:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="lineas_por_simbolos"><img src="Imagenes/lil_puntocritico_dibujo.png" style="width: 396px; height: 228px;" alt="" /><br />
+      </a></div>
+      <a name="lineas_por_simbolos"> <br />
+      </a><a name="simbolos_por_simbolos"><span style="font-weight: bold; font-style: italic;">Símbolos por símbolos</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="simbolos_por_simbolos"><img src="Imagenes/lil_simbolos_simbolos.png" style="width: 309px; height: 249px;" alt="" /><br />
+      </a></div>
+      <a name="simbolos_por_simbolos"> <br />
+El comando SP permite extraer símbolos del perfil y dibujarlos como
+símbolos EDM. Un ejemplo de uso es el fichero simbolos.lil:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="simbolos_por_simbolos"><img src="Imagenes/lil_simbolo_dibujo.png" style="width: 398px; height: 176px;" alt="" /><br />
+      </a></div>
+      <a name="simbolos_por_simbolos"> <br />
+      </a><a name="recintos_por_sup_y_cod"><span style="font-weight: bold; font-style: italic;">Recintos por Sup. y Cod.</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="recintos_por_sup_y_cod"><img src="Imagenes/lil_recintos_sup_cod.png" style="width: 512px; height: 232px;" alt="" /><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> <br />
+El fichero Areas.lil incluye comandos que permiten dibujar áreas
+cerradas limitadas por unos códigos de referencia que se extraen a
+partir de unas superficies dadas y permite dibujar con líneas rellenas
+las zonas de túnel, estructura y semiestructura. También contiene
+comandos para dibujar los recintos de las áreas de los conos de
+derrame. El comando de definición de los conos puede utilizar los
+taludes al frente definidos en el menú de ESTRUCTURAS para cada
+viaducto y para cada túnel:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="recintos_por_sup_y_cod"><img src="Imagenes/lil_areas_dibujo.png" style="width: 397px; height: 753px;" alt="" /><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> <br />
+      </a>
+      <div style="text-align: center;"><a name="recintos_por_sup_y_cod"><img src="Imagenes/ejemplo_lil_areas.png" style="width: 475px; height: 128px;" alt="" /><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> </a>
+      <div style="text-align: center;"><span class="Info"><a name="recintos_por_sup_y_cod">Planta dibujada con el modo de dibujo
+Areas.lil</a></span><a name="recintos_por_sup_y_cod"><br />
+      </a></div>
+      <a name="recintos_por_sup_y_cod"> <br />
+La librería también dispone del archivo AREAS8D.lil, que dibuja las
+áreas utilizando líneas 8D.<br />
+      <br />
+      </a><a name="conos_de_derrame"><span style="font-weight: bold; font-style: italic;">Conos de derrame</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="conos_de_derrame"><img src="Imagenes/lil_conos_derrame.png" style="width: 309px; height: 207px;" alt="" /><br />
+      </a><a name="conos_de_derrame"> </a></div>
+      <a name="conos_de_derrame"> <br />
+Se incluye en la librería los ficheros derrames.lil, derrame2.lil,
+derrame3.lil y derrame4.lil con un comando (N5) que dibuja los conos de
+derrame en los estribos de las estructuras. También pinta los conos de
+derrame en estructuras de estribos no perpendiculares, es decir, en una
+secuencia:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="conos_de_derrame"><img src="Imagenes/lil_cono_derrame_dibujo.png" style="width: 423px; height: 92px;" alt="" /><br />
+      </a></div>
+      <a name="conos_de_derrame"> <br />
+Los valores TaludDes y TaludTer permiten definir los taludes de
+desmonte y terraplén, respectivamente, que aplicará el programa en los
+conos de derrame. <br />
+      <br />
+      </a>
+      <div style="text-align: center;"><span class="Info"><a name="conos_de_derrame">Estos valores se usarán siempre que NO haya
+otros definidos en el menú ESTRUCTURAS, pues estos últimos tienen
+preferencia.</a></span><a name="conos_de_derrame"><br />
+      </a></div>
+      <br />
+Si ponemos el tipo de línea para borde = -2, entonces para los conos en
+terraplén utilizará el mismo tipo que las líneas longitudinales de pié
+de terraplén (código 601) y para los conos en desmonte utilizará el de
+la cabeza de desmonte (código 1399).<a name="conos_de_derrame"><br />
+      </a>
+      <div style="text-align: center;"><a name="conos_de_derrame"><img src="Imagenes/ejemplo_lil_derrames.png" style="width: 577px; height: 137px;" alt="" /><br />
+      </a></div>
+      <a name="conos_de_derrame"> </a>
+      <div style="text-align: center;"><span class="Info"><a name="conos_de_derrame">Planta dibujada con el modo de dibujo
+derrames.lil</a></span><a name="conos_de_derrame"><br />
+      </a></div>
+      <a name="conos_de_derrame"> <br />
+      </a><a name="fresado_y_demolicion"><span style="font-weight: bold; font-style: italic;">Fresado y Demolición</span><br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/lil_fresado_demolicion.png" style="width: 309px; height: 212px;" alt="" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">El comando D permite
+representar mediante diferentes tipos de líneas las zonas fresadas,
+demolidas o aprovechadas de una calzada existente. Se incluyen en la
+librería dos ficheros D.lil y D2.lil que contienen este comando.<br />
+            <br />
+En D2.lil el comando D2 se utiliza para autopistas con refuerzo
+independiente en las dos calzadas:<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/ejemplo_lil_d.png" style="width: 299px; height: 149px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/lil_fresadoydemolicion.png" style="width: 423px; height: 186px;" alt="" /><br />
+      </div>
+      <span style="font-weight: bold; font-style: italic;"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+    <tr>
+      <td class="Parrafo" style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><span style="font-weight: bold; font-style: italic;"><a name="bordillostableros">Bordillos,Tableros</a></span><br />
+
+      <br />
+Representa las líneas L y/o T de los bordillos, tableros y vigas.<br />
+      <br />
+Se pueden representar también las líneas L de los puntos de enganche de
+los bordillos para lo que se utiliza el tipo de línea definido en cada
+bordillo.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/editar_lil_bor.png" style="width: 300px; height: 301px;" alt="" /><br />
+
+      </div>
+       <br />
+
+Se puede activar el modo de dibujo de <span style="font-weight: bold;">triángulos</span>
+que genera el modelo alámbrico de los triángulos del modelo BIM, lo que
+permite ver los tableros, vigas, pantallas de pilotes y pilotes de zapata como un cuerpo solido cuando se
+exporta a KML (Google Earth) en cota absoluta (no pegado al suelo).<br />
+
+      <br />
+
+      <br />
+
+      <a name="capasfirmes"><span style="font-weight: bold; font-style: italic;">Capas de firmes<br />
+      <br />
+      </span>Con esta opción podemos dibujar para cada una de las capas
+de
+firme las lineas L, lineas T y el recinto ocupado, teniendo en cuenta
+solamente la cara vista de la capa en el momento de extenderla.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/editar_lil_capasfirmes.png" style="width: 350px; height: 300px;" alt="" /><br />
+      </div>
+      <span style="font-weight: bold; font-style: italic;"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-weight: bold;" class="Parrafo"><a name="Cambios_de_pendiente">Cambios
+de pendiente<br />
+      <br />
+      </a></span><span class="Parrafo">Permite
+definir una célula a la que se le asocian símbolos para rotular el PK,
+la cota y las distancias y pendientes con el punto de cambio de
+pendiente anterior y el siguiente. Se establece un valor de tolerancia
+(dPmin) para la pendiente. Se puede definir una lista de puntos de la
+sección a rotular, por ejemplo: fondo de cuneta (sup 68 cod 600),
+cuneta de guarda (sup 68, cod 3010), etc...Puede editarse
+posteriormente la posición de la célula y ésta arrastra a todos sus
+símbolos.<br />
+
+      <br />
+
+      </span><span style="font-weight: bold;" class="Parrafo"></span></td>
+    </tr>
+    <tr align="center">
+      <td><img src="Imagenes/cambios_de_pendiente.png" style="width: 350px; height: 418px;" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

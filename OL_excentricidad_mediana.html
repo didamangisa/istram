@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Excentricidad y mediana</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EXCENTRICIDAD Y MEDIANA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><a href="#excentricidad">Excentricidad del eje geométrico</a></span><br />
+      <span class="Parrafo"><a href="#mediana">Diseño de la geometría de mediana</a></span><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#tipos">Tipos de geometría de mediana</a></span><br />
+      <span class="Parrafo"><a href="#dist_eje">Vértice de la mediana dado por distancia al eje</a></span><br />
+      <span class="Parrafo"><a href="#bermas_asim_trunca">Bermas asimétricas y truncamiento de la sección</a></span><br />
+      </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+En
+este menú se diseña la mediana de autopistas o autovías, pero tiene
+también utilidad en carreteras de calzada única para producir un
+desplazamiento del eje geométrico respecto del eje en planta (<span style="font-weight: bold;">excentricidad</span>). En caso de calzada única, se utilizan sólo los datos de excentricidad, ignorándose el resto de la información de este menú.<br />
+      <br />
+Se amplian a 10000, el número máximo de datos en algunas tablas de alzado como calzadas auxiliares y mediana.<br />
+      <br />
+Entre cada dos datos se interpola linealmente en función del PK, y se
+extrapolan los valores atrás y delante si es necesario. Para mediana
+constante basta con un sólo dato.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br /><br />El botón <span style="font-weight: bold;">[Automático]</span> inicializa dos datos con los PK de inicio y final del eje en curso. &nbsp;Además, esta herramienta <span class="Parf_negrita">[Automático]</span>&nbsp;compensa
+el salto lateral del eje en planta. P.E: Una carretera de dos calzadas
+de 4 metros, con el eje en planta por el borde izquierdo de la calzada
+en el tramo inicial y por el borde derecho en el tramo final. El eje
+tiene 800 metros tiene un salto lateral de +8 metros en el PK 325.421.
+En el pk inicial tiene una excentricidad de +4 metros.<br />Al pulsar <span class="Parf_negrita">[Automático]</span> se crean 4 datos:<br />PK&nbsp;&nbsp; 0.000 EXC +4.000<br />PK 325.420 EXC +4.000<br />PK 325.422 EXC -4.000<br />PK 800.000 EXC -4.000<br /><br /><br />
+      </span><span class="Parrafo"><span class="Parrafo">Los datos de
+PK's en este menú se pueden dar tanto gráfica como numéricamente
+(botones <span style="font-weight: bold;">[Clic]</span>/<span style="font-weight: bold;">[Teclado]</span>).
+En el caso de darlo gráficamente, la proyección del punto sobre el eje
+puede hacer referencia a un perfil exacto ó interpolado.</span></span><br />
+      <span class="Parrafo"><br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_excentricidad_mediana.png" style="width: 617px; height: 190px;" alt="" /><br />
+      </div>
+      <br />Los datos de esta tabla también pueden ser guardados&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y cargados&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> mediante archivos de extensión&nbsp;<span class="Archivo">.med</span>.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="excentricidad">Excentricidad del eje geométrico</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/modelo_excentricidad_mediana.png" style="width: 297px; height: 259px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">La
+excentricidad, como pude observarse en el modelo que aparece al entrar
+en este menú, es la distancia del eje geométrico (vértice de mediana en
+dos calzadas o centro de calzada en calzada única) al eje en planta
+(eje de definición matemática), y es positiva si el eje geométrico se
+desplaza a la derecha respecto del eje en planta.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Excent. por línea]</span>
+(excentricidad por línea) permite generar automáticamente la tabla de
+excentricidad a partir de una línea seleccionada gráficamente de la
+cartografía. Al ejecutar esta opción se conservan los datos de anchos
+de mediana, bermas, profundidad, etc. que se hubieran definido en el
+primer dato para todos los PK&#8217;s creados.<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="mediana">Diseño de la geometría de mediana</a></span><br />
+      <span class="Parrafo">
+      <br />
+El semiancho de mediana <span style="font-weight: bold;">ANCHO I</span> y <span style="font-weight: bold;">ANCHO D</span> es la distancia entre el borde interior del arcén interior y el vértice de la mediana.<br />
+      <br /></span><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_excentricidad_mediana_anchoXlinea.png" style="width: 300px; height: 127px;" alt="" /></span><br /><span class="Parrafo"></span></div><span class="Parrafo"><br />Estos valores pueden darse de forma automática con la opción <span style="font-weight: bold;">[Ancho por línea]</span>
+(semianchos de mediana por línea, se admiten líneas 8D), que determina los semianchos de
+mediana a partir de dos líneas dibujadas en planta. La opción pide
+seleccionar las líneas para los anchos de la derecha y la izquierda,
+una distancia para sumar/restar a cada uno de los lados, un ancho
+máximo a considerar, una equidistancia para crear un dato cada múltiplo
+de ese valor y se pregunta si se desea compensar con el valor de la
+excentricidad. Tras introducir estos datos, el programa crea una tabla
+de anchos y el resto de los datos (excentricidad, tipo de mediana y
+berma) son copiados del primer dato excepto si se indica 0 al
+introducir la equidistancia, pues entonces se calcula un valor de
+anchos en los PK&#8217;s ya existentes generados por ejemplo con la opción de
+      <span style="font-weight: bold;">[Excent. por línea]</span> y se conservan en cada PK el resto de los datos que ya existieran: excentricidad, profundidad, bermas, etc.<br />
+      <br />
+Las bermas del lado de la mediana se definen también por el ancho (<span style="font-weight: bold;">BERMA dX</span>) y el desnivel (<span style="font-weight: bold;">BERMA dY</span>) simétricas a ambos lados.<br />
+      <br />
+Cuando en la zona de la berma no se extienda capa de firme alguna hasta
+la misma altura que en el arcén se puede definir el valor del <span style="font-weight: bold;">Escalón</span>.<br />
+      <br />
+Así mismo la berma puede ser:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cóncava</span>: Se respetan siempre los valores <span style="font-weight: bold;">dx</span> y <span style="font-weight: bold;">dy</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">No cóncava</span>: Si el peralte del arcén supera a <span style="font-weight: bold;">dy</span>/<span style="font-weight: bold;">dx</span>, la pendiente de la berma se pone en prolongación al arcén respetando sólo el ancho <span style="font-weight: bold;">dx</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Simétrica</span>: Es como la <span style="font-weight: bold; font-style: italic;">No cóncava</span>,
+pero cuando por efecto del peralte del arcén interior se incrementa la
+pendiente de la berma de un lado, entonces a la berma del otro lado se
+le asigna también esta misma pendiente. </span></li>
+      </ul>
+      <span class="Parrafo"><span style="font-style: italic;">Ejemplo: Peralte del 7% y peralte de la berma del 4%</span><br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 71px; width: 563px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold; text-align: center;">Tipo<br />
+            </td>
+            <td style="vertical-align: top; width: 111px; font-weight: bold; text-align: center;">Calzada izquierda<br />
+            </td>
+            <td style="vertical-align: top; width: 101px; font-weight: bold; text-align: center;">Berma izquierda<br />
+            </td>
+            <td style="vertical-align: top; width: 108px; font-weight: bold; text-align: center;">Berma derecha<br />
+            </td>
+            <td style="vertical-align: top; width: 123px; font-weight: bold; text-align: center;">Calzada derecha<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 76px;">Cóncava<br />
+No cóncava<br />
+Simétrica<br />
+            </td>
+            <td style="vertical-align: top; width: 111px; text-align: center;">7%<br />
+7%<br />
+7%<br />
+            </td>
+            <td style="vertical-align: top; width: 101px; text-align: center;">4%<br />
+7%<br />
+7%<br />
+            </td>
+            <td style="vertical-align: top; width: 108px; text-align: center;">4%<br />
+4%<br />
+7%<br />
+            </td>
+            <td style="vertical-align: top; width: 123px; text-align: center;">7%<br />
+7%<br />
+7%<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="tipos">Tipos de geometría de mediana</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><img src="Imagenes/tipo_mediana.png" style="width: 142px; height: 375px;" alt="" align="right" hspace="4" /><span class="Parrafo">En
+cuanto a los parámetros de definición de la geometría de mediana, el
+programa ofrece las siguientes posibilidades disponibles desde la lista
+desplegable <span style="font-weight: bold;">Tipo</span>:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Según profundidad</span>:
+Se mide desde el borde interior del arcén interior de cota más baja de
+los dos, si es que son distintas, y puede ser negativa. En las medianas
+por profundidad cero, se asigna la cota que corresponde de unir los dos
+puntos.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Según talud máximo</span>:
+Se traza desde el borde interior de la berma con el talud dado, desde
+cada uno de los dos lados, quedando el vértice de la mediana en el
+punto donde se corten ambas líneas aunque dicho punto no coincida con
+el centro geométrico. Si debido al desnivel estas líneas no se
+cortasen, se unen directamente los dos bordes de berma con el talud que
+corresponda (que será menor que el definido). </span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">
+Para este tipo de definición es posible definir un talud diferente para
+el lado izquierdo. Para ello, tras pulsa sobre el botón <span style="font-weight: bold;">[MÁS DATOS
+&gt;&gt;]</span>, basta con indicar que el talud de la mediana es asimétrico y
+dar el valor del talud izquierdo. </span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+Por talud (en tanto por uno)</span>: Es igual que el caso anterior salvo que
+si debido al desnivel las líneas éstas no se cortasen, se traza la más
+alta con el talud definido hasta la vertical de la berma más baja y
+desde ese punto se baja vertical.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Igual que en el caso anterior, para este tipo de definición también es
+posible definir un talud diferente para el lado izquierdo. Para ello,
+tras pulsa sobre el botón <span style="font-weight: bold;">[MÁS DATOS &gt;&gt;]</span>, basta con indicar que
+el <span style="font-weight: bold;">talud de la mediana</span> es <span style="font-weight: bold;">asimétrico</span> y dar el valor del <span style="font-weight: bold;">talud izquierdo</span>.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+Según talud máximo centrado</span>: El vértice de la mediana coincide con el
+centro geométrico, y si las bermas terminan a distinto nivel, desde la
+más baja la mediana tendrá el talud definido y desde la más alta tendrá
+un talud menor (más vertical).</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Según talud mínimo centrado</span>: Complementario al caso anterior, el
+vértice de la mediana coincide con el centro geométrico, y si las
+bermas terminan a distinto nivel, desde la más alta la mediana tendrá
+el talud definido y desde la más baja tendrá un talud mayor (más
+horizontal).</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Según profundidad desde el corte con la subrasante</span>: El programa calcula
+la pendiente para que desde el corte con la subrasante más baja hasta
+el vértice de la mediana exista la profundidad solicitada.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="mediana_abierta">
+Mediana abierta con aplicación de una sección tipo</a></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">: En este caso se
+define una sección tipo a aplicar en la mediana. Entonces, desde el
+borde del arcén interior, en lugar de generar la mediana, se analiza la
+sección de desmonte/terraplén definida. Para el borde interior de la
+calzada derecha se aplica la sección del lado izquierdo y para el borde
+interior de la calzada izquierda se aplica la sección del lado derecho.
+Si las dos secciones interiores se cortan, se interrumpen en ese punto
+común. En la mediana abierta no se aplica la berma de la mediana sino
+la de la sección de desmonte/terraplén que corresponda.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La sección tipo a aplicar en la mediana puede ser una cualquiera de las
+definidas para los bordes exteriores o una diferente, expresamente
+creada para la mediana.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+La definición de una mediana abierta es imprescindible en secciones
+mixtas: abierta-túnel, abierta-estructura, abierta-falso túnel, falso
+túnel-falso túnel, falso túnel-túnel, etc.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+Según una rasante definida</span>: Es una mediana centrada
+que toma la cota del longitudinal definido para la mediana en el menú
+de RASANTES.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Según talud máximo centrado desde el suelo seleccionado</span>: Esta mediana se construye de la siguiente forma:</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ol style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desde el borde del arcén interior o de la berma de
+mediana, se baja con un talud <span style="font-weight: bold;">TP</span> (definido en el menú <a href="OL_berma_pavimento_terraplen.html">BERMA de TERRAPLÉN</a>).</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se baja con este talud hasta cortar a la línea del
+suelo seleccionado o, si no hay suelo seleccionado, a la de la
+subrasante.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desde este punto se baja con el talud definido en el menú de la mediana hasta el eje geométrico.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el lado que de la cota más baja se conserva
+este talud y en el otro lado el talud se varía para que coincida el
+punto del vértice de la mediana.</span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando se define una mediana de este tipo se puede definir un talud del
+pavimento en el lado de la mediana. Para ello, se pulsa en el botón
+      <span style="font-weight: bold;">[MÁS DATOS &gt;&gt;]</span> y se indica el talud de pavimento. Si este valor
+se deja en 0, entonces se toma el valor <span style="font-weight: bold;">TP</span> de la sección en terraplén.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Por profundidad desde el eje de giro y dos taludes</span>:
+Esta mediana se centra en el eje geométrico. La cota del vértice de la
+mediana se mide como profundidad desde la cota de la rasante más baja y
+desde la pantalla <span style="font-weight: bold;">[MÁS DATOS&gt;&gt;]</span> se definen los dos taludes: uno
+para el <span style="font-weight: bold;">cierre interior del pavimento</span> y otro para la <span style="font-weight: bold;">mediana</span>. La
+mediana de este tipo se construye de la siguiente forma:</span></span></span></li>
+      </ul>
+      <ol style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desde el vértice de la mediana se lanza el talud
+definido hasta cortar el talud interior de cierre del pavimento
+aplicado desde el borde interior del arcén. Este corte puede estar por
+encima o por debajo de la subrasante.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      La subrasante se prolonga desde el borde del arcén
+hasta el corte teórico con el talud de cierre interior del pavimento, y
+posteriormente se une directamente este punto del lado derecho con el
+del lado izquierdo.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si este segmento tiene alguna parte por encima de la mediana, se hace pasar por la mediana.</span></span></span></li>
+      </ol>
+      <ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Según una rasante definida y un talud</span>: El fondo de
+mediana se define mediante un longitudinal específico creado en el menú
+RASANTES y, en lugar de definirse los anchos, se indica el valor de los
+taludes de la mediana y con este talud se sube hasta alcanzar la cota
+del borde de la berma o del arcén interior.</span></span></span></li>
+
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Según profundidad en el vértice</span>.
+En este tipo la profundidad del vértice de la mediana se mide desde la
+línea que une los bordes interiores del arcén o de la berma y en la
+vertical del vértice.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Por talud fijo desde el borde bajo</span>: Desde el borde de menor cota se lanza un talud dado hasta el eje geométrico y después se une con el borde alto.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Por talud fijo desde el borde alto</span>: Desde el borde de mayor cota se lanza un talud dado hasta el eje geométrico y después se une con el borde bajo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Rasante + Cuneta + P%</span>: El fondo de la mediana lleva la cota definida desde el <a href="OL_rasantes_diseno.html#tipo_rasante">longitudinal</a> de la misma. Desde el eje geométrico y a la cota del longitudinal se genera la <a href="OL_vectores.html#cuneta_mediana">cuneta vectorial de mediana</a>.
+El último segmento del vector se estira o acorta hasta cortar con la
+línea que sale del borde de la berma de mediana con una pendiente P%
+dada en la casilla adjunta.</li>
+      </ul>
+      <div style="margin-left: 40px;">La mediana vectorial puede ser un
+único segmento horizontal por cada lado. En este caso la berma que baja
+con la pendiente P%, baja hasta llegar a la cota de la rasante de la
+mediana estirando o acortando el segmento horizontal del fondo.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/exc_linea3d.png" style="width: 77px; height: 51px;" alt="" align="right" hspace="4" />Línea 3D</span>:
+Esta línea define la posición en planta y la cota del vértice de la
+mediana, siempre que se encuentre entre las dos bermas interiores
+(códigos -50&nbsp; o -11 si no hubiera berma).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Vector + Muro Desmonte</span>:
+Este caso puede darse para autovías en las que una rasante está más
+alta que la otra. En el lado alto se coloca el muro de desmonte de la
+sección tipo que se especifica (puede llevar antes <a href="OL_vectores.html#mediana_fija">mediana fija</a>). Por el lado bajo se coloca la mediana fija hasta que corta con el muro, y desde éste punto se mide la profundidad del muro.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Talud borde derecho</span>, <span style="font-weight: bold;">Talud borde izquierdo</span>:
+En ambos casos se traza el talud definido desde el borde seleccionado
+hasta el eje geométrico y se une directamente desde el otro borde con
+este punto.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Unir recto</span>: Une los
+últimos puntos interiores de cada lado (bien sea el borde del arcen, de
+la berma o de la mediana vectorial) dejando unúnico plano entre ellos. <br />
+        </li>
+
+      </ul>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">También es posible complementar la geometría de la mediana con los
+vectores de <a href="OL_vectores.html#medina_fija">mediana fija</a> y <a href="OL_vectores.html#cuneta_mediana">cuneta de mediana</a>.<br />
+      <br /><br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="dist_eje">Vértice de la mediana dado por distancia al eje</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Para los siguientes <a href="#tipos">tipos de mediana</a>:<br />
+      </span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según profundidad</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según talud máximo centrado</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según talud mínimo centrado</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según profundidad desde el corte con la subrasante</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según una rasante definida</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según una rasante definida y un talud<br />
+</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Según profundidad en el vértice</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Por talud fijo desde el borde bajo</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Por talud fijo desde el borde alto</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">existe (en la pestaña <span style="font-weight: bold;">[MÁS DATOS&gt;&gt;]</span>) la posibilidad de definir una <span style="font-weight: bold;">distancia al eje</span> geométrico, para ubicar el vértice de la mediana. <br />
+      <br />
+      <br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="bermas_asim_trunca">Bermas asimétricas y truncamiento de la sección</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Al pulsar el botón <span style="font-weight: bold;">[MÁS DATOS &gt;&gt;]</span> se muestran otras opciones (algunas ya explicadas):<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_excentricidad_mediana2.png" style="width: 617px; height: 190px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      Se
+puede definir una berma de mediana diferente para cada lado
+seleccionando. Para ello, es suficiente con indicar que las bermas sean
+      <span style="font-weight: bold;">asimétricas</span> y dando los valores <span style="font-weight: bold;">dX</span> y <span style="font-weight: bold;">dY</span> tanto para la <span style="font-weight: bold;">berma derecha</span> como para la <span style="font-weight: bold;">berma izquierda</span>.<br />
+      <br /><a name="truncar">
+Este cuadro de diálogo presenta además una columna que permite truncar la sección:
+      </a></span></span></span>
+<ul>
+	  <li><span class="Parrafo"><span style="font-weight: bold;">2 Lados</span>: Se crean los dos lados de la sección (no produce truncamiento).</span></li>
+<li><span style="font-weight: bold;">Anular DR</span>: Anula el lado derecho de la sección.</li>
+<li><span style="font-weight: bold;">Anular IZ</span>: Anula el lado izquierdo de la sección.</li>
+<li><span style="font-weight: bold;">Anular 2</span>: Anula la sección completa.</li>
+</ul>
+<span class="Parrafo">Cuando se utilicen <span style="font-weight: bold;">[Anular DR]</span> o <span style="font-weight: bold;">[Anular IZ]</span>
+para autovías o ferrocarriles de vía doble, puede utilizarse una
+sección de tipo de mediana o entrevía abierta para completar por el
+interior la sección que se genera.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

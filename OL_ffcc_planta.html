@@ -1,0 +1,907 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>FFCC: Diseño de planta</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>FFCC: DISEÑO DEL EJE EN PLANTA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />El uso del menú de PLANTA en un proyecto de FFCC es similar al caso de un <a href="OL_planta_diseno.html">trazado de carreteras</a>, comentándose en este apartado las diferencias existentes.<br /><br />
+      <div style="margin-left: 40px;"><a href="#conectores_apavia">Conectores y aparatos de vía</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#ficheros_apv">Ficheros de aparatos de vía (.apv)</a><br />
+      <a href="#isapavia">Gestor de aparatos de vía</a><br />
+      <a href="#cal_geom_apavia">Cálculo geométrico de los aparatos de vía. Escapes</a><br />
+      <a href="#origen_PKs">Aparatos de vía y origen de PKs</a><br />
+      <a href="#cambiadores_de_mano">Cambiadores de mano y descarriladores</a><br /><a href="#Ajustar_por_los_talones">Ajustar por los talones</a><br /><a href="#Desvios_ramal_talon_ppal">Desvíos ramal sale por el talón principal</a><br /><a href="#via_poligonales">Aparatos de vía poligonales</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#normativa">Normativa y tablas de diseño para ferrocarriles</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#singularidad_norma_ffcc">Singularidades de la normativa en trazados ferroviarios</a><br />
+      <a href="#tablas_dip">Uso de las tablas .dip para ferrocarriles</a><br />
+      <a href="#peralte_velocidad_obligados">Peralte y velocidad obligados</a><br />
+      </div>
+<br /><br /><span class="Titulo_2"><a name="conectores_apavia">Conectores y aparatos de vía</a></span><br /><br />La principal diferencia en el trazado de planta para ferrocarriles es la posibilidad de utilizar los aparatos de vía en las <a href="OL_planta_conexiones.html">conexiones entre ejes</a>. La definición geométrica de los desvíos y cruzamientos ferroviarios debe realizarse utilizando <a href="OL_planta_conexiones.html#conectores">conectores</a>.<br /><br />
+      <img style="width: 243px; height: 105px; float: left;" alt="" src="Imagenes/ffcc_conector.png" hspace="6" />La
+diferencia fundamental del uso de conectores en FFCC es que el programa
+permite cargar un aparato de vía de la librería en el campo <span style="font-weight: bold;">AV</span>. En este caso el valor de <span style="font-weight: bold;">Tg</span>
+viene obligado por el aparato y no es posible modificarlo. Si no se
+declara ningún aparato de vía, entonces se está definiendo un conector
+de
+ángulo libre con lo que es posible utilizar el campo <span style="font-weight: bold;">Tg</span> para controlar
+el azimut del ramal, con relación al eje de referencia, al igual que en el caso de carreteras.<br />
+      <br />Para la nomemclatura de la&nbsp;<span style="font-weight: bold;">J.C.A.</span>
+se dispone de 2 casillas, en la casilla de la derecha se asigna un
+número a cada junta de contraagujas (aparato de vía). Si se deja
+siempre en 0, se numeran automáticamente.&nbsp;A esta numeración de las
+<span style="font-weight: bold;">J.C.A.</span> se puede añadir un
+prefijo alfanumérico de hasta cuatro caracteres (casilla de la izquierda).
+Para diferenciar por ejemplo las vías de viajeros (V0n) de las vías de
+mercancías (M0n). Se añade en la librería un modo de dibujo APV2.ali
+que permite rotular este texto tanto en la planta sobre el aparato de
+vía, como en el cuadro de coordenadas.<br /><br />
+En el cuadro de diálogo de la casilla del aparato de vía, aparece un
+hint con el nombre del archivo .apv y la matrícula del aparato.<br />
+      <br />
+      <img style="width: 249px; height: 108px;" alt="" src="Imagenes/hint_apavia.png" /><br />
+      <br /><br />Para aparatos de vía con geometría propia, o en los que se calcula un
+radio interno, la longitud de la recta residual desde la tangencia del
+circulo hasta el talón de la desviada que se obtiene al calcular el eje
+se reasigna como longitud de la alineación en el cuadro de diálogo. De
+este modo si el eje consta solo de este aparato o a continuación se
+añade una alineación de enlace, aparecerá un punto singular en el talón
+de la desviada.<br /><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="ficheros_apv">Ficheros de aparatos de vía (.apv)</a></span><br />
+      <br />
+Cada aparato de vía está definido en un fichero de la librería, de formato ASCII y con extensión&nbsp;<span class="Archivo">.apv</span>. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+incluye los más usuales y pueden usarse como ejemplo para definir
+otros. El nombre de cada archivo es una abreviatura de las
+características geométricas que ayuda a identificarlo.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 661px; height: 243px;" alt="" src="Imagenes/esquema_apavia.png" /><br />
+      </div>
+      <br />
+A continuación se muestra un ejemplo de fichero de aparato de vía, el&nbsp;<span class="Archivo">DS09D54.apv</span>, acompañado de una imagen en la que se pueden ver las distintas partes de ese desvío:<br />
+      <br />
+      <table style="text-align: left; width: 530px; height: 430px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 250px;"><img style="width: 235px; height: 418px;" alt="" src="Imagenes/ejem_apavia.png" /><br />
+            </td>
+            <td class="Archivo" style="vertical-align: top; width: 260px;"><br />
+            <br />
+            <br />
+#####################################<br />
+#&nbsp;&nbsp; aparato de vía&nbsp; 1668-UIC54&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#####################################<br />
+#&nbsp; Tangente nominal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#-----------------------------------#<br />&nbsp;
+TG&nbsp;&nbsp;
+0.09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp; Angulo en Radianes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#-----------------------------------#<br />
+&nbsp; RD&nbsp;&nbsp;
+0.0897582&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp; longitud
+total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#-----------------------------------#<br />
+&nbsp; L&nbsp;&nbsp;
+36.0060&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp; longitud centro-talón&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+# ----------------------------------#<br />
+&nbsp; C&nbsp;&nbsp;
+21.32659&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#&nbsp;
+matricula&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#-----------------------------------#<br />
+&nbsp; M&nbsp; DS-A-54-320/400-0.09-CR-D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #<br />
+#&nbsp;
+fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+&nbsp;
+FIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#<br />
+#####################################<br />
+            <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Los siguientes comandos son los que el programa interpreta en los ficheros&nbsp;<span class="Archivo">.apv</span>:<br />
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 650px; height: 188px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">TG<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Tangente nominal<br />
+            </td>
+            <td colspan="1" rowspan="2" style="vertical-align: top; width: 387px;">
+            <table style="text-align: left; width: 391px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+                  </td>
+                  <td class="Info" style="vertical-align: top; width: 309px; text-align: justify;">Si se utilizan simultáneamente los comandos de tangente nominal (<span style="font-weight: bold;">TG</span>) y de ángulo en radianes (<span style="font-weight: bold;">RD</span>), se utiliza el último que se lee en el archivo.</td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">RD<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Ángulo en radianes<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">L<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Longitud total de la directa<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">LD<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Longitud total de la desviada<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">C=A<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Longitud centro-talón<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">CD=AD<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Longitud centro-talón desviada<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">M<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Matrícula<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 53px; font-weight: bold;">#<br />
+            </td>
+            <td style="vertical-align: top; width: 181px;">Comentario<br />
+            </td>
+            <td style="vertical-align: top; width: 387px;"><br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">GD</span></td><td>Distancia JCA-Origen</td><td></td></tr><tr><td><span style="font-weight: bold;">GRR</span></td><td>Radio interior</td><td></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+Es preciso observar que en aparatos de <span style="font-weight: bold;">corazón curvo</span>
+hay dos tangentes y que este ángulo se mide en el talón y se aplica
+para la vía desviada. Los cruzamientos también deben definirse a
+derecha e izquierda, según que la segunda vía salga después del cruce a
+la derecha o a la izquierda.<br />
+      <br />
+La longitud de la desviada (<span style="font-weight: bold;">LD</span>)
+se utiliza sólo en caso de cruzamientos para definir la longitud total
+de la segunda rama. Si no se da, se utiliza la longitud de la directa (<span style="font-weight: bold;">L</span>).<br />
+      <br />
+La longitud centro-talón se define indistintamente como <span style="font-weight: bold;">A</span> o <span style="font-weight: bold;">C</span>, pues según la bibliografía se acostumbra a usar una abreviatura u otra.<br />
+      <br />
+Debe darse el comando <span style="font-weight: bold;">AD</span> o <span style="font-weight: bold;">CD</span> para la longitud centro-talón de la vía desviada si es distinta. Si no se da, se utiliza <span style="font-weight: bold;">A</span> o <span style="font-weight: bold;">C</span> también como longitud del talón de la desviada.<br />
+      <br />
+La matrícula <span style="font-weight: bold;">M</span> es una clave
+alfanumérica que acompaña a la definición de todos los aparatos, es una
+abreviatura de su geometría. El calculador utiliza las primeras letras
+de la matrícula en el cálculo, principalmente para su representación
+gráfica esquemática. Los únicos valores permitidos para las primeras
+letras de la matrícula son: <span style="font-weight: bold;">DS</span>, <span style="font-weight: bold;">DH</span>, <span style="font-weight: bold;">DR</span>, <span style="font-weight: bold;">DI</span>, <span style="font-weight: bold;">DM</span>, <span style="font-weight: bold;">EW</span>, <span style="font-weight: bold;">TS</span>, <span style="font-weight: bold;">TM</span>, <span style="font-weight: bold;">TU</span> y <span style="font-weight: bold;">TUD</span>.<br />
+      <br />
+Dentro de los aparatos de vía existentes en la librería del programa
+destacamos la existencia de los siguientes tipos de aparatos:&nbsp;<span class="Archivo">T1668-1435D11.apv</span> y&nbsp;<span class="Archivo">T1668-1435I11.apv</span>. Definen travesías entre dos vías de diferente ancho y con diferente longitud en la vía principal y en la desviada.<br />
+      <ul>
+        <li><span class="Archivo">T1668-1435D11.apv</span>: Vía principal de ancho 1668, la vía que cruza es de ancho 1435 y sale hacia la derecha con una tangente de 0.11.</li>
+        <li><span class="Archivo">T1668-1435I11.apv</span>: Vía principal de ancho 1668, la vía que cruza es de ancho 1435 y sale hacia la izquierda con una tangente de 0.11.</li>
+      </ul>Se
+admite en la geometría interna del aparato una clotoide dada por su
+longitud, detras del radio interno, en la zona del cruzamiento. Se
+incluyen en la librería los aparatos: DS_184_1200_18_d.apv y
+DS_184_1200_18_i.apv con un radio interno de 1200 y una clotoide de 18
+metros.<br />
+      <br />
+      <div style="text-align: left;">Tenemos la posibilidad de utilizar aparatos de vía en cuya geometría interna se encuentre: JCA:Recta-Clotide-Circulo-Clotoide.<br />
+La primera clotoide puede empezar con un radio (Menor que infinito y mayor que el del circulo).<br />
+Dentro de la libreria distinguimos los aparatos DS_ARA_d.apv y DS_ARA_i.apv que incluyen esta opción.<br />
+      </div>
+
+
+
+      <br /><br />Se
+permiten añadir en los archivos *.apv tres nuevos parámetros para
+describir la geometría interna del eje de la desviada en algunos
+aparatos:<br /><ul><li>Distancia del origen del aje a la junta de contragujas (negativa para algunos ejes que comienzan fuera del aparato).</li><li>Ángulo en radianes al inicio del eje, para agujas secantes.</li><li>Radio del eje en el interior del aparato.</li></ul>Se incluyen en la librería como ejemplo de estos tres parámetros, los siguientes archivos:<br /><ul><li><span class="Archivo">DS_SCT_08_d.apv</span> y <span class="Archivo">DS_SCT_08_i.apv</span>: Utilizan una distancia negativa y un radio.</li><li><span class="Archivo">DS_CONRAIL_10_d.apv</span> y <span class="Archivo">DS_CONRAIL_10_i.apv</span>: Ángulo al inicio y radio.</li><li><span class="Archivo">DI11CDC5.apv</span> y <span class="Archivo">DI11CIC5.apv</span>. Define solo un radio interior.</li></ul>Si en la geometría interna del aparato para el radio interior se utiliza el comando <span style="font-weight: bold;">GRR</span> en lugar de <span style="font-weight: bold;">GR </span>esto
+indica que el radio definido es solamente válido para los casos en los
+que la vía principal está en recta, si se coloca el aparato sobre una
+vía en curva el radio interior se recalcula automáticamente utilizando
+la formulación de ADIF. <br />Se incluyen en la librería los archivos *.apv que utilizan el comando <span style="font-weight: bold;">GRR </span>:<br /><ul><li><span style="font-style: italic;">DC-C-54-318-0.09-CR-D.apv</span></li><li><span style="font-style: italic;">DC-C-54-318-0.09-CR-I.apv<br /></span></li></ul><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="isapavia">Gestor de aparatos de vía</a></span><br />
+      <br />
+En la instalación de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> está disponible una sencilla herramienta para gestionar (editar y visualizar) los aparatos de vía (ficheros&nbsp;<span class="Archivo">.apv</span>). La aplicación, llamada <span style="font-weight: bold;">AparatosVia</span>, puede gestionar simultáneamente varias librerías, además de realizar búsquedas de librerías:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 416px;" alt="" src="Imagenes/isApavia.png" /><br />
+      </div>
+      <br />
+<div style="text-align: center;"><img style="width: 600px; height: 495px;" alt="" src="Imagenes/ol_editor_apv.png" /><br />
+      </div>
+
+      <br />
+Algunos de los parámetros avanzados que se incluyen en el editor de archivos descriptores de aparatos de vía (*.apv):<br />
+      <ul>
+<li>Distancia de junta de contragujas a origen.</li><li>Ángulo en origen.</li><li>Radio interior.</li>
+        <li>Parámetros de clotoides inicial y final del aparato.</li>
+        <li>Distancia de la junta de contraagujas al inicio del radio anterior.</li>
+        <li>Tipo de línea con la que se va a dibujar el aparato, y símbolo que representará al aparato.</li>
+        <li>Número y longitud de los tramos de poligonal con los que se dibujará el aparato.</li>
+        <li>Número de traviesas "largas" tras el aparato.</li>
+      </ul>Si se activa el flag <span style="font-weight: bold;">Aplicar NAV 0-2-2.1 si APV en curva </span>y
+en la geometría interna del aparato para el radio interior utilizamos
+el comando GRR en lugar de GR: esto nos indica que el radio definido es
+solo válido para cuando la vía principal está en recta, entonces si
+colocamos el aparato sobre una curva el radio interior se recalcula
+automáticamente utilizando la formulación de ADIF. Se añaden a la
+librería que se instala los archivos <span style="font-style: italic;">DS-C-54-318-0.09-CR-D.apv </span>y <span style="font-style: italic;">DS-C-54-318-0.09-CR-I.apv</span> que utilizan este comando.<br /><br />Dentro de este gestor se puede definir también la posición relativa de algunas
+traviesas después de los talones principal y desviado. (Hasta 100 en cada
+caso) y para las del talón desviado se puede definir también un esviaje
+(En centesimales y valor absoluto). Con ello se pretende evitar que se
+solapen los extremos de las traviesas del eje principal y el desviado a
+continuación del talón.<br />
+
+Disponemos en la carpeta&nbsp;<span class="Archivo">Demo/Aparatos</span> que se instala con Istram el ejemplo&nbsp;<span class="Archivo">FFCC_BIM.isa</span> que utiliza estas traviesas. Para que realmente se coloquen
+las traviesas según esta información es necesario, en el menú <a href="OL_ffcc_via_traviesa.html#carril">Vía y
+Traviesa/Carril</a>, usar la herramienta <span style="font-weight: bold;">Crear las soldaduras teóricas</span>, habiendo activado eventos para iniciar
+carril en <span style="font-weight: bold;">Aparatos de vía</span>. y activar asímismo las opciones:<br />
+
+      
+      <ul>
+<li>Cortar carriles según la tabla de soldaduras.</li><li>Crear objeto soldadura en BIM.</li><li>Apartar las traviesas.</li>
+      </ul>
+
+      <div style="text-align: center;"><img style="width: 500px; height: 291px;" alt="" src="Imagenes/ol_editor_tr.png" /><br />
+      </div>
+<br /><br />Se dispone en la librería de los siguientes aparatos de vía:<br /><ul><li><span class="Archivo">DS-AMV-300-0x11-CC-D.apv</span>: cuya geometría interna está constituida por una alineación circular y una clotoide incompleta que termina en un radio.</li><li><span class="Archivo">AD_FM.apv</span> y <span class="Archivo">AD_MF.apv</span> para representar aparatos de dilatación con los siguientes parámetros:</li><ul><li>F:
+Distancia entre el eje de la primera traviesa de la parte fija y la
+junta</li><li>A: Separación de la junta.</li><li>M: Distancia entre la junta el eje de la
+primera traviesa de la parte móvil.</li><li>RF: Longitud de carril de la parte
+fija medido desde el eje de la primera traviesa de la parte fija.</li><li>TF:
+Longitud de traviesas de la parte fija medido desde el eje de la
+primera traviesa de la parte fija.</li><li>RM: Longitud de carril de la parte
+móvil medido desde el eje de la primera traviesa de la parte móvil.</li><li>TF:
+Longitud de traviesas de la parte móvil medido desde el eje de la
+primera traviesa de la parte móvil</li><li>DA: Distancia desde el eje de la
+primera traviesa de la parte fija a la aguja<br /><br />Estos aparatos
+se añadirán al igual que los cambiadores de mano, en la tabla de
+aparatos de vía de la pestaña EJES en cuadro de diálogo de planta.</li></ul><li>En
+aquellos aparatos que llevan definidas traviesas tras el talón
+principal y el desviado (TTP y TTD) se puede definir también el número
+de estas traviesas que son [Traviesas Largas] (comando TTNL).
+Disponemos en la librería como ejemplo el archivo <span class="Archivo">DH11CD5_TR30_6L.apv</span>,
+que lleva 30 traviesas detras de cada talón, de las cuales las 6
+primeras son largas. Se denomina [Traviesa Larga] a una única traviesa
+sobre la que asientan &nbsp;simultaneamente los carriles de la vía
+principla y los de la vía desviada.</li></ul><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cal_geom_apavia">Cálculo geométrico de los aparatos de vía. Escapes</a></span><br />
+      <br />
+Si se definen dos aparatos de vía seguidos (valen también conectores de
+ejes con ángulo de tangencia), el programa desliza el segundo sobre su
+eje patrón conservando su ángulo de tangencia hasta alinearse con el
+talón-desviado del primer aparato (el ángulo de tangencia del primer
+aparato es dato sobreabundante) y crea una alineación recta entre los
+dos talones-desviados.<br />
+      <br />
+El primer eje puede tener cualquier tipo de geometría (recta o curva o
+clotoide) en la zona del aparato. El calculador resuelve el caso de
+aparatos colocados en una via principal en curva.<br />
+
+      <br />
+
+El segundo puede ser:<br />
+
+      <ul>
+<li>Recta paralela al primero en el punto donde está el primer aparato.</li><li>Recta no paralela al primero (se debe prestar especial atención en este caso con los ángulos de los aparatos).</li><li>Círculo
+o clotoide de radio de curvatura bastante amplio pero que
+gire con la convexidad hacia el primer eje (es decir, el segundo eje
+separa su propio centro de curvatura del primer eje). En el proyecto
+DEMO que se instala con el programa se incluye el archivo&nbsp;<span class="Archivo">2aparato.cej</span> como ejemplo.<br />
+</li>
+      </ul>
+
+
+
+
+
+
+
+      <p class="MsoNormal"><span style="" lang="ES-TRAD">Como</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">comprobación puede hacerse lo siguiente:<o:p> </o:p>Si una</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">vez</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">calculado</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">se</span><span style="" lang="ES-TRAD"> usan los pinzamientos </span><span style="" lang="ES-TRAD"><span style="" lang="ES-TRAD">para</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">mover</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">el</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">punto</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">que</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">define</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">al</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">primer</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">aparato,</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">se</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">observará</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">cómo</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">el</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">segundo</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">se</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">desliza</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">por</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">su</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">eje.</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">Si</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">lo</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">que</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">se</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">mueve</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">es</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">el</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">punto</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">que</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">define</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">al</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">segundo</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">aparato,</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">entonces lo que se</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">observará es</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">que</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">la</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">solución</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">permanece</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">inalterable.</span></span></p>
+
+
+
+
+      <p class="MsoNormal"><span style="" lang="ES-TRAD"><o:p>El</o:p></span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">programa
+podría</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">no</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">encontrar</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">solución</span><span style="" lang="ES-TRAD"> si </span><span style="" lang="ES-TRAD">el</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">algoritmo</span><span style="" lang="ES-TRAD"> </span><span style="" lang="ES-TRAD">diverje
+con las condiciones geométricas que se le plantean.<o:p></o:p></span></p>
+
+
+      Se
+admite un solape por los talones, entre dos aparatos en un eje, que
+para uno de ellos es el eje principal y para el otro es el eje desviado.<br /><br />
+ESCAPES<br />
+      <br />
+      <img style="width: 204px; height: 106px;" alt="" src="Imagenes/ffcc_tolerancia_escapes.png" align="right" hspace="6" />Si los dos aparatos tienen la misma tangente,
+sus ejes de referencia deben ser paralelos o tener una divergencia
+menor que la tolerancia para escapes según se describe a continuación.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> trabaja con un ángulo de tolerancia (en grados centesimales) para el diseño de <span style="font-weight: bold;">escapes</span>
+(ejes de dos alineaciones formadas por dos aparatos de vía apoyados en
+dos ejes paralelos).<br />
+      <br />
+Cuando un escape se define entre dos ejes no
+paralelos, o con aparatos de vía de tangente distinta, se admite cierta
+tolerancia en el azimut. El
+programa busca automáticamente la posición del segundo aparato y
+determina el azimut del eje inducido por los dos aparatos. Si la
+diferencia de azimutes supera el valor de la tolerancia, imprime un
+mensaje en el listado, en la línea de mensajes y en la rejilla de
+ERRORES cuando se usa la opción DISEÑO <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> ERRORES.<br />
+      <br />
+El valor de esta tolerancia es configurable desde el menú <span style="font-weight: bold;">Configuración</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Preferencias</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Opciones</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Obra lineal</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <a href="OL_planta_opciones_visualizacion.html"><span style="font-weight: bold;">Planta</span></a>.<br />
+      <br />ESCAPES COMO UN ÚNICO BLOQUE A OPENBIM<br /><br />En los ejes de planta de ferrocarriles, se les puede activar la nueva opción: [] <span class="Parf_negrita">Escape</span>.
+Todas las traviesas y carriles de un eje calificado como escape, así
+como las de sus aparatos de vía (normalmente uno al principio y otro al
+final) se podrán exportar en <a href="OL_BIM.html">BIM</a> como un único bloque.<br /><br /><div style="text-align: center;"><img style="width: 550px; height: 202px;" alt="" src="Imagenes/ffcc_planta_escape.png" /><br /></div>
+      <br /><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="origen_PKs">Aparatos de vía y origen de PKs</a></span><br />
+      <br />
+      <img style="width: 125px; height: 95px;" alt="" src="Imagenes/apavia_orig_PKs.png" align="right" hspace="7" />En la ventana de PLANTA <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> EJES, una variable FFCC permite definir si el origen de PKs de la vía desviada es el <span style="font-weight: bold;">talón</span> , el <span style="font-weight: bold;">centro matemático</span> o la <span style="font-weight: bold;">junta de contraagujas</span> (por defecto).<br />
+      <br />Se establece por defecto el PK de inicio de un eje desviado en la Junta de Contraaguja (J.C.A.).<br />
+      <br />
+En los ejes que comienzan o terminan en un desvío, si se selecciona que comienzen o terminen en la junta de contraagujas <span style="font-weight: bold;">J.C.A.</span>, también se puede seleccionar&nbsp;<img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_topo_tic.png" />
+que se genere el eje de la vía desviada por dentro del aparato mediante
+un arco de circulo. Este arco es tangente a las rectas JCA-CM y CM-TD.
+En el caso en el que el segmento JCA-CM es mas corto que el CM-TD, el
+arco empieza en la JCA y en el caso contrario el arco terminará en el
+TD (talón de la desviada) buscando la tangencia inicial en la recta
+formada por la J.C.A. y el C.M. (centro matemático).<br />
+A falta de conocer los radios y longitudes reales de la <a href="OL_desvios_ferrocarril.html#aguja">aguja</a>, <a href="OL_desvios_ferrocarril.html#desvio">desvío</a> y
+      <a href="OL_desvios_ferrocarril.html#cruzamiento">cruzamiento</a>; el desarrollo de pks por este eje es mas preciso que el
+uso de las rectas JCA-CM-TD.<br /><br />El punto de inserción del Aparato de Vía en el tronco puede ser la Junta de Contra_agujas en lugar del Centro Matemático.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 413px; height: 233px;" alt="" src="Imagenes/ffcc_jca_tic.png" /><br />
+      <br />
+      <div style="text-align: left;">Si tenemos definido un aparato de
+vía en la última alineación y la anterior es una recta fija (por 2
+puntos o por etiqueta o por conexión) entonces se calcula el&nbsp; CM
+sobre el eje principal por intersección de esta recta con este eje, si
+bien no puede garantizarse que la diferencia de azimut entre eje
+principaly desviado en este punto coincida con el ángulo del aparato. <br />
+      </div>
+
+      </div>
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cambiadores_de_mano">Cambiadores de mano y descarriladores</a></span><br />
+
+      <br />
+
+      <img style="width: 165px; height: 61px;" alt="" src="Imagenes/ffcc_cambiador.png" align="right" hspace="6" />Puede añadirse aquí (<span style="font-weight: bold;">Aparatos de vía</span>) una lista de aparatos ligados sólo al eje actual como los cambiadores de mano en vías de tres hilos. En la librería de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> tenemos como ejemplo el fichero&nbsp;<span class="Archivo">CM_1668.apv</span>. Al calcular, se dibuja con la planta según la configuración del archivo&nbsp;<a href="OL_ficheros_ali.html#aparatos_de_via"><span class="Archivo">.ali</span></a>.<br />
+      <br />
+Se puede introducir un desplazamiento lateral en este tipo de aparatos en la columna <span style="font-weight: bold;">Distancia</span>.<br />
+<br />
+También se imprime su ubicación en los listados <a href="OL_listados_ferrocarriles.html#apavia">apavia.res</a>.<br />
+      <br />
+Así mismo se representará en el menú de diseño de rasantes, donde se comprueba si su ubicación coincide en un acuerdo vertical.<br />
+      <br />
+También se representan en el dibujo del <a href="OL_gui_aparatos_de_via.html">perfil longitudinal</a> con las travesías y los desvíos.<br /><br /><span class="Parf_negrita">Descarriladores</span>:
+Disponemos en la librería de archivos correspondientes a un tipo de
+aparato de los que se colocan sobre un PK de un eje:
+&nbsp;Descarriladores (Safety-Switch), 2 con radio positivo y 2 con
+radio negativo para el sentido de avance y el de retroceso:
+SW_B3368R+211A.APV, SW_B3368R+211R.APV, SW_B3368R-211A.APV,
+SW_B3368R-211R.APV.<br /><br /><span style="font-weight: bold;"><a name="Ajustar_por_los_talones">Ajustar por los talones</a></span><a name="Ajustar_por_los_talones"><br /><br />En
+el cuadro de diálogo: Planta-&gt;Alineaciones-&gt;Tipos-&gt;</a><a href="OL_planta_conexiones.html">Conexión
+entre ejes</a>, cuando tenemos fijada la primera alineación recta del
+ramal, podemos buscar la posición del aparato de vía de la siguiente
+forma:<br /><ul><li>Utilizamos una conexión de tipo 1003 (Eje + X,Y + PK).</li><li>Seleccionamos el eje principal y el aparato de vía.</li><li>Seleccionamos también un punto aproximado.</li></ul>Entonces aparece en el cuadro la utilidad [<span class="Parf_negrita">Ajustar por los talones</span>],
+al pulsarla, nos busca sobre el eje principal un punto tal que el
+aparato queda colocado cumpliendo la distancia entre los ejes en los
+talones del aparato, asumiendo que pueda haber una pequeña diferencia
+de azimut.<br /><br /><div style="text-align: center;"><img style="width: 400px; height: 166px;" alt="" src="Imagenes/ffcc_planta_ajust_x_talones.png" /><br /></div><br /><br /><span style="font-weight: bold;"><a name="Desvios_ramal_talon_ppal">Desvíos en los que el ramal sale por el Talón Principal.</a></span><a name="Desvios_ramal_talon_ppal"><br /><br />Para colocar desvíos en ramales que siguen rectos por la envolvente de una playa de vías se añade la opción [] <span class="Parf_negrita">xTP</span>:<br /></a><ul><li><a name="Desvios_ramal_talon_ppal">El ramal pasa recto desde la JCA hasta el Talón Principal.</a></li><li><a name="Desvios_ramal_talon_ppal">El eje en el que se apoya el aparato (ramal anterior) sale por el T. Desviado.</a></li><li><a name="Desvios_ramal_talon_ppal">El
+aparato se coloca en la curva que forma este eje anterior para ponerse
+paralelo a al tronco. Istram busca el vértice de esta curva y coloca en
+él el Centro Matemático del aparato. (El radio de esta curva debería
+coincidir con el radio interno del aparato y la deflexión con la Tg del
+aparato).</a></li><li><a name="Desvios_ramal_talon_ppal">Para colocar de esta forma un desvío, si el ramal
+sale hacia la izquierda, el aparato debe ser un desvío a la derecha y
+viceversa.</a></li></ul><a name="Desvios_ramal_talon_ppal"><br /></a><div style="text-align: center;"><a name="Desvios_ramal_talon_ppal"><img style="width: 400px; height: 168px;" alt="" src="Imagenes/ffcc_planta_desv_ramal_t_ppal.png" /><br /></a></div><a name="Desvios_ramal_talon_ppal"><br /></a><a name="via_poligonales"><span class="Titulo_2 Apartados">Aparatos de vía poligonales</span><br /><br />Posibilidad
+de trabajar con aparatos de via poligonales. En estos aparatos la
+desviada se compone de una serie de tramos rectos (4,5 o 6) de igual
+longitud (p.e. 5.5) y que forman el mismo ángulo entre ellos. El
+primero forma la mitad de este ángulo con la vía principal. El ángulo
+del último con la vía principal define la tangente del aparato. La
+longitud del aparato es igual al númerode tramos por la longitud de
+cada tramo.<br /><br />Se incorporan en la librería dos ejemplos: <span class="Archivo">DS_Poligonal_4x55_019D.apv</span> y <span class="Archivo">DS_Poligonal_4x55_019I.apv</span><br /><br /></a><div style="text-align: center;"><a name="via_poligonales"><img style="width: 600px; height: 416px;" alt="" src="Imagenes/via_poligonales.png" /><br /></a></div><a name="via_poligonales"><br /><br />
+      </a><a name="normativa"><span class="Titulo_2">Normativa y tablas de diseño para ferrocarriles</span></a><br />
+<br />
+      Las normativas de trazado de ferrocarril publicadas por
+los organismos ferroviarios describen una serie de parámetros
+geométricos y dinámicos que son de aplicación a la hora de determinar
+el <span style="font-weight: bold;">radio mínimo</span> de una alineación circular, el <a href="OL_ffcc_peraltes_via.html"><span style="font-weight: bold;">peralte</span></a> correspondiente a cada circular y la <span style="font-weight: bold;">longitud de la <a href="OL_planta_curvas_transicion.html">curva de transición</a></span>. <br />
+      <br />
+Generalmente, dichos organismos organizan los datos en función del
+material rodante, del tipo de circulación en condiciones cómodas
+(normales) o forzadas y además pueden modificar sus especificaciones
+año tras año. Esta singularidad es recogida en la filosofía de trabajo
+de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, permitiendo la utilización de
+tablas de diseño que proporcionan al usuario la posibilidad de
+seleccionar diferentes modos o escenarios de circulación y así evaluar
+correcta y rápidamente diferentes alternativas.&nbsp; <br />
+      <br />
+La determinación de los peraltes aplicados en cada alineación circular
+es obtenida utilizando las fórmulas físicas asociadas a la dinámica de
+circulación del ferrocarril y son de aplicación internacional. En
+España, dicha formulación puede ser localizada en ADIF, Metro de
+Madrid, norma UNE-ENV 13803-1 EX, etc.<br />
+      <br />
+Desde el menú fijo de la parte derecha de Planta, clicando en Diseño, <span style="font-weight: bold;">Repasar Norma</span> se genera el listado&nbsp;<span class="Archivo">geovia.res</span>,
+que nos muestra en la última columna, las posibles desviaciones de
+diferentes parámetros de diseño con respecto a los rangos especificados
+en las tablas de diseño asociadas. Este listado controla el
+cumplimiento de las longitudes mínimas de las rectas existentes entre
+curvas en C y en S.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 615px; height: 174px;" alt="" src="Imagenes/geovia_listado_repnorm.png" /><br />
+      </div>
+
+      <br />
+Se incorpora en la librería la tabla de diseño FFCC_ADIF_2021.dip<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="singularidad_norma_ffcc">Singularidades de la normativa en trazados ferroviarios</a></span><br />
+      <br />
+Para una <span style="font-weight: bold;">velocidad de circulación</span> dada y en función de la formulación se obtiene el <span style="font-weight: bold;">radio mínimo</span>. A éste le corresponde un valor <span style="font-weight: bold;">máximo de peralte</span> permitido.<br />
+      <br />
+Sin embargo, y como es lógico, deben ser utilizados radios mayores a los que les corresponde un <a href="OL_ffcc_peraltes_via.html">peralte</a> y una <span style="font-weight: bold;">insuficiencia de peralte</span> menor (y una <span style="font-weight: bold;">aceleración no compensada</span> inferior). Es responsabilidad del proyectista aceptar las insuficiencias aplicadas.<br />
+      <br />
+Para estos radios superiores al mínimo, la determinación de los <a href="OL_ffcc_peraltes_via.html">peraltes</a>
+a aplicar se calcula teniendo en cuenta las especificaciones de diseño,
+que pueden consistir en la aplicación de una ley proporcional o de una
+constante de incremento del lado de la seguridad. En todo caso, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> los calcula automáticamente sin necesidad de utilizar una tabla de peraltes (ya que son obtenidos por formulación)<br />
+      <br />
+También debe ser tenida en cuenta la velocidad de los &#8216;trenes lentos&#8217;.
+La velocidad mínima compatible viene determinada por el máximo exceso
+de <a href="OL_ffcc_peraltes_via.html">peralte</a> aceptable por la vía (para evitar el vuelco y el desgaste excesivo de los carriles).<br />
+      <br />
+La función de las <a href="OL_planta_curvas_transicion.html">curvas de transición</a> en trazado ferroviario es la de permitir una transición adecuada del <a href="OL_ffcc_peraltes_via.html">peralte</a> entre la recta y la alineación circular, y se determinan en función de ciertas fórmulas dependientes del <a href="OL_ffcc_peraltes_via.html">peralte</a> y de la velocidad de circulación. <br />
+      <br />
+Aunque existe una relación exacta radio-peralte, existe la posibilidad de usar otro <a href="OL_ffcc_peraltes_via.html">peralte</a>, significando otra longitud de <a href="OL_planta_curvas_transicion.html">curva de transición</a>. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ofrece la posibilidad de aplicar un <a href="OL_ffcc_peraltes_via.html">peralte</a>
+diferente al obtenido por formulación siempre que se esté dentro de los
+márgenes permitidos para la insuficiencia de peralte y aceleración
+transversal no compensada. Aplicar un <a href="OL_ffcc_peraltes_via.html">peralte</a> inferior al necesario permite reducir el tamaño de las <a href="OL_planta_curvas_transicion.html">curvas de transición</a> ya que la función de éstas es desarrollar el <a href="OL_ffcc_peraltes_via.html">peralte</a> desde el valor cero al de la curva (no existen otros parámetros como en el caso de los proyectos de carreteras).<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="tablas_dip">Uso de las tablas .dip para ferrocarriles</a></span><br />
+      <br />
+Estas tablas pueden contener las constantes de diseño para una única <span style="font-weight: bold;">velocidad de circulación</span> o varias <span style="font-weight: bold;">categorías</span>, <span style="font-weight: bold;">modos</span> y <span style="font-weight: bold;">tramos</span> de velocidades de circulación asociadas (tal y como recoge el espíritu de muchas normativas).<br />
+      <br />
+Con estas&nbsp; tablas, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> realiza de manera automática los siguientes procesos: <br />
+      <ul>
+        <li>Determinación del radio mínimo y de las relaciones radio &#8211; peralte &#8211; insuficiencia de peralte.</li>
+        <li>Cálculo automático de la longitud de la <a href="OL_planta_curvas_transicion.html">curva de transición</a>.</li>
+        <li>Aplicación automática de los <a href="OL_ffcc_peraltes_via.html">peraltes</a> en los puntos singulares exactos.</li>
+        <li>Listado de geometría de trazado en planta específico para ferrocarril.</li>
+      </ul>
+A continuación se explica detenidamente su uso a través de los cuadros
+de diálogo del programa asociados, utilizando como ejemplo de trabajo
+la tabla de diseño&nbsp;<a href="OL_FFCC_ADIF_dip.html" target="_blank"><span class="Archivo">FFCC_ADIF.dip</span></a>
+de uso en España y que permite usar categorías, modos y contiene una
+tramificación de velocidades de circulación (reflejando la normativa
+ADIF). Esta tabla incluye la Norma IGP-2008/2011 así como la 2004 y
+2006, y en ella se comentan las diferencias con 2006.<br />
+      <br />
+La tabla&nbsp;<a href="OL_FFCC_ADIF_dip.html" target="_blank"><span class="Archivo">FFCC_ADIF.dip</span></a>, permite además controlar los siguientes parámetros utilizados para el repaso de la norma en el menú de <a href="OL_rasantes_diseno.html">RASANTES</a>:<br />
+      <ul>
+        <li>Pendiente longitudinal máxima (viajeros y mixto). </li>
+        <li>Pendiente longitudinal mínima en túneles.</li>
+        <li>Longitud mínima de acuerdos verticales, que se utiliza para recomendar el Kv mínimo de un acuerdo concreto.</li>
+        <li>Longitud mínima de rasante uniforme entre acuerdos.</li>
+        <li>Longitud máxima de rasante con la pendiente máxima.</li>
+      </ul>
+Al cargar una tabla&nbsp;<span class="Archivo">.dip</span> para ferrocarriles desde <a href="OL_general.html">GENERAL</a>, el menú permite seleccionar la <span style="font-weight: bold;">categoría</span> y el <span style="font-weight: bold;">modo de circulación</span>. La velocidad general del proyecto y la especificada por tramos también son definidos aquí:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 569px; height: 88px;" alt="" src="Imagenes/tabla_dip_ffcc.png" /><br />
+      </div>
+<br />
+En las tablas de diseño pueden especificarse varios <span style="font-weight: bold;">modos de circulación</span>.
+Lo normal es que se definan modos normales y excepcionales, pero es
+posible definir modos asociados a circulación con trenes de mercancías,
+tráfico mixto, etc. Los modos de circulación pueden también declararse
+por tramos (en función de la tramificación de la <a href="#velocidad_proyecto">velocidad de proyecto</a>)
+y también para cada alineación (en la tabla de <a href="#peralte_velocidad_obligados">peralte/velocidad obligados</a>).<br />
+      <br />
+En la tabla&nbsp;<span class="Archivo">.dip</span>, cada tramo de
+velocidades viene definido por una serie de bloques o subtablas
+asociados a un ámbito de velocidad y contienen los parámetros asociados
+a cada modo. Por ejemplo, ADIF define peraltes superiores para el modo
+excepcional o forzado, lo que permitirá en principio usar radios
+inferiores a los del modo normal. La utilización de estos parámetros
+queda a criterio del ingeniero proyectista.<br />
+      <br />
+Dentro de la librería disponemos de una tabla .dip para el cálculo de
+radios, clotoides y peraltes de los ferrocarriles según la normativa de
+los ferrocarriles de la Generalitat de Catalunya (FFCC_CAT_a.dip).<br />
+      <br />
+      <a name="velocidad_proyecto">VELOCIDAD DE PROYECTO</a><br />
+      <br />
+      <img style="width: 316px; height: 130px; float: right;" alt="" src="Imagenes/tramos_vp_ffcc.png" hspace="6" />La <span style="font-weight: bold;">velocidad de circulación o de proyecto</span>
+puede ser especificada de varias maneras. Inicialmente, y como en el
+caso de los proyectos de carreteras, puede ser definida en la pestaña <a href="OL_general.html">GENERAL</a>, en el campo <span style="font-weight: bold;">Vp</span>.
+Si se necesita aplicar otra velocidad a un tramo determinado, entonces
+se debe hacer uso del cuadro de diálogo que se muestra al pulsar sobre
+el botón <span style="font-weight: bold;">[Tramos Vp]</span>. <br />
+      <br />
+En este caso, a diferencia de un proyecto de carreteras, es posible asociar además un <span style="font-weight: bold;">modo de circulación</span> diferente para cada tramo de PK.<br />
+      <br />
+De esta forma es posible establecer una tramificación general que
+permita al usuario enfrentarse con sencillez a la posibilidad o
+necesidad de imponer restricciones de circulación, impuestas por el
+paso por estaciones, zonas de difícil orografía o trazado urbano
+delicado.<br />
+      <br />
+Tanto en un proyecto de carreteras como de ferrocarriles podremos <span style="font-weight: bold;">Listar</span> la definición de tramos de velocidad de proyecto para cada eje.<br />
+      <br />
+      <br />
+CUADRO DE INFORMACIÓN SOBRE LA NORMATIVA EMPLEADA<br />
+<br />
+      <img style="width: 282px; height: 65px; margin-left: 7px;" alt="" src="Imagenes/cuadro_datos_normativa_ffcc.png" align="right" />Los
+datos asociados al eje de trabajo y a la alineación actual son
+visualizados en la esquina inferior izquierda de la pantalla de PLANTA.
+En él se muestran:<br />
+      <ul>
+        <li>El número de eje, el número de alineación, el PK medio de la misma y la velocidad de circulación.</li>
+      </ul>
+      <ul>
+        <li>La velocidad de trabajo (que puede ser la de proyecto, la
+del tramo o la de la alineación) y el tramo usado, de entre los
+especificados en la tabla de diseño. En todo momento se informa de la
+procedencia de dicha velocidad. Se aplica en principio la de proyecto,
+luego, si la hay, se usa la del tramo y por último la que puede tener
+definida cada alineación.</li>
+      </ul>
+      <ul>
+        <li>La categoría seleccionada (dentro de la tabla pueden existir varias categorías, en la tabla&nbsp;<a href="OL_FFCC_ADIF_dip.html" target="_blank"><span class="Archivo">FFCC_ADIF.dip</span></a> existen varias categorías ADIF 2004, ADIF 2006, ADIF 2008 y ADIF 2011).</li>
+      </ul>
+      <ul>
+        <li>El modo: normal, forzado, excepcional u otro definido en la tabla de diseño.</li>
+      </ul>
+En caso de que se defina un <a href="#peralte_velocidad_obligados">peralte obligado</a> o una <a href="#peralte_velocidad_obligados">velocidad obligada</a>
+a una alineación particular el mensaje se visualiza en color rojo para
+facilitar al usuario la identificación de los datos con los que está
+trabajando.<br />
+      <br />
+      <br />
+USO DE RADIOS Y LONGITUDES DE TRANSICIÓN SUGERIDAS POR LA TABLA .dip<br />
+      <br />
+Para cada subtabla de parámetros de trabajo (velocidad, categoría y
+modo) de manera general (para todo el eje) o particular (por tramo o
+alineación), es posible beneficiarse del uso de valores numéricos
+calculados por el programa y ofrecidos en ventanas de selección de
+datos. En el caso de trazado ferroviario y a diferencia de los
+proyectos de carreteras, estas ventanas muestran diferentes resúmenes
+de varios parámetros que pueden ser de interés para el usuario como
+insuficiencias de peralte, aceleración no compensada, longitudes de <a href="OL_planta_curvas_transicion.html">curvas de transición</a> en función de limitaciones geométricas, dinámicas o de confort, etc.<br />
+      <br />
+Uno de los primeros beneficios que se obtiene al usar tablas de diseño
+es el de poder utilizar el radio más conveniente y conocer sus
+parámetros asociados. Es preciso que en la pestaña <a href="OL_general.html">GENERAL</a> esté cargada la tabla&nbsp;<span class="Archivo">.dip</span> de ferrocarriles con la que se esté diseñando, y declarado el modo y velocidad de proyecto. Al pulsar en el botón <span style="font-weight: bold;">[R]</span>
+se despliega una lista de combinaciones asociadas a una serie que parte
+de un peralte 10 mm hasta el máximo permitido. También se muestran los
+radios mínimos asociados a la velocidad máxima y a la velocidad de
+trabajo, el modo de circulación y el radio actual con sus datos de
+peralte (<span style="font-weight: bold;">hp</span>), insuficiencia de peralte (<span style="font-weight: bold;">hi</span>) y aceleracion no compensada (<span style="font-weight: bold;">anc</span>).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 338px; height: 450px;" alt="" src="Imagenes/ffcc_dip_R_T.png" /><br />
+      </div>
+      <br />
+En la parte inferior de esta ventana se muestran además los radios
+mínimos de los posibles modos a utilizar (que en el caso de la
+tabla&nbsp;<a href="OL_FFCC_ADIF_dip.html"><span class="Archivo">FFCC_ADIF.dip</span></a> son <span style="font-style: italic;">Normal</span> y <span style="font-style: italic;">Excepcional</span>, aunque es posible definir más modos).<br />
+      <br />
+En trazado ferroviario las <a href="OL_planta_curvas_transicion.html">curvas de transición</a> son las encargadas de realizar una correcta transición de peralte. Esta longitud es calculada en función del <a href="OL_ffcc_peraltes_via.html">peralte</a>, radio utilizado y velocidad de circulación. En trazado ferroviario es más usual usar L (longitud) que A (parámetro).<br />
+      <br />
+Utilizando los valores de peralte, velocidad y los limitadores:<br />
+      <ul>
+        <li>Variación máxima de peralte o limitación dinámica</li>
+        <li>Variación máxima de la insuficiencia de peralte o límite por confort<br />
+        </li>
+        <li>Rampa máxima de peralte o limitación geométrica</li>
+      </ul>
+se obtienen por formulación los valores de las longitudes mínimas de transición correspondientes.<br />
+      <br />
+Además, si la tabla&nbsp;<span class="Archivo">.dip</span> contiene una
+serie de valores tabulados (que normalmente reproducen las tablas
+publicadas por el organismo ferroviario) se recoge también ese valor y
+se compara con los tres anteriores, escogiéndose el mayor de todos
+ellos.<br />
+      <br />
+Al pulsar el botón <span style="font-weight: bold;">[T]</span> se
+despliega una ventana que ofrece el valor L mínimo y a continuación un
+resumen de los datos utilizados y el resultados de unos cuantos
+parámetros que pueden ser de utilidad.<br />
+      <br />
+El peralte teórico mostrado se corresponde con la fórmula:<br />
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 533px; height: 57px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 125px;"><img style="width: 98px; height: 35px;" alt="" src="Imagenes/ffcc_formula_ht.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 388px;"><span style="font-weight: bold; font-style: italic;">s</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> Distancia entre los puntos de contacto rueda-carril (mm)<br /><span style="font-weight: bold; font-style: italic;">V</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; </span></span></span></span></span></span>Velocidad (km/h)<br /><span style="font-weight: bold; font-style: italic;">g</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> &#8594;</span></span></span></span></span></span> Aceleración de la gravedad (m/s<sup>2</sup>)<br /><span style="font-weight: bold; font-style: italic;">R</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> &#8594; </span></span></span></span></span></span>Radio de la curva (m)<br /></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+Sin embargo, el peralte real (<span style="font-weight: bold;">hr</span>) mostrado se corresponde con el menor valor entre el anterior y el peralte máximo permitido (<span style="font-weight: bold;">hmáx</span>).<br />
+      <br />
+En la segunda parte de la ventana se muestra un resumen de los valores asociados con la <a href="OL_planta_curvas_transicion.html">curva de transición</a> existente (si está definida).<br />
+      <br />
+Tanto la ventana de selección de radios como la de longitudes o parámetros de las <a href="OL_planta_curvas_transicion.html">curvas de transición</a> informan en la parte inferior de la velocidad de circulación utilizada en la alineación, así como del modo.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /></td>
+            <td class="Info" style="vertical-align: top; width: 633px; text-align: justify;">La
+mayoría de los organismos publican normas en las que se aplican
+redondeos a determinados elementos como radios y longitudes de
+clotoide. <br /><br />La formulación que se aplica ofrece peraltes
+exactos para radios exactos que a continuación son&nbsp; redondeados.
+Como es lógico, con posterioridad al aplicar las fórmulas un radio
+redondeado devuelve un peralte inferior al visualizado en la ventana de
+datos. <br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> resuelve este
+problema aplicando el peralte máximo al radio mínimo, recordando en
+este caso el valor definido en la tabla &#8216;fija&#8217; que figura en el
+fichero&nbsp;<span class="Archivo">.dip</span>.<br /><br />Para el
+resto de los radios, si se ha aplicado un redondeo, el peralte aplicado
+será ligeramente inferior al ofrecido inicialmente. Si no le parece
+correcta esta interpretación de la normativa puede editar la tabla .dip
+y modificar el valor de redondeo del radio de las alineaciones
+circulares que se calculan a 1 (una unidad).<br /><br />
+En el caso de las <a href="OL_planta_curvas_transicion.html">curvas de transición</a>
+ocurre lo mismo, así que si son usados con posterioridad los valores de
+limitación serán inferiores a los mínimos con los que fueron
+calculados. <br /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="peralte_velocidad_obligados">Peralte y velocidad obligados</a></span><br />
+      <br />Este
+calculador gráfico de peraltes permite modificar por cada alineación,
+su radio, la velocidad de proyecto o velocidad máxima para esa
+alineación junto con el peralte. Permite calcular y modificar
+simltáneamente las clotoides. Al aumentar o disminuir el peralte,
+disminuye o aumenta la insuficiencia. En la gráfica se muestra un aviso
+si se sale de los márgenes permitidos. En las tablas de recomendación
+de Clotoides, se utiliza, si está definido, el peralte obligado.<br />
+      <br />
+Se
+pueden utilizar condiciones específicas para la circular que se está
+definiendo (bajar el radio subiendo el peralte, bajar peralte subiendo
+la insuficiencia, bajar la velocidad en la curva,...). <br />
+      <br />
+Suelen ser utilizados en ocasiones concretas, como tener que permitir
+un tráfico específico, por imposición medioambiental, un trazado urbano
+que no ofrece muchas alternativas, etc.<br />
+      <br /><img style="width: 180px; height: 96px;" alt="" src="Imagenes/modo_peralte_obl.png" align="right" hspace="6" />
+Al pulsar el botón <span style="font-weight: bold;">[P(%)]</span> es posible seleccionar un <span style="font-weight: bold;">modo de circulación</span>
+específico para una curva en particular y modificar los valores de
+radio, velocidad o peralte mientras el calculador va actualizando los
+valores de <a href="OL_ffcc_peraltes_via.html">peralte</a>, insuficiencia de peralte, longitud de <a href="OL_planta_curvas_transicion.html">curva de transición</a>, etc.<br />
+      <br />
+Aplicar un modo <span style="font-weight: bold;">normal</span> (M1) o <span style="font-weight: bold;">excepcional</span> (M2) tiene referencia con los parámetros definidos en la tabla de normativa cargada&nbsp;<span class="Archivo">.dip</span> (por ejemplo la <a href="OL_FFCC_ADIF_dip.html">FFCC_ADIF.dip</a>).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 625px; height: 474px;" alt="" src="Imagenes/peralte_obligado_ffcc.png" /><br />
+      </div>
+      <br />
+      <img style="width: 123px; height: 51px;" alt="" src="Imagenes/escala_radios_per.png" align="right" hspace="6" />En esta tabla pueden seleccionarse tres diferentes escalas horizontales para la gráfica:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Valor 0</span>: las divisiones de radios son 0, 2500, 5000, 7500...</li>
+        <li><span style="font-weight: bold;">Valor 1</span>: las divisiones de radios son 0, 500, 1000, 1500...</li>
+        <li><span style="font-weight: bold;">Valor 2</span>: las divisiones de radios son 0, 100, 200, 300...<br />
+        </li>
+      </ul>
+
+En la imagen se puede observar el radio en estudio (8000 m) y dos columnas con los siguientes valores límite:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Vmáx</span>: Velocidad máxima para la subtabla de diseño en uso.</li>
+        <li><span style="font-weight: bold;">Vp</span>: Velocidad de
+proyecto para la curva actual, que en la columna izquierda es igual a la
+declarada en la pestaña <a href="OL_general.html">GENERAL</a>.</li>
+        <li><span style="font-weight: bold;">Rmín</span>: Radio mínimo calculado para la <span style="font-weight: bold;">Vp</span>.</li>
+        <li><span style="font-weight: bold;">hmáx</span>: Peralte máximo para este modo.</li>
+        <li><span style="font-weight: bold;">himáx</span>: Insuficiencia de peralte
+máxima.</li>
+      </ul>
+Los valores que siguen hacia abajo son los valores calculados
+para los peraltes que se están analizando, la insuficiencia, etc.<br />
+      <br />A partir de la casilla <span style="font-weight: bold;">[Vp(hp)]</span>
+que calcula la Velocidad de proyecto, hace que el peralte hp coincida
+con el peralte obligado. Como la funcion no es continua en el cambio de
+tramos de velocidad de la tabla de diseño, si el peralte obligado está
+entre el peralte del tramo inferior para la velocidad máxima de este
+tramo y el peralte del tramo superior para la misma velocidad entonces
+se asigna esta velocidad para el tramo superior, a la que corresponde
+un peralte superior al obligado.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 300px; height: 297px;" alt="" src="Imagenes/peralte_obl_velocidad.png" /><br />
+      </div>
+      <br />
+A partir del botón <span style="font-weight: bold;">[Vp(R)]</span>&nbsp; se calcula la máxima velocidad <span style="font-weight: bold;">Vp</span>,
+que haga que el radio mínimo sea igual al radio de la curva. Como la
+función no es continua en el cambio de tramos de velocidad de la tabla
+de diseño, se toma la velocidad más alta posible del tramo inferior, lo
+que asegura que el radio es mayor que el radio mínimo.<br />
+      <br />
+Dentro del cuadro de diálogo para la definición del peralte obligado y
+velocidad obligada de una curva, se pueden distinguir dos columnas
+principales de datos. La primera de ellas mantiene todos los datos
+calculados con la velocidad del tramo sin tener en cuenta la velocidad
+obligada de la curva.<br />
+<br />
+En el gráfico de la derecha se muestra la representación de las curvas
+de peraltes e insuficiencia de peralte y los puntos de color que
+representan los valores de <span style="font-weight: bold;">hp</span> y de <span style="font-weight: bold;">hi</span> que se tienen en la tabla:<br />
+      <ul>
+        <li>La curva de color gris representa la variación con el radio de <span style="font-weight: bold;">ht</span> (peralte teórico o cinemático calculado para <span style="font-weight: bold;">Vp</span>).</li>
+      </ul>
+      <ul>
+        <li>La cyan representa el peralte real <span style="font-weight: bold;">hr</span> (teórico menos la insuficiencia máxima, <span style="font-weight: bold;">ht</span>-<span style="font-weight: bold;">himáx</span>).</li>
+      </ul>
+      <ul>
+        <li>La amarilla representa el peralte <span style="font-weight: bold;">hp</span> (el de la ley de peraltes que se calcula como <span style="font-weight: bold;">hp</span> = <span style="font-weight: bold;">hmáx</span>*<span style="font-weight: bold;">Rmín</span>/<span style="font-weight: bold;">R</span>). Se le puede indicar junto al valor del peralte obligado, que es para una curva en Contraperalte.<br />
+</li>
+      </ul>
+      <ul>
+        <li>La roja representa la insuficiencia de peralte <span style="font-weight: bold;">hi</span> (diferencia <span style="font-weight: bold;">hr</span>-<span style="font-weight: bold;">hp</span>).</li>
+      </ul>
+      <ul>
+        <li>El punto amarillo (el valor de peralte <span style="font-weight: bold;">hp</span> que se está controlando) estará en la abscisa del radio, sobre la línea amarilla, y el punto rojo (insuficiencia <span style="font-weight: bold;">hi</span>) sobre la roja. Si se baja el peralte <span style="font-weight: bold;">hp</span>, el punto amarillo baja en el gráfico mientras el punto rojo <span style="font-weight: bold;">hi</span>
+sube; pero no se debe bajar el punto amarillo por debajo de la línea
+cyan, porque el punto rojo subiría por encima de la línea azul
+indicando que la insuficiencia supera a la máxima y se mostrará el
+mensaje de "¡Peralte insuficiente!&#8221;. No obstante el programa aceptará
+ese valor del peralte aunque esté fuera de norma.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Vmin</span>: Se puede
+definir la velocidad mínima de la curva (y el programa te calcula el
+exceso de peralte). También se puede introducir un valor para el exceso
+de peralte y el programa te calcula la velocidad mínima para la curva.
+El dato de velocidad mínima se guarda con el archivo .cej. <br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">Mediante la casilla que tenemos
+justo a la derecha de Vmin podemos activarla y el programa nos da la
+opción de recalcular la Rmin y Hmax, para tantear vias que comparten
+tráficos mas lentos. Al introducir un valor en la Velocidad de proyecto
+(Vp) y la velocidad para traficos lentos (Vmin), se utiliza la
+insuficiencia máxima y el exceso máximo para determinar si hay que
+aumentarel Radio mínimo (y disminuir el Peralte máximo) para que ambos
+tráficos estén dentro de los márgenes.<br />
+      </div>
+      <br />
+
+Estos valores forzados para cada curva permanecen en memoria durante la
+sesión de trabajo. Para que queden registrados debe guardarse el
+archivo&nbsp;<span class="Archivo">.cej</span> de ejes en planta (que es el que los almacena) antes de abandonar la sesión.<br />
+      <br />
+En caso de usar alguno de los automatismos para el cálculo de <a href="OL_ffcc_peraltes_via.html">peraltes</a> y de existir un peralte obligado, éste es
+visualizado en gris en el diagrama de peraltes. Además en la ventana se muestra el mensaje
+&#8216;ATENCIÓN: PERALTE OBLIGADO&#8217;.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 503px; height: 280px;" alt="" src="Imagenes/peralte_obligado_ffcc_ejemplo.png" /><br />
+      </div>
+
+<br /><span class="Parrafo"><span class="Parrafo"></span></span></td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>
