@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Conexiones entre ejes en planta</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTA: CONEXIONES ENTRE EJES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1510px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#etiquetas">
+Etiquetas</a><br />
+      <a href="#conectores">
+Conectores</a><br />
+      <a href="#conexion_asistida">
+Conexiones asistidas entre ejes</a><br />
+      </div>
+
+      <br />
+<br /><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+Ya en planta es posible declarar <span style="font-weight: bold;">dependencias</span>
+entre ejes. Aunque no es un paso obligado, sí es muy <span style="font-weight: bold;">recomendable</span>, pues al establecer
+estas relaciones entre ejes se garantiza la <span style="font-weight: bold;">exactitud matemática</span> del trazado y
+además, los cambios geométricos que se produzcan en un eje principal
+provocan que se <span style="font-weight: bold;">recalculen
+automáticamente</span> todos sus ejes dependientes, ahorrando mucho
+tiempo al usuario.<br />
+      <br />
+El programa admite <span style="font-weight: bold;">dependiencias
+anidadas</span>, es decir, de un eje puede depender otro del que a su
+vez 'cuelga' un tercer eje y así sucesivamente.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> dispone de dos tipos de <span style="font-weight: bold;">alineaciones especiales</span> para
+declarar estas dependencias: las <a href="#etiquetas"><span style="font-weight: bold;">etiquetas</span></a>
+y los <a href="#conectores"><span style="font-weight: bold;">conectores</span>,</a>
+presentado estos últimos diversas variantes. Estas alineaciones
+especiales, que se comportan a todos los efectos de funcionamiento como
+      <a href="OL_planta_alineaciones.html#fijas">alineaciones fijas</a>,
+se declaran en el eje dependiente y, normalmente, serán la primera y/o
+la última de dicho eje. <br />
+      <br />
+Las diferencias fundamentales entre ambos tipos de alineaciones son:<br />
+      <ul>
+        <li>La <span style="font-weight: bold;">etiquetas</span> se
+emplean normalmente entre ejes de carretera, y en esencia lo que hacen
+es obtener el punto de tangencia respecto al tronco desde el cuál
+partirá el ramal.</li>
+      </ul>
+      <ul>
+        <li>Los <span style="font-weight: bold;">conectores</span> se pueden usar en todo tipo de proyectos, aunque en el caso de ferrocarriles adoptarán la forma de <span style="font-weight: bold;">aparatos de vía</span> y las conexiones entre ejes de tubería suelen estar asociadas a <span style="font-weight: bold;">accesorios</span>.
+Su funcionamiento se basa en que es el usuario quien especifica el
+punto exacto de arranque del ramal, en lugar de ser el programa quien
+lo calcule como en el caso de las etiquetas.</li>
+      </ul>
+      <div style="margin-left: 40px;">Por otro lado, la tipología de
+conectores existentes hace que su uso sea muy flexible en ciertos
+escenarios. Así, por ejemplo, existen conectores que calculan
+automáticamente el radio del tronco en el punto de salida del ramal
+adoptando el azimut correspondiente, lo que los hace idóneos en ramales
+que nacen en una clotoide del tronco.<br />
+      </div>
+      <br />
+En cualquier caso, el usuario debe tener presente la condición de
+dependencia entre ejes:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-weight: bold; font-style: italic;">En
+una conexión entre dos ejes, el número de eje que hace las veces de
+principal deberá ser siempre menor que el número de eje en el que se
+establece la dependencia (eje secundario). Esto se aplica sólo para el caso de conectar ejes con Etiquetas.<br />
+El uso de conectores no se ve afectado por la numeración de los ejes.<br />
+</span>
+      </div>
+      <br />
+Así, si en un entronque el eje que hace las veces de tronco es el
+número 3 y el ramal es el eje número 2, la conexión en planta NO se
+puede establecer, pero sí sería posible si el ramal tiene asociado un
+número mayor que 3. (Sólo para caso de estar definida la conexión con Etiquetas)<br />
+      <br />
+Aunque aquí se explica en detalle en funcionamiento de las etiquetas y
+conectores, es recomendable, sobre todo en el caso de usuarios sin
+experiencia, hacer uso del menú de <a href="#conexion_asistida">conexiones
+asistidas</a>
+entre ejes, que permite el empleo tanto de etiquetas como de conectores
+sin necesidad de conocer los pormenores de su funcionamiento.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="etiquetas">Etiquetas</a></span><br />
+      <br />
+      <img style="width: 275px; height: 71px; margin-left: 7px;" alt="" src="Imagenes/declarar_etiqueta.png" align="right" />Las dependencias
+entre ejes mediante etiquetas consisten en <span style="font-weight: bold;">identificar</span> mediante un número
+(entre 11 y 99) a la <span style="font-weight: bold;">alineación del
+tronco</span> desde la cuál nacerá el eje secundario. Esto se hace en
+el campo <span style="font-weight: bold;">ETIQUETA</span> de dicha
+alineación.<br />
+      <br />En
+el caso de que la alineación etiquetada del tronco sea una alineación
+recta, los datos que se transmiten al ramal son el
+punto principal de arranque y el azimut del eje en ese punto. En el
+caso de una curva, se transmite el centro de la misma. Es decir, a
+efectos de comportamiento la etiqueta funciona en el ramal como una
+alineación tipo 5 <a href="OL_planta_alineaciones.html#punto_azimut">fija por centro y azimut</a> en el caso de una recta, o <a href="OL_planta_alineaciones.html#fija_centro_radio">fija centro y radio</a> en el caso de una circular.<br />
+      <br />
+Una alineación etiquetada muestra muestra su valor al lado del número de la
+alineación en la pantalla gráfica:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 390px; height: 220px;" alt="" src="Imagenes/ali_etiquetada.png" /><br />
+      </div>
+
+      <br />Una vez etiquetada la alineación del tronco de la cuál 'arrancará' o
+llegará el ramal, ya es posible <span style="font-weight: bold;">referenciar</span> dicho eje secundario a esa
+etiqueta y establecer así la dependencia. Para ello es posible declarar una <a href="OL_planta_conexiones.html#conexion_asistida">conexión
+asistida</a> (más cómodo) o bien una conexión manual tal y como se detalla a continuación.<br />
+      <br />
+      <img style="width: 147px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/tipo_eti_conDesarrollo.png" align="right" />Para declarar de forma manual una referencia a una alinación del tronco etiquetada, la alineación
+correspondiente del ramal (normalmente, primera o última) será del tipo
+el número asociado a la etiqueta. Así, si por ejemplo la alineación del
+tronco se ha etiquetado como &lt;11&gt; y de ella nace una eje ramal,
+la primera alineación de ese ramal será de tipo &lt;11&gt;.:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 544px; height: 247px;" alt="" src="Imagenes/ent_eti_conDesarrollo.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><span class="Info">Entronque en planta por etiqueta, con el ramal 'naciendo' del punto singular del tronco</span><br />
+      </div>
+      <br />
+      <br /><img style="width: 148px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/tipo_eti_sinDesarrollo.png" align="right" /> Si el TIPO es un valor entre 111 y 199 correspondiente con la etiqueta
+de otra alineación de manera que &#8220;Etiqueta + 100 = Tipo&#8221;, el sistema
+entiende que la alineación tiene el <span style="font-weight: bold;">desarrollo nulo</span> (que es lo habitual). Así si se trata de
+una recta para iniciar un ramal, la solución queda de longitud nula,
+reducida a su punto final; en ese punto comienza la alineación 2 del
+nuevo eje. Análogamente, en el caso de ser una circular que inicia o
+remata un eje, no es preciso buscar el azimut para anular su desarrollo:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 556px; height: 222px;" alt="" src="Imagenes/ent_eti_sinDesarrollo.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><span class="Info">Entronque en planta por etiqueta, con el ramal 'naciendo' del punto de tangencia con el tronco</span><br />
+      </div>
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Ramal que sale de una alineación recta del tronco</span><br />
+<br /><img style="width: 91px; height: 47px; margin-left: 7px;" alt="" src="Imagenes/az_negativo.png" align="right" />En el caso de que el desarrollo de PK's del ramal en la conexión tenga sentido contrario de PK's, debe introducirse en el campo <span style="font-weight: bold;">Az</span> cualquier valor negativo, lo que hace que se invierta el sentido de recorrido de la conexión con respecto al sentido original.<br />
+      <br />
+El <span style="font-weight: bold;">desplazamiento</span> (<span style="font-weight: bold;">Desp</span>)
+indica la distancia normal del eje ramal respecto al tronco. Por
+ejemplo, en un ramal con su eje definido por el exterior y que sale de
+una carretera de 3,5 m de ancho por carril, el desplazamietno será de 7
+m.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 31px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; text-align: justify; width: 625px;">Un uso singular que puede darse a las etiquetas es para alineaciones
+paralelas a otra, haciendo uso de la longitud y el desplazamiento. Este
+uso es muy habitual en el diseño de <span style="font-weight: bold;">playas de vías</span>.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;">Ramal que sale de una alineación circular del tronco</span><br />
+      <br />
+En el caso de que la alineación de salida del tronco sea una circular,
+el dato que se
+transmite es el centro y por tanto para indicar el desplazamiento se
+usa el radio, de tal forma que éste debe declararse también en la misma
+alineación del ramal en la que se declara la referencia por etiqueta al
+tronco.<br />
+      <br />
+En el caso de que el desarrollo de PK's del ramal en la conexión tenga
+sentido contrario de PK's, debe entonces declarse el radio con el signo
+contrario al radio de la alineación de referencia del tronco, lo que
+hace que se invierta el sentido de recorrido de la conexión con
+respecto al sentido original.<br />
+      <br />
+Si se quiere dar un <span style="font-weight: bold;">desplazamiento</span>, se sumará o restará el mismo al radio, de tal forma que si éste es menor que el
+de la alineación del tronco, la nueva alineación es concéntrica interior, y
+exterior en caso contrario. El valor declarado en el campo <span style="font-weight: bold;">Desp</span> es ignorado en este caso por el
+calculador; pero la longitud se utiliza si esta alineación es la última
+del eje (se comporta como una alineación de tipo 5 <a href="OL_planta_alineaciones.html#fija_centro_radio">fija por centro y radio</a>).<br />
+      <br />
+      <br /><span class="Titulo_2"><a name="conectores">Conectores</a></span><br />
+      <br />
+      Los
+conectores son alineaciones de un tipo especial que sirven para ligar
+ramales a ejes preexistentes y que en el caso de ferrocarriles permiten
+el posicionamiento de los aparatos de vía. Una utilidad notable es la
+de despegar un ramal de un eje en cualquier punto, incluidas las
+clotoides, saliendo paralelo al eje o con un cierto ángulo. Existen los
+siguientes tipos:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tipo 1001 (EJE + PK)</span>: La alineación que se está creando se define mediante el eje del que nace y el PK absoluto sobre ese eje.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo 1002 (EJE + ALI + PK</span>:
+Se define mediante el eje en el que nace, el número de la alineación en
+la que se apoya y una distancia a medir sobre el eje a partir del
+inicio de la citada alineación y que marcará el punto de inicio del
+ramal.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo 1003 (EJE + PUNTO (X,Y) + PK)</span>:
+Se define mediante el eje en el que nace y un punto cuya proyección
+sobre el eje marca el origen a partir del cual se medirá la distancia
+que marca el punto de inicio del ramal.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo 1004 (ETIQUETA + PK)</span>:
+La alineación que estamos creando se define mediante la etiqueta de una
+alineación previamente definida y etiquetada de cualquier eje anterior
+y un PK relativo al inicio de esa alineación.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo 1005 (EJE + PUNTO (X,Y) + PK + Radio automático)</span>:
+Es como el 1003 pero la alineación es circular con un radio igual al
+del eje principal en el punto de conexión (recta, circunferencia o
+clotoide) +/- el desplazamiento. Al calcular un eje con alineaciones de
+tipo 1005, el radio obtenido salta automáticamente a la casilla
+correspondiente en el cuadro de diálogo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo 1006 (Eje + PUNTO (X,Y) + PK + Radio automático + L=0)</span>:
+Este tipo de conector funciona como el 1005, pero cuando se coloca en
+la primera alineación del eje seguido de una alineación flotante y/o en
+la última precedida de una flotante, entonces el programa determina
+automáticamente la diferencia de PK&#8217;s con el punto para que el conector
+tenga longitud nula, es decir, que la alineación flotante nazca
+tangente al eje principal, incluso en clotoide.&nbsp; </li>
+      </ul>
+Para estos tipos aparecen en el cuadro de diálogo algunas casillas que cambian el significado:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 575px; height: 77px;" alt="" src="Imagenes/dialogo_conector.png" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; height: 142px; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">X1</span> e <span style="font-weight: bold;">Y1</span></td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Sirven para definir el punto en el caso 1003 y 1005.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">PK</span> (en lugar de <span style="font-weight: bold;">X2</span>)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Sirve para definir el PK absoluto en el caso 1001 y las distancias
+relativas en los casos 1002, 1003, 1004 y 1005. El valor puede ser
+negativo.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">EJE</span> (en lugar de <span style="font-weight: bold;">X3</span>)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Sirve para definir el eje en el que se apoya el ramal, para los casos
+1001, 1002, 1003 y 1005. Si el ramal tiene <span style="font-weight: bold;">sentido contrario</span> al tronco
+debe indicarse el número de eje con <span style="font-weight: bold;">signo negativo</span>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">ALI</span> (sustituye a <span style="font-weight: bold;">Y3</span>)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Sirve en el caso 1002 para definir el número de orden que en su eje ocupa la alineación de referencia. </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">ETI</span> (sustituye a <span style="font-weight: bold;">Y3</span>)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">En el caso 1004 es la etiqueta de la alineación a la que se está refiriendo el eje.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">Tg</span> (en lugar de <span style="font-weight: bold;">Az</span>)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Permite definir la tangente trigonométrica de un ángulo para desviar el
+ramal con respecto al tronco. Un valor cero significa alineación
+tangente. Un valor negativo indica un azimut menor que el del eje de
+referencia o salida por la izquierda. Para salir en
+sentido contrario al eje de referencia, se debe dar el número de eje
+negativo.<br />
+            <br />
+Al lado de esta caja de texto aparecen dos iconos <img style="width: 38px; height: 17px;" alt="" src="Imagenes/icono_conexion_perpendicular.png" /> para efectuar una conexión perpendicular por la izquierda o por la derecha.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 113px;"><span style="font-weight: bold;">AV</span> (en lugar de <span style="font-weight: bold;">X2</span>)</td>
+            <td style="vertical-align: top; width: 560px; text-align: justify;">Permite en el caso de ferrocarriles cargar un <span style="font-weight: bold;">aparato de vía</span> de la
+librería. En este caso el valor de <span style="font-weight: bold;">Tg</span> viene obligado por el aparato y
+no es posible modificarlo. Cada aparato de vía está definido en un
+fichero de la librería, de formato ASCII y de nombre .apv. Algunos
+usuales están incluidos y se pueden usar como ejemplo para definir
+otros. Su nombre es una abreviatura de las características geométricas
+(ver capítulo dedicado a proyectos de ferrocarril).</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+En cualquier caso, es más fácil establecer la dependencia por conectores declararando una <a href="#conexion_asistida">conexión asistida</a> en lugar de manual.<br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="conexion_asistida">Conexiones
+asistidas entre ejes</a></span><br />
+      <br />
+      <img style="width: 172px; height: 218px; margin-left: 7px;" alt="" src="Imagenes/planta_conexion.png" align="right" /> ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+permite declarar de forma sencilla las dependencias entre ejes mediante
+etiquetas y conectores sin necesidad de recordar todas las reglas de
+funcionamiento de éstos. Para ello, a la hora de declarar una
+alineación de este tipo, basta con acudir al botón <span style="font-weight: bold;">[TIPOS]</span> y seleccionar <span style="font-weight: bold;">CONEXIÓN</span>.<br />
+      <br />
+Se despliega entonces un cuadro de diálogo que permite definir los
+parámetros de la alineación que conecta con otro eje, bien mediante el
+uso de conectores (o aparatos de vía) o bien mediante el uso de
+etiquetas.<br />
+      <br />
+Este cuadro simplifica muchísimo la declaración de conexiones en planta
+(etiquetas y conectores), pues evita que el usuario tenga que recordar
+todas las singularidades asociadas a este tipo especial de
+alineaciones, siendo, por tanto, la alternativa a usar recomendada para
+la declaración de conexiones entre ejes.<br />
+      <br />
+      <table style="text-align: left; height: 27px; width: 679px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 343px; text-align: center;"><img style="width: 336px; height: 140px;" alt="" src="Imagenes/planta_conexion_conector.png" /><br />
+            <br />
+C<span class="Info">onexión automatizada tipo conector</span><br />
+            </td>
+            <td style="vertical-align: top; width: 318px; text-align: center;">
+            <div style="text-align: right;"><img style="width: 336px; height: 140px;" alt="" src="Imagenes/planta_conexion_etiqueta.png" /><br />
+            </div>
+            <br />
+            <span class="Info">Conexión automatizada tipo etiqueta</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" /></span></span></span><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

@@ -1,0 +1,1060 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Animación</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>Animación<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span><a href="#generalidades">Generalidades</a><br />
+      <a href="#guion">Guión</a><br />
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#Editor_de_papeles">Editor de Papeles</a><br />
+      <a href="#geometrias">Editor de papeles de objetos geométricos</a><br />
+      <a href="#camaras_luces">Editor de papeles de cámaras y luces</a><br />
+      <a href="#carpetas_objetos">Editor de papeles de carpetas de objetos</a><br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <a href="#guia">Guias</a><br />
+      </span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br /><img style="width: 274px; height: 215px;" alt="" src="Imagenes/virtual3d_animacion.png" align="right" hspace="8" />
+Las animaciónes permiten indicar el movimiento de actores (cámara,
+vehículos, luces, ...) por la escena. A partir de las animaciones se
+pueden generar <a href="V3D_render.html#video">vídeos</a> que muestren
+los aspectos que se quieran resaltar de un proyecto.<br />
+      <br />
+Una animación tiene un guión formado por un conjunto de papeles que
+representan un conjunto de actores en un escenario siguiendo una
+secuecia temporal.<br />
+      <br />
+Al modo Animación se accede a través del botón <img src="Imagenes/V3D_icono_menu_principal_animaciones.png" style="width: 40px; height: 32px;" alt="" />
+del menú de Virtual 3D. <br />
+      </span><br />
+      <br />
+<br />
+      <span class="Titulo_2">Opciones generales</span><br />
+      <span style="font-weight: bold;"><br />
+      <img style="width: 350px; height: 125px;" alt="" src="Imagenes/virtual3d_secuenciatemporal.png" align="right" hspace="8" />Nombre</span>:
+permite identificar el modo de animación con un nombre.<br />
+      <span style="font-weight: bold;">Comentario</span>: permite
+adjuntar un comentario explicativo al modo de animación.<br />
+      <img src="Imagenes/V3D_salvar.png" style="width: 24px; height: 24px;" alt="" /> Permite guardar el modo
+de animación fuera del
+escenario.<br />
+      <img src="Imagenes/V3D_abrir.png" style="width: 24px; height: 24px;" alt="" /> Carga un modo de
+animación
+como actual.<br />
+      <br />
+      <span style="font-weight: bold;">Duración (s)</span>: define el
+tiempo que se considera que va a durar la animación.<br />
+      <span style="font-weight: bold;">FPS</span>: indica el número de
+fotogramas que se generarán para cada segundo de animación.<br />
+      <span style="font-weight: bold;">Fotogramas</span>: informa del
+número de fotogramas que se generaran para esta animación.<br />
+      <br />
+En cada fotograma se muestra el estado correspondiente al tiempo de
+dicho fotograma de la representación que los actores hacen de sus
+papeles.<br />
+      <br />
+      <a name="guion"><span class="Titulo_2">Guión</span></a><br />
+      <br /><img style="width: 300px; height: 526px;" alt="" src="Imagenes/virtual3d_habilitaractor.png" align="right" hspace="8" />
+El guión comprende el conjunto de todos los papeles de la animación.
+cada papel está representado por un actor que
+puede ser una geometría, una cámara, una luz, un tren de objetos o una
+carpeta de objetos.<br />
+      <br />
+      <span style="font-weight: bold;">Nº</span>: indica el número de
+orden del papel actual en la lista de papeles, no tiene nada que ver
+con el tiempo en que se represente. Los botones "<span style="font-weight: bold;">&lt;</span>" y "<span style="font-weight: bold;">&gt;</span>" permiten navegar por dicha
+lista.<br />
+      <span style="font-weight: bold;">Añadir papel</span>: añade un papel
+nuevo al final de la lista de papeles.<br />
+      <span style="font-weight: bold;">Insertar</span> papel: añade un papel
+nuevo en la posición actual desplazando al papel actual y todos los que
+le siguen.<br />
+      <span style="font-weight: bold;">Borrar papel</span>: elimina el papel
+actual.<br />
+      <br /><img style="width: 350px; height: 193px;" alt="" src="Imagenes/virtual3d_guion.png" /><br />
+      <br />
+Los papeles son todos independientes unos de
+otros, no hay influencia o dependencia entre ellos. Pero puede haberla
+visualmente.<br />
+      <br />
+      <span style="font-weight: bold;">Papel (n/m)</span>: indica el
+orden del papel en el total de papeles y un nombre esplicativo.<br />
+      <span style="font-weight: bold;">Activo</span>: indica si el
+papel se representa o durante la animación.<br />
+      <span style="font-weight: bold;">Actor</span>: permite
+seleccionar el actor que representa el papel.<br />
+      <span style="font-weight: bold;">Editar
+Papel</span>: da lugar al <a href="V3D_editor_papeles.html">diálogo</a> en el que se especifican todas
+las
+características que el actor representa en su papel.<br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 451px;" alt="" src="Imagenes/virtual3d_editarpapel.png" /><br />
+      </div>
+      <br />
+      <a name="Editor_de_papeles"><span class="Titulo_2">Editor de papeles</span><br />
+
+      <br />
+
+Al editar un papel se muestra un menú en el que se pueden especificar
+las acciones que va a realizar el actor a lo largo del tiempo.<br />
+
+      <br />
+
+Como, dependiendo del tipo de actor, se pueden realizar unas acciones u
+otras aparecen tres "versiones" de este menú según el actor sea una
+geometría:<br />
+
+      <br />
+
+      
+      </a><div style="text-align: center;"><img style="width: 449px; height: 130px;" alt="" src="Imagenes/V3D_editor_papeles2.png" /><br />
+
+      </div>
+
+      <br />
+
+
+Una cámara o una luz:<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 109px;" alt="" src="Imagenes/V3D_editor_papeles1.png" /><br />
+
+      </div>
+
+      <br />
+
+
+O una carpeta de objetos:<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 67px;" alt="" src="Imagenes/V3D_editor_papeles3.png" /><br />
+
+      </div>
+
+      <br />
+
+
+Además este menú permite navegar entrelos distintos papeles de la
+animación con los botones que aparecen en la parte superior de la
+ventana o acceder a un papel concreto por su número de orden.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <a name="geometrias"><span class="Titulo_2">Editor de papeles de objetos geométricos</span></a><br />
+
+      <br />
+
+Los objetos geométricos pueden realizar cuatro tipos distintos de papeles dependiendo de las características que varíen:<br />
+
+      
+      <ul>
+<li>Se puede variar su posición haciendo que recorran caminos o
+"guías" que marquen las posibles posiciones del objeto a lo largo del
+tiempo.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se puede variar su orientación o giro.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se puede variar su transparencia.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se puede variar su grado de "aparecimiento" en la ventana.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se pueden variar más de una de sus características a la vez.</li>
+      </ul>
+
+      <br />
+
+Para añadir una acción que varíe cualquiera de estas características se despliega la opción correspondiente.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Desplazamiento</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón de desplegar <span style="font-weight: bold;">Desplazamiento</span>
+se muestran las acciones que desplazarán este objeto por el escenario.
+Al principio no hay ninguna acción, pero se pueden añadir pulsando el
+botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 361px;" alt="" src="Imagenes/V3D_editor_papeles_geo_desp.png" /><br />
+      </div>
+
+      <br />
+
+Los botones&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> permiten insertar o añadir acciones entre cualquiera otras dos o al final de la secuencia de acciones. En cada acción:<br />
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span> sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Guía</span>
+permite la selección de la guía que seguirá el objeto para desplazarse.
+Al seguir una guía, la orientación de la parte de "adelante" del objeto
+será tangente a la guía.</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Bezier</span> indica si se utiliza la guía como curva de Bezier o simplemente como línea suavizada.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">e0</span> y <span style="font-weight: bold;">ef</span> indican la posición a lo largo de la longitud de la guía que tendrá el objeto en el instante <span style="font-weight: bold;">t0</span> y cuando termine esta acción. Estas posiciones se expresan en metros medidos sobre la guía desde el primer punto de dicha guía.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">v0</span> y <span style="font-weight: bold;">vf</span> indican la velocidad del objeto en el instante <span style="font-weight: bold;">t0</span> y cuando termine esta acción. Estas velocidades se expresan en km/h.</li>
+      </ul>
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">a</span> es sólo informativo,
+muestra la aceleración necesaria para pasar de la velocidad inicial a
+la final durante la ejecución de esta acción. Esta aceleración se
+considera constante y se mide en m/s<sup>2</sup>.</li>
+      </ul>
+
+      
+      <ul>
+<li>Junto a los campos <span style="font-weight: bold;">Duración</span>, <span style="font-weight: bold;">ef</span> y <span style="font-weight: bold;">vf</span>
+aparece un botón de selección que indica cuál de esos 3 valores es
+calculado automáticamente cuando de modifiquen los demás. Se siguen las
+fórmulas:</li>
+      </ul>
+
+
+      
+      <div style="margin-left: 80px;">vf = v0 + a × t<br />ef = e0 + v0 × t + 0.5 × a × t<sup>2</sup></div>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Dibujar</span>
+indica que se muestre en el escenario los puntos en los que se ubicará
+el objeto durante la acción. También se marca con un color diferente y
+el texto correspondiente, las posiciones que coinciden con los segundos
+enteros durante los que transcurre la acción. Esta información no
+aparece al generar una animación.</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Suelo</span> indica que el objeto recorrerá la guía adaptandose a la superficie de la geometría que se encuentre debajo.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">Inc. X0</span>, <span style="font-weight: bold;">Inc. Xf</span>, <span style="font-weight: bold;">Inc. Y0</span>, <span style="font-weight: bold;">Inc. Yf</span>, <span style="font-weight: bold;">Inc. Z0</span> e <span style="font-weight: bold;">Inc. Zf</span>
+indican desplazamientos del objeto sobre la posición original que le
+correspondería según la guía. Los desplazamientos respecto a X se
+realizan en el eje transversal horizontal del objeto, negativos hacia
+la izquierda. Los desplazamientos respecto a Y se realizan en el eje
+longitudinal del objeto, negativos hacia atrás. Los desplazamientos
+respecto a Z se realizan en el eje vertical del objeto. Si estos
+desplazamientos son distintos al inicio de al fin, en cada punto se
+interpolará el desplazamiento entre ambos valores.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+      <br />
+
+Debajo de las opciones aparecen 3 barras horizontales con la evolución
+de la velocidad a lo largo del recorrido, "V(e)", de la velocidad a lo
+largo del tiempo, "V(t)" y de la distancia recorrida en cada intervalo,
+"E(t)"<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Rotación</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón de desplegar <span style="font-weight: bold;">Rotación</span> se muestran las acciones que harán al objeto girar sobre sí mismo.<br />
+
+
+Al principio no hay ninguna acción, pero se pueden añadir pulsando el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 337px;" alt="" src="Imagenes/V3D_editor_papeles_geo_rot.png" /><br />
+      </div>
+
+
+      <br />
+
+
+Los botones <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />
+permiten insertar o añadir acciones entre cualquiera otras dos o al
+final de la secuencia de acciones. Los elementos definibles por el
+usuario son:<br />
+
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span>, que sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>A continuación hay 9 casillas en las que se indican el ángulo que
+está girado el objeto en el momento de iniciar la acción y el número de
+vueltas más el ángulo final en el que quedará cuando termine la acción.
+Estos ángulos se miden en grados sexagesimales. Se especifican
+rotaciones para cada uno de los ejes. El orden de aplicación de los
+giros es:</li>
+      </ul>
+
+
+      
+      <ol style="margin-left: 40px;">
+<li>Sobre el eje Z</li><li>Sobre el eje X</li><li>Sobre el eje Y</li>
+      </ol>
+
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+
+Debajo de las opciones aparecen tres barras horizontales con la
+evolución del ángulo que está girado el objeto en cada eje con respecto
+al tiempo.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Transparencia</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón de desplegar <span style="font-weight: bold;">Transparencia</span>
+se muestran las acciones que cambiarán la transparencia del objeto a lo
+largo del tiempo de animación. Al principio no hay ninguna acción, pero
+se pueden añadir pulsando el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 225px;" alt="" src="Imagenes/V3D_editor_papeles_geo_trans.png" /><br />
+      </div>
+
+      <br />
+
+
+Los botones <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />
+permiten insertar o añadir acciones entre cualquiera otras dos o al
+final de la secuencia de acciones. Los elementos definibles por el
+usuario son:<br />
+
+
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span>, que sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">Inicial</span> y <span style="font-weight: bold;">Final</span>
+indican el grado de transparencia del objeto al iniciar y al terminar
+la acción. La transparencia se mide en porcentaje, correspondiendo 0 a
+ninguna transparencia (a no ser que ya la tenga el objeto en sí) y 100
+a transparencia total (con lo que dejará de verse).</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+Debajo de las opciones aparece una barra horizontal con la evolución de
+la transparencia del objeto con respecto al tiempo.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Aparición</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón de desplegar <span style="font-weight: bold;">Aparición</span> se muestran las
+acciones que harán que el objeto aparezca o desaparezca en forma de
+barrido desde un extremo a otro de la ventana, o hasta el centro, a lo
+largo del tiempo de animación.<br />
+
+Este tipo de acción, tiene sentido si el objeto al que se aplica ocupa
+mucha "cantidad" de ventana. Al principio no hay ninguna acción, pero
+se pueden añadir pulsando el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 463px; height: 249px;" alt="" src="Imagenes/V3D_editor_papeles_geo_apa.png" /><br />
+      </div>
+
+      <br />
+
+Los botones&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> permiten insertar o añadir acciones entre cualquiera otras dos o al final de la secuencia de acciones. En cada acción:<br />
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span>, que sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+
+
+
+      
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+
+
+      
+      
+      <ul>
+<li>
+Las opciones <span style="font-weight: bold; font-style: italic;">Ir apareciendo</span> e <span style="font-weight: bold; font-style: italic;">Ir desapareciendo</span> indican si el
+resultado final de la acción es que el objeto aparezca entero o
+desaparezca.</li>
+      </ul>
+
+      
+      <ul>
+<li>Las casillas <span style="font-weight: bold; font-style: italic;">De izquierda a derecha</span>, <span style="font-weight: bold; font-style: italic;">De derecha a izquierda</span>, <span style="font-weight: bold; font-style: italic;">De
+arriba a abajo</span> y <span style="font-weight: bold; font-style: italic;">De abajo a arriba</span> indican la dirección en que
+aparece o desaparece el objeto. Se pueden marcar varias, incluso todas.
+Si se marcar dos inversas el objeto aparece o desaparece completamente
+cuando ambos barridos se juntan en el centro de la ventana.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+Debajo de las opciones aparece una barra horizontal con la evolución de la aparición del objeto con respecto al tiempo.<br />
+
+      <br />
+
+      <br />
+
+      <span class="Titulo_2"><a name="camaras_luces">Editor de papeles de cámaras y luces</a></span><br />
+
+      <br />
+
+Las cámaras y luces pueden realizar tres tipos distintos de papeles dependiendo de las características que varíen.<br />
+
+      
+      <ul>
+<li>Se puede variar su posición haciendo que recorran caminos o
+"guías" que marque las posibles posiciones del elemento a lo largo del
+tiempo. La posición de la referencia (punto al que se mira en las
+cámaras o punto que marca la dirección de la luz) acompaña
+tangencialmente el recorrido de la posición.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se puede indicar un camino distinto para la posición del elemento que para la referencia.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se puede variar su orientación o giro.</li>
+      </ul>
+
+      
+      <ul>
+<li>Se pueden variar más de una de sus características a la vez.</li>
+      </ul>
+
+Para añadir una acción que varíe cualquiera de estas características se despliega la opción correspondiente.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Desplazamiento de la posición</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón para desplegar <span style="font-weight: bold;">Desplazamiento Posición</span>
+se muestran las acciones que desplazarán este objeto por el escenario.
+Al principio no hay ninguna acción, pero se pueden añadir utilizando el
+botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 340px;" alt="" src="Imagenes/V3D_editor_papeles_camluz_desp.png" /><br />
+      </div>
+
+      <br />
+
+En esta imagen se pueden ver todos los elementos definibles por el usuario. Los botones <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" /> permiten insertar o añadir acciones entre cualquiera otras dos o al final de la secuencia de acciones. En cada acción:<br />
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span> sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Guía</span>
+permite la selección de la guía que seguirá el objeto para desplazarse.
+Al seguir una guía, la orientación de la parte de "adelante" del objeto
+será tangente a la guía. La casilla <span style="font-weight: bold; font-style: italic;">Bezier</span> indica si se utiliza la guía como curva de Bezier o simplemente como línea suavizada.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">e0</span> y <span style="font-weight: bold;">ef</span> indican la posición a lo largo de la longitud de la guía que tendrá el objeto en el instante <span style="font-weight: bold;">t0</span> y cuando termine esta acción. Estas posiciones se expresan en metros medidos sobre la guía desde el primer punto de dicha guía.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">v0</span> y <span style="font-weight: bold;">vf</span> indican la velocidad del objeto en el instante <span style="font-weight: bold;">t0</span> y cuando termine esta acción. Estas velocidades se expresan en km/h.</li>
+      </ul>
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">a</span> es sólo
+informativo, muestra la aceleración necesaria para pasar de la
+velocidad inicial a la final durante la ejecución de esta acción. Esta
+aceleración se considera constante y se mide en m/s<sup>2</sup>.</li>
+      </ul>
+
+      
+      <ul>
+<li>Junto a los campos <span style="font-weight: bold;">Duración</span>, <span style="font-weight: bold;">ef</span> y <span style="font-weight: bold;">vf</span>
+aparece un botón de selección que indica cuál de esos 3 valores es
+calculado automáticamente cuando de modifiquen los demás. Se siguen las
+fórmulas:</li>
+      </ul>
+
+      
+      <div style="margin-left: 80px;">vf = v0 + a × t<br />ef = e0 + v0 × t + 0.5 × a × t<sup>2</sup><br /></div>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold;">Dibujar</span>
+indica que se muestre en el escenario los puntos en los que se ubicará
+el objeto durante la acción. También se marca con un color diferente y
+el texto correspondiente, las posiciones que coinciden con los segundos
+enteros durante los que transcurre la acción. Esta información no
+aparece al generar una animación.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">Inc. X0</span>, <span style="font-weight: bold;">Inc. Xf</span>, <span style="font-weight: bold;">Inc. Y0</span>, <span style="font-weight: bold;">Inc. Yf</span>, <span style="font-weight: bold;">Inc. Z0</span> e <span style="font-weight: bold;">Inc. Zf</span>
+indican desplazamientos del objeto sobre la posición original que le
+correspondería según la guía. Los desplazamientos respecto a X se
+realizan en el eje transversal horizontal del objeto, negativos hacia
+la izquierda. Los desplazamientos respecto a Y se realizan en el eje
+longitudinal del objeto, negativos hacia atrás. Los desplazamientos
+respecto a Z se realizan en el eje vertical del objeto. Si estos
+desplazamientos son distintos al inicio de al fin, en cada punto se
+interpolará el desplazamiento entre ambos valores.</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+Debajo de las opciones aparecen tres barras horizontales que muestran la evolución de la velocidad a lo largo del recorrido (<span style="font-weight: bold;">V(e)</span>), la evolución de la velocidad a lo largo del tiempo (<span style="font-weight: bold;">V(t)</span>) y la evolución de la distancia recorrida en cada intervalo, (<span style="font-weight: bold;">E(t)</span>) respectivamente.<br />
+
+      <br />
+
+Este menú define el movimiento de la cámara o de la luz haciendo que la
+referencia vaya solidaria y tangencial a la posición. Es el uso
+habitual cuando la cámara o la luz siguen a un objeto. Pero se puede
+especificar que la referencia tenga un comportamiento distinto como
+quedarse quieta o seguir otro camino según se explica en el siguiente
+menú.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Desplazamiento de la referencia</span><br />
+
+      <br />
+
+Este menú tiene la particularidad de que para poder desplegarlo (y utilizarlo) hay que activar la casilla <span style="font-weight: bold; font-style: italic;">Referencia es actor aparte</span>.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 109px;" alt="" src="Imagenes/V3D_editor_papeles4.png" /><br />
+      </div>
+
+      <br />
+
+Las opciones de este menú son identicas a las del menú <a style="font-weight: bold;" href="V3D_editor_papeles.html#desp_posicion">Desplazamiento de la posición</a> y funcionan de la misma forma.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Rotación</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón de desplegar <span style="font-weight: bold;">Rotación</span> se muestran las acciones que harán al objeto girar sobre sí mismo.<br />
+
+Al principio no hay ninguna acción, pero se pueden añadir pulsando el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 316px;" alt="" src="Imagenes/V3D_editor_papeles_camluz_rot.png" /><br />
+      </div>
+
+      <br />
+
+Los botones <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />
+permiten insertar o añadir acciones entre cualquiera otras dos o al
+final de la secuencia de acciones. Los elementos definibles por el
+usuario son:<br />
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span>, que sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+      
+      <ul>
+<li>A continuación hay 9 casillas en las que se indican el
+ángulo que está girado el objeto en el momento de iniciar la acción y
+el número de vueltas más el ángulo final en el que quedará cuando
+termine la acción. Estos ángulos se miden en grados sexagesimales. Se
+especifican rotaciones para cada uno de los ejes. El orden de
+aplicación de los giros es:</li>
+      </ul>
+
+      
+      <ol style="margin-left: 40px;">
+<li>Sobre el eje Z</li><li>Sobre el eje X</li><li>Sobre el eje Y</li>
+      </ol>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+Debajo de las opciones aparecen tres barras horizontales con la
+evolución del ángulo que está girado el objeto en cada eje con respecto
+al tiempo.<br />
+
+      <br />
+
+      <br />
+      <span class="Titulo_2"><a name="carpetas_objetos">Editor de papeles de carpetas de objetos</a></span><br />
+
+      <br />
+
+Las carpetas de objetos geométricos pueden realizar un único tipo de
+papel: Se puede variar su grado de aparecimiento en la ventana.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-style: italic; font-weight: bold;">Aparición</span><br />
+
+      <br />
+
+Si se pulsa sobre el botón de desplegar <span style="font-weight: bold;">Aparición</span>
+se muestran las acciones que harán que el objeto aparezca o desaparezca
+en forma de barrido desde un extremo a otro de la ventana, o hasta el
+centro, a lo largo del tiempo de animación.<br />
+
+Este tipo de acción, tiene sentido si el los objetos de la carpeta a la que se aplica ocupan mucha "cantidad" de ventana. 
+Al principio no hay ninguna acción, pero se pueden añadir pulsando el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 449px; height: 186px;" alt="" src="Imagenes/V3D_editor_papeles_car_apa.png" /><br />
+      </div>
+
+      <br />
+
+
+Los botones <img style="width: 16px; height: 16px;" alt="" src="Imagenes/boton_plus_v3d.png" />
+permiten insertar o añadir acciones entre cualquiera otras dos o al
+final de la secuencia de acciones. Los elementos definibles por el
+usuario son:<br />
+
+      
+      <ul>
+<li>El campo <span style="font-weight: bold;">Nombre</span>, que sirve para identificar brevemente en qué consiste la acción.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li>Los campos <span style="font-weight: bold;">t0</span> y <span style="font-weight: bold;">Duración</span>
+indican, respectivamente, el instante de comienzo de la acción y el
+tiempo que dura dicha acción. Estos tiempos se indican en segundos.</li>
+      </ul>
+
+      
+      <ul>
+<li>
+Las opciones <span style="font-weight: bold; font-style: italic;">Ir apareciendo</span> e <span style="font-weight: bold; font-style: italic;">Ir desapareciendo</span> indican si el
+resultado final de la acción es que el objeto aparezca entero o
+desaparezca.</li>
+      </ul>
+
+
+      
+      
+      <ul>
+<li>Las casillas <span style="font-weight: bold; font-style: italic;">De izquierda a derecha</span>, <span style="font-weight: bold; font-style: italic;">De derecha a izquierda</span>, <span style="font-weight: bold; font-style: italic;">De
+arriba a abajo</span> y <span style="font-weight: bold; font-style: italic;">De abajo a arriba</span> indican la dirección en que
+aparece o desaparece el objeto. Se pueden marcar varias, incluso todas.
+Si se marcar dos inversas el objeto aparece o desaparece completamente
+cuando ambos barridos se juntan en el centro de la ventana.</li>
+      </ul>
+
+
+
+      
+      
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Activo</span> indica que es una acción que se debe realizar, en otro caso sera ignorada hasta que se active.</li>
+      </ul>
+
+
+
+      
+      
+      
+      <ul>
+<li>La casilla <span style="font-weight: bold; font-style: italic;">Continuar anterior</span> indica que la nueva acción toma como datos de partida los datos finales de la acción anterior.</li>
+      </ul>
+
+
+
+      
+      
+      
+      <ul>
+<li>El botón&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_papelera.png" /> elimina la acción.</li>
+      </ul>
+
+
+Debajo de las opciones aparece una barra horizontal con la evolución de la aparición del objeto con respecto al tiempo.<br />
+      <br />
+<span class="Titulo_2"><a name="guia">Guías</a></span><br />
+      <br />
+Las
+guías son secuencias de puntos que definen un recorrido por la
+escena. Pueden ser líneas recogidas de cartografía, generadas a partir
+de la infomación de los ejes o generadas en este menú de animación.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 400px; height: 444px;" alt="" src="Imagenes/virtual3d_guias.png" /><br />
+      </div>
+
+      <br />
+      <span style="font-weight: bold;">Crear dibujándola</span>: inicia el modo de
+crear una guía picando puntos en el visor 3D. Se sale de este modo
+pulsando la tecla "Esc".<br />
+      <span style="font-weight: bold;">Crear seleccionando Línea</span>: permite selecionar
+una línea de la cartografía para utilizarla como guía.<br />
+      <span style="font-weight: bold;">Borrar</span>: elimina la guía
+actual.<br />
+      <span style="font-weight: bold;">Cargar</span>: permite añadir
+una guía a la lista de guías.<br />
+      <span style="font-weight: bold;">Guardar</span>: guarda una guía
+fuera del escenario.<br />
+      <span style="font-weight: bold;">Guía</span>: selector con todas
+las guías disponibles; se muestran los datos de esta guía.<br />
+      <span style="font-weight: bold;">Marcar guías</span>: indica que
+se pinten las guías en el visor 3D.<br />
+      <span style="font-weight: bold;">Nombre</span>: especifica el
+nombre de la guía actual.<br />
+      <span style="font-weight: bold;">Bezier</span>: califica la guía
+para que sus puntos sean considerados como nodos de curvas de Bezier.
+La linea no puede tener más de 63 vértices.<br />
+      <span style="font-weight: bold;">Punto</span>: indica el orden
+del punto de la guía que se muestra. Los botones "<span style="font-weight: bold;">&lt;</span>" y "<span style="font-weight: bold;">&gt;</span>" permiten navegar por los
+puntos de la guía.<br />
+      <span style="font-weight: bold;">Invertir</span>: invierte el
+orden de los puntos de la guía.<br />
+      <span style="font-weight: bold;">X, Y, Z</span>: informan y
+establecen las coordenadas del punto actual de la guía.<br />
+      <span style="font-weight: bold;">Mover</span>: permite mover el
+punto actual en el visor 3D.<br />
+      <span style="font-weight: bold;">Borrar</span>: elimina el punto
+de la guía.<br />
+      <span style="font-weight: bold;">Insertar</span>: permite
+insertar un punto en la guía a través del visor 3D.<br />
+      <span style="font-weight: bold;">Añadir</span>: añade puntos al
+final de la guía.<br />
+      <br />
+Las guías pueden generarse a partir de los ejes si entramos en Virtual
+3D desde el menú de Alzado. Se considera siempre que se generan a
+partir del código 1 de la superficie de los perfiles. Se supone que
+este código existe en todos los PK del eje y que, por tanto, no sigue
+cambios bruscos. Para generar otras guías que sigan o tros códigos debe
+hacerse desde los menús de obra lineal.<br />
+      <br />
+      <span style="font-weight: bold;">Eje</span>: indica el eje a
+partir del cual se genera la guía.<br />
+      <span style="font-weight: bold;">Lado</span>: se utiliza para
+indicar si la guía seguirá los pk en orden creciente o decreciente.<br />
+      <span style="font-weight: bold;">PK inicial, PK final</span>:
+establecen el intervalo de PKs en los que se genera la guía.<br />
+      <span style="font-weight: bold;">Generar</span>: genera la guía
+con los datos indicados.<br />
+      <br />
+Cuando se entra en el menú de animación aparece en la parte inferior de
+la ventana de Istram (cogiendo espacio del visor 3D) un diálogo que
+permite ver la relación temporal entre los papeles y manejar la
+visualización de la animación.<br />
+      <br />
+      <img style="width: 694px; height: 318px;" alt="" src="Imagenes/V3D_menu_animacion2.png" /><br />
+      <br />
+En este diálogo se muestran:<br />
+      <ul>
+        <li>Botones de manejo de la animación.</li>
+        <li>Escalas de segundos y fotogramas.</li>
+        <li>Una linea para seleccionar tanto el fotgrama actual como un rángo de fotogramas para "reproducir".</li>
+        <li>Los papeles, con sus nombres, representados sobre la cuadrícula de tiempos/fotogramas. El papel actual se marca en rojo.<br />
+        </li>
+        <li>Los nombres de los actores que realizan esos papeles.</li>
+      </ul>
+Con los botones se puede pasar a un fotograma concreto, al anterio, al
+siguiente al primero o al último. Se puede iniciar o parar la
+reproduccion de la animación. Se puede detener de forma que se vuelva
+al principio y se puede indicar que la reprodución sea cíclica. Los
+últimos botones son para mostrar mayor o menor rango de
+tiempos/fotogramas y ver cuando empiezan o terminan los papeles.<br />
+      <br />
+Las barras de los papeles permiten deslizarlos y mover el momento de inicio de los mismos.<br />
+
+      <br />
+      </td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

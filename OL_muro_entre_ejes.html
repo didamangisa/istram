@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Muro entre ejes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>MURO ENTRE EJES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <img src="Imagenes/modelo_muro_entre_ejes.png" style="width: 309px; height: 263px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Mediante
+esta opción el usuario puede definir un muro de contención de tierras
+entre dos ejes pseudoparalelos y cercanos entre sí. Un caso típico es
+un ramal de salida ascendente, o un tramo en el que dos calzadas de
+ejes distintos estén muy próximas entre sí.<br />
+      <br />
+Desde este cuadro de diálogo se especifican los parámetros que
+determinan la ubicación del muro respecto al eje más bajo, que será el
+eje actual.<br />
+<br />
+      El usuario indicará si este muro estará situado a la
+derecha o izquierda del eje, y la geometría del muro corresponderá a la
+indicada en muro de desmonte de la sección tipo que corresponda, de
+acuerdo con la tabla ZONAS DE CÁLCULO.<br />
+      <br />
+Al calcular desde PROYECTO y teniendo activada la casilla <span style="font-weight: bold;">[ENL]</span>
+para los ejes involucrados, el programa trunca ambos automáticamente.
+De todas formas, el usuario puede editar la línea de frontera que se
+genera en el fichero&nbsp;<span class="Archivo">murEE#.lfr</span> (siendo # el número de eje).<br />
+      <br />
+Se trunca el eje secundario aunque el muro definido no tenga ancho. La
+cuneta del eje principal utiliza el punto de enganche definido en la
+sección de desmonte correspondiente.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_muro_entre_ejes.png" style="width: 620px; height: 204px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 74px;">Dis.ini<br />
+Dis.fin<br />
+</td>
+            <td style="vertical-align: top; height: 5px; width: 598px; text-align: justify;">Distancias
+inicial y final del código indicado al punto de encuentro interior
+entre muro y zapata. Si estos valores son distintos, el programa
+efectúa una transición lineal.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 74px;">dZ ini / dZ fin<br />
+Z ini / Z fin<br />
+</td>
+            <td style="vertical-align: top; height: 8px; width: 598px; text-align: justify;">Diferencia
+de cota entre la rasante y el punto anteriormente indicado (en el caso
+de señalar dZ) o cota absoluta (en el caso de señalar Z). El programa
+efectúa una transición lineal entre los valores indicados.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 74px;">OTRO EJE<br />
+</td>
+            <td style="vertical-align: top; height: 18px; width: 598px; text-align: justify;">Número
+de eje respecto al cual se interpondrá este muro. Su rasante ha de
+estar por encima del eje actual en todo el intervalo de PK&#8217;s
+especificado.<br />
+            <br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 74px;"><span style="font-weight: bold;">Código</span><br />
+            </td>
+            <td style="vertical-align: top; width: 598px; text-align: justify;">Aquí se indica el código de la rasante del eje actual a partir del cual se medirán las <span style="font-weight: bold;">Dis.ini</span> y <span style="font-weight: bold;">Dis.fin</span> especificadas. Si se deja indicado como código el 0, el programa toma como referencia el eje en planta.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">a</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Ancho que puede asentar el pie del terraplén sobre la cabeza del muro.<br />
+<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 74px;"><span style="font-weight: bold;">PK INICIAL<br />
+PK FINAL</span><br />
+            </td>
+            <td style="vertical-align: top; width: 598px;">Tramo en el que se aplicará el muro entre ejes.<br />
+<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Cuando el muro tiene un talud negativo en el <a href="OL_muro_desmonte.html">trasdos</a>,
+o el otro eje se apoya sobre el muro a una distancia "a" positiva del
+borde del trasdos, entonces se rehace la geometría del otro eje (líneas
+de la subrasante, suelos seleccionados, y saneos) para que no haya
+duplicidad en las mediciones.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/muro_ejes_trasdos_neg.png" style="width: 620px; height: 294px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

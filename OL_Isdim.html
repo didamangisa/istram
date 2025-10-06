@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ISDIM</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ISDIM<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><a href="#conceptos_previos"><img style="border: 0px solid ; width: 81px; height: 78px;" alt="" src="Imagenes/icono_isdim.png" align="right" hspace="6" /></a><a href="#conceptos_previos">Conceptos previos</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu_proyecto">Menú Proyecto</a></li>
+        <li><a href="#menu_configuracion">Menú Configuración</a></li>
+        <ul>
+          <li><a href="#mediciones">Mediciones</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#elementos_tipo">Elementos Tipo</a></li>
+          <li><a href="#menu_modificar">Menú Modificar</a></li>
+        </ul>
+        <li><a href="#menu_compensacion">Menú Compensación</a></li>
+        <ul>
+          <li><a href="#comp_sin_cierre_iz_dcha">Compensación automática sin cierre izquierda - derecha</a></li>
+          <li><a href="#comp_sin_cierre_dcha_izda">Compensación automática sin cierre derecha - izquierda</a></li>
+          <li><a href="#comp_sin_cierre_dist_min">Compensación automática sin cierre distancias mínimas</a></li>
+          <li><a href="#comp_sin_cierre_trans">Compensación automática sin cierre transversal D - T</a></li>
+          <li><a href="#comp_sin_cierre_esp">Compensación automática sin cierre especial</a></li>
+          <li><a href="#comp_con_cierre">Compensación automática con cierre</a></li>
+          <li><a href="#resultados_e_informes">Resultado e Informes</a></li>
+        </ul>
+        <li><a href="#menu_compensacion_pks">Menú Compensación Modo Pks</a></li>
+		<li><a href="#menu_ver">Menú Ver</a></li>
+        <ul>
+          <li>Subáreas</li>
+        </ul>
+
+        <ul>
+          
+          <ul>
+            <li><a href="#totales_relaciones">Totales Relaciones</a></li>
+          </ul>
+
+          
+          <ul>
+            <li><a href="#mediciones_sal">Mediciones</a></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_Isdim.html#compensados">Total Compensados</a></span></span></span></span></li>
+            <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#sincompensar">Total Sin Compesar</a><br />
+              </span></span></span></span></li>
+
+          </ul>
+          <li>Subáreas + Particiones<br />
+          </li>
+
+          
+          <ul>
+            <li><a href="#particiones">Total compensado</a></li>
+          </ul>
+
+          
+          <ul>
+            <li><a href="#particiones_con_rellenos">Relaciones de compensación<br />
+</a></li>
+          </ul>
+
+          
+          <li><a href="#perfil_longitudinal">Perfil Longitudinal</a></li>
+          <li><a href="#rasante">Rasante</a></li>
+          <li><a href="#curva_compensacion">Curva Compensación</a></li>
+          <li><a href="#pks_gravedad">Pks Gravedad</a></li>
+          <li><a href="#leyenda">Generar Leyenda</a><br />
+          </li>
+
+          
+        </ul>
+      </ul>
+      <span class="Titulo_2"><a name="conceptos_previos">Conceptos Previos</a></span><a name="conceptos_previos"><br />
+      <br /></a></span>En un proyecto vamos a tener una diversidad de ejes como podrían ser el
+Eje Tronco, Eje Enlaces, Eje Camino, Eje Préstamo, Eje Vertedero...<br />
+Por otra parte, cada eje, una vez calculado, estará formado por Áreas
+como pueden ser Desmonte, Terraplén, etc. Además cada área puede ser de
+Excavación o de Relleno.<br />
+      <br />
+Ejemplo: <br />
+      <br />
+</span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 339px; text-align: center;">Tronco</td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Desmonte (Excavación)</li>
+              <li>Saneo (Excavación)</li>
+              <li>Terraplén (Relleno)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Enlaces<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Desmonte (Excavación)</li>
+              <li>Saneo (Excavación)</li>
+              <li>Terraplén (Relleno)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Caminos<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Desmonte (Excavación)</li>
+              <li>Saneo (Excavación)</li>
+              <li>Terraplén (Relleno)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Préstamo<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Préstamo (Excavación)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Vertedero<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Vertedero (Relleno)</li>
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Cada área tendrá <span style="font-weight: bold;">Subáreas</span> definidas a lo largo de los Pks del eje.<br />
+      <br />
+Las áreas tendrán unas propiedades llamadas <span style="font-weight: bold;">Relaciones de Compensación</span>
+que son las que guiarán el proceso de compensación del material. Dichas
+Relaciones de Compensación se definen a partir de la información
+proporcionada por las mediciones obtenidas del módulo de Obra Lineal.<br />
+Las subáreas heredan las Relaciones de Compensación de sus Áreas origen
+pero se les pueden modificar esas relaciones independientemente.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 324px; height: 243px;" alt="" src="Imagenes/isdim_esquema_areas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo">
+      <br />
+      <span class="Titulo_2"><a name="inicio">Inicio</a></span><a name="inicio"><br />
+      <br />
+ISDIM® obtiene la información necesaria directamente del módulo de Obra
+Lineal. Para ello necesita acceder al contenido de los ficheros
+pkcvXX.res, que se generan durante el cálculo del proyecto.<br />
+      <br />
+En el menú </a><a href="OL_proyecto.html">PROYECTO</a>
+del módulo de Obra
+Lineal hay que marcar la opción Generar pkcvXX.res y tener un eje para
+proyectar volúmenes, para que a la hora de hacer el cálculo del
+proyecto se generen ese tipo de ficheros. Es necesario tener activadas
+las teclas de CAL, REC, RFI como mínimo, de los diferentes ejes en los
+que queramos analizar la compensación de tierras.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 582px; height: 389px;" alt="" src="Imagenes/isdim_generar_pkcv.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El módulo ISDIM® se inicia desde el menú ALZADO, dentro del apartado MENÚS Y OPCIONES.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 546px; height: 219px;" alt="" src="Imagenes/isdim_entrada_alzado.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+La ventana principal del módulo ISDIM® es la siguiente:<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 639px; height: 387px;" alt="" src="Imagenes/isdim_proyecto_ventana.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Dicha ventana se divide en cuatro apartados o menús: PROYECTO, CONFIGURACIÓN, COMPENSACIÓN y VER.<br />
+      <br />
+El apartado CONFIGURACIÓN cambiará su nombre por MODIFICAR cuando el
+proyecto se encuentre generado, para que tengamos en cuenta que habrá
+ciertas características que no se podrán configurar.<br />
+      <br />
+      <a name="menu_proyecto"><span class="Titulo_2">Menú Proyecto</span><br />
+      <br />
+En el menú PROYECTO, en la parte izquierda de la ventana se nos muestra
+un árbol con los grupos de ejes extraídos del módulo de Obra Lineal.
+Cada grupo de ejes estará formado por uno o varios ejes individuales.
+ISDIM® tratará cada grupo de ejes como una sola entidad.<br />
+      <br />
+En la parte derecha de la ventana, se muestran las mediciones
+encontradas en los ficheros pkcvXXX.res asociadas a cada grupo de ejes,
+junto con la asignación a las áreas de ISDIM®. Al entrar al módulo por
+primera vez, se establece una asignación por defecto, en función del
+tipo de área de la medición, para el tipo de área de <span style="font-weight: bold;">Excavación</span>, se
+asigna el área de Desmonte, y para el tipo de área de <span style="font-weight: bold;">Relleno</span> se asigna
+el área de Terraplén.<br />
+      <br /></a><img style="width: 68px; height: 26px;" alt="" src="Imagenes/isdim_guardar_asociacion.png" align="right" hspace="6" />
+Podemos modificar dicha asignación, así como guardarla, para
+posteriormente utilizarla en este o en otros proyectos. En la esquina
+superior derecha de esa ventana de asociación de mediciones, disponemos
+de tres botones para poder realizar estas acciones (Nueva asociación,
+Cargar asociación, y Guardar asociación) .<br />
+
+      <br />
+
+Si tenemos seleccionado en el árbol el nodo Grupos de Ejes, la
+asignación de mediciones se hará por igual para todos los grupos de
+ejes. Si seleccionamos un nodo de un grupo de ejes determinado (por
+ejemplo Tronco), la asignación de mediciones se hará únicamente para
+ese grupo de ejes. Esto nos permite una gran flexibilidad a la hora de
+asociar las mediciones a las áreas de ISDIM®.<br />
+
+      <br />
+
+Una vez terminada la asignación de mediciones, podemos proceder a
+generar el proyecto ISDIM®. Para ello basta con pulsar el botón GENERAR
+situado en la esquina inferior derecha. Una vez terminado el proceso de
+generación, se mostrará en la ventana gráfica el resultado de la
+generación, donde se dibujan a lo largo de los ejes correspondientes,
+unos rectángulos en color verde que simbolizan las subáreas de demonte,
+y en color rojo las subáreas de terraplén. Si no deseamos tener en
+cuenta algún eje o grupo de ejes a la hora de generar el proyecto,
+basta con desactivar el nodo en el árbol. El grupo de ejes del tronco,
+por su importancia, no se puede desactivar.<br />
+
+      <br />
+
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 579px; height: 427px;" alt="" src="Imagenes/isdim_generar_areas.png" /></span></span></span><a name="menu_proyecto"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Para la generación del proyecto, el programa usa por defecto una
+configuración predeterminada de relaciones de compensación, que son las
+que guiarán el proceso posterior de compensación de tierras. Dichas
+relaciones se pueden editar dentro del menú </span></span></span><a href="#menu_configuracion">Configuración</a>. Debemos hacerlo antes de generar el proyecto, puesto que una vez generado ya no podremos modificar dichas relaciones.<br />
+      <br />
+En la parte inferior de la ventana Proyecto, se dispone una serie de casillas, con las que podemos <span style="font-weight: bold;">Guardar/Cargar</span> el proyecto, e <span style="font-weight: bold;">Inicializar</span> (vacía toda la estructura generada previamente). Además<span style="font-weight: bold;">,
+</span>podemos exportar el proyecto ISDIM® al formato EDM de
+ISTRAM®/ISPOL® desde el desplegable de Archivo &gt; Guardar dibujo
+como...,
+para su posterior tratamiento en dicho módulo (impresión de planos,
+exportación al formato DXF, DGN, etc.). <br />
+Los estilos de línea utilizados van de la L705 a la L719 y los rótulos
+van del R33 al R42. A partir de la definición de estos elementos se
+podría establecer una propia librería con la definición de las capas
+que al usuario le interese.<br />
+
+      <br />
+
+Encima de estos botones, se encuentran las opciones <span style="font-weight: bold;">Tamaño página</span>, que nos permite seleccionar el tamaño de la hoja sobre la que se generará el proyecto ISDIM®, y la opción <span style="font-weight: bold;">Dist.Min.Subáreas</span>,
+que nos permite indicar el valor mínimo en metros que se considerará a
+la hora de generar las subáreas del proyecto, o sea, que no se creará
+una subárea nueva situada a una distancia menor que ese valor de otra
+subárea, sino que se consideraría que se trata de la misma subárea,
+añadiendo su volumen a la misma.<br />
+A partir de la casilla <span style="font-weight: bold;">Num.Decimales</span>
+podremos indicarle el número de decimales que me aparecerán en los
+listados de compensación de tierras y en la configuración de los
+parámetros de las diferentes áreas y subáreas. Como tope se establecen
+cuatro decimales.<br />
+Se permite seleccionar la <span style="font-weight: bold;">Orientación</span> en la que se va a representar el proyecto, ya sea horizontal o vertical.<br />
+      <br />
+<span style="font-weight: bold;">Modo Subáreas</span>. Cuando esta opción se encuentra desactivada, el proyecto
+que se genera almacena toda la información de pks. Si se encuentra activada,
+se agrupan las mediciones encontradas en subáreas, reduciendo así la cantidad
+de información almacenada, lo cual hace que las operaciones se realicen de forma
+más rápida. El proceso de compensación es distinto en cada caso.<br />
+      <br />
+Mediante el comando <span style="font-weight: bold;">F4</span> del
+teclado de nuestro ordenador se mostrará un eco informativo en forma de
+cruz, que nos puede resultar de ayuda durante la visualización de los
+bloques del proyecto. En la línea de comandos podremos seguir el PK
+marcado por la cruz.<br />
+      <br />
+      <span style="font-weight: bold;">TRAMIFICACIÓN</span>: </span>genera tramos cada cierto intervalo indicado por el usuario.<br />
+      <br />
+Mediante la <span style="font-weight: bold;">Tramificación automática</span> podremos realizar tramos cada un cierto intervalo.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 630px; height: 190px;" alt="" src="Imagenes/isdim_tram.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      <span class="Parrafo">
+      <br />
+      <a name="menu_configuracion"><span class="Titulo_2">Menú Configuración</span><br />
+      <br />
+Este menú cambiará su nombre por MODIFICAR cuando el proyecto se
+encuentre generado, para que tengamos en cuenta que habrá ciertas
+características que no se podrán configurar una vez se encuentre el
+proyecto generado.<br />
+      <br />
+      </a></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 594px; height: 327px;" alt="" src="Imagenes/isdim_generar_modificar.png" /><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Una vez Generado el proyecto, no podré modificar los porcentajes en las Relaciones de Compensación.<br />
+      <br />
+En este menú disponemos de tres apartados: <span style="font-weight: bold;">Mediciones</span>, <span style="font-weight: bold;">Áreas</span> y <span style="font-weight: bold;">Elementos Tipo</span>.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 432px; height: 402px;" alt="" src="Imagenes/isdim_configuracion.png" /><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></div>
+      <ul>
+        <li><a name="mediciones"><span style="font-weight: bold;">Mediciones</span>:</a></li>
+      </ul>
+En el apartado Mediciones, podemos visualizar las relaciones de
+compensación asociadas a cada tipo de medición, así como su
+modificación.<br />
+
+      <br />
+
+ISDIM® considera que para que pueda haber movimiento de material entre
+dos subáreas, esas subáreas deben tener una característica de material
+en común, es decir, deben tener volumen disponible de una misma
+relación de compensación.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 326px; height: 194px;" alt="" src="Imagenes/isdim_mediciones_ejemplo1.png" /><br />
+
+      </div>
+      <br />
+En el ejemplo anterior las subáreas DT1 y TT1 pueden compensar un
+volumen de 4000 con la relación de compensación Indefinido.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 338px; height: 200px;" alt="" src="Imagenes/isdim_mediciones_ejemplo2.png" /><br />
+
+      </div>
+      <br />
+
+En este otro ejemplo las dos subáreas no pueden compensar nada de material porque no tienen relaciones de compensación en común.<br />
+
+      <br />
+
+Todas las subáreas tienen unas relaciones de compensación que
+inicialmente tendrán los porcentajes de volumen en sus relaciones
+siguiendo lo establecido en las áreas a las que pertenecen, pero luego
+el usuario puede modificar esos valores para cada subárea
+independientemente.<br />
+
+      <br />
+
+Podremos modificar su nombre, el porcentaje de cada una de ellas, el
+color con el que se representarán en el gráfico, así como añadir nuevas
+relaciones. ISDIM® proporciona por defecto una serie de relaciones, las
+cuales no se pueden eliminar, pero sí modificar su nombre, porcentaje y
+color de representación. Sí se podrán eliminar aquellas relaciones que
+hayan sido creadas por el usuario.<br />
+
+      <br />
+
+En la parte izquierda de la ventana de Configuración, se muestra un
+árbol con las distintas mediciones encontradas en el proyecto,
+clasificadas por su tipo, ya sean de Excavación o de Relleno.
+Dependiendo del nodo que tengamos seleccionado en el árbol, las
+modificaciones que se hagan en las relaciones de compensación afectarán
+a una sola medición o a varias. Esto es, si tenemos seleccionada una
+sola medición en el árbol (por ejemplo, D_TIERRA), las modificaciones
+que se hagan solo afectarán a esta medición. En cambio, si tenemos
+seleccionado un nodo de nivel superior (por ejemplo, Relleno), las
+modificaciones que se hagan afectarán a todas las mediciones que
+pertenezcan a ese tipo de medición. Y si se selecciona el nodo
+principal del árbol (Mediciones), las modificaciones que se hagan
+afectarán a todas las mediciones del proyecto.<br />
+
+      <br />
+
+      <img style="width: 159px; height: 151px;" alt="" src="Imagenes/isdim_nueva_relacion.png" align="right" hspace="6" />Para añadir una nueva relación, pulsaremos sobre el botón <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_configuracion_icono_mas.png" />,
+con lo que aparecerá una nueva ventana donde podremos introducir los
+datos de la nueva relación. Para elegir el color con el que se
+representará la relación de compensación en la ventana gráfica, se nos
+mostrará la paleta de color de ISTRAM®/ISPOL®.<br />
+
+      <br />
+
+Para borrar una relación creada por el usuario, pulsaremos el botón <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> situado a la derecha de la relación que deseamos eliminar.<br />
+
+      <br />
+
+Debemos tener cuidado al modificar los valores de porcentaje, ya que la suma total debe dar el 100%.<br />
+
+      <br />
+
+Una vez efectuadas la modificaciones correspondientes, debemos pulsar
+el botón Aplicar para confirmar su aplicación a partir de este momento
+a la hora de generar el proyecto. Pulsando el botón Restaurar, se
+reestablecerán los valores originales. Mediante las opciones
+Cargar/Salvar se puede salvar un fichero con esta configuración, para
+su posterior uso en este u otros proyectos.<br />
+
+      <ul>
+        <li><a name="areas"><span style="font-weight: bold;">Áreas</span>:</a></li>
+      </ul>
+En este apartado se definen las áreas del proyecto ISDIM®. En la parte
+izquierda de la ventana se muestra un árbol con los ejes del proyecto,
+y a su derecha, las áreas de las que se compone cada eje. Si
+seleccionamos el nodo de un eje individual, se mostrarán las áreas de
+ese eje, y si seleccionamos el nodo inicial del árbol (Grupos de Ejes),
+se mostrarán las áreas de todos los ejes del proyecto. En esta ventana
+podremos añadir nuevas áreas, modificar las existentes, y eliminar las
+que no deseemos utilizar en el proyecto.<br />
+
+      <br />
+
+Por defecto, ISDIM® crea las áreas Desmonte, Terraplén y Saneo en todos
+los ejes del proyecto. Las dos primeras son fijas y no se pueden
+eliminar. Además, también se crean dos ejes especiales denominados
+Préstamo y Vertedero, que disponen de una única área del mismo nombre.
+Si no deseamos que se utilicen estos ejes especiales, o cualquier otro
+de los que se compone el proyecto, se pueden desactivar en el árbol,
+con lo que no se tendrán en cuenta a la hora de generar el proyecto. El
+eje del tronco, por su importancia, no se puede desactivar.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 462px; height: 365px;" alt="" src="Imagenes/isdim_areas_cuadro_dialogo.png" /><br />
+      </div>
+
+      <br />
+      <img style="width: 148px; height: 169px;" alt="" src="Imagenes/isdim_nueva_area.png" align="right" hspace="6" />Para añadir una nueva área, pulsaremos el botón <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" />, con lo que aparecerá una nueva ventana donde podremos introducir los datos de la nueva área.<br />
+      <br />
+Indicaremos su <span style="font-weight: bold;">Nombre</span>, el <span style="font-weight: bold;">Tipo</span> (si es de Excavación o de Relleno), y un <span style="font-weight: bold;">Código</span>
+alfabético, que se utilizará para dar nombre a las subáreas del
+proyecto, añadiendo un sufijo numérico a este código. Mediante la
+activación de la casilla <span style="font-weight: bold;">Es Préstamo/Vertedero</span> indicaremos si el área se va a comportar como un área especial de préstamo o vertedero.<br />
+      <br />
+Pulsando el botón eliminaremos <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> el área correspondiente.<br />
+      <br />
+Una vez definidas todas la áreas, pulsaremos la casilla <span style="font-weight: bold;">Aplicar</span> para que se consideren los cambios efectuados. Pulsando la casilla <span style="font-weight: bold;">Restaurar</span>, se reestablecerán los valores originales.<br />
+      <br />
+      <ul>
+        <li><a name="elementos_tipo"><span style="font-weight: bold;">Elementos Tipo</span></a></li>
+      </ul>
+En este apartado es posible dar de alta elementos tipo (viaductos,
+túneles, etc.) en el eje del tronco del proyecto. Los elementos tipo
+pertenecerán a una clase de elemento tipo. Disponemos de las siguientes
+clases y sus elementos tipo correspondientes:<br />
+
+      <br />
+
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 339px; text-align: center;">Obras de fábrica<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Tubos</li>
+              <li>Marcos</li>
+              
+              
+            </ul>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Túneles y Falsos Túneles<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Túnel</li>
+              <li>Falso Túnel</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;">Estructuras y Viaductos<br />
+            </td>
+            <td style="vertical-align: top;">
+            <ul>
+              <li>Viaductos</li>
+              <li>Pasos Superiores</li>
+              <li>Pasos Inferiores</li>
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+      <div style="text-align: center;"><img style="width: 571px; height: 342px;" alt="" src="Imagenes/isdim_elementos_tipo_dialogo.png" /><br />
+
+      </div>
+      <br />
+
+      <img style="width: 196px; height: 185px;" alt="" src="Imagenes/isdim_nuevo_elemento_tipo.png" align="right" hspace="6" />Para añadir un elemento tipo, pulsaremos sobre el botón <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" />, con lo que aparecerá una nueva ventana donde podremos introducir los datos del nuevo elemento tipo.<br />
+
+      <br />
+
+Seleccionaremos la <span style="font-weight: bold;">Clase</span> del elemento tipo mediante el desplegable correspondiente, introduciremos si así lo deseamos una <span style="font-weight: bold;">Descripción</span>,
+la cual se mostrará junto al símbolo del elemento tipo en la ventana
+gráfica, como se puede observar en la figura a continuación, y el <span style="font-weight: bold;">Pk Inicial</span> y <span style="font-weight: bold;">Pk Final</span>. Activando la casilla <span style="font-weight: bold;">Vadeable</span>,
+indicamos al proyecto que dicho elemento tipo es superable o accesible,
+lo cual se tendrá en cuenta a la hora de realizar el cálculo de
+compensación de tierras. Todos estos datos se podrán modificar en
+cualquier momento.<br />
+
+      <br />
+
+Pulsando el botón&nbsp;<img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> eliminaremos el elemento tipo correspondiente.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 618px; height: 181px;" alt="" src="Imagenes/isdim_dibujo_elementos.png" /><br />
+
+      </div>
+      <br />
+
+      <ul>
+        <li><a name="menu_modificar"><span style="font-weight: bold;">Menú Modificar</span></a></li>
+      </ul>
+Una vez se ha generado el proyecto, podemos modificar varias de sus características. Ello lo podemos hacer desde el apartado <span style="font-weight: bold;">Modificar</span>.<br />
+
+      <br />
+
+En este menú disponemos de dos apartados: <span style="font-weight: bold;">Ejes/Áreas</span>, y <span style="font-weight: bold;">Subáreas</span>.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="menu_modificar">Ejes/Áreas:</a></li>
+      </ul>
+En este apartado podemos ver y editar las <span style="font-weight: bold;">relaciones de compensación</span> y las <span style="font-weight: bold;">propiedades de excavabilidad</span>
+de las subáreas del proyecto a nivel individual, así como de todo un
+eje o área determinada. Las propiedades de excavabilidad (coeficiente
+de esponjamiento), se obtienen inicialmente de las mediciones del
+módulo de Obra Lineal.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 403px; height: 340px;" alt="" src="Imagenes/isdim_areas_subareas.png" /><br />
+
+      </div>
+      <br />
+
+Dependiendo del nodo que tengamos seleccionado en el árbol, las
+modificaciones que se hagan en las relaciones de compensación y
+propiedades de excavabilidad afectarán a una sola subárea o a varias.
+Esto es, si tenemos seleccionada una sola subárea en el árbol (por
+ejemplo, DT1), las modificaciones que se hagan solo afectarán a esta
+subárea. En cambio, si tenemos seleccionado un nodo de nivel superior
+(por ejemplo, Desmonte), las modificaciones que se hagan afectarán a
+todas las subáreas que cuelguen de ese nodo (en este caso, todas las
+subáreas de desmonte del tronco). Y si se selecciona el nodo principal
+del árbol (Grupos de Ejes), las modificaciones que se hagan afectarán a
+todas las subáreas del proyecto.<br />
+
+      <br />
+
+Debemos tener cuidado al modificar los valores de porcentaje, ya que la suma total debe dar el 100%.<br />
+
+      <br />
+
+Una vez efectuadas la modificaciones correspondientes, debemos pulsar el botón <span style="font-weight: bold;">Aplicar</span> para confirmar los cambios realizados.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="menu_modificar">Subáreas</a></li>
+      </ul>
+En este apartado podemos ver y editar los datos de las subáreas del proyecto, así como sus <span style="font-weight: bold;">relaciones de compensación</span> y las <span style="font-weight: bold;">propiedades de excavabilidad</span>. Al contrario que en el apartado anterior, no se permite seleccionar un eje o área completa, sólo las subáreas individuales.<br />
+
+      <br />
+
+A esta ventana se accede también haciendo clic con el botón derecho del ratón sobre la subárea deseada en la ventana gráfica.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 673px; height: 340px;" alt="" src="Imagenes/isdim_subarea.png" /><br />
+
+      </div>
+      <br />
+
+No todos los datos de la subárea son editables. Podemos modificar el <span style="font-weight: bold;">Volumen</span> de la subárea, sus valores de <span style="font-weight: bold;">Pks</span>, e incluso dar una <span style="font-weight: bold;">Distancia de Usuario</span>, que sería una distancia añadida que se debería recorrer para alcanzar dicha subárea.<br />
+
+      <br />
+
+Una vez efectuadas la modificaciones correspondientes, debemos pulsar la casilla <span style="font-weight: bold;">Aplicar</span> para confirmar los cambios realizados. Clicando en la casilla <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" /> eliminamos el contenido de la subárea seleccionada. Esta operación podrá deshacerse a partir del comando <img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_toolBarEstandar_deshacer.png" />.<br />
+      <br />
+En el momento que Ejecutamos las relaciones de compensación desde la pestaña <a href="OL_Isdim.html#menu_compensacion">Compensación</a>
+se realizarán las distintas compensaciones de materiales. Podremos en
+este momento situarnos en una determinada subárea y clicando en la
+pantalla con el botón derecho del ratón podremos <span style="font-weight: bold;">descompensar</span> dicha subárea o también clicando en el icono <img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_descompensar.png" />.<br />
+
+      <br />
+A la hora de descompensar una subárea, se mostrará un cuadro de diálogo
+con todas las particiones que intervienen en la compensación, pudiendo
+seleccionar aquellas que queramos eliminar.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 519px; height: 189px;" alt="" src="Imagenes/isdim_descomp_subarea_part.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <br />
+En las áreas de <span style="font-weight: bold;">Préstamo/Vertedero</span>, podemos añadir manualmente las subáreas
+de préstamo o vertedero que necesitemos. Para ello, seleccionaremos en el árbol
+el área correspondiente, y haciendo click sobre el botón <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" /> en la ventana DATOS DE LA SUBÁREA,
+se nos mostrará una nueva ventana en la que podremos introducir los datos del préstamo/vertedero
+en cuestión (volumen, pk de entrada en el eje, distancia de usuario). Una vez creada la subárea,
+podemos editar sus relaciones de compensación adecuándolas a las necesidades del proyecto.<br />
+      <br />
+	  
+      <span class="Parrafo"><br />
+
+      <a name="menu_compensacion"><span class="Titulo_2">Menú Compensación</span><br />
+      <br />
+Una vez tenemos el proyecto generado, ya podemos proceder a realizar el cálculo de la compensación de tierras.
+El menú de Compensación es distinto según el modo en el que hayamos generado el proyecto (opción Modo Subáreas activada o no).
+Para el caso de no utilizar el Modo Subáreas, ver el punto </a><a href="#menu_compensacion_pks">Menú Compensación Modo Pks.</a><br />
+	<br />
+En el menú de <span style="font-weight: bold;">Compensación</span>, seleccionaremos en primer lugar el tipo de compensación que queremos efectuar, y pulsamos la casilla <span style="font-weight: bold;">INICIAR</span>.
+Tras finalizar el proceso de compensación se generará un resumen de la
+misma con el material compensado y el material pendiente de
+compensación, que se puede consultar mediante la opción <span style="font-weight: bold;">Resultados</span>. Resulta interesante, tras realizar cualquier tipo de compensación, visualizar la curva de compensación. Mediante la opción <span style="font-weight: bold;">Descompensar</span>,
+se eliminarán todas las compensaciones realizadas, para así poder
+volver a realizar un nuevo proceso de compensación desde cero, ya que
+de lo contrario, se partirá de la última compensación realizada.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 421px; height: 297px;" alt="" src="Imagenes/isdim_compensacion_dialogo.png" /><br />
+
+      </div>
+      <br />
+A partir de la casilla <span style="font-weight: bold;">+Opciones</span> podremos definir valores máximos y mínimos de Acarreos:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 346px; height: 429px;" alt="" src="Imagenes/isdim_acarreos.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Mediante este cuadro de Relaciones y Acarreos podremos configurar las
+distancias mínimas y máximas de acarreo de material para cada relación
+de compensación. De este modo, dos subáreas con una relación
+determinada, no podrán compensar entre sí, si la distancia que hay que
+recorrer para compensarlas es menor que la distancia mínima que tiene
+configurada, o si dicha distancia es mayor que la máxima distancia que
+tiene configurada, Para que se tenga en consideración la distancia
+mínima de acarreo, el flag <span style="font-weight: bold;">Considerar mínimos</span>
+debe estar activado, si no únicamente se tendrá en cuenta el valor
+máximo de acarreo. En esta ventana además se puede configurar el color
+de representación de cada relación de compensación. <br />
+Haciendo click sobre el botón <span style="font-weight: bold;">Ajustar eje</span>, se rellenará automáticamente la columna Máx.Acarreo con el Pk final del proyecto.<br />
+      <br />
+Activando la opción <span style="font-weight: bold;">[ ] Pres/Ver todas relaciones</span>
+hacemos que cualquier tipo de material pueda ir a préstamo o vertedero.
+En caso de que no se encuentre activado, sólo irá a préstamo/vertedero
+aquel material de la misma relación que exista en el préstamo/vertedero.<br />
+      <br />
+Activar la opción <span style="font-weight: bold;">[ ] Compensación Transversal Todos Ejes</span>
+hará que en la compensación transversal se puedan efectuar movimientos
+de tierra entre subáreas que se encuentren en diferentes ejes, siempre
+y cuando cumplan la condición de que el centro de gravedad de una de
+ellas se encuentre dentro de los límites de la otra. Si no se activa
+esta opción, solo tendremos movimientos de tierra entre subáreas del
+mismo eje.<br />
+      <br />
+A la hora de realizar la compensación, si no deseamos que se tengan en
+cuenta en el cálculo determinados elementos del proyecto (ejes, áreas o
+subáreas), podemos activar/desactivar en el árbol de áreas/subáreas los
+nodos correspondientes. El eje del tronco no se puede desactivar por
+completo, pero sí sus áreas/subáreas.<br />
+      <br />
+Mediante el comando Manual <img style="width: 80px; height: 30px;" alt="" src="Imagenes/icono_manual.png" />
+nos permitirá realizar compensaciones manualmente a partir de una
+subárea de excavación con una subárea de relleno. Se permite indicar el
+volumen que se desea compensar en este tipo de compensación.
+Inicialmente este valor coincide con el volumen pendiente de compensar
+de la subárea origen.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 633px; height: 586px;" alt="" src="Imagenes/isdim_comp_manual.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+<br />
+
+ISDIM® dispone de diferentes algoritmos de compensación, los cuales pasamos a describir a continuación.<br />
+
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="comp_sin_cierre_iz_dcha">Compensación Automática Sin Cierre Izda-Dcha</a></li>
+      </ul>
+En este tipo de compensación se van recorriendo por orden creciente de
+pk de izquierda a derecha los bloques (subáreas) de terraplén, y cada
+uno de ellos se rellena con el bloque de desmonte más próximo a él.
+Para medir la distancia entre bloques, se consideran sus pks de
+gravedad. Si sobra o falta material la aplicación no creará bloques
+nuevos.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_dcha_izda"><span style="font-weight: bold;">Compensación Automática Sin Cierre Dcha-Izda</span></a></li>
+      </ul>
+Esta compensación es igual que la anterior pero en este proceso se van
+recorriendo por orden decreciente de pk de derecha a izquierda los
+bloques de terraplén, ya cada uno de ellos se rellena con el bloque de
+desmonte más próximo a él.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_dist_min"><span style="font-weight: bold;">Compensación Automática Sin Cierre Distancias Mínimas</span></a></li>
+      </ul>
+En esta compensación se hace una ordenación previa de parejas de
+subáreas desmonte-terraplén según la distancia entre ellas, y se van
+compensando de menor a mayor distancia.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_trans"><span style="font-weight: bold;">Compensación Automática Sin Cierre Transversal D-T</span></a></li>
+      </ul>
+Se realiza la compensación de las áreas de desmonte y terraplén para
+subáreas del mismo eje y que el pk de gravedad de una esté entre los
+límites de la otra.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_sin_cierre_esp"><span style="font-weight: bold;">Compensación Automática Sin Cierre Especial</span></a></li>
+      </ul>
+En esta compensación lo primero que nos pregunta es si deseamos usar
+sólo los desmontes del tronco o de todo el proyecto. A continuación, se
+realiza la compensación siguiendo la curva de balance de tierras (curva
+de compensación) de la siguiente forma: en los tramos en los que dicha
+curva es positiva, se realiza la compensación de izquierda a derecha, y
+en los casos en los que la curva es negativa, se realiza la
+compensación de derecha a izquierda.<br />
+
+      <br />
+
+      <ul>
+        <li><a name="comp_con_cierre"><span style="font-weight: bold;">Compensación Automática Con Cierre</span></a></li>
+      </ul>
+Para realizar este tipo de compensación, lo primero que tenemos que
+definir son los tramos de posible ubicación de préstamos y vertederos.
+Para ello, pulsaremos el botón Localización P/V, con lo que accederemos
+a una nueva ventana.<br />
+Se permite guardar/cargar los tramos de localización de posibles préstamos y vertederos que definamos<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 384px; height: 241px;" alt="" src="Imagenes/isdim_localizacion.png" /><br />
+
+      </div>
+      <br />
+
+En esta ventana, seleccionamos el <span style="font-weight: bold;">Eje de Préstamo</span>
+de entre los que se nos muestra en el desplegable, para que ISDIM® sepa
+sobre qué eje puede insertar una subárea de préstamo en caso de que
+fuera necesario. Después, procedemos a indicar los posibles tramos
+válidos para crear un préstamo, pulsando sobre el botón <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_anadir_area.png" />. Cada vez que pulsemos este botón, se añadirá un nuevo tramo a la lista. Ya solo tenemos que rellenar los campos <span style="font-weight: bold;">PK Inicial</span> y <span style="font-weight: bold;">Pk Final</span>
+con los valores deseados del tramo. Fuera de los tramos que aparecen en
+esta lista no se intentará ubicar ningún préstamo. Si pulsamos el botón
+      <img style="width: 20px; height: 20px;" alt="" src="Imagenes/isdim_icono_papelera.png" />se eliminará el tramo correspondiente.<br />
+
+      <br />
+
+El mismo proceso haremos en el caso de los vertederos.<br />
+
+      <br />
+
+En el campo <span style="font-weight: bold;">Tanteo Préstamos y Vertederos</span>,
+indicaremos mediante un valor en metros, cada cuánto se puede colocar
+un préstamo/vertedero en los tramos válidos, para ir probando hasta que
+encontremos el sitio más idóneo que minimice el movimiento de material.
+El programa nos ofrece un valor por defecto dependiente del tamaño del
+proyecto.<br />
+
+      <br />
+
+Como ocurre en el caso de la compensación automática sin cierre, en la
+compensación con cierre existen dos posibilidades: de izquierda a
+derecha, y de derecha a izquierda.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="comp_con_cierre">Compensación Automática Con Cierre Izda-Dcha</a></li>
+      </ul>
+En este tipo de compensación se van recorriendo por orden creciente de
+pk de izquierda a derecha los bloques de terraplén, y cada uno de ellos
+se rellena con el bloque de desmonte más próximo a él. Se añadirá un
+préstamo y/o un vertedero en la situación óptima para que el diagrama
+de masas quede compensado.<br />
+
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="comp_con_cierre">Compensación Automática Con Cierre Dcha-Izda</a></li>
+      </ul>
+En este tipo de compensación se van recorriendo por orden decreciente
+de pk de derecha a izquierda los bloques de terraplén, y cada uno de
+ellos se rellena con el bloque de desmonte más próximo a él. Se añadirá
+un préstamo y/o un vertedero en la situación óptima para que el
+diagrama de masas quede compensado.<br />
+
+      <br />
+
+      <a name="resultados_e_informes"><span class="Titulo_2">Resultados e Informes</span><br />
+      <br />
+Tras finalizar el proceso de compensación se generará un resumen de la
+misma con el material compensado y el material pendiente de
+compensación, que se puede consultar mediante la opción <span style="font-weight: bold;">Resultados</span>.<br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 271px; height: 381px;" alt="" src="Imagenes/isdim_resultados.png" /><br />
+
+      </div>
+      <br />
+
+A su vez, ISDIM® nos proporciona una serie de listados de informe donde
+se muestran los resultados de la compensación de forma detallada. Para
+ello basta con seleccionar el tipo de informe que deseamos visualizar<span style="font-weight: bold;">, </span>abriendo entonces el bloc de notas con dicho informe, para su posterior impresión si así se desea.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;"><a name="resultados_e_informes">Informe Datos del proyecto</a></span>:</li>
+      </ul>
+      </span>En este informe se muestran datos acerca del proyecto, estudios de
+distancias, etc. Para la generación de dicho informe se nos solicita la
+introducción de un valor inicial de sobredistancia, y un valor de
+intervalo, medido en metros. La sobredistancia consiste en una
+penalización que se le da al movimiento de tierra que exceda del límite
+indicado por el valor inicial de sobredistancia, y que se incrementará
+por cada intervalo que se supere a partir del valor inicial. Genera un
+fichero datosProyecto.txt en la carpeta /isdim/informes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 642px; height: 583px;" alt="" src="Imagenes/isdim_listado_informe.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Informe Compensaciones:</a></li>
+      </ul></span>
+En este informe se muestran las distintas compensaciones existentes
+entre las distintas subáreas. Genera un fichero compensaciones.txt en
+la carpeta /isdim/informes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 502px; height: 382px;" alt="" src="Imagenes/isdim_compensaciones_listado.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Informe Subáreas del proyecto</a></li>
+      </ul></span>
+En este informe se muestra información acerca de las distintas subáreas
+del proyecto. Genera un fichero subareas.txt en la carpeta
+/isdim/informes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 431px; height: 489px;" alt="" src="Imagenes/isdim_subareas_listado.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Informe Subáreas - Relaciones</a></li>
+      </ul>
+      </span>En este informe se desglosa el material correspondiente a cada relación
+de compensación por subáreas. Genera un fichero subareas_relaciones.txt
+en la carpeta /isdim/informes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 438px; height: 446px;" alt="" src="Imagenes/isdim_subareas_relaciones_list.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Informe Distancia media</a></li>
+      </ul></span>
+En este informe se indica la distancia media de transporte de cada
+subárea origen a su destino. Genera un fichero distanciaMedia.txt en la
+carpeta /isdim/informes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 587px; height: 236px;" alt="" src="Imagenes/isdim_distancia_media_list.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold; list-style-type: circle;">
+        <li><a name="resultados_e_informes">Informa Distancia media a vertedero</a></li>
+      </ul></span>
+En este informe se indica la distancia media de transporte a los
+vertederos. Genera un fichero distanciaMediaVr.txt en la carpeta
+/isdim/informes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 591px; height: 152px;" alt="" src="Imagenes/isdim_dist_media_vert_listado.png" /><br />
+
+      </div>
+      <br />
+</span></span><span class="Parrafo"><span style="font-weight: bold;"><ul style="font-weight: bold; list-style-type: circle;"><li><a name="resultados_e_informes">Informe Sin compensar</a></li></ul></span>
+En este informe se genera el listado con el volumen de las subáreas que queda sin compensar.<br />
+      </span><span style="font-weight: bold;"><br />
+
+      <div style="text-align: center;"><img style="width: 600px; height: 373px;" alt="" src="Imagenes/isdim_sin_compensar_listado.png" /></div></span><br />
+      <span class="Parrafo"><span style="font-weight: bold;"><br />
+<br />
+
+      <a name="menu_compensacion_pks"><span class="Titulo_2">Menú Compensación Modo Pks</span><br />
+      <br /></a></span>El proceso de compensación en este modo es completamente distinto al del Modo Subáreas.
+	  En él, se van recorriendo los pks en orden y realizando la compensación del volumen de cada una de las áreas de pk en pk.
+	  <br />
+	  <br />
+      <div style="text-align: center;"><img style="width: 421px; height: 320px;" alt="" src="Imagenes/isdim_compensacion_pks.png" /><br />
+
+      </div>
+	  
+	  <br />
+En primer lugar seleccionaremos las áreas que deseamos compensar mediante los desplegables correspondientes.
+Podemos elegir un área de excavación, un área de relleno, y opcionalmente un área especial (préstamos y vertederos).
+También indicaremos la relación de compensación que deseamos se tenga en cuenta a la hora de realizar la compensación.
+De esta forma, únicamente se compensará el volumen entre aquellas áreas que compartan la misma relación de compensación.
+Haciendo click el el botón <span style="font-weight: bold;">INICIAR</span> comenzará el proceso de compensación.	  
+	  <br />
+	  <br />
+	  <img style="width: 68px; height: 100px;" alt="" src="Imagenes/isdim_botones_resultados.png" align="right" hspace="6" />
+Tras finalizar el proceso de compensación, se generará un resumen de la misma con el material compensado y pendiente de
+compensar, que se puede consultar mediante la opción <span style="font-weight: bold;"><a href="#resultados_e_informes">Resultados.</a></span> También se genera un informe detallado
+en formato texto al cual podemos acceder haciendo click sobre el botón <span style="font-weight: bold;">Informe Pks.</span> Mediante la opción <span style="font-weight: bold;">Gráfico</span> podemos
+activar/desactivar la visualización de la gráfica de la compensación. Estas opciones solo se encuentran disponibles una
+vez ejecutada la compensación.
+	  <br />
+	  <br />
+	  <div style="text-align: center;"><img style="width: 700px; height: 181px;" alt="" src="Imagenes/isdim_informe_pks.png" /></div><br />	  
+	  <br />
+	  <div style="text-align: center;"><img style="width: 700px; height: 531px;" alt="" src="Imagenes/isdim_grafico_pks.png" /></div><br />	  
+	  <br />En
+la sección GRÁFICO del menú de compensación podemos activar/desactivar
+la visualización de las diferentes curvas de la gráfica,
+así como especificar el intervalo de la escala vertical o bien dejar
+que se calcule automáticamente. <br />
+	  <br />
+Mediante la opción <span style="font-weight: bold;">Descompensar</span> se eliminarán todas las compensaciones realizadas.	  
+	  <br />
+	  <br />
+      <a name="menu_ver"><span class="Titulo_2">Menú Ver</span><br />
+      <br /></a></span>Seleccionando
+la pestaña VER accedemos a un menú donde podremos activar/desactivar la
+visualización de diferentes elementos y características.<span style="font-weight: bold;"><a name="menu_ver"><br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 587px; height: 292px;" alt="" src="Imagenes/isdim_ver_dialogo.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="totales_relaciones">Totales Relaciones</a></li>
+      </ul></span>
+Activando esta opción se muestran las distintas relaciones de
+compensación que posee cada subárea con sus colores correspondientes.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 407px; height: 268px;" alt="" src="Imagenes/isdim_totales_relaciones.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="mediciones_sal">Mediciones</a></li>
+      </ul></span>
+Activando esta opción se muestran las distintas mediciones de cada subárea.<span style="font-weight: bold;"><br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 270px; height: 394px;" alt="" src="Imagenes/isdim_dibujo_mediciones_sal.png" /><br />
+
+      </div>
+      <br />
+      </span>
+      <ul style="font-weight: bold;">
+<li><a name="compensados">Compensados</a></li>
+      </ul>
+
+Activando esta opción se muestra el volumen compensado en las subáreas
+de terraplén mediante un relleno de color rosa pálido, y en color verde
+pálido el volumen compensado en la subáreas de desmonte. Si aparece
+algún trozo de subárea sin relleno, indicará que no se pudo compensar
+todo el material.<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 440px; height: 291px;" alt="" src="Imagenes/isdim_dibujo_compensados.png" /></div>
+      <br />
+      <ul style="font-weight: bold;">
+<li><a name="sincompensar">Sin compensar</a></li>
+      </ul>
+
+
+Activando esta opción se muestra el volumen de las subáreas que queda sin compensar.<br />
+
+
+
+      <br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img style="width: 600px; height: 300px;" alt="" src="Imagenes/isdim_dibujo_sincompensar.png" /></div>
+
+      <br />
+      <span class="Parrafo">
+
+      <ul style="font-weight: bold;">
+        <li><a name="particiones">Particiones</a></li>
+      </ul>
+Activando esta opción se muestra la unión entre las subáreas de
+desmonte y las subáreas de terraplén con las que compensa. Además, si
+una subárea compensa con varias, marcará en ella las particiones de
+volumen que compensan con dichas subáreas.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 462px; height: 288px;" alt="" src="Imagenes/isdim_dibujo_particion.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="particiones_con_rellenos">Particiones con rellenos</a></li>
+      </ul>
+Activando esta opción se muestran las particiones compensadas,
+rellenándolas con el color de la relación de compensación a la que
+pertenezca. En el caso de que una partición tuviese varias relaciones
+diferentes, se pintaría la partición en color gris. Si se activa está
+opción, automáticamente se activará la opción <span style="font-weight: bold;">Particiones</span>. Del mismo modo, si se desactiva la opción <span style="font-weight: bold;">Particiones</span>, se desactivará automáticamente la opción <span style="font-weight: bold;">Particiones con rellenos</span>.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 445px; height: 279px;" alt="" src="Imagenes/isdim_dibujo_particiones_rellenas.png" /><br />
+
+      </div>
+      <br /><br />
+<ul style="font-weight: bold;">
+        <li><a name="perfil_longitudinal">Perfil Longitudinal</a></li>
+      </ul>
+Activando esta opción se muestra la gráfica que representa el perfil
+longitudinal del proyecto, mediante una línea punteada de color marrón
+claro. Los datos del perfil se obtienen automáticamente del módulo de
+Obra Lineal.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 458px; height: 314px;" alt="" src="Imagenes/isdim_perfil_long.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="rasante">Rasante</a></li>
+      </ul>
+Activando esta opción se muestra la gráfica que representa la rasante
+del proyecto, mediante una línea punteada de color azul claro. Los
+datos de la rasante se obtienen automáticamente del módulo de Obra
+Lineal.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 434px; height: 292px;" alt="" src="Imagenes/isdim_dibujo_ras.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="curva_compensacion">Curva Compensación</a></li>
+      </ul>
+Activando esta opción se muestra la gráfica que representa la curva de
+compensación del diagrama de masas, mediante una línea punteada de
+color magenta.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 468px; height: 300px;" alt="" src="Imagenes/isdim_dibujo_curva_comp.png" /><br />
+
+      </div>
+      <br />
+
+      <ul style="font-weight: bold;">
+        <li><a name="pks_gravedad">Pks Gravedad</a></li>
+      </ul>
+Activando esta opción se muestra en cada subárea, su pk centro de gravedad.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 429px; height: 274px;" alt="" src="Imagenes/isdim_dibujo_pks_grav.png" /><br />
+
+      </div>
+      </span>
+      <ul style="font-weight: bold;">
+        <li>Escalar Ejes /Áreas</li>
+      </ul>
+Mediante esta opción podremos cambiar el factor de escala de
+visualización de las diferentes áreas del proyecto, para así poder ver
+con más detalle aquellas subáreas que por ser muy pequeñas, casi no se
+aprecian en la pantalla. Un valor de escala de 1.0 indica que no se
+aplica factor de escala. <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 300px; height: 225px;" alt="" src="Imagenes/isdim_escala.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+</span>
+      <ul style="font-weight: bold;">
+        <li><a name="leyenda">Generar Leyenda</a></li>
+<a name="leyenda">      </a></ul>
+<a name="leyenda">Mediante el comando Crear podremos generar una leyenda en la ventana
+gráfica para las distintas relaciones de compensación del proyecto.<br />
+      <br />
+      </a><div style="text-align: center;"><a name="leyenda"><img style="width: 246px; height: 92px;" alt="" src="Imagenes/isdim_leyenda.png" /><br />
+      </a></div>
+<a name="leyenda">      <span class="Parrafo"><span class="Parrafo">
+
+      <ul style="font-weight: bold;">
+        <li>Zoom</li>
+      </ul>
+      <img style="width: 111px; height: 78px;" alt="" src="Imagenes/isdim_zoom.png" align="right" hspace="6" />Mediante las opciones que aparecen en la barra lateral derecha de la ventana principal del módulo ISTRAM®/ISPOL®, podemos hacer <span style="font-weight: bold;">Zoom</span>
+sobre cualquier zona del proyecto, para poder verla con más detalle,
+seleccionando con el ratón la zona deseada. Seleccionando la opción <span style="font-weight: bold;">Pan</span>, se hará un zoom a toda la extensión del proyecto. La opción <span style="font-weight: bold;">Ant</span> nos muestra el anterior zoom utilizado.<br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+
+
+      </span></span></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

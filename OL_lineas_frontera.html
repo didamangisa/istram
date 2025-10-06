@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Líneas de frontera</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LÍNEAS DE FRONTERA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />Las
+      <span style="font-weight: bold;">líneas de frontera</span> son entidades que se pueden manejar gráficamente y
+que definen una especie de 'muro' vertical que se utilizará para cortar
+los transversales de los dos ejes involucrados quitándoles las partes
+que no se van a construir (zona de solape transversal).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 506px; height: 276px;" alt="" src="Imagenes/ejem_linFront.png" /><br />
+      </div>
+      <br />
+Una línea de frontera puede ser una línea cualquiera a la que
+posteriormente se le confieren cualidades de línea de frontera para que
+pueda truncar ejes. En cuanto al truncamiento producido por las líneas
+de frontera, deben tenerse en cuenta las siguientes consideraciones: <br />
+      <ul>
+        <li>Afectan también a las zonas con falso túnel. La línea de
+frontera puede truncar los taludes de excavación y relleno, pero no
+debe cortar la zona de las bóvedas.</li>
+      </ul>
+      <ul>
+        <li>Afectan a los conos de derrame. Las líneas de
+frontera que truncan por la derecha o por la izquierda del eje,
+truncarán a los conos de derrame por el lado del exterior (pie de
+terraplén en conos de derrame y cabeza del desmonte en emboquilles de
+túneles).</li>
+      </ul>
+      <ul>
+        <li>También afectan a las <a href="OL_marcas_viales.html">marcas viales</a>, de tal forma que el programa oculta los segmentos de éstas afectados por líneas de frontera.<br />
+        </li>
+      </ul>
+<img style="width: 174px; height: 104px; margin-left: 7px;" alt="" src="Imagenes/ejem_lfr.png" align="right" /><span class="Parrafo"><span class="Parrafo">Cada línea de frontera se
+etiqueta con el número de los ejes a los que debe &#8220;truncar&#8221; y por qué
+lado. Si la línea sólo ha de truncar un eje, el número del segundo eje
+aparece como un cero.<br />
+      <br />
+</span></span>
+      <table style="text-align: left; width: 510px; height: 47px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 43px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify; width: 461px;"><span class="Parrafo"><span class="Parrafo Info">Las líneas de frontera son
+líneas convencionales que tienen asignadas el tipo L67 y las cualidades
+que la hacen especial. Pero como líneas, se pueden modificar y guardar
+perfectamente en un&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> y cargar en cualquier momento SIN que por ello pierdan sus cualidades.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>Las líneas de frontera se pueden crear y gestionar manualmente, aunque
+ciertas partes del programa las crea y/o gestiona de forma automática
+sin necesidad de que el usuario intervenga (<a href="OL_muro_entre_ejes.html">muro entre ejes</a>, <a href="OL_cruces.html">cruces</a>, <a href="OL_entronques.html">entronques</a>,...).<br />
+      <br />
+Todas las líneas de frontera que no gestione el programa automáticamente y usadas en un proyecto de obra lineal se deben <a href="#guardar_lfr">guardar</a> en un único fichero de extensión&nbsp;<span class="Archivo">.lfr</span> y que se debe declarar en <span class="Parrafo"><span class="Parrafo"><a href="OL_proyecto.html">tabla de PROYECTO</a>. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una vez declarado y cada vez que se actualiza este fichero las líneas de frontera, es recomendable extraer <a href="OL_perf_transv.html">perfiles del terreno</a> para los
+ejes, activando la casilla <span style="font-weight: bold; font-style: italic;">Líneas de
+frontera</span> en <a href="OL_perf_transv.html#eventos"><span style="font-weight: bold;">EVENTOS PARA GENERAR PERFIL</span></a>.</span></span></span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+La creación y gestión manual de líneas de frontera se efectúa desdel el menú ALZADO <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">[COMPLETO]</span> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">[L. FRONTERA]</span>, y las herramientas disponibles para ello son:</span></span></span></span></span></span><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 468px; height: 544px;" alt="" src="Imagenes/acceso_lfr.png" /><br />
+      </div>
+      <br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 104px;">Cargar .lfr<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 568px;">Representa en pantalla las líneas de frontera almacenadas en el fichero&nbsp;<span class="Archivo">.lfr</span> cargado en la <a href="OL_proyecto.html">tabla de PROYECTO</a>.<br />
+<br /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 104px;"><a name="guardar_lfr">Guardar .lfr</a><br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 568px;">Genera un fichero&nbsp;<span class="Archivo">.lfr</span>
+con las líneas de frontera que estén editadas en pantalla. El programa,
+después de guardarlo, chequea y elimina todas las líneas de frontera
+repetidas que encuentra dentro de él (se puede definir una <a href="#tolerancia">tolerancia</a>
+para determinar si las coordenadas de dos líneas están repetidas al
+añadir líneas de frontera al final de un fichero).<br />
+            <br />
+Al salvar las líneas de frontera sobre un fichero existente, se realiza
+una copia de seguridad de este fichero con el mismo nombre pero con el
+prefijo&nbsp;<span class="Archivo">IS#</span>. Además, el programa
+pregunta si se desea sustituir totalmente el fichero o añadir al final
+todas las líneas de frontera visible en el entorno COMPLETO en ese
+momento.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Añadir 1 LFR</span><br />
+            </td>
+            <td style="vertical-align: top;">Añade
+una linea cualquiera
+como linea de frontera, seleccionando los ejes y los lados de los
+mismos a los que esta linea debe afectar. Se añade al archivo de líneas
+de frontera asociado al proyecto y si no existe crea uno nuevo y lo
+asocia (nombrebase.lfr o ISPOL.lfr)<br />
+            <br />
+Analiza las líneas que ya contiene el archivo y si existe una entre los
+mismos ejes y lados y que se solapen en pks del primer eje, entonces
+elimina la línea del archivo y la sustituye por la nueva.<br />
+            <br />
+            <div style="text-align: center;">&nbsp;<img style="width: 214px; height: 147px;" alt="dialogo_añadir" src="Imagenes/dialogo_a%C3%B1adir1LFR.png" align="top" /><br />
+            </div>
+
+            <br />
+Además de la opción <span style="font-weight: bold;">[Añadir]</span> podemos escoger <span style="font-weight: bold;">[Añadir y elegir otra]</span> para trabajar cíclicamente.<br />
+            <br />
+Al añadir una línea 8D, se crea automáticamente una copia 3D para utilizarla como línea de frontera.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 104px;"><a name="definir_lfr">Definir LFR</a><br />
+            </td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 568px;"><img style="width: 218px; height: 151px; margin-left: 7px;" alt="" src="Imagenes/definir_lfr.png" align="right" />Permite
+seleccionar una línea cualquiera, generada de cualquier forma, para que
+el programa le dé los atributos de línea de frontera. El usuario
+selecciona los ejes (gráfica o numéricamente) y los lados de los
+mismos, a los que esta línea deberá afectar.<br />
+            <br />
+Si se desea que sirva sólo para truncar un eje, el segundo eje debe ser el 0.<br />
+            <br />
+La línea de frontera también puede utilizarse sólo para truncar los
+conos de derrame de un eje. Así, por ejemplo, es posible indicar que
+trunque al eje 1 por la izquierda y los conos de derrame del eje 2.<br />
+            <br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al añadir una línea 8D, se crea automáticamente una copia 3D para utilizarla como línea de frontera.</span></span></span></span></span></span></span></span></span></span></span><br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 104px;"><span style="font-weight: bold;">Tramo LFR</span><br />
+            </td>
+            <td style="vertical-align: top; width: 568px; text-align: justify;">Esta
+opción permite acotar la zona de influencia en cada eje de la línea de
+frontera, para evitar problemas en ejes en forma de lazos que se cruzan
+a sí mismos. Si para un eje se da el mismo PK inicial y final, la línea
+de frontera no queda restringida. Las líneas de frontera restringidas,
+aparecen en la pantalla con un asterisco &lt;*&gt; detrás del número
+del eje y lado restringido.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="auto_lfr">Auto LFR</a></span></td>
+            <td style="vertical-align: top; text-align: justify;"><img style="width: 218px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/auto_lfr.png" align="right" />Es una función equivalente a <span style="font-weight: bold;">[Enlace]</span>
+del menú ALZADO que genera de modo asistido una línea de frontera
+buscando la intersección entre las plataformas, con las siguientes
+diferencias:<br />
+            <ul>
+              <li>La selección de ejes se realiza gráfica o
+numéricamente, solicitando la aplicación los ejes y el lado de cada uno
+de ellos que debe ser tenido en cuenta para realizar los cálculos.</li>
+            </ul>
+            <ul>
+              <li>La línea de frontera se añade en la pantalla a las
+existentes, lo que permite su posterior modificación y guardado
+conjunto con las existentes.</li>
+            </ul>
+            <ul>
+              <li>Ofrece la posibilidad de estirar automáticamente estas líneas una distancia prefijada.</li>
+            </ul>
+            <img style="width: 218px; height: 109px; margin-right: 7px;" alt="" src="Imagenes/auto_lfr_truncar.png" align="left" />Al finalizar la edición de la línea de frontera, es posible inhibir el truncado de los ejes.<br />
+            <br />
+Si se decide truncar, <span class="Parrafo"><span class="Parrafo">el programa guarda los
+datos que haya en pantalla hasta ese momento y, en una pantalla limpia,
+genera los modelos alámbricos de las dos plataformas y la línea de
+frontera determinada por la intersección entre taludes, dibujándola en
+pantalla.</span></span> También dibuja los conos de derrame del primer eje y pueden
+calcular la línea de frontera en la intersección de estos conos con los
+taludes del segundo eje.<br />
+            <br />
+            Al
+calcular líneas de forntera con AutoLFR o AutoLFR+, se dibujan con el
+primer eje, todos los acuerdos de cruces y glorietas definidos con él y
+se utilizan estos modelos para determinar la línea de frontera con el
+segundo eje. (Debe estar activada la opción Cruces del menú de
+proyecto).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">LFR Entron.</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Mediante
+esta opción se generan automáticamente todas las líneas de frontera
+para los entronques definidos en cada eje. Para que se genere la línea
+de frontera de un entronque, tiene que estar activada la casilla <span style="font-weight: bold; font-style: italic;">LFR</span> para ese entronque dentro del menú ALZADO <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; </span></span></span></span></span></span></span>ENTRONQUES. Además, si se da un valor en la casilla <span style="font-weight: bold; font-style: italic;">Margen</span>,
+la línea de frontera se prolonga por la intersección de los taludes de
+los dos ejes en los que se calcula a partir del punto E hasta un PK =
+PK_E + Margen. Si se ha indicado que los sobreanchos se calculen hasta
+el punto E, aunque la línea de frontera se sigue generando desde A, su
+tramo de aplicación comenzará en E.<br />
+            <br />
+Al iniciar esta opción, el programa realiza un cálculo de todos los ejes en grupos activos.<br />
+            <br />
+Se crea o actualiza el archivo de líneas de frontera del proyecto con las líneas que calcula.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="auto_lfr_plus">Auto LFR+</a></span>
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><img style="width: 148px; height: 123px; margin-left: 7px;" alt="" src="Imagenes/auto_lfr_plus.png" align="right" /><span class="Parrafo"><span class="Parrafo">Es igual que <a href="#auto_lfr"><span style="font-weight: bold;">Auto LFR</span></a>,
+pero permitiendo modificar interactivamente desde los sucesivos cortes
+transversales la posición de la línea de frontera. La opción avanza
+automáticamente hasta el primer perfil donde aparezcan simultáneamente
+ambos ejes, aunque no se corten. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el cálculo del punto de corte se añade también la línea de desmonte en inadecuado del ramal.</span></span></span></span></span></span><br />
+            <span class="Parrafo"><span class="Parrafo"><br />
+El botón <span style="font-weight: bold;">[Salir]</span> sirve para finalizar la definición de la línea de frontera en el PK actual, mientras que con el botón <span style="font-weight: bold;">[PK]</span> se realiza un avance automático hasta el PK solicitado.<br />
+            <br />
+De forma similar a como ocurre con la herramienta </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_lineas_frontera.html#auto_lfr"><span style="font-weight: bold;">Auto LFR</span></a></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">, al finalizar la edición de la línea de frontera, es posible inhibir el truncado de los ejes.<br />
+<br />
+            Esta herramienta dibuja los
+conos de derrame del primer eje y pueden calcular la línea de frontera
+en la intersección de estos conos con los taludes del segundo eje.<br />
+            <br />
+Al calcular líneas de forntera con AutoLFR o AutoLFR+, se dibujan con
+el primer eje, todos los acuerdos de cruces y glorietas definidos con
+él y se utilizan estos modelos para determinar la línea de frontera con
+el segundo eje. (Debe estar activada la opción Cruces del menú de
+proyecto).<br />
+            </span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="truncar_1">Truncar 1</a></span></td>
+            <td style="vertical-align: top; text-align: justify;">Tras
+pulsar sobre esta opción, se elige una de las líneas de frontera que
+aparecen en la pantalla y el sistema trunca cada uno de los ejes por
+ella afectados, siempre que éstos hayan sido previamente calculados.<br />
+            <br />
+Si la tecla <span style="font-weight: bold;">[ENL]</span> (enlace) de la <span class="Parrafo"><span class="Parrafo"><a href="OL_proyecto.html">tabla de PROYECTO</a></span></span>
+no está pulsada para un eje, está protegido de truncados y esta opción
+no trabaja sobre él aunque haya líneas de frontera que lo afecten.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Truncar todo</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Realiza la misma operación que <a href="#truncar_1"><span style="font-weight: bold;">Truncar 1</span></a> pero empleando todas las líneas de frontera. Los ejes protegidos no se tocan, manteniéndose los&nbsp;<span class="Archivo">ISPOL#.per</span> correspondientes intactos.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="tolerancia">Tolerancia</a></span></td>
+            <td style="vertical-align: top; text-align: justify;">Esta tolerancia se aplica a la hora de <a href="#guardar_lfr">salvar</a> un fichero de líneas de frontera, para evitar ficheros con líneas duplicadas.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Cargar</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite cargar ficheros<span class="Archivo">.lfr</span>. Esto posibilita cargar varios ficheros de líneas de frontera para unirlos en un único fichero.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 559px; height: 366px;" alt="" src="Imagenes/ent_lineas_lfr.png" /><br />
+            </div>
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Incluir perfiles</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Esta
+opción inserta en una línea de frontera los puntos de corte con los
+perfiles de los dos ejes implicados. De este modo, si en ambos ejes se
+interpolan perfiles según las líneas de frontera, en esta zona
+coincidirán los perfiles de ambos ejes sobre la línea de frontera.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 39px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 104px;"><span style="font-weight: bold;">Truncar fichero</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite elegir un fichero
+cualquiera de perfiles (asociado a algún eje) y lo trunca según las
+líneas de frontera presentes. Esta opción pide un fichero para la
+salida.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 104px;"><span style="font-weight: bold;">LFR Aparatos de vía</span><br />
+            </td>
+            <td style="vertical-align: top;">Esta
+herramienta, a partir
+del número de la J.C.A. crea una línea de frontera, que dentro del
+aparato va por la bisectriz de los ejes de los entrecarriles principal
+y desviado, y a partir del talón va a buscar cortes entre los taludes
+exteriores de balasto y capa de forma del eje principal y ramal. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A
+partir de estos últimos va a buscar la intersección de los
+taludes de desmonte o terraplén. Si el eje desviado comienza en el
+talón del aparato, la línea de frontera comenzará en ese punto.</span></span></span></span></span></span><br />
+Permite incluir la línea creada en el archivo de líneas de frontera de
+proyecto, sustituyendo a otra línea que se hubiera creado anteriormente
+en la misma zona. También permite truncar inmediatamente los ejes por
+la línea creada. <br />
+Antes de utilizar esta herramienta conviene calcular el alzado de los
+ejes si estos han sido truncados anteriormente en la zona implicada
+para que se pueda determinar correctamente la intersección entre los
+taludes originales.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Generar LFR eje</span><br />
+            </td>
+            <td style="vertical-align: top;">Para el eje de la glorieta
+y en general para cualquier eje, se puede utilizar esta herramienta.
+Esta utilidad extrae del archivo ISPOL.per del eje la información de
+las zonas donde están truncados y crea en planta las líneas de frontera.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>PK-distancia</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte.@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PK - distancia<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#interactivo">Modo
+Interactivo</a><br />
+      <a href="#por_fichero">Modo por fichero</a><br />
+      <div style="margin-left: 40px;"><a href="#fich_top">Por fichero
+.top</a><br />
+      <a href="#fich_pkdis">Por fichero .pkd</a><br />
+      <a href="#fich_txt">Por fichero .txt</a><br />
+      <a href="#fich_pkaux">Por fichero .pk de otro eje</a><br />
+      </div>
+      <a href="#por_linea">Modo por línea</a><br />
+      </div>
+      <span class="Parrafo"><br />
+Esta herramienta, que se puede llamar tanto desde PLANTA como desde
+ALZADO, permite conocer el PK sobre un eje y la distancia a él de una
+serie de puntos definidos por el usuario, lo que resulta muy útil para
+obtener las posiciones de los ejes respecto de edificios, estacas,
+farolas o cualquier otro elemento.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/acceso_PK_dist.png" style="width: 351px; height: 295px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span><img src="Imagenes/ejemplo_pk_dist.png" style="width: 373px; height: 186px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Con el
+uso de PK-distancia se obtiene la siguiente información:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Las coordenadas X,Y,Z del punto.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">El número del eje, la distancia
+normal al eje y el PK sobre el que se proyecta en el eje.</span></li>
+      </ul>
+      <ul>
+        <li>La
+distancia 3D entre Vértices (d.3D Vértices) muestra las distancias
+reales entre los vértices de las líneas que se eligen o entre los
+puntos para el modo interactivo o por fichero.</li></ul><ul><li><span class="Parrafo">El azimut, el radio y las coordenadas
+en el punto de proyección en el eje.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La cota de la rasante del eje (Z<sub>ras</sub>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La cota proyectada desde el eje según
+el peralte (Z<sub>proy</sub>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La cota de la banda blanca (Z<sub>B.Blan</sub>):
+En carreteras la del eje geométrico (punto de código 1) y en autovías
+la de la banda blanca interior de la calzada (también de código 1).
+Este valor diferirá del anterior en el caso de que haya desplazamientos
+del eje de giro.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">El peralte del lado del eje donde
+está el punto.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La pendiente longitudinal en el eje.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Diferencias de cota del punto
+seleccionado respecto a la cota proyectada desde el eje según el
+peralte (Z-Z<sub>proy</sub>) y respecto a la cota de la rasante (Z-Z<sub>ras</sub>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cota en la plataforma (superficie 67)
+si el punto seleccionado cae dentro de ella. Si cae fuera nos da un
+cero.</span></li>
+      </ul></span></span></span></span></span><ul><li>Cota del terreno en el eje en el Pk donde se proyecta el punto (Z <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><sub>Z Terr Eje</sub></span></span></span></span></span></span>).</li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Si el acceso a este menú se efectúa desde PLANTA, entonces no se
+dispone de datos de sección transversal o rasantes, por lo que dichos
+datos no aparecerán en los listados (peraltes, cotas,...).<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 35px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 633px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">En
+el caso de ferrocarriles en lugar de la cota de la banda blanca y la
+cota proyectada, se lista la cota de la rasante y la diferencia de cota
+con ésta. Los peraltes, además, se listan en milímetros.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En <span style="font-weight: bold;">LISTAR</span> el usuario puede
+optar por:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">No listar nada: De esta forma
+aparecerá únicamente en pantalla una <a href="rejilla_datos.html">rejilla</a>
+con la información.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Obtener el listado&nbsp;<span class="Archivo">CONSULTA.res</span> con toda la información solicitada.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Obtener un fichero tabulado,
+llamado&nbsp;<span class="Archivo">pkdis.res</span>, que se generará en
+la carpeta tmp dentro de la carpeta de trabajo actual y que puede ser
+tratado con una hoja de cálculo.</span></li>
+      </ul>
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Si se marca la casilla <span style="font-weight: bold; font-style: italic;">Corto</span> o se ha
+entrado al cuadro de diálogo con ese modo, los
+listados muestran la información más resumida, ofreciendo sólo los
+siguientes datos:<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las
+coordenadas X,Y,Z del punto.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El número
+del eje.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La
+distancia normal al eje.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El PK
+sobre el que se proyecta en el eje.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo">La cota de la rasante del eje (Z<sub>ras</sub>)</span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El peralte
+del lado del eje donde está el punto.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Si se marca la casilla <span style="font-weight: bold; font-style: italic;">Crear puntos de paso</span>,
+el programa, a partir de los puntos calculados, genera también los
+puntos de paso de los ejes correspondientes.<br /><br />Si se marca la casilla <span style="font-weight: bold; font-style: italic;">Crear líneas de proyección</span>,
+se dibuja en la cartografía las líneas de proyección de cada punto,
+perpediculares al eje (se generan con el tipo de línea actual).<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 35px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 633px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Cuando
+se calcula PK,Distancia para el eje actual y se estén modificando sus
+datos, es necesario salvar previamente el fichero .vol, puesto que la
+función trabaja sobre los datos contenidos en este fichero y no sobre
+los datos cargados, ya que puede ser utilizada para cualquier eje del
+proyecto aunque no sea el eje actual.<br />
+Si el punto se proyecta fuera de los límites del eje o del rango de PKs
+(seleccionados al picar el eje con el botón derecho), entonces el punto
+            <span style="font-weight: bold;">NO</span> se incluye en el
+listado de salida.<br />
+            </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <br />
+
+
+      <br />
+
+
+      <span class="Titulo_2"><a name="interactivo">Modo
+interactivo</a></span><br />
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Se
+solicita de manera cíclica que se introduzcan datos, bien gráficamente
+o bien por teclado. La función permanece activa hasta que se pulse la
+tecla &lt;Esc&gt;.<br />
+      <br />
+      </span>
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/pk_dist_interactivo.png" style="width: 288px; height: 242px;" alt="" /><br />
+      </div>
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">En <span style="font-weight: bold;">DATOS</span>
+se da la posibilidad de seleccionar el <span style="font-weight: bold;">modo
+de introducción de los datos</span> del punto, que pueden ser:<br />
+      </span>
+      
+      
+      <ul>
+
+
+        <li><span class="Parrafo">En coordenadas X,Y.</span></li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li><span class="Parrafo">De la forma PK,Distancia: En este
+caso también puede crearse un
+fichero&nbsp;<span class="Archivo">.top</span>
+con las coordenadas de los puntos, lo que permite definir
+puntos por PK,Distancia con respecto a un eje y replantearlos después
+con respecto a un eje diferente a partir de sus coordenadas. En este
+fichero, la cota de cada punto será la cota proyectada (cota de rasante
++
+Distancia × Peralte).</span></li>
+      
+      
+      </ul>
+
+
+      
+      
+      <ul>
+
+
+        <li><span class="Parrafo">Definiendo un tramo PK<sub>inicial</sub>,Distancia
+hasta PK<sub>final</sub>,Distancia y según una equidistancia.</span></li>
+      
+      
+      </ul>
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="por_fichero">Modo Por
+fichero</a></span><br />
+
+
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">En este caso, la entrada de <span style="font-weight: bold;">DATOS</span> se realiza mediante un fichero
+de puntos, existiendo las siguientes posibilidades:<br />
+      </span><span class="Parrafo">
+      <ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_fichero_top.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="6" /></span></span><span class="Parrafo"><span style="font-weight: bold; font-style: italic;"><a name="fich_top" />Ficheros topográficos (</span><span style="font-weight: bold; font-style: italic;" class="Archivo">.top</span><span style="font-weight: bold; font-style: italic;">/</span><span style="font-weight: bold; font-style: italic;" class="Archivo">.toc</span><span style="font-weight: bold; font-style: italic;">):</span>
+Se leen las coordenadas de cada punto de
+la nube de puntos y se muestran los resultados para cada uno de ellos.
+Marcando la opción [ ] Número del eje en la tercera columna se leerá el
+número del eje en el que se ha de proyectar cada unto, de la tercera
+columna del archivo .top. (n&nbsp; i2 i3 x y z texto:&nbsp; eje = i3)<br />
+
+          </span></span></li>
+
+      </ul>
+      </span><br />
+
+
+      <span class="Parrafo"> <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><br />
+
+
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_fichero_pkd.png" style="width: 288px; height: 242px; float: right;" alt="dialogo_pkdist_pkd" hspace="6" /></span></span></span></span></span></span></span></span><span class="Parrafo" /><span style="font-weight: bold; font-style: italic;">Ficheros
+PK-distancia (</span><span style="font-weight: bold; font-style: italic;" class="Archivo">.pkd</span><span style="font-weight: bold; font-style: italic;">)</span><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">:</span>
+          </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /><span class="Parrafo">El programa
+calcula las coordenadas X,Y.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al igual
+que el </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="#interactivo">modo
+interactivo según PK-Distancia</a>, también es posible obtener un
+fichero&nbsp;<span class="Archivo">.top</span> con las coordenadas de
+los puntos.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><br />
+También es posible suministrar ficheros&nbsp;<span class="Archivo">.pkd</span>
+con tres columnas (PK, distancia y cota). </span></span><span class="Parrafo"><span class="Parrafo">En este
+caso, y si se genera un fichero&nbsp;<span class="Archivo">.top</span>,
+la cota que se escribe es la del fichero&nbsp;<span class="Archivo">.pkd</span>
+en lugar de la proyectada.</span></span><span class="Parrafo"><br />
+      <span class="Parrafo"> </span></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><img src="Imagenes/pk_dist_fichero_txt.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="10" /><span class="Parrafo"><span style="font-style: italic; font-weight: bold;">Ficheros&nbsp;</span><span style="font-style: italic; font-weight: bold;" class="Archivo">.txt</span><span style="font-style: italic; font-weight: bold;">,</span>
+que
+contienen: Número, X, Y, Z y CLAVE, separados
+por comas. En este caso se pregunta pregunta por la clave a listar y
+sólo se
+calcula con los puntos que tengan esa clave o comiencen por las mismas
+letras que la clave introducida.</span></li>
+      </ul>
+      <span class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si los datos proceden de un fichero topográfico o&nbsp;<span class="Archivo">.txt</span> se lista también el número del
+punto. Si los puntos se pican en pantalla, éstos se numeran
+secuencialmente.<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/pk_dist_fichero_pk_aux.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="10" /><span style="font-style: italic; font-weight: bold;">Por fichero de PKs (</span><span style="font-style: italic; font-weight: bold;" class="Archivo">.pk</span><span style="font-style: italic; font-weight: bold;">)</span>
+sobre otro eje auxiliar.
+El programa calcula las coordenadas de los puntos en el eje auxiliar y
+luego calcula los datos de pk,distancia sobre el eje seleccionado.<br />
+
+
+En la columna texto, se guarda el numero del eje auxiliar y el pk
+original p.e. E7_PK125.000</li>
+         
+      </ul>
+      </span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ejemplo: Dos ejes 1 y 2 y un fichero .pk con datos
+de Pks del eje 2.
+Queremos obtener las distancias y los Pks de proyección sobre el eje 1.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Seleccione en la casilla <span style="font-weight: bold;">Otro eje</span>, el eje 2 y <span style="font-weight: bold;">Acepte</span> para que el programa le pida
+el fichero de Pks (<span class="Archivo">.pk</span>).</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El programa pedirá que elija el
+eje o escriba su número y seleccionaré el eje número 1.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+        <br />
+
+      <big><span style="font-weight: bold;" /></big><br />
+
+&nbsp;<br />
+
+Aparecerá una columna de <span style="font-weight: bold;">Texto</span>
+con los Pks seleccionado en el fichero&nbsp;<span class="Archivo">.pk</span>.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/pkdis_texto.png" style="width: 520px; height: 169px;" alt="" /><br />
+
+      </div>
+       <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Ficheros&nbsp;<span class="Archivo">.epd</span>,
+que
+contienen eje, PK, distanci</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pk_dist_fichero_epd.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="6" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">a, cota, texto.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="Parrafo"> <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><br />
+      </span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="por_linea"><span class="Titulo_2">Modo Por línea</span></a><span class="Titulo_2"><br /></span>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/pk_dist_linea.png" style="width: 288px; height: 242px; float: right;" alt="" hspace="6" vspace="10" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Solicita una polilínea cuyos
+vértices serán los puntos de cálculo.<br />
+      <br />
+      </span></span></span>La opción <span style="font-weight: bold; font-style: italic;">Ajustar cota (Z-Zpr=0)</span>
+permite ajustar la cota de una línea según la
+cota proyectada del eje.<br />
+
+      <br />
+
+La opción <span style="font-style: italic;">Añadir código a cada línea <span style="font-style: italic;"><span style="font-weight: bold;">&nbsp;(si no usa el nombre del tipo de línea)</span></span></span>
+&nbsp;permite añadir un código (texto alfanumérico) por teclado para
+identificar los puntos de la línea, si no se activa esta opción se toma
+como código el nombre del tipo de línea seleccionada.<br />
+
+      <br />
+
+La opción <span style="font-weight: bold;">Elegir más de una línea </span>permite
+seleccionar más de una línea (el eje se selecciona después de la
+primera línea), en el momento que no se deseen elegir más líneas se
+puede picar en vacío o pulsar la tecla [esc].<br />
+
+      <br />
+
+Si está
+asociado un CRS válido se añaden para todos los modos las coordenadas
+geográficas del punto en el CRS actual y en WGS84 en la rejilla de
+datos.<br />
+
+      <br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+</body></html>

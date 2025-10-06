@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Superficies y códigos</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SUPERFICIES Y CÓDIGOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />La información completa que describe un eje es escrita en los ficheros&nbsp;<span class="Archivo">ISPOL#.per</span>,
+que contienen para cada PK (a intervalo fijo y en los puntos singulares
+definidos) los datos geométricos de cada una de las superficies que
+componen la sección transversal. Cada punto es además catalogado
+utilizando códigos numéricos que crecen desde el eje a derecha e
+izquierda. <br /><br />Un esquema sencillo que describe el sistema usado por ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+es el que se ve en la siguiente ilustración. En ella se puede observar
+un perfil típico de una autovía, con cuatro superficies que definen
+diferentes horizontes geotécnicos, los cuales pueden ser creados por la
+aplicación usando paralelas al terreno original o bien ser obtenidas
+como datos que ya están definidos en los perfiles. Estas líneas o
+superficies geotécnicas son: roca (línea de tipo L66), terreno
+competente (L66), terreno inadecuado (L105) y superficie vegetal (L104).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 587px; height: 144px;" alt="" src="Imagenes/superf_cod.png" /><br />
+      </div>
+      <br />
+También se distinguen cuatro líneas o superficies constructivas:
+rasante (L67), subrasante o línea de tierras (L68), sobreexcavación
+(L107), y terminación para el caso de desmonte inadecuado (L69). Pueden
+existir muchas más superficies, como línea de saneo, muro,
+revestimientos, túnel, etc.<br />
+      <br />
+      <br />
+      <span class="Titulo_2">Funcionalidad del sistema de numeración de superficies</span><br />
+      <br />
+El número de superficie, por tanto, está ligado de manera inequívoca a
+un tipo de línea gráfica definida en las librerías de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.
+De esta manera tan sencilla queda ligado el tipo de elemento con el
+aspecto gráfico (color, grosor, estilo de línea,...), sin necesidad de
+configurar ningún elemento adicional.<br />
+      <br />
+Por otra parte, algunos procesos que utilizan los datos de la
+superficie (bien para que ser dibujada o utilizada para calcular
+superficies) deben de poder identificarla de manera única.<br />
+      <br />
+      <br />
+      <span class="Titulo_2">Significado de la organización por códigos</span><br />
+      <br />
+En principio las superficies o unidades geotécnicas no requieren
+codificación, aunque sin embargo sí es posible que el usuario asocie
+códigos a determinados puntos con varios objetivos, como la
+identificación de la calzada existente o el posicionamiento de un
+símbolo en la posición del código.<br />
+      <br />
+Sin embargo, para poder analizar y utilizar la información de cada
+elemento constructivo es necesario codificarlo, de manera que
+independientemente de sus coordenadas sea posible identificarlo
+siempre. Por ejemplo, la porción de superficie comprendida entre el
+código 1 y 1.5 de la superficie 67 siempre se corresponderá con la
+calzada principal, de la misma manera que el código 100 identificará el
+punto donde intersecan rasante y subrasante.<br />
+      <br />
+      <br />
+      <span class="Titulo_2">Códigos más frecuentes de las superficies 67 y 68</span><br />
+      <br />
+Aunque casi todas las superficies constructivas están codificadas, como
+se puede observar al obtener el cuadro de propiedades de una de estas
+líneas en el <a href="EDM_editor_perfiles.html">editor de perfiles</a>,
+sin duda los que tienen más importancia son los correspondientes a las
+superficies 67 y 68. A continuación se muestra una tabla con los
+códigos más frecuentas de ambas líneas:<br />
+      <br />
+      <table style="text-align: left; width: 581px; height: 1154px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 494px;"><span style="font-weight: bold;">SUPERFICIE 67 (calzadas)</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 67px;"><span style="font-weight: bold; font-style: italic;">Código</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 494px;"><span style="font-weight: bold; font-style: italic;">Descripción</span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">0<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Vértice sin definir.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-100 ... -51<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Fondo de mediana. El resto hasta -51 representan puntos de la mediana (doble calzada).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-50<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde de la berma de mediana (doble calzada).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-13<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde tercer arcén interior (doble calzada).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-12<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde segundo arcén interior (doble calzada).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-11<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde primer arcén interior (doble calzada).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Eje geométrico en calzada única, banda blanco interior en calzada doble.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">2<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Banda blanca exterior.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">11<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde primer arcén exterior<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">12<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde segundo arcén exterior. Si no hay arcén, puede representar el primer vértice de una acera o de un vector plataforma fija.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">13<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde tercer arcén exterior. Si no hay arcén, puede representar el segundo vértice de una acera o de un vector plataforma fija.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">14<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Borde tercer arcén exterior. Si no hay arcén, puede representar el tercer vértice de una acera o de un vector plataforma fija.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">15 ... 25<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Vértices de aceras o de vectores de plataforma fija.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">50<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Berma en pavimento de desmonte / terraple´n.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">51<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Intersección con subrasante.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">90 ... 99<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Puntos de la cuneta que quedan antes de la unión rasante-subrasante (dentro de la plataforma).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">100<br />
+            </td>
+            <td style="vertical-align: top; width: 494px; text-align: justify;">Corte del pavimento y subrasante.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 494px;"><br />
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 494px;"><span style="font-weight: bold;">SUPERFICIE 68 (subrasante + taludes)</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Código</span></td>
+            <td style="vertical-align: top; width: 494px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Descripción</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-100<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Fondo de mediana (doble calzada).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">-55.5<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Corte de la subrasante con la mediana (doble calzada).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Vértice de la limatesa<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">2<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Punto bajo el borde exterior de la calzada<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">99/100<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Último punto de la subrasante.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">101<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Fondo de cuneta en cuneta forzada en terraplén.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">102 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos de cuneta forzada en terraplén.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">395<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Tercer punto de terraplén (empezando por arriba).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">396<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Codo interior berma de terraplén (empezando por arriba).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">397<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Segundo punto de terraplén (empezando por arriba).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">398<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Condo interior berma baja de terraplén (empezando por arriba).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">399<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Primer punto del terrapén (empezando por arriba).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">495<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Tercer punto de terraplén (empezando por abajo).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">496<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Codo interior berma de terraplén (empezando por abajo).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">497<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Segundo punto de terraplén (empezando por abajo).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">498<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Codo interior berma baja de terraplén (empezando por abajo).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">499<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Primer punto del terraplén (empezando por abajo).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">500<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Comienzo del muro de terraplén<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">600<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Fondo de la cuneta de desmonte.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">601<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Final de la sección de terraplén.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">601.1, ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos del muro de terraplén.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">602<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Final del muro.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1101<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Primer punto de la cuneta.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1102<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Segundo punto de la cuneta.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1103<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Tercer punto de la cuneta.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1201<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Primer punto de desmonte en roca.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1202<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Segundo punto de desmonte en roca.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1203<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Tercer punto de desmonte en roca.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1251 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos del muro de desmonte.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1260 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos del muro de desmonte.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1270 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos del muro de desmonte.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1280 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos del muro de desmonte.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1290 ...<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Puntos del muro de desmonte.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1301<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Primer punto de desmonte en tierra.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1302<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Codo interior primera berma de desmonte.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1303<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Segundo punto de desmonte en tierra.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1304<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Codo interior segunda berma de desmonte.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1305<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Tercer punto de desmonte en tierra.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1399<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Fin de vector de desmonte en tierra.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1500<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Cambio a coronación de desmonte.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1501<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Primer punto de coronación de desmonte.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1600<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Final del muro/sección de desmonte.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">1600<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Corona de desmonte.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">2800<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Terreno libre detrás desmonte/terraplén (cuneta de guarda).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">3000<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Comienzo de la cuneta de guarda.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 67px; text-align: center;">3010<br />
+            </td>
+            <td style="vertical-align: top; width: 494px;">Punto de control de la cuneta de guarda.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br /></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

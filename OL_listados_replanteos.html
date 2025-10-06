@@ -1,0 +1,956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Listados de replanteos</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LISTADOS DE REPLANTEOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br /><span class="Parrafo">Los listados específicos de replanteos son:<br />
+      <br />
+</span>
+      
+      <div style="margin-left: 40px;"><a href="#replanteo_eje"><span class="Parrafo">Replanteos del eje</span></a><br />
+      <a href="#zona_ocupa"><span class="Parrafo">Zona de ocupación</span></a><br />
+      <a href="#cab_desm_pie_ter"><span class="Parrafo">Cabeza de desmonte y pie de terraplén</span></a><br />
+      <a href="#precorte"><span class="Parrafo">Precorte en roca</span></a><br />
+      <span class="Parrafo"><a href="#area_exp">Área de expropiación</a><br />
+      <a href="#altura_dt">Altura de taludes de desmonte y terraplén</a><br /><span style="color: rgb(0, 78, 175);"><a href="#sobreanchos">Sobreanchos y elevación</a></span><br />
+</span>
+      <span class="Parrafo"><a href="#taludes">Replanteo de taludes</a></span><br />
+      <span class="Parrafo"><a href="#muros">Replanteo de muros</a></span><br />
+      <span class="Parrafo"><a href="#bar_seg">Barreras de seguridad</a><br />
+      <a href="#sim_per">Simbolos del perfil</a><br />
+      <a href="#rep_zap">Replanteo zapata muros</a><br />
+      <a href="#tun_ire">Tunel IREDES</a><br />
+</span>
+      <span class="Parrafo"><a href="#rep_firmes">Replanteo de firmes</a></span><br />
+      <span class="Parrafo"><a href="#cotas_firmes">Cotas de firmes</a></span><br />
+      <a href="#cotas_refino"><span class="Parrafo"><span class="Parrafo">Cotas de refino</span></span></a><br />
+      <span class="Parrafo"><a href="#sobreexc">Sobreexcavación</a><br /><a href="#aristas">
+Suelo Seleccionado: Aristas</a><br />
+      <a href="#aprovechaSS">Distancia Aprovechamiento SS</a><br />
+</span>
+      <span class="Parrafo">
+          </span></div>
+<ul style="margin-left: 40px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+      </ul>
+
+<ul style="margin-left: 40px;">
+        
+        
+        
+        
+        
+
+      </ul>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_listados_replanteos.png" style="width: 635px; height: 397px;" alt="" /><br />
+      </div>
+      <br />
+      </span><span class="Titulo_2"><a name="replanteo_eje">Replanteos del eje</a></span><br />
+      <span class="Parrafo"><br />El listado de <span style="font-weight: bold;">REPLANTEOS DEL EJE</span> (<span class="Archivo">cpun.res</span>)
+permite seleccionar uno de los listados de cálculo de puntos que se ha
+hecho en el menú de replanteos o generar un listado nuevo dando el eje
+(o indicando todos los ejes), PK de inicio, PK final y equidistancia o múltiplos.
+En el de equidistancias se desdoblará la columna COTA en tres: <span style="font-style: italic;">Z RASANTE IZQUIERDA / DERECHA</span> y <span style="font-style: italic;">Z USUARIO</span>.<br />Si hay un CRS válido se listan las coordenadas geográficas latitud y longitud y en la cabecera se añade el nombre del CRS.<br />
+      <br />
+El listado&nbsp;<span class="Archivo">cpun0.res</span>
+contiene el conjunto de todos los ejes del proyecto, excepto los NO
+activos. Si se genera el listado para todos los ejes activos, también
+se puede seleccionar que se ordene por grupos, generando así un listado
+por cada grupo (<span class="Archivo">cpunG1.res</span>,&nbsp;<span class="Archivo">cpunG2.res</span>, ...). <br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteos_cpun.png" style="width: 550px; height: 94px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+En el caso de ferrocarriles, este&nbsp; listado ofrece la cota del hilo bajo en lugar de la cota proyectada.<br />
+Para ferrocarriles de vía única los peraltes se listan de tal forma que
+en curvas a la de derecha, el peralte se lista positivo y en la columna
+de PERAL_I (Es el carril que va levantado). En curvas a la izquierda,
+el peralte se lista positivo y en la columna de<br />
+PERAL_D (Esel carril que va levantado).</span><span class="Parrafo"><br />
+Posibilidad de editar y guardar en ficheros los textos de las cabeceras
+de los listados, asi como activar/desactuvar las columnas que genera
+este listado.<img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" />.&nbsp; </span><br />
+      <span class="Parrafo">
+      <br />
+Cuando esta desplegado el cuadro de diálogo en este listado la ventana
+de Sección Real, muestra la sección de firmes correspomdiente.<br /><br /></span>La opción de Listados-&gt;PERFIL:PK usuario, también afecta a los listados de <a href="OL_replanteo_planta.html">replanteo</a> de un eje en coordenadas X,Y o en AZ,distancia (Desde bases de replanteo):cpun.res, cpun.xlsx y bisección.res<span class="Parrafo"><br />
+      <br />
+      <span class="Nota">Nota:</span>&nbsp;Si en la configuración general de listados, está activado la opción de&nbsp;<img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" />&nbsp;<span class="Parf_negrita">6 decimales en replanteos</span>,
+las distancias al eje aparecen automáticamente con 4 decimales. Si hay
+un CRS válido, las columnas gneeradas en el .xlsx con coordendas
+referidas al WGS84, se expresarán en grados sexagesimales en formato
+decimal<br />
+<br />
+      </span><span class="Titulo_2"><a name="zona_ocupa">Zona de ocupación</a></span><br />
+      <span class="Parrafo"><br /></span>El listado de <span style="font-weight: bold;">ZONAS DE OCUPACIÓN</span> (<span class="Archivo">zonas.res</span>) genera los archivos&nbsp;<span class="Archivo">zona#.res</span>
+(siendo # el número de eje) que contienen las coordenadas X e Y de los
+límites de las zonas alcanzadas (bordes de ocupación), así como la cota
+dichos bordes y la altura de los taludes. Puede crearse un listado
+conjunto de todos los ejes en grupos activos.<br />
+      <br />
+Adicionalmente, se genera de forma automática el fichero de replanteo&nbsp;<span class="Archivo">IS#zonas#.rep</span> (siendo # el número de eje), que puede ser cargado desde el menú de REPLANTEO.<br />
+      <br />
+<span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteos_ocupa.png" style="width: 549px; height: 79px;" alt="" /><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+Activando la casilla Generar listado tienes la posibilidad de generar el listado sólo en los múltiplos de un determinado valor.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="cab_desm_pie_ter">Cabeza de desmonte y pie de terraplén</a></span><br />
+      <span class="Parrafo"><br />El listado <span style="font-weight: bold;">CABEZA DESMONTE</span> (<span class="Archivo">cabdes.res</span>)
+se basa en el último y penúltimo punto de una superficie determinada,
+por la derecha y la izquierda, indicando la pendiente que los une. Si
+se dan las superficies que ofrece por defecto, resulta la cabeza del
+desmonte y pie de terraplén. <br />
+      <br />
+Este listado se usa para estaquillar en campo esas líneas, recalcando
+el punto adecuado cuando los perfiles del terreno del proyecto no son
+exactos y corrigiendo &#8220;sobre la marcha&#8221; la distancia de pequeños
+errores en la cota teórica del terreno.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteos_cab_desm_pie_ter.png" style="width: 512px; height: 123px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Aparecen también en este listado las <span style="font-weight: bold;">alturas desde el eje</span> <span style="font-style: italic;">Zdt</span> &#8211; <span style="font-style: italic;">Zras</span>, siendo <span style="font-style: italic;">Zdt</span> la cota del último punto de la cabeza de desmonte o del pie de terraplén y <span style="font-style: italic;">Zras</span> la cota del eje de giro (definida en el <a href="OL_rasantes_diseno.html">menú de RASANTES</a>).<br />
+      <br />
+Además, se crea un listado tabulado llamado&nbsp;<span class="Archivo">cabdes#.res</span> (siendo # el número de eje) en la carpeta&nbsp;<span class="Archivo">tmp</span>, al que se le añade una columna con el número del eje.<br />
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="precorte">Precorte en roca</a></span><br />
+      <span class="Parrafo"><br />El listado de <span style="font-weight: bold;">PRECORTE EN ROCA</span> (<span class="Archivo">precor.res</span>)
+calcula por cada lado, a partir de dos códigos, las longitudes de los
+precortes en los distintos desmontes en roca, las alturas y el número
+de tiros. Este listado se puede obtener tanto en formato&nbsp;<span class="Archivo">.res</span> como en formato<span class="Archivo">.xlsx</span>.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteos_precorte.png" style="width: 512px; height: 158px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Las características de este listado son las siguientes:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">La longitud de
+los tiros se miden sobre el talud. El programa pide dos valores, talud
+mínimo y talud máximo, para medir las longitudes de los taludes de
+desmonte en roca comprendidos entre esos dos valores (sin contar
+bermas).</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">En el caso de mediana abierta se permiten seleccionar los taludes interiores.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Al no tener en
+cuenta los códigos, la geometría en roca puede estar definida
+conservando la geometría del desmonte en tierra. Se analiza toda la
+línea del desmonte desde el borde de la cuneta hasta el horizonte de la
+roca.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Se puede generar el listado solamente para el margen derecho, solamente para el margen izquierdo o para ambos.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Se permite seleccionar la superficie para iniciar la medida, entre el terreno competente o una de las seis rocas disponibles.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Se permite seleccionar los taludes interiores en los casos de mediana abierta con las opciones <span style="font-weight: bold; font-style: italic;">Int. Izq.</span> e <span style="font-weight: bold; font-style: italic;">Int. Der.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Se&nbsp; puede
+seleccionar la superficie para iniciar la medición, siendo estas el
+terreno competente y las seis superficies de roca.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Es posible considera la curvatura y los cambios de ancho para corregir la distancia entre perfiles.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">También se permite introducir un código para el pie y otro para la cabeza de perforación.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Se listan los siguientes conceptos:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo">PK (PK<sub>i</sub>): PK del dato i, pueden listarse para todos los perfiles del fichero&nbsp;<span class="Archivo">ISPOL#.per</span> o sólo los múltiplos de un determinado valor (por ejemplo, 20).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">LONG.TALUD (LT<sub>i</sub>): Es la longitud de la línea de talud en roca en el PK<sub>i</sub> donde el talud esté comprendido entre el valor mínimo y el máximo (para medir entre cabezas y pies de taludes y no las bermas).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">SUP.TALUD (S<sub>i</sub>): Superficie de talud en roca entre dos PK&#8217;s.</span></li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/list_precorte_ec1.png" style="width: 174px; height: 32px; margin-left: 7px;" alt="" align="middle" /><br />
+      </div>
+      <br />
+      <ul>
+        <li><span class="Parrafo">NUM.TIROS (N<sub>i</sub>): Número de tiros.</span></li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/list_precorte_ec2.png" style="width: 150px; height: 34px;" alt="" align="middle" /></span></div>
+      <ul>
+        <li><span class="Parrafo">LONG.TIROS (L<sub>i</sub>): Longitud de tiro promedio entre dos valores de PK.</span></li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/list_precorte_ec3.png" style="width: 98px; height: 36px;" alt="" align="middle" /></span></div>
+      <ul>
+        <li><span class="Parrafo">ACUL.TALU.(&#931;S<sub>i</sub>): Superficie de talud acumulada.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">ML.PRECORTE (ML<sub>i</sub>): Metros lineales de precorte entre dos PK&#8217;s.</span></li>
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/list_precorte_ec4.png" style="width: 87px; height: 18px;" alt="" align="middle" /></span></div>
+      <ul>
+        <li><span class="Parrafo">ACUL.PRECORTE (&#931;ML<sub>i</sub>): Metros lineales acumulados de precorte.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Distancia entre perfiles (que será diferente según se considere la curvatura y cambios de ancho o no).</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      <span class="Titulo_2"><a name="area_exp">Área de expropiación</a></span><br />
+      <br />
+El listado <span style="font-weight: bold;">ÁREA DE EXPROPIACIÓN</span> (<span class="Archivo">expro.res</span>) incluye, para cada perfil, las
+coordenadas (X,Y,Z) y distancia al eje de cada borde (derecho e
+izquierdo), además del ancho ocupado, el área parcial y el área
+acumulada.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_replanteos_exp.png" style="width: 512px; height: 74px;" alt="" /></div><br />
+Al activar la casilla <span style="font-weight: bold;">Todos los ejes activos</span>
+obtendremos un listado conjunto de todos los ejes. Este listado incluye
+en la parte final del mismo un resumen por ejes y la suma total.<br />
+      <br />
+      <a name="altura_dt"><span class="Titulo_2">Altura de taludes de desmonte y terraplén</span><br />
+      <br />
+Contiene las alturas de los taludes de desmonte y terraplén comprendidas en unos determinados rangos. Obtenemos el listado&nbsp;<span class="Archivo">altura.res</span>.<br /><br />Se mide la diferencia de cota entre el borde de la plataforma y la cabeza/pie del talud.<br />
+      <br />
+</a></span></span>
+<a name="altura_dt">      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><a name="altura_dt"><img src="Imagenes/dialogo_alturadt.png" style="width: 549px; height: 132px;" alt="" /></a></span></span><a name="altura_dt"><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></a></div>
+<a name="altura_dt">      <span class="Parrafo"><span class="Parrafo"><br />
+      <br /></span></span></a><a name="sobreanchos"><span class="Titulo_2">Sobreanchos y elevación</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Para proyectos de Ensanche y Mejora se lista la distancia entre el
+código 11 de la nueva calzada y el borde de la existente (valor
+negativo en caso de estar en el interior) y la diferencia de cota en el
+borde de la calzada existente (o en el código 11 de la nueva si está
+por el interior).<span style="font-weight: bold;"><span class="Archivo"><br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteo_sobreanchos_elevacion.png" style="width: 511px; height: 88px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">
+      </span></span></span><a name="altura_dt"><br /><span class="Parrafo"><span class="Parrafo"><br /></span></span><span class="Titulo_2"></span></a><a name="taludes"><span class="Titulo_2">Replanteo de taludes</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+El listado <span style="font-weight: bold;">REPLANTEO DE TALUDES</span> (<span class="Archivo">talud.res</span>)
+permite extraer por PK&#8217;s las distancias al eje y cotas de los vértices
+de las líneas de desmonte en inadecuado y/o de la plataforma
+(superficie 68) desde el último punto hasta un código (por defecto el
+100).<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteo_talud.png" style="width: 512px; height: 151px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Es posible obtener este <span style="font-weight: bold;">listado a 20 columnas</span> activando la casilla correspondiente.<br />
+      <span class="Parf_negrita"><span class="Parrafo"> <img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Talud y material:</span>&nbsp;se
+puede añadir, para cada punto, el talud y material, distinguiendo
+entre: Terraplén, Inadecuado, Tierra, Roca 1, Roca 2, Roca 3, Roca
+4,Roca 5, Roca 6.<br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="muros">Replanteo de muros</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">MUROS</span> (<span class="Archivo">muros.res</span>),
+que puede generarse sólo para ejes activos si así se indica, contiene
+la distancia al eje, cota, coordenadas X e Y, tipo
+(desmonte/terraplén), altura, longitud y superficie de la cara vista de
+las cabezas de los muros, así como la cota del pie y la cota de la rasante. También presenta este listado una columna en
+la que se van acumulando la superficie de la cara vista de cada muro.
+En el caso de mediana abierta, también se muestra la medición de un
+muro de terraplén en el lado de la mediana abierta. En el listado este
+muro aparece con la clave "M".<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteo_muros.png" style="width: 549px; height: 132px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />Al activar la casilla Todos los ejes activos, se generan los muros de los ejes de los acuerdos de cruces y glorietas.<br /><br />Activando la casilla Fijar intervalo de alturas tenemos la posibilidad
+de listar los muros de altura comprendida entre dos valores.<br />
+      <br />
+Al final del listado aparece una página con el total de la longitud y
+superficie de muros desglosado en DESMONTE IZ, DESMONTE DR, TERRAPLEN
+IZ, TERRAPLEN DR, MEDIANA IZ y MEDIANA DR, así como la suma total de
+todos éstos. Si los muros se calculan por tabla de muros, al final del
+listado se ofrece un resumen de los tramos en los que se aplica cada
+muro (por el nombre con el que aparece en la tabla), ordenado según van
+apareciendo en el trazado.<br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br />
+Activando la casilla <span style="font-weight: bold;">Extrapolar</span>:&nbsp;
+para la medición de la superficie de muro, se supone que el muro no
+termina bruscamente en el último perfil en el que se ve, sino que se va
+desvaneciendo hasta desaparecer totalmante en el siguiente perfil.<br />
+      <br />
+Este listado te ofrece el nombre del muro de la tabla .tmu, si son muros de la tabla. <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="bar_seg">Barreras de seguridad</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+El listado <span style="font-weight: bold;">BARRERAS DE SEGURIDAD</span> (<span class="Archivo">biondas.res</span>) extrae del fichero&nbsp;<span class="Archivo">ISPOL#.per</span> la posición de las biondas y lista sus coordenadas y su longitud, añadiéndose al final las longitudes totales.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteo_barSeg.png" style="width: 549px; height: 132px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Al generar el listado, es posible indicar al programa que también genere un fichero de marcas viales con el nombre&nbsp;<span class="Archivo">biondaN.mcv</span> y en qué pestaña, de las cinco posibles, se van a almacenar. </span></span><span class="Parrafo">También se ofrece la posibilidad de listar todas las biondas, o solamente las que llevan el <a href="OL_barreras_seguridad.html#SPM">sistema de protección de motoristas (S.P.M.)</a>.<br />
+</span>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2">Simbolos del perfil</span><br />
+
+      <br />
+
+Obtenemos un listado de los tipos de símbolo que hay en cada perfil,
+obteniendo el PK, tipo de símbolo, coordenadas X e Y y su cota.<br /><br />Es
+posible elegir un archivo de perfiles diferente a un ISPOLx.per. Se
+supone que el archivo elegido contiene para cada PK, las coordenadas y
+el azimut correcto del eje al que pertenece el perfil.<br />
+
+      <br />
+
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/sim_perf.png" style="width: 546px; height: 94px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><a name="rep_zap"><span class="Titulo_2">Replanteo zapata muros</span><br />
+      <br />
+Obtenemos un listado en el que obtenemos la cota base y cota del pie de
+la zapata del muro. También nos dará la distancia al eje y sus
+coordenadas X e Y.<br />
+      <br />
+      
+      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/rep_zap_mr.png" style="width: 549px; height: 94px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><a name="tun_ire"><span class="Titulo_2">Tunel IREDES</span><br />
+      <br />
+Este listado genera un fichero con formato Xml IREDES en el que se
+listan las coordenadas del símbolo 313 que previamente tiene que haber
+sido generado en los perfiles que definen el túnel.<br />
+      <br />
+      
+      </a><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_iredes.png" style="width: 549px; height: 94px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="rep_firmes"><span class="Titulo_2">Replanteo de firmes</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span></span>
+El listado de REPLANTEO DE FIRMES (<span class="Archivo">repfir.res</span>)
+está diseñado para nivelación en campo de cada uno de los componentes
+del
+firme que se desee, bien del eje indicado, bien de todos los ejes
+activos. El formato obtenido al pulsar sobre el botón [Generar] está
+preparado como libreta de
+nivelación.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_replanteo_firmes.png" style="width: 549px; height: 289px;" alt="" /><br />
+      </div>
+
+      <br />
+Si se activa la opción <span style="font-weight: bold;">Varias capas</span> entonces el cuadro de diálogo
+cambia de forma que sea posible listar simultáneamente el replanteo de
+varias capas de firmes. <br />
+
+      <br />
+
+
+      En los listados se representa la pendiente transversal entre los puntos. Además,
+se pueden añadir puntos de referencia exteriores para el estaquillado,
+dados por su distancia al hombro de la capa de firme.<br />
+      <br />
+Se puede extraer un punto a cada lado de la plataforma, dado por una
+distancia fija al eje. Este punto se imprimirá en el listado con la
+clave <span style="font-style: italic;">f</span>.<br />
+
+      <br />
+También existe la posibilidad de listar el peralte en lugar de la
+pendiente transversal, en este caso se utiliza el convenio de pereltes
+seleccionado, (clásico o internacional).<br />
+
+      <br />
+
+Desde este menú también se pueden generar ficheros <a href="land_xml.html">LandXML</a> para cada una de las capas de firme. Además, el botón <span style="font-weight: bold;">[Generar rf1L.res]</span> permite generar el listado pero con un formato como el mostrado a continuación:<br />
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img src="Imagenes/list_rf1L.png" style="width: 677px; height: 154px;" alt="" /><br />
+      </div>
+
+      <br />
+Mediante el listado rf1P.res, en cada PK lista los puntos de la capa de
+firme con su distancia al eje y espesor real en ese punto.<span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="cotas_firmes">Cotas de firmes</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span>
+El listado de COTAS DE FIRMES (<span class="Archivo">ctfir.res</span>)
+se usa para extender las bandas sucesivas de firme. Se listan datos de
+4 puntos (A, B, C y D) que se dan siempre como referencia a los puntos
+de la superficie de rodadura. Los códigos 1 y 2 limitan la calzada
+principal, 2 y 11 la primera calzada auxiliar, etc. B y C son los
+extremos del techo de una banda de firme que se define por distancia
+horizontal y profundidad desde dos puntos de la superficie de rodadura,
+y los A y D son otros puntos auxiliares fuera de los anteriores
+(estacas o clavos para el cable-guía de la extendedora).<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_replanteo_cotaFirm.png" style="width: 512px; height: 207px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Si se activa la opción <span style="font-weight: bold;">Puntos B y C: Corte con talud si están fuera. A y D: Distancias desde B y C. Todos los Perfiles</span>,
+el programa, en lugar de calcular los datos de forma analítica según la
+equidistancia definida, analiza todos los perfiles del fichero&nbsp;ISPOL#.per
+dentro del rango de PK&#8217;s especificado y si al punto B o el C se les
+busca por el código 2 o superior (borde exterior de la calzada o
+arcenes exteriores) más una distancia y el punto queda por fuera de
+paquete de firmes, entonces el programa busca la intersección con el
+talud exterior de cierre de firmes (superficie 67, puntos 11, 50 y
+100). <br />
+
+      <br />
+
+Además, en caso de que al punto B o el C se les buscan por el código 1
+o inferior (borde interior de la calzada o arcenes interiores) más una
+distancia y el punto queda por fuera de paquete de firmes por el lado
+de la mediana, el programa busca entonces la intersección con el talud
+interior de cierre de firmes (superficie 67, puntos -11, -50 y -100).
+En caso de estar activada esta opción el punto A se calcula a una
+distancia relativa al punto B y el punto D a una distancia relativa al
+punto C.<br />
+
+      <span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+</span></span><span class="Titulo_2"><a name="cotas_refino">Cotas de refino</a></span><br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: normal;">
+El listado de </span>COTAS DE REFINO<span style="font-weight: normal;"> (</span><span style="font-weight: normal;" class="Archivo">ctref.res</span><span style="font-weight: normal;">)
+para refino o remate de la plataforma de explanada lista en paralelo
+hasta 6 ó 12 puntos referidos a la rasante (L67), a la subrasante (L68), al techo de la capa de forma (L45) o a alguna
+de las superficies del suelo seleccionado, identificados por su código.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+</span></span>
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteo_cotasRef.png" style="width: 561px; height: 333px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+
+Cuando se solicita el punto de clave 100 sobre la subrasante, si el
+programa no lo encuentra (desmonte con cuneta reducida) entonces busca
+automáticamente el 99 (punto bajo de la subrasante por debajo del fondo
+de cuneta).<br />
+
+      <br />
+
+Si se solicita el código 99 y no lo encuentra, entonces busca el 100.<br />
+
+      <br />
+
+Si se solicita el -55.5 y no lo encuentra entonces busca:<br />
+
+      <br />
+
+      </span></span>
+      
+      <div style="margin-left: 40px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo">a)&nbsp;&nbsp;&nbsp; El -11 si en él hay un quiebro de la pendiente.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">b)&nbsp;&nbsp;&nbsp; El anterior (-100) si está en prolongación.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+
+De todas formas, se imprime el código del punto que realmente se está listando.<br />
+
+      <br />
+
+Al generar este listado se genera simultáneamente otro denominado&nbsp;<span class="Archivo">cf#.res</span>
+(siendo el número del eje) que contiene los mismos datos para el
+REPLANTEO Y CONTROL DE FIRMES. Este listado tiene una única cabecera al
+principio y luego no tiene saltos de página, lo que permite su carga
+desde hojas de cálculo.<br />
+
+      <br />
+
+Se generan también los siguientes listados:<br />
+
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Archivo">cfR#.res</span>: Replanteo de firmes.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Archivo">cfC#.res</span>: Control de firmes.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Archivo">CN#.res</span>: Fichero de control numérico para el programa LMGS_Grader.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Archivo">cfCR.res</span>:
+Este listado tiene el mismo formato que el de Control de capas de firme
+(cfC) pero en la cabecera pone "REPLANTEO DE CAPAS DE FIRME" (cfR).<br />
+          <br />
+</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Archivo">cf1l.res</span>: Imprime en una sola linea todos los datos de cada perfil.<br />
+          </span></span></li>
+
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Archivo">LandXML</span>: Desde este botón se obtiene un fichero en formato <a href="land_xml.html">LandXML</a> (<span class="Archivo">istram.xml</span>).
+Se exporta la planta y el alzado seleccionado, y también la superficie
+seleccionada, de forma análoga al listado de control numérico de
+maquinaria. Es necesario generar primero el listado de cotas de refino.
+Esta tecla despliega un menú similar al del menú específico LANDXML.</span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ctref.png" style="width: 163px; height: 112px; margin-left: 7px; font-weight: normal;" alt="" align="right" /><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">Además, al generar
+este listado se puede generar también un fichero de perfiles&nbsp;<span class="Archivo">ctref#.per</span>
+con los puntos solicitados (siendo # el número de eje) y con el tipo de
+superficie indicado.<br />
+
+      <br />
+
+      Cuando se introduce un valor de Altura global, ésta se copia en los 6/12 puntos.<br />
+
+      <br />
+
+La opción <span style="font-style: italic;">Intersección con el talud si el punto está fuera</span> provoca el siguiente comportamiento:<br />
+
+      </span></span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Por
+el exterior para puntos de código &gt;1 se analiza un posible corte con
+el talud de las líneas (68) y (67) y se trunca en la vertical del fondo
+de cuneta o del pie de terraplén si sobrepasa estos puntos.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">También
+analiza del lado de la mediana para puntos con código &lt;1 y calcula
+el corte con la superficie (67) a partir del borde del arcén hasta que
+se acaba. Si no encuentra el corte y pasa por debajo del vértice de la
+mediana devuelve el punto en la vertical del vértice de la mediana.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando
+está activada la opción, si a la profundidad que se da el punto está
+por debajo del pie de terraplén y por el lado de fuera entonces se
+devuelve un punto en la vertical del pie de terraplén.</span></span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando el perfil está truncado y ya se ha comido el código que se solicita en el listado, salta a ese último código.<br />
+
+      <br />
+
+Pidiendo un código inferior a -100 (por ejemplo el -500), el programa
+busca el punto de la subrasante que corta al talud de la mediana y, si
+no la corta, el punto bajo el vértice de la mediana. <br />
+
+      <br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo">La opción <span style="font-style: italic;">Quitar repetidos</span> provoca que si dos puntos salen con la misma distancia al eje y cota, se elimina uno de ellos.<br />
+
+      <br />
+
+      </span></span></span><img src="Imagenes/list_cotas_ref_inter_talud.png" style="width: 232px; height: 68px; margin-left: 7px; font-weight: normal;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Próxima
+a la anterior se encuentra una casilla que permite detener en el eje,
+puntos definidos con una distancia negativa hacia el eje. También se
+puede definir a qué distancia del eje se detiene el punto.<br />
+
+      <br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Los botones </span>[Guardar]<span style="font-weight: normal;"> y </span>[Cargar]<span style="font-weight: normal;"> permiten archivar o recuperar los datos que definen el listado mediante ficheros de extensión&nbsp;</span><span style="font-weight: normal;" class="Archivo">.crf</span><span style="font-weight: normal;">.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <span style="font-style: italic; font-weight: normal;"><span style="font-weight: bold; font-style: italic;">Tolerancias</span><br />
+
+      <br />
+      <span style="font-weight: normal;">
+Se pueden definir tres tolerancias: Tolerancia en distancia y en cota
+máximas para considerar que dos puntos están repetidos y tolerancia en
+distancia mínima para buscar dos puntos consecutivos para el cálculo de
+la pendiente transversal.</span><br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Cálculo automático de carriles</span><br />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Desde este listado es posible realizar un cálculo automático de carriles para la motoniveladora. Existen dos formas de cálculo: </span><br style="font-weight: normal;" />
+
+</span></span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Por número de carriles.</span></span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dando
+el ancho mínimo y nominal. En este caso el programa va generando
+carriles con el ancho nominal. Si el resto después del último carril es
+inferior al ancho mínimo, el resto se incorpora al último carril. Si
+no, se crea un carril nuevo con el ancho restante.</span></span></span></li>
+      
+      </ul>
+
+      <img src="Imagenes/cotas_ref_carriles.png" style="width: 163px; height: 62px; margin-left: 7px; font-weight: normal;" alt="" align="right" /><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+ambos casos se toman como puntos de referencia los puntos A y F (y G y
+L para el caso de 12 datos). El resto de los puntos se interpolan entre
+los extremos.<br />
+
+      <br />
+
+Se recomienda definir los datos de dentro hacia fuera, por ejemplo para el caso de 12 datos:<br />
+
+      <br />
+
+      </span></span></span>
+      
+      <table style="text-align: left; height: 50px; width: 383px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 100px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lado Izquierdo: &nbsp;&nbsp; <br />
+
+            </span></span></span></td>
+            <td style="vertical-align: top; width: 129px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Punto A (código -11)</span></span></span></td>
+            <td style="vertical-align: top; width: 128px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Punto F (código 11)</span></span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 100px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lado Derecho:&nbsp; &nbsp; <br />
+
+            </span></span></span></td>
+            <td style="vertical-align: top; width: 129px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Punto G (código -11) <br />
+
+            </span></span></span></td>
+            <td style="vertical-align: top; width: 128px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Punto L (código 11)</span></span></span></td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Los carriles pueden representarse gráficamente usando la opción </span>Líneas L<span style="font-weight: normal;"> del EDITOR DE PERFILES, con el fichero&nbsp;</span><span style="font-weight: normal;" class="Archivo">ctref#.per</span><span style="font-weight: normal;"> correspondiente.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <span style="font-style: italic; font-weight: bold;">Diferente superficie de referencia para cotas</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Existe también la posibilidad de utilizar como referencia de cotas una
+superficie diferente a la de referencia de distancias
+(código+distancia). Si se activa esta casilla hay que escribir el tipo
+de la superficie para la referencia de cotas (por defecto, la 107).</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <span style="font-style: italic; font-weight: bold;">Puntos dados por interpolación</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Existe la posibilidad de señalar puntos interpolando su distancia entre otros dos. Para ello, en el campo </span>Lado<span style="font-weight: normal;"> se deja señalada la opción </span><span style="font-style: italic; font-weight: normal;">Interpolar</span><span style="font-weight: normal;"> y en la casilla de distancia se da un valor en tanto por ciento.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Cuando un punto dato se define por interpolación lateral entre dos
+puntos definidos por su código, pueden aparecer por el medio puntos
+definidos con código 0 que son ignorados. Por ejemplo:</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+<span style="font-weight: normal;" class="Archivo">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PUNTO A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PUNTO B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PUNTO C&nbsp;&nbsp;&nbsp;&nbsp;
+PUNTO D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PUNTO E<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -------&nbsp;&nbsp;&nbsp;&nbsp;
+-------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -------<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Codigo
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Codigo 1&nbsp;&nbsp;&nbsp;&nbsp; Codigo 0<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lado Izqu.&nbsp;&nbsp;
+Interpol.&nbsp;&nbsp;&nbsp; Interpol.&nbsp;&nbsp; Lado
+Izqu.&nbsp;&nbsp; Lado Dere.<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dist. 0.0&nbsp;&nbsp;&nbsp; %Dist
+50.&nbsp;&nbsp;&nbsp; %Dist 75.&nbsp;&nbsp; Dist. 0.0&nbsp;&nbsp;&nbsp;
+Dist 0.0<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alt.&nbsp;
+-.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Alt. -.1&nbsp;&nbsp;&nbsp;&nbsp; Alt&nbsp;&nbsp; -.1<br />
+</span>
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Para el punto B la distancia el eje y la cota están a mitad de camino
+(50%) entre el A y el D. El punto C esta al 75% en distancia y cota
+entre el A y el D. Si alguno de los puntos fijos (no interpolados) que
+se van a usar como referencia (en el ejemplo el A y el D) no se pueden
+calcular entonces los puntos interpolados tampoco se calculan.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-style: italic; font-weight: bold;">
+Tramos</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Se pueden tramificar los datos de entrada. En cada tramo pueden
+cambiarse todos los datos del menú excepto el número del eje y el
+número de la primera página. En caso de utilizar una tipo de superficie
+diferente en cada tramo también se tiene en cuenta en la generación del
+fichero de perfiles&nbsp;</span><span style="font-weight: normal;" class="Archivo">ctref#.per</span><span style="font-weight: normal;">. </span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Se imprime el PK final de cada tramo aunque no corresponda con la
+equidistancia. Los PK singulares se listan dentro del tramo al que
+corresponden, y si no están dentro de ningún tramo, no se listan. </span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+Los tramos pueden tener solapes de PK, estar repetidos o desordenados.
+El listado se realiza en el orden de tramos (no en orden de PK's) y
+dentro de cada tramo en orden de PK's.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+En caso de solapes de PK aparecerán en en el fichero&nbsp;</span><span style="font-weight: normal;" class="Archivo">ctref#.per</span><span style="font-weight: normal;"> y en
+los tramos de solape las diferentes superficies creadas en cada tramo.
+Para ello se va realizando para cada tramo una "mezcla total" del
+fichero&nbsp;</span><span style="font-weight: normal;" class="Archivo">ctref#.per</span><span style="font-weight: normal;"> con lo anterior.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+En los listados </span>ctref<span style="font-weight: normal;">, </span>cfR<span style="font-weight: normal;">, </span>cfC<span style="font-weight: normal;"> y </span>cfCR<span style="font-weight: normal;">, al cambiar el tramo, se hace un
+salto de página puesto que los datos de la cabecera de página serán
+diferentes.</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;">
+La opción equidistancia puede conmutar a múltiplos, por ejemplo:</span><br style="font-weight: normal;" />
+
+      <br style="font-weight: normal;" />
+</span></span></span></span></span>
+      
+      <div style="margin-left: 40px; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+PKi=1. PKf= 13.5 Equidi=2. Se imprime: 1, 3, 5, 7, 9, 11, 13, 13.5</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+PKi=1. PKf= 13.5 Multip=2. Se imprime: 1, 2, 4, 6, 8, 10, 12, 13.5</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br style="font-weight: normal;" />
+
+      <br />
+
+      </span></span><span style="font-weight: normal;" class="Titulo_2"><a name="sobreexc"><span class="Titulo_2">Sobreexcavación</span><br />
+      </a></span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+
+El listado de SOBREEXCAVACIÓN (<span class="Archivo">sobexc.res</span>) se usa para nivelar en campo la sobreexcavación o explanada mejorada.<br />
+
+      <br />
+
+      </span></span>
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_replanteo_sobreexc.png" style="width: 512px; height: 179px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+
+Puede generar ficheros de formato&nbsp;<span class="Archivo">ctref.res</span>,&nbsp;<span class="Archivo">cf.res</span>, cfR.res y&nbsp;<span class="Archivo">cfC.res</span>
+y permite también listar la superficie de excavación de saneo de
+terraplén (87). También es posible generar el listado en formato
+      <a href="land_xml.html">LandXML</a>.<br />
+
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+
+      <span class="Titulo_2"><a name="aristas">Suelo Seleccionado: Aristas</a></span><br />
+
+      <br />
+
+Permite elegir una de las capas de suelo seleccionado, el lado y la arista pudiendo seleccionar:<br />
+
+</span></span></span></span></span></span></span></span>
+      <span style="font-weight: normal;">      </span><ul style="font-weight: normal;">
+        <li>Exterior: hombro exterior de la capa seleccionada.</li>
+        <li>Interior: Punto donde la capa comienza en el eje o en una calzada existente, o en otra capa más interna.</li>
+      </ul>
+      <span style="font-weight: normal;">      </span><div style="text-align: center; font-weight: normal;"><img src="Imagenes/suelo_selecc_aristas.png" style="width: 549px; height: 132px;" alt="" /><br />
+
+      </div>
+      <span style="font-weight: normal;">      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <span class="Titulo_2"><a name="aprovechaSS">Distancia Aprovechamiento SS</a></span><br />
+
+      <br />En
+proyectos de Ensanche y Mejora, este listado busca en la superficie de
+la sobreexcavación (L107), los hombros sobre los bordes derecho e
+izquierdo de la superficie de saneo (L101) e imprime el PK, distancia
+al eje, cota absoluta, cota roja y cota roja respecto a la subrasante
+(L68).<br />
+
+</span></span></span></span></span></span></span></span>
+      <span style="font-weight: normal;">      </span><br />
+
+      <span style="font-weight: normal;">      </span><div style="text-align: center; font-weight: normal;"><img src="Imagenes/dialogo_listados_replanteo_aprovechamientoSS.png" style="width: 550px; height: 89px;" alt="aprovechamientoSS" /></div></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

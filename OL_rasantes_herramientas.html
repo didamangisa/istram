@@ -1,0 +1,692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  
+
+  
+  
+  <title>Rasantes: Herramientas de edición y análisis</title><link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>RASANTES: HERRAMIENTAS DE EDICIÓN Y
+ANÁLISIS</strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><img src="Imagenes/menu_utiles_rasantes.png" style="width: 250px; height: 474px; float: right;" alt="" align="right" hspace="4" /><span class="Parrafo">Agrupadas
+en el submenú <span style="font-weight: bold;">[ÚTILES]</span> se
+ofrecen una serie de herramientas que
+permiten manipular, transformar, analizar y generar datos de definición
+de rasantes. Se encuadran en los siguientes apartados: </span>
+      <ul>
+        <li><span class="Parrafo"><a href="#herramientas_generales">Herramientas
+generales</a></span></li>
+        <ul>
+          <li><a href="#ver_perfiles"><span class="Parrafo">Ver perfiles</span></a></li>
+          <li><a href="#invertir_eje"><span class="Parrafo">Invertir eje</span></a></li>
+          <li><a href="#copiar"><span class="Parrafo">Copiar</span></a></li>
+          <li><a href="#rasante_lon"><span class="Parrafo">Rasante a
+.lon</span></a></li>
+          <li><a href="#pendiente_minima"><span class="Parrafo">Pendiente
+mínima</span></a></li>
+          <li><a href="#filtrar"><span class="Parrafo">Filtrar</span></a></li>
+          <li><a href="#proyectar_vol"><span class="Parrafo">Proyectar
+.vol</span></a></li>
+          <li><a href="#tablas_de_puntos"><span class="Parrafo">Tablas
+de puntos</span></a></li>
+          <li><span class="Parrafo"><a href="#ajustar">Ajustar</a></span></li>
+          <li><span class="Parrafo"><a href="#punto_por_pendiente">Punto
+por pendiente</a></span></li>
+          <li><span class="Parrafo"><a href="#Sobre_Otro_Eje">Sobre
+Otro Eje</a><br />
+            </span></li>
+          <li><span class="Parrafo"><a href="#ajustar_ras">Ajustar una
+rasante al terreno</a><br />
+            </span></li>
+        </ul>
+        <li><span class="Parrafo"><a href="#analisis">Análisis de la
+rasante</a></span></li>
+        <ul>
+          <li><a href="#comparar_rasantes"><span class="Parrafo">Comparar
+rasantes</span></a></li>
+          <li><a href="#cota_pk"><span class="Parrafo">Cota por PK</span></a></li>
+          <li><a href="#cota_roja"><span class="Parrafo">Cota Roja</span></a></li>
+          <li><a href="#generar_pkz"><span class="Parrafo">Generar .pkz</span></a></li>
+        </ul>
+        <li><a href="#modificar_pk_cota"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Modificar
+datos de rasante en PK o en cota</span></span></span></span></a></li>
+        <ul>
+          <li><a href="#sumar_PK"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Sumar PK</span></span></span></span></a></li>
+          <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#sumar_Z">Sumar Z</a><br />
+            </span></span></span></span></li>
+        </ul>
+        <li><a href="#obtencion_rasantes"><span class="Parrafo">Obtención
+de rasantes</span></a></li>
+        <ul>
+          <li><span class="Parrafo"><a href="#sobre_terreno">Sobre
+terreno</a><br />
+            </span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><a href="#cotas_minimas">Cotas
+mínimas</a><br />
+            </span></li>
+        </ul>
+        <ul>
+          <li><span class="Parrafo"><a href="#codigoporlongi">Código
+por longitudinal</a><br />
+            </span></li>
+        </ul>
+        <li><a href="OL_rasantes_glorieta_catenaria.html#glorieta"><span class="Parrafo">Glorieta</span></a></li>
+        <li><span class="Parrafo"><a href="OL_rasantes_glorieta_catenaria.html#catenaria">Catenaria</a></span></li>
+        <li><span class="Parrafo"><a href="#rasante_desviada">Rasante
+desviada (FFCC)</a></span></li>
+        <li><span class="Parrafo"><a href="#ffcc_ras_per_desv">FFCC:
+Rasante y Peraltes Desviada</a><br />
+          </span></li>
+      </ul>
+      <span class="Parrafo"> <br />
+      </span><span class="Titulo_2"><a name="herramientas_generales">Herramientas
+generales</a></span><br />
+      <span class="Parrafo"> <br />
+Son las siguientes: </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="ver_perfiles">Ver
+perfiles</a></span>:
+Muestra en pantalla los perfiles transversales del fichero que se ha
+cargado. Si hay datos suficientes muestra la plataforma conjuntamente.
+El programa pide confirmación para avanzar de perfil. La tecla
+&lt;Esc&gt; aborta la opción antes de la finalización del proceso.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="invertir_eje">Invertir
+eje</a></span><span class="Parrafo">:
+Invierte el sentido de recorrido de las rasantes asignando siempre al
+primer punto el PK=0, pudiéndose modificar luego éste con la opción <a href="#sumar_PK"><span style="font-weight: bold;">Sumar PK</span></a>.
+Hay que tener en cuenta que los datos de la rasante deben ser
+compatibles con los datos de planta (y en consecuencia de los perfiles
+transversales o longitudinales extraídos).</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="copiar">Copiar</a></span><span class="Parrafo">:
+Permite copiar una definición de rasante con origen y destino en
+cualquiera de las posibles: calzadas y cunetas izquierda y derecha,
+mediana y auxiliar, es decir, se puede copiar la rasante derecha sobre
+la cuneta derecha con la intención de efectuar a posteriori las
+modificaciones necesarias y así obtener un rápida definición de ésta.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="rasante_lon">Rasante
+a .lon</a></span><span class="Parrafo">:
+Genera un fichero longitudinal&nbsp;<span class="Archivo">.lon</span> a
+partir de la rasante actual,
+utilizando los mismos puntos que se generan en el listado del eje en
+alzado: múltiplos de un valor, tangentes de entrada y salida a los
+acuerdos y puntos altos y bajos.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo">Esta
+utilidad permite definir el PK inicial, el PK final y el intervalo
+(independientemente de los valores empleados para el listado).<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/rasante_a_lon.png" style="width: 291px; height: 95px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"> </span><br />
+      <span class="Parrafo">El tipo de punto generado (vértice, rampa,
+punto alto o bajo) es
+almacenado para que este longitudinal pueda ser cargado como &#8216;marca&#8217;.</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"> </span> </span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="pendiente_minima">Pendiente
+mínima</a></span>:
+Esta opción permite comprobar si existe algún tramo que se encuentre
+simultáneamente por debajo de dos valores mínimos de peralte y de
+pendiente. La función permite comprobar los tramos donde el drenaje
+puede resultar complicado, avisando al proyectista de la ubicación en
+PK&#8217;s del tramo de peralte que es necesario revisar.</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/rasantes_pend_min.png" style="width: 309px; height: 94px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <ul>
+        <li><span style="font-weight: bold;"><a name="filtrar">Filtrar</a></span>:
+Esta
+opción permite filtrar un tramo de una rasante poligonal formada por
+una gran cantidad de puntos. También permite filtrar tramos poligonales
+dentro de rasantes que puedan tener otras zonas no poligonales
+(acuerdos,...). Al aplicar el filtrado, se obtiene un número inferior
+de alineaciones pero manteniendo la rasante deseada.</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/rasantes_filtrar.png" style="width: 346px; height: 117px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      <div style="margin-left: 40px;">Los parámetros de control que
+permiten valorar el grado de filtrado aplicado, se definen mediante una
+distancia máxima entre cada dos puntos y una diferencia de cota entre
+el vértice filtrado y la rasante resultante. </div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="proyectar_vol">Proyectar
+.vol</a></span>:
+Esta utilidad permite asignar a cualquiera de las rasantes (vía
+derecha, vía izquierda, cuneta derecha,&#8230;) una rasante deducida de otro
+eje. Para mejorar el resultado, los acuerdos verticales quedan
+establecidos por PK y cota, utilizando como punto de paso del acuerdo
+el que le corresponde en el PK del vértice del acuerdo original.</li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/rasantes_proyectar_vol.png" style="width: 309px; height: 289px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo">Existe la
+posibilidad de <span style="font-weight: bold;">insertar</span>
+dentro de la definición de rasantes actual, las rasantes proyectadas de
+otro eje, que caigan por entero en un tramo de PKs definido. Se puede
+dar también una <span style="font-weight: bold;">longitud</span> para
+realizar la <span style="font-weight: bold;">transición</span> entre
+las rasantes proyectadas y la actual.</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo">También se
+pueden delimitar el pk inicial y final en el eje que proyecta sus datos.</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"><a name="tablas_de_puntos">Tablas de puntos</a></span>: Accede al cuadro
+de diálogo <a href="OL_planos_longitudinales.html#tablas_puntos">Tablas
+de puntos</a> dentro del menú dedicado a la <a href="OL_planos_longitudinales.html">generación de planos
+longitudinales</a>. Los símbolos, textos asociados, PK y cota definidos
+en ese cuadro de diálogo se
+podrán <a href="OL_gui_tablas_de_puntos.html">dibujar en el perfil
+longitudinal</a> bien sobre el perfil o bien
+sobre la guitarra y también se podrán visualizar en el menú de rasantes.</span></span></span></span></li>
+      </ul>
+      </span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="ajustar">Ajustar</a></span><span class="Parrafo">:
+Esta utilidad permite ajustar automáticamente zonas de rasante
+poligonal mediante parábolas. Se da una máxima diferencia en cota entre
+los puntos sustitudos y la parábola y una distancia máxima entre dos
+puntos, de modo que si los puntos P1 y P2 de una rasante superan este
+valor, no son sustituidos. También incluye un filtrado, para eliminar
+puntos intermedios en un tramo de rasante recta.<br />
+          </span></li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/rasantes_ajustar.png" style="width: 346px; height: 117px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><img src="Imagenes/rasa_punto_por_pend.png" style="width: 230px; height: 36px;" alt="" align="right" hspace="6" /><span style="font-weight: bold;"><a name="punto_por_pendiente">Punto por
+pendiente</a></span>:
+Calcula para el acuerdo actual, el punto que tiene una pendiente
+prefijada y coloca los valores PK,Z en el cuadro de diálogo, como punto
+de paso del acuerdo.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;">Cuando la pendiente queda por
+fuera de la zona comprendida entre las tangentes de entrada y salida,
+se calcula el punto, el cual se muestra en pantalla y se añade en la
+última posición de la <a href="OL_planos_longitudinales.html#tablas_puntos">tabla de puntos</a>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/pend_def_punt_paso.png" style="width: 505px; height: 263px;" alt="" /><br />
+      </div>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"> <span class="Parrafo"> </span></span></span>
+      <ul>
+        <li><a name="Sobre_Otro_Eje"><span style="font-weight: bold;">Sobre
+Otro Eje</span><br />
+          </a></li>
+      </ul>
+      <div style="margin-left: 40px;">La herramienta Sobre Otro Eje es
+similar a Sobre terreno, pero esta permite hacer pasar la rasante por
+la plataforma de Otro Eje o por una parte de ella. Requiere que el eje
+actual haya cortado una parte de la plataforma analítica del Otro Eje.
+Al igual que Sobre terreno, permite dar un incremento de cota fijo, o
+determinado por la tabla de refuerzo. También su puede dar una
+distancia para realizar la transición entre la rasante del eje actual
+previamente definida y la parte deducida por el Otro Eje.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ol_ras_sobre_otro%20eje.png" style="width: 300px; height: 165px;" alt="" /><br />
+      </div>
+      </div>
+      <ul style="font-weight: bold;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="ajustar_ras">Ajustar una rasante al terreno</a></span></span></span></li>
+      </ul>
+      <div style="margin-left: 40px;">Esta herramienta sirve para
+generar una rasante ajustada al terreno de la siguiente forma:<br />
+      <ul>
+        <li>Con los parámetros distancia de busqueda y coeficiente de
+peso, se crea una primera rasante poligonal como un suavizado del
+terreno. (A mayor distancia de busqueda mayor suavizado. Y a mayor
+suavizado obtendremos mayores KVs)<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Los parámetros cota roja mínima y máxima crean una banda
+sobre la que se tiende a centrar la nueva rasante.(Si las dos son
+negativas la rasante tiende a ir en desmonte y si son positivas en
+terraplén.)<br />
+        </li>
+      </ul>
+      <ul>
+        <li>La opción <span style="font-weight: bold;">Generar</span>
+crea la nueva rasante realizando:</li>
+      </ul>
+      <ol>
+        <li>Elimina puntos muy proximos por debajo de la distancia
+minima.</li>
+      </ol>
+      <ol start="2">
+        <li>Un filtrado de los puntos de la rasante poliganal.</li>
+      </ol>
+      <ol start="3">
+        <li>Un Ajuste de una rasante con parábolas.</li>
+      </ol>
+      <ol start="4">
+        <li>Redondeo de los Kv y eliminación de solapes.</li>
+      </ol>
+      <ol start="5">
+        <li>Cuando se hace un suavizado muy fuerte, pueden quedar
+rasantes muy alineadas que en el ajuste no se le ponen KV, en este caso
+se utiliza el KV mínimo.</li>
+      </ol>
+Se puede cambiar la definición de un KV mínimo por un Lcv (longitud de
+acuerdo) mínima.<br /><br />Incrementar
+automáticamente para cumplir Kv mínimo: al activar esta opción se va
+incrementando de forma automática la distancia de búsqueda para cumplir
+el KV mínimo definido.<br /><br />
+      </div>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 384px; height: 357px;" alt="" src="Imagenes/ras_ajust.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><a name="analisis"><span class="Titulo_2">Análisis de la
+rasante</span></a><br />
+      <span class="Parrafo"><br />
+En este apartado de encuadran las siguientes herramientas: </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="comparar_rasantes">Comparar rasantes</a></span>:
+Permite comparar una rasante (derecha, izquierda, cunetas,...) con
+cualquier otra, incluyendo una rasante leída de un fichero&nbsp;<span class="Archivo">.ras</span>. o de otra <a href="OL_rasantes_diseno.html#alternativas">alternativa</a> de
+rasante. El listado puede ser según un fichero&nbsp;<a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pks"><span class="Archivo">.pks</span></a>,
+según un intervalo y una equidistancia, según perfiles del terreno o
+interactivamente.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_comparar_rasantes.png" style="width: 358px; height: 200px;" alt="" /></span> </div>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span style="font-weight: bold;"><a name="cota_pk">Cota por
+PK</a></span><span class="Parrafo">:
+Devuelve la cota de rasante, la pendiente, la cota roja, los peraltes,
+el radio y las coordenadas del eje para cada PK dentro del rango de
+definición de la rasante. Para indicar los PK&#8217;s de los que se desea esa
+información se puede acudir a un fichero&nbsp;<a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pks"><span class="Archivo">.pks</span></a>,
+introduciendo valores directamente por teclado (interactivamente),
+según un intervalo y una equidistancia e incluso según perfiles del
+terreno. Además informa del PK de usuario.</span></li>
+      </ul>
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/rasante_cota_por_pk.png" style="width: 384px; height: 229px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span>
+      <div style="margin-left: 40px;">Mediante la opción <span style="font-weight: bold;">Intersecciones rasante-terreno</span>, el
+programa nos dará los datos en los PKs en los que ocurra esto.<br />
+      <br />
+Mediante la opción <span style="font-weight: bold;">Pendiente entre
+dos Pks</span>
+podremos indicarle dos Pks para que el programa nos calcule las
+pendientes sucesivas en ese tramo a partir del valor de la
+equidistancia o de los múltiplos que definamos. Las pendientes serán
+calculadas mediante la diferencia de cotas partido por la diferencia de
+Pks entre los sucesivos puntos (PKs) del tramo definido en %.<br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/cota_por_PK.png" style="width: 358px; height: 88px;" alt="" /></span> </div>
+      </div>
+      <span class="Parrafo"><span style="font-weight: normal;" class="Parrafo"> </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><br />
+El
+resultado de la consulta se muestra en pantalla. Esta información
+desparece cuando se redibuja o refresca la pantalla, por ejemplo al
+hacer un zoom o realizar un desplazamiento con el ratón, aunque también
+se genera un listado (<span class="Archivo">consulta.res</span>).</span></span></span></span></span></span></span></span><br />
+      <span style="font-weight: normal;" class="Parrafo"></span></div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="cota_roja"> Cota
+roja</a></span><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">: Devuelve la misma información que el
+listado de <a href="#cota_pk">cota por PK</a>, pero sólo genera el
+listado, no emite información en pantalla.</span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="generar_pkz"><span class="Parrafo">Generar .pkz</span></a></span><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">:
+Esta opción permite generar un fichero&nbsp;<a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a>
+a
+partir del perfil del terreno. Al ser un fichero ASCII, puede ser
+editado y modificado con total libertad.</span></span></span></span></span></span></span></li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="modificar_pk_cota">Modificar
+datos de rasante en PK o en cota</a></span><br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span class="Parrafo"><br />
+      <span style="font-weight: normal;"> Para ello se dispone de estas
+dos herramientas:</span><br />
+      <ul style="font-weight: normal;">
+        <li><img src="Imagenes/rasantes_sumarPK.png" style="width: 219px; height: 109px; margin-left: 7px;" alt="" align="right" /><a style="font-weight: bold;" name="sumar_PK">Sumar
+PK</a><span class="Parrafo">:
+Permite sumar o restar un valor fijo&nbsp;a los datos de definición.
+Cuando se acorta o alarga el eje debido a la modificación de alguna
+alineación en planta, se puede hacer uso de esta utilidad y así no
+tener que rehacer la definición de la rasante. Por ejemplo, la
+modificación del radio de una curva ha incrementado en 43 m su
+longitud, conociendo el PK final previo es fácil transformar la
+definición de la rasante para que respete el trazado inicial.</span></li>
+      </ul>
+      </span></span></span></span></span></span><span class="Parrafo"> </span>
+      <table style="text-align: left; height: 103px; width: 656px; margin-left: 34px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 2px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" />
+            </td>
+            <td style="vertical-align: top; width: 614px; text-align: justify; font-weight: normal;"><span class="Info">Más completa es la opción Proyectar .vol
+del menú ALZADO, que utiliza los datos de planta de dos ejes (el viejo
+y el nuevo) para proyectar del viejo al nuevo todos y cada uno de los
+datos de definición de la rasante y de la sección transversal.<br />
+            <br />
+De todas formas, cuando el programa detecta una cambio en la
+tramificación de planta ofrece la posibilidad de rehacer
+automáticamente el fichero .vol para adaptar todos sus datos a la nueva
+realidad de PK&#8217;s, lo que también incluye a la propia rasante.</span> </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul style="font-weight: normal;">
+        <li><img src="Imagenes/rasantes_sumarZ.png" style="width: 219px; height: 147px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;"><a name="sumar_Z">Sumar
+Z</a></span>:
+Suma o resta un valor fijo&nbsp;a todos los puntos de definición. Los
+datos pueden suministrarse asimismo mediante un fichero&nbsp;<a target="_blank" href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a>.</li>
+      </ul>
+      <div style="margin-left: 40px;">El programa sube/baja la cota de
+los puntos
+dato de las rasantes según
+su PK, interpolando el valor del incremento de cota que le corresponde
+en caso necesario.<br />
+      <span class="Parrafo"></span></div>
+      <br />
+      <br />
+      <br />
+      <br style="font-weight: normal;" />
+      <span style="font-weight: normal;"><br />
+      </span><a name="obtencion_rasantes"><span class="Titulo_2">Obtención
+de rasantes</span><br />
+      <br />
+Para obtener rasantes de manera automática disponemos de las siguentes
+herramientas:<br />
+      </a>
+      <ul>
+        <li><a name="sobre_terreno"><span style="font-weight: bold;">Sobre
+terreno</span>: <span style="font-weight: normal;">Sustituye la
+rasante actual por
+una serie de tramos de rasante sin acuerdos, en forma de poligonal.</span></a></li>
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/dialogo_sobreTerreno.png" style="width: 271px; height: 147px; margin-right: 7px;" alt="" align="left" />La aplicación inserta
+en la
+definición actual (utilizando PK inicial y final) datos obtenidos del
+terreno actual a los que aplica un <span style="font-weight: bold;">incremento
+de cota</span> (fijo o según la
+tabla de refuerzo). Una vez que se han generado las rasantes
+automáticas de esta forma, siempre es posible insertar, borrar o añadir
+nuevos tramos, así como acuerdos verticales.<br />
+
+      <br />
+
+Usando <span style="font-weight: bold;">separación mínima entre
+vértices</span> se puede garantizar una distancia mínima que tienen que
+cumplir
+los vértices de la nueva rasante. Así se puede evitar que, si el
+terreno tiene mucha
+densidad de vértices, se genere una rasante con demasiados vértices
+para ser
+editados.<br />
+
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <br />
+      <table style="text-align: left; width: 691px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;">
+            <div style="margin-left: 40px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 625px; text-align: justify;"><span style="font-weight: normal;" class="Info">Para
+los proyectos de <a href="OL_EyM.html">ensanche y mejora</a>, si hay
+datos en la <a href="OL_EyM.html#tabla_refuerzo">TABLA DE
+REFUERZO</a>, el incremento de cota es extraído de la misma según el
+tipo
+de actuación: en el caso de REFUERZO dz=Espesor de Refuerzo, en el caso
+de FRESADO+REFUERZO dz=Espesor de Refuerzo - Espesor de Fresado, y en
+el caso de Reconstrucción dz=Subir.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div style="margin-left: 40px;">El valor de <span style="font-weight: bold;">longitud de transición</span>
+es utilizado para &#8216;conectar' los nuevos datos con la definición previa
+(si no existía ésta, evidentemente no se realiza ninguna transición).<br />
+      <br />
+Es preciso recordar que el terreno es el último cargado, así que de
+manera temporal, se puede cargar un longitudinal determinado, realizar
+las operaciones necesarias y recargar luego el terreno original.<br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+También existe una opción más específica para los proyectos de <a href="OL_EyM.html">ensanche
+y mejora</a>, que tiene en cuenta los peraltes definidos para la nueva
+calzada: <a href="#cotas_minimas">Rasante con diferencia de cotas
+mínimas en toda la plataforma</a>.<br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <br />
+
+      <br />
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;"><a name="cotas_minimas">Cotas
+mínimas</a></span>: La utilidad <span style="font-weight: bold;">Cotas
+mínimas</span> sólo es aplicable a <a href="OL_EyM.html">proyectos de
+refuerzo de firmes</a>
+(y mostrará un aviso cuando no se encuentra la calzada existente en un
+mínimo de dos perfiles). La herramienta pregunta por el espesor mínimo
+de refuerzo y construye una
+rasante de manera que en cada perfil la diferencia de cota entre
+cualquier punto de la plataforma que se diseña y la plataforma a
+conservar no obligue a hacer escarificado.</li>
+      
+      </ul>
+
+      
+      
+      <div style="margin-left: 40px;"><img src="Imagenes/cotas_minimas_esquema.png" style="width: 224px; height: 90px; margin-left: 7px;" alt="" align="right" />Constituye una solución mucho más rigurosa que <a style="font-weight: bold;" href="#sobre_terreno">sobre terreno</a>,
+pues se tiene siempre en cuenta el punto más desfavorable, manteniendo
+el incremento de cota introducido por el usuario en todo momento sobre
+ese punto.<span style="font-weight: normal;"> Por tanto han de
+definirse, previamente, <a href="OL_anchos.html">anchos</a> y <a href="OL_peraltes.html">peraltes</a> de la
+calzada nueva para poder determinar el punto más desfavorable en cada
+PK.<br />
+      <span style="font-weight: normal;"> </span><br />
+      <br />
+      <span style="font-weight: normal;">Para que el proceso tenga
+éxito es necesario que en el terreno cargado
+esté definida la <a href="OL_EyM.html#extrac_perf">calzada existente o
+previa</a> (con las líneas de borde de
+calzada) y evidentemente debe de existir una definición de anchos de
+calzada a proyectar y peraltes para que el programa pueda resolver el
+problema planteado. </span><span style="font-weight: normal;">En el
+caso de doble calzada, el algoritmo está preparado para que no tenga en
+cuenta la zona de la mediana existente.</span><br />
+      </span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"> <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 518px; height: 130px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 288px;"><img src="Imagenes/dialogo_cotas_minimas.png" style="width: 271px; height: 118px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 210px; text-align: center;"><img src="Imagenes/cotas_minimas.png" style="width: 211px; height: 27px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2 Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 625px; text-align: justify;"><span style="font-weight: normal;" class="Info">Para
+los proyectos de <a href="OL_EyM.html">ensanche y mejora</a>, si hay
+datos en la <a href="OL_EyM.html#tabla_refuerzo">TABLA DE
+REFUERZO</a>, el incremento de cota es extraído de la misma según el
+tipo
+de actuación: en el caso de REFUERZO dz=Espesor de Refuerzo, en el caso
+de FRESADO+REFUERZO dz=Espesor de Refuerzo - Espesor de Fresado, y en
+el caso de Reconstrucción dz=Subir.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </span></span></span></span></span></span></span><br />
+
+      
+      <ul>
+
+        <li><a name="codigoporlongi"><span style="font-weight: bold;">Código
+por longitudinal</span><span style="font-weight: normal;">: Define una
+rasante (al estilo de la utilidad </span></a><a href="#cotas_minimas">cotas
+mínimas</a>) utilizando otro longitudinal que da cota a un punto de
+la sección definido por superficie, código y lado. Como ejemplo,
+supóngase que se parte de una línea 3D y se quiere que dé cota al borde
+de la plataforma. Para ello, se proyecta esta línea sobre el eje y se
+carga su longitudinal (usando <a href="OL_rasantes_otros_longitudinales.html#cargar_longit">Cargar
+longitudinal como polilínea</a>). A continuación, y con
+esta utilidad, se crea una rasante tal que este longitudinal dé
+cota a la superficie 67 en el código 100.</li>
+      
+      </ul>
+
+      <br />
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><img src="Imagenes/rasantes_long_codigo.png" style="width: 312px; height: 222px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"></span></span></span></div>
+
+      <span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><br />
+      <br />
+      </span></span></span><a name="rasante_desviada"><span class="Titulo_2">Rasante
+desviada (FFCC)</span><br />
+      <br />
+Esta utilidad calcula la rasante de la vía desviada. Para ello, en las
+vías desvidadas inserta las rasantes deducidas por los aparatos de vía
+al inicio y al final del eje, asumiendo que el aparato está en un plano
+y que la via directa sigue la máxima pendiente. Necesita calcular dos
+rasantes y un acuerdo, para lo cual:<br />
+      </a>
+      
+      <ul>
+
+        <li>En la junta de contraagujas, toma la cota y la pendiente de
+la directa.</li>
+        <li>En el talón de la desviada, proyecta este punto sobre la
+vía directa y obtiene su cota, y luego calcula su pendiente como la
+pendiente directa multiplicada por el coseno del ángulo teórico.<br />
+        </li>
+      
+      </ul>
+
+Teniendo estos dos puntos por PK, cota y pendiente, ya puede calcular
+la rasante desviada, así como una longitud de transición para llegar a
+la rasante principal desde ella.<br />
+
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><a name="ffcc_ras_per_desv"><span class="Titulo_2">FFCC: Rasante y
+Peraltes Desviada</span><br />
+      <br />
+Esta&nbsp;herramienta
+determina las rasantes y los peraltes de una vía desviada producidos
+por los aparatos de vía teniendo en cuenta que la vía principal puede
+estar en curva, peraltada y con pendientes longitudinales.<br />
+&nbsp;La herramiente tiene los siguientes parámetros:<br />
+      </a></span></span>
+      
+      <ol>
+
+        <li><span class="Parrafo"><span class="Parrafo">&nbsp;Equidistancia máxima: para analizar
+puntos intermedios a lo largo del aparato.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Longitud de transición: para realizar una
+transición desde el final del</span></span><span class="Parrafo"><span class="Parrafo"> aparato para recuperar la
+rasante previamente definida.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Ajustar rasante, permite
+ajustar rasantes y parábolas en los puntos estudiados dando una máxima
+diferencia de cota y una distancia máxima entre&nbsp;puntos.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Redondeo para el valor de los peraltes
+obtenidos.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Filtrar los peraltes cuando hay mas de dos
+datos consecutivos con el mismo valor.</span></span></li>
+      
+      </ol>
+
+      
+      <div style="text-align: center;"><a name="ffcc_ras_per_desv"><img src="Imagenes/rasa_ffcc_rasayper_desv.png" style="width: 250px; height: 170px;" alt="" /></a></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="ffcc_ras_per_desv"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><br />
+      </span></span></span></span></span></a></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

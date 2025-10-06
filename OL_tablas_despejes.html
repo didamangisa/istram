@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Tabla de despejes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TABLA DE DESPEJES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Herramienta para el cálculo de sobreanchos y despejes en los caminos de acceso a parques eólicos.<br /></span><span class="Parrafo" /><span class="Parrafo"><br />
+Con la instalación en la carpeta Demo/Despejes disponemos de un ejemplo Despejes.isa que nos puede servir de ayuda.<br />
+      <br />
+En el menú de <a href="OL_anchos.html">Anchos</a> se han calculado <span style="font-weight: bold;">Anchos x Tabla</span>
+utilizando la tabla de sobreanchos NordexN133_4,5.tsa, que incluye una
+tabla de&nbsp; anchos y sobreanchos exteriores e interiores en función
+del radio de la curva y de su desarrollo. También incluye una tabla de
+transiciones al sobreancho.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_anchos_tabla.png" style="width: 600px; height: 232px;" alt="" /><br />
+      <span class="Parrafo" /></span></div>
+      <span class="Parrafo"><br />
+Entramos al&nbsp; cuadro de diálogo situado en el menú de Alzado &gt; Utilidades &gt; <span style="font-weight: bold;">TABLA DE DESPEJES.</span> <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_menu.png" style="width: 600px; height: 274px;" alt="" /><br />
+      <span class="Parrafo" /></span></div>
+      <br />
+
+Los despejes son listas de <span style="font-weight: bold;">PK</span>, <span style="font-weight: bold;">Distancia al Borde</span>, <span style="font-weight: bold;">Diferencia de Cota</span> y <span style="font-weight: bold;">número de curva</span>.
+Indican para cualquier PK una distancia al último punto de la calzada y
+una diferencia de cota que definen una superfice&nbsp; que no debe
+interferir con el talud de desmonte o con el terreno.<br />
+
+      <br />
+
+En este cuadro se ha utilizado la herramienta <span style="font-weight: bold;">x Tabla</span>
+utilizando una segunda tabla de sobreanchos&nbsp;<span class="Archivo">NordexN133_4,5M_Desp.tsa</span>&nbsp; especifica para calcular los despejes,
+en función del radio de la curva y su desarrollo. Añade también, la
+altura del despeje diferente para el lado interior o exterior de las
+curvas.<br />
+
+      <br />
+
+Disponemos en la librería de las tablas&nbsp;<span class="Archivo">DesarrSG155.tsa</span> y&nbsp;<span class="Archivo">DesarrSG155_Desp.tsa</span>, para utilizarlas en el cálculo de Sobreanchos por
+Tabla y Despejes por Tabla respectivamente. Tienen la particularidad de
+definir diferentes valores de sobreanchos dependiendo de si la curva es
+hacia la derecha (radios positivos) o hacia la izquierda (radios
+negativos).<br />
+
+Asi cada valor de sobreancho depende:<br />
+
+
+      <ul>
+        <li><span class="Parrafo">Del radio de la curva.<br />
+          </span></li>
+        <li><span class="Parrafo">Del desarrollo de la curva.</span></li>
+        <li><span class="Parrafo">De si está del lado interior o exterior de la curva.</span></li>
+        <li><span class="Parrafo">Del signo de la curva.</span></li>
+      </ul>
+      <span class="Parrafo"><img src="Imagenes/tabla_despejes_por_linea.png" style="width: 300px; height: 114px; float: right;" alt="" hspace="7" /><span style="font-weight: bold;">Por Línea</span>
+permite ir seleccionando líneas 2D (en este caso se debe dar la
+diferencia de cota) o líneas 3D con las que se va rellenando la tabla.
+Es posible utilizar simultáneamente todas las líneas del tipo
+seleccionado.<br /><br />La opción <span style="font-weight: bold;">Superficie de despeje</span>,
+añade al perfil al calcularlo, la superficie virtual de despeje que no
+debe interferir con el terreno o los taludes de desmonte.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/Tabla_despejes_perfil.png" style="width: 600px; height: 188px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Se incluye en la librería un archivo <a href="OL_ficheros_lil.html">Despeje.lil</a> que dibuja también en 3D esta superficie. <br />
+      <br />
+La herramienta <span style="font-weight: bold;">Despejar</span> analiza la tabla completa de despejes y añade la <a href="OL_bermas_despeje.html">berma de despeje</a> necesaria para evitar la interferencia con el desmonte.<br />
+Si ya hay datos en la tabla de despeje y se han definido bermas de despeje
+(mediante la orden <span style="font-weight: bold;">Despejar</span>) no se interrumpe la sección si la berma
+de despeje aflora al terreno y luego su último punto vuelve a quedar
+bajo el terreno.<br />
+      <br />
+Esta orden también analiza la interferencia de la superficie de despeje
+con el terreno en zonas de terraplén y en su caso
+despeja estas zonas utilizando <a href="OL_cuneta_guarda_caballon.html">cunetas de guarda</a>
+que excavan el terreno lo necesario. En el ejemplo&nbsp;<span class="Archivo">despejes.isa</span> que se
+incluye en la carpeta&nbsp;<span class="Archivo">Demo\Despejes</span> se muestra este caso: Entre los PKs
+1077-1099 por la parte derecha de la curva hay un terraplén reducido,
+el terreno sale del pié de terraplén con una pendiente fuerte y corta a
+la superficie de despeje.<br />
+      <br />
+Se pueden definir aqui los <span style="font-weight: bold;">taludes de desmonte</span> y <span style="font-weight: bold;">terreplén</span> para las cunetas de guarda que se pueden generan al despejar.<br />
+      <br />
+La herramiente Despejar ha incluido en la tabla de Cunetas de Guarda,
+varios tramos en el terraplén derecho para despejar estas zonas.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_cun_guarda.png" style="width: 600px; height: 238px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Posibilidad de definir dos pendientes, para la <span style="font-weight: bold;">berma de despeje</span> o la <span style="font-weight: bold;">berma de la cuneta de Guarda</span>.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_pendientes.png" style="width: 600px; height: 71px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+Marcando la casilla <span style="font-weight: bold;">Recodificar la cuneta de guarda para despejes como las bermas de despeje de desmonte</span>
+podemos conseguir la continuidad en los taludes cuando aparece un salto
+entre dos perfiles consecutivos de una berma de despeje a una cuneta de
+guarda.<br />
+<br />
+Mediante el icono&nbsp;<img src="Imagenes/icono_trayectorias.png" style="width: 25px; height: 25px;" alt="" /> tenemos la posibilidad de generar la tabla de despejes simulando una <a href="OL_planta_trayectorias.html">trayectoria</a>.
+El vehiculo puede ser cualquiera de las plantillas predefinidas o
+alguna modificada guardada en un archivo .try Se simula la trayectoria
+llevando el vehiculo aproximando el morro al borde de la calzada del
+lado exterior de las curvas. </span><span class="Parrafo">
+En el cálculo de despejes por Trayectorias se pueden introducir dos
+valores diferentes para el despeje según estemos del lado interior o
+exterior de la curva.</span><span class="Parrafo">
+También se define un
+margen para el despeje sobre la envolvente de la trayectoria. Se puede
+complementar los datos de alturas de despejes por el interior y por el
+exterior de la curva con el valor: Ancho máximo de despeje utilizando
+la altura para el interior. Si en el interior de una curva aparece un
+ancho de despeje superior a este valor se cambia al valor de la altura
+al que se usa para el exterior.<br />
+Podemos introducir datos en las casillas equidistancia para el cálculo
+de la trayectoria y en las equidistancias de la tabla de despeje.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_trayectoria_menu.png" style="width: 300px; height: 352px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      
+      <br />
+Posibilidad&nbsp; de elegir el sentido del recorrido: <span style="font-weight: bold;">Directo</span> o <span style="font-weight: bold;">Inverso</span>.&nbsp;&nbsp; <br /><br /></span><span class="Parrafo" /><span class="Parrafo"><span style="font-weight: bold;">Método dinámico de Despejes</span>: con la instalación en la carpeta Demo/Despejes disponemos de un ejemplo Despejes_Dinamico.isa que nos puede servir de ayuda.<br /><br />Este método utiliza la opción <span style="font-style: italic;"><span style="font-weight: bold;">Despejar al calcular </span></span>que
+no necesita crear datos en Bermas de despeje ni en Cunetas de guarda,
+si hay datos en estas tablas es recomendable eliminarlos, se calculan
+dinámicamente los despejes.<br />Al calcular un perfil o visualizarlo en la sección real se modifica la sección para cumplir el despeje.<br />Cuando la superficie de despeje corta al talud de desmonte, se despeja a la altura de esta superficie.<br />Cuando
+corta al terreno detrás del último punto de la sección no se añaden
+puntos intermedios por el terreno sino que se añade directamente el
+punto con la berma de despeje calculada.<br /><br /></span><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/tabla_despejes_dinamico.png" style="width: 600px; height: 274px;" alt="" /><br />
+      <span class="Parrafo" /></span></div><br /><span class="Parrafo"><br /></span><span class="Parrafo">
+<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

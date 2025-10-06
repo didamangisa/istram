@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Perfiles longitudinales</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>OBTENCIÓN DE PERFILES LONGITUDINALES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#longit_directo">Obtención directa a partir de la cartografía</a><br />
+      <a href="#formato_lon">Formato de un fichero .lon </a><br />
+      <a href="#longit_carto">Obtención a partir de la cartografía</a><br />
+      <a href="#generacion_optima">Generación óptima de perfiles longitudinales</a><br />
+      </div>
+
+      
+      
+      
+      
+      <br />
+      <br />
+
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+La extracción de perfiles longitudinales tiene varios objetivos. El
+primero de ellos es el de obtener una referencia del terreno o
+superficie por donde discurre el eje para poder <a href="OL_rasantes_diseno.html">diseñar la rasante</a>.
+En otras ocasiones se querrá averiguar lo que ocurre a 5 metros del eje
+porque, por ejemplo, es donde hay una cuneta que debe ser estudiada.<br />
+      <br />
+      <img style="width: 282px; height: 188px; margin-right: 7px;" alt="" src="Imagenes/ejem_perf_longit.png" align="left" />Otras
+formas de obtener longitudinales es extraer la cota en el eje de los
+perfiles transversales del terreno o proyectar cualquier línea
+existente en la cartografía para así poder evaluar alternativas de
+trazado, como sería el caso de una línea eléctrica que cruza el eje o
+un paso a diferente nivel con otra carretera (haciendo uso, por ejemplo, de la opción ALZADO <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; LISTADOS </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <a href="OL_listados_geometria.html">GEOMETRÍA</a> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <a href="OL_listados_geometria.html@proyec_linea"><span style="font-weight: bold;">[PROYECCIÓN DE UNA LÍNEA]</span></a>).</span></span></span></span></span></span><br />
+      <br />
+La calidad y densidad de la información topográfica está íntimamente
+ligada a los resultados generados, así que es de aplicación el consejo
+general de invertir tiempo en comprobar la calidad de la cartografía
+digital.<br />
+
+      <br />
+La extensión de los archivos de perfiles longitudinales archivos es&nbsp;<a href="#formato_lon"><span class="Archivo">.lon</span></a>. <br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 33px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+
+            <td style="vertical-align: middle; width: 632px; text-align: justify;"><span class="Info">Hay
+que tener en cuenta que los perfiles longitudinales NO son utilizados
+para calcular la sección de proyecto, sólo son elementos que aportan
+información de apoyo (gráfica y alfanumérica).</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="formato_lon">Formato de un fichero .lon</a></span><br />
+      <br />
+
+El formato de estos ficheros ASCII es muy sencillo. En el siguiente
+esquema se explica su estructura para que el usuario pueda transformar
+o generar información procedente de otras aplicaciones:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 494px; height: 150px;" alt="" src="Imagenes/formato_lon.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="longit_carto">Obtención a partir de la cartografía</a></span><br />
+      <br />
+
+      <img style="width: 324px; height: 255px; margin-left: 7px;" alt="" src="Imagenes/acceso_longit.png" align="right" />Esta funcionalidad está ubicada en el mismo lugar que la que permite generar <a href="OL_perf_transv.html">transversales</a>, es decir, en el menú de <span style="font-weight: bold;">[REP. y PERFIL]</span>, accesible tanto desde el menú vertical de PLANTA como desde ALZADO. La correcta definición de la <a href="EDM_control_entidades.html#control_superficies">superficie</a> desde la que va a obtener la información es indispensable.<br />
+      <br />
+El cuadro de diálogo por defecto ofrece como nombre base <span style="font-style: italic;">LONG</span>, pudiendo ser modificado. Se recomienda utilizar nombres que puedan ser luego fácilmente identificables como <span style="font-style: italic;">ELEC</span> para electricidad, <span style="font-style: italic;">ALCANT</span> para alcantarillado, <span style="font-style: italic;">CUN_D</span> para la cuneta derecha, etc.<br />
+
+      <br />
+La distancia al eje será utilizada para obtener el &#8216;corte&#8217; que
+resultaría de trazar una paralela al eje, negativa para la izquierda y
+positiva para la derecha.<br />
+      <br />
+El tipo de línea usado en el perfil será el primer tipo
+de línea que define la superficie. Además, para cada eje se puede
+indicar el PK de inicio y el final para extraer el perfil longitudinal.<br />
+      <br />
+El perfil longitudinal se puede obtener:<br />
+      <ul>
+        <li>Directamente contra la cartografía (opción <span style="font-weight: bold; font-style: italic;">Cartografía</span>).</li>
+
+      </ul>
+      <ul>
+        <li>Con una triangulación previa (opción <span style="font-weight: bold; font-style: italic;">Triangular</span>).<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Según un modelo digital del terreno en formato rejilla. La opción <span style="font-weight: bold; font-style: italic;">MDT Rejilla</span> permite generar perfiles longitudinales apoyándose en un <a href="ascii_grid.html">fichero ASCII-GRID</a> o en una <a href="EDM_imagenes.html#ascii_grid_geotiff_cota">imagen GeoTIFF</a> con cota. Como ambos tipos de archivo pueden cargarse como imagen, el programa ofrece dos posibilidades.</li>
+
+      </ul>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li>Usar los ficheros cargados como <a href="EDM_imagenes.html">imagen</a> y que, por tanto, están activos en el <a href="EDM_imagenes.html#arbol">árbol de imágenes</a>.</li>
+      </ol>
+      <ol start="2">
+
+        <li>No usar imágenes sino directamente seleccionar el fichero. Esta segunda opción es válida únicamente para archivos en <a href="ascii_grid.html">formato ASCII-GRID</a>.</li>
+      </ol>
+      </div>
+      <ul>
+<li>Una triangulación cargada en memoria desde el menú <a href="EDM_topografia.html">TOPOGRAFÍA</a> (opción <a href="EDM_topografia.html#ficheros_ttp"><span style="font-weight: bold;">TTP</span></a>). </li>
+      </ul>
+
+      
+      <ul>
+<li>Una base de <a href="EDM_datos_laser.html"><span style="font-weight: bold;">datos láser</span></a>.</li>
+      </ul>
+Estos datos, cuando sean visualizados en la ventana de <a href="OL_rasantes_diseno.html">diseño de rasante</a>,
+son proyectados en horizontal contra el plano de 'visión' situado en el
+eje en planta, así es que si se van a utilizar estas referencias debe
+asumirse el efecto que producirá el peralte de la calzada diseñada.<br />
+      <br />
+Si se introduce desde el EJE 0 hasta el EJE 0, el programa 'abandona' el sistema automático y al pulsar <span style="font-weight: bold;">[GENERAR]</span>, se solicitan los siguientes datos en la línea de comandos:<br />
+
+      <ul>
+        <li>El eje, usando el ratón para escogerlo gráficamente.</li>
+        <li>Nombre para el <a href="#formato_lon">fichero&nbsp;<span class="Archivo">.lon</span></a> donde se almacenarán los datos.</li>
+        <li>La superficie, que se seleccionará al hacer clic sobre cualquier línea que pertenezca a la misma.</li>
+        <li>Distancia al eje, que se tecleará numéricamente.</li>
+
+      </ul>
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Otras utilidades</span><br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 185px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 84px;"><span style="font-weight: bold;">[Línea -&gt; .lon]</span> </td>
+
+            <td style="vertical-align: top; width: 586px; text-align: justify;">Permite seleccionar una línea y generar con ella un longitudinal, guardando los datos en un fichero de extensión&nbsp;<a href="OL_perf_longit.html#formato_lon"><span class="Archivo">.lon</span></a>.&nbsp; El análisis es independiente de la geometría de los ejes, para cada
+punto de la línea se calcula la distancia al vértice anterior y así se
+determina un PK, a continuación con el siguiente vértice y así
+sucesivamente hasta el último.<br />
+            <br />
+La aplicación solicita un PK de origen,
+que será aplicado (con su signo) a todos los puntos. Así, por ejemplo,
+si los puntos de una línea están a 10, 20 y 30 m uno de otro (en 2D) y
+el PK de origen indicado es 1000, se obtendrá un perfil longitudinal
+con puntos en los PKs 1010,1030 y 1060.<br />
+            <br />
+            <table style="text-align: left; width: 588px; height: 61px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+
+                <tr>
+                  <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+                  </td>
+                  <td style="vertical-align: top; width: 529px; text-align: justify;"><span class="Info">Es
+posible cargar estos datos en cualquier eje, pero deben asumirse los
+errores producidos cuando se intente utilizar ese longitudinal en el
+diseño de su rasante. Si la línea discurre exactamente por el eje todo
+será correcto, pero sin embargo, si no es así, deberá de utilizarse la
+utilidad que permite proyectar una línea, pues de lo contrario se
+estará visualizando información &#8216;errónea&#8217;, al estar referidos los datos
+a la línea y no al eje.</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 84px; font-weight: bold;"><a name="lon_per">[.lon-&gt;.per]</a></td>
+            <td style="vertical-align: top; width: 586px; text-align: justify;"><img style="width: 235px; height: 165px; margin-left: 7px;" alt="" src="Imagenes/lon_per.png" align="right" />Opción similar a la existente en el <a href="OL_perf_transv.html#lon_per">menú TRANSVERSALES</a>. A partir de un
+fichero de longitudinal (<a href="#formato_lon"><span class="Archivo">.lon</span></a>) genera un fichero de perfiles
+trasversales (<span class="Archivo">.per</span>), creando en cada PK donde existe un dato, un perfil
+con un semiancho de banda predefinido y de cota constante igual a la
+del longitudinal en ese punto.<br />
+
+
+            <br />
+Esta opción puede ser útil en aquellos casos en los que se
+necesite crear una plataforma sencilla como en el caso que ilustra la
+imagen. Partiendo de un longitudinal (<a href="#formato_lon">fichero&nbsp;<span class="Archivo">.lon</span></a>), se
+generan perfiles horizontales, almacenados en un fichero de perfiles,
+que puede ser utilizado para varios fines, por ejemplo el de visualizar
+la situación relativa al terreno.<br />
+            <br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="per_lon">[.per-&gt;.lon]</a></span></td>
+            <td style="vertical-align: top; text-align: justify;">Opción similar a la existente en el <a href="OL_perf_transv.html#per_lon">menú TRANSVERSALES</a>. Genera un archivo de perfil longitudinal <a href="OL_perf_longit.html#formato_lon"><span class="Archivo">.lon</span></a>, utilizando la cota en el eje geométrico de la primera superficie de un archivo de transversales&nbsp;<span class="Archivo">.per</span>.</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br /><br /><span class="Titulo_2"><a name="generacion_optima">Generación óptima de perfiles longitudinales</a></span><br /><br />El longitudinal generado por
+'interpretación' de los datos del perfil transversal no es fiel al
+terreno, como se puede observar en los ejemplos gráficos mostrados a
+continuación.<br />
+
+      <br />
+La explicación es bien sencilla. Los puntos son obtenidos en secuencias
+regulares, por defecto cada 20 metros en las rectas y algo menos en las
+curvas. Así, es prácticamente imposible o casual que alguno de estos
+puntos intersecte con líneas de la superficie topográfica. Por otro
+lado la información obtenida por un longitudinal clásico tampoco es
+fiel, ya que sólo genera puntos donde existe un corte con alguna línea.<br />
+      <br /><img style="width: 138px; height: 275px; margin-right: 7px;" alt="" src="Imagenes/longit_vaguada.png" align="left" /> En el trazado de la ilustración de la
+izquierda se observa una zona donde las curvas de nivel definen una
+vaguada que va a ser 'invisible' con el longitudinal extraído de los
+perfiles transversales. Sin embargo, el longitudinal clásico se adapta
+perfectamente al terreno (los puntos marcados son los PK's cada 20 m,
+en rojo el perfil longitudinal).<br />
+<br /><div style="text-align: center;"><img style="width: 338px; height: 84px;" alt="" src="Imagenes/longit_vaguada_2.png" /><br /></div><br />
+El objetivo será obtener una 'mezcla' de los dos. Esto se consigue
+simplemente cargando el perfil longitudinal como terreno después de
+haber cargado los perfiles transversales. <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 338px; height: 84px;" alt="" src="Imagenes/longit_vaguada_3.png" /><br /></div>&nbsp;
+<br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> intercala los puntos &#8216;buenos&#8217; del longitudinal,
+conservándose los iniciales tal y como indican los círculos y en
+particular el señalado con la flecha (la línea azul es el longitudinal
+definitivo).<br />
+      <br />
+      Si se desea obtener una línea precisa que represente con fidelidad la
+superficie topográfica se deberían seguir estos consejos:&nbsp; <br />
+      <ul>
+        <li>
+Definir la superficie con la mayor cantidad de
+información (las curvas de nivel pueden ser insuficientes). Debe de
+incluirse en la superficie cualquier tipo de línea que pueda definir un
+cambio de pendiente, como los bordes de caminos, líneas de cuneta,
+arroyos, etc.</li>
+      </ul>
+      <ul>
+        <li>
+Habrá que verificar que las cotas de las polilíneas
+sean correctas, pues a veces la digitalización no ha sido todo lo
+exacta que se supone y el proceso generará errores.</li>
+      </ul>
+      <ul>
+        <li>
+Utilizar un modelo digital del terreno triangulado,
+pues es la definición más completa y la que mejor puede utilizar
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> para generar el perfil longitudinal.</li>
+      </ul>
+
+
+      
+      
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Conclusiones</span><br />
+      <br />
+La cantidad de puntos singulares que se pueden conseguir para la
+extracción de perfiles transversales es muy superior a la aplicada para
+obtener un perfil longitudinal; ello es debido a que con el primer
+método es posible utilizar cualquier PK utilizado en la definición de
+la sección transversal.<br />
+
+      <br />
+Los perfiles longitudinales aportan información de apoyo al diseño,
+representando elementos que se &#8216;cruzan&#8217; con el eje trazado y que es
+necesario tener identificados. Además, al
+fusionarse con el longitudinal interpretado, suavizan y corrigen el
+perfil, adaptándose a la superficie topográfica.<br />
+<span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

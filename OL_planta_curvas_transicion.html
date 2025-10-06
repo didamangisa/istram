@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Curvas de transición en planta</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTA: CURVAS DE ACUERDO O DE TRANSICIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1510px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">
+Generalidades</a><br />
+      <a href="#retranqueo">
+Retranqueo</a><br />
+      <a href="#calculo">Declaración y cálculo de curvas de transición</a><br />
+      <div style="margin-left: 40px;"><a href="#trans_sin_GL">Transición entre alineaciones sin grados de libertad</a><br />
+      <a href="#trans_con_GL">Transición entre alineaciones con un grado de libertad</a><br />
+      </div>
+      </div>
+<br /><br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+Entre
+dos alineaciones principales (rectas o circulares) suele insertarse una
+curva espiral que efectúa una transición gradual de la curvatura.<br />
+      <br />
+Usualmente, en obra lineal se utiliza la espira de Cornú (conocida como <span style="font-weight: bold;">clotoide</span>), aunque existen
+otras curvas como la <span style="font-weight: bold;">onda de medio seno</span> (half sine wave), la <span style="font-weight: bold;">espiral cúbica</span> y la <span style="font-weight: bold;">parábola cúbica</span>
+(el tipo de curva de transición a usar se debe seleccionar desde la
+      <a href="OL_general.html">pestaña GENERAL</a>, aunque por defecto el programa trabaja con la
+clotoide).<br /><br /><img style="width: 250px; height: 240px; margin-left: 7px;" alt="" src="Imagenes/curva_clotoide.png" align="right" />La
+característica principal de la curva clotoide es que su curvatura en
+cualquier punto es proporcional a lo largo de la curva medida desde el
+origen, lo que se expresa mediante la fórmula:<br /><br />
+      <div style="text-align: center;"><font size="+1">R × L = A<sup>2</sup></font><br />
+      </div>
+<br />donde:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">R</span> es el radio de curvatura en un punto del arco de la clotoide.<br />
+      <span style="font-weight: bold;">L</span> es el desarrollo del arco de clotoide hasta ese punto.<br />
+      <span style="font-weight: bold;">A</span> es la constante de la clotoide.<br />
+      </div>
+<br /><br />
+Los escenarios geométricos que se pueden dar son cuatro:<br />
+      <ul>
+
+        <li>Entre una recta y una circular de radio R iría un arco de
+clotoide con su extremo de radio infinito tangente a la recta y su
+punto de radio R tangente a la circular.</li>
+      </ul>
+      <ul>
+        <li>Entre dos circulares con radios de distinto signo el
+problema se puede resolver con dos arcos de clotoide tangentes entre sí
+por su punto de radio infinito y tangentes a las circulares con el
+radio correspondiente en cada caso. A este tipo de transición se la
+suele denominar <span style="font-weight: bold;">clotoides en S</span> por la forma que adquiere el trazado.</li>
+      </ul>
+      <ul>
+
+        <li>Entre dos circulares con radios del mismo signo el problema
+se resuelve con una única rama de clotoide en transición desde el radio
+de una circular hasta el radio de la otra. Este tipo de transición
+suele conocerse como <span style="font-weight: bold;">curva en C</span>.</li>
+      </ul>
+      <ul>
+        <li>Entre dos rectas, la transición puede hacerse utilizando
+dos ramas de clotoide tangentes a las rectas en el punto de radio
+infinito y tangentes entre sí en un punto de radio mínimo. A esta
+transición se la conoce como <span style="font-weight: bold;">clotoide de vértice</span>, y su uso suele restringirse en muchas normativas de trazado.<br />
+        </li>
+      </ul>
+
+      <br />
+      <span class="Titulo_2"><a name="retranqueo">Retranqueo</a></span><br />
+      <br />Si
+en un planteamiento inicial la recta y la circular
+son tangentes, hay que o bien "mover hacia dentro" la curva circular
+para
+"dejar sitio" a la clotoide o,por el mismo motivo, "mover hacia afuera" la recta, es decir, la inserción de una curva de
+transición exige que exista un retranqueo entre la recta y la circular.
+Así, se define el retranqueo como la
+distancia que hay entre la recta y la paralela a la recta que es
+tangente a la circular cuando entre ambas hay una clotoide:<br />
+      <br />
+
+      
+      <div style="text-align: center;"><img style="width: 560px; height: 200px;" alt="" src="Imagenes/retranqueo.png" /><br />
+      </div>
+
+      <br />
+       En el caso de dos circulares, el retranqueo es
+la distancia que hay entre la circunferencia de radio mayor y la
+concéntrica a ésta tangente a la de radio menor.<br />
+      <br />
+      <br /><span class="Titulo_2"><a name="calculo">Declaración y cálculo de curvas de transición</a></span><br />
+      <br />
+
+Los <a href="OL_planta_alineaciones.html#libertad">grados de libertad</a> de las dos alineaciones principales deben permitir el movimiento de una de ellas para conseguir el <a href="#retranqueo">retranqueo</a>.<br />
+      <br />
+Si <a href="#trans_sin_GL"><span style="font-weight: bold;">no hay grados de libertad</span></a>
+entre dos alineaciones (por ejemplo, dos
+fijas consecutivas o fija+retrogiratoria) la clotoide que resuelve el
+problema de tangencia es única y calculada por el programa, de forma
+que se ignoran los parámetros de clotoide declarados por el usuario.<br /><br />
+En cambio, si existe <a href="#trans_con_GL"><span style="font-weight: bold;">un grado de libertad</span></a> entre las dos alineaciones
+principales, la inserción de la curva de transición se hará
+retranqueando la alineación que disponga de ese grado de libertad para
+que se pueda insertar la espiral tangente declarada por el usuario.<br /><br />
+      <a name="signo">En algunos casos particulares</a> en los que
+existen dos soluciones (por ejemplo, <a href="#clotoide_vertice_fijas">clotoide de vértice entre dos
+rectas fijas</a>), se debe <span style="font-weight: bold;">indicar con el signo el sentido de giro</span>, siendo positivo para curvas a la derecha y negativo para la izquierda.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="trans_sin_GL">Transición entre alineaciones sin grados de libertad</a></span><br />
+
+      <br />RECTA Y CIRCULAR FIJAS<br />
+      <br />
+La clotoide solución, si existe, es única y el parámetro es calculado
+por el programa. El siguiente ejemplo está compuesto por dos
+      <a href="OL_planta_alineaciones.html#fija_2P">alineaciones fijas por dos puntos</a>, la primera recta y la segunda de
+radio 100. Tras calcular, el programa encuentra comos solución de
+continuidad y tangencia una curva clotoide de parámetro A próximo a 126
+(la rotulación muestra este parámetro redondeado al entero más cercano):<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 383px; height: 362px;" alt="" src="Imagenes/trans_recta_circ_fijas.png" /><br />
+      </div>
+<br /><br /><a name="clotoide_vertice_fijas">
+DOS RECTAS FIJAS</a><br />
+      <br />
+      Existe una solución para cada valor del parámetro de la <span style="font-weight: bold;">clotoide de vértice</span>
+y el radio del vértice es calculado por el programa. El siguiente
+ejemplo está compues de dos <a href="OL_planta_alineaciones.html#fija_2P">alineaciones rectas fijas por dos puntos</a>:<br />
+<br />
+      <div style="text-align: center;"><img style="width: 462px; height: 199px;" alt="" src="Imagenes/trans_recta_recta_fijas.png" /><br />
+      </div>
+
+      <br />
+      <img style="width: 166px; height: 49px; margin-left: 7px;" alt="" src="Imagenes/clotoide_vert.png" align="right" />En
+el caso de dos rectas fijas, para enlazar con una clotoide de vértice
+se habilita un campo que permite introducir el radio que vaya a tener
+en el vértice (<span style="font-weight: bold;">Rvert</span>). También
+es posible indicar los dos parámetros de ambas ramas de clotoide o la
+longitud de cada rama, cambiando el valor del botón <span style="font-weight: bold;">[R]</span> a <span style="font-weight: bold;">[A]</span> ó <span style="font-weight: bold;">[L]</span> respectivamente. Por tanto, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite definir clotoides de vértice de tres maneras distintas.<br />
+
+      <br />
+En este caso, puede tener sentido usar el <a href="#signo">signo</a> en el parámetro para indicar el sentido de giro debido a la existencia de dos soluciones geométricas.<br />
+<br />
+      <br />
+DOS CIRCULARES FIJAS QUE GIRAN HACIA EL MISMO LADO<br />
+      <br />
+Existe una única clotoide solución (<span style="font-weight: bold;">curva en C</span>)
+que calcula el programa (si hay solución geométrica) y lo muestra en la
+pantalla como en el siguiente ejemplo, formado por dos <a href="OL_planta_alineaciones.html#fija_2P">alineaciones fijas por dos puntos</a> y radios del mismo signo:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 466px; height: 179px;" alt="" src="Imagenes/trans_circ_circ_fijas_mismo_lado.png" /><br />
+      </div>
+      <br />
+Para que tenga solución este caso, los círculos deben ser interiores el uno al otro.<br />
+      <br />
+      <br />
+DOS CIRCULARES FIJAS QUE GIRAN EN SENTIDO CONTRARIO<br />
+      <br />
+La solución es una <span style="font-weight: bold;">clotoide en S</span>. En este caso puede declararse la relación entre los parámetros de las dos ramas, de tal forma que <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">el calculador respeta la relación entre ellos pero no el valor absoluto. Los círculos deben ser exteriores.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <br />
+El siguiente ejemplo está compuesto por dos <a href="OL_planta_alineaciones.html#fija_2P">alineaciones fijas por dos puntos</a>,
+la primera de radio -150 y la segunda de radio 100. Se ha dejado el
+parámetro A=0 ambas ramas de clotoide, obteniéndose entonces el mismo
+parámetro para cada una:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 458px; height: 260px;" alt="" src="Imagenes/trans_circ_circ_fijas_distinto_lado.png" /><br />
+      </div>
+
+    <span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+</span></span></span><img style="width: 252px; height: 72px; margin-left: 7px;" alt="" src="Imagenes/relac_param_A.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><a name="relacion_param">Pero
+si, por ejemplo, se hubiera detallado A=20 para la primera rama y A=33
+para la segunda, entonces el parámetro calculado para la primera rama
+sería 20/33 veces menor que el parámetro calculado para la segunda.<br />
+      <br />
+Si las alineaciones fueran </a><a href="OL_planta_alineaciones.html#fija_centro_radio">circulares fijas dadas por centro y radio</a>
+en lugar de por dos puntos, la solución sería análoga, pudiéndose
+también en este caso especificar una relación entre las ramas de
+clotoide:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img style="width: 457px; height: 279px;" alt="" src="Imagenes/trans_fijaCR_fijaCR.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="trans_con_GL">Transición entre alineaciones con un grado de libertad</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Es entonces el usuario quien
+debe declarar el parámetro que defina a la curva de transición.<br />
+      <br />
+
+      <img style="width: 221px; height: 107px; margin-left: 7px;" alt="" src="Imagenes/clotoide_L_A.png" align="right" />Los
+valores para definir las clotoides pueden ser sus parámetros A o sus
+longitudes L y, además, en el caso de clotoides de vértice, también
+puede ser el vértice R. Al conmutar entre
+A y L, el valor que se muestra es, por tanto, el parámetro de clotoide
+o su longitud respectivamente.<br />
+
+
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Si
+después de una clotoide definida por longitud se añade otra alineación,
+el campo de la clotoide que le precede se pondrá automáticamente a <span style="font-weight: bold;">[L]</span>.<br />
+      <br />
+Cuando una clotoide esté definida por longitud entonces los valores que aconsejan los <a href="OL_planta_normativa.html#tecla_T">botones [T] de la normativa</a>
+serán longitudes. Si el parámetro A es mayor que 5 veces el radio de la
+alineación principal, el calculador anula la clotoide para evitar
+errores de precisión.<br />
+      <br />
+      <br />
+<br />
+      </span></span></span></span></span></span></span><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

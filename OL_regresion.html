@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Regresión</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>REGRESIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades. Menú de Regresión. Manual de usuario</a><br />
+      <div style="margin-left: 40px;"><a href="#planta">Regresión en Planta</a><br />
+      <div style="margin-left: 40px;"><a href="#alineaciones">Menú de las alineaciones</a><br />
+      <a href="#configuracion">
+Menú de configuración</a><br />
+      <a href="#grafico">
+Menú de control gráfico y aspectos generales</a><br />
+      <a href="#tabla">
+Tabla de radios, deflexiones y pesos</a></div>
+      <a href="#alzado">Regresión en Alzado</a><br />
+      </div>
+      </div>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades. Menú de regresión. Manual de usuario</a></span><br />
+
+      <br />
+
+      </span></span>
+
+      <p class="MsoNormal"><img src="Imagenes/regresion_dib_pl.png" style="width: 109px; height: 335px;" alt="" align="right" hspace="5" />Regresión es una herramienta que permite
+obtener un eje matemático en planta o alzado a partir de una serie de puntos
+que podemos tener en un archivo TOP o TXT, o como una polilínea dibujada en
+pantalla.<o:p></o:p></p>
+
+
+      <p class="MsoNormal">El proceso comienza por analizar
+las curvaturas instantáneas, para buscar una clasificación inicial de los
+puntos en tramos o alineaciones rectas y curvas. En planta cada curva dará
+lugar a una circular y sus clotoides. En alzado cada curva se ajustará a una parábola
+o una circular. La interpretación inicial de tramos y radios puede ser
+modificada por el usuario para ayudar a los algoritmos de cálculo a encontrar
+una solución más adecuada.<o:p></o:p></p>
+
+
+      <p class="MsoNormal">En una segunda fase, cada uno de
+los tramos se puede analizar por un algoritmo de ajuste que modifica los radios
+y posición de las alineaciones, minimizando los cuadrados de las desviaciones
+de cada punto respecto del eje calculado. Este ajuste puede hacerse alineación
+por alineación o el eje completo.<o:p></o:p></p>
+
+
+      <p class="MsoNormal">Cuando se sale del menú de
+regresión, tendremos el eje matemático con que se terminó el ajuste.<o:p></o:p></p>
+
+
+
+
+
+
+      <p class="MsoNormal">Hay dos accesos:<o:p><br />
+      <o:p></o:p></o:p></p>
+
+
+      <p class="MsoNormal">Desde <span style="font-weight: bold;">PLANTA</span> &gt; <span style="font-weight: bold;">DIBUJO PLANTA</span> &gt; <span style="font-weight: bold;">REGRESION</span>:<o:p></o:p></p>
+
+
+
+
+      <p class="MsoNormal">Desde el menú de <b><i>Dibujo Planta</i></b>, accedemos a <b><i>REGRESION</i></b>.
+Esta utilidad nos ayudará a ajustar un eje a unos puntos dados. <o:p></o:p></p>
+
+
+      <p class="MsoNormal">Dada una serie de puntos, ya sea en formato .TOP, .TXT o una
+línea de ISTRAM, se calcularán automáticamente las alineaciones <b>fijas</b>
+que mejor se ajusten a la curvatura trazada por esos puntos, y a partir de esas
+alineaciones fijas (arcos y rectas), tratará de <span style="">&nbsp;</span>ajustar un eje calculable tal como se viene
+haciendo desde el menú de planta.<o:p></o:p></p>
+
+
+
+
+      <p class="MsoNormal">Para hacer las aproximaciones a esas alineaciones fijas, el
+programa partirá de una serie de premisas, como son el radio mínimo de
+curvatura para ser considerada una recta, la tolerancia de la variación de
+radios para considerar que forman una misma alineación curva y la distancia
+mínima entre puntos para ser tenidos en cuenta en el cálculo de radios, además
+de otros parámetros de control.<o:p></o:p></p>
+
+
+
+
+      <p class="MsoNormal">Veamos los pasos principales a seguir para conseguir un eje
+en ISTRAM a partir de la serie de puntos:<o:p></o:p></p>
+
+
+
+
+
+
+      <p class="MsoNormal">Desde el menú de DIBUJA PLANTA
+pulsamos en el botón REGRESION.<o:p></o:p></p>
+
+
+
+
+      <p class="MsoNormal">Aparecerá una ventana, con una
+serie de opciones para tomar los datos de un fichero, o seleccionar una línea
+de la cartografía actualmente en pantalla.<o:p></o:p></p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_eje.png" style="width: 309px; height: 75px;" alt="" /><br />
+
+      </div>
+
+
+
+
+      <p class="MsoNormal">Una vez seleccionado el fichero o
+la línea, se cargarán todos los puntos y elegimos si trabajaremos sobre la
+planta o sobre el alzado (aunque la secuencia lógica es empezar con la planta,
+y luego aproximar el alzado). En planta, los puntos quedan cargados en el
+diagrama de curvaturas y con Calcular Tramos ya tenemos la primera
+tramificación y solución para el eje en pantalla.<o:p><br />
+      <o:p></o:p></o:p></p>
+
+
+      <p class="MsoNormal"><o:p>El menú de regresión, también
+puede abrirse desde <span style="font-weight: bold;">PLANTA</span> &gt; <span style="font-weight: bold;">UTILIDADES</span> &gt; <span style="font-weight: bold;">Convertir línea a eje actual</span>:</o:p></p><p class="MsoNormal">Esta utilidad se permite realizar en dos pasos:<br />1) Convierte la línea seleccionada a eje actual. No se marca la opción de&nbsp;<span class="Parf_negrita">Corregir interactivamente por regresión</span> y se edita el eje obtenido desde el menú de planta.<br />2)
+Con la línea seleccionada en el paso 1) y el eje actual editado en el
+menú de planta, se entra en la corrección interactiva por regresión.</p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_conv.png" style="width: 300px; height: 259px;" alt="" /><div style="text-align: left;"><br />El cálculo inicial de tramos para la regresión de una línea en planta, se realiza con el algoritmo de Línea a Eje actual.<br />
+
+      </div>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal"><span style="">Antes
+de elegir la linea, en el menu de datos desplegado, debemos marcar una serie de
+opciones que definen el tratamiento inicial que se da a los vertices de la
+polilinea. El selector <span style="font-weight: bold;">NO_desechar_puntos</span> condiciona que no se eliminen puntos
+cuando están muy cerca unos de otros y tambien elegimos si se desea continuar
+despues del primer cálculo de un eje con el ajuste interactivo por regresion.
+La tabla interna que se alude (con el mismo contenido que el archivo de
+configuracion ISPOL12.ple) define una serie de parámetros de control para el
+análisis de los datos. En funcion del radio encontrado en una zona del eje, se
+toman de esa tabla una serie de parámetros que dirigen el proceso de ajuste
+(radios minimos y máximos, distancia entre puntos minima, &#8230;)</span></p>
+      <p class="MsoNormal"><span style="">Con la opción activada <span style="font-weight: bold;">Corregir interactivamente por Regresión</span>, el eje calculado por el algoritmo de línea a eje actual se toma como estimación inicial para la regresión.<br />
+
+      </span></p>
+
+
+      <a name="planta"><span class="Titulo_2">Regresión en Planta</span><br />
+      <br />
+Si seleccionamos Planta y realizamos el cálculo inicial de tramos obtendremos el siguiente cuadro de diálogo:<br />
+      <br />
+</a><div style="text-align: center;"><img style="width: 650px; height: 268px;" alt="" src="Imagenes/reg_cal_tr.png" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal">En el tenemos un diagrama de curvaturas
+de los puntos que se han cargado. En la gráfica estamos representando sobre el
+eje todos los puntos, y el diagrama de curvaturas en amarillo. Tambien vemos en
+color magenta el diagrama de curvaturas del eje calculado inicialmente.</p>
+
+
+Ayudándonos de las barras de deslizamiento que rodean&nbsp; a la gráfica, podremos contraer y dilatar la
+gráfica en sentido horizontal y vertical, o situar el centro sobre un punto
+determinado con la deslizadora inferior o picando y arrastrando sobre el
+gráfico.<br />
+
+      <p class="MsoNormal"><span style="font-weight: bold;">Radio mínimo para recta</span>: a una recta le corresponderá un
+radio de curvatura ¥,
+pero para hacer los cálculos necesitamos una cifra que podamos manejar. Así, se
+fija inicialmente que si el radio de curvatura es 100.000,00 o mayor, se
+considerará que el tramo es recto.</p>
+      <p class="MsoNormal"><span style="font-weight: bold;">% Tolerancia</span>: Cuando
+estamos calculando los tramos, se compara un radio de curvatura con el
+siguiente, si son iguales admitiendo esta tolerancia, pertenecerán a la misma
+curva. Esta tolerancia será inicialmente del 5%, pudiéndola variar el usuario.</p>
+      <p class="MsoNormal"><span style="font-weight: bold;">Distancia mínima entre
+puntos</span>: cuando entre dos puntos la distancia es menor que esta cantidad
+fijada por el usuario, se desprecia el segundo punto y figura como &#8220;inactivo&#8221;,
+no teniéndolo en cuenta para los cálculos de curvaturas. Si se optó por NO
+desechar puntos, la curvatura instantánea no se calcula con ese punto; pero
+todos siguen activos. Esto se hace así para evitar picos debidos a puntos que
+estén demasiado próximos y desvirtúen el cálculo. Inicialmente disMin tiene un
+valor de 0,5m, y puede variarse por decisión del usuario, como veremos más
+adelante.</p>
+
+
+
+
+
+
+Estos parámetros se ajustan en función del &#8220;estilo&#8221; local de trazado que
+muestran los puntos. En un eje puede haber zonas con rangos de curvaturas
+diferentes. El algoritmo tomará distintos parámetros de control en función de
+los radios locales.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>Una vez calculados los tramos, aparecerán marcados
+tanto en la ventana de curvaturas como en el gráfico de la planta tal y como vemos en la figura superior.<br />
+
+      <br />
+
+Se verán marcados en magenta sobre la planta los
+tramos calculados. Se resalta en amarillo el tramo actual, para indicar&nbsp; cómo nos movemos por la planta.<br />
+
+      <br />
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_pantalla.png" style="width: 634px; height: 371px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><a name="alineaciones"><span class="Titulo_2">Menú de las alineaciones</span><br />
+      <br />
+      
+
+      </a><p class="MsoNormal">El menú de regresión queda
+dividido en cuatro partes. La parte inferior izquierda corresponde a las
+alineaciones encontradas.<o:p></o:p></p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_pl.png" style="width: 602px; height: 270px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Los picados para seleccionar puntos pueden hacerse indistintamente
+sobre el diagrama o sobre la planta. Al Modificar el punto de inicio de
+un tramo (numérica o gráficamente), si el nuevo punto de inicio queda
+dentro de un tramo anterior, este no se borra si al menos tiene dos
+puntos fuera, y conserva los puntos que queden fuera del tramo que se
+modifica. Lo mismo para el punto final.<br /><br />
+      <br />
+Se puede ajustar por Mínimos Cuadrados (MMCC) el tramo actual o todos los tramos como veremos en el menú de configuración.<br />
+      <br />
+      </span></span><span class="Titulo_2">Menú de configuración</span><br />
+
+      <br />
+
+      
+
+      <p class="MsoNormal">El menú que aparece abajo
+corresponde a la configuración de los valores para hacer el cálculo automático
+de los tramos. </p>
+
+
+Los parámetros que se pueden cambiar desde aquí son el radio mínimo para
+considerar una recta (<span style="font-weight: bold;">R.RECTA</span>), el % de tolerancia para las curvas (<span style="font-weight: bold;">%TOL</span>) y la
+distancia mínima entre puntos (<span style="font-weight: bold;">DISmin</span>). También podemos activar y desactivar
+puntos o tramos (conjuntos) de puntos, para que no se tengan en cuenta en los
+cálculos de curvaturas, o bloquear y desbloquear un conjunto de puntos para no
+utilizarlo en el cálculo de alineaciones.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_conf.png" style="width: 266px; height: 82px;" alt="" /></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+
+
+      <p class="MsoNormal">Una vez configurado a nuestro
+gusto, podemos recalcular las alineaciones. Con la opción <span style="font-weight: bold;">TRAMO</span> sólo
+recalculará el tramo en que estamos y con <span style="font-weight: bold;">TODO</span>
+se recalculará todo el
+eje. Hay que tener cuidado con esta última opción ya que eliminará
+todos los
+cambios que hayamos hecho en las alineaciones, salvo que las hayamos
+bloqueado. Contamos también con la opción de poder Bloquear o
+Desbloquear todo. <br />
+</p>Cuando se bloquean y/o desbloquean puntos las alineaciones que
+tienen algún punto bloqueado se bloquean y las alineaciones que no
+tienen ningún punto bloqueado se desbloquean.<p class="MsoNormal">La
+tecla <span style="font-weight: bold;">MMCC</span> ordena reajustar por Minimos Cuadrados todo el eje. No conviene
+hacerlo hasta que los Tramos que definen cada alineación estén aproximados ya
+que el cálculo puede requerir bastante tiempo de máquina.<o:p></o:p></p>
+
+
+<a name="configuracion">      </a><a name="grafico"><span class="Titulo_2">Menú de control gráfico y aspectos generales</span><br />
+      <br />
+Desde este menú controlamos qué es lo que queremos
+que se vea sobre la planta: <br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 278px; height: 126px;" alt="" src="Imagenes/reg_control.png" /><br />
+
+      </div>
+      <br />
+
+
+
+      <p class="MsoNormal">Las <span style="font-weight: bold;">Alineaciones dato</span>, el<span style="font-weight: bold;"> Eje
+calculado</span>, la <span style="font-weight: bold;">Distancia</span>
+de cada punto al eje calculado exagerada x (20) (se muestra en el menú
+la distancia media&nbsp;cuadrática de todos los puntos al eje (<span style="font-weight: bold;">dM</span>), junto con la distancia máxima), mostrar el <span style="font-weight: bold;">numero</span> de un punto
+cada (10) y el <span style="font-weight: bold;">Nivel de ajuste</span> a que llega el algoritmo de <span style="font-weight: bold;">MMCC</span> (si los datos
+tienen ruido, bajar este nivel). Tambien hay dos controles para Deshacer y
+Rehacer los últimos cambios hechos.</p><p class="MsoNormal">La opción <span class="Parf_negrita">[]errores</span>,
+permite remarcar los errores del cálculo de planta, rodeando la
+posición con un círculo grueso rojo y un texto como: &lt;Se cortan&gt;
+o &lt;Longitud negativa&gt;.<br /></p>
+
+
+
+
+      <p class="MsoNormal"><span style="font-weight: bold;">Guardar</span>: Escribe en un fichero .rgr el estado actual
+del trabajo, con el fin de continuar trabajando sobre él en sucesivas ocasiones
+cargándolo con <span style="font-weight: bold;">Cargar</span>. No salva el eje en planta, para ello hay que salir de
+este menú y salir a PLANTA. Conviene hacer guardados temporales cuando tengamos
+un ajuste interesante, antes de emprender una serie de modificaciones para
+buscar un ajuste que puede cambiar a peor.</p>
+
+
+
+
+      <span style="font-weight: bold;">[X] </span>Cierra el menú de regresión, y vuelve al inicial desde el que
+podemos seleccionar un nuevo fichero para cargar. Hasta que no se da al botón [X]
+del menú inicial, no habremos salido de REGRESIÓN.<br />
+
+      <br /><span style="font-weight: bold;">tam</span> permite controlar el tamaño de representación de los puntos dato.<br />
+      <br />
+
+      <a name="tabla"><span class="Titulo_2">Tabla de Radios, deflexiones y pesos</span>
+
+
+      </a><p class="MsoNormal">La tabla de la esquina inferior
+derecha presenta datos de los puntos bajo análisis. <o:p></o:p></p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_radios.png" style="width: 212px; height: 189px;" alt="" /><br />
+
+      </div>
+      <br />
+
+La primera columna es el numero correlativo de cada
+punto. La segunda columna muestra el radio que el eje matemático actual tiene
+en la proyección del punto (diagrama magenta). La tercera es el radio
+instantáneo calculado en ese punto (diagrama amarillo). La siguiente columna es
+la distancia del punto al eje calculado (en la planta se marcan exagerados con
+un segmento verde o rojo). La ultima columna es el peso que cada punto tiene en
+la ponderación por MMCC. En principio todos los puntos están a 1. Si bajamos el
+peso, la importancia del punto se rebaja (con cero no influye en el cálculo, lo
+que es similar a su desactivación). Con valores mayores que 1 su ponderación aumenta
+haciendo que el eje ajustado se acerque a él.<br />
+
+      <br />
+Pulsando el icono de la libreta <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> podemos generar un informe de los puntos (<span class="Archivo">rgrs_puntosN.res</span>) que contiene todos estos datos de manera tabulada.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">CALCULOS</span>: Permite
+ver sobre la gráfica en planta los cálculos que llevaron a localizar las
+alineaciones: número de alineación, radio, centro, etc.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/reg_cal.png" style="width: 221px; height: 320px;" alt="" /><br />
+
+Gráfica con cálculos<br />
+
+      </div>
+      <br />
+
+
+
+      <p class="MsoNormal"><span style="font-weight: bold;">DISTANCIA</span>: Muestra la
+diferencia (exagerada para que sea más visible) entre el punto y el eje
+calculado. En verde será que el punto queda hacia la derecha, y en rojo a la
+izquierda<o:p></o:p></p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_dist.png" style="width: 216px; height: 321px;" alt="" /><br />
+
+Gráfica con deflexiones<br />
+
+      </div>
+      <br />
+
+      <span style="font-weight: bold;">ROTULOS</span>: Muestra
+los rótulos generados tras el cálculo del eje, con los radios calculados y los
+parámetros de las&nbsp; clotoides.<br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_rot.png" style="width: 234px; height: 345px;" alt="" /><br />
+
+Gráfica con rótulos<br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal"><span style="font-weight: bold;">NUMEROS</span>: Muestra el número
+de cada punto, con la cadencia que se indique. Inicialmente se mostrarán todos.</p>
+
+
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_num.png" style="width: 232px; height: 342px;" alt="" /><br />
+
+Gráfica con números<br />
+
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />El Eco del número del punto muestra la distancia entre el punto y el eje. En rasante, es análogo.<br /><br /></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/reg_eco_punto.png" style="width: 400px; height: 210px;" alt="" /></span></span><br /><span class="Parrafo"><span class="Parrafo"></span></span></div><span class="Parrafo"><span class="Parrafo"><br /><br />
+      </span></span><a name="alzado"><span class="Titulo_2">Regresión en Alzado</span><br />
+      <br />
+      
+
+
+
+
+
+      </a><p style="text-align: left;" class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Esta herramienta se utiliza para realizar la regesión de un eje en alzado. Se accede a través del menú de&nbsp; <span style="font-weight: bold;">PLANTA</span> &gt; <span style="font-weight: bold;">DIBUJO PLANTA</span> &gt; <span style="font-weight: bold;">REGESIÓN</span>.</span></span></p>
+      <p style="text-align: left;" class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Se utilizan las coordenadas x,y,z de una secuencia de puntos procedentes de:<br />
+</span></span></p>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Un archivo .top</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Un archivo .txt</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Una Línea que se selecciona en pantalla.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Puntos ya utilizados para una regresión en planta (.rgr)</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">
+Puntos ya utilizados de una regresión en alzado (.rga)</span></span></li>
+      </ul>
+      <p style="text-align: left;" class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Los
+puntos deben estar aproximadamente sobre el eje en planta actual. (Para
+una línea con cota puede realizarse primero la regresión en planta y
+luego la de alzado).</span></span></p>
+      <p class="MsoNormal">Una vez que tenemos calculado el
+eje en planta, o bien si entramos a la opción de regresión con un eje ya
+cargado, podemos comenzar con la regresión en alzado.<br />
+
+      </p>
+      <p class="MsoNormal">Al seleccionar la opción de alzado
+se proyectará la cota de los puntos sobre el eje, de manera que se consiga el
+Pk de cada punto y poder así construir un diagrama Pk-cota donde representar la
+rasante.</p>
+      <p class="MsoNormal"><span class="Parrafo"><span class="Parrafo">La regresión se realiza
+mediante un cuadro de diálogo en el que se muestra un diagrama de
+pendientes y dentro de la ventana gráfica del menú de Rasantes.</span></span> </p>
+
+
+      <div style="text-align: center;"><img src="Imagenes/reg_alz.png" style="width: 657px; height: 276px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+
+      <p class="MsoNormal">Pulsando el botón <span style="font-weight: bold;">Calc. Tramos</span> se hace una
+aproximación de los tramos rectos y acuerdos parabólicos que más se asemejen a
+los puntos dados. Para ello, se calculan las pendientes entre cada dos puntos,
+y teniendo en cuenta una tolerancia inicial (±0,1%) se buscan los puntos
+que estén en una misma pendiente.</p>
+      <p class="MsoNormal">
+Pulsando el icono de la libreta <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> podemos generar un informe de los puntos (<span class="Archivo">rgrs_puntos_alz.res</span>) que contiene todos estos datos de manera tabulada.</p>
+
+      <p class="MsoNormal"><span class="Parrafo"><span class="Parrafo">Antes de iniciar la
+regresión interactivamente se puede precalcular automaticamente un
+conjunto de tramos o rasantes utilizando los siguientes métodos:</span></span></p><ul><li><span class="Parrafo"><span style="color: rgb(3, 5, 3);" class="Parrafo"> Rasante cualquiera:&nbsp;</span><span class="Parrafo"><span class="Parrafo"><span style="color: rgb(3, 5, 3);"> Pun</span>tos tomados en campo.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo">Rasante analítica: Los
+puntos proceden de una rasante analítica.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Archivo
+.ras: A partir de un fichero *.ras, generado desde el menú de rasantes,
+p.e con la utilidad de adaptar una rasante al terreno, etc...</span></span></li><li><span class="Parrafo"><span class="Parrafo">Un
+tramo: Genera una rasante única que va desde el primer punto válido
+hasta el último. Esto permite luego ir aproximando una rasante
+manualmente con la opción Dividir y pulsando los puntos inicial y final
+de los acuerdos.<br /></span></span></li></ul>
+
+
+      <div style="text-align: center;"><img style="width: 650px; height: 269px;" alt="" src="Imagenes/reg_alz_cal.png" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Una vez aceptado este cálculo previo, El entorno de trabajo del cuadro
+de de diálogo es muy parecido al de la regresión en planta.<br />
+      <br />
+Podemos editar manualmente los tramos de forma númerica o por picado en la venana gráfica o sobre el diagrama de pendientes.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo">Al Modificar el punto de
+inicio de un tramo (numérica o gráficamente), si el nuevo punto de
+inicio queda dentro de un tramo anterior, este no se borra si al menos
+tiene dos puntos fuera, y conserva los puntos que queden fuera del
+tramo que se modifica. Lo mismo para el punto final.</span></span><br /><span class="Parrafo"><span class="Parrafo">
+      <br />El Eco del número del punto muestra la distancia entre el punto y la rasante.<br /><br />
+Ajustar la pendiente y las cotas, el Kv o todo simultaneamente para una
+rasante y su acuerdo por el metodo de mínimos cuadrados, pudiendo dar
+diferente peso a cada punto, o desactivarlos.<br />
+      <br />
+En todo momento se ve numérica y graficamente la desviación de los
+puntos&nbsp; y la desviación media cuadrática de cada tramo y de todo
+el eje.<br />
+      <br />
+También se pueden bloquear determinadas rasantes editadas manualmente y
+que el programa recalcule automaticamente el resto, por alguno de los
+dos métodos mencionados.<br /><br />Los acuerdos verticales pueden definirse por <span style="font-style: italic;">Kv</span> o por <span style="font-style: italic;">Longitud</span>.<br /><br />Las
+pendientes por defecto se muestran en % pero también es posible
+mostrarlas en tanto por mil si se activa el flag que está al lado de la
+casilla <span style="font-style: italic;">Pendiente.<br /><br /><span style="font-style: italic;"></span><br /></span>
+      <br />
+Todas las modificaciones tienen su deshacer y su rehacer.<br />
+      <br />
+El eje en alzado que se va calculando pasa a ser la rasante del eje actual y puede guardarse en su archivo *.ras <img src="Imagenes/reg_salva_ras.png" style="width: 40px; height: 19px;" alt="" /> y/o un archivo <span style="color: black;" class="Archivo">*.vol</span>. <img src="Imagenes/reg_salva_vol.png" style="width: 20px; height: 19px;" alt="" /> ( en este caso, el eje ha de tener un *.vol previamente).<br />
+<br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

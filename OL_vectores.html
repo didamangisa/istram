@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Vectores de geometría fija</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>VECTORES DE GEOMETRÍA FIJA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Es posible aplicar 5 tipos de vectores fijos, es decir, <a href="definicion_vectorial.html">vectores</a>
+que se aplican independientemente de que la sección sea de desmonte o
+terraplén y que además no se recortan si intersecan al terreno.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 217px;" alt="" src="Imagenes/dialogo_vectores.png" /><br />
+      </div>
+      <br />
+      </span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#plataforma_fija">Plataforma fija</a></span><br />
+      <span class="Parrafo"><a href="#mediana_fija">Mediana fija</a></span><br />
+      <span class="Parrafo"><a href="#desmonte_inadecuado">Desmonte en terreno inadecuado</a></span><br />
+      <span class="Parrafo"><a href="#cuneta_mediana">Cuneta de mediana</a></span><br />
+      <span class="Parrafo"><a href="#subrasante_fija">Subrasante fija</a></span><br />
+      <span class="Parrafo"><a href="#tramificacion_indep_vectores">Tramificación independiente de los vectores</a></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /></span><span class="Parrafo"><br />
+</span><span class="Titulo_2"><a name="plataforma_fija">Plataforma fija</a></span><br />
+      <span class="Parrafo"><br />
+Este menú permite completar la plataforma con elementos fijos para cada
+sección tipo e independientes de la ley de peraltes. Estos elementos
+pueden ser bordillos, aceras, escalones laterales, muretes, etc.<br />
+      <br />
+Si existen elementos del tipo PLATAFORMA FIJA, el programa los coloca
+detrás de la última calzada auxiliar antes de la berma (antes de tomar
+la decisión desmonte/terraplén).<br />
+      <br />
+La definición de la parte fija de la plataforma requiere el <a href="definicion_vectorial.html">diseño vectorial</a>
+de esa parte de la sección. La rasante de la plataforma fija, parte del
+extremo de la rasante y la definición de la subrasante de la plataforma
+fija (excavación) a partir de la subrasante.<br />
+      <br />
+A partir de la casilla <span style="font-weight: bold;">Desde el código 100</span> para las secciones cuyo <a href="OL_punto_control_y_arranque_cuneta.html">punto de control/cuneta</a>
+es tal que la cuneta cuelga del desagüe de la subrasante o de una capa
+de suelo seleccionado, esta plataforma vectorial definida por los dX,
+dY se genera a partir de este punto (código 100) tanto en secciones de
+desmonte como de terraplén, trasladando el punto de control o el de
+arranque de la cuneta o de la sección de terraplén al punto final del
+vector.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 482px; height: 207px;" alt="" src="Imagenes/vec_plat_cod100_ej.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Una vez dentro de la <a href="definicion_vectorial.html">definición vectorial</a>, se debe tener presente que la columna <span style="font-weight: bold;">dYsub</span>
+permite describir segmentos que constituyen el perfil de la subrasante
+(excavación) por debajo de la plataforma fija. De todas formas, la
+subrasante también puede quedar definida de forma vectorial en forma de
+      <a href="#subrasante_fija">subrasante fija</a>).<br />
+      <br />
+Si el valor <span style="font-weight: bold;">dYsub</span> se hace
+suficientemente grande para que la subrasante supere a la rasante, al
+aplicarlo el programa lo detiene a la altura de la rasante eliminando
+así en ese punto el espesor del paquete de firme.<br />
+      <br />
+Si se hace <span style="font-weight: bold;">dYsub</span>=-1000 la subrasante se prolonga con la pendiente que trae la subrasante debajo de la última calzada auxiliar.<br />
+      <br />
+      </span><div style="text-align: center;"><span class="Parrafo"></span><img style="width: 600px; height: 314px;" alt="" src="Imagenes/dialogo_plataforma_fija.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Se pueden definir en la plataforma fija segmentos que son generados
+cuando el peralte vierte hacia afuera, colocando en la columna dY(sub)
+el valor -1001, y segmentos para cuando no vierte hacia afuera
+colocando en la dY(sub) el valor -1002.<br />
+Vamos a ver un ejemplo:<br />
+Queremos poner una cuneta en el borde de la plataforma si el peralte
+vierte hacia afuera y en caso contrario colocar una berma de un metro.
+Definimos entonces los siguientes parámetros:<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 647px; height: 254px;" alt="" src="Imagenes/vectores_ejem_cun_berma.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Otra serie de códigos complementarios para la columna dYsub son el <span style="font-weight: bold;">-2001</span>, el <span style="font-weight: bold;">-2002 </span>y el<span style="font-weight: bold;"> -2003</span>.
+Se puede definir en la plataforma fija segmentos para generar sólo
+cuando el peralte vierte hacia afuera (dYsub= -2001) o de ese lado hay
+desmonte. <br />
+Se generarán segmentos sólo cuando no vierta hacia afuera (dYsub= -2002) y de ese lado no haya desmonte. <br />
+Veamos un ejemplo:<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 656px; height: 265px;" alt="" src="Imagenes/vect_2001_ej.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Para casos de Plataforma <span style="font-weight: bold;">desde el código 100</span> (anteriormente comentado), aplicando un valor <span style="font-weight: bold;">-3000</span> en el segmento de la columna <span style="font-weight: bold;">dYsub</span>
+el segmento en cuestión será interrumpido por el terreno si corta al
+mismo. A continuación se pueden añadir otros segmentos. Veamos un
+ejemplo:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 526px; height: 205px;" alt="" src="Imagenes/vec_plat_cod3000_ej.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Este vector comtempla, además, las siguientes opciones:<br />
+      <br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 129px;">Peraltada</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 543px;"><img style="width: 152px; height: 98px;" alt="" src="Imagenes/vec_plat_peraltada.png" align="right" hspace="4" />Aquellos
+segmentos que tengan definida la casilla Peralte bascularán con el
+peralte de la calzada (L67) y los que tengan definida la casilla en
+Subrasante bascularán con la pendiente de la subrasante (L68).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 129px;">Códigos consecutivos<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 543px;">La
+acera comienza con el código 25, pero es posible conservar la
+codificación consecutiva activando esta opción, lo que permite definir
+capas de firme referidas a los códigos 11,12,13,14 ó 15 definidos en la
+plataforma fija.</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <br />Si se asigna el código <span style="font-weight: bold;">-4000</span> indica que este punto debe tomar la cota del longitudinal auxiliar (si el valor <span style="font-style: italic;">dY</span>=0).<br />Así mismo, en el vector subrasante se le puede indicar a un punto con la misma clave <span style="font-weight: bold;">-4000</span>
+que indica que a este punto se le aplicará el mismo incremento de cota
+que al punto de la plataforma fija que se le haya aplicado al
+longitudinal auxiliar.<br /><br /><img style="width: 520px; height: 219px;" alt="" src="Imagenes/vec_plat_cod4000_ej.png" /><br />Tiene aplicación por ejemplo en el diseño de canales trapezoidales escalonados.<br /><br />
+      </span><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="mediana_fija">Mediana fija</a></span><br />
+
+      <span class="Parrafo"><br />
+En el caso de autovía existe también la posibilidad de definir una
+parte de la mediana de forma vectorial: Es la denominada MEDIANA FIJA.
+En este caso el vector va colgado del borde interior de la calzada
+auxiliar y antes de la berma en pavimento interior de cada una de las
+calzadas.<br /><br /><img style="width: 600px; height: 244px;" alt="" src="Imagenes/dialogo_mediana_fija.png" /><br /><br />
+      <br />
+El ancho total de la mediana se conserva, por lo que los anchos de cada
+uno de los vectores que definen la mediana fija deben tener un valor
+inferior a la semimediana que se ha definido en el menú <a href="OL_excentricidad_mediana.html"><span style="font-weight: bold;">[EXCENTRICIDAD Y MEDIANA]</span></a>. Después del último punto del vector, la mediana se completa automáticamente con un segmento hasta el vértice de la mediana.<br />
+      <br />
+Se admite también que una de las medianas fijas tenga un ancho superior
+al dado en la semimediana y atraviese el eje geométrico, en este caso
+se unen directamente los extremos de los dos vectores o el extremo del
+vector que atraviesa con la berma del lado contrario.<br />
+      <br />Los segmentos del vector pueden ir peraltados.<br /><br />
+Si todos los datos en la columna <span style="font-weight: bold;">dY (sub)</span> de la <a href="definicion_vectorial.html">definición vectorial</a>
+tienen valor, entonces la subrasante continúa con su comportamiento
+automático. Si se definen datos, éstos se aplican desde el extremo de
+la subrasante. Esta columna también admite dos valores especiales:<br />
+      <br />
+</span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">1000</span>: los segmentos con este valor no se generan si el peralte de la calzada de ese lado vierte
+hacia el exterior.<br />
+<span style="font-weight: bold;">1001</span>: los segmentos con este valor solo se generan para el lado con el borde del arcén interior más bajo.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="desmonte_inadecuado">Desmonte en terreno inadecuado</a></span><br />
+      <span class="Parrafo"><br />
+Si existe un <a href="OL_vectores.html">vector</a> aquí definido y en el tramo asociado existe
+cubierta vegetal y/o terreno inadecuado, el programa lleva la geometría
+del desmonte y terraplén hasta el horizonte del terreno competente y a
+partir de ese punto sube hasta la superficie empleando la geometría
+aquí definida. En caso de desmonte el perfil continúa hasta superficie;
+en caso de terraplén, el talud de terraplén baja hasta la base del
+vegetal o inadecuado y regresa a superficie con la geometría de este
+vector.<br />
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="cuneta_mediana">Cuneta de mediana</a></span><br />
+
+      <span class="Parrafo"><br />
+Análogamente a la <a href="#mediana_fija">MEDIANA FIJA</a>, la CUNETA DE MEDIANA permite definir una parte fija de la mediana, pero en este caso los <a href="definicion_vectorial.html">vectores</a>
+van colgados desde el vértice de la mediana hacia fuera. Este vértice
+coincide con el eje geométrico en las medianas definidas por
+profundidad y las de talud máximo centrada y talud mínimo centrada, en
+cambio para las definidas por talud y talud máximo la posición del
+vértice dependerá de los taludes definidos, de la geometría de la
+cuneta de mediana y del peralte.<br />
+      <br />
+Admite que algunos de sus segmentos sean peraltados.<br /><br />
+Se puede definir un revestimiento para la mediana definida desde este menú.<br />
+<br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 245px;" alt="" src="Imagenes/cun_med_revest.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+</span></span><span class="Parrafo"><span class="Parrafo">También se pueden definir un par de claves a determinados segmentos de cuneta:<br />
+<br />
+<span style="font-weight: bold;">1000</span>: los segmentos con esta
+clave no se generan si el peralte de la calzada de ese lado vierte
+hacia el exterior. De esta manera, con esos segmentos se pueden definir
+cunetas para el drenaje en el interior de las curvas de la calzada más
+alta.<br />
+<span style="font-weight: bold;">1001</span>: los segmentos con esta clave solo se generan para el lado con el borde del arcén interior más bajo.<br />
+      </span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+<br />
+      </span><span class="Titulo_2"><a name="subrasante_fija">Subrasante fija</a></span><br />
+
+      <span class="Parrafo"><br />
+      </span>Permite definir un <a href="definicion_vectorial.html">vector</a> para la subrasante de la plataforma fija, con distancias al eje y cotas independientes de las definidas para el vector de la <a href="#plataforma_fija">plataforma fija</a>.
+El vector subrasante fija tiene la posibilidad de definir una clave
+para cada punto. Para puntos cuya clave tenga el valor 1, el programa
+sustituye la cota del punto por la del longitudinal de la cuneta del
+lado correspondiente.<br />
+      <br />
+Aquellos segmentos que tengan activada la casilla <span style="font-weight: bold; font-style: italic;">Peraltada</span>
+bascularán con el peralte. Así puede hacerse, por ejemplo, que basculen
+los segmentos pseudohorizontales y que no basculen los pseudoverticales.<br />
+      <br />
+En secciones de terraplén, con el control borde arcen/borde berma, se
+puede definir un vector subrasante que acompañe por debajo al talud del
+terraplén hasta cortar al suelo y luego cerrarse por el suelo hasta el
+pie de terraplén. A los segmentos de este vector subrasante que pueden
+cortar el suelo se les asignará la clave <span style="font-weight: bold;">-3000</span>.<br />
+<br />
+      <span class="Parrafo"><br />
+</span></span><span class="Titulo_2"><a name="tramificacion_indep_vectores">Tramificación independiente de los vectores</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 219px; height: 85px; margin-left: 7px;" alt="" src="Imagenes/acceso_tramific_vectores.png" align="right" /><span class="Parrafo"><span class="Parrafo">El programa permite una tramificación separada de los VECTORES (<a href="#plataforma_fija">plataforma fija</a>, <a href="#mediana_fija">mediana fija</a>, <a href="#desmonte_inadecuado">desmonte en terreno inadecuado</a>, <a href="#cuneta_mediana">cuneta de mediana</a> y <a href="#subrasante_fija">subrasante fija</a>) similar a la subtramificación para cunetas, desmontes y terraplenes (botones <span style="font-weight: bold;">[C]</span>, <span style="font-weight: bold;">[D]</span> y <span style="font-weight: bold;">[T]</span>). Para acceder a esta tramificación se pulsa en la tecla <span style="font-weight: bold;">[V]</span>.<br />
+      <br />
+Para la tramificación independiente de vectores se sigue el siguiente
+comportamiento: Si un tramo termina en el mismo PK en el que comienza
+el siguiente y existe ese perfil del terreno o está activada la
+interpolación de perfiles en los PK&#8217;s de tramos de cálculo, entonces se
+repite el perfil utilizando los datos correspondientes a los dos
+tramos, tal como se hace con los PK&#8217;s de las ZONAS DE CÁLCULO generales.<br />
+<span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

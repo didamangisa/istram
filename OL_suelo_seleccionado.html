@@ -1,0 +1,652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Suelo seleccionado</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SUELO SELECCIONADO Y SOBREEXCAVACIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 6077px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#control_pend">Control de la pendiente del suelo seleccionado</a><br />
+      <a href="#taludes">Declaración de taludes para las capas de suelo seleccionado</a><br />
+      <a href="#taludes">Control de la profundidad</a><br />
+      <span class="Parrafo"><a href="#sim_revest_terr">
+Simulación de un revestimiento de terraplén</a></span><br />
+      <span class="Parrafo"><a href="#EyM">Suelo seleccionado por tabla de refuerzo. Proyectos de ensanche y mejora</a></span><br />
+      <span class="Parrafo"></span></div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+<img src="Imagenes/modelo_suelo_selec.png" style="width: 275px; height: 260px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">La
+función primordial del cálculo de la sección transversal es la
+generación de un cajeado en desmonte y una plataforma en terraplén como
+asiento del paquete de firmes.<br />
+      <br />
+      </span><span class="Parrafo">En algunos casos se desea disponer
+bajo los firmes un nivel que mejore el contacto entre firmes y
+explanación de asiento. Suele llamársele <span style="font-weight: bold;">sobreexcavación</span>, pues es lo que debe hacerse en desmonte, <span style="font-weight: bold;">explanada mejorada</span> porque es el remate de la explanación en terraplén, o <span style="font-weight: bold;">suelo seleccionado</span> por ser éste el material con el que se confecciona.<br />
+      <br />
+En este menú pueden definirse estos niveles con diferente espesor,
+según esté sobre rocas (SSR o SSR2), tierra de desmonte o terraplén y con valores
+distintos para cada PK, interpolándose linealmente entre cada par de
+datos, o extrapolando si no se alcanza todo el tramo de cálculo.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+Al pulsar en la tecla <span style="font-weight: bold;">[SUELO SELECCIONADO]</span> desde ALZADO se abre una ventana similar a la siguiente:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 600px; height: 292px;" alt="" src="Imagenes/dialogo_SS.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Para cada dato con información se pueden definir los espesores de suelo
+seleccionado medidos desde la subrasante hacia abajo, con los valores:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Espesor de suelo seleccionado en roca (<span style="font-weight: bold;">SSR2</span>).</span></li>
+        <li><span class="Parrafo">Espesor de suelo seleccionado en roca (<span style="font-weight: bold;">SSR</span>).<br />
+</span></li>
+
+        <li><span class="Parrafo">Espesor de suelo seleccionado en desmonte (<span style="font-weight: bold;">SSD</span>).</span></li>
+        <li><span class="Parrafo">Espesor de suelo seleccionado en terraplén (<span style="font-weight: bold;">SST</span>).</span></li>
+      </ul>
+      <span class="Parrafo">El cálculo se efectúa, en principio y
+aunque se puede variar según se indica más adelante, haciendo una copia
+de la subrasante del paquete de firmes paralelamente a sí misma,
+comprobando en cada punto si el firme está sobre terraplén, desmonte en
+tierra o en roca, diferenciando espesor de Roca 1 o 2 y aplicando la profundidad que se defina en cada caso (<span style="font-weight: bold;">SSR2</span>, <span style="font-weight: bold;">SSR</span>, <span style="font-weight: bold;">SSD</span> y <span style="font-weight: bold;">SST</span>).<br />
+      <br />
+      </span><img src="Imagenes/SS_refDT.png" style="width: 94px; height: 65px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Desde <span style="font-weight: bold;">[Talud]</span> </span><span class="Parrafo">&#8594;</span><span class="Parrafo"> <span style="font-weight: bold;">Ref D/T</span> se puede seleccionar el terreno de referencia para aplicar los espesores de desmonte o terraplén. Existen dos posibilidades:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Desde el terreno competente, que es la opción por defecto.</span></li>
+        <li><span class="Parrafo">Desde el terreno inadecuado.&nbsp;&nbsp;&nbsp; &nbsp;</span></li>
+      </ul>
+      <span class="Parrafo"><img src="Imagenes/SS_ZD_ZT.png" style="margin-left: 7px; width: 133px; height: 77px; float: right;" alt="" /><span class="Parrafo">También es posible indicar, para las capas que se desee, que el valor
+introducido en <span style="font-weight: bold;">SSR</span> y/o en <span style="font-weight: bold;">SST</span> es una <span style="font-weight: bold;">cota absoluta</span> en lugar de un
+espesor. Para ello, habrá que pulsar la pestaña <span style="font-weight: bold;">Talud</span> y marcar la
+casilla correspondiente de las columnas <span style="font-weight: bold; font-style: italic;">ZD</span>/<span style="font-weight: bold; font-style: italic;">ZT</span> respectivamente. <br /><br />Si se marca la casilla <span style="font-weight: bold;">MP</span>
+(Mediana paralela), la superficie se trazará hacia el interior a partir
+del código 1 de forma paralela a la rasante (superficie 67). </span></span><span class="Parrafo"><span class="Parrafo"><br /><br />La opción <span style="font-weight: bold; font-style: italic;">ZM</span> hace que la altura sea realiva a la zapata del muro. <br /><br /></span></span><span class="Parrafo"><span class="Parrafo">Si se
+marca la casilla de la derecha, indicaremos que esa cota se aplique
+sólo en el eje y que el resto sea paralelo a la subrasante. <br />&nbsp;&nbsp; &nbsp;<br />
+      En el menú de suelo seleccionado se puede elegir el número de capas que
+se muestran (1-20). El número de capas visibles (1-20) se guarda en el fichero&nbsp;<span class="Archivo">.vol</span>.<br />
+      <br /></span>
+      <table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 30px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 641px; text-align: justify;"><span class="Parrafo"><span class="Info">Aunque
+en el menú no se muestren todas las capas, éstas pueden tener datos y
+serán generadas. Para determinados casos particulares las capas de
+suelo seleccionado admiten valores negativos.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Por defecto las capas de suelo seleccionado se paran, en el caso de
+terraplén, al llegar al talud y, en el caso de desmonte, en el punto
+más bajo de la cuneta.<br />
+      <br />
+Puede limitarse asimismo la extensión lateral del suelo seleccionado
+introduciendo los códigos exterior e interior hasta los que debe llegar
+la capa y una distancia a los mismos (<span style="font-weight: bold;">Cód. ext.</span>, <span style="font-weight: bold;">Dist. ext.</span>, <span style="font-weight: bold;">Cód. int.</span>,
+      <span style="font-weight: bold;">Dist. int.</span>).<br />
+      <img src="Imagenes/ss_superficie_otra.png" style="width: 153px; height: 86px;" alt="" align="right" hspace="6" />Se
+permite utilizar como superficie de referencia para los bordes exterior
+e interior cualquier superficie además de la 68, que haya sido creada
+antes que la capa que la utilza.<br />
+      <br /></span><img src="Imagenes/SS_codigos.png" style="width: 359px; height: 174px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"> En el caso de que el código exterior sea el 100 (corte de plataforma
+con subrasante) no se detiene el suelo seleccionado debajo de este
+punto, sino que se prolonga hasta cortar el talud de terraplén o el
+talud de la cuneta en caso de desmonte.<br />
+      <br />
+En este último caso, si el suelo seleccionado es más
+profundo que la cuneta, se detiene en la vertical del fondo de cuneta.
+De todas formas, el cierre exterior de la sobre-excavación en desmonte
+puede hacerse también por detrás de la cuneta introduciendo un código
+exterior adecuado (p. ej., 1103).<br />
+      <br />Para los códigos exteriores puede utilizarse también los de la superficie de <a href="OL_desmonte_tierra.html#terreno_inadecuado">desmonte en inadecuado</a> cuando la cuneta y el inicio del desmonte estén generados con ese tipo de superficie. <br />
+      <br />
+Se permiten códigos de referencia para el punto de inicio interior
+mayores que 100, para capas que nacen bajo la cuneta o el desmonte
+hacia afuera.<br />
+<br />
+El último punto válido para el replanteo de la explanada (corte con el
+talud de terraplén, punto en la vertical del fondo de cuneta o en la
+vertical del código exterior) se codifica con el código
+101.0.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br /></span><img src="Imagenes/SS_escar.png" style="width: 246px; height: 83px;" alt="" align="right" hspace="6" /><span class="Parrafo">En algunas de las capas de suelo seleccionado
+en desmonte la extensión puede hacerse coincidir con la de la capa
+anterior, activando la casilla <span style="font-weight: bold; font-style: italic;">escar</span> (escarificación).<br />
+      <br />
+      </span><img src="Imagenes/SS_op.png" style="width: 251px; height: 83px;" alt="" align="left" hspace="6" /><span class="Parrafo">La casilla <span style="font-weight: bold; font-style: italic;">op</span> permite que, a partir de una
+determinada capa, se ejecute primero la línea de excavación de saneo y
+capa drenante si existiera y, posteriormente, estas capas inferiores de
+suelo seleccionado mueran contra aquellas líneas.<br />
+      <br />
+      <br />
+<br />La opción <span style="font-weight: bold; font-style: italic;">Mediana</span> permite hacer el suelo seleccionado paralelo al
+pico de la mediana, en la zona donde la mediana corta a la subrasante.<br />
+      <br />La opción <span style="font-weight: bold; font-style: italic;">Mat. Trans.OF</span> activada hace que el material del Suelo Seleccionado prevalezca sobre los materiales de transición de recubrimiento de las <a href="OL_obras_fabrica.html#excyrec">Obras de Fábrica</a>.<br /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo">La opción <span style="font-weight: bold; font-style: italic;">SST</span>
+activada hace que cuando el valor de suelo seleccionado en terraplén es
+inferior al suelo seleccionado en desmonte y seguimos estando por
+encima del terreno entonces ya no se define capa de suelo seleccionado
+en desmonte aunque con ésta estuviéramos por debajo del terreno.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo">
+      <span style="font-style: italic;">Ejemplo</span><br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">
+Una autovía con tres capas de suelo seleccionado bajo las calzadas, de
+30 cm. cada una, que desde el borde del arcén interior, terminan con un
+talud 1/1 hacia la mediana. En la zona de mediana se rellenan esos 90
+cm. con un material diferente.</span><br />
+      <span class="Parrafo">
+      </span><br />
+      <span class="Parrafo">
+Definición:</span><br />
+      <span class="Parrafo"></span></div>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Capa 1 (superior, correspondiente al relleno de
+mediana): espesor de 0.9, código exterior -11 (borde de arcén
+interior), <a href="#taludes">talud</a> exterior de 1.0 desde arriba.</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Capa 2 (la más alta bajo las calzadas), de espesor -0.6 (profundidad = 0.9 - 0.6 = 0.3).</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Capa 3, de espesor 0.3 (profundidad = 0.9 - 0.6 + 0.3 = 0.6).</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Capa 4, de espesor 0.3 (profundidad = 0.9 - 0.6 + 0.3 + 0.3 = 0.9).</span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo">Finalmente, se activa la casilla <span style="font-weight: bold; font-style: italic;">Mediana</span>.</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_ejemplo.png" style="width: 551px; height: 184px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"></span></div><span class="Parrafo"><br />
+La tabla de definición de suelo seleccionado se salva en el fichero&nbsp;<span class="Archivo">.vol</span>, pero también se puede salvar y recuperar en archivos de extensión&nbsp;<span class="Archivo">.ssl</span> a través de los botones <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span> respectivamente.<br />
+</span><span class="Parrafo"><br />Por otro lado, la opción <span style="font-weight: bold;">[SS-&gt;GRUPO]</span> permite copiar la definición de suelo seleccionado del eje actual para todos los ejes de su mismo <a href="OL_grupos.html">grupo</a>, modificando los ficheros&nbsp;<span class="Archivo">.vol</span> correspondientes.<br />
+      <br />
+</span></span>
+      <div style="text-align: left;">Caso particular:&nbsp; Cuando
+llevamos el suelo seleccionado hasta un código de la cuneta o el
+desmonte (1101,1102,...,1301,1302,..) y este código cae en terreno
+inadecuado o vegetal, el vector terreno inadecuado no se aplicará hasta
+pasado este código.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ss_cod.png" style="width: 541px; height: 277px;" alt="" /><br />
+      </div>
+      <br />
+Cuando el código exterior para el suelo seleccionado queda truncado
+porque la cuneta o el demonte alcanza antes al terreno, entonces se
+toma como&nbsp; código el del último punto de la sección.&nbsp;<span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo">
+      <span class="Parrafo">
+      <br />
+      <br /></span><span class="Titulo_2"><a name="control_pend">Control de la pendiente del suelo seleccionado</a></span><br />
+      <span class="Parrafo">
+      <br /></span></span><img alt="" style="width: 175px; height: 296px; float: right;" src="Imagenes/SS_control_pend.png" hspace="5" /><span class="Parrafo"><span class="Parrafo">El programa permite establecer tres formas distintas para fijar el
+comportamiento de la pendiente que adquirirán las distintas capas del
+suelo seleccionado. Estas opciones se pueden definir en la pestaña <span style="font-weight: bold;">[Pendiente]</span> para así poder definir para cada Pk diferentes valores de los parámetros que veremos a continuación:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Paralela</span>: El suelo seleccionado es paralelo a la subrasante. Es la opción por defecto.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Subparalela</span>: En este caso el suelo seleccionado
+toma el peralte de las calzadas principales con la limatesa en el
+centro y se prolonga por debajo de los arcenes.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Horizontal</span>: Las capas de suelo seleccionado son
+horizontales (este modo funciona como el subparalela pero asignando
+peralte 0).</span></li>
+      </ul></span>
+      <ul>
+        <li><span style="font-weight: bold;">Subparalela Autovía</span>:
+Si la subrasante vierte hacia la mediana, se toma como limatesa o punto
+para medir el espesor mínimo el código 2 de la subrasante y se pone el
+suelo seleccionado completo con una única pendiente hacia la mediana de
+valor igual que la de la subrasante o con la pendiente mínima
+introducida si aquella es inferior.<br />
+Si la subrasante vierte hacia el exterior la limatesa se ubica bajo el
+código 1 de la subrasante y el SS se coloca a dos aguas, hacia afuera
+con la pendiente de la subrasante o con el mínimo definido y hacia la
+mediana se va a buscar al SS que baja del otro lado.<br />En
+el caso de bombeo, se prefiere prolongar hacia dentro con la misma
+pendiente de modo que en ambos lados se vierta el agua hacia el
+exterior.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Fija Carreteras</span>:
+Toma el espesor de la capa bajo la limatesa de la subrasante. El suelo
+seleccionado se hace con una única pendiente transversal positiva si
+desagua hacia la derecha o negativa si lo hace hacia la izquierda.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">2 Aguas</span>:
+Toma el
+espesor indicado desde la subrasante en la posición del eje geométrico
+y luego vierte con la pendiente mínima indicada hacia ambos lados.
+Cuando el peralte supera la pendiente mínima definida, la pendiente del
+suelo seleccionado acompaña al peralte.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Borde derecho</span>: Toma
+el espesor indicado en la parte derecha, a la altura del código que
+introduzcamos en la casilla correspondiente, y luego vierte hacia el
+lado izquierdo con la pendiente mínima indicada.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Borde izquierdo</span>: De forma parecida a la anterior, toma el espesor indicado en la parte izquierda, a la altura del código
+que introduzcamos en la casilla correspondiente, y luego vierte hacia
+el lado derecho con la pendiente mínima indicada.</li></ul><ul><li><span class="Parf_negrita">Bd.Dr P.mín</span> (Borde Derecho pendiente mínima) <span class="Parf_negrita">Bd.Iz P.mín</span> (Borde Izquierdo pendiente mínima): Actúan igual que los modos <span class="Parf_negrita">Borde derecho</span> y <span class="Parf_negrita">Borde izquierdo</span>,
+salvo que&nbsp;se mantendrá la pendiente mínima asignada hasta que el
+peralte del lado contrario vierta con una pendiente mayor, entonces
+seguirá con esta pendiente.</li></ul><ul><li><span class="Parf_negrita">2 Aguas + Codigo de la Rasante</span>:
+El punto de giro se determina con el espesor del Suelo Seleccionado
+bajo la subrasante, aplicado en el punto donde la rasante tiene el
+código seleccionado.&nbsp;Cuando el peralte supera la pendiente mínima
+definida, la pendiente del suelo seleccionado acompaña al peralte.</li></ul><ul><li><span class="Parf_negrita">2 Aguas + Talud de Aprovechamiento</span>:
+En este modo, el espesor definido para la capa de S.S., se mide desde
+el nacimiento de la base de la capa sobre este talud. (El Talud de
+Aprovechamiento se define en el cuadro de diálogo de <a href="OL_EyM.html">Ensanche y Mejora</a>, en la pestaña <span class="Parf_negrita">[Parámetros]</span>.). Cuando el peralte supera la pendiente mínima definida, la pendiente del suelo seleccionado acompaña al peralte.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">2 Aguas. Pendiente fija</span>: Es igual que el modo 2 Aguas, pero la pendiente que se define es fija incluso cuando el peralte de ese lado sea mayor.</li></ul><ul><li><span style="font-weight: bold;">Sub.Autovía + P.int: </span>desde
+el punto de control del espesor hacia fuera funciona como Subparalela
+Autovía a partir de la capa que se indique. Permite definir una
+pendiente hacia el interior de la plataformaque aplica a todas las capas. </li>
+        <br />
+
+
+      
+      </ul>
+
+      <span class="Parrafo">
+      <span class="Parrafo"><img src="Imagenes/SS_desde.png" style="width: 128px; height: 55px;" alt="" align="right" hspace="6" /><span class="Parrafo">Al indicar el comportamiento de capa <span style="font-weight: bold;">subparalela</span> u <span style="font-weight: bold;">horizontal</span>, puede
+decidirse desde qué línea se empieza a aplicar indicándola en la
+casilla <span style="font-weight: bold; font-style: italic;">Desde</span>. Así, por ejemplo, se puede tener un suelo seleccionado
+formado por 4 capas y desear que las dos primeras sean paralelas a la
+subrasante y las dos inferiores horizontales. En este caso se indicaría
+comportamiento horizontal desde 3.<br />
+      <br />
+Además de lo anterior, el programa permite establecer una <span style="font-weight: bold;">pendiente
+mínima</span>. De esta forma, en el caso de introducir un valor diferente de
+cero en el valor <span style="font-weight: bold;">Pend. mín. (%)</span>, si el peralte es igual o inferior a
+este valor se construye un suelo seleccionado a dos aguas con la
+pendiente mínima (formando una limatesa automática). Si el peralte es
+superior a este valor, el suelo seleccionado se ejecuta paralelo a la
+      <a href="OL_subrasante.html">subrasante</a>.<br />
+      <br />Para el caso de autovías, si los peraltes son
+inferiores la pendiente mínima, se construye a cada lado una limatesa
+automática para el suelo seleccionado. Bajo la mediana las pendientes
+van a buscar el punto más bajo de las dos.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_calz_doble.png" style="width: 461px; height: 209px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />Para el caso de carreteras de calzada única,
+si los peraltes son inferiores a la pendiente mínima, se construye una
+limatesa automática para el suelo seleccionado aunque la subrasante sea
+subparalela.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_calz_unica.png" style="width: 462px; height: 198px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br /></span><img src="Imagenes/SS_pedMin_desde.png" style="width: 248px; height: 46px;" alt="" align="right" hspace="6" /><span class="Parrafo">&nbsp;En la pendiente mínima, también puede decidirse <span style="font-weight: bold;">desde</span> qué línea de
+suelo seleccionado se empieza a aplicar. Por ejemplo, si se tiene un
+suelo seleccionado formado por 4 capas y se desea que la base de las
+dos superiores sean paralelas a la subrasante y que la base de las dos
+inferiores tengan una pendiente mínima del 10% para permitir el
+drenaje, entonces se indicará un comportamiento paralelo, con una
+pendiente mínima del 10% a aplicar desde la capa 3.&nbsp;&nbsp;&nbsp;
+&nbsp;<br />
+      <br />
+El programa permite especificar el peralte para llevar la limatesa bajo
+el borde de la calzada mediante el valor indicado en <span style="font-weight: bold;">%per.
+(Lim-&gt;BC)</span>. Este opción, que trabaja cuando la pendiente mínima
+también es distinta de 0, optimiza la posición de la limatesa del suelo
+seleccionado y, cuando el peralte es igual a la pendiente mínima, la
+limatesa se sitúa bajo el borde de calzada.<br />
+      <br />
+Por ejemplo, si se tiene una carretera que pasa de bombeo a peralte 2%
+en una curva a la derecha y se ha indicado un suelo seleccionado con
+pendiente mínima 4% y <span style="font-weight: bold;">%per. (Lim-&gt;BC)</span> = 2, entonces la limatesa del
+suelo seleccionado pasará de estar bajo el eje en la zona de bombeo a
+estar bajo el borde izquierdo de la calzada en la zona de peralte 2%.<br />
+      <br />
+      <br /></span><span class="Titulo_2"><a name="taludes">Declaración de taludes para las capas de suelo seleccionado</a></span><br />
+      <span class="Parrafo">
+      <br />
+Los taludes de suelo seleccionado se pueden declarar desde el cuadro de
+diálogo que aparece al pulsar sobre la pestaña <span style="font-weight: bold;">[Talud]</span> en las
+casillas correspondientes a <span style="font-weight: bold;">TALUD ext</span> y <span style="font-weight: bold;">TALUD int</span>.
+Para la aplicación
+del talud exterior existen 3 posibilidades que veremos a continuación y
+para los taludes interiores podremos definirlos mediante 2 de ellas
+(arriba o abajo):<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">
+Desde abajo</span>: El talud se traza de abajo hacia
+arriba y hacia fuera empezando en la vertical del código exterior más
+la distancia.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Desde arriba</span>: El talud se traza desde arriba hacia
+abajo y hacia dentro empezando en la vertical del código exterior más
+la distancia.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">
+Desde la capa anterior</span>: El talud se traza en
+prolongación del de la capa anterior (la que está justo encima).</span></li>
+      </ul></span>
+      <ul>
+        <li>Para capas de suelo seleccinado de ancho fijo (codigo
+exterior + distancia) disponemos de esta posibilidad para el talud de
+cierre exterior: <span style="font-weight: bold;">Pie de Terraplén</span><br />
+          <ul>
+            <li>Si el pie del terraplén esta mas alto que la base del suelo seleccionado se cierra hacia el pie de terraplén.</li>
+          </ul>
+          <ul>
+            <li>Si está por debajo, entonces el suelo seleccionado se prolonga horizontal hasta cortar al talud de terraplén.</li>
+          </ul>
+          <ul>
+            <li>En desmonte se cierra con el fondo de cuneta codigo 600, o con el 99.</li>
+          </ul>
+          <ul>
+            <li>Si el punto al que se tiene que cerrar esta mas próximo
+al eje que el extremo del suelo seleccionado, entonces se cierra como
+en la opción <span style="font-weight: bold;">Desde Abajo</span> con el talud indicado.</li>
+          </ul>
+        </li>
+      </ul>
+      <span class="Parrafo"><br />
+
+      <span class="Parrafo">
+      Para el caso de suelo seleccionado en terraplenes bajos en los que la
+línea que define el suelo seleccionado está por debajo del pie de
+terraplén, si se da un valor de -1000 al talud exterior, entonces se
+prolongan ambas líneas, el talud de terraplén por debajo del terreno y
+el suelo seleccionado siguiendo con su pendiente, hasta que se cortan
+en un punto bajo el terreno. Además, si se ha definido un vector de
+desmonte inadecuado, se utiliza este vector para prolongar la línea de
+excavación hasta volver a cortar al terreno. Esto se ve bastante bien
+en el siguiente ejemplo:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 50px; margin-left: auto; margin-right: auto; width: 691px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 385px;"><img src="Imagenes/SS_terr_bajo_1.png" style="width: 338px; height: 120px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 305px; text-align: right;"><img src="Imagenes/SS_terr_bajo_2.png" style="width: 313px; height: 109px;" alt="" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 385px; text-align: center;"><span class="Parrafo"><span class="Info">Sin dar el valor -1000 al talud exterior</span></span></td>
+            <td style="vertical-align: top; width: 305px; text-align: center;"><span class="Parrafo"><span class="Info">Dando el valor -1000 al talud exterior</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/SS_mas_alla_cuneta.png" style="width: 251px; height: 168px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Cuando
+se utiliza esta opción de prolongar el pie de terraplén bajo el terreno
+hasta cortar la prolongación del suelo seleccionado, el programa hace
+las siguientes consideraciones:<br />
+</span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo">En caso de
+terraplén reducido que termina en el corte del talud de cierre de los
+firmes con el terreno, también se prolonga el pie de terraplén con este
+talud.</span></span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo">En caso de tener <a href="OL_cuneta_guarda_caballon.html">cunetas de guarda</a> en tipos de línea separados, se recorta de la cuneta lo que se alarga al pie de terraplén.</span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo">En el desmonte se puede prolongar la sobre-excavación más lejos del
+vértice de la cuneta hasta cortar por ejemplo a la prolongación hacia
+abajo del talud del desmonte. Para ello se debe indicar:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Código exterior</span> 1103 (este es el último punto de la cuneta, puede ponerse otro).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Talud exterior</span> igual al talud de desmonte (puede ponerse otro).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Definido desde arriba</span> (es el único caso en el que
+se permite sobrepasar el vértice de cuneta).&nbsp;&nbsp;&nbsp; &nbsp;</span></li>
+      </ul>
+      <span class="Parrafo">
+      <br />
+En terraplén pueden hacerse los taludes interiores paralelos al talud del terraplén.<br />
+      <br />
+Cuando el <span style="font-weight: bold;">talud</span> se define con un valor positivo, el punto de arranque del talud en la subrasante está a la
+distancia horizontal definida desde el punto con el código, lo que
+implica que el punto donde termina el talud en el fondo del suelo
+seleccionado puede moverse lateralmente en función de peralte:<br />
+      <br /></span>
+      <table style="text-align: left; height: 27px; margin-left: auto; margin-right: auto; width: 639px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 267px; text-align: center;"><img src="Imagenes/SS_talud_int_1.png" style="width: 291px; height: 152px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 307px;"><img src="Imagenes/SS_talud_int_2.png" style="width: 262px; height: 130px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      Si el <span style="font-weight: bold;">talud interior</span> se define con un valor negativo, se hace pasar por
+un punto a la distancia horizontal definida y a la misma cota que el
+punto con el código. De este modo, el punto de arranque del talud en la
+subrasante puede variar lateralmente con el peralte, pero el punto
+donde termina el talud en el fondo del suelo seleccionado permanece
+constante.<br />
+      <br /></span><img src="Imagenes/SS_comp_talud.png" style="width: 319px; height: 189px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">También en terraplén, si se define un talud de
+cierre desde arriba (o anterior) y en un perfil en terraplén la línea
+de suelo seleccionado está por debajo del terreno, se emplea el talud
+definido desde el pie de terraplén a cortar el suelo seleccionado tal y
+como se muestra en la imagen.<br />
+      <br />
+Es posible unir mediante un segmento recto los dos puntos que delimitan
+por el interior el suelo seleccionado (código interior + distancia),
+incluso cuando la subrasante corte a la mediana. Para ello, basta
+indicar como talud interior un valor de -1000.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+También es posible forzar que desde el código interior el suelo
+seleccionado tome una pendiente mínima concreta, de tal forma que el
+que tenga la cota más baja en el eje mandará sobre el otro lado. Para
+hacer esto se indicará:<br />
+      <br /></span>
+      <div style="margin-left: 40px;"><span class="Parrafo">
+TALUD interior = <span style="font-style: italic;">-1002</span> para pendiente del 2%</span><br />
+      <span class="Parrafo">
+TALUD interior = <span style="font-style: italic;">-1004</span> para pendiente del 4%</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+y así sucesivamente.<br />
+      <br />
+      <br /></span><span class="Titulo_2"><a name="control_prof">Control de la profundidad</a></span><br />
+      <span class="Parrafo">
+      <br /></span><span class="Parrafo"><img src="Imagenes/SS_control_prof.png" style="width: 147px; height: 90px;" alt="" align="right" hspace="4" />Entre las opciones que aparecen tras pulsar la pestaña <span style="font-weight: bold;">[Talud]</span> hay algunas relacionadas con el control de la
+profundidad el suelo seleccionado y que se describen a continuación.<br />
+      <br />
+Si se define un suelo seleccionado sólo para terraplén, en lugar de
+pararse sobre el terreno de referencia, continuará hasta sanear la
+profundidad indicada bajo el terreno de referencia (competente o
+inadecuado).<br />
+      <br />
+El valor de la profundidad puede ser igual a la profundidad de saneo, a
+la altura de los escalones del saneo o la suma de
+ambas.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_control_prof_2.png" style="width: 452px; height: 144px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+En zonas de desmonte puede definirse la profundidad de la base de la
+      <span style="font-weight: bold;">primera</span> capa de suelo seleccionado desde el terreno. Ello se logra
+activando la casilla <span style="font-weight: bold; font-style: italic;">Terreno</span> situada en la columna <span style="font-weight: bold;">SSD1 desde</span>.<br />
+      <br />
+El programa dispone de la&nbsp; posibilidad de utilizar la referencia
+D/T como superficie de referencia la compuesta por la excavación para
+la zapata del muro <span style="font-weight: bold;">E.Z.M.</span> completada por el terreno competente.<br />
+      <br /></span><span class="Titulo_2"><a name="sim_revest_terr">Simulación de un revestimiento de terraplén</a></span><br />
+      <span class="Parrafo">
+      <br />
+CAPA DE SUELO SELECCIONADO CON:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Código de inicio INTERIOR (p. ej. 100)</span></li>
+        <li><span class="Parrafo">Distancia al código interior negativa (p. ej. -3)</span></li>
+        <li><span class="Parrafo">Talud interior de cierre (p. ej. mismo valor que el talud de terraplén)</span></li>
+      </ul>
+      <span class="Parrafo">
+      Si en un perfil al sumar la distancia al punto de la subrasante con el
+código interior, el punto de referencia queda del otro lado del eje, se
+marca un punto de referencia a la distancia pedida y con la siguiente
+cota:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Si al talud se le pone un valor positivo, la cota de la rasante en el eje del perfil.</span></li>
+        <li><span class="Parrafo">Si al talud se le pone signo negativo (convenio
+para respetar la distancia horizontal al código), se pone la misma cota
+que el punto con el código.</span></li>
+      </ul>
+      <span class="Parrafo">
+      Desde ese punto se traza una línea con el talud pedido hasta buscar su
+corte con la capa de suelo seleccionado, y se elimina la parte que
+queda del otro lado del eje.<br />
+      <br />
+En el gráfico aparecen las siguientes capas de suelo seleccionado:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Una primera capa de 0.5 m para rellenar debajo de
+la mediana hasta 0.75 m del borde del arcén interior (cód. ext. = -11)
+con un talud exterior de 1/1.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+Una segunda capa con el mismo espesor que la
+primera y en prolongación de ella (SST = SSD = 0 y SSR = 0.001) hasta
+el final y con un talud de cierre en caso de desmonte de 2.8/1.dialogo_SS.png</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+Una tercera capa de 0.5 m sólo para desmonte con
+talud de cierre vertical a partir de la capa anterior (talud <span style="font-weight: bold;">desde
+anterior</span>).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Una cuarta capa que es una escarificación de la sobreexcavación en desmonte de espesor SSD=0.6.</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/SS_revest_terr.png" style="width: 629px; height: 127px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+&nbsp;<br />
+      <br /></span><span class="Titulo_2"><a name="EyM">Suelo seleccionado por tabla de refuerzo. Proyectos de ensanche y mejora</a></span><br />
+      <span class="Parrafo">
+      <br /><img src="Imagenes/ss_tabla_ref.png" style="width: 110px; height: 36px;" alt="" align="right" hspace="6" />&nbsp;Si la casilla <span style="font-weight: bold; font-style: italic;">Tabla refuerzo</span> está activada, entonces el programa, en
+lugar de leer datos para suelo seleccionado de esta tabla, leerá los
+definidos en el menú ALZADO </span><span class="Parrafo">&#8594;</span><span class="Parrafo"> <a href="OL_EyM.html#tabla_refuerzo"><span style="font-weight: bold;">[TABLAS DE REFUERZO]</span></a>. Al definir un suelo
+seleccionado por <span style="font-weight: bold;">[TABLAS DE REFUERZO]</span> y de los modos <span style="font-style: italic;">Regularización</span> o
+      <span style="font-style: italic;">Ensanche</span>, pueden definirse capas paralelas a esta desde el menú de
+suelo seleccionado en las capas 3, 4 y 5.<br />
+      <br />
+Los espesores de estas capas paralelas pueden darse en cualquiera de las tres columnas (<span style="font-weight: bold;">SSR</span>, <span style="font-weight: bold;">SSD</span>, <span style="font-weight: bold;">SST</span>).<br />
+      <br />
+Podremos acudir indistintamente al menú Tablas de Refuerzo o definir
+desde el propio menú de Suelo Seleccionado los datos de Terreno Natural
+Reconocido desplegando el menú mediante la tecla <img src="Imagenes/icono_desplegar.png" style="width: 20px; height: 20px;" alt="" />.<br />
+<br /></span><img src="Imagenes/SS_tabla_PKi_Zi_Zd.png" style="width: 117px; height: 51px;" alt="" align="right" hspace="6" /><span class="Parrafo">&nbsp;En proyectos de <a href="OL_EyM.html">ensanche y mejora</a>, es posible definir la capa de suelo
+seleccionado por debajo de la capa de regularización, con espesores
+diferentes a izquierda y derecha y variables con el PK. Para ello, en
+el menú desplegable <span style="font-weight: bold;">[UTILIDADES]</span> se dispone de la utilidad <span style="font-weight: bold;">[Tabla PK Zi
+Zd]</span>, que lee un fichero de extensión&nbsp;<a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> en la que cada fila contiene
+tres datos: <span style="font-style: italic;">PK</span>, <span style="font-style: italic;">Zi</span> y <span style="font-style: italic;">Zd</span>, siendo <span style="font-style: italic;">Zi</span> el espesor de la capa de suelo
+seleccionado por el lado izquierdo y <span style="font-style: italic;">Zd</span> por el lado derecho. Al cargar
+este fichero se añaden los datos de la capa izquierda en la tercera
+capa de suelo seleccionado y los de la derecha en la cuarta, reservando
+la primera y la segunda para posibles capas de regularización definidas
+desde la <a href="OL_EyM.html#tabla_refuerzo">tabla de refuerzo</a>.<br />
+Si queremos dar los valores de Z con cotas absolutas para definir sus
+espesores, se puede marcar, antes de cargar la tabla las casillas <span style="font-weight: bold;">ZD</span> y <span style="font-weight: bold;">ZT</span> de la pestaña <span style="font-weight: bold;">[Talud]</span>
+de la tercera capa de suelo seleccionado que es la que utiliza la
+tabla. Al cargar la tabla, si se ha marcado alguna de estas casillas,
+se extiende automáticamente para todos los datos.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

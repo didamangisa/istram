@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Zonas de cálculo</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ZONAS DE CÁLCULO<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+</span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo">
+      </span><span class="Parrafo"><a href="#tramificacion">Tramificación de las secciones tipo</a></span><br />
+      <span class="Parrafo">
+      </span><span class="Parrafo"><a href="#geotecnia">Geotecnia asociada a las zonas de cálculo. Estructuras</a></span><br />
+      <span class="Parrafo">
+      </span></div>
+
+      
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#geotecnia_predefinida">Superficies definidas en el fichero de perfiles de terreno</a><br /><a href="#estructura">
+Definición de zonas en estructura y en estructura esviada</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo">
+      <a href="#sondeos_indep">Sondeos independientes</a><br />
+      <a href="#descomponer">Descomponer materiales</a><br />
+Utilidades<br />
+</span>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#cota_roja">Tramos definidos por sus valores de cota roja</a><br />
+      <a href="#modificar_sondeos">Modificar sondeos por ejes</a><br />
+      <a href="#tramos_por_pendientes">Tramos por pendientes</a><br /><a href="#tramo_por_tubos">
+Tramos por tubos</a><br /><a href="#copiar_tramos_de_firme">
+Copiar tramos de firme</a><br />
+      <a href="#viaductos_zc">Viaductos a Zonas de Cálculo</a><br />
+      </span></div>
+
+      </div>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#tramif_indep">Tramificación de secciones independientes de la zona de cálculo</a></span><br />
+      </div>
+      <div style="margin-left: 40px;">
+      <span class="Parrafo"></span></div>
+
+      <span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+Este menú permite definir en qué tramos se ha de generar el cálculo
+completo de alzado del eje, qué sección tipo ha de emplearse en cada
+tramo y otros datos sobre el tipo de terreno, espesores,... La
+definición de zonas de cálculo es, por tanto, la que controla todos los
+cálculos.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_zonas_calculo.png" style="width: 600px; height: 198px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 619px; text-align: justify;"><span class="Parrafo"><span class="Info">No
+debe ordenarse calcular tramos en PK que estén fuera de las zonas en
+las que hay definición de rasantes y perfiles del terreno. En tal caso
+los algoritmos se interrumpirán en el último perfil con datos y podrían
+quedar mal rematados los ficheros de resultados. La rasante se
+extrapola.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+Los botones <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" /> y <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> permite salvar y/o recuperar una definición tramos de cálculo en ficheros de extensión&nbsp;<span class="Archivo">.trm</span>.<br />
+El archivo&nbsp;<span class="Archivo">.trm</span> incluye la definición
+de las zonas de cálculo, la tramificación separada <a href="OL_zonas_calculo.html#tramif_indep">C</a>, <a href="OL_zonas_calculo.html#tramif_indep">D</a>, <a href="OL_zonas_calculo.html#tramif_indep">T</a>, <a href="OL_zonas_calculo.html#tramif_indep">V</a>, <a href="OL_muro_desmonte.html#cota_base_muro">cotas de
+base</a> y de <a href="OL_desmonte_tierra.html#alto_muro_tabla">cabeza de muro</a> y <a href="EDM_editor_perfiles.html#tablas_cubic">tablas .dar</a>.<br />
+En el menú de <a href="OL_revestimiento_terraplen.html">Revestimiento de terraplén</a> se podrán guardar ficheros de extensión&nbsp;<span class="Archivo">.tr2</span>.<br />
+En el menú de <a href="OL_revestimiento_desmonte.html">Revestimiento de desmonte</a>&nbsp; se podrán guardar ficheros de extensión&nbsp;<span class="Archivo">.tr3</span>.<br />
+En el menú de <a href="OL_muro_entre_ejes.html">Muro entre ejes</a> se podrán guardar ficheros de extensión&nbsp;<span class="Archivo">.tr4</span>.<br />
+<br />La opción <span class="Parf_negrita">PKs usuario</span> permite
+introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+      <br />
+      </span><span class="Titulo_2"><a name="tramificacion">Tramificación de las secciones tipo</a></span><br />
+      <span class="Parrafo"><br />
+      En la primera columna de cada tramo se debe indicar la sección tipo inicial (<span style="font-weight: bold;">ST_i</span>) y sección tipo final (<span style="font-weight: bold;">ST_f</span>),
+de tal forma que la primera define el número de la sección tipo a
+emplear en el tramo. Si a la sección tipo inicial se le indica el valor
+0, el programa asume que se trata de una estructura y sólo calcula la
+parte correspondiente al firme, aplicando la sección de firme del tramo
+anterior.<br />
+      <br />
+Si la sección tipo inicial tiene un valor distinto de cero y la final tiene valor cero, se aplicará la <span style="font-weight: bold;">ST_i</span> a todo el tramo.<br />
+      <br />
+Si la sección tipo inicial y la final tienen valores distintos (y distintos de cero), el programa realizará una <span style="font-weight: bold;">transición lineal</span> entre las geometrías de ambas secciones tipo aplicando la <span style="font-weight: bold;">ST_i</span> en el PK inicial y la <span style="font-weight: bold;">ST_f</span>
+en el PK final del tramo. Para que las transiciones sean coherentes, es
+necesario comprobar que la sección inicial y la final tengan el mismo
+número de vértices en cada superficie. En otro caso el programa procede
+utilizando los puntos de una y otra sección en orden.<br />
+      <br />
+Los números de las secciones tipo pueden utilizarse aquí desordenados y
+repetirse cuantas veces sea necesario; es decir, una sección tipo puede
+aplicarse cuantas veces se desee a lo largo de un eje.<br />
+      <br />
+</span><img src="Imagenes/zonas_calc_nombres_ST.png" style="width: 309px; height: 109px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">El botón </span><span style="font-weight: bold;"><a name="nombres_ST">[?]</a></span><span class="Parrafo">
+despliega un cuadro de diálogo con los <span style="font-weight: bold;">nombres de las secciones tipo</span>
+que permite al usuario identificarlas mejor e incluso modificar su
+nombre, al igual que se puede hacer desde ALZADO </span><span class="Parrafo">&#8594;</span><span class="Parrafo"> <a href="OL_subrasante.html#nombres_ST"><span style="font-weight: bold;">[SECC. TIPO, SUBRAS.]</span></a>.<br />
+      <br />
+En cuanto a los PK&#8217;s de inicio y final del tramo, deben tenerse presentes las siguientes consideraciones:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Deben coincidir con perfiles del terreno existentes, si no, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, cubicará el tramo entre el primero y último perfil de terreno que estén dentro del mismo.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si el PK final de un tramo y el PK
+inicial del siguiente coinciden sobre un perfil dato, se generan dos
+perfiles resultado en ese PK, uno con la sección tipo entrante y otro
+con la saliente generándose una transición brusca de sección.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si el PK final de un tramo y el
+inicial del siguiente caen entre dos perfiles dato, el calculador
+aplica la sección tipo de entrada hasta el perfil dato anterior,
+cubicando hasta ahí, y reanuda con la sección tipo siguiente en el
+perfil dato posterior. El tramo entre los dos perfiles queda, en
+primera instancia, sin cubicar. Un recubicado posterior sobre el&nbsp;<span class="Archivo">ISPOL#.per</span> (siendo # el número de eje) generado, cubicará también el tramo de transición entre los dos perfiles.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Los distintos tramos que se definan,
+pueden estar desordenados, solapados, o unos dentro de otros. El
+programa realiza una ordenación previa al cálculo y en caso de solapes
+predomina siempre el dato posterior.</span></li>
+      </ul>
+      <span class="Parrafo">Si el usuario quiere hacer coincidir su definición de tramos con la que ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> va a emplear en el cálculo, puede utilizar la opción <span style="font-weight: bold;">[Reordenar]</span>,
+aunque pero no es necesario para el cálculo. Este botón reordena la
+definición del usuario de acuerdo con la tramificación que ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+realiza previa al cálculo. Permite comprobar la tramificación, pero
+como se ha dicho, el programa calcula igualmente si no se usa.<br /><br /><span style="font-style: italic;">Ejemplo</span>:<br /><br />
+      </span>
+      <table style="text-align: left; width: 446px; height: 50px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Dato</span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">ST inicial <br />
+            </span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">ST final</span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">PK inicial</span></td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">PK final</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">3<br />
+0<br />
+1<br />
+2<br />
+1<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">0<br />
+0<br />
+3<br />
+3<br />
+3<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">0.000<br />
+200.000<br />
+275.000<br />
+1100.000<br />
+800.000<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-style: italic;">200.000<br />
+280.000<br />
+390.000<br />
+1500.000<br />
+1300.000<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo">En el tramo 3 se empieza con la selección tipo 1
+en el PK 275 y se acaba con la sección tipo 3 en el PK 390 haciéndose
+una transición lineal entre ambas secciones tipo. </span><span class="Parrafo">El programa, por tanto, reordenará antes del cálculo o bien mediante la función <span style="font-weight: bold;">[Reordenar]</span>:</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo"></span></span></span></div>
+      <table style="text-align: left; width: 446px; height: 50px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">Dato</span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">ST inicial <br />
+      </span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">ST final</span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">PK inicial</span></td>
+      <td style="vertical-align: top; font-weight: bold; text-align: center;"><span class="Parrafo">PK final</span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+6<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">3<br />
+0<br />
+1<br />
+3<br />
+1<br />
+2<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">0<br />
+0<br />
+3<br />
+0<br />
+3<br />
+3<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">0.000<br />
+200.000<br />
+275.000<br />
+390.00<br />
+800.000<br />
+1300.000<br />
+      </td>
+      <td style="vertical-align: top; text-align: center; font-style: italic;">200.000<br />
+275.000<br />
+390.000<br />
+800.000<br />
+1300.000<br />
+1500.000<br />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+      <span class="Parrafo"><br />
+La opción <span style="font-weight: bold;">Cálculo restringido</span>
+nos permite restringir el cálculo para que solamente se realice entre
+dos PKs. Si queremos que el cálculo se inicie y termine de manera
+exacta entre estos PKs y no se han cortado con los perfiles del
+terreno, se debe activar la opción de <span style="font-style: italic;">Zonas de cálculo</span> en la herramienta <a href="OL_interpolar_perfiles.html">Interpolar Perfiles</a> (<span style="font-weight: bold;">Interpolar T</span>).<br />Los Pks para definir la zona restringida atienden al&nbsp; modo Selección PK: Numérica/Clic Perfil_exacto/Interpolación.<br />
+<br />Para cada tramo de cálculo es posible indicar qué <span style="font-weight: bold;">lado</span> de la sección se construye:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Dos lados (por defecto).</span></li>
+        <li><span class="Parrafo">Anular lado derecho.</span></li>
+        <li><span class="Parrafo">Anular lado izquierdo.</span></li>
+        
+        <li><span class="Parrafo">Anular los dos lados.</span></li>
+
+      </ul>
+      <span class="Parrafo">Su efecto es el mismo que cuando se define desde el cuadro de diálogo de <a href="OL_excentricidad_mediana.html#truncar"><span style="font-weight: bold;">[EXCEN. Y MEDIANA]</span></a> del menú ALZADO. Si se definen valores diferentes en ambos menús, su efecto es acumulativo en cuanto a anulación.<br />
+      <br />
+En el caso de <span style="font-weight: bold;">ejes de ferrocarril</span> de doble vía, también existen las opciones:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Anular vía derecha.</span></li>
+        <li><span class="Parrafo">Anular vía izquierda.</span></li>
+        <li><span class="Parrafo">Anular 2 vías.</span></li><li><span class="Parrafo">Solo vía y traviesa.<br /></span></li>
+      </ul>
+      <span class="Parrafo">Anular una de las vías o ambas,&nbsp;elimina el balasto,
+carriles y traviesas del lado especificado. <br /><br />Al anular una de las dos
+vías, se completa el talud interior del balasto de la vía que se
+construye hasta tocar al techo del subbalasto. <br /><br />Solo vía y traviesa elimina toda la plataforma salvo los elementos que definen los carriles y las traviesas.<br /><br />
+      </span><img src="Imagenes/no_geotecnia.png" style="width: 91px; height: 106px;" alt="" align="right" hspace="6" /><span class="Parrafo">En los tramos marcados como </span><span style="font-weight: bold; font-style: italic;"><a name="no_geotecnia">No geotecnia</a></span><span class="Parrafo">
+no se efectuarán mediciones de estos materiales y, por tanto, tampoco
+aportarán valor al diagrama de masas. Para que esta opción tenga
+efecto, debe estar marcada la <a href="EDM_editor_perfiles.html#G">casilla G</a> de esa medición en la <a href="EDM_editor_perfiles.html#tablas_cubic">tabla de cubicación</a> utilizada.<br />
+      <br />
+<br />
+
+
+      <br /></span><span class="Titulo_2"><a name="geotecnia">Geotecnia asociada a las zonas de cálculo. Estructuras</a></span><br />
+      <span class="Parrafo"><br />
+Cada uno de los tramos o intervalos de cálculo lleva asociado una serie
+de parámetros y secciones tipo que son aplicadas a cada zona del
+proyecto. A lo largo de la traza se encuentra una realidad geotécnica
+que también se aplica según intervalos:<br /></span>
+      <ul>
+        <li><img src="Imagenes/modelo_geotecnia.png" alt="" style="width: 240px; height: 225px; margin-left: 7px;" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Vegetal (V)</span>:
+Es el espesor de la cubierta vegetal en el tramo. Si <span style="font-weight: bold;">V </span>= 0, no hay
+cubierta vegetal.<br />
+</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+      <span style="font-weight: bold;">Vegetal e inadecuado (V+I)</span>: Es la profundidad a la cual se encuentra el terreno competente sobre el
+que se puede asentar la plataforma, es decir, la suma de espesores de la
+cubierta vegetal más la capa de terreno inadecuado. Si se declara <span style="font-weight: bold;">V+I</span> = 0
+ó&nbsp; <span style="font-weight: bold;">V+I </span>&#8804; <span style="font-weight: bold;">V</span> se asume que no hay terreno inadecuado y el terreno
+competente se encuentra a la profundidad <span style="font-weight: bold;">V</span>.</span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Profundidad de la roca (R)</span>: Si <span style="font-weight: bold;">R </span>= 0 ó <span style="font-weight: bold;">R</span> &#8804; <span style="font-weight: bold;">V+I</span> ó <span style="font-weight: bold;">R</span> &#8804; <span style="font-weight: bold;">V</span> se considera que la roca
+no existe o se encuentra a una gran profundidad y no va a afectar a los
+desmontes de la obra. Si se da un valor <span style="font-weight: bold;">R</span> &lt; 0 se considera que no hay
+terreno competente y que la roca empieza en superficie o bajo la
+cubierta vegetal o bajo el terreno inadecuado.</span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Más tipos de roca (R2, R3, R4 ... R20)</span>: Permite definir hasta 20 niveles de roca para cubicación separada,
+con comportamiento similar. Cuando dos superficies seguidas tienen la
+misma profundidad, se generan las dos. Se asigna a la primera área cero
+y a la segunda la que le corresponda. Se puede poner un valor negativo
+a cualquiera de los veinte niveles de roca, lo que implica que todo el
+material bajo la superficie o bajo el <span style="font-weight: bold;">V+I</span> está compuesto por esa roca.</span></li><li><span class="Parrafo"><span style="font-weight: bold;">Desb.Cent y Código</span>:
+estas opciones que se encuentran tras el último nivel de roca R20,
+permiten aumentar el desbroce (V+I) en la zona delimitada entre códigos
+de la plataforma (sup. 67).<br /></span></li>
+      
+      </ul>
+
+      <span class="Parrafo">
+      <br />
+Normalmente, si se da un valor igual para <span style="font-weight: bold;">V</span>, <span style="font-weight: bold;">V+I</span> y <span style="font-weight: bold;">R</span>, se considera que
+se pasa de la cubierta vegetal a la roca y el programa crea tres líneas:<br /></span>
+      <ol>
+        <li><span class="Parrafo">La superficie del vegetal.</span></li>
+        <li><span class="Parrafo">El horizonte de terreno competente.</span></li>
+        <li><span class="Parrafo">El horizonte de la roca, coincidente con la anterior.</span></li>
+      </ol>
+      <span class="Parrafo">
+      No se crea la línea que separa el vegetal y el inadecuado por no existir el terreno inadecuado.<br />
+      <br />
+En los cálculos del movimiento de tierra, los niveles de <span style="font-weight: bold;">V</span> e <span style="font-weight: bold;">I</span> se
+desmontan siempre, se esté en desmonte o terraplén. Los volúmenes de
+tierra y roca desmontados son el total del desmonte menos el vegetal e
+inadecuado. En terraplén el volumen calculado a terraplenar es el que
+hay hasta la superficie actual del terreno más el volumen de vegetal e
+inadecuado, ya que éstos se desmontan antes de construir el terraplén.<br />
+      <br /></span><img src="Imagenes/sondeos_simetricos.png" style="width: 330px; height: 36px;" alt="" align="right" hspace="8" /><span class="Parrafo">&nbsp;Los datos de sondeos pueden ser <span style="font-weight: bold;">simétricos</span> (por defecto), o
+      <span style="font-weight: bold;">asimétricos</span>. En este último caso es posible definir diferentes
+espesores a derecha y a izquierda del eje. En el caso de sondeos
+      <span style="font-weight: bold;">simétricos</span> se tomarán los datos definidos para la
+derecha.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Der.-&gt;Izq.]</span> copia todos los datos definidos para el lado derecho en el lado izquierdo.<br />
+      <br />
+Al usar sondeos asimétricos, si solamente se definen datos de roca para
+uno de los dos lados, Istram asignará al otro lado el valor de la <a href="OL_parametros.html#maxProfRoca">máxima profundidad para considerar roca</a> que se ponga en Complementos/Parámetros.<br /><br />
+      <br style="font-weight: bold; font-style: italic;" />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="geotecnia_predefinida">Superficies definidas en el fichero de perfiles de terreno</a></span><br />
+      <span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo">
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><span style="" lang="ES-TRAD">Si
+aparecen en el perfil del terreno varias superficies, la primera de tipo
+desconocido y después aparece el tipo de terreno competente (66), el programa
+asume que la primera superficie es la cubierta vegetal. Por ejemplo:<o:p></o:p></span></p>
+
+
+      <span class="Parrafo"><br />
+      <span style="font-style: italic;">Ejemplo</span>:<br />
+
+      <br />
+
+      </span>
+      
+      <table style="text-align: left; width: 540px; height: 86px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+
+            <td style="vertical-align: top; width: 152px;"><span class="Parrafo">
+<span style="font-weight: bold;">Un perfil con:</span></span></td>
+            <td colspan="1" rowspan="2" style="vertical-align: middle; width: 99px; text-align: center;"><img src="Imagenes/flecha_derecha.png" style="width: 102px; height: 67px;" alt="" /><br />
+
+            </td>
+
+            <td style="vertical-align: top; width: 249px; font-weight: bold;"><span class="Parrafo">El programa las toma como:</span></td>
+          </tr>
+
+          <tr>
+
+            <td style="vertical-align: top; width: 152px;"><span class="Parrafo"><span style="font-style: italic;">
+Superficie 1, línea 26</span><br style="font-style: italic;" />
+<span style="font-style: italic;">
+Superficie 2, línea 66</span><br style="font-style: italic;" />
+<span style="font-style: italic;">
+Superficie 3, línea 103&nbsp;&nbsp;&nbsp;</span> </span></td>
+
+            <td style="vertical-align: top; width: 249px; font-style: italic;"><span class="Parrafo">
+Superficie 1 línea 104 (vegetal, natural)<br />
+
+Superficie 2 línea 66 (terreno competente)<br />
+
+Superficie 3 línea 103 (roca 1)</span></td>
+
+          </tr>
+
+        
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><br />
+
+      </span><span class="Parrafo">Si en el fichero de perfiles del terreno vienen superficies con los
+tipos empleados para cubierta vegetal, inadecuado o roca, NO se
+considera el dato introducido en este menú de DATOS DE SONDEOS,
+teniendo preferencia por tanto los datos que vienen en el archivo.<br />
+
+      <br />
+Si en el perfil del terreno sólo vienen las superficies de terreno
+competente (y roca), es posible dar la línea de terreno inadecuado, que
+tendrá distinta profundidad que la de terreno competente (y la roca).
+Queda por cuenta del usuario garantizar que la profundidad dada por
+sondeo para la línea de terreno inadecuado no la haga quedar por debajo
+de las de terreno competente y/o roca que vienen en el fichero de
+perfiles del terreno.</span><br />
+      <span class="Parrafo">
+      <br />
+      <br /></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="estructura">
+Definición de zonas en estructura y en estructura esviada</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Si en un tramo de cálculo se declara la sección tipo 0, el sistema no
+calcula intersecciones con el terreno y utiliza los datos de la sección
+tipo empleada en el tramo inmediatamente anterior para la geometría de
+la subrasante, espesor del paquete de firme y taludes de cierre del
+paquete. Si son necesarios para la estructura unos datos diferentes a
+los de cualquier sección tipo existente, es posible asimismo crear una
+sección tipo nueva y aplicarla en la zona de la estructura escribiendo
+un valor negativo para el espesor de la cubierta vegetal, o mejor aún,
+marcar el tramo como <span style="font-weight: bold;">ESTRUCTURA</span> indicando <span style="font-weight: bold;">SÍ</span> en la columna
+correspondiente.<br />
+      <br />
+Esto último es importante si posteriormente se utiliza la opción
+      <span style="font-weight: bold;">[Añadir ramal]</span> con otros ejes que, en la misma zona, deben tener los
+mismos datos de sondeos.<br />
+      <br />
+En la zona de mediana, cuando la sección tipo en la estructura es
+      <a href="OL_subrasante.html#paralela">subparalela</a> y con el <a href="OL_subrasante.html#subarcen_prolonga">subarcén prolongado</a> se elimina la mediana.<br />
+      <br />El programa permite también considerar perfiles en los que la
+estructura tan solo aparece por un lado de la sección, lo que permite
+mejorar la medición de tierras en los perfiles sin necesidad de definir
+secciones tipo nuevas en semiestructura. En cada perfil se va dibujando
+la posición del estribo, quedando perfectamente delimitada la zona en
+tierras y en estructura. Esto también se declara en la columna
+      <span style="font-weight: bold;">ESTRUCTURA</span> como muestra el siguiente ejemplo:<br />
+      <br />
+</span></span></span>
+      <table style="text-align: left; height: 50px; width: 534px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-weight: bold;">Sección tipo (ST_i)<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-weight: bold;">ESTRUCTURA<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-weight: bold;">TRAMO<br />
+            </td>
+            <td style="vertical-align: top; width: 200px; font-weight: bold;">DESCRIPCIÓN<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px; font-style: italic; text-align: center;">1<br />
+1<br />
+2<br />
+1<br />
+1<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-style: italic; text-align: center;">No<br />
+Derecha<br />
+Sí<br />
+Izquierda<br />
+No<br />
+            </td>
+            <td style="vertical-align: top; width: 92px; font-style: italic; text-align: center;">0-500<br />
+500-550<br />
+550-650<br />
+650-700<br />
+700-980<br />
+            </td>
+            <td style="vertical-align: top; width: 200px; font-style: italic; text-align: center;">Zona de terraplén<br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La estructura entra por la derecha<br />
+Zona de estructura<br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La estructura entra por la izquierda<br />
+Zona de terraplén<br />
+</span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+De esta manera, es muy sencillo mecanizar las zonas de cálculo en las
+que existen estructuras esviadas, facilitando enormemente el trabajo ya
+que las mediciones de tierras y firmes son exactas.<br />
+      <br />
+En las zonas de viaducto,&nbsp; se recomienda utilizar&nbsp; tipo
+[Si-&gt;(PKs)] en lugar de [Si (E-E)]. En auovías y autopistas (calzada
+doble). Si colocamos un viaducto con un único tablero para ambos lados:
+Lado [ID], se puede utilizar en zonas de calculo la orden Viaducto
+[Si-&gt;(Pks)] para que el programa determine los PKs de las diferentes
+zonas de la estructura esviada a partir de los datos introducidos en la
+definición de la estructura.<br />
+      <br /></span></span></span><img src="Imagenes/corregir_subras_est_esv.png" style="width: 274px; height: 70px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;Además, en estos casos puede interesar también que para los PK&#8217;s en
+semiestructura se defina una subrasante diferente en la parte de la
+sección transversal que está en estructura.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Para ello, ha de estar activada la casilla <a href="OL_parametros.html#corregir_subras"><span style="font-weight: bold; font-style: italic;">Corregir subrasante en
+estructuras esviadas</span></a> en el cuadro de diálogo ALZADO </span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">COMPLEMENTOS</span> </span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold;">Parámetros</span>.<br />
+      <br />
+Esta opción actúa en los tramos en semiestructura por IZQUIERDA y
+DERECHA modificando la <a href="OL_subrasante.html">subrasante</a> utilizando el espesor mínimo definido
+en la sección de la estructura. <br />
+      <br /></span></span></span><img src="Imagenes/trans_estructura_esviada.png" style="width: 221px; height: 33px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Por ejemplo, si la sección tiene 0,5 m de
+espesor de firmes y en la estructura solamente 0,1 m para las capas de
+rodadura, en las zonas de esviaje en la parte de terraplén aparecerá el
+      <a href="OL_firmes.html">paquete de firmes</a> completo y en las partes de estructura solamente los
+10 cm superiores, tal y como se muestra en la figura.<br />
+
+      <br />
+Además se aplica el paquete de firmes utilizado en la estructura (se
+busca el paquete utilizado en un PK&nbsp; 1 metro dentro de la
+estructura).<br />
+      <br />
+Para estructuras muy esviadas, en los que no llegan a existir perfiles
+en estructura por ambos lados, sino que antes de iniciarse la
+estructura por uno de los lados, ya se ha terminado por el otro; se
+crea en el cuadro de diálogo de Zonas de Cáculo un tipo llamado <span style="font-weight: bold;">Central</span>.
+Una estructura como ésta puede definirse con una secuencia de tramos de
+cálculo de la siguiene forma: Derecha (T-E) / Centro/ Izquierda (T-E).
+El tipo Centro, debe definirse en la zona de solape, en este tramo los
+perfiles tendrán terraplén por ambos lados, pero habra una zona
+interior hueca (por donde pasa la estructura). Debe utilizarse para
+todos estos tramos, la sección tipo de terraplén. De momento, este tipo
+de estructura no admite conos de derrame.<br />
+Se permiten Conos de Derrame en este tipo de estructuras.<br />Si
+en zonas de media ladera se utiliza (T-E) o (E-T), sin definir
+estructura antes o después de ese tramo, se calcula como voladizo la
+zona hasta el corte de la subrasante con el terreno. En el lado del
+terraplén se llevarán los suelos seleccionados hasta este punto.<br />
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="sondeos_indep">Sondeos independientes</a></span><br />
+      <span class="Parrafo"><br />
+El botón <span style="font-weight: bold;">[SONDEOS INDEPENDIENTES]</span>
+abre un cuadro de diálogo que hace posible independizar la
+tramificación de las secciones tipo de la tramificación geotécnica, tal
+y como se explica <a href="OL_sondeos_independientes.html">aquí</a>.<br />
+      <br />
+      <a name="descomponer"><span class="Titulo_2">Descomponer materiales</span><br />
+      <br />
+</a></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/zona_calculo_descomp_entrada.png" style="width: 600px; height: 100px;" alt="" /></span></div>
+      <span class="Parrafo"><br />
+Mediante este cuadro de diálogo permite al usuario descomponer cada uno
+de los materiales geotécnicos definidos en la tabla .dar (Vegetal,
+Inadecuado, D_Tierra, Roca 1, Roca 2...) en hasta cinco diferentes
+materiales.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/OL_zona_calculo_descomposicion.png" style="width: 600px; height: 218px;" alt="" /></span></div>
+      <span class="Parrafo"><br />
+Para que actúe este cuadro de diálogo deberemos activar la casilla <span style="font-weight: bold;">Utilizar esta descomposición</span>.<br />
+      <br />
+A cada uno de estos materiales se les puede asignar por tramos un porcentaje del material original, <span style="font-weight: bold;">Ratio %</span>, y un Coeficiente de paso para el <span style="font-weight: bold;">diagrama de masas</span>.<br />
+      <br />
+En los perfiles y listados de medición es sustituido el material original por sus componentes (<span style="font-weight: bold;">D TIERRA A</span>, <span style="font-weight: bold;">D TIERRA B</span>, <span style="font-weight: bold;">D TIERRA C</span>... por ejemplo).<br /><br /><span class="Parf_negrita">Añadir un dato a ejes activos sin datos:</span> Esto crea en cada eje activo que no tenga datos de Descomponer los materiales<br />geotécnicos,
+una línea en cada material con el 100% en el primer submaterial y
+activa&nbsp;Utilizar esta descomposición. Ya que cuando utilizamos la
+descomposición en algún eje , entonces debe usarse &nbsp;en todos.<br />
+      <br />
+</span><span class="Parrafo">
+Los acuerdos en los cruces y glorietas heredan las Descomposición de Materiales Geotécnicos del eje donde tienen su inicio.</span><br />
+      <span class="Parrafo">
+<br /></span><span style="font-weight: normal;" class="Titulo_2"><a name="cota_roja"><span class="Parrafo Titulo_2"><span class="Titulo_2">Estructuras definidos por sus valores de cota roja</span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El botón <span style="font-weight: bold;">ESTRUCTURAS POR COTA ROJA</span>
+da acceso a una herramienta, descrita aquí, mediante la cual el
+programa crea tramos de cálculo para estructura y túnel en función de
+la cota roja especificada por el usuario.<br />
+Estructuras por cota roja (sirve para tramificar viaductos y túneles).
+Disponemos de la utilidad de que a partir de cuatro rangos de cotas
+rojas determina las Secciones Tipo y Secciones de firme a aplicar,
+pudiendo diferenciar también entre recta y curva.<br />
+      <br />
+      <img src="Imagenes/zc_estructuras_cota_roja.png" style="width: 450px; height: 137px;" alt="" /><br />
+      <br />
+      <span class="Titulo_2"><a name="modificar_sondeos">Modificar sondeos por ejes</a></span><a name="modificar_sondeos"><br />
+      <br />
+      <img src="Imagenes/zona_calculo_sondeos.png" style="width: 274px; height: 88px;" alt="" align="right" hspace="6" />Permite
+modificar para varios ejes simultaneamente, alguna de las profundidades
+de los distintos materiales, en todos sus tramos de cálculo.<br /><br />Esta utilidad también trabaja con Sondeos Independientes.<br />
+      <br />
+      <br />
+<br />
+      <span class="Titulo_2"></span></a><a name="tramos_por_pendientes"><span class="Parrafo"><span class="Titulo_2">Tramos por pendientes</span></span></a></span><a name="tramos_por_pendientes"><br />
+      <br />
+</a><img src="Imagenes/zona_calculo_tramo_pendientes.png" style="width: 384px; height: 162px; float: left;" alt="" hspace="5" />Para cada tramo de pendiente, se puede asignar una sección tipo diferente y un paquete de firme diferente en recta y en curva, </span></span></span><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo">en función de la pendiente aplicada en el longitudinal.<br />Es posible definir Secciones Tipo diferentes para las rectas de longitud inferior a un determinado valor.<br /></span></span></span>
+      <span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo">
+      Se permite <span style="font-weight: bold;">guardar</span> o <span style="font-weight: bold;">cargar</span> un fichero de configuración de este menú de extensión&nbsp;<span class="Archivo">.tpp</span>.<br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="tramo_por_tubos">Tramo por tubos</a></span><a name="tramo_por_tubos"><br />
+      <br /></a></span></span></span><div style="text-align: center;"><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/zona_calculo_tramos_tubos.png" style="width: 300px; height: 149px;" alt="" /></span></span></span><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></div><span style="font-weight: normal;" class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><a name="tramo_por_tubos"><br /><br />Permite
+crear un tramo por cada tubo, asignando una sección tipo en función del
+diámetro del tubo. Comienza cada tramo en el pk de inicio del tubo y
+finaliza en el pk de inicio del tubo siguiente o en el último perfil.
+Sólo para ejes de tuberías.<br />Recordar que se puede tener una plantilla p.e. <span class="Archivo">Zanja.dig</span> que contenga un archivo <span class="Archivo">*.vol</span> con toda la serie de secciones tipo predefinidas para ser aplicadas en diferentes ejes.<br /><br />
+      <br />
+      <span class="Titulo_2"></span></a><a name="copiar_tramos_de_firme"><span class="Parrafo"><span class="Titulo_2">Copiar tramos de firme</span></span></a></span><a name="copiar_tramos_de_firme"><br />
+      <br />
+Permite copiar la tramificación dada en el menú </a><a href="OL_firmes.html">Paquete de Firme</a>.<br />
+
+      <br />
+      <span class="Titulo_2"><a name="viaductos_zc">Viaductos a Zonas de Cálculo</a></span><a name="viaductos_zc"><br />
+      <br />
+Copia los PKs de los viaductos del menú de </a><a href="OL_estructuras.html">Estructuras</a> al de zonas de cálculo insertándolos como tramos en estructura.<br />
+<br />
+      </span></span><span class="Titulo_2"><a name="tramif_indep"><span class="Parrafo"><span class="Titulo_2">Tramificación de secciones independientes de la zona de cálculo</span></span></a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><img src="Imagenes/tramif_indep.png" style="width: 111px; height: 133px;" alt="" align="right" hspace="6" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las zonas de cálculo descritas hasta aquí, definen la tramificación para aplicación de la sección tipo como un todo. <span style="font-weight: bold;">[C]</span>, <span style="font-weight: bold;">[D]</span>, <span style="font-weight: bold;">[T]</span> y <span style="font-weight: bold;">[V]</span> son otros menús para tramificar independientemente las <a href="OL_cunetas.html">cunetas</a>, <a href="OL_desmonte_tierra.html">desmontes</a>, <a href="OL_terraplen_geometria.html">terraplenes</a> y los <a href="OL_vectores.html">vectores</a>.<br />
+      <br />
+Si en el menú <span style="font-weight: bold;">[C]</span> se define una tramificación en la que se aplica la sección <span style="font-style: italic;">i</span>
+entre unos determinados PK&#8217;s en el lado derecho, se está estableciendo
+que, a pesar de que en ese tramo se esté aplicando la sección <span style="font-style: italic;">j</span>, la <a href="OL_cunetas.html">cuneta</a> que se va a utilizar es la derecha de la sección <span style="font-style: italic;">i</span>.<br />
+      <br />
+Igual que en el caso general, si la sección tipo final es distinta de cero y distinta de la inicial, la <a href="OL_cunetas.html">cuneta</a> hará una transición lineal en el tramo, entre las dos secciones tipo.<br />
+      <br />
+En la subtramificación de cunetas disponemos de una opción para cada dato: <span style="font-weight: bold;">Solo para Alternativa Total</span>.
+Al activarlo implica que esta cuneta solo será utilizada cuando la
+sección de desmonte haya saltado a una ST Alternativa que incluya la
+opción de control, berma y cuneta.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/zona_calc_cun_solo.png" style="width: 600px; height: 198px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold;">[D]</span> y <span style="font-weight: bold;">[T]</span> declaran tramificaciones independientes para desmontes y terraplenes y funcionan exactamente igual.<br />
+      <br />
+Las tablas de tramificación <span style="font-weight: bold;">[C]</span>, <span style="font-weight: bold;">[D]</span>, <span style="font-weight: bold;">[T] y </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[V]</span></span></span></span><span class="Parrafo"><span class="Parrafo">
+tienen un conmutador que permite seleccionar el lado derecho o el
+izquierdo. Se podrán copiar los datos de la parte derecha a la
+izquierda <span style="font-weight: bold;">Der.-&gt;Izq</span>. y viceversa <span style="font-weight: bold;">Izq-&gt;Der</span>.<br />
+
+      <br />
+
+En las zonas no cubiertas por <span style="font-weight: bold;">[C]</span>, <span style="font-weight: bold;">[D]</span>, <span style="font-weight: bold;">[T]</span> y </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[V]</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, se aplicará la sección dada en la <a href="#tramificacion">tramificación</a> básica de ZONAS DE CALCULO. Esta subtramificación, por tanto, complementa pero no sustituye a la <a href="#tramificacion">tramificación</a> general. El calculador necesita los datos de la tabla ZONAS DE CALCULO.<br />
+      <br />
+En todos estos cuadros de diálogo, </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[C]</span>, <span style="font-weight: bold;">[D]</span>, <span style="font-weight: bold;">[T]</span> y </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[V]</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, existe la posibilidad de <span style="font-weight: bold;">Copiar</span> la tramificación definida en el menú <a href="OL_zonas_calculo.html"><span style="font-weight: bold;">Zona de Cálculo</span></a>.</span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      
+      <table style="text-align: left; width: 684px; height: 53px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify; width: 626px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Para
+la tramificación independiente de cunetas, desmontes, terraplenes y vectores, se
+sigue el siguiente comportamiento: si un tramo termina en el mismo PK
+en el que comienza el siguiente y existe ese perfil del terreno o está
+activada la interpolación de perfiles en los PK&#8217;s de tramos de cálculo,
+entonces se repite el perfil utilizando los datos correspondientes a
+los dos tramos, tal como se hace con los PK&#8217;s de las ZONAS DE CÁLCULO
+generales.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

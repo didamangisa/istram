@@ -1,0 +1,844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Tipología de alineaciones en planta</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTA: TIPOLOGÍA DE ALINEACIONES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="height: 1510px; width: 700px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 690px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <div style="margin-left: 40px;"><a href="#convenio_radio">Convenio usado en el radio</a><br /><a href="#sol_corta_larga">
+Solución corta y solución larga</a><br /><a href="#reajuste_geometrico">
+Reajuste automático de la geometría</a><br />
+      </div>
+
+      <a href="#frecuentes">Alineaciones de uso frecuente</a><br />
+      <div style="margin-left: 40px;"><a href="#fija_2P">Fija por dos
+puntos y radio (tipo 0)</a><br />
+      <a href="#flotante">Flotante (tipos 8 y -8)</a><br />
+      <a href="#giratoria">Giratoria o de punto 2 (tipos 8 y -8)</a><br />
+      <a href="#retrogiratoria">Retrogiratoria o de punto 1 (tipos 8 y -8)</a><br />
+      <a href="#enlace">Enlace o de prolongación hacia delante (tipo 0)</a><br />
+      <a href="#preenlace">Preenlace o de prolongación hacia atrás (tipo 4)</a><br />
+      <a href="#punto_azimut">Fija por punto y azimut (tipo 5)</a><br />
+<a href="#fija_centro_radio">Fija por centro y radio: glorieta
+circular (tipo 5)</a><br />
+      <a href="OL_planta_alineaciones.html#fija_punto_radio_azimut">Fija por punto, radio y azimut (tipo -5)</a><br />
+      <a href="#fija_3P">Fija por tres puntos (tipo 6)</a><br />
+      <a href="#tabla_resumen">Tabla resumen de las alineaciones de uso más frecuente</a><br />
+      </div>
+      <a href="#menos_frecuentes">Alineaciones de uso menos frecuente</a><br />
+      <div style="margin-left: 40px;"><a href="#acoplada">Acoplada y preacoplada (tipo 7)</a><br /><a href="#flotante_giratoria_retranqueo">
+Flotante/giratoria/retrogiratoria con clotoide dada por retranqueo (tipos 1 y -1)</a><br /><a href="#flot_girat_antigua">
+Flotante/giratoria/retrogiratoria antigua (tipos 2 y -2)</a><br /><a href="#grupos_enlace">
+Grupos o trenes de enlace (tipos 3 y 4)</a><br />
+      </div>
+      <a href="#convertir_fijos">Convertir los datos del calculador en fijos</a><br />
+<a href="#conexiones">Conexiones entre ejes</a><br />
+<a href="#libertad">Grados de libertad y errores frecuentes en el trazado en planta</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+La idea básica del trazado de un eje se basa en la creación de
+alineaciones tangentes, unas principales (rectas y circulares), y habitualmente entre ellas, <a href="OL_planta_curvas_transicion.html">curvas de acuerdo o de transición</a> (normalmente, clotoides).<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td><td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Info">De
+cara al funcionamiento del programa, hay que tener muy claro que las <a href="OL_planta_curvas_transicion.html">curvas de transición</a> NO son alineaciones principales, sino curvas de acuerdo entre dos
+alineaciones.<br />
+            </span></td></tr></tbody>
+      </table>
+<br />&nbsp; <img style="width: 145px; height: 201px; margin-left: 7px;" alt="" src="Imagenes/tipos_ali.png" align="right" />Existen dos grandes grupos de alineaciones:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><a name="fijas">Fijas</a></span>: Son aquellas
+que contienen datos suficientes como para quedar perfectamente
+definidas en el plano sin que el programa calcule nada con las
+alineaciones vecinas (por ejemplo, una alineación recta dada por dos
+puntos). Este tipo de alineaciones, por tanto, <span style="font-weight: bold;">no tienen <a href="#libertad">grados de libertad</a></span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">No fijas</span>: Son
+alineaciones que contienen uno o más datos, pero en número insuficiente
+como para que se puedan representar en el plano sin que el programa
+efectúe algún cálculo con la/s alineacion/es vecinas (por ejemplo, una
+alineación de la que sólo se conoce su punto final el programa
+calculará su punto inicial, que será tangente con la alineación
+anterior). Este tipo de alineaciones <span style="font-weight: bold;">tienen
+uno o dos <a href="#libertad">grados de libertad</a></span>.<br />
+        </li>
+      </ul>
+      <img style="width: 110px; height: 89px; margin-right: 7px;" alt="" src="Imagenes/planta_tipo_ali.png" align="left" />Dentro
+de cada grupo existen varios tipos. Estos tipos van además asociados a
+un número que obliga al programa a escoger una solución cuando hay
+varias posibles. Esto posibilita el cambio de comportamiento de una
+alineación de forma inmedianta, dotando de gran versatilidad al
+programa.<br />
+<br />
+      <table style="text-align: left; width: 574px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 636px; text-align: justify;">Es una
+práctica generalizada entre los usuarios del programa llamar también
+"tipo"
+a este número, por lo que el uso de este término se efectúa de manera
+indistinta siendo el usuario quien debe distinguir el contexto en el
+que se emplea.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+En este apartado se explican todas las posibilidades que ofrece el
+programa para resolver el abanico de combinaciones geométricas que se
+puede dar en la fase de trazado en planta de un proyecto de obra
+lineal, distinguiendo entre alineaciones de <a href="#frecuentes">uso
+frecuente</a> y de <a href="#menos_frecuentes">uso menos frecuente</a>.<br />
+      <br /><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="convenio_radio">Convenio usado en el radio</a></span><br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> emplea los siguientes criterios en
+el uso del radio:<br />
+      <ul>
+        <li>Un valor de <span style="font-weight: bold;">radio postivo</span>
+está asociado a sentido destrógiro, es decir, "<span style="font-weight: bold;">curva a derechas</span>" según el criterio
+de avance de PK's del eje. En cambio, un <span style="font-weight: bold;">valor negativo</span> indica sentido
+levógiro o "<span style="font-weight: bold;">curva a izquierdas</span>"
+según avance de PK's.</li>
+      </ul>
+      <ul>
+        <li>Un valor del <span style="font-weight: bold;">radio nulo</span>
+(R=0) indica al programa que la alineación es una <span style="font-weight: bold;">recta</span>.<br />
+        </li>
+      </ul>
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="sol_corta_larga">Solución corta y solución larga</a></span><br />
+      <br />
+Las alineaciones que admiten tipos negativos indica que, en el caso de que haya dos soluciones de tangencia, el programa
+escogerá la solución más corta (tipo 8) o la del primer cuadrante (tipos 1 y 2). Si en algún caso particular la que
+interesa es la solución complementaria, entonces deberá hacerse uso de ese tipo negativo.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="reajuste_geometrico">Reajuste automático de la geometría</a></span><br />
+      <br />
+Cada vez que se calcula la planta, el programa recorta o prolonga de
+forma conveniente cada alineación en búsqueda de la solución de
+tangencia y continuidad del eje, por lo que el usuario no debe de
+preocuparse por ese aspecto.<br />
+      <br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="frecuentes">Alineaciones de uso
+frecuente</a></span><br />
+      <br />
+Se enmarcan aquí las alineaciones de uso más extendido entre los
+usuarios de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> y que vienen a
+resolver los problemas geométricos de trazado en planta más habituales.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td><td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Info">Conocer
+y manejar con soltura al menos los tipos más frecuentes de alineaciones
+son la
+clave para poder ejecutar un trazado en planta libre de errores
+geométricos que puedan acarrear problemas en las sucesivas fases del
+proyecto.</span></td></tr></tbody>
+      </table>
+<br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_2P">Fija por dos puntos y radio (tipo 0)</a></span><br />
+      <br />Es la alineación más básica que existe. Se define mediante dos puntos, P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) y P2 (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>)
+y el radio (<span style="font-weight: bold;">R</span>) con su
+correspondiente <a href="#convenio_radio">convenio asociado</a>:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_fija2P.png" /><br />
+      <br />
+      <img style="width: 468px; height: 223px;" alt="" src="Imagenes/ejemplo_fija2P.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="flotante">Flotante&nbsp; (tipos 8 y -8)</a></span><br />
+      <p class="TUTnormal">Necesita para su definición el radio (<span style="font-weight: bold;">R</span>) con su correspondiente <a href="OL_planta_alineaciones.html#convenio_radio">convenio asociado</a>:</p>
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_flotante.png" /><br />
+      <br />
+      <img style="width: 404px; height: 240px;" alt="" src="Imagenes/ejemplo_flotante.png" /><br />
+      </div>
+      <br />Al
+estar definida sólo por el radio y sin ningún punto coordenado que la
+fije, el calculador buscará las tangencias oportunas con sus
+alineaciones vecinas, por lo que nunca podrá estar situada al inicio o
+final de un eje.<br />
+      <br />
+Esta alineación admite <a href="#sol_corta_larga">solución larga</a> de tangencia (tipo negativo).<br />
+      <br />
+Si a este tipo de alineación se le asocian coordenadas (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) y (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>), entonces se comporta como una <a href="#fija_2P">fija por dos puntos y radio</a>.<br />
+<br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="giratoria">Giratoria o de punto 2 (tipos 8 y -8)</a></span><br />
+      <p class="TUTnormal">Se define por el radio <span class="CTCourierNEW"><span style="">(<span style="font-weight: bold;">R</span>)</span></span>
+con su correspondiente <a href="OL_planta_alineaciones.html#convenio_radio">convenio asociado</a>
+y un punto de paso
+P2 (<span class="CTCourierNEW"><span style=""><span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span></span></span>):</p>
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_giratoria.png" /><br />
+      <br />
+      <img style="width: 442px; height: 216px;" alt="" src="Imagenes/ejemplo_giratoria.png" /><br />
+      </div>
+      <br />Se la suele también llamar <span style="font-style: italic;">de punto 2</span> porque el calculador la hace girar en torno a este punto hasta encontrar la tangente de entrada.<br />
+      <br />
+Esta alineación admite <a href="OL_planta_alineaciones.html#sol_corta_larga">solución larga</a> de tangencia (tipo negativo).<br />
+      <br />
+Si a este tipo de alineación se le asocian coordenadas (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) y (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>), entonces se comporta como una <a href="#fija_2P">fija por dos puntos y radio</a>.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="retrogiratoria">Retrogiratoria o de punto 1 (tipos 8 y -8)</a></span><br />
+      <br />
+Se define el radio (<span style="font-weight: bold;">R</span>) con su
+correspondiente <a href="OL_planta_alineaciones.html#convenio_radio">convenio
+asociado</a> y un punto de paso P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>):<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_retrogiratoria.png" /><br />
+      <br />
+      <img style="width: 433px; height: 187px;" alt="" src="Imagenes/ejemplo_retrogiratoria.png" /><br />
+      </div>
+      <br />Es homóloga a la <a href="#giratoria">giratoria</a>, con la diferencia&nbsp; de que la alineación finaliza en la tangencia calculada por el programa en lugar de nacer en ella.<br />
+      <br />
+Esta alineación admite <a href="OL_planta_alineaciones.html#sol_corta_larga">solución larga</a> de tangencia (tipo negativo).<br />
+      <br />
+Si a este tipo de alineación se le asocian coordenadas (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) y (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>), entonces se comporta como una <a href="#fija_2P">fija por dos puntos y radio</a>.<br />
+<br /><span class="Parf_negrita">Fijar Longitud, radio calculado</span><br /><br />Para
+las alineaciones circulares flotantes y sin clotoides entre dos rectas
+fijas si se da un valor a la LONGITUD mayor que cero, prevalece este
+valor y el radio es calculado (variable) y no se puede modificar.<br /><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="enlace">Enlace o de prolongación hacia delante (tipo 0)</a></span><br />
+      <br />
+Se definen por el radio (<span style="font-weight: bold;">R</span>) con
+su correspondiente <a href="OL_planta_alineaciones.html#convenio_radio">convenio
+asociado</a> y una longitud (<span style="font-weight: bold;">L</span>):<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_enlace.png" /><br />
+      <br />
+      <img style="width: 455px; height: 137px;" alt="" src="Imagenes/ejemplo_enlace.png" /><br />
+      </div>
+      <br />
+      Puede
+haber cuantas alineaciones de enlace se desee detrás de una fija o de
+un conjunto de alineaciones que, a efectos, se comporte como una fija (<a href="#grupos_enlace">trenes de enlace</a>).
+La primera es tangente al punto final de la fija y las siguientes lo
+son a la que les precede. Estas alineaciones las resuelve el calculador
+desde un solo lado, como prolongación de la fija o la de enlace
+precedente.<br />
+<br />Se puede definir un <span class="Parf_negrita">salto lateral</span><span class="Texto_cursiva Parf_negrita"></span>
+del eje en planta de la siguiente forma: detrás de una alineación FIJA
+se define una de ENLACE de tipo 0 y sin clotoides, de igual o diferente
+radio que la fija, y con un desplazamiento diferente de 0.<br /><br /><br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="preenlace">Preenlace o de prolongación hacia atrás (tipo 4)</a></span><br />
+      <br />
+
+Se definen por el radio (<span style="font-weight: bold;">R</span>) con
+su correspondiente <a href="OL_planta_alineaciones.html#convenio_radio">convenio
+asociado</a> y una longitud (<span style="font-weight: bold;">L</span>):<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_preenlace.png" /><br />
+      <br />
+      <img style="width: 501px; height: 100px;" alt="" src="Imagenes/ejemplo_preenlace.png" /><br />
+      </div>
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="punto_azimut">Fija por punto y azimut (tipo 5)</a></span><br />
+      <br />
+Se define un punto P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>), el azimut (<span style="font-weight: bold;">Az</span>) y, opcionalmente, la longitud (<span style="font-weight: bold;">L</span>):<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_pto_azimut.png" /><br />
+      <br />
+      <img style="width: 393px; height: 112px;" alt="" src="Imagenes/ejemplo_pto_azimut.png" /><br />
+      </div>
+      <br />
+Una alineación recta dada por punto y azimut queda perfectamente
+definida en el planto cuando, además, se le indica su longitud. Si
+detrás de esta alineación existen otras, entonces no hará falta indicar
+esta longitud, pues el programa la calculará adecuadamente para
+encontrar la solución de tangencia.<br />
+      <br />
+<br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_centro_radio">Fija por centro y radio: glorieta circular
+(tipo 5)</a></span><br />
+      <br />
+Se define el centro de la circunferencia P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>),
+el radio (<span style="font-weight: bold;">R</span>) con su
+correspondiente <a href="OL_planta_alineaciones.html#convenio_radio">convenio
+asociado</a> y la longitud (<span style="font-weight: bold;">L</span>).
+El azimut (<span style="font-weight: bold;">Az</span>) se usa para
+indicar el PK de inicio de la glorieta:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_centro_radio.png" /><br />
+      <br />
+      <img style="width: 189px; height: 195px;" alt="" src="Imagenes/ejemplo_centro_radio.png" /><br />
+      </div>
+      <br />
+
+En este caso se debe prestar especial atención al signo del radio, pues
+marca el sentido de avance de PK&#8217;s de tal forma que un radio negativo
+lo hace coherente con el sentido de circulación de vehículos usado en
+la mayoría de los países del mundo.<br />
+
+      <br />
+
+La longitud, por su parte, es conveniente ponerla en función de PI,
+pues así el usuario tan sólo tiene que indicar dos veces el radio.<br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 629px; text-align: justify;"><span class="Info">Una
+glorieta circular habitualmente se define en el programa como un eje
+INDEPENDIENTE formado por una única alineación de este tipo.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Una alineación fija por centro y radio no tiene porqué ser de uso
+exclusivo en glorietas, y puede ser una alineación más en cualquier
+eje. En este caso, el uso del azimut y de la longitud depende de la
+colocación de la alineación en el eje:<br />
+      <ul>
+        <li>Si está dentro de un eje con alineaciones delante y detrás, no se usa <span style="font-weight: bold;">L</span> ni <span style="font-weight: bold;">Az</span> porque prevalece la condición de tangencia.</li>
+      </ul>
+      <ul>
+        <li>Si es la primera de un eje, se usa <span style="font-weight: bold;">Az</span> para definir el principio del eje.</li>
+      </ul>
+      <ul>
+        <li>Si es la última de un eje, se usa <span style="font-weight: bold;">Az</span> para dar el punto final. Si además está declarado un valor en <span style="font-weight: bold;">L</span>, entonces además la alineación se prolonga a partir del punto dado por <span style="font-weight: bold;">Az</span>.<br />
+        </li>
+      </ul>
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_punto_radio_azimut">
+Fija por punto, radio y azimut (tipo -5)</a></span><br />
+
+
+      <br />
+
+Es como la <a href="#fija_centro_radio">fija por centro y radio</a>, pero en este caso las coordenadas
+del punto P1 son un punto de paso de la alineación circular en el que
+se prefija el azimut:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_fija_punto_radio_azimut.png" /><br />
+      <br />
+      <img style="width: 445px; height: 232px;" alt="" src="Imagenes/ejemplo_punto_radio_azimut.png" /><br />
+      </div>
+      <br />
+Si es la primera alineación del eje, este punto
+es el punto de inicio del eje. Si es la última alineación del eje, el
+punto final se calcula considerando la longitud dato desde el punto P1,
+aunque éste no sea el
+punto de tangencia de la alineación.<br />
+<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="fija_3P">Fija por tres puntos (tipo 6)</a></span><br />
+      <br />
+Se definen mediante 3 puntos, P1 (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) , P2 (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>)
+y P3 (<span style="font-weight: bold;">X3</span>,<span style="font-weight: bold;">Y3</span>). Los tres puntos deben estar en
+orden de PK&#8217;s crecientes:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_fija3P.png" /><br />
+      <br />
+      <img style="width: 288px; height: 160px;" alt="" src="Imagenes/ejemplo_fija3P.png" /><br />
+      </div>
+      <br />
+      El radio calculado aparece en el campo <span style="font-weight: bold;">RADIO</span>
+de la alineación a título informativo, y cualquier valor de radio que
+introduzca el usuario será ignorado y sobrescrito por el calculador
+inmediatamente.<br />
+      <br />
+En el dibujo de las alineaciones dato, se dibujan los arcos P1-P2-P3,
+pero si se calcula el eje con sólo esta alineación, el punto final
+sigue siendo P2.<br />
+      <br />Representación:
+El tramo P1-P2 se remarca en el color habitual y el tramo P2-P3 se
+muestra atenuado, para evitar confundir el eje calculado con estas
+alineaciones sobre todo cuando se da el p3 por delante del p1.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="tabla_resumen">Tabla resumen de las alineaciones de uso más frecuente</a></span><br />
+      <br />
+      <table style="text-align: left; height: 73px; margin-right: auto; margin-left: auto; width: 582px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 190px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Nombre</span><br />
+            </td>
+            <td style="vertical-align: top; width: 43px; font-weight: bold; font-style: italic; text-align: center;">Tipo<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic; text-align: center; width: 80px;">Parámetros<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic; text-align: center; width: 113px;">Grados de libertad<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 190px;">Fija por dos puntos y radio<br />
+Flotante<br />
+Giratoria o de punto 2<br />
+Giratoria o de punto 1<br />
+Enlace o de prolongación hacia adelante<br />
+Preenlace o de prolongación hacia atrás<br />
+Fija por centro y azimut<br />
+Fija por centro y radio<br />
+Fija por punto, radio y azimut<br />
+Fija por tres puntos<br />
+            </td>
+            <td style="vertical-align: top; width: 43px; text-align: center;">0<br />
+8 / -8<br />
+8 / -8<br />
+8 / -8<br />
+0<br />
+4<br />
+5<br />
+5<br />
+-5<br />
+6<br />
+            </td>
+            <td style="vertical-align: top; width: 80px; text-align: center;">P1, P2, R<br />
+R<br />
+P2, R<br />
+P1, R<br />
+L, R<br />
+L, R<br />
+P1, Az, (L)<br />
+P1, Az, R, (L)<br />
+P1, Az, R, (L)<br />
+P1, P2, P3<br />
+            </td>
+            <td style="vertical-align: top; width: 113px; text-align: center;">0<br />
+2<br />
+1<br />
+1<br />
+1<br />
+1<br />
+0<br />
+0<br />
+0<br />
+0<br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" rowspan="1" style="vertical-align: top; width: 190px;"><br />
+            <img style="width: 32px; height: 32px; margin-right: 7px;" alt="" src="Imagenes/icono_aviso.png" align="left" /><span class="Info">Si las alineaciones tipo 8 / -8 tienen asociados datos en P1 y en P2, entonces se comportan como fijas por dos puntos y radio.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="menos_frecuentes">Alineaciones de
+uso menos frecuente</a></span><br />
+      <br />
+Son aquellas cuyo uso no está tan extendido como las anteriores, pues
+vienen a resolver problemas geométricos muy concretos o bien han sido
+sustituidas por otras mucho más versátiles y, por tanto, están en
+desuso.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="acoplada">Acoplada y preacoplada</a></span><br />
+      <br />
+En las alineaciones de este tipo, los campos que normalmente contienen las coordenadas <span style="font-weight: bold;">X1</span>, <span style="font-weight: bold;">Y1</span> y <span style="font-weight: bold;">X2</span>, <span style="font-weight: bold;">Y2</span> cambian a <span style="font-weight: bold;">Lant</span>, <span style="font-weight: bold;">dL</span> y <span style="font-weight: bold;">Lsig</span>, <span style="font-weight: bold;">dL</span> respectivamente.<br />
+      <br />
+Si la alineación es <span style="font-weight: bold;">acoplada</span> después de una fija, la longitud de la fija se modifica de manera que si el campo <span style="font-weight: bold;">Lant</span> de la acoplada es distinto de cero, el valor se aplica como longitud total de la fija. Si es el campo <span style="font-weight: bold;">dL</span> es el que es distinto de cero, su valor se usará para modificar la longitud natural de la fija. El valor <span style="font-weight: bold;">dL</span>
+puede ser negativo acortando el punto final de la fija. Al terminar la
+fija, el eje continúa con la propia acoplada usando su longitud (<span style="font-weight: bold;">L</span>) y radio (<span style="font-weight: bold;">R</span>), insertando la clotoide intermedia si la hay.<br />
+      <br />
+El siguiente ejemplo está formado por una alineación fija dada por dos
+puntos tras la cual se ha añadido una alineación acoplada. Esta
+alineación, de 60 m de longitud y radio -100, provoca que previamente
+se prolongue 60 m la alineación fija anterior:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 532px; height: 77px;" alt="" src="Imagenes/dialogo_acoplada.png" /><br />
+      <br />
+      <img style="width: 420px; height: 326px;" alt="" src="Imagenes/ejemplo_acoplada.png" /><br />
+      </div>
+      <br />
+      Para las alineaciones <span style="font-weight: bold;">preacopladas</span> (o acopladas antes de una fija), los
+valores de <span style="font-weight: bold;">Lsig</span> o <span style="font-weight: bold;">dL</span> sustituirán a los campos <span style="font-weight: bold;">X2</span> e <span style="font-weight: bold;">Y2</span> respectivamente. Su funcionamiento respecto de la fija que
+sigue es análogo al de las acopladas.<br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 637px; text-align: justify;"><span class="Info">Si se quiere respetar la longitud de la fija (<span style="font-weight: bold;">L</span> y <span style="font-weight: bold;">dL</span> de valor 0), se está en el caso de alineaciones de <a href="#enlace">enlace</a> para las acopladas o de <a href="#preenlace">preenlace</a> para las preacopladas, debiendo entonces ser esos los tipos a utilizar.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="flotante_giratoria_retranqueo">Flotante/giratoria/retrogiratoria con clotoide dada por retranqueo (tipos 1 y -1)</a></span><br />
+      <br />
+Este tipo permite generar alineaciones flotantes y giratorias cuyo acuerdo se realiza por <span style="font-weight: bold;">retranqueo a distancias mínimas</span>.<br />
+      <br />
+      <img style="width: 314px; height: 122px; margin-left: 7px;" alt="" src="Imagenes/dist_retranqueo.png" align="right" />En estos casos el valor anotado en la tecla A no es el parámetro de la clotoide sino la <span style="font-weight: bold;">distancia de retranqueo</span>. Si no hay coordenadas para P1 y P2 se trata de una <a href="#flotante">flotante</a>.
+El calculador necesita para resolverlas que las alineaciones anterior y
+siguiente sean fijas o calculables desde un sólo lado (por ejemplo,
+fija &#8211; enlace &#8211; enlace &#8211; flotante &#8211; fija).<br />
+      <br />
+Si se tienen datos de P2, esta alineación es resoluble cuando la
+precedente es una fija o calculada desde ese lado. Se trata de una <a href="#giratoria">giratoria</a>,
+y la solución se determina por tangencia con la anterior. A partir de
+ella, el eje puede continuar como si fuese una fija, con otra
+giratoria, de enlace, fija o incluso flotante. Si la que la sigue es
+fija, el acuerdo no tiene grados de libertad y la clotoide entre las
+dos es calculada por el sistema.<br />
+      <br />
+Si se tienen datos de P1 (pero no de P2), la alineación es <a href="#retrogiratoria">retrogiratoria</a>,
+la solución se halla buscando la tangencia con la siguiente alineación
+que debe ser, por tanto, fija o resuelta desde el fin del eje hacia el
+principio. Si la precedente es una fija, la clotoide a aplicar entre la
+fija y esta retogiratoria es determinada por el sistema.<br />
+      <br />
+Si a este tipo de alineación se le asocian coordenadas a P1 y a P2, entonces se comporta como una <a href="#fija_2P">fija por dos puntos y radio</a>.<br />
+<br />
+En algunas circunstancias el problema del encaje de la alineación
+flotante posee dos soluciones. En este caso la solución ofrecida por el
+programa corresponde siempre con la del primer cuadrante salvo que se
+indique <a href="#sol_corta_larga">tipo negativo</a>, aplicándose entonces la otra solución.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="flot_girat_antigua">Flotante/giratoria/retrogiratoria antigua (tipos 2 y -2)</a></span><br />
+      <br />
+Se trata de tipos en desuso, pues han sido sustituidos por los tipos 8
+y -8 respectivamente y que se emplean en alineaciones flotantes,
+giratorias y retrogiratorias.<br />
+      <br />Si a este tipo de alineación se le asocian coordenadas (<span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span>) y (<span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span>), entonces se comporta como una <a href="#fija_2P">fija por dos puntos y radio</a>.<br />
+      <br />
+Su funcionamiento es similar en la mayoría de las situaciones,
+radicando la diferencia en aquellos casos en los que se den dos
+soluciones de tangencia. En estos casos, el tipo 2 calcula la solución
+del primer cuadrante mientra que el tipo 8 genera la solución más
+corta. Si se desea la solución complementaria en lugar de la del primer
+cuadrante, debe entonces indicarse <a href="#sol_corta_larga">tipo negativo</a>.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="grupos_enlace">Grupos o trenes de enlace (tipos 3 y 4)</a></span><br />
+      <br />TREN DE ENLACE SIMPLE<br />
+      <br />
+Se denomina tren de enlace simple a una sucesión de alineaciones de
+enlace seguidas tras una alineación fija (o tras varias alineaciones
+que, en conjunto, se comporten como una fija).<br />
+      <br />
+      <br />
+USO DE LAS ALINEACIONES TIPO 3<br />
+      <br />
+Se indicará este tipo a la primera alineación perteneciente a un <span style="font-weight: bold;">grupo de alineaciones de enlace</span>
+que termina en una alineación flotante, es decir, aquella alineación
+que sale de la alineación fija. Se trata de un caso como éste:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_1.png" /><br />
+      </div>
+      <br />
+Es decir:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_2.png" /><br />
+      </div>
+      <br />
+Por tanto:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_3.png" /><br />
+      </div>
+      <br />
+Si la primera alineación de enlace es también del tipo 0, el grupo
+arranca tangente al punto final de la fija anterior y todo el grupo
+anterior a la 8 se calcula hacia el fin del eje dependiendo solamente
+de la fija inicial. La longitud de la última alineación de enlace no se
+puede respetar para que la flotante posterior resuelva la tangencia con
+la fija que sigue.<br />
+      <br />
+Si la primera alineación del grupo de enlace se declara <span style="font-weight: bold;">tipo 3</span>,
+el grupo se convierte en "deslizante" sobre la fija que las precede, a
+fin de respetar la longitud de todas las alineaciones de enlace del
+grupo (incluso la última). La alineación fija primera es la que adapta
+su longitud para resolver el problema. Se puede ver, por tanto, que la
+transición entre dos fijas, puede hacerse por una simple clotoide, por
+una flotante y por un grupo de alineaciones de enlace terminado en una
+flotante. El conjunto se declararía entonces con los tipos:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 478px; height: 16px;" alt="" src="Imagenes/grupo_enlace_4.png" /><br />
+      </div>
+      <br />
+Solo se declara de tipo 3 a la primera del grupo de enlace. Las
+siguientes, si las hay, deben ser de tipo 0. Como siempre, la presencia
+o no de clotoides de acuerdo no modifica el problema.<br />
+      <br />
+      <br />
+USO DE LAS ALINEACIONES TIPO 4<br />
+      <br />
+      Se asignará este tipo a la <span style="font-weight: bold;">primera alineación de un grupo de llegada</span>.
+Si antes de una alineación fija hay una o más de enlace apoyadas en
+ella, la primera del grupo debe señalarse con tipo 4, las demás, si las
+hay, de tipo 0 y por último la fija que completa el problema.<br />
+      <br />
+El calculador es avisado por el tipo 4 de que no puede empezar
+resolviendo esta alineación, así que continúa saltándose ésta y todas
+las alineaciones de tipo 0 sin coordenadas (alineaciones de enlace) que
+haya, hasta que encuentra una fija; entonces esta fija es resuelta y,
+apoyándose en ella, son resueltas hacia el principio las de enlace
+precedentes.<br />
+      <br />
+      <br />
+COMBINACIONES DE ALINEACIONES TIPO 3 Y 4<br />
+      <br />
+Pueden darse casos tan complejos como el siguiente:<br />
+<br />
+      
+      <div style="text-align: center;"><img style="width: 372px; height: 16px;" alt="" src="Imagenes/grupo_enlace_5.png" /><br />
+      </div>
+
+      <br />
+      El problema de la 3 a la 8 es un grupo de enlace
+deslizante sobre la primera fija, que debe ser resuelto entre la
+primera fija y la de tipo 4. Pero como esa no está resuelta, la
+solución debe posponerse saltándose todo el problema hasta la última
+fija. Entonces se resuelve el segundo grupo de enlace empezando por la
+última hacia el inicio, hasta llegar a la solución de la de tipo 4; el
+grupo 3, 0, 0,..., 8 es resuelto entre la primera fija y la de tipo 4,
+ajustando el punto final de la primera fija, el punto inicial de la de
+tipo 4 (que entonces actúa como fija) y la longitud de estas dos y de
+la flotante.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="convertir_fijos">Convertir los datos del calculador en fijos</a></span><br />
+      <br />
+      <img style="width: 105px; height: 88px; margin-left: 7px;" alt="" src="Imagenes/conv_fijas.png" align="right" />Al
+pulsar cualquiera de las dos teclas queda establecido que en el
+siguiente cálculo de eje se utilicen para la alineación actual (bien
+para el punto inicial, el final o los dos), los datos de la alineación
+calculados por la aplicación (tangencias exactas) en lugar de los datos
+iniciales. <br />
+      <br />
+Según se hayan pulsado x1,y1 ó x2,y2 en el menú aparecerán, <span style="font-weight: bold;">X1</span>,<span style="font-weight: bold;">Y1</span> ó <span style="font-weight: bold;">X2</span>,<span style="font-weight: bold;">Y2</span> (en mayúsculas)<span style="font-weight: bold;">.</span> Un nuevo pulsado lo desactiva, apareciendo como <span style="font-weight: bold;">x1</span>,<span style="font-weight: bold;">y1</span> ó <span style="font-weight: bold;">x2</span>,<span style="font-weight: bold;">y2</span> (en minúsculas).<br />
+      <br />
+En el siguiente cálculo, las coordenadas del punto de tangencia de entrada o salida calculado pasarán a los campos <span style="font-weight: bold;">X1</span>, <span style="font-weight: bold;">Y1</span>, <span style="font-weight: bold;">X2</span> e <span style="font-weight: bold;">Y2</span> respectivamente. Sólo funciona una vez, y la orden <span style="font-weight: bold;">[Calcular]</span>, además de copiar las coordenadas, desactiva estas dos órdenes.<br />
+      <br />
+Si se pulsan ambas opciones, después del cálculo es posible cambiar el
+TIPO de la alineación a 0, lo que permite fijar alineaciones <a href="#flotante">flotantes</a>.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="conexiones">Conexiones entre ejes</a></span><br />
+      <br />
+Generalmente, en un proyecto existen dependencias entre varios ejes (entronques, cruces,...). ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite declarar estas dependiencias a través de las <a href="OL_planta_conexiones.html">conexiones</a> que en realidad son un tipos especiales de alineaciones fijas.<br />
+<br />
+      <br />
+      <span class="Titulo_2"><a name="libertad">Grados de libertad y errores frecuentes en el trazado en planta</a></span><br />
+      <br />
+
+El usuario debe tener presente que los datos de entrada al programa
+deben provocar una solución geométrica que garantice las condiciones de
+continuidad y tangencia del trazado sin ambigüedad alguna, es decir,
+debe evitar el mal uso de los tipos de alineación del programa.<br />
+      <br />
+Para que el algoritmo calculador de ejes pueda resolver la tangencia
+entre dos alineaciones sucesivas, debe tener ciertos grados de
+libertad, de modo que pueda "mover" una de las dos. Esto implica que,
+salvo en el caso de proyectos de tuberías, canales u otros casos
+particulares, no se debe plantear un eje con alineaciones fijas
+seguidas. Así, por ejemplo, una <a href="#flotante">alineación flotante</a> puede ser "movida" por el calculador hasta hacerla tangente a la alineación anterior y a la siguiente.<br />
+      <br />
+El problema de los grados de libertad entre alineaciones sucesivas puede resumirse en el siguiente principio:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic; font-weight: bold;">"En el punto de tangencia entre dos alineaciones sucesivas, una y sólo una de las dos fija la posición (aporta coordenadas)."</span><br />
+      </div>
+      <br />
+En base a este principio, las siguientes soluciones son correctas:<br />
+      <br />
+      <table style="text-align: left; width: 640px; height: 174px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 30px; height: 32px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" />
+            </td>
+            <td style="width: 590px; text-align: justify; height: 32px;">Una alineación <a href="#fijas">fija</a>, seguida de una <a href="#flotante">flotante</a> y otra <a href="#fijas">fija</a>.
+Entre la primera y la segunda, la posición la fija la primera, y entre
+la segunda y la tercera, la tercera es la que fija la posición.<br />
+
+            </td>
+          </tr><tr>
+            <td style="vertical-align: middle; height: 27px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /><br />
+            </td>
+            <td style="height: 27px; width: 590px;">Una alineación <a href="OL_planta_alineaciones.html#fijas">fija</a> seguida de dos <a href="OL_planta_alineaciones.html#giratoria">giratorias</a>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; height: 17px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+            <td style="height: 17px; width: 590px;">Una alineación <a href="OL_planta_alineaciones.html#retrogiratoria">retrogiratoria</a> seguida de una <a href="OL_planta_alineaciones.html#fijas">fija</a>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; height: 37px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+            <td style="height: 37px; width: 590px;">Una <a href="OL_planta_alineaciones.html#fijas">fija</a> seguida de otra de <a href="OL_planta_alineaciones.html#enlace">enlace</a>,
+pues la fija aporta coordenadas a la segunda, de modo que el conjunto
+se ve por las alineaciones anteriores o posteriores como fijo.<br />
+</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br />
+En cambio, soluciones incorrectas (y fallos habituales) son las siguientes:<br />
+
+      <br />
+
+      
+      <table style="text-align: left; width: 640px; height: 174px; margin-left: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 30px; height: 32px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /><br />
+
+            </td>
+            <td style="width: 590px; text-align: justify; height: 32px;">Un eje cuya penúltima alineación es una <a href="OL_planta_alineaciones.html#fijas">fija</a> y la última es <a href="OL_planta_alineaciones.html#flotante">flotante</a>. En este caso el problema es indeterminado (tiene infinitas soluciones). Si a la <a href="OL_planta_alineaciones.html#flotante">flotante</a> se le define un punto de paso (P2) entonces se convierte en <a href="OL_planta_alineaciones.html#giratoria">giratoria</a>, quedando el problema resuelto.
+
+            </td>
+          </tr><tr>
+      <td style="vertical-align: middle; height: 27px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" />
+      </td>
+      <td style="height: 27px; width: 590px;">Dos alineaciones <a href="OL_planta_alineaciones.html#enlace">flotantes</a> seguidas, pues ninguna aporta coordenadas.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; height: 17px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+      <td style="height: 17px; width: 590px; text-align: justify;">Dos alineaciones <a href="OL_planta_alineaciones.html#fijas">fijas</a> seguidas, pues ambas aportan coordenadas, salvo que se declare una <a href="OL_planta_curvas_transicion.html">curva de acuerdo</a> entre ambas.<br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; height: 37px; width: 30px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+      <td style="height: 37px; width: 590px;">Una <a href="OL_planta_alineaciones.html#retrogiratoria">retrogiratoria</a> seguida de una <a href="OL_planta_alineaciones.html#flotante">flotante</a>.</td>
+    </tr>
+
+        </tbody>
+      
+      </table>
+
+      <br />Esquemáticamente, si <span style="font-weight: bold;">X</span> representa un punto de coordenadas conocidas y con <span style="font-weight: bold;">O</span> un punto sin coordenadas conocidas, pueden darse las siguientes combinaciones:<br />
+      <br />
+      
+      <table style="text-align: left; height: 219px; width: 400px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="text-align: center; width: 172px;"><span style="font-weight: bold; font-style: italic;">Esquema</span><br />
+            </td>
+            <td style="width: 143px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Interpretación</span><br />
+            </td>
+            <td style="width: 60px; text-align: center;"><span style="font-weight: bold; font-style: italic;">Validez</span><br />
+            </td>
+          </tr>
+<tr>
+            <td style="width: 172px; height: 17px; font-weight: bold;">X - - - - X&nbsp; O - - - - O X - - - - X<br />
+
+            </td>
+            <td style="width: 143px; text-align: justify; height: 17px;">Fija, flotante, fija<br />
+</td><td style="width: 60px; height: 17px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+
+          </tr><tr>
+      <td style="height: 14px; width: 172px; font-weight: bold;">X - - - - X&nbsp; O - - - - X O - - - - X
+      </td>
+      <td style="height: 14px; width: 143px;">Fija, giratoria, giratoria<br />
+</td><td style="width: 60px; height: 14px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+
+    </tr>
+    <tr>
+      <td style="height: 16px; width: 172px; font-weight: bold;">X - - - - O X - - - - X</td>
+      <td style="height: 16px; width: 143px;">Retrogiratoria, fija<br />
+</td><td style="width: 60px; height: 16px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_OK.png" /></td>
+
+    </tr>
+    <tr>
+      <td style="height: 16px; width: 172px; font-weight: bold;">X - - - - X&nbsp; X - - - - X</td>
+      <td style="height: 16px; width: 143px;">Fija, fija<br />
+</td><td style="width: 60px; height: 16px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+
+    </tr><tr>
+            <td style="height: 25px; font-weight: bold; width: 172px;">X - - - - X&nbsp; O - - - - O O - - - - X</td>
+            <td style="height: 25px; width: 143px;">Fija, flotante, giratoria<br />
+            </td>
+            <td style="height: 25px; width: 60px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+          </tr>
+          <tr>
+            <td style="height: 23px; font-weight: bold; width: 172px;">X - - - - X&nbsp; O - - - - O</td>
+            <td style="height: 23px; width: 143px;">Fija, flotante (final de eje)<br />
+            </td>
+            <td style="height: 23px; width: 60px; text-align: center;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_no_OK.png" /></td>
+          </tr>
+
+
+        </tbody>
+      
+      </table>
+<br />
+      Es decir, en el punto de tangencia entre dos alineaciones son válidas las combinaciones <span style="font-weight: bold;">XO</span> y <span style="font-weight: bold;">OX</span>, pero no <span style="font-weight: bold;">OO</span> ni <span style="font-weight: bold;">XX</span> por falta o exceso de datos respectivamente.<br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 33px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 606px;">La combinación XX queda compensada en grados de libertad si entre cada alineación fija se declara una <a href="OL_planta_curvas_transicion.html">curva de acuerdo</a> (clotoide) cuyo parámetro entonces es calculado por el programa, pues su solución es única.</td>
+          </tr>
+        </tbody>
+      </table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+
+<br />
+
+<br />
+
+</body></html>

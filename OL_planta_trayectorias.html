@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Análisis de trayectorias</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PLANTA: ANÁLISIS DE TRAYECTORIAS DE VEHÍCULOS
+A BAJA VELOCIDAD<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px; height: 2040px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <img src="Imagenes/acceso_trayectorias.png" style="width: 194px; height: 134px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Este menú, disponible desde el menú vertical de PLANTA &#8594; <span style="font-weight: bold;">[DIBUJO PLANTA]</span> &#8594; <span style="font-weight: bold;">[TRAYECTORIAS]</span>,
+permite el cálculo de trayectorias de giro de vehículos a baja
+velocidad (cálculo de las trayectorias de las ruedas delanteras y de
+las traseras así como de las esquinas del vehículo).<br />
+      <br />
+      </span><img src="Imagenes/trayectorias.png" style="width: 263px; height: 189px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Se
+puede definir un vehículo de hasta doce unidades articuladas (útil, por
+ejemplo, para el estudio de trayectorias de trenes de carritos de
+equipaje en aeropuertos).<br />
+      <br />
+      </span><span class="Parrafo">El dibujo generado por la aplicación
+puede ser modificado si se cambian los tipos de líneas asociados a cada
+elemento, como se puede ver en el cuadro de diálogo.<br />
+<br />
+      Se&nbsp; la casilla&nbsp;<span style="font-weight: bold;">Automático</span>.
+De este modo si en planta modificamos el eje, arrastrando alguno de sus
+puntos calientes o cambiando algún parámetro, no es necesario pulsar el
+icono de&nbsp;<span style="font-weight: bold;">Generar</span> (trayectoria) y ésta se recalcula automáticamente al recalcularse el eje.<br /><br />Se pueden emplear varios tipos de vehículos (carreteras, ferrocarrilles), y por tanto puede haber varios modos para el cálculo:<br /><br /></span><div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/trayectorias_modos_carre_ffcc_tranv.png" style="width: 250px; height: 89px;" alt="" /></span><br /><span class="Parrafo" /></div><span class="Parrafo"><br />1) Carreteras.<br />2) Ferrocarriles.<br />3) Tranvías con vagones suspendidos: Están constituidos por un número impar de unidades (p.e: 5)<br /></span><ul><li><span class="Parrafo">Las impares (1,3 y 5) van sobre um único bogie rigido con el vagón.</span></li><li><span class="Parrafo">Las pares (2 y 4) van suspendidas entre el vagón anterior y el siguiente.</span></li><li><span class="Parrafo">Al
+seleccionar este modo, se muestra un nuevo modelo con los parámetros
+necesarios. En el cuadro de dialógo aparecen editables solamente los
+datos que definen cada unidad en función de su posición.</span></li></ul>Para
+definir la trayectoria que seguirá el punto medio del eje delantero
+(configuración por defecto) de la primera unidad, se proporcionan los
+siguientes datos: <br />
+
+      
+      
+      <ul>
+
+        <li><span class="Parrafo">Una equidistancia para cada paso de integración, es decir, cada cuánto se realiza un cálculo (<span style="font-weight: bold;">Equid</span>).</span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo">Cada cuántos pasos de integración se desea dibujar el vehículo. Así, si se ha definido <span style="font-style: italic;">0.1</span> metros en el valor <span style="font-weight: bold;">Equid</span>, y <span style="font-style: italic;">100</span> en <span style="font-weight: bold;">Dibujar cada</span>, entonces se dibujará el vehículo cada 10 metros.</span></li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo">Número de eje (<span style="font-weight: bold;">EJE</span>), distancia al eje (<span style="font-weight: bold;">Dis</span>), <span style="font-weight: bold;">PK inicial</span> y <span style="font-weight: bold;">PK final</span> de estudio. Si se indica un PK inicial superior al PK final, entoneces el análisis se realiza recorriendo el eje en <span style="font-weight: bold;">sentido contrarrio</span>.<br />
+          </span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><div style="text-align: center;"><img src="Imagenes/dialogo_trayectorias.png" style="width: 620px; height: 259px;" alt="" /><span class="Parrafo">&nbsp;</span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/modelo_trayectorias.png" style="width: 412px; height: 259px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">La primera unidad se define por:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">El ancho.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La distancia entre eje delantero y eje trasero.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">El vuelo entre el eje delantero y el paragolpes.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La posición del conector para la siguiente unidad desde el eje trasero.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un vuelo por detrás de las ruedas traseras.</span></li>
+      </ul>
+      <span class="Parrafo"><br />
+Las siguientes unidades se definen por:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Longitud equivalente entre el punto de conexión con la unidad anterior y su eje trasero.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La posición del conector para la siguiente unidad desde el eje trasero.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un vuelo por delante del punto de enganche.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un vuelo por detrás de las ruedas traseras.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un ancho independiente.</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/trayectorias_radiominimo.png" style="width: 225px; height: 204px;" alt="" align="right" hspace="5" /></span></span></span></span></span></li>
+      </ul></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+La opción <span style="font-weight: bold; font-style: italic;">Azimut</span>
+permite iniciar el cálculo con un azimut fijo definido por el usuario
+para cada una de las unidades. Si está desactiva, todas las unidades
+arrancan alineadas con el azimut inicial. Los valores de azimut se
+rellenan automáticamente con la última posición calculada de cada
+unidad, lo que facilita <span style="font-weight: bold;">encadenar</span> cálculos sucesivos de trayectorias.</span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Un giro máximo para las ruedas traseras de
+cada unidad así como una velocidad máxima de giro de estas ruedas en
+grados sexagesimales/metro (<span style="font-weight: bold;">dG/m</span>).</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></li>
+      </ul></span></span>
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Radio mínimo</span>:
+posibilidad de definir el radio mínimo de giro del vehículo. El radio
+mínimo de giro se define desde el centro de la trayectoria hasta el
+centro de su eje director (por lo general, el eje delantero).<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+        </span></span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo">
+
+      <span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="color: black;">Es posible definir la trayectoria del vehículo de varios modos, los mostrados en la imagen siguiente:</span><br /><br /></span></span></span>
+      <div style="text-align: left;"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/trayectorias_modos.png" style="width: 245px; height: 163px;" alt="" /></span></span></span><br /></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+      <span class="Parrafo"><span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo" /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="color: black;"><br /><br />Existe un modo de <span style="font-weight: bold;">Conducción interactiva</span>
+del vehículo. &nbsp;Una vez seleccionado el eje y rango de PKs, el
+vehículo por sus dimensiones o por plantilla&nbsp; y la creación o no
+de la envolvente; seleccionamos el modo de conducción interactiva y
+pulsamos&nbsp;<span style="font-weight: bold;">Generar</span>. Se abre un cuadro de diálogo de ayuda con las funciones asociadas al teclado:<br /><br /></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/trayectorias_cond_interac.png" style="width: 350px; height: 268px;" alt="" /></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se puede seleccionar el Modo de conducción del piloto automático:<br /></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia al eje.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia al borde de la calzada.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia del morro al borde de la calzada.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia del morro al eje.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia al borde derecho.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Distancia al borde izquierdo.<br /></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Si
+el vehículo tiene alguna unidad con las ruedas traseras direccionables,
+estas serán guiadas por el Piloto Automático. Al pulsar&nbsp;<span style="font-weight: bold;">Aceptar</span> se inicia la simulación. Pulse el acelerador para iniciar el movimiento. Si ha activado&nbsp;<span style="font-weight: bold;">Crear envolvente</span>, esta se generará al finalizar el estudio.<br /><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Ejes activo</span>s:
+genera el estudio de trayectorias simultanemente para todos los ejes
+activos. Además, las líneas que se generan en el cálculo de
+trayactorias para un eje o para todos los ejes activos se crean en el
+modelo de su eje.</span></span></span><span class="Parrafo"><br />
+
+      <br />
+
+      <img src="Imagenes/marcha_atras.png" style="width: 225px; height: 56px;" alt="" align="right" hspace="5" />Se da la posibilidad de realizar el recorrido <span style="font-weight: bold;">marcha atrás</span>.
+En este caso es el punto central del eje trasero de la última unidad,
+el que trata de seguir al eje (o la paralela), manteniendo esta última
+unidad tangente a la trayectoria en ese punto. No se consideran giros
+de las ruedas salvo las ruedas delanteras de la primera unidad.<br />
+
+
+      <br />
+
+
+Por cada unidad se dibuja, con los <span style="font-weight: bold;">tipos de línea</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">especificados por el usario, </span><span class="Parrafo">las siguientes líneas:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Las trayectorias de las cuatro esquinas y </span><span class="Parrafo">de los puntos de interés de las
+unidades.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Las ruedas delanteras de la primera unidad.</span></li>
+      </ul>
+
+      
+      <ul>
+<li><span class="Parrafo">Las ruedas traseras de todas las unidades.</span></li>
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo">Un recinto que engloba
+la posición de las cuatro ruedas (primera unidad) o las ruedas traseras
+y el enganche (unidades 2, 3,4,...,12).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Otro recinto que engloba las cuatro esquinas de cada unidad teniendo en cuenta los voladizos traseros y delanteros.</span></li>
+      </ul>
+      
+      <ul>
+        <li><span class="Parrafo">Una línea con la trayectoria de un
+punto por cada lado a la mitad de la longitud Li (por defecto se usa el
+tipo de línea -1, lo que significa que no se dibujarán).<br />
+          </span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si se activa la opción <span style="font-weight: bold; font-style: italic;">Crear envolvente</span>
+se crea también una línea envolvente de todas las líneas que se
+dibujan. La envolvente no sólo abarca las líneas que se dibujan, sino
+que incluye a todas las unidades que constituyen el vehículo en todasu extensión. <br />
+</span></li>
+      </ul></span></span>
+      
+      <div style="margin-left: 40px;">Posibilidad de modificar y
+guardar el tipo de línea para la envolvente de la trayectoria. Por
+defecto la línea que engloba la envolvente es la L74.<br />
+      </div>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Si se activa la opción <span style="font-weight: bold; font-style: italic;">Envolvente alzado</span> se tiene la posibilidad de definir para cada unidad una altura desde el suelo hasta la panza del vehículo (<span style="font-weight: bold;">Hi</span>), calculándose entonces la envolvente en alzado como un longitudinal (<span class="Archivo">tray#.lon</span>, siendo&nbsp;<span class="Archivo">#</span> el número) que se puede cargar en <a href="OL_rasantes_diseno.html">RASANTES</a> y que contiene en cada PK el punto más próximo al suelo alcanzado en cualquier parte de la panza de cualquier unidad. <br />
+</span></li>
+      </ul>Activando la casilla <span style="font-weight: bold;">Ferrocarriles</span>, el programa actua de la siguiente forma:<br />
+      </span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo">Las ruedas traseras pueden girar libremente, siguiendo la trayectoria de las </span></span><span class="Parrafo"><span class="Parrafo">delanteras por la vía para ello se fijan los siguientes parámetros:<br /></span></span>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Se establecen los valores de giro maximo de las ruedas traseras Gi=90.</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+Se fija una velocidad máxima de giro de estas ruedas&nbsp; dG/m=90.</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+El radio mínimo de giro = 0.;</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+El modo de recorrido sólo puede ser por el eje o a una distancia del eje.</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">
+No es aplicable el algoritmo de marcha atras.(Implica ruedas traseras rígidas).</span></span></li>
+          </ul>
+        </li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo">
+</span></span></span>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Mediante el comando <span style="font-weight: bold; font-style: italic;">Plantillas</span> podremos acceder a un cuadro de diálogo con siete tipos de vehículos con sus correspondientes parámetros:<br />
+            <ul>
+              <li>Turismo</li>
+              <li>Furgón</li>
+              <li>Autobús Rígido</li>
+              <li>Autobús Articulado</li>
+              <li>Camión Ligero</li>
+              <li>Vehículo Articulado</li>
+              <li>Tren de Carretera</li><li>Tren</li><li>Transporte de Palas</li><li>Camión minero</li>
+            </ul>
+Pulsando la casilla <span style="font-weight: bold;">Aceptar</span> cargaremos los datos del vehículo en el cuadro de diálogo de TRAYECTORIAS.<br />
+Al cargar un plantilla, se refleja el tipo del vehículo elegido en el cuadro de diálogo principal.<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/dialogo_trayectorias_plantillas.png" style="width: 225px; height: 135px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 566px; height: 345px;" alt="" src="Imagenes/dialogo_trayectorias_turismo.png" /><br />
+      <br />
+</span></span></span>
+      
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+      <span class="Titulo_2">Zonas restringidas</span><br />
+      <br />
+La pestaña <span style="font-weight: bold;">[ZONAS RESTRINGIDAS]</span> permite definir tramos </span><span class="Parrafo">obligados
+para la circulación de la cabeza tractora del vehículo, lo que resulta
+muy últi, por ejemplo, cuando el vehículo ha de pasar por una
+estructura existente como un puente. Los tramos obligados se dan por su
+PK inicial y final así como una distancia al eje en dichos PKs.<br />
+      <br />
+Se puede limitar el ángulo maximo de giro de las ruedas traseras <span style="font-weight: bold;">Gi</span>, dando un valor máximo por zonas.<br />
+      <br />
+</span></span></span>
+      
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/zonas_rest.png" style="width: 669px; height: 282px;" alt="" /></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></div>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      <span class="Titulo_2">Geometría libre</span><br />
+      <br />
+</span></span></span><img src="Imagenes/trayectorias_geometria_libre.png" style="width: 337px; height: 130px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El programa permite usar para cada unidad una <span style="font-weight: bold;">geometría libre</span> en planta definida por un recinto cerrado en lugar de los rectángulos que se usan por defecto.<br />
+      <br />
+La opción <span style="font-weight: bold;">[Copiar caja]</span> vuelca
+dicho recinto rectangular de ancho A y largo la suma del vuelo
+delantero (V), la longitud entre ejes (L) y el vuelo trasero (T).<br />
+      <br />
+Este polígono se puede <span style="font-weight: bold;">editar</span>
+numérica o gráficamente utilizando como eje X el eje de simetría del
+vehiculo con origen en el eje delantero y como eje Y el eje delantero.
+Dicho polígono es utilizado:<br />
+      </span></span></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para dibujar el vehículo en las distintas posiciones.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para calcular la envolvente en planta de la trayectoria. <br />
+</span></span></span></li>
+      
+      </ul>
+      <span class="Titulo_2">Geometría libre Alzado</span><br />
+
+      <br />
+
+Posibilidad de definir para cada unidad una geomtría libre en alzado,
+de la parte de abajo de cada unidad (excluyendo las ruedas), para
+generar la envolvente de alzado con más precisión.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/geo_lib_alzado.png" style="width: 669px; height: 282px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <span class="Titulo_2">Notas</span><br />
+
+      <br />
+
+Si en este cuadro de diálogo se han introducido datos para un cálculo de trayectorias:<br />
+
+      
+      <ul>
+
+        <li>Eje válido</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Pk inicio distinto de Pk final</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Equidistancia mayor que cero.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Al menos una Unidad.</li>
+      
+      </ul>
+
+Entonces junto a las teclas de cálculo del eje en planta aparece un
+icono que permite generar la trayectoria de forma inmediata tras
+cualquier modificación de los ejes además de otro icono junto a este para poder borrar los dibujos de la trayectoria.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/try_vehi.png" style="width: 624px; height: 147px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <br />
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

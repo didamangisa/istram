@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Diseño de la planta</title>
+
+<link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table style="width: 700px; height: 1px;" border="0" cellpadding="0">
+
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+<a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+<a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>DISEÑO DE LA PLANTA<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="height: 1782px; width: 694px;" border="0" cellpadding="0">
+
+<tbody>
+<tr>
+<td class="Parrafo"><br />
+<span class="Parrafo">Este capítulo está dividido en los
+siguientes apartados:<br />
+<br />
+</span>
+
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades">Generalidades</a><br />
+</span>
+<div style="margin-left: 40px;"><a href="#modos_visualizacion"><span class="Parrafo">Dos modos de visualizar el cuadro de diálogo</span></a><br />
+<span class="Parrafo"></span></div>
+
+<span class="Parrafo"><a href="#descripcion_dialogo">Descripción
+del cuadro de diálogo</a></span><br />
+<span class="Parrafo"></span></div><div style="margin-left: 80px;"><span class="Parrafo"><a href="#navegador_alineaciones">Navegador de alineaciones</a><br />
+<a href="#tipologia_alineaciones">Tipología de alineaciones</a><br />
+</span><span class="Parrafo"><a href="OL_planta_diseno.html#def_ali">Definición de los datos de cada alineación</a><br />
+</span>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#radios">Declaración de radios</a></span><br />
+<span class="Parrafo"><a href="#curvas_trans">Declaración de curvas de transición</a><br />
+      <a href="#generacion_pi">Generación e inserción de alineaciones a partir de PI</a><br />
+</span>
+<span class="Parrafo"><a href="#normativa">Normativa</a></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<span class="Parrafo"></span></span></div>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#modif_dinamica">Modificación dinámica o en tiempo real</a></span><br />
+<span class="Parrafo"><a href="#calculo">Cálculo, resolución
+geométrica y listados</a><br />
+</span>
+<div style="margin-left: 40px;"><span class="Parrafo"><a href="#errores_geom">Control de errores geométricos</a></span><br />
+<span class="Parrafo"><a href="#listados">Generación de listados</a></span><br />
+<span class="Parrafo"><a href="#dibujo_ejes">Dibujo de los ejes</a></span><br />
+<span class="Parrafo"></span></div>
+
+<span class="Parrafo"></span></div>
+      <div style="margin-left: 40px;"><a href="OL_tanteo_de_rasantes.html"><span class="Parrafo">Tanteo de Rasantes</span></a><br />
+      <a href="OL_regresion.html">Regresión</a><br /><a href="#Ajustar_a_una_linea">Ajustar a una línea</a><br />
+      </div>
+      <span class="Parrafo">
+<br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+<span class="Parrafo"><br /></span>
+<div style="text-align: justify;"><span class="Parrafo">El
+menú de diseño PLANTA permite definir los ejes en planta. Cada eje estará formado por
+alineaciones (rectas y circulares) y acuerdos horizontales (clotoides).</span><br />
+<span class="Parrafo">
+</span><br />
+<span class="Parrafo">
+Este menú aparece al acceder al módulo de OBRA LINEAL. Al
+entrar en él, el programa muestra la misma vista de la cartografía que había antes
+de entrar, con la direrencia de que el entorno de
+trabajo también muestra los menús de diseño de la planta adecuados para
+tal fin:</span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 550px; height: 459px;" alt="" src="Imagenes/diseno_planta.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+
+El cuadro de
+diálogo donde se definen las alineaciones es similar para los proyectos
+de carreteras y ferrocarriles, existiendo uno específico para proyectos
+de tuberías aunque nada impide usar también éste.<br />
+<br />Las opciones de visualización de los ejes y
+otras opciones, como los colores empleados en el <a href="OL_planta_normativa.html#repaso_norma">repaso de la norma</a>,
+son configuradas mediante la configuración ofrecida por el cuadro de
+diálogo <a href="OL_planta_opciones_visualizacion.html">[OPCIONES]</a>,
+accesible desde el menú lateral fijo. <br />
+<br />
+<br />
+</span><a style="font-weight: bold; font-style: italic;" name="modos_visualizacion"><span class="Parrafo">Dos modos de visualizar del cuadro de diálogo</span></a><br />
+<span class="Parrafo"><br />
+Por defecto se muestra un menú &#8216;corto&#8217; que posee dos pestañas: EJES y
+ALINEACIONES. Cada una de ellas permite visualizar y definir las dos
+áreas de información.<br />
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 582px; height: 134px;" alt="" src="Imagenes/dialogo_planta_ejes.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 582px; height: 147px;" alt="" src="Imagenes/dialogo_planta_alineaciones.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+Desde el menú fijo se
+puede cambiar a la forma menú largo en la que se muestran conjuntamente
+los datos de ambas pestañas. Este cambio de visualización de la ventana
+se realiza desde las <a href="OL_planta_opciones_visualizacion.html#menu_largo">opciones de visualización de planta</a>:<br />
+<br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 582px; height: 210px;" alt="" src="Imagenes/dialogo_planta.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo">
+<br />
+Será el usuario quien debe decidir con qué modo de visualización de
+planta prefiere trabajar, pudiéndose en cualquier fase del diseño
+permutar entre un modo u otro.<br />
+</span><span class="Parrafo"><br />
+Mediante las casillas <img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" />, <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />, <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /> situadas en la parte superior de este menú podremos descargar, cargar o guardar respectivamente un fichero&nbsp;<span class="Archivo">.pol&nbsp;<span class="Parrafo">o un fichero&nbsp;<a href="OL_proyecto.html#archivos_isa"><span class="Archivo">.isa</span></a></span></span>. El fichero&nbsp;<span class="Archivo">.pol</span> es el índice del proyecto de obra lineal. Este fichero relaciona el resto de ficheros del <a href="OL_proyecto.html">proyecto</a> de obra lineal.<br />
+      <br />
+</span><span class="Parrafo">Mediante las casillas <img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" />, <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />, <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /> situadas justo al lado del nombre del fichero de planta podremos descargar, cargar o guardar respectivamente un fichero&nbsp;<span class="Archivo">.cej</span> en el cual estarán recogidos los distintos ejes de mi proyecto.</span><br />
+      <span class="Parrafo">
+<br />
+      </span><span class="Titulo_2"><a name="descripcion_dialogo">Descripción
+del cuadro de diálogo</a></span><br />
+<span class="Parrafo"> <br /></span>
+<table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;"><span class="Parrafo Info">La descripción que se desarrolla a continuación se corresponde con el cuadro de diálogo en el <a href="OL_planta_diseno.html#modos_visualizacion">modo</a> <span style="font-style: italic;">largo</span>, siendo todas las explicaciones similares para el otro <a href="OL_planta_diseno.html#modos_visualizacion">modo</a>.</span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+</span><span class="Parrafo">La selección del eje con el que se va a trabajar se
+efectúa utilizando el deslizador horizontal <span style="font-weight: bold;">EJE</span> o bien tecleando directamente su número tras pulsar el botón <span style="font-weight: bold;">[EJE: i/n]</span>.
+Este botón tiene un comportamiento especial tal que: <br /><br /></span><ul><li><span class="Parrafo">Si se introduce un número de eje mayor al del último existente
+(i&gt;n), se crea un nuevo eje con el número siguiente al del último.</span></li><li><span class="Parrafo">Si
+se se introduce un número de eje i tal que i&gt;(n+1) se pueden crear
+los ejes intermedios. Por ejemplo si tenemos 5 ejes e introducimos un
+número mayor que 6, (p.e. 10), se nos preguntará:</span></li><ul><li><span class="Parrafo">¿Desea crear los ejes intermedios (6-9) vacíos?</span></li><li><span class="Parrafo">Si respondemos que NO se añadirá el eje 6.</span></li><li><span class="Parrafo">Si respondemos SÍ se crearán los ejes intermedios 6,7,8,9 y 10, quedando este último como eje actual.<br /></span></li></ul></ul><span class="Parrafo"><br />
+</span><span class="Parrafo">El botón <span style="font-weight: bold;">[Añadir]</span>
+permite también crear un nuevo eje a continuación del último definido.
+Es preciso tener en cuenta que el eje número 1 se crea automáticamente,
+así que, si al entrar en PLANTA se usa esta opción, entonces se creará
+el eje número 2 quedando el 1 vacío.<br /></span><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><br />
+Es posible asociar un nombre para el
+eje en alzado, que se guardará en el fichero&nbsp;<span class="Archivo">.cej</span>.
+Este nombre descriptivo se introduce en el espacio reservado a la
+derecha del botón que permite introducir el número de eje.<br />
+</span><span class="Parrafo"><br />
+</span>
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 575px; height: 207px;" alt="" src="Imagenes/selec_eje_planta.png" /></span><br />
+<span class="Parrafo"></span></div>
+<span class="Parrafo"><span class="Parrafo"><br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top; height: 5px; font-weight: bold;"><span class="Parrafo">PKorg</span></td>
+	<td style="vertical-align: top; height: 5px; text-align: justify;"><span class="Parrafo">Permite
+definir o modificar el valor asignado como punto kilométrico (PK) de
+inicio del eje actual, es decir, al primer punto dato de la primera
+alineación del eje actual (PK origen). Por defecto todos los ejes
+comienzan en el PK 0, sin embargo este valor puede ser positivo,
+negativo y con o sin decimales.<br />
+	<br />
+</span></td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; height: 8px; font-weight: bold;"><span class="Parrafo">Grupo</span><br />
+</td>
+	<td style="vertical-align: top; height: 8px; text-align: justify;"><span class="Parrafo">Permite
+agrupar ejes que tengan unas determinadas características comunes. Por
+ejemplo con un mismo número todos aquellos que forman un enlace y
+reservar para el tronco el grupo 0.<br />
+	<br />
+Por defecto el programa asigna el grupo 0 al eje número1 y el grupo 1
+al resto de ejes del proyecto. Desde aquí se asigna solamente el número
+de grupo al que pertenece un eje, pero en el <a href="OL_grupos.html">menú específico de grupos</a>,
+disponible tanto en el menú vertical de PLANTA como desde ALZADO, se
+pueden activar y desactivar grupos a la hora de hacer cálculos
+completos del proyecto. Al representar las alineaciones en planta
+solamente se dibujarán las de los ejes que estén en grupos activos.<br />
+	<br />
+</span></td>
+  </tr><tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;"><a name="Vp">Vp</a></span>
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Este campo permite asignar la <span style="font-weight: bold;">velocidad de proyecto</span>, que por defecto es de 80 km/h. Esta velocidad se guarda en el fichero&nbsp;<span class="Archivo">.cej</span> junto a la definición geométrica del eje para poder ser utilizada por otras funciones, así como en las <a href="OL_planta_normativa.html">tablas&nbsp;<span class="Archivo">.dip</span> de diseño de planta</a> y que se asocian a cada eje desde la <a href="OL_general.html">pestaña GENERAL</a>.<br />
+	</td>
+  </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Primera curva</span><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo">Especifica el número para
+identificar la primera curva del eje. La nueva numeración se
+reflejará en los listados&nbsp;<span class="Archivo">ceje.res</span> y en la pantalla gráfica.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Primera alineación</span><br />
+            </td>
+            <td style="vertical-align: top;">Especifica el número para identificar la primera alineación del eje. La nueva numeración se reflejará en los listados&nbsp;<span class="Archivo">ceje.res</span> y en la pantalla gráfica.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">No numerar PI</span><br />
+            </td>
+            <td style="vertical-align: top;">Disponemos en la pestaña Planta-&gt;Eje, la opción de no númerar los puntos de inflexión entre dos rectas como curvas.<br />
+            </td>
+          </tr>
+
+
+
+</tbody>
+</table>
+</span><br />
+<span class="Parrafo"><img style="width: 242px; height: 139px; margin-left: 7px;" alt="" src="Imagenes/dibujar_anchos.png" align="right" /><span class="Parrafo"><span class="Parrafo"><a name="dib_lin_paral">Desde los campos <span style="font-weight: bold;">I</span> y <span style="font-weight: bold;">D</span>
+se pueden asignar las distancias desde el eje para dibujar
+automáticamente hasta 6 líneas, tres a la derecha del eje y tres a la
+izquierda, de forma que si se encuentra activada la representación de
+anchos en las </a><a href="OL_planta_opciones_visualizacion.html#dibujar_anchos">opciones de visualización</a>,
+con cada cálculo se dibujarán estas paralelas al eje simulando, por
+ejemplo, los teóricos anchos de la calzada y el arcén. Por defecto, la línea que se utiliza para dibujar estos
+anchos es la 401, aunque es configurable desde el campo <span style="font-weight: bold;">TipoL</span>.<br />
+      <br />
+Si activamos la opción <a href="OL_Planta_Opciones_Visualizacion.html#dibujar_entronques">Entronques</a>
+entre las opciones de Planta, se deben configurar estas distancias para
+la correcta visualización de los puntos característicos de los
+entronques.<br />
+<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 188px; height: 35px;" alt="" src="Imagenes/opc_dibujar_anchos_planta.png" /></span></span></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span></span></span>
+<table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 30px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td style="vertical-align: middle; width: 607px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Info">Estos anchos son orientativos, en ningún caso se calculan sobreanchos ni se realizan interpolaciones.</span></span></span></span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span><span style="font-weight: bold; font-style: italic;"><a name="navegador_alineaciones">Navegador de
+alineaciones</a></span><br />
+<span class="Parrafo"> <br />
+</span></span></span><img style="width: 124px; height: 68px;" alt="" src="Imagenes/navegador_ali_planta.png" align="right" hspace="4" />El
+navegador de alineaciones permite seleccionar la alineación del eje a
+definir o modificar, además de borrar e insertar datos. Por defecto
+siempre hay un dato, aunque esté vacío.<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+La selección de una alineación también puede ser gráfica, haciendo clic
+sobre ella. Si se selecciona una alineación de otro eje, el programa
+cambia automáticamente de eje.</span><span class="Parrafo"><br />
+<br />
+<table style="text-align: left; width: 692px; height: 91px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">[-]<br />
+[+]</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Estos
+botones permiten 'navegar' por las alineaciones del eje actual de forma
+consecutiva hacia atrás y y hacia delante respectivamente.<br />
+<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">[ALI: i/n]</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Informa del número de la alineación actual <span style="font-style: italic;">i</span> dentro del eje actual y del número total <span style="font-style: italic;">n</span>
+de alineaciones del eje. También permite seleccionar directamente la
+que se desee, pues al pulsar esta tecla pide el número de la alineación
+a la que se desea ir. Si se suministra un número superior al de
+alineaciones, el sistema añade una nueva.<br />
+<br />
+	</td>
+  </tr>
+<tr>
+	<td style="vertical-align: top; height: 5px; font-weight: bold;">[Añadir]</td>
+	<td style="vertical-align: top; height: 5px; text-align: justify;">Crea una nueva alineación <span style="font-weight: bold;">a continuación de la última</span> definida.<br />
+            <br />
+</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; height: 8px; font-weight: bold;">[Inser]</td>
+	<td style="vertical-align: top; height: 8px; text-align: justify;">Crea una nueva alineación justo <span style="font-weight: bold;">antes de la actual</span>.<br />
+            <br />
+</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; height: 25px; font-weight: bold;">[Borrar]<br />
+	</td>
+	<td style="vertical-align: top; height: 25px; text-align: justify;"><span class="Parrafo">Elimina
+la alineación actual. Si se borra la única alineación de un eje, se
+borra el eje, salvo que éste sea el único del fichero.</span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><br />
+Al añadir o insertar una nueva alineación se le asigna por defecto el
+tipo 0, aunque este comportamiento puede ser modificado en las <a href="OL_planta_opciones_visualizacion.html#ali_defecto">opciones de planta</a>.<br />
+      <br />
+<br />
+</span></span><span style="font-weight: bold; font-style: italic;"><a name="tipologia_alineaciones">Tipología de alineaciones</a></span><br />
+<span class="Parrafo"><span class="Parrafo"> <br />
+</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 145px; height: 201px; margin-left: 7px;" alt="" src="Imagenes/tipos_ali.png" align="right" /><span class="Parrafo"><span class="Parrafo">Un eje se compone de una sucesión de alineaciones curvas y rectas tangentes entre sí. ISTRAM<sup>®</sup>/ISPOL</span></span></span><span class="Parrafo"><sup>®</sup></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> dispone de una amplia <a href="OL_planta_alineaciones.html">tipología de alineaciones en planta</a>.<br />
+
+</span></span><span class="Parrafo"><span class="Parrafo"><br />
+
+Al pulsar la tecla <span style="font-weight: bold;">[TIPOS]</span> del menú flotante, se ofrecen al usuario la mayoría de las posibilidades disponibles.<br />
+<br />
+Complementariamente, al pulsar el botón <span style="font-weight: bold;">[Tipos]</span> del menú vertical, se muestra en pantalla un cuadro resumen de los tipos y datos asociados que desaparece con un redibujado:<br />
+
+<br />
+</span></span></span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 469px; height: 330px;" alt="" src="Imagenes/resumen_tipos_ali.png" /></span></span><br />
+</div>
+<br />
+<span class="Parrafo"><br /></span></span></span></span></span></span>
+      <div style="text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_ali">Definición de los datos de cada alineación</a></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+
+<span class="Parrafo">La declaración de los <a href="OL_planta_alineaciones.html">tipos de alineaciones</a> es determinante para que el cálculo del eje se realice de manera correcta. Desde el campo <span style="font-weight: bold;">Tipo</span>, que se puede rellenar seleccionando alguno desde la tabla ofrecida por el botón <span style="font-weight: bold;">[TIPOS]</span>, es donde se indica al programa el tipo de alineación que se está introduciendo en combinación con el resto de los datos. </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al
+añadir o insertar una nueva alineación se le asigna por defecto el tipo
+0, aunque este comportamiento puede ser modificado en las <a href="OL_planta_opciones_visualizacion.html#ali_defecto">opciones de planta</a>.</span></span></span></span><br />      
+      <br />
+      <span class="Parrafo"><span class="Parrafo">
+La franja inferior de la ventana contiene los datos de la alineación
+actual, los radios de la anterior y siguiente y las clotoides
+intermedias entre las tres además de permitir su modificación.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span>
+
+<div style="text-align: center;"><span class="Parrafo"><img style="width: 579px; height: 77px;" alt="" src="Imagenes/dialogo_planta_datos_ali.png" /></span><br />
+</div>
+<br />
+      <div style="text-align: justify;">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+
+A medida que se van añadiendo alineaciones, se irán representando en
+pantalla aquellas alineaciones fijas susceptibles de ser dibujadas, es
+decir, las que tengan datos introducidos por el usuario.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+La alineación actual, si es fija, se encuentra dibujada sobre el mapa
+en color amarillo, diferenciándose de las demás que se dibujarán en
+cian.</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<span class="Parrafo">El típico botón <span style="font-weight: bold;">[Clic/Tecl]</span>&nbsp;
+permite conmuntar el modo de entrada de datos entre gráfica y
+numéricamente. </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+En modo gráfico, el usuario puede beneficiarse de los modos de <a href="OL_planta_enganches.html">enganche</a> específicos del diseño de rasante.</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Dependiendo del <a href="OL_planta_alineaciones.html">tipo de alineación</a>,
+se pueden necesitar ninguno, uno, dos o hasta tres puntos para
+definirla, puntos que pueden ser de paso, centros o simples puntos de
+referencia. La definición de estos puntos puede ser gráfica (haciendo
+clic en pantalla), en cuyo caso son válidos todos los modos de enganche
+o introducción por teclado en coordenadas absolutas, relativas o
+polares, o también pueden introducirse numéricamente mediante el
+teclado.</span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Situados junto a los pares de coordenadas se localizan dos tipos de
+teclas que permiten actuar sobre las coordenadas de los pares de puntos:</span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span>
+<table style="text-align: left; width: 691px; height: 318px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top; width: 40px; font-weight: bold;">[0]<br />
+	</td>
+	<td style="vertical-align: top; width: 631px; text-align: justify;">Sirven
+para poner a 0 las coordenadas X e Y. Esto es útil cuando se desea
+convertir una alineación fija en otra flotante o giratoria, por ejemplo.<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; width: 40px; font-weight: bold;"><a name="tecla_V">[V]<br />
+	</a></td>
+	<td style="vertical-align: top; width: 631px; text-align: justify;"><span style="font-weight: bold;">[VERTICE ANTERIOR]</span>: Copia en <span style="font-weight: bold;">X1</span> e <span style="font-weight: bold;">Y1</span> de la alineación actual las coordenadas <span style="font-weight: bold;">X2</span> e <span style="font-weight: bold;">Y2</span>
+de la alineación anterior. Esto permite definir rápidamente ejes por
+poligonales a partir de los vértices, insertando al finalizar el
+proceso las alineaciones flotantes necesarias.<br />
+            <span style="font-weight: bold;">[VERTICE POSTERIOR]</span>: Copia para las coordenadas <span style="font-weight: bold;">X2</span> e <span style="font-weight: bold;">Y2</span> los valores <span style="font-weight: bold;">X1</span> e <span style="font-weight: bold;">Y1</span> de la primera alineación fija que se encuentre a partir de la alineación actual.<br />
+	</td>
+  </tr><tr>
+	<td style="vertical-align: top; width: 40px;"><span style="font-weight: bold;">[L x 1]</span><br />
+	</td>
+	<td style="vertical-align: top; width: 631px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Aquí se declara la longitud de la alineación. Salvo en las <a href="OL_planta_alineaciones.html">alineaciones</a> que admiten este valor como datos de entrada, es un dato sobreabundante y no será tenido en cuenta.<br />
+<br />
+Al pulsar el botón, ésta conmuta a los distintos modos en que es posible introducir la longitud:<br />
+<ul><li><span style="font-weight: bold;">L x 1</span>: La longitud es directamente el valor aquí declarado.</li></ul>
+<ul><li><span style="font-weight: bold;">L x PI</span>: Se multiplica el
+valor por PI, lo que permite definir exactamente la longitud en
+glorietas circulares. Así, por ejemplo, una glorieta de radio 30, se
+define usando el dato L x PI = 60.</li></ul>
+<ul><li><span style="font-weight: bold;">Ángulo</span>: La longitud de la alineación circular se define por el ángulo del arco en grados sexagesimales.</li></ul>
+<ul><li><span style="font-weight: bold;">Gonios</span>: La longitud de la alineación circular se define por el ángulo del arco en grados centesimales.</li></ul>Se admite una recta de enlace, definida solo por su longitud, detras de otra recta fija.<br />
+
+</span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">Az</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">En
+este campo se puede introducir el azimut de la alineación en aquellos
+casos en que sea preciso. Los azimutes en el módulo de OBRA LINEAL se
+expresan en grados centesimales, cero al norte y positivos en sentido
+horario.<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top;"><span style="font-weight: bold;">Desp</span><br />
+	</td>
+	<td style="vertical-align: top; text-align: justify;">Marca la distancia a la que la alineación definida debe pasar con respecto a los puntos P1 (X1,Y1) y P2 (X2,Y2). El <span style="font-weight: bold;">desplazamiento</span> será positivo cuando la alineación pasa por la derecha de los puntos y negativo cuando pasa por la izquierda.<br />
+	<br />
+En el caso de alineaciones definidas por dos puntos más un radio y un
+desplazamiento, se representa un arco que pasa por los dos puntos y con
+un radio que será igual al valor de radio más el desplazamiento, de
+modo que la alineación calculada con el radio definido es paralela a
+ella.<br />
+	</td>
+  </tr>
+
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><br />El botón <span style="font-weight: bold;">[P(%)]</span> permite declarar <a href="OL_planta_peralte_velocidad_obligados.html">peraltes y velocidades de proyecto obligadas</a>, ya desde la fase de diseño en planta, desde un cuadro de diálogo específico.<br />
+<br /><br /><a name="radios">
+DECLARACIÓN DE RADIOS</a><br />
+<br />
+Desde el campo <span style="font-weight: bold;">RADIO</span> se introduce o modifica el valor del radio de la alineación siguiento el <a href="OL_planta_alineaciones.html#convenio_radio">convenio del programa</a>. Desde la alineación actual se tiene acceso al radio de las alineaciones anterior y posterior mediante los campos <span style="font-weight: bold;">R ante</span> y <span style="font-weight: bold;">R sigui</span> respectivamente.<br />
+
+<br /></span>
+<img style="width: 209px; height: 74px; margin-right: 7px;" alt="" src="Imagenes/planta_radios_clotoides.png" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Si se pulsa directamente sobre los botones <span style="font-weight: bold;">[RADIO]</span>, <span style="font-weight: bold;">[R ante]</span> o <span style="font-weight: bold;">[R sigui]</span> éstas conmutan a <span style="font-weight: bold;">[GRADO]</span>, <span style="font-weight: bold;">[G ante]</span> y <span style="font-weight: bold;">[G sigui]</span>
+respectivamente, y entonces en lugar de definir las curvas por su
+radio, se definen por el grado de la curva, lo que es habitual en
+algunos países de latinoamericanos.<br />
+<br /><br />
+<br /><a name="curvas_trans">
+DECLARACIÓN DE CURVAS DE TRANSICIÓN</a><br />
+<br />
+</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las <a href="OL_planta_curvas_transicion.html">curvas de acuerdo</a> permiten realizar las transiciones entre las alineaciones principales.</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo">Dependiente
+de los <a href="OL_planta_alineaciones.html#libertad">grados de libertad</a>, estas curvas de acuerdo pueden ser de
+solución única, siendo entonces el programa el que las calcula (con la posibilidad de indicar una <a href="OL_planta_curvas_transicion.html#relacion_param">relación entre parámetros</a>), o
+definidas por el usuario, debiendo entonces éste declarar el parámetro
+oportuno.</span></span></span></span><br />
+<span class="Parrafo">
+<br />
+</span>
+<table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: top; width: 34px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td><td style="vertical-align: top; width: 630px; text-align: justify;"><span class="Info">Las <a href="OL_planta_curvas_transicion.html">curvas de
+acuerdo</a> NO son alineaciones principales. Basta, por tanto,
+con declarar únicamente el parámetro que los caracteriza si es necesario</span><br />
+	</td></tr></tbody>
+</table>
+<br />
+
+<span class="Parrafo">Este parámetro se declara en el campo <span style="font-weight: bold;">[A]</span> si se desea hacerlo según la constante A de la clotoide, aunque se trata de un botón conmutable a <span style="font-weight: bold;">[L]</span>, pudiendo entonces definirse la clotoide por su longitud. Salvo casos singulares, no es necesario indicar el <a href="OL_planta_curvas_transicion.html#signo">signo</a> de la curva de transición.<br />
+<br />
+Un valor de A=0 indica que la alineación actual y la que la precede son
+tangentes directamente sin curva de acuerdo intermedia. En este caso, y
+si las dos alineaciones consecutivas son dos rectas, se producirá un
+punto anguloso y el programa avisará del posible error.<br />
+<br />
+</span><span class="Parrafo"><img style="width: 177px; height: 57px;" alt="" src="Imagenes/clotoide_vert.png" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando
+como consecuencia del cálculo aparece una <a href="OL_planta_curvas_transicion.html#clotoide_vertice_fijas">clotoide de vértice</a>, en los
+resultados aparece en este punto una alineación circular ficticia de
+longitud cero, que indica el radio de curvatura de ese vértice y la
+posición del punto de tangencia entre las dos ramas de clotoide.
+También se puede fijar el valor del radio en el vértice.<br />
+<br /></span></span></span></span><img style="width: 202px; height: 73px; margin-right: 7px;" alt="" src="Imagenes/clotoide_S.png" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Cuando en una curva en S se utilicen dos parámetros diferentes, el
+primero se aplicará a la salida de la primera circular y el segundo a
+la entrada de la segunda; por ejemplo, R=-250, A=120, A=140, R=280. Si
+se quiere suprimir una de las dos clotoides de la S, basta con declarar
+0 el parámetro de la contigua a la circular que no lleve transición.<br />
+<br /><br />
+      <a name="generacion_pi">GENERACION E INSERCION DE ALINEACIONES A PARTIR DE PI<br />
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="generacion_pi">Permite
+añadir al eje actual (si la última alineación es una recta fija por dos
+puntos) nuevas alineaciones rectas con el P1 formando un vértice en el
+P2 de la recta anterior, y&nbsp; selecionando graficamente el P2 de la
+nueva alineación.<br />
+Enre ambas se inserta un circulo flotante de radio R y parámetros A predefinidos en </a><a href="OL_planta_opciones_visualizacion.html#opciones">Opciones de planta</a>.<br />
+Las clotoides no se insertan si la deflexion entre rectas es inferior a la suma de las deflexiones que necesitan las clotoides.<br />
+El signo del radio se calcula en función del signo de la deflexión entre las rectas.<br />
+La opción es cíclica y una vez fijado el P2 permite seguir añadiendo nuevas alineaciones.<br />
+Si añadimos un nuevo eje, con una unica alineación sin coordenadas, la opción <span style="font-weight: bold;">Añadir PI</span> nos pide primero picar graficamente la posición de los punto P1 y P2 de esta primera alineación.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 615px; height: 82px;" alt="" src="Imagenes/planta_anadirpi.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Mediante el comando <span style="font-weight: bold;">Insertar PI</span>
+podremos seleccionar una alineación recta fija por dos puntos y
+dividirla en dos rectas con una curva flotante entre ellas,
+graficamente se fijará el vértice (PI) de la curva.<br />
+El radio de la curva y parámetros de las clotoides se predefinen en <a href="OL_planta_opciones_visualizacion.html#opciones">Opciones de planta</a>.<br />
+El signo del radio se va calculando automaticamente en función de la posición del vértice.<br />
+Las clotoides A solo se ponen si la deflexión entre las rectas permite que entren ambas sin cruzarse.<br />
+La opción es cíclica, una vez fijado un vértice puede elegirse la misma u otra recta y seguir insertando PIs.<br />
+Con esta opción podemos trazar un eje, creando primero una recta entre el punto de origen y el destino (se calcula el eje) y a<br />
+continuación le insertamos todos sus vértices.<br />
+Mediante el comando <span style="font-weight: bold;">Borrar PI</span>
+podemos eliminar estos puntos de la misma manera cíclica, incluidos los
+puntos inicial y final. Cuando se elimina un punto, se analiza si en
+las curvas anterior y posterior a la recta que queda entran las
+clotoides o si hay que eliminarlas, y si es necesario cambiar el signo
+al radio de la alineación circular.<br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a name="normativa">
+NORMATIVA</a><br />
+<br />
+</span><span class="Parrafo">Si se ha cargado una <a href="OL_planta_normativa.html">tabla de diseño de planta</a>, mediante el <a href="OL_planta_normativa.html#tecla_R">botón [R]</a> es posible seleccionar el radio siguiendo las recomendaciones de esa tabla en función de la normativa.<br />
+<br />
+De forma similar, la <a href="OL_planta_normativa.html#tecla_T">tecla [T]</a>
+ofrece parámetros de clotoide. En este caso pueden aparacer hasta tres
+teclas [T]. La primera de arriba modificará una o las dos clotoides
+anteriores a la alineación principal actual, la del centro cambiará las
+dos inmediatas a la circular actual (si es una recta el botón estará
+inactivo) y la tercera las dos posteriores.</span><br />
+<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Titulo_2"><a name="modif_dinamica">Modificación dinámica o en tiempo real</a></span><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+<br />
+<span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">El programa ofrece la
+posibilidad de modificar el trazado de ejes en planta de manera interactiva, utilizando
+el ratón y moviendo los puntos &#8216;dato&#8217; del eje (pinzamientos), de
+forma que puede observarse en la pantalla como varía el diseño:</span><br />
+<br style="font-weight: normal;" />
+</span></span></span></span></span></span></span></span></span></span></span></span>
+<div style="text-align: center;"><span class="Parrafo"><span style="font-weight: normal;"><img style="width: 528px; height: 307px;" alt="" src="Imagenes/pinzamientos_planta.png" /></span></span><br />
+</div>
+<br /><span class="Parrafo">
+Si el pinzamiento que se toma es el correspondiente al radio y hay
+clotoides asociadas a esa alineación, entonces los parámetros de
+clotoide se reajustan automáticamente según la </span><a href="OL_planta_normativa.html">tabla de normativa</a> asociada.<br />
+<br />
+      <img style="width: 138px; height: 81px;" alt="" src="Imagenes/botones_modif_planta.png" align="left" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: normal;"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Esta modificaciones en tiempo
+real, y alguna más, se pueden también efectuar mediante los
+correspondientes botones, cuyo uso es el siguiente: Un clic permite
+&#8216;tomar&#8217; gráficamente el dato a modificar y, una vez desplazado con el
+cursor, un nuevo clic significa que se aceptan las modficaciones que en
+tiempo real se van mostrando en pantalla.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+
+</span><table style="text-align: left; width: 692px; height: 236px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: top; width: 36px; font-weight: bold;"><span class="Parrafo">[.]</span><br />
+	</td>
+	<td class="Parrafo" style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;">Permite
+&#8220;enganchar&#8221; uno de los puntos dato (P1, P2 ó P3) de definición de una
+alineación, y arrastrarlo mientras se comprueba dinámicamente el
+resultado del cálculo. Cuando las coordenadas (X2,Y2) seleccionadas de
+una alineación coinciden con las coordenadas (X1,Y1) de la alineación
+la siguiente alineación entonces se arrastran simultáneamente ambos
+puntos.La
+misma función se ejecuta al mover el pinzamiento asociado al correspondiente punto dato.<br />
+<br />
+	</td>
+  </tr>
+  <tr>
+	<td class="Parrafo" style="vertical-align: top; width: 36px; font-weight: bold;">[:]<br />
+	</td>
+	<td class="Parrafo" style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;">Es similar a <span style="font-weight: bold;">[.]</span>, pero permite arrastrar simultáneamente los dos puntos P1 y P2 manteniendo la posición relativa de los mismos. <span class="Parrafo"><span style="font-weight: normal;">La
+misma función se ejecuta al mover el pinzamiento central asociado a la correspondiente alineación.<br />
+            <br />
+</span></span>
+	</td>
+  </tr>
+  <tr>
+	<td class="Parrafo" style="vertical-align: top; width: 36px; font-weight: bold;">[R]<br />
+	</td>
+	<td class="Parrafo" style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;">Permite
+seleccionar gráficamente una alineación circular e ir variando
+dinámicamente su radio mientras se observa como va variando el
+resultado gráfico del cálculo.<br />
+<br />
+	</td>
+  </tr>
+  <tr>
+	<td style="vertical-align: top; width: 36px; font-weight: bold;"><span class="Parrafo">[aRa]</span><br />
+	</td>
+	<td style="vertical-align: top; width: 636px; text-align: justify; font-weight: normal;"><span class="Parrafo">Es similar a <span style="font-weight: bold;">[R]</span>
+pero en función de los valores que va tomando el radio, se modifican
+automáticamente los valores de los parámetros de las clotoides anterior
+y posterior según la <a href="OL_planta_normativa.html">tabla de diseño</a>
+cargada. Estos valores se muestran además dinámicamente en el eco
+informativo. Las clotoides que se calculan corresponden al omega real
+que se va calculando dinámicamente. La misma función se ejecuta al
+mover el pinzamiento con la letra <span style="font-style: italic;">R</span> asociado a la correspondiente alineación circular.<br />
+            <br />
+El mismo efecto se consigue al modificar el radio numéricamente o
+escogiendo uno de la tabla de recomendación de la norma siempre que
+esté activada la opción <a href="OL_planta_opciones_visualizacion.html#A_auto"><span style="font-weight: bold;">A automático al cambiar R</span></a> dentro de las <a href="OL_planta_opciones_visualizacion.html">opciones de visualización de planta</a>.<br />
+	</span></td>
+  </tr>
+  
+</tbody>
+</table>
+<span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: normal;">La modificación dinámica
+permite seleccionar los puntos calientes para realizar cualquier
+modificación dinámica. Un punto caliente puede ser la V del vertice
+formado cuando el punto P2 de una alineación fija coincide con el punto
+P1 de la siguiente fija. Es vértice puede arrastrarse a una nueva
+posición.<br />
+Otro punto caliente puede ser el PR (radio por el punto de paso)
+definido en las alineaciones flotantes entre dos rectas fijas y sin
+clotoides o también definido en alineaciones fijas por dos puntos y con
+un radio.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><img style="width: 542px; height: 350px;" alt="" src="Imagenes/planta_pr.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Tanto manipulando directamente los pinzamientos como haciendo uso de
+estos botones, la tecla &lt;Esc&gt; cancela la operación de
+modficiación de forma instantánea.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+<br />
+<br />
+<span style="font-weight: normal;"><span class="Titulo_2"><a name="calculo">Cálculo, resolución geométrica y
+listados</a></span><span class="Parrafo"><span style="font-weight: normal;"><br />
+</span><br />
+</span></span><img style="width: 313px; height: 256px;" alt="" src="Imagenes/calculo_planta.png" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">A
+partir de las alineaciones definidas, el botón <span style="font-weight: bold;">[Calcular]</span> realiza el
+cálculo de ejes, generando una serie de ficheros intermedios, los
+listados de resultados y dibujando en la pantalla los ejes calculados. Si se pulsa sobre el botón <span style="font-weight: bold;">[Actual]</span> entonces sólo se calcula el eje en
+el que se está situado.<br />
+      <br />
+Al realizar un cálculo se almacena una pila de hasta diez estados de la definición de los ejes.<br />
+Junto con la orden <span style="font-weight: bold;">Calcular</span> el programa nos da la posibilidad de deshacer&nbsp;<img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_toolBarEstandar_deshacer.png" /> o rehacer&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarEstandar_rehacer.png" /> operaciones que hayamos realizado. <br />
+Cuando se recupera un estado desde la pila con deshacer se debe clicar la orden <span style="font-weight: bold;">Calcular</span> si se desea que este estado no quede fuera de la pila, salvo que vayamos a pulsar rehacer.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span>
+<table style="text-align: left; width: 327px; height: 59px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td class="Info" style="vertical-align: top; width: 634px; text-align: justify;"><span style="font-weight: normal;">
+ISTRAM</span><span style="font-weight: normal;"><sup>®</sup></span><span class="Parrafo"><span style="font-weight: normal;">/ISPOL</span></span><span style="font-weight: normal;"><sup>®</sup></span><span style="font-weight: normal;">almacena automáticamente el estado actual de los datos
+de cálculo en el fichero&nbsp;<span class="Archivo">IS#.cej</span> en prevención de paradas fortuitas del
+sistema. Previamente se actualiza de forma automática el&nbsp;<span class="Archivo">IS#pre.cej</span> con
+el tanteo que tenía&nbsp;<span class="Archivo">IS#.cej</span>, lo que permite recuperarlo si las últimas
+modificaciones no son satisfactorias.</span></td>
+  </tr>
+</tbody>
+</table>
+<span style="font-weight: normal;"><br /></span></span><span class="Parrafo"><span style="font-weight: normal;"><span style="font-weight: bold;"><a name="errores_geom">Control de errores geométricos</a></span><br />
+<span class="Parrafo"><span style="font-weight: normal;">
+<br />
+</span></span></span></span><img style="width: 326px; height: 98px; margin-right: 7px;" alt="" src="Imagenes/errores_geometricos.png" align="left" /><span class="Parrafo"><span style="font-weight: normal;">Si
+al ejecutar el cálculo no aparecen todos los ejes definidos o falta
+parte de alguno de ellos, esto es debido a errores de indefinición o
+incompatibilidad de datos.<br />
+<br />
+El número acumulado y los errores cometidos aparecen en el área de mensajes cada vez que se calcula la planta.<br />
+<br />
+</span></span><img style="width: 227px; height: 349px;" alt="" src="Imagenes/errores_geometricos_ver.png" align="right" hspace="4" /><span class="Parrafo"><span style="font-weight: normal;">Los
+errores geométricos hacen referencia a la continuidad &#8220;suave&#8221; del eje,
+es decir, a que no se produzcan cortes del eje, puntos angulosos,
+retrocesos o longitudes negativas, incongruencias por sobreabundancia
+de datos, etc. No confundir, por tanto, con los errores de cara a la
+aplicación de la <a href="OL_planta_normativa.html">normativa</a>.<br />
+<br /></span></span>
+<table style="text-align: left; width: 473px; height: 64px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 34px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+	</td>
+	<td style="vertical-align: top; width: 416px; text-align: justify;"><span class="Parrafo"><span class="Info">Dado
+que el módulo de OBRA LINEAL es útil para el diseño de carreteras,
+autopistas, ferrocarriles, canales, tuberías, presas de tierras, etc.,
+también se permite el diseño de ejes poligonales por lo que, en este
+caso, los mensajes de error que avisan de puntos angulosos no deben
+considerarse.</span></span><br />
+	</td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><br />
+Como los mensajes de error son sucesivos y aparecen a gran velocidad, se puede fijar en la opción <span style="font-weight: bold;">[Parámetros]</span>
+(situada en el menú lateral fijo) el tiempo de espera entre mensajes de
+error para que de tiempo a verlos, aunque lo más cómodo es acudir a la
+opción <span style="font-weight: bold;">[DISEÑO]</span> &#8594; ERRORES del menú lateral que despliega una tabla detalla con todos los errores encontrados en el cálculo de la planta.<br />
+<br />
+<br />
+</span></span></span><span class="Parrafo"><span style="font-weight: bold;"><a name="listados">Generación de listados</a></span><br />
+<span class="Parrafo"><span style="font-weight: normal;">
+<br />     
+Durante el cálculo, se generan automáticamente varios
+archivos con los listados de los ejes, tanto de resultados del cálculo
+como de datos:<br />
+</span></span></span>
+<ul>
+<li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<span style="font-weight: normal;">Para cada eje se genera el&nbsp;<span class="Archivo">ceje#.res</span> (siendo # el número de eje), que contiene los resultados del cálculo y los datos de entrada de ese eje. El fichero&nbsp;<span class="Archivo">ceje0.res</span> contiene la misma información pero para todos los ejes del proyecto.</span></span></span></span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+<ul>
+
+<li><span style="font-weight: normal;"><span class="Parrafo">Según se haya pulsado sobre <span style="font-weight: bold;">[Calcular]</span> o sobre <span style="font-weight: bold;">[Actual]</span>, el fichero&nbsp;<span class="Archivo">ceje.res</span> que también se genera, contiene el listado del eje actual o el de todos. Este fichero&nbsp;<span class="Archivo">ceje.res</span> es el que se lista en pantalla al pulsar sobre el botón <span style="font-weight: bold;">[ceje.res]</span>.</span></span></li>
+
+</ul>
+<span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Estos listados también son accesibles desde el menú de <a href="OL_listados_geometria.html#eje_planta">listados de geometría</a>.<br />
+<br />
+<br /></span></span></span><span style="font-weight: bold;"><span class="Parrafo"><a name="dibujo_ejes">
+Dibujo de los ejes</a></span><br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">
+<br />
+Cada vez que se calcula la planta, el programa representa el cálculo del eje con una línea 2D de tipo 53 sobre el EDM.<br />
+<br />
+</span></span></span></span></span></span><span style="font-weight: normal;">Si se encuentra desactivada la casilla del menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Visualización</span> &#8594; <span style="font-weight: bold; font-style: italic;">Posdibujado</span> entonces NO se presentan las alineaciones fijas y sólo se muestra el dibujo de los ejes.<br />
+<br />
+En cuanto el cálculo haya terminado (se sabe por los mensajes) se puede
+interrumpir el proceso de dibujo de los ejes y de los puntos
+principales y etiquetas, si es que no tienen interés en este instante,
+pulsando la tecla &lt;Esc&gt;.<br />
+<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span><img style="width: 349px; height: 252px; margin-left: 7px;" alt="" src="Imagenes/calculo_planta_antes_refrescar.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">Al
+calcular, el programa no borra de la pantalla el dibujo automático de
+ejes (líneas EDM de tipo 53) y sus puntos singulares, para que puedan
+compararse visualmente las sucesivas soluciones:<br />
+<br />
+Al redibujar se refresca la pantalla dejando sólo el dibujo de los últimos calculados.<br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"><br /><br />
+      <br />
+      <br />
+<br />
+<br />
+<br />
+</span></span>
+<table style="text-align: left; width: 691px; height: 37px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+  <tr>
+	<td style="vertical-align: middle; width: 35px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+	</td>
+	<td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info"><span style="font-weight: normal;">El uso de la opción <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Copia de seguridad</span> &#8594; <span style="font-weight: bold;">Guardar</span>
+fija de forma defintiva el dibujo de todas las línea en el mapa,
+incluidas estas L53 y todas las líneas que el usuario haya creado en el
+dibujo durante la edición de planta.</span></span></span></td>
+  </tr>
+</tbody>
+</table>
+<span class="Parrafo"><span style="font-weight: normal;"><br />
+Cada vez que se calcula la planta aparece también el eje actual
+rotulado. Este rotulado del eje es extensible a todos los ejes si se
+activa la opción <span style="font-weight: bold; font-style: italic;">Todos</span> en lugar de <span style="font-weight: bold; font-style: italic;">Rotular eje actual</span> del <a href="OL_planta_opciones_visualizacion.html">menú de opciones de visualización</a>.
+Además, los elementos que se rotulen dependerán del modo de rotulación
+activo en ese momento y que se puede cambiar desde la opción <span style="font-weight: bold;">[Modo rotul. alin.]</span>
+del menú vertical. El modo de rotulación por defecto únicamente señala
+los puntos singulares, indicando PK&#8217;s y tipos de curva (recta, circular
+o clotoide), aunque en la librería existen modos de rotulación
+muchísimo más detallados y que permitirán crear puntos kilométricos en
+el eje, desplazados, normales a otro eje, banderolas de datos,&#8230;<br />
+<br />
+</span></span>
+<table style="text-align: left; width: 691px; height: 37px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 34px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+</td>
+<td style="vertical-align: top; width: 637px; text-align: justify;"><span class="Parrafo"><span style="font-weight: normal;"><span class="Info">La
+rotulación que aparece cada vez que se calcula la planta es únicamente
+a nivel de diseño y NO queda fijada en el EDM. Para que esto ocurra, se
+debe usar el menú de rotulación de ejes.<br />
+	</span></span></span></td>
+</tr></tbody>
+</table>
+<br />
+<table style="text-align: left; width: 691px; height: 37px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 35px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+</td>
+<td style="vertical-align: top; width: 636px; text-align: justify;"><img style="width: 163px; height: 42px;" alt="" src="Imagenes/min_pix.png" align="right" hspace="4" />&nbsp;<span class="Parrafo Info"><span style="font-weight: normal;">Desde <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Visualización</span> es posible controlar el parámetro <span style="font-weight: bold; font-style: italic;">Mínimo de píxeles</span> que corresponde al tamaño
+más pequeño, en píxeles, para que se visualicen los símbolos, textos y
+células tanto en modo Decorado como No decorado. Manipulando este valor,
+se bloquea el redibujado de símbolos a partir de cierto nivel de zoom y,
+por tanto, el tiempo consumido en rotular las alineaciones.</span></span></td>
+</tr></tbody>
+</table>
+<span class="Parrafo"><span style="font-weight: normal;"><br /><a name="Ajustar_a_una_linea"><span class="Titulo_2">Ajustar a una línea</span><br /><br />A
+partir del menú contextual de Utilidades se puede Añadir y ajustar
+alineaciones por línea. Pulsando el botón derecho del ratón podrás
+Añadir y Ajustar alineaciones. Permite crear o ampliar un eje de forma
+rápida picando sucesivamente los puntosinicial y final de las nuevas
+alineaciones, al picar el punto P2&nbsp; ISTRAM la ajusta y cuando
+termina de hacerlo, te pide los puntos para la siguiente, salimos con
+la tecla [Esc].<br /><br /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"><a name="Ajustar_a_una_linea"><img style="width: 300px; height: 163px;" alt="" src="Imagenes/ajustar_linea.png" /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="Ajustar_a_una_linea"><br /><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div><span style="font-size: 11pt; line-height: 107%; font-family: &quot;Calibri&quot;,sans-serif;" lang="ES"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;"><span class="Parrafo"><span style="font-weight: normal;"><a name="Ajustar_a_una_linea"><br /><br /><br />
+
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td></tr></tbody></table></body></html>

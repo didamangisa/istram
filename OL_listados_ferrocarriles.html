@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Listados de ferrocarriles</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LISTADOS DE FERROCARRILES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />&nbsp; <span class="Parrafo">Los
+listados específicos de proyectos de ferrocarriles son:<br />
+      </span>
+      <br />
+      <div style="margin-left: 40px;"><a href="#apavia"><span class="Parrafo">Aparatos de vía y piquetes de vía libre</span></a><br /><a href="#traza_ffcc">Comprobación de trazado</a><br />
+      <a href="#ejevia"><span class="Parrafo">Eje de la vía</span></a><br />
+      <a href="#replanteo"><span class="Parrafo">Replanteo de vías por cuerdas largas</span></a><br />
+      <a href="#replanteo"><span class="Parrafo">
+      </span></a><a href="#carril"><span class="Parrafo">Replanteo y control del carril</span></a><br />
+      <a href="#cotas_y_pendientes">Cotas y pendientes de los carriles</a><br />
+      <a href="#cotas_rojas_de_carriles">Cotas rojas de carriles</a><br />
+      <span class="Parrafo"><a href="#ripado">Ripado de vía</a></span><br />
+      <span class="Parrafo"><a href="#plasser">Bateadora Plasser</a><br /><a href="#Formato_GEO"><span style="color: rgb(0, 79, 175);">Formato GEO</span></a><br /><br /></span>
+      <span class="Parrafo">
+      </span></div>
+
+<ul>
+        
+        
+        
+        
+        
+        
+
+
+      </ul>
+      <span class="Parrafo"> <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 533px; height: 335px;" alt="" src="Imagenes/dialogo_listados_ferrocarriles.png" /><br />
+      </div>
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="apavia">Aparatos de vía y piquetes de vía libre</a></span><br />
+      <span class="Parrafo"><br />El listado de <span style="font-weight: bold;">APARATOS DE VÍA</span> (<span class="Archivo">apavia.res</span>) muestra para cada aparato de vía:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Ejes desviado y principal.</span></li>
+        <li><span class="Parrafo">Tipo de aparato de vía.</span></li>
+        <li><span class="Parrafo">Puntos sobre el eje principal: junta de contraagujas, centro matemático y talón.</span></li>
+        <li><span class="Parrafo">Puntos sobre el eje desviado: talón (y en el caso de travesía, inicio del aparato).</span></li>
+        <li><span class="Parrafo">Piquetes de vía libre (también se crea un símbolo sobre la cartografía en la posición de cada uno).</span></li>
+        
+        <li><span class="Parrafo">Coordenadas (Xv,Yv) de la intersección de las tangentes en la J.C.A. y en el talón, para aparatos en curva.</span></li>
+        <li><span class="Parrafo">Matrícula completa.</span></li>
+        <li><span class="Parrafo">La proyección sobre el eje general, de los centros matemáticos y talones.</span></li>
+        <li><span class="Parrafo">Cota y Pendiente en la junta de contraaguja, centro matemático, talón de la vía directa y talón de la vía desviada.</span></li>
+        <li><span class="Parrafo">Azimut en la junta de contraaguja y en ambos talones.</span></li>
+        <li><span class="Parrafo">Pk sobre el eje desviado de la junta de contraaguja y talón desviado.</span></li>
+        <li><span class="Parrafo">Coordenadas de la cara activa de los carriles en la JCA, TP y TD. (Tambien IT en travesias). Se requiere tener definido<br />
+para los eje el archivo .vol con el ancho de vía, la rasante y los peraltes.</span></li><li><span class="Parrafo">Pk y distancias a la cara activa de la vía en el eje principal (directo) y en el eje esviado.<br /></span></li>
+
+
+
+
+
+      </ul>
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_apavia.png" style="width: 540px; height: 199px;" alt="" /></span><br />
+      </div><br />El uso que hace el programa del valor introducido como <span style="font-weight: bold;">distancia de seguridad</span>
+para el cálculo de los piquetes de vía libre es el siguiente: Se
+calcula primero un punto que se encuentre a la distancia definida a las
+caras activas y luego se desplaza por cada eje la distancia de
+seguridad definida. El piquete definitivo es un punto que se proyecta
+en cada eje en este último PK. <br />
+      <br />
+La distancia al borde activo de las vías puede darse de diferentes maneras:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Fija</span>, según un valor introducido por el usuario.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Mediante un archivo <span class="Archivo">.gal</span> (como el&nbsp;<span class="Archivo">turquia.gal</span> disponible en las librerías) y que contiene una <span style="font-weight: bold;">tabla de gálibos</span> laterales exterior e interior para diferentes radios:</li>
+      </ul>
+
+      
+      <div style="margin-left: 80px;"><span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# turquia.gal</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# Tabla de galibos laterales.</span><br />
+      <span class="Archivo">
+# Distancias a la cara activa, para situar los piquetes de vía libre</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# Interpolación: 1:interpolar&nbsp; 0:Tomar el valor mas restrictivo</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+&nbsp;I&nbsp;&nbsp; 1</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+# Tabla Radio, galibo por el exterior, galibo por el interior</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 150&nbsp;&nbsp;&nbsp; 2.222 2.219&nbsp; # Para radios menores se usa este valor.</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 160&nbsp;&nbsp;&nbsp; 2.208 2.205</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 170&nbsp;&nbsp;&nbsp; 2.196 2.193</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 180&nbsp;&nbsp;&nbsp; 2.185 2.182</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 190&nbsp;&nbsp;&nbsp; 2.175 2.173</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 200&nbsp;&nbsp;&nbsp; 2.167 2.164</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 210&nbsp;&nbsp;&nbsp; 2.159 2.156</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 220&nbsp;&nbsp;&nbsp; 2.151 2.149</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 230&nbsp;&nbsp;&nbsp; 2.145 2.143</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 240&nbsp;&nbsp;&nbsp; 2.139 2.137</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 250&nbsp;&nbsp;&nbsp; 2.133 2.131</span><br />
+      <span class="Archivo">
+&nbsp;Rei&nbsp; 251&nbsp;&nbsp;&nbsp; 2.000 2.000&nbsp; # Para radios mayores y rectas.</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      <span class="Archivo">
+&nbsp;Fin</span><br />
+      <span class="Archivo">
+#--------------------------------------------------------------------</span><br />
+      </div>
+      
+      
+      <ul>
+        <li>Mediante una <span style="font-weight: bold;">tabla de juntas de contraagujas</span> contenida en un archivo&nbsp;<span class="Archivo">.jca</span>. El programa crea una tabla utilizando el valor global y que puede editarse para particularizar los valores.</li>
+      </ul>
+Los valores que ofrece el programa por defecto siguen la norma NRV 10.1.1 de RENFE y son:<br />
+
+
+      
+      
+      <ul>
+<li>Distancia de seguridad 4.00 m</li><li>Distancia al borde activo de la vía 1.05 m</li>
+      </ul>
+Longitudes de vía libre:<br />
+      <br />
+Permite listar las longitudes de vía libre para la colocación del tren.
+Se define una distancia de seguridad a la junta de contraagujas y una
+longitud mínima de vía. Al listar las longitudes de vía libre se&nbsp;
+listan tambien la longitud total de cada eje, la longitud ocupada por
+los aparatos y la diferencia, es decir, la longitud de vía sin aparatos.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/apavia_long_via_libre.png" style="width: 345px; height: 52px;" alt="" /><br />
+      </div>
+
+
+      <br />Activando la casilla <span class="Parf_negrita">[] Ordenar</span> <span class="Parf_negrita">por Grupos</span>,
+se&nbsp;listan los aparatos ordenados según el grupo al que pertenezca
+el eje desviado. Si el grupo está desactivado, no se listan sus
+aparatos.<br /><br /><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.</span><br /><br />En este listado las Juntas de Contra-Agujas se muestran con el nombre compuesto por los caracteres más el número.<br /><br /><a name="traza_ffcc"><span class="Titulo_2">Comprobación del trazado ferroviario</span><br /><br />Disponemos
+del listado de comprobación del trazado en planta y en alzado, en
+formato .xlsx. Debe utilizarse con la tabla FFCC_ADIF_2021.dip que
+contiene todos los parámetros necesarios para realizar la comprobación.<br /><br />Si la tabla de diseño incluye el modo [Referencia] se incluye esta comprobación delante de los modos [Normal] y [Excepcional].<br /><br /></a><div style="text-align: center;"><a name="traza_ffcc"><img style="width: 600px; height: 68px;" alt="" src="Imagenes/list_ffcc_comp_trazado.png" /><br /></a></div><a name="traza_ffcc"><br /><span class="Archivo"><br />
+      </span><span class="Titulo_2"></span></a><a name="ejevia">Eje de la vía</a><br />
+      <span class="Parrafo"><br />
+</span><span class="Parrafo">El listado del <span style="font-weight: bold;">EJE DE LA VÍA</span> (<span class="Archivo">ejevia.res</span>) se genera en el fichero&nbsp;<span class="Archivo">ejevia#x.res</span>, siendo # el número de eje y tomando x el valor <span style="font-style: italic;">u</span> (vía única), <span style="font-style: italic;">d</span> (vía derecha) ó <span style="font-style: italic;">i</span>
+(vía izquierda). Lista, para el tramo solicitado, la distancia al eje
+en planta, las coordenadas (X,Y), las cotas de RASANTE, HILOBAJO y CARRILBAJO (cota donde se calcula el peralte) y el
+peralte en mm.<br />
+      <br />
+Ejemplo de las cotas:<br />
+La cota carrilbajo: se define para una via de ancho nominal de 1435 y
+ancho de cálculo 1500, coincide con el centro de la cabeza de un carril
+de 65mm.<br />
+La cota de la rasante puede coincidir con [HILOBAJO] o [CARRILBAJO] en función de la opción seleccionada en [VIA Y TRAVIESA].<br />
+La cota hilo bajo será la cota correspondiente a la cara activa del carril.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_ferrocarriles_ejevia.png" style="width: 450px; height: 93px; margin-left: 7px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><br />
+Este listado da la posibilidad de imprimir un dato en los PK&#8217;s de los
+puntos singulares del eje en planta marcando la opción correspondiente.<br />
+      <br />
+Si se selecciona listado <span style="font-weight: bold;">automático</span>,
+en ferrocarriles de vía doble y en caso de estar anulado alguno de los
+lados desde el menú de EXCENTRICIDAD Y ENTREVÍA, el listado imprime los
+datos de la vía del lado que permanece, o si permanecen los dos, el del
+lado derecho.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+</span></span><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.<br />
+
+      <span class="Parrafo">Posibilidad de editar y guardar en ficheros los textos de las cabeceras de los listados <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /><br />
+      <br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span style="font-weight: normal;"><span class="Parrafo"><img src="Imagenes/listados_ejevia.png" style="border: 1px solid ; width: 600px; height: 294px;" alt="listados_ejevia" /></span></span><br />
+      <span style="font-weight: normal;"><span class="Parrafo"></span></span></div>
+      <span style="font-weight: normal;"><span class="Parrafo"><br />
+      </span></span><a name="traza_ffcc"><span class="Titulo_2">Número de traviesas</span><br /><br />El listado traviesas0.xlsx pel número de traviesas de&nbsp;cada eje (activo), sin contar las de los aparatos de vía.<br />El
+listado extrae la información de los archivos traviesa_x.txt que se
+generan para cada eje en la carpeta temporal cuando se genera la
+geometría BIM.<br /></a><div style="text-align: center;"><a name="traza_ffcc"></a><img style="width: 484px; height: 273px;" alt="listados_FFCC_numtraviesas" src="Imagenes/listados_FFCC_numtraviesas.png" /><a name="traza_ffcc"></a><br /><a name="traza_ffcc"></a></div><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="replanteo">Replanteos de vías por cuerdas largas</a></span><br />
+      <span class="Parrafo"><br /></span></span><img src="Imagenes/dialogo_listados_ferrocarriles_replanteo.png" style="width: 450px; height: 223px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">El listado de <span style="font-weight: bold;">REPLANTEO DE VÍAS</span> (<span class="Archivo">repvia.res</span>) está realizado según la normativa de RENFE N.R.V. 7-1-0.2.<br />
+      <br />
+Los puntos de marcaje se pueden cargar/guardar a partir de ficheros en formato&nbsp;<span class="Archivo">.top</span>.<br />
+      <br />
+El listado permite seleccionar el eje y la vía (<span style="font-weight: bold;">única</span>, <span style="font-weight: bold;">derecha</span> o <span style="font-weight: bold;">izquierda</span>).<br />&nbsp;<br />
+      <br />
+
+      <br />
+      </span></span><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.<br />
+      <br />
+
+      <span class="Parrafo">Posibilidad de editar y guardar en ficheros los textos de las cabeceras de los listados <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="carril">Replanteo y control del carril</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">REPLANTEO DE CARRIL</span> (<span class="Archivo">carril.res</span>)
+es un listado para el replanteo y el control de la colocación de los
+carriles. Se puede introducir la longitud de la cuerda, una distancia y
+un incremento de cota con respecto a la cara activa del carril.<br />
+      <span style="font-weight: bold;">Listar ambos carriles</span>: En este caso el carril que lleva el hilo bajo se marca con un *.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_carril.png" style="width: 561px; height: 149px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+La opción <span style="font-weight: bold; font-style: italic;">Redondear flecha a múlt.</span>
+permite dar el valor de la flecha con fracciones de milímetros. Tenemos
+también la opción de escoger el número de decimales con el que
+indicamos el peralte: de 0 a 2 si el peralte está en milímetros, de 2 a
+4 si está en pulgadas.<br />
+      <br />
+      <span style="font-style: italic; font-weight: bold;">Punto de referencia del carril:</span>
+Este punto se utiliza para el cálculo de: la distancia al eje, X, Y, Z
+y Peralte. En todo caso se lista ambos anchos. (por ejemplo: 1.435 y
+1.500)<br />
+</span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Cara activa</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Punto de cálculo del peralte.</span></span></li>
+      </ul>
+      <span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.<br />
+
+      <span class="Parrafo">Posibilidad de editar y guardar en ficheros los textos de las cabeceras de los listados <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+El fichero generado tiene de nombre&nbsp;<span class="Archivo">carril#x.res</span>, siendo # el número de eje y tomando x el valor de <span style="font-style: italic;">u</span> en el caso de vía única, <span style="font-style: italic;">d</span> para vía derecha e <span style="font-style: italic;">i</span> para vía izquierda.<br />
+      <br />
+Si se selecciona <span class="Parf_negrita">[] Listar ambos carriles (y 3º)</span>, se incluye en el listado, los datos del tercer carril.<br />
+      <br />
+      </span></span><a name="cotas_y_pendientes"><span class="Titulo_2">Cotas y pendientes de los carriles</span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Este listado imprime para cada carril la cota y la pendiente
+longitudinal. Las cotas difieren de la rasante por el peralte, y la
+pendiente longitudinal difiere de la rasante por la transición al
+peralte.<br />
+      <br />
+Se puede seleccionar el punto de referencia del carril:<br />
+</span></span></a>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li>Cara activa</li>
+        <li><span class="Parrafo"><span class="Parrafo">Punto de cálculo del peralte<br />
+        </span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>&nbsp;<img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.<br />
+&nbsp;
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/cota_carril.png" style="width: 384px; height: 64px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span class="Parrafo">Posibilidad de editar y guardar en ficheros los textos de las cabeceras de los listados <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" />.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo">&nbsp;<img src="Imagenes/listado_zcarril.png" style="border: 1px solid ; width: 600px; height: 225px;" alt="listado_zcarril" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">&nbsp; </span><br />
+      <br />
+
+      <a style="font-weight: normal;" name="cotas_rojas_de_carriles"><span class="Titulo_2">Cotas rojas de carriles</span><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Listado en el que obtendrás las columnas de Pks, Distancia al eje de
+los carriles, Cota de carril, Cota de terreno en la perpendicular al
+carril, la Cota Roja del carril y el peralte.<br />
+      <br />
+Se puede seleccionar el punto de referencia del carril entre el punto
+de cálculo de peralte o la cara activa. Para el caso de, cara activa,
+se permite introducir un semiancho de la cabeza del carril,
+si se desea calcular la cota roja desde el centro de la cabeza, en
+lugar del punto que define la cota del carril por su cara activa.<br />
+      <br />
+</span></span><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.<br />
+      <span class="Parrafo">Posibilidad de editar y guardar en ficheros los textos de las cabeceras de los listados <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></a>
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/list_cota_roja_carril.png" style="width: 546px; height: 134px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/listado_roja_carril.png" style="border: 1px solid ; width: 600px; height: 212px;" alt="listado_roja_carril" /><br />
+      <br />
+</span></span>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span><a style="font-weight: normal;" name="ripado"><span class="Titulo_2">Ripado de vía</span></a><br style="font-weight: normal;" />
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Para el listado de RIPADO DE VÍA (.top) (<span class="Archivo">ripvia.res</span>) la introducción de los datos de la vía puede realizarse de las siguientes formas:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Mediante un fichero de coordenadas (X,Y,Z) de la vía. Este fichero puede ser un&nbsp;<span class="Archivo">.top</span> o un&nbsp;<span class="Archivo">.toc</span>.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Mediante un fichero de coordenadas (X,Y,Z) de piquetes (en formato&nbsp;<span class="Archivo">.top</span> o&nbsp;<span class="Archivo">.toc</span>) más un fichero&nbsp;<span class="Archivo">.pkd</span> de distancias y más un fichero&nbsp;<span class="Archivo">.pkz</span> con las cotas geométricas de la vía.</span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">En ambos caso la cota de la vía puede introducirse a traves de un fichero&nbsp;<span class="Archivo">.pkz</span> con las cotas geométricas de la vía. Tanto el levante como el ripado se dan desde el carril más cercano.<br />
+      <br />
+Además se debe indicar:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">El eje.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">La vía: única, derecha o izquierda.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">PK inicial y PK final.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Opcionalmente se ofrece la posibilidad de insertar los puntos principales de planta y/o alzado y/o peraltes.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El SEMIANCHO DE VIA:</span></span></li>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo">&nbsp;puede ser FIJO con un valor indicado</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Entre caras activas (distancia entre las caras activas de los carriles)</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Entre puntos de cálculo de peralte<br />
+            </span></span></li>
+        </ul>
+
+        <li><span class="Parrafo"><span class="Parrafo">El valor del ripado mínimo y máximo. Por defecto ripado mínimo -3000 mm y ripado máximo 3000 mm.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">COTA DE CARRIL:</span></span></li>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo">Cara activa del carril</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Punto de cálculo del peralte<br />
+            </span></span></li>
+        </ul>
+
+      
+      </ul>
+
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_ripado.png" style="width: 535px; height: 208px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+El listado imprime para cada punto:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">PK</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">PK usuario (deducido de las ecuaciones de pk)<br />
+          </span></span></li>
+
+        <li><span class="Parrafo"><span class="Parrafo">Punto (número del&nbsp;<span class="Archivo">.top</span> ó&nbsp;<span class="Archivo">pla</span>,&nbsp;<span class="Archivo">alz</span> ó&nbsp;<span class="Archivo">per</span>)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Tipo PLANTA-ALZADO (por ejemplo, RECTA KV -1000)</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El radio</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">La cota de rasante</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El peralte en mm</span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Y en el caso de los puntos procedentes del .top:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">La cota del punto</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El levante (cota de hilo bajo - cota del punto) en mm</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El ripado en mm
+(distancia del punto al carril). Se selecciona automáticamente el
+carril más próximo dentro de la vía seleccionada</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El carril seleccionado</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">El peralte actual en mm, para cuando se toman puntos muy próximos en ambos carriles.<br />
+          </span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><br />En el listado se muestra la cota
+teórica del carril, que puede coincidir o no con la del hilo bajo. La
+cota del hilo bajo puede ser diferente a la cota de rasante en curvas
+en "S" si se halla activada la opción de <span style="font-style: italic;">Mantener el centro de gravedad</span> en la tabla de definición de los peraltes.<br />
+      <br />
+      </span><span style="font-weight: normal;"><img src="Imagenes/icono_excel.png" style="width: 27px; height: 27px;" alt="icono_excel" /><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> Selección del formato en xlsx, en la carpeta de resultados.<br />
+
+      <span class="Parrafo">Posibilidad de editar y guardar en ficheros los textos de las cabeceras de los listados <img src="Imagenes/editar_list.png" style="width: 40px; height: 40px;" alt="" /></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><br />
+      <span class="Parrafo">
+Este listado genera también un archivo&nbsp;<span class="Archivo">hilobajo.lon</span> con el longitudinal
+por los puntos que corresponden al carril bajo (Interior de las
+curvas). En las rectas si hay varios puntos muy próximos (dpk &#8804; </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">5cm) se queda con el de cota más baja.<br />
+En las curvas puede haber también puntos muy próximos en el carril interior, y se queda también con el más bajo.<br />
+      <br />
+      <img src="Imagenes/listados_ferrocarril_ripado.png" style="width: 700px; height: 333px;" alt="listado_ferrocarril_ripado" /><br />
+<br />
+      <br /></span></span><a name="plasser"><span class="Titulo_2">Bateadora PLASSER</span></a><br style="font-weight: normal;" />
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">
+      <br />
+El listado para la BATEADORA PLASSER (<span class="Archivo">plasser.res</span>) es válido para este tipo de bateadora equipada con el software CGV5 o similar.<br />
+      <br />
+      </span></span>
+      
+      <div style="text-align: center; font-weight: normal;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_ferrocarriles_plasser.png" style="width: 421px; height: 327px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+Genera un listado con una serie de columnas separadas por tabuladores y
+teniendo en cuenta que las columnas contienen los siguientes datos:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">PK del punto singular.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Marca de sincronismo (S), tiene que ir sin datos.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Radio: Positivo
+(+) hacia la derecha, negativo (-) hacia la izquierda. Los puntos de
+tangencia con las rectas se marcan con 0. El principio y fin de
+circular se marca con el radio.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Sentido de la
+curva: Radio positivo hacia la derecha (D), radio negativo hacia la
+izquierda (I). Sólo se muestra en los PK&#8217;s de comienzo y fin de
+circular.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Acuerdo de transición (0 ó nada</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Clotoide, 1</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Sin transición, 2</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Klein).
+En caso de curvas sin transición el punto de tangencia con la recta se
+marca con el radio y en esta columna se pone un uno. Si hay transición
+con clotoide se deja en blanco.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Peraltes:
+Positivo (+) hacia la derecha, negativo (-) hacia la izquierda. El
+signo coincide con el del radio. Hay que marcar los puntos con peralte
+0, que pueden coincidir o no con los puntos singulares de la planta.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Sentido del
+peralte: Peralte positivo &#8594; derecha (D), peralte negativo &#8594; izquierda
+(I) (sólo en comienzo y fin de peralte constante).</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Acuerdo de nivelación transversal en peralte (0 ó nada</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Clotoide, 1</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Sin transición, 2</span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo">Klein).</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Acuerdos
+verticales: La tangente de entrada se marca con el KV y la de salida
+con 0, siendo el KV positivo en cima y negativo en hondonada. Cuando el
+final de un acuerdo vertical coincide con el inicio del siguiente, se
+repite el PK, el primero con un cero (fin de acuerdo) y el segundo con
+el PK del siguiente acuerdo.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Sentido de la curva: KV positivo &#8594; C (cima), KV negativo &#8594; H (hondonada).</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo">Se permite la introducción de datos mediante un fichero de puntos <span class="Archivo"><a href="EDM_topografia.html#ficheros_top">.top</a></span>/<span class="Archivo"><a href="EDM_topografia.html#ficheros_toc">.toc</a></span><span class="Parrafo">
+para cuyos puntos se calcula el levante y el ripado. Los levantes
+negativos se ponen a cero (conservándose el sigo "-" en su columna), y
+en este caso además se muestra una aviso.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Si se da un fichero de nivelación<a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a> y no se define fichero <a href="EDM_topografia.html#ficheros_top"><span class="Archivo">.top</span></a>/<a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span></a></span></span><span class="Parrafo"> de carriles, se genera un listado con "levantes" en los PKs del fichero de nivelación y con ripado=0.</span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Existe la
+posibilidad de poner o no a cero los levantes negativos y de listar
+posición o listar ripados (para invertir los sentidos).</span></span></li>
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-style: italic; font-weight: bold;">Puntos y cota geométrica</span><br />
+      <br />
+La entrada de datos puede realizarse utilizando también:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo">Un fichero <a href="EDM_topografia.html#ficheros_top"><span class="Archivo">.top</span></a>/<a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span></a></span> de coordenadas de los piquetes./span&gt;</li>
+        <li><span class="Parrafo">Un fichero <a href="OL_ficheros_pkd_pks_pkz.html#pkd"><span class="Archivo">.pkd</span></a> de PK&#8217;s y distancias medidas desde la cara activa al piquete.</span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Un fichero </span></span><a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a><span class="Parrafo"><span class="Parrafo"> con la nivelación de la vía.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">A partir de un
+archivo .job: Este es un archivo ascii en el que ya se encuadran
+calculados el ripado director y el levante director para un serie de
+pks. Contiene 3 líneas de cabecera y una línea más por cada punto, de
+estas líneas de datos se utilizan:<br />
+          </span></span>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Columna 3 : PK</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Columna 30 : RIPADO DIRECTOR</span></span></li>
+          </ul>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Columna 33 : LEVANTE DIRECTOR.</span></span></li>
+          </ul>
+        </li>
+
+      
+      </ul>
+
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo">Para el caso en que se haya tomado una nube de puntos topográficamente (fichero&nbsp;<span class="Archivo">.top</span>)
+y posteriormente se haya realizado una nivelación, se puede sustituir
+la cota trigonométrica por la cota geométrica de la nivelación
+definiendo también un fichero&nbsp;<a href="OL_ficheros_pkd_pks_pkz.html#pkz"><span class="Archivo">.pkz</span></a>.</span><span class="Parrafo"><br />
+      <br />
+      <span style="font-style: italic;">Tolerancia</span><br />
+      <br />
+Para el caso de que en las cadenas de puntos tomados aparezca un solape, se puede introducir:<br />
+      </span></span>
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Tolerancia
+en PK para considerar que se ha repetido el punto. La tolerancia para
+puntos repetidos provoca también que un dato del&nbsp;<span class="Archivo">.top</span> se asocie a un punto singular si la diferencia de PK&#8217;s está por debajo de la tolerancia.</span></span></li>
+      
+      </ul>
+
+      
+      <ul style="font-weight: normal;">
+
+        <li><span class="Parrafo"><span class="Parrafo">Modo de reparto del error:</span></span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span style="font-weight: normal;" class="Parrafo">
+      <div style="margin-left: 40px;">
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo">No repartir: Sólo se calcula el promedio del ripado en el punto repetido.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Por longitud: Se reparte el error en función de la distancia hasta una distancia máxima.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Por
+puntos: Se corrige en cada punto reduciendo el valor del error en cada
+punto en un valor prefijado hasta que se absorbe todo el error.</span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <table style="text-align: left; width: 692px; height: 202px; font-weight: normal;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Bajar la rasante (mm)<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Permite generar listados para realizar un "levante" gradual del carril cuando la diferencia de cota tiene valores importantes.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Ripado máximo<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Si se excede este valor, se imprime el ripado máximo.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Levante máximo<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Permite limitar el levante máximo (por defecto a 70 mm).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Redondear PK&#8217;s<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Redondea
+los PK&#8217;s resultantes al valor indicado (por defecto a 1). El redondeo
+de PK&#8217;s afecta también a los puntos singulares de planta, alzado y
+peraltes.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">Listados sin espacios<br />
+            </td>
+            <td style="vertical-align: top; width: 521px; text-align: justify;">Se
+utiliza exclusivamente el tabulador para separar los datos. Al activar
+esta opción se eliminan los ceros de los decimales y el punto en caso
+de valores redondos.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 123px;">0-KV-KV-0<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 521px;">En
+los acuerdos verticales, se admite la posibilidad de poner un dato con
+KV=0 a una distancia prefijada antes y después de cada acuerdo.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+      <br />
+      <span style="font-style: italic; font-weight: bold;">Semiancho de vía</span><br />
+      </span></span></span>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">FIJO: Se aplica siempre el mismo valor. Es la opción marcada por defecto, y aparece con el valor consignado en VÍA Y TRAVIESA.</span></span></span></li>
+      </ul>
+      <ul style="font-weight: normal;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">SEGÚN .vol: En este caso lee los valores del fichero&nbsp;<span class="Archivo">.vol</span>. Con esta opción se ofrece además la posibilidad de que no se tenga en cuenta la variación del ancho debido al peralte.</span></span></span></li>
+      </ul><br /><span class="Titulo_2"><a name="Formato_GEO">Formato GEO</a></span><a name="Formato_GEO"><br /><br />Es posible generar un listado en formato .geo: EjeX.geo.<br /><br /><img style="width: 420px; height: 358px;" alt="" src="Imagenes/listados_ffcc_geo.png" /><br /><br /><br /><span class="Titulo_2">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></a></span></td>
+    </tr>
+  <tr><td style="width: 692px;" class="obsolete Parrafo"></td></tr></tbody>
+</table>
+
+</body></html>

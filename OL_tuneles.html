@@ -1,0 +1,976 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Túnel y falso túnel</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TÚNEL Y FALSO TÚNEL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#declaracion">Declaración de la sección tipo túnel / falso túnel</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#uno_dos_tuneles">Selección de uno o dos túneles para cada calzada</a><br />
+      <a href="#def_seccion_mixta_falso_tunel">Definición de secciones mixtas y falso túnel</a><br />
+      <a href="#transiciones">Transiciones entre secciones tipo de túnel</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#def_analitica">Definición analítica</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#orig_coord">Origen de coordenadas, centro y comportamiento</a><br />
+      <a href="#def_boveda">Definición de la bóveda</a><br />
+      <a href="#def_contraboveda">Definición de la contrabóveda</a><br />
+      <a href="#def_zapatas">Definición de las zapatas</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#def_vectorial">Definición vectorial. Túnel pantalla</a><br />
+      <a href="#falso_tunel">Sección de falso túnel</a><br />
+      <a href="#linea_galibo">Línea de gálibo</a><br />
+      </div>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo">
+      <br />
+Este menú permite la creación de una tabla de secciones de túneles que
+luego pueden ser invocados en diferentes secciones tipo del trazado de
+una obra lineal.<br />
+      <br />
+Para la aplicación se trata de una sección más, generándose sin embargo
+una serie de superficies nuevas para que sea posible su utilización de
+manera exclusiva en otros apartados del programa como dibujo de la
+sección transversal, obtención de mediciones y lo más importante, su
+utilización específica en el módulo de seguimiento de túneles.<br />
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite definir dos tipos de
+geometrías: analíticas y vectoriales. Las primeras facilitan el definir
+con pocos datos el aspecto de la bóveda, contrabóveda, superficies de
+revestimiento y excavación total. Estas mismas superficies pueden, sin
+embargo, ser definidas con todo tipo de complejidad de manera
+vectorial..<br />
+      <br />
+Dentro de las geometrías vectoriales se ofrece la posibilidad de
+definir túneles de tipo &#8220;pantalla&#8221; variando ligeramente el cálculo
+geométrico de alguno de los elementos y ofreciéndose algunos parámetros
+que son específicos de este tipo de túnel, como son los anchos
+variables (que evitan definir varios tipos de túnel) y un control
+específico para la losa superior (en caso de existir).<br />
+      <br />
+Cada túnel se construye utilizando unos parámetros en relación a los
+centros geométricos de la sección y a varios códigos de la línea de
+plataforma, significando el convenio de signos positivo y negativo (+ y
+-) que la construcción de elementos será calculada hacia la derecha (+)
+o hacia la izquierda (-).<br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="declaracion">Declaración de la sección tipo túnel / falso túnelOL_desmonte_tierra.html</a></span><br />
+      <span class="Parrafo"><br />
+</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tierra_boveda_tunel.png" style="width: 186px; height: 224px;" alt="" align="right" hspace="6" /><span class="Parrafo">El primer paso para poder aplicar una sección de túnel consiste en
+indicarle a la aplicación que una sección tipo dada va a ser de tipo
+túnel. Se declara en la tabla de desmonte, en el apartado
+      <a href="OL_punto_control_y_arranque_cuneta.html">CONTROL/CUNETA</a> la opción <span style="font-style: italic;">Túnel</span> o <span style="font-style: italic;">Falso túnel</span>. En el caso de tratarse de
+un túnel, existen dos posibilidades:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Cuneta enganchada en el borde de berma.</span></li>
+        <li><span class="Parrafo">Cuneta enganchada en la subrasante.</span></li>
+      </ul>
+      <span class="Parrafo">Como normalmente en una sección de túnel la
+plataforma queda truncada por el propio túnel antes de la cuneta, la
+elección anterior suele resultar indiferente.<br />
+      <br />
+A continuación, y en el apartado de <a href="OL_desmonte_tierra.html#tuneles">TIERRA/BÓVEDA</a>, se elegirá el número de túnel, así como la superficie hasta la que se quiere llevar el relleno, en el caso de un falso tunel.<br /><br />En
+los casos de túnel, tambien se es posible activar la casilla específica
+para que se genere la medición de la lámina de geotextil del
+revestimiento y la medición del encofrado del sostenimiento, así como
+su representación en el modelo BIM. La medición de los encofrados se
+separa en dos: para el sostenimiento y para el talón.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_desm_tuneles.png" style="width: 512px; height: 162px;" alt="" /><br />
+</span></span>
+      </div>
+      <br /></span><span class="Parrafo">
+      <table style="text-align: left; width: 689px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 636px; text-align: justify;"><span class="Parrafo"><span class="Parrafo Info">Esta asociación entre el
+número de túnel y la sección tipo y lateral a aplicar también se puede
+declarar directamente desde el menú TÚNELES mediante la opción <a href="OL_tuneles.html#aplicar_ST"><span style="font-weight: bold;">APLICAR A S.T.</span></a></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <a href="#aplicar_ST"><span style="font-weight: bold;"></span></a>A continuación, habrá que entrar en el menú de <a href="#diseno">TÚNELES</a>
+desde ALZADO en donde se define la geometría de los diferentes
+tipos de túnel que vaya a aplicar en el eje actual. La definición de
+los túneles puede ser almacenada en archivos independientes, de manera
+que puedan ser inmediatamente aplicados en otros ejes e incluso en
+otros proyectos.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="uno_dos_tuneles">Selección de uno o dos túneles para cada calzada</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><span class="Parrafo"><span class="Parrafo">En
+caso de autovía se debe definir diferente sección de túnel para las
+calzadas derecha e izquierda, debido a que los datos que definen la
+geometría del túnel son positivos hacia la derecha y negativos hacia la
+izquierda, de modo que aunque el túnel pueda ser simétrico estos datos
+tienen diferente signo. Simplemente se debe asociar un número de túnel
+a cada calzada (y claro
+está, definirlos en el apartado correspondiente).<br />
+      <br />
+</span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/doble_tunel.png" style="width: 366px; height: 125px;" alt="" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En caso de necesitar un único túnel, se deberá elegir como sección de túnel para la izquierda la cero (0 es decir, ninguna).<br />
+      <br />
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_tunel_unico.png" style="width: 439px; height: 139px;" alt="" /></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_unico.png" style="width: 153px; height: 117px; margin-left: 7px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_seccion_mixta_falso_tunel">Definición de secciones mixtas y falso túnel</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+También es posible definir secciones mixtas, en las que la sección de
+la parte derecha y de la izquierda utilizan secciones totalmente
+diferentes, como puede ser el caso de túnel-abierta o túnel-falso túnel.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_seccion_mixta.png" style="width: 453px; height: 144px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+En estos casos es necesario definir la sección como <a href="OL_desmonte.html#generalidades"><span style="font-weight: bold;">[ASIMÉTRICA]</span></a>, comportamientos en <a href="OL_punto_control_y_arranque_cuneta.html">CONTROL/CUNETA</a> diferentes y <a href="OL_excentricidad_mediana.html#mediana_abierta">mediana abierta</a> en esos tramos (para que pueda calcularse la intersección geométrica):<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_tunel_seccion_mixta.png" style="width: 475px; height: 98px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/mediana_abierta.png" style="width: 559px; height: 87px;" alt="" /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="transiciones">Transiciones entre secciones tipo de túnel</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+En <a href="OL_zonas_calculo.html">ZONAS DE CÁLCULO</a> se pueden hacer transiciones entre dos secciones
+tipo de túnel con diferente geometría de túnel. Los túneles deben ser
+del mismo tipo (vectoriales o analíticos).<br />
+<br />
+      <br />
+      </span></span></span></span></span><span class="Titulo_2"><a name="diseno">Diseño de la sección de túnel / falso túnel</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      Al abrir la tabla <span style="font-weight: bold;">[TÚNELES]</span> desde el menú de ALZADO, se despliega el siguiente cuadro de diálogo en el que se pueden observar varias zonas diferenciadas:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Parte superior
+en la que se pueden realizar diversas operaciones de carga, guardado de
+información del diseño del túnel, tipo de bóveda, etc.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Origen de coordenadas, centros y comportamiento del túnel.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Definición geométrica de la bóveda y contrabóveda.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Definición de las zapatas.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Definición de las superficies de excavación total y sostenimientos.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_tuneles.png" style="width: 561px; height: 321px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 95px;">[Añadir]<br />
+[Borrar]<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Posibilita incorporar
+nuevas secciones de túnel a la tabla o eliminar secciones existentes.
+Cada sección de túnel puede tener asociado un nombre.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 95px;">[Guardar] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /><br />
+[Cargar] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /><br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">La tabla de secciones de
+túnel puede archivarse y recuperarse con estos botones a través de archivos de extensión&nbsp;<span class="Archivo">.tun</span>.</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 95px;">[Guardar 1] <img src="Imagenes/icono_guarda1.png" style="width: 20px; height: 20px;" alt="" /><br />
+[Cargar 1] <img src="Imagenes/icono_abrir1.png" style="width: 20px; height: 20px;" alt="" /><br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Permiten intercambiar la
+definición de uno solo de los túneles en lugar de toda la tabla a través de archivos de extensión .<span class="Archivo">1tu</span>. No
+obstante, si un eje tiene definida al menos una sección de túnel, la
+tabla de túneles asociada a ese eje se guardará dentro de su fichero&nbsp;<span class="Archivo">.vol</span> con el resto de los datos que definen la geometría de ese eje.</span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 95px; font-weight: bold;"><span class="Parrafo"><a name="aplicar_ST">[APLICAR A S.T.]</a></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 583px;"><span class="Parrafo"><span class="Parrafo">Permite ver en qué
+secciones tipo se aplica la bóveda actual, y también ofrece la
+posibilidad de aplicar la bóveda actual a una sección tipo concreta.<br />
+            <br />
+</span></span>
+            <table style="text-align: left; width: 577px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+                  </td>
+                  <td style="vertical-align: top; width: 520px; text-align: justify;"><span class="Info">Al
+aplicar desde aquí una bóveda a una sección tipo, ésta pasa a ser de
+tipo túnel. Para cambiar a otro tipo se debe acceder desde el menú <a href="OL_desmonte.html">DESMONTE</a>.</span><br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Parrafo"><span class="Parrafo"></span></span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="dibujar_O1">Dibujar O1</a></span>
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Con esta opción activada se dibuja el símbolo S313 en la posición de O1 en los perfiles&nbsp;<span class="Archivo">ISPOL#.per</span> (siendo # el número de eje). Esto permite que, por ejemplo, con el modo de dibujo&nbsp;<span class="Archivo">CentroTun.lil</span>,
+se pueden representar los centros de los túneles como una línea 3D y,
+por lo tanto, se puede extraer información de esa línea, proyectándola
+sobre el eje, generando una nube de puntos (<span class="Archivo">.toc</span>), etc.<br />
+            <br />
+Cuando tenemos un túnel de doble bóveda, el O1 de la izquieda se
+dibujará con el símbolo S286, el de la derecha quedará dibujado con el
+símbolo S313.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+      <br />
+      
+      </span></span><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/deslizador_tuneles.png" style="width: 179px; height: 42px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Un deslizador horizontal permite navegar por las distintas secciones de
+túnel definidas para el eje actual. Cada sección de túnel de un eje se
+identificará por su número de túnel.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      La geometría de una sección de túnel se almacena en dos superficies que representan a las dos caras exterior <span style="font-weight: bold;">E</span> e interior <span style="font-weight: bold;">I</span> o también llamadas <span style="font-weight: bold;">sostenimiento</span> y <span style="font-weight: bold;">revestimiento</span> de hormigón del túnel. También se puede crear una tercera superficie <span style="font-weight: bold;">T</span> o línea de <span style="font-weight: bold;">excavación total</span>.<br />
+      <br />
+</span></span></span></span></span></span></span><img src="Imagenes/lineas_tuneles.png" style="width: 228px; height: 185px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">EL programa hace uso de los siguientes tipos de línea:</span></span></span></span></span></span></span><br />
+      <ul style="margin-left: 240px;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">L9: Excavación total</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">L19: Sostenimiento</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">L12: Revestimiento</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los datos de esta geometría se introducen mediante una serie de parámetros en <a href="#def_analitica"><span style="font-weight: bold;">[BOVEDA ANALÍTICA]</span></a>
+que luego el programa aplica a cada PK concreto en función del peralte
+y la posición de otros puntos de control para la construcción del túnel.<br />
+      <br />
+      <br />
+      <br />
+<br /><span class="Parrafo"><br />
+      <br />
+</span></span></span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_analitica">Definición analítica</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span><img src="Imagenes/modelo_tunel.png" style="width: 324px; height: 319px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+modelo que se muestra dentro del menú de TÚNELES guía al usuario en la
+declaración de los distintos parámetros que intervienen en la
+definición analítica de la sección de túnel.<br />
+      <br />
+      <br /><a name="orig_coord">
+ORIGEN DE COORDENADAS, CENTRO Y COMPORTAMIENTO</a><br />
+      <br />
+La aplicación permite definir una sección de túnel que utiliza <span style="font-weight: bold;">tres centros</span> para definir la bóveda y un cuarto que aplica la contrabóveda.<br />
+      <br />
+
+Las coordenadas <span style="font-weight: bold;">O1X</span>, <span style="font-weight: bold;">O1Y</span> del centro de la bóveda <span style="font-weight: bold;">O1</span> son:<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">O1x</span>:
+Distancia al eje de giro (en autopistas está situado en el borde
+interior de la calzada principal). También puede definirse el O1X como
+una distancia <span style="font-weight: bold;">desde el eje en planta</span>, activando la casilla correspondiente.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">O1y</span>: Diferencia de cota con la rasante definida, teniendo en cuenta el peralte, o sea, la diferencia de cota con la calzada.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el caso de ferrocarriles <span style="font-weight: bold;">O1x</span> puede tomarse <span style="font-weight: bold;">desde el eje de vía</span> y <span style="font-weight: bold;">O1y</span> <span style="font-weight: bold;">desde la cota de carril</span>, marcando las correspondientes opciones.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 639px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Para
+las secciones de ferrocarril de doble vía en placa (los cuatro hilos en el mismo
+plano) y las dos vías en una misma boveda, al activar la opción <span style="font-weight: bold; font-style: italic;">O1Y
+desde la cota de carril</span>, se toma la cota del hilo más bajo de los
+cuatro aunque esté en diferente lado de aquel en el que se ha definido
+la boveda. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_orig_coord.png" style="width: 556px; height: 62px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La colocación exacta de este punto puede además utilizar las siguientes variantes:<br />
+      </span></span></span></span></span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/tunel_orig_O1y.png" style="width: 248px; height: 136px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Desde el punto más desfavorable</span>: Usa la diferencia de cota desde el punto más desfavorable (más alto) de los dos bordes de los arcenes.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Desde longitudinal auxiliar</span>:
+Permite referir la cota del centro de la bóveda o el origen de
+referencia de la bóveda vectorial desde un longitudinal auxiliar, por
+ejemplo, cuando el techo del túnel es una losa cuya altura depende del
+nivel de la calle. Este longitudinal auxiliar debe estar definido en
+RASANTES.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Desde el eje de giro</span>: No se tiene en cuenta el peralte para la posición de <span style="font-weight: bold;">O1y</span> y se usa la cota de la rasante.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+También hay que precisar el modo en que se mueve la bóveda con el peralte:<br />
+      </span></span></span></span></span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/tunel_compor_O1.png" style="width: 203px; height: 106px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Fijo</span>: <span style="font-weight: bold;">O1x</span> se mide en horizontal y <span style="font-weight: bold;">O1y</span> en vertical.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">O1x,O1y basculan con el peralte</span>: El valor <span style="font-weight: bold;">O1x</span> se mide siguiendo la rasante según el peralte y el valor <span style="font-weight: bold;">O1y</span> se mide perpendicular al peralte (estas mediciones se hacen relativas al eje de giro).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">O2,O3,a1 basculan con el peralte</span>:
+Esta opción permite girar al arco a1 con el peralte de modo que el
+plano que une los centros O2,O3 se mantiene paralelo a la calzada
+siguiendo las inclinaciones del peralte. La bóveda bascula rígidamente.</span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">O1y bascula con el peralte</span>: Se busca primero un punto sobre la calzada a una distancia horizontal <span style="font-weight: bold;">O1x</span> y sobre este punto se lleva perpendicular a la calzada la distancia <span style="font-weight: bold;">O1y</span>.<br />
+</span></li>
+
+      
+      </ul>
+
+      
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tunel_tramif_O1X.png" style="width: 270px; height: 150px;" alt="" align="right" hspace="7" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="tabla">El programa además ofrece la posibilidad de definir una tabla para dar incrementos tanto a los valores <span style="font-weight: bold;">O1x</span> como <span style="font-weight: bold;">O1y</span> (o <span style="font-weight: bold;">Dx</span>/<span style="font-weight: bold;">Dy</span> en </a><a href="#def_vectorial">bóvedas vectoriales</a>), por PKs.<br />
+      <br />
+El acceso a la declaración de las tablas se efectúa mediante los botones <span style="font-weight: bold;">[TABLA d_O1x]</span> y </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[TABLA d_O1x]</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">. Para activar el uso de las mismas en un túnel basta con activar la opciones <span style="font-weight: bold; font-style: italic;">d_O1x/d_Dx por tabla</span><span style="font-style: italic;"><span style="font-weight: bold;"> </span></span>y </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">d_O1y/d_Dy por tabla.<br />
+      <br />
+</span>Se podrán <span style="font-weight: bold;">cargar</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> o <span style="font-weight: bold;">guardar</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> archivos de extensión .pkd con la primera columna destinada para los Pks y la segunda para las distancias.<span style="font-weight: bold; font-style: italic;"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br /><a name="def_boveda">
+DEFINICIÓN DE LA BÓVEDA</a><br />
+      <br />
+      <img src="Imagenes/def_boveda.png" style="width: 276px; height: 217px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">R1E</span> y <span style="font-weight: bold;">R1I</span> son los radios exterior e interior de la bóveda respectivamente centrada en el punto <span style="font-weight: bold;">O1</span> y abarcando un arco de <span style="font-weight: bold;">a1</span> grados sexagesimales. Ese arco puede ser diferente para para la superficie exterior o de sostenimiento (<span style="font-weight: bold;">a1E</span>) que para la interior o de revestimiento (<span style="font-weight: bold;">a1I</span>).<br />
+      <br />
+      <span style="font-weight: bold;">R2E</span> y <span style="font-weight: bold;">R2I</span> son los radios exterior e interior del lado derecho del túnel. Si R=0, este lado será recto.<br />
+
+      <br />
+      <span style="font-weight: bold;">R3E</span> y <span style="font-weight: bold;">R3I</span> son los radios exterior e interior del lado izquierdo del túnel. Si R=0, este lado será recto.<br />
+      <br />
+      <span style="font-weight: bold;">R4I</span> y <span style="font-weight: bold;">R4E</span>
+
+son los radios interior y exterior de la contrabóveda, dependiendo de
+la localización del centro y de los radios utilizados obtendremos
+diferentes resultados.<br /><br /><span style="font-weight: bold;">+ Radios</span> permite desdoblar el parámetro lateral en 2 radios diferentes, puediendo así definir bóvedas de 3 radios.<br />
+      <br />
+El programa chequea que los distintos radios introducidos en R1, R2 y R3 tengan valores crecientes.<br />
+      <br />
+En el caso de activar la opción <span style="font-weight: bold;">Línea de excavación total</span>, también se deben definir los radios <span style="font-weight: bold;">R1T</span>, <span style="font-weight: bold;">R2T</span>, <span style="font-weight: bold;">R3T</span> y <span style="font-weight: bold;">R4T</span>, así como el espesor <span style="font-weight: bold;">et</span> por debajo de la zapata y la pendiente <span style="font-weight: bold;">pt</span> para aplicar en el caso de que la solera sea horizontal y se desea verter el agua en un dren central.<br />
+
+      <br />
+Cada uno de los arcos anteriormente definidos se discretiza en un número de <span style="font-weight: bold;">tramos</span> definidos por el usuario.<br />
+      <br />
+      <br /><a name="def_contraboveda">
+DEFINICIÓN DE LA CONTRABÓVEDA</a><br />
+      <br />
+      <span style="font-weight: bold;">R4I</span> y <span style="font-weight: bold;">R4E</span>
+
+son los radios interior y exterior de la contrabóveda. Dependiendo de
+la localización del centro y de los radios utilizados se obtendrán
+diferentes resultados.<br />
+      <br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><img src="Imagenes/def_contraboveda.png" style="width: 310px; height: 181px; margin-right: 7px;" alt="" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tunel_comporO4y.png" style="margin-left: 7px; width: 182px; height: 161px; float: right;" alt="" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Los arcos exterior e interior de la contrabóveda pueden ser
+concéntricos o no, y el radio interior puede ser mayor que el exterior.<br />
+      <br />Es posible definir el espesor mínimo de la contrabóveda mediante el parámetro <span style="font-weight: bold;">e4</span>, teniendo en cuenta que si <span style="font-weight: bold;">e4</span> = <span style="font-weight: bold;">R4e</span> - <span style="font-weight: bold;">R4i</span>
+entonces los arcos son concéntricos, pero que de lo contrario se
+calcula el centro del radio interior para que se cumpla el valor de <span style="font-weight: bold;">e4</span>.</span></span></span></span></span></span></span></span><br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 503px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 446px; text-align: justify;">Si se mantienen a cero los radios de la contrabóveda <span style="font-weight: bold;">R4I</span> y <span style="font-weight: bold;">R4E</span> y se da un valor positivo al espesor <span style="font-weight: bold;">e4</span>, se obtiene una contrabóveda recta.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold;">O4Y</span> es la coordenada Y
+del centro de la contrabóveda relativa a la rasante teniendo en cuenta el
+peralte.
+
+
+
+
+      Existen varias posibilidades que se detallan a continuación:<br />
+      <br />
+      </span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 119px;" border="0" cellpadding="2" cellspacing="10">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">Como O1Y</span>: El origen vertical para el centro de la contrabóveda coincide con el de <span style="font-weight: bold;">O1Y</span>. El centro <span style="font-weight: bold;">O4</span> estará en la misma vertical que <span style="font-weight: bold;">O1</span>.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_como_o1y.png" style="width: 299px; height: 303px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Contrabóveda peraltada</span>:
+Se calcula la posición del centro para que el arco pase por las
+esquinas exteriores de las zapatas. Si se activa esta opción, el
+programa no utiliza el valor de <span style="font-weight: bold;">O4y</span> y calcula el centro del arco para que el arco exterior pase por las esquinas inferiores y exteriores de las zapatas laterales. <span style="font-weight: bold;">O4</span> ya no estará en la misma vertical que <span style="font-weight: bold;">O1</span>.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_contraboveda_peraltada.png" style="width: 299px; height: 291px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">Desde el eje de giro</span>: <span style="font-weight: bold;">O4Y</span>
+se mide desde el eje de giro. El arco de la contrabóveda se detiene en
+el plano de la base de las zapatas ó en su prolongación en la zona
+interior.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_desde_eje_giro.png" style="width: 271px; height: 139px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Desde el eje de giro (V)</span>: Es análogo a la opción <span style="font-style: italic;">Desde el eje de giro</span>,
+estando la diferencia en la terminación del arco exterior de la
+contrabóveda. En este modo, el arco continúa hasta cortar a la línea
+vertical interior de la zapata.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_desde_eje_giro_2.png" style="width: 272px; height: 136px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">Como O1Y (V)</span>: Es análogo a la opción <span style="font-style: italic;">Como O1Y</span>,
+la única diferencia es que el arco de la contrabóveda continúa hasta
+cortar a la línea vertical interior de la zapata. Esto puede utilizarse
+para túneles construidos con dos pantallas verticales que se prolongan
+más abajo que la contra bóveda.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_o4y_como_o1y_2.png" style="width: 285px; height: 133px;" alt="" /><br />
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Sostenimiento primario</span>: Es análogo al de <span style="font-style: italic;">Contrabóveda peraltada</span>,
+pero en lugar de ir a buscar la esquina de la línea de sostenimiento
+pasa por el extremo de la línea de sostenimiento primario.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tunel_contraboveda_sostPrimario.png" style="width: 300px; height: 208px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 338px; text-align: justify;"><span style="font-weight: bold;">Sostenimiento secundario</span>: Análogo al de <span style="font-style: italic;">Sostenimiento primario</span>, pero pasando por el extremo del sostenimiento secundario.<br />
+            <br />
+            <div style="text-align: center;">
+            <div style="text-align: center;"><img src="Imagenes/tunel_contraboveda_sostSecundario.png" style="width: 305px; height: 207px;" alt="" /><br />
+            </div>
+
+            </div>
+            </td>
+            <td style="vertical-align: top; width: 339px; text-align: justify;"><span style="font-weight: bold;">Peraltada interior</span>:
+El arco interior de la contrabóveda pasa por los dos extremos
+interiores de las zapatas en su punto alto o intersección con la
+subrasante.<br /><br />
+            <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_contraboveda_sostSecundario.png" style="width: 305px; height: 207px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+            </td>
+          </tr><tr><td><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Peraltada pantalla</span>:
+Se utiliza para túneles pantalla. Con el valor o4y, negativo para que
+arranque hacia abajo, se define la distancia vertical del arranque
+interior de la contrabóveda respecto al código 150 (intersección de la
+superficie 67 con la superficie interior de la pantalla).<br /><br />
+            </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_o4y_como_o1y_2.png" style="width: 285px; height: 133px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+            <div style="text-align: center;">
+            <div style="text-align: center;"><br /></div></div></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td><td></td></tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: top; width: 639px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Para
+las secciones de doble vía, en placa (los cuatro hilos en el mismo
+plano) y las dos vías en una misma bóveda, al seleccionar la opción <span style="font-weight: bold;">O4Y desde el eje de giro</span>
+se toma como cota del eje de giro la del hilo más bajo de los cuatro
+aunque esté en diferente lado de aquel en el que se ha definido la
+bóveda. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Cuando la contrabóveda se apoya en la esquina interior de la zapata existe la posibilidad de <span style="font-weight: bold;">recortar la zapata</span> formando un chaflán (basta con activar la correspondiente opción).<br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a name="def_zapatas">
+DEFINICIÓN DE LAS ZAPATAS</a><br />
+      <br />
+      <span style="font-weight: bold;">T1x</span>, <span style="font-weight: bold;">T1y</span> son las coordenadas del punto <span style="font-weight: bold;">T1</span> y <span style="font-weight: bold;">T2x</span>, <span style="font-weight: bold;">T2y</span> son las coordenadas del punto <span style="font-weight: bold;">T2</span>
+
+medidas desde los bordes de los arcenes derecho e izquierdo
+respectivamente (o borde de balasto en caso de ferrocarriles, código
+11).<br />
+      <br />
+También se permite definir una altura y un talud para la parte interior
+de la zapata del túnel y su intersección con la subrasante (parámetros <span style="font-weight: bold;">zt2</span>, <span style="font-weight: bold;">zh2</span>, <span style="font-weight: bold;">zt1</span> y <span style="font-weight: bold;">zh1</span>).<br />
+      <br />
+
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_def_zapatas.png" style="width: 556px; height: 49px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Para el caso de zapatas definidas vectorialmente, se pueden definir unos talones de sostenimiento mediante las casillas <span style="font-weight: bold;">tlh1</span> y <span style="font-weight: bold;">tlh2</span>.
+Si se da un valor mayor al espesor de la zapata entonces se crea una
+línea que define los talones y se añade una medición a estos talones
+llamada TALON_TUNEL. La medición de SOSTENIMIENTO incluye esta medición.<br />
+Esta línea sirve en el menú de <a href="OL_seg_tun_talon.html">Seguimiento de Túneles</a> para calcular la medición del TALON en función de una superficie de gunita.<br />
+En los perfiles de <a href="OL_seg_tun_talon.html">segumiento</a>, si
+se rehace el talón hasta la línea de gunita, también se genera una
+nueva superficie cerrada que corresponde al revestimiento real de la
+Boveda por encima del talón entre la gunita y el revestimiento teórico.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/talon_tunel_ejemplo.png" style="width: 556px; height: 366px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Las zapatas se controlan con el parámetro <span style="font-weight: bold;">Ty</span>, ofreciendo el programa las siguientes posibilidades:<br />
+      </span></span></span></span>
+      <table style="text-align: left; width: 691px; height: 561px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 454px; text-align: justify;">
+            <ul>
+              <li><span style="font-weight: bold;">Horizontal</span>: Desde el código 11 se traza en vertical la distancia <span style="font-weight: bold;">Ty</span>. Desde ese punto, mide en horizontal la longitud <span style="font-weight: bold;">Tx</span>.
+Por último, termina de construir la zapata buscando en vertical el
+corte con la subrasante y en horizontal con las superficies de
+sostenimiento y revestimiento.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Peraltada</span>: Es similar a la anterior pero la zapata sigue la pendiente del peralte.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Independiente del peralte</span>: Las alturas <span style="font-weight: bold;">T1y</span> y <span style="font-weight: bold;">T2y</span> se miden ambas desde el mismo origen que O1y, por tanto ambas zapatas quedarán a la misma altura.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Otra calzada</span>:
+Sólo sirve para el caso de doble calzada y con doble bóveda. Es como la
+independiente pero utilizando con referencia de cotas la que se empleó
+como referencia para las zapatas de la bóveda del otro lado. Esto
+permite, por ejemplo, que las zapatas del lado izquierdo tengan la base
+a la misma cota que las del lado derecho o viceversa.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Eje de giro</span>: Es como la opción Independiente pero utiliza como referencia de cotas para la zapata la cota del eje de giro.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;"><a name="zapata_vectorial">Vectorial</a></span>: En los túneles con <a href="#def_vectorial">bóveda vectorial</a>,
+se puede definir la zapata también vectorial. En este caso se define el
+túnel completo vectorialmente y no se utilizan los valores de <span style="font-weight: bold;">T1x</span>, <span style="font-weight: bold;">T1y</span>, <span style="font-weight: bold;">T2x</span>, <span style="font-weight: bold;">T2y</span>,&#8230; Es el método aplicable para túneles de sección circular completa.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Pantalla</span>: Para túneles construidos con pantallas (<a href="#def_vectorial">bóvedas vectoriales</a>) el programa utiliza los valores de <span style="font-weight: bold;">T1y</span> y <span style="font-weight: bold;">T2y</span> para determinar la cota hasta la que bajan las pantallas y no se tienen en cuenta los valores <span style="font-weight: bold;">T1x</span> y <span style="font-weight: bold;">T2x</span>.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Pantalla Roca 1, 2, 3...</span>:
+Permite cortar el pie de la pantalla contra la profundidad de roca
+definida según su horizonte. Puede seleccionarse cualquiera de las seis
+rocas. La profundidad a partir de la roca se da en los parámetros T1y y
+T2y.</li>
+            </ul>
+            <br />
+
+            </td>
+            <td style="vertical-align: top; width: 217px;"><br />
+            <div style="text-align: center;"><img src="Imagenes/zapata_horizontal.png" style="width: 194px; height: 146px;" alt="" /><br />
+            <span class="Info">Zapata horizontal</span><br />
+            <br />
+            <br />
+            <img src="Imagenes/zapata_peraltada.png" style="width: 194px; height: 150px;" alt="" /><br />
+            <span class="Info">Zapata peraltada</span><br />
+            <br />
+            <br />
+            <img src="Imagenes/zapata_independiente.png" style="width: 189px; height: 140px;" alt="" /><br />
+            <br />
+            <span class="Info">Zapata independiente</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/pantalla_roca_dos.png" style="width: 573px; height: 325px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En el caso de que las <span style="font-weight: bold;">pantallas</span> lleguen a un determinado espesor de roca (1, 2, 3...) los valores <span style="font-weight: bold;">T1y</span> y <span style="font-weight: bold;">T2y</span>
+son relativos a los horizontes de roca. La definición vectorial de la
+pantalla deberá tener suficiente longitud para que el programa pueda
+leer los parámetros <span style="font-weight: bold;">T1y</span> y <span style="font-weight: bold;">T2y</span>.<br />
+      <br />
+El parámetro <span style="font-weight: bold;">Puntos por la bóveda exterior</span>
+nos permite definir el número de segmentos de la bóveda exterior que va
+a recorrer la linea 68 antes de iniciar la sección de desmonte. Por
+defecto es 1, pero puede tener valores negativos para recorrer la
+bóveda hacia arriba.<br /><br />El parámetro <span style="font-weight: bold;">Código por la bóveda interior </span>permite
+que la superficie de la subrasante (L68) sigua por la bóveda interior
+hasta este código antes de cruzar hacia la bóveda exterior. <br />
+      <br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="def_vectorial">Definición vectorial. Túnel pantalla</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><img src="Imagenes/dialogo_boveda_vectorial.png" style="width: 180px; height: 69px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La bóveda puede definirse también de modo vectorial. Para ello, dentro del menú TÚNELES se debe conmutar el tipo <span style="font-weight: bold;">[BÓVEDA ANALÍTICA]</span> a tipo <span style="font-weight: bold;">[BÓVEDA VECTORIAL]</span>.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tunel_def_vectorial.png" style="width: 299px; height: 171px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Gráficamente
+se pueden crear o modificar las superficies interior, exterior y la de
+excavación total. Normalmente se definirán de modo que sobren datos
+hacia abajo para que el programa luego en cada PK concreto calcule la
+intersección según la posición real de los puntos <span style="font-weight: bold;">T1</span> y <span style="font-weight: bold;">T2</span> y la contrabóveda que sigue siendo analítica.<br />
+      <br />
+Es muy importante recalcar que la definición de las superficies debe
+ser realizada utilizando líneas independientes para la parte derecha e
+izquierda y además la secuencia de puntos debe ir de arriba abajo según
+se aprecia en la ilustración.<br />
+      <br />
+Este tipo de sección es el más indicado para diseñar túneles de tipo
+pantalla, con o sin solera o también para definir de manera muy
+sencilla la sección completamente circular de una tuneladora (ya que
+con el sistema analítico siempre queda un pequeño residuo geométrico
+fruto del cálculo que debe hacerse para las zapatas, que en este caso
+no existen).<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tunel_desp_vectores.png" style="width: 224px; height: 59px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Además de los vectores, se incluyen en este caso los valores <span style="font-weight: bold;">Dx</span> y <span style="font-weight: bold;">Dy</span> que definen un desplazamiento relativo de las coordenadas (0,0) de los vectores con respecto al eje de giro. El valor de <span style="font-weight: bold;">Dx</span> se aplica siguiendo el peralte.<br />
+      <br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tunel_vectorial_fuerte_pend.png" style="width: 211px; height: 74px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para las bóvedas vectoriales, y en caso de <span style="font-weight: bold;">fuertes pendientes</span>, se puede seleccionar que la sección definida es perpendicular a la rasante.<br />
+      <br />
+La opción <span style="font-weight: bold;">Copiar bóveda analítica </span>crea unos vectores de partida a partir de los datos analíticos y coloca el origen de la X en la vertical del centro <span style="font-weight: bold;">O1</span>, copiando así mismo el valor <span style="font-weight: bold;">O1x</span> sobre <span style="font-weight: bold;">Dx</span>.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/copiar_boveda_analitica.png" style="width: 354px; height: 78px;" alt="" align="left" hspace="8" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El valor <span style="font-weight: bold;">O1x</span>
+no se integra dentro del vector ya que luego se aplica siguiendo el
+peralte, lo que modifica la cota real de la bóveda en cada PK. En las
+definiciones vectoriales se incluyen los parámetros <span style="font-weight: bold;">O1x</span>, <span style="font-weight: bold;">O1y</span> que pueden ser utilizados por la contrabóveda.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/def_boveda_vectorial.png" style="width: 135px; height: 126px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si se desea la bóveda vectorial bascule con el peralte, entonces debe activarse la opción <span style="font-weight: bold; font-style: italic;">Basculan con peralte</span>. Cuando se activa esta opción en ferrocarriles de vía única, la bóveda gira alrededor del hilo bajo.<br />
+      <br />
+El botón <span style="font-weight: bold;">[EDITAR]</span>
+abre un entorno gráfico con la barra de herramientas de líneas
+desplegada para modificar la bóveda vectorial. Si el número de puntos
+de los vectores es 0 (la primera vez que se entra a editar) se copia de
+forma automática la bóveda analítica.<br />
+      <br />
+Se deben emplear tres tipos de líneas específicas, L9, L7 y L8, para
+que el programa pueda reconocer estas superficies como excavación
+total, sostenimiento y revestimiento respectivamente. Para facilitar
+esta labor, se muestra un cuadro de diálogo que permite definir estos
+tipos de línea de forma gráfica. Si el usuario cierra dicho cuadro y
+desea invocarlo de nuevo, deberá pulsar sobre el botón <span style="font-weight: bold;">BÓVEDA VECTORIAL </span>del menú vertical.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialog_tun_vec_tipoL.png" style="width: 303px; height: 116px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span><img src="Imagenes/def_boveda_vectorial2.png" style="width: 135px; height: 127px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al
+salir de la edición grafica de la bóveda, se muestra un dibujo con
+líneas rellenas que indican cómo quedan las superficies interior,
+exterior y excavación teórica, y se solicita confirmación para salir.
+Esto permite detectar fácilmente errores en la geometría, orientación o
+tipos de las líneas implicadas.<br />
+      <br />
+Por seguridad, también se crea un fichero&nbsp;<span class="Archivo">IS#EP.edm</span> que en una sesión posterior se puede recuperar.<br />
+      <br />
+      <br />
+      <br />
+En el caso de <a href="OL_tuneles.html#zapata_vectorial">zapata vectorial</a>,
+se puede definir de maneta vectorial un talón o murete de arranque de
+forma independiente. El esquema de realización del talón o murete viene
+en el esquema del menú de de túneles. Es importante que la línea con la
+que se construya sea la línea 332 y que comience y termine según el
+esquema.<br />
+La medición se dará como TALON TUNEL.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tun_zap_vect_talon.png" style="width: 303px; height: 396px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tuneles_vectorial_ptos_control.png" style="width: 338px; height: 105px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para
+túnel vectorial con<a href="OL_tuneles.html#zapata_vectorial"> zapata vectorial</a> existe la posibilidad de definir
+hasta qué punto de la bóveda exterior/interior se extienden los
+sostenimientos primario y secundario. <br />
+      <br />
+<br />
+TÚNEL PANTALLA<br />
+      <br />
+Si se define vectorialmente un túnel mediante pantallas en forma de H, con la opción <span style="font-weight: bold; font-style: italic;">Recortar pantalla</span>,
+se elimina la parte de las pantallas que sobresale del terreno
+competente. Si la losa sobresale del terreno competente, se recorta al
+nivel del techo de la losa.<br />
+      <br />
+Se recuerda que en la definición vectorial de la pantalla en H, toda la
+parte que sobresale de la losa debe crearse con la línea que define la
+superficie exterior de la bóveda.<br />
+      <br />
+Se admite un valor <span style="font-weight: bold;">HC</span>:
+altura de coronación de la pantalla sobre el corte exterior con el
+terreno. Si se activa la opción recortar pantalla a una profundidad (HC
+&lt; 0) se puede activar la nueva opción para recortar a la<br />
+altura más desfavorable o sea la más baja de los dos lados.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/tunel_rec_pantalla.png" style="width: 600px; height: 83px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span style="font-weight: bold;">
+TABLA DE ANCHOS</span><br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tuneles_tabla_anchos.png" style="width: 226px; height: 70px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para
+túneles realizados con muros pantalla o cualquier otro túnel definido
+vectorialmente, esta tabla de anchos permite definir un ancho variable
+independiente de la sección tipo. Dentro de la zona de anchos
+variables, el programa estira o encoge la geometría del túnel, llevando
+el segundo punto del vector que define la bóveda exterior
+(sostenimiento) a la distancia indicada en la tabla.<br />
+      <br />
+      </span></span></span></span><img src="Imagenes/tuneles_anchos_aplicar_peralte.png" style="width: 152px; height: 100px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los
+datos de la tabla no se extrapolan antes del primer PK y después del
+último, respetando en estas zonas la geometría definida para el túnel.<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En la declaración de esta tabla de anchos aparece la opción <span style="font-weight: bold; font-style: italic;">Aplicar peralte</span>.
+Con ella activada, los segmentos inicial y final a los que se les
+aplica el ancho variable llevan también la inclinación del peralte.<br />
+      <br />
+En el caso de tener doble bóveda se pueden definir diferentes anchos en cada una de ellas.<br />
+      <br />
+Estas tablas se pueden definir, mediante anchos <span style="font-weight: bold;">por línea</span>.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/anch_linea.png" style="width: 609px; height: 259px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span><span class="Titulo_2"><a name="falso_tunel">Sección de falso túnel</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> puede utilizar la sección de túnel
+definida para, en combinación con unos taludes definidos mediante
+vectores, definir una sección de falso túnel y poder obtener los
+resultados correspondientes a una sección combinada.<br />
+      <br />
+Dicho de otra manera, se obtendrán todos los resultados geométricos y
+volumétricos de la sección de desmonte (desmonte en tierras y roca,
+listados de replanteo de taludes, etc.) y los correspondientes al túnel
+sin necesidad de hacer cálculos combinados.<br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En el menú <a href="OL_punto_control_y_arranque_cuneta.html">[CONTROL/CUNETA]</a> de DESMONTE aparece la opción <span style="font-style: italic;">Falso túnel</span>. Con esta opción activada se permite definir:<br />
+      </span></span></span></span>
+      <ul>
+        <li><img src="Imagenes/relleno_falso_tunel.png" style="width: 314px; height: 190px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#declaracion">Número de túnel</a>, de la tabla de definición de túneles.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_berma_pavimento_desmonte.html">Berma de desmonte</a>, que se engancha en la esquina superior externa del talón de la zapata.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_cunetas.html">Cuneta</a>.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_desmonte_roca.html">Desmonte en roca</a>.</span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="OL_desmonte_tierra.html#def_vectorial">Vector desmonte en tierra</a>.</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+los perfiles se crea una superficie cerrada que va por la
+superficie de sostenimiento, sigue por la superficie de excavación y se
+cierra con la superficie del terreno. El área contenida en este recinto
+aparece en las mediciones como Relleno de falso túnel.<br />
+Para la excavación en falso túnel puede utilizarse la opción <a href="OL_vectores.html#desmonte_inadecuado"><span style="font-weight: bold;">-&gt;TI</span></a> que valida el talud de desmonte en tierra para el terreno inadecuado.<br />
+      <br />
+En el menú TIERRA/BÓVEDA de DESMONTE, para el caso de falsos túneles se
+puede definir junto al número de túnel un segundo relleno. El horizonte
+de separación de los dos rellenos se define mediante un incremento de
+cota <span style="font-weight: bold;">dZ</span> relativo a la clave de la bóveda del túnel y una <span style="font-weight: bold;">pendiente</span> (un valor positivo indica una inclinación bajando hacia el lado derecho. En las mediciones
+se reflejarán entonces las medidas de <span style="font-style: italic;">Relleno de falso túnel</span> y <span style="font-style: italic;">Relleno de falso túnel 2, </span>además de generarse las <span style="font-style: italic;">superficies vistas del relleno del falso túnel </span>mediante la línea 771 y del<span style="font-style: italic;"> relleno 2 del falsto túnel </span>mediante la línea 772.<span style="font-style: italic;"><br /><br /></span>El talud puede ser definido den MODO Vecotiral o Línea 3D.<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_relleno_falso_tunel.png" style="width: 520px; height: 165px;" alt="" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/falso_tunel.png" style="width: 538px; height: 218px;" alt="" /></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Para el caso de falsos túneles, el usuario deberá tener presentes también las siguientes consideraciones:<br />
+      </span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+talud de desmonte para los falsos túneles contempla, si existen, los
+datos introducidos para la coronación del desmonte en el menú <a href="OL_coronacion_desmonte.html">CORONA</a>.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los
+falsos túneles pueden aplicarse a carreteras y ferrocarriles de vía
+única o autovías y ferrocarriles de vía doble, con las dos calzadas o
+vías en una única bóveda o en bóveda separada. En este último caso es
+necesario definir una <a href="OL_excentricidad_mediana.html#mediana_abierta">mediana abierta</a>.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Inicialmente
+el punto de control para aplicar el desmonte está en la esquina
+exterior y superior del talón de la zapata. En el caso de que ese punto
+esté por encima del terreno se analiza también el extremo de la berma,
+de forma que si se declara una <a href="OL_berma_pavimento_desmonte.html">berma</a> vertical con la misma altura que la zapata (<span style="font-weight: bold;">BD</span> = 0, <span style="font-weight: bold;">ZBD</span> = h de la zapata) se pasa el control de la sección de desmonte a la esquina exterior-inferior del talón.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Es
+posible definir en un falso túnel, la <a href="#zapata_vectorial">zapata vectorial</a>. El programa
+busca desde abajo el punto más exterior para comenzar a aplicar el
+vector de desmonte.</span></span></span></span></li>
+      </ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>La Sección Vectorial de Desmonte en el Falso Túnel, se
+puede aplicar fija desde la Cabeza del Desmonte. En este caso no se
+aplica la Coronación de Desmonte. (Puede incluirse en la parte alta del
+vector).<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+secciones en falso túnel existe una nueva superficie (solera,
+representada con el tipo de línea L51) que recorre desde el eje la
+superficie de excavación pasando por debajo de las zapatas hasta
+cortarse con la línea L68 de la subrasante en la esquina superior
+externa del talón de las zapatas.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se permite que la bóveda no esté completamente bajo el terreno, para la determinación de la medición del relleno de falso túnel.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si
+en la definición de la bóveda del falso túnel se define la línea de
+excavación teórica, se utiliza esta línea como recubrimiento mínimo de
+la bóveda, de forma que el relleno nunca estará por debajo de esta
+línea de excavación teórica.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+el perfil no aparecerá la línea de excavación teórica, solamente se
+apreciará en zonas en las que el terreno está muy próximo o por debajo
+de la bóveda en las que el techo del relleno toma la forma de la línea
+de excavación teórica.</span></span></span></span></li>
+      </ul></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Cuando se define con la boveda la superficie de excavación
+teórica que representa el recubrimiento mínimo del relleno de falso
+túnel, se puede marcar la opción: <span style="font-weight: bold;">No Rellenar por encima de la línea de excavación teórica</span>.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Un caso particular de <span style="font-weight: bold;">Falso túnel</span>
+se puede dar en una sección mixta con una trinchera en la que los
+taludes excavación del falso túnel corten al talud interior de la
+trinchera, de modo q todo el relleno del falso túnel termine en este
+talud. Esto puede producirse cuando el talud de la trinchera es más
+tendido que el del falso túnel.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/falso_tunel_seccion_mixta_trinchera.png" style="width: 625px; height: 172px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Para generar esta sección deberemos generar una <a href="OL_excentricidad_mediana.html">mediana abierta</a> en la que aplicaremos la sección tipo para el interior del talud de la trinchera. Por otra parte en la <a href="OL_zonas_calculo.html">zona de cálculo</a> definiremos una sección tipo X la cual tenga en el menú de desmonte la peculiaridad de ser <a href="OL_punto_control_y_arranque_cuneta.html">asimétrica</a>
+(por la derecha falso túnel y por la izquierda por ejemplo el punto de
+control / cuneta en fondo de cuneta / borde de berma. Finalmente
+tendremos que definir nuestra sección de túnel correspondiente en el
+menú de túneles.<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Una sección de falso túnel puede llevar un <a href="OL_revestimiento_desmonte.html">Revestimiento de Desmonte</a> (Escollera...)&nbsp; que se descuenta en la medición de los Rellenos de Falso túnel.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/falso_tun_escoll.png" style="width: 313px; height: 154px;" alt="" align="top" /><br />
+      </div>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="linea_galibo">Línea de gálibo</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/tunel_linea_galibo.png" style="width: 138px; height: 119px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción <span style="font-weight: bold; font-style: italic;">Línea de gálibo</span> es similar a la que existe en el módulo de <a href="OL_seg_tun.html">seguimiento de túneles</a>.
+Al activarla se crea una línea perpendicular a la calzada en el código
+11 o -11 (bordes de arcén) hasta cortar la superficie de revestimiento.
+Si además se <a href="OL_planos_transversales.html">dibujan los perfiles transversales</a> con la guitarra&nbsp;<span class="Archivo">GALIBO.gut</span> se rotula la distancia sobre esta línea entre la calzada y la superficie de revestimiento.<br />
+      <br />
+La línea de gálibo teórico se puede construir normal a la calzada o vertical.<br />
+      <br />
+      <br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body></html>

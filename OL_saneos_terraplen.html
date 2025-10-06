@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Saneos de terraplén</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SANEOS DE TERRAPLÉN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 699px; height: 7954px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 681px;"><br />
+      <span class="Parrafo">Desde
+este menú se diseña y calculan saneos del terreno para asentar
+terraplenes según tres tipos principales con sus variantes, abarcando
+de esta manera las posibles soluciones a esta cuestión. Al entrar en el
+menú de SANEOS DE TERRAPLÉN aparece una tabla de datos en los que es
+posible añadir las líneas de definición para cada tramo. Dicha
+definición será guardada en el&nbsp;<span class="Archivo">.vol</span> y
+se calculará junto con el resto del eje. También es posible <span style="font-weight: bold;">guardar</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y <span style="font-weight: bold;">cargar</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> estos saneos de forma
+independiente en archivos con de extensión&nbsp;<span class="Archivo">.spt</span>.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 600px; height: 211px;" alt="" src="Imagenes/dialogo_saneos_terraplen.png" /><br />
+      </div>
+      <br />
+      </span><span class="Parrafo">Al añadir un dato (correspondiente a un tramo
+definidos por el <span style="font-weight: bold;">PKi</span> y el <span style="font-weight: bold;">PKf</span>),
+lo primero que se debe indicar es el tipo de saneo. A la par, el
+programa para cada tipo seleccionado solamente presenta disponibles las
+casillas necesarias ocultando el resto.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modelo_saneos_terraplen.png" style="width: 516px; height: 324px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Dentro de cada tramo de saneo se le puede dar una <span style="font-weight: bold;">descripción</span> o comentario a cada dato de saneo. Este comentario puede quedar reflejado en la <a href="OL_gui_tablas_de_textos.html">guitarra de longitudinal</a> mediante una <a href="OL_planos_longitudinales.html#tablas_textos">tabla de textos</a>.<br />
+<br />
+Los tipos principales (de los cuales derivan todas las demás
+configuraciones) son tres y pueden verse en el correspondiente modelo:<br />
+      </span>
+      <ul>
+        <li><a href="#tipo_0"><span class="Parrafo">Saneo con capa drenante (tipo 0)</span></a></li>
+        <li><a href="#tipo_1"><span class="Parrafo">Saneo mediante tongadas de igual
+espesor (tipo 1)</span></a></li>
+        <li><a href="#tipo_2"><span class="Parrafo">Saneo mediante escalones máximos y
+mínimos (tipo 2)</span></a></li>
+      </ul>
+      <span class="Parrafo"><br />
+Además, existe una amplia tipología de <a href="#cierres">cierres de saneo</a>.<br />
+      <br />
+Con el objetivo de simplificar la lectura de este documento, se expone en la parte final cuestiones relacionadas con la <a href="#avanzado">declaración avanzada de saneos de terraplén</a> en donde se exponen los siguientes apartados:<br />
+</span>
+      <ul>
+        <li><a href="#por_codigo"><span class="Parrafo">Limitación lateral: saneo por código</span></a></li>
+        <li><a href="#terreno_competente_inadecuado"><span class="Parrafo">Saneos con referencias al terreno competente y al terreno inadecuado</span></a></li>
+        <li><a href="#vector_desmonte_terreno_inadecuado"><span class="Parrafo">Saneos de terraplén y vector desmonte en terreno inadecuado</span></a></li>
+        <li><a href="#fronteras"><span class="Parrafo">Fronteras y saneos de dos tipos en el mismo perfil</span></a></li>
+        <li><a href="#cota_base"><span class="Parrafo">Saneos dados por cota base</span></a></li>
+        <li><span class="Parrafo"><a href="#calzada_existente">Saneos con calzada existente</a><br />
+</span></li>
+
+      </ul>
+      <span class="Parrafo">
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="tipo_0">Saneo con capa drenante (tipo 0)</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><span class="Parrafo">Los datos necesarios, además de los PK inicial y final
+del tramo, es la altura mínima de terraplén <span style="font-weight: bold;">H</span> que determina la ejecución del
+escalonado (en sentido descendente).<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_tipo0_1.png" style="width: 221px; height: 115px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+Se mide desde la coronación del terraplén y la línea de asiento del
+mismo, situada sobre el terreno competente (tipo de línea 66). Por
+debajo de esta altura mínima NO se realiza el escalonado.<br />
+      <br />
+      </span><br />
+      <span class="Parrafo">Los escalones comienzan a construirse sobre una línea
+de referencia, a una profundidad <span style="font-weight: bold;">P</span>
+desde el terreno competente. Esta profundidad <span style="font-weight: bold;">P</span> puede darse en forma de cota
+absoluta al marcar la casilla <span style="font-style: italic; font-weight: bold;">Z</span>, aunque se
+recomienda utilizar esta opción sólo en saneos de tipo 2. A partir del
+punto de inicio que marca la línea <span style="font-weight: bold;">H</span>,
+el programa ajusta los escalones con un talud dado <span style="font-weight: bold;">T</span> y una anchura <span style="font-weight: bold;">A</span>.
+El escalonado llegará hasta el punto de pie de terraplén, intentando
+sacarlo a superficie (drenaje). En este tipo de saneos es posible,
+además, definir una pendiente, en %, para los tramos pseudohorizontales
+de los escalones (parámetro <span style="font-weight: bold;">P%</span>).<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_tipo0_2.png" style="width: 364px; height: 171px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+El <a href="#cierres"><span style="font-weight: bold;">cierre</span></a> también puede
+ejecutarse como los que se definen para los tipos de saneo 1 y 2. Para
+ello se utilizarán los datos <span style="font-weight: bold;">C</span>
+(talud del cierre) y el <a href="#cierres"><span style="font-weight: bold;">tipo de cierre</span></a>
+indicado entre los cinco disponibles (0, 1, 2, 3 y 4).<br />
+      <br />
+      </span>
+      <table style="text-align: left; width: 695px; height: 65px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/saneos_altura_eje.png" style="width: 203px; height: 57px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;"><span class="Parrafo">La altura <span style="font-weight: bold;">H</span> puede ser medida desde el eje.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 65px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span class="Parrafo">
+Posteriormente, se añade la capa de material drenante de espesor <span style="font-weight: bold;">D</span>, siguiendo la línea de excavación
+del escalonado resultante. El techo de la capa drenante puede darse mediante una cota absoluta <span style="font-weight: bold;">Z</span>.</span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/saneos_z_techo_capa_drenante.png" style="width: 126px; height: 59px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><span class="Parf_negrita">ML</span>: En zonas de Media Ladera, el saneo continúe bajo la sobreexcavación en la zona del desmonte.<br /><br />La cubicación se efectúa de la siguiente forma:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">La excavación necesaria para el saneo
+de terraplén, es decir, el volumen comprendido entre las líneas de
+asiento (L66) y la de saneo escalonado (L87).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">La capa de material drenante, entre
+las líneas de capa drenante (L89) y saneo escalonado (L87).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">El terraplén, hasta el techo de la
+capa drenante.</span></li>
+      </ul>
+      <br />
+      <img src="Imagenes/saneo_tipo0_3.png" style="width: 324px; height: 93px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Pueden
+darse dos casos particulares dentro del tipo 0. En el primero de ellos,
+no existe escalonado (<span style="font-weight: bold;">A</span> = 0) y
+la línea de referencia sería la propia línea de terreno competente
+(L66) de asiento del terraplén (<span style="font-weight: bold;">P</span>
+= 0). En este caso, el espesor de capa drenante <span style="font-weight: bold;">D</span> puede ser mayor que el de terreno
+vegetal o inadecuado.<br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo0_4.png" style="width: 313px; height: 103px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">También puede darse la circunstancia de que no haya
+escalonado (<span style="font-weight: bold;">A</span> = 0) y la
+profundidad de la línea de referencia coincide con el espesor (<span style="font-weight: bold;">P</span>
+= D) de la capa drenante. En este caso, la capa drenante se apoya en la
+línea de referencia y su techo será la línea de terreno competente
+(L66).<br />
+      <br />
+      <br />
+Los valores de la profundidad <span style="font-weight: bold;">P</span>
+y el espesor del la capa drenante <span style="font-weight: bold;">D</span>
+pueden variar entre el PK inicial y el final del tramo.<br />
+      <br />
+En el caso de tener una capa drenante cuyo techo se encuentra por
+encima del terreno natural, se puede dividir esta capa en dos
+materiales para obtener una medición separada del material por encima y
+por debajo del terreno natural </span><span class="Parrafo">(aparecerán
+como&nbsp;<span class="Archivo">MAT_TRANS_1</span> y&nbsp;<span class="Archivo">MAT_TRANS_2</span> en los listados de
+cubicación)</span><span class="Parrafo">. Para ello será necesario
+activar la casilla <span style="font-style: italic; font-weight: bold;">2
+capas</span>.<br />
+      <br />
+<br /></span><span class="Apartados">Saneo para terraplén donde la altura del mismo sea inferior a un valor determinad</span><span style="font-style: italic;"><span style="font-weight: bold;">o<br />
+<br />
+      </span></span><span class="Parrafo">Como ya se ha visto, para
+saneos de <a href="#tipo_0">tipo 0</a> y con ancho de escalón nulo (<span style="font-weight: bold;">A</span>=0), <span style="font-weight: bold;">H</span> indica la altura máxima de
+terraplén a partir de la cual no se hace el saneo. Pero si se anota
+este valor con signo negativo (<span style="font-weight: bold;">&#8211;H</span>)
+entonces se sanean los pies de terraplén hasta que la altura es H y,
+por tanto, saneándose todo el ancho si la altura de terraplén es menor
+que <span style="font-weight: bold;">H</span>.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Saneo con una única pendiente</span><br />
+      <br />
+Para los saneos de tipo 0 y con ancho de escalón <span style="font-weight: bold;">A</span>=0,
+se puede dar una pendiente P% diferente de cero y seleccionar un lado.
+Entonces se toma como punto de referencia el código 601 (pie de
+terraplén) del lado seleccionado y a la profundidad definida, de tal
+forma que por este punto pasará la base del saneo </span><span class="Parrafo">con la pendiente definida</span><span class="Parrafo">.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_terr_unica_pendiente.png" style="width: 420px; height: 87px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejem_saneo_unica_pendiente.png" style="width: 244px; height: 231px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Esto puede resultar útil, por ejemplo, en el diseño de presas como la mostrada en la imagen.<br />
+      <br />
+Por otra parte </span>para los saneos con pendiente fija desde un lado,
+puede ahora modificarse el punto de referencia cambiando el código 601
+p.e al 3010 (fondo de cuneta de guarda).<br /><br /><span style="font-weight: bold; font-style: italic;">Saneo con profundidad diferente en el lado izquierdo y en el derecho</span><br /><br />Para
+los saneos de tipo 0 con A=0 y P%= 1000 (unir recto desde una
+profundidad de los bordes) ,es posible definir para este caso una
+profundidad difeente en el lado izquierdo y en el derecho.<br /><br /><img src="Imagenes/saneo_prof_diferente.png" style="width: 420px; height: 74px;" alt="" /><br /><span class="Parrafo">
+      <img src="Imagenes/saneo_prof_diferente_sec.png" style="width: 244px; height: 95px;" alt="" /><br /><br /><br />
+      <span style="font-weight: bold; font-style: italic;">Saneo definido mediante el control de la altura mínima de cada escalón (Bmin) y la pendiente de los mismos</span><br />
+      <br />
+Cuando sólamente se quiera controlar la altura del escalón <span style="font-weight: bold;">Bmin</span>, es necesario introducir también un valor en el ancho mínimo <span style="font-weight: bold;">A</span> (p.e. 0.1) pues con A=0 se ejecutaría un saneo sin escalones.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_tipo0_Bmin_pend_editable.png" style="width: 394px; height: 85px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_tipo0_Bmin_pend.png" style="width: 431px; height: 215px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br /></span><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">Saneo con capa drenante dividido en 2 capas</span><br />
+      <br />
+Activando la casilla 2 CAPAS podremos dividir la medición de la capa
+drenante en dos, diferenciándola a partir de la capa de vegetal,
+dejando los materiales de transición exclusivamente para las cuñas de
+transición. <br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_2capas.png" style="width: 250px; height: 68px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <span style="font-style: italic; font-weight: bold;">Saneos alternativos en función de la altura medida en el eje</span><br />
+      <br />
+Se pueden definir saneos alternativos en función de la altura medida en
+el eje. En este caso deben definirse empezando por la altura mayor. Por
+ejemplo:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Dato 1:&nbsp; Tipo=0,Pki/PF&nbsp; H=8
+(Medida en el eje entre Subrasante(68) y T.C. (66): Realiza el saneo si
+la altura de terreplen en el eje es mayor que 8.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dato 2 : Tipo=0, Mismo Pki/Pkf H=4 (en el eje): Realiza este saneo para terraplen mayor que 4 y menor que 8.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dato 3 : Tipo=0, Mismos Pki/Pkf H=0: Realiza este saneo para el resto de terraplenes, (altura menor que 4).</span></li>
+      </ul>Tanto
+para los saneos de tipo 0 como para los de&nbsp; tipo 2, con se puede
+utilizarse un material drenante diferente para cada tramo o altura de
+terreplén, pudiendo elegir entre: Capa drenate, Suelo estabilizado 1,
+2, 3, 4 o 5. No es aplicable si esta marcada la opción <span style="font-weight: bold;">2 CAPAS</span>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/san_capa_dren.png" style="width: 246px; height: 165px;" alt="" /><br />
+      </div>
+      <br />
+
+      <span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="tipo_1">Saneo para tongadas de igual espesor (tipo 1)</a></span><br />
+      <span class="Parrafo"><br />
+      La maquinaria de ejecución condiciona varios parámetros. El parámetro del ancho mínimo (<span style="font-weight: bold;">Amín</span>)
+viene condicionado por la anchura de la maquinaria de excavación, en
+tanto que el espesor de las tongadas lo están por la maquinaria
+extendedora.<br />
+      <br />
+Así mismo, puede establecerse una distancia mínima desde la cabeza de
+cada escalón al talud de terraplén, y que vendrá dada por el parámetro <span style="font-weight: bold;">Bmín</span>.<br />
+      <br />
+Existe un valor <span style="font-weight: bold;">M</span> de la
+pendiente global del terreno en la banda del perfil que determina la
+ejecución del escalonado. Si la pendiente supera cierto valor límite <span style="font-weight: bold;">M</span>,
+se ejecutará la excavación de escalonado. Si no se llega a ese valor,
+entonces no se ejecuta el escalonado (aunque sí el saneo).<br />
+<br />
+      </span><img src="Imagenes/saneo_tipo1_1.png" style="width: 257px; height: 108px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Comienza dicha excavación a partir del pie de terraplén, con un talud <span style="font-weight: bold;">C</span> dado hasta cortar la línea de terreno competente (L66) que corresponde con el asiento del terraplén.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo1_2.png" style="width: 270px; height: 126px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Según
+el espesor E de las tongadas, podrá extenderse un determinado número de
+ellas para construir el escalón. En la figura, el espesor
+correspondiente a dos tongadas sobrepasa la línea 66 de asiento.<br />
+      <br />
+      <br />
+      <br />
+      <br /><br />
+      <br />
+Se extenderá la primera tongada y se llegará hasta el corte de la línea
+de asiento de terraplén con la segunda comprobando que la anchura <span style="font-weight: bold;">A</span> resultante es mayor que el ancho mínimo <span style="font-weight: bold;">Amín</span> tolerable. En caso contrario, se excava el ancho mínimo y se ejecuta según el procedimiento comentado anteriormente.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneo_tipo1_3.png" style="width: 628px; height: 152px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Se dispone la posibilidad de hacer un único escalón al pié del terraplén con el ancho <span style="font-weight: bold;">Amin</span> especificado. En este caso se permite definir un talud <span style="font-weight: bold;">T</span> para la excavación del escalón.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/san1_unico.png" style="width: 600px; height: 223px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+</span>Para los saneos de tipo 1, con ancho A=0: Si en la pendiente ponemos un valor de 1000% entonces se hace con pendiente<br />
+variable desde un pie de terraplén hasta el otro (con la profundidad que se le indique).<span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="tipo_2">Saneo mediante escalones máximos y mínimos (tipo 2)</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">De nuevo, <span style="font-weight: bold;">Amín</span> es el ancho mínimo por escalón. Además, se tiene en este caso un escalón máximo <span style="font-weight: bold;">Emáx</span> y un escalón mínimo <span style="font-weight: bold;">Emín</span>. También se puede incluir una capa drenante en los saneos de este tipo.<br />
+      <br />
+El talud de los escalones vendrá dado a partir de la casilla <span style="font-weight: bold;">T</span> y la pendiente de los mismos se podrá dar a partir de la casilla <span style="font-weight: bold;">P%</span>.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_saneo_terraplen_tipo2.png" style="width: 600px; height: 223px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Al igual que el caso del saneo de <a href="#tipo_1">tipo 1</a>, también puede establecerse la distancia mínima desde la cabeza de cada escalón al talud de terraplén mediante el parámetro <span style="font-weight: bold;">Bmín</span>.<br />
+      <br />
+      </span><span class="Parrafo">Para el primer escalón puede definirse un ancho diferente con el valor <span style="font-weight: bold;">A1</span>. De todas formas, hay que tener presente que </span><span class="Parrafo">si se utiliza el parámetro <span style="font-weight: bold;">Bmín</span> en este tipo de saneo, conviene anular ese ancho del primer escalón (<span style="font-weight: bold;">A1</span>), pudiéndose utilizar entonces&nbsp; valores menores para <span style="font-weight: bold;">Amín</span>.</span><br />
+      <span class="Parrafo"><br />
+La línea de referencia para el escalonado se posiciona a una profundidad <span style="font-weight: bold;">P</span>. Esta profundidad <span style="font-weight: bold;">P</span> puede darse en forma de cota absoluta al marcar la casilla <span style="font-weight: bold; font-style: italic;">Z</span>.<br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo2_2.png" style="width: 270px; height: 156px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">El
+diseño de este tipo de escalonado comienza con un ancho mínimo Amín o
+A1, tendiendo un talud dado T hasta cortar la línea de referencia.<br />
+      <br />
+La altura alcanzada se confronta con las dimensiones de escalón mínimo <span style="font-weight: bold;">Emín</span> y el escalón máximo <span style="font-weight: bold;">Emáx</span>. El cierre de la excavación se lleva a cabo en la vertical del pie de terraplén, con un talud <span style="font-weight: bold;">C</span>, pero también puede configurarse como para los <a href="#cierres">tipos de cierre</a> 0 ó 1.<br />
+      <br />
+      </span>
+
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><span style=""><br />
+</span></p>
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><img src="Imagenes/saneo_tipo2_3.png" style="width: 339px; height: 120px; margin-right: 7px;" alt="" align="left" /><span style=""><br />
+      </span></p>
+      <p class="MsoBodyText" style="margin-bottom: 0.0001pt;"><span style="">En el caso de que dicha altura sea menor que
+el escalón mínimo </span><span style="font-weight: bold;" class="EstiloNegritaarial10"><span style="font-size: 10pt;">Emín</span></span><span style="">, se supera el ancho mínimo hasta conseguir
+ejecutar el escalón mínimo.<o:p></o:p></span></p>
+
+
+      <br />
+      <span class="Parrafo"><br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo2_4.png" style="width: 292px; height: 192px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+Si su valor se encuentra comprendido entre los escalones mínimo <span style="font-weight: bold;">Emín</span> y máximo <span style="font-weight: bold;">Emáx</span> se ejecuta según la altura alcanzada.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><img src="Imagenes/saneo_tipo2_5.png" style="width: 278px; height: 129px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><br />
+      <br />
+Por último, si la altura resultante es mayor que el escalón máximo <span style="font-weight: bold;">Emáx</span>, se ejecuta el ancho mínimo<span style="font-weight: bold;"> Amín</span> y se construye un escalón previo con el valor <span style="font-weight: bold;">Emáx</span>, continuando entonces con un nuevo ancho mínimo.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+Se puede prefijar una altura diferente para el primer escalón, <span style="font-weight: bold;">E1</span>. P.e: Queromos un primer escalón de 1m de altura y el resto de 0.5m. Entonces haremos: <span style="font-weight: bold;">E</span>=0.5&nbsp; <span style="font-weight: bold;">Emax</span>=0.5&nbsp;<span style="font-weight: bold;"> E1</span>=1.00 (para éste, <span style="font-weight: bold;">Emax</span> se toma 1.0).<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_emax.png" style="width: 195px; height: 96px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <img src="Imagenes/saneo_tipo2_1.png" style="width: 291px; height: 175px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">M</span>
+es un factor limitante, en %, por el cual se ejecuta el escalonado a
+partir del momento en el que la pendiente del terreno supera ese valor,
+en tanto que no se realiza el escalonado en las zonas en las que la
+pendiente se mantiene por debajo (aunque sí el saneo). El programa
+analiza la pendiente sólo al principio de un tramo ascendente o
+descendente del perfil del terreno.<br />
+      <br />
+      </span><img src="Imagenes/saneos_casilla_M.png" style="width: 68px; height: 41px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo">Si
+se activa la casilla de verificación, el programa evita realizar el
+escalonado en zonas con pendiente inferior a la indicada incluso si
+estas zonas están intercaladas en un tramo ascendente o descendente del
+perfil del terreno.<br />
+      <br />
+Tenemos la posibilidad de que el espesor <span style="font-weight: bold;">Di</span>/<span style="font-weight: bold;">Df</span> de la capa drenante se mida solo en vertical.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_vert.png" style="width: 200px; height: 159px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span><span class="Parrafo"><br />
+</span></span></span>Respecto al techo de la Capa drenante: disponemos de los siguientes modos Paralela/Vertical/Terreno/Horizontal.<br /><ul><li>Modo Paralelo: El techo se forma con escalones paralelos a la base del saneo.</li><li>Modo Vertical: Es un desplazamiento vertical de la base del saneo.</li><li>Modo Terreno: El techo es paralelo al terreno.</li><li>
+Modo Horizontal: el origen de cotas es el pié de terraplén y los valores Di/Df pueden ser 0 o mayor o menor que 0.</li><li>
+Los modos Horizontal Derecha y Horizontal izquierda. Son como el modo
+horizontal pero permiten controlar de que lado se usa la referencia del
+pie de terraplén para la cota.</li></ul>
+      
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Activando la casilla <span style="font-weight: bold;">1/2</span> entonces, la altura de los escalones se ejecutan la mitad por arriba y la otra mitad por debajo de la profundidad definida.<br />
+      <br />
+Casilla <span style="font-weight: bold;">D0</span>:<br />
+      <br />
+Puede dividirse la capa drenante en dos capas. Si se da un valor <span style="font-weight: bold;">D0</span> &gt; 0 y menor que el espseor total <span style="font-weight: bold;">D</span> de la capa drenante<br />
+entonces se crea una capa de espesor <span style="font-weight: bold;">D0</span> en la base de la capa drenante. <br />
+El material para la medición de esta capa puede ser <span style="font-weight: bold;">Suelo Estabilizado</span> 1,2 o 3. Y el resto hasta el techo será Capa Drenante.<br />
+Si los valores <span style="font-weight: bold;">Di</span> y <span style="font-weight: bold;">Df</span> se dan como cota absoluta del techo de la capa drenante, entoces <span style="font-weight: bold;">D0</span> se tomará también como cota absoluta para el techo de la base de la capa drenante. NO es compatible con la opción <span style="font-weight: bold;">2 CAPAS</span>.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_d0.png" style="width: 600px; height: 223px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Si asignamos a el <span style="font-weight: bold;">ancho A1</span> un valor de 1000, entonces la línea de saneo es una recta entre los puntos inicial y final del saneo.<br />
+      <br />
+Para los tipos de saneo 1 y 2 disponemos de la opción <span style="font-weight: bold;">No C.E.</span> que no considera la existencia de calzada existente.<br /><br />Para los saneos tipo 2 es posible activar la opción <span style="font-style: italic;">Escollera</span>
+de modo que cuando el terraplén se apoya en una escollera permite
+iniciar el escalonado en la base de la escollera (código 601.1).<br /><br /></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span><img style="width: 600px; height: 205px;" alt="" src="Imagenes/saneos_tipo2_escollera.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="cierres">Cierres de saneo</a></span><br />
+      <span class="Parrafo"><br />
+El programa dispone de varios tipos de cierre de saneo descritos a continuación.<br />
+      <br />
+      <br />
+      <span class="Apartados">Cierres de saneo tipo 0, 1 y 2 </span><br />
+      <br />
+En este tipo de cierre se proyecta el pie de terraplén al fondo de
+saneo y se prolonga éste en horizontal hacia fuera hasta la
+intersección con el terreno natural.<br />
+      <br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El <span style="font-weight: bold;">cierre de tipo 1</span> parte del pie de terraplén y va a buscar el fondo de saneo con el talud <span style="font-weight: bold;">C</span> especificado por el usuario.<br />
+      <br />
+      </span></span></span><img src="Imagenes/saneo_terr_cierre_tipo_1_a.png" style="width: 260px; height: 67px;" alt="" align="left" hspace="5" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para
+este tipo de cierre además puede desplazarse el inicio del saneo una
+distancia fija medida desde el pie del terraplén mediante el parámetro <span style="font-weight: bold;">a</span>.
+Su funcionamiento es el siguiente: El sobreancho se mide en horizontal
+desde el pie del terraplén. Los valores positivos indican un
+desplazamiento hacia fuera y los negativos un desplazamiento hacia
+dentro. Por defecto la distancia se mide hasta el pie del talud del
+cierre. De forma adicional, si se activa la casilla situada al lado de
+este parámetro entonces la distancia se medirá hasta la cabeza del
+talud
+de cierre en lugar de desde el pie de terraplén.<br />
+Activando la primera casilla: el valor del sobreancho de saneo puede
+darse en función de la altura del talud de terraplén: Sobrancho = a x
+Altura.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: left;">La segunda casilla a la derecha
+del valor del sobreancho se utiliza en las siguientes ocasiones: Para
+secciones con geometría de desmonte (cuneta,etc..) pero que están en
+terraplén porque la excavación está integramente en el vegetal o
+inadecuado sin llegar al competente. <br />
+Se puede hacer que el saneo termine en el código 100 y no se prolonge
+hasta el 600 (fondo de cuneta). Para ello se selecciona un cierre de
+saneo de tipo 1, con el talud de cierre deseado y dejando el valor del
+sobreancho a=0, se marca la opción: <span style="font-weight: bold;">Sobreancho medido desde el pie de terraplen a la Cabeza del saneo</span>. Si se utiliza esta última opción simultaneamente con la de <span style="font-weight: bold;">Media Ladera</span>, también se aplicará el sobreancho desde el fondo de cuneta (es decir, desde el código 600).<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+&nbsp;<br />
+      En el caso del <span style="font-weight: bold;">cierre de tipo 2</span>, lo que se hace es proyectar el pie de
+terraplén sobre el fondo de saneo y, a partir de este punto, salir
+hacia fuera con el talud <span style="font-weight: bold;">C</span> y hasta el terreno natural.<br />
+      <br />
+      <br />
+      <span class="Apartados">Cierres de saneo tipo 3,&nbsp; 4 y 5</span><br />
+      <br />
+Son similares al tipo 2 pero, en lugar de tomar como punto de inicio
+del saneo el vertical al pie de terraplén a la profundidad del saneo,
+el punto de inicio del saneo se encuentra en la prolongación del pie
+del terraplén siguiendo su talud hasta el horizonte de saneo.<br />
+      <br />
+La medición de terraplén entonces no incluye la parte que rellenaría el
+terreno vegetal hasta la superficie, es decir, mide desde el terreno
+competente hacia arriba dentro del talud de terraplén.<br />
+      <br />
+La medición de terraplén de saneo (que se da como&nbsp;<span class="Archivo">TERRAP_SANEO</span>)
+mide toda la excavación de saneo (por debajo del competente) y en él no
+se incluye la cantidad que queda por fuera de la prolongación del talud
+del terraplén. Esta parte se mide de forma separada por si se rellena
+con un material diferente hasta la superficie y por fuera del talud de
+terraplén.<br />
+      <br />
+El cierre de tipo 4 es similar al tipo 3, con la diferencia de que la
+línea de relleno (L86) en lugar de ir desde el pie de terraplén por la
+superficie del terreno hasta el final del saneo sigue bajando con el
+talud del terraplén hasta cortar el fondo del saneo y luego acompaña a
+esta línea hasta el final. Además, para los saneos con cierre de tipo 4:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">El terraplén de saneo (cubicado como&nbsp;<span class="Archivo">TERRAP_SANEO</span>) se mide hasta la prolongación del talud de terraplén.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Se considera la medición del relleno exterior de saneo (cubicado como&nbsp;<span class="Archivo">RELL_EXT_SANEO</span>) correspondiente al hueco de excavación de saneo por fuera del talud de terraplén y hasta el terreno natural.</span></li></ul>
+      <ul>
+        <li><span class="Parrafo">Permite
+definir un sobreancho horizontal, de longitud a medida en la base de la
+excavación, y que se corresponde con el parámetro <span style="font-weight: bold;">a</span>.<br />
+</span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo">En
+casos en los que el pié de terraplén coincida con una berma, entonces
+para la prolongación hasta el competente se usa el mismo talud del
+cierre. Se cambia la codificación del pié del terraplén en este tipo de
+cierre (<span style="font-weight: bold;">Tipo 4</span>) para mejorar el dibujo de la planta, líneas longitudinales y peines.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/saneos_cierre_tipo4_berma_dibujo.png" style="width: 361px; height: 270px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/saneos_cierre_tipo4_berma.png" style="width: 382px; height: 248px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El
+cierre de tipo 5 es similar al tipo 4, pero con la diferencia de que, en este caso, el parámetro <span style="font-weight: bold;">a</span>
+sirve para especificar el talud con el que se prolonga el terreplén hasta
+el fondo del saneo<span style="font-weight: bold;">.<br />
+      <br />
+      <br />
+      <span class="Apartados">Saneos y zonas de ocupación y expropiación</span><br />
+      <br /></span>
+Cuando existe un saneo de terraplén con un cierre asociado que se
+inicia más lejos del pie de terraplén, el programa lo tiene en cuenta
+en los listados y dibujos para contemplar las zonas reales de
+ocupación. Además, el margen de expropiación se mide a partir de ese
+punto.<span style="font-weight: bold;"><br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="avanzado">Declaración avanzada de saneos de terraplén</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo">Se unifican en
+este apartado una serie de posibilidades que ofrece el programa para
+configurar el saneo de terraplén en función de una serie de parámetros
+comunes a todos los tipos de saneo explicados.<br />
+      <br />
+      <br />
+      </span></span></span><span class="Apartados"><a name="por_codigo">Limitación lateral: saneo por código</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/saneo_porCodigo.png" style="width: 117px; height: 79px;" alt="" align="right" hspace="5" /><span class="Parrafo"><span class="Parrafo">Desde
+el EDITOR DE PERFILES&nbsp;es posible definir códigos de la superficie
+del terreno, lo que se puede aprovechar para delimitar el saneo.<br />
+      <br />
+Se pueden aplicar diferentes tipos de saneo en un mismo PK, definiendo
+las diferentes zonas según códigos de la superficie del terreno.<br /><br />Es
+posible utilizar los códigos de la plataforma (Superficie 67). Para
+esta caso es necesario indicar también el lado. Si se emplea el código
+0 implica que no se limita por ese lado.<br />
+      <br />
+Además, deben efectuarse las siguiente consideraciones:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">En el menú de
+saneos las diferentes zonas que se aplican en un mismo tramo de PK&#8217;s
+deben definirse de izquierda a derecha del perfil.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si en un lado se pone código 0, se entiende que es hasta el final de la sección por ese lado.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Si el código
+izquierdo de una zona no coincide con el derecho de la anterior, es
+decir que no son contiguas, en el hueco se realiza un saneo horizontal
+con la cota más baja de los dos extremos.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;">Ejemplo</span>:<br />
+      <br />
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">Sea
+un terreno en el que se reconoce una carretera existente en sección de
+terraplén. Se realiza un proyecto de ensanche de la carretera existente
+y se desea realizar un saneo de <a href="#tipo_1">tipo 1</a> con unas características determinadas en las zonas de terreno original, y un saneo de <a href="#tipo_2">tipo 2</a> con otra geometría diferente en la zona del terraplén existente.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">El primer paso sería, mediante el&nbsp;</span></span><span class="Parrafo"><span class="Parrafo">EDITOR DE PERFILES</span></span><span class="Parrafo"><span class="Parrafo">, codificar los pies del terraplén existente en el perfil del terreno. Por ejemplo, se puede establecer:</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">Pie de terraplén existente izquierdo: código 15</span></span><br />
+      <span class="Parrafo"><span class="Parrafo">Pie de terraplén existente derecho: código 5</span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">En el menú de saneos de terraplén se definirán, con el mismo tramo de PK&#8217;s, tres líneas de datos tal como sigue:</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <table style="text-align: left; margin-left: 40px; width: 424px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 23px;">1.</td>
+            <td style="vertical-align: top; width: 91px;"><span class="Parrafo"><span class="Parrafo">Saneo tipo 1</span></span></td>
+            <td style="vertical-align: top; width: 102px;"><span class="Parrafo"><span class="Parrafo">Código Iz = 0</span></span></td>
+            <td style="vertical-align: top; width: 170px;"><span class="Parrafo"><span class="Parrafo">Código Dr = 15</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 23px;">2.</td>
+            <td style="vertical-align: top; width: 91px;"><span class="Parrafo"><span class="Parrafo">Saneo tipo 2</span></span></td>
+            <td style="vertical-align: top; width: 102px;"><span class="Parrafo"><span class="Parrafo">Código Iz = 15</span></span></td>
+            <td style="vertical-align: top; width: 170px;"><span class="Parrafo"><span class="Parrafo">Código Dr = 5</span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 23px;">3.</td>
+            <td style="vertical-align: top; width: 91px;"><span class="Parrafo"><span class="Parrafo">Saneo tipo 3</span></span></td>
+            <td style="vertical-align: top; width: 102px;"><span class="Parrafo"><span class="Parrafo">Código Iz = 5</span></span></td>
+            <td style="vertical-align: top; width: 170px;"><span class="Parrafo"><span class="Parrafo">Código Dr = 0</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span><span class="Apartados"><a name="terreno_competente_inadecuado">Saneos con referencias al terreno competente y al terreno inadecuado</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span><img src="Imagenes/saneo_ref.png" style="width: 56px; height: 57px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Las referencias al terreno competente y al inadecuado son aplicables únicamente a saneos de <a href="#tipo_0">tipo 0</a> y de <a href="#tipo_2">tipo 2</a>. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ofrece las siguientes posibilidades al respecto:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Terreno competente</span> (<span style="font-weight: bold;">TC</span>): Es la opción por defecto.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Terreno inadecuado</span> (<span style="font-weight: bold;">TI</span>):
+Se toma como referencia el techo del terreno inadecuado para generar el
+saneo. Por debajo de este saneo no hace falta levantar el terreno
+inadecuado.&nbsp;</span></span><span class="Parrafo"><span class="Parrafo">En cuanto a las mediciones:</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo">No se considera el terreno inadecuado que queda por debajo de la línea de saneo.</span></span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo">La medición de
+excavación de saneo sigue considerándose sólo por debajo del terreno
+competente al igual que el terraplén de saneo. Por encima del terreno
+competente la excavación se medirá con el INADECUADO y el relleno con
+el TERRAPLÉN.</span></span></li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">Cuando
+se define un saneo de terraplén con referencia en la superficie de
+terreno inadecuado, se modifica el comportamiento en las zonas de
+desmonte. Se completa la línea de saneo (L87) por la línea de
+sobre-excavación (L107) o subrasante (L68), o bien por la de terreno
+inadecuado (L105) donde es más baja que aquellas, de modo que por
+debajo de la plataforma tampoco se levante el terreno inadecuado debajo
+de la línea 87.</span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Terreno competente más una profundidad</span> (<span style="font-weight: bold;">TCp</span>): Mide la profundidad del saneo al igual que <span style="font-weight: bold;">TC</span>, desde el terreno competente, pero con la siguiente diferencia:</span></span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo">Con <span style="font-weight: bold;">TC</span> se sanea cuando la subrasante o sobreexcavación está por debajo de la línea de terreno competente.</span></span></li>
+      </ul>
+      <ul style="margin-left: 40px;">
+        <li><span class="Parrafo"><span class="Parrafo">Con <span style="font-weight: bold;">TCp</span>
+se sanea también cuando la subrasante o sobreexcavación está por debajo
+del competente y hasta la profundidad P (se considera como terraplén
+mientras que la subrasante esté por encima de la profundidad <span style="font-weight: bold;">P</span>, es decir, zonas con desmonte de profundidad menor que <span style="font-weight: bold;">P</span>).</span></span></li>
+      </ul>
+      </span></span>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En el caso de proyectos de ensanche y mejora con la referencia <span style="font-weight: bold;">TCp</span>
+no se aplicará saneo por debajo de la calzada existente. Al definir el
+saneo de terraplén en este caso se recomienda utilizar el <a href="OL_saneos_terraplen.html#tipo_2">tipo 2</a>.</span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span><span class="Apartados"><a name="vector_desmonte_terreno_inadecuado">Saneos de terraplén y vector desmonte en terreno inadecuado</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Es posible usar conjuntamente un vector de desmonte en terreno
+inadecuado con el saneo de terraplén. Sirve para cualquier tipo de
+saneo (0, 1, 2) pero debe utilizarse un <a href="#cierres">cierre</a> tipo 1. Entonces, el talud de terraplén baja hasta la línea de terreno competente (L66) y desde ese punto nacerán dos líneas:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La
+primera hacia el exterior es el vector de desmonte en terreno
+inadecuado que sube hasta cortar la superficie del terreno (L104).</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La segunda hacia el interior es la línea de excavación de saneo (L8).</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="Apartados"><a name="fronteras">Fronteras y saneos de dos tipos en el mismo perfil</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><img src="Imagenes/saneo_frontera.png" style="width: 80px; height: 40px; margin-right: 7px;" alt="" align="left" /><img src="Imagenes/saneo_frontera_lado.png" style="width: 91px; height: 63px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+el menú de saneos de terraplén, puede seleccionarse una línea de
+frontera en planta. Los saneos pueden realizarse solamente a un lado de
+la línea o en ambos lados.<br />
+      <br />
+      Pueden coexistir dos saneos en un mismo PK (tramos iguales o
+solapados), uno de ellos a la izquierda de la línea y el otro a la
+derecha.<br />
+      <br />
+Por ejemplo, en el caso de un desdoblamiento de vía en el que aparece
+un terraplén apoyado parcialmente en otro existente, puede sanearse la
+parte apoyada en el terreno con un tipo de saneo y la parte apoyada en
+el terraplén existente con otro tipo, seleccionando como línea de
+frontera el pie del terraplén existente.<br />
+      <br />
+Si se define un saneo para un lado de una frontera, se puede indicar
+también una distancia a la línea de frontera. Si en una misma zona se
+definen dos saneos,&nbsp; por ejemplo:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lado derecho de la frontera +2 metros</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lado izquierdo de la frontera -2 metros</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La
+zona que queda por el medio se sanea con un único tramo horizontal a la
+cota más baja de los dos saneos laterales. A continuación, la unión de
+los dos saneos se realiza utilizando el talud de cierre del saneo más
+bajo desde la línea de frontera hacia el saneo más alto, tal y como
+muestra la figura:<br />
+<br />
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/saneo_con_lfr.png" style="width: 532px; height: 220px;" alt="" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span>Cuando tenemos
+en un PK un único dato de saneo truncado por un código o también por
+Línea de frontera, si tenemos&nbsp; un cierre de tipo 0 o 1 con un
+talud diferente de 0, cierra con este talud contra el terreno o la
+línea de excavación (Subrasante o suelo seleccionado) desde el código o
+la línea de frontera.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span><img style="width: 600px; height: 211px;" alt="" src="Imagenes/saneo_cierre_codigo_o_lf.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Es
+posible utilizar el eje geométrico como línea de frontera en zonas
+donde ésta no esté definida o si no se ha seleccionado ninguna línea de
+frontera, también es posible indicarle una distancia al eje para esa
+línea de frontera:<br /><br /></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span><img style="width: 600px; height: 211px;" alt="" src="Imagenes/saneo_eje.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br /></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span><span class="Apartados"><a name="cota_base">Saneos dados por cota base</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><img src="Imagenes/saneo_cotaBase.png" style="width: 171px; height: 64px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite crear una lista para definir un saneo, de <a href="#tipo_0">tipo 0</a> o de <a href="#tipo_2">tipo 2</a>, según tramos dados por sus PK&#8217;s inicial y final y sus cotas absolutas inicial y final.<br />
+      <br />
+      Esta opción es equivalente a definir un saneo por cada tramo de la lista en el que los valores <span style="font-weight: bold;">Pi</span> y <span style="font-weight: bold;">Pf</span> sean la cota absoluta (opción <span style="font-weight: bold;">Z</span>). La diferencia es que, al utilizar una lista con la cota base de saneo, sólo es necesario definir un dato de saneo (de <a href="#tipo_0">tipo 0</a> o de <a href="#tipo_2">tipo 2</a>).<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_saneo_cotaBase.png" style="width: 344px; height: 214px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span>
+      <table style="text-align: left; height: 51px; width: 692px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: middle; width: 35px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td><td style="vertical-align: top; width: 647px; text-align: justify;"><span class="Info">Para
+ver en el menú de <a href="OL_rasantes_diseno.html">RASANTES</a> el perfil longitudinal de la base del saneo,
+basta con indicar que el programa interpole perfiles, según los datos
+de saneos, calcular el alzado y cargar en RASANTES como perfiles
+transversales del terreno el fichero ISPOL#.per del eje #.</span><br />
+            </td></tr></tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Apartados"><a name="calzada_existente">Saneos con calzada existente</a></span><a name="calzada_existente"><br />
+      <br />
+Para el caso de proyecto de ensanche y mejora podemos hacer uso de los parámetros <span style="font-weight: bold; font-style: italic;">C2</span> que representa el talud de cierre en el borde de la calzada existente y <span style="font-weight: bold; font-style: italic;">A2</span> siendo éste el ancho de berma en el borde de la calzada existente. Se recomienda saneos tipo 2.<br />
+      <br />
+      </a></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/saneos_a2_c2.png" style="width: 256px; height: 74px;" alt="" /></span><a name="calzada_existente"><br />
+      <span class="Parrafo"></span></a></div>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando se define para el saneo de terraplén un ancho de berma <span style="font-weight: bold; font-style: italic;">A2</span> y un talud <span style="font-weight: bold; font-style: italic;">T2</span>
+en el borde de la calzada existente puede ocurrir que este talud corte
+a la línea de saneo teórica en la zona del talud de cierre final del
+saneo con el terreno. En estos casos se elimina todo el saneo de este
+lado de la calzada.<br />
+      <br />
+Para casos con calzada existente, si se desea snaear el terreno por debajo de la calzada existente, en la pestaña de <a href="OL_EyM.html">Fresado y Demolición</a>, para la opción: <span style="font-weight: bold;">No aprovechar en ningún caso</span> se añade la posibilidad&nbsp; Permitir el saneo bajo la calzada existente.<br />
+      <br />
+</span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/san_eym.png" style="width: 684px; height: 85px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Interpolar Perfiles</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>INTERPOLAR PERFILES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo">A
+partir de este submenú de Alzado se puede dar la orden de interpolar perfiles nuevos en la
+sección transversal del eje en el que esté situado. Para ello se deben
+activar algunos de los </span></span>eventos<span class="Parrafo"><span class="Parrafo">
+que tengo en la parte izquierda del cuadro de diálogo que vemos a
+continuación o añadir datos en los que se puede indicar entre q</span></span>ué PK inicial y qué PK final se <span class="Parrafo"><span class="Parrafo">quieren interpolar perfiles con u</span></span>na equidistancia da<span class="Parrafo"><span class="Parrafo">da.<br />
+      <span class="Parrafo"><br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 468px; height: 382px;" alt="" src="Imagenes/alzado_perfiles_interpolar_dialogo.png" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Para que sean efectivas estas equidistancias que se hayan incorporado tiene que estar activada la casilla de <span style="font-weight: bold;">Equidistancias</span>.<br />
+Es importante que esté activada la casilla <span style="font-weight: bold;">Guardar al .vol</span> y que una vez se salga de este menú se guarde toda esta configuración en el fichero .vol del eje en el que se está situado.<br />
+      <br />
+      <span style="font-weight: bold;">NO interpolar ningún perfil. (Tampoco automáticos)</span>: Es equivalente a No interpolar perfiles, de la tabla de <a href="OL_proyecto.html">Proyecto</a>, pero actua en el cálculo de alzado y se guarda con el .vol del eje.<br />
+      <br />
+</span></span></span><span style="font-weight: bold;">Líneas de frontera</span>:
+permite añadir PKs de interpolación intermedios entre
+dos puntos de la línea que esten muy separados. Esto permite afinar los
+modelos en zonas de entronque de dos ejes. Activando la casilla
+contigua a esta opción, se puede impedir que esta opción se utilice al
+calcular cruces y entronques (aunque funcionará en el cálculo normal).<br /><br /><span style="font-weight: bold;">PK pilas, Estribos</span>: la opción <span style="font-weight: bold;">PKs estrictos</span> excluye los pks
+      debidos a semiancho de pilas, entregas, S y Smin de tableros y
+      vigas, discretización de tableros de canto variable, etc..<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Perfiles que se interpolan automáticamente a un eje:<br />
+      </span></span></span>
+      <ul>
+        <li>Pks singulares de <a href="OL_cruces.html">cruces</a> y <a href="OL_entronque_glorieta.html">glorietas</a>. Se crea un fichero eN.pki (siendo N el número del eje) en donde obtenemos los Pks singulares de cada acuerdo.</li>
+        <li>Pks debidos a las <a href="OL_cunas_transicion.html">Cuñas de transición</a> (.vol).</li>
+        <li>Pks debidos a la definición en <a href="OL_muro_desmonte.html#cota_base_muro">Cota Base de Muro</a> (.vol).</li>
+        <li>Pks debidos a la definición en <a href="OL_desmonte_tierra.html#alto_muro_tabla">Cota Cabeza de Muro</a> (.vol).</li>
+        <li>Pks de <a href="OL_marcas_viales.html">Marcas Viales</a>
+(.vol). Al activar la casilla situada en la columna Interpolar T el
+programa interpolará perfiles en las equidistancias definidas por el
+usuario entre los Pks inicial y final que hayamos señalado en dicho
+menú.<br />
+        </li>
+        <li>&nbsp;Pks debidos a la definición de los estribos en el menú de <a href="OL_estructuras.html">Estructuras</a> y en los vértices de los Conos de Derrame (.vol).</li>
+        <li>Pks debido a la definición de las <a href="OL_obras_fabrica.html">Obras de Fábrica</a>
+(.dof). Cada O.F. puede añadir hasta tres perfiles: Uno en el corte de
+la Obra de Fábrica con el eje principal y otros dos en los PKs de
+proyección de la embocadura y el desague sobre este eje.</li>
+        <li>Pks debido a la definición de los <a href="OL_barreras_seguridad.html">Sistemas de Protección de Motoristas</a> (.vol).<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold;">Símbolos al perfil que se truncan: </span>Tanto
+en Interpolación de perfiles transversales como en el corte de los
+transversales del terreno disponemos en el evento de Símbolos al perfil
+que se truncan. Cada dato de la tabla de símbolos al perfil añade
+cuatro PKs. PKini-0.01 , PKini,&nbsp; PKfin, PKfin+0.01.<br /><br /><span style="font-weight: bold;">Vía y Traviesa</span>: Interpola perfiles en los Pks definidos en la tramificación de los datos del menú <a href="OL_ffcc_via_traviesa.html"><span style="font-weight: bold;">Vía y Traviesa.</span></a><br />
+      <br />
+<br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

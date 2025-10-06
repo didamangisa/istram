@@ -1,0 +1,1691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Visibilidad</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ESTUDIOS DE VISIBILIDAD<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <span class="Parrafo"><a href="#cruce">Generalidades</a></span><br />
+      <span class="Parrafo"><a href="#tipos_estudio">
+Tipos de estudio</a></span><br />
+      <span class="Parrafo">
+      </span></div>
+
+      
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#parada_adelantamiento">Visibilidad de parada y adelantamiento</a><br />
+      <a href="#cruce">Visibilidad de cruce</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#pos_obs_ref_ang_bar">Posición del observador y de la referencia, ángulos, barreras visuales,...</a></span><br />
+      <span class="Parrafo">
+      </span></div>
+
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#posicionamiento">Posicionamiento</a><br />
+      <a href="#barreras_visuales">Barreras visuales</a><br />
+      <a href="#opciones_ref">Opciones de referencia</a><br />
+      <a href="#angulos_visuales">Ángulos visuales</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+      
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#config_visual">
+Configuración de la ventana de visualización 3D</a></span><br />
+      <span class="Parrafo">
+      <a href="#resultados">Resultados</a></span><br />
+      <span class="Parrafo"></span></div>
+      <div style="margin-left: 80px;"><a href="#info_graf"><span class="Parrafo">Información gráfica de la visibilidad</span></a><br />
+      <a href="#navega_errores">Navegación sobre errores</a><br />
+      <span class="Parrafo"></span></div>
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#metodologia">
+Metodología de trabajo y revisión de resultados</a></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+Esta función se encuentra disponible en el programa dentro de UTILIDADES del menú ALZADO:<br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/acceso_visibilidad.png" style="width: 590px; height: 342px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <br />
+      Antes de entrar en esa opción es necesario haber <span style="font-weight: bold;">calculado</span> la geometría del eje o ejes que se quieran estudiar.<br />
+      <br />
+En los estudios de visibilidad se considera el terreno que hay en los perfiles (hasta el <a href="OL_parametros.html#margen_exprop_defecto">margen de expropiación</a>, que por defecto está situado en 5 m).<br />
+      <br />
+Es necesario que el eje objeto del estudio tenga asignada una <a href="OL_rasantes_normativa.html">tabla&nbsp;<span class="Archivo">.dia</span></a>, pues éstas recogen información usada en los siguientes aspectos:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Posicionamiento por defecto del observador y de la referencia.</span></li>
+        <li><span class="Parrafo">Parámetros de cálculo de visibilidad de cruce.</span></li>
+        <li><span class="Parrafo">Atención a normativas.</span></li>
+        <li><span class="Parrafo">Cálculo de distancia de alzado.</span></li>
+        <li><span class="Parrafo">Cálculo de distancia de parada.</span></li>
+      </ul>
+      
+       <span class="Parrafo">
+      Si no estuviera cargada una tabla&nbsp;<span class="Archivo">.dia</span>, el programa emitirá un mensaje de error impidiendo al usuario acceder a esta utilidad.<br />
+      <br />
+Al entrar en los estudios de Visibilidad se puede especificar qué ejes
+se desea que sean visualizados y estudiados además del eje principal.<br />
+El estudio se define sobre el eje principal, pero si la visual
+encuentra como obstáculo un elemento de otro eje se identifica a qué
+eje pertenece el obstáculo en el listado de resultados.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/visi_02.png" style="width: 496px; height: 309px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Visibilidad recoge información de dos opciones más de este menú: <a href="OL_marcas_viales.html">marcas viales</a> y <a href="OL_diagrama_de_velocidades.html">diagrama de velocidades</a>:<br /></span>
+      <ul>
+        <li><span class="Parrafo">
+Las <a href="OL_marcas_viales.html"><span style="font-weight: bold;">marcas viales</span></a> se utilizan para visualizarlas en la ventana de la
+vista 3D y para calcular la visibilidad de la vía si estas <a href="OL_marcas_viales.html">marcas
+viales</a> pueden ser barreras visuales. Es necesario dibujarlas para que
+se puedan utilizar en Visibilidad.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">
+El <a href="OL_diagrama_de_velocidades.html"><span style="font-weight: bold;">diagrama de velocidades</span></a> se puede utilizar para calcular la distancia
+de estudio en el caso de <a href="#parada_adelantamiento">visibilidad de parada</a>. Cuando se utiliza el
+          <a href="OL_diagrama_de_velocidades.html">diagrama de velocidades</a>, se calcula la velocidad a la que se puede
+circular por la vía en función de la distancia de parada disponible.
+Este resultado aparece en el listado del estudio, en el archivo&nbsp;<span class="Archivo">ISPOLVP.txt</span>.</span></li>
+      </ul>
+      <span class="Parrafo">
+      La información de <a href="OL_marcas_viales.html">marcas viales</a> y <a href="OL_diagrama_de_velocidades.html">diagrama de velocidades</a> no es
+imprescindible para los estudios de visibilidad, pero puede ser muy
+útil.<br />
+      <br />
+La pantalla de trabajo muestra seis zonas claramente diferenciadas:<br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad.png" style="width: 657px; height: 316px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      </span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Ventana gráfica 3D</span>: Se muestra una
+vista 3D de la vía y el entorno. Está generada con OpenGL<sup>®</sup> por lo que
+es necesario una tarjeta gráfica con sus drivers OpenGL<sup>®</sup> correctamente
+instalados.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Planta</span>: Vista de la triangulación en
+planta de la misma zona de la vía que las anteriores. Se ajusta al
+espacio que le dejen el resto de las ventanas de su columna. Muestra
+una línea que une los puntos en los que se encuentra el observador y la
+referencia. El color de los triángulos depende de la parte de la vía a
+la que pertenecen y de si están en la zona de estudio o fuera.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Menú principal</span>: Cuadros de diálogo
+para la introducción de datos, configuración y obtención de resultados
+del estudio de visibilidad.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Alineaciones, diagrama de velocidades
+y resultados</span>: Muestra las alineaciones en la zona de estudio así como
+en las zonas anterior y posterior. También muestra el diagrama de
+velocidades si está generado y cargado. Una vez que se ha realizado un
+estudio, muestra los resultados.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Alzado</span>: Dibuja la información de
+alzado de la misma zona que la ventana anterior. La línea roja
+representa la visual observador-referencia y la amarilla el tramo de
+rasante correspondiente.</span></li><br />
+        <li><span class="Parrafo"><span style="font-weight: bold;">Eje</span>: Esquematiza el eje completo con
+el diagrama de alineaciones, con fondo negro el tramo en el que se
+realizarán los estudios y blanco el resto del eje. Tiene un deslizador
+que permite mover la posición del observador con efectos, únicamente,
+de mostrar distintas vistas de la vía en la ventana gráfica 3D. A la
+derecha del deslizador se encuentra el navegador de errores que se
+detalla más adelante.</span></li>
+      </ol>
+      <span class="Parrafo"><br />
+Para salir del menú de visibilidad y volver a ALZADO, no hay más que pulsar sobre el botón en forma de aspa.<br />
+      <br />
+En la zona de datos hay tres menús principales: <span style="font-weight: bold;">Estudios</span>, <span style="font-weight: bold;">Configuración</span> y <span style="font-weight: bold;">Resultados</span>.
+El primero (aparece seleccionado por defecto) se utiliza para realizar
+los estudios. Desde el segundo se controlan todos los datos que
+configuran el aspecto visual de la aplicación cuando muestra los datos
+con los que trabaja el programa o los resultados obtenidos y desde el
+tercero se accede a los listados, generación de una película AVI y
+otras opciones.<br />
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="tipos_estudio">Tipos de estudio</a></span><br />
+      <span class="Parrafo">
+      <br />
+En la realización de un estudio de visibilidad se deben tener en cuenta
+todos los factores que definen el estudio para que los resultados sean
+los adecuados. Es necesario saber qué tipo de estudio se va a realizar,
+cuáles son las normativas establecidas para parametrizar el estudio y
+aplicarlas adecuadamente.<br />
+      <br />
+Se parte de un observador, que simula al conductor que recorre la vía,
+y una referencia, que está a una distancia determinada por delante del
+conductor, que debe ser visible siempre. En función de la posición del
+observador y de la referencia en la carretera y de la distancia que los
+separa se pueden realizar estudios con diferentes finalidades:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Estudio de visibilidad de parada.</span></li>
+        <li><span class="Parrafo">Estudio de visibilidad de adelantamiento.</span></li>
+        <li><span class="Parrafo">Estudio de visibilidad de cruce.</span></li>
+      </ul>
+      <span class="Parrafo">Estos estudios tienen sus características predefinidas en el programa ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+pero se pueden variar para realizar otros estudios configurados como el
+usuario prefiera. Incluso en las opciones de Visibilidad de parada y
+Visibilidad de adelantamiento se puede recorrer la vía sin necesidad de
+hacer ningún estudio para hacerse una idea del resultado final del
+proyecto y prever zonas conflictivas en las que intensificar el estudio.<br /><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="parada_adelantamiento">Visibilidad de parada y adelantamiento</a></span><br />
+      <span class="Parrafo">
+      <br />
+      En
+el estudio se tienen en cuenta todos los objetos visualizados,
+incluyendo las barreras visuales. El siguiente esquema describe los
+elementos que intervienen en los estudios de visibilidad:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/esquema_visib_parada.png" style="width: 432px; height: 325px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">El observador recorre la vía a una distancia de un código y está a una altura determinada.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Las referencias se sitúan en una
+línea transversal al recorrido, cumpliendo un conjunto de condiciones
+específicas de distancia y altura respecto a los códigos.</span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo">La distancia de visibilidad que separa al observador de la línea transversal en que se sitúan las referencias.</span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo">Los vectores de visibilidad que muestran la línea recta que &#8220;une&#8221; el ojo del observador y los puntos de referencia.</span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">El usuario debe tener en cuenta que las pestañas <span style="font-weight: bold;">[Parada]</span> y <span style="font-weight: bold;">[Adelantamiento]</span>
+recogen algunos valores de los utilizados para definir el eje a
+estudiar como pueden ser PK inicial y final de eje, velocidad del mismo
+y valores por defecto para los demás parámetros.<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_parada.png" style="width: 447px; height: 370px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/dialogo_visibilidad_adelantamiento.png" style="width: 447px; height: 368px;" alt="" /><br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 93px;">Eje</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 579px;">Desde
+aquí se selecciona el número de eje en el que se va a realizar el
+estudio. Por defecto aparece el eje que estuviera seleccionado en
+ALZADO.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 93px;"><span style="font-style: italic;">Sentido inverso</span><br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 579px;">Si se marca se invierte el sentido de recorrido del eje, que por defecto es sentido creciente de PK&#8217;s (no marcado).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 93px;">[Guardar]<br />
+[Cargar]<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 579px;">Salva/recupera la configuración del estudio de visibilidad mediante un archivo&nbsp;<span class="Archivo">.cvi</span>.<br />
+            <br />
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+      <br />
+En el caso de <span style="font-weight: bold;">visibilidad de parada</span>, el programa permite seleccionar a su vez tres subtipos de estudio:<br />
+      </span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Estudio a velocidad fija</span> (km/h): </span><span class="Parrafo">Velocidad a la que se supone se recorre todo el
+trazado. Esta velocidad puede ser la de proyecto (<span style="font-weight: bold;">VP</span>) o la deseada (<span style="font-weight: bold;">VD</span>, que es 20 km/h mayor para asegurar un margen de estudio) y, a partir de ella y de las características de la vía se, calcula
+en cada punto la distancia de parada según la fórmula de la distancia
+de parada. </span><span class="Parrafo">Este cálculo depende del valor que tenga la clave <span style="font-style: italic;">ALZ_DP</span> de dicha tabla:</span></li>
+      </ol>
+      <span class="Parrafo">
+      <ul>
+<ul style="list-style-type: disc;"><li><span class="Parrafo">Si <span style="font-style: italic;">ALZ_DP</span> = 0 se aplica la fórmula de la Normativa Española:</span></li></ul>
+      </ul>
+
+      <span class="Parrafo">
+      
+      </span>
+      
+      <table style="text-align: left; width: 572px; height: 138px; margin-left: 80px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 163px;" rowspan="5" colspan="1"><img src="Imagenes/formula_dist_parada.png" style="width: 168px; height: 52px;" alt="" /><br />
+
+            </td>
+            <td style="vertical-align: top; width: 3px;">D<sub>p</sub> <br />
+
+</td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+            </span></span></span></span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Distancia de parada (m)</span>
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 3px;">V<span class="Parrafo"></span></td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Velocidad (km/h)</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 3px;">f<sub>l</sub><br />
+
+            </td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Coeficiente de rozamiento longitudinal rueda-pavimento</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 3px;">i<span class="Parrafo"></span></td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Inclinación de la rasante en tanto por uno</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 3px;">T<sub>r</sub><br />
+
+            </td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Tiempo de percepción y reacción (s)</span></td>
+          </tr>
+
+        </tbody>
+      
+      </table><span class="Parrafo"><ul>
+<ul style="list-style-type: disc;"><li><span class="Parrafo">Si ALZ_DP &gt; 0 entonces la distancia de parada es múltiplo de la velocidad, de la forma:</span></li></ul>
+      </ul>
+
+      <span class="Parrafo">
+      </span>
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/formula_dist_parada_2.png" style="width: 123px; height: 25px;" alt="" /></span><br />
+      </div>
+      <span class="Parrafo"><br /></span></span>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Estudio a distancia fija</span> (m): </span></span><span class="Parrafo"><span class="Parrafo">
+Distancia en la que se realiza el estudio, por defecto 120 m.</span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <ol start="3">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Diagrama de velocidades</span>: Indica que se utilice el <a href="OL_diagrama_de_velocidades.html">diagrama de velocidades</a>
+para calcular la
+distancia de parada, que debe de estar previamente calculado. Hace que
+la distancia de estudio dependa, en cada PK, de la velocidad
+instantánea
+calculada en dicho diagrama de velocidades. La distancia se calcula
+con la fórmula anteriormente expuesta.<br />
+ </span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><a name="parametros">
+      En el caso de
+      <span style="font-weight: bold;">visibilidad de adelantamiento</span>, es posible efectuar el estudio tanto a
+distancia fija como a velocidad fija, siendo el resto de <span style="font-weight: bold;">parámetros</span></a></span> comunes tanto al estudio de visibilidad de parada como de adelantamiento:<br />
+      <br />
+      </span></span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 109px;">Distancia máxima de estudio<br />
+</td>
+            <td style="vertical-align: top; height: 8px; width: 563px; text-align: justify;">La distancia máxima de estudio puede llegar a 5000 m.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 109px;">PK inicial<br />
+PK final<br />
+</td>
+            <td style="vertical-align: top; height: 18px; width: 563px; text-align: justify;">PK&#8217;s en el que se inician y finalizan&nbsp; los estudios sobre el eje, por defecto primer y último PK del eje.<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Saltos del observador cada...</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Distancia
+entre los PK&#8217;s en los que se irá situando el observador durante el
+estudio de un eje o tramo del mismo (por defecto, 5 m).<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">No estudiar los primeros...</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Es la distancia en la que la visibilidad se presupone (por defecto, 60 m).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Saltos de la referencia cada...</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Es la distancia entre un subestudio y el siguiente (por defecto, 20 m).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold; font-style: italic;">Calcular bermas de despeje</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Indica
+que cuando se hagan los estudios de visibilidad de parada o
+adelantamiento se muevan los desmontes para permitir dicha visibilidad.
+Por defecto no está marcado. Cuando esta casilla, se despejan los
+desmontes de ambos lados, si es necesario, independientemente del
+sentido del estudio.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold; font-style: italic;">Estudiar barreras visuales</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Al activar esta casilla, se consideran las barreras visuales declaradas en las <span style="font-weight: bold;">Opciones</span> dentro de <span style="font-weight: bold;">[Posición de observador y referencia, ángulos, barreras visuales,&#8230;]</span>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Rango PK&#8217;s /</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">PK&#8217;s observador</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite realizar el estudio bien en el rango de PK&#8217;s indicado o bien en un PK concreto definido en el campo <span style="font-weight: bold;">PK Observador</span>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">PK referencia</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">PK en
+el que se sitúa la referencia a partir de la posición del observador y
+de la distancia de estudio. Es un valor meramente informativo.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Estudiar]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Se
+efectúa el estudio de visibilidad, informándose del % del estudio
+realizado, y generándose un informe que se puede consultar desde la
+pestaña <span style="font-weight: bold;">Resultados</span>. Al pulsar
+sobre este botón el programa solicita un nombre para el fichero de
+texto que contendrá el estudio y que tendrá extensión&nbsp;<span class="Archivo">.txt</span>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Recorrer]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Ofrece una visualización del recorrido de todo el eje tanto en 3D (ventana OpenGL<sup>®</sup>) como en 2D.<br /></td>
+          </tr>
+
+        </tbody>
+
+      </table></span><br />
+      <table style="text-align: left; width: 612px; height: 27px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 296px; text-align: center;"><img src="Imagenes/esquema_visib_1.png" style="width: 264px; height: 198px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 296px; text-align: center;"><img src="Imagenes/esquema_visib_2.png" style="width: 265px; height: 199px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      
+      </table>
+     <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cruce">Visibilidad de cruce</a></span><br />
+      <br />
+Así como los estudios de <a href="#parada_adelantamiento">visibilidad de parada y adelantamiento</a>
+son estudios de recorrido, es decir, se realizan a lo largo de todo el
+eje o del tramo de PK&#8217;s que se especifique, este estudio se realiza
+desde una posición fija que es en la que se va a situar un cruce.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/esquema_visib_cruce.png" style="width: 400px; height: 300px;" alt="" /><br />
+      </div>
+      <br />
+En este estudio el observador se sitúa fuera de la vía a estudiar y mira a ambos lados de la misma para ver si puede cruzarla.<br />
+      <br />
+El cuadro de diálogo que se ofrece al usuario es similar al descrito para los estudios de <a href="#parada_adelantamiento">visibilidad de parada y adelantamiento</a>,
+con la diferencia de que desaparecen algunos elementos como el diagrama
+de velocidades y aparecen otros como el tipo de vehículo, su longitud y
+su aceleración entre otros. Los elementos comunes como posición del
+observador, bermas de despeje, y demás opciones avanzadas han sido
+explicados en el <a href="#parametros">apartado anterior</a>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_visibilidad_cruce.png" style="width: 451px; height: 366px;" alt="" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Así, por defecto se estudia en sentido creciente de los PK&#8217;s el eje
+actual, pudiendo el usuario elegir la posición del observador (si está
+a la derecha o a la izquierda de la vía) y configurar si el observador
+mira hacia su derecha o hacia su izquierda.<br />
+      <br />
+La distancia de cruce depende del tipo de vehículo según la norma
+española, de su aceleración, longitud y del ancho de la calzada que se
+va a cruzar.<br />
+      <br />
+</span></span></span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 122px;">Velocidad fija para determinar la distancia de cruce <br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 550px;">Velocidad a la que se supone se recorre todo el trazado (por defecto, la velocidad de proyecto).<br />
+
+            <br />
+            <span class="Parrafo">
+            </span><span class="Parrafo"><table style="text-align: left; width: 503px; height: 175px; margin-left: 30px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+
+          <tr>
+
+            <td style="vertical-align: middle; width: 163px;" rowspan="7" colspan="1">
+                  <div style="text-align: center;"><img src="Imagenes/formula_dist_cruce.png" style="width: 92px; height: 41px;" alt="" /><br />
+                  </div>
+                  <br />
+                  <div style="text-align: center;"><img src="Imagenes/formula_TC.png" style="width: 165px; height: 45px;" alt="" /><br />
+
+
+
+            </div>
+</td>
+
+            <td style="vertical-align: top; width: 3px;">D<sub>c</sub> <br />
+
+
+                  </td>
+
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+
+
+            </span></span></span></span></td>
+
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Distancia de cruce (m)</span>
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 3px;">V<span class="Parrafo"></span></td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Velocidad de la vía preferente (km/h)</span></td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 3px;">T<sub>c</sub><br />
+
+
+            </td>
+
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Tiempo de maniobra de cruce<br />
+</span></td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 3px;">T<sub>p</sub><span class="Parrafo"><br /></span></td>
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">Tiempo de respuesta del conductor<br />
+</span></td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 3px;">l<br />
+
+
+            </td>
+
+            <td style="vertical-align: top; width: 10px;"><span class="Parrafo">&#8801;</span></td>
+            <td style="vertical-align: top; width: 343px;"><span class="Parrafo">
+Longitud del vehículo</span><br />
+</td>
+          </tr><tr>
+                  <td style="vertical-align: top;">w<br />
+                  </td>
+                  <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8801;</span></span></span></span></td>
+                  <td style="vertical-align: top;">Anchura de carriles<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">j<br />
+                  </td>
+                  <td style="vertical-align: top;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8801;</span></span></span></span></td>
+                  <td style="vertical-align: top;">Aceleración del vehículo (m/s<sup>2</sup>)<br /></td>
+                </tr>
+
+
+
+        
+              </tbody>
+      
+      
+            </table>
+            </span><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 122px;">Tipo de vehículo, longitud (m) y aceleración del mismo (g)<br />
+</td>
+            <td style="vertical-align: top; height: 8px; width: 550px; text-align: justify;">Varía
+entre los tipos definidos en la norma española 3.1 IC: Articulado,
+rígido o ligero. Con este valor se establecen automáticamente los
+valores de longitud y aceleración del vehículo y se determinan con los
+mismos la distancia de cruce necesaria. De todas formas, el usuario
+puede modificar estos valores (consecuentemente el estudio tendrá otro
+tipo de validez).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 122px;">Ancho de la calzada&nbsp; a cruzar (m)<br />
+</td>
+            <td style="vertical-align: top; height: 18px; width: 550px; text-align: justify;">Indica el ancho total de todos los carriles a cruzar (por defecto adopta un valor de 7 m).<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 122px;"><span style="font-weight: bold;">Tipo de estudio de visibilidad de cruce</span><br />
+            </td>
+            <td style="vertical-align: top; width: 550px; text-align: justify;">Indica
+al programa si en el estudio el observador está a la derecha o a la
+izquierda de la calzada y si mira a su derecha o a su izquierda. Por
+defecto se supone <span style="font-style: italic;">Observador derecha, mirando izquierda</span>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">PK observador</span><br />
+            </td>
+            <td style="vertical-align: top;">PK en el que se sitúa momentáneamente el observador según el criterio del usuario para realizar una visualización concreta.<br />
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="pos_obs_ref_ang_bar">Posición del observador y de la referencia, ángulos, barreras visuales,...</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      Al pulsar sobre esta opción se abren dos nuevas pestañas: <span style="font-weight: bold;">Posicionar</span> (que es la que aparece desplegada) y <span style="font-weight: bold;">Opciones</span>.<br />
+      <br /><br /><a name="posicionamiento">POSICIONAMIENTO</a><br /><br />En los estudios se tiene en cuenta la definición de la posición del
+observador y de la referencia. Los valores de estas posiciones están
+definidos por defecto según los especificado en la norma española de
+carreteras (3.1 IC). En el cuadro de diálogo correspondiente a la
+pestaña <span style="font-weight: bold;">Posicionar</span> existen una serie de opciones que permiten al usuario cambiar estos valores, o recuperarlos si se pulsa sobre el botón <span style="font-weight: bold;">[Val. predet.]</span>.
+La ubicación de estas posiciones se efectúa con respecto al perfil
+trasversal de la plataforma (línea 67) y se utilizan los códigos
+correspondientes a los bordes de calzada:<br />
+
+<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 447px; height: 377px;" alt="" src="Imagenes/dialogo_visibilidad_posicionar_2c.png" /><br />
+      <br />
+      <span class="Info">Posición del observador y de la referencia en calzada de vía doble</span><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Los valores se deben introducir como si se configurase el recorrido por
+la calzada derecha. En el caso de realizar un estudio en sentido
+inverso, se calculan las posiciones del observador y la referencia por
+simetría.<br />
+      <br />
+Si se trata de una vía única los cuadros de diálogo son similares, cambiando el gráfico de la calzada:<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 447px; height: 376px;" alt="" src="Imagenes/visi_o1.png" /><br />
+      <br />
+      <span class="Info">Posición del observador y de la referencia en calzada de vía única</span><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Y de forma similar, en el caso de cruce el cuadro de diálogo es:<br />
+      <br />
+      </span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_posicionar_cruce.png" style="width: 449px; height: 372px;" alt="" /><br />
+      <br />
+      <span class="Info">Posición del observador y de la referencia en cruce</span><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Posicionamiento horizontal del observador y de la referencia:<br />
+      <br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 93px;">Lado</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 579px;">Con esta opción se selecciona el lado en el que se sitúa el observador, por defecto a la derecha.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 93px;">Código<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 579px;">Se
+establece aquí el código de referencia, por defecto el 1 (banda blanca
+interior en el caso de doble calzada, eje en el caso de calzada simple).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 93px;">Distancia al código<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 579px;">Referida al código anterior, es la distancia al mismo expresada en m.<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">Siempre a la derecha<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">La distancia anterior se mide a la derecha, según el sentido de recorrido de PK&#8217;s creciente.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Al exterior<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">En
+este caso la distancia se mide hacia el exterior de la calzada,
+dependiendo del sentido de recorrido. Ésta es la opción por defecto.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Altura del punto de vista<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Del conductor sobre la calzada principal, por defecto y según norma 1,10 m.<br />
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Posicionamiento vertical del observador y de la referencia:</span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Desde superficie<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">La altura se mide desde la superficie 67 teniendo en cuenta todos los posibles quiebros de la misma.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Desde código (HOR)<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">La altura se mide desde la horizontal del código.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 108px;">Desde la calzada principal (peralte)<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 564px;">La altura se mide desde la superficie de la calzada teniendo en cuenta el peralte, siendo ésta la opción por defecto.<br />
+            <br />
+            </td>
+          </tr>
+    
+    
+
+        </tbody>
+
+      </table></span></span><br />Configuración de la medición de las distancias de estudio:<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Sobre PK eje<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Las distancias se miden sobre los PKs del eje.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Sobre pos. observador<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Las distancias se miden sobre la posición del observador siguiendo el código y la distancia al código del observador.<br />
+            <br />
+            </td>
+
+          </tr>
+          
+    
+    
+
+        </tbody>
+
+      </table></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 635px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">En principio no es necesario cambiar la selección por defecto de <span style="font-weight: bold;">Lado</span>, <span style="font-weight: bold;">Al exterior</span> ni <span style="font-weight: bold;">Desde calzada principal (peralte)</span>, pues los resultados obtenidos podrían no ser los adecuados.</span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><br /><a name="barreras_visuales">BARRERAS VISUALES</a><br /><br />Los
+estudios con barreras visuales son necesarios para comprobar qué
+objetos situados sobre la plataforma (barreras de contención) o
+próximas a ella (arbustos, edificios, arbolado, tableros de un paso
+superior,&#8230;) no interrumpen la visual. Una barrera visual se define por
+una línea 3D y una paralela sobre ella en el plano vertical. Entre las
+dos se genera una cinta vertical opaca que el analizador estudia. Se
+definen todas las líneas de un mismo tipo de línea (capa de líneas);
+por ejemplo la L404 dibujada sobre el pavimento y una paralela a ella a
+0,70 m de altura puede representar una barrera flexible (bionda) o
+rígida (newjersey). El tipo de línea en el que se tenga definido los
+edificios y una altura global, por ejemplo 15 m, suelen usarse en
+trazados periurbanos.<br /><br />La geometría de las barreras visuales se define fuera de <span style="font-weight: bold;">Visibilidad</span>,
+de hecho cualquier línea puede llegar a ser una barrera visual, aunque
+lo más común es que las barreras visuales se definan y dibujen en la
+opción de <a href="OL_marcas_viales.html">MARCAS VIALES</a> del menú de ALZADO.<br /><br />En el apartado <span style="font-weight: bold;">Barreras visuales</span> de la pestaña <span style="font-weight: bold;">Opciones</span>
+es donde se asigna a cada tipo de línea que representa en la
+cartografía dichas barreras (biondas, newjerseys, barandillas,...) una <span style="font-weight: bold;">altura</span>
+sobre el suelo en el que se sitúen.&nbsp;También está previsto que la
+altura de una barrera visual sea negativa, esto sería aplicable a un
+cartel o pancarta que cuelga de un paso superior o similar. El es
+estudio con barreras visuales contempla la posibilidad de ver por
+debajo de la barrera visual.<br /><br />Se
+puede utilizar todo tipo de líneas específicos para representar
+edificaciones, muros, etc., que pueden estar en la cartografía. Como
+todas las líneas de los tipos indicados en <span style="font-weight: bold;">Barreras visuales</span> se van a estudiar conviene que las líneas que pertenezcan a estos tipos sean las necesarias y ninguna más.<br /><br /></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_barreras_visuales.png" style="width: 449px; height: 362px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><br />Es
+posible especificar la longitud de los abatimientos inicial y final. El
+abatimiento se añade a la línea que define la barrera.<br /><br />La característica <span style="font-weight: bold; font-style: italic;">Desplazable</span>
+indica si la barrera visual se puede desplazar o no. La opción por
+defecto es que son desplazables. En caso de existir barreras visuales
+como una edificación (dibujada con otro tipo de línea) que
+evidentemente no son modificables, no se debe usar la opción).<br /><br />La opción <span style="font-weight: bold; font-style: italic;">Conservar</span> permite conservar una copia de las líneas o barreras visuales originales en caso de que éstas sean desplazadas por el programa.<br />
+      <br />
+Cuando se realiza un estudio en el que se apartan las barreras
+visuales, si se marca las opciones "Desplazable" y "Conservar" en la
+declaración de los tipos de línea que se van a estudiar, se le pone
+como color propio de la línea desplazada el color rojo. Así se facilita
+la identificación de las zonas donde la barrera se ha desplazado.<br /><br />Si se está realizando el estudio en una autopista o autovía se puede activar la opción <span style="font-weight: bold; font-style: italic;">Atravesar mediana</span>,
+que permite desplazar las barreras visuales por la mediana hasta el
+final de la misma o invadiendo los carriles del otro sentido.<br /><br />La opción de <span style="font-weight: bold; font-style: italic;">Atravesar eje</span>
+es similar pero para que cuando se estudien ejes de un solo sentido de
+circulación (con un único lado) se puedan apartar las barreras visuales
+del otro lado.<br /><br />En la ventana de OpenGL<sup>®</sup> se
+dibujan dos líneas azules, una a 0,1 metros del suelo para que se vea,
+y otra a la altura indicada para ese tipo de barrera visual, como se
+muestra en la imagen de la izquierda. En la de la derecha aparece la
+misma imagen pero <a href="#mostrar_texturas">mostrándose las texturas</a> y la representación 3D de la marca vial utilizada (bionda). Para ello se ha activado la casilla <a href="#mostrar_marcas_viales"><span style="font-weight: bold; font-style: italic;">Mostrar marcas viales</span></a> de la pestaña <span style="font-weight: bold;">Configuración</span>: <br /><br /></span>
+      <table style="text-align: left; width: 625px; height: 275px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/visib_openGL_1.png" style="width: 294px; height: 263px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right;"><img src="Imagenes/visib_openGL_2.png" style="width: 294px; height: 263px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br /><br /><a name="opciones_ref">OPCIONES DE REFERENCIA</a><br /><br />
+Se puede especificar que el estudio se realice mirando a la referencia,
+en su posición establecida sobre el perfil transversal o que se estudie
+sobre los bordes de la vía, ambos y a la vez.<br />
+<br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">En referencia<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Indica
+que el estudio se realice específicamente entre el punto del observador
+y el de la referencia definidos en los submenús correspondientes, para
+cada PK de estudio. Es la opción por defecto.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">En bordes de vía<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Indica
+que se realice un estudio simultáneo en ambos bordes de la vía. Para
+cada posición del observador se estudia el borde izquierdo y derecho de
+la vía.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 108px;">Sólo un carril<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 564px;">Es
+una marca especial para el caso en que se estudien los bordes de la
+vía, y limita el estudio a la calzada en la que esté situado el observador. Por defecto no está marcado.<br />
+            </td>
+          </tr>
+    
+    
+
+        </tbody>
+
+      </table></span></span></span><br />
+      <span class="Parrafo"><br /><a name="angulos_visuales">ÁNGULOS VISUALES</a><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2"><tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Ángulo visual horizontal (º)<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Es
+una medida del giro máximo que debería hacer un conductor para ver la
+referencia. El valor por defecto es de 45º. La normativa española no
+especifica nada al respecto, pero da una idea de comodidad de la
+conducción. En caso de no desear que este valor no tenga efecto sobre
+el estudio se recomienda utilizar un valor de 180º.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ángulo visual vertical (º)</span></span></span>
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Es
+el ángulo máximo hacia arriba de iluminación de los focos del vehículo
+que debe permitir ver la referencia en acuerdos verticales cóncavos. El
+valor por defecto es 1º que es el que indica la norma.<br />
+            <br />
+            </td>
+
+          </tr>
+          
+    
+    
+
+        </tbody>
+
+      </table></span></span></span><br />
+      <br />
+      <span class="Titulo_2"><a name="config_visual">Configuración de la ventana de visualización 3D</a></span><br />
+      <br />
+Desde esta pestaña es posible configurar las&nbsp; características
+globales de visualización. Se accede a ella pulsando en la pestaña <span style="font-weight: bold;">Configuración</span>:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_visibilidad_configuracion.png" style="width: 491px; height: 350px;" alt="" /><br />
+      </div>
+      <br />
+Son opciones que no influyen en los resultados de los estudios, aunque
+sí pueden influir en el tiempo de realización de los mismos debido al
+redibujado de las ventanas y pueden influir en la forma en que vemos el
+estudio.<br />
+      <span class="Parrafo"><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2"><tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 120px;">Visualización añadida (Planta-Alzado) (%)</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 552px;">Para
+que el usuario pueda hacerse una idea global de los gráficos que
+muestra el programa, se dibujan, aparte de la zona de estudio, dos
+zonas (delante y detrás) de un tamaño definido por el usuario. Por
+defecto la longitud de estas zonas coincide con la de estudio (0%). Se
+especifica la longitud de estas zonas como un tanto por ciento de la de
+estudio.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 120px;">Exageración de alzado (V/H)<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 552px;">Relación de escalas H/V para el alzado.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 120px;">Mirar referencia<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 552px;">Al seleccionar esta opción, se encuadra la referencia en el centro de la ventana de la vista 3D.<br />
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Mirar adelante (m)<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">En
+este caso, el centro de la ventana estará ocupado por un punto situado
+a una cierta distancia del observador (por defecto a 100 metros) y con
+las mismas características que la referencia. Sería la vista de un
+conductor que intenta tener una visión global de la carretera que tiene
+delante. Ésta es la vista por defecto.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Mirar tangencialmente<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Indica
+que en la ventana de vista 3D el centro de la ventana esté ocupado por
+un punto situado a 1 metro por delante del observador. Es decir, sería
+la vista del conductor si mirase en la dirección que lleva el vehículo
+en ese instante.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;">Desplazamiento de la cámara respecto a la posición del observador</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Permite
+mover el punto de vista de la cámara respecto al observador mediante
+desplazamientos (en m), en las 3 direcciones: lateral (valor positivo
+implica desplazamiento a derecha), longitudinal (valor positivo provoca
+desplazamiento adelante) y en altura (valor positivo indica
+desplazamiento hacia arriba).<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;">Dibujar 3D</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Indica
+si se redibuja la ventana de vista 3D independientemente de los
+estudios. Por defecto está marcado, aunque en caso de que esta ventana
+ralentice al sistema, debería desmarcarse.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;"><a name="mostrar_marcas_viales">Mostrar marcas viales</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Al
+marcar esta opción, aquellas líneas de tipo 3D introducidas como
+barreras visuales quedan representadas en la vista 3D con su forma
+tridimensional (por ejemplo, el tipo de línea 404 representa una
+bionda).<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;"><a name="mostrar_texturas">Mostrar texturas</a></span></td>
+            <td style="vertical-align: top; width: 552px; text-align: justify;">Si se activa, la vista 3D se representa con texturas de calzada, desmonte, terraplén,&#8230;<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Generar informes<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Indica si se quiere que se generen informes o no de los estudios que se están realizando y por defecto está marcado.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Guardar bermas despeje<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Indica si se quiere que se generen ficheros de geometría de <a href="OL_bermas_despeje.html">bermas de despeje</a> utilizables posteriormente en el menú de ALZADO.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Mantener vista 3D indicada<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Si
+este control está marcado (opción por defecto) cuando se cambie la
+posición del observador desde el menú de datos, el programa &#8220;olvidará&#8221;
+los movimientos que haya realizado el usuario en la ventana de vista 3D
+y mostrará en esa ventana lo que corresponde a un recorrido normal. En
+caso de que esté desmarcado, aplicará todos los movimientos realizados
+por el usuario en la ventana de vista 3D a la nueva posición.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;"><a name="velocidad_pelicula">Película: Velocidad (km/h)</a><br /></td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Indica la velocidad de movimiento del observador por la vía durante la generación de películas AVI, por defecto 120 km/h.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Círculo de ángulo visual (º)<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Activando
+la opción círculo y declarando un ángulo en grados sexagesimales, el
+programa dibuja un círculo que indica la zona de visión con ese ángulo.
+Este círculo se puede apreciar en la ventana OpenGL<sup>®</sup>.<br />
+<br /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 120px;">Información en ventana 3D<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Aquí se le indica al programa qué datos han de quedar representados en la ventana 3D, pudiendo ser:<br />
+            <ul>
+              <li>Ninguno</li>
+              <li>PK&#8217;s del observador y de la referencia</li>
+              <li>Lo anterior y además la distancia necesaria y la visible (disponible)</li>
+              <li>Todo lo anterior y además el obstáculo causante de la falta de visibilidad de la referencia</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[Guardar]<br />
+</span></span></span></span><span style="font-weight: bold;">[Cargar]</span><span style="font-weight: bold;"><br />
+            </span></td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Salva y recupera la configuración general de visualización a través de un fichero de extensión .cvi.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Generar listados en formato .xlsx</span><br />
+            </td>
+            <td style="vertical-align: top;">Genera el listado en formato Excel, además de en el formato .res de texto plano habitual.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Informes de cortes de barreras</span><br />
+            </td>
+            <td style="vertical-align: top;">Añade al listado la posición de los cortes de la visual con las barreras.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Dibujar líneas estudio</span><br />
+            </td>
+            <td style="vertical-align: top;">Dibuja en la vista 3D las líneas que unen al observador con la referencia.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Dibujar estado estudio</span><br />
+            </td>
+            <td style="vertical-align: top;">Dibuja en la vista 3D la vista actual del PK que se esté estudiando en ese momento, como si utilizáramos la opción <span style="font-weight: bold;">Recorrer</span>.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 120px;"><span style="font-weight: bold;">Cursor informativo</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 552px;">Si
+se activa, al mover el cursor sobre la escena 3D se informa de las
+coordenadas 3D del cursor, de la escama sobre la que está posado el
+cursor y del PK, distancia al eje y azimut del mismo.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table></span></span></span><br />
+Si se marca la opción </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">"<span style="font-weight: bold;">Dibujar estado estudio</span>"</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">,
+al realizar el estudio mostrará en la ventana 3D todas las posiciones
+de estudio, ubicando observador y referencia en los lugares
+correspondientes e indicando el estado de visibilidad de ese punto.<br />
+Además si se debe despejar el desmonte o apartar las marcas viales, se muestra como se produce dicho apartamiento.<br />
+Este proceso incrementa notablemente el tiempo necesario para realizar
+un estudio, por lo que por defecto esta opción está desactivada, pero
+puede servir para aclarar dudas.<br />
+La utilización o no de esta opción no afecta para nada al resultado del estudio.&nbsp; <br />
+      <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="resultados">Resultados</a></span><br />
+      <span class="Parrafo"><br />
+Desde esta pestaña se accede a la visualización de resultados en forma de listados o imágenes:<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_visibilidad_resultados.png" style="width: 446px; height: 317px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 108px;">Película en AVI<br />
+</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 564px;">Se
+utiliza para generar una animación en formato AVI, a 25 imágenes por
+segundo, moviendo la cámara y la referencia por las posiciones de un
+recorrido o estudio a la <a href="#velocidad_pelicula">velocidad indicada en <span style="font-weight: bold;">Configuración</span></a>.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 108px;">Instantánea<br />
+</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 564px;">Permite generar una imagen BMP en cada posición de un recorrido o estudio. Cada imagen se guarda en un archivo numerado.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 108px;">Curvas animaciones<br />
+</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 564px;">Al
+pulsar esta opción de efectúa el recorrido en el tramo objeto de
+estudio creándose dos ficheros correspondientes a las curvas que
+generan el recorrido del observador (<span class="Archivo">camara.cur</span>) y de la referencia (<span class="Archivo">referen.cur</span>), y que pueden ser utilizadas en el módulo Virtual3D<sup>®</sup> para la elaboración de animaciones.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">Ver listados<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite abrir con el bloc de notas cualquier fichero de extensión&nbsp;<span class="Archivo">.txt</span> procedentes de un estudio de visibilidad.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Estudio a cartografía<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Plasma
+en la cartografía y sobre la calzada recintos de color a lo largo del
+tramo objeto del estudio de visibilidad. Dichos recintos son de color
+verde en el caso de las zonas donde no hay problemas de visibilidad y,
+en caso de existir problemas de visibilidad se distinguen tres tipos de
+recintos,
+rojos en caso de problema de visibilidad con la obra, cian en caso de
+ser un problema causado por unabarrera visual y amarillo en caso del
+problema sea de los ángulos visuales. Además también se representan
+mediante
+símbolos (de tipo 456) los obstáculos causantes de la falta de
+visibilidad además de las visuales observador-referencia (con el tipo
+de línea 3).<br />
+Alclicar en esta herramienta, se dibujan las líneas de las visuales en
+las que no se puede ver la referencia desde la posición del observador
+(Tipo de línea 3, color amarillo).<br />
+Distinguiremos la línea (Tipo 48, color magenta) que representa la
+primera visual de ese subestudio que choca con algún obstáculo.<br />
+Esta línea pasa por el símbolo que representa el problema de visibilidad.<br />
+            </td>
+          </tr>
+
+    
+    
+
+        </tbody>
+
+      </table></span></span></span><br />
+      <span class="Parrafo">Es
+posible seleccionar el tipo de información que pasa a la cartografía y
+el tipo de línea con que se representa esta información. Los tipos de
+información disponible son:<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las zonas en las que hay o no visibilidad (con la posibilidad de diferenciar entre problemas con la obra, barreras y ángulos).</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las visuales del estudio.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las visuales de los estudios parciales.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las visuales que salen del trazad del eje.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La envolvente de las visuales.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A continuación se muestra un ejemplo de informe sobre un estudio de visibilidad de parada a velocidad fija:<br />
+      <br /></span></span></span></span></span></span>
+      <div style="text-align: left;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+E S T U D I O&nbsp;&nbsp;&nbsp;&nbsp; D E&nbsp;&nbsp;&nbsp;&nbsp; V I S
+I B I L I D A
+D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Estudio de Visibilidad de&nbsp;&nbsp;&nbsp;&nbsp;
+Parada&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a lo largo de un eje
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+un tramo de
+eje.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+ISTRAM(R) V.&nbsp;
+9.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+98 #</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#
+Eje:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+en sentido:
+Normal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+Estudio a velocidad fija de&nbsp; 120.0
+Km/h&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Eje desde
+PK:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+hasta PK:&nbsp;&nbsp;&nbsp;
+2855.444&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Estudio desde PK:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+hasta PK:&nbsp;&nbsp;&nbsp;
+2855.444&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Saltos del observador para estudio
+cada:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.00
+m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Se supone la visibilidad en los
+primeros:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+60.00
+m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# A partir de ahí se estudia la visibilidad
+cada:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.00
+m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Angulo de tolerancia vertical, en
+grados:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# Angulo de tolerancia horizontal, en
+grados:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+45.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+# El estudio se hace entre el punto de vista del observador y el punto de la&nbsp;&nbsp; #</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+referencia
+configurados.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+Trayectoria configurada del
+observador:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Superficie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Lado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Derecho&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Código:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp;&nbsp;&nbsp; Distancia al
+código:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.5
+m&nbsp;&nbsp; hacia el
+exterior&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Altura:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.10 m&nbsp; desde Calzada
+Pral.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#
+Trayectoria configurada de la
+referencia:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Superficie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Lado:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Derecho&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Código:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+#&nbsp;&nbsp;&nbsp;&nbsp; Distancia al
+código:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0
+m&nbsp;&nbsp; hacia el
+exterior&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;
+Altura:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.20 m&nbsp; desde Calzada
+Pral.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+################################################################################</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; PK&nbsp;&nbsp;&nbsp; D.Disp D.Nece&nbsp; i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Radio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fl&nbsp;&nbsp; V.Est V.Red Obstáculo
+Dist.Eje PKObstáculo</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+--------------------------------------------------------------------------------</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp;&nbsp; 0.0&nbsp; 246.6&nbsp; 246.6&nbsp; 2.404%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp;&nbsp; 5.0&nbsp; 247.7&nbsp; 247.7&nbsp; 2.204%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 10.0&nbsp; 248.9&nbsp; 248.9&nbsp; 2.004%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 15.0&nbsp; 250.0&nbsp; 250.0&nbsp; 1.804%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 20.0&nbsp; 251.2&nbsp; 251.2&nbsp; 1.604%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 25.0&nbsp; 252.5&nbsp; 252.5&nbsp; 1.404%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 30.0&nbsp; 253.7&nbsp; 253.7&nbsp; 1.204%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 35.0&nbsp; 254.9&nbsp; 254.9&nbsp; 1.004%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 40.0&nbsp; 256.2&nbsp; 256.2&nbsp; 0.804%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 45.0&nbsp; 257.5&nbsp; 257.5&nbsp; 0.604%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 50.0&nbsp; 258.7&nbsp; 258.7&nbsp; 0.404%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 55.0&nbsp; 260.1&nbsp; 260.1&nbsp; 0.204%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 60.0&nbsp; 261.4&nbsp; 261.4&nbsp; 0.004%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 65.0&nbsp; 262.7&nbsp; 262.7 -0.196%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 70.0&nbsp; 240.0&nbsp; 264.1
+-0.396%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.9
+Mediana&nbsp;&nbsp;&nbsp; 1.664&nbsp;&nbsp;&nbsp;&nbsp; 296.717</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 75.0&nbsp; 240.0&nbsp; 265.5
+-0.596%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.6
+Mediana&nbsp;&nbsp;&nbsp; 1.525&nbsp;&nbsp;&nbsp;&nbsp; 291.611</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 80.0&nbsp; 240.0&nbsp; 266.9
+-0.796%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.3
+Mediana&nbsp;&nbsp;&nbsp; 1.498&nbsp;&nbsp;&nbsp;&nbsp; 286.528</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 85.0&nbsp; 240.0&nbsp; 268.3
+-0.996%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 114.1
+Mediana&nbsp;&nbsp;&nbsp; 1.509&nbsp;&nbsp;&nbsp;&nbsp; 280.428</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 90.0&nbsp; 220.0&nbsp; 269.8
+-1.196%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 109.3
+Mediana&nbsp;&nbsp;&nbsp; 1.809&nbsp;&nbsp;&nbsp;&nbsp; 284.852</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; 95.0&nbsp; 220.0&nbsp; 271.2
+-1.396%&nbsp;&nbsp;&nbsp; -383.5&nbsp; -2500.000 0.291 120.0 109.0
+Mediana&nbsp;&nbsp;&nbsp; 1.853&nbsp;&nbsp;&nbsp;&nbsp; 279.639</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 100.0&nbsp; 220.0&nbsp; 272.7 -1.596%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp; -2500.000 0.291 120.0 108.8 Mediana&nbsp;&nbsp;&nbsp;
+1.942&nbsp;&nbsp;&nbsp;&nbsp; 273.422</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp; 125.0&nbsp; 180.0&nbsp; 274.3 -1.805%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 98.4
+Calzada&nbsp;&nbsp;&nbsp; 3.136&nbsp;&nbsp;&nbsp;&nbsp; 279.299</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 130.0&nbsp; 180.0&nbsp; 272.8 -1.605%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 98.6
+Calzada&nbsp;&nbsp;&nbsp; 3.308&nbsp;&nbsp;&nbsp;&nbsp; 269.210</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 135.0&nbsp; 180.0&nbsp; 271.3 -1.405%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 98.8
+Calzada&nbsp;&nbsp;&nbsp; 3.688&nbsp;&nbsp;&nbsp;&nbsp; 264.914</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 140.0&nbsp; 160.0&nbsp; 269.8 -1.205%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 93.3
+Calzada&nbsp;&nbsp;&nbsp; 3.634&nbsp;&nbsp;&nbsp;&nbsp; 283.306</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 145.0&nbsp; 160.0&nbsp; 268.4 -1.005%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 93.6
+Calzada&nbsp;&nbsp;&nbsp; 3.955&nbsp;&nbsp;&nbsp;&nbsp; 271.538</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 150.0&nbsp; 160.0&nbsp; 267.0 -0.805%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 93.8
+Calzada&nbsp;&nbsp;&nbsp; 4.365&nbsp;&nbsp;&nbsp;&nbsp; 265.494</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 155.0&nbsp; 160.0&nbsp; 265.5 -0.605%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 94.0
+Calzada&nbsp;&nbsp;&nbsp; 4.842&nbsp;&nbsp;&nbsp;&nbsp; 262.241</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 160.0&nbsp; 140.0&nbsp; 264.2 -0.405%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 87.8
+Calzada&nbsp;&nbsp;&nbsp; 4.321&nbsp;&nbsp;&nbsp;&nbsp; 282.109</span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp; 165.0&nbsp; 140.0&nbsp; 262.8 -0.205%&nbsp;&nbsp;&nbsp;
+-383.5&nbsp;&nbsp; 2500.000 0.291 120.0&nbsp; 88.0
+Calzada&nbsp;&nbsp;&nbsp; 4.846&nbsp;&nbsp;&nbsp;&nbsp; 273.525<br />
+&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp; ...&nbsp;&nbsp; ...&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img src="Imagenes/visib_aviso_visualFuera.png" style="width: 286px; height: 129px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En los estudios de visibilidad se advierte al usuario si la línea visual que une observador y referencia se <span style="font-weight: bold;">sale de los límites</span>
+de la geometría estudiada de la obra. En esos puntos no hay información
+de la forma del terreno ni de si eso supone un obstáculo o no para la
+visibilidad, por lo que también queda reflejado en el informe del
+estudio.<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/visib_visualFuera.png" style="width: 282px; height: 180px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="info_graf">Información gráfica de la visibilidad</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Una vez realizado un estudio se puede observar los resultados en la ventana de <span style="font-weight: bold;">Alineaciones, Diagrama velocidades y Resultados</span>.
+En esta ventana aparece, en la parte inferior, un histograma en el que
+las columnas amarillas indican PK&#8217;s en los que se consigue la
+visibilidad deseada, y las rojas indican PK&#8217;s en los que no se
+consigue. La altura de estas columnas es proporcional a la distancia de
+visibilidad alcanzada.<br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/visib_info_graf.png" style="width: 443px; height: 524px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Pero estos resultados también son visibles para el PK actual en la
+ventana de PLANTA y en la&nbsp; vista 3D. En la de PLANTA aparece una
+línea que recorre el punto donde está el observador y los puntos en los
+que se ha realizado el estudio. <br />
+      <br />
+Esta línea tiene color verde en los tramos en los que hay visibilidad y
+rojo en los que no la hay. En la ventana de vista 3D se dibuja la misma
+línea pero en 3D.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="navega_errores">Navegación sobre errores</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Una vez realizado el estudio, desde este menú situado en la parte
+inferior es posible desplazarse de manera secuencial (según PK&#8217;s) sobre
+cada punto en el que se ha observado un problema de visibilidad,
+indicándose además la causa del mismo y el intervalo de PK&#8217;s en donde
+se manifiesta:<br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/visib_navega_errores.png" style="width: 637px; height: 30px;" alt="" /></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span></span><span class="Titulo_2"><a name="metodologia">Metodología de trabajo y revisión de resultados</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+A modo de resumen y con el fin de ofrecer un enfoque práctico de
+visibilidad, se exponen los pasos que el usuario debe realizar para
+efectuar un estudio:<br />
+      <br />
+      <span style="font-weight: bold;">Paso 1: Obtención de los datos necesarios</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Antes
+de entrar en la opción de visibilidad es necesario que esté calculado
+el alzado del eje o ejes que se quieran estudiar (que existan los
+ficheros&nbsp;<span class="Archivo">ispol#.per</span>, siendo # el número de eje).</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Es
+muy útil que estén calculadas y dibujadas las <a href="OL_marcas_viales.html">marcas viales</a> y barreras
+visuales para que puedan ser consideradas por los algoritmos de
+Visibilidad.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">También conviene tener una idea de las normativas que rigen los estudios de visibilidad.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una vez tenido todo ello en cuenta, se accede al menú de Visibilidad.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold;">Paso 2: Introducción de los datos que definen el estudio</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una vez en que se está en Visibilidad:<br />
+      </span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se selecciona el eje que se va a estudiar.</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se selecciona un tipo de estudio, lo cual define un conjunto de valores de configuración del estudio según la normativa actual.</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se
+introducen los valores de PK de inicio y PK de fin del estudio, a no
+ser que se vaya a estudiar todo el eje, caso en el que basta con dejar
+los valores por defecto.</span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold;">Paso 3: Realización del estudio</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para ello basta con pulsar sobre el botón <span style="font-weight: bold;">[Estudiar]</span> y el estudio se realiza automáticamente.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold;">Paso 4: Visualización de resultados</span><br />
+      <br />
+      </span></span></span></span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los resultados del estudio se guardan en un informe y se muestran en la ventana de <span style="font-weight: bold;">Alineaciones, Diagrama Velocidades y Resultados</span>.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+caso de que los resultados no sean los esperados se deben realizar las
+correcciones necesarias fuera de este menú y, una vez realizados los
+cambios oportunos, se repite este proceso hasta que se cumplan los
+objetivos requeridos.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Otras facilidades</span><br style="font-weight: bold; font-style: italic;" />
+      <br />
+Como se ha explicado, la opción de Visibilidad tiene otras
+posibilidades y/o características que facilitan el trabajo y que no son
+estrictamente necesarias para realizar los estudios. El programa
+permite al usuario <a href="#posicionamiento">situar</a> el punto de observador y el de referencia en los puntos que necesite a lo largo del eje. Para ello tiene muchos métodos.<br />
+      <br />
+Se puede <a href="#posicionamiento">situar</a> el observador y a la referencia en cualquier PK del eje mediante la opción <span style="font-weight: bold;">PK observador</span>
+introduciendo el valor del punto kilométrico deseado, o también usando
+el deslizador de la parte inferior del menú para darle posición. En
+cuanto a su posición transversal hay un submenú, <a href="#pos_obs_ref_ang_bar"><span style="font-weight: bold;">Posición observador y referencia, ángulos, barreras visuales,&#8230;</span></a>
+dedicado a ello en el que se puede situar al observador a cualquier
+distancia de cualquier código de los que definen un perfil transversal
+y también a cualquier altura sobre la superficie de la vía.<br />
+      <br />
+El estudio puede estar apoyado por un <a href="OL_diagrama_de_velocidades.html">diagrama de velocidades</a>
+que marque la distancia de estudio. Con estas características definidas
+se puede realizar un recorrido del eje o un estudio de visibilidad.
+Ambos respetan las características transversales de las posiciones del
+observador y de la referencia.<br />
+      <br />
+Los estudios y recorridos se pueden realizar en sentido normal o
+inverso para estudiar o recorrer ambos sentidos de marcha en la vía.
+También se puede acotar su ámbito. En caso de que el funcionamiento sea
+muy lento se pueden desactivar los dibujados de cualquiera de las
+ventanas gráficas.<br />
+      <br />
+El estudio puede realizarse sobre la referencia, o a ambos lados de la
+calzada simultáneamente. En caso de que la vía sea de calzada única
+puede hacerse solo sobre el carril en el que se recorre.<br />
+      <br />
+Por defecto, desde el PK de inicio hasta el de final, se realizan
+estudios a lo largo del eje cada 5 metros, considerando que en los 60
+primeros metros va a haber visibilidad, por lo que no se estudian, y a
+partir de ahí se realizan subestudios cada 20 metros hasta que se
+alcance la distancia de estudio. Es decir, si se empezase en el PK
+1234,234, ahí se realizaría el primer estudio, el siguiente en el PK
+1239,234 y así sucesivamente; en cada uno de ellos se realizarían los
+subestudios correspondientes, se buscaría que la recta que une el
+observador y la referencia en el PK 1294,234 no cortase ningún
+triángulo de la vía, el terreno o las barreras visuales, repitiéndose
+este subestudio situando la referencia en los PK&#8217;s 1314,234, 1334,234 y
+1354,234 (suponiendo distancia de estudio en 120 m).<br />
+      <br />
+Estas condiciones son modificables para adecuarlas a las necesidades
+del usuario. En caso de que el punto final del último subestudio no
+coincida con la distancia de estudio, se realiza un subestudio
+adicional para la distancia de estudio (por ejemplo que las condiciones
+por defecto se modifiquen para que el <span style="font-weight: bold;">offset comienzo</span> sea 50, se estudiaría 1284,234, 1304,234, 1324,234, 1344,234, 1364,234 y 1354,234).<br />
+<br />
+
+
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

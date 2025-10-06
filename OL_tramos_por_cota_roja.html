@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Tramos por cota roja</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TRAMOS POR COTA ROJA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Este
+menú permite que se inserten tramos en estructura y túnel en la
+tramificación general, de forma automática, al objeto de realizar
+tanteos.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 428px; height: 130px;" alt="" src="Imagenes/dialogo_tramos_cota_roja.png" /><br />
+      </div>
+      <br />
+</span><span class="Parrafo"> Utiliza para ello los siguientes parámetros:</span><span class="Parrafo"><br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cota roja para ESTRUCTURA (cota de
+control)</span>: Las estructuras se colocarán en zonas donde la cota roja sea
+igual o superior a este valor y si la longitud de la estructura resulta
+superior a la <span style="font-weight: bold;">longitud mínima</span> (de lo contrario, no se crea el tramo).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cota roja para TÚNEL (cota de control)</span>:
+Los túneles se colocarán en zonas donde la cota roja sea igual o
+inferior a este valor y si la longitud del túnel resulta superior a la <span style="font-weight: bold;">longitud mínima</span> (de lo contrario, no se crea el tramo).</span></li>
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo">Para ubicar los PK&#8217;s de inicio y final de estas estructuras y túneles, el programa permite introducir otros valores <span style="font-weight: bold;">extremos</span> de cota roja (que deben ser menores en valor absoluto).</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo">Así, por ejemplo, si se indica como valor
+de control para estructura 15 y valor extremo 5 con una longitud mínima
+de 50, el programa coloca un viaducto en tramos donde la cota roja
+supere 15 metros durante más de 50 metros, pero ubica los estribos
+donde la cota roja baja hasta los 5 metros.</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo">Otro ejemplo sería para el caso de un túnel
+de longitud mínimo 100, con un valor de control -30 y extremo -15. En
+este caso, se coloca un túnel donde la cota roja sea inferior a -30
+metros durante más de 100 metros, pero ubica las boquillas donde la
+cota roja alcanza -15 metros.</span><br />
+      <span class="Parrafo" /></span></span></div>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Sección tipo normal</span>: En los tramos para estructuras se coloca esta sección tipo.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Sección tipo túnel</span>: En los tramos de túnel se coloca esta sección, por lo que el usuario deberá anotar aquí una sección tipo en túnel.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Redondeo de PK&#8217;s</span>: Desde este campo se puede introducir un valor para redondear los PK&#8217;s de inicio y final de las estructuras y los túneles.</span></li>
+      </ul>
+      <span class="Parrafo">Si se deja activa la casilla <span style="font-weight: bold;">Rellenar menú ESTRUCTURAS</span>, al pulsar
+sobre el botón <span style="font-weight: bold;">[Generar]</span> para crear los tramos también se rellena
+automáticamente el menú de ESTRUCTURAS con los viaductos y túneles
+correspondientes, de forma que estas estructuras pueden representarse
+en el longitudinal al utilizar una plantilla preparada a tal efecto
+(como la&nbsp;<span class="Archivo">estruc.gui</span>).<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

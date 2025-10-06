@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Geometría de la subrasante</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GEOMETRÍA DE LA SUBRASANTE Y DECLARACIÓN DE SECCIONES TIPO<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 694px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+      Se
+definen en este apartado las relaciones geométricas existentes entre la
+calzada final y la subrasante de tierras, además de otros elementos
+como el espesor del paquete de firmes o los suelos seleccionados que
+están íntimamente ligados a los datos aquí definidos.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 654px; height: 219px;" alt="" src="Imagenes/dialogo_subrasante.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <a name="nombres_ST">El botón <span style="font-weight: bold;">[NOMBRES &gt;&gt;]</span> permite acceder a una tabla para asignar a cada sección tipo un nombre que se guardará en el fichero&nbsp;<span class="Archivo">.vol</span>. Este nombre puede aparecer al editar el fichero&nbsp;<span class="Archivo">ISPOL#.per</span> (siendo # el número de eje) y también en los </a><a href="OL_planos_longitudinales.html#tablas_textos">planos de perfiles longitudinales</a>.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 654px; height: 219px;" alt="" src="Imagenes/dialogo_subrasante_nombres.png" />&nbsp;</span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /></span><img style="width: 334px; height: 330px; margin-left: 7px;" alt="" src="Imagenes/anchos_normales.png" align="right" /><span class="Parrafo">Desde el menú de definición de <a href="OL_zonas_calculo.html#nombres_ST">zonas de cálculo</a> también es posible visualizar y editar estos nombres.<br />
+      <br />
+      </span><span class="Parrafo"><a name="anchos_normales">La opción <span style="font-weight: bold; font-style: italic;">Anchos y taludes normales</span></a>
+expande los taludes y anchos de berma, cuneta y geometría de desmonte y
+terraplén, en zonas donde el ancho de la plataforma está en transición,
+para que los valores introducidos se conserven en una sección normal al
+borde de la plataforma (borde de arcen, acera o plataforma fija) en
+lugar de la sección transversal normal al eje.<br /><br />La figura de la derecha ilustra esta opción perfectamente. Si el ancho de la berma (<span style="font-style: italic;">a</span>)
+de este ejemplo se midiese de forma normal a la propia berma, el perfil
+resultante en el correspondiente PK mostraría una berma de ancho mayor (<span style="font-style: italic;">a + da</span>) al aplicar esta corrección, y lo mismo ocurriría con la cuneta, taludes, etc.<br /><br />Esta opción se activa automaticamente en algunos acuerdos de <a href="../../../COMPARTIDO/Ayuda/OL_cruces.html">cruces</a> con anchos de acera grandes y con un radio de acuerdo propio.<br />
+      <br />
+      <span style="font-weight: bold;">Colgada</span>: Si se activa esta propiedad,en los estudios de visibilidad no se añade el<br />
+terreno al final de la sección, aunque esta no este truncada.<br /><br />
+Para definir la geometría de la subrasante se utilizan los siguientes
+datos, cuyo significado intenta ser explicado en el dibujo o modelo:<br />
+      <br />
+
+      </span><div style="text-align: center;"><span class="Parrafo"><img style="width: 414px; height: 302px;" alt="" src="Imagenes/modelo_subrasante.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 230px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 94px; font-weight: bold;"><span class="Parrafo">[ESP.MÍN.I]<br />
+[ESP.MIN.D]</span></td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;"><span class="Parrafo">Espesor mínimo del paquete de firme para las
+plataformas izquierda y derecha. El dato debe ser coherente con los
+espesores que se dan a las distintas capas del paquete de firme.<br />
+            <br />
+            </span>
+            <table style="text-align: left; height: 43px; width: 587px; margin-left: 0px;" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+                  </td>
+                  <td style="vertical-align: middle; width: 543px; text-align: justify;"><span class="Parrafo"><span class="Info">El
+espesor máximo de los paquetes de firmes es de 200 metros. Esto permite
+realizar presas en las que la geometría de la misma se define con la
+línea de la rasante y la geometría de la excavación con la de la
+subrasante.</span></span></td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Parrafo"><br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px;"><span style="font-weight: bold;">LIMATESA</span><br />
+            </td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;"><span class="Parrafo">Su evolución geométrica sigue a la que tenga la rasante según varios patrones de comportamiento entre los que se puede optar:<br /></span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Automática</span>: Coloca la limatesa automáticamente para optimizar el
+volumen de firme. Durante las transiciones de peralte, la limatesa se
+desplaza gradualmente de borde a borde de las calzadas principales. Se
+aplica el espesor mínimo en ese punto, y desde él la &#8220;pendiente mínima
+de la subrasante&#8221; o el peralte de la calzada correspondiente si éste es
+mayor, para llegar hasta la línea de la calzada auxiliar del borde que
+se trate.</span></li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;"><a name="subparalela">Subparalela</a></span><span class="Parrafo">: Coloca la limatesa bajo el eje geométrico (en calzada
+única) o bajo las bandas blancas interiores (en caso de calzada doble).
+Se aplica igualmente el espesor mínimo en ese punto, y desde él se
+llega hasta el borde de la calzada principal con la pendiente del
+peralte aumentada en el &#8220;incremento de pendiente&#8221; de modo que el firme
+se engrosa hacia el lado exterior de la calzada principal, si el
+incremento es positivo. Esta opción tiene en cuenta las autovías con <a href="OL_peraltes.html#doble_peralte">doble peralte</a>.<br />
+</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Automática ampliada</span>: La limatesa se genera igual que en caso de
+automática, pero no se detiene en los bordes de la calzada principal,
+sino que continúa con la misma pendiente hasta el ancho deducido del
+componente número uno del paquete de firmes. Este componente debe
+definirse en ancho con todo rigor y no dejar que el talud de firme o la
+cuneta lo trunquen, cuando se aplica a este caso. Se permite que los
+sobreanchos de la primera capa de firme estén definidos con respecto al
+borde de los arcenes. Si su medición no interesa se le puede dar
+espesor cero.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Subparalela ampliada</span>: Llega hasta el ancho del componente número
+uno del firme, con la geometría del caso de subparalela. Se permite que
+los sobreanchos de la primera capa de firme estén definidos con
+respecto al borde de los arcenes.</span></li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;"><a name="subras_indep">Independiente</a></span><span class="Parrafo">: La ubicación de la limatesa se realiza por el
+usuario independientemente del peralte o el eje de giro. En este caso
+la definición de la geometría de la subrasante se realiza desde el menú
+                <a href="OL_subrasante_independiente.html"><span style="font-weight: bold;">[SUBRASANTE INDEP.]</span></a>, al estilo del diseño de la plataforma.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Automática arcén</span>: Es igual que la <span style="font-weight: bold;">automática</span>, pero la limatesa
+puede pasar por debajo del arcén exterior hasta su borde. En autovías,
+si está activada esta opción la limatesa automática puede desplazarse
+desde el borde interior del arcén interior (código -11) hasta el borde
+exterior del arcén exterior (código 11).</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Automática 1 m</span>: La limatesa automática puede llegar en curva hasta
+un metro del borde del arcén (código 11). Si además la submediana se
+define por pendiente, el quiebro interior también se produce un metro
+antes de llegar al borde del arcén interior (código -11). Ya no es
+necesario definir nada en paquetes de firmes, tal y como era necesario
+en versiones anteriores para conseguir este efecto. <br />
+</span></li>
+            </ul>
+            <div style="margin-left: 40px;">Para arcenes estrechos de
+menos de un metro o calzadas sin arcén, el tope de migración de la
+limatesa puede quedar hasta un metro por dentro del borde de la calzada
+(código 2).<br />
+            </div>
+
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">
+Subparalela 1 m</span>: Es similar a la <span style="font-weight: bold;">subparalela ampliada</span>, pero en
+este caso el quiebro de la subrasante se produce un metro antes de
+llegar al borde del arcén (código 11). Si además la submediana se
+define por pendiente, el quiebro interior también se produce un metro
+antes de llegar al borde del arcén interior (código -11). Ya no es
+necesario definir nada en paquetes de firmes, tal y como era necesario
+en versiones anteriores para conseguir este efecto.</span></li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Subparalela sin cero</span>:
+Es idéntica a la subparalela salvo cuando el peralte es inferior a la
+pendiente mínima. Ejemplo: Paso de curva a bombeo con pendiente mínma
+1%. En caso de transición de peralte a bombeo aparece en esta zona, en
+el lado que pasa por debajo de la pendiente mínima, una limatesa que se
+desplaza desde el borde exterior hacia el eje con la pendiente mínima
+hacia fuera y hacia el eje. En el caso de curva y contracurva en la
+zona de peralte inferior al mínimo aparece la limatesa en el borde
+alto, pasa por el eje cuando el peralte es cero y sigue hasta acabar en
+el otro borde, con la pendiente mínima hacia ambos lados. El borde
+límite puede ser el borde de arcén (Subarcén <span style="font-weight: bold;">INCLUIDO</span>) o el borde de calzada (Subarcén <span style="font-weight: bold;">EXCLUIDO</span>).</li>
+            </ul><br />
+            <div style="margin-left: 40px;">Cuando el subarcén es de tipo <span style="font-weight: bold;">EXCLUIDO</span>, la pendiente de la subrasante bajo el arcén se comporta como subarcén <span style="font-weight: bold;">PARALELO</span>.<br />
+
+Podemos también añadir una pendiente nominal a partir de la casilla <span style="font-weight: bold;">PENDI%</span>, que sólo afectará a las zonas de bombeo, en el caso que apliquemos un determinado valor.<br />
+            </div>
+
+            
+            
+            <ul>
+              <li><span style="font-weight: bold;">Subparalela ampliada 2</span>:
+Funciona igual que la subparalela ampliada (es decir, llega hasta el
+ancho del primer componente del firme) pero controla el espesor mínimo
+del paquete de firmes también sobre el código 2 de la subrasante,
+aunque este se encuentre en la zona del arcén (entre los códigos 2 y 11
+de la rasante).</li>
+            </ul>
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px;"><span style="font-weight: bold;">PEN.MÍN. (%)</span><br />
+            </td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;">En
+caso de limatesa automática, define la pendiente mínima de la
+subrasante bajo la calzada principal y bajo los arcenes. En caso de
+subparalela, se usa sólo bajo los arcenes. El dato se da en %.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px;"><span style="font-weight: bold;">INCRE. PEND. %per(Lim-&gt;BC)</span><br />
+            </td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;"><span class="Parrafo">En el caso de limatesa subparalela,
+la subrasante bajo la calzada tiene la misma pendiente que ésta,
+engrosada hacia los lados exteriores en el ángulo aquí definido
+(incremento de pendiente).<br />
+            <br />
+Para las subrasantes de tipo <span style="font-weight: bold;">automática</span>,
+            <span style="font-weight: bold;">automática ampliada</span>, <span style="font-weight: bold;">automática arcén</span> y <span style="font-weight: bold;">automática 1 metro</span>, además de
+la pendiente mínima de la subrasante, se tiene un segundo parámetro de
+control: <span style="font-weight: bold;">%per (Lim-&gt;Bc)</span>.&nbsp; Este valor, que ha de ser igual o
+menor que la pendiente mínima, limita el peralte de la calzada
+principal, por debajo del cual se realiza la migración de la limatesa
+de un lado al otro de la calzada. Cuando el peralte de la calzada
+principal alcanza este valor, la limatesa llega al borde previsto, y la
+pendiente de la subrasante es entonces la mínima prevista, hasta que el
+peralte de la calzada supere este valor, cuando entonces la calzada y
+la subrasante serán paralelas.<br />
+            <br />
+            </span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px;"><span style="font-weight: bold;" class="Parrafo">SUBARCÉN</span><br />
+</td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;"><span class="Parrafo">La pendiente de la subrasante bajo los arcenes se define por
+la pendiente mínima con un control para el que hay las siguientes
+posibilidades:<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 580px; height: 194px;" alt="" src="Imagenes/subarcen.png" /><br />
+</div></span>
+            <ul>
+              <li><span style="font-weight: bold;"><a name="subarcen_prolonga">Prolongación</a></span><span class="Parrafo">: El subarcén se coloca en prolongación de la subrasante de la calzada principal.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Quiebra</span>: Se aplica la pendiente mínima de la
+subrasante para pendiente del subarcén. Si la diferencia de peralte con
+la calzada principal excede del valor máximo permitido, se coloca con
+una diferencia igual a este valor máximo.</span></li></ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Quiebra ampliado</span>: Es como el de tipo <span style="font-weight: bold;">quiebra</span>,
+pero el punto de quiebra interior del subarcén interior
+(subarcen-submediana) se desplaza hasta el pie interior de la primera
+capa de firme.<br />
+</span></li>
+
+            
+            </ul>
+
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Paralelo</span>: En caso de subrasante subparalela, esta
+opción construye la subrasante bajo el arcén, con el peralte del arcén
+independientemente al peralte de la calzada principal. Debajo de los
+arcenes 3 y 4 prolonga la pendiente del 2.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Paralelos</span>: Lleva la subrasante paralela a los arcenes 2, 3 y 4.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Prolongación y quiebra</span>: Funciona como el de tipo
+                <span style="font-weight: bold;">prolongada</span> por debajo del arcén y a continuación como <span style="font-weight: bold;">quiebra</span> bajo la
+berma, etc.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Tabular</span>: Se utiliza una de las tablas que haya en
+la librería, con extensión <span class="Archivo">.sra</span>, como la que se muestra a continuación:</span></li>
+            </ul>
+            
+            <div style="margin-left: 40px;"><span class="Archivo">
+######################################################################<br />
+# SUBRASANTE: TABLA DE PENDIENTES (para usar en subrasante TABULADA) #<br />
+# Datos para calzada derecha, la izquierda
+simétrica.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">
+# Para SUBPARALELA se interpola la pendiente de rasante en la primera#</span><br />
+            <span class="Archivo">
+# columna, el factor de peso obtenido se usa para interpolar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #</span><br />
+            <span class="Archivo">
+# linealmente en las otras columnas las pendientes a aplicar bajo la #</span><br />
+            <span class="Archivo">
+# calzada principal el arcén interior y mediana (dos calzadas) y los #</span><br />
+            <span class="Archivo">#
+arcenes
+exteriores.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">
+# Para AUTOMATICA se usa la PENDIENTE MINIMA para calzada y arcén&nbsp;&nbsp;&nbsp; #</span><br />
+            <span class="Archivo">
+# interior sin hacer caso de las columnas Psubcalzada y Psubarcen 1&nbsp; #</span><br />
+            <span class="Archivo">
+# (conviene definirlas para usar la tabla con control SUBPARALELA).&nbsp; #</span><br />
+            <span class="Archivo">
+######################################################################</span><br />
+            <span class="Archivo">
+# P-4i-Q7e.sra (paralela | 4% inter | quiebra 4% con limite 7 exter) #</span><br />
+            <span class="Archivo">
+######################################################################</span><br />
+            <span class="Archivo">#&nbsp;&nbsp;&nbsp;
+P rasan
+Psubcalzad Psubarc 1 Psubarc
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">#&nbsp;&nbsp;&nbsp;
+-------
+---------- ---------
+---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">
+&nbsp;PSB&nbsp;&nbsp; -100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -100.&nbsp;&nbsp;&nbsp;&nbsp; -100.&nbsp;&nbsp;&nbsp;&nbsp; -93.</span><br />
+            <span class="Archivo">
+&nbsp;PSB&nbsp;&nbsp;&nbsp;&nbsp;
+-4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.</span><br />
+            <span class="Archivo">
+&nbsp;PSB&nbsp;&nbsp;&nbsp;&nbsp;
+-3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.</span><br />
+            <span class="Archivo">
+&nbsp;PSB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.</span><br />
+            <span class="Archivo">
+&nbsp;PSB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.</span><br />
+            <span class="Archivo">
+&nbsp;PSB&nbsp;&nbsp;&nbsp; 100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -4.&nbsp;&nbsp;&nbsp;&nbsp;
+100.</span><br />
+            <span class="Archivo">
+######################################################################</span><br />
+            <span class="Archivo">#&nbsp;
+fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">#&nbsp;
+---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">&nbsp;&nbsp;
+FIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#</span><br />
+            <span class="Archivo">
+######################################################################</span><br />
+            </div>
+
+            <span class="Parrafo"><br />
+            </span>
+            <ul>
+              <li><span style="font-weight: bold;">Paralelos 2</span>: Lleva la subrasante paralela a los arcenes 1 (interior), 2, 3 y 4.<br />
+                <br />
+</li>
+              <li><span style="font-weight: bold;">Prolonga 2</span>:
+La pendiente de la subrasante en la zona por debajo de la berma es
+prolongación del segmento anterior. Puede ser diferente del peralte de
+la subrasante bajo la calzada, ya que puede ser tomada desde los
+vectores de la plataforma fija o de las aceras.</li><li><span class="Parf_negrita">Quiebra-Prolonga</span>: Quiebra para el borde izquierdo y Prolonga para el derecho.</li><li><span class="Parf_negrita">Prolonga-Quiebra</span>: Prolonga para el borde derecho y Quiebra para el izquierdo.</li>
+
+            </ul>
+            <span class="Parrafo"><br />Para definición de limatesa subparalela se interpola el valor conocido
+de la pendiente de la rasante entre los datos de la primera columna de
+la tabla; el factor de peso obtenido se aplica para interpolar
+linealmente en las otras columnas, las pendientes a aplicar bajo la
+calzada principal, la calzada auxiliar interior y mediana (si es doble
+calzada) y las calzadas auxiliares exteriores.<br />
+      <br />
+Si la limatesa se declara <span style="font-weight: bold;">[AUTOMÁTICA]</span> se usa el dato de pendiente
+mínima bajo la calzada principal y la auxiliar interior, sin hacer caso
+de las columnas <span style="font-style: italic;">Psubcalzad</span> y <span style="font-style: italic;">Psubarc 1</span> de la tabla; no obstante
+conviene definirlas para usar la tabla con control subparalela; el
+resto de la tabla se usa para interpolación.<br />
+            <br />
+También se contempla la posibilidad de crear tablas para la subrasante
+tabulada en las que la pendiente transversal del subarcén interior y la
+subcalzada interior dependen del peralte del carril interior (como en
+las autovías con <a href="OL_peraltes.html#doble_peralte">doble peralte</a>). Se incluye en la librería la tabla&nbsp;<span class="Archivo">Quebec_Dob_Per.sra</span> que utiliza esta posibilidad.<br />
+<br />
+            </span>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 94px; font-weight: bold;"><span class="Parrafo">
+DIF.MÁX. (%)</span>
+            </td>
+            <td style="vertical-align: top; width: 578px; text-align: justify;">Diferencia máxima permitida entre la pendiente transversal del subarcén y la calzada principal.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">
+BC-&gt;LIM</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">En subrasantes de tipos <span style="font-weight: bold;">subparalela</span> y <span style="font-weight: bold;">subparalela ampliada</span>
+permite desplazar la limatesa una cantidad fija con respecto a su
+posición bajo el borde de calzada en autovías o centro en carreteras.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">
+LIM-&gt;CF</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Permite mover la posición tope de la limatesa en la
+subrasante <span style="font-weight: bold;">automática</span> y <span style="font-weight: bold;">automática ampliada</span> entre el borde de la
+calzada y el borde del arcén. Este punto tope se define por la posición
+del hombro de una capa de firme. Entonces el programa utiliza el
+sobreancho exterior de esa capa como posición más externa para la
+limatesa siempre que no rebase el borde del arcén exterior. En el caso
+de autovías se utiliza el sobreancho interior de esa capa como posición
+más interna para la limatesa siempre que esta no rebase el borde del
+arcén interior. Puede utilizarse una capa de firme desactivada de la
+cual sólo interesan los valores <span style="font-weight: bold;">Aext</span> y <span style="font-weight: bold;">Aint</span> para controlar la posición
+tope de la limatesa.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">SUBMEDIANA</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite definir el comportamiento de la submediana desde el borde interior del arcén interior hacia dentro.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 580px; height: 194px;" alt="" src="Imagenes/submediana.png" /><br />
+</div><br />
+            <span class="Parrafo">
+Admite varias opciones:<br /></span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Prolongada</span>: Se prolongan siguiendo la pendiente
+hasta que corten la mediana. Si no la cortan a la más alta se le da la
+pendiente para que se una formando un vértice con la más baja en el eje
+geométrico.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Convergente</span>: Se prolongan hacia el eje geométrico y
+se modifica la pendiente de la más alta para que se una formando un
+vértice con la más baja. Luego se analiza si cortan a la mediana.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Prolongada sin pico</span>: Es como la <span style="font-weight: bold;">prolongada</span> pero si
+cortan a la mediana, se elimina el vértice de la mediana y se unen con
+un tramo recto desde los dos puntos de corte.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Convergente sin pico</span>: Es como la <span style="font-weight: bold;">convergente</span> pero
+si cortan a la mediana, se elimina el vértice de la mediana y se unen
+con un tramo recto desde los dos puntos de corte.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Prolongada con escalón</span>: Es como la <span style="font-weight: bold;">prolongada</span>, pero
+si NO cortan ninguno de los dos lados a la mediana y tienen distinta
+cota en el eje se forma aquí un escalón.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Pendiente en %</span>: Se define la pendiente de la
+subrasante en la mediana, a partir del pie interior de la primera capa
+de firme (la más baja) o en su defecto desde el punto interior del
+subarcén (se recomienda subarcén prolongado). En este modo existe la
+posibilidad de intersección de la submediana con la mediana.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Paralela</span>: Se genera la subrasante en la zona de la mediana de forma paralela a la rasante.</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Peralte + pendiente de la submediana</span>: Su comportamiento es el siguiente:</span></li>
+            </ul>
+            <span class="Parrafo">
+      </span>
+            <ul style="margin-left: 40px; list-style-type: circle;">
+              <li><span class="Parrafo">Si el peralte vierte hacia la mediana se aplica peralte + pendiente.</span></li>
+              <li><span class="Parrafo">Si el peralte vierte hacia fuera se aplica la pendiente.</span></li>
+              <li><span class="Parrafo">Si en el eje geométrico de la sección uno de los
+dos lados queda más bajo, se hace converger el otro hacia él.</span></li>
+            </ul>
+            <span class="Parrafo">
+      </span>
+            <div style="margin-left: 40px;"><span class="Parrafo">En este modo existe la posibilidad de intersección de la submediana con la mediana.</span><br />
+            <span class="Parrafo"></span></div>
+            <span class="Parrafo">
+      </span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Convergente + profundidad</span>: En este caso se hace una
+submediana convergente, cuyo vértice está justo debajo del vértice de
+la mediana, a la profundidad especificada. Esta profundidad, puede
+coincidir, por ejemplo con el espesor de la cuneta de mediana. La pendiente interior nunca debe ser inferior a la nominal.<br />
+</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Recta</span>: Se genera esta submediana uniendo con un
+tramo recto los dos puntos de código -11 (subrasante en el borde
+interior del arcén interior).</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Ampliada + profundidad</span>: Es como la <span style="font-weight: bold;">convergente +
+profundidad</span>, pero la limatesa entre el subarcén y la submediana (código
+-11) se desplaza al pie interior de la primera capa de firme.</span></li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Prolongada + profundidad</span>:
+Es similar a la Prolongada pero corta a la rasante desplazada el valor
+de la profundidad. Sirve para hacer medianas revestidas con el espesor
+del revestimiento igual a la profundidad.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Convergente + Excentricidad</span>:
+Se da un valor para la excentricidad del vértice de la submediana. En
+las rectas se comporta como las submedianas convergentes. En la curva
+circular el vértice de la submediana se desplaza hacia el lado interior
+de la curva el valor de excentricidad introducido, prolongando la
+subrasante del lado exterior de la curva con su pendiente hasta ese
+punto. La subrasante del lado interior baja desde el punto bajo el
+codigo 1 hasta ese punto con la pendiente<br />
+que le corresponda.<br />
+En las clotoides se realiza la transición del vértice de la submediana.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">P+D</span>: Este
+nuevo tipo de submediana se define por una pendiente transversal en (%)
+y una distancia al vértice de la mediana, que puede no coincidir con el
+eje geométrico. Desde el código 1 de la subrasante se baja con la
+pendiente P hasta la posición del vértice de la mediana + D. Entoces se
+modifica la pendiente del lado que queda más alto para llevarlo a la
+posición del más bajo. (Las distancias D se dan positivas hacia la
+derecha y negativas hacia la izquierda.)</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">P+D Escalón</span>:
+Es como el tipo P+D (pendiente + distancia), pero en este caso en lugar
+de ir hacia la más baja, si tienen diferente cota en la distancia D, se
+conserva el escalón.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">PROL(D) P%(T)</span>:
+Cuando la submediana está totalmente en desmonte se hace de modo
+PROLONGADA. Cuando está en Terraplén se hace con P%, p.e. un pico al
+60%. Si este pico corta al terreno porque es un terraplén bajo,
+entonces en la zona donde el pico pasa por debajo del terreno, se
+asienta sobre el terreno.</li></ul><ul><li><span style="font-weight: bold;">AMPL (D) P% (T):</span>
+&nbsp;Con la mediana totalmente en desmonte se comporta como AMPLIADA
+(profundidad=0) y en terraplén va con la pendiente indicada hasta que
+ésta toca al terreno y en ese caso sigue por el terreno.</li></ul>
+
+
+
+
+
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Los botones <span style="font-weight: bold;">[Guardar1]</span> y <span style="font-weight: bold;">[Cargar1]</span> permiten salvar y recuperar todos
+los datos asociados a la sección tipo que ocupa la primera fila del
+menú de datos, lo que resulta muy útil, por ejemplo, para cargar los
+valores de una sección tipo a otra que es muy parecida. Para ello se
+usan archivos de </span></span><span class="Parrafo"><span class="Parrafo">extensión&nbsp;<span class="Archivo">.stp</span>.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+A diferencia de los anteriores, los botones <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /> y <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" /> salvan y recuperan respectivamente TODO el conjunto de secciones tipo también mediante ficheros de extensión&nbsp;<span class="Archivo">.stp</span>.<br />
+<br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Replanteo de ejes</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>REPLANTEO DE EJES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 694px;"><br />
+      <div style="margin-left: 40px;"><span class="Parrafo"><a href="#generalidades"><span class="Parrafo"><span class="Parrafo">Generalidades</span></span></a></span><br />
+      <span class="Parrafo">
+      <a href="#datos_cabecera_lista">Datos para la cabecera de cada lista</a></span><br />
+      <span class="Parrafo">
+      <a href="#def_bases">Definición de bases de replanteo</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#listas_lineas_rep"><span class="Parrafo">Listas y líneas de datos de replanteo</span></a><br />
+      <a href="#rep_2_ejes"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Replanteos usando datos de dos ejes</span></span></span></a><br />
+      <a href="#calculo">Cálculo</a><br />
+      <span class="Parrafo"><a href="#listados">Listados</a></span><br />
+      <span class="Parrafo"><a href="#dibujo">Dibujo de los puntos de replanteo</a><br />
+      <a href="#trans">Generar perfiles transversales previo replanteo</a><br />
+      <a href="#LONGI">Menú LONGI</a><br />
+</span>
+      <span class="Parrafo"></span></div>
+
+      
+      <span class="Parrafo">
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />Desde
+este cuadro de diálogo se ofrece la posibilidad de efectuar cálculos de
+puntos en coordenadas X, Y ó en datos de replanteo (azimut, distancia)
+definidos analíticamente por PK y distancias a un eje, distancias a dos
+ejes o normales de un eje sobre otro. De forma opcional, es posible
+efectuar los cálculos referidos a un conjunto de bases que pueden tener
+en cuenta el coeficiente de anamorfosis de las bases según el tipo de
+proyección.<br />
+      <br />
+</span><span class="Parrafo">
+      <table style="text-align: left; width: 690px; height: 32px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 633px; text-align: justify;"><span class="Parrafo"><span class="Info">El acceso a este menú desde PLANTA exige el haber realizado al menos una vez en la misma sesión el cálculo de ejes.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Conviene recordar que desde el menú LISTADOS también se ofrece la posibilidad de obtener diversos cálculos relacionados con la <a href="OL_listados_geometria.html">geometría</a> de los ejes de forma más inmediata, así como la exportación directa a aparatos de campo.</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      El menú de replanteo de planta permite crear una serie de <span style="font-weight: bold;">listas</span>
+para la definición de puntos. Cada lista contiene una serie de datos de
+cabecera y un conjunto de líneas para definir diferentes tramos o zonas
+de cálculo.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 600px; height: 154px;" alt="" src="Imagenes/dialogo_replanteo.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Los botones <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span> permiten salvar y
+recuperar las listas de definición en ficheros de extensión&nbsp;<span class="Archivo">.rep</span>.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><a name="procedimientos">Existen tres procedimientos de replanteo:</a><br />
+      </span>
+      <ol>
+<li><span class="Parrafo"><span style="font-weight: bold;">Series de puntos según una equidistancia
+medida sobre el eje A y distancias al eje A</span>: Por ejemplo, puntos cada
+20 m sobre una línea paralela a 3 metros a la derecha del eje 1. El eje
+B debe ser 0.</span></li>
+      </ol>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ol start="2"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Intersección con el eje B de normales al eje A</span>:
+Por ejemplo,
+proyección sobre el eje 2 de los PKs 0, 20, 40, 60,&#8230; del eje 1 (se trata, por tanto, de <a href="#rep_2_ejes">replanteo usando datos de dos ejes</a>).<br />
+</span></span></span></li></ol>
+<ol start="3"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Intersección de líneas paralelas o pseudoparalelas a los ejes A y
+B</span> (también lleva a la obtención de un <a href="#rep_2_ejes">replanteo usando datos de dos ejes</a>).<br />
+</span></span></span></li></ol></span></span></span><span class="Parrafo"><span class="Parrafo">Si en alguna de las listas,
+el resultado ha de darse en datos de replanteo, también se debe añadir
+una lista de definición de <a href="#def_bases">bases</a>, y definir en cada línea un par de
+      <a href="#def_bases">bases</a> de replanteo diferentes.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El módulo de OBRA LINEAL puede calcular simultáneamente y almacenar en
+un único fichero una gran cantidad de listas pudiendo contener cada una
+de ellas centenares de líneas de órdenes. En el mismo fichero se pueden
+definir un número ilimitado de bases de replanteo, además de los
+ficheros específicos de bases.<br />
+<br /><br />
+      </span><span class="Titulo_2"><a name="datos_cabecera_lista">Datos para la cabecera de cada lista</a></span><br />
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold;"><span class="Parrafo">[LISTA: i /n]</span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Recoge el número de la lista actual <span style="font-style: italic;">i</span> y el total <span style="font-style: italic;">n</span> de
+las existentes. Permite saltar de una LISTA a otra. Si se le da un
+número superior al de LISTAS existentes, crea una nueva LISTA con un
+número correlativo al de la última.<br /><br />Disponemos de&nbsp;los botones [-] y [+] para desplazarse por las Listas.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">[Clic] [Teclado]</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Conmuta entre los dos modos de selección de los
+elementos gráficos, ejes y bases: señalando el elemento a través del
+ratón o escribiendo su número mediante el teclado.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold;"><span class="Parrafo"><a name="resul">RESUL</a></span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><img src="Imagenes/replanteo_resul.png" style="width: 157px; height: 64px; margin-left: 7px;" alt="" align="right" />Establece cómo se obtendran los resultados, ofreciendo las siguientes posibilidades:<br />
+            <ul>
+              <li><span class="Parrafo">El resultado se obtendrá en coordenadas cartesianas (X,Y).</span></li>
+            </ul>
+            <ul>
+              <li><span class="Parrafo">Los <a href="#listados">listados</a> presentarán los resultados según azimut y distancia, respecto de las <a href="#def_bases">bases</a> predefinidas (Az,Dist).</span></li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo"><a name="utm">UTM</a></span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Si se activa, los cálculos de distancia se verán
+afectados por el coeficiente de anamorfosis, y por las compensaciones
+especificadas con el menú <span style="font-weight: bold;">Configuración</span> &#8594; <a href="EDM_georreferenciacion.html#correcciones_replanteo"><span style="font-weight: bold;">Sistema de Referencia de
+Coordenadas</span></a>:<br />
+            </span>
+            <table style="text-align: left; width: 486px; height: 42px; margin-left: 0px; margin-right: 0px;" border="0" cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 195px;">
+                  <ul>
+                    <li><span class="Parrafo">Esfericidad y refracción</span></li>
+                    <li><span class="Parrafo">Paso de la cuerda al arco</span></li>
+                  </ul>
+                  </td>
+                  <td style="vertical-align: top; width: 177px;">
+                  <ul>
+                    <li><span class="Parrafo">Reducción al nivel del mar</span></li>
+                    <li><span class="Parrafo">Paso al plano de la UTM</span></li>
+                  </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Parrafo">Estas compensaciones se aplican en sentido
+inverso. La esfericidad y refracción no opera pues en el menú de
+replanteo no se trabaja con la cota de los puntos.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo"><a name="solo_planta">Sólo planta</a></span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><img src="Imagenes/replanteo_solo_planta.png" style="width: 177px; height: 48px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Si se activa esta opción, los <a href="#listados">listados</a> contendrán los datos
+de alzado (acuerdos, cota y pendientes) siempre que estén definidos. Además, en el <a href="#procedimientos">procedimiento</a> de intersección con el eje B de normales al eje A, también se lista la diferencia de cota entre ambos ejes.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo">Sing. alz.</span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Permite habilitar/deshabilitar el cálculo de
+puntos singulares del alzado, es decir, las tangentes de entrada y de
+salida de los acuerdos verticales además de los puntos altos y bajos.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold; font-style: italic;"><span class="Parrafo">Ptos. sing.</span></td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Parrafo">Permite habilitar/deshabilitar el cálculo de los puntos singulares (puntos de tangencia) de la planta en los <a href="#listados">listados</a>.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr><td><span style="font-weight: bold; font-style: italic;">Excluir APV</span></td><td>Al activar esta opción se excluyen los PKs que están en zona de los aparatos de vía.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold; font-style: italic;"><span class="Parrafo">Eventos</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Con ella activada se calcula un punto en cada PK
+correspondiente a los <span style="font-style: italic;">EVENTOS PARA GENERAR PERFIL</span> activados en el
+menú de <a href="OL_perf_transv.html">generación de perfiles transversales</a> del terreno.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">EJE A</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Número del primer eje empleado para la definición
+de puntos. La selección puede hacerse gráfica o numéricamente (según el
+modo de selección activo).<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">EJE B</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Usado únicamente en el caso de <a href="#rep_2_ejes">replanteos usando datos de dos ejes</a>, su selección también <span class="Parrafo">puede hacerse gráfica o numéricamente (según el
+modo de selección activo).</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"> <br />
+</span></span><span class="Titulo_2"><a name="def_bases">Definición de bases de replanteo</a></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span>Si se desea trabajar con <span style="font-weight: bold;">bases de replanteo</span>,
+entonces debe indicarse mediante el botón situado encima del navegador
+de líneas de replanteo, desplegándose entonces en la parte inferior una
+tabla para la declaración y gestión de dichas bases:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/replanteo_bases.png" style="width: 550px; height: 188px;" alt="" />&nbsp;<br />
+      </div>
+      <br />
+Para cada base se debe declarar un <span style="font-weight: bold;">nombre</span> identificavo, sus tres <span style="font-weight: bold;">coordenadas</span> (que se pueden dar gráfica o numéricamente) y el coeficiente de <span style="font-weight: bold;">anamorfosis</span> asociado a la base y que será utilizado si está seleccionada la opción <a href="#utm"><span style="font-weight: bold; font-style: italic;">UTM</span></a>.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Cálculo de anamorfosis]</span>
+calcula de forma automática para cada base el coeficiente de
+anamorfosis en función de los datos que aparecen en el menú
+correspondiente al <a href="EDM_georreferenciacion.html#correcciones_replanteo">sistema de referencia de coordenadas</a>:<br />
+      <br />
+      <div style="margin-left: 40px;"><span style="font-style: italic;">Coeficiente de anamorfosis</span> = (<span style="font-style: italic;">Factor de escala global</span>) × <span style="font-style: italic;">K</span>&#8217;.<br />
+(<span style="font-style: italic;">K</span>&#8217; depende de las coordenadas de la base y del huso de destino y elipsoide de destino)<br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_proyeccion.png" style="width: 459px; height: 94px;" alt="" /><br />
+      </div>
+      <br />
+Las bases se pueden <span style="font-weight: bold;">guardar</span> y <span style="font-weight: bold;">cargar</span> mediante archivos de extensión<span class="Archivo">.bas</span>. También es posible cargar las bases a partir de un <a href="EDM_georreferenciacion.html#imp_coord_geograf">archivo en coordenadas geográficas.</a>
+ Al cargar este fichero, el programa nombra
+las bases de manera incremental y especifica en el campo observación el
+nombre original de la base. El botón <span style="font-weight: bold;">[Descargar]</span> elimina todas las bases cargadas.<br />
+      <br />
+Al pulsar sobre el botón <span style="font-weight: bold;">[Rotular bases]</span>
+se añade al EDM un símbolo (S43) por cada base con una cruz marcando su
+ubicación y la cota de la base; debajo del símbolo se rotula el nombre
+de la base con el estilo de texto y tamaño actuales.<br />
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="listas_lineas_rep">Listas y líneas de datos de replanteo</a></span><br />
+      <span class="Parrafo"><br />
+      </span><img src="Imagenes/replanteo_navega_lineas.png" style="width: 120px; height: 52px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo">Dentro de cada lista, la creación, borrado y navegación por las <span style="font-weight: bold;">líneas de datos</span> se realiza mediante las opciones del navegador situado en la zona derecha del cuadro de diálogo. Con el botón <span style="font-weight: bold;">[-]</span> el programa se sitúa en la línea anterior a la actual, mientra que con <span style="font-weight: bold;">[+]</span>
+pasa a la línea siguiente. Entre ambos botones se informa de cuál es el
+número de la línea actual dentro de la lista actual y cuántas líneas
+tiene la lista.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Añadir]</span> crea una línea nueva al final, mientra que con <span style="font-weight: bold;">[Inser]</span> se genera una nueva delante de la actual. Mediante el botón <span style="font-weight: bold;">[Borrar]</span> se elimina la línea actual. Si se borra la única línea de una lista, se borra la lista, salvo que ésta sea la única.<br />
+      <br />
+La modificación de datos de una línea se realiza desde el cuadro de diálogo y admite las siguientes entradas de datos:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/replanteo_datos_linea.png" style="width: 540px; height: 52px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 80px; font-weight: bold;"><span class="Parrafo">[Base 1]<br />
+[Base 2]</span></td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;"><span class="Parrafo">Nombre
+de las bases de replanteo para el tramo definido en la línea. Sólo ha
+de rellenarse cuando el resultado se solicite en (Az, Dist). En
+este caso los valores de <span style="font-style: italic;">Base 1</span> y <span style="font-style: italic;">Base 2</span> han de existir, ser
+diferentes y estar contenidos en la relación de <a href="#def_bases">bases</a>. La forma de seleccionarlos es haciendo clic en el dibujo sobre la base que se desea declarar.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;"><a name="auto">[AUTO]</a></span>
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;"><span class="Parrafo">Permite crear automáticamente un conjunto de tramos o líneas de datos en función de los PKs en función de las <a href="#def_bases">bases</a>
+definidas (si las hay)&nbsp; y según uno de los siguientes criterios:<br />
+</span>
+            <ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Por PK proyección</span>: Las bases se proyectan sobre el eje a replantear, generándose así los distintos tramos de tal forma que </span><span class="Parrafo"><span class="Parrafo">cada uno se corresponderá </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">con el replanteo del tramo
+comprendido entre los dos PK en que se proyecten las base</span></span></span></span><span class="Parrafo"><span class="Parrafo">s (referencia y observación). </span></span><span class="Parrafo"><span class="Parrafo"> En caso de que todas las
+bases se proyecten fuera del eje (antes del PK inicial ó después del PK
+final), entonces se tomarán las dos más próximas.&nbsp;</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></li>
+            </ul>
+            <div style="margin-left: 40px;">Este criterio&nbsp;<span class="Parrafo"><span class="Parrafo">hará
+que las bases se reordenen según el PK en el que se proyectan sobre el
+eje A de la lista actual y creará dos líneas de datos (replanteo
+directo e inverso) por cada par de bases consecutivas,&nbsp; salvo que
+permanezca activa la opción <span style="font-weight: bold; font-style: italic;">Sólo datos directos</span>, en cuyo caso para cada tramo sólo se genera el replanteo directo pero no el inverso o recíproco.<br />
+</span></span></div>
+<ul>
+              <li><span class="Parrafo"><span style="font-weight: bold;">Por menor distancia</span>: Cada tramo se crea según la base más próxima a dicho tramo.<br />
+                </span></li>
+            </ul>
+            <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/replanteo_bases_auto.png" style="width: 358px; height: 113px;" alt="" /></span><br />
+            <span class="Parrafo"></span></div>
+            <span class="Parrafo"><br />Además del criterio establecido, el programa también considera una <span style="font-weight: bold;">distancia máxima al eje</span>, de forma que aquellas
+bases que disten una cantidad superior a la indicada no se consideran para
+hacer las listas de replanteo.<br />
+            <br />
+Una vez establecidos estos parámetros, al pulsar sobre el botón <span style="font-weight: bold;">[Generar]</span> se vuelve al cuadro de diálogo de replanteo en el que ya es posible observar las listas generadas automáticamente.<br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;">[Equidi.]</span> / <br />
+            <span style="font-weight: bold;">[Múltip.]</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;"><img src="Imagenes/replanteo_equidist_menos1.png" style="width: 82px; height: 97px;" alt="" align="right" hspace="4" />Equidistancia medida sobre el eje A para la definición de los puntos a replantear. Si se consigna el valor <span style="font-style: italic;">0</span>, entonces sólo se calculará en el punto de PK declarado en <a href="#PKAi"><span style="font-weight: bold;">PKAi</span></a>. <span class="Parrafo"><span class="Parrafo">Si se declara un valor de
+-1, entonces es posible definir en una tabla hasta cuatro
+equidistancias diferentes para distintos intervalos del radio. Por defecto, esta tabla contiene los siguientes valores:<br />
+<br /></span></span>
+            <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">20 m para radios mayores o iguales a 150 m.</span></span><br />
+            <span class="Parrafo"><span class="Parrafo">10 m para radios menores que 150 m y mayores o iguales a 100 m.</span></span><br />
+            <span class="Parrafo"><span class="Parrafo">5 m para radios menores que 100 m y mayores o iguales a 50 m.</span></span><br />
+            <span class="Parrafo"><span class="Parrafo">2 m para radios menores que 50 m.</span></span><br />
+            </div>
+            <br />
+El botón <span style="font-weight: bold;">[T]</span> una serie de equidistancias típicas de replanteo.<br />
+            <br />
+Si en lugar de equidistancia se establece <span style="font-weight: bold;">múltiplos</span>, entonces los PKs a replantear serán múltiplos de este valor. Así, por ejemplo, si como <span class="Parrafo"><span class="Parrafo"><a href="OL_replanteo_planta.html#PKAi"><span style="font-weight: bold;">PKAi</span></a> se declara el 324.578, los PKs a replantear en cada caso, para una equidistancia de 20 m y desde el inicio del eje, serán:<br />
+            <br />
+            <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">
+<table style="text-align: left; height: 50px; width: 512px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 105px; text-align: left; font-weight: bold; font-style: italic;">Equidistancias<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">324.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">344.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">364.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">384.578<br />
+      </td>
+      <td style="text-align: center; width: 73px; font-style: italic;">...<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 105px; text-align: left; font-weight: bold; font-style: italic;">Múltiplos<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">324.578<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">340.000<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">360.000<br />
+      </td>
+      <td style="text-align: center; width: 71px; font-style: italic;">380.000<br />
+      </td>
+      <td style="text-align: center; width: 73px; font-style: italic;">...<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+</span></span></div>
+<br />
+            <span class="Parrafo">Cuando los puntos a replantear están a una
+            <a href="#distancia">distancia</a> (fija o variable) del eje, el valor de la equidistancia puede
+tomarse <span style="font-weight: bold; font-style: italic;">por el eje</span> o bien midiendo <span style="font-weight: bold; font-style: italic;">por el desplazado</span>. En este segundo caso en el
+            <a href="#listados">listado</a> aparecerán los PKs sobre el eje tales que la distancia entre los
+puntos medida por el eje desplazado coincida con la equidistancia,
+salvo el último punto, que es un dato. Este método puede ser aplicado, por ejemplo,
+para obtener los datos de una línea de postes pseudo paralela al eje.<br />
+<br />
+            </span></span></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Carga Pkd</span><br />
+            </td>
+            <td style="vertical-align: top;">Posibilidad de cargar un
+archivo .pkd en una lista de replanteo. Con cada valor de pk y
+distancia se añade una nueva línea en la lista actual.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;">P1</span><br />
+            </td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">Hace referencia al primer punto de la línea de replanteo, ofreciéndose las siguientes posibilidades:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Nuevo</span>: El usuario debe definir el primer punto dato de la línea de replanteo.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Anterior</span>: El
+programa tomará como punto de arranque del tramo, el último calculado
+en la línea anterior. Así, por ejemplo, si se desea calcular puntos
+cada 25 metros desde el PK 0 hasta el 825 y cada 5 metros desde el 825
+hasta el 1000, no con esta opción no sería necesario repetir el valor
+825 en la segunda línea.</li>
+            </ul>
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><a style="font-weight: bold;" name="PKAi">PKAi</a><br />
+            <span style="font-weight: bold;">PKAf</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">PKBi</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;">PKBf<br />
+DAi<br />
+DAf<br />
+DBi<br />
+DBf<br />
+            <br />
+            </span></td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">En los <a href="#procedimientos">procedimientos</a> de replanteo 1 y 2 (series de puntos según una equidistancia e intersección con el eje B de normales al eje A), el dato <span style="font-weight: bold;">PKAi</span> se corresponde con el PK de inicio de cálculo. En el caso del <a href="#procedimientos">procedimiento</a>
+3 (intersección de líneas paralelas a los ejes A y B), es el PK
+aproximado sobre el eje A, de la solución, que sirve en este caso para
+discriminar soluciones.<br />
+            <br />
+            <span style="font-weight: bold;">PKAf</span> es el PK del último punto del tramo sobre el eje A que se utiliza. Si se deja este campo en <span style="font-style: italic;">0</span>, se interpre como "hasta fin del eje".<br />
+            <br />
+            <span style="font-weight: bold;">DAi</span> es la distancia al eje A del punto <span style="font-weight: bold;">PKAi</span> (valores negativos inidcan lado izquierdo).<br />
+            <br />
+            <span style="font-weight: bold;">DAf</span> es la distancia al eje del punto <span style="font-weight: bold;">PKAf</span>. En estos casos, si <span style="font-weight: bold;">DAi</span> es diferente de <span style="font-weight: bold;">DAf</span>, la distancia al eje de los puntos intermedios irá variando linealmente, según el PK, entre <span style="font-weight: bold;">DAi</span> en el punto <span style="font-weight: bold;">PKAi</span> y <span style="font-weight: bold;">DAf</span> en el <span style="font-weight: bold;">PKAf</span>.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/replanteo_PKAi.png" style="width: 503px; height: 49px;" alt="" /><br />
+            </div>
+            <br />
+En los <a href="#procedimientos">procedimiento</a> 2 y 3 aparecen también los botones <span style="font-weight: bold;">[PKBi]</span>, <span style="font-weight: bold;">[DBi]</span>, <span style="font-weight: bold;">[PKBf]</span> y <span style="font-weight: bold;">[DBf]</span> que permiten definir cómo se alejan o acercan las líneas pseudo paralelas a los ejes. En el <a href="#procedimientos">procedimiento</a> 3, <span style="font-weight: bold;">[PK1f]</span> declara también el PK aproximado sobre el eje B para empezar a buscar la solución.<br />
+            <br />
+Los PKs inicial y final de los ejes A y B pueden darse de forma gráfica al pulsar sobre el botón <span style="font-weight: bold;">[&lt;]</span> adyacente.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 80px;"><span style="font-weight: bold;"><a name="distancia">DISTANCIA</a></span></td>
+            <td style="vertical-align: top; width: 590px; text-align: justify;">En el <a href="#procedimientos">procedimiento</a>
+1 se calcula la secuencia de puntos sobre varias paralelas a la orden
+básica. Es preciso dar una serie creciente de distancias; por ejemplo,
+rellenando los 3 primeras campos con los valores -3.5, 0 y 3.5, se
+calcularán tres series de puntos a esas distancias.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/replanteo_dist_cota.png" style="width: 540px; height: 37px;" alt="" /><br />
+            </div>
+            <br />
+Disponemos de un selector que nos permite escoger:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Distancias al eje</span>: Es lo que había hasta ahora que permite definir 8 valores.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Equidistancias</span>: Permite definir el número de puntos a replantear a cada lado <span class="Parrafo"><span class="Parrafo">además del eje, la equidistancia entre puntos y el lado derecha/izquierda/ambos. (El número de puntos a cada lado es ilimitado).</span></span></li>
+            </ul>
+
+            <div style="text-align: center;"><img src="Imagenes/ejem_replanteo_distancia.png" style="width: 402px; height: 185px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Cota</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Debajo de la línea de <a href="#distancia"><span style="font-weight: bold;">DISTANCIAS</span></a> se existe la posibilidad de definir unas <span style="font-weight: bold;">cotas</span>
+para estos puntos. Si se escribe un valor diferente de cero, en el
+            <a href="#listados">listado</a> la cota tendrá este valor en lugar de la cota de la rasante y
+en las opciones de <a href="#dibujo">dibujo</a>, las marcas y los puntos de la línea tomarán también esta cota.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Titulo_2"><a name="rep_2_ejes">Replanteos usando datos de dos ejes</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><img src="Imagenes/replanteo_2_ejes.png" style="width: 352px; height: 50px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+el caso del cálculo de replanteos usando dos ejes, existen dos
+      <a href="#procedimientos">procedimientos</a> posibles entre los que se permuta al pulsar el botón <span style="font-weight: bold;">PROC</span>:<br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <ol start="1">
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Intersección con el eje B de normales al eje A</span>:
+Por ejemplo,
+proyección sobre el eje 2 de los PKs 0, 20, 40, 60,&#8230; del eje 1.
+En este caso el eje A será el 1 y el B se corresponderá con el eje 2.</span></span></span></li>
+
+      </ol><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><img src="Imagenes/replanteo_cal_PKBproyectA.png" style="width: 147px; height: 48px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando para una misma zona del eje A hay más de una intersección
+con el eje B, la solución que se obtiene es aquella que tiene valores
+más próximos al PK indicado en el campo PK B. Este campo permite, por tanto, </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">discriminar diferentes zonas del eje B que tienen
+intersección con la normal trazada desde un único PK del eje A. El botón <span style="font-weight: bold;">[?]</span> adyacente permite calcular de forma automática el PK que desde el origen de B se proyecta en A.&nbsp;</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+El programa conmuta a este modo en cuanto se
+elige un eje B. Al <a href="OL_replanteo_planta.html#listados">listado</a> se añaden además puntos singulares de alzado
+del eje A si se activa la opción correspondiente. También ofrece
+información acerca de los peraltes de los ejes involucrados en los
+correspondientes PKs, </span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">así como en cada punto se ofrece los dos radios correspondientes a la proyeccióna ambos ejes.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <br />
+PK aproximado para la búsqueda de puntos sobre el eje B. Es necesario
+introducir este valor sólo en el caso de puntos de intersección con el
+eje B de normales trazadas desde el eje A, pues con ello es posible
+discriminar diferentes zonas del eje B que tienen intersección con la
+normal trazada desde un único PK del eje A. En el resto de los casos,
+no opera este valor.<br />
+      <br />
+<img src="Imagenes/replanteo_autoPKAi.png" style="width: 149px; height: 53px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+botón <span style="font-weight: bold;">[?]</span> adyacente al campo <span style="font-weight: bold;">PKAi</span>
+permite buscar de forma automática el PK que desde el origen de B se
+proyecta en A, valor que también se puede declarar de forma manual. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si el
+PK del punto B es 0 y al calcular no se consigue obtener ningún punto,
+el programa ejecuta de forma automática la búsqueda de dicho PK (para
+la lista actual) y reintenta el cálculo.<br /><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Es
+conveniente&nbsp;pulsar las dos interrogaciones [?](PKB y PKAi....)
+para el cálculo de Intersección con el eje B, de normales al eje A.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Para este procedimiento, se puede decidir en caso de rasantes dobles, cual de las dos (<span style="font-weight: bold;">D/I</span>) se quiere utilizar en cada uno de los dos ejes A y B.<br />
+      <br />
+Ejemplo de listado:<br />
+      <img src="Imagenes/listado_replanteo_planta2ejes.png" style="width: 640px; height: 113px;" alt="listado_replanteo_planta2ejes" /><br />
+</span></span></span></div>
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+      <ol start="2">
+        <li><img src="Imagenes/replanteo_inter_aprox.png" style="width: 132px; height: 53px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;"> Intersección de líneas paralelas o pseudoparalelas a los ejes A y
+B</span>:<span style="font-weight: normal;"> Desde el estado anterior se pasa a este modo al pulsar sobreel botón</span> <span style="font-weight: normal;">PROC (procedimiento).</span></span></span></span><span style="font-weight: normal;">
+      </span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si
+al calcular con este procedimiento el programa no consigue encontrar
+ninguna solución, debe usarse el botón [?] ubicado encima del campo
+PKBi que pregunta por una
+solución aproximada que se debe dar gráficamente haciendo clic en
+pantalla. Una vez dada, se rellenan los campos PKAi y PKBi con los PKs
+en los que se proyecta el punto sobre
+el que se ha hecho clic</span></span></span></span></span></span></span></span><span style="font-weight: normal;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> y se reintenta el cáculo</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: normal;">.</span></span></span></span></span></span></span></span></span></li>
+      </ol></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="calculo">Cálculo</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span><img src="Imagenes/replanteo_calculo.png" style="width: 167px; height: 87px;" alt="" align="right" hspace="4" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al pulsar sobre el botón <span style="font-weight: bold;">[Cálculo]</span>
+el programa realiza el cálculo de todas las listas definidas,
+representando gráficamente en pantalla los puntos obtenidos y generando
+el <a href="#listados">listado</a>&nbsp;<span class="Archivo">cpun.res</span> que puede visualizarse en pantalla al pulsar sobre el botón&nbsp;<img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" /> <span style="font-weight: bold;">Listar</span><br />
+      <br />
+[<span class="Parf_negrita">Todos]:</span> genera el cálculo y listado para todos los ejes.<br />
+&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="check" />&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita">x Grupos:</span> genera el cálculo y listado para los ejes en grupos activos.<br />
+<br />
+<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span><img src="Imagenes/replanteo_resul.png" style="width: 157px; height: 64px; margin-right: 7px;" alt="" align="left" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si se trata del cálculo de un replanteo con <a href="#def_bases">bases</a>, entonces previamentedebe indicarse que el <a href="#resul">resultado</a> será según azimut y distancia. En este caso, y tras pulsar sobre el botón <span style="font-weight: bold;">[Cálculo]</span>, se muestran en pantalla las visuales desde las bases:<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ejem_replanteo_con_bases.png" style="width: 528px; height: 167px;" alt="" /></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El botón <span style="font-weight: bold;">[Todos]</span> genera un listado de replanteo para <span style="font-weight: bold;">todos los ejes activos</span> y según el valor de equidistancia declarado en la primera lista. </span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta
+opción genera un fichero&nbsp;<span class="Archivo">cpun0.res</span> que contiene todos los ejes y un
+listado separado para cada eje:&nbsp;<span class="Archivo">cpun1.res</span>,&nbsp;<span class="Archivo">cpun2.res</span>,...</span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Si se ha establecido el replanteo con <a href="#def_bases">bases</a> y que los <a href="#resul">resultados</a> sean en azimut y distancia entonces se ejecuta automáticamente la opción <a href="#auto"><span style="font-weight: bold;">[AUTO]</span></a> para cada uno de los ejes antes de calcular sus puntos. <br />
+      <br />
+Se genera automáticamente un archivo&nbsp;<span class="Archivo">ISreplanteo.toc</span> con todos los puntos calculados. Este archivo puede ser utilizado por la herramienta <a href="EDM_cotas.html#cuadro_coord">Cuadro NXYZ</a> para crear un cuadro de coordenadas de estos puntos utilizando la opción<span class="Parf_negrita">[Desde fichero...]</span><br />
+&nbsp; <img src="Imagenes/isreplanteo_toc.png" style="width: 322px; height: 178px;" alt="isreplanteo" /><br />
+      <br />
+      <br />
+&nbsp;<img src="Imagenes/cuadro_coord.png" style="width: 345px; height: 234px;" alt="cuadro_coord" /><br />
+<br />
+
+      <br />
+      </span></span></span></span></span></span></span></span><span class="Titulo_2"><a name="listados">Listados</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span style="font-weight: bold; font-style: italic;">Listado de replanteo con X,Y,Z</span><br />
+      <br />
+En el listado&nbsp;<span class="Archivo">cpun.res</span> aparecerá
+también la cota del terreno correspondiente a cada PK si existen datos
+en alzado y siempre que en la tabla de PROYECTO exista un fichero de
+perfiles del terreno para el eje que se calcula. También se muestran
+datos de peraltes, cotas, distancias al eje,...<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 692px; height: 60px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="width: 636px; text-align: justify;">Si sólo se desea obtener datos relacionados con la planta, entonces debe activarse la opción <a href="#solo_planta"><span style="font-weight: bold; font-style: italic;">Sólo planta</span></a> del cuadro de diálogo.<br />
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/replanteo_solo_planta.png" style="width: 177px; height: 48px; margin-left: 7px;" alt="" align="right" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      </span></span></span></span>
+      <span class="Parrafo"><img src="Imagenes/replanteo_listado_xyz.png" style="width: 583px; height: 291px;" alt="" /></span><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Listado de replanteo utilizando <a href="#def_bases">bases</a> de replanteo</span><br />
+      <br />
+      
+      <span class="Parrafo">La siguiente imagen representa, de forma esquemática, la interpretación de este tipo de listado:<br />
+      <br />
+</span>
+      
+      <div style="text-align: center;"><img src="Imagenes/replanteo_interpretacion.png" style="width: 381px; height: 475px;" alt="" />&gt;<br />
+      </div>
+
+      <br />
+Al realizar un replanteo desde bases (listar azimut y distancias) se genera también un listado simplificado:&nbsp;<span class="Archivo">biseccion.res</span><br />
+<br />
+      <span class="Titulo_2"><a name="dibujo">Dibujo de los puntos de replanteo</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una
+vez calculados los puntos de replanteo, es posible hacer uso de alguna
+pequeña herramienta que permite rotular sobre el EDM los PKs y las
+marcas de dichos puntos. Estas herramientas están disponible bajo el
+submenú desplegable <span style="font-weight: bold;">[DIBUJOS]</span> del menú vertical de REPLANTEO, y son las siguientes:<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <table style="text-align: left; width: 692px; height: 426px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 67px; width: 92px;"><span style="font-weight: bold;">Modo rotul. alin.</span><br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 67px;">Permite seleccionar, de entre una serie de ficheros de la librería de extensión&nbsp;<a href="OL_ficheros_ali.html"><span class="Archivo">.ali</span></a>, uno de ellos. A partir de ese momento las alineaciones de los ejes se rotularán, con el estilo en él definido. <br />
+<br />
+            </td>
+            
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 65px; width: 92px;"><span style="font-weight: bold;">Rotular alineaciones</span><br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 65px;">Permite realizar la rotulación automática de los puntos principales de las alineaciones del eje que se desee según el <a href="OL_ficheros_ali.html">modo de rotulación</a> escogido. Esta opción es cíclica hasta que se pulsa la tecla &lt;Esc&gt;.<br />
+            <br />
+En cualquier caso, el botón <a href="OL_dibujos.html#menu_rotul_avanzado"><span style="font-weight: bold;">[ROTULACIÓN]</span></a> del menú vertical da acceso a un cuadro de diálogo mucho más completo de cara a la rotulación de ejes.<br />
+<br />
+            </td>
+            
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 111px;">PK<br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 111px;">Esta
+opción pone sobre el plano los valores de los PK de la última secuencia
+calculada usando como etiquetas de PK una secuencia de símbolos del
+tipo S35 para los enteros y del tipo S36 para los fraccionarios. Así,
+por ejemplo, se puede realizar un cálculo de puntos cada 100 metros y a
+una distancia dada del eje, rotular los PK y seguidamente calcular otra
+secuencia cada 20 metros, marcando esos puntos. Estas etiquetas de PK y
+las marcas pasan al dibujo como símbolos EDM, por lo que posteriormente
+pueden moverse, quitarse,...<br />
+<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 40px;">Marca<br />
+            </td>
+            <td style="vertical-align: top; width: 356px; text-align: justify; height: 40px;">Crea
+un símbolo en cada punto de la última secuencia calculada. El símbolo
+usado es el S11. Su utilidad más usual es poner marcas sobre el eje
+(por ejemplo cada 20 m).<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 40px;">Línea<br />
+            </td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; width: 356px; text-align: justify; height: 40px;">Esta
+opción une los puntos del último cálculo (puntos sobre un eje y
+proyección de normales de un eje sobre otro) creando una línea en el
+tipo actual.<br />
+            <br />
+
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 92px; font-weight: bold; height: 41px;">S500<br />
+S501<br />
+            </td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; width: 356px; text-align: justify; height: 41px;">Funcionan igual que <span style="font-weight: bold;">PK</span> y <span style="font-weight: bold;">Marca</span> y permite utilizar los símbolos S500 o S501 para la rotulación de los PK.<br />
+            <br />
+
+            </td>
+
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Distancia (S798)</span><br />
+            </td>
+            <td style="vertical-align: top;">Cuando se efectua este
+cálculo, es posible utilizar la herramienta
+Dibujos-&gt;Distancia(S789), que rotula la distancia calculada entre
+los dos ejes, en el punto medio y con la orientación con la que se ha
+tomado.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; height: 38px;"><span style="font-weight: bold;"><a name="rotul_celulas">Rotular con células</a></span></td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; height: 38px; text-align: justify;"><img src="Imagenes/rotular_celulas.png" style="width: 218px; height: 221px; margin-left: 7px;" alt="" align="right" />Permite
+rotular ejes en planta utilizando células. El procedimiento consiste en
+seleccionar un eje y un tipo de célula. Se puede configurar el
+contenido que se introducirá automáticamente en cada uno de los textos
+variables al crear cada célula. Los valores posibles para estos textos
+variables son:<br />
+            <ul>
+              <li>El PK del eje seleccionado.</li>
+              <li>Las coordenadas X e Y.</li>
+              <li>Distancia al eje.</li>
+              <li>Azimut.</li>
+              <li>Z Rasante</li>
+              <li>Z<br />
+              </li>
+
+              <li>Nada (el texto variable se dejará en blanco).</li>
+              <li>Estaca<br />
+              </li>
+
+            </ul>
+Dichos valores se referirán al punto de inserción principal de la
+célula, y a todos se les puede añadir un prefijo opcional.&nbsp; <br />
+            <br />
+Con el botón <span style="font-weight: bold;">[Borra célula]</span> se elimina la célula sobre las que se haga clic a continuación.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Borrar</span><br />
+            </td>
+            <td colspan="1" rowspan="1" style="vertical-align: top; text-align: justify;">Elimina el último dibujo efectuado.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><img src="Imagenes/replanteo_trans.png" style="width: 111px; height: 222px;" alt="" align="right" hspace="4" /><a name="trans">Transv</a></span><br />
+
+      <br />
+
+Esta orden corta perfiles transversales a los puntos calculados en el replanteo. Se utiliza el modelo definido en el cuadro de <a href="EDM_control_entidades.html#control_superficies">control de superficies MDT</a>, ya estén las superficies definidas por Cartografía, Triangulando, MDT rejilla, TTP.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="LONGI">LONGI</a></span><a name="LONGI"><br />
+
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/replanteo_longi.png" alt="" style="width: 200px; height: 295px; float: right;" hspace="4" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A
+partir de este menú se pueden generar ficheros de corte longitudinal
+(.lon) a un terreno dado. La configuración de las superficies de corte
+se hace desde el Control de superficies MDT al igual que para los
+perfiles transversales, si se extraen perfiles longitudinales a lo
+largo de una superficie tipo TTP o NDP teniendo seleccionada la opción
+Triángulos si hay huecos en la triangulación éstos se representan en el
+longitudinal y se representan tanto en el menú Rasantes como en el
+dibujo de los perfiles longitudinales.&nbsp; <br /><br />Podremos definir de qué
+ejes obtendremos el
+longitudinal, a que distancia, con qué semiancho, etc. También podremos
+definir en qué rango de PKs queremos obtener nuestro longitudinal.<br /><br />Al activar la casilla <span style="font-weight: bold;">Longit. para corte con servicios afectados</span>
+se incluye en el archivo .lon la información del esviaje en el corte
+con las líneas que representan un servicio (superficie cartográfica).
+Con esta información y la definición paramétrica de la línea (QA) es
+posible representar en los longitudinales y en el menú <a href="OL_rasantes_diseno.html">RASANTES</a> el corte en verdadera magnitud.<br />
+      <br />
+Junto a esta función principal se ofrecen en este menú algunas utilidades:<br />
+
+
+      <span style="font-weight: bold;"></span><span class="Parf_negrita"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><table style="text-align: left; width: 484px; height: 55px;" border="0" cellpadding="2" cellspacing="2">
+<tbody><tr><td style="vertical-align: top; width: 92px; height: 41px; font-weight: bold;">Linea -&gt; .lon<br />
+            </td><td colspan="1" rowspan="1" style="vertical-align: top; width: 356px; text-align: justify; height: 41px;">Genera un archivo .lon a partir de una línea 3D.<br />
+<br />
+</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">.pkz -&gt; .lon<br />
+            </td>
+            <td style="vertical-align: top;">Genera un archivo .lon a partir de un archivo .pkz.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">.lon -&gt; .per<br />
+            </td>
+            <td style="vertical-align: top;">Genera un archivo .per a partir de un archivo .lon, creando una única superficie con el semiancho de banda indicado.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">.per -&gt; .lon<br />
+            </td>
+            <td style="vertical-align: top;">Genera un archivo .lon a partir de un archivo .per, tomando la primera superficie del archivo.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Proyectar tipo de línea -&gt; .lon<br />
+            </td>
+            <td style="vertical-align: top;">Genera dos archivos .lon
+para las líneas de un tipo determinado que estén a la derecha y a la
+izquierda del eje, a una distancia máxima y con un ángulo máximo
+respecto al eje. Si varios segmentos de línea se solapan en PKs, se
+toma el más próximo al eje.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Clasificación de baches<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+
+</tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

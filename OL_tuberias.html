@@ -1,0 +1,1852 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Tuberías</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>SANEAMIENTO Y DISTRIBUCIÓN. TUBERÍAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="obsolete Parrafo" style="width: 694px;"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#redes">Redes</a><br /><a href="#dis_geom_redes">
+Diseño geométrico de redes</a><br /><a href="#tablas_componentes">
+Tablas de componentes</a><br /><a href="#entorno">
+Entorno de diseño</a><br />
+      </div>
+
+      
+      <div style="margin-left: 40px;"><a href="#planta">Diseño de la planta</a><br />
+      </div>
+
+
+      <div style="margin-left: 80px;"><a href="#planta_conv">Diseño de la planta con el menú convencional</a><br />
+      <a href="#planta_espec">Diseño de la planta con el menú específico de tuberías</a><br />
+      </div>
+
+      
+      <div style="margin-left: 40px;"><a href="#rasante">Diseño de la rasante. Tubos de sección circular y pozos</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#def_pozos">Definición de pozos o arquetas</a><br /><a href="#def_tubos">Definición de tubos</a><br />
+      <a href="#util_ras">Utilidades rasante</a><br />
+      </div>
+
+      <div style="margin-left: 40px;"><a href="#alzado">Diseño de la sección transversal</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#tipo_tuberia">Declarar eje de tipo tubería</a><br /><a href="#zanja">
+Tubería en zanja</a><br />
+      <div style="margin-left: 40px;"><a href="#proteccion">Zona de protección</a><br /><a href="#cubricion">Zona de cubrición</a><br /><a href="#rellenos">
+Rellenos de zanja</a><br />
+      </div><a href="#apoyo">
+
+Tubería apoyada</a><br /><a href="#datos_tubos">
+
+Datos de tuberías</a><br />
+      <a href="#tubos_vect">Tubos vectoriales</a><br /><a href="#camino_servicio">
+Camino de servicio</a><br />
+
+      <a href="#acopios">Acopios</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#tabCubic_planos_listados">
+Tablas de cubicación, planos y listados especíificos de proyectos de tuberías</a><br />
+      </div>
+
+      <div style="margin-left: 80px;"><a href="#tablasCubic">Tablas de cubicación</a><br />
+      <a href="#planos">Planos</a><br />
+      <a href="#listados">Listados</a><br />
+      </div>
+<br />
+      <span class="Parrafo"><br />
+</span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br />
+
+      </span><span style="font-weight: bold; font-style: italic;"><a name="redes">Redes</a></span><br />
+      <span class="Parrafo">
+      <br />
+Una red, en su concepción topológica, está formada por los siguientes
+elementos descritos geométricamente y relacionados entre sí:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Puntos</span>, que son entidades geométricas puntuales (X,Y,Z).</span></li>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Vértices</span>, que son puntos que forman parte de un arco.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Nodos</span>, que en realidad son tipos particulares de vértice y que pueden ser:</span></li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo">El vértice de conexión de tres o más arcos.</span></li>
+
+        <li><span class="Parrafo">El vértice de conexión de dos arcos distintos.</span></li>
+        <li><span class="Parrafo">Un extremo de arco.</span></li>
+      </ul>
+      <span class="Parrafo" /></div>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Arcos</span>, que son entidades lineales que pasan por vértices.</span></li>
+      </ul>
+
+      <span class="Parrafo">Estos objetos son creados o modificados por
+herramientas de tipo CAD. Sus datos son almacenados en estructuras
+organizadas de datos sobre archivos y/o en bases de datos.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="dis_geom_redes">Diseño geométrico de redes</a></span><br />
+      <span class="Parrafo">
+      <br />
+Una red se puede definir a partir de un dibujo formado por polilíneas,
+que a su vez puede ser importado de dibujos creados en otros programas,
+convertido desde un dibujo en nuestro CAD general, o definido en el
+entorno de trabajo de diseño geométrico de redes.<br />
+      <br />
+
+En el entorno de trabajo de definición geométrica de redes se cuenta
+con herramientas para la creación de puntos, arcos,..., disponiendo de
+ayudas geométricas y restricciones que van guiando al usuario en la
+creación y modificación de una estructura geométrica, topológicamente
+coherente y compatible con las restricciones geométricas de los
+componentes físicos utilizados. También permite la modificación de los
+objetos existentes durante su creación y después, en ediciones y
+modificaciones posteriores.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="tablas_componentes">Tablas de componentes</a></span><br />
+      <span class="Parrafo">
+      <br />
+Las tablas de componentes son estructuras de datos que definen las
+propiedades (geométricas o de otro tipo) de cada uno de los objetos o
+componentes disponibles para crear una red. Cada componente tiene unas
+propiedades y limitaciones geométricas que lo caracterizan.<br />
+      <br />
+
+En el diseño de una red física utilizamos como básicos los componentes
+lineales o arcos (tubos, cunetas, canales,...) y como nodos los
+conectores o accesorios (codo, T, pozo,...).<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="entorno">Entorno de diseño</a></span><br />
+      <span class="Parrafo">
+      <br />
+Un entorno como el diseño de planta de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> parece innecesariamente complicado para diseñar redes. Algo más próximo a la creación de una polilínea parece más adecuado.
+Además, sería conveniente disponer de una herramienta que permita crear
+un arco picando el primer punto de un arco e, inmediatamente, poder
+visualizar como eco el arco de mínimo radio aceptable a derecha e
+izquierda y el segmento de goma hasta que se pica el segundo vértice.
+Una vez picado, el eco debe cambiar para que se introduzca un punto
+intermedio que determine el radio a aplicar en el arco. Cuando es el
+segundo arco, el eco debe mostrar los ángulos de cobertura para cada
+accesorio disponible, utilizando como azimut de salida el fin del
+anterior más la holgura (90 grados +/- holgura, 120+/- H,...) para que
+el usuario vea el ámbito disponible para cada accesorio. La referencia
+a objetos en la cartografía, además, es muy importante para trazar un
+tramo paralelo a un borde de acera a cierta distancia y a cierta
+profundidad, etc.<br />
+
+<br />
+      <br />
+      </span><span class="Titulo_2"><a name="planta">Diseño de la planta</a></span><br />
+      <br />
+Para el diseño del eje en planta se dispone de dos opciones: usar el <a href="#planta_conv">menú convencional</a> o el <a href="#planta_espec">menú específico</a> de tuberías. En cualquier caso, el objetivo es el mismo: obtener el arhcivo&nbsp;<span class="Archivo">.cej</span> con el diseño de los ejes en planta.<br />
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="planta_conv">Diseño de la planta con el menú convencional</a></span><br />
+      <br />
+En este caso se usa el mismo <a href="OL_planta_diseno.html">menú de diseño en planta</a> que para el caso de ejes de carretera y ferroviaros, con la particularidad de que l<span class="Parrafo">os
+diferentes tramos de tuberías se pueden definir según sucesivas
+alineaciones unidas directamente (sin curvas de acuerdo horizontal,
+evidentemente). Se debe, por tanto, ignorar el <a href="OL_planta_opciones_visualizacion.html#no_errores_ptos_angulosos">mensaje de error relativo a los puntos angulosos</a> que detecta el programa. Puede ser útil en esta fase el <a href="OL_planta_diseno.html#tecla_V">enganche a vértice anterior</a> <span style="font-weight: bold;">[V]</span> para conectar las alineaciones.<br />
+
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/red_tuberias.png" style="width: 441px; height: 258px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+En el diseño del trazado en planta de las zanjas que alojarán las
+tuberías, no es usual utilizar radios, así es que el diseño puede
+consistir en una serie de alineaciones rectas. De todas maneras,
+también se podrán diseñar alineaciones curvas si fuera necesario.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="planta_espec">Diseño de la planta con el menú específico de tuberías</a></span><br />
+
+      <span class="Parrafo"><br />
+      En la ventana flotante de PLANTA se dispone una casilla de verificación, <span style="font-weight: bold; font-style: italic;">Tubo</span>. Si se activa se despliega una nueva ventana para la definición del eje en planta para tuberías.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/modo_tubo.png" style="width: 580px; height: 228px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+
+Se recuerda al usuario la posibilidad de transformar ejes en planta definidos de manera convencional a modo <span style="font-style: italic;">Tubo</span> desde el menú vertical de PLANTA &#8594; <span style="font-weight: bold;">[UTILIDADES]</span> &#8594; <a href="OL_planta_herramientas.html#eje_tubo"><span style="font-weight: bold;">Convertir eje a tubo</span></a>.<br />
+      <br />
+Varias de las opciones que aparecen en este menú se corresponden con el menú de <a href="OL_planta_diseno.html">diseño en planta convencional</a>, por lo que sólo se describen a continuación aquellas específicas de este tipo de proyectos.<br />
+      </span>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Radio mínimo</span>:
+Se considera a efectos de diseño que los tubos se pueden doblar sin
+bajar de este valor, es decir, el tubo no puede tener un radio inferior
+al indicado en este campo. Se puede seleccionar un radio mínimo
+diferente para cada una de las alineaciones. Por defecto, al añadir la
+alineación, se toma como radio mínimo el del eje. En el modo </span><span class="Parrafo"><span style="font-style: italic;">Tubo</span></span><span class="Parrafo">, se puede seleccionar un radio mínimo diferente para cada alineación. Por defecto al añadir la alineación se toma como <span style="font-weight: bold;">radio mínimo</span>
+el del eje. Si se utiliza un radio mínimo de 0.0, el tubo se coloca sin
+radio de giro y forzado al ángulo del codo con su holgura.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><img src="Imagenes/longitud_tubos_3d.png" style="width: 183px; height: 54px;" alt="" align="right" hspace="6" />Longitud tubo</span>:
+Permite definir una longitud del tubo en planta para que al ir
+definiendo los sucesivos nodos que forman las alineaciones del eje sean
+obligatoriamente de esa longitud ó múltiplos de ésta. Si se activa la
+casilla <span style="font-weight: bold; font-style: italic;">L3D</span>, entonces las longitudes de los tubos se miden en dimensión real teniendo en cuenta las pendientes.</span></li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="tabla_codos">Tabla de codos</a></span><span class="Parrafo">: Puede asociarse a cada eje una tabla de diseño (<span class="Archivo">.dip</span>)
+especificas para tuberías. Estas tablas contienen para cada codo o
+conector, su ángulo nominal y un valor para la holgura admisible,
+además del nombre que aparecerá en el menú. Se incluye en la librería
+la tabla&nbsp;<span class="Archivo">CODOS.dip</span> que contiene los mismos datos que se cargan por defecto cuando no se ha seleccionado ninguna tabla:</span></li>
+      </ul>
+      
+      <div style="text-align: center;"><img src="Imagenes/codos_dip.png" style="width: 400px; height: 301px;" alt="" /><br />
+      </div>
+      <br />
+
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 650px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 35px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 595px; text-align: justify;"><img src="Imagenes/tuberias_copiar_codo_ant.png" style="width: 187px; height: 42px; margin-left: 7px;" alt="" align="right" />Si se desea que al añadir una alineación se copie el codo anterior para
+evitar tener que introducirlo de nuevo, entonces se debe activar la
+opción <span style="font-weight: bold; font-style: italic;">Al añadir, copiar el codo anterior</span> de las <a href="OL_planta_opciones_visualizacion.html#opciones">OPCIONES</a> del menú vertical de PLANTA.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+      <div style="margin-left: 40px;">Para tuberías de grandes
+diámetros, se permite definir en las tablas de diseño de planta con
+codos, que algunos conectores tengan un determinado radio, como por
+ejemplo la tabla&nbsp;<span class="Archivo">CODOS_RADIO.dip</span> que tenemos en la librería&nbsp; de ISPOL. <br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/tabladip_radio_codos.png" style="width: 398px; height: 412px;" alt="" /><br />
+      </div>
+      </div>
+      <br />Es
+posible sustituir los codos que genera ISTRAM por archivos .3DO de la
+librería, para ello el valor del radio debe coincidir con el objeto 3D
+y el campo nombre debe ser el nombre del archivo con su extensión. Solo
+es posible para ST de un tubo. <br /><br /><div style="text-align: center;"><img style="width: 560px; height: 158px;" alt="" src="Imagenes/tabladip_codos3do.png" /><br /></div><br />El
+objeto debe tener el origen de coordenadas en el inicio del codo,
+orientado hacia Y+ con el giro hacia X+ y centrado en el eje del tubo:<br /><br /><div style="text-align: center;"><img style="width: 424px; height: 261px;" alt="" src="Imagenes/TUB_codo3DO.png" /><br /></div><br />En las tablas .dip de codos: CODOS.dip y CODOS_RADIO.dip disponemos de una columna denominada <span style="font-weight: bold;">TIPO</span>,
+para diferenciar diferentes categorías de elementos. Así a los codos,
+manguitos y T se les asigna el TIPO 1, y se añaden a las tablas un
+nuevo elemento: Ventosa a la que se asigna el TIPO 2. En principio
+podemos asignar hasta 5 tipos diferentes.<br />
+<br /><img src="Imagenes/tuberias_planta_datos.png" style="width: 100px; height: 44px;" alt="" align="right" hspace="6" />
+En este menú de alineaciones aparece una línea para cada nodo con los
+siguientes datos (se permite variar el número de datos visibles en el
+cuadro de dialogo entre 2 y 20 nodos):<br />
+      <br />
+      <table style="text-align: left; width: 689px; height: 142px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">N<br />
+            </td>
+
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Número de nodo dentro del eje.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold; text-align: left;">X, Y<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Coordenadas en planta del nodo. También se
+pueden asignar coordenadas a un nodo dando como referencia el número
+del eje y del nodo de un eje definido anteriormente, y en este caso el
+programa calcula automáticamente las coordenadas X,Y. Al modificar las
+coordenadas, radio, radio mínimo o conector de cualquier alineación, el
+programa reajusta todo el trazado a partir de ella, teniendo en cuenta
+las limitaciones de los conectores. También reajusta todos los ejes
+posteriores.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">Z<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Cota del nodo (permite, por tanto, ir definiendo
+la <a href="#rasan_planta">rasante desde la planta</a>). Si no se declara ningún valor, entonces
+las cotas se declararán desde el menú RASANTES. Estos valores de <span style="font-weight: bold;">Z</span>
+guardan y recuperan de los archivos <span class="Archivo">.cej</span>.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">Prof.<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Profundidad. Cuando se trabaja con un
+enganche (por ejemplo, a superficie), el valor de <span style="font-weight: bold;">Z</span> que se pasa al nodo
+se obtiene utilizando la profundidad prefijada.<br />
+
+            <br />
+ </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">R<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Radio del tubo. El programa puede calcularlo
+automáticamente siempre que se utilice un tipo de conector. También
+puede ser dato de entrada si la alineación no está condicionada por un
+conector, sino que es libre, siempre respetando el radio mínimo.<br />
+            <br />
+Al activar la casilla <span style="font-weight: bold;">Flo</span>.
+(Flotante) si modificamos el valor del radio en un determinado nodo
+(correspondiente a la alineación n), el programa calcula los nuevos
+puntos de tangencia de esta alineación sin modificar la posición de la
+anterior y la siguiente. Modifica la posición de estos dos nodos,
+deslizándolos sobre estas alineaciones hasta encontrar los puntos de
+tangencia de la alineación "flotante". Al finalizar el cálculo se
+desactiva automáticamente esta opción.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/tuberias_flo_ejemplo.png" style="width: 569px; height: 92px;" alt="" /><br />
+            </div>
+
+            <br />
+
+</td>
+          </tr>
+          <tr><td style="text-align: left; vertical-align: top;"><span style="font-weight: bold;">L tubo</span></td><td>Permite modificar para cada alineación la longitud unitaria de cada tubo. Por defecto toma la definida para el eje.<br /><br /></td></tr><tr>
+            <td style="vertical-align: top; width: 72px; font-weight: bold;">CONECTOR<br />
+            </td>
+            <td style="vertical-align: top; width: 611px; text-align: justify;">Las tablas de componentes son estructuras
+de datos que definen propiedades (geométricas ó de otro tipo) de cada
+uno de los objetos o componentes disponibles para crear una red. Cada
+componente tiene unas propiedades y limitaciones geométricas que lo
+caracterizan.<br />
+            <br /><div style="text-align: center;">
+            <img src="Imagenes/tuberias_conector.png" style="width: 567px; height: 209px;" alt="" /><br />
+</div>El
+conector del punto anterior fija el azimut de salida del nuevo. En el
+diseño de una red física se utilizan como básicos los componentes
+lineales o arcos (tubos, cunetas, canales,&#8230;) y como nodos los
+conectores o accesorios (codo, tes, pozos,&#8230;).<br />
+
+            <br />
+Los tubos son entidades flexibles de longitud fija (tubos de fundición
+terminados en campana) o ilimitada (tubo de polietileno de los cuales
+se cortan tramos) para formar arcos. En principio son rectilíneos pero
+pueden curvarse hasta un cierto radio mínimo.<br />
+            <br />
+Los codos tienen un ángulo característico y una cierta holgura. Son
+codos típicos los de 90º y las sucesivas mitades: 45º, 22&#8217;5º, 11,25º.
+Las &#8220;tes&#8221; suelen ser de 90º. También podemos considerar los manguitos
+como un codo a 0º con +/- holgura.<br />
+<br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">HOLGURA</span><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Sobre el ángulo del conector y medido en
+ángulo sexagesimales. Al añadir un nuevo nodo gráficamente, el eco
+muestra las dos zonas posibles sin doblar el tubo, y en el caso de
+doblarlo los límites hasta el radio mínimo, bloqueando la posición del
+nodo en este punto.<br />
+            <br />
+
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">EJE, N</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Para ramales, el primer y último nodo
+pueden hacer referencia a un nodo de un eje previo, y en este caso las
+coordenadas se calculan automáticamente. En este primer nodo también se
+puede colocar un conector (por ejemplo, T 90) que limita la orientación
+del primer tubo.<br />
+
+
+      <br />
+
+Con la opción de <span style="font-weight: bold;">[BUSCAR]</span> el programa detecta el conector de la tabla
+cuyo ángulo y holgura encaje con el ángulo del trazado. Si no se
+encuentra ninguno se deja como nodo libre.</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+      <br />
+Un eje definido en modo <span style="font-style: italic;">Tubo</span> puede salir desde una alineación de
+cualquier tipo de un eje definido en modo normal. El punto que se toma
+es el punto de tangencia de la alineación y su azimut como referencia
+angular para el conector.<br />
+      <br />
+El eje del tubo puede salir también de la <span style="font-weight: bold;">proyección</span> de un punto
+cualquiera sobre otro eje. Para ello, en el campo
+      <span style="font-weight: bold;">EJE</span> se debe anotar el
+número del otro eje, en el campo N adyacente se anota como número de
+nodo el valor "0" y en las casillas X,Y las
+coordenadas del punto a proyectar. El programa proyecta entonces este
+punto sobre
+el eje y utiliza el azimut como referencia angular para el conector. <br />
+
+      <br />
+Se permite <span style="font-weight: bold;">bloquear</span>, para cada nodo, el valor de las coordenadas, el
+radio o el accesorio, de modo que al modificar uno de estos datos en un
+nodo anterior, el reajuste automático del eje no cambie los datos
+bloqueados:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/tuberias_bloquear.png" style="width: 529px; height: 84px;" alt="" /><br />
+      </div>
+<br />
+Si el ángulo obtenido en un nodo no coincide con el ángulo del
+accesorio (± la holgura) el programa muestra estos valores bajo el nodo
+afectado.<br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 34px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 633px; text-align: justify;"><span class="Info">Al
+modificar un nodo, solamente se recalcula el eje actual. Al finalizar
+las modificaciones es preciso realizar un cálculo para que se puedan
+resolver todas las dependencias entre ejes.</span></td>
+          </tr>
+        </tbody>
+
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rasante">Diseño de la rasante. Tubos de sección circular y pozos</a></span><br /><br />Una vez <a href="#tipo_tuberia">declarado el eje como de tipo tubería</a>, el
+menú de RASANTES presenta ciertas particularidades propias para este
+tipo de obra lineal, además de las características habituales. Por
+ejemplo, en la banderola de los vértices sin acuerdo aparece también el
+ángulo real de los codos.<br />
+      <br />
+La rasante marca la traza de la generatriz más baja de la tubería
+(aquella por la que discurriría el último hilo de agua) en un perfil
+longitudinal. Si en Planta se ha definido una longitud de tubo, en esta pestaña podremos ver los puntos de corte entre tubos.<br />
+      <br />
+
+La definición de rasantes se realiza de modo idéntico al seguido para
+carreteras, con o sin los correspondientes acuerdos verticales. De
+nuevo pueden resultar muy útiles aquí las opciones de enganche a
+vértice o los <a href="OL_rasantes_diseno.html#tecla_V">botones <span style="font-weight: bold;">[V]</span></a> para conectar los sucesivos tramos, formando puntos angulosos.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/rasante_tubo.png" style="width: 639px; height: 147px;" alt="" /><br />
+      </div>
+
+      <br />
+      <img src="Imagenes/rasantes_boton_ang.png" style="width: 176px; height: 54px;" alt="" align="right" hspace="6" />El
+programa también ofrece la posibilidad de definir la pendiente de una
+rasante, por el ángulo que forma con la rasante anterior, mediante el
+botón <span style="font-weight: bold;">[Áng]</span> situado en la parte inferior derecha.<br />
+      <br />
+La herramienta <span style="font-weight: bold;">Codo</span> similar a
+la de Angulo, permite seleccionar la pendiente de la rasante desde la
+tabla de codos. Si los codos tienen radio, también se aplica éste, como
+acuerdo entre la rasante anterior y la actual.<br />
+
+      <br />
+El botón <span style="font-weight: bold;">[Por pozo]</span> permite
+calcular para el dato de rasante actual las coordenadas PK1,Z1 donde el
+dato de rasante anterior corta al pozo inmediatamente posterior.<br />
+      <br />
+      <img src="Imagenes/por_pozo.png" style="width: 396px; height: 123px; margin-right: 7px;" alt="" align="left" />Así,
+por ejemplo, si previamente se han definido los pozos a lo largo del
+longitudinal en los PK&#8217;s correspondientes, cuando se está definiendo
+una alineación de rasante y al definir la segunda alineación se utiliza
+la opción <span style="font-weight: bold;">[Por pozo]</span>, el programa calcula las coordenadas del PK1, Z1 de esta segunda alineación de rasante.<br />
+      <br />
+      <br />
+
+      <img src="Imagenes/rasante_vertical.png" style="width: 171px; height: 82px;" alt="" align="right" hspace="6" /><img src="Imagenes/tuberias_rasante_desde_planta.png" style="width: 252px; height: 389px; margin-right: 7px;" alt="" align="left" /><a name="tramo_vertical">A
+diferencia de lo que ocurre en el caso de carreteras, en la definición
+de rasantes de tuberías aparecen frecuentemente tramos verticales o <span style="font-weight: bold;">resaltos</span>. Para definirlos puede darse, por ejemplo, el vértice anterior y dejar pulsado el botón <span style="font-weight: bold;">[V]</span>
+adyacence al campo donde se puede definir la pendiente (en el caso de
+definir una rasante pseudovertical mediante dos puntos P1, P2, se
+considerará salto vertical cuando la pendiente definida en valor
+absoluto supere el 5000%).
+De esta manera se consigue un tramo de rasante con pendiente de 90º.</a><br />
+
+      <br />
+      <a name="rasan_planta">Cuando el eje en planta está definido en modo tubo, el programa permite
+generar las rasantes utilizando los PK&#8217;s y cotas de los nodos
+declarados en planta a través de la opción <span style="font-weight: bold;">Rasante desde planta</span> disponible en el menú <span style="font-weight: bold;">[ÚTILES]</span>.</a><br />
+
+
+      <br /><img src="Imagenes/opc_rasantes_codos.png" style="width: 154px; height: 41px;" alt="" align="right" hspace="6" />&nbsp;Si se desea visualizar en esta pantalla los codos declarados en <a href="#planta_espec">PLANTA</a>, entonces debe estar activa la opción <span style="font-weight: bold; font-style: italic;">Codos</span>
+de las <a href="OL_rasantes_opciones_visualizacion.html">opciones de visualización</a> accesibles desde el menú vertical. Al
+activarla, se mostrarán con un círculo amarillo dichos codos siempre
+que su ángulo sea igual o superior al <span style="font-weight: bold;">ángulo mínimo</span> indicado en dicha opción.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/rep_codo_rasantes.png" style="width: 138px; height: 81px;" alt="" /><br />
+      </div>
+
+
+      <br /><span class="Parf_negrita">L3D</span>:
+Permite definir el P1 (PK1,Z1) de la rasante actual mediante una
+longitud 3D que se aplica desde el P1 de la rasante anterior teniendo
+en cuanta la pendiente de esta rasante. (Aplicable a partir de la
+segunda rasante).<br /><br />
+
+      <a style="font-weight: bold; font-style: italic;" name="def_pozos">Definición de pozos o arquetas</a><br />
+      <br />
+A través del menú desplegable situado encima del <a href="OL_rasantes_diseno.html#navegador_alineaciones">navegador de alineaciones</a>, se puede pasar al menú de <span style="font-weight: bold;">[POZOS]</span>.
+Los pozos (de registro, acceso, etc.) suelen disponerse en los cambios
+de alineación y/o de pendiente de la tubería, coincidiendo con <a href="#tramo_vertical">tramos
+de rasante vertical</a>. El pozo actual aparecerá en pantalla en color
+amarillo, en tanto que los restantes pozos se representan con color
+blanco. Las arquetas se representan en color azul dentro de la pantalla de rasantes. <br /><br />Son conocidas las opciones <a href="OL_rasantes_diseno.html#navegador_alineaciones">Añadir, Inser y Borrar</a>,
+ahora bien, la opción Inser actúa en cuanto al PK del siguiente modo:
+se aplica por defecto un pk intermedio entre el del dato actual y el
+anterior.<br />
+      <br />
+Para poder añadir una arqueta en lugar de un pozo sólo tenemos que cambiar la casilla <span style="font-weight: bold;">Pozo</span> por <span style="font-weight: bold;">Arqueta</span>.<br />
+Los pozos son circulares y se definen por su diámetro, el espesor de la solera y una excentricidad con respecto al eje.<br />
+Las arquetas son rectangulares y se definen por el ancho, largo,
+espesor de la pared, espesor de la solera y excentricidad con respecto
+al eje.<br />
+      <br />Activando
+la casilla justo a la izquierda del valor del PK del pozo o Arqueta, se
+puede indicar en algunos pozos/arquetas que no se interrumpa el paso
+del tubo,aunque esté activada la opción general en el cuadro de diálogo
+de <a href="OL_tuberias.html#datos_tubos">Datos para Tuberías</a>.<br /><br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_arqueta.png" style="width: 154px; height: 123px;" alt="" /><br />
+      </div>
+
+
+      <br />
+      
+      
+
+      Las
+arquetas se pueden dejar descubiertas, o bien se les puede añadir una
+rejilla o una tapa. También se puede definir una terminación en <span class="Parf_negrita">V</span>, <span class="Parf_negrita">paralela</span> o <span class="Parf_negrita">perpendicular</span> al eje de la tubería y dando un <span class="Parf_negrita">dZ</span> (Incremento de altura de los bordes) y un <span class="Parf_negrita">dX</span> (excentricidad de la limatesa). Se puede definir una <span style="font-weight: bold;">pendiente longitudinal</span>&nbsp;y <span style="font-weight: bold;">transversal</span>
+para la limatesa de la V. Asímismo, estas pendientes se pueden definir
+para el plano de la tapa de los pozos. En la representación BIM de los
+pozos se añade una tapa de forma automática a cada pozo. La casilla <span style="font-weight: bold;">Giro</span> nos permite aplicarle un ángulo de rotación (sexagesimal y antihorario) a la arqueta en cuestión.<br /><br /><div style="text-align: center;"><img src="Imagenes/arqueta_rejilla.png" style="width: 601px; height: 160px;" alt="" /><br /></div><br />
+El botón <span style="font-weight: bold;">[ÚTILES]</span> da acceso a una serie de herramientas muy prácticas para el diseño de pozos:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 320px;" alt="" src="Imagenes/def_pozos.png" /><br />
+
+      </div>
+<ul>
+        <li><span style="font-weight: bold;">Rasantes por fondo de pozos</span>: Crea una rasante trazando las alineaciones por el fondo de los pozos ya definidos.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Pozos en vértices</span>:
+Esta opción crea de forma automática un pozo en cada uno de los nodos
+del eje en planta aunque se conserve el azimut (caso de, por ejemplo,
+un manguito sin holgura y radio mínimo 0) y al comienzo y final del
+mismo. El eje en planta puede estar formado por alineaciones rectas o
+por alineaciones circulares.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ajustar a saltos verticales</span>: Ajusta los PK&#8217;s de los pozos que estén muy próximos a rasantes verticales haciendo coincidir el PK.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Ordenar</span>: Reordena los pozos según su PK.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="renumerar_pozo">Renumerar</a></span>: Los pozos se numeran de nuevo en orden creciente de PKs.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Insertar pozos equidistantes</span>: Permite insertar entre el pozo actual y el anterior un número determinado de pozos equidistantes.&nbsp; <br />
+</li>
+
+      
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Pozos en puntos altos y bajos</span>: Crea un pozo en los puntos altos y bajos<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ajustar a punto Alto-Bajo</span>: Ajusta los Pks de los pozos que estén muy próximos a un punto alto o bajo mediante una distancia máxima de búsqueda.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Copiar la geometría del pozo actual al resto</span>. Hace que todos los pozos se igualen al actual.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Insertar pozos equidistantes en tramos largos</span>:
+El programa nos preguntará la distancia máxima entre pozos. Si dos
+pozos se encuentran a una distancia superior, se insertarán entre ellos
+los pozos necesarios para cumplirla.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Insertar pozos - múltiple</span>:
+Permite insertar pozos en algunos puntos singulares: vertices en planta
+o rasante, puntos altos o bajos, saltos verticales, puntos
+equidistantes una distancia concreta...<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Copiar boca y solera del pozo actual al resto</span>: Copia las referencias para las cotas de boca y solera del pozo actual al resto de los pozos definidos.</li></ul><ul><li><span style="font-weight: bold;">Copiar tipo y descripción del pozo actual al resto</span>: Copia los textos introducidos en el Tipo y Descripción del pozo actual al resto de los pozos definidos.</li></ul><ul><li><span style="font-weight: bold;">Añadir pozos desde archivo .poz (pk zb zs nombre) </span>:
+Añade pozos desde un archivo .poz que tien el siguiente formato &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-style: italic;">PK Cota_boca Cota_solera nombre</span></li>
+
+      </ul>
+
+
+      <br />
+
+Cada pozo vendrá definido por una serie de datos:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Número</span> de orden en la lista, que se adjudica de modo automático (1, 2,&#8230;).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Nombre</span> para el pozo
+que aparecerá en los correspondientes listados y planos (por defecto,
+P1, P2,&#8230;). El programa ofrece la posibilidad de dar un <span style="font-weight: bold;">nombre de base</span> y el número para el primer pozo. Estos valores serán utilizados por las opciones <span style="font-weight: bold;">[Añadir pozo]</span>, <span style="font-weight: bold;">[Insertar pozo]</span> y <span style="font-weight: bold;">[ÚTILES]</span> <span class="Parrafo">&#8594;</span> <a href="#renumerar_pozo"><span style="font-weight: bold;">Renumerar</span></a> para componer de forma automática los nombres de los pozos.</li>
+
+      </ul>
+      <ul>
+        <li><img src="Imagenes/pk_dz_pozo.png" style="width: 134px; height: 62px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">PK</span> de situación del pozo, dado de modo gráfico (con o sin <a href="OL_rasantes_enganches.html">enganche</a>), o numérico. Es posible dar simultáneamente el PK y la cota del pozo de forma gráfica si se selecciona la opción <span style="font-weight: bold; font-style: italic;">PK,dZ Boca</span> situada al lado del selector de modo, lo que puede resultar muy útil en determinados casos.<br />
+</li>
+      </ul>
+      <table style="text-align: left; width: 648px; height: 27px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; width: 595px; text-align: justify;"><span class="Info"><a name="PK_graf_planta">Es
+posible definir los PK&#8217;s de los POZOS y de los TUBOS haciendo clic en
+su posición en planta. Para ello basta con desplegar desde cualquier
+submenú de ALZADO la vista de RASANTES pulsando sobre <span style="font-weight: bold;">[Ras]</span> en el menú vertical, después pulsar sobre el botón <span style="font-weight: bold;">[DATOS]</span>
+de esta vista para desplegar el cuadro de diálogo de RASANTES y cambiar
+a POZOS o TUBOS, desde donde el PK queda fijado al picar en la ventana
+general de la planta su posición.</a></span></td>
+          </tr>
+
+        </tbody>
+      </table>
+      <ul>
+        <li><span style="font-weight: bold;">Cota de la Boca</span>
+del pozo, que puede darse:</li><ul><li>Relativa al terreno.</li><li>Relativa a la rasante.</li><li>De forma absoluta (Z).</li><li>Relativa a otro terreno (Terreno2). En este último
+caso es necesario haber extraido perfiles al menos a dos <a href="EDM_control_entidades.html#control_superficies">superficies</a> para que la boca del pozo tome la cota de una segunda superficie.</li><li>Relativa
+a la cota de Otro Eje añadido en la rasante. En principio busca si pasa
+algún Otro Eje por el pk del pozo y si no toma como referencia la cota
+del terreno.</li><li>Se puede definir/modificar gráficamente con en el botón <img src="Imagenes/icono_puntero_en_menu.png" style="width: 17px; height: 19px;" alt="" />.<br />
+</li></ul>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Cota Solera</span>
+o profundidad del pozo, que puede darse:</li><ul><li>Relativa a la
+superficie del terreno</li><li>Relativa a la rasante.</li><li>De forma absoluta (Z).</li><li>Relativa&nbsp;a otro terreno (Terreno2).</li><li>Relativa a la cota de Otro Eje añadido en la rasante.&nbsp;</li><li>Se puede definir/modificar gráficamente con en el botón <img src="Imagenes/icono_puntero_en_menu.png" style="width: 17px; height: 19px;" alt="" />.</li></ul>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo</span>: Característica o dato que identifica al pozo y que también se representará en los <a href="#planos">planos</a>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Descripción</span>: Otro comentario alfanumérico para los planos. La casilla adyacente permite definir una <a href="#excavacion">excavación</a> para el pozo o arqueta.<br />
+</li></ul><ul><li><span class="Parf_negrita">Símbolo asociado al Pozo</span>:
+Se puede asociar a cada pozo un símbolo diferente para su
+representación en el dibujo del perfil longitudinal. Los símbolos
+disponibles se definen en un archivo&nbsp;<span class="Archivo">Simbolos_pozo.txt</span> que se añade en la librería. (Se han añadido también nuevos símbolos S1440-S1499).</li>
+      </ul><div style="text-align: center;"><img src="Imagenes/pozos_radier.png" style="width: 450px; height: 328px;" alt="" /><br /></div>
+      <ul>
+        <li><span style="font-weight: bold;">Diámetro</span> <span style="font-weight: bold;">mm</span>:
+Podemos definir un diámetro para cada pozo. Este valor quedará
+reflejado en el listado de pozos (pozos.res) y en planta se podrá
+representar mediante un fichero .lil como por ejemplo <a href="OL_ficheros_lil.html#pozos_tubos_y_codos">Tuberias.lil</a>.Si
+no tenemos ningún valor definido tomará el valor que tenga el fichero
+.lil. En el longitudinal quedará reflejado por ejemplo a partir de la
+guitarra Tubos8.gui. Si no tenemos ningún valor definido tomará el del
+fichero .gui.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Excentricidad (mm)</span>: Distancia lateral respecto al eje para la colocación del pozo o arqueta.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Espesor (mm)</span>: Podremos definir el grosor del pozo o arqueta.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Solera</span> <span style="font-weight: bold;">(mm)</span>: Espesor que podremos dar en el fondo del pozo o en el fondo de la arqueta.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/esquema_arqueta.png" style="width: 351px; height: 387px;" alt="" /><br />
+      </div>
+      <div style="text-align: center;"><span class="Info">Esquema Arqueta</span><br />
+      </div>
+      <br /><img src="Imagenes/tronco_con.png" style="width: 240px; height: 68px;" alt="" align="right" hspace="6" />También
+se puede definir para los pozos una zona tronco-conica en la parte
+superior mediante el diámetro superior y la altura de esta zona. Esto
+se verá representado en el menú de rasantes, en el dibujo del perfil
+longitudinal y en el modelo BIM del pozo.<br />
+      <br />
+Mediante los parámetros que tengamos definidos podremos dibujar en 3D
+los pozos y las arquetas siempres que hayamos definido un fichero .lil
+con la opción de <a href="OL_ficheros_lil.html#pozos_tubos_y_codos">dibujar</a> estos elementos.<br />
+
+      <br />
+
+
+      <br />
+      <img src="Imagenes/pozo.png" style="width: 343px; height: 256px; margin-left: 7px;" alt="" align="right" />Esta
+definición de pozos puede salvarse en un archivo del tipo&nbsp;<span class="Archivo">.pzt</span> y se
+incluye directamente, sin más que salir del menú, en el archivo de
+definición de alzado&nbsp;<span class="Archivo">.vol</span> correspondiente.<br />
+      <br />
+Al cargar, en un proyecto, un archivo&nbsp;<span class="Archivo">.vol</span> que contenga definición de
+pozos o tubos, el menú de ALZADO toma la forma correspondiente a un
+proyecto de tuberías.<br />
+
+      <br />
+En el menú de LISTADOS es posible obtener el <a href="OL_listados_tuberias.html#cotas_pozos">listado&nbsp;<span class="Archivo">pozos.res</span></a> que
+muestra (para cada pozo) su nombre y descripción, PK, cota de la boca, cota de la
+solera y cota de la rasante a la entrada y a la salida.<br />
+      <br />
+Al cargar un archivo <span style="font-weight: bold;">*.1pz</span> (con la definición de un pozo), no se modifica el nombre del pozo (y tampoco el PK).<br /><br /><br /><br /><br />Sobre el valor de dZ de la boca y de la solera del pozo, se muestra en
+el hint los valores absolutos. Estos valores se guardan en el archivo
+<span class="Texto_cursiva">*.vol</span>, para ser vistos por otros ejes que compartan el mismo pozo.<br /><br /><div style="text-align: center;"><img src="Imagenes/tuberias_hint_cotas.png" style="width: 214px; height: 67px;" alt="" /><br /></div><br /><br />En
+la ventana gráfica en rasantes,&nbsp;se muestran también los pozos y
+arquetas de otros ejes y que se proyectan en el eje actual. Sobre ellos
+aparece su nombre y el número del eje en el que están definidos. Y en
+el siguiente color:<br /><ul><li>Rojo: Pozo de otro eje.</li><li>Azul: Arqueta de otro eje.</li><li>Siena:
+Pozo o Arqueta de otro eje, pero leída de una versión del *.vol
+anterior, por lo que las cotas absolutas de boca y solera pueden no
+estar correctamente representadas. (Se recomienda cargar estos ejes
+desde el menú de rasantes y volver salvar el *.vol pulsando sobre el
+disquete de la esquina inferior derecha).</li></ul><div style="text-align: center;"><img src="Imagenes/tuberias_color_poz_otros_Ejes.png" style="width: 250px; height: 258px;" alt="" /><br /></div><div style="text-align: center;"><span class="Info">Pozo de eje actual (amarillo), Arqueta de otro eje (azul)</span><br /></div><br />Se
+chequea si hay solape entre los pozos, incluyendo los pozos definidos
+en otros ejes que sean atravesados por el eje actual. En caso de solape
+se muestra una banderola roja sobre el terreno en la zona de los pozos:
+[<span class="Parf_negrita">Solape de Pozos!</span>].<br /><br /><div style="text-align: center;"><img src="Imagenes/tuberias_solape_pozos.png" style="width: 200px; height: 222px;" alt="" /><br /></div><div style="text-align: center;"><span class="Info">Solape de Pozos!</span><br /></div><br />También se chequea que la cota de base
+de los pozos definidos en otros ejes este por debajo de la rasante
+actual, en caso contrario se muestra una banderola roja en la base del
+pozo: [<span class="Parf_negrita">Cota de Pozo insuficiente!</span>].<br /><br /><br /><div style="text-align: center;"><img src="Imagenes/tuberias_z_pozo_insuf.png" style="width: 200px; height: 170px;" alt="" /><br /></div><div style="text-align: center;"><span class="Info">Cota de Pozo insuficiente!</span><br /></div><br />
+      <a name="excavacion">Si marcamos la casilla adyacente a <span style="font-weight: bold;">Descripción</span>, podemos definir una excavación para el pozo o arqueta.<br />
+      <br />
+      </a><div style="text-align: center;"><a name="excavacion"><img style="width: 600px; height: 181px;" alt="" src="Imagenes/tuberias_rasante_excavacion.png" /><br />
+      </a></div>
+<a name="excavacion">      <br />
+Esta excavación se representará en planta si está activado el dibujo de los pozos en el </a><a href="OL_ficheros_lil.html#pozos_tubos_y_codos">modo .lil</a> que utilicemos para dibujar el eje. También se generará un listado&nbsp;<span class="Archivo">exc_pozosN.res</span> con la medición de volúmenes de excavación para cada eje, y un elemento sólido en el modelo BIM.<br />
+<br />Nota:
+Disponemos de los enganches&nbsp; Pozo, Tapa de Pozo y Fondo de Pozo
+entre otros. Se tienen en cuenta también los pozos de Otros Ejes que
+aparezcan con la rasante.<br />
+      <br /><span style="font-weight: bold; font-style: italic;"><a name="def_tubos">
+Definición de tubos</a></span><br />
+      <br />
+A través del menú desplegable situado encima del <a href="OL_rasantes_diseno.html#navegador_alineaciones">navegador de alineaciones</a>, se puede pasar al menú de <span style="font-weight: bold;">[TUBOS]</span>. Los tramos de tubo siguen la rasante definida y contienen la siguiente información:<br /><br /><div style="text-align: center;"><img src="Imagenes/def_tubos.png" style="width: 639px; height: 147px;" alt="" /><br /></div><ul><li><span style="font-weight: bold;">Número</span> de orden en la lista, que se adjudica de modo automático (1, 2,&#8230;).</li></ul><ul><li><span style="font-weight: bold;">PK</span>
+de comienzo dado de modo gráfico (con o sin enganche) o numérico
+(introducido por teclado). El programa toma como PK final el de la
+obra, salvo que se defina un tramo de tubo de diferentes
+características, en cuyo caso el PK final del tubo será el PK de inicio
+del siguiente.</li></ul><div style="margin-left: 40px;">Es posible
+seleccionar el PK de manera gráfica haciendo clic sobre su posición en
+planta de la forma en que se ha descrito en el <a href="#PK_graf_planta">apartado de definición de pozos</a>.</div><ul><li><span style="font-weight: bold;">Material</span> del tubo, que aparecerá rotulado en los planos de planta y longitudinal.</li></ul><ul><li><span style="font-weight: bold;">Diámetro</span>
+interior del tubo en milímetros (tubo de la izquierda y tubo de la
+derecha). Si hay un solo tubo, se utilizará el de la derecha.</li></ul><ul><li><span style="font-weight: bold;">Espesor</span> de las paredes del tubo en milímetros (para 2 tubos). Si hay uno solo, se utilizará el dato de la derecha.</li></ul><ul><li><span style="font-weight: bold;">Tipo</span>: Características del tubo, para <a href="#planos">planos</a> de planta y longitudinal.</li></ul><ul><li><span style="font-weight: bold;">Descripción</span> del tubo.</li></ul> El tubo actual
+aparecerá en pantalla en color amarillo, en tanto que los restantes
+tubos se representan con color blanco.<br />
+      <br />
+En el menú de rasantes y en el dibujo del perfil longitudinal, los
+tubos se recortan en la zona de los pozos, utilizando el diámetro y
+espesor del pozo definido en el menú de rasantes/pozos/tubos.<br />
+<br />
+La definición de todos los tubos se puede <span style="font-weight: bold;">[Guardar]</span> <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y <span style="font-weight: bold;">[Cargar]</span> <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> en un archivo del tipo&nbsp;<span class="Archivo">.tbt</span>,&nbsp;
+aunque no es un paso necesario pues se incluye directamente, sin más
+que salir del menú, en el archivo de definición de alzado&nbsp;<span class="Archivo">.vol</span> correspondiente. Al cargar en un proyecto un archivo&nbsp;<span class="Archivo">.vol</span>
+que contenga definición de pozos o tubos, el menú de ALZADO toma la
+forma correspondiente a un proyecto de tuberías.<br /><br />
+Las opciones <span style="font-weight: bold;">[Guardar1]</span>&nbsp;<img src="Imagenes/icono_guarda1.png" style="width: 20px; height: 20px;" alt="" /> y <span style="font-weight: bold;">[Cargar1]</span>&nbsp;<img src="Imagenes/icono_abrir1.png" style="width: 20px; height: 20px;" alt="" /> permiten salvar o recuperar, en archivos de extensión&nbsp;<span class="Archivo">.1tt</span>, los diámetros, espesores, materiales, tipos y la descripción, del tubo actual (en lugar del conjunto de todos los tubos).<br />
+      <br />En el botón <span style="font-weight: bold;">[UTILES]</span> se accede a las herramientas:<br /><br /><div style="text-align: center;"><img style="width: 852px; height: 197px;" alt="" src="Imagenes/def_tubos_utiles.png" /><br /></div><ul><li><span style="font-weight: bold;">Tubos en PK de pozos</span> que genera tramos nuevos de tubería que comienzan en cada PK de pozo.</li></ul><ul><li><span style="font-weight: bold;">Tubos a partir de datos ZYT:</span>
+Crea un tubo en el PK de inicio de cada tramo de cálculo, copiando la
+geometría del primer y segundo tubo (si están activados): diámetro,
+espesor, tipo de línea para planta, tipo y material. Tiene en cuenta el
+valor dy del primer y segundo tubo para generar en la rasante, y en el
+perfil longitudinal, la altura real de los tubos ZYT sobre la rasante.
+Esta utilidad permite ver
+los tubos en la rasante y dibujar su perfil longitudinal. El nombre de la sección ZYT se escribe en el campo Descripción (Desc).</li></ul>
+      <br />
+Permite definir un tipo de línea diferente para dibujar en la planta
+cada tubo. (si no se define utiliza el tipo que demos en el .lil)<br />
+      <br />
+Entre las diferentes mediciones que obtenemos de la tabla ISPOL4.dar distinguimos la medicón de PARED TUBO.<br />
+      <br />
+      <a name="util_ras"><span style="font-weight: bold; font-style: italic;">Utilidades rasante</span><br />
+      <br />
+La gran mayoria de utilidades se definien en el siguiente </a><a href="OL_rasantes_herramientas.html">enlace</a>. Pero existen algunas utilidades específicas para tuberías que detallamos a continuación.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/utiles_ras.png" style="width: 270px; height: 522px;" alt="" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold;">Rasante para tuberías</span>:
+Para las secciones de tuberías disponemos de una&nbsp;herramienta que
+permite analizar y/o generar de forma automática una rasante que cumpla
+determinadas condiciones:<br />
+      <ul>
+        <li>Profundidad máxima y mínima del recubrimiento del tubo.</li>
+      </ul>
+      <ul>
+        <li>Profundidad máxima de la rasante.</li></ul><ul><li>Profundidad
+mínima de la Rasante. De este modo si solo queremos controlar la
+profundidad mínima y máxima de la línea de agua, utilizamos los
+parámetros profundidad mínima y máxima de la rasante y ponemos en
+profundidad mínima de recubrimiento un valor pequeño o cero y en
+profundidad máxima de recubrimiento un valor grande, para que sean más
+restrictivos siempre las profundidades desde la rasante.</li>
+      </ul>
+      <img src="Imagenes/ras_para_tubos.png" style="width: 309px; height: 214px;" alt="" align="right" hspace="6" />Y para los tres siguientes modos:<br />
+      <ol>
+        <li>Modo Codos: Se trata de minimizar el número de puntos altos y bajos.</li>
+      </ol>
+      <ol start="2">
+        <li>Modo Acuerdos: Se deine un radio mínimo del acuerdo.</li>
+      </ol>
+      <ol start="3">
+        <li>Modo Pozos: Se añaden las condiciones:</li>
+      </ol>
+      <ul>
+        <li>Pendiente máxima y mínima en bajada.</li>
+      </ul>
+      <ul>
+        <li>Pendiente máxima y mínima en subida.</li>
+      </ul>
+      <ul>
+        <li>Profundidad máxima de los pozos.</li></ul><ul><li>[]
+Solo bajada:&nbsp;impide saltos verticales hacia arriba, aunque en
+ocasiones al seguir con la pendiente mínima hacia abajo se pueda salir
+de la banda de profundidad máxima.</li></ul><ul><li>[]
+Incluir pozos en los vértices de planta: Incluye pozos en los vértices
+de planta (salvo que la distancia entre dos vértices sea inferior al
+diámetro exterior del pozo, que no lo incluye para que no se solapen).</li>
+      </ul><br />Para el cálculo automático se pueden definir PK y Cota de inicio y
+final, y la pendiente al inicio. Se puede activar durante el diseño de
+la rasante:<br />
+      <ul>
+        <li>El dibujo de la zona posible de paso de la rasante.</li>
+      </ul>
+      <ul>
+        <li>El dibujo de banderolas de incumpliemto de las condiciones previstas.</li>
+      </ul>
+El análisis puede quedar activado durante el diseño interactivo de la
+rasante. Se puede realizar el cálculo automático para los tres modos:
+Codos, Acuerdos y Pozos. En este último caso se puede definir también
+para los pozos, el diametro, espesor de las paredes y espesor de la
+solera.<br /><br />Con el desplegable <span class="Parf_negrita">Superficie de referencia</span>
+se puede seleccionar la superficie de referencia si en el archivos de
+perfiles del terreno vienen varias superficies, como ocurre cuando
+utilizamos en Datos de Tuberías: <span class="Parf_negrita">[]Terreno natural + Plataforma prevista</span>.<br /><br /><br />
+
+      
+      <span class="Titulo_2"><a name="alzado">Diseño de la sección transversal</a></span><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="tipo_tuberia">Declarar eje de tipo tubería</a></span><br />
+      <br />
+Para que un eje sea reconocido por el programa como de tipo tubería, es necesario indicárselo en ALZADO <span class="Parrafo">&#8594;</span> <span style="font-weight: bold;">TIPO</span> <span class="Parrafo">&#8594;</span> <span style="font-weight: bold;">[TUBERÍAS]</span>.
+Esto provoca que tanto el cuadro de diálogo de definición de RASANTES
+como el de ALZADO presenten el aspecto apropiado para este tipo de ejes:<br />
+
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/alzado_tuberias.png" style="width: 590px; height: 342px;" alt="" /><br />
+      </div>
+      <br />La
+mayoría de opciones del menú ALZADO son comunes a las usadas en un eje
+convencional, por lo que aquí sólo se describen las específicas de este
+tipo de ejes.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="zanja">Tubería en zanja</a></span><br />
+      <br />
+      <img src="Imagenes/modelo_zanja.png" style="width: 381px; height: 310px; margin-left: 7px;" alt="" align="right" />Desde el menú <span style="font-weight: bold;">[ZANJA/APOYO]</span>
+es posible definir la geometría de la sección en el caso de que se
+trate de una tubería enterrada. El correspondiente modelo muestra la
+definición de sección tipo de una tubería enterrada con sus parámetros,
+que deberán introducirse en el menú flotante.<br />
+      <br />
+En general, la zanja consta de una <span style="font-weight: bold;">zona de protección</span> y una <span style="font-weight: bold;">zona de cubrición</span> o zanja propiamente dicha. Luego, si es necesario definir una <span style="font-weight: bold;">prezanja</span>, se completará la información en el menú de <span style="font-weight: bold;">[PREZANJA]</span>, que es similar al de <a href="OL_desmonte.html"><span style="font-weight: bold;">[DESMONTE]</span></a> de un eje convencional.<br />
+      <br />
+En el cuadro de diálogo se debe de establecer el número de tubos (1 ó 2) así como el tipo de sección (simétrica o asimétrica).<br />
+      <br />
+      <br />
+<br />
+      <br />
+      <a name="proteccion">ZONA DE PROTECCIÓN</a><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 540px; height: 238px;" alt="" src="Imagenes/dialogo_zanja.png" /><br />
+      </div>
+      <br />
+Para la <span style="font-weight: bold;">zona de protección</span> es posible establecer los siguientes parámetros:<br />
+      <ul>
+        <li>Altura desde la rasante hasta el fondo de la excavación (<span style="font-weight: bold;">h</span>), si se activa el flag que está al lado del valor la altura se mide desde el borde exterior inferior del tubo.</li></ul>
+      <ul>
+        <li>Altura de la rasante sobre el punto bajo interior del tubo (<span style="font-weight: bold;">dZ</span>), lo cual permite independizar la rasante real del tubo de la rasante diseñada.<br />
+        </li>
+
+      
+      </ul>
+
+      <ul>
+        <li>En caso de dos tubos <img src="Imagenes/icono_dos_tubos.png" style="width: 20px; height: 20px;" alt="" />, distancia de la
+generatriz inferior del interior del tubo izquierdo hasta el fondo de
+la excavación (<span style="font-weight: bold;">hi</span>).</li>
+      </ul>
+      <ul>
+        <li><img src="Imagenes/ancho_wd.png" style="width: 225px; height: 82px;" alt="" align="right" />Semiancho derecho de solera de la excavación (<span style="font-weight: bold;">Wd</span>).</li>
+      </ul>
+      <ul>
+        <li>Semiancho izquierdo de la solera de la excavación (<span style="font-weight: bold;">Wi</span>).&nbsp;<span style="font-weight: bold;" /></li>
+      </ul>
+      <ul>
+        <li>Opción
+de dar los anchos del fondo de la zanja Wi,Wd, como sobreanchos
+relativos al borde exterior del tubo activando los flag que están al
+lado de <span style="font-weight: bold;">Wi</span> y <span style="font-weight: bold;">Wd</span>. Con esta opción activada se puede definir un <span style="font-weight: bold;">Redondeo&nbsp;</span>del valor total de W (por cada lado) a un valor determinado.</li>
+      </ul>
+      <ul>
+        <li>Posibilidad de definir alternativamete la altura de protección mediante un vn valor <span style="font-weight: bold;">hp</span> medido desde la parte superior del tubo. Entonces el vector de protección se estira o recorta para lograr esta altura.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;"><a name="vector_proteccion"><img src="Imagenes/tuberias_vectores_zp1.png" style="width: 160px; height: 114px;" alt="" align="right" hspace="6" /></a><a name="vector_proteccion">Vectores de protección</a></span>, que definen la pared de la
+excavación en la zona de protección. Es imprescindible que este <a href="definicion_vectorial.html">vector</a>
+tenga algún dato, si no se tratará de una <a href="#apoyo">tubería apoyada</a>. La altura
+total del <a href="definicion_vectorial.html">vector</a> define la altura de la zona de protección. Este vector también se puede declarar desde ALZADO <span class="Parrafo">&#8594; <a href="OL_vectores.html"><span style="font-weight: bold;">[VECTORES]</span></a>.</span></li>
+      </ul><ul>
+        <li>En caso de dos tubos, distancia de los tubos al eje (<span style="font-weight: bold;">di</span> y <span style="font-weight: bold;">dd</span>).</li></ul><ul><li>Para
+zanjas asimétricas cuando el vector de protección tiene diferente
+altura a la derecha y a la izquierda, puede definirse una distancia
+interior a cada lado&nbsp;(<span class="Parf_negrita">Xi</span>, <span class="Parrafo Parf_negrita">Xd</span>) para iniciar el cambio de altura. Uno de los valores puede ser negativo.<br /></li>
+      </ul>
+
+      
+      
+      
+      
+      
+      
+      En la siguiente ilustración se observan los parámetros a utilizar para
+usar dos tubos y el resultado en una típica conducción con dos
+elementos:<br />
+
+      <br />
+
+      
+      <table style="text-align: left; height: 80px; width: 635px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 292px;"><img src="Imagenes/modelo_zanja_dos_tubos.png" style="width: 265px; height: 189px;" alt="" />
+      </td>
+      <td style="vertical-align: middle; width: 339px; text-align: center;"><img src="Imagenes/dos_tubos_result.png" style="width: 282px; height: 76px;" alt="" />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+<br /><a name="cubricion">ZONA DE CUBRICIÓN</a><br /><br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_cubricion.png" style="width: 541px; height: 234px;" alt="" /><br />
+      </div>
+<br />
+En la <span style="font-weight: bold;">zona de cubrición</span> (que consta de zanja y prezanja) se define:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Vectores de cubrición</span>: Comienza donde acaba el
+          <a href="#vector_proteccion">vector de protección</a> y en su <a href="definicion_vectorial.html">definición</a> deberá tener altura suficiente, superior al
+máximo tolerable. No es imprescindible que este <a href="definicion_vectorial.html">vector</a>
+tenga algún dato, usándose entonces directamente la prezanja. Este vector también se puede declarar desde ALZADO <span class="Parrafo">&#8594; <a href="OL_vectores.html"><span style="font-weight: bold;">[VECTORES]</span></a>.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Recubrimiento mínimo</span>: En la zona de la zanja, es el
+mínimo espesor de recubrimiento por encima de la zona de protección,
+tanto en desmonte como en terraplén.</li>
+      </ul>
+
+      
+      
+      <div style="margin-left: 40px;">
+Este recubrimiento mínimo es el punto de control desmonte/terraplén, de
+modo que si está por encima del nivel del terreno, se añade una berma
+en terraplén <span style="font-weight: bold;">BT</span> y se terraplena con cierto talud. <br />
+      <br />
+
+En caso contrario, se continúa con la zanja (según la <span style="font-weight: bold;">altura máxima</span> y
+el <span style="font-weight: bold;">máximo tolerable</span>).<br />
+      </div>
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold;">Altura máxima (H)</span>:
+Se mide desde el fondo de la
+excavación y debe ser mayor que la suma del vector de protección y el
+recubrimiento mínimo. Si se da una altura máxima negativa, esta se
+medirá desde la cota del terreno en el eje. De esta manera, se puede
+obtener una altura variable de la cubrición y una altura fija de la
+prezanja.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Máximo tolerable (evitar prezanja)</span>: Medido desde el
+fondo de la excavación, indica el margen existente dentro del cual no
+se hará desmonte. Siempre será mayor, obviamente, que la altura máxima.
+De esta forma, si el terreno está por debajo del máximo tolerable no se
+hace prezanja y se hace cubrición hasta el terreno, y si el terreno
+está por encima del máximo tolerable se hace prezanja a partir de la
+altura máxima.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Peralte recub. en terraplén (%)</span>: Peralte del
+recubrimiento en terraplén para favorecer la evacuación del agua
+superficial. Este peralte se aplica en ambos lados, aunque sólo uno de
+los lados esté en terraplén.</li>
+      </ul>
+      <br />
+Si el nivel del terreno es
+mayor que la <span style="font-weight: bold;">altura máxima (H)</span>, la excavación finaliza a la altura del
+terreno. Pero si el nivel del terreno pasa por encima de la <span style="font-weight: bold;">altura máxima (H)</span> pero se
+mantiene bajo el <span style="font-weight: bold;">máximo tolerable</span>, se culmina igualmente la excavación
+a la altura del terreno:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/terr_entre_Hmax_maxT.png" alt="" style="width: 283px; height: 193px;" /><br />
+      </div>
+      <br />
+Si el nivel del terreno sobrepasa al máximo tolerable, será necesaria
+la realización de una prezanja a partir de la altura máxima y el
+correspondiente desmonte, interrumpiéndose el vector zanja con una
+berma <span style="font-weight: bold;">BD</span> y la sección definida en el menú <a href="OL_desmonte.html"><span style="font-weight: bold;">[PREZANJA]</span></a> a
+partir de dicha berma:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/terr_pasa_maxT.png" style="width: 274px; height: 268px;" alt="" /><br />
+      </div>
+
+      <br />
+      <img src="Imagenes/tuberias_BT.png" style="width: 274px; height: 149px; margin-right: 7px;" alt="" align="left" />En caso de terraplén la berma tiene valor <span style="font-weight: bold;">BT</span> y a partir de ella se añade la sección definida en el menú de <a href="OL_terraplen.html"><span style="font-weight: bold;">[TERRAPLÉN]</span></a>.<br />
+      <br />Se
+permite introducir en caso de terraplén un
+valor negativo de la berma. Entonces se traza desde este punto más
+cercano al eje con el segmento más alto del vector terraplén hasta
+donde corta al vector protección y se elimina el pico de relleno de
+protección que está por encima de este segmento. En la intersección de
+este segmento con el vector de protección se vuelve a determinar si hay
+que aplicar desmonte o terraplén.<br />
+      <br />
+      <br />
+      <br /><a name="rellenos">
+RELLENOS DE ZANJA</a><br />
+      <br />
+Este menú permite definir los elementos de relleno en los que se
+descompone la zanja para su cubicación. El correspondiente menú
+flotante permite introducir los parámetros, según un modelo:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_rellenos_zanja.png" style="width: 549px; height: 144px;" alt="" /><br />
+      </div>
+
+&nbsp;<br />
+      Los parámetros a definir son:<br />
+      <ul>
+        <li><img src="Imagenes/modelo_rellenos.png" style="width: 311px; height: 277px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Ancho de entibación (AE)</span>: Representa el ancho de
+entibación medido como espesor sobre la pared de la excavación. En el
+caso de paredes autosostenibles, este valor puede ser cero.</li>
+      </ul>
+      <div style="margin-left: 40px;">Puede definirse un ancho de
+entibación de espesor diferente para cada lado o anular un lado o
+ambos. La casilla de la izquierda será el ancho de entibación por la
+izquierda y la casilla de la derecha nos dará la entibación de la parte
+derecha.<br />
+      </div>
+      <br />
+
+
+      
+      <div style="margin-left: 40px;">
+Si se marca la casilla <span style="font-weight: bold; font-style: italic;">Hasta T.N.</span> entonces en secciones en terraplén,
+la entibación sube solamente hasta la superficie del terreno natural.<br />
+      <br />
+
+La entibación sólo se ejecutará si la altura de la zanja es superior a
+la indicada en <span style="font-weight: bold;">alto mínimo</span>. Esto evita que, en aquellos tramos en los
+que la zanja no sea muy profunda y por tanto no sea necesario entibar,
+el programa lo tenga en consideración sin necesidad de que el usuario
+tenga que tramificar dicha entibación.<br />
+      </div>
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold;">Hormigón de limpieza (HDL)</span>: Espesor del hormigón de
+limpieza: creará una superficie paralela al fondo de la zanja al
+espesor indicado y hacia arriba.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">
+Ancho (A)</span>: Es la anchura de la cama o pieza de
+apoyo del tubo. Esta anchura puede ser mayor que la excavación, con lo
+que se extrapolan las dimensiones de esta pieza hasta rellenar la
+anchura nominal de la excavación. Para una cubicación correcta, siempre
+deberá existir esta pieza. En caso de que no haya una cama de hormigón
+como tal, daremos una anchura y un ángulo suficientes para que se
+asimile como tal ese relleno de protección único.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Alto (H)</span>: Altura de la cama o pieza de apoyo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">alfa</span>: Ángulo de cierre de la cama desde el eje del
+tubo (positivo en sentido antihorario), que marca los riñones. Si la
+altura <span style="font-weight: bold;">H</span> cubre totalmente al tubo, no tiene sentido este ángulo. Si la
+altura <span style="font-weight: bold;">H</span> supera la altura del eje del tubo, la pieza se descompone en
+dos partes (a efectos de medición), superior e inferior.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Espesor P1</span>, <span style="font-weight: bold;">Espesor P2</span> y <span style="font-weight: bold;">Espesor P3</span>: Son los
+espesores de los distintos materiales del relleno de protección. Se
+puede utilizar el relleno <span style="font-weight: bold;">P1</span> aunque no se haya definido el taco de
+apoyo del tubo. Podría&nbsp; rellenarse toda la zanja con el taco de
+soporte del tubo o con el relleno <span style="font-weight: bold;">P1</span> o el <span style="font-weight: bold;">P2</span> o el <span style="font-weight: bold;">P3</span> o cualquier
+combinación de ellos. Se admite que la suma de los rellenos de
+protección (<span style="font-weight: bold;">P1</span>+<span style="font-weight: bold;">P2</span>) alcance un valor mayor o igual a la altura prevista
+para la zona de protección. En este caso el programa reduce la altura
+de P2 para que la suma <span style="font-weight: bold;">P1</span>+<span style="font-weight: bold;">P2</span> sea igual a la altura de la zona de
+protección.</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Relleno de protección <span style="font-weight: bold;">P2</span>: Posibilidad de cerrar este relleno con un talud <span style="font-weight: bold;">P2T</span> a partir de una distancia al eje <span style="font-weight: bold;">P2A</span>.<br />
+          </li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Espesor de reposición</span>: Da el espesor del material
+de reposición paralelo a la superficie del terreno. Se admiten hasta 5
+niveles de diferentes materiales de reposición.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Espesor C1</span>, <span style="font-weight: bold;">Espesor C2</span> y <span style="font-weight: bold;">Espesor C3</span>: Son los
+espesores del relleno de cubrición y permiten la descomposición en tres
+alturas de otros tantos materiales. La altura <span style="font-weight: bold;">C1</span> deberá darse hasta el
+comienzo de la prezanja, dado que deberán quedar completamente
+definidos los límites de forma que en las mediciones aparezcan
+perfectamente cubicados los rellenos de zanja y prezanja.</li>
+      </ul>
+      
+      
+
+      <div style="margin-left: 40px;">Si se define un valor negativo de <span style="font-weight: bold;">C1</span> y/o <span style="font-weight: bold;">C2</span> la altura de los espesores de cubrición se toma desde la cota de terreno.<br />
+      <br />
+      <img src="Imagenes/cubricion_negativa_rell.png" style="width: 328px; height: 237px;" alt="" /><br />
+      </div>
+<ul>
+        </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Código</span>: se puede subir la entibación hasta un código determinado de la sección de excavación (L68).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Removible</span>:
+Posibilidad de que la entibación sea temporal y se retira al introducir
+los rellenos. De este modo todos los rellenos llegan hasta la pared de
+la zanja, pero se deja en el perfil la superficie de Entibación
+Removible. Se incorpora esta medición en la tabla ISPOL4.dar.</li>
+      </ul><div style="margin-left: 40px;">Si
+se ha marcado&nbsp;Entibación removible, se puede hacer que la
+entibación suba hasta el terreno atravesando la prezanja con la
+pendiente que trae de la zanja activando&nbsp;Subir la entibación hasta
+el código 10000.</div><ul>
+        <li><span style="font-weight: bold;">Bombeo para el relleno de protección (BP)</span>: Afecta también si existen rellenos de cubrición 1 y 2.</li>
+
+      
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Bombeo para el relleno de cubrición (BC)</span>: Afecta al relleno de reposición si existe.</li></ul><ul><li><span class="Parf_negrita">[] Máx-Pen(%)</span>:
+Activando esta opción, el techo de la cubrición será una recta que une
+los dos bordes de la zanja, limitando su pendiente transversal máxima
+al valor que se define en esta casilla.</li>
+      </ul>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      <br /><span style="font-weight: bold; font-style: italic;"><a name="apoyo">
+Tubería apoyada</a></span><br />
+      <br />
+      <img src="Imagenes/modelo_tuberia_apoyada.png" style="width: 272px; height: 272px; margin-left: 7px;" alt="" align="right" />El correspondiente modelo indica los parámetros de dimensionamiento en el caso de que la tubería se disponga apoyada.<br />
+      <br />
+En el menú de <a href="#zanja"><span style="font-weight: bold;">[ZANJA]</span></a> el <a href="#proteccion">vector de protección</a> ha de estar vacío para que se considere la tubería como apoyada. En los menús de <a href="#zanja"><span style="font-weight: bold;">[ZANJA/APOYO]</span></a> y <a href="#rellenos"><span style="font-weight: bold;">[RELLENOS]</span></a> han de consignarse los siguientes parámetros:<br />
+      <ul>
+        <li>Altura de la generatriz interior inferior del tubo (<span style="font-weight: bold;">h</span>).</li>
+        <li>Ángulo de cierre de la cama, desde el eje del tubo, positivo en sentido antihorario, y que marca los riñones (<span style="font-weight: bold;">alfa</span>).</li>
+        <li>Anchura de la solera del hormigón de limpieza (<span style="font-weight: bold;">W</span>).</li>
+        <li>Bermas en desmonte y en terraplén (<span style="font-weight: bold;">BD</span> y <span style="font-weight: bold;">BT</span>).</li>
+        <li>Ancho de la cama o pieza de apoyo (<span style="font-weight: bold;">A</span>).</li>
+        <li>Altura de la misma que llega, al menos, hasta la generatriz inferior del tubo (<span style="font-weight: bold;">H</span>).</li>
+        <li>Espesor del hormigón de limpieza (<span style="font-weight: bold;">HDL</span>).</li>
+      </ul>
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><br /><a name="datos_tubos">Datos de tuberías</a></span><br />
+      <br />
+Si la pendiente de trazado es muy fuerte, existirá cierto error en la
+utilización de los datos en función de que la altura se mida teniendo
+en cuenta la normal al terreno o no. Para ello el programa ofrece la
+manera de seleccionar la opción más correcta.<br />
+      <br />
+      <div style="text-align: center;">&nbsp;<img src="Imagenes/dialogo_datos_tuberias.png" style="width: 457px; height: 241px;" alt="" /><br />
+      </div>
+      <br />
+      <br />DEFINIR .ZYT (SECCIÓN DEFINIDA EN ARCHIVOS *.ZYT)<br /><br />Desde
+este menú se puede definir la geometría de la zanja, los tubos y los
+materiales de relleno empleando una sección definida mediante archivos
+de librería *.zyt.<br /><br />Este botón <span class="Parf_negrita">DEFINIR .ZYT</span> da acceso a un editor interactivo para estos archivos que permiten configurar:<br />
+      <ul>
+<li>Geometría
+de los tubos (Hasta 40), cada uno de ellos puede tener una sección
+circular o vectorial. La posicion en planta de cada tubo puede estar
+referida a un eje diferente al eje de la zanja. La posición en alzado
+puede utilizar como referencia los datos de la rasante derecha o la
+izquierda del eje de la zanja (desde RASANTES hay que seleccionar
+Rasantes: DOBLE y DISTINTOS para poder definir la rasante izquierda).</li></ul><ul><li>Zona
+de protección. Se define la geometría de la zanja, hormigón de
+limpieza, entibación y tres materiales de relleno: Cama (P1),
+Protección 2 y Protección 3.&nbsp;La geometría de estos tres materiales
+se
+define vectorialmente. Para cada uno de estos materiales se puede
+seleccionar a su vez hasta cuatro materiales y tipos diferentes para que, si a
+lo largo de un eje, se aplican secciones diferentes, se pueda
+diferenciar el material que compone cada una de estas capas.&nbsp;</li>Se
+pueden definir los bordes derecho e izquierdo de la zanja relativos a
+uno de los tubos. La distancia se toma desde la pared exterior del tubo
+hasta el borde de la base de la zanja. Esta distancia solo sirve para
+ampliar el ancho de la zanja, es decir, la zanja tendrá como mínimo su
+ancho teórico. También se puede definir la cota de protección relativa
+a la cara exterior de cualquier tubo. Los tubos utilizados como
+referencia pueden estar referidos a otros ejes.<br /><br />
+<li>Zona de cubrición: Geometría de la zanja
+en esta zona y tres materiales de relleno: Recubrimiento mínimo (C1),
+Cubrición 2 y Cubrición 3.&nbsp;</li></ul><ul><li>Prezanja. Se definen las bermas para iniciar la sección de desmonte o de terraplén.</li></ul><ul><li>Reposición. Hasta 5 materiales&nbsp;de reposición, indicando su espesor&nbsp;y&nbsp;tipo.</li>
+      </ul>
+Se añade el ejemplo Tubos/<span class="Archivo">ZanjasZYT.isa</span>
+que utiliza dos secciones de este tipo. También se añade en Editar
+.lil-&gt;Tubos una opción para representar estos tubos. (Se añade
+también en la librería el archivo <span class="Archivo">ZYT.lil</span>).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 300px;" alt="" src="Imagenes/dialogo_definir_zyt.png" /><br /></div>
+      <br />Junto al nombre nos encontramos con un desplegable, con las opciones <span style="font-style: italic;">Todo</span>, <span style="font-style: italic;">Solo tubos</span> y <span style="font-style: italic;">Solo tubos y Protección.</span> La opción <span style="font-weight: bold;">Solo tubos</span> elimina la zanja, quedando la sección únicamnete con el terreno y el tubo. La opción <span style="font-weight: bold;">Solo tubos y protección</span> elimina la zanja salvo la zona de protección y tubos.<br /><br />Es
+posible realizar una transición entre dos secciones ZYT completas. Para
+los elementos que se definen de manera vectorial, el número de puntos
+en la sección inicial y final deben de ser coincidentes. Para aquellos
+elementos o parámetros que no admitan transición, prevalece la sección
+inicial.<br />
+      <br />
+
+SECCIÓN DEL TUBO EN PERFILES TRANSVERSALES<br />
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Sección real, según la pendiente</span>:
+En caso de fuerte pendiente el tubo aparecerá en la sección deformado
+según el eje vertical, según el corte con el tubo del plano vertical
+que genera el perfil trasversal. Esta opción es la opción por defecto,
+por ser la más realista y dar mediciones más exactas.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Circular</span>: Si se
+selecciona esta opción, los perfiles mostrarán la sección del tubo con
+geometría circular. Es aconsejable su uso en el caso de que las
+deformaciones sean muy grandes debido a elevadas pendientes, aunque es
+menos realista.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Interrumpir el tubo en el interior de los pozos</span>: interpola automáticamente un perfil en el PK de cada pozo, y otros dos más en PK - radio del pozo y PK + radio del pozo.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Interrumpir también en los pozos de otros ejes</span>: esta opción no se ejecuta en el cálculo normal de alzado. Si se ejecuta en <span style="font-style: italic;">Calcula Actual</span> <span style="font-style: italic;">Proyecto</span>, o en la pestaña de <span style="font-style: italic;">PROYECTO</span>,
+se establece una lista con todos los pozos de todos los ejes de
+tuberías del proyecto, y al calcular cada eje de tuberías aquellos
+pozos que son atravesados por el eje se tratan como si fueran los suyos
+propios y se interrumpe el tubo.<br />
+        </li>
+
+      
+      </ul>
+
+      
+      <ul>
+
+        <li>Cuando se interrumpe el tubo en el interior del pozo, se puede también <span style="font-weight: bold;">interrumpir la zanja</span>.<br />
+        </li>
+      
+      </ul>
+
+
+      <br />
+
+DATOS DE ALTURAS Y ESPESORES<br />
+
+      <br />
+
+Estos datos hacen referencia, en el menú de <a href="#zanja"><span style="font-weight: bold;">[ZANJA/APOYO]</span></a>, a los valores de <span style="font-weight: bold;">h</span>, <span style="font-weight: bold;">dY</span> de los vectores de <a href="#proteccion">protección</a> y <a href="#cubricion">zanja</a> así como al <span style="font-weight: bold;">recubrimiento mínimo</span>, <span style="font-weight: bold;">altura máxima</span>, <span style="font-weight: bold;">máximo tolerable</span> y, en el menú de <a href="#rellenos"><span style="font-weight: bold;">[RELLENOS]</span></a>, hace referencia a los valores de <span style="font-weight: bold;">Alto H</span>, <span style="font-weight: bold;">HDL</span>, <span style="font-weight: bold;">P1</span>, <span style="font-weight: bold;">P2</span>, espesor de <span style="font-weight: bold;">reposición</span>, <span style="font-weight: bold;">C1</span> y <span style="font-weight: bold;">C2</span>. Se ofrecen dos posibilidades:<br />
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Medidos en vertical</span>: Aparecerán en el perfil trasversal con la misma magnitud con la que se han introducido. Es la opción por defecto.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Medidos en perpendicular a la pendiente</span>: En el caso de fuertes pendientes es más coherente pues mantiene los espesores en el plano del tubo.</li>
+      
+      </ul>
+
+      <br />
+
+GEOMETRÍA DEL TUBO<br />
+
+      <br />
+
+Para cada sección tipo (S.T.), el tubo puede ser:<br />
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Circular</span>: El diámetro y espesor serán los definidos en el menú de <a style="font-weight: bold;" href="#def_tubos">[RASANTES]</a>.</li>
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Vectorial</span>: En este
+caso hay que introducir el número de tubo. Este número hace referencia
+a una lista de tubos vectoriales, definidos en el menú de <a href="#tubos_vect"><span style="font-weight: bold;">[TUBOS VECTORIAL]</span></a>.
+En el caso de dos tubos, es posible asociar una geometría diferente a
+cada uno. Se admiten transiciones entre secciones tipo con diferentes
+tubos vectoriales. Las transiciones deberían realizarse entre secciones
+de geometría similar con el mismo número de puntos en cada vector de
+los que componen las superficies de los tubos.</li>
+      
+      </ul>
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="tubos_vect">Tubos vectoriales</a></span><br />
+
+      <br />
+
+Este menú permite definir una serie de tubos de forma parecida a los <a href="OL_tuneles.html#def_vectorial">túneles</a>.
+En este caso la definición es siempre vectorial, pero puede partirse de
+dos diferentes patrones: tubos elípticos (incluidos circulares) y tubos
+rectangulares (marcos, cajones...). En los patrones de definen los
+diámetros o los lados y el espesor (en mm).<br />
+
+      <br />
+
+La definición de todos los tubos puede guardarse&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> o cargarse&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> en ficheros de extensión&nbsp;<span class="Archivo">.tbv</span>. Para poder guardar o abrir un único tubo de los que podamos tener definidos utilizaremos los comandos <img src="Imagenes/icono_guarda1.png" style="width: 20px; height: 20px;" alt="" /> o <img src="Imagenes/icono_abrir1.png" style="width: 20px; height: 20px;" alt="" /> respectivamente, los cuales guardarán o abriran archivos de extensión&nbsp;<span class="Archivo">.1tb</span>.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_tubos_vect.png" style="width: 534px; height: 174px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <img src="Imagenes/modelo_tubos_vect.png" style="width: 217px; height: 217px; margin-left: 7px;" alt="" align="right" />A partir del patrón seleccionado con <span style="font-weight: bold;">[Copiar patrón]</span> se puede <span style="font-weight: bold;">[EDITAR]</span> la geometría para añadir los detalles. Las geometrías se construyen con cuatro superficies:<br />
+
+      
+      <ul>
+
+        <li>Base de la cara interior del tubo.</li>
+        <li>Tapa de la cara interior del tubo.</li>
+        <li>Base de la cara exterior del tubo.</li>
+        <li>Tapa de la cara exterior del tubo.</li>
+      
+      </ul>
+
+      A los puntos de las cuatro superficies que definen el tubo se les añade
+un código al objeto de poder representar cualquier punto característico
+de la sección del tubo.<br />
+
+      <br />
+
+Las coordenadas son relativas a la rasante (eje en alzado). Por defecto
+la rasante está en el centro de la base de la cara interior del tubo
+(0.0,0.0).<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="camino_servicio">Camino de servicio</a></span><br />
+
+      <br />
+
+Mediante esta opción es posible definir un camino de servicio anexo a uno o ambos los lados de la zanja:<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_camino_servicio.png" style="width: 585px; height: 193px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <img src="Imagenes/modelo_camino_servicio.png" style="width: 269px; height: 269px; margin-left: 7px;" alt="" align="right" />El
+camino de servicio solamente puede generarse a la izquierda, a la
+derecha (opción por defecto) de la zanja o a cada lado y siempre activando la casilla
+      <span style="font-weight: bold; font-style: italic;">Generar camino de servicio</span>.<br />
+
+      <br />
+
+Los demás valores que se necesitan para su generación pueden deducirse del modelo que acompaña el menú.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">En desmonte medir d desde el corte de la zanja con el terreno</span>:
+En este caso como el camino no puede invadir la zanja, en caso de que
+la distancia entre ejes no sea suficiente se va empujando el camino
+manteniendo el resto de parámetros. Se dispone de una casilla contigua a esta opción para evitar la cubrición 3 fuera de zanja <img src="Imagenes/camino_serv_evit_fuera.png" style="width: 120px; height: 30px;" alt="" />.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">Prolongar la subrasante de camino hasta la zanja</span>: Se puede usar esta opción cuando el borde interior del camino de servicio queda fuera de la zanja.<br />
+
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="acopios">Acopios</a></span><br />
+
+      <br />
+
+Desde este menú se puede crear una sección tipo con el ancho requerido
+para apilar los materiales de excavación de la zanja y desbroce.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_acopios.png" style="width: 549px; height: 159px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Se puede definir para una misma sección tipo acopios de tierras por un
+lado y camino de servicio por el lado contrario. En este caso, no se
+ejecuta el acopio de vegetal.<br />
+
+      <br />
+
+      
+      <div style="text-align: center;"><img src="Imagenes/modelo_acopios.png" style="width: 464px; height: 216px;" alt="" /><br />
+      </div>
+
+      <br />
+
+      <br />
+
+      <span class="Titulo_2"><a name="tabCubic_planos_listados">Tablas de cubicación, planos y listados específicos de proyectos de tuberías</a></span><br />
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="tablasCubic">Tablas de cubicación</a></span><br />
+
+      <br />
+
+La tabla de cubicaciones a usar en el caso de tuberías es la <span class="Archivo">ISPOL4.dar</span> que se
+carga automáticamente<span class="Archivo">.<br />
+      <br /></span>
+
+En la sección de TUBERÍAS se generan las superficies de relleno:<br />
+
+
+
+      
+      
+      <ul>
+
+
+<li>Hormigón de sustentación del tubo</li><li>Relleno de protección</li><li>Relleno de cubrición</li><li>Reposición</li>
+      
+      
+      </ul>
+
+
+
+Por ello se usan 6 tipos de línea en las secciones de tuberías enterradas, para
+separar los distintos componentes del relleno: L121,
+L122, L123, L124, L125, L126. También aparecerá (si se define), una línea de reposición (L155)
+debido a que ésta puede no coincidir con la superficie del terreno
+cuando se define un bombeo circular en la cubrición.<br />
+
+
+      <br />
+
+Las tablas de mediciones consideran incluso los rellenos de falso túnel
+y excavación de zapatas de falso túnel en el caso de llevar la tubería
+por el interior de un falso túnel.<span class="Archivo"><br />
+      <br /><span class="Archivo">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * * MEDICIONES DE LOS PERFILES TRANSVERSALES* * *<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp; PERFIL&nbsp;&nbsp;&nbsp;&nbsp; MATERIAL&nbsp;
+AREA PERFIL VOL. PARCIAL VOL. ACUMUL.&nbsp;&nbsp;&nbsp;
+MATERIAL&nbsp;&nbsp; AREA .....&nbsp; <br />
+-----------&nbsp;&nbsp; ---------- ------------ ------------ ------------&nbsp;&nbsp; ------------- ---------<br />
+&nbsp;&nbsp;&nbsp;&nbsp; 0.000&nbsp;&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.062&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.562&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_TOTAL&nbsp;&nbsp;&nbsp;
+6.154&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+HOR_LIMPIEZA&nbsp;&nbsp;&nbsp; 2.313 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_1&nbsp;&nbsp;&nbsp;&nbsp;
+10.080&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_3&nbsp;&nbsp;&nbsp;&nbsp;
+0.432&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PROTECCION_3&nbsp;&nbsp;&nbsp;
+24.360&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_ZANJA&nbsp;&nbsp; 5.722<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_PREZAN&nbsp;&nbsp; 0.432&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_ZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.562<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp; 10.000&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.781&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+44.22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+44.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.170<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_TOTAL&nbsp;&nbsp;&nbsp;
+7.376&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67.65&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+67.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+HOR_LIMPIEZA&nbsp;&nbsp;&nbsp;&nbsp; 2.313<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_1&nbsp;&nbsp;&nbsp;&nbsp;
+10.080&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.80&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.205 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PROTECCION_3&nbsp;&nbsp;&nbsp; 24.360&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+243.60&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+243.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_ZANJA&nbsp;&nbsp;&nbsp; 6.171<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_PREZAN&nbsp;&nbsp;
+1.205&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_ZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.170<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp; 20.000&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.944&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13.63&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+57.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25.041<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_TOTAL&nbsp;&nbsp;&nbsp;
+7.966&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.71&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+144.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+HOR_LIMPIEZA&nbsp;&nbsp;&nbsp;&nbsp; 2.313<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_1&nbsp;&nbsp;&nbsp;&nbsp;
+10.080&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.80&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+201.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7.133<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PROTECCION_3&nbsp;&nbsp;&nbsp; 24.360&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+243.60&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+487.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_ZANJA&nbsp;&nbsp;&nbsp; 5.056<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_PREZAN&nbsp;&nbsp; 2.910&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+20.58&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+28.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_ZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.818<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_PREZANJA&nbsp;&nbsp;&nbsp;&nbsp;
+4.223&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+21.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.1<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp; 30.000&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.343&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16.44&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28.650<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_TOTAL&nbsp;&nbsp;&nbsp;
+8.256&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+81.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+225.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+HOR_LIMPIEZA&nbsp;&nbsp;&nbsp;&nbsp; 2.313<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_1&nbsp;&nbsp;&nbsp;&nbsp;
+10.080&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+100.80&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+302.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.641<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PROTECCION_3&nbsp;&nbsp;&nbsp; 24.360&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+243.60&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+730.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_ZANJA&nbsp;&nbsp;&nbsp; 4.870<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_PREZAN&nbsp;&nbsp; 3.386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+31.48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+60.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_ZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22.395<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_PREZANJA&nbsp;&nbsp;&nbsp;&nbsp;
+6.255&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+52.39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 73.5<br />
+      <br />
+............................<br />
+............................<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RESUMEN DE VOLUMENES
+TOTALES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * * *<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================<br />
+      <br />
+      <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MATERIAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VOLUMEN&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+--------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+----------------<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TERRAPLEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1621.594<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D_TIERRA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+33825.813<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11266.975<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ENTIBACION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+532.038<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+HOR_LIMPIEZA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2760.564<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TUBO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6991.810<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+REPOSICION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.013<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13437.904<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+CUBRICION_3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4236.832<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PROTECCION_3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+28700.870<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_ZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8656.692<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VEGETAL_PREZAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2610.283<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_ZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+32199.203<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXC_PREZANJA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1626.617<br /></span>
+      <br /><br /></span><a style="font-style: italic; font-weight: bold;" name="planos">Planos</a><br />
+
+      <br />
+
+
+      <img src="Imagenes/dibujo_tuberia_planta.png" style="width: 341px; height: 264px; margin-left: 7px;" alt="" align="right" />De
+cara a la rotulación de los ejes en planta, el programa ofrece en su
+librería archivos&nbsp;.ali para uso específico en tuberías, como son
+el&nbsp;codos.ali (que rotula PK y ángulos de los codos) y
+el&nbsp;codos2.ali,
+que rotula los nombres de los conectores aplicados en cada nodo de la
+red (codo 45, manguito, etc.). Se recuerda al usuario que estos nombres
+pueden definirse en una tabla de diseño de planta para tuberías como la
+codos.dip.<br />
+
+
+      <br />
+
+
+También existen <a href="OL_ficheros_lil.html#pozos_tubos">ficheros específicos</a> para la representación en planta del tubo y los pozos, como por ejemplo:<span class="Archivo">&nbsp;<span class="Archivo">tuberias.lil</span></span>,<span class="Archivo">&nbsp; <span class="Archivo">tuberia2.lil</span></span>,<span class="Archivo"> <span class="Archivo">tuberia3.lil</span> </span>(ángulo real),<span class="Archivo"> <span class="Archivo">tuberia3p.lil</span> </span>(ángulo en planta),<span class="Archivo">&nbsp;<span class="Archivo">tuberia3c.lil</span> </span>(ángulo del conector),<span class="Archivo">&nbsp;<span class="Archivo">tuberia4.lil</span> </span>(ángulo real),<span class="Archivo">&nbsp;<span class="Archivo">tuberia4p.lil</span> </span>(ángulo en planta),<span class="Archivo"> <span class="Archivo">tuberia4c.lil</span> </span>(ángulo del conector) y<span class="Archivo">&nbsp;<span class="Archivo">tuberias4i.lil</span> </span>(para doble tubo).<span class="Archivo"><br />
+      <br />
+      <br /></span>
+Así mismo existen plantillas de planos para longitudinales específicas para la representación del perfil longitudinal:&nbsp;<span class="Archivo"><span class="Archivo">ISP20.gui</span>,&nbsp;<span class="Archivo">ISP22.gui</span>,&nbsp;<span class="Archivo">ISP22b.gui</span>,&nbsp;<span class="Archivo">tubos3.gui</span>,&nbsp;<span class="Archivo">tubos4.gui</span>,&nbsp;<span class="Archivo">tubos5.gui</span></span> y&nbsp;<span class="Archivo"><span class="Archivo">tubos6.gui</span>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_gui_tuberias.png" style="width: 630px; height: 482px;" alt="" /><br />
+      </div>
+<br /><br />
+      </span><a style="font-weight: bold; font-style: italic;" name="listados">Listados</a><span class="Archivo"><br />
+<br /><span class="Parrafo">En el menú LISTADOS hay una <a href="OL_listados_tuberias.html">sección
+específica para proyectos de tuberías</a>, y que permiten obtener
+características de los accesorios, superficies de entibación,
+inventarios de tubos y de pozos,...<br />
+      <br />
+En la configuración de los listados disponemos de una opción para
+añadir o no en el Cálculo, el listado de areas de entibación al listado
+de mediciones cvol.res.<br />
+      <br />
+</span></span>
+      
+      <div style="text-align: center;"><span class="Archivo"><span class="Parrafo"><img src="Imagenes/ol_listados_config_tub.png" style="width: 600px; height: 508px;" alt="" /></span></span><br />
+      <span class="Archivo"><span class="Parrafo" /></span></div>
+
+      <span class="Archivo"><span class="Parrafo"><br />
+<br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

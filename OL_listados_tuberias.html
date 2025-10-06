@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Listados de tuberías</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table style="width: 760px; height: 44px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 760px; height: 24px;" bgcolor="#ffcc33" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LISTADOS DE TUBERÍAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 760px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 754px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">En este documento se recogen todos los listados específicos de proyectos de tuberías:<br />
+</span>
+      <br />
+      <div style="margin-left: 40px;"><a href="#tubos"><span class="Parrafo">Tubos</span></a><br />
+      <a href="#angulo_codos"><span class="Parrafo">Ángulos de los codos</span></a><br />
+      <a href="#cotas_pozos"><span class="Parrafo">Cotas de pozos</span></a><br />
+      <a href="#superficie_entibacion"><span class="Parrafo">Superficie de entibación</span></a><br />
+      <a href="#pro_pozos">Proyección de pozos</a><br />
+      <a href="#pi_tub">Piezas por tubería</a><br />
+</div>
+<ul>
+        
+        
+        
+        
+      </ul>
+      <span class="Parrafo">
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 571px; height: 344px;" alt="" src="Imagenes/dialogo_listados_tuberias.png" /><br />
+      </div>
+      <br />
+<br /></span><span class="Titulo_2"><a name="tubos">Tubos</a></span><br />
+      <span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">TUBOS</span> (<span class="Archivo">tubos.res</span>)
+lista tanto longitudes en planta (2D) como reales (3D), grupo al que pertenece, además de
+diámetro, espesor, tipo, material y descripción de cada tubo. Es
+posible extraer un listado conjunto para todos los ejes activos del
+proyecto.<br />
+      <br />
+Existe una primera columna con el número del eje. Cuando se realiza el
+listado para todos los ejes activos, no se hace el salto de pagina al
+cambiar de eje, solamente cuando se rebosa el número máximo de líneas
+por pagina prefijado.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 549px; height: 79px;" alt="" src="Imagenes/dialogo_listados_tuberias_tubos.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Se puede seleccionar el PK inicial o final para interpretar el inicio del listado en:<br />
+</span>
+      <ul>
+        <li>Planta</li>
+        <li>Rasante</li>
+        <li>Zonas de cálculo</li>
+      </ul>Si
+esta activada la opción de interrumpir los tubos en los pozos propios o
+en los de otros ejes, entonces en este listado también se descuentan la
+longitud 2d y 3d del tubo. Se imprime también el pk de inicio y final
+reales de cada tubo a partir de la cara interior del pozo. (Se
+descuenta el diámetro del pozo, pero no el espesor de las paredes).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 429px; height: 226px;" alt="" src="Imagenes/datos_para_tub.png" /><br />
+      <br />
+Este menú está accesible desde Alzado &gt; Datos para tuberías<br />
+      </div>
+
+      <span class="Parrafo">
+      <br />
+Cuando se listan todos los ejes activos se lista con cada tubo el nombre del eje.<br />
+<br />
+      </span><span class="Titulo_2"><a name="angulo_codos">Ángulos de los codos</a></span><br />
+      <span class="Parrafo"><br /></span>
+      <ul>
+        <li><span class="Parrafo">En la configuración del listado se
+puede limitar los ángulos mínimos a partir del cual se puede publicar.
+Se puede indicar que sean los ángulos medidos en PLANTA o REAL. También permite filtrar que solo se listen los codos en Alzado.</span></li>
+      </ul>
+      
+      <ul>
+        <li><span class="Parrafo">Se configura el formato de los ángulos</span></li>
+      </ul><ul>
+        <li><span class="Parrafo">Permite rotular en dibujo
+los codos en planta (CP), los codos en Alzado (CA) y los codos en
+planta-alzado (CPA), con diferentes símbolos de la librería.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Es posible generar este listado, para <span style="font-weight: bold;">todos los ejes activos</span> simultaneamente.</span></span></li>
+      </ul>
+      <span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 329px; height: 160px;" alt="" src="Imagenes/dialogo_listados_tuberias_codos.png" /></span></span><br />
+      </div>
+      <span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">ÁNGULOS DE LOS CODOS</span> (<span class="Archivo">codos.res</span>) contiene:<br />
+      </span>
+      <ul>
+        <li>Un
+código para identificar si en los codos listados hay variación del
+ángulo en planta (CP-n), variación del ángulo en alzado (CA-n) o en
+ambos (CPA-n).<br />
+          <br />
+<span class="Parrafo"></span></li>
+        <li><span class="Parrafo">El PK de los codos.</span></li>
+
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Sus pendientes de entrada y salida.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">El ángulo en planta (siempre que éste
+sea mayor que el mínimo indicado por el usuario) y el real en grados
+centesimales, sexagesimales en grados totales o sexagesimales en
+grados. minutos y segundos, según se especifique.<br />
+          </span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">El ángulo y el nombre del conector.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Los resaltos verticales. En este caso
+se da la pendiente de entrada y salida y en el ángulo en planta se
+imprime un cero y en el ángulo real 90 grados sexagesimales.</span></li></ul>
+      <ul>
+        <li><span class="Parrafo">Coordenadas X e Y del vértice del codo<br />
+</span></li>
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo">La cota de la rasante<br />
+</span></li>
+
+      
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo">Las
+componentes (Fx,Fy,Fz) del vector unitario de la resultante de los
+esfuerzos en el codo (situado en la bisectriz exterior en el plano del
+codo).<br />
+</span></li>
+      </ul><span class="Parrafo"> <img style="width: 750px; height: 69px;" alt="listados_tuberias_codosres" src="Imagenes/listados_tuberias_codosres.png" /><br />
+<span class="Parrafo">Aunque
+en planta no se haya seleccionado un codo concreto, se busca también
+utilizando el ángulo real (3D) si existe algun codo que se adapte y se
+imprime también su nombre y ángulo teórico del conector.<br />
+
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span><span class="Titulo_2"><a name="cotas_pozos">Cotas de pozos</a></span><br />
+      <span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">COTAS DE POZOS</span> (<span class="Archivo">pozos.res</span>) contiene los pozos y arquetas, en el caso de sección de tuberías enterradas o apoyadas.<br />
+En los resultados de este listado obtenemos el diámetro del tubo que entra y el que sale de cada pozo.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 587px; height: 101px;" alt="" src="Imagenes/dialogo_listados_tuberias_pozos.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+El listado puede ser individual para cada eje o el conjunto de todos
+los ejes activos, y muestra el nombre y PK del pozo y de las arquetas,
+cotas de boca y
+solera, cotas de entrada y de salida, cota del terreno, cota roja,
+pendientes de entrada y salida, coordenadas (X,Y), altura, diámetro del
+pozo o el largo de la arqueta, ancho de la arqueta, volumen acumulado
+de hormigón,descripción, diámetro, espesor de la pared del
+pozo/arqueta, espesor de la solera, excentricidad y azimut. Se
+incorpora junto al volúmen
+acumulado de hormigón, el volúmen acumulado ocupado por pozos y
+arquetas (sin descontar el hueco interior).<br />
+      <br />
+Ofrece asimismo la posibilidad de <span style="font-weight: bold;">intercalar</span> entre los pozos, puntos de
+la rasante múltiplos de un valor, imprimiendo el PK, la cota de la
+rasante, la del terreno, la cota roja, la pendiente y las coordenadas
+(X,Y) en el eje. No se imprimirán los que estén próximos a los pozos
+por debajo de una distancia determinada.<br />
+      <br />
+Posibilidad de listar las cotas de entrada y salida, en la intersección del tubo con la cara interior del pozo.<br /><br />Incluye&nbsp;los pozos de Otros ejes que pasen por el eje actual.<br /><br />Es
+posible editar los textos de las cabeceras del listado así como
+desactivar / activar cualquiera de las columnas del listado para
+generar listados personalizados.<br />
+      <br />
+      </span><span class="Titulo_2"><a name="superficie_entibacion">Superficie de entibación</a></span><br />
+      <span class="Parrafo"><br />
+El listado <span style="font-weight: bold;">SUPERFICIE DE ENTIBACIÓN</span> (<span class="Archivo">entiba.res</span>)
+lista superficies parciales y acumuladas de entibación distinguiendo
+además entre las zonas sin y con espesor de entibación declarado.<br />
+      <br />
+      <a name="pro_pozos"><span class="Titulo_2">Proyección de pozos</span><br />
+      <br />
+Permite extaer para un eje la proyección sobre él de los pozos del resto de los ejes activos.<br />
+      <br />
+</a></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 549px; height: 64px;" alt="" src="Imagenes/pro_pozos.png" /></span></span></span><a name="pro_pozos"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Parrafo"><span class="Parrafo"><a name="pi_tub"><span class="Titulo_2">Piezas por tubería</span><br />
+      <br />
+Lista los elementos de la tabla .dip de codos y los tubos que unen.<br />
+      <br />
+</a></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 585px; height: 68px;" alt="" src="Imagenes/pi_tub.png" /></span></span></span></span><a name="pi_tub"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Este listado puede realizaerse para <span style="font-weight: bold;">todos los ejes activos</span>.<br />
+      <span style="font-weight: bold;">Corto</span>: para generar un listado abreviado.<br />
+<br />
+      </span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

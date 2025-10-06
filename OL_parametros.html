@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Parámetros</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PARÁMETROS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="text-align: left; width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+Bajo esta opción se recogen una serie de parámetros que el sistema
+utiliza en diferentes lugares. Casi todos estos parámetros se guardan
+en el fichero&nbsp;<span class="Archivo">.vol</span>.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_parametros.png" style="width: 450px; height: 329px;" alt="" /><br />
+      </div>
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Equidistancia/múltiplos
+para listados de alzado y plataforma</span>: En los listados de puntos
+del eje en alzado (<span class="Archivo">rasa.res</span>) y puntos
+característicos de la plataforma (<span class="Archivo">plat.res</span>)
+el sistema dará información según las equidistancias o múltiplos
+medidos sobre el eje que aquí se introduzcan. Por defecto, el valor es
+de 20 metros. Este valor también se modifica en el menú LISTADOS al
+pedir la generación del listado&nbsp;<span class="Archivo">rasa.res</span>.
+Si está activado por MÚLTIPLOS y el PK inicial es, por ejemplo, 15.3,
+se obtendrá la secuencia 15.3, 20.0, 40.0,&#8230; En cambio, si está activado
+por EQUIDISTANCIAS se obtendrá 15.3, 35.3, 55.3,&#8230;</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Primer
+perfil para listado de alzado y plataforma</span>:
+En los listados antes mencionados, éste es el PK de comienzo. Este
+valor también se modifica en el menú LISTADOS al pedir la generación
+del listado&nbsp;<span class="Archivo">rasa.res</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Taludes
+pseudoverticales</span>:
+Talud de cierre del firme cuando el control de desmonte se hace en el
+borde de la subrasante y no se ha dado valor para el mencionado talud.
+Por defecto es 0.01 metros.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Separación
+horizontal entre puntos pseudoverticales</span>:
+Esta distancia permite separar ligeramente en planta algunas líneas que
+podrían quedar superpuestas, facilitando así su elección y la
+extracción de perfiles que impliquen dichas líneas (por defecto 0.01
+metros).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Anchura
+de los muros</span>: Es la distancia medida en proyección horizontal
+entre las líneas de pie de muro y cabeza de muro (por defecto 0.1
+metros).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="difer_escolleras_muros">Diferenciar las escolleras de los muros</a></span>:
+Permite distinguir la medición de los muros y zapatas de muros, de las
+de escolleras y base de las escolleras respectivamente.</span></li></ul>
+      <ul>
+     
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="maxProfRoca">Máxima profundidad para considerar roca</a></span><a name="maxProfRoca">:
+Para profundidades superiores a la que aquí se indica, no se tendrá en
+cuenta la presencia de la roca ni se incluirá en los ficheros&nbsp;<span class="Archivo">ISPOL#.per</span> (siendo&nbsp;<span class="Archivo">#</span>
+el número de eje). Por defecto, este valor se establece en 25 metros.
+Si la roca no debe considerarse en la sección del terreno, lo
+aconsejable es declararla a profundidad cero en la opción
+correspondiente del menú ZONAS DE CÁLCULO.</a></span></li><a name="maxProfRoca">       
+      
+      </a></ul>
+
+<a name="maxProfRoca">      </a><div style="margin-left: 40px;"><span class="Parrafo"><a name="maxProfRoca">Esta profundidad puede ser <span style="font-weight: bold;">medida desde la rasante</span>,
+es decir, igual pero tomando como referencia la rasante en lugar del
+terreno. Así, si por ejemplo se declara un valor igual a la profundidad
+de la roca, ésta sólo aparecerá en los perfiles con la rasante por
+debajo del terreno.<br />
+      <span class="Parrafo"></span></a></span></div>
+<span class="Parrafo">
+<a name="maxProfRoca">      </a><ul>
+<a name="maxProfRoca">        <li><span style="font-weight: bold;">Anular áreas inferiores en perfil</span>: El programa despreciará aquellas áreas en perfil con valores inferiores al aquí indicado (por defecto, 0.0002).<br />
+</li></a></ul>
+<a name="maxProfRoca">      </a><ul>
+<a name="maxProfRoca">        <li><span class="Parrafo"><span style="font-weight: bold;"><img src="Imagenes/parametros_vegyterr_solo_terraplen.png" style="width: 118px; height: 100px;" alt="" align="right" hspace="6" />Vegetal
+y terreno inadecuado sólo en terraplén</span>:
+Con la opción <span style="font-weight: bold;">Sí</span>, en los perfiles sólo aparecerá el espesor de
+la cubierta vegetal en las zonas de terraplén. Con la opción <span style="font-weight: bold;">Sí + Cuneta de guarda</span> se incluirá también el vegetal en la zona de la cuneta de guarda de terraplén. En las zonas de desmonte
+o fuera de la plataforma el espesor se reduce a cero. La opción <span style="font-weight: bold;">Sólo en Roca</span> equivale a la opción Sí, pero solo en el caso de que no haya terreno competente y se pase del vegetal a la roca.<br />
+</span></li>
+
+      
+      </a></ul></span>
+<a name="maxProfRoca">      </a><div style="margin-left: 40px;"><a name="maxProfRoca"><img src="Imagenes/parametros_tnotc.png" style="width: 173px; height: 63px;" alt="" align="left" hspace="6" />En
+el caso de tener vegetal sólo en terraplén, podremos utilizar como
+superficie de control para el terraplén el terreno natural o el terreno
+competente.<br />
+      <br />
+      <br />
+      </a></div>
+<a name="maxProfRoca"> 
+      </a><ul><a name="maxProfRoca">        
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Vegetal y
+terreno inadecuado sólo en desmonte</span>:
+Si se activa esta
+opción, en los perfiles, sólo aparecerá el
+espesor de la cubierta vegetal en las zonas de desmonte. En las zonas
+de terraplén o fuera de la plataforma el espesor se reduce a cero. El
+espesor de la cubierta vegetal podrá definirse en las zonas de
+terraplén menores que una determinada altura de terraplén.</span></span></li>
+      </a></ul>
+<a name="maxProfRoca">      </a><div style="margin-left: 40px;"><a name="maxProfRoca">Vegetal, solo en desmonte y
+terreplenes menores que un determinado valor. Se incorpora este valor
+para cuando no se desea desbrozar el vegetal en terraplenes superiores
+a ese valor.<br />
+      </a></div>
+<a name="maxProfRoca"><br />
+
+
+      
+      </a><div style="margin-left: 40px;"><a name="maxProfRoca">La altura de terraplén para considerar que aplique o no cubierta vegetal puede ser medida sólo bajo <span style="font-weight: bold;">el eje</span> y en función de este valor contemplar el vegetal o no bajo toda la sección de terraplén.<br />
+      <br />
+      <img src="Imagenes/veg_inadec_solo_eje.png" style="width: 417px; height: 38px;" alt="" /><br />
+      </a></div>
+
+<a name="maxProfRoca">      
+      <br />
+      </a><div style="margin-left: 40px;"><a name="maxProfRoca">Estas dos últimas opciones se
+guardan en el archivo ISPOln.per, siendo n el número del eje, de modo
+que al truncar los perfiles por líneas de frontera se vuelve a procesar
+esta información por si hay que volver a acortar el vegetal y el
+inadecuado.<br />
+      </a></div>
+<a name="maxProfRoca">      <br />
+</a><ul>
+<a name="maxProfRoca">        <li><span style="font-weight: bold;"></span></li></a><a name="desbroces_planta">Desbroces
+medidos en planta</a><span class="Parrafo"><span class="Parrafo">: Si se
+activa esta
+opción, la medición de desbroces del <a href="OL_listados_mediciones.html#diagmas">listado&nbsp;<span class="Archivo">dmas.res</span></a>
+se realiza en
+planta, de lo contrario se da el área real teniendo en cuenta las
+pendientes. De todos modos existe un listado específico de desbroces
+(<span class="Archivo">desbr.res</span>) que da toda la información.</span></span></ul><span class="Parrafo"><span class="Parrafo"></span><ul><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">No truncar ningún muro en este eje</span>: las líneas de frontera no truncarán los muros definidos en el proyecto para este eje.<br /></span></span></li>
+</ul>
+<span class="Parrafo"><span class="Parrafo"> </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Conservar
+los símbolos del fichero de perfiles del
+terreno</span>: Con esta opción
+activada, si el fichero de perfiles del
+terreno contiene algún símbolo, éstos pasan al&nbsp;<span class="Archivo">ISPOL#.per</span> (siendo&nbsp;<span class="Archivo">#</span>
+el
+número de eje) correspondiente. Los perfiles interpolados en el
+cálculo, incluyen también los símbolos si existe uno del mismo tipo y
+en el mismo orden en los perfiles anterior y siguiente, interpolándose
+su posición, ángulo y tamaño.</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Conservar muros en zona de O.F.</span>: Con esta opción activada, no se eliminan los muros en las zonas en las que haya obras de fábrica. </span></span><span class="Parrafo"><span class="Parrafo">Debe tramificarse en los PKs coincidentes con la obra de fábrica una sección tipo que no tenga muro o que tenga un <a href="OL_muro_terraplen.html#abertura">muro con abertura</a> que permita el paso del marco.<br />
+</span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo"> </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Mínima
+separación entre perfiles (salvo cambio de
+tramo)</span>: Separación mínima
+entre perfiles. Por defecto vale 0.005 m.
+Este valor no afecta a los cambios de tramo de cálculo en los que se
+pueden calcular perfiles repetidos. El valor no puede ser 0.0 ó
+negativo. Al calcular el alzado, si se encuentra un perfil cuyo PK
+dista del anterior un valor menor que el de este parámetro, se salta
+este perfil (salvo que se trate de un cambio de zona de cálculo).</span></span></li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Conservar
+terreno en perfiles de túnel</span>:
+No se
+elimina el terreno en perfiles correspondientes a sección de túnel. El
+terreno que queda es el correspondiente a un semiancho de banda igual
+al margen de expropiación definido (al igual que con el resto de
+perfiles). Representa también el perfil del primer horizonte de roca.</span></span></li>
+      </ul>
+     <span class="Parrafo"><span class="Parrafo"> </span></span>
+      <ul>
+      </ul>
+      <div style="margin-left: 43px; width: 649px;">El horizonte de la roca se obtiene como siempre a partir de superficies MDT o por datos de sondeos en zonas de cálculo.<br /><br />Al
+activar Conservar terreno en perfiles de túnel también se añaden al
+ISPOL.per otras superficies que vengan en el perfil del terreno.<br />
+      </div>
+      <div style="margin-left: 40px;">
+      <ul>
+        <ul>
+          
+          
+          
+        </ul>
+      </ul><ul style="list-style-type: circle;"><li>Ponemos valores suficientes en <span style="font-weight: bold;">Máxima profundidad para considerar roca</span> y <span style="font-weight: bold;">Desde la rasante</span>. En la tabla ISPOL4.dar se han desdoblado las dos siguientes mediciones:</li><li>EXCAVA TUNEL: Se desdobla en [EXC TUNEL R] y [EXC TUNEL T]</li><li>EXC TOT TUNEL: Se desdobla en [EXC TOT TUN R] y [EXC TOT TUN T]</li></ul>
+      </div>
+      <ul><li class="Parrafo"><span style="font-weight: bold;"><a name="conservar_calzada_falso_tunel">No calcular Intersección de Túneles con este eje.</a></span></li></ul><ul><li class="Parrafo"><span style="font-weight: bold;"><a name="conservar_calzada_falso_tunel">Conservar calzada existente en perfiles de falso túnel</a></span>: En proyectos de <a href="OL_EyM.html">ensanche y mejora</a>, permite separar la medición de desmonte en tierra y de firme existente en los tramos de <a href="OL_tuneles.html#falso_tunel">falso túnel</a>.</li></ul><ul><li class="Parrafo"><img src="Imagenes/trans_estructura_esviada.png" style="width: 221px; height: 33px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;"><a name="corregir_subras">Corregir subrasante es estructuras esviadas</a></span>:
+Cuando esta opción está activada, el programa, en las zonas de esviaje
+de estructura que corresponden a perfiles mixtos con una parte en
+terraplén y la otra en estructura, aplica el espesor de firmes adecuado
+transversalmente, diferenciando entre estructura y no estructura.</li></ul><ul><li class="Parrafo"><span style="font-weight: bold;">Berma ligada a D/T - Berma ligada a ST</span>:
+Con esta opción podemos escoger si la berma de desmonte/terraplén va
+ligada a la tramificación separada de desmonte/terraplén o si queremos
+que esas bermas vayan ligadas a la sección tipo general.</li></ul><ul><li class="Parrafo"><span class="Parrafo" style="font-weight: bold;">Truncar taludes en curvas cerradas</span><span class="Parrafo">:
+hace que se modifiquen los taludes y se trunquen para que no se crucen
+los perfiles. Al activarla para cada eje, se definen tres parámetros:</span><br class="Parrafo" />
+          <ul class="Parrafo">
+            <li>Radio máximo. Se analizan las curvas con radio igual o inferior a este.</li>
+          </ul>
+          <ul class="Parrafo">
+            <li>Longitud
+en PKs máxima antes del inicio y despues del final de la curva para
+buscar la intersección de los pies/cabezas de los taludes.<br />
+            </li>
+          </ul>
+          <ul class="Parrafo">
+            <li>Longitud de transición&nbsp; en PKs que se necesita en algunos casos para recuperar el talud nominal.<br />
+            </li>
+          </ul><span class="Parrafo">
+Al calcular el eje desde alzado y proyecto se realiza un precálculo
+automático que determina los taludes que hay que modificar. Si no se ha
+realizado ningun cálculo o se ha cambiado algún paramétro, para ver su
+efecto en el eco de Sección real, debemos pulsar la opción [</span><span class="Parrafo" style="font-weight: bold;">precálculo</span><span class="Parrafo">] desde este cuadro de diálogo.</span></li></ul><span class="Parrafo"><ul><li class="Parrafo"><span class="Parrafo" style="font-weight: bold;">Rejilla de Cuneta</span><span class="Parrafo">: Permite definir la geometría de la rejilla de cuneta:</span><br class="Parrafo" />
+          
+          <ul class="Parrafo"><li><span style="font-weight: bold;">Longitud de cada módulo (L).</span></li><li><span style="font-weight: bold;">Ancho de los perfiles de los bordes que enmarcan el módulo (A).</span></li><li><span style="font-weight: bold;">Altura o canto de los perfiles (H).</span></li><li>Ancho de los perfiles interiores transversales y longitudinales(a).</li><li>Número de perfiles interiores transversales y longitudinales por cada módulo (n).</li></ul></li></ul>
+      <ul>
+
+        
+        <li><span style="font-weight: bold;">No comprobar con líneas de frontera la tabla de Símbolos al perfil</span>: Hace que los símbolos definidos en <a href="OL_simbolos_perfil.html">Símbolos a perfil</a> no sean eliminados por las líneas de frontera.<br />
+Si se activa esta opción aquí, opera sobre el eje donde esté activada la opción.
+Pero si se activa en Configuración-&gt;Preferencias-&gt;Obra
+lineal-&gt;Alzado (Alzado-&gt; Opciones) entonces opera para todos los ejes del proyecto independientemente de lo que
+se haya marcado en cada eje.</li>
+
+      </ul></span></span><ul style="text-align: justify;"><li><span style="font-weight: bold;">No truncar estas superficies con líneas de frontera</span>:
+permite indicar hasta 20 superficies que no serán afectadas
+por&nbsp;líneas de frontera. Si pertenecen a los firmes (ISFIRn.per),
+al recalcular el paquete de firmes no serán truncadas.</li></ul><span class="Parrafo"><span class="Parrafo"><ul><span class="Parrafo">
+        
+          
+
+        <ul>
+
+      
+
+      <ul>
+        
+        
+
+      </ul>
+      <ul>
+        </ul>
+      
+
+
+      <br />
+      <br />
+      </ul>
+</span></ul></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Rasantes: glorieta y catenaria</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GENERACIÓN AUTOMÁTICA DE RASANTES:
+GLORIETA Y CATENARIA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#glorieta">Generación automática de rasantes y glorietas</a><br />
+      <a href="#catenaria">Generación automática de un longitudinal de catenaria</a><br />
+      </div>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="glorieta">Generación automática de rasantes de glorietas</a></span><br />
+      <span class="Parrafo"><br />
+Al pulsar la orden <span style="font-weight: bold;">GLORIETA</span> dentro de <span style="font-weight: bold;">[ÚTILES]</span>,
+el menú de RASANTES despliega un cuadro de diálogo con opciones
+específicas para calcular una glorieta circular cuya rasante pase por
+tres puntos, con el objetivo de definir un plano que favorezca un
+drenaje continuo de la misma.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 588px; height: 35px;" alt="" src="Imagenes/dialogo_rasante_glorieta.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+La opción <span style="font-weight: bold; font-style: italic;">Ver senoide</span>
+permite ver la intersección real del plano con el cilindro de directriz
+del eje de la glorieta, lo que posibilita cuantificar gráficamente el
+error que se comete al utilizar una de las dos soluciones posibles y&nbsp;comparar el &#8216;parecido&#8217; de los
+datos calculados mediante acuerdos parabólicos y la forma sinusoidal
+real. Existen ciertas diferencias en cota que ronda 1 cm para
+pendientes inferiores al 1% y de 3 cm para pendientes del 3-4% y que
+lógicamente son inevitables dado que un acuerdo parabólico no puede
+representar al 100% la forma senoidal.<br />
+      <br />
+      </span><img style="width: 164px; height: 95px; margin-right: 7px;" alt="" src="Imagenes/rasante_glorieta.png" align="left" /><span class="Parrafo">Al pulsar el botón <span style="font-weight: bold;">[Generar]</span>,
+se calculan automáticamente los datos necesarios para definir la
+rasante, de modo que el eje en alzado está en el plano definido por los
+tres puntos dados por su PK y cota.<br />
+      <br />
+La rasante senoidal calculada se aproxima por rasantes que pasan por
+los puntos de máxima pendiente y máxima rampa con parábolas de acuerdo
+necesario que pasan por los puntos altos y bajos del plano.<br />
+      <br />
+El método estándar deja un tramo de rasante recta entre los acuerdos,
+cuya longitud es calculada de manera automática. La opción <span style="font-weight: bold; font-style: italic;">Sólo acuerdos</span> elimina estos tramos rectos o uniformes creando parábolas que se &#8216;tocan&#8217; en los puntos de tangencia.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 457px; height: 241px;" alt="" src="Imagenes/rasante_glorieta2.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span><img style="width: 157px; height: 98px; margin-right: 7px;" alt="" src="Imagenes/rasante_glorieta_senoide.png" align="left" /><span class="Parrafo">Esta
+segunda solución es más estética, pero la pendiente en los puntos de
+tangencia es mayor y la rasante resultante se aleja más de la senoide
+matemática, tal y como se puede observar en la ilustración.<br />
+      <br />
+La polilínea número 1 representa el senoide, la número 2 la rasante
+creada por el método estándar y la número 3 la rasante con acuerdos
+&#8216;puros&#8217; sin tramos rectos.<br />
+      <br />
+Esta utilidad da la opción de generar también una ley de peraltes
+correspondientes al plano que definen los tres puntos. Se crea un dato
+cada 10 grados centesimales, pasando por los puntos de máxima pendiente
+y rampa (peralte 0) y por los puntos altos y bajos (peralte = máxima
+pendiente).<br />
+      <br />
+Los puntos introducidos para la definición de la glorieta se guardan tanto en el fichero&nbsp;<span class="Archivo">.ras</span> como en el&nbsp;<span class="Archivo">.vol</span>.<br />
+      <br />
+Esta herramienta se puede utilizar para ejes que no sean Glorieta (ejes
+cerrados no circulares, elípticos, ...) y en este caso nos devolverá
+una rasante poligonal.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 588px; height: 35px;" alt="" src="Imagenes/glorieta_no_circular.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo Info">
+      </span>
+      <div style="text-align: center;"><span class="Parrafo Info">Nota: Recordad que la herramienta <a href="OL_rasantes_herramientas.html#ajustar">Ajustar</a> permite simplificar esta rasante con acuerdos a partir de una determinada tolerancia.</span><br />
+      <span class="Parrafo Info"></span></div>
+      <span class="Parrafo Info">
+      <br />
+<br />
+      </span><span class="Titulo_2"><a name="catenaria">Generación automática de un longitudinal de catenaria</a></span><br />
+      <span class="Parrafo"><br />
+La herramienta <span style="font-weight: bold;">CATENARIA</span> dentro de <span style="font-weight: bold;">[ÚTILES]</span> muestra un cuadro de diálogo que permite definir una serie de puntos (PK,Z) y un KV entre cada dos puntos. Al pulsar en <span style="font-weight: bold;">[Generar]</span> se transforman estos datos en rasantes por punto y pendiente y KV, simulando una catenaria colgada entre estos puntos.<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 27px; width: 619px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 285px;"><img style="width: 274px; height: 218px;" alt="" src="Imagenes/dialogo_catenaria.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 316px;"><img style="width: 314px; height: 204px;" alt="" src="Imagenes/catenaria.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 622px; text-align: justify;"><span class="Info">La
+geometría obtenida por este método se basa en parábolas, por tanto
+difiere ligeramente de la geometría de catenaria propiamente dicha.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

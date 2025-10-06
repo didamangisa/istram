@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Listados de datos y control</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LISTADOS DE DATOS Y CONTROL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br />
+Los listados específicos de datos y control son:<br />
+      </span> <br />
+      <div style="margin-left: 40px;"><a href="#resumen_ejes"><span class="Parrafo">Resumen de ejes</span></a><br />
+      <a href="#inter_ejes"><span class="Parrafo">Intersección de ejes</span></a><br />
+      <a href="#inter_ejes"><span class="Parrafo"> </span></a><a href="#caracteristicas"><span class="Parrafo">Características</span></a><br />
+      <a href="#datos_vol"><span class="Parrafo">Datos del fichero .vol</span></a><br />
+      <a href="#invent"><span class="Parrafo">Inventario de líneas y
+puntos</span></a><br />
+      <a href="#Senalizacion_puntual">Señalización puntual</a><br />
+      <span class="Parrafo"><a href="#anejos">Anejos de trazado</a><br />
+      <a href="#sectipo">Secciones tipo</a><br />
+      <a href="#repaso">Repaso de normas</a><br />
+      <a href="#Listado_de_bulones">Listado de bulones</a><br />
+      </span> <a href="#cunet"><span class="Parrafo">Cunetas y cunetas
+de guarda</span></a><br />
+      <span class="Parrafo"><a href="#perf">Pefiles transversales del
+terreno</a></span><br />
+      <a href="#obrasFab"><span class="Parrafo">Obras de fábrica</span></a><br />
+      <a href="#lon_esp"><span class="Parrafo">Longitudinales especiales</span></a><br />
+      <a href="#estruct"><span class="Parrafo">Estructuras</span></a><br />
+      <a href="#geom_planta"><span class="Parrafo">Geometria de la
+planta</span></a><br />
+      <a href="#control_pend">Control de pendientes</a><br />
+      <a href="OL_listados_datos_control.html#tramos_firmes">Tramos de
+firmes</a><br />
+      <a href="#ControlGP">Control Gálibo</a><br />
+      <span class="Parrafo"><a href="#control_z">Control de cotas</a></span><br />
+      <div style="margin-left: 40px;"><a href="#controlZ_top"><span class="Parrafo">A partir de un fichero&nbsp;<span class="Archivo">.top</span>/<span class="Archivo">.toc</span></span></a><br />
+      <a href="#controlZ_per"><span class="Parrafo">A partir de un
+fichero&nbsp;<span class="Archivo">.per</span></span></a><br />
+      </div>
+      <a href="OL_listados_datos_control.html#control_dist_talud"><span class="Parrafo"></span></a><a href="OL_listados_datos_control.html#control_dist_talud">Control de
+distancias al talud</a><br />
+      <a href="#z_dist_fijas"><span class="Parrafo">Cotas a distancias
+fijas</span></a><br />
+      <a href="#cotas_rojas">Cotas rojas en códigos fijos</a><br />
+      <a href="#Distancias_RadialesNormales">Distancias
+radiales/normales</a><br />
+      <a href="#ST"><span class="Parrafo">Secciones tipo aplicadas</span></a><br />
+      <span class="Parrafo"><a href="#consulta">Consulta</a></span><br />
+      <span class="Parrafo"> </span></div>
+      <ul>
+      </ul>
+      <span class="Parrafo">
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/dialogo_listados_datos_control.png" style="width: 600px; height: 409px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="resumen_ejes">Resumen de
+ejes</a></span><br />
+      <span class="Parrafo"><br />
+El listado <span style="font-weight: bold;">RESUMEN DE EJES</span> (<span class="Archivo">ejes.res</span>)
+contiene por cada eje el grupo al que pertenece, el número de eje, PK
+inicial, PK final, longitud, PK inicial y final de los tramos de
+cálculo o zona de cálculo restringido, longitud referida a los tramos
+de cálculo o zona de cálculo restringido, el nombre o título del eje,
+los
+comentarios declarados en el fichero&nbsp;<span class="Archivo">.vol</span>
+que se pueden introducir desde ALZADO (botón <span style="font-weight: bold;">[?]</span>) y la velocidad de proyecto de cada eje.<br />
+      <br />
+Posibilidad de obtener el total de longitudes por grupos y el total de
+todo el proyecto.<br />
+      </span> <span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="inter_ejes">Intersección
+de ejes</a></span><br />
+      <span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">INTERSECCIÓN DE EJES</span>
+(<span class="Archivo">inters.res</span>)
+genera un listado con los <span style="font-weight: bold;">PK&#8217;s</span>,
+      <span style="font-weight: bold;">coordenadas</span> <span style="font-weight: bold;">X</span>, <span style="font-weight: bold;">Y</span>,
+      <span style="font-weight: bold;">Z</span>, <span style="font-weight: bold;">cotas de los ejes</span> y del <span style="font-weight: bold;">terreno</span>, <span style="font-weight: bold;">diferencia de cotas</span> de todas las
+intersecciones entre los
+ejes en planta y <span style="font-weight: bold;">azimutes</span> de
+cada eje. Permite añadir una <span style="font-weight: bold;">tolerancia</span>
+que provoca el alargamiento de los ejes en sus extremos para buscar los
+cortes. Este listado sólo analiza ejes que pertenezcan a grupos activos.<br /><br />Es posible añadir al listado las conexiones entre ejes mediante conectores o etiquetas activando la casilla <span style="font-weight: bold;">Añadir ejes conectados</span>, en este caso se añade una columna con la distancia entre los ejes.<br />
+      <br />
+      </span><span class="Parrafo">El cuadro de diálogo ofrece además
+la posibilidad de <span style="font-weight: bold;">rotular</span>
+las coordenadas de los puntos de intersección, el número, el PK y el
+azimut de cada eje, la diferencia de cota entre ejes y la cota absoluta
+del segundo eje.<br />
+      <br />
+Mediante la casilla <span style="font-weight: bold;">PKs en Estaca</span>
+obtendremos la rotulación de los puntos de intersección en Estacas en
+lugar de PKs.<br />
+      </span> <span class="Parrafo"><br />
+Se puede guardar <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" />, cargar&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> o inicializar&nbsp;<img src="Imagenes/icono_toolbarEstandar_nuevo.png" style="width: 16px; height: 17px;" alt="" /> la definición de
+este menú.<br />
+      <br />
+      </span><span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 312px; height: 341px;" alt="" src="Imagenes/dialogo_listados_datos_control_inters.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="caracteristicas">Características</a></span><br />
+      <span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">CARACTERÍSTICAS</span> (<span class="Archivo">caracte.res</span>)
+recoge un resumen de características de los ejes en planta y alzado por
+grupos (longitudes, pendientes y radios, máximos y mínimos,
+velocidades, número de tramos y de acuerdos, etc.). En este listado
+sólo se considera el tramo de
+rasante comprendido entre los PK&#8217;s inicial y final del eje en planta, y
+tiene en cuenta las posibles intersecciones de un eje consigo mismo.<br />
+Tendremos información del número total de curvas a la derecha y a la
+izquierda y número de rectas.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_caracte.png" style="width: 549px; height: 64px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="datos_vol">Datos del
+fichero .vol</a></span><br />
+      <span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">DATOS DEL FICHERO .vol</span>
+(<span class="Archivo">datvol.res</span>) permite generar un listado
+personalizable, con el número y nombre del eje <span style="font-weight: bold;">actual</span> o de <span style="font-weight: bold;">todos</span> los ejes activos, y al que se
+le pueden añadir los datos del fichero&nbsp;<span class="Archivo">.vol</span>
+que el usuario desee activando la casilla correspondiente (por defecto
+aparecen activados los datos de <a href="OL_peraltes.html">peraltes</a>,
+      <a href="OL_anchos.html">anchos</a>, <a href="OL_calzadas_aux.html">calzadas auxiliares</a> y <a href="OL_zonas_calculo.html">zonas de cálculo</a>). <br />
+En
+los tramos de cálculo, se puede indicar que los pks que se impriman
+sean los PKs de usuario deducidos de las ecuaciones de PK.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_datvol.png" style="width: 579px; height: 222px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="invent">Inventario de
+líneas y puntos</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">LÍNEAS Y PUNTOS</span> (<span class="Archivo">invent.res</span>)
+está definido para completar la extracción de información asociada a un
+proyecto, pues permite realizar un inventario de entidades asociadas </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">(deben
+estar en el mismo modelo)</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> a
+cada eje del proyecto a partir de determinados tipos de líneas y puntos
+definidos por el usuario. Además, para cada punto se lista su distancia
+al eje y, en el caso de líneas cerradas, también se lista el área del
+recinto. La selección de tipos puede ser numérica o haciendo clic.<br />
+      <br />
+A partir del botón&nbsp;<span class="Parf_negrita">Todo</span>
+en la sección de líneas y puntos se utiliza para rellenar la lista con
+todos los tipos de líneas/símbolos disponibles para el eje seleccionado
+o todos los ejes activos.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_invent.png" style="width: 459px; height: 237px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Puede realizarse un listado para cada eje limitando un tramo de PK&#8217;s, o
+un listado con todos los ejes que pertenezcan a grupos activos.<br />
+      <br />
+      <span class="Titulo_2">Señalización puntual</span><br />
+      <br />
+Genera un listado con la información de la Señalización Puntual del
+proyecto. Al final de cada eje se indica el número de apariciones de cada célula, así como un resumen final de todos los ejes.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/listados_senpun.png" style="width: 400px; height: 391px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><a name="anejos"><span class="Titulo_2">Anejos de trazado</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado <span style="font-weight: bold;">ANEJOS DE TRAZADO</span>
+(anejos.res y Anejos_Trazado.xlsx), para cuya generación es preciso que esté declarada una <a href="OL_rasantes_normativa.html">tabla de normativa&nbsp;<span class="Archivo">.dia</span></a> en la <a href="OL_general.html">pestaña
+GENERAL</a>, incluye:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Resumen de alineaciones en planta</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Alineaciones rectas</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Alineaciones circulares</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Análisis de las curvas de transición</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Coordinación de elementos geométricos del trazado en
+planta</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Resumen del trazado en alzado (incluyendo la bisectriz)</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Acuerdos verticales</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Consideraciones estéticas</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Comprobación de la coordinación de los trazados de
+planta y alzado</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En
+las partes del listado referentes al alzado, sólo se tratan PK's que
+estén dentro de la zona de cálculo.<br />
+      <br />
+      <span class="Titulo_2"><a name="sectipo">Secciones tipo</a></span><br />
+      <br />
+El listado <span style="font-weight: bold;">SECCIONES TIPO</span> (<span class="Archivo">sectipo.res</span>) genera una lista de todas las
+secciones tipo declaradas, con sus nombres y organizadas por ejes además de las zonas de aplicación de las secciones tipo.<br />
+      <br />
+      </span></span></span><a name="repaso"><span class="Titulo_2">Repaso
+de normas</span></a><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Este listado permite generar resultados de repaso de normativa por cada
+eje o uno con todos los ejes activos, con el resultado del repaso de la
+norma de planta y/o alzado, siempre que el eje tenga declarada la
+correspondiente tabla de diseño.<br />
+El archivo conjunto se llama normas0.res, tambien se crea por cada eje
+N un archivo normasN.res<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/list_repaso.png" style="width: 549px; height: 64px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+Se genera también los listados <span class="Archivo">norma_N.xlsx</span>
+y <span class="Archivo">normaalz_N.xlsx</span> en la carpeta de
+listados ./res para su tratamiento desde hojas de cálculo.<br />
+      <br />
+Cuando
+se genera este listado para todos los ejes activos (normas0.res), se
+generan tambien dos listados: norma_0.xlsx y normaalz_0.xlsx&nbsp; que
+contienen respectivamnente el repaso de planta y de alzado para todos
+los ejes activos en formato xlsx.<br />
+      <br />
+Cuando
+el estudio se realiza desde Planta/Diseño/Repaso de la norma o desde
+Alzado/Diseño/Repaso de la norma la rejilla de datos de Istram se queda
+abierta.<br />
+      <br />
+Cuando se realiza desde Listados/Datos y
+Control/normas la última rejilla se quedará abierta o cerrada
+dependiendo de la opción elegida en Configuración/Preferencias/Listados.<br />
+      <br />
+      </span></span></span><a name="Listado_de_bulones"><span class="Titulo_2">Listado de bulones</span><br />
+      <br />
+Listado
+a partir del cual se incorpora una característica para ubicar bulones
+en los perfiles de un túnel, a partir de una serie de variables:<br />
+      </a>
+      <ul>
+        <li>Longitud del bulón</li>
+      </ul>
+      <ul>
+        <li>Longitud de arranque del abanico desde la base</li>
+      </ul>
+      <ul>
+        <li>Espaciado máximo entre embocaduras de bulones</li>
+      </ul>
+      <ul>
+        <li>Ángulo externo máximo entre segmentos consecutivos del
+perfil del túnel</li>
+      </ul>
+      <ul>
+        <li>PK inicial y final</li>
+      </ul>
+Para ello, se introducen estos datos y se selecciona en una casilla el
+archivo <span class="Archivo">.per</span> a modificar, que debe ser
+previamente filtrado y cortado por el eje para evitar resultados
+anómalos.<br />
+Al Generar, se da la opción de crear un nuevo <span class="Archivo">.per</span>
+con los datos modificados o sobreescribir uno existente.<br />
+Asimismo,
+se genera un archivo .csv que contiene el número de abanico, el número
+de bulón dentro de cada abanico y las coordenadas globales del inicio y
+del final de cada bulón.<br />
+      <br />
+En&nbsp;la
+generación de bulones se utiliza una línea específica para su
+representación.&nbsp; La superficie indicada del perfil es sobre la que
+se posicionan los bulones.<br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Listado_de_bulones"><img src="Imagenes/listado_bulones.png" style="width: 600px; height: 136px;" alt="" /></a></span></span></span><a name="Listado_de_bulones"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></a></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="Listado_de_bulones"><br />
+      <br />
+      </a></span></span></span><a name="cunet"><span class="Titulo_2">Cunetas
+y cunetas de guarda</span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">CUNETAS Y CUNETAS DE
+GUARDA</span> (<span class="Archivo">cunet.res</span>,&nbsp;<span class="Archivo">cungd.res</span>) es un listado de <a href="OL_cunetas.html">cunetas</a>
+o de cunetas de guarda (según se seleccione en el cuadro de diálogo),
+tanto de desmonte como de terraplén correspondiente al eje y tramo
+indicados o a todos los ejes activos (marcando la correspondiente
+casilla).<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_cunet.png" style="width: 549px; height: 117px;" alt="" />&nbsp;</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Con las siguientes opciones se generan además ficheros de
+extensión&nbsp;<span class="Archivo">.ras</span> ó&nbsp;<span class="Archivo">.lon</span> cuyo destino es ser utilizados en el <a href="OL_rasantes_diseno.html">diseño de rasantes</a>, por la derecha
+o por la izquierda (I, D):<br />
+      <br />
+      </span></span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">cun_I.ras, cun_D.ras</span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold; font-style: italic;">cun_I.lon, cun_D.lon</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Desde el menú de RASANTES es posible cargar estos datos y modificarlos
+a continuación si es necesario.<br />
+      <br />
+En el listado se incluye distancias al eje, X, Y y cota del fondo de
+cuneta, longitudes parciales y pendientes longitudinales,
+diferenciándose las cunetas revestidas con una "R" detrás de la
+longitud acumulada. Al final del listado se imprime además la longitud
+total de cuneta por cada lado desglosando el total de cunetas
+revestidas y el total de las no revestidas.<br />
+      <br />
+Se incorporan dos datos a este listado: <br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cota del terreno sobre el punto de la cuneta que se
+lista.</span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Número
+de la cuneta, en el caso de cuneta normal es el número de la Sección
+Tipo y en el caso de cunetas de guarda es el número de cuneta en la
+tabla de cunetas de guarda. </span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Al
+sacar el listado para todos los ejes activos, se incluye un resumen con
+el total de la medición para cada eje y el total para todos los ejes
+del proyecto. También se incluyen las cunetas de los acuerdos de los
+cruces.<br />
+      <br />
+También cabe la posibilidad de listar únicamente las <span style="font-weight: bold;">cunetas revestidas</span>.<br />
+      <br />
+      <span style="font-weight: bold;">Listar geometría </span>imprime
+al final del listado las medidas ancho, alto y taludes de las cunetas
+utilizadas. También se lista la geometría de las cunetas de guarda.<br />
+      <br />
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="perf">Perfiles</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">PERFILES</span> (<span class="Archivo">perf.res</span>)
+presenta en pantalla el listado que contiene para cada perfil su PK,
+la distancia al eje y la cota de cada uno de los puntos del perfil, en
+un solo eje o en todos los del proyecto.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_listados_datos_control_perf.png" style="width: 550px; height: 109px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado se guarda con el nombre&nbsp;<span class="Archivo">perf#.res</span>
+(siendo # el número del eje), u opcionalmente en formato&nbsp;<span class="Archivo">.xls</span>:<br />
+      </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Las opciones disponibles para obtener el listado son:<br />
+      </span></span></span>
+      <ul>
+        <li>Perfiles del terreno</li>
+        <li>Superficie en&nbsp;<span class="Archivo">ISPOL.per</span>,
+por tipo de superficie</li>
+        <li>Superficie en&nbsp;<span class="Archivo">ISFIR.per</span>,
+por tipo de superficie</li>
+        <li>Contorno de una medición determinada del archivo&nbsp;<span class="Archivo">ISPOLn.per</span></li>
+        <li>Contorno de una medición determinada del archivo&nbsp;<span class="Archivo">ISFIR.per</span><br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="obrasFab">Obras
+de fábrica</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">OBRAS DE FÁBRICA</span>
+(<span class="Archivo">obras.res</span>) contiene las <a href="OL_obras_fabrica.html">obras de fábrica</a> del proyecto.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/listado_of.png" style="width: 549px; height: 76px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Se puede prefijar para el azimut y el esviaje si el ángulo se da en <span style="font-weight: bold;">centesimales</span> o en <span style="font-weight: bold;">sexagesimales</span>.<br />
+      <br />
+Se incorpora a este listado la columna de la cota de la rasante del eje
+principal, en la interseción con el eje de la obra de fábrica.<br />
+      <br />
+      <img src="Imagenes/listado_obrares.png" style="border: 1px solid ; width: 800px; height: 157px;" alt="listado_obrares" /><br />
+      <br />
+      <span class="Parf_negrita">matobras.res:</span>&nbsp;Acceso para
+editar el archivo matobras.res (materiales de excavación y relleno de
+las obras de fábrica), que se genera al calcular el proyecto.<br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/matobrasres.png" style="border: 1px solid ; width: 600px; height: 190px;" alt="matobras" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <span style="font-weight: bold;">Incluir puntos de aletas: </span>Si
+se activa este flag se incluyen en el fichero .res las coordenadas de
+los 11 puntos singulares de las aletas, así como la longitud de las
+mismas.&nbsp;De igual modo,
+si se activa la generación de la casilla Excel, dichos puntos y
+longitudes también se
+incluirán en el fichero .xlsx.<br />
+      <br />
+      <br />
+      </span></span></span><span class="Titulo_2"><a name="lon_esp">Longitudinales
+especiales</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+El listado de <span style="font-weight: bold;">LONGITUDINALES
+ESPECIALES</span> (<span class="Archivo">lon.res</span>) permite
+generar dos listados y ficheros de longitudinales diferentes:<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo Archivo"><span style="font-weight: bold;">lonfm#.res</span></span>, <span class="Parrafo Archivo"><span style="font-weight: bold;">lonfm#.lon</span></span>
+(con # número de eje): Listado o longitudinal del fondo de mediana.</span></li>
+        <li><span class="Parrafo"><span class="Parrafo Archivo"><span style="font-weight: bold;">lonpf#.res</span></span>, <span class="Parrafo Archivo"><span style="font-weight: bold;">lonpf#.lon</span></span>
+(con # número de eje): Listado o longitudinal del pie interior de la
+primera capa de firme, del lado que el peralte vuelca hacia la mediana.</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Permite
+también crear la planta (en 3D) de los longitudinales.<br />
+      <br />
+      </span></span></span>
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_lonEsp.png" style="width: 549px; height: 147px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="estruct">Estructuras</a></span><br />
+      <br />
+El listado de <span style="font-weight: bold;">ESTRUCTURAS</span> (<span class="Archivo">estr_.res</span>)
+que contiene información extraída del menú de ESTRUCTURAS: tipo de
+estructura, calzada, PK, cota del terreno y de la rasante, coordenadas
+X,Y del eje en los puntos inicial, medio y final de la estructura, azimut,
+longitud en planta y real (3D) y nombre de la estructura. Además, en el
+caso de viaductos y pasos superiores, aparecen también los PK&#8217;s de las
+pilas.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_estruc.png" style="width: 600px; height: 70px;" alt="" /><br />
+      </div>
+      <br />
+Este listado también se puede generar de forma simultánea para todos
+los ejes activos, generándose entonces el archivo&nbsp;<span class="Archivo">estr_0.res</span> con dichos ejes.<br />
+      <br />
+Desde este listado:<br />
+      <ul>
+        <li>Posibiliad de editar las cabeceras.</li>
+        <li>Salida en formato .xlsx&nbsp; para hojas de cálculo.</li>
+        <li>Acceso a la carpeta res de listados.</li>
+      </ul>
+      <span class="Titulo_2"><a name="geom_planta">Geometria de la
+planta</a></span><br />
+      <br />
+El listado de <span style="font-weight: bold;">GEOMETRÍA DE LA PLANTA</span>
+(<span class="Archivo">elementos.res</span>)
+está compuesto por la relación de las características geométricas de
+los elementos que componen el trazado en planta de todos los ejes
+activos. Se puede obtener tanto en formato .res como en .xlsx.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_elementos_res.png" style="width: 468px; height: 352px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <a name="control_pend"><span class="Titulo_2">Control de
+pendientes</span><br />
+      <br />
+Este listado permite analizar en un conjunto de ejes, los tramos cuya
+pendiente lomgitudinal alcanza un determinado valor.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/control_pend.png" style="width: 549px; height: 64px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <a name="tramos_firmes"><span class="Titulo_2">Tramos de firmes</span></a><br />
+      <br />
+Esta opción genera un listado con todas las diferentes secciones de
+firmes que se utilizan en el proyecto y en qué tramos se aplican, para
+todos los ejes activos.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_tramos_firmes.png" style="width: 600px; height: 191px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="ControlGP">ControlGP CONTROL
+GALIBO desde .per</a></span><a name="ControlGP"><br />
+      <br />
+Dado
+un archivo de perfiles, P.e. de un túnel definido por una superficie,
+Calcula para cada PK los puntos a cada lado con distancia mínima al
+eje, que se encuentren entre dos cotas relativas a la rasante.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="ControlGP"><img src="Imagenes/dialogo_listados_datos_control_control_GP_galib_per.png" style="width: 550px; height: 131px;" alt="" /><br />
+      </a></div>
+      <a name="ControlGP"><br />
+      </a><a name="control_z"><span class="Titulo_2">Control de cotas</span><span class="Titulo_2"></span></a><br />
+      <br />
+Los listados de <span style="font-weight: bold;">CONTROL DE COTAS</span>
+(<span class="Archivo">controlZ.res</span>) permiten comparar cotas
+respecto a una superficie de referencia de dos formas distintas:<br />
+      <ol>
+        <li><a name="controlZ_top"><span style="font-weight: bold;">Utilizando
+un fichero&nbsp;</span><span style="font-weight: bold;" class="Archivo">.top</span><span style="font-weight: bold;">/</span><span style="font-weight: bold;" class="Archivo">.toc</span></a> para comparar sus cotas con la
+superficie de referencia (que puede ser cualquiera, incluyendo las
+capas de firme) y según una <span style="font-weight: bold;">profundidad
+teórica</span> y una <span style="font-weight: bold;">tolerancia</span>.
+Se calcula el PK y distancia al eje de cada punto, también la Z teórica
+teniendo en cuenta el peralte y la <span style="font-weight: bold;">profundidad
+teórica</span>,
+se imprime la diferencia de cotas (error) y si ésta está por encima de
+la tolerancia se marca teniendo en cuenta si está por encima o por
+debajo del valor teórico.<br />
+          <br />
+Para cada eje se listan solamente los puntos que estén dentro de la
+superficie especificada.<br />
+        </li>
+      </ol>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_controlZtop.png" style="width: 550px; height: 185px;" alt="" /><br />
+      </div>
+&nbsp;<br />
+      <div style="margin-left: 40px;">Existen varias posibilidades para
+escoger la superficie sobre la que se
+determina la cota de proyecto:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Prolongando el peralte de
+la calzada principal</span>:&nbsp;parte
+de la cota de la rasante en el eje y aplica el peralte en una línea
+"infinita", no tiene en cuenta bermas, bordillos u otros cambios de
+pendiente sobre la superficie 67.Es posible forzar el lado
+del que se extrae el peralte (en el caso  <span style="font-weight: bold; font-style: italic;">Automático</span> el
+lado se determina por la posición del punto con respecto al eje
+geométrico).
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Superficie real</span>: Si
+el punto está en la zona de la plataforma utiliza la superficie 67, si
+está fuera de ella utiliza la 68 y si está fuera de la superficie 68 se
+asigna cota 0. Si se marca la opción <span style="font-style: italic;">Prolongar</span>,
+cuando el punto quede fuera de la superficie esta se alargará con la
+pendiente del último tramo, además es posible activar la casilla <span style="font-style: italic;">Excluir cierre</span> para que no utilice el último segmento de la superficie si es pseudovertical.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">A partir de cualquier
+superficie de la sección transversal</span> consignada por el usuario.
+La opción <span style="font-style: italic;">Prolongar</span> funciona
+de la misma manera que en el apartado anterior.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">A partir del tablero</span>,
+indicado por la superficie 2770 por defecto y pudiendo elegir entre
+referir la cota a la base o a la tapa del tablero.<span style="font-weight: bold;"><br />
+          </span></li>
+      </ul>
+      </div>
+      <ol start="2">
+        <li><a name="controlZ_per"><span style="font-weight: bold;">A
+partir de un fichero de perfiles&nbsp;</span><span style="font-weight: bold;" class="Archivo">.per</span></a>
+con varias superficies es posible comparar dos de ellas a unas
+distancias fijas al eje. A la primera superficie se le puede restar una
+          <span style="font-weight: bold;">profundidad teórica</span>.
+También se dan dos <span style="font-weight: bold;">tolerancias</span>,
+inferior y superior, para marcar los puntos cuyo error exceda de ese
+valor. En
+el listado se indica, tras la diferencia de cota, una &#8216;B&#8217; si está por
+debajo, una
+&#8216;A&#8217; si queda por encima y nada si queda dentro de la franja de
+tolerancia indicada.</li>
+      </ol>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_controlZper.png" style="width: 550px; height: 147px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <a name="control_dist_talud"><span class="Titulo_2">Control de
+distancias al talud desde .top<br />
+      </span><br />
+El listado de <span style="font-weight: bold;">CONTROL DE DISTANCIAS
+AL TALUD</span> (<span class="Archivo">controlD.res</span>)
+estudia la distancia horizontal desde el punto donde el PK se proyecta
+sobre el eje hasta el talud de desmonte o de terraplén. El listado toma
+como referencia un archivo&nbsp;<span class="Archivo">.top</span>/<span class="Archivo">.toc</span> que el usuario debe seleccionar.<br />
+      <br />
+La casilla <span style="font-weight: bold;">Prolongar</span> permitirá
+buscar la solución prolongando los taludes de terraplén por debajo del
+pie de terraplén y los de desmonte por encima de la cabeza de desmonte.
+Si encuentra la solución en este tramo prolongado, nos lo indicará en
+el listado.<br />
+      </a><br />
+<div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_disttalud.png" style="width: 550px; height: 147px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="z_dist_fijas">Cotas a distancias
+fijas</a></span><br />
+      <br />
+El listado <span style="font-weight: bold;">COTAS A DISTANCIAS FIJAS</span>
+(<span class="Archivo">cotas.res</span>)
+permite extraer a unas distancias al eje prefijadas, las cotas de la
+superficie del terreno, del proyecto (subrasante) y de la rasante así
+como la diferencia de cotas entre ellas. También se obtiene en este
+listado dos columnas con las coordenadas X,Y del punto.<br />
+      <br />
+Activando la casilla <span style="font-weight: bold;">Añadir último
+punto</span> el programa toma la distancia desde la superficie de
+proyecto además de la distancia desde el eje.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_listados_datos_control_zDistFijas.png" style="width: 450px; height: 294px;" alt="" /><br />
+      </div>
+      <br />
+Por defecto se usa el archivo de perfiles solución del eje actual
+(ispol#.per, siendo # el número de eje), aunque es posible elegir el
+fichero a usar activando la opción <span style="font-weight: bold; font-style: italic;">Elegir fichero</span>.<br />
+      <br />
+Posibildad de listar Todos los perfiles o solamente los múltiplos de un
+determinado valor (además del primero y del último).<br />
+      <br />
+También es posbile modificar el nombre de las superficies.<br />
+      <br />
+Se permite editar las cabeceras del listado.<br />
+Se cambia la extensión del fichero de datos&nbsp; .cdf -&gt;.zdf.<br />
+Se permite la generación en formato .xlsx <br />
+      <br />
+      <a name="cotas_rojas"><span class="Titulo_2">Cotas rojas en
+códigos fijos</span><br />
+      <br />
+Este listado imprime las cotas rojas desde una superficie de referencia
+en unos codigos fijos definidos por el usuario y sobre seis diferentes
+superfices.<br />
+      <br />
+Posibilidad
+de generar este listado en formato .xlsx para hojas de cálculo. También
+se dispone la posibilidad de editar las cabeceras.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img src="Imagenes/cotas_rojas_list.png" style="width: 459px; height: 300px;" alt="" /><br />
+      </div>
+      <br />
+      <a name="Distancias_RadialesNormales"><span class="Titulo_2">Distancias
+Radiales/Normales</span><br />
+      <br />
+Listado radiales.res:Control de distancia radiales en un archivo .per:
+Permite medir la distancia radial entre dos superficies de tipo de
+seguimiento de túneles, genera listados .res y .xlsx y permite añadir
+al archivo .per símbolos con el valor de la distancia. La medición
+puede realizarse en los puntos de cualquiera de las dos superficies y
+la referencia angular se puede tomar como promedio de una de ellas o un
+valor relativo al eje y cota de la rasante.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="Distancias_RadialesNormales"><img src="Imagenes/listados_radiales.png" style="width: 600px; height: 210px;" alt="" /><br />
+      </a></div>
+      <a name="Distancias_RadialesNormales"> <br />
+      <span class="Titulo_2"></span></a><a name="ST"><span class="Apartados"><span class="Titulo_2">Secciones tipo aplicadas</span></span><span class="Titulo_2"></span></a><br />
+      <br />
+El listado <span style="font-weight: bold;">SECCIONES TIPO APLICADAS</span>
+(<span class="Archivo">ST.res</span>)
+indica por PK&#8217;s las sección tipo aplicada a cada lado del eje. Este
+listado se genera automáticamente para cada eje cuando se calcula desde
+ALZADO o desde <a href="OL_proyecto.html">PROYECTO</a>, por tanto
+basta con seleccionar entre estos archivos ya generados.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_listados_datos_control_ST.png" style="width: 411px; height: 202px;" alt="" /><br />
+      </div>
+      <br />
+En el listado se inserta una línea en blanco cuando hay un cambio de
+sección tipo aplicada en la plataforma, cuneta, desmonte o terraplén, o
+cuando hay un cambio de desmonte a terraplén. De esta forma quedan
+agrupados todos los perfiles que tienen la misma tipología.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="consulta">Consulta</a></span><br />
+      <br />
+      <img src="Imagenes/consulta_res.png" style="width: 229px; height: 123px;" alt="" align="right" hspace="6" />El
+botón <span style="font-weight: bold;">[CONSULTA (P)]</span> permite
+acceder de
+manera directa al fichero de listado&nbsp;<span class="Archivo">CONSULTA.res</span>
+que se va generando a partir de diferentes consultas que el usuario va
+realizando interactivamente, como la opción <a href="OL_PK_dist.html">PK-distancia</a>,
+      <a href="OL_rasantes_herramientas.html#cota_roja">cotas rojas</a>
+del menú de RASANTES, perfiles fallados a la hora de obtener los
+transversales, etc. Se genera también un histórico&nbsp;<span class="Archivo">CSnnnnn.res</span> por cada sesión.<br />
+      <br />
+Con la opción<span style="font-weight: bold; font-style: italic;">
+List.PK,Dis</span> activada, se pregunta al usuario si desea visualizar
+el listado al finalizar la opción PK-distancia.<br />
+      <br />
+Para poder seleccionar cualquier archivo&nbsp;<span class="Archivo">.res</span>
+o&nbsp;<span class="Archivo">.lst</span> de entre los existentes para
+poder visualizarlo o imprimirlo, se accede a los botones <span style="font-weight: bold;">[*.res]</span> y <span style="font-weight: bold;">[*.lst]</span> respectivamente.<br />
+      <br />
+Los valores que obtenemos en este listado se observan en el ejemplo de
+la imagen:<br />
+      <ul>
+        <li>Coordenadas X,Y,Z del punto</li>
+        <li>Número del eje <br />
+        </li>
+        <li>Distancia de cada punto al eje</li>
+        <li>Azimut del eje en el punto de proyección</li>
+        <li>Radio del eje en el punto de proyección</li>
+        <li>Coordenada X del eje</li>
+        <li>Coordenada Y del eje</li>
+        <li>Cota proyectada</li>
+        <li>Cota de banda blanca</li>
+        <li>Peralte</li>
+        <li>Pendiente</li>
+        <li>Cota del punto menos cota proyectada a la plataforma</li>
+        <li>Cota de rasante</li>
+        <li>Cota del punto menos cota de la rasante</li>
+        <li>Cota de la plataforma</li>
+        <li>Excentricidad</li>
+        <li>Cota de la proyección del punto sobre el terreno</li>
+        <li>Cota roja del punto</li>
+        <li>Texto si los puntos proceden de un archivo .top<br />
+        </li>
+      </ul>
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/consulta_res_list.png" style="width: 508px; height: 134px;" alt="" /><br />
+      </div>
+      <br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>
