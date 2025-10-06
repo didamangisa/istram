@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Volumen por parcelas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>VOLUMEN POR PARCELAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo Parrafo">
+      
+      <span class="Parrafo"><span class="Parrafo"><br />
+El cálculo de volúmenes por parcelas se puede efectuar según tres
+modalidades a seleccionar en la parte superior del correspondiente
+cuadro de diálogo:<br />
+      <br />
+</span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="MS_vol_parcelas.html#vol_parcelas">Volumen por parcelas</a>
+      </span></span></span><br />
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><a href="MS_vol_parcelas.html#vol_parcelas_dar">Volumen por parcelas y con una tabla .dar</a></span></span></span><br />
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><a href="MS_vol_parcelas.html#vol_parcelas_ttp">Volumen por parcelas entre superficies trianguladas (.ttp)</a><br /><a href="#vol_par_ndp"><span style="color: rgb(0, 79, 175);">Volumen por parcelas entre dos nubes densas de puntos</span></a><br /></span></span></span>
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+En este menú podremos selecionar como realizar la medición ya que podemos ir por varios caminos:<br />
+</span></span>
+      
+      <ol start="1">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superfices MDT </span>cualquiera (Cartográfica, TTP, Rejilla o Nube densa de puntos). </span></span><span class="Parrafo">En este caso la medición entre las superficies se realiza por prismas de una resolución dada.</span></li><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superficies TTP</span>. En este caso la medición se realiza por intersección de triangulaciones al estilo de Volúmen por TTP.</span></span></li><li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superficies NDP</span>.
+En este caso la medición entre las superficies se realiza por nubes
+densas de puntos y utiliza el método de la herramienta de cubicación
+entre dos nubes densas de &nbsp;puntos.<br /></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo">En cuanto a las mediciones para los dos primeros métodos podremos seleccionar dos caminos:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Medición directa&nbsp; <span style="font-weight: bold;">Desmonte/Terraplen/Desbroce</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Medición al estilo <span style="font-weight: bold;">tabla .dar</span></span></span></li>
+      </ul><ul><li>Medición <span style="font-weight: bold;">Valor de cota (En el c.d.g)</span></li></ul>
+      <span class="Parrafo"><span class="Parrafo">
+      Todas las posibles combinaciones en cuanto a superfcie y medición son posibles.<br />
+      <br />
+Cada asignación de parcela puede llevar asociado un material y un grupo.<br />
+      <br />
+      <span style="font-weight: bold;">Grupo</span>:<br />
+</span></span><ul><li><span class="Parrafo"><span class="Parrafo">Cada Grupo tiene un Nombre, un color y un tipo de línea para volcar los recintos.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Los grupos se pueden activar/desactivar, de modo que solo se miden los grupos activos.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Las mediciones se hacen por grupos y se acumulan por grupos.</span></span></li><li><span class="Parrafo"><span class="Parrafo">La información y estado de los grupos se guarda en el archivo .vpp de las parcelas.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Se puede rotular el nombre del grupo.</span></span></li><li><span class="Parrafo"><span class="Parrafo">También se añade la posibilidad de utilizar para cada parcela, una densidad.</span></span></li><li><span class="Parrafo"><span class="Parrafo">Si se utiliza la densidad, en los listados se acumula la masa total por grupos.<br /></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ms_parcelas_gr.png" style="width: 400px; height: 143px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /><br /><br />
+      <span style="font-weight: bold;">Material</span>: Desde la pestaña MATERIALES se permite definir cada material
+por su nombre y densidad. Al utilizar la opción podemos seleccionar
+para cada parcela un material. Varias parcelas pueden tener el mismo
+material. Dentro de cada grupo, las parcelas se ordenan por materiales.&nbsp;Se lista:<br /></span></span><ul><li><span class="Parrafo"><span class="Parrafo">La masa parcial por parcela.</span></span></li><li><span class="Parrafo"><span class="Parrafo">La masa acumulada por material (todas las parcelas del grupo con el mismo material).</span></span></li><li><span class="Parrafo"><span class="Parrafo">La masa acumulada por grupo.</span></span></li></ul><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ms_parcelas_material.png" style="width: 400px; height: 138px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="vol_parcelas">Volumen por parcelas</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Esta opción permite realizar una medición de desmonte y terraplén entre
+dos superficies y dentro de un contorno (como la herramienta <a href="MS_vol_prisma.html">volumen por prisma</a>), pero separando la medición según diferentes parcelas definidas por recintos cualesquiera. Al pulsar sobre el botón <span style="font-weight: bold;">[Volumen por parcelas]</span> se despliega el siguiente cuadro de diálogo:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_vol_parcelas.png" style="width: 601px; height: 256px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Las opciones y/o parámetros a declarar son los siguientes:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superficie original desbrozada</span>: Se introduce el número de la superficie.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superficie final</span>: Se introduce el número de la superficie.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Terreno natural</span>:
+Si a esta superficie se le da el número de una existente, el programa
+mide también el desbroce en desmonte y terraplén siempre y cuando la
+superficie sea coherente</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Listar cotas</span>:
+Al activar esta opción, en el listado se imprimirá adicionalmente el
+centro de cada parcela y las cotas de las superficies original y final
+en este punto.</span></span></li>
+      </ul></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Contorno</span>: Se elige una línea cerrada que delimita la medición.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Resolución</span>: Define el ancho del prisma unidad con el que se realiza el cálculo.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">PARCELAS</span>: Permite <span style="font-weight: bold;">Añadir</span>, <span style="font-weight: bold;">Insertar</span> y <span style="font-weight: bold;">Borrar parcelas.&nbsp;</span>Cada parcela se define eligiendo el recinto que la define al hacer clic
+sobre el botón de la columna <span style="font-weight: bold;">Puntos</span> y por un <span style="font-weight: bold;">Nombre</span>. Con los botones <span style="font-weight: bold;">x Recinto</span>,
+se pueden activar y desactivar todas las parcelas que pasen por un
+recinto a seleccionar. el resto de parcelas, conservarán su estado de
+activación. </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las parcelas se
+pueden <span style="font-weight: bold;">[Guardar]</span>, <span style="font-weight: bold;">[Añadir]</span> y <span style="font-weight: bold;">[Cargar]</span> en ficheros&nbsp;<span class="Archivo">.vpp</span>, de forma que para
+realizar otra medición con las mismas parcelas no sea necesario que
+éstas estén dibujadas en la cartografía.&nbsp;</span></span></span></li></ul></span><div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al&nbsp;Cargar
+o Añadir un archivo .vpp si el nombre de las parcelas comienza por P-,
+se renombra utilizando el número correlativo que le corresponde en la
+nueva lista de parcelas.</span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div><span class="Parrafo"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">También están disponibles
+estas opciones:</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Capturar nombre</span>: Al seleccionar la parcela busca el nombre en la
+cartografía de entre los textos de un determinado estilo, aquel que
+tenga su punto de inserción dentro de la parcela.</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Buscar contorno</span>: Permite seleccionar la parcela, picando un punto
+interior, incluso no es necesario que el contorno esté formado por un
+único recinto cerrado.</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-style: italic;" class="Parf_negrita">Activar o Desactivar Parcelas</span>:
+posibilidad de activar/desactivar parcelas individuales. Para utilizar
+una parcela ha de estar activo simultáneamente su grupo y la misma
+parcela.</span></span></span></li>
+      </ul></span></span></span></span><ul><ul><li>Seleccionar un <span style="font-weight: bold;">rango de parcelas</span> para: activar, desactivar o asignarles un grupo.</li></ul></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul><li><span class="Parf_negrita">Revisión y buscar parcelas</span>:
+disponemos de dos columnas en la tabla de parcelas, una para marcar
+parcelas como revisadas y otra para buscar la parcela, al pulsar esta
+última la pantalla se amplía y centra en la parcela buscada cuyo
+contorno se resalta. Se añaden los iconos para activar&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/volpp_activar.png" /> y desactivar&nbsp;<img style="width: 17px; height: 15px;" alt="" src="Imagenes/volpp_desactivar.png" />
+todos los campos de la columna&nbsp; (parcela revisada). El número de
+la parcela actual es un campo editable, lo que permite ir directamente
+a otra parcela.&nbsp;<span style="font-style: italic;">Rev.&nbsp;</span>La herramienta&nbsp;<span style="font-style: italic;">Reordenar&nbsp;</span>permite ordenar las parcelas según el grupo y el material.</li></ul><div style="text-align: center;"><img style="width: 630px; height: 170px;" alt="" src="Imagenes/rev_parcelas.png" /><br /></div><span class="Parrafo"><ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Volcar parcelas</span>: Permite generar a partir de un fichero de parcelas:</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El contorno con el tipo de línea indicado.</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El número de parcela con el tipo de símbolo (etiqueta) seleccionado.</span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El nombre con un estilo de texto y tamaño indicados.</span></span></span></li>
+      </ul>
+      <ul>
+        </ul></span><span class="Parrafo"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Generar Rejilla de Parcelas</span>: Despliega una nueva ventana con los siguientes datos:</span></span></span></li></ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Contorno que debe estar contenido en la rejilla de parcelas.</span></span></span></li></ul>
+      <ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Coordenadas X,Y de un Punto de la rejilla.</span></span></span></li></ul>
+      <ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Lado, de las parcelas (cuadradas).</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Orientación (grados sexagesimales).</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul style="margin-left: 40px; list-style-type: circle;"><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Icono para limpiar el contorno <img src="Imagenes/icono_basura2.png" style="width: 20px; height: 20px;" alt="" />.</span></span></span></li></ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Orden de generación: WESN, WENS, EWSN, EWNS, SNWE, NSWE, SNEW o NSEW.</span></span></span></li>
+      </ul></span></span></span></span></span></span></span></span></span></span><ul><ul><li>Cambio de sentido: permite invertir el sentido de generación cada n filas o columnas.</li></ul></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parf_negrita"><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Generar medición</span>: </span></span></span><span style="font-weight: normal;">Realiza el cálculo y genera el
+listado</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;<span style="font-weight: normal;" class="Archivo">cubica.res</span><span style="font-weight: normal;">. La medición dentro de cada parcela se realiza en las
+zonas de la parcela que a su vez caen dentro del contorno de medición
+(puede haber parcelas totalmente dentro del contorno, totalmente fuera
+o parte dentro y parte fuera). Durante el cálculo, se pinta en azul el
+área en desmonte y en rojo el área en terraplén. El listado, que se
+puede visualizar al pulsar sobre el botón </span>[Listado cubica.res]<span style="font-weight: normal;">, lista
+el volumen parcial, el acumulado, el área por parcelas distinguiendo
+entre desmonte y terraplén y el área de cada parcela dentro del contorno. También se genera el fichero&nbsp;</span><span style="font-weight: normal;" class="Archivo">cb.res</span><span style="font-weight: normal;"> que
+está tabulado para que pueda ser interpretado rápidamente por cualquier
+hoja de cálculo.</span></span></span></span></li>
+      </ul></span>
+      <div style="margin-left: 40px;">Cuando se utiliza la tabla de
+materiales y en mediciones tipo desmonte/terraplén/Desbroce (No por
+tabla .dar) Se genera al final de los listados cubica.res y
+cubicaPP.xlsx&nbsp; un listado de resumen de mediciones por materiales
+y grupos.<br />
+      </div>
+      <span class="Parrafo"><br />
+</span>
+      <div style="margin-left: 40px;">Dentro de los listados, según el método que escojamos podremos obtener entre otros datos:<br />
+      <ul>
+        <li>El Tipo de Medición: Demonte/Terraplen/Desbroce o por tabla .dar.</li>
+        <li>El Tipo de Superficie: MDT (Volumen por prismas) o TTP (Volumen por TTPs).</li>
+        <li>Los nombres de los TTPs o de los MDTs (Salvo en medición por tabla .dar).<br />
+        </li>
+      </ul>
+      </div>
+      <span class="Parrafo"><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/list_vol_parcelas.png" style="width: 651px; height: 258px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">vol_parcelas_ndp.png<img src="Imagenes/ejem_vol_parcelas.png" style="width: 424px; height: 278px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      </span></span></span></span></span></span></span></span></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">RATIOS</span>:
+Esta pestaña permite definir para cada parcela un coeficiente y un
+comentario. Si se activa, este coeficiente afectará al cálculo de
+los&nbsp; volúmenes que se midan en cada parcela (D/T).</span></span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 600px; height: 269px;" alt="" src="Imagenes/vol_por_parcelas_ratios.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span><span class="Titulo_2"><a name="vol_parcelas_dar">Volumen por parcelas, con una tabla .dar y con valor de cota</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <p class="MsoNormal">Este caso es como el anterior con la diferencia de que es posible definir
+una tabla de definición de áreas para extraer diferentes mediciones y añade también la posibilidad de<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Cubicar por niveles</span>, dando las cotas superior e inferior y el intervalo.</span></span></span></span></span></span></span></span></span></span></p>
+
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_vol_parcelas_dar.png" style="width: 599px; height: 303px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Esta tabla de definición de áreas es como la del menú de <a href="EDM_editor_perfiles.html#tablas_cubic">tablas de cubicación</a> del <a href="EDM_editor_perfiles.html">EDITOR DE PERFILES</a> pero con las siguientes simplificaciones:<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se
+permite definir el nombre de cada medición. Al igual que en las tablas
+de cubicación, siempre que el nombre se encuentre entre " &lt; &gt; "
+se tendrá en cuenta para la medición pero no aparecerá en los listados.<br />
+</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La
+medición puede ser de desmonte (D) o terraplén (T) entre dos
+superficies A y B. También se pueden definir Areas (A)&nbsp; y Ratios
+(R) como en las tablas .dar del editor de perfiles. Además se puede
+guardar y cargar estas tablas desde el cuadro de diálogo.<br />
+Al leer una tabla las lineas que no seán T,D,A ó R pasarán a T.<br />
+Nota: No conviene mezclar estas tablas con las del editor de perfiles
+pues aquellas trabajan sobre superficies definidas en perfiles
+transversales y estas&nbsp; trabajan con superficies MDT
+(Cartografía,TTP,Rejilla o Nubes densas de puntos, o con TTPs.<br />
+</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las
+superficies A y B pueden ser el resultado de una operación entre
+superficies. Aquí sólo se admiten las siguientes operaciones: <span style="font-weight: bold;">[1 sup]</span>, <span style="font-weight: bold;">[+Baja]</span> y <span style="font-weight: bold;">[+Alta]</span>,&nbsp;<span style="font-weight: bold;">[+Baja Completa], [+Alta Completa], [+Baja o A1/B1], [+Alta o A1/B1].</span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Por defecto se suponen las siguientes superficies:</span></span></span></span></span></li>
+      </ul>
+      </span>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Superficie original desbrozada.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Superficie final.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Superficie del terreno original sin desbrozar.</span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Con las que se obtienen las siguientes mediciones:</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Terraplén entre las superficies 1 y 2</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desmonte entre las superficies 1 y 2</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desbroce en terraplén</span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desbroce en desmonte</span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      </span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>Mediante el parámetro<span style="font-weight: bold;"> Coeficiente</span> nos permite dar por cada línea un valor para poder obtener por ejemplo una medición por toneladas.</li><br />
+      </ul>Con la opción de <span style="font-weight: bold;">Valor de Cota</span> se genera un listado que contiene para cada parcela el valor de la cota de cada superficie mdt en el c.d.g de la parcela.<br />Las
+superficies MDT vienen ordenadas según el número que se le haya puesto
+en la columna Superficie Perfil del cuadro de diálogo de Control de
+Superficies MDT. El valor de cota puede ser: Cota real, pendiente,
+porcentaje, densidad, etc... cualquier valor que interese asociar a la
+parcela.<br />El nombre de la medición se corresponde con el nombre del
+archivo original (Si es una superficie de tipo ttp, el nombre del
+archivo ttp, etc)
+      .<br />Si se activa la opción <span style="font-weight: bold;">[Promedio de subparcelas]</span>
+las cotas calculadas en el centro de gravedad se pueden calcular
+utilizando una subdivisión en subparcelas: se despliega una ventana <span style="font-style: italic;">Rejilla de subparcelas</span>
+que permite introducir por ejemplo el valor del lado de la subparcela.
+Al generar la medición&nbsp; se generan dinámicamente las subparcelas
+de cada parcela para calcular la cota es el promedio ponderado teniendo
+en cuenta el área de la subparcela que cae dentro de la parcela.<br />&nbsp;<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><a name="vol_parcelas_ttp">Volumen por parcelas entre superficies trianguladas (.ttp)</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+      Es una mezcla de <a href="#vol_parcelas_ttp">volumen por parcelas</a> y de <a href="MS_vol_ttp.html">volumen por .ttp</a>. Realiza la medición de volúmenes de desmonte y terraplén entre dos superficies definidas mediante modelos triangulados en <a href="EDM_topografia.html#ficheros_ttp">ficheros&nbsp;<span class="Archivo">.ttp</span></a>,
+separando la medición por parcelas definidas por el usuario.
+Opcionalmente es posible seleccionar un contorno para limitar el área
+de medición.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo">Los <a href="EDM_topografia.html#ficheros_ttp">archivos&nbsp;<span class="Archivo">.ttp</span></a> se declaran a través de los índices de la lista de <a href="EDM_control_entidades.html#control_ttps">control de TTPs</a> accesible mediante el botón <img src="Imagenes/icono_control_ttps.png" style="width: 16px; height: 16px;" alt="" />.</span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_vol_parcelas_ttp.png" style="width: 600px; height: 256px;" alt="" /></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span><span class="Parrafo"><br />
+En el modo: Superficies TTP y utilizando tabla .dar de Cubicación tenemos las siguientes posibilidades:<br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li>La posibilidad de definir para cada dato de medición un <span style="font-weight: bold;">tipo de línea</span> como en las tablas de cubicación del editor de perfiles.</li>
+        <li>La posibilidad de <span style="font-weight: bold;">generar los recintos</span> en planta de cada una de las mediciones utilizando los tipos de línea definidos para cada una de ellas.</li>
+        <li>La posibilidad de activar la <span style="font-weight: bold;">cubicación por niveles</span>, dando las cotas superior e inferior y el intervalo.<br />
+        </li>
+
+      </ul>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ms_generar_recintos.png" style="width: 600px; height: 303px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <br />Se
+incorporan las superficies 3D en terraplén y desmonte medidas sobre los
+dos ttps . Por intersección de TTPS y Utilizando tabla .dar se añaden
+las funciones <span style="font-weight: bold;">+Alta Completa</span>, <span style="font-weight: bold;">+Baja Completa</span>,<span style="font-weight: bold;"> + Baja o A1/B1 </span>y <span style="font-weight: bold;">+ Alta&nbsp; o A1/B1.</span><br /><br /><div style="text-align: center;"><img src="Imagenes/volumenxttp_list.png" style="width: 600px; height: 101px;" alt="" /><br /></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />Podemos generar un listado en formado Excel de volúmenes por
+parcelas, agrupado por Grupos, en el modo de Cubicación por Niveles. Al
+generar el listado, se crea un fichero con el nombre por defecto <span class="Archivo">CubicaPPGrupos.xlsx</span>
+en la carpeta .res, se da la posibilidad de darle un nombre concreto a
+este fichero. Además, podemos ordenar el listado de forma descenciente.<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/vol_pp_gr_pn.png" style="width: 600px; height: 351px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Titulo_2"><a name="vol_par_ndp">Volumen por parcelas entre Nubes Densas de Puntos <br /><br /><span style="font-weight: normal;" class="Parrafo">Este método parte de dos nubes densas de puntos </span></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><a name="vol_par_ndp">y utiliza el método de la herramienta <span style="font-style: italic;">Cubicar<span style="font-style: italic;"> </span></span>del menú <span style="font-style: italic;">Nubes Densas de Puntos</span>:
+crea una tercera base de datos
+sobre una rejilla regular con la difencia de cotas de las otras dos
+bases. Este método deshabilita los selectores de Medición. Ofrece la
+posibilidad de generar los recintos de desmonte y terraplén activando
+el flag <span style="font-style: italic;">Crear recintos D/T.</span><br /><br /></a></span></span><span class="Parrafo"><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="vol_par_ndp"><img src="Imagenes/vol_parcelas_ndp.png" style="width: 600px; height: 256px;" alt="" /></a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a name="vol_par_ndp"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></div></span><a name="vol_par_ndp"><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Titulo_2"><br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

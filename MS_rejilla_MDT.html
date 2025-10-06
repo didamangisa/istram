@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Rejilla MDT</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>REJILLA MDT<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Esta función sirve para generar un fichero en <a href="ascii_grid.html">formato ASCII-Grid</a> a partir de la cartografía y una resolución de rejilla.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 414px; height: 233px;" alt="" src="Imagenes/dialogo_rejilla_MDT.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span> </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En primer lugar, se debe declarar el <span style="font-weight: bold;">origen de la información</span>, que puede provenir de:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Una superficie definida en <a href="EDM_control_entidades.html#control_sup_cartograficas">Control de Superficies Cartorgráficas</a> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_superf_carto.png" />. Debe seleccionarse cuál de entre todas las existente bien a través del
+desplegable o bien seleccionándola gráficamente tras pulsar sobre el
+icono <img style="width: 9px; height: 13px;" alt="" src="Imagenes/icono_cursor_flecha.png" />.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un fichero en formato&nbsp;<span class="Archivo">.hdr</span>, que es el archivo cabecera de una rejilla en formato binario que estará contenida en otro fichero de extensión&nbsp;<span class="Archivo">.flt</span>. Se trata de un formato de ArcGIS<sup>®</sup>, y la rejilla en este caso ya viene dada, por lo que su interés es únicamente para la obtención de un fichero GRID BINARIO (<span class="Archivo">.bin</span>) según el formato que usa </span><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo"> y que es reconocido por el módulo VIRTUAL 3D.<br />
+          <br />
+</span></li>
+        <li><span class="Parrafo">Un fichero topográfico&nbsp;<span class="Archivo">.xyz</span> que contenga puntos de una rejilla regular.</span></li></ul><span class="Parrafo"></span><ul><li><span class="Parrafo">Una superficie definida en <a href="EDM_control_entidades.html#control_superficies">Control de Superficies MDT</a> <img style="width: 25px; height: 25px;" alt="" src="Imagenes/icono_control_sup_mdt.png" />.
+Se define tecleando el número de la superficie de Control de
+Superficies MDT. &nbsp;Con esta opción activa, se puede generar una
+rejilla ASCII-Grid con los valores de pendiente de una superficie MDT
+dada. Para su cálculo se permite indicar la dirección de cálculo de la
+pendiente (NS, SN, EO, OE y &nbsp;Mäxima pendiente).</span></li></ul><span class="Parrafo"></span><ul><li><span class="Parrafo">También se puede&nbsp;generar una rejilla resultado de la diferencia de cotas entre dos superficies MDT.&nbsp;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Para delimitar la zona de trabajo se puede usar una línea de contorno (activando la opción <span class="Parf_negrita">Usar línea de contorno</span>), así como delimitar la zona de trabajo.</span></span></span></span></span></li>
+
+      </ul>
+      <span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Luego se selecciona el tipo de fichero a crear, que puede ser:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Un fichero </span><span class="Parrafo"><span class="Parrafo">en <a href="ascii_grid.html">formato ASCII-Grid</a></span></span><span class="Parrafo">
+de extensión (*.asc) cuyo nombre establece el usuario al generar la rejilla.
+Esta rejilla tendrá el tamaño de cuadrícula especificado por el usuario
+(por defecto, 10 metros) y su extensión será la delimitada por las
+coordenadas (X1,Y1) y (X2,Y2). Estas coordenadas se pueden dar
+gráficamente tras pulsar sobre el icono </span><span class="Parrafo"><img style="width: 9px; height: 13px;" alt="" src="Imagenes/icono_cursor_flecha.png" /></span><span class="Parrafo">.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Un fichero de rejilla en un formato binario propio de </span><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span><span class="Parrafo">, de extensión .bin, del que habrá que especificar el tamaño del bloque y el número de bloques, así como activar la casilla <span style="font-weight: bold; font-style: italic;">Usar línea de contorno</span> si así se desea. Este tipo de archivos se usan son reconocidos por el módulo VIRTUAL 3D.</span></li>
+      </ul>
+      <span class="Parrafo">Adicionalmente, si se activa la casilla <span style="font-weight: bold; font-style: italic;">Crear rejilla en cartografía</span>, la rejilla creada se materializa en el EDM (se usa el tipo de línea L0 para dibujarla).<br /><br />
+
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 470px; height: 338px;" alt="" src="Imagenes/ejemplo_rejilla_MDT.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br /><br /><br /><br />
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

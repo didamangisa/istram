@@ -1,0 +1,2912 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Dibujo y modificación de entidades</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>DIBUJO Y MODIFICACIÓN DE ENTIDADES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br style="font-weight: bold; font-style: italic;" />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#lineas">Líneas</a><br />
+      </div>
+
+      
+      <div style="margin-left: 80px;"><a href="#arcos">Arcos</a><br />
+      <a href="#circunferencias">Circunferencias</a><br />
+      <a href="#poligonos_regulares">Polígonos regulares</a><br />
+      <a href="#linea_media">Línea media</a><br />
+      <a href="#Partir_8D">Partir 8D (recta/Círculo/Clotoide)</a><br />
+      </div>
+
+      
+      <div style="margin-left: 40px;"><a href="#simbolos">Símbolos</a><br />
+      <a href="#textos">Textos</a><br />
+      <a href="#celulas">Células</a><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+La edición cartográfica conlleva la creación y manipulación de entidades gráficas del dibujo (<a href="EDM_entidades_basicas.html#lineas">líneas</a>, <a href="EDM_entidades_basicas.html#simbolos">símbolos o puntos</a>, <a href="EDM_entidades_basicas.html#textos">textos o rótulos</a> y <a href="EDM_entidades_basicas.html#celulas">células</a>), normalmente bajo ciertas condiciones geométricas y en base a otros objetos del dibujo.<br />
+
+      <br />
+      <img style="width: 320px; height: 297px; margin-right: 7px;" alt="" src="Imagenes/dibujo_modif_entidades.png" align="left" />Al
+mantener el cursor sobre una entidad gráfica aparece en pantalla una
+etiqueta que informa sobre algunas de sus propiedades: tipo y modelo al
+que pertenece, cota del vértice activo, color, coordenadas,
+contenido,&#8230;, según se trate de una <a href="EDM_entidades_basicas.html#lineas">línea</a>, un <a href="EDM_entidades_basicas.html#simbolos">símbolo</a>, un <a href="EDM_entidades_basicas.html#textos">rótulo</a> o una <a href="EDM_entidades_basicas.html#celulas">célula</a>.<br />
+      <br />
+Si se trata de una línea y ésta es de tipo 26 ó 27 (curvas de nivel),
+de tipo 34 ó 36 (curvas de nivel auxiliares) o de tipo 40 ó 41,
+entonces también se resaltan las de su misma cota en verde (para ver la
+interrelación con las otras líneas del mapa). Si no es de ninguno de
+estos tipos entonces se muestran en verde las del mismo tipo.<br />
+
+      <br />
+Es posible desactivar este comportamiento al pulsar sobre el icono&nbsp;<img style="width: 12px; height: 14px;" alt="" src="Imagenes/icono_toolBarEstandar_info.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a>, o a través del menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Visualización</span>,
+donde se puede también indicar el retardo para que se despliegue la
+etiqueta y si se desea mantener activo el comportamiento de
+identificación de líneas similares.<br />
+      <br />
+
+      <br />
+En este apartado se tratan todos los pormenores relativos a la edición
+cartográfica básica, dedicándose un subapartado a cada clase de entidad.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="lineas">Líneas</a></span><br />
+      <br />
+Las operaciones de edición actúan sobre los elementos de dibujo. Casi
+todas las opciones que actúan sobre <a href="EDM_entidades_basicas.html#lineas">líneas</a> requieren la elección previa
+o posterior de una línea y, más en concreto, de uno o dos vértices de
+ella.<br />
+
+      <br />
+      <img style="width: 242px; height: 240px; margin-left: 7px;" alt="" src="Imagenes/dibujar_linea.png" align="right" />Al
+seleccionar una <a href="EDM_entidades_basicas.html#lineas">línea</a>, quedan identificados y accesibles para actuar
+sobre ellos los vértices (pinzamientos) de la misma línea, y el vértice
+más cercano queda resaltado en verde (vértice activo). Además, también
+queda resaltado en rojo (sentido ascendente) o en magenta (sentido
+descendente) el segmento sobre el que se ha pulsado (segmento activo). <br />
+      <br />
+Hay operaciones que se hacen entre dos vértices (por ejemplo, la
+inserción de otro vértice se hace entre los extremos del segmento
+activo). <br />
+      <br />
+Cuando se llega al final de una <a href="EDM_entidades_basicas.html#lineas">línea</a>, el segmento activo no existe y
+el vértice activo se muestra en rojo si se trata del extremo inferior y
+cyan si es el superior. En este caso, las operaciones que involucran
+dos vértices se hacen después del último (por ejemplo, una inserción de
+vértice al final de una línea supone un alargamiento de
+ella).&nbsp;&nbsp;&nbsp; &nbsp;<br />
+
+      <br />
+El color de una <a href="EDM_entidades_basicas.html#lineas">línea</a> individual corresponde, por defecto, con el que tiene asociado su tipo (<span style="font-weight: bold;">color por tipo</span>). Pero es posible independizar esta característica del tipo (<span style="font-weight: bold;">color propio</span>). Esto se suele dar, por ejemplo, en cartografías procedentes de un fichero&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span>
+en el que se desea que, aunque las líneas importadas pertenezcan a
+distintos tipos, conserven su color original. Esta característica se
+puede modificar al desplegar las propiedades de la línea.<br />
+      <br />
+
+Se describen a continuación las operaciones básicas de edición sobre <a href="EDM_entidades_basicas.html#lineas">líneas</a>. Para finalizar una operación, será necesario pulsar la tecla
+&lt;Esc&gt; (o seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual). Estas funciones están disponibles desde:<br />
+      <ul>
+        <li>Los menús <span style="font-weight: bold;">Dibujar</span>, <span style="font-weight: bold;">Modificar</span> y <span style="font-weight: bold;">Herramientas</span> (se especifica en cada caso).</li>
+
+        <li>Las <a href="EDM_barras_herramientas.html">barras de herramientas</a>.</li>
+        <li>El menú contextual (las funciones más usadas).</li>
+      </ul>Mediante
+el doble clic del botón derecho se repite la última acción usada del
+editor de cartografía. Es el mismo resultado que hacer clic una vez y
+seleccionar en el menú contextual la opción de "Repetir X".<br />
+      <br />
+
+
+
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+    <tr>
+      <td style="vertical-align: top; width: 173px; text-align: center; font-weight: bold;">Operación<br />
+      </td>
+      <td style="vertical-align: top; width: 28px; text-align: center; font-weight: bold;">Icono<br />
+      </td>
+      <td style="vertical-align: top; width: 215px; text-align: center; font-weight: bold;">Descripción<br />
+      </td>
+
+      <td style="vertical-align: top; width: 2px;"><br />
+      </td>
+      <td style="vertical-align: top; width: 238px; text-align: center; font-weight: bold;">Uso<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="crear_linea">Crear línea</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 12px; height: 12px;" alt="" src="Imagenes/icono_toolBarLineas_crear.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Dibuja nuevas líneas en la cartografía.<br />
+            <br />
+La cota asignada a cada vértice será la cota actual, salvo que las
+coordenadas se introduzcan por teclado y se especifique la cota o bien
+esté activado algún tipo de enganche que la tenga en cuenta.<br />
+            <br />
+El tipo que toma la línea es el tipo de línea actual.<br />
+            <br />
+La última línea creada se queda como único elemento seleccionado.<br />
+
+            <br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Inserción consecutiva de los vértices de la línea hasta que el usuario finalice la operación.<br />
+            <br />
+Finalizada una línea, el programa continúa en el modo de creación de líneas.<br />
+            <br />
+Una línea no puede tener menos de dos vértices, de modo que si después
+de crear una no se le insertan, más puntos el programa la ignora.<br />
+
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="insertar_vertice">Insertar vértice</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span>)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarLineas_insertVert.png" /></td>
+
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Inserta
+un vértice en el segmento activo, es decir, entre los dos puntos
+activos o al final de la línea (o como prolongación de la línea si se
+está en uno de sus extremos).<br />
+            <br />
+Si se encuentra activo un modo de enganche, el vértice insertado tomará las coordenadas X e Y y la cota del elemento enganchado.<br />
+            <br />
+Si no hay ningún modo de enganche activo, la cota del punto insertado
+en la línea será un promedio (ponderado linealmente) de las cotas de
+los extremos del segmento activo.<br />
+            <br />
+En el caso de estar situado en un extremo de la línea, la cota del punto añadido es la misma que la del punto extremo.<br />
+            <br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">En todo momento se refleja la forma que tendrá la línea una vez insertado el vértice.<br />
+            <br />
+El segmento activo se desplaza en la dirección en que está orientado
+para poder insertar sucesivamente vértices en toda la línea
+seleccionada.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+
+      <td style="vertical-align: top; width: 173px;"><a name="borrar_vertice">Borrar vértice</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span>)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarLineas_borrarVert.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Elimina el vértice activo (deja de pertenecer a la línea).<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Al pulsar sobre el icono, la acción se ejecuta directamente.<br />
+            <br />
+Cuando sólo quedan dos vértices en la línea, al quitar uno la línea también se elimina.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="mover_vertice">Mover vértice</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span>)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarLineas_moverVert.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Permite
+desplazar el vértice activo principal de la línea actualmente elegida a
+otras posiciones para corregir el trazado de líneas. <br />
+            <br />
+Si está activo algún modo de enganche, se toman las coordenadas X e Y
+del elemento enganchado, pero no su cota que sigue siendo la del punto
+original.<br />
+            <br />
+</td>
+
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">En todo momento se refleja la forma que tendrá la línea una vez movido el vértice.<br />
+            <br />
+El segmento activo se desplaza en la dirección en que está orientado
+para poder mover sucesivamente los vértices de toda la línea activa.<br />
+            <br />
+Esta acción puede realizarse directamente con el ratón, actuando sobre los pinzamientos de la línea.<br />
+            <br />
+</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;">Navegación por la línea<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_avanVert.png" /><br />
+            <br />
+            <img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_retrocVert.png" /><br />
+</td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Mueve
+el vértice activo a lo largo de la línea, en sentido ascendente (el
+segmento activo es rojo) o en sentido descendente (segmento activo
+magenta). <br />
+
+            <br />
+Si el punto que se va a seleccionar cae fuera de la zona que se está
+visualizando, entonces se desplaza la pantalla a la zona del punto.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">La acción es inmediata al pulsar sobre el icono.<br />
+            <br />
+La nevegación por los vértices de una línea también es posible mediante
+las teclas de &lt;Inicio&gt;, &lt;Fin&gt;, &lt;AvPág&gt; y
+
+&lt;RePág&gt; (vértice inicial, final avanzar y retroceder
+respectivamente). <br />
+            <br />
+Cuando la línea es cerrada, la navegación es cíclica.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="unir_lineas">Unir líneas</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+</td>
+      <td style="width: 28px; text-align: center; vertical-align: top;"><img style="width: 19px; height: 5px;" alt="" src="Imagenes/icono_toolBarLineas_empalmar.png" /></td>
+      <td style="vertical-align: top; width: 215px; text-align: justify;">Permite empalmar dos líneas que se seleccionen posteriormente uniéndolas por sus extremos más próximos.<br />
+            <br />
+Si se elige la misma línea, ésta se cierra sobre sí misma. Si las
+líneas poseen cotas u otros atributos diferentes, la cota global y
+atributos de la línea resultante son los de la primera señalada, pero
+los vértices de la línea resultante conservan la cota que tenían en las
+originales.<br />
+
+            <br />
+La operación no actúa si alguna de las líneas es cerrada.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; width: 238px; text-align: justify;">Se seleccionan consecutivamente las dos líneas implicadas.<br />
+            <br />
+Si el tipo de las dos líneas elegidas es distinta, el programa informa del caso y pide confirmación.<br />
+
+            <br />
+Si se trata de curvas de nivel (L26, L27, L34 ó L36) y tienen diferente
+cota, el programa también avisa al respecto y solicita confirmación.<br />
+            <br />
+La opción queda activada, pidiendo sucesivamente que se elija la
+primera y segunda línea a empalmar, hasta que el usuario finalice la
+operación.<br />
+            <br />
+Esta acción también es posible directamente si se arrastra el pinzamiento del extremo a unir sobre el otro extremo de la línea.<br />
+            <br />
+</td>
+    </tr><tr>
+
+      <td style="vertical-align: top; width: 173px;"><a name="abrir_linea">Abrir línea</a><br />
+            <br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 19px; height: 4px;" alt="" src="Imagenes/icono_toolBarLineas_abrir.png" /></td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Corta
+una línea en dos, o abre una cerrada, eliminando la unión en el
+segmento activo. Esta opción es inmediata y se ejecuta sobre la línea
+que ya estaba seleccionada.<br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Acción
+inmediata, sobre el segmento seleccionado. Si no lo hubiera
+previamente, entonces solicita uno cíclicamente hasta que el usuario
+abandone la opción.<br />
+</td>
+    </tr>
+    <tr>
+            <td style="vertical-align: top;">Abrir polilineas por banda<br />
+            <br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 16px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_abrirbanda.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Divide una o varias polilineas en dos partes por una linea que las atraviesa.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Al arrancar la herramienta, el programa solicitará los puntos de inicio y final de la linea de corte (la <span style="font-style: italic;">banda</span>). Tras seleccionarlos, el programa eliminará el segmento coincidente en todas las polilineas que sean cortadas por la banda.<br />
+            </td>
+          </tr>
+<tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_linea">Cortar línea</a><br />
+            <br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span> &#8594; <span style="font-weight: bold;">Cortar línea</span>)<br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_cortarLinea.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Efectúa la división de una línea en dos por el vértice activo.<br />
+
+            <br />
+A diferencia de <span style="font-weight: bold;">Abrir línea</span> que
+deja entre las dos la separación del segmento activo que se elimina,
+esta opción deja las dos líneas tocándose, pues duplica el vértice de
+corte dejándolo como extremo de ambas.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Acción
+inmediata sobre el vértice activo. Si no lo hubiera previamente,
+entonces la opción es cíclica y el usuario va seleccionando vértices
+hasta que abandone la opción.<br />
+</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_2_lineas">Cortar 2 líneas</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span> &#8594; <span style="font-weight: bold;">Cortar línea</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_cortar2.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Produce
+el corte de dos líneas en su punto de cruce resultando 4 líneas, el
+resto de consideraciones son similares al caso anterior.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Si
+previamente hubiera dos líneas seleccionadas, entonces actúa sobre
+ellas, si hubiera una se solicita sólo la segunda y, en otro caso, se
+pide al usuario que seleccione sucesivamente las dos líneas. A
+continuación solicita el punto aproximado de corte, por si las líneas
+se cruzan más de una vez.<br />
+            <br />
+
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_n_lineas">Cortar n líneas</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span> &#8594; <span style="font-weight: bold;">Cortar línea</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 17px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_cortar_n.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Efectúa el corte de todas las líneas en los puntos de cruce con otra línea seleccionada.<br />
+            <br />
+El punto de corte es insertado en cada línea y ésta es cortada en dos
+por ese punto. La cota del punto de corte se obtiene de las propias
+líneas cortadas como interpolación sobre el segmento original que es
+cortado en dos.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 2px;"><br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Si no hubiera una línea seleccionada previamente, el programa solicita que se selecciona una y ejecuta la acción.<br />
+            <br />
+Si ya hubiera una línea previamente seleccionada, entonces muestra un mensaje de aviso pidiendo confirmación.<br />
+            <br />
+</td>
+    </tr>
+    <tr><td style="vertical-align: top;"><a name="Cortar_N_a_N">Cortar N a N (Menú <span class="Parf_negrita">Modificar</span>&nbsp;&#8594; <span class="Parf_negrita">Línea</span>&nbsp;&#8594; <span class="Parf_negrita">Cortar Línea</span>)</a></td><td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_cortar_n.png" /></td><td style="vertical-align: top;">Seleccionar varias líneas y cortarlas contra otra selección de líneas.<br /><br />Análogo a la opción <span class="Parf_negrita">Cortar n líneas </span>pero en vez de emplear como &nbsp;referencia 1 sóla línea, se&nbsp;emplea una selección de líneas.&nbsp;</td><td><br />
+</td><td style="vertical-align: top;">Análogo a la opción <span class="Parf_negrita">Cortar n líneas </span>pero en vez de emplear como &nbsp;referencia 1 sóla línea, se&nbsp;emplea una selección de líneas.&nbsp;</td></tr><tr>
+      <td style="vertical-align: top; width: 173px;"><a name="cortar_por_clic">Cortar por clic</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span> &#8594; <span style="font-weight: bold;">Cortar línea</span>)</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 18px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_cortarClic.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Efectúa el corte de una línea en el punto indicado con el cursor del ratón.<br />
+
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Al seleccionar la opción, se pide al usuario un punto en pantalla para efectuar el corte de la línea.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="linea_paralela">Línea paralela</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 8px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_paralela.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Genera una línea paralela a otra (directriz).<br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Si
+no se ha seleccionado una línea previamente, el programa la solicita. A
+continuación, es necesario indicar la distancia a la que se generará su
+paralela (positiva por la derecha, negativa por la izquierda).<br />
+            <br />
+La opción es cíclica y termina cuando el usuario abandone la operación.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="copiar_linea">Copiar línea</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_copiar.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Ejecutar la copia de una línea.<br />
+            <br />
+Permite hacer copias desplazadas (no paralelas, sólo serán paralelas en
+rigor si tienen un solo segmento o en casos muy especiales).<br />
+
+            <br />
+A la nueva se le asigna el tipo de línea actual.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Si
+no se ha seleccionado una línea (y sólo una) previamente, el programa
+la solicita. A continuación, es necesario indicar la distancia a la que
+se generará su copia en incrementos de coordenadas.<br />
+            <br />
+Desde el menú contextual es posible modificar los valores de distancia introducidos (opción <span style="font-weight: bold;">Cambiar distancias</span>).<br />
+
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="invertir_linea">Invertir línea</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_invertir.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Invierte el sentido del recorrido de una línea, es decir, el orden de los vértices.<br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Es de acción directa sobre las líneas seleccionadas.<br />
+            <br />
+
+Si no hubiera líneas seleccionadas previamente, el programa pide
+cíclicamente las líneas a invertir hasta que el usuario abandone la
+opción.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="longitud_linea">Longitud de línea</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Modifica
+la longitud de una línea seleccionada. Para ello se indica o bien un
+incremento, o el porcentaje de la longitud que se va a incrementar, o
+la nueva longitud total de la línea.<br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Una
+vez activada esta función, el programa pide seleccionar la línea cuya
+longitud se desea modificar. Al hacer clic sobre una línea, ésta queda
+seleccionada y se indica su longitud actual en la zona de mensajes.<br />
+            <br />
+
+Si se hace clic sobre otra línea, se ignora la anterior y queda
+seleccionada la nueva, de la cual también se muestra su longitud. Este
+proceso es cíclico hasta que el usuario elige el modo de cambiar la
+longitud (incremento, porcentaje o total), tras lo cual se introduce el
+dato.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="alargar_lineas">Alargar líneas</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarLineas_alargar.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Alarga el extremo de una línea hasta el límite definido sobre otra o la prolongación de otra.<br />
+            <br />
+La línea a alargar y la línea límite pueden ser la misma.<br />
+            <br />
+La línea a alargar puede ser una (selección directa) o varias (selección por banda).<br />
+
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Existen dos opciones de funcionamiento:<br />
+            <ul>
+              <li>Límite único: Se selecciona la línea límite y luego, cíclicamente, la/s línea/s para alargar.</li>
+            </ul>
+            <ul>
+
+              <li>Límite distinto: Se seleccionan cíclicamente y por parejas la línea límite y luego la/s línea/s para alargar.</li>
+              <li>Límite único - 3D Como límite único pero en lugar de
+mover el vérice a la línea límite, crean un nuevo vértice sobre la
+línea límite con cota la que corresponda sobre dicha línealímite. <br />
+              </li>
+              <li>Límite distinto - 3D Como límite distinto pero en lugar de mover el vérice a la línea límite,
+crean un nuevo vértice sobre la línea límite con cota la que
+corresponda sobre dicha línealímite.</li>
+
+            </ul>
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 173px;"><a name="recortar_lineas">Recortar líneas</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_recortar.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Recorta el extremo de una línea según el límite definido sobre otra.<br />
+            <br />
+La línea a recortar y la línea límite pueden ser la misma.<br />
+            <br />
+La línea a recortar puede ser una (selección directa) o varias (selección por banda).<br />
+
+            <br />
+La línea límite también puede ser una (selección directa) o varias (opción <span style="font-weight: bold;">Varios límites</span> y selección por banda).<br />
+            <br />
+En este último caso, para identificar el tramo de línea a recortar, se
+buscarán los puntos de corte con las líneas límite que sean más
+próximas a ambos lados del vértice seleccionado de la línea a recortar.<br />
+            <br />
+Si no se encuentran puntos de corte con ninguno de los límites, se
+considerará que la línea está totalmente contenida entre los límites y
+se eliminará.<br />
+            <br />
+
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Existen tres opciones de funcionamiento:<br />
+            <ul>
+              <li>Límite único: Se selecciona la línea límite y luego, cíclicamente, la/s línea/s para recortar.</li>
+            </ul>
+            <ul>
+              <li>Límite distinto: Se seleccionan cíclicamente y por parejas la línea límite y luego la/s línea/s para recortar.</li>
+
+            </ul>
+            <ul>
+              <li>Varios límites: Elimita la parte de una línea interior a varios límites. Primero se seleccionan los límites y se pulsa sobre <span style="font-weight: bold;">[Aceptar]</span>, y luego se selecciona la/s línea/s a recortar, pero por la parte interior a los límites.</li>
+            </ul>
+            <br />
+</td>
+    </tr>
+    <tr>
+
+      <td style="vertical-align: top; width: 173px;"><a name="mover_linea">Mover línea</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            <br />
+</td>
+      <td style="text-align: center; vertical-align: top; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_mover.png" /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 215px;">Mueve una línea.<br />
+
+            <br />
+Si el punto destino se introduce por teclado y se modifica la cota, el
+programa lanza un mensaje preguntando por la confirmación de
+incrementar en Z los vértices de la línea.<br />
+            <br />
+</td>
+      <td style="vertical-align: top; width: 2px;"><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 238px;">Si
+no se ha seleccionado una línea (y sólo una) previamente, el programa
+la solicita. A continuación, es necesario indicar el punto destino de
+la línea.<br />
+            <br />
+La opción es cíclica y termina cuando el usuario abandone la operación.<br />
+
+            <br />
+</td>
+    </tr><tr>
+            <td style="vertical-align: top; width: 173px;"><a name="desplazar_segmento">Desplazar segmento</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)</td>
+            <td style="vertical-align: top; width: 28px;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_despSegm.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; width: 215px;">Permite mover el segmento de una polilínea (desplazamiento paralelo a sí mismo).<br />
+            <br />
+El desplazamiento puede ser de un solo segmento (único) o de varios (múltiple).<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+
+            <td style="vertical-align: top;">Actúa sobre el segmento
+seleccionado y , si no lo hubiera, se solicita uno. En todo momento se
+refleja la forma que tendrá la línea una vez desplazado el segmento.<br />
+            <br />
+El caso de desplazamiento múltiple, se efectúa el desplazamiento de un
+segmento y luego, cíclicamente y hasta que el usuario abandone la
+operación, se solicitan más segmentos a los que se le aplicará es
+desplazamiento del primero.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="cota_linea">Cota a línea</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span>)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_cota.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Asigna una nueva cota a todos los vértices de una línea.<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Si ya hubiera una selección previa de líneas, el programa solicita la nueva cota para cada una.<br />
+            <br />
+Si no hubiera una selección previa, el programa solicita cíclicamente
+una línea para modificar su cota hasta que el se finalice la operación.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="cota_vertice">Cota a vértice</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span>)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_cotaVert.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Permite modificar la cota de los vértices de cualquier línea.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Se
+hace a través de un cuadro de diálogo que actúa sobre la línea
+seleccionada (si no la hubiera, solicita una). El usuario puede
+seleccionar el todo momento el vértice de cualquier línea, o
+desplazarse por la línea con los botones <span style="font-weight: bold;">[Anterior]</span> y <span style="font-weight: bold;">[Siguiente]</span>.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="cota_superficie">Cota de superficie</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_cotaSup.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Pasa los vértices de las líneas seleccionadas a cota de una superficie existente.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Si no
+hubiera líneas seleccionadas, el programa las solicita. A continuación
+pregunta por el tipo de interpolación a aplicar en los vértices, entre
+dos posibles:<br />
+            <ul>
+              <li>Interpolación lineal: Para cada línea seleccionada,
+el programa calcula un perfil longitudinal sobre la superficie,
+buscando las intersecciones con las líneas que la definen. Despúes se
+pondera la cota de cada vértice según distancia a las intersecciones
+calculadas.</li>
+
+            </ul>
+            <ul>
+              <li>Interpolación por perfiles: En este caso, para cada
+vértice se calculan dos perfiles, uno en dirección N-S y otro en
+dirección E-O, buscando cada uno las intersecciones con las líneas de
+la superficie más próximas. Una vez calculadas, se aplica la cota a
+cada vértice ponderando distancias desde ese vértice a las
+intersecciones. En general, este algoritmo es más preciso que el
+anterior.</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="cota_segun_plano">Selección a cota según un plano<br />
+            </a></td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Pasa los elementos seleccionados (lineas, puntos y textos) a la cota de un plano que se define marcando tres puntos.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Si no
+hubiera elementos seleccionados, el programa los solicita. A
+continuación solicita tres puntos con los que definir el plano del que
+obtendrá la cota a la que colocar los elementos. Se recomienda utilizar
+el enganche más conveniente para obtenerlos.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 173px;"><a name="explotar_vertices">Explotar en vértices</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Explotar)</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_expVert.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Crea símbolos del tipo actual en los vértices de las líneas seleccionadas.<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El programa pregunta si se desean mantener las líneas y actúa sobre la selección. Si no hubiera selección previa, la solicita.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 173px;"><a name="explotar_segmentos">Explotar en segmentos</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Explotar</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_expSegm.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Esta opción permite explotar una polilínea en todos los segmentos que la componen.<br />
+
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la selección previa y, si no la hubiera, la solicita.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Explotar símbolos<br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Explotar</span>)</td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 25px; height: 22px;" alt="" src="Imagenes/icono_explotar_simbolos.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Esta opción permite explotar símbolos que seleccionemos en textos o en líneas dependiendo el símbolo a explotar.<br />
+Una vez seleccionados los símbolos el programa me muestra una ventana con el número de símbolos seleccionados.<br />
+            <br />
+Me permite indicar a que modelo irán los símbolos una vez estén explotados.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Si hubiera una selección previa de símbolos, entonces el programa explota únicamente los símbolos de esa selección.<br />
+
+            <br />
+
+Si no hubiera selección previa, solicita que seleccionemos los símbolos a explotar.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Explotar textos<br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Explotar</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 30px; height: 29px;" alt="" src="Imagenes/icono_explotar_textos.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Esta herramienta sirve
+para convertir los textos en polilíneas. Cada letra del texto o textos
+seleccionados se convertirá en una polilínea.<br />
+            <br />
+Me permite indicar a que modelo irán los textos una vez estén explotados<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Se ofrece un cuadro de diálogo para dar los tipos de línea al convertir los diferentes textos seleccionados en polilíneas.<br />
+Una vez convertidos los textos en polilíneas estos se borran.<br />
+            </td>
+          </tr>
+<tr>
+
+            <td style="vertical-align: top; width: 173px;">Borrar línea<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 28px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_borrar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 215px;">Elimina únicamente entidades de clase línea.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Si hubiera una selección previa de entidades, entonces el programa borra únicamente las líneas de esa selección.<br />
+            <br />
+Si no hubiera selección previa, solicita cíclicamente líneas a borrar por selección directa.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="chaflan">Chaflán</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_chaflan.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Crea un chaflán entre dos segmentos de líneas distintas o entre dos segmentos consecutivos de la misma línea.<br />
+            <br />
+
+El programa une los segmentos con una línea recta, cuyos dos vértices
+los elige el usuario proporcionando la distancia desde el punto de
+corte de las rectas definidas por los segmentos al punto hasta el que
+se ha de prolongar o recortar cada uno de dichos segmentos. Si los
+segmentos pertenecen a líneas diferentes, la línea de chaflán será una
+línea nueva. Por contra, si los segmentos son consecutivos en la misma
+línea, la línea de chaflán formará parte de la misma. Cuando alguna de
+las distancias es nula, los segmentos simplemente se recortan o
+prolongan hasta su punto de corte.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El programa solicita las distancias y los segmentos.<br />
+            <br />
+            <br />
+
+La opción de chaflán es cíclica, de forma que se puede ejecutar repetidas veces hasta que el usuario abandone la opción.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Girar línea<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_girar.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Gira la línea seleccionada a partir de un punto requerido (centro de giro) un ángulo determinado. Sólo actúa sobre una línea.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la línea previamente seleccionada y, si no la hubiera o hubiera más de una, la solicita.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="cerrar_linea">Cerrar línea</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 19px;" alt="" src="Imagenes/icono_toolBarLineas_cerrar.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Cierra las líneas seleccionadas.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la selección previa de líneas y, si no la hubiera, la solicita.<br />
+            <br />
+Esta opción también está disponible en el menú contextual.<br />
+
+            <br />
+Una línea también se puede cerrar si se mueve el pinzamiento de un extremo sobre el otro.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="tomar_punto">Tomar punto</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_tomarPto.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Incorpora
+un símbolo al segmento activo (o al final de línea, si el vértice
+activo fuera el último). La opción queda activada para tomar
+sucesivamente un grupo de puntos.<br />
+            <br />
+La cota que el punto tenía como elemento aislado se conserva en la línea.<br />
+            <br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre el segmento activo y, si no hubiera ninguna línea previamente seleccionada, lo solicita.<br />
+            <br />
+Los símbolos desaparecen según se van seleccionando.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top;"><a name="soltar_punto">Soltar punto</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_soltarVert.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Suelta el vértice activo y la línea a la que pertenecía se forma sin él, con el anterior y el siguiente (si los hay).<br />
+            <br />
+El nuevo punto suelto tiene la cota que tenía en la línea.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre el vértice activo y, si no hubiera ninguna línea previamente seleccionada, lo solicita.<br />
+
+            <br />
+El vértice suelto se transforma en un símbolo del tipo actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="iniciar_linea">Iniciar línea</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_iniciar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite iniciar una línea tomando el símbolo seleccionado como vértice inicial.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre el símbolo activo y, si no hubiera ninguno o hubiera más de uno, lo solicita.<br />
+
+            <br />
+Deja activada la opción <span style="font-weight: bold;">Tomar punto</span> para poder construir una línea a partir de un conjunto de símbolos.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="int_sin_corte_2_lin">Intersección de dos líneas</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span> &#8594; <span style="font-weight: bold;">Intersección sin corte</span>)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarLineas_inters2L.png" /><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Ejecuta la intersección lógica de dos líneas que se crucen insertándoles un vértice a cada una en el punto exacto de cruce.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">La
+función actúa si las dos líneas ya estuvieran seleccionadas previamente
+y, si no, entonces las solicita. A continuación, el usuario debe
+indicar el punto aproximado de cruce (las líneas se pueden cruzar en
+más de un punto).<br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top;"><a name="int_sin_corte_n_lin">Intersección de n líneas</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span> &#8594; <span style="font-weight: bold;">Intersección sin corte</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 19px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_inters_nL.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Ejecuta la intersección lógica de una línea con todas las que la crucen.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la línea previamente seleccionada y, si no la hubiera o hubiera más de una, la solicita.<br />
+            <br />
+Ella misma queda intacta y no se producen intersecciones de una línea consigo misma.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr><td><a name="Intersección_de_n_líneas_a_n_líneas">Intersección de n líneas a n líneas (<span class="Parf_negrita">Menú Modificar&nbsp;</span><span class="Parf_negrita">&#8594;</span> Línea&nbsp;<span class="Parf_negrita">&#8594; Intersección sin corte</span>)</a></td><td style="text-align: center; vertical-align: top;"><img style="width: 19px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_inters_nL.png" /></td><td style="vertical-align: top;">Seleccionar varias líneas y generar puntos en &nbsp;las interesecciones contra otra selección de líneas.</td><td><br />
+</td><td>Análogo
+a Intersección de n líneas, salvo que actúa en vez de contra una única
+línea como referencia, en esta opción actúa contra un conjunto de
+líneas.</td></tr>
+          
+          <tr>
+            <td style="vertical-align: top;"><a name="suavizar_linea">Suavizar línea</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_suavizar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Esta
+opción inserta físicamente en las líneas seleccionadas un cierto número
+de vértices calculados según los parámetros de suavizado de curvas,
+multiplicando notablemente el número de vértices de la línea
+resultante. <br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la selección previa de líneas y, si no la hubiera, la solicita.<br />
+            <br />
+Al ejecutar esta función, el programa pregunta si se desean conservar las líneas originales.<br />
+            <br />
+Si el número de puntos de la línea resultante es excesivo para una línea, el programa generará dos o más automáticamente.<br />
+
+            <br />
+Los parámetros de suavizado se pueden controlar desde el menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Suavizado de curvas</span>.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top;">Planchar línea<br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)</td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Esta opción proporciona una alternativa a <span style="font-weight: bold;">Suavizar línea</span> para eliminar los "picos" en las polilineas en las que se utiliza.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Actúa sobre la selección previa de líneas y, si no la hubiera, la solicita.<br />
+
+            <br />
+
+Al ejecutar esta función, el programa pregunta si se desean conservar las líneas originales.<br />
+
+            <br />
+
+Si el número de puntos de la línea resultante es excesivo para una línea, el programa generará dos o más automáticamente.<br />
+
+
+            <br />
+
+Los parámetros de suavizado se pueden controlar en un pequeño cuadro de diálogo que aparece al ejecutar esta opción.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;">Información de líneas<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_info.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Muestra
+información de las líneas que seleccione el usuario sobre la cota de
+cada vértice, el tipo y coordenadas del vértice más cercano al punto
+por el que se ha seleccionado la línea y el modelo al que pertenece.<br />
+            <br />
+La información se muestra en el área de mensajes, a excepción de la cota que se muestra en la ventana gráfica.<br />
+
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">No
+actúa sobre la selección previa. El usuario ha de ir indicando con el
+ratón una a una las líneas de las que quiere obtener información.<br />
+            <br />
+La información mostrada en el área gráfica es temporal y desaparece tras un redibujado.<br />
+            <br />
+
+Opción también disponible mediante el atajo de teclado <span style="font-style: italic;">il</span>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Borrar líneas por banda<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: center;"><img style="width: 19px; height: 20px;" alt="" src="Imagenes/icono_toolBarLineas_borrarBanda.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Elimina del dibujo las líneas que el usuario seleccione por banda.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Una vez seleccionada la opción, el usuario debe proceder a seleccionar por banda las líneas a eliminar.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Convertir líneas 8D a 4D<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 24px; height: 24px;" alt="icono_modificar8d" src="Imagenes/icono_modificar8d4d.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Descompone cada arco de
+círculo y otros segmentos curvos en una sucesión de pequeños segmentos
+rectos. (utiliza los parámetros de suavizado de curvas, en
+configuración / preferencias)<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Para discretizar y obtener vértices de polilíneas en líneas con segmentos curvos (líneas 8D)<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><a name="reordenar_lineas">Reordenar</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_reordenar.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Cambia
+el orden en que están almacenadas dos líneas. Esto afecta a la que se
+elige con el ratón cuando están las dos bajo el cursor, a cuál se ve
+dibujada cuando tienen una parte superpuesta y a otras opciones del
+programa que se describen oportunamente en este manual.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Si
+previamente hubiera dos líneas seleccionadas, entonces actúa sobre
+ellas, si hubiera una se solicita sólo la segunda y, en otro caso, se
+pide al usuario que seleccione sucesivamente las dos líneas.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="pto_arco">Punto + arco</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 21px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_ptoArco.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite crear un segmento tangente a un arco, por un punto.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">No actúa sobre la selección previa. El usuario de indicar primero el punto y luego el arco.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="empalmar_arco">Empalmar con arco</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Línea</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarLineas_empalArco.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Une dos segmentos de línea con un arco de radio proporcionado por el usuario.<br />
+            <br />
+Ambos segmentos se prolongarán o recortarán hasta sus respectivos puntos de tangencia con el arco.<br />
+            <br />
+Si los segmentos pertenecen a líneas diferentes, el arco será una nueva
+línea. Por contra, si los segmentos son consecutivos en la misma línea,
+el arco se formará insertando vértices a la misma línea.<br />
+            <br />
+Cuando se especifica radio cero, los segmentos simplemente se recortan o prolongan hasta su punto de corte.<br />
+
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">No actúa sobre la selección previa. El usuario debe indicar primero el radio y luego los segmento a empalmar.<br />
+            <br />
+Esta función es cíclica, de forma que se puede ejecutar repetidas veces hasta que se abandone la opción.<br />
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="linea_tg_2_arcos">Tangente a dos arcos</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 22px; height: 8px;" alt="" src="Imagenes/icono_toolBarLineas_tg2Arcos.png" /><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite
+crear una línea tangente a dos arcos. La solución final será la más
+próxima a los puntos por los que se han seleccionado los arcos.<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">No actúa sobre la selección previa. El usuario ha de indicar sucesivamente con el ratón los dos arcos.<br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="dividir_lin_n_seg">Dividir línea (en N segm.)</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; Línea)<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Inserta símbolos o vértices sobre una polilínea, a distancias iguales sobre la misma.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la selección previa de líneas y, si no la hubiera, la solicita.<br />
+            <br />
+El programa pregunta por el número de divisiones a realizar y si se
+desean insertar símbolos o vértices en la línea. En el caso de escoger
+vértices, la línea quedará segmentada.<br />
+
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="regla">Regla (por distancia)</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; Línea)<br />
+<br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Inserta símbolos o vértices sobre una polilínea, a la distancia especificada por el usuario.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Actúa sobre la selección previa de líneas y, si no la hubiera, la solicita.<br />
+            <br />
+
+El programa pregunta por el número de divisiones a realizar y si se
+desean insertar símbolos o vértices en la línea. En el caso de escoger
+vértices, la línea quedará segmentada.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="partir_seg_ocultos">Partir por segmentos ocultos</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; Línea)<br />
+
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Divide cada polilínea seleccionada en varias polilíneas partiendo ésta por sus segmentos ocultos.<br />
+<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">Cuando finaliza la operación se elimina la polilínea original.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><a name="propiedades_linea">Propiedades de línea</a><br /></td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarLineas_propiedades.png" /><br />
+            </td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;">Despliega
+el cuadro de diálogo con las propiedades de la línea seleccionada para
+que puedan ser modificadas, incluyendo las coordenadas de todos sus
+vértices. También es posible obtener un listado en formato ASCII de los vértices al pulsar el botón <span style="font-weight: bold;">[LISTADO]</span>. Si además está activada la opción <span style="font-weight: bold; font-style: italic;">Z Roja</span>, ese listado contendrá dos columnas adicionales: una con la cota de la <a href="EDM_control_entidades.html#control_superficie">superficie</a> actual y la otra con la diferencia de cota entre cada vértice y la <a href="EDM_control_entidades.html#control_superficie">superficie</a> actual.<br />
+            <br />
+En el caso de que hubiese varias líneas seleccionadas, no se muestran
+las coordenadas de los vértices, y las propiedades que se muestran
+corresponden a la primera línea de la selección. En esta caso, y si se
+cambia alguna propiedad, todas las líneas seleccionadas se verán
+afectadas.<br />
+            <br />
+En el caso de <a href="OL_planta_opciones_visualizacion.html#lineas_8D">líneas 8D</a> el listado de las propiedades de la línea se incrementará con los valores de PK, Radio y Azimut.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 406px; height: 353px;" alt="" src="Imagenes/propiedades_linea.png" /><br />
+            <br />
+            <div style="text-align: left;">Clicando en la casilla <span style="font-weight: bold;">+</span> podremos ver las propiedades avanzadas de la polilínea.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 405px; height: 336px;" alt="" src="Imagenes/propiedades_avanzadas_polilinea.png" /><br />
+            </div><br /><br />Nos da información del <span style="font-weight: bold;">Área</span> en el caso de ser una polilínea cerrada, <span style="font-weight: bold;">Longitud 2D</span> total, <span style="font-weight: bold;">Longitud 3D total</span>, <span style="font-weight: bold;">Ángulo segmento</span>, <span style="font-weight: bold;">Longitud 2D segmento</span>, <span style="font-weight: bold;">Longitud 3D segmento</span>, <span style="font-weight: bold;">Incremento X</span>, <span style="font-weight: bold;">Incremento Y</span>, <span style="font-weight: bold;">Incremento Z</span> y <span style="font-weight: bold;">Pendiente</span> del vertice anterior y posterior (se muestra con cuatro cifras decimales y en %).<br />
+            <br />
+Si está marcada la cajita situada en la parte superior de la lista de
+vértices, identificará en el dibujo cada uno de ellos con su número.<br />
+
+            <br />
+
+            <div style="text-align: center;"><img style="width: 180px; height: 79px;" alt="" src="Imagenes/propiedades_linea_checkbox.png" /></div>
+<br />
+A partir de este cuadro de propiedades se puede cambiar&nbsp;<img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20base%20datos%20completa.png" /> o limpiar la procedencia <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />. También se pueden copiar las propiedades desde esta polilinea<br />
+hacia otra <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiara.png" /> o al revés, copiar las propiedades desde otra polilinea hacia esta <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiarde.png" />.<br /><br />Es posible limpiar la procedencia&nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />
+desde el cuadro de diálogo de selección múltiple de polilínea. Se añade
+la información relativa a su procedencia, así como la posibilidad de
+seleccionar otro valor para este campo.<br /><br /><img style="width: 300px; height: 237px;" alt="" src="Imagenes/limpiar_proced_multiple.png" hspace="20" /><br />
+<br />Al pulsar&nbsp;los botones copiar propiedades desde&nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiarde.png" /> y hacia otras polilíneas <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_poli_copiara.png" />, muestra el siguiente menú para seleccionar las propiedades a considerar.<br /><br /><div style="text-align: center;"><img style="width: 150px; height: 160px;" alt="" src="Imagenes/cotas_tomar_poner_pasar.png" />&nbsp;<br /></div><br /><br />Se disponen de botones para insertar, mover y eliminar vértices desde el menú de propiedades <img style="width: 53px; height: 22px;" alt="" src="Imagenes/icono_prop_line_ins_mov_bor.png" />.<br /><br />La casilla <span class="Parf_negrita">Cota global</span> puede emplearse para asignar este valor a &nbsp;la Z de todos los vértices de la/s línea/s seleccionada/s. <br /><br />A la derecha&nbsp;&nbsp;<span class="Parf_negrita">Cota global</span>
+se muestran dos campos con la cota mínima y máxima de todos los puntos
+que forman la polilínea. Junto a estos campos el botón&nbsp;<span class="Parf_negrita">G</span> sirve para asignar ese valor a la&nbsp;<span class="Parf_negrita">Cota global</span> que a su vez se transmite a todos los puntos de la polilínea.<br /><br /> 
+            </div>
+
+            </div>
+            </td>
+          </tr>
+
+
+
+  </tbody>
+      </table>
+
+
+      <br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="arcos">Arcos</a></span><br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 187px; text-align: center; font-weight: bold;">Operación<br />
+      </td>
+      <td style="vertical-align: top; width: 29px; text-align: center; font-weight: bold;">Icono<br />
+      </td>
+      <td style="vertical-align: top; width: 221px; text-align: center; font-weight: bold;">Descripción<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top; width: 210px; text-align: center; font-weight: bold;">Uso<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_pto_fin">Inicio-Punto-Fin</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_3puntos.png" /></td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Genera un arco que pasa por tres puntos: el punto inicial, un punto cualquiera del arco y el punto final.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify;"><br />
+
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Los
+tres puntos pueden darse tanto por ratón como por teclado. Si no se
+especifica coordenada Z, entonces se asumirá la cota actual. Si las
+coordenadas Z son distintas, el programa interpola la cota para todos
+los vértices intermedios de la línea.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_fin_radio">Inicio-Fin-Radio</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_fin_r.png" /></td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Crea un arco definido por el punto inicial, el punto final y el radio.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Tanto
+los puntos inicial y final como el radio pueden darse por ratón o por
+teclado. Si no se especifica coordenada Z, entonces se asumirá la cota
+actual. Si las coordenadas Z son distintas, el programa interpola la
+cota para todos los vértices intermedios de la línea.<br />
+            <br />
+</td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_fin_direccion">Inicio-Fin-Dirección</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<span style="font-weight: bold;"><br />
+      </span></td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 14px;" alt="" src="Imagenes/icono_toolBarArcos_2puntos_dir.png" /></td>
+
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Crea
+un arco definido por el punto inicial, el punto final y la dirección a
+partir del punto inicial, es decir, la tangente al arco en su punto
+inicial.<br />
+</td>
+      <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Tanto
+los puntos inicial y final como la dirección pueden darse por ratón o
+por teclado. Si no se especifica coordenada Z, entonces se asumirá la
+cota actual. Si las coordenadas Z son distintas, el programa interpola
+la cota para todos los vértices intermedios de la línea.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_centro_fin">Inicio-Centro-Fin</a><br /><a name="centro_inicio_fin">
+Centro-Inicio-Fin</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_cen_fin.png" /><br />
+            <br />
+
+            <img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_cen_ini_fin.png" /><br />
+</td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Dibuja un arco definido mediante su punto inicial, el centro y el punto final.<br />
+            <br />
+Ambos son similares, diferenciándose únicamente en el orden de introducción de los datos.<br />
+            <br />
+</td>
+      <td style="vertical-align: top;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Los
+tres puntos pueden darse tanto por ratón como por teclado. El punto
+final se proyecta sobre la circunferencia que genera el punto inicial y
+el centro marcando así el final del arco. Si no se especifica
+coordenada Z, entonces se asumirá la cota actual. Si las coordenadas Z
+son distintas, el programa interpola la cota para todos los vértices
+intermedios de la línea.<br />
+
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="inicio_centro_longitud">Inicio-Centro-Longitud</a><br /><a name="centro_inicio_longitud">
+Centro-Inicio-Longitud</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_cen_long.png" /><br />
+            <br />
+            <img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_cen_ini_long.png" /><br />
+</td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Crea un arco definido por su punto inicial, el centro y la longitud del mismo.<br />
+            <br />
+Ambos son similares, diferenciándose únicamente en el orden de introducción de los datos.<br />
+            <br />
+
+</td>
+      <td style="vertical-align: top;"><br />
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Tanto
+el punto inicial como el centro y la longitud pueden darse por ratón
+como por teclado. En el caso de dar la longitud gráficamente, ésta
+coincidirá con la longitud del segmento recto que representa el ratón.
+Si se especifica cota para el punto inicial, todos los vértices de la
+línea asumirán esa cota. En caso contrario asumirán la Z actual.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 187px;"><a name="radio_2_tangentes">Radio-2 tangentes</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+      </td>
+      <td style="width: 29px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 17px;" alt="" src="Imagenes/icono_toolBarArcos_r_2tang.png" /></td>
+      <td style="vertical-align: top; width: 221px; text-align: justify;">Permite
+crear un arco tangente a dos líneas. Si hay varias soluciones el
+programa ofrece el centro de cada una de ellas para que el usuario
+pueda seleccionar la más apropiada.<br />
+</td>
+      <td style="vertical-align: top;"><br />
+
+</td>
+      <td style="vertical-align: top; width: 210px; text-align: justify;">Primero
+se introduce el radio del arco y, a continuación, se seleccionan con el
+ratón una a una las líneas. Los vértices del arco ponderan su cota en
+función de la cota de las líneas.<br />
+</td>
+    </tr><tr>
+            <td style="vertical-align: top; width: 187px;"><a name="inicio_fin_angulo">Inicio-Fin-Ángulo</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_fin_ang.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Genera un arco definido por el punto inicial, el punto final y el ángulo.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tanto
+los puntos como ángulo pueden darse por ratón como por teclado. Si no
+se especifica coordenada Z, entonces se asumirá la cota actual. Si las
+coordenadas Z son distintas, el programa interpola la cota para todos
+los vértices intermedios de la línea.<br />
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="inicio_centro_angulo">Inicio-Centro-Ángulo</a><br /><a name="centro_inicio_angulo">
+Centro-Inicio-Ángulo</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Arco</span>)<br />
+
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_ini_cen_ang.png" /><br />
+            <br />
+            <img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarArcos_cen_ini_ang.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Dibuja un arco definido por su punto inicial, el centro y el ángulo.<br />
+            <br />
+Ambos son similares, diferenciándose únicamente en el orden de introducción de los datos.<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tanto
+el punto inicial como el centro y el ángulo pueden darse por ratón como
+por teclado. Si se especifica cota para el punto inicial, todos los
+vértices de la línea asumirán esa cota. En caso contrario asumirán la Z
+actual.<br />
+            <br />
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+  </tbody>
+      </table>
+
+      <br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="circunferencias">Circunferencias</a></span><br />
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 187px; text-align: center; font-weight: bold;">Operación<br />
+      </td>
+      <td style="vertical-align: top; width: 29px; text-align: center; font-weight: bold;">Icono<br />
+      </td>
+      <td style="vertical-align: top; width: 221px; text-align: center; font-weight: bold;">Descripción<br />
+
+      </td>
+      <td style="vertical-align: top;"><br />
+      </td>
+      <td style="vertical-align: top; width: 210px; text-align: center; font-weight: bold;">Uso<br />
+      </td>
+    </tr>
+    
+    
+    
+    
+    
+    
+          
+          <tr>
+
+            <td style="vertical-align: top; width: 187px;"><a name="centro_punto">Centro-Punto</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_CP.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Crea una circunferencia definida por el centro y un punto de la misma.<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tanto
+el centro como el punto pueden darse por ratón como por teclado. Si se
+especifica cota para el punto, todos los vértices de la línea asumirán
+esa cota. En caso contrario asumirán la Z actual.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="centro_radio">Centro y radio</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_CR.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Dibuja una circunferencia según el centro y el radio de la misma.<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El
+centro y el radio pueden darse por ratón o por teclado. Si se
+especifica cota para el centro, todos los vértices de la línea asumirán
+esa cota. En caso contrario asumirán la Z actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="diametro">Diámetro</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_diam.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Genera una circunferencia según dos puntos que constituirán el diámetro.<br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Ambos
+puntos se pueden introducir tanto por ratón como por teclado. Los
+vértices de la línea generada asumirán la última cota especificada para
+los puntos, y si no se indica ninguna, entonces asumirán la cota actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="3_puntos">3 puntos</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarCircunferencias_3P.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Dibuja una circunferencia que pasa por tres puntos.<br />
+            </td>
+
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Los
+puntos se pueden introducir tanto por ratón como por teclado. Los
+vértices de la línea generada asumirán la última cota especificada para
+los puntos, y si no se indica ninguna, entonces asumirán la cota actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="concentrica">Concéntrica</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_concent.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Genera una circunferencia que será concéntrica.<br />
+            <br />
+
+Para la determinación del centro, el programa utiliza tres puntos
+consecutivos de la polilínea seleccionada y que, por tanto, no tiene
+por qué ser una circunferencia.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El
+programa solicita primero la línea respecto a la cua se hará
+concéntrica y, a continuación, un punto de la misma que se puede
+introducir tanto gráfica como numéricamente. Si se especifica cota para
+este punto, todos los vértices de la línea asumirán esa cota. En caso
+contrario asumirán la Z actual.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="radio_2_puntos">Radio y 2 puntos</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_R2P.png" /></td>
+
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Crea
+una circunferencia de radio dado y que pasa por dos puntos. Si la
+distancia entre los dos puntos es mayor que el diámetro, resultará una
+circunferencia de centro el punto medio del segmento que une los dos
+puntos.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tanto
+los dos puntos como el radio se pueden introducir por ratón o por
+teclado. Los vértices de la línea generada asumirán la última cota
+especificada para los puntos, y si no se indica ninguna, entonces
+asumirán la cota actual.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="radio_2_tg">Radio y 2 tangentes</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarCircunferencias_R2tang.png" /></td>
+
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Crea una circunferencia de radio dado y tangente a dos elementos líneas.<br />
+            <br />
+Si hay varias soluciones el programa ofrece el centro de cada una de
+ellas para que el usuario pueda seleccionar la más apropiada.<br />
+            <br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El programa solicita el radio numéricamente y luego la selección gráfica de cada línea.<br />
+
+            <br />
+Los vértices de la línea circular asumen como cota la Z actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="3_tg">Por 3 tangentes</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarCircunferencias_3tang.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Crea una circunferencia tangente a tres segmentos de línea.<br />
+            <br />
+Si hay varias soluciones el programa ofrece el centro de cada una de
+ellas para que el usuario pueda seleccionar la más apropiada.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify;">El programa solicita la selección gráfica de cada segmento de línea.<br />
+
+            <br />
+
+Los vértices de la línea circular asumen como cota la que tiene la última línea seleccionada en su punto de tangencia.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 187px;"><a name="marca_centro">Marca de centro</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_marcaC.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Pide
+seleccionar una línea y crea un símbolo, del tipo actual, en el centro
+de la circunferencia que pasa por los tres puntos más próximos al
+segmento que se haya seleccionado.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tras escoger la opción, basta con seleccionar la línea.<br />
+            <br />
+La cota del símbolo generado será la misma que la del vértice que se ha activado al seleccionar la línea.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 187px;"><a name="centro_3_puntos">Centro por 3 puntos</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Circunferencia</span>)<br />
+            <br />
+            </td>
+
+            <td style="text-align: center; vertical-align: top; width: 29px;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCircunferencias_marcaC3P.png" /></td>
+            <td style="vertical-align: top; text-align: justify; width: 221px;">Esta opción permite crear un punto en el centro de una circunferencia definida por tres puntos.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tras escoger la opción, basta con indicar los tres puntos gráfica o numéricamente.<br />
+            <br />
+La cota del símbolo generado será la misma que la del último punto cuya
+cota se haya especificado o, en su defecto, la cota actual.<br />
+
+            </td>
+          </tr>
+
+  </tbody>
+      
+      </table>
+
+
+      <br />
+
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="poligonos_regulares">Polígonos regulares</a></span><br />
+
+      <br />
+
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> también permite la generación de
+polígonos regulares bien inscritos o circunscritos a una circunferencia
+cuyo radio inicial se pide, o bien apoyados en un lado. Las opciones
+son:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+
+            <td style="vertical-align: top; width: 195px; text-align: center; font-weight: bold;">Operación<br />
+            </td>
+            <td style="vertical-align: top; width: 33px; text-align: center; font-weight: bold;">Icono<br />
+            </td>
+            <td style="vertical-align: top; width: 214px; text-align: center; font-weight: bold;">Descripción<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: center; font-weight: bold;">Uso<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_triangulo">Triángulo</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Polígono regular</span>)<br />
+
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 12px; height: 14px;" alt="" src="Imagenes/icono_toolBarPoligonos_triang.png" /></td>
+            <td style="vertical-align: top; width: 214px;">Crea un triángulo.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Se introducen sucesivamente los tres vértices del triángulo.<br />
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_cuadrado">Cuadrado</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Polígono regular</span>)<br />
+            </td>
+
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_toolBarPoligonos_cuad.png" /></td>
+            <td style="vertical-align: top; width: 214px;">Crear un cuadrado.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Se introducen sucesivamente los dos puntos de un lado del cuadrado.<br />
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_rectangulo">Rectángulo</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Polígono regular</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 13px; height: 10px;" alt="" src="Imagenes/icono_toolBarPoligonos_rect.png" /></td>
+
+            <td style="vertical-align: top; width: 214px;">Crea un rectángulo.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Se introducen sucesivamente los dos puntos de un lado y luego un tercer punto que servirá para dimensionar el rectángulo.<br />
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 195px;"><a name="polig_reg_inscrito">Inscrito a una circunferencia</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Polígono regular</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 18px;" alt="" src="Imagenes/icono_toolBarPoligonos_inscrito.png" /></td>
+            <td style="vertical-align: top; width: 214px; text-align: justify;">Crea un polígono del número de lados especificado e inscrito a una circunferencia de centro y radio dados.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Se
+indica el número de lados y despúes el centro y el radio de la
+circunferencia numérica o gráficamente, así como la orientación del
+polígono. Cada vértice del polígono adoptará la cota actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 195px;"><a name="polig_reg_circunscrito">Circunscrito una circunferencia</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Polígono regular</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 20px;" alt="" src="Imagenes/icono_toolBarPoligonos_circunscrito.png" /></td>
+            <td style="vertical-align: top; width: 214px; text-align: justify;">Crea un polígono del número de lados especificado y circunscrito a una circunferencia de centro y radio dados.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Se
+indica el número de lados y despúes el centro y el radio de la
+circunferencia numérica o gráficamente, así como la orientación del
+polígono. Cada vértice del polígono adoptará la cota actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 195px;"><a name="polig_reg_lado">Apoyado en un lado</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Polígono regular</span>)<br />
+            </td>
+            <td style="width: 33px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 19px;" alt="" src="Imagenes/icono_toolBarPoligonos_lado.png" /></td>
+            <td style="vertical-align: top; width: 214px; text-align: justify;">Crea un polígono del número de lados especificado a partir de uno de ellos.<br />
+
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top; width: 210px; text-align: justify;">Se
+indica el número de lados y después, gráfica o numéricamente, los dos
+puntos que definen un lado del polígono. Si se especifica cota para el
+segundo punto, entonces cada vértice adoptará dicha cota, de lo
+contrario, todos los vértices adoptarán la Z actual.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="linea_media">Línea media</a></span><br />
+      <br /><div style="text-align: center;"><img style="width: 325px; height: 161px;" alt="" src="Imagenes/dialogo_linea_media.png" /><br /></div><br />Una opción que puede resultar muy útil es la de <span style="font-weight: bold;">línea media</span>, accesible desde el menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Línea media</span>.
+Se trata de un algoritmo capaz de generar una línea intermedia entre
+otras dos sean o no líneas rectas y regulares. Se debe tener en cuenta
+que la línea media sólo se genera entre dos líneas que NO se corten
+entre sí.<br />
+
+      <br />
+      <table style="text-align: left; width: 671px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 320px;"><img style="width: 302px; height: 237px;" alt="" src="Imagenes/linea_media_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 331px; text-align: right;"><img style="width: 298px; height: 237px;" alt="" src="Imagenes/linea_media_2.png" /><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 320px; text-align: center;"><span class="Info">Dos líneas no paralelas ni rectas</span><br />
+            </td>
+            <td style="vertical-align: top; width: 331px; text-align: center;"><span class="Info">Línea media generada a partir de las dos originales</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+La línea así generada (que será del tipo de la primera seleccionada) es
+una consecución de segmentos cortos formando una línea continua y tan
+compleja como sean las dos originales. Además, habrá tenido en cuenta
+la cota de ambas.<br /><br />Se puede seleccionarse la <span class="Parf_negrita">Cota</span>
+para los puntos de la línea media de entre: hilo bajo, promedio, hilo
+alto. Esta opción está indicada para cuando las líneas que tenemos
+representan los carriles de un Ferrocarril.<br /><br /><br />Parámetro <span class="Parf_negrita">Distancia máxima a puntos de las dos líneas</span>:&nbsp;Los
+puntos de la línea final tienen que estar a una distancia igual o menor
+que la definida al menos a un punto de cada línea. Así por ejemplo si
+las dos líneas dato tienen sus puntos enfrentados, se puede controlar
+que la línea resultante solo tenga puntos en esas posiciones.<br /><br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 635px; text-align: justify;">Antes
+de proceder al cálculo de la línea media, el programa efectúa un
+filtrado temporal de las dos líneas seleccionadas según los parámetros
+establecidos en <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Depurar cartografía</span> &#8594; <span style="font-weight: bold;">Filtrar</span>,
+por lo que si los vértices de la línea media obtenida equidistan mucho
+entre sí, basta con bajar las tolerancias hasta conseguir el resultado
+deseado.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a name="Partir_8D"><span style="font-weight: bold;">Partir 8D (Recta/Círculo/Clotoide)</span><br />
+      <br />
+Esta utilidad divide las polilíneas que tengan procedencia "Eje en
+planta" y tipo 53 en rectas, círculos y clotoides. Si está activo</a><a href="file:///C:/Ispol/util/Ayuda/EDM_dibujo_entidades.html">file:///C:/Ispol/util/Ayuda/EDM_dibujo_entidades.html</a><a name="Partir_8D"> el
+check box "Color Recta/Círculo/Clotoide" en preferencias de Obra
+Lineal, entonces se aplican esos colores a los elementos creados.
+También se da la opción de borrar las polilíneas originales.<br />
+      <br />
+      </a><a name="simbolos"><span class="Titulo_2">Símbolos</span></a><br />
+      <br />
+Se describen a continuación las operaciones básicas de edición sobre
+<a href="EDM_entidades_basicas.html#simbolos">símbolos</a>. Para finalizar una operación, será necesario pulsar la tecla
+&lt;Esc&gt; (o seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual).<br />
+
+      <br />
+Estas funciones están disponibles desde:<br />
+      <ul>
+        <li>Los menús <span style="font-weight: bold;">Dibujar</span>, <span style="font-weight: bold;">Modificar</span> y <span style="font-weight: bold;">Herramientas</span> (se especifica en cada caso).</li>
+
+        <li>Las <a href="EDM_barras_herramientas.html">barras de herramientas</a>.</li>
+        <li>El menú contextual (las funciones más usadas).</li>
+      </ul>
+      <br />
+
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px; text-align: center; font-weight: bold;">Operación<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center; font-weight: bold;">Icono<br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center; font-weight: bold;">Descripción<br />
+            </td>
+
+            
+            <td style="vertical-align: top; width: 252px; text-align: center; font-weight: bold;">Uso<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_simbolo">Crear símbolo</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_crear.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Dibuja nuevos símbolos en la cartografía.<br />
+            <br />
+La cota asignada al símbolo será la cota actual, salvo que las
+coordenadas se introduzca por teclado y se especifique la cota o bien
+esté activado algún tipo de enganche que la tenga en cuenta. Si se
+indica una cuarta coordenada, ésta será usada como atributo (p.ej., si
+por teclado se introduce <span style="font-style: italic;">100 50 600 1000</span>, el programa crea el símbolo en las coordenadas (100,50), con cota 600 y atributo 1000.<br />
+            <br />
+El tipo de símbolo que se inserta en la cartografía es el actual.<br />
+            <br />
+
+La última línea creada se queda como único elemento seleccionado.<br />
+            <br />
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Inserción
+consecutiva de símbolos del mismo tipo, bien mediante el ratón bien por
+coordenadas, hasta que el usuario finalice la operación. <br />
+            <br />
+Mientras se crean símbolos, es posible cambiar tanto el valor de la
+cota actual como el del tributo actual haciendo uso del menú contextual
+que se despliega con el botón secunadrio del ratón, lo que permite
+crear símbolos gráficamente con la cota y el atributo deseados e ir
+modificando esos valores para los siguientes.<br />
+            <br />
+
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_simbolo_direccion">Crear símbolo dirección</a><br />
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarSimbolos_crearDir.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Similar a la opción <span style="font-weight: bold;">Crear símbolo</span>, pero pudiendo especificar un ángulo de giro.<br />
+
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Inserción
+consecutiva de símbolos del mismo tipo, bien mediante el ratón bien por
+coordenadas, hasta que el usuario finalice la operación. Cada vez que
+se inserta un símbolo, es neceseario indicar el ángulo de giro del
+mismo, bien gráficamente o bien introduciendo el valor del ángulo (en
+grados centesimales) mediante el teclado.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Mover símbolo<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_mover.png" /></td>
+
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite el libre movimiento de un símbolo por la pantalla.<br />
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Actúa
+sobre el símbolo previamente seleccionado, y si no lo hubiera o hubiese
+más de uno, entonces solicita el símbolo a mover. Una vez seleccionado,
+el usuario puede moverlo gráficamente.<br />
+            <br />
+Esta acción puede realizarse directamente con el ratón, actuando sobre el pinzamiento del símbolo.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Rotar símbolo<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 13px;" alt="" src="Imagenes/icono_toolBarSimbolos_rotar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite el giro del símbolo sobre su punto de inserción.<br />
+</td>
+            
+
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Actúa
+sobre el símbolo previamente seleccionado, y si no lo hubiera o hubiese
+más de uno, entonces solicita el símbolo a mover. Una vez seleccionado,
+el usuario puede rotarlo bien gráficamente bien introduciendo el valor
+del ángulo por teclado.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="modif_cota_simb">Cambiar cota</a><br /><br />
+
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarSimbolos_cambiarZ.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite modificar la cota y el atributo a símbolos gráficamente.<br />
+</td>
+            
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Actúa
+sobre la selección de símbolos previa. El programa va pidiendo la nueva
+cota y atributo para cada símbolo de la selección. El símbolo sobre el
+que se está actuando se señala con una flecha roja sobre él.<br />
+            <br />
+En caso de no haber una selección previa de símbolos, el programa solicita al usuario el símbolo a modificar.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="edic_num_simbolos">Edición numérica</a><br />
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Símbolo</span>)<br />
+
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_edicNum.png" /></td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 216px; text-align: justify;">Despliega
+un cuadro de diálogo con todos los datos de los símbolos del tipo
+seleccionado desde el que es posible modificar las coordenadas y el
+atributo de cada uno, así como obtener un listado de todos ellos.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 344px; height: 235px;" alt="" src="Imagenes/edic_num_simbolos.png" /><br />
+            </div>
+            <br />
+El símbolo correspondiente a la primera fila se resalta en la cartografía, lo que permite su identificación visual.<br />
+<br />
+
+
+</td>
+            
+            
+          </tr><tr>
+            <td style="vertical-align: top;">Buscar texto 
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Símbolo</span>)</td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_buscar.png" /></td>
+            <td style="vertical-align: top;">Permite buscar una cadena de texto en todos los símbolos existentes en el EDM.</td>
+            <td style="vertical-align: top;">El
+programa pregunta en el área de comandos por la cadena de texto a
+buscar. Una vez realizada la búsqueda, todos los símbolos que contengan
+esa cadena quedan resaltados con una flecha a la par que, en el área de
+mensajes, se indica el número de símbolos encontrados.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 167px;">Ver cota<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_verZ.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Muestra/oculta debajo de cada símbolo la cota del mismo.<br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">La cota mostrada es a modo informativo y no forma parte del dibujo (EDM).<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Puntos a cota de superficie<br />
+            </td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarSimbolos_cotaSup.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Pasa los símbolos seleccionados a cota de la superficie actual.<br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">Actúa
+sobre la selección de símbolos previa y, si no la hubiera, entonces
+pregunta si se desean pasar todos los símbolos de la cartografía a cota
+de la superficie actual.<br /><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Información de símbolos<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarSimbolos_info.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Muestra
+información de los símbolos que seleccione el usuario sobre la cota, el
+tipo, las coordenadas y el modelo al que pertenecen.<br /><br />La información se muestra en el área de mensajes, a excepción de la cota que se muestra en la ventana gráfica.<br /><br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">No
+actúa sobre la selección previa. El usuario ha de ir indicando con el
+ratón uno a uno los símbolos de los que se quiere obtener información.<br /><br />La información mostrada en el área gráfica es temporal y desaparece tras un redibujado.<br /><br />Opción también disponible mediante el atajo de teclado is.<br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Borrar símbolo<br />
+            </td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_borrar.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Elimina únicamente entidades de clase símbolo.<br />
+            </td>
+            
+            <td style="vertical-align: top; text-align: justify;">Si hubiera una selección previa de entidades, entonces el programa borra únicamente los símbolos de esa selección.<br /><br />Si no hubiera selección previa, solicita cíclicamente símbolos a borrar por selección directa.<br /><br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="propiedades_simbolo">Propiedades de símbolo</a><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarSimbolos_propiedades.png" /><br />
+            </td>
+            <td colspan="2" rowspan="1" style="vertical-align: top; text-align: justify;"><img style="width: 219px; height: 237px;" alt="" src="Imagenes/propiedades_simbolo.png" align="right" hspace="5" />Despliega
+el cuadro de diálogo que permite modificar las propiedades de los
+símbolos seleccionados: modelo, tipo, ángulo de rotación, escalas,
+coordenadas de inserción, atributo y el número de célula al que está ligado.<br />
+            <br />
+Si el símbolo es libre, entonces no estará ligado a ninguna célula y
+este campo tendrá el valor -1 (que es lo habitual). Ligar un símbolo a
+una célula permite hacer uso de ciertos <a href="OL_ficheros_ali.html">modos de rotulación de alineaciones</a> de planta como el <a href="OL_ficheros_ali.html#elsal2_cel.ali"><span class="Archivo">ELSAL2_CEL.ali</span></a>).<br /><br />En el caso de que
+hubiese varios símbolos seleccionados, no se muestran las coordenadas
+de los puntos de inserción, y las propiedades que se muestran
+corresponden al primer símbolo de la selección. En esta caso, y si se
+cambia alguna propiedad, todas los símbolos seleccionados se verán
+afectados.<br />
+            <br />
+A partir de este cuadro de propiedades se puede cambiar&nbsp;<img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20base%20datos%20completa.png" /> o limpiar la procedencia <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />.<br />
+
+            </td>
+            
+            
+          </tr>
+
+        </tbody>
+      
+      </table>
+
+      <br />
+      <br /><span class="Titulo_2"><a name="textos">Textos</a></span><br /><br />Un <a href="EDM_entidades_basicas.html#textos">texto o rótulo</a> es una línea de texto alfanumérico constituido por una palabra o grupo de palabras asociada a un punto de inserción. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite introducir nuevos <a href="EDM_entidades_basicas.html#textos">textos</a> al dibujo, eliminar algún rótulo existente, visualizar todos los que actualmente contiene el plano y modificarlos.<br />
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Crear un texto</span><br />
+      <br />
+La opción de crear un texto está disponible desde el menú <span style="font-weight: bold;">Dibujar</span> &#8594; <span style="font-weight: bold;">Crear texto</span> o directamente desde el botón&nbsp;<img style="width: 16px; height: 8px;" alt="" src="Imagenes/icono_toolBarTextos_crear.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de <a href="EDM_entidades_basicas.html#textos">textos</a>. Esta función presenta un cuadro de diálogo con diversas opciones sobre las caracterísitcas del <a href="EDM_entidades_basicas.html#textos">texto</a> a crear, como el tamaño, el ángulo y la justificación con la que se va a pintar el <a href="EDM_entidades_basicas.html#textos">rótulo</a>. Estas preferencias se mantendrán como actuales en el programa, y la creación de <a href="EDM_entidades_basicas.html#textos">textos</a> se mantendrá activa hasta que se cierre este cuadro de diálogo.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 582px; height: 39px;" alt="" src="Imagenes/creando_texto.png" /><br />
+      </div>
+      <br />
+Para crear el <a href="EDM_entidades_basicas.html#textos">texto</a>, basta con hacer clic sobre la zona donde se creará el <a href="EDM_entidades_basicas.html#textos">texto</a> y escribirlo. El <a href="EDM_entidades_basicas.html#textos">rótulo</a> insertado será del <span style="font-weight: bold;">tipo</span>
+(estilo) indicado en el cuadro de diálogo, que se puede seleccionar
+bien mediante el desplegable o bien introduciendo directamente el
+número correspondiente al tipo.<br />
+      <br />
+A continuación se indica el <span style="font-weight: bold;">tamaño del texto</span>
+en metros reales según la escala del dibujo. A ambos lados del control
+del tamaño de texto aparecen sendos botones para dividir o multiplicar
+por dos el tamaño actual, lo que permite modificaciones rápidas.<br />
+      <br />
+La <span style="font-weight: bold;">justificación</span> es la posición del <a href="EDM_entidades_basicas.html#textos">texto</a>
+respecto a su punto de inserción, y se obtiene como combinación de la
+justificación horizontal y la vertical. Un rótulo puede justificarse
+por la izquierda, el centro o la derecha de la "celda de texto". En
+vertical puede justificarse por el borde superior de la celda de texto,
+por el borde superior de los caracteres, el centro, el borde inferior
+del texto y el de la celda.<br />
+      <br />
+      <img style="width: 54px; height: 84px; margin-left: 7px;" alt="" src="Imagenes/justifi_textos.png" align="right" />La
+celda de texto tiene doble altura que los caracteres mismos para las
+fuentes 0, 2, 4, 6 y 8, y puede tener otros valores según la fuente
+para otras.<br />
+      <br />
+En la correspondiente botonera se muestran las justificaciones posibles
+y la actual pulsada. Para modificar la actual basta con pulsar el botón
+deseado. <br />
+      <br />
+Finalmente, es posible asignar un <span style="font-weight: bold;">ángulo</span> a la línea de texto a insertar respecto a la horizontal, en sentido antihorario y ángulo en centesimales.<br />
+      <br />
+El texto creado se insertará en la cota actual (si por ejemplo marcamos
+su punto de inserción con el enganche a TTP, o a un vértice de linea,
+tomará las cotas de estos elementos).<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Edición de textos</span><br />
+      <br />
+Mover un <a href="EDM_entidades_basicas.html#textos">texto</a> es tan
+simple como mover su pinzamiento y, para cambiar su contenido, basta
+con hacer doble clic sobre él e insertar por teclado la nueva cadena de
+caracteres.<br />
+      <br />
+Se describen a continuación el resto de las operaciones básicas de
+edición sobre textos. Para finalizar una operación, será necesario
+pulsar la tecla &lt;Esc&gt; (o seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual).<br />
+      <br />
+Estas funciones están disponibles desde:<br />
+      <ul>
+        <li>Los menús <span style="font-weight: bold;">Dibujar</span>, <span style="font-weight: bold;">Modificar</span> y <span style="font-weight: bold;">Herramientas</span> (se especifica en cada caso).</li>
+        <li>Las <a href="EDM_barras_herramientas.html">barras de herramientas</a>.</li>
+        <li>El menú contextual (las funciones más usadas).</li>
+      </ul>
+
+
+      
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px; text-align: center; font-weight: bold;">Operación<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center; font-weight: bold;">Icono<br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center; font-weight: bold;">Descripción<br />
+            </td>
+
+            <td style="vertical-align: top; width: 0px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 252px; text-align: center; font-weight: bold;">Uso<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_texto">Crear texto</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 8px;" alt="" src="Imagenes/icono_toolBarTextos_crear.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite introducir en una sola operación el contenido completo de un fichero de texto en formato ASCII.<br />
+            <br />
+El tamaño, estilo y justificación que se toman son los actuales, y la opción solicita el espaciado entre líneas.<br />
+            <br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Al elegirlo se abre el selector de ficheros para que el usuario seleccione aquel cuyo contenido desee insertar en el dibujo.<br />
+            <br />
+Se crean tantos textos como líneas haya en el fichero.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_texto_direccion">Crear texto dirección</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 14px;" alt="" src="Imagenes/icono_toolBarTextos_crearDir.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite colocar un texto en cualquier dirección.<br />
+            <br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Para ello se elegirán dos puntos en el plano, el primero seguirá siendo el punto de enganche y el segundo define la orientación.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Mover texto<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_mover.png" /></td>
+
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite el libre movimiento de un texto por la pantalla.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Actúa
+sobre los textos previamente seleccionados y, si no hubiera ninguno,
+entonces solicita el texto a mover. Una vez seleccionado, el usuario
+puede moverlo gráficamente. Si hubiese más de un texto seleccionado
+previamente, entonces se efectúa el desplazamiento uno a uno,
+indicándose con un flecha roja el actual.<br />
+            <br />
+Esta acción puede realizarse directamente con el ratón, actuando sobre el pinzamiento del símbolo.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Rotar texto<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 12px;" alt="" src="Imagenes/icono_toolBarTextos_rotar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Gira el texto elegido gira en torno a su punto de inserción.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Actúa
+sobre los textos previamente seleccionados y, si no hubiera ninguno,
+entonces solicita el texto a rotar. Una vez seleccionado, el usuario
+puede rotarlo gráficamente o indicando el valor del ángulo por teclado.
+Si hubiese más de un texto seleccionado previamente, entonces se
+efectúa la rotación uno a uno.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_texto_sobre_linea">Crear texto sobre línea</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolBarTextos_crearLin.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite trazar un rótulo sobre una línea existente.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Si hay previamente un segmento activo, es el que utiliza, en caso contrario, solicita al usuario la selección del mismo.<br />
+            <br />
+El texto curvado se descompone en tantos como caracteres tenga, de modo
+que cada carácter es un rótulo. La opción dibuja el texto tal y como
+quedaría y pide confirmación al usuario.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="texto_desde_fichero">Texto desde fichero</a><br />
+
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarTextos_fichero.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite introducir en una sola operación el contenido completo de un fichero de texto en formato ASCII.<br />
+            <br />
+El tamaño, estilo y justificación que se toman son los actuales, y la opción solicita el espaciado entre líneas.<br />
+            <br />
+</td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Al elegirlo se abre el selector de ficheros para que el usuario seleccione aquel cuyo contenido desee insertar en el dibujo.<br />
+            <br />
+Se crean tantos textos como líneas haya en el fichero.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Textos a cota (Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarTextos_textoacota.png" /><br />
+            </td>
+            <td style="vertical-align: top;">Coloca los textos seleccionados en la cota dada por su posición (X, Y) en la superficie actual.<br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 167px;">Información de textos<br />
+</td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_info.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Muestra
+información de los rótulos que seleccione el usuario sobre el tipo,
+tamaño, coordenadas planimétricas y modelo al que pertenecen.<br />
+            <br />
+La información se muestra en el área de mensajes.<br />
+            <br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">No
+actúa sobre la selección previa. El usuario ha de ir indicando con el
+ratón uno a uno los textos de los que se quiere obtener información.<br />
+            <br />
+Opción también disponible mediante el comando por teclado <span style="font-style: italic;">ir</span>.<br />
+            <br />
+</td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Borrar texto<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarTextos_borrar.png" /><br />
+</td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Elimina únicamente entidades de clase texto.<br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Si hubiera una selección previa de entidades, entonces el programa borra únicamente los textos de esa selección.<br />
+            <br />
+Si no hubiera selección previa, solicita cíclicamente textos a borrar por selección directa.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="propiedades_texto">Propiedades de texto</a><br /></td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarTextos_propiedades.png" /></td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; width: 216px; text-align: justify;"><img style="width: 234px; height: 244px;" alt="" src="Imagenes/propiedades_texto.png" align="right" hspace="5" />Abre
+el cuadro de diálogo que permite modificar las propiedades de los
+rótulos (modelo al que pertenece, texto asociado, estilo o tipo,
+tamaño, ángulo de la línea de texto, justificación, coordenadas planas
+del punto de inserción y cota).<br />
+            <br />
+Actúa sobre la selección previa. Si hubiera varios rótulos
+seleccionados, entonces las propiedades NO comunes se muestran como
+&#8220;VARIOS&#8221;, pudiendo ser cambiadas para asignar a todos los rótulos de la
+selección esa misma propiedad. En el caso de de los estilos, al
+desplegarlos, una línea roja separa los estilos usados en los distintos
+rótulos de la selección del resto de estilos.<br />
+            <br />
+Al igual que los <a href="#propiedades_simbolo">símbolos</a>, los
+textos también pueden estar ligados a un número de célula. Si el texto
+es libre, entonces no estará ligado a ninguna célula y este campo
+tendrá el valor -1 (que es lo habitual). Ligar un texto a una célula
+permite hacer uso de ciertos modos de rotulación de alineaciones de
+planta como el&nbsp;<a href="OL_ficheros_ali.html#elsal2c_cel.ali"><span class="Archivo">ELSAL2C_CEL.ali</span></a>).<br />
+            <br />
+A partir de este cuadro de propiedades se puede cambiar&nbsp;<img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20base%20datos%20completa.png" /> o limpiar la procedencia <img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_limpiar.png" />.<br />
+</td>
+            
+            
+          </tr><tr>
+            <td style="vertical-align: top;"><a name="editar_texto">Editar texto</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Texto</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 22px; height: 23px;" alt="" src="Imagenes/icono_toolBarTextos_editar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite modificar el contenido del texto.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El texto se edita en la parte inferior de la interfaz, en la zona de línea de comandos.<br />
+            <br />
+Esta opción también se activa al hacer doble clic sobre el texto.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="modif_tam_texto">Cambiar tamaño</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Texto</span>)<br /></td>
+            <td style="vertical-align: top; text-align: center;"><br />
+            </td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;"><img style="width: 170px; height: 158px; margin-left: 7px;" alt="" src="Imagenes/modif_tam_texto.png" align="right" />Esta
+opción, disponible también a través del menú contextual, muestra un
+cuadro de diálogo desde el que podemos aumentar, multiplcar, dividir,
+disminuir y cambiar a un valor concreto el tamaño de los textos
+seleccionados.<br />
+            <br />
+Si no hubiera textos seleccionados previamente, entonces el programa solicita dicha selección.<br />
+            <br />
+            <br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="buscar_texto">Buscar texto</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Texto</span>)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 19px;" alt="" src="Imagenes/icono_toolBarTextos_buscar.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite buscar una cadena de texto en todos los textos existentes en el EDM.<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">El
+programa pregunta en el área de comandos por la cadena de texto a
+buscar. Una vez realizada la búsqueda, todos los textos que contengan
+esa cadena quedan resaltados con una flecha a la par que, en el área de
+mensajes, se indica el número de textos encontrados.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="reemp_texto">Reemplazar texto</a><br />
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Texto</span>)<br /></td>
+            <td style="vertical-align: top; text-align: center;"><br />
+            </td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;"><img style="width: 271px; height: 176px; margin-left: 7px;" alt="" src="Imagenes/reemp_texto.png" align="right" />Permite reemplazar cadenas de texto en los rótulos presentes en el EDM.<br />
+            <br />
+La operación se efectúa a través de un cuadro de diálogo en el que se
+indica la cadena de texto a buscar y la cadena de texto por la que se
+va a reemplazar. El usuario puede elegir entre ir texto a texto
+reemplazando la cadena o reemplazar <span style="font-weight: bold;">todos</span> los textos de una sola vez.<br />
+            <br />
+Entre las opciones de búsqueda y sustitución de cadenas de caracteres, se permite especificar una expresión regular.<br />
+            <br />
+Los textos encontrados se resaltan con una flecha. La opción puede actuar <span style="font-weight: bold;">sólo sobre los textos previamente seleccionados</span> si se activa la correspondiente opción.<br />
+            </td>
+          </tr>
+
+          
+
+        </tbody>
+      
+      
+      </table>
+
+
+      <br />
+<br />
+
+      <span style="font-weight: bold; font-style: italic;">Teclado gráfico</span><br />
+      <br />
+Cuando se está creando un texto, en la zona de mensajes y al lado de los botones habituales <span style="font-weight: bold;">[OK]</span> y <span style="font-weight: bold;">[ESC]</span>, aparece también el botón <span style="font-weight: bold;">[GRAF.]</span>. Esta opción despliega un <span style="font-weight: bold;">teclado gráfico</span>
+con el estilo de texto actual y pueden introducirse los caracteres bien
+por el teclado normal o mediante este teclado gráfico, lo que permite
+seleccionar caracteres poco habituales que no están presentes en el
+teclado normal (caracteres especiales, alfabeto cirílico,&#8230;). Esta
+opción también es accesible al introducir cualquier valor o comando por
+el teclado en la ventana de mensajes.<br />
+<br />
+      
+      <div style="text-align: center;"><img style="width: 534px; height: 234px;" alt="" src="Imagenes/teclado_grafico.png" /><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="celulas">Células</a></span><br />
+      <br />
+Las <a href="EDM_dibujo_entidades.html#celulas">células</a> son unos
+elementos con aspecto de símbolos, pero que admiten textos
+modificables. Pueden estar formadas por varios puntos de inserción,
+pues además del punto de inserción principal, las <a href="EDM_dibujo_entidades.html#celulas">células</a>
+pueden tener puntos de inserción secundarios que se pueden mover
+independientemente y tener ángulo y escalas (vertical y horizontal)
+propias, pudiendo dar diferentes formas a distintas inserciones de un
+mismo tipo de <a href="EDM_dibujo_entidades.html#celulas">célula</a>. Contienen textos variables, es decir, distintas inserciones de un mismo tipo de <a href="EDM_dibujo_entidades.html#celulas">célula</a> pueden contener textos distintos.<br />
+      <br />
+Existe un tipo especial de <a href="EDM_dibujo_entidades.html#celulas">células</a>, las llamadas <a style="font-weight: bold;" href="EDM_definicion_tipos.html#celulas_enlazadas">células enlazadas</a>, con la característica de que contienen un punto de inserción referido a su posición respecto a las <a href="EDM_dibujo_entidades.html#celulas">células</a> siguientes. Las <a href="EDM_dibujo_entidades.html#celulas">células</a>
+así creadas tendrán la característica de que actuarán en bloque como si
+fueran sólo una. Al borrar o recuperar cualquiera de las células del
+bloque, el resto&nbsp; se recolocarán para seguir formando un bloque
+compacto.<br />
+      <br />
+Se describen a continuación las operaciones básicas de edición sobre <a href="EDM_dibujo_entidades.html#celulas">células</a>. Para finalizar una operación, será necesario pulsar la tecla &lt;Esc&gt; (o seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual).<br />
+      <br />
+Estas funciones están disponibles desde:<br />
+      <ul>
+        <li>Los menús <span style="font-weight: bold;">Dibujar</span>, <span style="font-weight: bold;">Modificar</span> y <span style="font-weight: bold;">Herramientas</span> (se especifica en cada caso).</li>
+        <li>Las <a href="EDM_barras_herramientas.html">barras de herramientas</a>.</li>
+        <li>El menú contextual (las funciones más usadas).</li>
+      </ul>
+
+
+
+      
+      
+      
+      <table style="text-align: left; width: 692px; height: 96px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px; text-align: center; font-weight: bold;">Operación<br />
+            </td>
+            <td style="vertical-align: top; width: 23px; text-align: center; font-weight: bold;">Icono<br />
+            </td>
+            <td style="vertical-align: top; width: 216px; text-align: center; font-weight: bold;">Descripción<br />
+            </td>
+
+            <td style="vertical-align: top; width: 0px;"><br />
+            </td>
+            <td style="vertical-align: top; width: 252px; text-align: center; font-weight: bold;">Uso<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="crear_celula">Crear célula</a><br />
+
+
+(Menú <span style="font-weight: bold;">Dibujar</span>)<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_crear.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Crea una célula.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">El
+usuario crea la célula gráficamente, haciendo clic en pantalla para los
+puntos de inserción o bien introduciendo por teclado las coordenadas de
+cada uno.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Creación con textos<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 20px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_conTexto2.png" /><br />
+            <br />
+            <img style="width: 17px; height: 13px;" alt="" src="Imagenes/icono_toolBarCelulas_conTexto.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Si esta función está activada, al insertar una célula el programa pide el texto que contendrá.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Funciona
+a modo de botón de estado, de tal forma que si está activado (icono con
+lápiz), el programa solicita el texto que contendrá la célula.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Crear célula dirección<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 11px; height: 19px;" alt="" src="Imagenes/icono_toolBarCelulas_crearDir.png" /></td>
+
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Crea una célula tras indicar el punto de inserción principal y un ángulo de rotación.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">El
+usuario crea la célula gráficamente, haciendo clic en pantalla para el
+punto de inserción principal o bien introduciendo sus coordenadas por
+defecto.<br />
+            <br />
+Como puntos de inserción secundarios se utilizan los definidos por defecto.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Borrar célula<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_borrar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Elimina únicamente entidades de clase célula.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Si hubiera una selección previa de entidades, entonces el programa borra únicamente las células de esa selección.<br />
+            <br />
+Si no hubiera selección previa, solicita cíclicamente células a borrar por selección directa.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Mover célula<br />
+</td>
+            <td style="width: 23px; text-align: center; vertical-align: top;"><img style="width: 15px; height: 15px;" alt="" src="Imagenes/icono_toolBarCelulas_mover.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Permite el libre movimiento de una célula por la pantalla.<br />
+</td>
+            <td style="vertical-align: top; width: 0px;"><br />
+</td>
+            <td style="vertical-align: top; width: 252px; text-align: justify;">Actúa
+sobre las célucas previamente seleccionados y, si no hubiera ninguna,
+entonces solicita la céluca a mover. Una vez seleccionada, el usuario
+puede moverla gráficamente. Si hubiese más de una célula seleccionada
+previamente, entonces se efectúa el desplazamiento una a una.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="mover_pto_celula">Mover punto de célula</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Célula</span>)<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarCelulas_moverPto.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Mueve uno de los puntos de inserción de la célula.<br />
+</td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Esta acción puede realizarse directamente con el ratón, actuando sobre las pinzamientos o puntos de inserción de la célula.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 167px;">Rotar célula<br />
+</td>
+
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 16px; height: 15px;" alt="" src="Imagenes/icono_toolBarCelulas_girar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Gira una célula en torno a su punto de inserción principal.<br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Actúa
+sobre las células previamente seleccionados y, si no hubiera ninguna,
+entonces solicita la célula a rotar. Una vez seleccionada, el usuario
+puede rotarla gráficamente o indicando el valor del ángulo por teclado.
+Si hubiese más de una célula seleccionada previamente, entonces se
+efectúa la rotación una a una.<br />
+            <br />
+</td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 167px;"><a name="rotar_pto_celula">Rotar punto de célula</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Célula</span>)<br />
+</td>
+            <td style="vertical-align: top; width: 23px; text-align: center;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_rotar.png" /></td>
+            <td style="vertical-align: top; width: 216px; text-align: justify;">Realiza una rotación de los elementos asociados a uno de los puntos de inserción de la célula.<br />
+</td>
+            <td style="vertical-align: top;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">El
+programa solicita la selección del pinzamento y luego, gráficamente, es
+posible ejecutar la rotación de las entidades asociades a él,
+permaneciendo inmóvil el resto de la célula.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="explotar_sim_cel">Explotar símbolo o célula</a><br />
+
+
+(Menú <span style="font-weight: bold;">Modificar</span> &#8594; <span style="font-weight: bold;">Explotar</span>)<br />
+</td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_exp.png" /></td>
+            <td style="vertical-align: top; text-align: justify;">Descompone un símbolo o una célula.<br />
+</td>
+            <td style="vertical-align: top; text-align: justify;"><br />
+</td>
+            <td style="vertical-align: top; text-align: justify;">Actúa
+sobre la selección previa de símbolos y células que estuviera activa en
+ese momento y, si no hubiera ninguna, entonces la solicita.<br />
+            <br />
+</td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top;"><a name="propiedades_celula">Propiedades de célula</a><br /></td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarCelulas_propiedades.png" /><br />
+</td>
+            <td colspan="3" rowspan="1" style="vertical-align: top; text-align: justify;">Abre
+el cuadro de diálogo que permite modificar las propiedades de la célula
+seleccionada (modelo, ángulo, tipo, coordenadas de los puntos de
+inserción, escalas y textos), así como girarla y mover sus puntos de
+inserción.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 325px; height: 324px;" alt="" src="Imagenes/propiedades_celula.png" /><br />
+            </div>
+            <br />
+Esta opción únicamente funciona cuando la selección previa se compone sólo de una célula.<br />
+Pendiente y peralte: Estos dos campos están accesibles cuando se
+muestran las propiedades de una célula y los valores se expresan en
+ángulos Sexagesimales con origen Este y sentido Antihorario. <br />A la derecha del campo <span style="font-style: italic;">Procedencia</span> se encuentran los botones para poder seleccionar otra procedencia o limpiar su valor.<br />
+</td>
+            
+            
+          </tr>
+          
+
+          
+
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

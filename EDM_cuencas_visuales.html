@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Cuencas visuales. Cono de visión</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CUENCAS VISUALES. CONO DE VISIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />Esta opción, disponible desde el menú <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cuenca visual</span>,
+permite la obtención del contorno de las zonas de una superficie
+visible desde un punto con una cota determinada (por ejemplo, un poste
+de la luz, torre de control o vigilancia,&#8230;).<br />
+      <br />
+      <img style="margin-left: 7px; width: 350px; height: 206px; float: right;" alt="" src="Imagenes/dialogo_cuenca_visual.png" />El cuadro de diálogo permite realizar tres diferentes estudios: <span style="font-weight: bold;">cuenca visual</span> <span class="Parf_negrita">puntual</span>,&nbsp;<span style="font-weight: bold;">cono de visión</span> y <span class="Parf_negrita">cuenca visual lineal</span>.<br />
+      <br />Se pueden definir los tipos para las&nbsp; líneas que utiliza este estudio (<span class="Parf_negrita">Exterior</span>, <span class="Parf_negrita">Radial</span>, <span class="Parf_negrita">Contorno</span> y <span class="Parf_negrita">Envolvente</span>).<br /><br />Para las <span class="Parf_negrita">cuenca visual puntual</span>, se incluyen las islas dentro de los recintos, por si se utiliza un tipo de línea rellena para el contorno.<br /><br />
+La <span style="font-weight: bold;">superficie actual</span> será la
+utilizada para realizar el estudio, debiendo ésta estar definida de la
+mejor manera posible. Sólo así se evitarán errores de cálculo y
+representación. <br />
+      <br />
+Además de la <span style="font-weight: bold;">superficie</span> (actual) y el <span style="font-weight: bold;">punto de observación</span> (que se pide al usuario tras pulsar sobre el botón <span style="font-weight: bold;">[Calcular]</span>, también se requieren los siguientes datos:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      <ul>
+        <li><span style="font-weight: bold;">Radio interior</span> de
+recorte: Radio medido desde el punto de cierre de los contornos de la
+cuenca visual, de tal forma que puntos interiores a este radio no se
+considerarán en el cálculo (por defecto 0,0).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Radios externos</span> de recorte: Distancia máxima al punto de observación y a la que se cerrará el contorno de la cuenca visual.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 372px; height: 159px; margin-left: 7px;" alt="" src="Imagenes/ejem_cuenca_visual.png" align="right" /><span style="font-weight: bold;">Radio de muestreo (semiancho)</span>:
+Radio máximo de toma de datos de la superficie origen. Conviene que sea
+ligeramente superior al exterior de recorte, para poder interpolar
+hasta el límite.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ángulo de muestreo o barrido</span>:
+Ángulo, en grados sexagesimales, entre dos secciones radiales de
+muestreo. Cuanto menor sea este ángulo mayor será la resolución del
+contorno obtenido y también el tiempo de cálculo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Primer número de modelos</span>
+para líneas: Las líneas auxiliares (secciones radiales) para el cálculo
+de las cuencas se crean en el modelo especificado (i) y los contornos
+de las cuencas visuales en el modelo siguiente (i+1).</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Altura del observador</span>.</li>
+      </ul>
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Altura de los objetos</span>.</li>
+      </ul>
+      <ul>
+
+      
+      </ul>
+      <span class="Parrafo"><br />
+Para el cálculo de una <span style="font-weight: bold;">cuenca visual lineal</span> se calcula la cuenca visual en cada punto y en puntos intermedios si los vértices están más distantes que el valor de la <span style="font-weight: bold;">distancia máxima definida</span>. Además también se crea la envolvente de la cuenca visual de cada punto.</span><br />
+      <br />
+El <span style="font-weight: bold;">cono de visión</span>, que también
+trabaja con la superficie actual, permite considerar objetos de altura
+determinada (llamada <span style="font-weight: bold;">altura de visualización</span>) en el terreno, es decir, permite calcular la zona donde son
+visibles objetos de x metros de altura:<br /><span class="Parrafo"><br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 521px; height: 400px;" alt="" src="Imagenes/cono_vision.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+<span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Exportación de archivos .dwg/.dxf</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EXPORTACIÓN DE ARCHIVOS .dwg/.dxf<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#opc_generales">Opciones generales de exportación</a><br />
+      <a href="#opc_particular">Opciones particulares de exportación para líneas, símbolos, células y textos</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+      <img style="width: 148px; height: 95px; margin-left: 7px;" alt="" src="Imagenes/dialogo_exportar_dwg_dxf.png" align="right" />Una vez seleccionada la opción <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Exportar</span> &#8594; <span style="font-weight: bold;">DWG/DXF</span>,
+se muestra un cuadro de diálogo que ofrece la posibilidad de guardar
+directamente el fichero o bien definir las opciones de exportación. 
+El programa es compatible con cualquier versión de archivos&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span>.<br /><br />
+Si se escoge definir las opciones de exportación, entonces se muestra
+otro cuadro de diálogo que permite gestionar todo lo necesario a la
+hora de exportar el EDM:<br />
+      <br />
+<br />
+      <div style="text-align: center;"><img style="width: 600px; height: 416px;" alt="" src="Imagenes/dialogo_opc_exportar_dwg_dxf.png" />&nbsp;<br />
+      </div>
+<br />El cuadro de diálogo está dividido en cuatro columnas, una por cada clase de entidad básica de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> (<span style="font-weight: bold;">líneas</span>, <span style="font-weight: bold;">símbolos</span> y <span style="font-weight: bold;">textos</span>) y otra que afecta a toda la exportación (<span style="font-weight: bold;">General</span>).<br /><br /><br /><span class="Titulo_2"><a name="opc_generales">Opciones generales de exportación</a></span><br /><br />El botón <span style="font-weight: bold;">[Valores por defecto]</span> configura el cuadro de diálogo con los valores por defecto de exportación (que son los que aparecen en la imagen anterior).<br /><br />Por otro lado, existen varias opciones para especificar el <span style="font-weight: bold;">formato de los nombres de las capas</span> DWG/DXF:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 187px; height: 207px; float: right;" alt="" src="Imagenes/exp_dwg_formato_capas.png" hspace="6" />Capas tipo L (nºtipo)</span>:
+Cada entidad irá a una capa cuyo nombre será Lx, siendo L la clase de
+entidad (línea, símbolo o rótulo) y x el tipo. Así, por ejemplo, los
+símbolos de tipo 20 en el EDM irán a la capa de nombre S20 del DWG/DXF.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Capas tipo M(nºmodelo)L(nºtipo)</span>:
+Cada entidad irá a una capa cuyo nombre será MxLy, siendo x el número
+de modelo al que pertenece la entidad, L la clase de entidad (línea,
+símbolo o rótulo) e y el tipo. Así, por ejemplo, una línea de tipo 31
+que pertenezca al modelo 7 en el EDM irán a la capa de nombre M7L31 del
+DWG/DXF.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Capas tipo M(nºmodelo)</span>: Cada entidad irá a una capa cuyo nombre será Mx, siendo x
+el número de modelo al que pertenece la entidad. Así, por ejemplo, un
+rótulo que perteneza al modelo 2 en el EDM irán a la capa de nombre M2 del DWG/DXF.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Diccionario de traducción</span>: Se emplea el diccionario al pulsar sobre el botón&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_3puntos.png" /> para la exportación (si no hubiera ninguno, entonces intenta buscar por defecto el fichero&nbsp;<span class="Archivo">dxf.cod</span>). Si se pulsa sobre el botón <img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_notepad.png" />, el programa abre el fichero&nbsp;<span class="Archivo">.cod</span> con el bloc de notas para que el usuario pueda modificarlo. Si se desea crear un fichero&nbsp;<span class="Archivo">.cod</span> a partir del dibujo actual, entonces basta con pulsar sobre el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_nuevo.png" />. Este exportador puede hacer uso de ficheros&nbsp;<span class="Archivo">.cod</span> de todas las versiones de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.</li>
+      </ul>
+      <div style="margin-left: 40px;">Al emplear el diccionario, el
+usuario se asegura de que los distintos tipos de entidades gráficas
+vayan a las mismas capas del fichero DXF/DWG cuyos nombres se
+especifican en el fichero. Se recuerda que también existe la
+posibilidad de crear este diccionario durante el <a href="EDM_importar_dwg_dxf.html">proceso de importación</a>, por lo que si se decide usarlo también para la exportación se conseguirá el efecto inverso.<br />
+      <br />
+En el diccionario&nbsp;<span class="Archivo">.cod</span> deberemos tener definida como primera columna la
+capa de Autocad, como segunda columna la clase de lemento (103 líneas,
+203 símbolos, 303 textos), como tercera columna el número de la
+entidad. Se puede añadir una cuarta columna con el color de capa y una
+quinta columna con el estilo de la línea de capa. Estas dos <img style="width: 211px; height: 21px;" alt="" src="Imagenes/exp_dwg_color_estilo.png" align="right" hspace="6" />últimas columnas deben escribirse entre comillas dobles.<br />
+      <br />
+El estilo de la línea (HIDDEN2 por ejemplo) debe estar contenido en los estilos de las capas de autocad. Puede ser <img style="width: 201px; height: 50px;" alt="" src="Imagenes/exp_dwg_estilo_plantilla.png" align="right" hspace="6" />necesario añadir una plantilla .dwg que contenga este estilo en Autocad en el caso de que no la contenga.<br />
+<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Todo a una capa</span>: Se crea una capa del nombre indicado, con el color seleccionado en la que todas las entidades se insertarán.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Capa = Nombre del tipo</span>:
+Al seleccionar esta opción, las capas que se generan en el fichero
+DWG/DXF tienen el nombre del tipo de elemento (línea, rótulo o símbolo)
+que dio origen a esa capa.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Capas tipo L(nºtipo)M(nºmodelo)</span>:
+Cada entidad irá a una capa cuyo nombre será LxMy, siendo y el número
+de modelo al que pertenece la entidad, L la clase de entidad (línea,
+símbolo o rótulo) y x el tipo. Así, por ejemplo, una línea de tipo 31
+que perteneza al modelo 7 en el EDM irán a la capa de nombre L31M7 del
+DWG/DXF.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Capas tipo </span><span style="font-weight: bold;">L(nºtipo)_Nombre modelo:</span>
+Cada entidad irá a una capa cuyo nombre será Lx_NombreModelo, siendo L
+la clase de entidad (línea, símbolo o rótulo), x el tipo y NombreModelo
+el nombre del modelo al que la entidad pertenezca.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Capas tipo M(nºmodelo)Nombre tipo</span>: Cada entidad irá a una capa cuyo nombre será MxNombreTipo, siendo x
+el número de modelo al que pertenece la entidad y NombreTipo el nombre del tipo.</li></ul><ul><li>C<span style="font-weight: bold;">apas tipo M(nº modelo)L(nº tipo)Nombretipo</span>: Al seleccionar esta opción, se añade el número de línea entre el número del modelo y su nombre.</li>
+
+      </ul>
+
+También hay varias opciones posibles para indicar el <span style="font-weight: bold;">comportamiento del color</span> en el DWG/DXF:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 293px; height: 169px;" alt="" src="Imagenes/exp_color_por_tipo.png" align="right" hspace="6" />Color propio</span>: Las entidades tienen su <a href="EDM_dibujo_entidades.html#propiedades_linea">color propio</a>, que es el mismo con el que se colorean en el EDM.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Color por capa</span>: Las
+entidades cogen el color de la capa DWG/DXF a la que pertenecen (opción
+por defecto). Así, por ejemplo, si se ha escogido la opción <span style="font-weight: bold;">Capas tipo <span style="font-style: italic;">Tt</span></span> o <span style="font-weight: bold;">Capas tipo <span style="font-style: italic;">MmTt</span></span>
+en el formato de las capas, las líneas que pertenezcan a la capa L31
+del DWG/DXF cogerán el <a href="EDM_definicion_tipos.html#definir_linea">color del tipo de línea</a> 31 que corresponde en el
+EDM. Y si la opción escogida ha sido <span style="font-weight: bold;">Capas tipo <span style="font-style: italic;">Mm</span></span><span style="font-style: italic;">,</span> entonces el color de la capa DWG/DXF corresponderá al del modelo EDM.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Color por bloque</span>: Las entidades cogen el color del bloque DWG/DXF al que pertenezcan.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Color por índice o por RGB</span>: En el primer caso (opción por defecto), el programa tratará de calcular el color más próximo según la paleta de AutoCAD<sup>®</sup>.
+En el caso de seleccionar RGB (red, green, blue) entonces las entidades en el DWG/DXF
+tendrán el mismo color que el EDM pero, en general, no se
+corresponderán con los de dicha paleta.<br />
+        </li>
+      </ul>
+      Tanto el formato de las capas como el tipo de color es ajustable para
+cada clase de entidad, aunque al seleccionar esas propiedades de la
+exportación desde la columna <span style="font-weight: bold;">General</span> dicha propiedad cambia para las tres clases de entidad.<br /><br /><span style="font-weight: bold;">Otras opciones</span> de carácter general son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Mantener 3 dimensiones</span>:
+Si esta opción está activa, las polilíneas y los símbolos se escriben
+en tres dimensiones, en caso contrario, la componente Z se ignora.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Coordenadas absolutas</span>:
+Cuando esta opción está activa (opción por defecto), todas las
+coordenadas se escriben con su desplazamiento total desde el (0,0). En
+caso contrario, todas las coordenas se escriben relativas a los valores
+X<sub>mín</sub> e Y<sub>mín</sub> actuales.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Un fichero por modelo</span>:
+En caso de activar esta opción, entonces cada modelo se escribe en un
+fichero por separado (se utilizará como nombre base el que se
+especifique al dar el nombre del fichero de salida). Si la opción no
+está activa, todos los modelos se escriben en un solo fichero.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Exportar rellenos</span>: Si se quieren exportar rellenos, esta opción debe estar activa. En caso contrario, los rellenos se ignoran.</li>
+      </ul>
+      <div style="margin-left: 40px;">Si también se marca la opción <span style="font-weight: bold;">Asociativos</span>, entonces los contornos de los rellenos que se generan son manipulables desde cualquier otro programa CAD que lo permita.<br />
+      </div>
+      <ul>
+        </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 148px; height: 284px;" alt="" src="Imagenes/exp_color_relleno.png" align="right" hspace="6" />Capa con sufijo FILL para los rellenos</span>: Las <a href="EDM_definicion_tipos.html#definir_linea">líneas</a>
+rellenas en Istram están formadas por el contorno y su interior. El
+contorno puede tener un color diferente que su interior como la L78. En
+Autocad las líneas rellenas se tratan como una entidad conjunta. Es
+para diferenciar los colores del relleno y del contorno por lo que se
+activa esta casilla. Así en Autocad se creará la L78, correspondiente
+al contorno con un determinado color y la L78FILL correspondiente al
+relleno con otro color.<br />
+        </li>
+      </ul>
+      
+
+      <ul>
+        <li><span style="font-weight: bold;">Usar plantilla</span>: Si se marca esta opción, se usa la plantilla especificada al pulsar sobre el botón&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_3puntos.png" /> (ficheros&nbsp;<span class="Archivo">.dwt</span>,&nbsp;<span class="Archivo">.dwg</span> y&nbsp;<span class="Archivo">.dws</span>).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Escribir con multitarea</span>:
+Al marcar esta casilla, el programa aprovecha las características de un
+procesador de tipo multinúcleo al lanzar un hilo de ejecución
+independiente para el proceso de generación del fichero. De esta
+manera, el usuario puede seguir trabajando con el programa sin
+necesidad de esperar a que se genere el archivo&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span>. Resulta especialmente últil para la generación de archivos muy grandes.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Respetar el fichero ispol.ccd</span>: Para facilitar la traducción de colores entre el fichero&nbsp;<span class="Archivo">.edm</span> y el fichero&nbsp;<span class="Archivo">.dxf</span>, existe en la librería el fichero&nbsp;<span class="Archivo">ispol.ccd</span>
+que automatiza la conversión de colores y es usado cuando está marcada
+esta casilla. Dicho fichero contiene una tabla con la correspondencia
+entre el índice de la paletaISTRAM <sup>®</sup>/ISPOL<sup>®&nbsp;</sup> (menú desplegable de Configuración &gt; <span style="font-weight: bold;">Paleta de Colores</span>) y el índice de la paleta DWG/DXF. El fichero tiene la siguiente estructura:</li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img style="width: 377px; height: 239px;" alt="" src="Imagenes/ispol_ccd.png" /><br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">La tercera columna corresponde al índice de la paleta DWG/DXF a usar cuando el programa está en <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Impresión</span></a> o modo <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Plumas</span></a>.<br />
+      <br />
+Si se pulsa sobre el botón&nbsp;<img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_notepad.png" /> entonces el programa abre el fichero&nbsp;<span class="Archivo">ispol.ccd</span> con el bloc de notas para que el usuario pueda modificarlo. Una vez modificado, será necesario pulsar sobre el botón&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_actualizar.png" /> para recargar el fichero en memoria y así se tenga en cuenta para la exportación.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Abrir con AutoCAD al finalizar</span>:
+Con esta opción marcada, cuando finalize la escritura del fichero
+DWG/DXF se lanza el software asociado a los fichero con extensión
+DWG/DXF para abrir el fichero creado (por ejemplo, AutoCAD<sup>®</sup>).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Exportar imágenes</span>: Si se activa esta opción, las imágenes presentes en la cartografía también se exportan al fichero DWG/DXF.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><img style="width: 137px; height: 73px;" alt="" src="Imagenes/exp_guardar_DWG_DXF.png" align="right" hspace="6" />Sólo selección</span>:
+Si hay elementos seleccionados y se activa esta casilla, sólo se
+escriben dichos elementos en el fichero DWG/DXF. También se refleja
+esta opción en los menús contextuales que se muestran cuando hay
+elementos seleccionados. Selecciono x elementos y clicando el botón
+derecho del ratón obtengo la opción <span style="font-weight: bold;">Guardar DWG/DXF</span>. <br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Sistema de unidades</span>: Métrico o Imperial</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Unidades de escala del contenido insertado</span>: Centímetros, Metros, Kilómetros...</li></ul><ul><li><span class="Parf_negrita">Aplicar transformación de CRS</span>: Al estar activa se aplica la transformación de CRS que esté definida en el menú&nbsp;<a href="EDM_georreferenciacion.html#crs">Sistema de referencia de coordenadas</a>.</li>
+      </ul>
+<br /><span class="Titulo_2"><a name="opc_particular">Opciones particulares de exportación para líneas, símbolos células y textos</a></span><br /><br />Como
+ya se ha explicado, cada clase de entidad puede seguir el formato de
+las capas y el tipo de color indicado para cada una. Además, es posible
+indicar si se desa exportar o no una clase de entidad:<br /><br />
+      <div style="text-align: center;"><img style="width: 571px; height: 37px;" alt="" src="Imagenes/exportar_dwg_clases.png" />&nbsp;<br />
+      </div>
+<br />Opciones específicas para <span style="font-weight: bold;">líneas</span>:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Añadir a la capa nº modelo</span>:
+Se añade a la capa exportada como sufijo el número del modelo en el que
+se encuentra. Si esta opción está activa se permite activar la opción
+&nbsp;<span style="font-weight: bold;">Antes del nombre de la capa M_...</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Añadir a la capa nº de color propio</span>:&nbsp;
+Al activar esta casilla, si alguna polilínea tiene color propio , se
+genera una nueva capa a la que se añade el sufijo del color de la
+polilínea.</li></ul><ul><li><span class="Parf_negrita">Descripción capa = nombre tipo</span>: &nbsp;Exporta el nombre del tipo de capa a la descripción de la misma.</li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Mantener grosor de líneas</span>:
+Cuando esta casilla está activa, se mantiene el grosor de las líneas en
+el fichero de salida, pudiendo verse ese grosor posteriormente en el
+DWG/DXF. Si la casilla no está activa, entonces las entidades se crean
+con el grosor por defecto.</li>
+      </ul><ul>
+        </ul><ul><li><span style="font-weight: bold;">Grosor global en Polilíneas</span>:
+Permite convertir el grosor del tipo de línea al grosor global de la
+polilínea 2D que se creará. No es compatible con la opción <span style="font-weight: bold;">Mantener 3 dimensiones</span>.</li></ul><ul><li><span style="font-weight: bold;">Decorar líneas</span>: Con esta casilla activada, las líneas se exportan decoradas al DWG/DXF.</li>
+      </ul>
+      <ul>
+        
+        <ul>
+          <li><span style="font-weight: bold;">Cortar &#8216;trazos de línea&#8217;</span>:
+Esta opción, disponible cuando está marcada la anterior, provoca que,
+en lugar de crear un estilo de trazos y asignárselo a la polilínea,
+dibuje tantas líneas como trazos tenga la polilínea decorada.</li>
+        </ul>
+
+      </ul>
+      <ul style="list-style-type: circle;">
+        </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Poner rellenos detrás</span>:
+Si está marcada esta casilla (opción por defecto), entonces se generan
+primero los rellenos y luego las líneas, para evitar que se superpongan
+a los contornos de línea.</li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+
+      
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Suavizar líneas</span>: Con esta opción activa se crean las líneas suavizadas en el fichero de salida.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Polilíneas con elevación</span>:
+Con esta opción activa, cuando una polilínea tiene todas las cotas de
+sus vértices iguales (por ejemplo, una línea de nivel) ésta se exporta
+como una polilínea 2D y como elevación se toma la cota de sus vértices.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Exportación de líneas 8D</span>: Aquí se especifica cómo pasarán las <a href="EDM_entidades_basicas.html#lineas8D">líneas 8D</a> al DWG/DXF: como líneas y arcos sueltos o como polilíneas completas.<br />
+        </li>
+      </ul>
+      <br />
+Por otro lado, las polilíneas que estén cerradas en el EDM pasan a
+siempre a tener la propiedad de cerradas también cuando se exporta el
+dibujo a DWG/DXF, tanto en el caso de polilíneas 2D como de polilíneas
+3D.<br />
+      <br />
+<br />Opciones específicas para <span style="font-weight: bold;">símbolos</span>:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tipo de color (definición del bloque)</span>:
+Este es el color que se aplica a las entidades que forman los bloques,
+es decir, a las entidades que definen la geometría del bloque (no
+confundir con el color de la referencia a bloque). Como en el resto de
+casos, sus posibilidades son color propio, por capa y por bloque.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo de capa (definición del bloque)</span>:
+Si alguna entidad perteneciente al símbolo no corresponde con ningún
+tipo, entonces al explotar va a la capa correspondiente al símbolo del
+que procede (o bien a la capa 0, que es la otra opción).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Explotar atributos en bloques</span>:
+Si se marca esta casilla, se explotan los atributos de las inserciones
+de bloque como textos independientes. Esto es útil para el caso de
+etiquetas, pues de esta manera se puede modificar el estilo de cada una
+en el DWG/DXF de manera independientemente.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Escala uniforme</span>: Con esta opción activa los símbolos que tienen misma escala en X e Y pasan a tener esa misma escala también en Z.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Coger el color de pantalla o de papel</span>: De esta manera, independientemente que se esté en modo <span style="font-style: italic;">Pantalla</span> o en modo <span style="font-style: italic;">Papel</span>, se pueden exportar los símbolos con el color que se desee según el modo de visualización.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 241px; height: 222px; margin-left: 7px;" alt="" src="Imagenes/exportar_dwg_dxf_puntos.png" align="right" /><span style="font-weight: bold;">Generar puntos en vez de bloques</span>:
+Con esta opción se puede indicar que determinados tipos de símbolo del
+EDM se exporten como puntos en el fichero DWG/DXF en vez de como
+referencias a bloque. Al pulsar sobre el botón&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/boton_3puntos.png" />
+superior se seleccionan los tipos de símbolo que se exportarán como
+puntos, mientras que el botón inferior permite escoger el tipo de punto
+en el DWG/DXF así como su tamaño.</li>
+      </ul><ul><li><span style="font-weight: bold;" class="Parf_negrita">Nombre para los bloques</span>:
+&nbsp;Posibilidad de crear los bloques con el nombre del tipo del
+símbolo que los genera. De esta manera, ahora los bloques pueden tener
+el nombre:</li><ul><li class="Parf_negrita">SXXXX con XXXX el número de tipo del símbolo</li><li><span class="Parf_negrita">Nombre del tipo de símbolo</span></li></ul></ul><br />
+      <br />
+Opciones específicas para <span style="font-weight: bold;">células</span>:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Exportar células</span>:
+Si se quieren exportar células, esta opción debe estar activa. En caso
+contrario, las células se ignoran. <br />
+        </li>
+        <li><span style="font-weight: bold;">Células a bloques</span>:
+El programa explota las células en
+entidades básicas (líneas, símbolos y textos), y procede con cada clase
+de entidad obtenida igual que con el resto en cuanto al formato de las
+capas y al tipo de color en caso de que no esté marcada esta opción, de
+estar marcada crea un bloque con el contenido de la célula.<br />
+        </li>
+      </ul>
+
+<br />Opciones específicas para <span style="font-weight: bold;">textos</span>:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Mantener la justificación</span>:
+Al marcar esta casilla, se intenta mantener la justificación del texto
+original. De todas formas, la correspondencia no es perfecta por tenerISTRAM <sup>®</sup>/ISPOL<sup>®</sup>
+más posibilidades de justificación que el formato DWG/DXF, por lo que
+se recomienda mantenerla desactivada. En tal caso, la justificación del
+texto es siempre izquierda-inferior.</li>
+      </ul>
+      <ul><li><span class="Parf_negrita">Generar textos como MText</span>: Permite editar el texto en varias líneas.</li></ul><ul><li><span style="font-weight: bold;">Generar estilos de texto</span>: Al marcar esta casilla, se generan en el DWG/DXF los estilos usados en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. Los textos respetan sus estilos en el caso de fuentes TrueType y en algunas fuentes ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> que tienen correspondencia con el formato DWG/DXF.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Nombre para los estilos</span>: Permite configurar el nombre que tendrán los estilos generados:</li>
+        <ul>
+          <li>De la forma Rx, siendo x el número de estilo de texto.</li>
+          <li>Nombre del estilo de ISPOL$nº estilo, es decir, el nombre propio del estilo de texto seguido de su número.</li>
+          <li>Nombre del estilo de ISPOL, es decir, sólo con el nombre propio del estilo de texto.<br />
+          </li>
+        </ul>
+
+      
+      </ul>
+
+      Para que se exporten rótulos, símbolos y líneas decoradas, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> debe estar en <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">Decorado</span></a>,
+pues de lo contrario sólo se exportarán polilíneas sin decorar (en
+IMPRESIÓN se respetan las opciones de configuración de página).<br /><br />Finalmente, es posible guardar la configuración de esta tabla de exportación en un fichero de extensión&nbsp;<span class="Archivo">.opc</span> mediante el botón <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" />,
+para usarlo en posteriores exportaciones. Para cargar un fichero de
+configuración, basta con seleccionarlo tras pulsar el botón&nbsp; <img style="width: 16px; height: 14px;" alt="" src="Imagenes/icono_abrir.png" />.<br /><br />Una vez configuradas las opciones de exportación (por defecto están marcadas las más comunes), se debe pulsar sobre el botón <span style="font-weight: bold;">[Aceptar]</span>
+para proceder a la misma. Se abre entonces el selector de ficheros, en
+donde se debe concretar el nombre del fichero de salida y la versión
+del formato.<br /><br />
+
+      <span class="Parrafo"><span class="Titulo_2" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

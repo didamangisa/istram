@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Añadir líneas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>AÑADIR LÍNEAS DEL MAPA A LOS
+TRANSVERSALES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Una
+vez generados los perfiles definitivos de un eje, es posible añadir a
+cada perfil un símbolo en el punto en que éste corta a una línea o
+conjunto de líneas tridimensionales indicadas por el usuario. Una
+aplicación muy frecuente es presentar en los transversales tuberías
+existentes o diseñadas en el proyecto, cunetas de guarda, drenes
+longitudinales, etc.<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 397px; height: 244px;" alt="" src="Imagenes/dialogo_anadir_linea.png" /><br />
+      </div>
+      <br />Es posible <span style="font-weight: bold;">anotar</span>
+el tamaño, la distancia al eje geométrico, la distancia al eje en
+planta o la cota de la línea intersectada. De este modo se puede
+rotular en el transversal el paso de una línea con un símbolo y anotar
+además su distancia al eje y su cota. <br />
+      <br />
+Si se quiere representar el símbolo a su tamaño real deben utilizarse
+símbolos escalables (se sugiere el símbolo S309 que está definido como
+un pequeño círculo escalable) y con el factor <span style="font-weight: bold;">Tamaño</span> controlar el tamaño del símbolo). Las <span style="font-weight: bold;">líneas</span> pueden seleccionarse <span style="font-weight: bold;">individualmente</span> o bien por su <span style="font-weight: bold;">tipo</span>. Si está definido para un único eje y coincide con el eje actual y además está seeccionada &nbsp;la opción de <span style="font-weight: bold;">Tipos de líneas</span> es posible activar la opción <span style="font-weight: bold;">Guardar en el .vol del eje X</span>.<br />
+      <br />
+Para rotular las distancias al eje de giro o cotas se recomiendan los
+símbolos S306 y S307 que reciben un tratamiento especial por el
+dibujador de perfiles. Si se usasen otros, el valor numérico de la
+distancia al eje o la cota se vería afectado por la escala de dibujo.<br />
+      <br />
+Si se hace clic sobre la ventanita que muestra el tipo de símbolo
+elegido, entonces se abre la paleta de símbolos para que el usuario
+pueda seleccionar uno directamente desde ella.<br />
+      <br />
+Es posible de <span style="font-weight: bold;">cargar</span>/<span style="font-weight: bold;">guardar</span> los datos en ficheros de extensión&nbsp;<span class="Archivo">.lap</span>,
+así como inicializar los datos. La opción de guardar sólo es posible
+cuando la selección de líneas es por tipos y no por líneas individuales.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Generar]</span> ejecuta la operación para el conjunto de ejes indicado y buscando en un semiancho de <span style="font-weight: bold;">banda</span> determinado.<br />
+      <br />
+Si se activa la opción <span style="font-weight: bold;">[ ] Generar al calcular el eje</span>,
+se ejecuta esta opción cuando se haga el cálculo de cualquier eje
+(siempre que esté dentro del rango de ejes declarados), y los símbolos
+se incorporarán a los archivos&nbsp;<span class="Archivo">ISPOLn.per</span> (y también a los&nbsp;<span class="Archivo">ISPOLn_AR.per</span> si está activada la opción de <a href="OL_anadir_ramal.html">añadir ramal</a>).<br />
+</span><span class="Parrafo"><span class="Parrafo"><br />
+      Si se activa la opción <span style="font-weight: bold; font-style: italic;">Ver en sección</span>, entonces en la ventana de sección real se muestran los cortes de la sección dinámica con las líneas seleccionadas. <br />
+<br />Cuando esta seleccionado añadir líneas a los archivos <span class="Parf_negrita">ISPOLx.per</span>, se puede también activar la opción <span class="Parf_negrita">[] Mg. Expr.</span>
+(Margen de Expropiación). En este caso el ancho de la banda de búsqueda
+de las líneas queda limitado al ancho de expropiación (extremos del
+perfil del terreno).<br /><br />Si se activa la opción <span style="font-weight: bold;">[ ] Primer corte</span> en el caso de que el perfil corte varias veces a una línea solo se añade el símbolo para el corte más próximo al eje.<br /><br />Mediante la opción <span class="Parf_negrita">OF.per</span> se añaden líneas al archivo OF.per de perfiles de las Obras de Fábrica.<br /><br />
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

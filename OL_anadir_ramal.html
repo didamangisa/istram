@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Añadir ramal</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>AÑADIR RAMAL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo">Esta herramienta permite añadir a un fichero&nbsp;<span class="Archivo">ISPOLa.per</span> las superficies definidas en otros ficheros <span class="Archivo">ISPOL#.per</span>, de modo que en los perfiles transversales del eje <span style="font-style: italic;">a</span> aparezcan las superficies pertenecientes a los ejes <span style="font-style: italic;">#</span>. Esta opción debe ser posterior a realizar el entronque entre el eje <span style="font-style: italic;">a</span> y el resto de ejes si no se desea la superposición de las zonas comunes.<br />
+      <br />
+La herramienta tiene en cuenta las superficies de zapata de muro,
+excavación de zapata y las que definen la losa (muro+losa) que pudieran
+existir en el eje ramal y las cunetas de guarda, tableros, vigas...así como cualquier
+símbolo presente en los ejes añadidos (además de carriles y traviesa).
+Para los símbolos añadidos se tiene en cuenta la pendiente longitudinal
+del eje y el esviaje con respecto al eje actual, para aplicar los
+coeficientes de deformación adecuados horizontal y vertical.<br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo" /><img style="width: 600px; height: 256px;" alt="" src="Imagenes/dialogo_anadir_ramal.png" /><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      
+      </span><span class="Parrafo"><br />
+El cuadro de diálogo presenta las siguientes opciones:<br />
+<br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr><td><span style="font-weight: bold;">Ejes OF</span></td><td>Si
+se activa incluye los cortes con los ejes de las obras de fábrica
+representados mediante un símbolo que indica el número de la O.F. tanto
+para la visualización en la sección real como para ser incluidos en el
+archivo .per resultante.</td></tr><tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">Cruces</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Si
+se activa esta casilla de verificación se añaden los acuerdos de los
+cruces en los que el eje actual está involucrado como eje principal o
+como eje que cruza, así como los de los ejes activos de la lista de ejes que se van a a añadir.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">[Añadir todos]</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Añade todos los ejes al eje actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">[Añadir activos]</span></td><td>Añade los ejes que estén en grupos o modelos activos.</td></tr><tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold;">[Añadir]<br />
+[Insertar]<br />
+[Borrar]</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify;"><img style="width: 75px; height: 96px;" alt="" src="Imagenes/anadir_ramal_normal_especial.png" align="right" hspace="5" />Definen los ramales a ser cortados. En el campo ramal se anota el número del eje y el <span style="font-weight: bold;">tipo</span>. El tipo <span style="font-weight: bold;">especial</span>
+debe usarse para ejes con radios pequeños o curvas cerradas, en las que
+un perfil del eje principal pueda cortar un mismo talud en distintas
+zonas (en este caso se ordenan los cortes por distancia sobre el
+perfil). En el caso de activar la casilla de <span style="font-weight: bold;">cruces</span> también podremos seleccionar el tipo <span style="font-weight: bold;">normal</span> o <span style="font-weight: bold;">especial</span> de la misma forma que para el resto de ramales añadidos.<br />
+            <br />
+            La opción <span style="font-weight: bold;">Ampliar 67</span> se utiliza conjuntamente con la opción <span style="font-style: italic;">Ampliar las superficies
+existentes</span>. En playas de vías en las que se define toda la plataforma
+con el eje principal, permite ir completando la superficie de balasto
+(S67) con la de los ejes que se van añadiendo. Del ramal solo se extrae
+la superficie 67 y todos los símbolos (vías, traviesas, ejes, ...)<br />
+            <br />
+Para cada ramal se define un rango de PKs en los que se añade.<br />
+<br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">Reordenar</span></td><td>Reordena por número de eje, hay que tener cuidado si tenemos la opción de <span style="font-style: italic;">Ampliar las superficies existentes</span> ya que esta opción puede alterar el resultado.</td></tr><tr><td><img style="width: 8px; height: 12px;" alt="" src="Imagenes/icono_cursor_flecha.png" /></td><td>Con esta opción es posible seleccionar los ramales por picado en pantalla.</td></tr><tr><td><span class="Parf_negrita">Añadir Eje N a todos los ejes activos</span></td><td>Esta
+opción abre los archivos .vol de todos los ejes activos y coloca al eje
+actual (si no lo está) en la lista de ejes de Añadir ramal de cada uno
+de ellos.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">Generar<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Añade todos los ramales definidos.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Ver en sección</span><br />
+            </td>
+            <td style="vertical-align: top;">Si
+los ramales están previamente calculados, aparecerá en la ventana de
+SECCION REAL su posición con respecto al eje principal y las
+superficies de los terrenos de los ramales.<br />
+            </td>
+          </tr>
+<tr><td><span style="font-weight: bold;">Color</span></td><td>Si se
+activa esta casilla, en la ventana de Sección Real las superficies de
+los ramales añadidos se mostrarán en el color definido para su grupo.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;"><span class="Parrafo">Elegir fichero de salida</span></td>
+            <td style="vertical-align: top; text-align: justify;"><span class="Parrafo">Si se
+activa esta casilla, el usuario tiene la opción de salvar los perfiles
+generados en un nuevo archivo seleccionado por el usuario en lugar de
+reescribirse el&nbsp;<span class="Archivo">ispol#.per</span> del eje tronco (siendo # el número de eje).</span></td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Semiancho de búsqueda<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Distancia
+máxima desde el eje actual al/los ramal/es dentro de la cual se
+considerarán éstos. En el momento en que un eje de ramal caiga fuera de
+este semiancho, dicho eje dejará de considerarse.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Margen horizontal<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Cuando
+se añade un eje y en un determinado perfil el primer punto de la línea
+de excavación (L68) dista del último punto del tronco una distancia
+superior al valor recogido en este campo, estas líneas no se unen
+directamente sino que se llevan por el terreno. El resto de las líneas
+que componen la sección (calzada L67, suelo seleccionado L107, etc.) se
+llevan entonces por la línea de excavación (L68), en el hueco
+intermedio.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Símbolo para número de eje<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Símbolo para rotular el número del eje. Se inserta en el perfil del ramal.<br />
+En la ventana de Sección Real con perfiles de Añade Ramal, se muestra
+sobre los ramales el número del eje, la cota y el pk. (La cota de la
+ventana de Sección real puede variar ligeramente de la que se obtiene
+al generar en Añade Ramal, ya que aqui por agilidad se interpola una
+cota según se va cortando el ramal y en Añade Ramal se recalcula la
+cota analítica del ramal en el pk indicado).<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Símbolo cota<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Símbolo que rotula la cota. Se inserta en el perfil del ramal. Si en la <a href="OL_planos_transversales.html">guitarra para dibujar los transversales</a> (p.ej.&nbsp;<span class="Archivo">ARAMAL.gut</span>)
+se define que rotule la cota del ramal, entonces no se dibuja el
+símbolo S317, sino el que esté definido en la guitarra para evitar así
+duplicidad.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Símbolo de PK<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Tipo de símbolo para rotular el PK del eje. Se inserta en el perfil del ramal.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Símbolo de peralte en mm</span><br />
+            </td>
+            <td style="vertical-align: top;">Posibilidad de incorporar para ramales de ferrocarriles el peralte en mm. (ej. S986 h=120mm)<br />
+            </td>
+          </tr>
+<tr><td><span class="Parf_negrita">Peraltes</span></td><td style="text-align: justify;">Para
+ramales de carreteras o autovías se puede añadir la rotulación de los
+peraltes empleando estas 2 casillas. Se incluyen en la librería los
+símbolos S1025 y S1026 utilizados para esta rotulación. Esta rotulación
+es visible en el editor de perfiles y en el dibujo de los perfiles
+transversales, pero no en la ventana de Sección Real. Al cargar un .vol
+de una versión anterior, esta rotulación aparecerá desactivada, pero al
+inicializar o crear un .vol nuevo por defecto aparece activada. Los
+peraltes que se rotulan son los peraltes reales en el PK que se indica
+del ramal y por lo tanto pueden diferir del peralte aparente que se
+aprecia en el perfil si el azimut del ramal es diferente al del eje
+principal.</td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold;"><span style="font-style: italic;">Usar cota de rasante</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Al
+activar esta opción, la cota que se rotula y la posición de los
+símbolos de eje, PK y cota utilizan la cota analítica de la rasante del
+ramal en ese PK en lugar de la obtenida por corte con el modelo de perfiles. <br />
+Puedo indicarle al programa que me rotule la cota del código 1 del ramal.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br />La <span style="font-weight: bold;">ampliación del terreno</span>
+hace referencia a de dónde se obtendrá la información necesaria para
+prolongar las superficies geotécnicas entre dos posibilidades:<br />
+<br />
+      <table style="text-align: left; width: 692px; height: 127px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 139px;">ISPOLx.per del RAMAL</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 533px;">El programa complementa las superficies de cubierta vegetal, inadecuado, competente y rocas del&nbsp;<span class="Archivo">ISPOL#.per</span> del tronco utilizando las de los ficheros de los ramales.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 139px;">PERFx.per del TRONCO</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 533px;">En
+el caso de que entre el tronco y el ramal exista un hueco en el que
+falte información de los terrenos, el programa trata de extraer esta
+información del fichero empleado como perfiles transversales del
+terreno del tronco, que al no estar cortado por los márgenes de
+expropiación puede abarcar un margen mayor.<br />
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+        </tbody>
+      </table>
+      <span class="Parrafo">
+      <table style="text-align: left; width: 691px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 590px;"><span class="Parrafo"><span class="Parrafo"><span class="Info">Cuando el tronco está en sección de túnel, se extraen todos los terrenos que vengan con el ramal.</span></span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+En el apartado <span style="font-weight: bold;">superficies</span> se indica al programa con qué tipo de superficie se representarán los ramales entre dos posibilidades:<br />
+      <br />
+      </span></span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 127px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 139px;">Crear nuevas</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 533px;">Se añaden a efectos de dibujo y no afectarán a posteriores recubicaciones del eje <span style="font-style: italic;">a</span>, pues las superficies añadidas al eje a reciben tipos no contemplados en el calculador de volúmenes.<br />
+            <br />
+La operación se efectúa obteniendo las secciones transversales que según la posición y rumbo de los perfiles del eje <span style="font-style: italic;">a</span>
+se obtienen sobre las superficies del otro eje y analizando de éste las
+superficies 67, 68, 107, etc. (en ferrocarriles se incluyen también
+subbalasto y capa de forma).<br />
+            <br />
+Al añadir ramal marcando esta opción se generan todos los ramales con
+las mismas replicas de las superficies originales.(El primer grupo de
+replicas). En el editor de perfiles no aparcen como superficies
+repetidas, pues se diferencian por el número del eje que representan
+(modelo en las líneas editables).<br />
+            <br />
+Mediante esta opción el programa utiliza las replicas de los tipos de líneas utilizados en obras lineales.<br />
+            <br />
+Para perfiles con ramales añadidos mediante la creación de nuevas
+superficies (Utilizando las replicas), es posible medir con el icono de
+Áreas de perfil, las areas en el eje principal ó las areas en alguno de
+los ramales.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 139px;">Ampliar las existentes</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 533px;">Las
+superficies de excavación, calzada, suelo seleccionado, subbalasto y
+capa de forma del ramal, en lugar de crear superficies nuevas, pasan a
+ampliar las correspondientes del tronco e influirán en una posterior
+recubicación. Esto es válido cuando las superficies no tienen hueco
+entre ellas.<br />
+            <br />
+Al ampliar las superficies existentes, los puntos de las superficies
+añadidas se codifican consecutivamente empezando en el código 4000
+(salvo el terreno).<br />
+            <br />
+Con esta opción es importante que el orden en el que se definen los
+números de los sucesivos ramales sea según su contigüidad (por ejemplo,
+en una playa de vías). Si en el ramal aparece alguna superficie que no
+existe en el tronco (como una capa drenante) se añaden las nuevas
+superficies. Sin embargo, para las superficies de los terrenos
+(vegetal, inadecuado, competente, roca, roca2,&#8230;) si no aparecen en el
+perfil del tronco, no se añaden aunque aparezcan en el ramal.<br />
+            <br />
+Si la separación de una superficie entre el ramal y el tronco es mayor
+que el margen horizontal prefijado, entonces esta superficie se une
+utilizando segmentos ocultos.<br />
+            <br />
+Se permiten ademá dos opciones:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Unir recto</span>: Une mediante un segmento recto las superficies truncadas.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Truncar</span>:
+Permite añadir un fichero de perfiles sin haber realizado un truncado
+previo. Esta opción va determinando la intersección de las diferentes
+superficies y trunca en los dos perfiles antes de añadir uno al otro.</li>
+            </ul>En los casos en los que la subrasante de los dos ejes a enlazar forme un escalón, podremos clicar en la casilla <span style="font-weight: bold;">Evitar escalón subrasante</span>. Mediante este comando, deberemos señalar una <span style="font-weight: bold;">altura máxima</span> de escalón para corregir y una <span style="font-weight: bold;">distancia máxima</span>
+que se pueda prolongar una de las dos subrasantes antes de cortar a la
+otra. Para poder corregir el escalón las subrasantes no podrán ser
+paralelas.<br />
+Esta herramienta evita el posible escalón además de la subrasante, en la superficie de subbalasto y en la <a href="OL_ffcc_capa_forma.html">capa de forma</a> en un proyecto de ferrocarril.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 300px; height: 52px;" alt="" src="Imagenes/anadir_ramal_escalon.png" /><br />
+            </div>
+            <br />
+Cuando nuestro eje actual es un eje de túnel y el ramal no, las
+superficies de terreno y roca de túnel (197 y 397) se complementan con
+las de terreno y roca normales (66 y 103)<br />
+
+
+            </td>
+          </tr>
+          
+          
+          
+          
+          
+        </tbody>
+      </table></span><br />
+      <span class="Parrafo"><span class="Parrafo">Si se desea obtener un
+fichero con varios ejes, se deberá reiterar el proceso hasta conseguir
+el total de ejes. En estos casos, los símbolos creados previamente con
+esta opción no son transmitidos al nuevo fichero.<br />
+<br /></span></span><img src="Imagenes/acceso_anadir_ramal_completo.png" style="width: 352px; height: 139px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span class="Parrafo">Existe la posibilidad de <span style="font-weight: bold;">aplicar simultáneamente</span> esta operación a todos los ejes
+activos según los datos que cada eje
+tenga definidos. La opción que permite esto se encuentra en ALZADO </span></span><span class="Parrafo">&#8594; <span style="font-weight: bold;">MENÚS Y OPCIONES</span> </span><span class="Parrafo">&#8594; <span style="font-weight: bold;">[COMPLETO]</span> </span><span class="Parrafo">&#8594; <span style="font-weight: bold;">[Añadir ramal]</span>. </span><span class="Parrafo"><span class="Parrafo">Los cruces pueden activarse o desactivarse
+independientemente de la información guradada en cada&nbsp;<span class="Archivo">.vol</span>.</span></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo">La definición realizada en este menú se puede <span style="font-weight: bold;">[Guardar]</span> / <span style="font-weight: bold;">[Cargar]</span> de forma independiente en archivos&nbsp;<span class="Archivo">.anr</span>, aunque se salva en el&nbsp;<span class="Archivo">.vol</span> del eje actual de forma automática.<br />
+      <br />
+Se permite añadir el mismo eje actual y así poder ver mediante este
+menú ejes de montaña con curvas próximas a 180 grados o similares.<br />
+      <br /></span></span></span></span>
+      <div style="text-align: center;"><img src="Imagenes/anadir_ramal_mismo_eje_dibujo.png" style="width: 330px; height: 155px;" alt="" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

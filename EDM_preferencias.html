@@ -1,0 +1,914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Preferencias EDM</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PREFERENCIAS EN CONFIGURACIÓN
+CARTOGRÁFICA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#librerias">Librerías</a><br />
+      <a href="#comportamiento_edicion">Comportamiento en edición</a><br />
+      </div>
+
+      
+      <div style="margin-left: 80px;"><a href="#funcionamiento">Funcionamiento</a><br />
+
+      <a href="#menus_teclado">Menús y teclado</a><br />
+      <a href="#seguridad">Seguridad</a><br />
+      <a href="#graduacion_cursores">Graduación de cursores</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#visualizacion">Visualización</a><br />
+      <a href="#opciones">Opciones</a><br />
+      <div style="margin-left: 40px;">Cartografía<br />
+      <a href="#topografia">Topografía</a><br /><a href="#obra_lineal">
+Obra lineal</a><br />
+      <div style="margin-left: 40px;"><a href="EDM_preferencias.html#planta">Planta</a><br />
+      <a href="EDM_preferencias.html#rasantes">Rasantes</a><br /><a href="#alzado">
+
+Alzado</a><br />
+Cálculos en RAM<br />
+      </div>
+
+Virtual 3D<br />
+
+      </div>
+
+      <a href="#editor_perfiles">Editor de perfiles</a><br /><a href="#unidades_angulares">Unidades angulares</a><br />
+      <a href="#sistema_unidades">Sistema de unidades</a><br />
+      <a href="#notacion_num_simb">Notación de números en símbolos</a><br /><a href="#suavizado_curvas">
+Suavizado de curvas</a><br />
+Listados<br />
+      <div style="margin-left: 40px;">Formato<br />
+Características generales<br />
+Características particulares<br />
+      </div><a href="#paginado_planos">
+Paginado de planos</a><br />
+      
+<a href="#config_memoria">
+Configuración avanzada de memoria</a><br /><a href="#estado">
+Información de estado. Cambio de la cota actual</a><br />
+
+      </div>
+
+<br /><br /><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br /><br /><img src="Imagenes/arbol_preferencias.png" style="width: 156px; height: 339px; margin-left: 7px;" alt="" align="right" />Desde el menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span>
+se accede a un cuadro de diálogo que aglutina la mayoría de las
+opciones de configuración del programa relacionadas con la interfaz.<br /><br />Las
+preferencias se encuentran clasificadas según la estructura en árbol
+que se muestra en la parte izquierda del cuadro de diálogo.<br /><br />Una
+vez realizados los cambios oportunos, es necesario guardar esta
+configuración para que sea tenida en cuenta durante futuras sesiones de
+trabajo (botón <span style="font-weight: bold;">[Guardar local]</span> o <span style="font-weight: bold;">[Guardar general]</span>, según la configuración sea para un proyecto en particular o para cualquiera respectivamente). A continuación se pulsará sobre <span style="font-weight: bold;">[Aceptar]</span> para que los cambios surtan efecto.<br /><br />La configuración local se guarda en la misma carpeta de trabajo, en el fichero&nbsp;<span class="Archivo">ispol.cfg</span>, y la general dentro de la librería del programa (por defecto, en&nbsp;<span class="Archivo">C:\ISPOL\LIB</span>), en el fichero&nbsp;<span class="Archivo">istram.cfg</span>.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />Al arrancar, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> comprueba la existencia de estas configuraciones. Si ve que en la carpeta de proyecto existe el fichero&nbsp;<span class="Archivo">ispol.cfg</span>,
+entonces arranca con esa configuración, si no, intenta buscar el
+fichero de configuración global y, si tampoco existiese, entonces
+arranca con la configuración por defecto.<br /><br />El programa también da la opción de <span style="font-weight: bold;">[Guardar como]</span> la configuración del programa en un fichero independiente (de extensión&nbsp;<span class="Archivo">.cfa</span>), que se creará en la librería seleccionada por el usuario para que, cuando lo desee, pueda recuperarla con la opción <span style="font-weight: bold;">[Cargar]</span>.<br /><br />
+
+      <br />
+      <span class="Titulo_2"><a name="librerias">Librerías</a></span><br />
+      <br />
+El uso y configuración de las librerías se explican en <a href="EDM_librerias.html">esta parte del manual</a>.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="comportamiento_edicion">Comportamiento en edición</a></span><br />
+
+      <br />
+Esta sección hace referencia al modo de funcionamiento del programa en cuanto a algunas opciones de dibujo, selección, edición,&#8230;<br />
+      <br />
+Por defecto están configuradas para que el comportamiento de las
+opciones implicadas sea lo más usual posible, si bien es cierto que,
+bajo determinadas circunstancias, puede convenir modificar alguna de
+ellas.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="funcionamiento">Funcionamiento</a></span><br />
+      <br />
+
+      <img style="border: 1px solid ; width: 350px; height: 362px; float: right;" alt="" src="Imagenes/config_funcionamiento.png" hspace="5" />Las opciones son:<br />
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Selección cíclica de líneas</span>:
+Si pasan varias líneas por la ventana de selección se elige la última
+que se creó o la última de ellas según el orden en que vienen en el
+fichero de datos puesto que el programa empieza analizando desde la
+última línea para atrás. Pero si se activa esta opción el programa
+empieza por delante de la última línea seleccionada hacia atrás, por lo
+que si se hace clic varias veces sobre el mismo punto, se irá eligiendo
+alternativamente las diferentes líneas que pasan por ese punto.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Enganche a vértice sobre varias líneas, buscar el más próximo</span>:
+Cuando está activo el enganche a vértice y pasan varias línea por la
+ventana de enganche, se seleccionará aquella línea que tenga el vértice
+máspróximo.  <br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Permitir X,Y por teclado fuera</span>:
+Si se activa esta opción, se permite introducir por teclado coordenadas
+absolutas que estén fuera del área mostrada en pantalla.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Desplazamiento rápido</span>: Optimiza el dibujado al hacer un desplazamiento con la rueda/botón central del ratón.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Enganche Z al mover puntos y líneas</span>:
+Si está activada esta opción, al mover un símbolo o una línea, el
+desplazamiento será en 3D, es decir, se tiene en cuenta la cota si hay
+algún tipo de enganche activo. En cambio, si se desactiva, el
+movimiento será únicamente en el plano XY independientemente de la cota
+leída por el enganche.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Enganche Z al insertar puntos y líneas</span>:
+Si se desactiva, al insertar puntos en líneas con un enganche activado
+no se cogerá la cota del enganche, sólo la coordenada X e Y (funciona
+de forma análoga a la opción <span style="font-weight: bold; font-style: italic;">Enganche Z al mover puntos y líneas</span>).<br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Buscar automáticamente las referencias en modo línea paralela y perpendicular</span>:
+Cuando está activado, con el modo línea activado se busca la paralela o
+perpendicular a los elementos automáticamente con solo pasar por
+encima. Si está desactivado se pide que antes de cada vértice se
+selecciones el elemento.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Eliminar bucles en línea paralela</span>:
+Con esta opción activa, se evitan los bucles que genera una línea
+paralela a partir de cierta distancia debido a sus concavidades, tal y
+como se muestra en la imagen:</li>
+
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/paralela_con_bucle.png" style="width: 273px; height: 176px;" alt="" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Paralela con bucle</span><br />
+
+            </div>
+            </td>
+            <td style="vertical-align: top;"><img src="Imagenes/paralela_sin_bucle.png" style="width: 300px; height: 178px;" alt="" /><br />
+            <br />
+            <div style="text-align: center;"><span class="Info">Paralela sin bucle</span><br />
+            </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Pegar a</span>: Cuando se
+procede a pegar una selección de entidades que se ha cortado o copiado
+previamente, este pegado puede ir al mismo modelo del que procede, al
+modelo actual o al modelo que indique el usuario.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Al mover un vértice sobre otro</span>,
+el programa puede unir las dos líneas (o cerrar la línea si se trata de
+los vértices inicial y final de una línea), no hacer nada o preguntar
+al usuario.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Tipo de selección</span>:
+Desde aquí se establece si la nueva selección se añade o sustituye a la
+actual. Esta preferencia también se puede establecer desde <span style="font-weight: bold;">Edición</span> &#8594; <span style="font-weight: bold;">Seleccionar</span> así como desde la opción <span style="font-weight: bold;">Seleccionar</span> del menú contextual.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Crear los arcos con líneas 8D</span>: Si se activa esta opción, entonces las polilíneas, círculos, etc. se pintan como <a href="EDM_entidades_basicas.html#lineas8D">líneas 8D</a>.<br />
+        </li>
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Guardar información de los modelos en uso en el EDM/EDB</span>: Al activar esta opción, se guarda la información de los <a href="EDM_control_entidades.html#control_modelos">modelos</a> en uso en los ficheros&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>. De esta manera, cuando se cargue de nuevo el fichero se actualizará también la información de los modelos.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Guardar los Mensajes en un archivo</span>: Almacena todos los mensajes en un archivo llamado MENSAJES.txt en la carpeta de proyecto.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Picar directamente sobre el punto de célula para mover/rotar</span>:
+Si está activa, para mover o rotar un punto de una célula basta con
+picar sobre el y moverlo/rotarlo. En caso contrario, se ha de
+seleccionar la célula primero antes de mover sus puntos.</li>
+
+      </ul><ul><li><span style="font-weight: bold;">Solamente un aviso de revisión posterior</span>:
+Si se activa esta opción y se carga algún proyecto guardado en una
+revisión más reciente que la revisión con la que se está trabajando
+solamente muestra un aviso.</li></ul>
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="menus_teclado">Menús y teclado</a></span><br />
+
+      <br />
+      <img src="Imagenes/config_menus_teclado.png" style="width: 375px; height: 267px; margin-left: 7px;" alt="" align="right" />Las opciones son:<br />
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">OpenGL Editor 3D</span>: Activa la visualización virtual mediante OpenGL en el editor 3D del módulo VIRTUAL 3D.<br />
+        </li>
+      </ul>
+      <ul>
+
+        <li><span style="font-weight: bold;">Redondeo de puntos para menús de datos</span>:
+Hace referencia a las coordenadas de los puntos obtenidos gráficamente
+mediante el ratón para los menús de datos, y permite ajustarlo de tal
+forma que un valor de 0.0 indica que no se hace redondeo, un valor de
+0.001 indica que se redondea a la tercera cifra decimal, etc.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">No desplazar cursor</span>: Si se activa, en los desplegables de los menús verticales el cursor no se desplaza al centro del desplegable.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Selector de ficheros de Windows</span>:
+Si se desactiva esta opción, entonces a la hora de cargar o guardar un
+fichero el selector de ficheros utilizado es el del propio programa en
+lugar de el selector de Windows<sup>®</sup>.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Recordar el último directorio al abrir/guardar</span>:
+Si esta opción está activa, el selector de ficheros recuerda la última
+carpeta desde la cual se abrieron o guardaron ficheros.Por defecto la opcíón está desactiva. </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Mostrar menús adaptados a ratones sin rueda</span>:
+Al activar esta opción, se modifican algunos menús y comportamientos
+del programa de cara a facilitar operaciones comunes en equipos que en
+ese momento no estén usando un ratón con rueda central. Así, por
+ejemplo, las operaciones de acercar/alejar y de desplazamiento dinámico
+pasan a estar accesibles directamente desde el menú <span style="font-weight: bold;">Ver</span>, lo que resulta particularmente útil en equipos portátiles que no dispongan en ese momento de un ratón externo con rueda.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Mostrar teclado de pantalla de TabletPC automáticamente</span>: Cuando el programa detecta que se está ejecutando en una <span style="font-style: italic;">tablet</span>, muestra un teclado especial y algunos botones adaptados a este tipo de dispositivos.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Recordar las posiciones de las barras de herramientas entre sesiones</span>:
+Con esta opción activada, el programa, al cerrarse, guarda la posición
+actual de las barras de herramientas en pantalla para que en la
+siguiente sesión que se abra, aparezcan en el mismo sitio.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ocultar automáticamente menús verticales</span>:
+Con la opción activada, los menús verticales asociados a diferentes
+partes del programa se muestran replegados y se abren/ocultan en
+función de si el cursor del ratón está situado encima de ellos o no.</li>
+      </ul>
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="seguridad">Seguridad</a></span><br />
+      <br />
+      <img src="Imagenes/config_seguridad.png" style="width: 249px; height: 168px; margin-left: 7px;" alt="" align="right" />Las opciones son:<br />
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Autoguardado</span>:
+Esta opción, desactivada por defecto, controla el número de clics para
+que se genere automáticamente una copia de seguridad de la cartografía.
+La generación de esta copia es prácticamente instantánea. Por defecto,
+si se activa la casilla, el programa realizará una copia de seguridad
+cada 100 clics de ratón. Cada vez que se efectúe esta copia, se
+mostrará en el área de mensajes uno de la forma <span style="font-style: italic;">Guardando las modificaciones&#8230;</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Guardar en RAM</span>:
+Mientras esté marcada esta casilla, el programa hará un uso intensivo
+de la memoria principal del sistema para todo lo relacionado con la
+edición cartográfica, en detrimento de la memoria secundaria (disco
+duro), lo que acelera de manera notable el proceso de edición. Se
+recomienda NO desactivar esta opción.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Guardar copia de seguridad previa</span>:
+Si se desactiva esta opción no se efectúa la copia de los ficheros de
+seguridad, y por lo tanto, en la siguiente sesión, ya no se recuperarán
+los ficheros de la sesión anterior, sino los de la última sesión en la
+que se hubiesen guardado. Con esto pueden conseguirse dos cosas:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li>Si se manejan cartografías muy grandes, se evita el tiempo
+de espera para hacer la copia de los ficheros de seguridad al arrancar
+el programa.</li>
+      </ol>
+
+      <ol start="2">
+        <li>Se puede fijar en la copia de seguridad previa una misma información para cualquier sesión posterior.</li>
+      </ol>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Recuperar el proyecto al inicio</span>:
+Con esta opción marcada (por defecto), al iniciar una sesión del
+programa se recuperan automáticamente los datos (EDM y proyecto de obra
+lineal) que estuvieran presenten en la sesión anterior.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Conservar la orientación al borrar todo</span>: Cuando se borra todo el EDM porque se ha usado la opción <span style="font-weight: bold;">Nuevo</span>, <span style="font-weight: bold;">Abrir dibujo</span>, etc., el programa conserva la <a href="EDM_visualizacion.html#orientacion">orientación</a> del dibujo que estuviera asignada.<br />
+        </li>
+      </ul>
+
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="graduacion_cursores">Graduación de cursores</a></span><br />
+      <br />
+      <img src="Imagenes/config_graduacion_cursores.png" style="width: 320px; height: 381px; float: right;" alt="" hspace="5" />Desde
+aquí es posible graduar los desplazamientos por la pantalla gráfica
+utilizando las teclas de las flechas o cursores, así como la velocidad
+del zoom cuando se usa la rueda del ratón (deslizador <span style="font-weight: bold;">Graduación de cursores)</span>.<br />
+      <br />
+El retardo para vuelos hace referencia a la velocidad sobre una línea o el vuelo cíclico opciones <span style="font-weight: bold;">Ver</span> &#8594; <a href="EDM_visualizacion.html#vuelo"><span style="font-weight: bold;">Vuelo</span></a> y Ver &#8594; <span style="font-weight: bold;">Vista 3D</span> &#8594; <span style="font-weight: bold;">VUELO</span>.<br />
+
+      <br />
+La opción <span style="font-weight: bold;">Radio del cursor</span>
+dibuja una circunferencia, con radio el aquí establecido, alrededor del
+cursor del ratón, con lo que se puede obtener una referencia visual
+rápida de las distancias entre puntos. Disponemos de un segundo Radio
+del cursor (metros). Ambos radios se guardan y recuperan del archivo de
+configuración.<br />
+      <br />
+El <span style="font-weight: bold;">factor de tamaño del cursor</span> permite modificar el tamaño del cursor de selección.<br />
+      <br />
+      <span style="font-weight: bold;">Duplicar grosor del cursor</span>
+hace exactamente lo que indica: engrosar el cursor para hacerlo más
+fácil de localizar en sistemas con monitores grandes y resoluciones
+elevadas.<br />
+      <br />
+El <span style="font-weight: bold;">factor de tamaño para remarcar vértices en ventana de sección</span> permite definir el tamaño de los vértices en las ventanas que muestran la sección transversal del eje.<br />
+      <br />
+En el apartado <span style="font-weight: bold;">Zoom con rueda</span> se establece el aumento (<span style="font-weight: bold;">alejar</span>) o disminución (<span style="font-weight: bold;">acercar</span>) del área visible en pantalla, en tanto por ciento.<br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="visualizacion">Visualización</a></span><br />
+<br />Presenta las siguientes opciones:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/config_visualizacion.png" style="width: 600px; height: 524px;" alt="" /><br />
+
+      </div>
+<ul>
+        <li><span style="font-weight: bold; font-style: italic;">Decorar</span><span style="font-style: italic;">:</span> Al marcar esta casilla, el redibujado de los objetos se produce <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">Decorado</span></a>. Esta opción está disponible a través de los iconos&nbsp;<img src="Imagenes/icono_modo_decorado.png" style="width: 22px; height: 17px;" alt="" /> (<a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">Decorado</span></a>) y&nbsp;<img src="Imagenes/icono_modo_no_decorado.png" style="width: 22px; height: 17px;" alt="" /> (<a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">No decorado</span></a>).</li>
+
+      </ul>
+      
+      <ul>
+        <li>
+          <span style="font-weight: bold; font-style: italic;">Plumas</span><span style="font-style: italic;">:</span> Si se activa, se pasa a <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Impresión</span></a> o modo <a href="EDM_modo_decoracion_pantalla.html#modo_pan"><span style="font-style: italic;">Plumas</span></a>. Esta opción está accesible directamente a
+través del icono&nbsp;<img src="Imagenes/icono_modo_pantalla.png" style="width: 22px; height: 17px;" alt="" /> (cuando está en <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Pantalla</span></a>)
+y&nbsp;<img src="Imagenes/icono_modo_impresion.png" style="width: 23px; height: 17px;" alt="" /> (cuando está en <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Impresión</span></a>), situados en la
+parte inferior izquierda del entorno del programa.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Coordenadas</span><span style="font-style: italic;">:</span> Activación del eco numérico de seguimiento de coordenadas.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Grosores</span><span style="font-style: italic;">:</span> Al marcar
+esta casilla, el dibujo en pantalla se muestra con los grosores de
+trazo. El redibujado con grosores es más lento, por lo que, en general,
+se recomienda que esté desactivado.<br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Rellenos</span><span style="font-style: italic;">:</span> Representación de los rellenos de línea.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Imagen</span><span style="font-style: italic;">:</span> Bloquea la presentación de las <a href="EDM_imagenes.html">imágenes</a> ráster que se estén manipulando junto con el mapa vectorial.</li>
+
+      </ul>
+      <ul>
+        <li>
+          <span style="font-weight: bold; font-style: italic;">Depuración</span>: Activa un estado de depuración, lo que permite el
+seguimiento de ciertas operaciones de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> por medio de
+mensajes en la ventana de arranque.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Posdibujado</span>: Si se desmarca esta casilla, entonces NO se dibujarán
+aquellos elementos gráficos que NO pertenezcan al EDM (elementos
+topográficos, representación de las alineaciones fijas de ejes en
+planta, ejes de explanaciones,&#8230;).</li>
+
+      
+      </ul>
+
+
+      
+      
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ver enganche</span>: Cuando esta opción está activada, aparece en el eco un
+aspa (X) que sigue al punto o vértice enganchado. Si el <a href="EDM_coordenadas_enganches.html#enganches">modo de
+enganche</a> es libre, su posición es concéntrica con el eco, y si no, se
+posiciona en el punto o vértice que resultaría si se hiciera clic en
+pantalla sobre la posición del cursor.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ver símbolo</span>: Con esta opción activada, aparece sobre el eco un
+símbolo identificando el tipo de <a href="EDM_coordenadas_enganches.html#enganches">enganche</a>: vértice, punto, lado, punto
+medio, intersección, etc. Es muy útil cuando se emplea un <a href="EDM_coordenadas_enganches.html#enganche_multiple">enganche
+múltiple</a>.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ver cota actual</span>: Relacionada con <span style="font-weight: bold;">Ver Enganche</span>, si se activa esta
+opción entonces se muestra la cota del punto o vértice enganchado junto
+al cursor del ratón.</li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">% ver desactivos</span>: Esta opción permite ver en los redibujados aquellos
+elementos (líneas, puntos y textos) que estén en capas y/o modelos
+desactivados, aunque no permite seleccionarlos, borrarlos o salvarlos a
+un&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>. En la casilla puede introducirse, en tanto por ciento, el
+valor correspondiente a la <span style="font-weight: bold;">atenuación</span> con la que se muestran en
+pantalla los objetos desactivados, de tal forma que un 0% indica al
+programa que no se muestren en pantalla.</li>
+
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Tamaño de pinzamiento</span>: Permite graduar el tamaño, en píxeles, de los <a href="EDM_seleccion_pinzamientos_propiedades.html#pinzamientos">pinzamientos</a> que resaltan lo vértices y los puntos de inserción de las
+entidades gráficas seleccionadas o de la entidad sobre la que está
+situado el cursor del ratón.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ver X,Y:</span> A la representación del cursor del ratón le acompañan las
+coordenadas X e Y del mismo, en el menú de <a href="OL_rasantes_diseno.html">RASANTES</a> de OBRA LINEAL se
+visualizará PK,Z y en el caso trabajar en coordenadas geográficas se
+visualizará longitud y latitud.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Remoto</span><span style="font-style: italic;">:</span> Esta opción inhibe procesos innecesarios (animaciones en
+menús, etc.) que provocan una ralentización del sistema cuando el
+programa se ejecuta remotamente a través de una red.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Ver TTP</span>: Al salir del menú de <a href="EDM_topografia.html">TOPOGRAFÍA</a>, no se descargan los nodos,
+las mallas ni los triángulos. Esta información constituye un modelo
+digital del terreno que puede utilizarse, por ejemplo, en el menú de
+          <a href="OL_perf_transv.html">TRANSVERSALES</a> (módulo de OBRA LINEAL) para la extracción de los
+perfiles del terreno (opción TTP). Esta casilla permite
+activar/desactivar la visualización de estas mallas fuera del menú de
+          <a href="EDM_topografia.html">TOPOGRAFÍA</a>. Obviamente, al volver a <a href="EDM_topografia.html">TOPOGRAFÍA</a> esta información sigue
+disponible para el usuario. Además podremos aplicar un porcentaje de atenuación al&nbsp;<span class="Archivo">.ttp</span> actual (casilla de la derecha) diferente de la atenuación del resto de ficheros&nbsp;<span class="Archivo">.ttp</span> cargados (casilla de la izquierda).</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Resaltar las líneas 8D</span>: Cuando esta preferencia está activada, las <a href="EDM_entidades_basicas.html#lineas8D">líneas 8D</a>
+se muestran en pantalla resaltadas con un color y un grosor llamativos.
+Cuando esta opción está activa, la velocidad de redibujado es más lenta.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Desplazamiento automático</span>:
+Con esta opción activa, al mover el cursor en la proximidad de los
+bordes de la ventana gráfica, se desplaza automáticamente el dibujo,
+tratando de llevar el punto bajo el cursor hacia el centro de la
+ventana. &nbsp; Incorpora dos coeficientes:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>El primero permite graduar la distancia a los bordes a la que se hace sensible la opción.</li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <li>El segundo gradua la cantidad que se desplaza el dibujo. </li>
+        </ul>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Previsualizar ficheros al abrir cartografía</span>: Si esta preferencia está activada entonces, mientras está abierto el selector de archivos para abrir un&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>, el programa muestra en pantalla una miniatura del dibujo correspondiente al fichero seleccionado en ese momento.</li>
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold; font-style: italic;">Ver símbolos/textos en 3D</span>: Permite visualizar los <a href="EDM_entidades_basicas.html#simbolos">símbolos</a> y los <a href="EDM_entidades_basicas.html#textos">textos</a> (<a href="EDM_modo_decoracion_pantalla.html#modo_dec">decorados</a> o no) en las vistas 3D.</li>
+      </ul>
+
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">Mínimo de píxeles</span>: Corresponde al tamaño más pequeño, en píxeles, para
+que se visualicen los símbolos, textos y células tanto en <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">Decorado</span></a>
+como en <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">No decorado</span></a>. Con el comando de teclado <span style="font-style: italic;">Spixe</span> también se puede
+definir este valor. </li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Tamaño de entidades en modo No decorado</span>: Permite modificar el tamaño
+base, en unidades de papel, para las marcas de los símbolos y los textos en
+          <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">No decorado</span></a>.</li>
+      </ul>
+      <ul>
+        <li><span class="Parf_negrita">Escalar Células y Escalar Símbolos</span>:
+Al activarlas si cambiamos la escala de representación de ISTRAM, estos
+elementos se escalan manteniendo su tamaño y posición relativos con el
+resto de la cartografía (como si se realizase una reducción
+fotográfica.). MUY IMPORTANTE: Cuando se va a representar una
+rotulación por ejemplo del tipo&nbsp;<span class="Archivo">.ALI</span>, si el archivo&nbsp;<span class="Archivo">.ALI</span>
+se ha preparado para una Escala 1:1000,&nbsp; se realizará la
+generación de la rotulación a esa escala y luego se cambia la escala (a
+1:5000 p.e.). No importa si las opciones se han activado o no antes o
+después de la generación.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Habilitar información en pantalla</span>: Mientras esté activada esta
+casilla, se muestra en pantalla información acerca de la entidad
+gráfica sobre la que está situada el cursor del ratón. Dicha
+información aparecerá cuando el cursor esté sin moverse sobre la
+entidad durante el tiempo (en milisegundos) indicado en <span style="font-weight: bold;">retardo</span>.
+Conviene que este valor NO sea muy bajo, sobre todo cuando se está
+trabajando con dibujos muy grandes, pues puede producir ralentizaciones
+en el programa. La información en pantalla se puede desactivar temporalmente haciendo uso del icono&nbsp;<img src="Imagenes/icono_toolBarEstandar_info.png" style="width: 12px; height: 14px;" alt="" /> de la barra de herramientas estándar.<br />
+
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Resaltar líneas similares</span>: Cuando se muestra la información de una
+entidad en pantalla, si está activada esta opción, también se resaltan
+todas las líneas que sean del mismo tipo (y cota en el caso de líneas
+de tipo L26, L27, L34 y L36). Además, si el usuario está importando un
+fichero&nbsp;<a href="EDM_importar_dwg_dxf.html"><span class="Archivo">.dxf</span>/<span class="Archivo">.dwg</span></a> ó&nbsp;<a href="EDM_importar_dgn.html"><span class="Archivo">.dgn</span></a>, lo que se resalta son las líneas
+pertenecientes a la misma capa o nivel. Si el <span style="font-weight: bold;">número de líneas a resaltar</span> es superior al valor indicado, entonces no se resaltan por razones de eficiencia.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold; font-style: italic;">Grosor de línea resaltada</span>:
+Modifica el grosor con el que se muestra una linea cuando dejamos el
+puntero sobre ella y se resalta (y se nos muestra información sobre
+ella).<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Grosor de líneas similares resaltadas</span>:
+Modifica el grosor con el que se muestran las lineas que son similares
+a la que tenemos resaltada (es decir, aquellas sobre las que dejamos el
+puntero unos momentos).<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Grosor de lineas</span>: Modifica el grosor con el que se muestran por defecto todas las lineas.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Grosor de las líneas seleccionadas</span>: Modifica el grosor con el que se muestran las lineas cuando se seleccionan.<br />
+        </li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Barras de herramientas flotantes</span>: Si está activada esta casilla, las
+          <a href="EDM_barras_herramientas.html">barras de herramientas</a> pueden moverse por toda la pantalla, incluso
+fuera del área de trabajo del programa. Si no estuviera marcada, el
+movimiento de las barras quedaría restringido exclusivamente al área de
+trabajo.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Nº decimales eco de coordenadas</span>:
+Especifica cuántos decimales se quieren mostrar en la ventana de eco de
+coordenadas. Por defecto son 3 decimales, y se pueden configurar de 0 a
+6 decimales.</li></ul><ul><li><span style="font-weight: bold;">N.D.P.</span>:
+Ver zona para bases no abiertas que permite activar/desaactivar la
+posibilidad de ver la zona ocupada por la nube densa de puntos
+declarada aunque no esté abierta, se pueden definir los valores de atenuación y atenuación de la N.D.P. actual.</li>
+
+      </ul>
+
+      <br />
+      <span class="Titulo_2"><a name="opciones">Opciones</a></span><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="topografia">Topografía</a></span><br />
+      <br />
+Las opciones de TOPOGRAFÍA del módulo de CARTOGRAFÍA DIGITAL se explican convenientemente en el apartado <a href="EDM_topografia.html#opciones">Opciones de topografía</a>.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="obra_lineal">Obra lineal</a></span><br />
+      <br />
+      <a name="planta">PLANTA</a><br />
+      <br />
+      Las opciones de PLANTA del módulo de OBRA LINEAL se explican convenientemente en el apartado <a href="OL_planta_opciones_visualizacion.html"><span style="font-style: italic;">Opciones de visualización de planta</span></a>.<br />
+<br />
+      <br />
+      <a name="rasantes">RASANTES</a><br />
+      <br />
+Las opciones de RASANTES del módulo de OBRA LINEAL se explican convenientemente en el apartado <a href="OL_rasantes_opciones_visualizacion.html"><span style="font-style: italic;">Opciones de visualización de rasantes</span></a>.<br />
+      <br />
+      <a name="alzado">ALZADO<br />
+      <br />
+Las opciones de ALZADO del módulo de OBRA LINEAL se explican convenientemente en el apartado </a><a href="OL_alzado_generalidades.html#opciones">Opciones de visualización de alzado</a>.<br />
+<br />
+<br /><span class="Titulo_2"><a name="editor_perfiles">Editor de perfiles</a></span><br />
+
+      <br />
+      <img src="Imagenes/config_editor_perfiles.png" style="width: 350px; height: 349px; margin-left: 7px;" alt="" align="right" />Desde aquí se establece qué información aparecerá, si se dispone de ella, durante la <a href="EDM_editor_perfiles.html">edición de perfiles transversales</a>:<br />
+      <ul>
+        <li>Superficies</li>
+        <li>Tipos de líneas</li>
+        <li>Áreas</li>
+
+        <li>Otros datos</li>
+      </ul>Se dispone además de las siguientes opciones:<br />
+<br />
+
+      <ul>
+        <li><span style="font-weight: bold;">Mantener zoom</span>:
+permite mantener la misma ventana en coordenadas distancia al eje -
+cota relativa a la rasante al ir avanzando o retrocediendo por el
+fichero de perfiles (conserva todos los zooms realizados).</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Opción predeterminada</span>: hace referencia a qué opción aparecerá seleccionada por defecto en el cuadro de diálogo que se muestra con operaciones como <a href="EDM_editor_perfiles.html#editar">editar</a>, <a href="EDM_editor_perfiles.html#recortar">recortar</a>, <a href="EDM_editor_perfiles.html#completar">completar</a>, <a href="EDM_editor_perfiles.html#mas_baja">más baja</a> y <a href="EDM_editor_perfiles.html#mas_alta">más alta</a>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ver códigos</span>:
+Permite visualizar los códigos de correspondientes a los tipos de línea
+marcados (L67 correspondiente a la rasante, L68/69 correspondiente a la
+subrasante+taludes y al desmonte inadecuado, y L107 con el que se
+representa la sobreexcavación). También es posible indicar un tipo de
+línea adicional correspondiente a otra superficie para visualizar sus
+códigos (opción <span style="font-weight: bold;">Otra superficie L</span>).</li>
+
+      
+      </ul>
+
+      <ul>
+
+        
+        <ul>
+          <li><span style="font-weight: bold;">Tamaño máximo de pantalla</span>: Ancho máximo de pantalla, en metros reales, tal que si se está por debajo de este valor, se visualizarán los códigos.</li>
+          <li><span style="font-weight: bold;">Factor de tamaño de pantalla para ver códigos en Sección Real</span>:
+Un valor de 0 implica que siempre se verán los códigos. A medida que
+aumentamos el valor, se necesita acercarse más para que aparezcanlos códigos. </li>
+          <li><span style="font-weight: bold;">Factor de tamaño de pantalla para remarcar vértices en Sección Real:</span>
+Un valor de 0 implica que siempre se verán los cuadraditos.&nbsp; A
+medida que aumentamos el valor, se necesita acercarse más para que
+aparezcan los cuadraditos.</li>
+          <li><span style="font-weight: bold;">Superficie para marcar vértices en Sección Real</span>: A esta superficei no se le controlará el número de puntos</li>
+          <li><span style="font-weight: bold;">Máximo de puntos del semiperfil para marcar vértices en la Sección Real</span><br />
+          </li>
+
+        </ul>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Comprobación de X, Y y AZIMUT</span>:
+En los cálculos de OBRA LINEAL, permite comprobar que las coordenadas y
+el azimut del eje en el perfil coinciden con los del eje en planta.
+Conviene desactivar esta opción en los <a href="OL_tuberias.html">proyectos de tuberías</a>, pues en los puntos angulosos de planta acontecerán dos perfiles con distinto azimut al no haber tangencia.</li>
+      </ul>
+      <ul>
+
+        <li><span style="font-weight: bold;">Mostrar siempre la barra de herramientas de perfiles al editar perfiles</span>: Si esta opción está activa, entonces al entrar en la <a href="EDM_editor_perfiles.html">edición de perfiles</a> aparece la <a href="EDM_editor_perfiles.html#editar">barra de herramientas</a> específica de este entorno.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold;">Compactar los recintos de visualizar mediciones</span>: Si esta opción está activa, al visualizar las mediciones de la tabla&nbsp;<span class="Archivo">.dar</span>
+en un perfil, se compactan los recintos que definen el area de modo que
+se eliminar los recintos grises (areas a restar) y se unen los recintos
+contiguos.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Modo Decorado al avanzar</span>: Establece el comportamiento del modo Decorado al avanzar por los perfiles:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li><span style="font-weight: bold;">Decorado</span>: al avanzar un perfil, aparece siempre decorado.</li>
+          <li><span style="font-weight: bold;">No decorado</span>: al avanzar un perfil, aparece siempre no decorado.</li>
+          <li><span style="font-weight: bold;">Mantener</span>: conservar el estado decorado/no decorado que se tenía antes de avanzar.</li>
+          <li><span style="font-weight: bold;">Automático</span>: si el perfil contiene símbolos, activa el modo Decorado. Si no, no.</li>
+        </ul>
+
+
+      
+      </ul>
+<br /><span class="Titulo_2"><a name="unidades_angulares">Unidades angulares</a></span><br /><br /><img src="Imagenes/config_unidades_angulares.png" style="width: 375px; height: 363px; margin-left: 7px;" alt="" align="right" />Las opciones de obtención y medición de ángulos permiten trabajar tanto con ángulos sexagesimales, centesimales o radianes.<br /><br />Asimismo, permiten elegir el origen de medición de los ángulos y el sentido de medición de los mismos.<br /><br />Desde este menú también se establecen los criterios de giro respecto a ejes para el módulo VIRTUAL 3D.<br /><br />Es necesario hacer hincapié en la necesidad de conocer en todo momento la configuración del modo en que ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> informa de las unidades angulares. <br /><br />
+<br /><br />
+      <span class="Titulo_2"><a name="sistema_unidades">Sistema de unidades</a></span><br />
+<br />Por defecto ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>  trabaja en el Sistema Métrico:<br />
+      <ul>
+        <li>Longitudes en metros (m)</li>
+        <li>Áreas en metros cuadrados (m<sup>2</sup>)</li>
+        <li>Volúmenes en metros cúbicos (m<sup>3</sup>)</li>
+      </ul>
+      <br />
+      <img src="Imagenes/config_sistema_unidades.png" style="width: 253px; height: 83px; margin-left: 7px;" alt="" align="right" />Aunque también es posible seleccionar el Sistema Imperial:<br />
+      <ul>
+        <li>Longitudes en pies (ft)</li>
+        <li>Áreas en pies cuadrados (ft<sup>2</sup>)</li>
+        <li>Volúmenes en yardas cúbicas (yd3, según la equivalencia 1 yd<sup>3</sup> = 27 ft<sup>3</sup>)</li>
+      </ul>
+Al trabajar con el Sistema Imperial se presupone que la cartografía está en pies (ft).<br />
+<br />
+
+      <br />
+      <span class="Titulo_2"><a name="notacion_num_simb">Notación de números en símbolos</a></span><br />
+      <br />
+      <img src="Imagenes/config_notacion_num_simb.png" style="width: 291px; height: 264px;" alt="" align="right" hspace="7" />Permite seleccionar el tipo de notación para los números reales rotulados en los <a href="EDM_entidades_basicas.html#simbolos">símbolos</a> (etiquetas).<br />
+      <br />
+Estos valores afectan también a los valores numéricos de áreas y volúmenes de los perfiles transversales.<br />
+      <br />
+Desde aquí también es posible configurar la distancia (en X e Y) de las etiquetas al símbolo cuando se usa la opción <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <a href="EDM_cotas.html#etiquetado_simb"><span style="font-weight: bold;">Etiquetado de puntos</span></a>.<br />
+      <br />
+Al activar la opción <span style="font-weight: bold; font-style: italic;">Distancia automática en ver cota</span>,
+el programa muestra el valor de la cota de los símbolos en una posición
+calcula en base al tamaño de los símbolos. En caso contrario, dicha
+cota se mostrará a la distancia (en Y) aquí indicada.<br />
+      <br />
+La visualización de la cota de los símbolos en el EDM se consigue mediante el menú <span style="font-weight: bold;">Ver</span> &#8594; <span style="font-weight: bold;">Ver cota de símbolos</span>.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="suavizado_curvas">Suavizado de curvas</a></span><br />
+      <br />
+Este menú permite controlar el discretizado en la representación de las curvas según los siguientes parámetros:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Flecha máxima arco-cuerda (mm)</span>,
+que hace referencia a la discretización de las circunferencias. El
+dibujo de una circunferencia se hace en base a segmentos tal que la
+máxima distancia entre un punto del segmento y el arco real no supere
+este valor. Por defecto, este valor es de 0.01 mm de plano (1 cm real a
+escala 1:1000).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Longitud máxima de segmentos de clotoide (mm)</span>, correspondiente a los acuerdos horizontales en proyectos de obra lineal.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Longitud máxima de segmentos de parábola (mm)</span>, correspondiente a los acuerdos verticales en proyectos de obra lineal.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/config_suavizado_curvas.png" style="width: 375px; height: 288px;" alt="" /><br />
+      </div>
+      <br />
+Los dos parámetros de longitud máxima son útiles en los casos de curvas
+de acuerdo con parámetros muy grandes que provocan que, en el dibujo,
+se representen como rectas, lo que impide efectuar cualquier operación
+relacionada con vértices por no existir en esos tramos (enganches a
+vértice,&#8230;).<br />
+      <br />
+En cuanto al control del suavizado, este menú permite controlar mediante varios parámetros el suavizado de las curvas:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Coeficiente de suavizado</span>: Porcentaje de la flecha de la parábola cúbica a aplicar con respecto al segmento sin suavizar (por defecto, 100%).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Coeficiente de flecha</span>: Igual que el de suavizado, pero afecta más hacia el centro de los segmentos (por defecto, 100%).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Coeficiente de vértice</span>: Es como el coeficiente de suavizado, pero afecta más hacia el borde de los segmentos (por defecto, 100%).</li>
+      </ul>
+      <div style="margin-left: 40px;">Los tres coeficientes están
+íntimamente relacionados, de tal manera que un 100% en el coeficiente
+de suavizado y un valor de C para los otros dos es equivalente a un
+valor de C para el de suavizado y un 100% para flecha y vértice,
+produciendo por tanto el mismo efecto.<br />
+      </div>
+      <ul>
+        <li><img src="Imagenes/overshooting.png" style="width: 158px; height: 153px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Ángulo de overshooting</span>:
+Variación angular entre dos segmentos consecutivos a partir del cual se
+corrigen las tangentes de la parábola cúbica en un vértice para evitar
+el efecto overshooting. Por defecto, su valor es de 70 (equivalente a
+0.7 radianes). En la imagen puede apreciarse la corrección del efecto
+overshooting.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Coeficiente de reducción de ángulos para overshooting</span>: Por defecto es del 20%.</li>
+      </ul>
+      <div style="margin-left: 40px;">Un ejemplo de aplicación se puede
+dar en el caso de líneas de nivel procedentes de una triangulación, de
+tal forma que si las líneas están muy juntas y son muy angulosas, es
+posible que un suavizado normal haga que algunas líneas lleguen a
+cruzarse. Esto puede evitarse fácilmente modificando los valores
+referentes al overshooting, por ejemplo bajando el ángulo de
+overshooting a 20 y anulando el coeficiente de reducción de ángulos
+para overshooting.<br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="paginado_planos">Paginado de planos</a></span><br />
+      <br />
+Aquí se recogen las opciones de impresión de planos que se detallan en el apartado <a href="EDM_impresion.html#opciones"><span style="font-style: italic;">Opciones de impresión</span></a>.<br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/config_paginado_planos_malla_coord.png" style="width: 292px; height: 276px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right;"><img src="Imagenes/config_paginado_planos_otras_opciones.png" style="width: 312px; height: 314px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="config_memoria">Configuración avanzada de memoria</a></span><br />
+      <br />
+Este cuadro de diálogo informa y gestiona en primera instancia el uso de memoria principal (RAM) del sistema:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/config_memoria.png" style="width: 375px; height: 327px;" alt="" /><br />
+      </div>
+      <br />
+El programa gestiona y reserva memoria para el número de líneas,
+vértices por línea, símbolos, rótulo y células indicado, y si se
+sobrepasa algún valor, se informa con un mensaje del tipo &#8220;Límite de
+memoria rebosado&#8221;.<br />
+      <br />
+Una vez alcanzado un límite, no es posible cargar en memoria más entidades de esa clase, salvo que esté marcada la opción <span style="font-weight: bold; font-style: italic;">Ampliación automática de memoria</span>.
+En ese caso, el programa, una vez alcanzado algún límite, solicita al
+sistema una ampliación de reserva de memoria principal y aumenta el
+límite correspondiente de forma automática.<br />
+      <br />
+Al abrir este cuadro de diálogo, también se muestra el número de entidades en memoria y el estado de ocupación de la misma.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="estado">Información de estado. Cambio de la cota actual</a></span><br />
+      <br />
+      <img src="Imagenes/config_estado.png" style="width: 373px; height: 321px; margin-left: 7px;" alt="" align="right" />Este menú, disponible también desde el menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Información de Estado</span>, muestra la versión y día de compilación del programa, así como el número de licencia y su nombre asociado.<br />
+      <br />
+También informa sobre el estado de ciertas variables del programa:
+escala, cota actual, rutas de las librerías en uso y factores de escala
+global para las células (<span style="font-weight: bold;">Cfac</span>), símbolos (<span style="font-weight: bold;">Sfac</span>) y rótulos (<span style="font-weight: bold;">Rfac</span>).<br />
+      <br />
+Otra manera de cambiar la cota actual es haciendo clic directamente sobre el eco de la coordenada Z e introducir el nuevo valor:<br />
+      <br />
+      <img src="Imagenes/cambiar_cota_actual.png" style="width: 308px; height: 98px;" alt="" /><br />
+      <br />
+<br /><span class="Parrafo">
+
+      <span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

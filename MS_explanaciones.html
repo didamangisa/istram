@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Explanaciones</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EXPLANACIONES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo">
+	  <br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#geom_expla"><span class="Parrafo">Generación de la geometría de explanaciones</span></a><br />
+      </div>
+
+      
+      
+      <div style="margin-left: 80px;"><a href="#metodos_calculo">Métodos de cálculo</a><br />
+      <a href="#lineas">Líneas de explanación, línea de borde y líneas de frontera</a><br />
+      <a href="#tramif">Tramificación</a><br />
+      <a href="#obt_geometria">Obtención de la geometría</a><br />
+      <a href="#plat_modif">Plataformas. Modificación interactiva de las explanaciones</a><br />
+      <a href="#compensacion">Compensación automática de desmonte y terraplén</a><br />
+      <a href="#guardar_cargar"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Guardar y cargar explanaciones</span></span></span></span></span></a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#mediciones"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Obtención de mediciones</span></span></span></span></span></a><br />
+      <a href="#balsas_vertederos">Diseño de balsas y vertederos</a><br />
+      <a href="#firmes"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Capas de firmes</span></span></span></span></span></a><br />
+      <a href="#roca">Capas de roca</a><br />
+      <a href="#grupos">Grupos</a><br />
+      </div>
+
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+      <span class="Parrafo"><span class="Parrafo">Esta herramienta está
+diseñada para la generación simultánea de los desmontes y terraplenes
+de un conjunto de plataformas definidas por líneas cerradas con cota y
+dos vectores: uno para el desmonte y otro para el terraplén.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/diagrama_explanaciones.png" style="width: 650px; height: 255px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+<br />
+      Al pulsar sobre el botón <span style="font-weight: bold;">[Explanaciones]</span> aparece el siguiente cuadro de diálogo:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_explanaciones.png" style="width: 684px; height: 87px;" alt="" /><br />
+      <br />
+</span>
+      <div style="text-align: left;"><span class="Parrafo">Este
+cuadro de diálogo utiliza el modo de pestañas (SUPERFICIES, LINEAS,
+PLATAFORMAS, SECCIONES TIPO, FIRMES, ROCAS, OPCIONES, MEDICIONES, GRUPOS) que
+iremos viendo a continuación. <br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo">
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+      Podremos <span style="font-weight: bold;">Guardar</span> o <span style="font-weight: bold;">Cargar</span>
+un fichero .exp mediante el cual quede registrada toda la configuración
+del menú de explanaciones. Por defecto se crea un fichero&nbsp;<span class="Archivo">ISMOS.exp</span><br />
+Al generar una explanación se asocia el nombre del fichero .exp como <a href="EDM_control_entidades.html#control_de_procedencias">procedencia</a> de los elementos que dibujan. De la misma manera se avisa si se han modificado datos y permite guardar el archivo .exp.<br />
+Al cargar un fichero edm/edb con líneas que han sido creadas mediante
+este menú, si se selecciona una línea y se abre su cuadro de
+propiedades con el botón derecho aparece una tecla de procedencia con
+el nombre del fichero .exp con el que se ha generado. Si se pulsa esta
+tecla se salta directamente al cuadro de diálogo de Explanaciones con
+el archivo .exp cargado. Entonces se puede modificar la explanación
+pulsando <span style="font-weight: bold;">Borrar previas</span> cambiando algún parámetro y volviendo a <span style="font-weight: bold;">Generar</span>.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/ismos_propiedades_expl.png" style="width: 452px; height: 275px;" alt="ismos_propiedades_expl.png" /><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span><span class="Titulo_2"><a name="geom_expla">Generación de la geometría de explanaciones</a></span><br />
+      <span class="Parrafo"><br />
+En primer lugar, conviene indicar al programa qué superficie representa
+el terreno, parámetro que se establece en la parte superior del cuadro
+de diálogo en el campo <span style="font-weight: bold;">Terreno</span>.<br />
+      <br />
+      <span style="font-weight: bold;">Fondo de Balsa</span>: será la
+superficie contra la que corten los taludes interiores en el caso que
+lo establezcamos en la pestaña de PLATAFORMA (Talud exterior, interior
+o ambos)<br />
+      <br />
+      <span style="font-weight: bold;">Explanada</span>:
+cuando la explanada no está contenida en un único plano, se define su
+superficie mediante una Sup. Cartográfica. No es necesario que incluya
+la línea del contorno y puede ser mayor que éste.<br /><br />Para que se aplique, además de estar definida como superficies, debe estar activa la opción:<span style="font-weight: bold;"> <a href="#incl_sup_expl">Incluir superficie explanada</a></span>.<br />
+      <br /><span style="font-weight: bold;">Terreno Competente</span>: esta superficie sustituye al espesor de Vegetal que se da en la pestaña de mediciones.<br />
+      <br />
+      <span style="font-weight: bold;">ROCA</span>. Si se define, esta
+superficie sustituye a la profundidad de la primera roca de la pestaña
+de Rocas.(El tipo para el perfil lo toma de aqui). (En las
+explanaciones por perfiles el desmonte en esta roca, se creará con la
+geometria de la Sección tipo para roca si es diferente a la de tierra.)<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_sup.png" style="width: 684px; height: 162px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Los desmontes y terraplenes generados por cada plataforma vienen dados de <a href="definicion_vectorial.html">forma vectorial</a>, y las líneas de dibujo asociadas al desmonte y al terraplén serán del <span style="font-weight: bold;">tipo</span> que especifique el usuario (por defecto, L43 para desmonte y L82 para terraplén).<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_explanada.png" style="width: 585px; height: 381px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />Al hacer clic sobre el botón <span style="font-weight: bold;">SECCIONES TIPO</span> aparecerá el menú común de <a href="definicion_vectorial.html">diseño vectorial</a> en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_secc_tipo.png" style="width: 684px; height: 147px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Si se define el vector de desmonte o terraplén con un único dato, al generar la explanación se discretiza automaticamente.<br />
+p.e. (200, -100) -&gt;&nbsp; (2, -1), (2, -1), (2, -1).....<br /><br />Si en la pestaña de opciones tenemos activado <span class="Parf_negrita">Terraplén hasta el competente</span> o <span class="Parf_negrita">Desmonte hasta el competente</span>, entonces en Secciones Tipo nos deja activar el uso de un vector para el <span class="Parf_negrita">Desmonte en terreno inadecuado</span>.<br />
+<br /></span>
+      <table style="text-align: left; width: 691px; height: 17px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Info">El criterio de signos de los vectores de explanación es delta Y positivos para el desmonte y delta Y negativos para terraplén.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="metodos_calculo">Métodos de cálculo</a></span><br />
+      <span class="Parrafo"><br />
+El usuario también debe seleccionar el método de cálculo de la explanación, existiendo dos posibilidades:<br />
+      </span>
+      <ol>
+        <li><img src="Imagenes/def_vect_expla_niveles.png" style="width: 203px; height: 123px; margin-left: 7px;" alt="" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Por niveles</span>:
+Es el modo por defecto. La explanación se genera con una única sección
+tipo pero para cada explanada se toma la sección tipo definida en la
+primera zona de la explanada.</span></li>
+      </ol>
+      <div style="margin-left: 40px;"><span class="Parrafo">Trabaja
+creando un nivel (tongada) por cada vértice de los vectores, por lo que
+se recomienda que éstos sean densos en datos, tal y como son, por
+ejemplo, los vectores por defecto que se utilizan en esta herramienta.</span><br />
+      <span class="Parrafo"><br />
+      <span class="Parrafo">Es el método más rápido, y recomendable, por ejemplo, para tanteos iniciales.&nbsp; <br />
+      <br />
+      <br />
+Las explanaciones por niveles, al igual que el método por perfiles, que
+veremos a continuación, también se genaran utiliando superficies MDT.
+Es decir el terreno puede ser una superficie cartográfica, un TTP, una
+base de datos Laser o un mdt de Rejilla. </span><span class="Parrafo"></span></span></div>
+      <span class="Parrafo">
+      <ol start="2">
+        <li><span style="font-weight: bold;"><a name="por_perfiles">Por perfiles</a></span><span class="Parrafo">:
+En este caso se precisa una distancia mínima entre perfiles y se da la
+posibilidad de extraer perfiles del terreno por triangulación. <br />
+</span></li>
+      </ol></span></span>
+      <div style="margin-left: 40px;">Las explanaciones por perfiles,
+utilizan superficies MDT. Es decir el terreno puede ser una superficie
+cartográfica, un TTP, una base de datos Laser o un mdt de Rejilla.<br />
+      <br />
+      <img src="Imagenes/expla_mdt.png" style="width: 684px; height: 162px;" alt="" /><br />
+      <br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">También
+se puede seleccionar un tipo de línea para el borde de alcance de los
+movimientos de tierra. Así mismo, en este método, se pueden definir
+diferentes zonas y aplicar distintas secciones tipo por PK&#8217;s.</span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo">Para
+las explanaciones calculadas por perfiles, los vectores que definen las
+geometrías del desmonte y del terraplén, pueden colocarse enganchados
+desde el <span style="font-weight: bold;">pie</span> o desde la <span style="font-weight: bold;">cabeza</span> (con el método de niveles no están disponibles).<br />
+      <br />
+      <img src="Imagenes/eng_vect_expla.png" style="width: 684px; height: 147px;" alt="" /><br />
+      <br />
+      </span><span class="Parrafo">En la zona <span style="font-weight: bold;">SEC.TIPO</span> se indica el número de
+vectores de desmonte y terraplén disponibles (secciones tipo) para
+poder aplicarlos a las plataformas en distintas zonas y obtener de esta
+forma varias geometrías.<br />
+      <br />
+Hay dos tipos de control de desmonte/terraplén y enganche de la cuneta a elegir: <span style="font-style: italic;">Subrasante</span> (por la base de las capas de firme) o <span style="font-style: italic;">Borde de la explanada</span>. Ambos tienen el mismo efecto cuando no hay capas de firme.<br />
+      <br />
+Para las explanaciones por perfiles tenemos la posibilidad de asociar a cada sección de desmonte y/o terraplén <span style="font-weight: bold;">cunetas de guarda </span>definidas vectorialmente, hay que definirles un último segmento con altura suficiente para cortar al terreno.<br />
+      <br />
+      <img src="Imagenes/expla_cun_guarda.png" style="width: 684px; height: 147px;" alt="" /><br />
+<br />Existe también la posibilidad de añadir a cada sección tipo una <span style="font-weight: bold;">cuneta</span>
+que se colocará a continuación de los firmes en las secciones en
+desmonte, independientemente de que se empiece en roca o en tierra.<br />
+      <br />
+      <img src="Imagenes/expla_cun.png" style="width: 684px; height: 147px;" alt="" /><br />
+      <br />
+Al seleccionar este método, se activan además en la pestaña de
+OPCIONES varias casillas para la generación de explanaciones mediante
+perfiles:<br />
+      <br />
+      <img src="Imagenes/expla_opciones.png" style="width: 684px; height: 147px;" alt="" /></span><br />
+
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Generar .ttp</span>: Al marcar esta opción, se crea un fichero&nbsp;<span class="Archivo">.ttp</span> con
+la geometría de cada una de las explanadas creadas (<span class="Archivo">expla1.ttp</span>,&nbsp;<span class="Archivo">expla2.ttp</span>,...).<span style="font-weight: bold;"> <br />
+</span></span></span></span></li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Areas de Siembra: </span>Posibilidad de medir la superficie 3D comprendida entre dos <span style="font-weight: bold;">taludes</span> (<span style="font-weight: bold;">mínimo</span> y <span style="font-weight: bold;">máximo</span>).
+Requiere la generación del archivo .ttp y se calcula sobre las
+superficie del ttp sumando el area 3D de los triángulos cuya máxima
+pendiente está comprendidad entre los taludes definidos.</li>
+      </ul>
+      <img style="width: 684px; height: 147px;" alt="" src="Imagenes/expla_area_siembra.png" /><br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta
+medición se genera al generar la geometría de las explanaciones y se
+accede al listado desde el menú de mediciones: siembra_expN_mM.res. <span style="font-weight: bold;"><br />
+          </span></span></span></span></li>
+
+      
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Redondear esquinas</span>: Permite redondear los taludes (superficie
+cónica) en las esquinas de las plataformas. Esta opción no puede ser
+seleccionada en el caso de tramificación de taludes <a href="#por_lado">por lados</a>.</span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Modo esquinas concavas</span>:
+Algoritmo alternativo, para balsas con esquinas concavas y la línea de
+borde con cota variable. Se puede activar en las opciones de por
+perfiles.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Peinar</span>: Si está activada, sólo se pintan las líneas longitudinales
+en puntos de cambio de pendiente transversal (bermas, etc.). Las líneas
+transversales se pintan con un pelo largo y otro corto en las zonas de
+talud.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Terraplén hasta T.C.</span>: Si se activa esta opción, entonces en las secciones en terraplén el talud bajará hasta el terreno competente.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Desmonte hasta T.C.</span>: Desmonte hasta el Terreno competente. Al activar esta opción se activa simultaneamente Terraplén hasta el T.C.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/expla_secc_tipo_roca.png" style="width: 309px; height: 214px;" alt="" align="right" hspace="4" />Diferente S.T.Roca</span>:
+Posibilidad de utilizar una Sección Tipo diferente en la zona de roca.
+Para ello además de marcar la opción podemes definir en el cuadro de
+diálogo de zonas&nbsp; (pestaña PLATAFORMA) las S.T. a emplear en roca
+(se tomara el vector desmonte de esta sección).<br />
+Esto no es valido para el modo por niveles y para el modo por lados, y tampoco para los taludes interiores en balsas.<br />
+El vector desmonte en roca se aplicara desde al borde de los firmes
+hasta alcanzar el techo de la primera roca definida. A partir de este
+punto se empieza a utilizar el vector de desmonte de la sección
+exterior.</li>
+      </ul><br />
+      <br />
+      <br />
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;"><a name="incl_sup_expl"></a>Incluir superficie explanada</span> Esta opción permite que, en
+explanaciones con taludes interiores (<a href="MS_explanaciones.html#balsas_vertederos">balsas y vertederos</a>), se incluya
+en la nueva superficie generada las líneas de la superficie interior a la explanada
+que pasan por el recinto delimitado por los pies de los terraplenes de
+los taludes interiores (fondo de balsa,...). De lo contrario, el
+programa une directamente los pies de terraplén sin considerar la
+superficie que existe entre ellos.</span></li>
+      </ul>
+      <img src="Imagenes/expla_supef_expla.png" style="width: 684px; height: 162px;" alt="" /><br />
+      <ul>
+
+      
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Equidistancia máxima</span>: Equidistancia máxima entre perfiles al objeto de generarlos en los segmentos rectos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Ángulo máximo</span>: Equidistancia para generar perfiles en las esquinas.</span></li></ul><ul><li><span class="Parrafo"><span style="font-weight: bold;">Interior Balsa: Usar taludes Desmonte/Terraplén</span>:
+El programa por defecto para los taludes del interior de las balsas
+utiliza los taludes de terraplén mientras que si se activa esta opción
+si los taludes interiores de las balsas están por debajo del terreno
+original utiliza los taludes de la sección de desmonte correspondiente
+(enganchada por la cabeza).<br /></span></li>
+      </ul><span class="Parrafo"></span></div>
+      
+      <span class="Parrafo"><br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="lineas">Líneas</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">En
+el apartado correspondiente a LINEAS debe declararse qué tipo de
+línea está asignado a la <span style="font-weight: bold;">Coronación de la explanada</span>. Cada línea de ese tipo
+será considerada para el cálculo de una explanación, pudiéndose por
+tanto calcular un gran número de explanaciones de forma simultánea. <br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><img style="width: 685px; height: 147px;" alt="" src="Imagenes/expla_lineas.png" /><br />
+      </div>
+
+      <br />
+Puede definirse un tipo de línea diferente como base de los taludes interiores llamada <span style="font-weight: bold;">Borde</span> <span style="font-weight: bold;">Interior (Balsas)</span>.
+El programa busca que esa línea este totalmente dentro de la línea de
+borde de explanada. Los taludes exteriores se crean desde la línea de
+borde y los interiores desde la línea de borde interior.<br />
+Se admite para una Explanación/Balsa más de una línea de bordes interiores. Por ejemplo en el caso de una explanada tipo "ocho".<br />
+<span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_talud.png" style="width: 684px; height: 237px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br />
+      <br />
+      </span><img src="Imagenes/ejemplo_explanada_2.png" style="width: 240px; height: 282px; margin-left: 7px;" alt="" align="right" />
+      <table style="text-align: left; height: 64px; width: 440px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: middle; width: 370px; text-align: justify;"><span class="Parrafo"><span class="Info">Se
+debe prestar especial atención en reservar el uso de ese tipo de línea
+EXCLUSIVAMENTE para bordes de explanación, pues de lo contrario se
+obtendrán resultados no deseados al considerar el programa como
+explanaciones todas las líneas de ese tipo.</span><br />
+            </span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+      <span class="Parrafo">El tipo de <span style="font-weight: bold;">Borde de ocupación</span> declarado será el
+que use el programa para dibujar el borde de la explanación (pie de
+terraplén y cabeza de desmonte). Por defecto, se usa el tipo L75, que
+es una línea con un relleno gris transparente.<br />
+      <br />
+El programa repasa sobre la línea de borde de ocupación, para diferenciar la cabeza del desmonte y el pié de terraplén.<br />
+      <br />
+</span></span></span>Mediante la activación de la casilla <span style="font-weight: bold;">Líneas de frontera</span>
+podremos truncan los taludes de desmonte o terraplén de las explanadas
+a partir del tipo de línea definido. Si el corte se produce en la zona
+de las capas de firme, se reduce el<br />
+talud lateral del firme pero se mantiene el espesor.<br />
+La línea de frontera no afecta a la explanada, de tal forma que si en
+una zona se quiere eliminar todo el talud entonces la línea de frontera
+debe llevarse coincidiendo con la línea de la explanada. Si la línea de
+frontera pasa al interior de la explanada ya no afecta a los taludes.<span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><br /><span style="font-weight: bold;">Límite de firmes</span>:
+se puede seleccionar un tipo de línea para delimitar la extensión de
+los firmes de la explanada, puede haber hasta 2 líneas límite. Si se activa esta opción y existe esta
+línea interior al borde de la explanada los firmes, solo se generarán dentro
+de este recinto y terminarán con el talud que tenga cada componente de
+firme.<br />En caso de que la línea límite coincida con el borde, es necesario desplazarla hacia el interior para que sea reconocida.<br /><br /><br /><img style="width: 685px; height: 147px;" alt="" src="Imagenes/expla_limite_firmes.png" hspace="20" /><br /><br /><img style="width: 686px; height: 330px;" alt="" src="Imagenes/expla_limite_firmes_perfil.png" hspace="20" /><br /><br />
+Mediante el comando <span style="font-weight: bold;">Borrar previas</span>
+elimina todos los elementos que proceden de una explanación aunque no
+se hayan generado en la sesión actual y vengan en un fichero .edm o
+.edb.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_borrar_prev.png" style="width: 684px; height: 87px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><a name="tramif"><span style="font-weight: bold; font-style: italic;">Tramificación</span></a><br /><br />Al pulsar en la opción <span style="font-weight: bold;">Zonas</span> se abre una ventana que permite tramificar la línea por PK&#8217;s y aplicar las distintas secciones tipo que haya definidas.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_zonas.png" style="width: 684px; height: 237px;" alt="" /><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/expla_tramif.png" style="width: 309px; height: 214px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />Esta herramienta posibilita aplicar, cuando el método de cálculo es <a href="#por_perfiles">por perfiles</a>,
+distintas geometrías de talud en el contorno de la explanación e
+incluso transiciones entre ellas. A la hora de tramificar el contorno,
+existen dos posibilidades:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Por zonas</span>:
+Desde el origen de la línea que forma el contorno de la plataforma, se
+toma el PK 0, a partir del cual se crean diferentes tramos con
+diferentes secciones tipo. Una vez establecidas las zonas podremos
+observar en la pantalla la rotulación del número dato de la zona
+delante del número de la sección tipo.</span></li>
+      </ul></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_zonas_rotul.png" style="width: 161px; height: 119px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span style="font-weight: bold;"><a name="por_lado">Por lados</a></span><span class="Parrafo">:
+Se asigna a cada lado de la polilínea de la plataforma una sección
+tipo, que busca la intersección con la sección tipo de la del siguiente
+lado.</span></li>
+      </ul><span class="Parrafo">Al cambiar de <span style="font-weight: bold;">Zonas</span> a <span style="font-weight: bold;">Lados</span>
+y viceversa el programa mantiene por separado las dos configuraciones
+de forma que no se pierde la configuración anterior. En los archivos
+.exp se guardan también ambas configuraciones, de modo que si cargamos
+un archivo que se guardo con el modo por Lados, si cambiamos a por
+Zonas recuperamos los valores de esta configuración.&nbsp;&nbsp; </span><br />
+
+      <span class="Parrafo"><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="obt_geometria">Obtención de la geometría</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">Al
+lado de PLATAFORMA se encuentra un menú de ÚTILES
+para mejorar la definición de la línea de plataforma. En concreto, la
+herramienta <span style="font-weight: bold;">Punto de inicio</span>
+mueve el punto de inicio de la línea de plataforma al punto medio del
+segmento recto más largo, que es el más recomendable para el correcto
+cálculo de la explanación.<br />
+      <br />
+</span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_pto_inicio.png" style="width: 684px; height: 237px;" alt="" /></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />La utilidad <span style="font-weight: bold;">Azimut</span> tiene tres opciones disponibles:<br />
+</span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Con la opción <span style="font-weight: bold;">Automático</span>
+el programa calcula para cada explanada un azimut en la dirección más
+alargada de la explanada. El azimut se restringe a valores entre 0 y
+200 grados centesimales.</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Con la opción <span style="font-weight: bold;">Paralelo</span> el programa hace al azimut paralelo al segmento más largo.</span></span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Con la opción <span style="font-weight: bold;">Perpendicular </span>el programa hace al azimut perpendicular al segmento más largo.<br />
+          </span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span style="font-weight: bold;">Cotas mínimas</span>. Esta
+herramienta sube o baja el recinto de la explanada, de modo que se
+evita el terraplén. Calcula la cota roja de todos los vertices del
+recinto de la explanada y entre cada dos vertices en puntos utilizando
+la equidistancia máxima del cuadro de<br />
+diálogo de explanaciones. La mayor cota roja obtenida se la resta a todos los puntos.<br /><br />La opción <span class="Parf_negrita">Depurar</span>,&nbsp;analiza
+las líneas de borde de plataforma para buscar y eliminar posibles
+bucles en estas líneas. Conviene guardar el edm con las líneas ya
+depuradas.<br />
+
+El botón <span style="font-weight: bold;">[Generar geometría]</span> (con su correspondiente vuelta atrás mediante <span style="font-weight: bold;">[Deshacer] <img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" /></span>)
+construye, a partir de estos bordes, el desmonte y el terraplén que se
+generan con los recintos del tipo de línea elegidos y según el talud
+definido <a href="definicion_vectorial.html">vectorialmente</a>:<br />
+
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+
+      
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/ejemplo_explanada_3.png" style="width: 565px; height: 413px;" alt="" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+El modelo queda generado por las siguientes líneas:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Línea que define la plataforma</span></li>
+        <li><span class="Parrafo">Línea de borde (cabeza de desmonte y pie de terraplén)</span></li>
+        <li><span class="Parrafo">Líneas longitudinales y transversales en desmonte/terraplén</span></li>
+      </ul>
+      <span class="Parrafo">El programa, al generar la geometría de las
+explanaciones, las numera como 1, 2, 3,&#8230; Todos los elementos de cada
+explanación &#8212;plataforma, terraplén y desmonte&#8212; se colocan
+automáticamente en un número de <span style="font-weight: bold;">modelo</span>
+igual al número asignado a cada explanación (similar a los ejes de obra
+lineal). Si antes de generar la medición se desean editar estas
+explanaciones, en los elementos que se añadan han de respetarse los
+tipos de líneas y los números de modelo.<br />
+      <br />
+      <br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="plat_modif">Plataformas. Modificación interactiva de las explanaciones</a></span><br />
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">En la zona derecha de la ventana flotante se dispone la opción <span style="font-weight: bold;">PLATAFORMAS</span> con las siguientes facilidades:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Analizar</span>:
+Busca todas las líneas con el tipo seleccionado para las plataformas y
+crea una tabla que permite definir un azimut diferente para cada una.
+Este azimut es el que se utilizará para generar los perfiles de las
+mediciones. También informa del número de puntos que tiene cada línea
+que define una explanada.</span></li>
+      </ul></span></span></span></span></span></span></span></span><ul><li><span class="Parf_negrita">Z/T/F Pla. 1 -&gt; Grupo 0</span>:
+Herramienta que permite copiar toda la información de Zonas,
+Taludes(Exterior/interior/Ambos) y Sección de Firmes, desde la
+plataforma actual para todas&nbsp; las de su mismo grupo. P.e.
+(sub_plataformas del mismo tipo pertenecientes a diferentes plataformas
+de un parque eólico).</li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span>Para la generación de la geometría y para las mediciones, se muestran en la pestaña Plataformas tres modos:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Explanadas independientes</span>: Genera y mide cada explanada independiente de las otras.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Truncar solapes</span>: Calcula la intersección de los taludes. <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Permite truncar los taludes de aquellas
+explanaciones que se intersecan con los de otras (pero no lo hace si el
+talud de una corta dentro del recinto de la explanada de la otra).</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul style="text-align: left;">
+        <li><span style="font-weight: bold;">Ejecutar por Orden</span>:
+En este modo cada explanada se apoya sobre la el estado que dejo la
+anterior, excavando o desmontando lo necesario. Cada explanada va
+alterando las superficies del terreno y los horizontes de roca, no
+obstante en el perfil transversal se añaden superficies con&nbsp; el
+estado original de las superficies del terreno, el estado que ha dejado
+la explanación anterior y las superfices de todas las explanadas
+anteriores. En este modo se añade una distancia de busqueda, para que
+no se tengan en cuenta explanadas que esten muy alejadas.</li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_modif.png" style="width: 684px; height: 237px;" alt="" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+
+      <span class="Parrafo">
+      <table style="text-align: left; height: 44px; margin-left: 40px; width: 422px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td style="vertical-align: middle; width: 328px; text-align: justify;"><span class="Parrafo"><span class="Info">Esta opción se ejecuta automáticamente tanto al entrar en el menú de <span style="font-weight: bold;">[Explanaciones]</span> como al modificar el tipo de línea para las plataformas.</span></span></td>
+    </tr>
+  </tbody>
+      </table>
+
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Talud</span>: Permite conmutar la tecla para generar
+taludes exteriores al recinto (explanaciones), interiores (vertederos)
+y exteriores e interiores (balsas).</span></span></span></span></li></ul><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">V, V+I</span>:
+Permite definir un espesor de cubierta vegetal y vegetal más inadecuado
+independiente para cada una de las explanadas, si se ha declarado una
+superficie para el terreno competente ésta manda sobre el valor
+definido en V+I.<br /></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Mover</span>: Permite mover la línea que define la
+plataforma. Cuando hay una única plataforma o varias pero sólamente activa sobre la que se quiere actuar y se ha generado el
+movimiento de tierras, la opción <span style="font-weight: bold;">[Mover]</span> permite ver cómo se modifica
+dinámicamente la geometría de los desmontes y terraplenes en función de
+la posición de la plataforma. Es conveniente tener marcada la casilla <span style="font-weight: bold; font-style: italic;">Desplazamiento rápido</span> del menú <span style="font-weight: bold;">Configuración</span> </span></span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Preferencias</span> </span></span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">Comportamiento en edición</span> </span></span></span></span><span class="Parrafo">&#8594;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Funcionamiento</span> para que el programa vaya
+dibujando en tiempo real la explanación.</span></span></span></span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Girar</span>:
+Permite girar la línea que define la
+plataforma. Cuando hay una única plataforma o varias plataformas pero
+sólamente activa sobre la que se quiere actuar y se ha generado el
+movimiento de tierras, la opción <span style="font-weight: bold;">[Girar]</span>
+permite ver como se modifica
+dinámicamente la geometría de los desmontes y terraplenes en función de
+la posición de la plataforma. El punto que se pica inicialmente como
+punto de referencia se utiliza como centro de giro y se determina el
+ángulo entre la posición actual del cursor y ese punto. El azimut de cada plataforma gira solidariamente con ella.</span></span></span></span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Subir</span>: Permite subir en cota la línea que define la
+plataforma. Cuando hay una única plataforma o varias&nbsp;</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">plataformas pero sólamente activa sobre la que se quiere actuar</span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> y se ha generado el
+movimiento de tierras, la opción <span style="font-weight: bold;">[Subir]</span> permite ver como se modifica
+dinámicamente la geometría de los desmontes y terraplenes en función de
+la posición de la plataforma. Al mover el cursor en el sentido N-S sube
+o baja la cota de la plataforma .</span></span></span></span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+          <span style="font-weight: bold;">Bascular</span>: Permite bascular la plataforma respecto a
+la línea del azimut para perfiles. Al ofrecer un incremento de
+pendiente, las cotas de los puntos de la plataforma suben o bajan en
+función de la distancia a la línea. Al utilizar el modo dinámico, la
+pendiente se aumenta o disminuye subiendo o bajando el cursor por la
+pantalla.</span></span></span></span></li>
+      
+      </ul>Cuando
+hay varias plataformas, después de Generar geometría, las herramientas
+Mover/Girar/Subir/Bascular actúan interactivamente sobre la plataforma
+ACTUAL, es decir aquella que aparece en la parte superior de la lista.
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cuando tengamos varias explanaciones podremos <span style="font-weight: bold;">mover</span>, <span style="font-weight: bold;">girar</span>, <span style="font-weight: bold;">subir</span> o <span style="font-weight: bold;">bascular</span> en función de la opción seleccionada en la casilla Cambiar:<br />
+</span></span></span></span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cambiar <span style="font-weight: bold;">de una en una</span>.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Todas a la vez</span>.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Todas <span style="font-weight: bold;">las del mismo grupo</span>.
+Es ta última opción permite seleccionar una plataforma y mueve, gira,
+sube o bascula todas las del mismo grupo simultáneamente.</span></span></span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /><span style="font-weight: bold;">Grupo</span>: se puede asignar a cada plataforma un grupo y dar un color distinto a cada grupo para diferenciarlas.<br />
+      <br />
+Para el caso de una única explanada con los taludes ya generados, las
+opciones de <span style="font-weight: bold;">subir</span> y <span style="font-weight: bold;">bascular</span> en modo interactivo se pueden forzar a
+introducir el dato por teclado, lo que permite tener un mejor control.
+Esto se consigue activando la opción <span style="font-weight: bold; font-style: italic;">Por teclado</span>.<br />
+      </span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;"><img src="Imagenes/explanacion_intercambiar.png" style="width: 134px; height: 52px;" alt="" align="right" hspace="6" />Intercambiar</span>:
+Se puede intercambiar el orden de la explanada dos a dos. Este
+intercambio de posición puede hacerse incluso después de generar la
+geometría. Al generar la geometría o al guardar un archivo .exp, si se
+han intercambiado líneas, se nos presenta un mensaje aconsejando
+guardar también el archivo .edm de la cartografía.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span><span class="Parrafo"><table style="text-align: left; width: 691px; height: 17px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Info">Cuando
+se van a utilizar los movimientos dinámicos de la plataforma, el modo
+de regenerado más rápido es por perfiles y sin triangular, después por
+niveles y el más lento por perfiles y triangulando.</span></span></td>
+          </tr>
+        </tbody>
+      </table></span><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="compensacion">Compensación automática de desmonte y terraplén</a></span><br />
+      <br />
+El botón <span style="font-weight: bold;">[Compensar]</span> sube o
+baja la cota de todas las explanaciones efectuando tanteos una por una hasta que la
+diferencia entre los volúmenes de desmonte y terraplén esté por debajo del <span style="font-weight: bold;">porcentaje de compensación</span> indicado.<br /><br />El botón <span style="font-weight: bold;">[Exceso de Terraplén]</span>
+permite buscar la altura de la explanada para que la diferencia entre
+el terraplén y el desmonte se aproxime a este valor. En caso de asignar
+un valor diferente de 0, el porcentaje se calcula sobre éste valor.<br />
+<br />
+      
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_compensar.png" style="width: 684px; height: 237px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span></span></span><span class="Parrafo"><table style="text-align: left; width: 691px; height: 17px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo Info">Esta
+operación lleva implícito el cálculo de la geometría, por lo que NO
+debe pulsarse previamente el botón <span style="font-weight: bold;">[Generar geometría]</span>, sino
+directamente el botón <span style="font-weight: bold;">[Compensar]</span>.</span></span></span></span></span></td>
+          </tr>
+        </tbody>
+      </table></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="guardar_cargar">Guardar y cargar explanaciones</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br /></span></span></span></span></span><img src="Imagenes/expla_guardar_cargar.png" style="width: 89px; height: 55px;" alt="" align="right" hspace="5" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&nbsp;En la zona superior de la pantalla se dispone de las teclas <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y
+      <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> que permite gestionar todos los datos de explanaciones a
+través de ficheros de extensión&nbsp;<span class="Archivo">.exp</span>.<br />
+      <br />
+Para cargar se recomienda tener
+presente la misma cartografía y explanaciones con las que se hizo el
+guardado para que se asignen correctamente las zonas.&nbsp;&nbsp;&nbsp;
+&nbsp;<br />
+      <br />
+      <br /></span></span></span></span></span><span class="Titulo_2"><a name="mediciones">Obtención de mediciones</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los parámetros que intervienen en la obtención de las cubicaciones se
+recogen en el apartado <span style="font-weight: bold;">MEDICIONES</span>. Aquí se establece una <span style="font-weight: bold;">equidistancia
+entre perfiles</span> para la cubicación y un <span style="font-weight: bold;">semiancho de banda</span> aplicable a
+los mismos, así como la posibilidad de tener en cuenta un desbroce en
+el cálculo de perfiles y de mediciones. Para calcular este desbroce se
+debe rellenar el campo <span style="font-weight: bold;">Espesor vegetal</span> y para calcular el inadecuado el campo <span style="font-weight: bold;">V+I</span> , es posible configurar un único valor de vegetal y/o inadecuado y copiarlo para todas las plataformas activas con la orden <span style="font-weight: bold;">Copiar a Plataformas activas</span>.<br />Si
+en la pestaña de Superficies tenemos definida una superficie MDT para
+el terreno competente se puede combinar con un espesor de vegetal <span style="font-weight: bold;">V</span> en la pestaña Plataformas de la siguiente forma:<br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><ul><li>Si se deja a 0 todo el material hasta el terreno competente se considera Vegetal.</li><li>Si
+se pone un valor negativo se crea la superficie de terreno inadecuado
+como copia del vegetal y entonces todo el material hasta el competente
+se considera Inadecuado.</li><li>Si se pone un valor positivo se crea
+la superficie de Inadecuado paralela al Vegetal y se corrige si está
+por debajo del competente en algún punto del perfil, entonces entre la
+superficie del vegetal y la del inadecuado se considera vegetal y entre
+la de inadecuado y competente se considera inadecuado.</li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+Se puede especificar un <span style="font-weight: bold;">margen de llenado</span>
+para las balsas, de modo que la capacidad de la balsa no se mide hasta
+rebosar sino hasta una cierta altura por debajo de ese límite.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_mediciones.png" style="width: 684px; height: 162px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+La opción <span style="font-weight: bold; font-style: italic;">Perfiles en vértices de la explanada</span>
+provoca que, además de los perfiles según equidistancia, el programa
+obtenga también perfiles que pasan por los vértices de la línea o
+contorno de explanada, obteniéndose así cubicaciones más precisas.<br />
+      <br />
+      <span style="font-weight: bold;">Modelo para la plataforma</span>:
+Se puede definir un número de modelo para la primera plataforma, hasta
+el valor 1900. A partir de ésta el resto se numeran secuencialmente.<br />
+<br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El programa generará un fichero de perfiles
+por cada explanación, de nombre&nbsp;<span class="Archivo">expla#.per</span> (siendo # el número de eje).
+Los perfiles serán generados según un eje recto que, por defecto, tiene
+azimut 0. Es posible modificar la dirección del eje de cada explanada
+mediante el campo <span style="font-weight: bold;">Azimut</span> del apartado <span style="font-weight: bold;">PLATAFORMAS</span>.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_azimut.png" style="width: 684px; height: 237px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+A partir de la columna <span style="font-weight: bold;">dX</span> podremos desplazar lateralmente el eje de cada explanación. <br />
+      <br />
+Cuando se genere la medición se crea una línea de tipo L53
+siguiendo el eje utilizado al generar los perfiles para que el usuario
+pueda tener su referencia.<br />
+      <br />
+También se crea el fichero&nbsp;<span class="Archivo">expla.cej</span> con los ejes utilizados para los
+perfiles de la medición, por si pudiera ser útil desde el módulo de
+OBRA LINEAL.<br />
+      <br />
+El eje a considerar puede ser:<br /></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eje por zona de ocupación</span>, que para por el
+baricentro de la zona de ocupación, es decir, del recinto formado por
+la cabeza de desmonte y el pie de terraplén (es la opción por defecto).</span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eje según plataforma</span>, que pasa por el centro geométrico de la plataforma.</span></span></span></span></span></li>
+      </ul></span></span></span></span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Eje por dos puntos</span>, el eje de medición para cada plataforma se puede definir por dos puntos.<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_eje.png" style="width: 684px; height: 237px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Al pulsar el botón <span style="font-weight: bold;">[Generar]</span> de este apartado el usuario debe
+asegurarse de que la superficie del terreno esté en el modelo 0 ya que
+el programa barre cada explanación con perfiles según un eje Sur-Norte
+con la equidistancia de perfiles y semiancho definidos por el usuario,
+y automáticamente aumenta el número de superficies, respetando las
+existentes y creando otra con los tipos definidos para la plataforma,
+el desmonte y el terraplén.<br />
+      <br />
+Tras la generación de mediciones, el programa altera el modelo de
+algunos elementos de la cartografía, dejando en el 0 únicamente
+aquellas entidades que pertenezcan a la superficie del terreno. Con la
+opción <span style="font-weight: bold;">[Recuperar modelo]</span> se restaura el modelo de dichos elementos
+tras la generación de mediciones.<br />
+      <br /></span></span></span></span></span><img src="Imagenes/expla_listados.png" style="width: 167px; height: 106px;" alt="" align="right" hspace="10" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una vez generada la medición, también se crea un símbolo con el número
+asignado a cada explanación, además del listado&nbsp;<span class="Archivo">cubica.res</span>
+con los
+volúmenes de desmonte y terraplén de cada explanación y acumulando el
+de todas ellas. También se incluye el area de cada explanación (el area
+en planta ocupada por la linea definida para el borde de ocupación). La
+medición se muestra al pulsar el botón&nbsp;<img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /> <span style="font-weight: bold;">[Listado cubica.res]</span>.<br />
+En el listado cubica.res tendremos la cota de la explanada o la cota promedio si tiene cota variable.<br />
+      <br />
+<br /><span class="Archivo">
+      <br /></span></span></span></span></span></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: left;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *&nbsp;&nbsp;&nbsp; MEDICIONES DE LAS
+EXPLANACIONES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * * *</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+===================================================</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;EXPLANADA&nbsp;&nbsp;&nbsp; ---VOLUMENES PARCIALES---------------- --VOLUMENES ACUMULADOS----------------</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+&nbsp;&nbsp;&nbsp; Nº&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -TERRAPLEN--
+--DESMONTE-- -CAPACIDAD-- -TERRAPLEN-- --DESMONTE-- -CAPACIDAD--</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">
+      </span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp; 1 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+16.00&nbsp;&nbsp;&nbsp;&nbsp;
+57678.74&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+57678.7&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 0.0</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo">&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+26949.91&nbsp;&nbsp;&nbsp;&nbsp;
+10671.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.0 &nbsp; &nbsp;&nbsp;
+26965.9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+68350.7&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 0.0</span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Archivo"></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      De forma adicional, se crea por cada explanada los ficheros <span class="Archivo">explaN_mM.res</span> y&nbsp;<span class="Archivo">exN_mM.res</span> (siendo <span class="Archivo">N</span>
+el número de explanada y M el número de modelo), y que se corresponden
+con los listados de medición por PKs y según el archivo&nbsp;<span class="Archivo">explaN_mM.per</span>
+obtenido, siendo la diferencia entre ambos que el segundo tiene un
+formato tal que se puede cargar directamente en una hoja de cálculo.
+Pulsando el botón </span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[explaN_mM.res]</span> se accede a consultar los listados&nbsp;<span class="Archivo">explaN_mM.res</span> de cada explanación.<br />
+      <br />
+La medición del DESBROCE se desdobla en Cubierta Vegetal y Suelo INADECUADO.<br />
+      <br />
+Cuando generamos la geometría también se crea un listado llamado </span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" /></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[altura_explaN_mM.res]</span> que contiene las alturas máximas de desmonte y terraplén (siendo N el número de explanada y M el número de modelo).<br />
+      <br />
+      </span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_alt_max.png" style="width: 350px; height: 222px;" alt="" /></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+También se crea de forma automática una <a href="EDM_editor_perfiles.html#tablas_cubic">tabla de cubicación</a>, de nombre&nbsp;<span class="Archivo">expla.dar</span>, que permite al usuario comprobar las mediciones. <br />
+La tabla <span style="font-weight: bold;">expla.dar</span> se crea con tipos de línea para dibujar los recintos&nbsp; de las mediciones y materiales para el BIM.<br />
+Se añade en la libreria el archivo <span style="font-weight: bold;">Expla.gut </span>que
+permite dibujar los perfiles transversales de la explanada con recintos
+sólidos de las mediciones: capas de firme, terraplén, etc...<br />
+      <br />
+Al generar la medición de las explanaciones, se genera un archivo <span style="font-weight: bold;">expla.pol</span>
+con el nombre del archivo .cej de los ejes de la explanaciones y que
+asigna como perfiles del terreno los perfiles generados en la medición.
+También se añade un archivo .vol por cada explanación que contiene una
+rasante extraida por el eje.<br />
+Con esto podemos dibujar en el módulo de obras líneales un perfil longitudinal de la explanada (No hay que calcular en Alzado). <br />
+      <br />
+Al cargar en Obra Lineal el proyecto expla.pol generado al ejecutar la
+medición en explanaciones, se puede obtener un modelo BIM a partir de
+los perfiles de medición, marcando la opción<span style="font-weight: bold;"> <span style="font-weight: bold;">Generar proyecto</span>.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_gen_proy.png" style="width: 624px; height: 601px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_bim.png" style="width: 600px; height: 292px;" alt="" /></span></span></span></span></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span><span class="Titulo_2"><a name="balsas_vertederos">Diseño de balsas y vertederos</a></span><br />
+      <span class="Parrafo"><br />
+Existe la posibilidad de trabajar con dos superficies simultáneamente
+para la generación de balsas. En este tipo de geometrías, se define una
+superficie para el corte de los taludes exteriores, y otra (fondo de la
+balsa) para el de los interiores.<br />
+      <br />
+En el caso de vertederos, se utilizarán sólo taludes interiores
+buscando el corte con la superficie interior que tendrá la cota de
+coronación del vertedero.<br />
+      <br />
+      <br /></span></span></span></span></span><span class="Titulo_2"><a name="firmes">Capas de firmes</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Es posible definir diferentes capas de firmes, hasta 30, paralelas a la
+superficie de la explanación, dando el espesor de cada capa, un nombre,
+el talud lateral y un tipo de superficie para los perfiles.<br />
+      <br />
+Cada capa de firme se mide por separado. Se permite definir capas de
+firmes para explanadas tipo balsa con taludes exteriores e interiores.<br />
+      <br />
+Pueden definirse hasta 30 secciones de firmes diferentes. Los nombres y
+superficies son los mismos para todas las secciones. En cada sección
+varían las capas que se utilizan, su espesor y su talud. En la pestaña
+de PLATAFORMAS (<span style="font-weight: bold;">Sec.Firmes</span>) se define que sección de firmes se aplica a cada una de ellas.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/expla_firmes.png" style="width: 684px; height: 252px;" alt="" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <span class="Parrafo"><br />
+Cuando se define una superficie interior para la explanada y esta tiene
+capas de firme, se copia esta superficie a la profundidad de cada capa
+para obtener en los perfiles de medición las superficies de las capas
+de firme paralelas a la de la explanada.<br />
+<br />
+      <a name="roca"><span class="Titulo_2">Capas de roca</span><br />
+      <br />
+Se pueden añadir hasta 6 horizontes de Roca, que se incorporan a los perfiles al generar la medición.<br />
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span><img src="Imagenes/expla_roca.png" style="width: 684px; height: 192px;" alt="" /></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <a name="grupos"><span class="Titulo_2">Grupos</span><br />
+      <br />
+</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Permite
+activar o desactivar por grupos y cambiarles el color y el nombre. Las
+plataformas en grupos desactivos, se dibujan atenuadas y no se genera
+su geometría ni se realiza su medición. El estado de activación de los
+grupos, se guarda también en el archivo .exp.<br />
+      <br />
+Se puede asignar un <span style="font-weight: bold;">nombre</span> a cada explanación. Ese nombre se muestra en pantalla y pasa como nombre también para el eje.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/expla_grupos.png" style="width: 684px; height: 237px;" alt="" /><br />
+
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /><span class="Parf_negrita">Asignar</span>: Esta herramienta permite asignar de una vez el grupo a bloques de explanadas en los que se repite la secuencia de grupos. <br />
+      <br />
+<br />
+      </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

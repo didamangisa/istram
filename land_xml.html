@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Formato LandXML</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>FORMATO LandXML<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo"><a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><a href="#importacion">Importación</a><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#selec_dir"><span class="Parrafo">Selección de la carpeta o directorio de importación</span></a><br />
+      <a href="#imp_ejes_planta">Importación de ejes en planta</a><br />
+
+      <a href="#imp_rasantes">Importación de rasantes y peraltes</a><br />
+      <a href="#imp_perf_transv">Importación de perfiles transversales</a><br />
+      <a href="#imp_carto_sup">Importación de cartografía y superficies</a><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><a href="#exportacion">Exportación</a></span><br />
+      <span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><br />
+
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo">
+      <br />
+      </span><img style="width: 311px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/ejemplo_landxml.png" align="right" /><span class="Parrafo">LandXML es un <span style="font-weight: bold;">formato no propietario</span> de archivo XML adaptado a las necesidades de la industria del software de ingeniería civil y modelizado de superficies.<br />
+      <br />
+
+Este formato ha sido y es desarrollado por un amplio consorcio de
+empresas y está muy extendido a nivel mundial. Su objetivo es
+facilitar, en la medida de lo posible, el intercambio de información
+entre programas de distintas compañías de software o entre distintas
+versiones del mismo programa.<br />
+      <br />Existen varios sitios web que contienen toda la información necesaria para usuarios y las especificaciones para desarrolladores.<br />
+      </span>
+      
+      <br />
+Dentro del lector de ficheros LandXML Istram es capaz de analizar los elementos <span style="font-weight: bold;">Cant</span>
+(representará los peraltes en una alineación), los cuales se leen a
+pares en cada eje que los contenga y a partir de ellos se genera el
+fichero <a href="OL_peraltes.html">.prl</a> de peraltes para cada eje.<br />
+<br />
+      <span class="Titulo_2"><a name="importacion">Importación</a></span><br />
+
+      <br />
+El cuadro de importación de LandXML es accesible tanto desde <span style="font-weight: bold;">Archivo</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Importar LandXML</span> como desde PLANTA <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Importar</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; </span></span></span></span></span></span><span style="font-weight: bold;">LandXML (xml)</span> del módulo de OBRA LINEAL.<br />
+
+      <br />
+      <div style="text-align: center;"><img style="width: 358px; height: 327px;" alt="" src="Imagenes/dialogo_imp_landxml_general.png" /><br />
+      </div>
+      <br />
+Este cuadro de diálogo se divide en dos partes. La parte izquierda
+consta de un árbol en el que el usuario puede seleccionar el tipo de
+elemento o elementos a importar, mientras que en la parte derecha se
+muestran las distintas opciones de importación relativas al tipo de
+elemento seleccionado.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="selec_dir">Selección de la carpeta o directorio de importación</a></span><br />
+
+      <br />
+Desde el nodo <span style="font-weight: bold;">General</span> del árbol
+el usuario puede seleccionar la carpeta en la que se guardarán los
+archivos resultado del proceso de importación. Por defecto, se
+selecciona la la carpeta actual, aunque pulsando el botón <span style="font-weight: bold;">[...]</span> el usuario puede seleccionar cualquier otra ubicación.<br />
+      <br />El nombre de los archivos generados será en función de los nombres internos de los elementos en el fichero LandXML.<br /><br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_ejes_planta">Importación de ejes en planta</a></span><br />
+      <br />
+      Para la importación de ejes en planta el programa ofrece la opción de crear un archivo&nbsp;<span class="Archivo">.cej</span> por cada uno de los ejes encontrados en el archivo&nbsp;<span class="Archivo">.xml</span> o crear un único&nbsp;<span class="Archivo">.cej</span> que los contendrá a todos.<br />
+
+      <br />
+A continuación se establece la <a href="OL_planta_alineaciones.html">tipología de alineaciones</a> a crear, ofreciéndose las siguientes posibilidades:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Todo a fijas</span>: Todas las alineaciones serán <a href="OL_planta_alineaciones.html#fija_2p">fijas</a> y estarán enlazadas por las <a href="OL_planta_curvas_transicion.html">curvas de transición</a> si es que existen.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Fija + giratorias</span>: La primera alineación de cada eje será <a href="OL_planta_alineaciones.html#fija_2p">fija</a> y el resto será una sucesión de alineaciones <a href="OL_planta_alineaciones.html#giratoria">giratorias</a> con sus correspondientes <a href="OL_planta_curvas_transicion.html">curvas de transición</a>.</li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Estándar (fija + flotante)</span>: Los ejes quedarán declarados como sucesiones de alineaciones <a href="OL_planta_alineaciones.html#fija_2p">fijas</a> y <a href="OL_planta_alineaciones.html#flotante">flotantes</a> con sus correspondientes <a href="OL_planta_curvas_transicion.html">curvas de transición</a>.</li>
+      </ul>
+      
+      <div style="margin-left: 40px;">Hay trazados que, debido a que
+provienen de programas con ciertas limitaciones en la introducción de
+datos de planta, contienen alineaciones rectas muy pequeñas para, por
+ejemplo, poder contener dos ramas de clotoides consecutivas.<br />
+
+      <br />
+Esta metodología puede introducir incertidumbres, por lo que el importador convierte esas alineaciones <a href="OL_planta_alineaciones.html#fija_2p">fijas</a> en alineaciones de <a href="OL_planta_alineaciones.html#enlace">enlace</a> y sustituye la flotante anterior por una giratoria. En este caso, el parámetro <span style="font-weight: bold;">Longitud cambio fija -&gt; enlace</span> indica la longitud mínima que ha de tener una alineación <a href="OL_planta_alineaciones.html#fija_2p">fija</a> para NO ser convertida en <a href="OL_planta_alineaciones.html#enlace">enlace</a>.<br />
+
+      </div>
+
+      <br />
+En cuanto a las clotoides, es posible decidir si se desea que en el&nbsp;<span class="Archivo">.cej</span> queden definidas por su <span style="font-weight: bold;">longitud</span> o por su <span style="font-weight: bold;">parámetro</span>.<br />
+      <br /><div style="text-align: center;"><img style="width: 400px; height: 365px;" alt="" src="Imagenes/dialogo_imp_landxml_planta.png" /><br /></div><br /><ul class="Parf_negrita"><li>Ajuste para alineaciones tipo -5</li></ul><div style="margin-left: 40px;">Lo
+siguiente es válido al selecionar "Todo a fijas" como sucesión de
+alineaciones. Cuando el trazado viene con alineaciones no tangentes, el
+importador admite los puntos angulosos.<br /><br />Cuando una clotoide
+no es tangente o sus radios no concuerdan con las alineaciones
+principales a las que es tangente, el importador inserta una alineacion
+de Tipo = 5 (recta por punto y azimut) o Tipo = -5 (circular por punto
+y azimut) para bloquear la clotoide.<br /><br />El parámetro "Ajuste
+para alineaciones tipo -5 = 0.001" modifica un poco los radios para
+evitar los bucles de alineaciones que "dan la vuelta entera".<br /><br />No
+siempre se consigue, porque depende de la magnitud de la discordancia
+entre el radio de la clotoide y el de la circular contigua, así que hay
+que repasar el trazado en el menu PLANTA.<br /><br />Un listado recoge el análisis del trazado y las discordancias.<br /></div><ul><li><span style="font-weight: bold;">Escribir .pol</span></li></ul><div style="margin-left: 40px;">Se escribe un fichero <span class="Archivo">.pol</span>.
+Para escribir este fichero, debe estar seleccionado "Todo a un fichero"
+y "Tipo de fichero.vol". Esta última opción se encuentra en el Nodo <span style="font-weight: bold;">Rasantes y peraltes</span> del árbol.<br /></div><br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_rasantes">Importación de rasantes y peraltes</a></span><br />
+      <br />
+      Se indica&nbsp;el número de decimales y de la precisión, y&nbsp;el tipo de fichero a obtener:<br /><ul><li>Un&nbsp;<span class="Archivo">.vol</span> que sólo contendrá el dato de la rasante importada.</li></ul><ul><li>Un&nbsp;<span class="Archivo">.ras</span> para cargar desde el menú de <a href="OL_rasantes_diseno.html">RASANTES</a>.</li></ul>Además se importará la sección "Superelevation" que contiene los peraltes. El valor de bombeo se puede modificar en la casilla <span class="Parf_negrita">Bombeo</span>.&nbsp;<br /><br /><div style="text-align: center;"><img style="width: 350px; height: 319px;" alt="" src="Imagenes/dialogo_imp_landxml_rasantes.png" /><br /></div><br /><br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_perf_transv">Importación de perfiles transversales</a></span><br />
+      <br />
+Si el fichero LandXML a importar contiene secciones transversales, a
+partir de éstas es posible generar los correspondientes ficheros&nbsp;<span class="Archivo">.per</span>. <br /><br />Para ello basta con indicar un <span style="font-weight: bold;">tipo de línea base</span>
+(por defecto, L66), de tal forma que, al importar las distintas líneas
+de una sección transversal, a la primera línea que el programa
+encuentre en el&nbsp;<span class="Archivo">.xml</span> se le asigna ese
+tipo de línea base, a la siguiente el mismo tipo que la anterior
+incrementado una unidad y así sucesivamente. Así, por ejemplo, si las
+secciones transversales a importar contiene 4 líneas cada una y se deja
+como tipo base el 66, se obtendrán líneas de tipo 66, 67, 68 y 69 en
+el&nbsp;<span class="Archivo">.per</span> creado.<br /><br />
+      <div style="text-align: center;"><img style="width: 350px; height: 319px;" alt="" src="Imagenes/dialogo_imp_landxml_per.png" /><br /></div>
+<br />Otra forma de importar las secciones transversales es mediante una <span style="font-weight: bold;">tabla de traducción</span>.
+Cuando se selecciona esta opción, se tiene la posibilidad de asignar
+los tipos de línea a las distintas superficies que se encuentren en los
+perfiles transversales de los ficheros LandXML que se traducen en lugar
+de asignarse de forma automática a partir de un tipo de línea base. De
+esta forma y una vez pulsado el botón <span style="font-weight: bold;">Importar</span>, se muestra el
+siguiente cuadro de diálogo en el que el usuario puede confeccionar la
+tabla de traducción:<br /><br />
+<br /><div style="text-align: center;"><img style="width: 428px; height: 375px;" alt="" src="Imagenes/dialogo_imp_landxml_tablaTrad.png" /><br /></div><br />En dicho cuadro se muestran las distintas superficies encontradas en el&nbsp;<span class="Archivo">.xml</span> y el usuario puede indicar el tipo que desea asignar a cada una de ellas. La opción <span style="font-weight: bold;">Tipo de línea para todas las superficies</span> provoca que se asigne el mismo tipo de línea indicado en este campo a todas las superficies encontradas. Los botones <img style="width: 16px; height: 14px;" alt="" src="Imagenes/icono_abrir.png" /> y <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" /> permiten <span style="font-weight: bold;">cargar</span> y <span style="font-weight: bold;">guardar</span> respectivamente tablas de traducción en archivos&nbsp;<span class="Archivo">.txt</span> para que puedan ser usadas en distintas sesiones de trabajo.<br /><br />Mediante la opción <span style="font-weight: bold;">Eliminar superficies redundantes</span>,
+el programa al generar las superficies de los perfiles transversales se
+eliminan las superficies que estén contenidas en otras. Esta opción se
+utiliza cuando el fichero que importamos tiene diversas superficies con
+puntos repetidos.<br />
+      <br />
+Al
+importar perfiles transversales, el programa 'parte' las líneas por el
+eje modificando entonces el orden de los vértices de cada línea. En
+ciertas ocasiones este efecto es indeseable. Para evitarlo, es preciso
+activar la opción <span style="font-weight: bold; font-style: italic;">Mantener el orden de los puntos</span>.<br />
+      <br />
+      <img style="width: 275px; height: 358px; margin-left: 7px;" alt="" src="Imagenes/dialogo_imp_landxml_tablaTradCod.png" align="right" />El importador de ficheros LandXML tiene en cuenta los códigos de los perfiles transversales que escribe ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+en los ficheros LandXML, es decir, se generan los ficheros de perfiles
+transversales teniendo en cuenta los códigos del fichero LandXML.<br /><br />
+Cuando los códigos asociados a los perfiles has sido generados por otro
+programa y no tienen correspondencia con los usados por, es posible
+establecer una <span style="font-weight: bold;">tabla de traducción de códigos</span>
+marcando la opción correspondiente. En este caso durante el proceso de
+importación se muestra un cuadro de diálogo en el que es posible
+establecer la correspondencia entre códigos.<br /><br />
+Al activar la casilla <span style="font-weight: bold;">Enumerar códigos de manera creciente desde distancia 0</span>, se dan valores a los códigos de manera creciente comenzando con el valor de código 1 para el punto que está a distancia cero.<br />
+<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="imp_carto_sup">Importación de cartografía y superficies</a></span><br />
+      <br />
+El importador de ficheros LandXML también puede generar archivos&nbsp;<span class="Archivo">.edm</span> a partir de superficies y puntos sueltos incluidos en el archivo&nbsp;<span class="Archivo">.xml</span>. Con la opción <span style="font-weight: bold; font-style: italic;">Generar un fichero .edm por cada superficie</span> activa se genera por cada superficie encontrada en el&nbsp;<span class="Archivo">.xml</span> un&nbsp;<span class="Archivo">.edm</span> asociado a dicha superficie.<br />
+      <br />
+En
+el caso de que la opción anterior no esté activa se genera un único fichero&nbsp;<span class="Archivo">.edm</span> en
+el que cada superficie se escribe en un determinado modelo (0,1,2,...).<br />
+      <br />
+Otra posibilidad añadida a la importación es que seleccionemos la posibilidad de traducir los elementos <span style="font-weight: bold;">DataPoints</span> como <span style="font-weight: bold;">puntos sueltos</span> o como <span style="font-weight: bold;">polilíneas</span>. Por defecto se traducen como puntos sueltos.<br />
+      <br />
+También se pueden identificar las <span style="font-weight: bold;">Breaklines</span>, <span style="font-weight: bold;">Contours</span>, <span style="font-weight: bold;">Boundarys</span>,&nbsp;<span style="font-weight: bold;">Parcels o PlanFeatures</span> con un tipo de línea y un modelo, y los <span style="font-weight: bold;">DataPoints</span> y los <span style="font-weight: bold;">CgPoints</span> con un tipo de símbolo y un modelo de Istram. En la importación se generará un fichero&nbsp;<span class="Archivo">.edm</span> de cartografía.<br /><br />En cuanto a los elementos <span class="Parf_negrita">Parcel</span>: Cada elemento Parcel genera una polilínea cerrada. Se traducirán únicamente los elementos Parcel formados por líneas y curvas.<br /><br />En cuanto a elementos <span class="Parf_negrita">CgPoint</span>,&nbsp;se puede generar como texto la propiedad "code" de dichos elementos. En el botón [<span class="Parf_negrita">CgPoint</span>], se tienen las&nbsp;opciones de configuración para la creación de los atributos name y code.<br /><br />
+      <div style="text-align: center;"><img style="width: 555px; height: 506px;" alt="" src="Imagenes/landxml_imp_carto.png" /><br />
+      </div>
+
+<br />Además también se pueden generar ficheros TTP a partir de las
+secciones Definition de LandXML. Se genera un fichero TTP por cada
+sección Definition que contenga el fichero LandXML. El nombre de los
+archivos TTP, se&nbsp;especifica en la casilla <span class="Parf_negrita">Nombre base TTP</span>.<br /><br class="Parf_negrita" /><span class="Parf_negrita">Usar tabla de traducción para BreakLines</span>: Si el check está activo se permite detallar para cada tipo de BreakLine el tipo de línea y modelo.<br /><br />
+      <br />
+      <span class="Titulo_2"><a name="exportacion">Exportación</a></span><br />
+      <br />
+La exportación o generación de archivos a formato LandXML con ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> es posible desde diversas partes del programa:<br />
+      <ul>
+        
+        <li><img style="width: 326px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/exportar_landxml.png" align="right" />Desde CARTOGRAFÍA DIGITAL <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">Archivo</span> </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594; <span style="font-weight: bold;">Exportar</span>. Con esta opción es posible exportar el dibujo (líneas y puntos) a formato LandXML.</span></span></span></span></span></span></li>
+
+      </ul>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Los puntos sueltos se escriben como elementos&nbsp;<span class="Archivo">&lt;CgPoint&gt;</span>, las líneas de nivel se escriben como elementos&nbsp;<span class="Archivo">&lt;Contour&gt;</span> y el resto de líneas se escriben como elementos&nbsp;<span class="Archivo">&lt;BreakLine&gt;</span>.</span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span></span></span></span></span></span></div>
+
+      <ul>
+        <li>Desde <a href="EDM_topografia.html">TOPOGRAFÍA</a> es posible <a href="EDM_topografia.html#guardado">guardar</a> triangulaciones en formato LandXML.</li>
+      </ul>
+
+      <ul>
+        <li>Desde diversos listados de OBRA LINEAL:</li></ul>
+      <ul>
+        <ul>
+          <li>En los listados de <a href="OL_listados_exportacion.html">EXPORTACIÓN</a> existe un menú específico de <a href="OL_listados_exportacion.html#landXML">exportación a LandXML</a>.</li>
+        </ul>
+      </ul>
+      <ul>
+        <ul>
+          <li>En los listados de <a href="OL_listados_replanteos.html">REPLANTEO</a> son varios los menús que permiten generar archivos LandXML: <a href="OL_listados_replanteos.html#rep_firmes">replanteo de firmes</a>, <a href="OL_listados_replanteos.html#cotas_refino">cotas de refino</a> y <a href="OL_listados_replanteos.html#sobreexc">sobreexcavación</a>.<br />
+          </li>
+        </ul>
+
+      
+      </ul>
+
+
+      
+      <span class="Parrafo"><span class="Parrafo"> </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

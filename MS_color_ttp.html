@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  
+
+  
+  
+  <title>Color por ttp</title><link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>COLOR POR TTP<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+Permite realizar un mapa de colores a partir de las cotas dadas por un
+fichero procedente de una triangulación (.ttp). El mapa de colores será
+generado como líneas que podrán ser guardadas en un árchivo *.edm.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 247px; height: 413px;" alt="" src="Imagenes/dialogo_color_ttp.png" /><br />
+      </div>
+      <br />
+El primer paso será cargar el fichero .ttp procedente de una <a href="EDM_topografia.html#ficheros_ttp">triangulación</a> desde el menú de <a href="EDM_control_entidades.html#control_ttps">control de ttp</a> del cual tenemos una llamada directa mediante la casilla <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_control_ttps.png" />.<br /><br />Una vez cargado, el programa automáticamente identificará la <span style="font-weight: bold;">Z mínima</span> y la <span style="font-weight: bold;">Z máxima</span>. Valores que estarán a nuestra disposición para establecer el tramo de cotas que posteriormente dibujaremos.<br />
+Mediante la casilla <span style="font-weight: bold;">Previo</span> tendremos una visualización dinámica de como podría quedar nuestro dibujo con los diferentes colores que hayamos establecido.<br /><br />En función de los valores de cota el programa establece un <span style="font-weight: bold;">Intervalo</span>
+de cotas a partir del cual definiremos un tipo de línea sólida. El
+rango de cotas lo podremos establecer mediante Intervalo de cota o
+mediante <span style="font-weight: bold;">número de tramos</span>. Ambas opciones conmutan entre sí.<br />
+      <br />Cuando
+el archivo *.ttp representa las cotas de una superficie, se pude
+generar un listado de areas 2d y 3d para cada intervalo de cotas y el
+total, para ello hay que pulsar en el botón <span style="font-weight: bold;">Areas (TTP de cotas)</span>.<br /><br />Cuando
+el archivo *.ttp representa espesores o profundidades (ttp para
+isopacas) se puede generar un listado de area 2d y volúmen para cada
+intervalo de espesores y el total, para ello hay que pulsar en el botón
+<span style="font-weight: bold;">Volúmenes (TTP para Isopacas)</span>.<br /><br />
+      <br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 318px; height: 301px;" alt="" src="Imagenes/areras_colores_ttp.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 327px; height: 306px;" alt="" src="Imagenes/color_ttp_volumen.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />Se añade una nueva utilidad para calcular una curva de llenado en el caso de un TTP para isopacas.<br /><br />Cuando
+el archivo *.ttp representa espesores o profundidades (ttp para
+isopacas), pulsando sobre el botón <span style="font-weight: bold;">C.Llenado (TTP para Isopacas)</span>,
+.se calcula una curva de llenado. En este caso se suman a parte los
+intervalos negativos y los positivos. También hay que tener en cuenta
+que las áreas 2D son acumulativas desde cero hacia los intervalos
+positivos y desde cero hacia los intervalos negativos. P.e. Si tenemos
+un TTP con cotas entre 10 y 30.&nbsp; El area 2D para el volúmen entre
+15 y 16&nbsp; contiene todas las areas 2d de los triángulos entre 15 y
+30.<br /><br /><div style="text-align: center;"><img style="width: 327px; height: 233px;" alt="" src="Imagenes/color_ttp_c_llenado.png" /><br /></div><br />
+Una vez hayamos definido los <span style="font-weight: bold;">tipos de línea</span> sólida para cada intervalo de cota estaremos en disposición de <span style="font-weight: bold;">Generar</span> el dibujo del mapa de colores.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 409px; height: 504px;" alt="" src="Imagenes/ejemplo_color_ttp.png" /><br />
+      </div>
+      <br />
+      <img style="width: 119px; height: 50px;" alt="" src="Imagenes/color_ttp_leyenda.png" align="right" hspace="6" /><img style="width: 184px; height: 154px;" alt="" src="Imagenes/dibujo_leyenda_colorttp.png" align="left" hspace="6" />Una vez generado podremos incorporar al diujo una leyenda mediante el comando <span style="font-weight: bold;">Crear</span>, pudiendo modificar el tipo de texto, el Modelo o el Título que aparecerá en el cuadro de cotas.<br />
+      <br />
+      <img style="width: 234px; height: 167px;" alt="" src="Imagenes/gama_colores_colorttp.png" align="right" hspace="6" />A partir del comando <span style="font-weight: bold;">Gama de colores</span> podremos indicarle al programa el tipo de línea inicial de nuestro intervalo y el número de líneas que lo componen.<br />
+      <br />
+      <br />
+      <br />
+Podremos <span style="font-weight: bold;">Cargar</span> o <span style="font-weight: bold;">Guardar</span> la información asociada a los intervalos.<br />
+<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

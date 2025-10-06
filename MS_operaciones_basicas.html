@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Operaciones básicas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>MODELADO DE SUPERFICIES: Operaciones
+básicas<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">
+      </span><span class="Parrafo"><span class="Parrafo"><a href="#generalidades">Generalidades</a></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <a href="#superf_simples">Utilidades para la creación de superficies simples</a></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+
+      <div style="margin-left: 80px;"><a href="#direct_nivel_talud_inters"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Directriz de nivel y talud intersección</span></span></span></a><br />
+      <a href="#lin3D_paral3D"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Línea 3D y paralela 3D</span></span></span></a><br />
+      <a href="#linea3D_generatriz"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Línea 3D y generatriz</span></span></span></a><br />
+      <a href="#sobre_talud"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Línea sobre un talud</span></span></span></a><br />
+      <a href="#cono"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Generación de un cono con intersección a una superficie</span></span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></div>
+      
+      <div style="margin-left: 40px;"><a href="#calculos_simples"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cálculos y operaciones simples con superficies</span></span></span></a><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></div>
+
+      <div style="margin-left: 80px;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#camino"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Ayuda para trazar un camino con máxima pendiente</span></span></span></a><br />
+
+      <a href="#perfil_longit"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Perfil longitudinal</span></span></span></a><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="#corte"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Visualizar una sección del terreno y otras superficies (corte)</span></span></span></a><br />
+
+      <a href="#poner_cota_sup"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Poner en cota una superficie</span></span></span></a><br />
+
+      <a href="#esquema_plano"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Dibujo sobre planos inclinados. Esquema plano</span></span></span></a><br />
+
+      <a href="#inters_superf"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Intersección de superficies</span></span></span></a><br />
+
+      <a href="#zonas_inundacion"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Cálculo de zonas de inundación </span></span></span></a><br /><a href="#ms_subdivide"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Subdividir recinto</span></span></span></a><br /><a href="#AlargaRecorta_x_TTP_">Alarga/Recorta x TTP</a><br />
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></div>
+      
+      <div style="margin-left: 40px;"><a href="#dib_gen_perf">Dibujar y generar perfiles</a><br />
+      </div>
+<br />
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo"><br /><img style="width: 128px; height: 274px; margin-right: 7px;" alt="" src="Imagenes/util_ismos.png" align="left" /></span><img style="width: 75px; height: 138px; margin-left: 7px;" alt="" src="Imagenes/toolbar_ismos.png" align="right" /><span class="Parrafo">Las operaciones básicas de modelado de superficies se agrupan bajo el submenú <span style="font-weight: bold;">[Utilidades]</span> y también tienen un acceso directo a través de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> del módulo de MODELADO DE SUPERFICIES que se despliega de forma automática al entrar al mismo.<br /><br />Estas
+utilidades permiten al usuario la obtención rápida de superficies
+simples como conos y taludes elementales, así como el cálculo de
+intersecciones entre <a href="EDM_control_entidades.html#control_superficies">superficies</a>, su modificación en cota, ayuda a la creación de un camino siguiendo su máxima pendiente, corte rápido de perfiles,...<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </span><span class="Titulo_2"><a name="superf_simples">Utilidades para la creación de superficies simples</a></span><br />
+      <span class="Parrafo"><br />
+Conceptualmente la generación de superficies requiere la participación
+de una directriz y una generatriz tal y como indica la siguiente
+figura: <br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 377px; height: 319px;" alt="" src="Imagenes/directriz_generatriz.png" /><br />
+      <br />
+      <span class="Info">Concepto de generatriz y directriz</span><br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />En este apartado se describen tres
+métodos para la generación de superficies elementales contemplados en
+el módulo de MODELADO DE SUPERFICIES de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>:<br /></span>
+      <ul>
+        <li><a href="#direct_nivel_talud_inters"><span class="Parrafo">Directriz de nivel y talud intersección</span></a></li>
+        <li><a href="#lin3D_paral3D"><span class="Parrafo">Línea 3D y paralela 3D</span></a></li>
+        
+        <li><a href="#linea3D_generatriz"><span class="Parrafo">Línea 3D y generatriz</span></a></li>
+
+      </ul>
+      <span class="Parrafo">El tercer método se corresponde fielmente
+(directriz y generatriz vectoriales) con el patrón de generación de
+superficies ilustrado en la figura anterior, mientras que los dos
+primeros métodos definen la generatriz con una serie de parámetros
+auxiliares. No obstante cada método presenta unas ventajas e
+inconvenientes que el usuario deberá evaluar a la hora de decidirse por
+el empleo de un método u otro.<br /><br /><br />
+      </span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="direct_nivel_talud_inters">Directriz de nivel y talud intersección</a></span><br />
+      <span class="Parrafo"><br />Este método construye, a partir de
+una directriz, una superficie con una pendiente prefijada por el
+usuario ascendente, descendente u horizontal, determinando su
+intersección con la superficie topográfica y representándola mediante
+líneas de nivel de un nuevo tipo. La superficie finalizará en la cota
+prefijada por el usuario o a la distancia de la directriz por él
+definida; asimismo, puede concluirse su construcción cuando el
+diseñador lo decida o dejarla crecer hasta que atraviese a la
+superficie topográfica. El método consta de dos pasos:<br />
+      </span>
+      <ol>
+        <li><img style="width: 159px; height: 75px; margin-left: 7px;" alt="" src="Imagenes/dialogo_directriz_nivel.png" align="right" /><span class="Parrafo"><span style="font-weight: bold;">Generación de la directriz de nivel</span>: Tras pulsar sobre la opción <span style="font-weight: bold;">Directriz de nivel</span> del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_direcNivel.png" />
+de la barra de herramientas, aparece un cuadro de diálogo en el que se
+introduce la cota de la directriz y los
+vértices (X,Y) que la constituirán. Al introducir la cota se resaltarán
+en verde las curvas de nivel de cota elegida (si es que existen), y en
+blanco las de cota inmediatamente superior e inferior a la dada. Tras
+pulsar el botón <span style="font-weight: bold;">[Aceptar]</span> el usuario crea directamente la línea sobre la cartografía teniendo en cuenta que estará en uno de estos dos casos:<br />
+          </span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo">Existen curvas de nivel con esa cota:
+En este caso se resaltan en verde, y el usuario debe trazar
+gráficamente la línea de modo que el primer tramo y el último corten a
+la línea de nivel resaltada en verde elegida, es decir, el punto
+primero y el segundo han de estar de distinto lado de la línea y lo
+mismo para el penúltimo y el último. <br />
+</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">No existen curvas de nivel con esa
+cota: En este caso, únicamente se resaltan en blanco las de cota inmediatamente
+superior e inferior a la dada y entonces tanto el primero como el
+último tramo han de cortar simultáneamente a dichas líneas de nivel resaltadas en blanco.<br />
+</span></li>
+      </ul>
+      <span class="Parrafo"></span></div>
+      <div style="margin-left: 40px;"><span class="Parrafo">En ambos
+casos el programa determina sobre el primero y el último tramo la
+intersección con el terreno, crea la directriz de nivel (línea de tipo L40) y elimina los trozos de líneas sobrantes.
+Si no existe intersección, entonces el programa la asume como línea
+cerrada.<br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+      </span>
+      <ol start="2">
+        <li><span class="Parrafo"><span style="font-weight: bold;">Definición de los parámetros del talud y de su intersección con el terreno</span>: Al pulsar sobre la opción <span style="font-weight: bold;">Talud intersección</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 20px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_taludInters.png" /> de la barra de herramientas, </span><span class="Parrafo">se solicitan gráficamente los siguientes parámetros:</span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Directriz de apoyo</span>. Como directriz pueden elegirse no sólo aquellas creadas como tales con la opción <span style="font-weight: bold;">Directriz de nivel</span> sino que puede utilizarse cualquier otra línea de las generadas con <span style="font-weight: bold;">Talud intersección</span>
+o definidas por el usuario como líneas de diseño. Esto permite ir
+enlazando superficies, lo cual es muy práctico en la creación de
+sucesivos taludes interrumpidos por bermas, tramos de distinta
+pendiente, etc.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Lado de la directriz</span> en el que se
+construirá la superficie.<br />
+</span></span></li>
+      </ul>
+
+      <span class="Parrafo"><img style="width: 234px; height: 135px; margin-left: 7px;" alt="" src="Imagenes/dialogo_talud_inters.png" align="right" /></span>Una vez introducidos estos datos, se muestra un cuadro de diálogo en el que el usuario debe indicar los siguiente:<br />
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Pendiente de la superficie</span> (en %).
+Será constante en toda la superficie a partir de la directriz. Aquí un
+valor negativo indicará sentido descendente y un valor positivo
+ascendente. Si la pendiente introducida es cero, el programa preguntará
+por la <span style="font-weight: bold;">distancia</span> a la que debe trazar el borde de la superficie. En
+otro caso pedirá la <span style="font-weight: bold;">cota final</span>. Aquí si se desea que el programa
+calcule hasta atravesar la superficie topográfica, se introducirá un
+valor suficientemente alto o bajo según el caso.</span></span></li>
+      </ul>
+
+      
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Factor de búsqueda</span>, que es un margen usado a la hora de que las sucesivas líneas paralelas busquen la intersección con el terreno.</span></li>
+      </ul>
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_direc_nivel_talud_inters.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Una vez declarados todos los datos, comienza el cálculo y el programa
+va presentando una a una las líneas de nivel obtenidas esperando que el
+usuario las vaya aceptando. Si el usuario rechaza una línea, se detiene
+la creación. Cuando el módulo de movimiento de tierras no encuentra
+para una cota determinada una solución razonable, presenta
+temporalmente en amarillo la línea que emplea para el cálculo mostrando
+el mensaje "Solución incompleta. ¿Se acepta?" y el operador decide
+contestando SÍ o NO. Si la respuesta es NO la línea se borra, si es SÍ
+queda aceptada posibilitando al diseñador modificar su trazado
+manualmente.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 389px; height: 212px;" alt="" src="Imagenes/ejem_direct_talud_inters.png" /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><br /><span class="Info">Ejemplo de obtención de superficie por el método Directriz + Talud intersección</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;"><a name="lin3D_paral3D">Línea 3D y paralela 3D</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Este método permite generar una batería de líneas paralelas a otra
+existente. Si la línea de partida es tridimensional (cota distinta en
+cada punto) las líneas resultado también lo son. El programa pregunta
+la distancia, hacia qué lado, etc., y el número de tramos o líneas
+intermedias que generará. El método consta de dos pasos:<br />
+      </span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Creación de una línea</span> con el CAD del módulo de CARTOGRAFÍA DIGITAL, si no existiera ya, y que hará las veces de directriz.</span></span></li>
+      </ol>
+      <ol start="2">
+        <li><img style="width: 316px; height: 154px; margin-left: 7px;" alt="" src="Imagenes/dialogo_paralela_3D.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Definición de parámetros para la creación de una superficie a talud constante</span>. Estos parámetros se declaran al</span></span><span class="Parrafo"> pulsar sobre la opción <span style="font-weight: bold;">Paralela 3D</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarIsmos_paral3D.png" /> de la barra de herramientas</span><span class="Parrafo"><span class="Parrafo">, y son:</span></span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Directriz de apoyo, declarada en el paso anterior y que se selecciona gráficamente.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Pendiente de la superficie (en %). Será constante en toda la superficie a partir de la directriz.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Cota final de la superficie.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Lado de la directriz en el que se construirá la superficie.</span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo">Número de tramos o curvas de nivel que genera la superficie.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>La opción <span style="font-weight: bold; font-style: italic;">Pendiente por segmentos</span>
+permite dar diferentes pendientes a cada segmento de la línea
+directriz. Al activarla, se identifica gráficamente en pantalla cada
+lado y se habilita la parte derecha del cuadro de diálogo para que el
+usuario pueda modificar la pendiente de cada lado. Si se modifica la
+pendiente global, entonces se modifica la de todos los lados.<br />
+<br />
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_L3D_paral3D.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; height: 50px; width: 544px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 305px;"><img style="width: 270px; height: 152px;" alt="" src="Imagenes/ejem_lin3D_paral3D_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 233px; text-align: right;"><img style="width: 168px; height: 159px;" alt="" src="Imagenes/ejem_lin3D_paral3D_2.png" /><br />
+            </td>
+          </tr>
+          <tr align="center">
+            <td colspan="2" rowspan="1" style="vertical-align: top; width: 233px;"><span class="Info"><br />
+Ejemplos de obtención de superficies por el método Línea 3D + Paralela 3D</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="linea3D_generatriz">Línea 3D y generatriz</a></span><br />
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Haciendo uso de este método de puede obtener una superficie empleando
+una sección transversal (generatriz) que se desliza recorriendo una
+línea tridimensional que se utiliza como directriz. El método consta de
+los siguientes pasos:<br />
+      </span></span>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Creación de una línea</span> con el CAD del módulo de </span></span><span class="Parrafo"><span class="Parrafo">CARTOGRAFÍA DIGITAL</span></span><span class="Parrafo"><span class="Parrafo">, si no existiera ya, y que hará las veces de directriz.</span></span></li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Definición de la generatriz</span>, pulsando </span></span><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Generatriz</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_generatriz.png" /> de la barra de herramientas</span><span class="Parrafo"><span class="Parrafo">. Su <a href="definicion_vectorial.html">definición vectorial</a> permite preparar una lista de parejas de datos distancia al eje e incremento de cota (<span style="font-weight: bold;">delta Z</span>), que constituyen los segmentos que describen la sección transversal de la generatriz:</span></span></li>
+      </ol>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 456px; height: 204px;" alt="" src="Imagenes/def_generatriz.png" /></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <table style="text-align: left; width: 672px; height: 168px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 262px;"><img style="width: 258px; height: 147px;" alt="" src="Imagenes/ejem_lin3D_generatriz_1.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 233px; text-align: center;"><img style="width: 212px; height: 87px;" alt="" src="Imagenes/ejem_lin3D_generatriz_2.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 169px; text-align: right;"><img style="width: 146px; height: 115px;" alt="" src="Imagenes/ejem_lin3D_generatriz_3.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" rowspan="1" style="vertical-align: top; width: 262px;"><br />
+            <div style="text-align: center;"><span class="Info">Ejemplos de obtención de superficies por el método Línea 3D + Generatriz</span><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="sobre_talud">Línea sobre un talud</a></span><br style="font-weight: bold; font-style: italic;" />
+      <span class="Parrafo"><br />Una línea tridimensional de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> más una pendiente transversal definen geométricamente una superficie reglada. Esta opción, accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Sobre talud</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarIsmos_sobreTalud.png" /> de la barra de herramientas, </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">permite generar otras líneas sobre esa superficie teórica.<br /><br />Las nuevas líneas no tienen porqué ser de nivel y pueden generarse con una pendiente longitudinal determinada.<br /><br /></span></span></span></span></span></span><img style="width: 234px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/dialogo_sobre_talud.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El
+módulo de movimiento de tierras utiliza el sentido de recorrido de la
+línea directriz y el signo de la pendiente transversal para determinar
+por qué lado y en qué dirección se extiende el talud. La cota de la
+nueva línea se refiere a la cota de su punto de arranque, puesto que la
+pendiente longitudinal hará variar la cota a lo largo de la nueva línea.<br /><br />Esta
+opción es muy útil, por ejemplo, a la hora de diseñar una pista en lo
+que será una corta minera a cielo abierto. En este caso, el
+procedimiento sería como sigue:<br /></span>
+      <ul>
+        <li><span class="Parrafo">La línea 3D directriz sería la del contorno de la corta, y la pendiente transversal el talud.</span></li>
+        <li><span class="Parrafo">La pendiente longitudinal es la de la pista.</span></li>
+        <li><span class="Parrafo">De esta manera, se obtiene un primer tramo del borde de la pista.</span></li>
+        <li><span class="Parrafo">Una paralela a ese tramo permite obtener el otro borde, que a su vez será la línea directriz de otro tramo de la pista.</span></li>
+        <li><span class="Parrafo">Ejecutando la operación sucesivamente, se acaba obteniendo el diseño de la pista tal y como muestra la imagen:</span></li>
+      </ul>
+      
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 459px; height: 266px;" alt="" src="Imagenes/ejem_sobreTalud.png" /><br />
+      <br />
+      <span class="Info">Ejemplo de uso de línea sobre talud</span><br />
+      </span><span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="cono">Generación de un cono con intersección a una superficie</a></span><br />
+      <span class="Parrafo"><br />
+Esta opción, </span><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Cono</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 20px; height: 12px;" alt="" src="Imagenes/icono_toolBarIsmos_cono.png" /> de la barra de herramientas,</span></span><span class="Parrafo">
+determina el cono que, con vértice en un punto y con pendiente dada, se
+apoya sobre una superficie.<br />
+      <br />A través de un cuadro de diálogo el programa solicita:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">La superficie sobre que se asentará el cono.</span></li>
+        <li><span class="Parrafo">El punto que será el vértice del cono.</span></li>
+        
+        <li><span class="Parrafo">La pendiente del cono (en %).</span></li>
+        <li><span class="Parrafo">El número de puntos, para discretizar la superficie del cono.</span></li>
+        <li><span class="Parrafo">Número de modelo para la superficie del cono.</span></li>
+      </ul>
+      <span class="Parrafo">En función de los datos aportados, el
+programa calcula el radio máximo en la base del cono en función de la
+cota del punto y la cota más baja de la cartografía. Este valor se
+ofrece y es posible modificarlo para, por ejemplo, realizar conos
+invertidos.<br />
+      <br />
+</span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 549px; height: 287px;" alt="" src="Imagenes/ejem_cono_ismos.png" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />Al
+ir modificando datos en el cuadro, el programa muestra cómo quedaría el
+cono. Una vez aceptado, se generan dos tipos de líneas:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Las generatrices del cono.</span></li>
+        <li><span class="Parrafo">La línea de intersección con la otra superficie.</span></li>
+      </ul>
+      <span class="Parrafo"><br /></span></span></span></span></span></span><span class="Titulo_2"><a name="calculos_simples">Cálculos y operaciones simples con superficies</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Se recogen bajo este epígrafe aquellas herramientas destinadas a
+trabajar sobre superficies con el objetivo de obtener algún tipo de
+cálculo sencillo, como una cubicación, creación de un camino de máxima
+pendiente, intersección entre dos superficies, etc.<br />
+      <br />
+      <br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="camino">Ayuda para trazar un camino con máxima pendiente</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span><img style="width: 429px; height: 184px; margin-left: 7px;" alt="" src="Imagenes/ismos_ejem_camino.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta utilidad, </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Camino</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 18px; height: 16px;" alt="" src="Imagenes/icono_toolBarIsmos_camino.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, constituye una opcion de ayuda en el trazado de caminos auxiliares de pendiente constante sobre la topografía de base.<br />
+      <br />
+Al pulsar sobre este botón, el programa pregunta en la línea de
+comandos por la pendiente deseada para el camino. Entonces el usuario
+debe comenzar a introducir puntos del camino haciendo clic sobre algún
+punto de una línea de nivel, de modo que se puede determinar la cota
+del punto introducido. A cada punto introducido el módulo de movimiento
+de tierras sugiere las posibles ubicaciones del punto siguiente de modo
+que la pendiente del camino se mantenga constante e igual al valor
+introducido.<br />
+      <br />
+En este cuadro de diálogo se puede detectar la siguiente información:<br />
+</span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superficie</span>: Debe contener líneas planas o de nivel como las de&nbsp; tipo 26,27,40,etc...</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Origen A</span>:
+Punto de inicio del camino. No es necesario que este sobre algún
+elemento de la superficie, ya que el programa busca la cota que le
+corresponde.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Destino B</span>: Punto final del camino. También se le asigna la cota de modo automático.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Máxima pendiente</span>.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Longitud mínima</span> entre curvas de volteo.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dirección inicial</span>
+A,B,C,D. Cuando hay varias posibilidades a partir del origen o del
+último punto aceptado, se muestran graficamente y permite
+seleccionar&nbsp; entre ellas.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aceptar hasta</span>
+: El programa muestra un recorrido completo desde A hasta B, se puede
+mdificar la dirección inicial seleccionando C,D,... y podemos aceptar
+el trazado hasta uno de los puntos que lo representa. Entoces podemos
+modificar cualquier valor: Pendiente,longitud, dirección y solo se
+aplicarán a partir del punto aceptado. Al cambiar el último punto
+aceptado podemos seleccionar un punto posterior o uno anterior.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Aceptar</span>: Sale de la herramienta creando una polilínea con el último recorrido desdea A hasta B. No es necesario acptar hasta B.</span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 329px; height: 192px;" alt="" src="Imagenes/camino.png" /></span></span></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Mover punto</span>,
+permite deslizar un punto cualquiera del trazado sobre su línea de
+nivel. Este punto pasa a ser el punto aceptado y se recalculan los
+puntos posteriores.</span></span></span></span></span></span></span></li>
+      </ul>
+      <ol>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al modificar el punto B, si ya hay algun punto aceptado, solo se recalcula el </span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">camino desde el punto aceptado hasta el punto B.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+Una vez se genera la línea del camino (solamente la opción <span style="font-weight: bold;">Cancelar</span> la borra) al cerrar el cuadro de diálogo nos
+quedará generada la línea para el ultimo tanteo.</span></span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Mediante la opción <span style="font-weight: bold;">Mover Puntos</span> puedes mover un Punto de manera ciclica.<br />
+</span></span></span></span></span></span></span></li>
+      </ol>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="perfil_longit">Perfil longitudinal</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta opción permite realizar perfiles siguiendo una o varias lineas sobre una o varias superficies. A</span><span class="Parrafo">ccesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Perfil</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 18px; height: 19px;" alt="" src="Imagenes/icono_toolBarIsmos_perfil.png" /> de la barra de herramientas. &nbsp;Para más información, ir a&nbsp;<a href="MS_perfil.html">Perfil</a>. <br /></span></span></span></span></span></span></span><span class="Parrafo"><br />
+<br /></span><span style="font-weight: bold; font-style: italic;"><a name="corte">Visualizar una sección del terreno y otras superficies (corte)</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta opción, </span><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Corte</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarIsmos_corte.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo">,
+pide hacer clic sobre dos puntos de la cartografía, tras lo cual el
+programa genera una sección vertical mostrando el corte sobre todas las
+superficies definidas en el menú <span style="font-weight: bold;">Control</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span><span class="Parrafo"> <a href="EDM_control_entidades.html#control_superficies"><span style="font-weight: bold;">Control de superficies</span></a>.<br />
+Esta herramienta funciona de modo cíclico. Al redibujar o hacer zoom
+permanece el dibujo del perfil y de la planta de corte.<br />
+Al acabar de usarla, pulsando ESC, se nos ofrece un cuadro de diálogo en el que podremos editar el perfil&nbsp;<span class="Archivo">corte.per</span>, el último corte que hemos obtenido usando esta herramienta.<br />
+<br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="poner_cota_sup">Poner en cota una superficie</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+<br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta opción, </span><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Poner en cota</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarIsmos_ponerEnCota.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, permite poner en 3D todas las líneas y símbolos pertenecientes a otra superficie con cota desconocida o errónea </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">utilizando para ello una superficie compuesta por líneas con cota válida.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Las líneas de esta segunda superficie se ponen en según el <a href="EDM_control_entidades.html#modo_interpolacion">modo de interpolación</a> declarado en <a href="EDM_control_entidades.html#control_sup_cartograficas">Control de superficies cartográficas</a>.<br />
+      </span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Interpolación lineal</span>:
+En este modo se asigna un nuevo punto en el corte con las líneas de la
+superficie dadora de cota, e interpolando la cota en cada uno de los
+vértices de la línea original (por el procedimiento de secciones
+ortogonales) y en ambos extremos.</span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Perfiles</span>:
+En este caso se buscan las intersecciones con líneas de las superficies
+que dan cota, se calculan por perfiles ortogonales N-S y E-O la cota de
+los puntos inicial y final y, por último, se interpola la cota en los
+vértices de la propia línea a partir de los puntos con cota que ya ha
+recibido por intersecciones.</span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Al
+pulsar la opción, el módulo pregunta primero por la superficie que se
+desea poner en cota y a continuación por la superficie que va a dar las
+cotas.<br />
+<br /><br /></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="dib_gen_perf">Dibujar y generar perfiles</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La opción&nbsp;</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Dibujar perfiles</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span>, también accesible desde el icono homólogo&nbsp;<img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_dibPerf.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, da acceso a la herramienta de obtención de <a href="OL_planos_transversales.html">planos de perfiles transversales</a> del módulo de OBRA LINEAL.<br />
+      <br />
+</span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">De forma similar, la opción</span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Generar perfiles</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utilidades]</span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, también accesible desde el icono homólogo&nbsp;<img style="width: 20px; height: 18px;" alt="" src="Imagenes/icono_toolBarIsmos_genPerf.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, da acceso al menú de <a href="OL_planta_diseno.html">diseño en planta</a> del módulo de OBRA LINEAL para que el usuario pueda diseñar un eje a partir de cual <a href="OL_perf_transv.html">obtener perfiles transversales</a>.</span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span></span></span><span style="font-weight: bold; font-style: italic;" class="Parrafo"><a name="esquema_plano">Dibujo sobre planos inclinados. Esquema plano</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta opción, </span><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Esquema plano</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 22px; height: 22px;" alt="" src="Imagenes/icono_toolBarIsmos_esqPlano.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">, permite generar un <a href="definicion_vectorial.html">dibujo vectorial</a> y adaptarlo luego a un plano inclinado, seleccionando un punto de base y otro de cabecera (utilizando los enganches).<br />
+      <br />
+El plano sobre el que se dibuja es el que tiene como máxima pendiente
+la línea que une el punto de base con el punto de cabecera.<br />
+      <br />
+El primer punto del vector se engancha al punto de base y el último al
+de cabecera, reescalando el dibujo para que coincidan estos puntos.<br />
+</span></span></span></span><br />
+      <br style="font-weight: bold; font-style: italic;" />
+      <span style="font-weight: bold; font-style: italic;"><a name="inters_superf">Intersección de superficies</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><img style="width: 309px; height: 109px; margin-left: 7px;" alt="" src="Imagenes/dialogo_inters_superf.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> Esta opción, </span><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Intersección de superifices</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarIsmos_interSup.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">,
+genera los puntos de intersección entre dos superficies.<br />
+      <br />
+Tras
+seleccionar las dos <span style="font-weight: bold;">superficies</span> a intersectar, el programa va
+analizando secciones de las líneas de la primera superficie sobre la
+segunda para obtener y marcar con un círculo los puntos de cota común
+(intersecciones, por tanto). A continuación une estos puntos para
+generar la línea de intersección con el <span style="font-weight: bold;">tipo de línea</span> indicado..<br />
+      <br />
+</span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_inters_superf.png" /></span></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Dado el sistema de análisis, conviene dar como primera superficie la más sencilla para minimizar los tiempos de cálculo.<br />
+      <br />
+      </span></span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 545px; height: 205px;" alt="" src="Imagenes/ejem_inters_superf.png" /><br />
+      <span class="Info">Ejemplo de intersección de superficies</span><br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span></span></span></span><span style="font-weight: bold; font-style: italic;"><a name="zonas_inundacion">Cálculo de zonas de inundación</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta opción, </span><span class="Parrafo">accesible al pulsar </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">sobre la opción <span style="font-weight: bold;">Zonas de inundación</span> </span><span class="Parrafo">del submenú <span style="font-weight: bold;">[Utlidades]</span> o sobre el icono homólogo&nbsp;<img style="width: 21px; height: 9px;" alt="" src="Imagenes/icono_toolBarIsmos_zonasInund.png" /> de la barra de herramientas</span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">,
+permite calcular las zonas de inundación a partir de un EDM con al
+menos una superficie declarada y una línea de río.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 459px; height: 154px;" alt="" src="Imagenes/dialogo_zonas_inundacion.png" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+Una vez seleccionada esta opción, el programa pide al usuario que selecciona la <span style="font-weight: bold;">línea de río</span> (debe tener cota real) y a continuación se muestra un cuadro de diálogo en el que se debe introducir la siguiente información:</span></span></span></span></span></span><br />
+<ul>
+        
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Superficie sobre la que se va a calcular el contorno de inundación (será intersecada por la zona de inundación).</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Puntos inicial y final de cálculo de la zona de inundación (eje para la obtención de perfiles).</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Equidistancia para toma de datos (equidistancia entre perfiles).</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Semiancho de banda para los perfiles.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Altura del agua sobre la línea de río.</span></span></span></span></span></span></li>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Número de modelo para las líneas que representarán la zona de inundación.</span></span></span></span></span></span></li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 636px; height: 241px;" alt="" src="Imagenes/diagrama_zonas_inund.png" /><br />
+      </div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span><span class="Parrafo"><img style="width: 366px; height: 285px; margin-left: 7px;" alt="" src="Imagenes/ejem_zona_inund.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La
+opción calcula perfiles transversales sobre la superficie y determina
+su intersección con una línea horizontal de cota igual a la cota de la
+línea de río en ese perfil más la altura del agua. Por último, se unen
+en planta los puntos de intersección creando el contorno que determina
+la zona de inundación.<br />
+      <br />
+      </span></span></span></span></span></span></span></span>
+      <table style="text-align: left; width: 316px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 33px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 263px; text-align: justify;">El módulo de MODELADO DE SUPERFICIES dispone también del menú <a href="MS_llanuras_inundacion.html">LLANURAS DE INUNDACIÓN</a> que permite un cálculo preciso de estas zonas a partir de datos del programa HEC-RAS<sup>®</sup>.<br /></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a href="ms_subdivide"><span style="font-weight: bold; font-style: italic;"></span></a><a name="zonas_inundacion"><span style="color: black;"></span></a><a name="ms_subdivide"></a>Subdividir recinto</span><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta
+herramienta trabaja como la herramienta de Subdividir recinto y
+&nbsp;Subdividir recinto por punto fijo además permite realizar la
+división en función del volumen comprendido entre el recinto (la
+herramienta realiza una triangulación de esta línea) y un TTP:<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 400px; height: 231px;" alt="" src="Imagenes/ms_subdividir_recinto.png" /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><a name="AlargaRecorta_x_TTP_"></a>Alarga/Recorta x TTP</span><br /><br /></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Esta
+herramienta alarga o recorta líneas de dos puntos de un tipo especificado utilizando la superficie de un archivo TTP. <br />El punto que se modifica puede ser el más alto o el más bajo.<br />
+      <br />
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      <div style="text-align: left;">
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 400px; height: 167px;" alt="" src="Imagenes/alarga_recorta_ttp.png" /><br /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></div><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      </span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

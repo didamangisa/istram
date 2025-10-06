@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Entidades básicas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ENTIDADES BÁSICAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />El CAD cartográfico de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> trabaja básicamente con cuatro tipos de entidades:<br />
+      <ul>
+        
+        <li><a href="#lineas">Líneas o polilíneas</a></li>
+
+        <li><a href="#simbolos">Símbolos o puntos</a></li>
+        <li><a href="#textos">Textos o rótulos</a></li>
+        <li><a href="#celulas">Células</a></li>
+      </ul>
+<br /><span class="Titulo_2"><a name="lineas">Líneas o polilíneas</a></span><br /><br />
+Cada línea está constituida por una sucesión de vértices
+interconectados por segmentos rectilíneos o por curvas interpoladas por
+parábolas cúbicas (líneas suavizadas). Las líneas pueden ser
+representadas en el mapa por líneas simples, dobles, etc. y/o
+sucesiones de símbolos (en el caso de líneas decoradas con símbolos).
+Cada uno de los vértices (y, en su caso, símbolos) que componen una
+línea está definido por sus tres coordenadas espaciales X,Y,Z.<br />&nbsp;<br />La
+combinación de estos elementos da lugar a líneas decoradas con un
+significado especial en el mapa. En este subcapítulo se describe
+detalladamente, la creación de un elemento de la librería de líneas.<br /><br /><br /><span style="font-weight: bold; font-style: italic;">Dibujar una línea</span><br /><br />Para crear una línea en pantalla, basta con desplegar el submenú <span style="font-weight: bold;">Dibujar</span> del menú principal y seleccionar <span style="font-weight: bold;">Crear línea</span> (o pulsar sobre el icono&nbsp;<img style="width: 12px; height: 12px;" alt="" src="Imagenes/icono_toolBarLineas_crear.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de líneas).&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><img style="width: 349px; height: 243px; margin-left: 7px;" alt="" src="Imagenes/ejem_linea.png" align="right" />Acto
+seguido, se van creando con el botón izquierdo del ratón los sucesivos
+vértices que conformarán la línea, y ésta se irá dibujando sobre el
+área de trabajo. Para dejar de insertar vértices, basta con pulsar la
+tecla &lt;Esc&gt; o seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual que se despliega al pulsar el botón derecho del ratón.<br /><br />Obviamente, la <a href="EDM_coordenadas_enganches.html#coordenadas">introducción de las coordenadas</a> de cada vértice puede ser de cualquiera de las maneras disponibles.<br /><br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="lineas8D">Líneas 8D</a></span><br />
+      <br />
+      Estas líneas tienen asociados en cada vértice 8 parámetros:<br />
+      <ul>
+        <li>Coordenada X</li>
+        <li>Coordenada Y</li>
+        <li>Coordenada Z</li>
+        <li>PK, muy útil a la hora de dibujar ejes en OBRA LINEAL</li>
+        <li>Radio</li>
+        <li>Azimut</li>
+        <li>Otros parámetros de uso interno<br />
+        </li>
+      </ul>
+Por tanto son líneas mucho más 'pesadas' en memoria, pero a cambio
+permiten que los segmentos no rectilíneos, como un arco de
+circunferencia, se traten realmente como tal. Teniendo esto en cuenta:<br />
+      <ul>
+        <li>Un arco se crea con solo dos puntos, uno al inico y otro al final, ambos con el mismo radio y el azimut que le corresponda.</li>
+        <li>Dos puntos consecutivos con radio cero es un segmento de recta.</li>
+        <li>Dos puntos consecutivos con radio diferente y distinto de
+cero se dibujan con una parábola cúbica tangente a los puntos con el
+azimut indicado en cada uno.</li>
+        <li>Los círculos se crean con cuatro arcos.</li>
+        <li>Una recta seguida de un arco tiene un punto repetido en las
+coordenadas de tangencia, uno con radio cero y otro con el radio del
+arco.</li>
+      </ul>
+
+<br /><span class="Titulo_2"><a name="simbolos">Símbolos o puntos</a></span><br /><br />
+Un <span style="font-weight: bold;">símbolo</span> o <span style="font-weight: bold;">punto aislado</span>
+es un gráfico esquemático que, asociado a un punto del plano, sirve
+para calificar ese punto o su entorno y permite reconocer visualmente
+esa calificación. Su definición geométrica puede contener <a href="#lineas">líneas</a>, otros símbolos y <a href="#textos">textos</a>
+combinados en diferentes colores, tamaños, etc., y su complejidad puede
+variar desde ser un punto caligráfico, a algo tan completo como un
+cajetín de rotulación, un anagrama o escudo.<br /><br />Un símbolo tiene asociado, además de la <span style="font-weight: bold;">geometría</span>, un <span style="font-weight: bold;">punto de inserción</span> del mismo, las tres <span style="font-weight: bold;">coordenadas del espacio</span> (referidas al punto de inserción) y un <span style="font-weight: bold;">atributo</span>.<br /><br />El <span style="font-weight: bold;">atributo</span> es un dato adicional del que pueden hacer uso los <a href="#etiquetas">símbolos textuales</a> para rotularlos. Por ejemplo, una <a href="#etiquetas">etiqueta</a> de PK tendrá asociado como atributo el valor del PK.<br /><br />Existen un tipo de símbolos que se llaman <span style="font-weight: bold;">autoescalables</span>,
+cuyo tamaño va en función de su cota. Así, un símbolo autoescalable con
+cota 1 tendrá el tamaño original, si tiene cota 2 tendrá el doble de
+ese tamaño y si tiene cota 0 no será visible. Este tipo de símbolos es
+muy útil en la <a href="OL_planos_transversales.html">representación de perfiles transversales</a>,
+pues se adaptarán automáticamente a la escala del perfil sin necesidad
+de intervención del usuario. De hecho, todos los símbolos que utiliza
+el programa para ser usados en perfiles transversales son
+autoescalables.<br /><br />Teniendo presente lo anterior, conviene aclarar al usuario que el tamaño de todo símbolo está afectado por cuatro coeficientes:<br />
+      <ul>
+        <li>El factor de escala propio del símbolo como entidad
+individual, que se puede modificar desde la tabla de propiedades del
+símbolo y a la que se accede desde el menú desplegable una vez
+seleccionado éste. Esta escala, además, puede ser distinta según el eje
+X y el eje Y, lo que permite deformaciones.</li>
+      </ul>
+      <ul>
+        <li>Si el símbolo es autoescalable, el coeficiente que coincide
+con el valor de la cota del símbolo. Si no es autoescalable, este
+coeficiente vale siempre 1.</li>
+      </ul>
+      <ul>
+        <li>El factor de escala que le corresponde según el tipo. Este
+coeficiente afecta a todos los símbolos de ese tipo, y su valor es
+configurable desde el menú <span style="font-weight: bold;">Configuración</span> &#8594; <a href="EDM_definicion_tipos.html"><span style="font-weight: bold;">Definición de tipos</span></a> &#8594; <a href="EDM_definicion_tipos.html#definir_simbolo"><span style="font-weight: bold;">Definir tipo de símbolo</span></a>, desde donde, una vez seleccionado el tipo, se puede modificar el valor correspondiente al factor de escala (<span style="font-weight: bold;">F. Esc</span>).</li>
+      </ul>
+      <ul>
+        <li>El factor de escala global, que afecta a todos los símbolos
+de la cartografía, sean del tipo que sean, y cuyo valor se puede
+modificar en <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Información de estado</span> &#8594; <span style="font-weight: bold;">SFAC</span> (por defecto, su valor es 1).</li>
+      </ul>
+Téngase en cuenta que la escala intrínseca a la cartografía NO modifica
+el tamaño de los símbolos, pues son independientes de ella. Por tanto
+si, por ejemplo, se pasa de escala 1:1000 a escala 1:2000, entonces el
+efecto aparente es que los símbolos han doblado su tamaño, cuando en
+realidad se ha reducido el resto de la cartografía. <br /><br /><br /><span style="font-weight: bold; font-style: italic;">Dibujar un símbolo</span><br /><br /><img style="width: 204px; height: 185px; margin-left: 7px;" alt="" src="Imagenes/ejem_simbolos.png" align="right" />Para crear un símbolo en pantalla, basta con desplegar el submenú <span style="font-weight: bold;">Dibujar</span> del menú principal y seleccionar <span style="font-weight: bold;">Crear símbolo</span> (o pulsar sobre el icono&nbsp;<img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarSimbolos_crear.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de símbolos).&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />Acto
+seguido, se van creando con el botón izquierdo del ratón los sucesivos
+símbolos a insertar y que se irán dibujando sobre el área de trabajo.
+Para dejar de insertar puntos, basta con pulsar la tecla &lt;Esc&gt; o
+seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual que se despliega al pulsar el botón derecho del ratón.<br /><br />Obviamente, la <a href="EDM_coordenadas_enganches.html#coordenadas">introducción de las coordenadas</a> de cada punto puede ser de cualquiera de las maneras disponibles.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="etiquetas">Etiquetas o símbolos textuales</a></span><br /><br />
+      <img style="width: 324px; height: 203px; margin-left: 7px;" alt="" src="Imagenes/ejem_etiquetas.png" align="right" />Aunque pertenecen al grupo de los puntos aislados, merecen mención especial las etiquetas.<br /><br />Son en todo iguales a los <a href="#simbolos">símbolos</a> de puntos aislados, si bien durante su representación producen la rotulación de su atributo (cota, PK,&#8230;).<br /><br />Pertenecen
+a este grupo las etiquetas de cota de curva de nivel, las etiquetas de
+punto kilométrico, etc. No deben confundirse con <a href="#textos">textos o rótulos</a>.<br />&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><span class="Titulo_2"><a name="textos">Textos o rótulos</a></span><br /><br />
+Un <span style="font-weight: bold;">texto</span> o <span style="font-weight: bold;">rótulo</span>
+es una línea de texto alfanumérico constituido por una palabra o grupo
+de palabras, asociada a un punto. Corresponden a textos escritos
+libremente sobre el plano. Son ejemplos el nombre de un río o el nombre
+de un hito topográfico. Igualmente están clasificados en <span style="font-weight: bold;">tipos</span>.<br /><br />Las características que definen a un rótulo son:<br />
+      <ul>
+        <li>El texto contenido</li>
+        <li>Dimensión de las letras (milímetros de altura a la escala actual)</li>
+        <li>Posición relativa del punto asociado (enganche)</li>
+        <li>Orientación</li>
+        <li>Estilo de texto</li>
+      </ul>
+Los textos también tienen asociada coordenada Z, aunque no son tan dinámicos como los <a href="#simbolos">símbolos</a> de tipo <a href="#etiquetas">etiqueta</a>.
+Por tanto, siempre será preferible usar símbolos para rotular cotas,
+PKs, etc. que textos. Es importante que el usuario tenga en cuenta la
+diferencia entre estos dos tipos de entidades y no los confunda.<br /><br /><br /><span style="font-weight: bold; font-style: italic;">Dibujar un texto</span><br /><br />Para crear un texto en pantalla, basta con desplegar el submenú <span style="font-weight: bold;">Dibujar</span> del menú principal y seleccionar <span style="font-weight: bold;">Crear texto</span> (o pulsar sobre el icono&nbsp;<img style="width: 16px; height: 8px;" alt="" src="Imagenes/icono_toolBarTextos_crear.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de textos).&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><img style="width: 436px; height: 163px; margin-left: 7px;" alt="" src="Imagenes/ejem_texto.png" align="right" />Acto
+seguido, se abre un menú flotante en donde es posible indicar el estilo
+de texto, tamaño, punto de inserción (enganche) y ángulo. Se pulsa el
+botón izquierdo del ratón en el lugar donde se vaya a insertar el texto
+y se escribe el rótulo. Para confirmar el texto, se pulsa la tecla
+&lt;Enter&gt; o sobre el botón <span style="font-weight: bold;">[OK]</span> en el área de mensajes.<br /><br />La <a href="EDM_coordenadas_enganches.html#coordenadas">introducción de las coordenadas</a> del punto de inserción del texto puede ser de cualquiera de las maneras disponibles.<br /><br /><br /><span class="Titulo_2"><a name="celulas">Células</a></span><br /><br />
+Las <span style="font-weight: bold;">células</span> son muy similares a los <a href="#simbolos">símbolos</a>, siendo las principales diferencias las siguientes:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Varios puntos de inserción</span>:
+Además del punto de inserción principal, las células pueden tener
+puntos de inserción secundarios que se pueden mover independientemente
+y tener ángulo y escalas (vertical y horizontal) propias, pudiendo dar
+diferentes formas a distintas inserciones de un mismo tipo de célula.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Textos variables</span>: Distintas inserciones de un mismo tipo de célula pueden contener textos distintos.</li>
+      </ul>
+En sentido estricto, las células es una entidad compuesta por los tres
+tipos de entidades anteriores. El programa hace uso de este tipo de
+entidades en algunas utilidades y herramientas (como por ejemplo,
+acotación).<br /><br /><br /><span style="font-weight: bold; font-style: italic;">Dibujar una célula</span><br /><br />Para crear una célula en pantalla, basta con desplegar el submenú <span style="font-weight: bold;">Dibujar</span> del menú principal y seleccionar <span style="font-weight: bold;">Crear célula</span> (o pulsar sobre el icono&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarCelulas_crear.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de células). &nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><img style="width: 181px; height: 116px; margin-left: 7px;" alt="" src="Imagenes/ejem_celula.png" align="right" />La
+entidad célula es muy dinámica, lo que implica diversos comportamientos
+de las mismas según el tipo de célula seleccionado. En el ejemplo, se
+muestra la inserción de una célula de tipo 4. Una vez seleccionado este
+tipo y tras pulsar sobre la opción <span style="font-weight: bold;">Crear célula</span>, el programa pide el punto de inserción de la célula, y a continuación las coordenadas de los dos puntos asociados.<br /><br />Para dejar de insertar células, basta con pulsar la tecla &lt;Esc&gt; o seleccionar <span style="font-weight: bold;">Escape</span> en el menú contextual que se depliega al pulsar el botón derecho del ratón.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />Obviamente, la <a href="EDM_coordenadas_enganches.html#coordenadas">introducción de las coordenadas</a> de cada punto de inserción puede ser de cualquiera de las maneras disponibles.<br /><br />
+
+      <span class="Parrafo"><span class="Titulo_2" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

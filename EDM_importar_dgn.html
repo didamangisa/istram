@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Importar .dgn</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>IMPORTACIÓN DE ARCHIVOS .dgn<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#rel_conversion">Definición de relaciones de conversión
+DGN &#8211; EDM </a><br />
+      <a href="#diccionarios">Diccionarios</a><br />
+      </div>
+
+      
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+La importación de ficheros con formato&nbsp;<span class="Archivo">.dgn</span>
+
+se realiza a través de la opción <span style="font-weight: bold;">Archivo</span>
+&#8594; <span style="font-weight: bold;">Importar</span> &#8594; <span style="font-weight: bold;">DGN</span>. La aplicación permite importar
+ficheros tanto de la versión 7 como de la 8.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 248px; height: 293px;" alt="" src="Imagenes/imp_dgn_acceso.png" /><br />
+      </div>
+      <br />
+
+      <img style="width: 103px; height: 358px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_menu.png" align="right" />Una
+vez seleccionada esa opción, se muestra el menú que permite gestionar
+todo lo necesario a la hora de importar uno o varios archivos con
+formato&nbsp;<span class="Archivo">.dgn</span>.<br />
+      <br />
+El botón <span style="font-weight: bold;">[FIN]</span> sirve para
+finalizar la importación, cerrándose el menú al hacer clic sobre él.
+Los botones <span style="font-weight: bold;">[Pan]</span>, <span style="font-weight: bold;">[Zoom]</span>, <span style="font-weight: bold;">[Ant]</span>, <span style="font-weight: bold;">[Dec]</span>, <span style="font-weight: bold;">[Redi]</span> y <span style="font-weight: bold;">[NoD]</span> tienen la misma funcionalidad
+que en el resto de menús de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.<br />
+
+      <br />
+      <a name="opciones">Al pulsar sobre el botón <span style="font-weight: bold;">[OPCIONES]</span></a> se despliega un menú
+flotante que muestra los ajustes básicos a la hora de tratar los
+ficheros&nbsp;<span class="Archivo">.dgn</span> que se pretenden
+importar.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 234px; height: 180px;" alt="" src="Imagenes/imp_dgn_opciones.png" /><br />
+      </div>
+
+      <br />
+Estos ajustes son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Factor de escala</span>:
+Escala que se aplica a los elementos que forman el fichero&nbsp;<span class="Archivo">.dgn</span>. Por defecto su valor es 1.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Puntos con arco</span>:
+Número de puntos con los que se simulan los elementos circulares
+mediante polilíneas. Cuanto mayor sea este número, más se asimilarán
+los elementos circulares del fichero&nbsp;<span class="Archivo">.dgn</span>
+
+a las polilíneas que se generan en su conversión. Su valor por defecto
+es 50.</li>
+      </ul>
+      <ul>
+        <li>En el caso de que se trate de un&nbsp;<span class="Archivo">.dgn</span>
+versión 8, las celdas (elementos CELL / SHARED CELL) se explotarán en <a href="EDM_entidades_basicas.html#lineas">líneas</a> y <a href="EDM_entidades_basicas.html#textos">textos</a> del tipo aquí
+especificado por el usuario. Si se activa la opción <span style="font-weight: bold; font-style: italic;">Mantener el color de
+las líneas</span>, entonces esas líneas procedentes de explotar células
+pasan a tener color propio y se les asigna un color similar al original.<br />
+
+        </li>
+      </ul>
+      <img style="width: 256px; height: 188px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_selec_archivos.png" align="right" />Establecidas las
+      <a href="#opciones">opciones</a> de importación, ya se está en
+condiciones de seleccionar los ficheros&nbsp;<span class="Archivo">.dgn</span>
+que se quieren importar. Para ello se pulsa el botón <span style="font-weight: bold;">[CARGAR DGN]</span> y a continuación
+aparece un selector de ficheros que permite elegir los ficheros&nbsp;<span class="Archivo">.dgn</span> que se pretenden importar (es posible
+seleccionar varios simultáneamente).<br />
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="rel_conversion">Definición de
+relaciones de conversión DGN &#8211; EDM</a></span> <br />
+      <br />
+Una vez haya finalizado el proceso de conversión de los ficheros, es
+decir, cuando aparezca el dibujo en pantalla, el único paso que queda
+es personalizar las nuevas entidades que se crearon tras la
+importación. Esto se puede hacer manualmente modificando cada entidad
+(líneas, símbolos y textos) o bien de forma automática mediante un
+diccionario creado previamente.<br />
+      <br />
+Mientras esté activo el menú de importación, el programa resalta todas
+aquellas líneas que pertenezcan al
+mismo nivel que la línea sobre la que está situado el cursor del ratón.<br />
+      <br />
+
+      <img style="width: 94px; height: 96px; margin-right: 7px;" alt="" src="Imagenes/imp_dgn_modos.png" align="left" />Para realizar la
+conversión de líneas, textos y símbolos de forma manual hay dos
+opciones: mediante un diálogo de <span style="font-weight: bold;">selección básica</span> que muestra todas las
+combinaciones de elementos que se hallaron en los ficheros de líneas,
+símbolos y textos respectivamente, o bien a través de un diálogo de
+      <span style="font-weight: bold;">selección avanzada</span> que permite realizar conversiones con combinaciones
+complejas de elementos.<br />
+      <br />
+Para realizar la conversión de líneas de forma manual mediante el
+diálogo de selección básica se pulsa sobre el botón <span style="font-weight: bold;">[LÍNEAS]</span>, tras lo cual aparece un
+menú flotante como el que se muestra a continuación:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 589px; height: 205px;" alt="" src="Imagenes/imp_dgn_lineas.png" /><br />
+      </div>
+      <br />Cada fila de datos se corresponde con una <span style="font-weight: bold;">combinación DGN</span> (formada por <span style="font-weight: bold;">propiedades DGN</span>
+como el nivel, color, estilo, grosor, relleno,...) y su correspondiente
+destino EDM (tipo y modelo). Una última columna indica el número de
+objetos DGN que hay en cada combinación. Por defecto, a cada
+combinación DGN se le asigna como tipo EDM el nivel y como modelo EDM
+el color.<br />
+      <br />
+La columna <span style="font-weight: bold;">nivel</span> muestra el <span style="font-weight: bold;">nombre de nivel</span> y el número de cada nivel existente en el&nbsp;<span class="Archivo">.dgn</span>.
+Si el nombre se muestra incompleto debido a su longitud, basta con
+dejar el cursor del ratón sobre el mismo para que aparezca un hint con
+el nombre completo. <br />
+      <br />
+Al hacer clic sobre una línea su combinación DGN (<span style="font-weight: bold;">nivel</span>, <span style="font-weight: bold;">color</span>, <span style="font-weight: bold;">estilo</span>, <span style="font-weight: bold;">grosor</span> y <span style="font-weight: bold;">relleno</span>)
+aparece seleccionada entre todas las que se hallaron en el fichero. Si
+se hace clic sobre varias líneas aparecerán todas sus combinaciones DGN
+seleccionadas en el diálogo. También se pueden seleccionar líneas
+activando la casilla que aparece a
+la izquierda de cada combinación DGN (nivel, color, estilo, ancho y
+relleno). Otras opciones de selección son:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 140px;">[Todo] / [Nada]</td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Seleccionar/des-selecciona todas las combinaciones de líneas.</td>
+
+          </tr>
+          <tr><td style="vertical-align: top; width: 140px;"><span style="font-weight: bold;">[Invertir]</span><br /></td><td style="vertical-align: top; width: 532px; text-align: justify;">Invierte la selección actual.<br /></td></tr><tr>
+            <td style="vertical-align: top; font-weight: bold; width: 140px;">[No traducido]</td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Selecciona todas las líneas no traducidas, es decir, las que mantienen su tipo en 0.</td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 140px;"><span style="font-weight: bold; font-style: italic;">Resaltar seleccionados</span><br />
+            </td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Las combinaciones seleccionadas se resaltan en el dibujo.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 140px;"><span style="font-weight: bold; font-style: italic;">Dibujar al modificar</span><br />
+            </td>
+            <td style="vertical-align: top; width: 532px; text-align: justify;">Si
+se activa la casilla, a medida que se van asignando tipos a las
+distintas combinaciones DGN se va refrescando el dibujo. Si el dibujo a
+importar tiene un tamaño importante, conviene que esta opción esté
+desactivada.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <br />Para asignar tipos de líneas y modelos ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a las líneas creadas durante la conversión del fichero mediante este cuadro de diálogo existen dos formas posibles:<br />
+      <ol>
+        <li><img style="width: 80px; height: 82px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_asignar_tipo.png" align="right" />Asignando en la parte izquierda del menú a una combinación DGN (<span style="font-weight: bold;">nivel</span>, <span style="font-weight: bold;">color</span>, <span style="font-weight: bold;">estilo</span>, <span style="font-weight: bold;">grosor</span> y <span style="font-weight: bold;">relleno</span>) el tipo de línea y modelo ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> que se desee.</li>
+      </ol>
+      <ol start="2">
+        <li>Seleccionando varias combinaciones de líneas en la parte izquierda del menú y asignándoles un valor (<span style="font-weight: bold;">tipo</span> y/o <span style="font-weight: bold;">modelo</span>) común en la parte derecha del menú:</li>
+      </ol>
+
+      
+      <div style="text-align: center;"><img style="width: 638px; height: 222px;" alt="" src="Imagenes/imp_dgn_selec_multiple.png" /><br />
+      </div>
+
+      <br />
+      <span class="Parrafo">En cualquier caso, si no se está conforme con </span><span class="Parrafo">las relaciones establecidas</span><span class="Parrafo">, pulsando sobre el botón <span style="font-weight: bold;">[Cancelar]</span> se recuperan los datos anteriores de conversión.<br />
+      <br /></span><span class="Parrafo">
+Una vez establecidas las relaciones de conversión</span><span class="Parrafo"> se hace clic sobre el botón <span style="font-weight: bold;">[Aceptar]</span>
+y los cambios quedan guardados a la vez que se cierra el cuadro de
+diálogo. Si no se quiere abandonar el diálogo, pulsando sobre el botón <span style="font-weight: bold;">[Aplicar]</span> ya no hay riesgo de que se pierdan los cambios realizados y el diálogo se sigue mostrando.<br />
+      <br />
+      </span><img style="width: 100px; height: 109px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_tipo_modelo.png" align="right" /><span class="Parrafo">Los desplegables situados debajo de los campos <span style="font-weight: bold;">tipo</span> y <span style="font-weight: bold;">modelo</span>, con las opciones <span style="font-weight: bold;">nivel</span>, <span style="font-weight: bold;">color</span>, <span style="font-weight: bold;">estilo</span>, <span style="font-weight: bold;">grosor</span> y <span style="font-weight: bold;">0</span>, permiten asignar de forma automática valores de conversión a los elementos seleccionados.<br />
+      <br />
+      </span><img style="width: 135px; height: 51px; margin-right: 7px;" alt="" src="Imagenes/imp_dgn_botones_cambiar.png" align="left" /><span class="Parrafo">Los
+botones que aparecen a la derecha de cada nivel sirven para cambiar
+entre este diálogo y los diálogos de selección básica de rótulos y
+símbolos para entidades que tengan el mismo nivel si es que existen.
+Tanto en la pestaña <span style="font-weight: bold;">[Textos]</span> como en la de <span style="font-weight: bold;">[Símbolos]</span> aparecen botones homólogos.<br />
+      <br />
+Para realizar una conversión a partir de combinaciones más complejas de
+elementos existe otro menú flotante al cual se accede pulsando el botón
+      <span style="font-weight: bold;">[LÍNEAS AVANZADO]</span> o sus homólogos para textos y símbolos:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 406px; height: 234px;" alt="" src="Imagenes/imp_dgn_selec_avanzada.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+La funcionalidad del diálogo en este caso es la siguiente:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Al hacer clic sobre una línea su combinación DGN (<span style="font-weight: bold;">nivel</span>, <span style="font-weight: bold;">color</span>, <span style="font-weight: bold;">estilo</span>, <span style="font-weight: bold;">grosor</span> y <span style="font-weight: bold;">relleno</span>) aparece en los desplegables de la parte izquierda del menú.</span></li>
+      </ul>
+      <span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo">Bien sea mediante el botón línea o
+mediante los desplegables se selecciona la combinación DGN (nivel,
+color, estilo, ancho y relleno) que se desee convertir y en la parte
+derecha se introduce el valor de línea y modelo </span>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup><span class="Parrafo"> para la conversión.</span><span class="Parrafo"><span class="Parrafo"> Así, por ejemplo, si se quieren convertir todas las líneas que se obtuvieron del nivel 623 al tipo de línea L38 de </span>ISTRAM<sup>®</sup>/ISPOL<sup>®</sup><span class="Parrafo">,
+la combinación que habría que seleccionar sería la mostrada en el
+siguiente cuadro de diálogo, en el que en la parte derecha se ha
+introducido el tipo 38, por lo que todas las líneas que se hayan
+obtenido a partir del nivel 623 (de nombre <span style="font-style: italic;">Agua varias cosas</span>) pasarán a tener dicho tipo.<br />
+</span></span></li>
+      </ul></span>
+      <div style="margin-left: 40px;">
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 379px; height: 218px;" alt="" src="Imagenes/imp_dgn_ejem_selec_avanzada.png" /></span><br />
+      </div>
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Cuando haya finalizado la conversión, pulsando sobre el botón <span style="font-weight: bold;">[Aceptar]</span> se aplican los cambios. Como ocurre en el menú de selección
+básica, si no se está conforme con las conversiones realizadas,
+pulsando sobre el botón <span style="font-weight: bold;">[Cancelar]</span> se recuperan los datos anteriores de
+conversión.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <br />
+Para realizar la conversión de símbolos y textos, el proceso a seguir
+es el mismo que el usado para líneas, salvo que los botones en estos
+casos son <span style="font-weight: bold;">[TEXTOS]</span>, <span style="font-weight: bold;">[TEXTOS AVANZADO]</span>, <span style="font-weight: bold;">[SÍMBOLOS]</span> y <span style="font-weight: bold;">[SÍMBOL. AVANZADO]</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">y con la particularidad de que, en el caso de los símbolos, una casilla adicional ofrece la opción de explotar las celdas DGN </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">(característica sólo está disponible para ficheros&nbsp;<span class="Archivo">.dgn</span> versión 8).</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="diccionarios">Diccionarios</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Un diccionario es básicamente un archivo ASCII de extensión&nbsp;<span class="Archivo">.cod</span>
+que guarda información encolumnada de cada combinación DGN y su
+correspondiente conversión a EDM, lo que permite automatizar el proceso
+de importación.<br />
+      <br />
+Al tratarse de un archivo ASCII, es posible crear y editar de forma
+manual el archivo con cualquier editor de texto siempre que se respete
+escrupulosamente la sintaxis del mismo. De hecho, los diccionarios
+creados desde el propio programa añaden una serie de comentarios en la
+cabecera del fichero a modo explicativo de cada una de las columnas. El
+botón</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">[EDITAR DICC.]</span> sirve para abrir diccionarios con el bloc
+de notas.</span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+En cualquier caso, la manera más rápida de crear un diccionario de
+conversión es desde el propio programa una vez establecidas las
+asignaciones EDM de las distintas combinaciones DGN en el cuadro de
+importación. Para ello, basta con pulsar el botón </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">[GUARDAR DICC.]</span> tras lo cual aparece un cuadro de diálogo el que se debe escoger la versión de diccionario a guardar:</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 428px; height: 116px;" alt="" src="Imagenes/imp_dgn_version_dicc.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Las posibilidades ofrecidas son:<br />
+      </span></span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Versión 1</span>: Se
+guarda el número de nivel, índice de color, estilo, grosor de línea,
+tipo de relleno (si es una línea), fuente (si es un texto) o celda del
+DGN y su correspondiente destino en el EDM.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Versión 2</span>: Similar a la versión 1, pero añadiendo también el nombre del nivel.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Versión 3</span>: Similar
+a la versión 2, pero las celdas del DGN se explotan durante la
+importación para que puedan ser mostradas (válido únicamente para DGN
+versión 8).<br />
+        </li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">A
+continuación se pregunta si se desea añadir al cuadro de conversión
+aquellas combinaciones del diccionario que no estén presentes en el
+cuadro y, finalmente, aparece un selector de ficheros en el que se
+debe introducir el nombre del fichero, de extensión&nbsp;<span class="Archivo">.cod</span>, donde se almacenará el diccionario de conversión.</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Parrafo"><span class="Parrafo" /></span><img style="width: 181px; height: 192px; margin-left: 7px;" alt="" src="Imagenes/imp_dgn_cargar_dicc.png" align="right" /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una
+vez obtenido el fichero de diccionario, su uso en futuras importaciones
+automatiza enormemente el proceso de conversión. Para cargarlo</span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> se pulsa el botón <span style="font-weight: bold;">[CARGAR DICC.]</span>
+y se selecciona el nombre del diccionario que se quiere cargar. Tras
+pulsar el botón se muestra un cuadro de diálogo en el que se debe
+indicar si se desean cargar todas las combinaciones existentes en el
+diccionario o atender únicamente a ciertas propiedades de cada
+combinación DGN. Así, por ejemplo si se indica carga selecitva y se
+marca <span style="font-style: italic;">Nivel (número)</span> y <span style="font-style: italic;">Color</span>,
+el programa asignará el mismo destino EDM indicado en el diccionario a
+todas las combinaciones DGN del cuadro que tengan en común dichas
+propiedades.<br />
+<br />
+      El botón <span style="font-weight: bold;">[IN&lt;-&gt;OUT]</span> se corresponde con una opción válida tanto para la importación como
+para la exportación DGN. Al pulsar sobre este botón se pide
+seleccionar un diccionario existente mediante un selector de ficheros y
+a continuación se pide seleccionar un segundo fichero en el que se va a
+guardar la siguiente información:<br /></span></span></span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si el primer diccionario seleccionado es de
+conversión EDM a DGN entonces en el segundo diccionario se van a
+almacenar los datos de conversión equivalentes en sentido contrario, es
+decir, DGN a EDM.</span></span></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Si el primer diccionario seleccionado es de
+conversión DGN a EDM entonces en el segundo diccionario se van a
+almacenar los datos de conversión equivalentes en sentido contrario, es
+decir, EDM a DGN.</span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<span style="font-weight: bold; font-style: italic;">Importación de diccionarios antiguos</span><br />
+<br />
+</span></span><span class="Parrafo"><span class="Parrafo">Es posible
+obtener el diccionario a
+partir de otro diccionario de conversión que presenta un formato
+distinto al explicado y que se corresponde con versiones antiguas del
+programa. Para ello se usa la opción <span style="font-weight: bold;">[CONV. DICC.]</span> tras lo cual, mediante el selector de ficheros, se deben
+seleccionar el fichero que se pretende convertir y el fichero destino respectivamente.<br />
+</span></span><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2" /></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Recintos</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>RECINTOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#creacion">Creación de recintos</a><br />
+      <a href="#operaciones">Operaciones con recintos</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+<br />El uso de recintos permite efectuar operaciones de edición
+restringidas únicamente al interior (o exterior) de una línea cerrada,
+además de otra serie de opciones que, sin la existencia de este tipo de
+elemento, serían imposibles de ejecutar.<br />
+      <br />
+Una línea estará cerrada cuando al recorrer consecutivamente sus vértices (botones&nbsp;<img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_avanVert.png" /> y&nbsp;<img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarLineas_retrocVert.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de líneas) y llegar al último, salta automáticamente al primero, es decir, es posible recorrerla cíclicamente.<br />
+      <br />
+La operaciones con recintos están agrupadas en el menú <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Recintos</span>, tal y como se muestra en la imagen:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 520px; height: 399px;" alt="" src="Imagenes/acceso_recintos.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="creacion">Creación de recintos</a></span><br />
+      <br />
+Los recintos son líneas cerradas que se pueden crear de diversas formas:<br />
+      <ul>
+        <li>Con la opción <span style="font-weight: bold;">Cerrar línea</span> del menú contextual mientras se crea una línea, o activando dicha opción en el cuadro de propiedades de la línea a cerrar:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 383px; height: 261px;" alt="" src="Imagenes/cerrar_linea_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right;"><img style="width: 241px; height: 282px;" alt="" src="Imagenes/cerrar_linea_2.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li>Con la opción <span style="font-weight: bold;">Unir línea</span>&nbsp;<img style="width: 19px; height: 5px;" alt="" src="Imagenes/icono_toolBarLineas_empalmar.png" /> y haciendo doble clic sobre la línea a cerrar.</li>
+      </ul>
+      <ul>
+        <li>Desde el menú de recintos con <span style="font-weight: bold;"><a name="crear_recinto_pto_interior">Crear por punto interior</a></span>,
+que genera un recinto a partir de una región delimitada por una o
+varias líneas con solo indicar un punto situado dentro de esa región.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 228px; height: 179px; margin-left: 7px;" alt="" src="Imagenes/recinto_con_islas.png" align="right" />Con <a name="crear_recinto_islas">Generar islas</a>,
+también en el menú de recintos, que crea a partir de una línea cerrada
+(borde exterior) y un conjunto de líneas cerradas interiores al borde
+exterior (islas), una única línea cerrada con islas haciendo uso de
+segmentos ocultos.</li>
+      </ul>
+      <div style="margin-left: 40px;">Esto es útil, por ejemplo, para sembrar o vaciar todo un recinto a excepción de sus recintos interiores.<br />
+      <br />
+Para generar un recinto con islas, basta con indicar la línea cerrada
+exterior y las interiores. A partir de ese momento, el conjunto de
+recintos exterior e interiores conformarán una sola línea cerrada, como
+se puede comprobar al recorrerla cíclicamente.<br />
+      </div>
+      <ul>
+        <li><img style="width: 196px; height: 267px; margin-left: 7px;" alt="" src="Imagenes/dialogo_recinto_envolvente.png" align="right" /><a name="envolvente">Con la opción <span style="font-weight: bold;">Envolvente</span></a>,
+que permite seleccionar un conjunto de líneas, por selección gráfica o
+por su tipo, y a partir de ellas generar el recinto envolvente.</li>
+      </ul>
+      <div style="margin-left: 40px;">El usuario tiene la opción de <span style="font-weight: bold;">crear un símbolo</span> del tipo indicado en cada uno de los vértices del recinto envolvente generado, así como de <span style="font-weight: bold;">rotular</span> con el <span style="font-weight: bold;">estilo</span> de texto y el <span style="font-weight: bold;">tamaño</span>
+deseados la numeración de los puntos del mismo. En este último caso el
+programa preguntará por el primer y segundo vértice a rotular, quedando
+así establecido el orden de
+rotulación. Si se activa la opción <span style="font-weight: bold; font-style: italic;">Generar listado</span>, se mostrará un listado con las coordenadas de cada uno de los vértices del recinto envolvente.<br />
+      <br />
+Esta opción es muy útil, por ejemplo, para crear un recinto envolvente
+con todos los contornos de expropiación de los distintos ejes que
+componen un proyecto.<br />
+      </div>
+      <ul>
+        <li><a name="contorno_convexo">La opción <span style="font-weight: bold;">Generar contorno</span> crea el contorno <span style="font-weight: bold;">convexo</span></a>
+de una superficie. Para ello se indica la superficie de la que se desea
+generar el contorno y el tipo de línea que se quiere utilizar la el
+recinto a crear.</li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 174px; height: 150px;" alt="" src="Imagenes/dialogo_crear_contorno_convexo.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="operaciones">Operaciones con recintos</a></span><br />
+      <br />
+El programa permite desde este menú, además, las siguientes operaciones con recintos:<br />
+      <ul>
+        <li><span style="font-weight: bold;"><a name="recintos_vaciar">Vaciar interior/exterior</a></span>:
+Permite vaciar de líneas, símbolos y textos el interior o el exterior
+de una línea cerrada (recinto). Aquellas líneas que se crucen con la
+línea cerrada seleccionada, son cortadas en la intersección con ésta, y
+de las líneas resultantes del corte son eliminadas aquellas que queden
+en el interior o exterior respectivamente. Los símbolos y textos son
+tratados según la ubicación de su punto de inserción.</li>
+      </ul>
+      <div style="margin-left: 40px;">Es posible insertar los puntos de
+corte en la línea cerrada que define el recinto. En el caso de vaciar
+un recinto interior, el programa ofrece además la posibilidad de vaciar
+automáticamente todos los recintos del tipo de línea seleccionado. En
+este caso, las líneas del tipo seleccionado no se verán afectadas por
+el vaciado de otros recintos (es decir, los recintos pueden tener zonas
+comunes).<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="copiar_interior">Copiar interior</a></span>:
+Realiza una copia de las líneas, símbolos y rótulos contenidos en una
+línea cerrada (recinto). Cuando una línea está contenida parcialmente
+en el recinto seleccionado, se copiará sólo la parte incluida en el
+recinto, sin modificar en absoluto los datos originales.</li>
+      </ul>
+      <div style="margin-left: 40px;"><img style="width: 159px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/recintos_copiar_interior.png" align="right" />El recinto de copia se puede <span style="font-weight: bold;">girar</span> y <span style="font-weight: bold;">trasladar</span> para seleccionar el destino y orientación de los datos copiados. Opcionalmente se puede crear en el destino una <span style="font-weight: bold;">malla</span>
+coordenada correspondiente con el origen de los datos.<br />
+      <br />
+Los objetos
+copiados también se desplazan en cota. El destino puede darse por
+teclado o utilizando enganches para señalar los puntos de origen y
+destino. En este último caso la diferencia de cota entre los puntos
+señalados se sumará a los objetos copiados.<br />
+      </div>
+      <ul>
+        
+        <li><span style="font-weight: bold;"><a name="guardar_carto_recintos_edm">Guardar cartografía .edm/.edb</a></span>: Un mapa cualquiera que tenga trazadas una o varias líneas cerradas, puede escribirse a ficheros&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>. Podremos guardar los recintos que hayamos seleccionado en un único fichero .edm/.edb. La opción es muy útil en ediciones de
+mapas grandes que luego se paginan en hojas separadas, y para generar
+series de ficheros&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> correspondientes a series de paginado, utilizando los polígonos que se pueden obtener desde el menú de edición de paginados.</li>
+
+      </ul>
+      <div style="margin-left: 40px;">Una vez seleccionada la opción,
+el usuario indica la serie de recintos que se seleccionan con el ratón
+y, a continuación, un nombre base para los ficheros que el programa
+modifica añadiendo el número de orden y la extensión&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>,
+escribiendo de forma secuencial los ficheros. Si ya existieran ficheros
+con el nombre de base seleccionado, el programa avisa de ello.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="guardar_carto_recintos_dwg">Guardar cartografía .dwg/.dxf</a></span>: Opción similar a la anterior, obteniéndose en este caso un fichero en formato&nbsp;<span class="Archivo">.dwg</span> ó&nbsp;<span class="Archivo">.dxf</span> de la versión seleccionada por el usuario.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 234px; height: 120px; margin-left: 7px;" alt="" src="Imagenes/recintos_sembrar.png" align="right" /><span style="font-weight: bold;"><a name="sembrar">Sembrar</a></span>: Permite
+rellenar el interior de una línea cerrada con símbolos dispuestos sobre
+un patrón regular más una desviación aleatoria de esas posiciones.
+Además, los símbolos son girados según un factor de aleatoriedad.
+Resulta muy útil, por ejemplo, para crear artificialmente zonas de
+arbolado para visualización con el módulo VIRTUAL 3D.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 224px; height: 153px; margin-left: 7px;" alt="" src="Imagenes/dividir_recinto.png" align="right" /><span style="font-weight: bold;"><a name="subdividir">Subdividir</a></span>:
+Esta opción permite dividir un recinto en dos, dando el área final de
+uno de los subrecintos. Si para el área final se da un valor negativo,
+los recintos se dividen exactamente por la mitad.</li>
+      </ul>
+      <div style="margin-left: 40px;">La opción pide seleccionar un
+recinto cerrado y dos puntos de su contorno con los que hace una
+división previa, mostrando las áreas de los dos subrecintos. A
+continuación el programa solicita el área final para uno de ellos y
+hacer clic con el ratón dentro del subrecinto para el que se busca ese
+área. Con la división previa queda definida una recta que el programa
+va deslizando paralelamente así misma para buscar una posible solución.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;"><a name="subdividir_fijo">Subdividir por punto fijo</a></span>:
+Esta opción es igual que la anterior, pero el segmento de búsqueda en
+lugar de desplazarse paralelamente a sí mismo, gira en torno al primer
+punto marcado.</li>
+      </ul>
+<span class="Parrafo">
+      <span class="Titulo_2" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

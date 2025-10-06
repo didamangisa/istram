@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Aceras</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ACERAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+Este menú permite definir aceras adosadas a la plataforma en secuencias
+de PK&#8217;s, independientes de la sección tipo.<span class="Parrafo"><br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img style="width: 579px; height: 264px;" alt="" src="Imagenes/dialogo_aceras.png" /><br />
+      </div>
+      <br />
+La rasante se define con tres segmentos <span style="font-weight: bold;">D1H1</span>, <span style="font-weight: bold;">D2H2</span>, <span style="font-weight: bold;">D3H3</span>, en coordenadas relativas.</span><img style="width: 344px; height: 291px; margin-left: 7px; margin-top: 8px;" alt="" src="Imagenes/modelo_aceras.png" align="right" /><br />
+      <span class="Parrafo"><br />El valor <span style="font-weight: bold;">H1</span> puede definirse como <span style="font-weight: bold;">altura relativa</span> o como <span style="font-weight: bold;">cota absoluta</span>.<br /><br />
+El valor <span style="font-weight: bold;">D2</span>, también puede darse como <span style="font-weight: bold;">distancia al eje</span>. El valor <span style="font-weight: bold;">H2</span>, también puede darse como <span style="font-weight: bold;">cota absoluta</span>, o como <span style="font-weight: bold;">pendiente en tanto por ciento</span>.<br />
+      <br />
+Cuando el punto <span style="font-weight: bold;">D2</span> se define por distancia al eje, si esta distancia supone un retroceso el punto no se añade, pero al punto de <span style="font-weight: bold;">D3</span> se le conserva el codigo que le corresponde como si existiera el <span style="font-weight: bold;">D2</span>.<br />
+      <br />
+El valor de <span style="font-weight: bold;">D3</span> también se
+puede dar como distancia al eje geométrico, conmutando el botón <span style="font-weight: bold;">[D3]</span> a <span style="font-weight: bold;">[D_eje]</span>. Así mismo, el valor <span style="font-weight: bold;">D_eje</span> puede también calcularse a
+partir de una línea 2D&nbsp; mediante la opción <span style="font-weight: bold;">Aceras por línea</span>.<br />
+      <br />
+Por otro lado, el valor de <span style="font-weight: bold;">H3</span>
+se puede dar de forma alternativa:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Por la cota absoluta, conmutando a <span style="font-weight: bold;">[Cota]</span>.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Peralte desde el punto anterior
+(positivo vierte hacia afuera), conmutando el botón a <span style="font-weight: bold;">[P%]</span>.</span></li>
+      </ul><span class="Parrafo">Los
+valores para D, E, D1, H1, D2, H2, D3 y H3&nbsp; pueden definirse en las casillas que
+encabezan cada columna, y así utilizar los mismos para todos los datos.<br />
+      </span><br />
+<img style="width: 122px; height: 75px;" alt="" src="Imagenes/aceras_individual_3.png" align="left" hspace="4" />El valor de la última columna (<span style="font-weight: bold;">H3</span>/<span style="font-weight: bold;">Cota</span>/<span style="font-weight: bold;">P%</span>) puede individualizarse para cada dato. Al modificar posteriormente la cabecera se cambia para todos los datos simultaneamente.<br />
+      <br />
+El selector global o los individuales que cambia el modo: <span style="font-weight: bold;">H3</span>/<span style="font-weight: bold;">Cota</span>/<span style="font-weight: bold;">P3%</span>,
+recalcula el valor de todos los datos o del dato individual manteniendo
+la geometria. Por ejemplo.: Si calculamos D3,H3 por una línea 3D el
+valor de H3 se pone en Cota absoluta. Podemos pasar uno o todos los datos a P3 si queremos ver la
+pendiente de este segmento, o a H3 y veremos la altura con el punto
+anterior.<br />
+      <br />Si se marca la casilla&nbsp;<span style="font-weight: bold;">Anular</span> <span style="font-weight: bold;">Berma</span>, en dicho tramo de acera se inhibe la construcción de la Berma de desmonte o terraplén.<br /><br />Si se marca la casilla <span style="font-weight: bold;">Bloqueado</span>,
+se bloquean los datos de la fila para que no se vean afectados por las
+modificaciones genéricas por columna: D, E, D1, H1, D2, H2, D3, H3
+y el modo H3/Cota/P%. La casilla adjunta permite bloquear/desloquear un rango de datos.<br /><br />
+Casilla <span style="font-weight: bold;">Código</span>: Cuando no se activa la opción de <span style="font-weight: bold;">códigos consecutivos</span>, se permite definir el valor del <span style="font-weight: bold;">código</span> para el primer punto de la acera.<br />
+      <br />
+
+      <span class="Parrafo">La pareja (<span style="font-weight: bold;">D_eje</span>,
+      <span style="font-weight: bold;">Cota</span>) también puede
+calcularse a partir de una línea 3D mediante la opción <span style="font-weight: bold;">Aceras por línea</span>.
+El cuadro de diálogo que aparece permite seleccionar una línea para los
+valores D3(H3) o dos líneas para los valores D3(H3) y D2(H2).&nbsp; Las
+líneas pueden considerarse en 2D, para calcular sólamente la distancia
+al eje, o en 3D para considerar también la cota.<br />
+      <br />
+En caso de utilizar una línea 2D o 3D el resto de los datos se copian
+del primer dato de la lista (se necesita que exista al menos un dato).
+Si ya existen datos previos entonces sólo se borran aquellos
+cuyos PK&#8217;s estén dentro del dominio de la línea, siendo sustituidos por
+los deducidos de ésta. Por otro lado, si en lugar de especificar una
+equidistancia se elige calcular un punto cada múltiplo de cero, el
+programa calcula un dato en los vértices de la línea seleccionada. Es
+conveniente en este último caso que se interpolen perfiles del terreno
+en los PK&#8217;s de las aceras. Si se marca la casilla <span style="font-weight: bold;">Extraer un dato en cada perfil</span>,
+el programa calcula un dato para cada uno de los perfiles de la sección
+transversal (tanto los elegidos por equidistancia, como los
+interpolados por el usuario).<br />
+      <br />
+Tenemos la posibilidad de limitar los <span style="font-weight: bold;">PKs</span> de busqueda en el eje, lo que permite evitar ambigüedades en ejes que vuelven sobre si mismos.<br />
+      <br />Si existen datos previos con diferentes valores para D2 y H2, al ejecutar <span style="font-weight: bold;">Aceras por línea</span> para calcular D3 y H3, se conservan los datos existentes. El programa calcula datos nuevos para D3 y H3 en:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Los vértices de la línea.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">En PKs múltiplos de una valor prefijado entre los de inicio y final de la </span><span class="Parrafo">línea.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">En PKs donde ya existía un dato previo en la tabla de datos.</span></li>
+      </ul>
+      <span class="Parrafo">En todos estos PKs el resto de valores D,E,D1,H1,D2,H2 se interpolan de la tabla de datos.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 350px; height: 319px;" alt="" src="Imagenes/aceras_por_linea.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <div style="text-align: center;"><span style="font-weight: bold;" class="Parrafo"><span class="Info">Aceras por línea</span></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Cuando el último punto está definido por distancia al eje, no se
+inserta si en un PK supone un retroceso con respecto al punto anterior.<br />
+      <br />
+Cuando en el segmento (D2,H2), en lugar de H2 se da la Cota Absoluta,
+si en un dato aparecen los valores D2=0 y Z=0, y luego hay otros
+valores para (D3,H3), entonces no se toma como cota absoluta el valor 0
+y se considera como un segmento nulo.<br />
+      <br />
+La subrasante se define por dos parámetros:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo">Distancia que se prolonga la
+subrasante de la última calzada auxiliar por debajo de la acera (D).</span></li>
+        <li><span class="Parrafo">E: Espesor del acerado (E).</span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El modo&nbsp;<span style="font-weight: bold;">Elegir una línea 3D: Con D3 y P3 Fijas y D2,P2 Variables</span>, actúa de la siguiente forma:<br /></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se construye un segmento de ancho y pendiente fija (D3,P3) desde la línea 3D.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Estos valores se definen en el cuadro de diálogo.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El segmento anterior (D2,P2) es variable para unir con la plataforma.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se
+da también un valor P2_maximo, de modo que si la pendiente P2
+resultante excede este valor en algún dato, se muestra un mensaje de
+error y en el cuadro de dialogo se marcan estos datos (!).</span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">El modo <span style="font-weight: bold;">Elegir línea 3D: Taludes T3 Fijos, Pendiente P2 Fija, D2 y D3 variables</span>, actúa de la la siguiente forma:<br /></span></span></span><ul><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desde la plataforma se lanza una superficie con la pendiente P2.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Desde
+la línea3D se lanza un talud T3 hacia la plataforma, subiendo o bajando
+dependiendo si la superficie con la pendinete P2 pasa por encima o por
+debajo.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Se pueden dar dos valores de T3 diferentes según sea para subir o para bajar.</span></span></span></li><li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Donde se corten el talud con la superficie se fija el punto que separa D2 y D3. </span></span></span></li></ul><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">De la misma manera a la descrita anteriormente, es posible a través de la opción <span style="font-weight: bold;">[MÁS DATOS]</span> definir otras 6 aceras adicionales.<br /><br />Además,
+están disponibles las siguientes opciones:</span></span><br />
+      <span class="Parrafo"> <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 146px;">Antes
+que
+plataforma fija<br />
+            </td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 526px;">Si
+se
+deja activa esta casilla de verificación, las aceras paramétricas se
+construyen antes que la plataforma fija.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 146px;">Códigos
+consecutivos<br />
+            </td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 526px;">La
+acera comienza con el código 20, pero es posible conservar la
+codificación consecutiva activando esta opción, lo que permite definir
+capas de firme referidas a los códigos 11, 12, 13, 14 ó 15 definidos en
+la acera.</td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">Conservar E detrás de bordillo</span></td><td>Si
+se ha colocado un bordillo antes que la acera (p.e. código 2), y el
+bordillo eleva la rasante por detrás, al activar esta opción, también
+se eleva la subrasante a partir de la distancia D, para conservar el
+espesor E definido.</td></tr><tr>
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 146px;">[IZQ.
+=&gt; DER.]<br />
+[IZQ. &lt;= DER] <br />
+            </td>
+            <td style="vertical-align: top; height: 18px; text-align: justify; width: 526px;">Permiten
+copiar los datos de un lado para el otro.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+</span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">La ley de definición de aceras puede salvarse y recuperarse con <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /> y <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" /> en ficheros con extensión&nbsp;<span class="Archivo">.acr</span> (iconos situados en la parte superior del menú).<br />
+      <br />
+      <img style="width: 135px; height: 64px;" alt="" src="Imagenes/aceras_guardar_pk.png" align="right" hspace="7" />En los PKs de definición de las <a href="OL_calzadas_aux.html">calzadas auxiliares</a> y las aceras pueden <span style="font-weight: bold;">guardarse</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> o <span style="font-weight: bold;">cargarse</span> </span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> en archivos independientes&nbsp;<span class="Archivo">.pk</span>, así puede transladarse la definición de PKs de un lado a otro de de las aceras a las <a href="OL_calzadas_aux.html">calzadas auxiliares</a> y viceversa.<br />
+Pueden cargarse de cualquier archivo&nbsp;<span class="Archivo">.pk*</span>
+que contenga el PK en la primera columna. Cuando se carga un archivo de
+PKs, el resto de los valores (anchos,&nbsp; pendientes, alturas, etc..)
+se copian del primer dato. En el caso de las aceras <a href="file:///C:/Ispol/util/Ayuda/OL_aceras.html"> si no hay ningun dato, entoces se inician a cero.</a></span></span></span><a href="file:///C:/Ispol/util/Ayuda/OL_aceras.html"><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

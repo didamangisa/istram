@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Pendiente por ttp</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>PENDIENTE POR TTP<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><br />
+Este menú es similar al de <a href="MS_color_ttp.html">Color por ttp</a>,
+pero los recintos se crean en función de rangos de <span style="font-weight: bold;">pendientes</span>, que
+pueden estar medidas en porcentaje, en <span style="font-weight: bold;">grados</span> sexagesimales o a partir del <span style="font-weight: bold;">talud</span>
+(en este último caso el orden es en valores descendente empezando
+siempre en talud horizontal. Se puede fijar el número de tramos, pero
+no el intervalo).
+Los bordes de los recintos están generados en la cota real.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 247px; height: 467px;" alt="" src="Imagenes/dialogo_pendiente_ttp.png" /><br />
+      </div>
+
+      <br />
+En primer lugar necesitaremos cargar el fichero procedente de una
+triangulación (.ttp) para proceder a la realización de un mapa de
+colores por pendientes. Para ello nos podemos ayudar del icono <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_control_ttps.png" /> que nos mostrará el cuadro de diálodo referente al <a href="EDM_control_entidades.html#control_ttps">control de superficies trianguladas</a>.<br />
+      <br />
+      <img style="width: 63px; height: 47px;" alt="" src="Imagenes/pend_grad_talud.png" align="right" hspace="6" />Automáticamente el programa detectará el rango de pendientes <span style="font-weight: bold;">mínima</span> y <span style="font-weight: bold;">máxima</span> en función de la triangulación cargada.&nbsp; Podremos realizar el análisis de pendientes en <span style="font-weight: bold;">porcentaje</span>, en <span style="font-weight: bold;">Grados</span> o mediante valores del <span style="font-weight: bold;">Talud T:V</span>.<br />
+      <br />
+Según lo que necesitemos definiremos un valor para el <span style="font-weight: bold;">intervalo</span> de pendientes o un <span style="font-weight: bold;">número de tramos</span> para realizar el dibujo final. Se permite editar manualmente los intervalos de las pendientes.<br />
+      <br />
+Si activamos la casilla <span style="font-weight: bold;">Azimut</span>, se puede definir una dirección en concreto en la cual evaluar las pendientes.<br />
+      <br />
+      <img style="width: 413px; height: 501px;" alt="" src="Imagenes/mapa_pendiente.png" align="right" hspace="6" />Con el comando <span style="font-weight: bold;">Previo</span> realizaremos una previsualización automática y con el comando <span style="font-weight: bold;">Generar</span>
+dibujaremos en pantalla los diferentes estilos de línea definidos en
+función de la pendiente en nuestro mapa para poder guardar a posteriori
+un fichero de cartografía.<br />
+<br />
+Una vez generado el dibujo podremos, mediante el comando <span style="font-weight: bold;">Deshacer</span>, eliminar las líneas dibujadas en pantalla.<br />
+      <br />
+Podremos mostrar una leyenda a partir de la activación de la casilla <span style="font-weight: bold;">Mostrar generar leyenda</span>. Con el comando <span style="font-weight: bold;">Crear</span> podremos incorporar a nuestro dibujo un título de la leyenda con la definición de los intervalos.<br />
+      <br />
+A partir de la <span style="font-weight: bold;">Rampa de colores</span> estableceremos nuestra gama de colores definiendo la línea inicial y el número de líneas de la gama.<br />
+      <br />
+      <img style="width: 235px; height: 152px;" alt="" src="Imagenes/gama_colores_pendiente.png" /><br />
+      <br />
+El comando <span style="font-weight: bold;">Generar puntos con la pendiente</span>
+permite generar en el centro de cada triángulo un punto con la
+dirección de la pendiente y cota (tamaño) con el valor de la pendiente,
+al estilo de los que se crean con la herramienta de <a href="EDM_isoclinas.html">generación de isoclinas</a>.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 238px; height: 52px;" alt="" src="Imagenes/generar_puntos_pendiente.png" /><br />
+      </div>
+      <br />
+Finalmente en la parte inferior de este menú se permite <span style="font-weight: bold;">cargar</span> y <span style="font-weight: bold;">salvar</span> la información de los intervalos.<br />
+<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

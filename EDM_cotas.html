@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Edición de cotas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>n
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>EDICIÓN DE COTAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <div style="margin-left: 40px;"><span class="Parrafo"><br />
+      <span class="Parrafo">
+      <a href="#generalidades">Generalidades</a></span><br />
+      <span class="Parrafo">
+      <a href="#atenuacion">Atenuación de las curvas de nivel según cota</a></span><br />
+      <span class="Parrafo">
+      </span><a href="#marcaje"><span class="Parrafo"><span class="Parrafo">Marcaje de líneas/símbolos/textos según cota</span></span></a><br />
+      <a href="#asignacion_manual"><span class="Parrafo"><span class="Parrafo">Asignaciones manuales de cota</span></span></a><br />
+      </span></div>
+
+      
+      <div style="margin-left: 80px;"><a href="#cota_linea"><span class="Parrafo">Cota a una línea</span></a><br />
+      <a href="#cota_vertices_linea"><span class="Parrafo">Cota a los vértices de una línea</span></a><span class="Parrafo"><br /><a href="#cota_por_banda">Cota a líneas de nivel según una banda</a><br /></span><span class="Parrafo"><a href="#cota_linea_2_puntos">Cota a los vértices de una línea según dos puntos</a><br /></span><a href="#cota_simb"><span class="Parrafo">Cota a un símbolo</span></a><br />
+      <a href="EDM_cotas.html#cota_interp"><span class="Parrafo">Eliminar/interpolar cota de vértice</span></a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#asignacion_auto"><span class="Parrafo">Asignaciones automáticas de cota</span></a><br />
+      </div>
+
+      
+      <div style="margin-left: 80px;"><a href="#cota_auto_curvas_nivel"><span class="Parrafo">Cota automática a curvas de nivel</span></a><br />
+      <a href="#cota_auto_simb"><span class="Parrafo">Cota automática a símbolos</span></a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#etiquetado"><span class="Parrafo">Etiquetado de curvas de nivel y de puntos</span></a><br />
+      </div>
+      <div style="margin-left: 80px;"><span class="Parrafo"><a href="#etiquetado_curvas_nivel">Etiquetado de curvas de nivel</a></span><br />
+      <span class="Parrafo"><a href="#etiquetado_simb"><span class="Parrafo">Etiquetado de símbolos o puntos</span></a><br />
+      </span></div>
+      <div style="margin-left: 40px;"><a href="#auto_nivel_maestras"><span class="Parrafo">Generación automática de curvas de nivel maestras</span></a><br />
+      <a href="#redondeo"><span class="Parrafo">Redondeo de cotas de curvas de nivel</span></a><br />
+      <a href="#cuadro_coord"><span class="Parrafo">Generación de cuadros de coordenadas</span></a><br /><a href="#color_cota">
+Color por cota</a><br />
+      <a href="#cotas_g_e">Cotas de Google Earth</a><br />
+      </div>
+      <span class="Parrafo"><br />
+      <br />
+      </span><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <span class="Parrafo">
+<br />
+      <div style="margin-left: 40px;"><span class="Parrafo"></span></div>
+      <span class="Parrafo">Es
+habitual que muchas de las operaciones de edición cartográficas estén
+relacionadas con modificaciones o rotulaciones de la coordenada Z de
+líneas y de puntos. Tal es el caso de cuando se tiene una cartografía
+en 2D que se desea &#8216;levantar&#8217;, una nube de puntos 2D pero con rótulos
+próximos indicando su cota, o se desea, por ejemplo, efectuar el
+etiquetado de las curvas de nivel.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 411px; height: 617px;" alt="" src="Imagenes/acceso_cotas.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Desde este menú se controla el etiquetado asistido de líneas de nivel y
+de puntos aislados a los que se deba rotular su cota, así como la
+manipulación y cálculo automático de cotas de líneas, de vértices de
+líneas y de símbolos. Se accede a él desde el menú <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span>.<br />
+      <br />
+</span></span><img style="width: 83px; height: 177px; margin-left: 7px;" alt="" src="Imagenes/toolBar_cotas.png" align="right" /><span class="Parrafo"><span class="Parrafo">El programa también está dotado de una <a href="EDM_barras_herramientas.html">barra de herramientas</a> específicas para estas funciones, y que se puede mostrar desde el menú <span style="font-weight: bold;">Configuración</span> </span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Ver barra de herramientas</span> </span></span><span class="Parrafo"><span class="Parrafo">&#8594;</span></span><span class="Parrafo"><span class="Parrafo"> <span style="font-weight: bold;">Cotas</span>.<br />
+      </span></span><br />
+
+
+
+
+      
+      
+      
+      
+      <table style="text-align: left; height: 106px; width: 550px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+
+        <tbody>
+          <tr>
+            <td style="width: 24px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_atenuacion.png" /><br />
+</td>
+            <td style="width: 127px;">Atenuación por cotas<br />
+</td>
+            <td style="width: 24px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_marcar.png" /><br />
+</td>
+            <td style="width: 147px;">Marcar por cotas<br />
+</td>
+            <td style="width: 23px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_cotaLauto.png" /><br />
+</td>
+            <td style="width: 153px;">Cota a líneas automática<br />
+</td>
+          </tr>
+          <tr>
+            <td style="width: 24px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_banda.png" /><br />
+</td>
+            <td style="width: 127px;">Cotas por banda<br />
+</td>
+            <td style="width: 24px;"><img style="width: 20px; height: 22px;" alt="" src="Imagenes/icono_toolBarCotas_cotaL2P.png" /><br />
+</td>
+            <td style="width: 147px;">Cota a línea por 2 puntos<br />
+</td>
+            <td style="width: 23px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_incZTL.png" /><br />
+</td>
+            <td style="width: 153px;">Incremento cota y tipo línea<br />
+</td>
+          </tr><tr>
+            <td><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_eliminarinterpolar.png" /><br />
+</td>
+            <td style="width: 127px;">Eliminar/interpolar cota <br />
+</td>
+            <td style="width: 24px;"><img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarCotas_tomarAtrib.png" />
+</td>
+            <td style="width: 147px;">Tomar atributos
+</td>
+            <td style="width: 23px;"><img style="width: 22px; height: 18px;" alt="" src="Imagenes/icono_toolBarCotas_ponerAtrib.png" />
+</td>
+            <td style="width: 153px;">Poner atributos
+</td>
+          </tr>
+          <tr>
+            <td><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_pasarAtrib.png" />
+</td>
+            <td style="width: 127px;">Pasar atributos
+</td>
+            <td style="width: 24px;"><img style="width: 23px; height: 21px;" alt="" src="Imagenes/icono_toolBarCotas_cotaPauto.png" />
+</td>
+            <td style="width: 147px;">Cota a puntos auto
+</td>
+            <td style="width: 23px;"><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_linDirectoras.png" />
+</td>
+            <td style="width: 153px;">Líneas directoras
+</td>
+          </tr><tr>
+            <td><img style="width: 24px; height: 22px;" alt="" src="Imagenes/icono_toolBarCotas_redondear.png" />
+            </td>
+            <td>Redondear cotas
+            </td>
+            <td><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_etiquetadoL.png" />
+            </td>
+            <td>Etiquetado de líneas
+            </td>
+            <td><img style="width: 23px; height: 21px;" alt="" src="Imagenes/icono_toolBarCotas_etiquetadoP.png" />
+            </td>
+            <td>Etiquetado de puntos
+            </td>
+          </tr>
+          <tr>
+            <td><img style="width: 24px; height: 17px;" alt="" src="Imagenes/icono_toolBarCotas_coord.png" />
+            </td>
+            <td>Coordenadas de puntos
+            </td>
+            <td><img style="width: 24px; height: 19px;" alt="" src="Imagenes/icono_toolBarCotas_cuadroNXYZ.png" />
+            </td>
+            <td>Cuadro NXYZ
+            </td>
+            <td><img style="width: 24px; height: 24px;" alt="" src="Imagenes/icono_toolBarCotas_color.png" />
+            </td>
+            <td>Color por cota
+            </td>
+          </tr>
+
+
+          
+        </tbody>
+      
+      
+      
+      
+      </table>
+
+
+
+
+      <br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><span class="Titulo_2"><a name="atenuacion">Atenuación de las curvas de nivel según cota</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 290px; height: 102px; margin-left: 7px;" alt="" src="Imagenes/atenuacion_por_cotas.png" align="right" /><span class="Parrafo"><span class="Parrafo">Esta opción trabaja solamente sobre las líneas de nivel (tipos L26 y L27), y para ello se marca la opción <span style="font-weight: bold; font-style: italic;">Aplicar atenuación</span>,
+se indica el rango de cotas que NO se desea atenuar y el nivel de
+atenuación (en %). El efecto es que el resto de curvas de nivel
+quedarán resaltadas frente a las pertenecientes al intervalo
+dado.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="marcaje">Marcaje de líneas/símbolos/textos según cota</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span><img style="width: 316px; height: 198px; margin-left: 7px;" alt="" src="Imagenes/marcaje_lineas.png" align="right" /><span class="Parrafo"><span class="Parrafo">Esta
+herramienta permite definir las cotas mínima y máxima para las
+líneas/símbolos/textos que se desean resaltar según las siguientes
+opciones:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Cota mínima y máxima para marcar las líneas.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Marcar solamente las líneas de nivel L26 y L27 o todas las líneas.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Marcar las líneas que están totalmente incluidas en el rango o aquellas que tengan una parte de sus puntos dentro del rango.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Analizar también los símbolos puntuales.</span></span></li></ul><span class="Parrafo"><span class="Parrafo"></span></span><ul><li><span class="Parrafo"><span class="Parrafo">Analizar también los textos.<br /></span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo">Selección del modelo para pasar los elementos marcados.&nbsp;&nbsp;&nbsp; &nbsp;</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><br />
+El botón <span style="font-weight: bold;">[Pasar a modelo]</span> traspasa todas las entidades marcadas al modelo indicado.<br />
+      <br />
+Mientras esté activada la casilla <span style="font-weight: bold; font-style: italic;">Marcar líneas</span>, en los redibujados aparecen marcadas las entidades según el intervalo de cota indicado.<br />
+      <br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="asignacion_manual">Asignaciones manuales de cota</a></span><br />
+      <span class="Parrafo"><br />Muchas de las operaciones
+relacionadas con cambios de cota se efectúan mediante asignaciones
+manuales realizadas por el usuario. A continuación se describen todas
+las herramientas que ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> pone a disposición para tal fin.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_linea">Cota a una línea</a></span><br />
+      <span class="Parrafo"><br />
+La opción de asignar cota a una línea, disponible desde <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cota a línea</span>, cambia la cota global de una línea de cualquier tipo y la de <span style="font-weight: bold;">todos sus vértices</span> a una nueva cota, lo que permite, por ejemplo, corregir errores cometidos en el momento de la digitalización de líneas.<br /><br />Si
+no hay ninguna línea seleccionada, el programa solicita seleccionar la
+línea que se desea cambiar y después, en la línea de comandos, pregunta
+por la nueva cota mientras se muestra la tiene actualmente el vértice
+activo. Basta con teclear el número y confirmar con la tecla
+&lt;Intro&gt; para que la nueva cota quede asignada.<br /><br />Si ya
+hubiera previamente líneas seleccionadas, el programa solicita las
+nuevas cotas sucesivamente para cada línea. Se puede abandonar esta
+opción en cualquier momento pulsando la tecla &lt;Esc&gt;.<br /><br />También es posible ir asignando cota a líneas, pero de forma continua y según un incremento de cota. La opción </span><span style="font-weight: bold;"><a name="cota_increm_tipo_linea">Herramientas</a></span><span class="Parrafo"> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Z(inc) + Tipo de línea</span>
+solicita la primera cota y el incremento de cota. A partir de ahí el
+usuario debe ir haciendo clic sobre cada una de las líneas a las que el
+programa asignará la nueva cota, que será igual a la anterior aumentada
+el incremento dado, y <span style="font-weight: bold;">asignándoles además el tipo de línea actual</span>.
+El cambio del tipo de línea permite reconocer a simple vista cuáles
+tienen ya cota asignada. El proceso es cíclico hasta que sea
+interrumpido por el usuario mediante la tecla &lt;Esc&gt;.<br /><br />Existe
+otra forma semiautomática de dar cota a una línea y, al mismo tiempo,
+convertirla en línea de nivel. Para ello se ha de seguir la siguiente
+secuencia:<br /></span>
+      <ol>
+        <li><span class="Parrafo">Seleccionar la opción </span><span style="font-weight: bold;"><a name="tomar_atributos">Herramientas</a></span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Tomar atributos</span>, y seleccionar una línea de referencia. El programa toma de ésta el tipo de línea, y la cota si es de nivel.</li>
+      </ol>
+      <ol start="2">
+        <li><span class="Parrafo">Seleccionar la opción <a name="poner_atributos"><span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Poner atributos</span>,
+y seleccionar una línea destino. El programa les asigna el tipo y la
+cota (si la línea de referencia era de nivel) de la última línea tomada
+con la opción anterior.</a></span></li>
+<a name="poner_atributos">      </a></ol>
+<a name="poner_atributos">      <span class="Parrafo">La opción </span></a><a name="pasar_atributos"><span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Pasar atributos</span>
+realiza sucesivamente los pasos anteriores. De la primera línea
+seleccionada se toman los atributos, la segunda los recibe, de la
+tercera se vuelven a tomar y así sucesivamente.<br /><br />Al iniciar cualquiera de estas tres herramientas <span class="Parf_negrita">Tomar Atributos</span> / <span class="Parf_negrita">Poner Atributos</span> / <span class="Parf_negrita">Pasar Atributos</span>
+se muestra un cuadro de diálogo en el que se pueden seleccionar que
+atributos queremos que se transmitan. Además, la cota se transmite a la
+polilínea de destino independientemente de cual sea su tipo.<br /><br /></a><div style="text-align: center;"><img style="width: 150px; height: 160px;" alt="" src="Imagenes/cotas_tomar_poner_pasar.png" /><br /></div><a name="pasar_atributos"><br /><br />
+      <span style="font-weight: bold; font-style: italic;"></span></a><a style="font-weight: bold; font-style: italic;" name="cota_vertices_linea">Cota a los vértices de una línea</a><br />
+      <span class="Parrafo"><br />
+Esta opción, disponible desde <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cota a vértice de línea</span>, ofrece la posibilidad de asignar una cota distinta a cada uno de los vértices de una línea de cualquier tipo.<br /><br />Al
+seleccionar esta opción, el programa solicita el vértice (si no
+estuviera ya uno seleccionado) cuya cota se quiere cambiar. Un cuadro
+de diálogo indica las coordenadas del mismo con la posibilidad de
+cambiar la Z. Al confirmar con la tecla &lt;Intro&gt; la cota queda
+cambiada y se pasa al siguiente vértice de la línea.<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 404px; height: 254px;" alt="" src="Imagenes/cota_a_vertices.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />En cualquier caso, es posible navegar y confirmar la cota de todos los vértices de la línea mediante los botones <span style="font-weight: bold;">[Anterior]</span> y <span style="font-weight: bold;">[Siguiente]</span>.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br />
+<br style="font-weight: bold; font-style: italic;" /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_por_banda">Cota a líneas de nivel según una banda</a></span><br style="font-weight: bold; font-style: italic;" />
+      <span class="Parrafo"><br />
+La opción <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cotas por banda</span> asigna cotas a curvas de nivel (L26 y L27) según una banda dada por sus extremos mediante el ratón.<br /><br /></span><img style="width: 234px; height: 117px; margin-left: 7px;" alt="" src="Imagenes/cota_por_banda.png" align="right" /><span class="Parrafo">Presenta una ventana con los datos de <span style="font-weight: bold;">cota inicial</span> e <span style="font-weight: bold;">incremento</span>
+de cota para las curvas. A continuación, después de aceptar los datos,
+se solicita al usuario los dos puntos de la banda. Una vez hecho, el
+programa asigna cotas a las líneas de nivel cortadas por la banda de
+tal manera que a la más cercana al primer punto de la banda le dará la <span style="font-weight: bold;">cota inicial</span> y a las siguientes las aumentará la cota en función del <span style="font-weight: bold;">incremento</span>. Todas las líneas afectadas quedan resaltadas temporalmente hasta que se produzca un redibujado.&nbsp;&nbsp;&nbsp; &nbsp;<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_linea_2_puntos">Cota a los vértices de una línea según dos puntos</a></span><br />
+      <span class="Parrafo"><br />
+La opción <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cota a línea por 2 puntos</span>
+pide seleccionar dos vértices de una línea y asignarles una cota
+diferente a cada uno de ellos. El programa entonces interpola la cota
+de los vértices intermedios en función de la distancia a los puntos
+dato (dejando el resto como estaban) según la siguiente fórmula:<br /><br />
+      </span>
+      <table style="text-align: left; width: 511px; height: 27px; margin-left: 40px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 226px;"><img style="width: 195px; height: 50px;" alt="" src="Imagenes/formula_cota_linea_2_puntos.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 14px;"><span class="Parrafo">Z<sub>i</sub><br />Z1<br />Z2<br />d1<br />d2 <br /></span></td>
+            <td style="vertical-align: top; width: 263px;"><span class="Parrafo">&#8594; Cota del vértice a calcular<br />&#8594; Cota del primer vértice seleccionado<br />&#8594; Cota del segundo vértice seleccionado<br />&#8594; Distancia al primer vértice seleccionado<br />&#8594; Distancia al segundo vértice seleccionado</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+El usuario ha de tener en cuenta que, según la fórmula anterior, la
+cota asignada a los vértices intermedios no tiene porqué ser
+estrictamente creciente o decreciente (por ejemplo, en líneas con
+retrocesos en abcisas).<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_simb">Cota a un símbolo</a></span><br />
+      <span class="Parrafo"><br />
+También es posible modificar la cota de un punto desde <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cota a punto</span>. Cada vez que se elija un punto el mensaje muestra sus coordenadas actuales, mientras pide la nueva cota.<br /><br />
+      <br />
+</span><a name="cota_interp"><span style="font-weight: bold; font-style: italic;">Eliminar/interpolar cota de vértice</span><br />
+      <br />
+Esta herramienta elimina vertices o interpola el valor de su cota. Se
+introduce el intervalo de cota y se marca si los vertices se quieren
+eliminar o se quiere interpolar el valor de su cota.<br />
+      <br />
+      </a><span class="Parrafo"><br /></span><span class="Titulo_2"><a name="asignacion_auto">Asignaciones automáticas de cota</a></span><br />
+
+      <span class="Parrafo"><br />En ocasiones, la cartografía de base
+no tiene cota asignada o ésta es errónea pero, sin embargo, viene
+acompañada de rótulos que indican la cota de las curvas de nivel.
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> está dotado de herramientas que aprovechan esta
+circunstancia y que se explican a continuación.<br /><br /><br />
+      </span><span style="font-weight: bold; font-style: italic;"><a name="cota_auto_curvas_nivel">Cota automática a curvas de nivel</a></span><br />
+
+      <span class="Parrafo"><br />
+Desde
+el menú <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cotas automáticas a curvas de nivel</span> se puede asignar cotas
+a las curvas de nivel automáticamente. Para ello utiliza puntos con
+cota, rótulos con texto de cota y/o puntos asociados a rótulos con
+texto de cota. Permite hasta tres datos de los anteriormente
+mencionados.<br /><br /></span><img style="width: 234px; height: 364px; float: right;" alt="" src="Imagenes/cota_curvas_auto.png" hspace="5" vspace="5" /><span class="Parrafo">El cálculo se efectúa
+de la siguiente manera: a partir de dos puntos en el dibujo con sus
+respectivas cotas, se buscan las curvas de nivel que corten al segmento
+definido por dichos puntos. Si el número de líneas encontrado es
+congruente con la diferencia de cota de los puntos y el incremento de
+cota elegido, se asignan las cotas respectivas y continúan la búsqueda
+con otros puntos.<br /><br />Presenta una ventana con los datos de
+cálculo que necesita y los tipos de puntos y/o textos de los que va a
+coger la cota para el cálculo. La <span style="font-weight: bold;">precisión</span> de cálculo limita la
+distancia máxima entre entidades (puntos, rótulos y/o etiquetas) para
+realizar la asignación de cotas (por defecto, 100 m). El <span style="font-weight: bold;">incremento</span> se
+refiere, evidentemente, al de las curvas de nivel. <span style="font-weight: bold; font-style: italic;">Actuar sobre todas</span>
+calcula y asigna cotas a todas las líneas de nivel mientras que <span style="font-weight: bold; font-style: italic;">Actuar
+sobre sin cota</span> conserva la de las líneas que la tuvieran.<br /><br />Si
+las entidades en las que se apoya para hacer el cálculo son puntos con
+cota se ha de seleccionar como <span style="font-weight: bold;">entidad punto</span>, <span style="font-weight: bold;">tipo</span> el de la librería y </span><span style="font-weight: bold;">punto asociado -1</span><span class="Parrafo">. Si son rótulos con texto de cota
+entonces la <span style="font-weight: bold;">entidad</span> será <span style="font-weight: bold;">rótulo</span>, <span style="font-weight: bold;">tipo</span> el de la librería y <span style="font-weight: bold;">punto asociado -1</span>. Si son puntos cuya cota se quiere
+tomar del texto de un rótulo cercano se seleccionará <span style="font-weight: bold;">entidad rótulo</span> (Z
+de cálculo), tipo el de la librería y <span style="font-weight: bold;">punto asociado</span> (X e Y de cálculo) el de la librería.<br /><br /><span style="font-style: italic;"><span style="font-weight: bold;">Cota por corte con recuadro de texto </span></span>:
+Basta con indicar el tipo de los textos que están sobre las polilíneas
+a las que se les quiere asignar la cota que rotula dicho texto así como
+el tipo de las polilíneas. Después de rellenar los tipos hay que clicar
+sobre el botón Aslgnar.<br />La herramienta busca los cortes del cuadro
+que rodea el texto con las polilíneas y en caso de haber corte se
+asigna la cota que rotula el texto a la polilínea. Al buscar los cortes
+del recuadro del texto puede ser que corte otras polilíneas que no
+deberían llevar esa cota, en ese caso se recomienda repasar el dibujo y
+tal vez reducir el tamaño de los textos.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="cota_auto_simb">Cota automática a símbolos</a></span><br />
+
+      <span class="Parrafo"><br />Para
+asignar cotas a símbolos automáticamente es necesario acudir a la
+opción <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cota a puntos automática</span>. Este menú
+permite asignar a puntos que no tienen cota, el valor rotulado en un
+texto próximo. Su funcionamiento es el siguiente:<br /></span>
+      
+      <ul>
+
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tipo punto S</span>:&nbsp; Tipo de punto al que se le va a asignar cota (por defecto, el S1).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Cambiar a S</span>: Una vez asignada cota se cambia el tipo a éste (por defecto, el S43).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Tipo texto R</span>: Estilo de texto que se busca con la cota (por defecto, el R0).</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold; font-style: italic;">Eliminar R usado</span>: Si se activa, se eliminan los textos que se hayan utilizado. </span></li>
+      
+      </ul>
+
+      <img style="width: 234px; height: 214px; margin-left: 7px;" alt="" src="Imagenes/cota_puntos_auto.png" align="right" /><span class="Parrafo">Para
+que el programa pueda averiguar a qué símbolos del tipo especificado
+debe asignarles cota, se utiliza un criterio de <span style="font-weight: bold;">distancia</span> entre punto y
+rótulo y una <span style="font-weight: bold;">tolerancia</span>, de tal forma que si el texto se encuentra
+fuera de estos márgenes, entonces se entiende que no corresponde con el
+símbolo que se está analizando en ese instante.<br /><br />Se necesitan, pues, el <span style="font-weight: bold;">vector de posición</span> punto-texto definido por:<br /></span>
+      
+      <ul>
+
+        <li><span class="Parrafo">Distancia entre texto y punto en abcisas, dx = XT-XP.</span></li>
+        <li><span class="Parrafo">Distancia entre texto y punto en ordenadas, dy = YT-YP.</span></li>
+      
+      </ul>
+
+      <span class="Parrafo">Y la <span style="font-weight: bold;">tolerancia</span> de búsqueda (por defecto, 0.05 ).<br /><br />El
+vector de posición puede obtenerse <span style="font-weight: bold;">gráficamente</span> seleccionando con el
+ratón un punto y su rótulo asociado (no es necesario activar ningún
+enganche en este caso).<br /><br />Para ejecutar este algoritmo con los
+criterios indicados, se pulsa sobre el botón <span style="font-weight: bold;">[Dar cotas]</span>. El programa
+busca entonces los puntos con el <span style="font-weight: bold;">Tipo punto S</span> y si encuentra un rótulo
+con el estilo <span style="font-weight: bold;">Tipo texto R</span> dentro de las tolerancias, le asigna la cota
+rotulada al punto y le cambia el tipo al <span style="font-weight: bold;">Tipo punto S</span>. Los puntos que
+no encuentren un texto próximo quedarán con su tipo y los textos no
+usados se quedarán como están.<br /><br />Una vez utilizada la opción, pueden
+modificarse las tolerancias y volver a utilizarse para tratar de
+&#8220;cazar&#8221; algunos puntos que hayan quedado excluidos con el primer
+intento.<br /><br />En ocasiones los puntos vienen representados a su
+vez por dos segmentos de línea que se cruzan; para esos casos existe también
+una opción que permite crear los puntos a partir de las intersecciones de las
+líneas: <span style="font-weight: bold;">[Crear punto en cruces de líneas]</span>, que crea un símbolo del tipo
+indicado en <span style="font-weight: bold;">Tipo punto S</span> en todas las intersecciones existentes entre
+líneas activas.<br /><br />En otras ocasiones, son los propios textos
+los que se desea convertir símbolos con cota puesto que su punto de
+inserción (X,Y) coincide con las coordenadas deseadas. La opción
+
+<span style="font-weight: bold;">[Textos a puntos con cota]</span> genera símbolos del tipo especificado en
+      <span style="font-weight: bold;">Cambiar a S</span> en los puntos de inserción de los textos de tipo el
+indicado en <span style="font-weight: bold;">Tipo texto R</span> y con la cota indicada en el propio texto. Conviene en este caso dejar marcada la opción <span style="font-weight: bold; font-style: italic;">Eliminar R usado</span> por una cuestión de claridad en el dibujo.<br /><br /><br /></span><span class="Titulo_2"><a name="etiquetado">Etiquetado de curvas de nivel y de puntos</a></span><br />
+
+      <span class="Parrafo"><br />La
+rotulación de las cotas en las cartografías es algo habitual durante la
+fase de edición. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> dispone de varias utilidades que
+agilizan este proceso de forma notable.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="etiquetado_curvas_nivel">Etiquetado de curvas de nivel</a></span><br />
+
+      <span class="Parrafo"><br /></span><img style="width: 288px; height: 207px; margin-left: 7px;" alt="" src="Imagenes/etiquetado_curvas_nivel.png" align="right" /><span class="Parrafo">Bajo
+el menú <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Etiquetado de líneas&#8230;</span> se agrupan una
+serie de opciones que permiten rotular las cotas de las curvas de nivel
+de diferentes formas.<br /><br />La rotulación puede ser o en las
+propias líneas, o en los extremos de las mismas (periferia del dibujo),
+y sólo considera las líneas de tipo L26 y L27.<br /><br />Para la
+rotulación se hace uso bien de la etiqueta de tipo <span style="font-weight: bold;">S34</span>, que oculta todo
+el segmento donde se etiqueta, o bien de tipo <span style="font-weight: bold;">S42</span>, que tapa solamente
+lo ocupado por la etiqueta. Obviamente las partes ocultas no se
+pierden, solamente se borran en la presentación.&nbsp;&nbsp;&nbsp;
+&nbsp;<br /><br />
+<br /><br /></span><img style="width: 212px; height: 272px; margin-right: 7px;" alt="" src="Imagenes/etiquetado_cotas_tapan.png" align="left" /><span class="Parrafo">Por defecto, tanto la
+etiqueta S34 como la S42 representan las cotas sin decimales. Si se desea precisar un número de decimales,
+entonces deberá modificarse esta propiedad desde el menú <span style="font-weight: bold;">Configuración</span> &#8594;
+<span style="font-weight: bold;">Definición de tipos</span> &#8594; <span style="font-weight: bold;">Definir tipo de símbolo</span>.<br /><br />Para etiquetar
+una curva de nivel, basta con seleccionar el segmento de una línea de
+tipo 26 ó 27 y pulsar sobre el botón <span style="font-weight: bold;">[Etiquetar línea]</span>.<br /><br />De
+forma análoga, para borrar el etiquetado anterior se selecciona el
+segmento y se usa la opción <span style="font-weight: bold;">[Restaurar línea]</span> o se deshace la operación. Es preciso hacerlo así, pues si se elimina directamente una etiqueta de una línea, el
+tramo donde estaba queda oculto (aunque no borrado) en el dibujo. Con
+esta opción vuelve a dibujarse esa zona borrada y la etiqueta de cota
+que hubiese en la ventana es eliminada salvo que dicha etiqueta esté en
+un extremo de la línea o en una ubicación forzada. En ese caso el
+usuario sí que debe borrar directamente la etiqueta.<br /><br />La
+opción de <span style="font-weight: bold;">[Etiquetar banda]</span> permiten un etiquetado masivo de las curvas
+de nivel. El programa solicita al usuario los extremos de una línea
+(banda) mediante el ratón y todas las curvas de nivel intersecadas por
+ella quedarán etiquetadas.<br /><br />Al etiquetar por banda y tener seleccionada la opción <span style="font-style: italic;"><span style="font-weight: bold;">Etiqueta S42 que tapa la línea</span></span>
+los símbolos se crean en el punto que corta la banda a la polilínea en
+vez de en el punto medio del segmento que corta la banda a la polilínea.<br /><br />Si se marca la casilla <span style="font-weight: bold; font-style: italic;">Sólo
+maestras</span> el programa permite el etiquetado por banda buscando solamente
+las líneas maestras (L27) y no etiquetando las líneas de nivel normales
+(L26).<br /><br />El etiquetado por banda también permite orientar las
+etiquetas ya sea según el norte del mapa (opción por defecto) o según
+la dirección de la banda. Esto permite, por ejemplo, que la orientación
+de las etiquetas se haga según el aumento de cota.<br /><br />La opción
+
+<span style="font-weight: bold;">[Restaurar banda]</span> elimina las etiquetas de aquellos segmentos
+intersecados por una banda dada por el usuario según los extremos de la
+misma.<br /><br />Por último, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite el etiquetado
+automático de las curvas de nivel por los <span style="font-weight: bold;">extremos</span>. Si se activa la
+opción <span style="font-weight: bold; font-style: italic;">Sólo maestras</span> este etiquetado únicamente afectará a las curvas de
+nivel principales (L27). Es necesario indicar una <span style="font-weight: bold;">distancia</span> (por
+defecto 3 mm) al extremo de la línea. Si la distancia es negativa, el
+etiquetado se realizará hacia dentro.<br /><br /><br /></span><span style="font-weight: bold; font-style: italic;"><a name="etiquetado_simb">Etiquetado de símbolos o puntos</a></span><br />
+
+      <span class="Parrafo"><br />En
+cuanto al etiquetado de punto, éste es posible con la opción
+      <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Etiquetado de puntos</span>, que rotula la cota en la
+parte superior derecha del punto por defecto.<br /><br />Si ya hubiera
+puntos seleccionados previamente, se etiquetan todos, de lo contrario
+el programa solicita uno por uno hasta que el usuario interrumpa la
+función al pulsar la tecla &lt;Esc&gt;. Se utiliza el símbolo S32, de
+modo que modificando su definición (<span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Definición de tipos</span>
+
+&#8594; <span style="font-weight: bold;">Definir tipo de símbolo</span>) se puede variar su presentación.<br /><br />Es
+posible modificar la posición de esta etiqueta de cota desde el menú
+      <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Notación de números en símbolos</span>.<br /><br />También
+es posible etiquetar las coordenadas de los símbolos mediante el menú
+      <a name="coords_ptos"><span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Coordenadas de puntos </span></a></span><span class="Parrafo">&#8594; <span style="font-weight: bold;">Rotular con símbolos</span></span><span class="Parrafo"><span style="font-weight: bold;">, que despliega el
+siguiente cuadro de diálogo:<br />
+      </span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;">&nbsp;</span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><img style="width: 312px; height: 166px;" alt="" src="Imagenes/rotular_coord_puntos.png" align="left" hspace="6" /></span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"> <br />
+Este cuadro permite
+marcar las coordenadas a rotular, la distancia (en X e Y) a la que se
+insertará la etiqueta de coordenada respecto al punto de inserción del
+símbolo, el giro de la etiqueta de rotulación y el tipo de etiqueta a
+utilizar (por defecto, el S32).<br /><br />Una vez indicadas las
+preferencias, se procede a la rotulación tras pulsar sobre el botón
+      <span style="font-weight: bold;">[Rotular]</span>. Esta rotulación se hará sobre un solo punto, sobre todos los
+puntos capturados por una ventana, o sobre todos los puntos del tipo
+indicado.<br /><br />
+      <br />
+      <br />
+</span></span><span class="Parrafo">Otra opción es utilizar el menú
+      <a name="coords_ptos"><span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Coordenadas de puntos</span></a></span><span class="Parrafo"><span style="font-weight: bold;"> </span></span><span class="Parrafo">&#8594; <span style="font-weight: bold;">Rotular con células</span></span><span class="Parrafo">, que despliega el
+siguiente cuadro de diálogo:</span><br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      </span></span><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><img style="width: 312px; height: 166px;" alt="" src="Imagenes/rotular_coord_celulas.png" align="left" hspace="6" /></span>En
+este cuadro podemos escoger con qué célula se va a rotular cada uno de
+los puntos que escojamos, de una de&nbsp; tres maneras, igual que en la
+herramienta anterior: un punto en concreto, todos los puntos capturados
+en una ventana o todos los que tengan el mismo tipo que el que
+escojamos.<br />
+      <br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<br />
+      </span><span class="Parrafo"><img style="width: 161px; height: 79px;" alt="" src="Imagenes/cotas_aplicar_giro.png" align="right" hspace="6" /></span><a name="coords_ptos"><span class="Parrafo">En cualquiera de los dos casos, activando la casilla <span style="font-weight: bold;">Aplicar el giro del punto</span> al generar los puntos de coordenadas éstos toman el giro tanto en rotación como en posición del símbolo al que se refieren.<br />
+      <br />
+<br /></span><span class="Titulo_2"></span></a><a name="auto_nivel_maestras"><span class="Titulo_2">Generación automática de curvas de nivel maestras</span></a><br />
+      <span class="Parrafo"><br />
+La
+opción <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594;&nbsp; <span style="font-weight: bold;">Líneas directoras</span> permite reasignar
+(o crear, si no existieran previamente) el intervalo entre cotas que
+hay entre líneas maestras.<br /><br />El programa pregunta en la línea
+de comandos por el nuevo intervalo, y después analiza las líneas de
+nivel y convierte a principales (L27) las que tienen cota múltiplo del
+número dado y a líneas de nivel intermedias (L26) el resto. <br /><br /><br /></span><span class="Titulo_2"><a name="redondeo">Redondeo de cotas de curvas de nivel</a></span><br />
+      <span class="Parrafo"><br />Dependiendo
+del sistema de restitución fotogramétrica, a veces las líneas de nivel
+no tienen cota exacta, sino una próxima a ella. Así, por ejemplo, una
+línea de nivel de cota nominal 126 m, puede tener 125,98 ó 126,01. Este
+proceso, disponible desde <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Redondear cotas de
+líneas de nivel</span>, las analiza y corrige, asignando 126 m de cota en el
+caso del ejemplo anterior.<br /><br />El programa solicita el espaciado
+nominal entre isolíneas (por ejemplo, 1 m para un mapa de escala
+1:1000) y redondea al múltiplo más próximo de la mitad del espaciado
+(para el ejemplo redondearía cotas de medio metro en medio metro).<br /><br /><br /></span><span class="Titulo_2"><a name="cuadro_coord">Generación de cuadros de coordenadas</a></span><br />
+      <span class="Parrafo"><br />La
+opción <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Cotas</span> &#8594; <span style="font-weight: bold;">Cuadro NXYZ&#8230;</span> permite crear una tabla con
+una serie de coordenadas que el usuario va indicando interactivamente.
+Este cuadro puede estar construido de un modo <span style="font-weight: bold;">Clásico</span> o con <span style="font-weight: bold;">Células</span>,
+según se detalla a continuación.<br /><br /></span><img style="width: 345px; height: 234px; margin-left: 7px;" alt="" src="Imagenes/cuadro_coord.png" align="right" /><span class="Parrafo">El cuadro de diálogo
+clásico controla el <span style="font-weight: bold;">estilo de texto</span> a emplear y su <span style="font-weight: bold;">tamaño</span>, el <span style="font-weight: bold;">tipo de
+línea</span> para el recuadro y el <span style="font-weight: bold;">tipo de símbolo</span> para marcar el número de
+punto en el dibujo e identificarlo en el cuadro. También se debe
+indicar un <span style="font-weight: bold;">modelo</span> al que irá a parar esta tabla (por defecto, el 999). De manera adicional, es posible generar simultáneamente un listado&nbsp;<span class="Archivo">nxyz.res</span> y un fichero&nbsp;<span class="Archivo">nxyz.top</span> con los puntos.<br /></span><span class="Parrafo"><br />Una
+vez indicadas todas estas preferencias, se pulsa sobre el botón
+      <span style="font-weight: bold;">[Generar]</span>
+y a continuación se indica en el dibujo el punto de inserción
+de la tabla. En ese momento ya se dibuja la cabecera del cuadro y es
+posible comenzar a dar puntos (normalmente, convendrá tener activado un
+modo de enganche). Los puntos se pueden elegir uno a uno o bien
+seleccionarlos por ventana si se marca la opción adecuada en el cuadro
+de diálogo.<br /><br />Con
+la opción <span style="font-weight: bold;">[Añadir]</span> se puede retomar el cuadro en cualquier momento
+(también se añaden los datos al listado y al fichero de puntos si diera
+lugar).<br /><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 432px; height: 246px;" alt="" src="Imagenes/ejemplo_cuadro_coord.png" /></span><br />
+      </div>
+      <span class="Parrafo"><br />El programa también ofrece la posibilidad de cargar
+ficheros ASCII con el formato de cuatro columnas n X Y Z (número de
+punto y coordenadas) para la generación del cuadro de coordenadas.
+Basta con pulsar el botón <span style="font-weight: bold;">[Desde fichero&#8230;]</span>, seleccionar el archivo (de
+cualquier extensión) con el formato mencionado y hacer clic sobre un
+punto de la pantalla gráfica para situar el cuadro. A partir de ahí se
+van posicionando los puntos que alberga el fichero y el cuadro de
+coordenadas queda completado.<br /><br />Si se está trabajando en
+coordenadas geográficas, el cuadro y el listado presentan la
+información de los puntos en longitud, latitud y altitud.<br /><br /></span><img style="width: 323px; height: 219px;" alt="" src="Imagenes/cuadro_coord_celulas.png" align="right" hspace="6" /><span class="Parrafo">Si
+se realiza el cuadro mediante el uso de células se mejora de forma
+notable la funcionalidad del mismo, pues hace uso de células avanzadas
+que permiten una actualización inmediata de su contenido (referido a
+cada punto) y que ofrecen al usuario la posibilidad de incluir un
+prefijo y un origen de numeración.<br /><br />Así, al usar esta
+función, se puede obtener de manera rápida y sencilla un cuadro resumen
+con puntos A1, A2, A3,... ó W100, W101, W102, etc. quedando además esta
+numeración enlazada espacialmente con los puntos asociados, es decir,
+su modificación interactiva es actualizada inmediatamente en el
+cuadro.<br />
+      <br />
+Las opciones referente a células son similares a las de la generación clásica aunque se observan algunas diferencias como:<br />
+</span></span>
+      <ul>
+        <li><span style="font-weight: bold;">Borrar cuadro</span>: Borra todo el cuadro seleccionado</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Insertar</span>: Tras pedir la casilla donde queremos que inserte, va insertando nuevos puntos según hacemos "clic" en pantalla.<br />
+        </li>
+      </ul>
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo">
+      
+      <br />
+      </span><span class="Titulo_2"><a name="color_cota">Color por cota</a></span><br />
+      <span class="Parrafo"><br />
+      Esta opción permite representar las curvas de nivel con diferentes colores según su cota:<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 504px; height: 289px;" alt="" src="Imagenes/cotas_color_por_cota.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br />
+Además aquellas curvas de nivel que estén <a href="EDM_cotas.html#etiquetado_curvas_nivel">acotadas</a>
+con los símbolos S34, S42 podrán modificar su tipo de símbolo en
+función del intervalo que definamos. Por defecto el programa te ofrece
+los símbolos que van del S270 al S274 con diferentes coloridos.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><img style="width: 315px; height: 256px;" alt="" src="Imagenes/color_por_cot_sim.png" /></span></span><br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"></span></span></div>
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      </span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: top; width: 635px; text-align: justify;"><span class="Parrafo"><span class="Info">Si
+se desea exportar el dibujo a otro formato (como DWG/DXF), debe
+indicarse en las opciones de exportación que las entidades conserven el
+color propio.</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <a name="cotas_g_e"><span class="Titulo_2">Cotas de Google Earth</span><br />
+      <br />
+Mediante este comando podremos dar cotas a líneas, símbolos y textos
+mediante las cotas que tenga la zona designada en Google Earth.<br />
+      <br />
+</a></span></span>
+<a name="cotas_g_e">      </a><div style="text-align: center;"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><a name="cotas_g_e"><img style="width: 271px; height: 223px;" alt="" src="Imagenes/dialogo_cotas_GE.png" /></a></span></span><a name="cotas_g_e"><br />
+      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"></span></span></a></div>
+<a name="cotas_g_e">      <span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+Mediante las casillas <span style="font-weight: bold;">Líneas a cota</span>, <span style="font-weight: bold;">Textos a cota</span> y <span style="font-weight: bold;">Símbolos a cota</span>
+siempre que estén activadas cuando cliquemos en la casilla Ejecutar el
+programa dará las cotas de Google Earth a estas entidades.<br />
+Si activamos la casilla <span style="font-weight: bold;">Atributos a cota</span> en aquellos símbolos con </span></span></a><a href="EDM_dibujo_entidades.html#simbolos">atributo</a> también tomará la cota dicho atributo.<br />
+      <br />
+Podremos realizar la selelección de entidades mediante el conjunto de todos los elementos que haya cargados en ese momento (<span style="font-weight: bold;">Todo</span>) o mediante la selección de entidades (<span style="font-weight: bold;">Selección</span>).<br />
+      <br />
+Si está activada la casilla <span style="font-weight: bold;">Sólo con cota 0</span> sólo obtendrán cota de Google Earth aquellas entidades que tengan cota cero.<br />
+      <br />
+Google tiene un límite de 2500 solicitudes al día. En cada solicitud,
+puedes consultar un máximo de 512 ubicaciones, pero no puedes superar
+el límite de 25.000 ubicaciones totales al día.<br />
+      <br />
+Google Earth trabaja con el <a href="EDM_georreferenciacion.html#crs">sistema de referencia</a>
+WGS84 por lo que tendremos que tener correctamente definido nuestro CRS
+origen para que pueda detectar correctamente las cotas de las entidades
+seleccionadas.<br />
+<br />
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

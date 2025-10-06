@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Volumen por perfiles</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>VOLUMEN POR PERFILES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      Uno
+de los métodos de cubicación más tradicionales que
+existen es la cubicación por perfiles. Para hacer uso de esta opción
+desde MODELADO DE SUPERFICIES, debe de existir previamente un EDM en
+donde al menos haya definidas dos <a href="EDM_control_entidades.html#control_superficies">superficies</a> y un contorno (línea cerrada).<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 639px; height: 184px;" alt="" src="Imagenes/dialogo_ismos_vol_perfiles.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"></span></span><br />
+<ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Superficies</span> superior e inferior con las que se va a trabajar.</span></span></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Fichero para perfiles</span>:
+El fichero para guardar los perfiles por defecto se llama cubiper.per.
+Se puede cambiar este fichero desde el cuadro de diálogo.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Espesor vegetal</span>: Permite definir un espesor de cubierta vegetal. Aparecerá entonces una medición de desbroce.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Contorno/s</span>
+cerrados dentro de lo/s cual/es se va a cubicar. Existen dos posibilidades a la hora de declarar los contornos:</span></span></li></ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Línea</span>: En este caso
+el contorno de cubicación es único y se corresponderá con la línea
+cerrada que gráficamente seleccione el usuario.</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Tipo</span>:
+Tras
+seleccionar gráficamente una línea, se asumirán como contornos de
+cubicación todas aquellas líneas cerradas que sean del mismo tipo. De
+este modo la superficie segunda puede estar en varios recintos
+independientes, lo que permite efectuar una <span style="font-weight: bold;">cubicación multicontorno</span>. <br />
+        </li>
+      </ul>
+      </div>
+      <div style="margin-left: 40px;"><span class="Parrafo"><span class="Parrafo">No existe ninguna restricción
+en cuanto a las concavidades o convexidades de los contornos. Si una
+línea de contorno NO pertenece, a ninguna de las dos superficies, se
+crea una copia de ella pero con la cota deducida de la superficie
+segunda y es la que realmente se utiliza como línea de contorno. Esto permite
+realizar una cubicación más precisa cuando la línea de un contorno pasa
+justo por el contorno envolvente de las líneas que definen la segunda
+superficie.</span></span></div>
+      <ul>
+
+      
+      </ul>
+
+      <ul>
+        </ul>
+      <div style="margin-left: 40px;">Cuando el contorno no pertenece a la superficie final, existen dos opciones para considerar esta superficie:<br />
+      <ol>
+        <li>La superficie final <span style="font-weight: bold;">existe para cualquier punto dentro del recinto</span>, extrapolando la cota hasta el borde del recinto si es necesario.</li>
+        <li>La superficie final <span style="font-weight: bold;">tiene borde propio</span>:<span style="font-weight: bold;"> Empieza/ Acaba en el primer/último punto cortado dentro del recinto</span>. No tiene porqué llegar hasta la línea de contorno.</li>
+      </ol>
+      <div style="text-align: center;"><img style="width: 388px; height: 361px;" alt="" src="Imagenes/vol_perf_recintos.png" /><br />
+      </div>
+      <br />
+Este caso en el que contorno no pertenece a la superficie final se
+puede apreciar en algún ejemplo en el que el eje fictício corte a dos
+recintos como en el de la figura superior utilizando las opciones
+descritas anteriormente.<br />
+      <br />
+      </div>
+      <div style="text-align: center;"><img style="width: 600px; height: 37px;" alt="" src="Imagenes/volumen_perfil_sup_final.png" /><br />
+      </div>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Equidistancia</span> de los perfiles transversales.</span></span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Cotas</span> máximas y
+mínimas entre las que se cubicará. Este dato posibilita la realización
+de curvas de llenado al realizar sucesivas cubicaciones de un mismo
+cuerpo variando las cotas límite de cubicación.</span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Semiancho de banda</span> para los perfiles transversales.</span></span></li></ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Eje de perfiles</span>, que también puede darse de dos maneras distintas:</span></span></li>
+
+      
+      </ul>
+</span></span></span></span>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Introduciendo los <span style="font-weight: bold;">dos puntos</span> extremos de una línea recta que actuará de eje para la obtención de los perfiles.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <ul style="margin-left: 40px; list-style-type: circle;">
+        <li><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Seleccionando una <span style="font-weight: bold;">línea</span> cualquiera de la cartografía.</span></span></span></span></span></span></span></span></li>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><ul>
+        
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 637px; height: 242px;" alt="" src="Imagenes/diagrama_vol_perfiles.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">Una vez introducidos estos datos y tras pulsar el botón <span style="font-weight: bold;">[Generar medición]</span></span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"> programa calcula los perfiles que
+son trazados sobre planos verticales equidistantes y perpendiculares al eje de perfiles o línea
+maestra</span></span></span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">. El siguiente esquema
+esquematiza el concepto de cubicación por perfiles según una línea
+maestra:<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 519px; height: 251px;" alt="" src="Imagenes/concepto_vol_perfiles.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br /><img style="width: 314px; height: 248px;" alt="" src="Imagenes/vol_perf_pks.png" align="right" hspace="4" />En la generación de los perfiles podemos rotular los <span style="font-weight: bold;">Pks</span> de nuestro eje activando la casilla PK con el símbolo 505 por defecto.<br />
+      <br />
+Mediante la casilla <span style="font-weight: bold;">Pk Inicial</span> podremos establecer el valor dado al primer perfil de nuestro eje.<br />
+<br />
+Durante
+el cálculo se muestra gráficamente cómo se van levantando los perfiles
+transversales. Para cada uno de ellos el programa determina los
+perfiles sobre las dos superficies involucradas en el cálculo en el
+tramo de ellas contenido en el interior del recinto. Se calculan las
+áreas parciales de desmonte y terraplén y el volumen acumulado; éstos
+son presentados en pantalla de forma que el usuario pueda ver cómo va
+progresando la cubicación a lo largo del eje de perfiles. Estos valores
+de áreas y volúmenes son almacenados conjuntamente con los perfiles que
+les han dado lugar, en el archivo&nbsp;<span class="Archivo">.per</span> definido por el usuario. Este archivo es susceptible de ser tratado por el <a href="EDM_editor_perfiles.html">editor de perfiles</a>
+para ser modificado, recubicado o representado gráficamente, empleando
+todas las herramientas gráficas del módulo de cartografía.<br />
+      <br />
+El fichero&nbsp;<span class="Archivo">.per</span> guardado puede editarse de una manera automática clicando en la casilla <img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarEstandar_editPerf.png" />.<br />
+      <br />
+Simultáneamente, el módulo de movimiento de tierras genera líneas 3D
+sobre ambas superficies siguiendo la traza en planta de cada uno de los
+perfiles de cubicación. El tipo de línea que se asigna a las secciones
+3D es el primer tipo de cada superficie. Estas líneas pueden eliminarse
+empleando pulsando el botón <span style="font-weight: bold;">[Deshacer]</span>.<br />
+      <br />
+Por último, el programa muestra en el área de mensajes el resultado final
+concretado en los volúmenes totales de desmonte y terraplén para el
+cuerpo delimitado por las dos superficies y el contorno y genera el listado&nbsp;<span class="Archivo">cubica.res</span> con las mediciones de áreas,
+volúmenes parciales y volúmenes acumulados, accesible directamente al
+pulsar sobre el botón <span style="font-weight: bold;">[Listado cubica.res]</span>.<br />
+      <br />
+Al salir del cuadro de diálogo no se pierde la configuración de este menú.<br />
+      <br />
+      </span></span>
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_info.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; text-align: justify;">El módulo de MODELADO DE SUPERFICIES cuenta con herramientas de cubicación más avanzadas, como
+la <a href="MS_vol_prisma.html">cubicación por prismas</a>, <a href="MS_vol_parcelas.html">volumen por parcelas</a>, <a href="MS_vol_ttp.html">cubicación entre triangulaciones</a>,
+etc., que usan métodos mucho más precisos y pueden usarse, por ejemplo,
+como mediciones de contraste respecto a la medición por perfiles
+tradicional.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

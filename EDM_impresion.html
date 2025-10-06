@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Impresión</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>IMPRESIÓN Y PUBLICACIÓN DE PLANOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#formato_planos">Formato de planos</a><br />
+      <a href="#modos">Modos de impresión</a>
+      <br />
+      <a href="#paginado">Declaración del paginado</a><br />
+      <a href="#procesado">Procesado de la impresión</a><br />
+      <a href="#opciones">Opciones de impresión</a><br />
+      </div>
+
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+<br />
+      Todos los elementos implicados en la impresión de planos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+tratan de agruparse en el menú de IMPRESIÓN, proporcionando una
+solución rápida y cómoda que abarca todas las fases del proceso.<br />
+      <br />
+Dentro de este menú, al que se accede desde <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Imprimir&#8230;</span> o pulsando el icono&nbsp;<img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_impresion.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> estándar, se pueden distinguir, en forma de un cuadro de diálogo por pestañas, los tres pasos a seguir para poder imprimir:<br />
+
+      <ol>
+<li>Selección del <a href="#modos">modo</a> o perfil de impresión.<br />
+  </li><li>Carga o creación del <a href="#paginado">paginado</a>.<br />
+  </li><li><a href="#procesado">Procesado</a> o ejecución de la impresión. <br />
+  </li>
+      </ol>
+
+a los que se accede pulsando en las diferentes pestañas de este cuadro
+de diálogo. Además, en la pestaña <span style="font-weight: bold;">[Opciones]</span>, se puede acceder a otras utilidades generales de impresión.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 526px; height: 217px;" alt="" src="Imagenes/dialogo_impresion.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="formato_planos">Formato de planos</a></span><br />
+      <br />
+El plano puede obtenerse dibujado en impresora o trazador en su escala
+y, siempre que se desee, con un recuadro exterior que lleva la
+rotulación incluida. Este recuadro o cajetín está definido por los
+símbolos de punto aislado S100* a S105*, representando * un conjunto de
+caracteres y siendo los S100* para los formatos A0, S101* para los
+A1,... y los S105* para los A5 y otros de tamaño no normalizado.<br />
+      <br />
+Los símbolos S100* a S105* podrían colocarse en el mapa igual que
+cualquier otro símbolo. Forman entonces parte del dibujo y se guardan
+con el mapa en los ficheros&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span>.
+Sin embargo, cuando se usan desde el menú de IMPRESIÓN, actúan de modo
+distinto, ya que se diferencian del resto de los de la librería en dos
+cosas:<br />
+      <ul>
+        <li>Contienen la declaración de las dimensiones del papel y del
+área dibujable de un plano, área no ocupada por el cajetín de
+rotulación y recuadro propiamente dicho.</li>
+      </ul>
+      <ul>
+        <li>Pueden incluir textos de contenido variable.</li>
+      </ul>
+Los formatos se eligen en el momento de su uso entre todos los que
+estén declarados en la librería de trabajo y que tengan un nombre
+reconocible como tal. En el menú de impresión se permite decidir qué
+recuadro se va a utilizar y colocarlo sobre el mapa para la obtención
+inmediata de ficheros de comandos de impresión para ser interpretados
+por el trazador.<br />
+      <br />
+En el caso en que sobre un mapa en pantalla se pone un recuadro y se lanza un proceso de impresión, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+cortará el mapa por los bordes de la hoja y lanzará solamente la parte
+de dibujo contenida dentro, tal y como se ve en pantalla, rodeada del
+dibujo del recuadro. Si parte del mapa se superpone a la rotulación del
+cajetín, así se obtendrá, de modo que sólo un mapa de dimensiones
+menores que las del recuadro será dibujado adecuadamente.<br />
+      <br />
+Si lo que se desea es obtener en trazador varias hojas o planos, en
+caso de que un mapa sea de mayor tamaño que una hoja, es posible
+recurrir a un menú de edición de paginados.<br />
+      <br />
+Para que un plano resulte a escala, debe estar incluido en un formato o
+recuadro que declare sus dimensiones en milímetros de papel. No
+obstante, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+también permite obtener planos en escala libre de la parte del mapa que está actualmente en pantalla.<br />
+      <br />
+<br /><span class="Titulo_2"><a name="modos">Modos de impresión</a></span><br /><br />
+Un <span style="font-weight: bold;">modo o perfil de impresión</span> de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+es un conjunto de parámetros destinados a configurar un posible proceso
+de impresión, y su definición se efectúa a través de la pestaña <span style="font-weight: bold;">[Modo]</span> del diálogo del menú IMPRESIÓN. Los parámetros involucrados en un modo de impresión son los que se detallan a continuación:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 526px; height: 217px;" alt="" src="Imagenes/dialogo_impresion.png" /><br />
+      </div>
+      <br />
+Desde el desplegable <span style="font-weight: bold;">Selección</span> se elige el <span style="font-weight: bold;">modo de impresión</span>
+a utilizar (que lleva asociado un nombre) y, tras ello, se rellena todo
+el cuadro de diálogo con las preferencias asociadas a ese modo. Si no
+existiera ningún modo de impresión, entonces es posible crear uno
+pulsando el botón <span style="font-weight: bold;">[Nuevo]</span> y, tras seleccionar las preferencias adecuadas, pulsar sobre <span style="font-weight: bold;">[Guardar]</span> para que el nuevo modo esté disponible en futuras sesiones de trabajo. También se puede <span style="font-weight: bold;">[Exportar]</span> e <span style="font-weight: bold;">[Importar]</span> el modo de impresión para utilizarse en otros proyectos o por otros usuarios.<br />
+      <br />
+Si se desea establecer el modo de impresión actual como el modo predeterminado, entonces se pulsa sobre el botón <span style="font-weight: bold;">[Predet.]</span>.
+Así, cuando se acceda al menú de impresión por primera vez en cada
+sesión de trabajo, se cargará el modo de impresión predeterminado,
+aunque en posteriores accesos al menú dentro de una misma sesión se
+cargará el último modo utilizado.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Borrar]</span> elimina el
+modo de impresión actual. Si es un modo que ya había sido guardado, se
+eliminará de la librería, mientras que si es un modo que se está
+configurando tras pulsar el botón <span style="font-weight: bold;">[Nuevo]</span>, simplemente se cancelará la acción. Cuando se borra un modo de impresión, se carga el modo predeterminado.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 39px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 633px; text-align: justify;">Entre los modos de impresión definidos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>  siempre se podrá seleccionar el modo especial <span style="font-style: italic;">Ninguno</span>.
+Con este modo no se carga ningún formato y se puede usar para obtener
+planos con la parte del mapa que se encuentre en pantalla en ese
+momento.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <img style="width: 105px; height: 225px; margin-left: 7px;" alt="" src="Imagenes/lenguajes_impresion.png" align="right" />Desde el desplegable <span style="font-weight: bold;">LENGUAJE</span>
+se puede seleccionar el lenguaje en el que se realizará la impresión de
+los planos. La impresión podrá ser tando directamente a papel como a
+formato digital. Los lenguajes disponibles más comunes son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">PDF</span>: Genera ficheros en este formato. Estos archivos son compactos,
+multiplataforma y pueden visualizarse o imprimirse. Es un formato útil
+para la distribución electrónica de documentos.</li>
+      </ul>
+      <div style="margin-left: 40px;">El fichero&nbsp;<span class="Archivo">.pdf</span>
+generado contendrá también las imágenes en lenguaje PDF incluso cuando
+cada página se componga de varias subpáginas o se trate de imágenes o
+símbolos que contengan imágenes con transparencia. Al imprimir en este
+formato, el programa da la posibilidad de imprimir todas las página en
+un único archivo o por separado, y también la opción de proteger con
+una clave la apertura del mismo.<br />
+      <br />
+Este lenguaje también contempla la
+posibilidad de que exista <a href="EDM_visualizacion.html#atenuacion">atenuación por modelos</a> de igual forma que se
+puede aplicar en pantalla.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">DWG/DXF</span>: El trazado de planos se puede generar también con formato
+DWG/DXF de manera que cada plano pueda ser cargado para su edición en
+otro programa CAD que sea capaz de abrirlo. Cada página lleva solamente
+los datos gráficos recortados y con el contorno de recuadro que le
+corresponde (cajetín). Al generar los planos se abre el cuadro de
+diálogo para la <a href="EDM_exportar_dwg_dxf.html">exportación a DWG/DXF</a>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Windows</span>: Es válido para cualquier impresora o trazador controlado directamente
+desde Windows a través del driver o controlador instalado. Es importante que el
+driver esté correctamente instalado y sea el apropiado para la
+impresora. Si se selecciona este lenguaje, también se imprimirán las
+imágenes asociadas.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">PostScript</span>: Se usa para generar ficheros en este lenguaje de
+descripción de páginas. Este lenguaje tiene en cuenta las imágenes
+asociadas al dibujo.</li>
+      </ul>
+      <br />
+El resto de lenguajes se corresponden con antiguos trazadores:<br />
+      <ul>
+        <li><span style="font-weight: bold;">HP-GL (serie)</span>: Para trazadores que entienden el lenguaje HP-GL y van a recibir el fichero de trazado (<span class="Archivo">.plt</span>) por un puerto serie.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HP-GL (paralelo)</span>: Para trazadores que entienden el lenguaje HP-GL y la transmisión NO va a ser a través del puerto serie.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HP-GL/2</span>: Para trazadores que entienden el lenguaje HP-GL/2. La paleta de plumas va aparte.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">SGL</span>: Lenguaje ráster (ver CONFIG SGL).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">OCE-G9800</span>: Lenguaje para el trazador de mismo nombre.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 mono</span>: Lenguaje HPGL/2 emulado por impresoras que sólo tienen memoria para una pluma.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2+pal</span>: Lenguaje HPGL/2 que incluye la paleta de plumas en el propio archivo&nbsp;<span class="Archivo">.plt</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 impresora</span>: Se
+incluye esta opción para las impresoras que admiten HPGL/2 como
+lenguaje alternativo. Es equivalente a HPGL2+pal pero con la
+particularidad de que añade al fichero&nbsp;<span class="Archivo">.plt</span>
+una cabecera y un final que son necesarios para indicarle a la
+impresora que cambie del lenguaje nativo a HPGL/2 y viceversa,
+respectivamente. Esta información debe encontrarse en dos ficheros que
+deben estar guardados en una carpeta de la librería deISTRAM <sup>®</sup>/ISPOL<sup>®</sup>   y cuyos nombres se especificarán en los campos <span style="font-weight: bold;">Inicio</span> y <span style="font-weight: bold;">Fin</span>
+que aparecen en la parte derecha del cuadro de diálogo cuando se
+selecciona este lenguaje. Como ejemplo, en la librería estándar se
+incluyen los ficheros&nbsp;<span class="Archivo">cabplt</span> y&nbsp;<span class="Archivo">finplt</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL mono</span>: Es como
+el HP-GL (paralelo), pero, en lugar de utilizar una paleta de colores,
+utiliza siempre la pluma 1 y le va asignando el color y el grosor
+requeridos antes de utilizarla.</li>
+      </ul>
+      <br />
+De forma adicional, para el lenguaje HPGL/2 se pueden establecer las siguientes opciones en este menú:<br />
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 a 0º</span>: El
+programa rotula la instrucción &#8220;RO;&#8221; si el recuadro o cajetín es
+horizontal (dimensión horizontal mayor que la dimensión vertical). En
+cambio, rotulará la instrucción &#8220;RO90;&#8221; si el recuadro es vertical
+(dimensión horizontal menor que la dimensión vertical). El propósito es
+que el plano se imprima orientado de tal forma que no quede cortado por
+sobrepasar los límites del papel.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 a 90º</span>: Se cruzan las dimensiones horizontal y vertical para que el plano se imprima rotado 90 grados respecto a la opción anterior.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Giro por HW</span>: El programa no anota el comando &#8220;RO;&#8221; ni cruza las dimensiones en ningún caso (modo primitivo de dibujo).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">HPGL2 con PG / HPGL2 sin PG</span>: Para incluir o no la orden de salto de página &#8220;PG&#8221; en los ficheros de comandos HPGL/2.</li>
+      </ul>
+      <br />
+Desde <span style="font-weight: bold;">FORMATO</span> se indica el tipo
+de cajetín o recuadro que se utilizará para el modo de impresión
+actual, permitiendo elegir cualquiera de los almacenados en las
+librerías.<br />
+      <br />
+La <span style="font-weight: bold;">REDUCCIÓN</span> permite obtener
+los ficheros de trazado en un tamaño distinto al del formato
+especificado previamente. Por ejemplo, si se usa un cajetín de tamaño
+A1, los ficheros de trazado pueden generarse en A1 directamente o bien
+en tamaños distintos haciendo uso de esta opción (por ejemplo, se
+provocaría una reducción de sus dimensiones al 50% si se indica una
+reducción a A3). Las opciones ofrecidas en este desplegable son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Formato A0/A1/A2/A3/A4</span>: Amplía o reduce al tamaño especificado.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ninguna</span>: No se realiza transformación alguna respecto al formato del cajetín.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Coeficiente</span>:
+permite introducir un coeficiente de escala sobre el tamaño actual.
+Esto permite obtener planos de cualquier formato (aunque no sea un
+A0,&#8230;, A4) a cualquier escala.</li>
+      </ul>
+Para los formatos especiales S105* sólo es posible aplicar las opciones <span style="font-style: italic;">Ninguna</span> o <span style="font-style: italic;">Coeficiente</span>.<br />
+      <br />
+La opción <span style="font-weight: bold;">Color</span>/<span style="font-weight: bold;">Pluma</span>
+permite especificar el conjunto de colores con los que se van a generar
+los ficheros de trazado. Al seleccionar una de las dos alternativas, el
+dibujo se visualizará en pantalla con los mismos colores con los que se
+va a imprimir. Esta opción está directamente relacionada con los <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modos de visualización pantalla/papel</a>.<br />
+      <br />
+Los <span style="font-weight: bold;">MÁRGENES</span> posibilitan
+utilizar formatos generados para trazadores que pueden dibujar hasta el
+borde del papel en impresoras de hojas sueltas que no son capaces de
+llegar dibujando hasta el borde. Permiten definir las distancias, en
+milímetros, al borde físico de la hoja en los que puede dibujar la
+impresora, referidos al Norte, Sur, Oeste y Este del formato.<br />
+      <br />
+Finalmente, será necesario especificar la <span style="font-weight: bold;">CALIDAD DE IMÁGENES</span> a la hora de imprimirlas en ppp (puntos por pulgada). Esta funcionalidad permite obtener ficheros&nbsp;<span class="Archivo">.pdf</span>
+de un tamaño bajo en las etapas iniciales del proyecto, con todas las
+ventajas que conlleva: archivo de menor tamaño y envíos por correo
+electrónico más rápidos, además de una velocidad de apertura
+mayor.&nbsp; <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="paginado">Declaración del paginado</a></span><br />
+      <br />
+Desde la pestaña de <a href="#modos">modos de impresión</a> se permite cargar un formato y encuadrar una sola hoja cada vez. A través de la pestaña <span style="font-weight: bold;">[Paginado]</span>
+será posible obtener varias hojas o páginas. Esta pestaña se mantendrá
+deshabilitada mientras no se haya seleccionado un modo de impresión
+distinto de &#8220;Ninguno&#8221;, ya que de lo contrario no se tendrá un formato
+cargado. Aquí se puede crear una plantilla de paginado, es decir, un
+fichero (<span class="Archivo">.pag</span>) que contiene la
+distribución y posición de un conjunto completo de páginas (planos)
+para lanzar a ficheros de trazado en una sola operación.<br />
+      <br />
+Cada uno de los planos puede estar compuesto a su vez por una serie de <span style="font-weight: bold;">subpáginas</span>
+extraídas de diferentes zonas de la pantalla (por ejemplo, un perfil
+longitudinal y la planta correspondiente). Hacerlo mediante subpáginas
+evita tener que copiar tramos de la planta sobre el longitudinal.<br />
+      <br />
+Un fichero&nbsp;<span class="Archivo">.pag</span> de paginado contiene las definiciones de:<br />
+      <ul>
+        <li>El formato (tamaño de papel y cajetín) que se va a utilizar del conjunto S100*, ..., S105* de las librerías.</li>
+      </ul>
+      <ul>
+        <li>Las coordenadas de ubicación, dimensiones y ángulo de giro de cada página que declara.</li>
+      </ul>
+      <ul>
+        <li>Las coordenadas de ubicación, dimensiones y ángulo de giro
+de cada una de las subpáginas en las que se puede descomponer cada
+página.</li>
+      </ul>
+      <ul>
+        <li>El contenido en cada página de los textos variables que haya en el formato.</li>
+      </ul>
+      <ul>
+        <li>Otros parámetros de dibujo (modos de dibujo) asociados a páginas o subpáginas.</li>
+      </ul>
+Toda esta estructura puede crearse interactivamente desde este menú.
+También puede cargarse para modificar un paginado de los generados
+automáticamente por alguna de los módulos de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>  (el módulo de OBRA LINEAL, por ejemplo, crea paginados de <a href="OL_planos_longitudinales.html">planos perfiles longitudinales</a> y <a href="OL_planos_transversales.html">planos de perfiles transversales</a>).<br />
+      <br />
+Las páginas se recortarán en el momento de impresión del paginado para
+generar ficheros para trazador, uno por cada página. Cada página o
+subpágina son siempre trozos de cartografía de forma rectangular. ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+genera cada plano con el recuadro dibujado al final. Esto permite que
+en el recuadro haya rectángulos rellenos que "tapan" un trozo del área
+en que se incluirá el mapa. En esas zonas tapadas pueden ubicarse
+leyendas, mapas de resumen, etc. Estas posibilidades de tapar un trozo
+del mapa con un relleno en el símbolo del recuadro no tiene efecto en
+trazadores antiguos de plumillas.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Opciones de páginas</span><br />
+      <br />
+Desde esta pestaña se controlan todas las opciones relativas a la gestión del paginado de planos:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 210px;" alt="" src="Imagenes/dialogo_impresion_paginado.png" /><br />
+      </div>
+      <br />
+Si se desea usar un fichero de paginado&nbsp;<span class="Archivo">.pag</span> creado automáticamente, entonces basta con pulsar sobre el botón <span style="font-weight: bold;">[Abrir]</span>&nbsp;
+y seleccionar el archivo. Se recuerda que un fichero de paginado
+también contempla las subpáginas con todos sus atributos.<br />
+      <br />
+Si se dispone de un un fichero&nbsp;<span class="Archivo">.edm</span> con rectángulos cerrados a modo de páginas, entonces es posible cargarlo directamente como fichero de paginado con la opción <span style="font-weight: bold;">[EDM]</span>.<br />
+      <br />
+La opción de <span style="font-weight: bold;">Editar</span> un fichero
+de paginado, nos permitirá modificar fácilmente los datos de las
+páginas (posición, azimut, ...), añadir o eliminar páginas, así como
+guardar dichos cambios en el fichero de paginado.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 297px;" alt="" src="Imagenes/edm_impresion_editar_pag.png" /><br />
+      </div>
+
+      <br />
+La opciones anteriores sustituyen el paginado en edición por el que se
+va a cargar. Si lo que se desea es insertar al final del paginado,
+entonces habrá que usar la opción <span style="font-weight: bold;">[Añadir]</span>.<br />
+      <br />
+La opción <span style="font-weight: bold;">[Guardar]</span>&nbsp; crea archivos&nbsp;<span class="Archivo">.pag</span> a partir del paginado que se esté editando.<br />
+      <br />
+      <br />
+OPCIONES DE PAGINADO<br />
+      <br />
+      En cuanto a la gestión de páginas, se dispone de las siguientes opciones:<br />
+      <br />
+<ul>
+        <li><span style="font-weight: bold;">Iniciar</span>: Borra todas las páginas en edición.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Añadir</span>: Permite al
+usuario crear páginas manualmente para añadirlas al final del paginado.
+Esta operación finaliza pulsando la tecla &lt;Esc&gt;, el botón derecho
+del ratón o pulsando sobre otra opción.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Insertar</span>: Permite crear una página manualmente en la posición inmediatamente anterior a la página actual.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Borrar</span>: Elimina la página actual.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Mover y girar</span>:
+Estas opciones trabajan gráficamente, y permiten efectuar
+desplazamientos y giros de una página (las subpáginas se pueden mover y
+girar de forma independiente). El valor del giro puede introducirse por
+teclado en grados sexagesimales.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dimensionar</span>:
+Preselecciona el tamaño del área dibujable (ancho y alto) de las
+páginas que se van a añadir a continuación de las ya creadas. La
+primera vez que se añaden páginas se toman las dimensiones
+automáticamente.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Volcar</span>: Inserta
+sobre el dibujo el contorno de las páginas y, si una página tiene
+subpáginas, no vuelca el contorno de la página y sí el de las
+subpáginas. Los genera como polilíneas editables, lo que permite la
+ejecución de planos guía de paginado, o la ejecución de la opciones de <a href="EDM_recintos.html">recintos</a> con los polígonos generados, que serán los de recorte de hojas de paginación.</li>
+      </ul>
+      <div style="margin-left: 40px;">Esta opción también permite
+rotular en cada página/subpágina la numeración de las mismas,
+utilizando el tipo de texto definido en las <a href="EDM_impresion.html#opciones">opciones de impresión</a><span style="font-weight: bold;">.<br />
+      </span></div>
+      <ul>
+        <li><span style="font-weight: bold;">Sub-&gt;&gt;</span>: Copia la definición de subpáginas de la página actual a todas las siguientes.</li>
+      </ul>
+      <ul>
+        <li><img style="width: 92px; height: 84px; margin-left: 7px;" alt="" src="Imagenes/toolbar_paginas.png" align="right" /><span style="font-weight: bold;">Navegar</span>: Con este botón se permite ir navegando siguiendo las páginas y subpáginas cargadas. Para hacer esta navegación, se muestra la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de páginas.&nbsp;&nbsp;&nbsp;&nbsp; <br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Previsualizar página</span>:
+Permite realizar un visualización previa de la página actual en la que
+estás situado que te mostrará como quedará dicha página a la hora de
+imprimir.<br />
+        </li>
+      </ul>
+
+      <br />
+En cuanto a las opciones de subpaginado:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Iniciar</span>: Elimina todas las subpáginas de la página actual.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Añadir</span>: Crea una
+subpágina con la misma posición y dimensión que la página
+(distinguiéndola por trazos más gruesos). Después la subpágina podrá
+redimensionarse con la opción <span style="font-weight: bold;">[Dimen.]</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Insertar</span>: Permite crear una subpágina manualmente en la posición inmediatamente anterior a la subpágina actual.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Borrar</span>: Elimina la subpágina actual.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Mover</span> y <span style="font-weight: bold;">girar</span>: Estas opciones trabajan gráficamente, y permiten efectuar desplazamientos y giros de una subpágina.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Dimensionar</span>:
+Permite redimensionar las subpáginas en cualquiera de las cuatro
+esquinas de la subpágina. No deja que se crucen los lados opuestos de
+la misma subpágina (vuelve a su dimensión inicial) ni salirse de los
+bordes de la página (trunca al borde de la página).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Pos-&gt;&gt;</span>:
+Permite transmitir la posición y ángulo de la subpágina actual hacia la
+subpágina del mismo orden en las páginas siguientes, lo que es de gran
+utilidad si se pretende que una parte del dibujo sea común para todas
+las páginas. Como excepción, esta opción no se puede aplicar si la
+subpágina es la número 1, ya que es la que se suele usar como
+referencia de coordenadas y no tendría sentido replicarla.</li>
+      </ul>
+      <br /><a name="modos_dibujo">MODOS DE DIBUJO</a><br />
+      <br />
+Cuando hay subpáginas en la página actual, los modos de dibujo se
+refieren a la subpágina actual. Si no hay subpáginas, se refieren a la
+página actual.<br />
+      <br />
+Cuando se marca la casilla <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-weight: bold; font-style: italic;">Decorado</span></a>
+los planos generados se obtendrán en este modo. En caso contrario, los
+planos tendrán la representación gráfica simplificada propia del modo <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-style: italic;">No decorado</span></a>.<br />
+      <br />
+La opción <span style="font-weight: bold; font-style: italic;">Borde</span>
+genera un recuadro rectangular que rodea al plano por la línea por la
+que se corta al paginar. Si se activa esta opción, esta línea se añade
+al dibujo que tenga el mapa, además del cajetín con que se pagina. El
+tipo de línea usado será el que esté configurado en las <a href="#opciones">opciones de impresión</a>.<br />
+      <br />
+Cuando se activa la <span style="font-weight: bold; font-style: italic;">Malla de coordenadas</span>,
+en los planos de planta se añade una malla de coordenadas. Para ello se
+usa el símbolo S30 (o el que esté establecido en las <a href="EDM_impresion.html#opciones">opciones de impresión</a>) cada 100 milímetros del mapa, en coordenadas múltiplo del patrón redondeado a entero exacto.<br />
+      <br />
+Si se marca la opción <span style="font-weight: bold; font-style: italic;">Coord.</span>,
+el proceso de paginado rodea el rectángulo de corte de la página con
+los rótulos de coordenadas anotadas, según el estilo que esté
+establecido en las <a href="EDM_impresion.html#opciones">opciones de impresión</a>
+(por defecto, R27, aunque también se puede indicar el uso de etiquetas
+en lugar de textos). Estas coordenadas corresponden a los símbolos de
+malla periféricos y no a los bordes. En el menú de configuración del
+paginado también se establecen los valores de márgenes entre los
+símbolos de las mallas y los textos de coordenadas.<br />
+      <br />
+Cuando no hay subpáginas, la opción de transmisión de modos es <span style="font-weight: bold;">[P-&gt;&gt;]</span>, que aplica el modo de dibujo de la pagina actual a todas las siguientes. Cuando hay subpáginas, el botón cambia a <span style="font-weight: bold;">[S-&gt;&gt;]</span> y se encarga de transmitir los modos a la subpágina del mismo orden que la actual en las páginas siguientes (si la tienen).<br />
+      <br />
+Si un fichero&nbsp;<span class="Archivo">.pag</span> no tiene información acerca de los modos de dibujo, se considerarán los valores por defecto (opción <a href="EDM_modo_decoracion_pantalla.html#modo_dec"><span style="font-weight: bold; font-style: italic;">Decorado</span></a> activada y <span style="font-weight: bold; font-style: italic;">Borde</span>, <span style="font-weight: bold; font-style: italic;">Malla</span> y <span style="font-weight: bold; font-style: italic;">Coord.</span> desactivadas).<br />
+      <br />
+      <br />
+      <a name="campos_texto">CAMPOS DE TEXTO</a><br />
+      <br />
+La sección <span style="font-weight: bold;">TEX.NÚM.</span> permite
+rellenar el campo de texto que se desee con un valor numérico obtenido
+a partir del número de página, rellenando el campo indicado con la
+fórmula <span style="font-style: italic;">N = N0 + Pág x N1</span>, siendo <span style="font-style: italic;">Pág</span> el número de página. Pulsando el botón <span style="font-weight: bold;">[Gen.]</span>, actuará sobre la página actual y siguientes.<br />
+      <br />
+En la tabla de la derecha se pueden editar con total libertad los <span style="font-weight: bold;">campos</span> de texto "de contenido variable" para cada página.<br />
+&nbsp;<br />
+Las teclas <span style="font-weight: bold;">[&lt;-]</span> y <span style="font-weight: bold;">[-&gt;]</span>
+situadas a la derecha de cada campo se encargan de copiar el texto de
+la página actual a todas las anteriores o posteriores, respectivamente.
+Además, debajo de los campos de edición de los textos variables se
+encuentran dos botones para copiar de una sola vez todos los textos, ya
+que puede darse el caso de que sean muchos campos y se quieran copiar
+todos.<br />
+      <br />
+Cuando se hace un redibujado, la página actual (o su subpágina número
+1) se dibuja con el cajetín completo, incluyendo el contenido de sus
+textos variables.<br />
+      <br />
+Se recuerda al usuario que textos variables son aquellos rótulos del cajetín que comiencen con el carácter&nbsp;<span class="Archivo">#</span> (almohadilla).<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="procesado">Procesado de la impresión</a></span><br /><br />
+El menú accesible a través de la pestaña <span style="font-weight: bold;">[PROCESADO]</span>
+engloba la funcionalidad necesaria para desencadenar cualquier proceso
+de impresión, bien a archivos de un determinado formato, bien a una
+impresora o trazador. Las opciones que componen este menú son:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 600px; height: 236px;" alt="" src="Imagenes/dialogo_impresion_procesado.png" /><br />
+      </div>
+      <br />
+Con la opción <span style="font-weight: bold;">[Imprimir]</span> se utiliza un <a href="#paginado">paginado</a>
+para generar los ficheros de trazador correspondientes. Normalmente se
+utilizará el paginado actualmente en edición. Por el contrario, si sólo
+se ha cargado un formato pero no hay paginado en edición, entonces el
+programa pedirá un fichero de paginado existente (<span class="Archivo">.pag</span>)
+para&nbsp; llevar a cabo el proceso. A continuación, si el cajetín
+asociado al fichero de paginado es distinto al indicado en el modo de
+impresión o simplemente no se ha declarado ninguno, se muestra un
+mensaje que da la posibilidad de cargar este cajetín o, por el
+contrario, conservar el del modo de impresión.<br />
+      <br />
+Si se desactiva la casilla <span style="font-weight: bold; font-style: italic;">Imprimir sólo la información que haya en memoria RAM</span>,
+el programa descarga toda la información en RAM y al imprimir cada hoja
+recarga desde la copia de seguridad en disco la zona correspondiente a
+esa página, quedando al final en la memoria RAM la zona correspondiente
+a la última página. En determinados ordenadores y para grandes
+volúmenes de cartografía y páginas, puede llegar a ser más eficiente
+desactivar esta opción.<br />
+      <br />
+A continuación se pregunta el nombre del fichero a generar si la
+impresión se va a efectuar a algún formato, o bien la ventana de
+control de impresión de Windows si ese ha sido el <a href="#modos">lenguaje de impresión</a>
+seleccionado. En este último caso, esta ventana aparecerá una vez por
+página, y en el caso de la generación de archivos, como se creará un
+fichero por cada página (a excepción de los ficheros&nbsp;<span class="Archivo">.pdf</span>
+donde es opcional), el nombre introducido será la parte del nombre que
+común para todos los ficheros. La parte variable del nombre de los
+ficheros se compondrá a partir de lo que se indique en la sección <span style="font-weight: bold;">Nombre de&nbsp; los ficheros generados</span> de este mismo menú, de acuerdo a las siguientes reglas:<br />
+      <ul>
+        <li>Si se selecciona la opción <span style="font-weight: bold; font-style: italic;">Nombre base + núm. página</span>, los ficheros de trazado recibirán nombres del tipo&nbsp;<span class="Archivo">nombr001.*</span>,&nbsp;<span class="Archivo">nombr002.*</span>, etc., donde&nbsp;<span class="Archivo">*</span>
+se corresponderá con la extensión del fichero según el formato elegido.
+Es decir, el nombre se compone de la parte común seguido del número de
+página.</li>
+      </ul>
+      <ul>
+        <li>Si se selecciona <span style="font-weight: bold; font-style: italic;">Nombre base + campo texto</span>,
+a la parte común se le concatenará el contenido del campo de texto que
+se indique para el cajetín en uso. Esto resultará de gran utilidad si
+el contenido de este campo de texto es distinto para cada página e
+identificativo del contenido de la misma, ya que permitirá intuir el
+contenido de cada fichero de trazado generado a partir de su nombre.</li>
+      </ul>
+En el caso de que el <a href="#modos">lenguaje de impresión</a>
+seleccionado sea Windows o el correspondiente a alguno que haga
+referencia a antiguos trazadores, entonces los ficheros generados
+tienen extensión&nbsp;<span class="Archivo">.plt</span> y, además de los ficheros anteriores, también se genera el fichero&nbsp;<span class="Archivo">&lt;nombre&gt;.plt</span>
+(sólo el nombre base o parte común), que contiene la configuración de
+plumas para el trazador y sirve además de testigo de control para que
+el sistema reconozca si existen ficheros de la serie&nbsp;<span class="Archivo">&lt;nombre&gt;.plt</span> que podrían rescribirse inadvertidamente.<br />
+      <br />
+Si se desea restringir el conjunto de páginas para el que se va a generar los ficheros, se puede acudir a la sección <span style="font-weight: bold;">Intervalo de páginas del menú</span>, que incluye las siguientes opciones:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Todas</span>: Es la opción por defecto e imprimirá o generará ficheros para todas las páginas.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Página actual</span>: Sólo
+se imprimirá o se generará un fichero correspondiente a la página que
+se tenga seleccionada en el momento de lanzar el proceso y que se
+indica entre paréntesis.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Páginas</span>: Permite
+especificar un subconjunto del total de páginas a imprimir, indicando
+páginas sueltas o intervalos de páginas con el formato habitual de
+comas y guiones (por ejemplo, el texto &#8220;1, 5, 8-12&#8221; indica que se
+generarán ficheros para la página 1, la página 5 y las páginas en el
+intervalo 8 a 12).</li>
+      </ul>
+La opción <span style="font-weight: bold;">[Dibujo a fichero]</span> escribe un fichero de comandos de trazador (<span class="Archivo">.plt</span>) que puede lanzarse al plotter o impresora en el momento que se desee. Se pueden dar los siguientes casos:<br />
+      <ul>
+        <li><span style="font-weight: bold;">No hay formato cargado</span>: Esto ocurre cuando está seleccionado el modo de impresión <span style="font-style: italic;">Ninguno</span>.
+En este caso hay que elegir el lenguaje de impresión en el que se
+trazará el dibujo y lo que se obtendrá será la parte del mapa que está
+actualmente en pantalla.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Hay formato cargado y no hay paginado en edición</span>:
+Cuando se ha seleccionado un modo de impresión con formato pero no se
+está editando un paginado, el formato cargado se dibuja en pantalla
+pudiendo cambiarlo de posición con la opción <span style="font-weight: bold;">[Mover formato]</span> del menú vertical. En este caso se obtendrá la parte del mapa incluida dentro de los márgenes externos del cajetín.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Hay formato cargado y paginado en edición</span>: En esta ocasión lo que se obtendrá será la parte del mapa incluida dentro de los márgenes externos de la página actual.</li>
+      </ul>
+Durante la salida a fichero se respetan las opciones del dibujo
+principal que estén activadas; es decir, si la pantalla está sin
+decoración así saldrá por el plotter, las capas desactivadas no se
+representarán, etc.<br />
+      <br />
+La opción <span style="font-weight: bold;">[Fichero a trazador]</span>
+permite enviar un fichero de comandos de trazador directamente al
+plotter o impresora. A continuación, se presenta un diálogo con el
+conjunto de impresoras instaladas. Seleccionando una de ellas, los
+ficheros de comandos de impresión serán enviados a la misma
+independientemente de que sea una impresora local, en red, etc.<br />
+      <br />
+Con <span style="font-weight: bold;">[Páginas a EDM]</span> se puede generar una batería de ficheros&nbsp;<span class="Archivo">.edm</span>, conteniendo cada uno de ellos:<br />
+      <ul>
+        <li>El contenido de cada página dentro de su área de dibujo.</li>
+      </ul>
+      <ul>
+        <li>Un símbolo, que debe ser equivalente al formato utilizado
+pero sin los textos variables. En la librería se incluye el S901, que
+es igual que el S101base pero sin los <a href="#campos_texto">textos variables</a>.</li>
+      </ul>
+      <ul>
+        <li>Los <a href="#campos_texto">textos variables</a> particularizados de cada hoja, como textos EDM editables.</li>
+      </ul>
+El contenido de cada fichero&nbsp;<span class="Archivo">.edm</span> constará de todas las subpáginas
+definidas para cada página. Esto resulta útil para la impresión o
+posterior tratamiento de longitudinales.<br />
+      <br />
+La subpágina que se toma como referencia es la primera que tenga
+habilitada la opción <span style="font-weight: bold; font-style: italic;">Malla</span> o la opción <span style="font-weight: bold; font-style: italic;">Coord.</span> (generalmente
+cartografía). Por lo tanto el resto de subpáginas perderán sus
+coordenadas reales. Si ninguna subpágina tiene activada ninguna de las
+dos opciones mencionadas, se tomará la subpágina 1 como referencia.<br />
+      <br />
+De igual forma que con la opción <span style="font-weight: bold;">[Imprimir]</span>, el conjunto de
+ficheros generados y el nombre de los mismos se puede controlar desde
+los apartados <span style="font-weight: bold;">Intervalo de páginas</span> y <span style="font-weight: bold;">Nombre de ficheros generados</span>
+respectivamente.<br />
+      <br />
+La función <span style="font-weight: bold;">[Páginas a DWG/DXF]</span> es análoga a la ya descrita <span style="font-weight: bold;">[Páginas a EDM]</span>, obteniendo como resultado una batería de ficheros&nbsp;<span class="Archivo">.dxf</span>/<span class="Archivo">.dwg</span>, cada
+uno de los cuales engloba lo siguiente:<br />
+      <ul>
+        <li>El contenido de cada página dentro de su área de dibujo.</li>
+      </ul>
+      <ul>
+        <li>Un bloque que incluye el símbolo del cajetín
+utilizado y los textos variables particularizados de cada hoja o página.</li>
+      </ul>
+
+      <img style="width: 196px; height: 113px; margin-left: 7px;" alt="" src="Imagenes/dialogo_impresion_subpag_ref.png" align="right" />Tanto si el lenguaje seleccionado ha sido DWG/DXF o bien si se realiza la impresión mediante el botón <span style="font-weight: bold;">[Páginas a DWG/DXF]</span>,
+cuando el paginado está compuesto de varias subpáginas se puede elegir
+qué subpágina será la de referencia o base (por defecto, la página 1).<br />
+      <br />
+Por lo demás, en cuanto a las opciones de inclusión de subpáginas y la
+generación de los ficheros de resultado, el funcionamiento es idéntico
+al de la opción anterior.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Con <span style="font-weight: bold;">[Páginas a DGN]</span> se una batería de ficheros&nbsp;<span class="Archivo">.dgn</span> de forma similar a las anteriores opciones. Cada fichero incluye:<br />
+      <ul>
+        <li>El contenido de la página dentro de su área de dibujo.</li>
+      </ul>
+      <ul>
+        <li>Una célula compartida DGN, que debe ser equivalente al formato utilizado pero sin los textos variables.</li>
+      </ul>
+      <ul>
+        <li>Los textos variables de cada página.</li>
+      </ul>
+La herramienta <span style="font-weight: bold;">[Generar cajetín]</span>
+sirve para generar símbolos sin textos variables a partir de cajetines
+del tipo S10*. Basta con seleccionar un cajetín (por defecto está
+seleccionado el que se usa como formato de impresión) e indicar un tipo
+para el símbolo que se va a generar. Una vez generado este símbolo,
+éste se puede usar con las opciones <span style="font-weight: bold;">[Páginas a EDM]</span>, <span style="font-weight: bold;">[Páginas a DWG/DXF]</span> y <span style="font-weight: bold;">[Páginas a DGN]</span> como cajetín sin textos variables.<br />
+      <br />
+      <span style="font-weight: bold;">Explotar cajetines</span>:
+Genera las líneas y los símbolos que están contenidos en el símbolo de
+cajetín (S10...) como entidades individuales los cuales se muestran en
+la pantalla en forma decorada. Éstos se pueden guardar como&nbsp;<span class="Archivo">.edm</span> al ser entidades de cartografía.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="opciones">Opciones de impresión</a></span><br />
+      <br />
+La pestaña <span style="font-weight: bold;">Opciones</span> recoge la configuración a usar en el <a href="#modos_dibujo">modo de dibujo de paginado</a>. También permite crear la malla de coordenadas en el EDM, situar el norte, orientar los símbolos y los rótulos, etc.<br />
+<br />
+      <div style="text-align: center;"><img style="width: 600px; height: 430px;" alt="" src="Imagenes/dialogo_impresion_opciones.png" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Línea de borde</span><br />
+
+      <br />
+Aquí se declara el <a href="EDM_entidades_basicas.html#lineas">tipo de línea</a>
+a emplear para dibujar el borde del área dibujable (por defecto L0).
+Esta línea se dibuja cuando está activada la opción <span style="font-weight: bold; font-style: italic;">Borde</span> en los <a href="EDM_impresion.html#modos_dibujo">modos de dibujo de paginado</a>.<br />
+
+      <br />
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Malla y coordenadas</span><br />
+
+      <br />
+Aquí se configuran las siguientes opciones:<br />
+      <ul>
+        
+        <li>El <span style="font-weight: bold;">tipo de </span><a style="font-weight: bold;" href="EDM_entidades_basicas.html#simbolos">símbolo</a><span style="font-weight: bold;"> para constituir la malla de coordenadas</span> (por defecto S30). Esta malla se genera cuando está marcada la opción <span style="font-weight: bold; font-style: italic;">Malla</span> en los <a href="EDM_impresion.html#modos_dibujo">modos de dibujo de paginado</a>. La malla de coordenadas (<span style="font-weight: bold;">simbolos</span>) se puede sustituir por una <span style="font-weight: bold;">cuadrícula</span> (líneas). Deberemos seleccionar la opción símbolos o la opción cuadrícula.<br />
+        </li>
+</ul>
+      <ul>
+        <li>El <span style="font-weight: bold;">espaciado de la malla</span>, es decir, la distancia entre los símbolos que crean la malla.<br />
+        </li>
+      </ul>
+      <ul>
+        <li>Cuando se genera la malla de coordenadas con su rotulación
+periférica de coordenadas, en algunos puntos puede ocurrir que la
+rotulación presente un problema de solape entre los textos y los
+símbolos de malla.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">La opción <span style="font-weight: bold;">margen entre símbolos de malla y texto de coordenada</span>
+debe ser igual o superior a la longitud de los brazos de la cruz más la
+longitud que pueda ocupar el texto de las coordenadas, pues así se
+corrige el solape de los textos de coordenadas. Por defecto, este valor
+se establece en 25.<br />
+      <br />
+Finalmente, la opción <span style="font-weight: bold;">margen para evitar cruces de texto</span> estable la distancia entre el
+símbolo de la malla y los textos de coordenadas, con lo que la
+corrección es completa. Por defecto este margen toma el valor de 5.<br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 552px; height: 88px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 96px; height: 76px;" alt="" src="Imagenes/impresion_solape_texto.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 151px; height: 95px;" alt="" src="Imagenes/impresion_margen_texto.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img style="width: 148px; height: 117px;" alt="" src="Imagenes/impresion_margen_cruz_malla.png" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Solape de textos y símbolos</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Corrección del solape de textos</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><span class="Info">Corrección del solape entre textos y malla</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      
+      <ul>
+        <li>
+La <span style="font-weight: bold;">rotulación periférica</span> de la malla de
+coordenadas puede crearse mediante <a href="EDM_entidades_basicas.html#textos">textos</a> (por defecto de tipo 27)
+o mediante <a href="EDM_entidades_basicas.html#simbolos">símbolos</a> que se situarán alrededor de los límites de la
+malla empleando cuatro tipos diferentes en función de su situación en
+el Norte, Sur, Oeste o Este. Esta rotulación se crea si está activada la
+opción <span style="font-weight: bold; font-style: italic;">Coord.</span> en los <a href="EDM_impresion.html#modos_dibujo">modos de dibujo de paginado</a>.</li>
+      </ul>
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Desplazamiento vertical para las coordenadas</span>: evita que las coordenadas se superpongan a las líneas.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Generar malla y coordenadas</span>: dibuja la malla y las coordenadas en el propio EDM, además de en los planos impresos.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Modelo = Nº página</span>:
+la malla y las coordenadas generadas por la opción anterior toman como
+número de modelo el número de página a la que pertenecen.<br />
+        </li>
+
+      
+      </ul>
+<br />
+<span style="font-weight: bold; font-style: italic;">Situar Norte</span><br />
+
+      <br />
+      <img style="width: 41px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/simb_norte.png" align="right" />Al pulsar el botón <span style="font-weight: bold;">[Situar Norte]</span> se crea el símbolo indicado (por defecto el S28), en la <span style="font-weight: bold;">esquina</span> especificada (<span style="font-weight: bold;">NW</span>, <span style="font-weight: bold;">SW</span>, <span style="font-weight: bold;">NE</span>, <span style="font-weight: bold;">SE</span> y teniendo en cuenta el <span style="font-weight: bold;">desplazamiento</span>) de las páginas/subpáginas que contengan cartografía.<br />
+Se puede aplicar al símbolo un <span style="font-weight: bold;">Desplazamiento en X</span> y otro en <span style="font-weight: bold;">Y</span> respecto a la esquina de referencia señalada.<br />
+      <br />
+<br />
+      <span style="font-weight: bold; font-style: italic;">Orientar símbolos y textos</span><br />
+      <br />
+Al pulsar sobre el botón <span style="font-weight: bold;">[Orientar]</span> entonces todos los <a href="EDM_entidades_basicas.html#simbolos">símbolos</a> y <a href="EDM_entidades_basicas.html#textos">rótulos</a> pertenecientes a <a href="EDM_control_entidades.html#tipos">tipos</a> y <a href="EDM_control_entidades.html#control_modelos">modelos</a> activos se orientan según la orientación de la página o subpágina en la que se encuentren más el <span style="font-weight: bold;">incremento de ángulo</span> aquí especificado.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Otras opciones</span><br />
+      <br />
+Aquí se puede activar la impresión teniendo en cuenta los <span style="font-weight: bold;">grosores</span> de las líneas.<br />
+<br />
+<br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

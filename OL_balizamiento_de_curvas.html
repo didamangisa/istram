@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Balizamiento de curvas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>BALIZAMIENTO DE CURVAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      <span class="Parrafo"><img style="width: 53px; height: 113px;" alt="" src="Imagenes/balizastres.png" align="right" hspace="6" />Este
+menú nos ayudará a la colocación de unos símbolos (S971, S972, S973, S981, S982, S983)
+que representan las balizas de uno, dos y tres paneles respectivamente
+para la correcta colocación del balizamiento en curvas. La utilización
+del balizamiento advierte al conductor de peligro debido a la
+velocidad a la que llega a determinadas curvas.<br />
+      <br />
+Al calcular un diagrama de velocidades con un determinado vehículo, se genera el listado <span style="font-weight: bold;">baliza.res</span>, en el que se muestra para cada curva:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Sentido de recorrido.</span></li>
+        <li><span class="Parrafo">Número de alineación.</span></li>
+        <li><span class="Parrafo">Pk inicial de la curva en el sentido de recorrido.</span></li>
+        <li><span class="Parrafo">Velocidad antes de la curva.</span></li>
+        <li><span class="Parrafo">Velocidad limitada en la curva.</span></li>
+        <li><span class="Parrafo">Diferencia de las dos velocidades anteriores (dV).</span></li>
+        <li><span class="Parrafo">Número de balizas en la curva: dist. = (R/10 &gt;= 10), n=longitud/dis.</span></li>
+        <li><span class="Parrafo">Tipo de la primera baliza: Ninguna(dV &lt; 15), simple (15 &lt; dV &lt; 30), doble (30 &lt; dV &lt; 45), triple (45 &lt; dV).</span></li>
+      </ul>
+      <span class="Parrafo">
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/dialogo_balizamiento.png" alt="" style="width: 615px; height: 338px;" /></span><br />
+      <span class="Parrafo"></span></div>
+      </span><div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"></span>Ejemplo <span class="Archivo">Estructura_Doble.isa</span> en&nbsp;carpeta DEMO.<br /><span class="Parrafo"><span class="Parrafo"></span></span></span></div><span class="Parrafo"><span class="Parrafo"><br />Para generar las balizas, primero deberemos pulsar el botón <span style="font-weight: bold;">Parámetros</span> para configurar los criterios de colocación de balizas:<br />
+</span></span>
+      <ul>
+        <li>La <span style="font-weight: bold;">Separación</span> entre ellas, como una fracción del radio de la curva en que se van a colocar, con un mínimo y un máximo.</li>
+      </ul>
+      <ul>
+        <li>La configuración y el uso o no del criterio <span style="font-weight: bold;">Ver</span> (detallado abajo).</li>
+      </ul>
+      <ul>
+        <li>Si se permite a las balizas <span style="font-weight: bold;">Sobrepasar</span> la posición de la primera baliza del sentido contrario.</li>
+      </ul>
+      <ul>
+        <li>Si la distancia entre balizas se ha de medir por la línea <span style="font-weight: bold;">Exterior</span> usada para determinar su posición o no.</li>
+      </ul>
+      <ul>
+        <li>En el caso de que la distancia entre las primeras balizas
+de cada sentido fuera menor que la mínima, si se han de colocar ambas
+en el <span style="font-weight: bold;">Punto medio</span> o no.<br />
+        </li>
+      </ul>
+Al pulsar el botón <span style="font-weight: bold;">Generar</span>, se colocarán los paneles mediante el siguiente método:<br />
+
+      
+      
+      <ul>
+
+        <li><span class="Parrafo">Para el primer panel se calcula la
+posición del borde del panel del lado de la calzada como la
+intersección de la recta que se prolonga (<span style="font-weight: bold;">Tangente visual</span>) desde el <span style="font-weight: bold;">centro del carril</span> o desde el <span style="font-weight: bold;">borde del carril</span> (eje en curvas a derechas) en el último punto de la recta anterior a la curva, con una línea paralela a <span style="font-weight: bold;">un metro</span> (valor por defecto, aunque podría cambiarse) al <span style="font-weight: bold;">borde exterior del arcén</span>&nbsp; o al <span style="font-weight: bold;">borde de la calzada</span> (según se selecione una opción u otra en la casilla <span style="font-weight: bold;">Corte</span> <span style="font-weight: bold;">con</span>).
+La orientación es perpendicular
+a la recta (a la visual).</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Se determina la separación entre balizas, partiendo de un valor de <span style="font-weight: bold;">R/k</span> definido por el usuario (por defecto, k = 10).<br />
+</span></li>
+
+      
+      </ul>
+
+      
+      <ul>
+
+        <li><span class="Parrafo">Si esta separación fuera inferior a
+la mínima (definida&nbsp; por el usuario), se deja a la mínima. Si
+fuera mayor que la máxima, se deja a la máxima.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Si está activada la opción <span style="font-weight: bold;">Ver</span>, se calculan dos nuevas separaciones mínima y máxima, de manera que en el ángulo de visión definido haya un mínimo/máximo de <span style="font-style: italic;">n</span> balizas. Se repite la comprobación del punto anterior con estos nuevos valores mínimo/máximo.<br />
+</span></li>
+
+      
+      </ul>
+
+      <span class="Parrafo">Cuando
+haya dos curvas seguidas sin recta por el medio y la curva anterior sea
+de mayor radio, se tiene también en cuenta la velocidad máxima
+alcanzada en esta curva para determinar si hay que balizar la curva
+siguiente.<br /><br />Se compara siempre la velocidad máxima alcanzada
+en la alineación anterior sea recta o curva aunque sea de menor radio,
+con la velocidad específica en la curva actual. Estas velocidades se
+muestran en el listado baliza.res como [V antes] y [V curva].<br /><br />Se pueden configurar las diferencias de velocidades para aplicar la baliza simple, doble o triple:<br /></span><ul><li><span class="Parrafo"><span class="Parrafo">[&gt;]&nbsp;&nbsp; dV &gt; 15</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;]&nbsp; dV &gt; 30</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;&gt;] dV &gt; 45</span></span></li></ul><span class="Parrafo"><span class="Parrafo">De este modo si queremos utilizar solo las simples y las dobles podemos poner:<br /></span></span><ul><li><span class="Parrafo"><span class="Parrafo">[&gt;]&nbsp; dV &gt;&nbsp; 5</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;] dV &gt; 20</span></span></li><li><span class="Parrafo"><span class="Parrafo">[&gt;&gt;&gt;] dV &gt; 999</span></span></li></ul><span class="Parrafo"><span class="Parrafo"><br />Si se da el caso de que en una curva haya conflicto entre los parámetros <span style="font-weight: bold;">Separación mínima </span>y <span style="font-weight: bold;">Separación máxima</span> entre balizas, <span style="font-weight: bold;">Número mínimo </span>y <span style="font-weight: bold;">máximo </span>de balizas y en el <span style="font-weight: bold;">Ángulo </span>visual prevalece siempre la separación mínima y máxima.<br /><br /></span></span><span class="Parrafo"><span class="Parrafo">Recordar
+que si modificamos estos valores, tenemos que volver a calcular el
+diagrama de velocidades antes de volver a generar las balizas.</span></span><br /><span class="Parrafo"><span class="Parrafo"><br />En carreteras si la curva lleva paneles
+para los dos sentidos de circulación se hacen coincidir la posición de
+los paneles intermedios, pero cada uno llevará su propia orientación.<br />
+      <br />
+La tabla de balizas que se genera aquí puede editarse o puede ser dibujada sobre la cartografía pulsando el botón <span style="font-weight: bold;">Dibujar</span>. La información que contiene puede ser utilizada para su representación virtual en el modelo BIM.<br />
+<br />
+Esta herramienta toma como datos de partida el fichero <span style="font-weight: bold;">baliza.res</span>
+creado para el último diagrama de velocidades generado para el eje. El
+número de balizas en la curva puede ser menor al indicado en este
+listado.<br />
+El diagrama de velocidades debe generarse con un automóvil, ya que
+éstos pueden alcanzar en la recta velocidades mayores que un camión o
+que el vehículo pesado de la norma.&nbsp;&nbsp;&nbsp; <br />
+      <br />
+En autovías y autopistas cuando los paneles se colocan del lado de la
+mediana (curvas a la derecha) el carril de referencia es el del lado de
+la mediana, y cuando los paneles se colocan en el lado exterior (curvas
+a la izquierda) el carril de referencia es el carril derecho en el
+sentido de avance. En cada panel se puede escoger si pertenece a la calzada de la derecha o de la izquierda, y a la hora de <span style="font-weight: bold;">Dibujar</span> podemos elegir si dibujamos solo las de la derecha, solo las de la izquierda o ambas.<br />
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

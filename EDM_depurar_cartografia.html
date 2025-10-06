@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Depurar Cartografía</title>
+
+<link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a>
+<a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a> <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a> <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span> </td>
+</tr>
+</tbody>
+</table>
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td class="Titulo_2">
+<div align="center"><strong>DEPURAR CARTOGRAFÍA<br />
+</strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+<tbody>
+<tr>
+<td style="width: 692px;" class="obsolete Parrafo">
+<br />
+<div style="margin-left: 40px;"><a href="#Borrar_lineas_por_longitud">Borrar líneas por longitud</a><br /><a href="#Borrar_repetidos">
+Borrar repetidos</a><br /><a href="#Unir_lineas">
+Unir líneas</a><br /><a href="#Filtrar">
+Fltrar</a><br /><a href="#Depurar_recintos">Depurar recintos</a><br /><a href="#Arreglar_bordes_de_mapas">
+Arreglar bordes de mapas</a><br /><a href="#Redondear_coordenadas">
+Redondear coordenadas</a><br />
+</div>
+<br />
+<br />
+<div style="text-align: center;"><img style="width: 350px; height: 393px;" alt="" src="Imagenes/dialogo_depurar_cartografia.png" /><br />
+</div>
+<br /><br /><span class="Titulo_2"><a name="Borrar_lineas_por_longitud"></a>Borrar líneas por longitud</span><br /><br />Elimina todas las líneas de longitud inferior o igual a la especificada por el usuario.<br /><br />Actúa sobre TODO el EDM, sin tener en cuenta la selección previa.<br /><br />Resulta
+útil para aquellos mapas procedentes de otros sistemas de edición y que
+incluyen líneas de muy poca longitud (pelitos de decoración de líneas,
+vallas,&#8230;) que puedan resultar molestos.<br /><br /><span class="Titulo_2"><a name="Borrar_repetidos"></a>Borrar repetidos</span><br /><br />Esta opción, que actúa sobre todas las entidades activas, permite eliminar:<br /><ul><li>Líneas
+repetidas, entendiendo como tales aquellas que tengan el mismo número
+de vértices, mismo tipo, mismo modelo, sean ambas cerradas o no, sean
+ambas tipo 8D o no, mismo color, misma procedencia y mismos vértices
+también recorriendo una de ellas en sentido inverso.</li><li>Símbolos repetidos, es decir, aquellos que sean del mismo tipo y con las mismas coordenadas y ángulo.</li><li>Rótulos repetidos, con el mismo estilo, texto, enganche, coordenadas, tamaño y ángulo.</li></ul><br /><span class="Titulo_2"><a name="Unir_lineas"></a>Unir líneas</span><br /><br />Permite unir líneas teniendo en cuenta el valor de la casilla <span class="Parf_negrita">Distancia entre extremos (m)</span>, con el botón <span class="Parf_negrita">Todo</span>&nbsp;actúa sobre todas las líneas, mientras que el botón <span class="Parf_negrita">Selección</span> &nbsp;actúa sobre las líneas selccionadas.<br /><br />Si activamos <span class="Parf_negrita">Cerrar</span>, se cierran las polilíneas si la distancia entre los vértices primero y último es menor que<span class="Parf_negrita"> Distancia entre extremos (m)</span>. Esta opción se acompaña con las opciones:<br /><ul><li><span class="Parf_negrita">Resaltar abiertas</span>: Dibuja en amarillo y con más grosor las polilíneas no cerradas.</li><li><span class="Parf_negrita">Mín. nº vértices</span>: Si la polilínea tiene menos vértices de los que indica este campo entonces se ignora.</li></ul><br /><br /><span class="Titulo_2"><a name="Filtrar"></a>Filtrar</span><br /><br />Esta
+opción es útil en aquellos casos en los que se tienen líneas con una
+gran densidad de vértices. Elimina los vértices de las líneas objeto
+del filtrado (el botón <span class="Parf_negrita">Todo</span>&nbsp;actúa sobre todas las líneas, mientras que el botón <span class="Parf_negrita">Selección</span> &nbsp;actúa sobre las líneas selccionadas) según los parámetros de depuración indicados:<br /><ul><li>Tolerancia lateral, por defecto 0.25 mm de plano (0.25 m a escala 1:1000).</li><li>Distancia máxima, por defecto 40 veces la tolerancia lateral.</li></ul><a name="Depurar_recintos"></a><span class="Titulo_2">Depurar recintos</span><br /><br />Se utiliza para mejorar aquellos recintos cerrados que pueden tener puntos repetidos o no estar del todo depurados.<br /><br /><span class="Titulo_2"><a name="Arreglar_bordes_de_mapas"></a>Arreglar bordes de mapas</span><br /><br />Permite
+llevar parejas de líneas correspondientes a dos mapa adyacentes, sobre
+una misma línea de frontera común (borde del mapa).<br /><br /><div style="text-align: center;"><img style="width: 300px; height: 189px;" alt="" src="Imagenes/depurar_carto_arreglar_bordes_ej.png" /><br /></div><br /><br /><span class="Titulo_2"><a name="Redondear_coordenadas"></a>Redondear coordenadas</span><br /><br />Mediante esta herramienta nos da la posibilidad de redondear las coordenadas de las entidades cartográficas.<br /><br />En función de la casilla que activemos, X, Y o Z el redondeo afectará a aquella coordenada que hayamos activado.<br />Podremos aplicar un factor de redondeo para la precisión del mismo.<br /><br /><br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+</body></html>

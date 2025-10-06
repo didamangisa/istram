@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Coordenadas y enganches</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>INTRODUCCIÓN DE COORDENADAS. ENGANCHES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      <span class="Titulo_2"><a name="coordenadas">Introducción de coordenadas</a></span><br />
+      <br />
+Cuando alguna función del sistema espera la selección gráfica de un
+punto en pantalla, se acepta también su introducción por teclado. Es
+posible limitar los puntos a la ventana gráfica si en <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Comportamiento en edición</span> &#8594; <span style="font-weight: bold;">Funcionamiento</span> se desactiva la opción <span style="font-weight: bold; font-style: italic;">Permitir XY por teclado fuera</span> (activada por defecto para admitir puntos que caigan fuera de la pantalla gráfica).<br />
+      <br />
+La introducción de coordenadas puede realizarse de distintas formas:<br />
+      <ol style="font-weight: bold;">
+        <li>Coordenadas absolutas: <span style="font-style: italic;">X Y Z</span></li>
+      </ol>
+      <div style="margin-left: 40px;">Se escribirán las coordenadas
+absolutas (X,Y,Z) (con o sin signo, con o sin decimales) separadas por
+espacios en blanco, y pulsando &lt;Enter&gt; o &lt;Intro&gt; para
+finalizar. <br />
+      <br />
+Si se da sólo un dato, éste se interpretará como X asumiendo las
+coordenadas Y y Z como actuales. En el caso de introducir dos datos, se
+interpretarán como X e Y tomando como coordenada Z la cota actual. Las
+coordenadas actuales serán las del último punto picado o tecleado
+(incluso si era un picado para dar una orden) o del punto en que está
+anclado uno de los cursores "de goma".<br />
+      </div>
+      <br />
+      <ol style="font-weight: bold;" start="2">
+        <li>Coordenadas relativas: <span style="font-style: italic;">@X&nbsp; Y&nbsp; Z</span></li>
+      </ol>
+      <div style="margin-left: 40px;">Análogamente pueden escribirse
+las coordenadas en valores relativos al último punto seleccionado. En
+este caso la introducción de datos debe comenzar con el carácter @.
+También puede faltar en este caso la Y, la Z o ambas.<br />
+      </div>
+      <br />
+      <ol style="font-weight: bold;" start="3">
+        <li>Coordenadas polares: <span style="font-style: italic;">/r ang Z</span></li>
+      </ol>
+      <div style="margin-left: 40px;">También se pueden escribir las
+coordenadas de la distancia y ángulo desde el último punto
+seleccionado. En este caso la introducción de datos debe comenzar con
+el caracter /. El número que va pegado al caracter / es la distancia,
+el segundo el ángulo (en las unidades seleccionadas desde el menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Unidades angulares</span>)
+y el tercero el incremento de cota respecto a la actual. Si se omite la
+Z se supone como incremento de cota nulo. Si se da un sólo número se
+supone que es el ángulo y radio unidad. Así, <span style="font-style: italic;">/ang</span> se interpreta como <span style="font-style: italic;">/1 ang</span>.<br />
+      </div>
+      <br />
+      <ol style="font-weight: bold;" start="4">
+        <li>Longitud del segmento: <span style="font-style: italic;">l longitud</span> (ele minúscula y valor de la longitud)</li>
+      </ol>
+      <div style="margin-left: 40px;">Algunas funciones de dibujo
+permiten la introducción de un nuevo punto indicando de esta forma la
+longitud del segmento que forma con el anterior, si por ejemplo la
+dirección ya viene condicionada por ser horizontal o vertical, paralelo
+o perpendicular a otro elemento u ortogonal al segmento anterior. En
+otras ocasiones cuando se está pidiendo gráficamente un valor, por
+ejemplo un radio, puede introducirse éste también numéricamente por el
+teclado.<br />
+      </div>
+      <br />
+La <span style="font-weight: bold;">cota</span> actual se modifica
+cuando se crea o manipula un elemento. Así, elegir una línea, dar cota
+a una línea y dar cota a un punto cambian la cota actual.&nbsp;&nbsp; <br />
+      <br />
+El <a href="#enganches"><span style="font-weight: bold;">enganche</span></a> a un elemento existente provoca que la cota asumida sea la del elemento enganchado o interpolada sobre él.<br />
+      <br />
+<br />
+      <span class="Titulo_2"><a name="enganches">Enganches</a></span><br />
+      <br />
+Las funciones y utilidades que requieren la selección de puntos por
+pantalla pueden tomar como dato diferentes valores en función del <span style="font-weight: bold;">modo de enganche</span>.<br />
+      <br />
+Los <span style="font-weight: bold;">modos de enganches</span> están disponibles en:<br />
+      <table style="text-align: left; width: 367px; height: 81px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 259px;">
+            <ul>
+<li>El menú principal, en <span style="font-weight: bold;">Ver</span> &#8594; <span style="font-weight: bold;">Enganches</span></li><li style="width: 229px;">Desde la parte inferior de la interfaz</li><li>La <a href="EDM_barras_herramientas.html">barra de herramientas</a> de enganches</li>
+            </ul>
+            </td>
+            <td style="vertical-align: middle; width: 354px;"><img style="width: 73px; height: 48px;" alt="" src="Imagenes/acceso_enganche_inf.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+Cuando el enganche activo no es libre, el eco de coordenadas muestra
+las coordenadas del punto enganchado, no las del cursor. Además, el
+enganche sólo funcionará cuando el elemento &#8220;a enganchar&#8221; esté
+suficientemente cerca del cursor del ratón (área de influencia del
+cursor).<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Modos de enganche</span><br />
+      <br />
+      <img style="margin-left: 7px; width: 120px; height: 536px; float: right;" alt="" src="Imagenes/enganches.png" />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> dispone de múltiples modos de enganche, algunos específicos de ciertos menús (como <a href="OL_rasantes_enganches.html">RASANTES</a>
+en el módulo de OBRA LINEAL), por tanto en cada momento estarán
+disponibles únicamente aquellos modos que se puedan activar,
+permaneciendo el resto sombreados.<br />
+      <br />
+Si estando activado algún modo de enganche que no sea el libre, la respuesta de punto coordenado que el programa espera se da <a href="#coordenadas">tecleando coordenadas</a>,
+entonces en principio el programa asume el punto tecleado, a éste le
+aplica el modo de enganche y el punto transformado es el que se
+devuelve a la función que lo espera.<br />
+      <br />
+Cuando está activada la opción <span style="font-weight: bold; font-style: italic;">Ver enganche</span> (menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Visualización</span>)
+y hay algún modo de enganche seleccionado, si al mover el cursor se
+produce realmente un enganche el aspa que marca el punto enganchado
+aumenta su tamaño 3 veces.<br />
+      <br />
+Si también está activada la opción <span style="font-weight: bold; font-style: italic;">Ver símbolo</span>
+en el cursor del ratón se muestra además un símbolo indicando el tipo
+de enganche activo (vértice, punto, lado, punto medio, intersección,&#8230;).<br />
+      <br />
+Los modos de enganche disponibles en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> son los siguientes:<br />
+      <br />
+      <table style="text-align: left; width: 568px; height: 533px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 79px; text-align: center; font-weight: bold;">Modo<br />
+            </td>
+            <td style="vertical-align: top; width: 33px; text-align: center; font-weight: bold;">Icono<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 428px;">Descripción<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Libre<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarEnganches_libre.png" /></td>
+            <td style="width: 428px; text-align: justify;">Las coordenadas que se toman son la (X,Y) del cursor del ratón y la cota actual. Puede interpretarse como "no enganche".<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Vértice<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEnganches_vert.png" /></td>
+            <td style="width: 428px; text-align: justify;">Las
+coordenadas que se toman son las (X,Y,Z) del vértice de polilínea más
+próximo. Si no se encuentra ninguna polilínea cerca (dentro del área de
+influencia del cursor), entonces funciona como el enganche libre.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Lado<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 18px; height: 12px;" alt="" src="Imagenes/icono_toolBarEnganches_lado.png" /></td>
+            <td style="width: 428px; text-align: justify;">Las
+coordenadas que se toman son las (X,Y,Z) de la proyección del cursor
+sobre la polilínea más cercana, interpolando la Z a partir de la de los
+vértices del segmento. Si no se encuentra ninguna polilínea cerca,
+entonces funciona como el enganche libre.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Punto medio<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 21px;" alt="" src="Imagenes/icono_toolBarEnganches_ptoMedio.png" /></td>
+            <td style="width: 428px; text-align: justify;">Se toman las
+coordenadas del punto medio del segmento de polilínea más cercano,
+interpolando la Z a partir de la de los vértices del segmento.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Extremo<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 16px; height: 13px;" alt="" src="Imagenes/icono_toolBarEnganches_extremo.png" /></td>
+            <td style="width: 428px; text-align: justify;">Funciona seleccionando el vértice extremo más cercano de una polilínea.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Vértice y punto medio<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 15px;" alt="" src="Imagenes/icono_toolBarEnganches_vpm.png" /></td>
+            <td style="width: 428px; text-align: justify;">Este enganche toma el punto más próximo de entre el punto medio o el vértice.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Punto<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 15px;" alt="" src="Imagenes/icono_toolBarEnganches_vpm.png" /></td>
+            <td style="width: 428px; text-align: justify;">Se toman las
+coordenadas (X,Y,Z) del símbolo más cercano dentro del área de
+influencia del cursor. Si no hay ningún punto dentro de esta ventana,
+entonces funciona como el enganche libre.<br />
+            <br />
+            </td>
+          </tr>
+          <tr><td>Texto</td><td style="text-align: center; vertical-align: middle;"><img style="width: 18px; height: 21px;" alt="" src="Imagenes/icono_toolBarEnganches_texto.png" /></td><td>Enganche a texto proporciona un enganche al punto de inserción de los textos.</td></tr><tr>
+            <td style="width: 79px; font-style: italic;">Intersección<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 16px;" alt="" src="Imagenes/icono_toolBarEnganches_inters.png" /></td>
+            <td style="width: 428px; text-align: justify;">Las
+coordenadas planimétricas son las del punto de intersección más cercano
+de dos polilíneas que se crucen, y la cota asignada es la cota actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;"><a name="enganche_multiple">Múltiple</a><br /></td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarEnganches_multiple.png" /></td>
+            <td style="width: 428px; text-align: justify;"><img style="width: 218px; height: 165px; margin-left: 7px;" alt="" src="Imagenes/enganche_multiple.png" align="right" />Consiste en una combinación de los siguientes modos de enganches: <br />
+            <ul>
+              <li>Vértice de polilínea</li>
+              <li>Punto medio de segmento</li>
+              <li>Intersección de polilíneas</li>
+              <li>Punto aislado o símbolo</li>
+              <li>Lado</li>
+              <li>Extremo de polilínea</li>
+              <li>Punto topográfico<br />
+              </li>
+
+            </ul>
+Es posible, además, configurar una prioridad a cada tipo de enganche (a menor valor mayor prioridad). A igual prioridad,
+predominará el que determine el punto de enganche más cercano a la
+posición del cursor en cada momento.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Superficie<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_sup.png" /></td>
+            <td style="width: 428px; text-align: justify;">El punto que
+resulta tiene las coordenadas (X,Y) del punto picado y la cota se
+interpola sobre la superficie actual según dos secciones ortogonales
+que pasan por el punto sobre el que se ha hecho clic.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Rejilla<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_rejilla.png" /></td>
+            <td style="width: 428px; text-align: justify;">El cursor se
+engancha, en este caso, a la rejilla que esté presente en el área de
+trabajo en ese momento (si es que alguna está activada). La rejilla
+aparece automáticamente en ciertas partes del programa, como en
+RASANTES (módulo de OBRA LINEAL), el editor gráfico de símbolos,&#8230;, y en
+otros casos el usuario puede establecerla manualmente.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Nodo<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 12px;" alt="" src="Imagenes/icono_toolBarEnganches_nodo.png" /></td>
+            <td style="width: 428px; text-align: justify;">Este enganche está relacionado con el módulo GIS de expropiaciones.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Punto topográfico<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 17px; height: 13px;" alt="" src="Imagenes/icono_toolBarEnganches_ptoTopo.png" /></td>
+            <td style="width: 428px; text-align: justify;">Al entrar en el menú de <a href="EDM_topografia.html">topografía</a>
+aparece este enganche, que provoca que el cursor del ratón tome las
+coordendas del punto topográfico más cercano que caiga dentro del área
+de influencia del cursor del ratón.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Centro de circular<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 11px;" alt="" src="Imagenes/icono_toolBarEnganches_cc.png" /></td>
+            <td style="width: 428px; text-align: justify;">Este enganche sólo está activo durante la edición de <a href="OL_planta_diseno.html">planta</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha al centro de una alineación circular siempre que éste
+caiga dentro del área de influencia del cursor del ratón.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Rasante<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_ras.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha a la rasante más cercana dentro del área de
+influencia del cursor.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Perfil<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_perfil.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a> en el módulo de OBRA LINEAL. Con este modo activado, el cursor del ratón se engancha al longitudinal del terreno cargado.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Otro longitudinal<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_otroLong.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha a los longitudinales cargados como polilíneas.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Otro eje<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 18px;" alt="" src="Imagenes/icono_toolBarEnganches_otroEje.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a> en el módulo de OBRA LINEAL. Con este modo activado, el cursor del ratón se engancha a las representaciones de otros ejes.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Punto de paso<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_ptoPaso.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha al punto de paso más cercano dentro del área de
+influencia del cursor.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Punto dato<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_ptoDato.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha al punto dato de rasante más cercano dentro del área
+de influencia del cursor.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Tabla de puntos<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_tablaPtos.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_rasantes_diseno.html">rasantes</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha al punto más cercano de la tabla de puntos dentro del
+área de influencia del cursor.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 79px; font-style: italic;">Pozos<br />
+            </td>
+            <td style="width: 33px; text-align: center;"><img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarEnganches_pozos.png" /></td>
+            <td style="width: 428px; text-align: justify;">Sólo está activo durante la edición de <a href="OL_tuberias.html#rasante">rasantes</a> en el módulo de OBRA LINEAL. Con este modo activado, el cursor del ratón toma el PK del <a href="OL_tuberias.html#def_pozo">pozo</a> más cercano que caiga dentro del área de influencia del cursor del ratón.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">Vertice de la rasante</span><br />
+            </td>
+            <td style="vertical-align: middle; text-align: center;"><img style="width: 17px; height: 18px;" alt="" src="Imagenes/icono_toolBarEnganches_vertRas.png" /></td>
+            <td style="vertical-align: top;">Sólo está activo durante la edición de <a href="OL_tuberias.html#rasante">rasantes</a> en el módulo de OBRA LINEAL. Con este modo activado, el cursor del ratón se engancha a los vertices de la rasante actual.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">Dato de la otra rasante</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Sólo está activo durante la edición de <a href="OL_tuberias.html#rasante">rasantes</a>
+en el módulo de OBRA LINEAL. Con este modo activado, el cursor del
+ratón se engancha a los vertices de la rasante de la otra calzada (en
+autovías con dos calzadas que tengan rasantes diferentes).</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-style: italic;">GPS<br />
+            </td>
+            <td style="text-align: center;"><img style="width: 11px; height: 17px;" alt="" src="Imagenes/icono_toolBarEnganches_gps.png" /></td>
+            <td style="vertical-align: top;">Usado para el trabajo con GPS en tiempo real.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">TTP</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Se toman las coordenadas del punto parte de la superficie TTP activa más cercano al cursor.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-style: italic;">Nubes densas de puntos</span><br />
+            </td>
+            <td style="vertical-align: top;"><br />
+            </td>
+            <td style="vertical-align: top;">Se toman las coordenadas de la superficie NDP activa más cercana al cursor.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+<br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

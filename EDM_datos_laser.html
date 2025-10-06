@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Nubes densas de puntos</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>NUBES DENSAS DE PUNTOS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td class="Parrafo" style="width: 694px;">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#tipos_datos">Tipos de datos</a><br />
+      <a href="#analisis">Análisis</a><br />
+      <a href="#base_datos">Base de datos</a><br />
+      <a href="#visualizacion">Visualización</a><br />
+      <a href="#filtros">Filtros</a><br />
+      <a href="#utiles">Útiles</a><br />
+      <a href="#basescargadas">Bases de datos cargadas</a><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+Esta herramienta, accesible tanto desde el menú <span style="font-weight: bold;">Herramientas</span> como desde <a href="EDM_topografia.html"><span style="font-weight: bold;">TOPOGRAFÍA</span></a>&nbsp;<img src="Imagenes/icono_toolBarEstandar_topo.png" style="width: 14px; height: 16px;" alt="" /> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span>
+      <span style="font-weight: bold;">ÚTILES</span>, permite procesar
+archivos procedentes de láser-scan con varios millones de puntos.<br />
+      <br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/acceso_datos_laser.png" style="width: 154px; height: 389px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/acceso_datos_laser_1.png" style="width: 268px; height: 447px;" alt="" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+El objetivo de la herramienta es procesar información en paquetes de
+datos
+para poder realizar futuras triangulaciones, edición de nodos
+topográficos, generación de líneas de nivel, etc.<br />
+      <br />
+Este menú permite contraer o expandir las subventanas mediante el icono
+      <img src="Imagenes/icono_desplegar.png" style="width: 20px; height: 20px;" alt="" />.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_datos_laser.png" style="width: 460px; height: 547px;" alt="" /><br />
+      </div>
+      <br />
+No hay ninguna limitación en cuanto al número de puntos a tratar por
+parte del programa, aunque sí cierta dependencia del hardware del
+ordenador en cuanto a su potencia.<br />
+      <br />
+Al seleccionar esta herramienta, aparece el cuadro de diálogo mostrado
+en la imagen superior.<br />
+      <br />
+Los pasos a seguir son:<br />
+      <ol>
+        <li>Declarar el <a href="#tipos_datos"><span style="font-weight: bold;">tipo de datos</span></a> (formato de los
+ficheros y extensión).</li>
+      </ol>
+      <ol start="2">
+        <li>Ejecutar el <a href="#analisis"><span style="font-weight: bold;">análisis</span></a> de los puntos a partir
+de una lista con los nombres de los ficheros que contienen los datos.</li>
+      </ol>
+      <ol start="3">
+        <li>Crear la <a href="#base_datos"><span style="font-weight: bold;">base de datos</span></a>, según una
+rejilla.</li>
+      </ol>
+      <ol start="4">
+        <li><a href="#visualizacion"><span style="font-weight: bold;">Visualización</span></a>
+de los datos según diferentes criterios (monocromo, <a href="#reflectancia">reflectancia</a> o cota).</li>
+      </ol>
+      <ol start="5">
+        <li><a href="#filtros"><span style="font-weight: bold;">Filtrar</span></a>
+la información para aligerar la base de datos y eliminar puntos no
+deseados.</li>
+      </ol>
+      <ol start="6">
+        <li>Usar diversos <a href="#utiles"><span style="font-weight: bold;">útiles</span></a>
+que permiten obtener, por ejemplo, curvas de nivel y/o un archivo de
+puntos con los
+datos ya filtrados y que puede ser de interés en otras partes del
+programa.<br />
+        </li>
+      </ol>
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_esquema.png" style="width: 409px; height: 297px;" alt="" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="tipos_datos">Tipos de datos</a></span><br />
+      <br />
+En la parte dedicada al TIPO DE DATOS se puede seleccionar la extensión
+de los ficheros ASCII que contienen la información así como su formato.<br />
+      <br />
+      <img src="Imagenes/datos_laser_tipo_datos.png" style="width: 420px; height: 35px;" alt="" align="left" hspace="4" />La
+extensión del archivo la indica el usuario con hasta 4 caracteres,
+siendo por defecto&nbsp;<span class="Archivo">.xyz</span>.
+En cuanto al formato, se trata de ficheros de puntos donde al menos
+deben existir 3 columnas con las coordenadas X,Y,Z de cada punto,
+aunque también puede haber columnas previas a las coordenadas que se
+corresponden, por ejemplo, con el número de punto, la reflectancia, o
+cualquier otro parámetro. Así, por ejemplo, si se escoge como formato
+uno de la forma <span style="font-style: italic;">a b c X Y Z</span>,
+entonces el programa espera uno o varios archivos de 6 columnas,
+correspondiéndose las 3 primeras con algún parámetro del punto y las 3
+últimas con sus coordenadas. Los diferentes formatos ascii que se
+describen admiten también como
+separadores de las columnas además de los espacios en blanco " ", las
+comas "," y el punto y coma ";".<br />
+      <br />
+El programa admite también otros varios formatos de archivo de nube de
+puntos:&nbsp;<span class="Archivo">.las/.la20</span>,&nbsp;<span class="Archivo">.laz</span>,&nbsp;<span class="Archivo">.pts</span>,&nbsp;<span class="Archivo">.e57</span>...<br />
+      <br />
+El formato para los ficheros .pts tiene que ser uno de los dos siguientes: <br />
+      <ul>
+        <li>X Y Z REFLECTANCIA RED GREEN BLUE <br />
+        </li>
+        <li>X Y Z REFLECTANCIA</li>
+      </ul>
+
+      
+      <div style="text-align: center;"><img src="Imagenes/nubes_densas_puntos_las.png" style="width: 446px; height: 70px;" alt="" /><br />
+      </div>
+      <br />
+En el caso de cargar un fichero .las sin color real pero tener una
+imagen de fondo, el programa permitirá colorear los puntos cargados con
+la imagen, de tal forma que la imagen proyecte a cada punto su color.
+Para poder realizar este proceso deberemos tener cargada la imagen y
+clicar en la casilla <span style="font-weight: bold;">Colorear con
+imagen</span> (se explica en el apartado de <a href="EDM_datos_laser.html#utiles">Útiles</a>).<br />
+      <br />
+Permite
+cargar ficheros ascii de extensión .pts: Tienen en una primera línea el
+número total de puntos, y a continuación un punto en cada línea con
+siete valores: X Y Z intensidad(reflectancia) R G B.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/nubes_densas_pts.png" style="width: 446px; height: 49px;" alt="" /><br />
+      </div>
+      <br />
+En Tipo de datos podemos usar algunas opciones adicionales:<br />
+      <ul>
+        <li><span style="font-weight: bold;">dX</span>, <span style="font-weight: bold;">dY</span>, <span style="font-weight: bold;">dZ:</span>
+si los puntos vienen en coordenadas relativas o desplazados, aquí
+podemos declarar los distintos incrementos&nbsp;<span style="font-weight: bold;">que se sumarán a esas
+coordenadas.</span></li>
+        <li><span style="font-weight: bold;">[Ver cabecera]</span>:
+muestra la cabecera del fichero para que el usuario pueda identificar
+el
+formato de estos archivos.</li>
+        <li><span style="font-weight: bold;">Saltar <span style="font-style: italic;">n</span> lineas</span>: ignora las
+primeras <span style="font-style: italic;">n</span> lineas del
+archivo, en caso de que estas no se
+correspondan con datos de puntos (encabezados, etc).</li>
+        <li><span style="font-weight: bold;"><a name="reflectancia">Reflectancia</a></span><a name="reflectancia">:&nbsp;
+La <span style="font-weight: bold;">reflectancia</span> mide la
+capacidad de las
+superficies para reflejar la luz. Es uno de los datos que puede venir
+en este tipo de archivos. Si se corresponde con la primera columna,
+entonces es recomendable activar esta opción
+para que el programa la tenga en cuenta a la hora de leer los datos y
+pueda así ser usada en las opciones de </a><a href="EDM_datos_laser.html#visualizacion">visualización</a>.</li>
+        <li><span style="font-weight: bold;">Corregir la escala en los
+archivos .las/.laz</span>: Algunos archivos tienen valores de escala
+erroneos, error que podemos
+corregir activando esta casilla.</li>
+      </ul>
+      <br />
+      <br />
+      <a name="analisis"><span class="Titulo_2">Análisis</span></a><br />
+      <br />
+Antes de efectuar el análisis propiamente dicho, es preciso crear una <span style="font-weight: bold;">lista</span> con los nombres de todos los
+archivos de puntos que conforman el conjunto de los datos.<br />
+Se tiene la posibilidad de crear la lista de los archivos de entrada
+mediante el selector de archivos, incluso pueden estar en una carpeta
+diferente a la carpeta de trabajo. En este caso se crea siempre la
+lista ISPOL.lt1<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_analisis.png" style="width: 450px; height: 67px;" alt="" /><br />
+      </div>
+      <br />
+      <img src="Imagenes/datos_laser_lista.png" style="width: 234px; height: 79px;" alt="" align="right" hspace="4" />Esta
+lista debe crearse aunque los datos estén contenidos en un único
+archivo. Para ello se pulsa sobre el botón <span style="font-weight: bold;">[Crear lista]</span>,
+apareciendo entonces un cuadro de diálogo en el que simplemente se debe
+declarar el nombre del archivo que contendrá la lista. Una vez creado
+el fichero (de extensión&nbsp;<span class="Archivo">.lt1</span>), el
+programa añadirá automáticamente a la lista todos los archivos con la
+extensión especificada en el <a href="#tipos_datos">tipo de datos</a>
+que sea capaz de encontrar en el directorio de trabajo.
+Por otro lado, el botón <span style="font-weight: bold;">[Editar]</span>
+muestra el contenido del archivo para que se mueda modficar añadiendo o
+quitando elementos de la lista.<br />
+      <br />
+Una vez creada la lista, ya es posible procesar todos los puntos
+pulsando sobre el botón <span style="font-weight: bold;">[Analizar]</span>.
+El programa analiza los archivos de la lista, determinando el número
+total de
+puntos y los valores máximos y mínimos de X, Y, Z y reflectancia.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="base_datos">Base de datos</a></span><br />
+      <br />
+      <img src="Imagenes/datos_laser_bd.png" style="width: 450px; height: 67px;" alt="" align="right" hspace="4" />Tras
+analizar la nube de puntos al completo, es el momento de crear una <span style="font-weight: bold;">base de datos</span>
+con toda la información obtenida. El objetivo de esta base de datos es
+reorganizar toda la información una vez procesada y almacenarla para
+que el usuario pueda recuperarla en cualquier momento sin necesidad de
+volver a analizar todos los datos de nuevo.<br />
+      <br />
+      <img src="Imagenes/datos_laser_celdas.png" style="width: 253px; height: 207px; margin-right: 7px;" alt="" align="left" />Al
+crear esta base de datos los puntos se agrupan según una cuadrícula
+regular. El número de celdas creadas se calcula según el parámetro <span style="font-weight: bold;">pmin</span>,
+que es el promedio mínimo de puntos por celda, es decir, el mínimo
+número medio de puntos que habrá en cada celda (es el mínimo porque el
+programa tiene establecido un número de celdas máximo).<br />
+      <br />
+Las celdas se muestran de diferentes colores en función del número de
+puntos que contiene, lo que permite distinguir a simple vista las
+distintas densidades de puntos tomados por el escáner láser.<br />
+      <br />
+La base de datos se genera por defecto en una subcarpeta de la carpeta
+de trabajo con el nombre <span style="font-style: italic;">laser</span>,
+aunque el usuario puede especificar otro nombre si lo desea.<br />
+      <br />
+Una vez generada la base de datos, es posible recuperarla en cualquier
+momento pulsando sobre el botón <span style="font-weight: bold;">[Abrir]</span>,
+lo que evita tener que efectuar el análisis de
+los puntos de nuevo en otra sesión de trabajo con el programa.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Cerrar]</span>
+cierra todos los ficheros de datos de la base de datos activa, lo que
+libera memoria una vez finalizado el trabajo. Este paso es necesario si
+se desea cargar otra base de datos a continuación.<br />
+      <br />
+El programa, al generar una base de datos laser, extrae de los archivos
+.las la siguiente información:<br />
+      <ul>
+        <li>Coordenadas del punto X,Y,Z</li>
+        <li>Reflectancia</li>
+        <li>Color real (r,g,b). Si no viene este valor se le puede
+asignar a partir de una imagen de la zona con la utilidad <span style="font-weight: bold;">Colorear con imagen</span>.</li>
+        <li><span style="font-weight: bold;"><img src="Imagenes/laser_clasif.png" style="width: 187px; height: 187px;" alt="" align="right" hspace="6" />Clasificación</span>:
+Los puntos pueden ser clasificados por categorías, por
+ejemplo: Terreno, Vegetación baja, Vegetación media, Vegetación alta,
+Construcciones, Agua, Puntos Clave, Ruido, etc... Las 64 primeras
+categorías están reservadas, pero se pueden clasificar los puntos hasta
+en 256 categorías diferentes.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">Pulsando el icono <img src="Imagenes/icono_info_laser.png" style="width: 20px; height: 20px;" alt="" /> el programa cuenta
+automáticamente los puntos que hay en la base de datos de cada uno de
+los tipos.<br />
+      <br />
+Tanto en la visualización como para la generación de un modelo del
+terreno (líneas de nivel, perfiles, etc) se pueden activar/desactivar
+distintas categorías. Por ejemplo pueden desactivarse todas dejando
+solo activos los puntos de Terreno.<br />El
+estado de activación de la clasificación se guarda/recupera en el
+archivo de configuración (ispol.cfg) además de la opción de ver siempre
+la rejilla.<br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="visualizacion">Visualización</a></span><br />
+      <br />
+Una vez creada la <a href="#base_datos">base de datos</a>, es posible
+visualizar en pantalla los datos usando distintos criterios:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_visualizacion.png" style="width: 450px; height: 49px;" alt="" /><br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Color por clase</span>:
+Los puntos se colorean según su clasificación.</li>
+      </ul>
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><img src="Imagenes/nubes_densas_editar_clase_ej.png" style="width: 242px; height: 215px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top;">
+            <div style="text-align: center;"><img src="Imagenes/nubes_densas_editar_clase.png" style="width: 170px; height: 118px;" alt="" /><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li><span style="font-weight: bold;">Color por reflectancia</span>:
+Los puntos se colorean según la <a href="#reflectancia">reflectancia</a>.</li>
+        <li><span style="font-weight: bold;">Color por cota</span>: Los
+puntos se colorean según su cota.<br />
+        </li>
+        <li><span style="font-weight: bold;">Color real</span>. Los
+puntos se colorean según el
+colorido RGB que haya definido en el fichero (o el que definamos usando
+          <span style="font-weight: bold;">Colorear con imagen</span>.<br />
+        </li>
+      </ul>
+      <img src="Imagenes/datos_laser_ejem_visual.png" style="width: 281px; height: 266px; margin-left: 7px;" alt="" align="right" />Si la
+cantidad total de puntos es muy grande, la representación de los
+mismos podría ser demasiado lenta. Para evitar este problema, es
+posible indicar un número máximo de puntos a visualizar por cada celda
+o por metro cuadrado, y pulsar <span style="font-weight: bold;">[Ver
+puntos]</span> para visualizar solo esos. Si se pulsa sobre el
+botón <span style="font-weight: bold;">[Ver todos]</span>, entonces se
+muestran en pantalla la totalidad de los datos.<br />
+      <br />
+Si pulsamos sobre <span style="font-weight: bold;">[OpenGL]</span>
+podremos ver el contenido de la base de datos laser en una ventana en
+2D o 3D y en tiempo real (opción por defecto). La base de datos
+es pasada "entera" a
+memoria para poder ser dibujada con celeridad.<br />
+      <br />
+La visualización 3D se configura con el menú que se muestra al pulsar
+el botón <span style="font-weight: bold;">[OpenGL]</span>:<br />
+      <br />
+      <img src="Imagenes/dialogo_opengl.png" style="width: 300px; height: 329px;" alt="" /><br />
+      <br />
+Las opciones de este menú son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Ver Todos</span> / <span style="font-weight: bold;">Ver Puntos</span>: Indican si se van a
+considerar todos los puntos
+de la base de datos o sólo un cierto número de puntos por celda.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Pmáx</span>: Indica el
+número de puntos máximo a leer de cada celda en caso de que se
+seleccione la opción "Ver Puntos".</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Color por clase /
+reflectancia</span> / <span style="font-weight: bold;">cota</span> / <span style="font-weight: bold;">Color real</span>: indica el modo de
+coloreado de los puntos de la base de datos. La reflectancia o el
+color real deben estar disponibles en la base de datos laser.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">OpenGL 2D</span>: Muestra
+los puntos en dos dimensiones bien en la ventana integrada o en una
+ventana independiente.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">OpenGL 3D</span>: Muestra
+los puntos en tres dimensiones bien en la ventana integrada o en una
+ventana independiente.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ver cartografía</span>: Permite ver la cartografía en la ventana OpenGL.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Ventana integrada</span>:
+muestra la visualización de los puntos, bien en 2D o en 3D, en la
+propia ventana de Ispol.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Ventana independiente</span>:
+muestra la visualización de los puntos, bien en 2D o en 3D, en una
+ventana independiente.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Distancia engordar puntos</span>:
+Indica la distancia en metros, medida desde la cámara al punto de la
+geometría que se mira (centro de la ventana) a partir del cual, al
+acercarse la cámara a dicho punto, los puntos se "engordan" para dar
+una mejor sensación de continuidad de la información.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Información al mover el
+cursor</span>:
+Al activar esta casilla, el programa nos da la información de cada
+punto simplemente
+con situar el cursor del ratón encima de cada uno de ellos. La
+información que muestra es relativa a coordenadas, color, reflectividad
+y clase. Si no se activa esta casilla, en la ventana OpenGL podremos
+ver esta
+información en la esquina superior izquierda clicando con el botón
+izquierdo del ratón encima de cada punto.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Descargar los datos OpenGL
+al
+cerrar ventana</span>:
+Indica si al cerrar la ventana de OpenGL se desea que se descargue de
+memoria la información de la base de datos automáticamente (no ocurre
+nada con la base de datos laser en sí). Para otra visualización será
+necesario volver a leer esa información.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Descargar datos OpenGL</span>
+          <span style="font-weight: bold;">¡ya!</span>:
+Permite liberar la memoria ocupada por los puntos de la base de datos
+leidos para la visualización. Esta opción sólo está disponible si se
+han leido datos y se ha cerrado la ventana sin descargar información
+(no ocurre nada con la base de datos laser en sí). Si esta información
+queda en memoria hasta que se libere con este botón, cerrando la
+ventana de OpenGL con la opcion de "Descargar" marcada o cuando se
+salga de Istram.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Zona a representar en
+OpenGL</span>: Permite acotar entre qué coordenadas XY se van a
+visualizar los puntos. Podemos escoger las coordenadas tecleandolas
+directamente, usando el ratón (<span style="font-weight: bold;">Seleccionar
+celdas para ver</span>) o seleccionar todos los puntos usando <span style="font-weight: bold;">Seleccionar todas las celdas</span>.<br />
+        </li>
+      </ul>
+La
+navegación por esta visualización es igual que en "Vista
+3D".<br />
+      <ul>
+        <li>Botón izquierdo del ratón: selecciona el punto al que se
+mira</li>
+        <li>Rueda del ratón: acerca o aleja la cámara a los puntos.</li>
+        <li>Rueda del ratón, usada como botón, o botón central, junto
+con arrastre
+del ratón: permite que la cámara gire alrededor del punto que está en
+el centro de la imagen.</li>
+        <li>Botón derecho del ratón junto con arrastre del ratón:
+permite desplazar la cámara sobre los puntos.</li>
+      </ul>
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_opengl_ej.png" style="width: 600px; height: 450px;" alt="" /><br />
+      </div>
+      <br />
+      <span class="Titulo_2"><a name="filtros">Filtros</a></span><br />
+      <br />
+Es posible filtrar la <a href="#base_datos">base de datos</a>
+con el objetivo de eliminar puntos que aportan información poco
+relevante o errónea al conjunto total y así aligerar el proceso.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_filtros.png" style="width: 300px; height: 214px;" alt="" /><br />
+      </div>
+      <br />
+Hay que tener en cuenta que, llegados a este punto, los datos <span style="font-weight: bold;">se encuentran ordenados</span>
+según distancias al escáner y ángulos acimutales y cenitales (para cada
+ángulo cenital, habrá varios barridos láser con distintos ángulos
+cenitales). Teniendo esto presente, los posibles criterios de filtrado
+son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Número máximo de puntos
+por celda</span> (<span style="font-weight: bold;">Pmáx</span>): Es un
+criterio similar al de <a href="#visualizacion"><span style="font-weight: bold;">Visualización</span></a>,
+es decir, el programa se queda como máximo con el número aquí indicado
+por cada una de las celdas de la rejilla. El filtrado de puntos se hace
+de manera alterna, de tal forma que si, por ejemplo, en una celda hay
+50.000 puntos y se indica que como máximo se admiten 5.000, el programa
+se queda con un dato de cada diez de forma alternativa.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Contorno</span>: Permite
+seleccionar un recinto (una polilinea cerrada). Si está activa la
+casilla <span style="font-weight: bold;">[ ]Mismo tipo</span>, se
+seleccionan también los recintos que usen el mismo tipo de linea. Este
+filtro se queda solo con los puntos que estén dentro/fuera del recinto
+según esté seleccionada la opción <span style="font-weight: bold;">Dentro/Fuera</span>. Si se emplea la opción <span style="font-weight: bold;">Separar</span>,
+se crea una nueva base de datos con los puntos contenidos en cada
+recinto, generándose el archivo .las correspondiente. Si se selecciona
+el tipo <span style="font-weight: bold;">Filtrar Dentro </span>el
+programa utiliza el resto de filtros, operando solo con los puntos que
+están dentro del recinto o de los recintos del tipo especificado. Los
+puntos que están fuera no se alteran.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Rango de cotas</span>:
+Todos los puntos que no estén dentro del rango [<span style="font-weight: bold;">Zmín</span>,<span style="font-weight: bold;">Zmáx</span>]
+son desechados. Esto es útil para no considerar
+aquellos puntos que han sido tomados por alguna circunstancia especial
+(por ejemplo, un ave que sobrevolaba la zona).<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">dZ Rasante DR/IZ</span>:
+Desecha todos los puntos que no estén contenidos en [<span style="font-weight: bold;">Cota de rasante +/- dZ</span>]. Solo
+utilizable cuando se abre esta ventana Nubes densas de puntos teniendo
+la pestaña <a href="OL_rasantes_diseno.html">Rasantes</a> de Obra
+Lineal abierta.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Cotas aisladas</span>: Se
+eliminan aquellos puntos de una zona cuya cota difiera en más del valor
+indicado en <span style="font-weight: bold;">dZ</span> respecto al
+punto más cercano, es decir, elimina 'picos', tal y como se muestra en
+la siguiente imagen:</li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/datos_laser_filtro_cota_aislada.png" style="width: 573px; height: 391px;" alt="" /><br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Puntos principales</span>:
+Permite eliminar puntos alineados que, aunque sus coordenadas sean
+correctas, realmente no aportan información relevante al conjunto
+(puntos alineados). Este filtrado se hace según la <span style="font-weight: bold;">tolerancia lateral</span> indicada.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Piramidal</span>: Este
+filtro es equivalente al filtro de triángulos en topografía. Viene
+definido por un <span style="font-weight: bold;">dZ mínima</span>, <span style="font-weight: bold;">dZ máxima</span> y una <span style="font-weight: bold;">Distancia máxima</span>.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Limpiar terreno</span>:
+Elimina todos los puntos que superen una cierta inclinación de talud
+con respecto a los puntos de su entorno. Muy útil para eliminar las
+bóvedas de un túnel, edificaciones, árboles, postes, vehículos, etc.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;">Archivo .ENP</span>:
+Permite cargar un archivo&nbsp;<span class="Archivo">.enp</span> de
+comandos de filtrado para llevar a cabo varias operaciones
+sucesivamente.<br />
+        </li>
+      </ul>
+Al lado de cada una de las opciones hay una casilla en la que poner el
+número de una de las clasificaciones, o bien 0. Si se pone el número de
+una de las clasificaciones, al filtrar lo que hará será colocar esos
+puntos filtrados en la clasificación indicada. Si se pone 0, los puntos
+filtrados sencillamente se eliminarán de la base de datos.<br />
+      <br />
+      <span style="font-weight: bold;">Regenerar la base de datos al terminar</span>:
+si tras filtrar la base de datos queda un número de puntos muy inferior
+al original, es conveniente activar esta opción para que vuelva a crear
+una distribución de celdas más acorde con la nueva densidad de puntos.
+Se puede elegir que se quede solamente con una clase en concreto, o
+poner 0 en la casilla de <span style="font-weight: bold;">Clase a guardar</span> para guardarlas todas.<span style="font-weight: bold;"><br />
+      <br />
+[Filtrar a:]</span> aplica los
+filtros seleccionados,
+generándose entonces una nueva base de datos en la carpeta especificada
+en el campo adyacente. Si en ese campo se indica el mismo nombre que la
+base de datos original, se mostrará una advertencia informando de que
+se sustituirá la base de datos original por la nueva filtrada y
+pidiendo la confirmación del usuario.<br />
+      <br />
+      <span style="font-weight: bold;">[Informe]</span> muestra un
+archivo con información sobre el número de puntos
+antes y después del filtrado, los filtros aplicados y el número de
+puntos
+eliminados con cada uno de ellos.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><br />
+      <a name="utiles">Útiles</a></span><br />
+      <br />
+En esta sección se proporcionan una serie de utilidades básicas para
+usar la nube de puntos ya procesada:<br />
+      <br />
+Esta sección posibilita la generación de curvas de nivel, según una <span style="font-weight: bold;">equidistancia</span> en cota a partir de la
+casilla <span style="font-weight: bold;">Crear curvas de nivel</span>.
+Por otra parte, mediante el comando <span style="font-weight: bold;">Crear
+curvas de nivel suavizadas</span>
+el programa genera internamente una base de datos sobre una rejilla que
+puede ser
+regular o no. Permite crear isolineas sobre esta nueva base. Se generan
+las
+isolieas sin necesidad de triangularla, con lo que se acelera el
+proceso. Aparece un cuadro que veremos más abajo clicando en la casilla
+      <a href="#rejilla_regular">Crear curvas de nivel.Suavizada</a>.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_utiles.png" style="width: 451px; height: 103px;" alt="" /><br />
+      </div>
+      <br />
+      <ul>
+        <li><span style="font-weight: bold;">Crear curvas de nivel</span>:
+Genera curvas de nivel a partir de la nube de puntos, usando la
+equidistancia entre curvas especificada en la casilla adyacente al
+botón. Cuando en <span style="color: rgb(0, 78, 175);">Filtros</span> está activo <span style="font-weight: bold;">Contorno</span> y se ha seleccionado una línea válida, las líneas de nivel generadas se crearán sólo <span style="font-weight: bold;">Dentro/Fuera</span> de ese recinto o de todos los del<span style="font-weight: bold;"> [ ]Mismo tipo</span>.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold;"><a name="rejilla_regular">Crear
+curvas de nivel. Suavizada</a></span>:
+Mediante
+esta opción tenemos la posibilidad de suavizar la cota de los
+puntos utilizando los de alrededor pero sin modificar su posición
+original, y luego crear curvas de nivel sobre una rejilla. Se requiere
+la
+siguiente información:</li>
+         
+        <ul>
+           
+          <li>Equidistancia entre curvas de
+nivel: igual que en la
+opción anterior.<br />
+
+            </li>
+           
+        </ul>
+         
+        <ul>
+           
+          <li>Distancia entre puntos:
+La nueva base de datos esta formada por puntos situados sobre una
+rejilla regular y aqui se da la resolución de la rejilla. Esta
+distancia debe ser mayor que la distancia promedio entre puntos de
+los datos originales.</li>
+           
+        </ul>
+         
+        <ul>
+           
+          <li>Distancia de busqueda.
+Cada punto nuevo utiliza para calcular su cota la de los puntos
+situados dentro de esta distancia.</li>
+           
+        </ul>
+         
+        <ul>
+           
+          <li>Coeficiente de peso y
+curva de pesos. Se utiliza una curva de Gauss para dar un mayor
+peso a los puntos más próximos y menos a los mas alejados.</li>
+           
+        </ul>
+         
+      </ul>
+       
+      <div style="margin-left: 40px;">Cuando en <span style="color: rgb(0, 78, 175);">Filtros</span> está activo <span style="font-weight: bold;">Contorno</span> y se ha seleccionado una línea válida, las líneas de nivel generadas se crearán sólo <span style="font-weight: bold;">Dentro/Fuera</span> de ese recinto o de todos los del <span style="font-weight: bold;">[ ]Mismo tipo</span>.<br /><br />El
+color, reflectancia y
+clasificación se heredan del punto más
+próximo. En un principio la base de datos obtenida tiene las mismas
+celdas que la original, de modo que si la densidad de puntos es mucho
+menor conviene guardar un archivo&nbsp;<span class="Archivo">.las</span>
+y volver a crear con este la base de datos.<br />
+
+Al crear curvas de nivel con esta nueva base de datos se obtienen
+líneas más suaves que con la base original, pues utilizando parámetros
+adecuados se puede eliminar bastante ruido.<br />
+
+      </div>
+       <br />
+
+      
+      <div style="text-align: center;"><a name="rejilla_regular"><img src="Imagenes/laser_rejilla_regular.png" style="width: 384px; height: 282px;" alt="" /><br />
+      </a></div>
+       
+      <ul>
+         
+        <li><span style="font-weight: bold;">Añadir
+puntos (Símbolos
+activos)</span>: añade a la base de datos
+los puntos (símbolos activos)
+presentes en la cartografía.<br />
+
+          <br />
+
+          </li>
+         
+        <li><span style="font-weight: bold;">Triangular
+desde un punto</span>:
+Esta utilidad crea una malla de lineas EDM, al estilo 3D caras que
+permite extraer transversales con la opción de extraplomos en paredes
+pseudoverticales. La malla se crea triangulando los puntos interiores a
+un contorno utilizando como coordenadas los angulos horizontal y
+vertical vistos desde el punto definido, en lugar de las coordenadas
+(x,y). Es posible limitar la <span style="font-weight: bold;">Máxima longitud de malla</span> indicando un valor en metros.<br /></li></ul><div style="margin-left: 40px;">Activando la casilla correspondiente&nbsp;los resultados se guardan en un archivo .ttg.</div><div style="text-align: center;"><br /><img style="width: 512px; height: 226px;" alt="" src="Imagenes/nubes_densas_puntos_triangular_desde_punto.png" /></div><ul><li><span style="font-weight: bold;">Insertar otra N.D.P</span>:&nbsp;Permite
+sustituir en el interior de uno o varios contornos, del mismo tipo, los
+puntos de la N.D.P actual, por puntos de otra N.D.P.&nbsp;Los contornos
+deben estar previamente definidos en la pestaña <span style="color: rgb(0, 78, 175);">Filtros</span>, activando el filtro por <span style="font-weight: bold;">Contorno</span>, seleccionando un contorno y marcando, si es el caso, la opción<span style="font-weight: bold;"> [ ]Mismo tipo</span>. Al pulsar sobre <span style="font-weight: bold;">[&nbsp;] Insertar otra N.D.P</span> permite seleccionar la N.D.P que va a insertar sus puntos.&nbsp;</li></ul><ul><li><span style="font-weight: bold;">Sumar Z</span>: Incrementa en un valor fijo (positivo o negativo) la cota de todos los puntos de la nube densa de puntos.</li></ul>
+
+          <ul>
+         
+        <li> 
+          <div style="text-align: right;"><img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> <span style="font-weight: bold;">.xyz/.las/.tif/.ttp</span>: Abre un menú
+desplegable con el cual realizar diversas operaciones de guardado de
+archivos:<img src="Imagenes/nubes_densas_puntos_utiles_guardar.png" style="width: 228px; height: 198px;" alt="" align="right" hspace="4" /><br />
+
+          </div>
+           <br />
+
+          </li>
+         
+        <ul>
+           
+          <li><span style="font-weight: bold;">Guardar
+.xyz / .las /
+.laz</span>: Guarda un archivo .xyz, .las
+o .laz con la base de datos
+activa.<br />
+
+            <br />
+
+            </li>
+           
+          <li><span style="font-weight: bold;">Rasterizar</span>:
+Genera una imagen raster a partir de los puntos de la base de datos
+laser. Nos preguntará el nombre del fichero a generar, su resolución en
+m/pixel y su formato (Geotiff, ASC,...)<br />
+
+            <br />
+
+            </li>
+           
+          <li><span style="font-weight: bold;">.ttp
+simplificado</span>:
+genera un archivo&nbsp;<span class="Archivo">.ttp</span> (<a href="EDM_topografia.html#ficheros_temporales">fichero de triangulación</a>)
+a partir de una base de datos laser, dando el <span style="font-weight: bold;">número máximo de puntos</span> y unos
+parámetros <span style="font-weight: bold;">iniciales</span> para un
+filtrado piramidal (<span style="font-weight: bold;">dZmin</span>, <span style="font-weight: bold;">dZmax</span> y <span style="font-weight: bold;">Dist máx</span>). El programa filtra la
+base de datos y genera un archivo .las; si el
+número de puntos de éste todavía supera a los previstos, crea una nueva
+base de datos con este archivo .las, incrementa los parámetros de
+filtrado y repite el proceso hasta conseguir una base con un número
+de puntos inferior al previsto. En este momento genera el archivo de
+triangulación&nbsp;<span class="Archivo">.ttp</span> y guarda también
+esta superficie como <a href="EDM_control_entidades.html#control_ttps">triangulación
+actual</a>.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Guardar .las/.xyz -&gt;
+CRS destino/HUSO destino/transformación coordenadas</span>: guarda un
+archivo .las o .xyz aplicando la transformación especificada en el CRS
+de destino, o en el huso de destino, o en Herramientas/Transformación
+de coordenadas.<br />
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Editar datos</span>:
+Esta herramienta permite editar puntos de la base de datos en grupo o
+individualmente. Primero se ha de seleccionar una zona de trabajo, en
+la cual podemos visualizar los puntos de cualquiera de las maneras
+habituales (por clase, por reflectancia, por cota, color real).</li>
+        <br />
+        <ul>
+          <li><span style="font-weight: bold;">Cambiar de clase y borrar</span>:
+Permite seleccionar/deseleccionar utilizando un
+cursor circular de radio variable. Los elementos seleccionados se
+pueden cambiar de clase en bloque a una clase concreta o se pueden
+borrar.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Editar un punto</span>:
+permite seleccionar los puntos de uno en uno para editar diversos
+atributos: coordenadas, reflectancia, color RGB, clase o
+incluso borrarlos.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">+/-</span>: junto a los
+campos RGB y Ref., estas casillas nos permiten especificar una
+tolerancia para las herramientas de rango.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Rango RGB/REF</span>:
+selecciona todos los puntos cuyo color/reflectancia estén dentro del
+rango del valor del punto actual más (menos) la tolerancia especificada
+en las casillas +/-.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Cambiar clase</span>:
+cambia la clase del punto a la clase activa en la lista de la
+izquierda. La clase activa es la seleccionada en la columna Destino.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Deshacer</span>: el
+botón <img src="Imagenes/icono_deshacer_pequeno.png" style="width: 18px; height: 15px;" alt="" /> deshace los cambios que
+se hayan hecho a las propiedades del punto seleccionado.<br />
+            <br />
+          </li>
+          <li><span style="font-weight: bold;">Aplicar cambios a la
+base de datos</span>: acepta las ediciones que hemos llevado a cabo y
+las incorpora de manera definitiva a la base de datos.<br />
+          </li>
+          <li><span style="font-weight: bold;">Crear curvas de nivel</span>:
+el botón <img src="Imagenes/icono_curvas_nivel.png" style="width: 18px; height: 18px;" alt="" /> el programa nos permite
+generar curvas de nivel de la base de datos en la zona
+de trabajo cargada.<br />
+          </li>
+        </ul>
+        <span style="font-weight: bold;"><br />
+        <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+          <tbody>
+            <tr>
+              <td style="vertical-align: top; text-align: center;"><img src="Imagenes/nubes_densas_editar_1punto.png" style="width: 384px; height: 289px;" alt="" /> </td>
+              <td style="vertical-align: top; text-align: center;"><img src="Imagenes/nubes_densas_editar_punto.png" style="width: 246px; height: 345px;" alt="" /><br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span></ul>
+      <ul>
+        <li><span style="font-weight: bold;">Colorear con imagen</span>:
+da color (RGB, "color real") a los puntos de la base de datos laser a
+partir del color de una <a href="EDM_imagenes.html">imagen de fondo</a>
+que tenemos que tener cargada.</li>
+        <br />
+        <li><span style="font-weight: bold;">Suavizar cotas</span>:
+Mediante
+esta opción tenemos la posibilidad de suavizar sólo la cota de los
+puntos utilizando los de alrededor pero sin modificar su posición
+original. Permite por tanto suavizar la base de datos laser. Se
+requiere la
+siguiente información:</li>
+        <ul>
+          <li>Distancia entre puntos:
+La nueva base de datos esta formada por puntos situados sobre una
+rejilla regular y aqui se da la resolución de la rejilla. Esta
+distancia debe ser mayor que la distancia promedio entre puntos de
+los datos originales.</li>
+        </ul>
+        <ul>
+          <li>Distancia de busqueda.
+Cada punto nuevo utiliza para calcular su cota la de los puntos
+situados dentro de esta distancia.</li>
+        </ul>
+        <ul>
+          <li>Coeficiente de peso y
+curva de pesos. Se utiliza una curva de Gauss para dar un mayor
+peso a los puntos más próximos y menos a los mas alejados.</li>
+        </ul>
+      </ul>
+      <div style="margin-left: 40px;">El color, reflectancia y
+clasificación se heredan del punto más
+próximo. En un principio la base de datos obtenida tiene las mismas
+celdas que la original, de modo que si la densidad de puntos es mucho
+menor conviene guardar un archivo&nbsp;<span class="Archivo">.las</span>
+y volver a crear con este la base de datos.<br />
+Al crear curvas de nivel con esta nueva base de datos se obtienen
+líneas más suaves que con la base original, pues utilizando parámetros
+adecuados se puede eliminar bastante ruido.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Cubicar</span>:
+Permite
+cubicar
+entre dos bases de datos laser, con la opción de hacerlo solo en un
+recinto o también de crear los recintos de desmonte y terraplén. Crea
+una
+tercera base de datos sobre una rejilla regular, con la diferencia de
+cotas de las otros dos bases.</li>
+      </ul><ul><li><span class="Parf_negrita">Banda por PK</span>:
+Si estamos dentro de Obras lineales, en Planta o Alzado y accedemos al
+cuadro de diálogo de Nubes Densas de Puntos, en la pestaña de
+<span style="font-style: italic;">Útiles</span> disponemos de la herramienta <span style="font-style: italic;">[Banda x Pk].</span> Esta herramienta
+permite seleccionar ejes y PKs sobre ellos, numéricamente o
+gráficamente&nbsp; definiendo una banda por semiancho en PKs y en
+distancia al eje, de modo que la visualización de puntos normal (2D o
+3D) o si están cargados en OpenGL, se ciña a esa banda. Si vamos
+picando PKs y esta abierta la ventana OpenGL, el cambio de
+visualización es inmediato.</li></ul><div style="margin-left: 40px;">Se
+puede seleccionar un archivo .per diferente. Este archivo de salida
+será igual que el ISPOLn.per más los puntos de la NDP en el tramo
+seleccionado.</div><div style="margin-left: 40px;">La
+herramienta añadir a ISPOLx.per va recorriendo los perfiles de este
+archivo y ajusta automáticamente el semiancho en PK de la Banda para
+obtener como máximo el número de puntos que se le indica para cada
+perfil, los proyecta sobre el PK teniendo en cuente la pendiente
+longitudinal y les asigna un símbolo con el tamaño indicado y un tipo
+que se toma de un rango de símbolos en función de la intensidad del
+color original. Estos símbolos se pueden ver tanto en el editor de
+perfiles como en un dibujo de perfiles transversales.<br />Si se activa la opción de <span style="font-style: italic;">Crear Superficie </span>se
+crea una superficie cerrada uniendo los puntos de la nube en el perfil,
+para ello hay que definir el tipo de la superficie y configurar una
+referencia angular para ordenar los puntos, así podremos realizar
+mediciones con esta superficie.<br /><br /><div style="text-align: center;"><img style="width: 250px; height: 490px;" alt="" src="Imagenes/ndp_bporpk.png" /><br /></div></div><br /><div style="margin-left: 40px;">Ver
+en Sección Real: Si se activa, al desplazar el cursor por el eje entre
+los PKs definidos, en la ventana de la Sección se incorporan los puntos
+de la Nube Densa, y podemos editar estos perfiles.<br />
+      <br />
+La opción Volcar a contorno genera con el recinto de la nada entre Pks una línea y la selecciona como contorno para filtrar.<br /><br />Es posible añadir a la <span style="font-style: italic;">Tabla de puntos</span>
+para visualizar en la rasante y en el dibujo del perfil longitudinal
+los puntos de la nube que se proyectan en el eje. Para acceder a esta
+opción desde el menú Alzado.<br />
+</div><br />Desde este cuadro también se acceden a las mismas <a href="EDM_control_entidades.html#utiles">utilidades</a> que permiten
+alterar la cota de entidades gráficas: Obtener cota, lineas a cota,
+símbolos a cota...<br />
+      <br />
+      <ul>
+        <li><span style="font-weight: bold;">Longitud máxima de malla</span>: Cuando se usa una nube de puntos como <a href="EDM_control_entidades.html#control_superficies">superficie
+MDT</a>,
+y en ese menú se escoge usar la nube de puntos para cortar por mallas,
+en vez de por triángulos, podemos especificar aquí una longitud máxima
+de malla. Al triangular, filtrará los triángulos para que no haya
+mallas mayores que la permitida.</li>
+      </ul><span class="Parf_negrita">Edición de datos 3D</span><br /><br />Selección
+de puntos volumétrica a través de una esfera o de una caja. Se puede
+posicionar cualquiera de ellas manualmente a traves de coordenadas
+globales o situando el volumen con un clic en el visor de nubes densas
+de puntos. Se puede editar el volumen, en el caso de la esfera
+especificando el radio y en el caso de la caja especificando ancho,
+largo y alto.<br /><br /><div style="text-align: center;"><img src="Imagenes/seleccion3d_laser.png" style="width: 620px; height: 290px;" alt="" /><br /></div><br /><div style="text-align: center;"><img src="Imagenes/seleccion3d_laser_2.png" style="width: 400px; height: 450px;" alt="" /><br /></div><br /><div style="text-align: center;"><img src="Imagenes/seleccion3d_laser_3.png" style="width: 600px; height: 291px;" alt="" /></div>
+
+      <br />
+      <br />
+      <a name="basescargadas"><span class="Titulo_2">Bases de datos
+cargadas</span></a><br />
+      <br />
+Vamos
+a poder trabajar con hasta 5 bases de datos laser simultaneamente.
+Cuando se genera una base de datos nueva y se lee, su información pasa
+a la base de datos actual.<br />
+<br style="font-weight: bold;" />
+Cuando se carga una basa de datos desde la ventana inferior, su
+información se lee y pasa a ser la base de datos activa.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/datos_laser_cinco.png" style="width: 450px; height: 118px;" alt="" /><br />
+      </div>
+      <br />
+Una <a href="EDM_control_entidades.html#control_superficies">superficie
+MDT</a> puede estar definida con cualquiera de las cinco bases de datos
+laser disponibles, y se pueden cortar<br />
+perfiles transversales a varias bases de datos laser simultaneamente.<br />
+      <span style="font-weight: bold;"><span style="font-weight: bold;"><br />
+      </span></span>Mediante las casillas <span style="font-weight: bold;">Atenuación</span>
+y <span style="font-weight: bold;">Actual</span> podré disminuir la
+visualización dando un porcentaje al fichero Laser cargado como actual
+y al resto.<br />
+      <br />Los botones <span style="font-weight: bold;">[Iniciar]</span>, <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span>
+permiten inicializar, salvar y recuperar respectivamente las
+superficies declaradas en el proyecto mediante el uso de archivos .cnd.<br /><br />
+Posibilidad de tener simultaneamente hasta 100 bases de datos de nubes densas de puntos.<br />
+      <span style="font-weight: bold;"><span style="font-weight: bold;">
+      <br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></span></span></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

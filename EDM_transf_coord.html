@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Transformación de coordenadas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TRANSFORMACIÓN DE COORDENADAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      Se agrupa bajo este título todas las transformaciones de coordenadas que NO estén asociadas a cambios relacionados con el <a href="EDM_georreferenciacion.html#crs">sistema de referencia de coordenadas</a> (husos, elipsoides, sistemas de proyección,&#8230;).<br />
+      <br />
+El menú <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Transformación de coordenadas</span>
+permite transformar datos de cartografía, de topografía, de ejes en
+planta, de imágenes y Parcelas (vpp). La opción Parcelas (vpp) aplica
+la transformación a los contornos de las parcelas cargadas. Si se desea
+mantener ese cambio para posteriores usos, se debe guardar un fichero
+.vpp. <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 645px; height: 239px;" alt="" src="Imagenes/dialogo_transf_coord.png" /><br />
+      </div>
+      <br />
+Las transformaciones se hacen en base a coordenadas de puntos originales y finales (llamados <span style="font-weight: bold;">puntos de calibración</span>),
+que se pueden dar o bien directamente mediante el ratón y el oportuno
+enganche activado (modo Clic) o introduciendo las coordenadas (modo por
+      <span style="font-weight: bold;">Teclado</span>). Las transformaciones posibles son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Traslación</span>: Requiere un punto de origen y destino.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Traslación+Giro</span>: En este caso se requieren dos puntosm, y se muestra el error en distancia al transformar el segundo punto.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Traslación+Giro+Escala</span>: También precisa de dos puntos.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Traslación NO ortogonal (bilineal)</span>: Mediante tres puntos.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Traslación + Giro + Escala (promedio)</span>:
+Con tres o más puntos, promediando. En este caso se muestra una columna
+con los errores en distancia al transformar cada uno de los puntos dato
+y se ofrece la posibilidad de asignar un nombre a cada punto de
+calibración. También se da acceso una ventana que muestra los valores
+del giro y la escala que resultan tomando los puntos dato dos a dos.
+Es posible "forzar" la escala a 1.000 activando la correspondiente opción, aunque en tal caso es más precisa
+la transformación de Helmert. </li>
+      </ul>
+      <div style="margin-left: 40px;">Las parejas de puntos que estén a
+menos de 1 m no se consideran para el cálculo de la transformación.
+Además, la casilla de verificación de cada punto indica si interviene
+en el cálculo de los parámetros de transformación o no, recálculandose
+todo automáticamente en el momento en el que se activa o desactiva.<br />
+      </div>
+      <ul>
+        <li><img style="width: 195px; height: 50px; margin-left: 7px;" alt="" src="Imagenes/matriz_transf.png" align="right" /><span style="font-weight: bold;">Helmert 3D</span>: Transformación HELMERT 3D, para tres o más pares de puntos dato. Esta opción da acceso a la <span style="font-weight: bold;">matriz de transformación</span>,
+en donde se indica si los datos son válidos y, en su caso, los
+parámetros de la transformación. También se muestran en el menú los
+errores en X,Y, Z para los puntos dato.<br />
+        </li>
+      </ul>
+      <div style="margin-left: 40px;">Al igual que en el caso de la
+transformación según translación, giro y escala promedio, aquí es
+posible activar o desactivar puntos de calibración para el cálculo de
+los parámetros de transformación, recalculándose todo en tiempo real, y
+asignar un nombre a cada punto. También es posible "forzar" la escala a
+1.000 activando la correspondiente opción.<br />
+      <br />
+Esta transformación permite además generar un listado (<span class="Archivo">Helmert.res</span>) con los datos de entrada, los parámetros de la transformación y los errores al transformar los datos de entrada.<br />
+      <br />
+      <img style="width: 260px; height: 39px; margin-left: 7px;" alt="" src="Imagenes/helmert3D_dinamica.png" align="right" />La transformación HELMERT 3D tiene una variante <span style="font-weight: bold;">dinámica</span> másavanzada y que se comporta de la siguiente forma:<br />
+      <ol>
+        <li>Se realiza una triangulación de los puntos de calibración
+activos. La siguiente figura muestra una posible triangulación para una
+transformación Helmert 3D dinámica con 11 puntos de calibración:<br />
+        </li>
+      </ol>
+      <div style="margin-left: 40px; text-align: center;"><img style="width: 341px; height: 289px;" alt="" src="Imagenes/helmert3D_dinamica_exp.png" /><br />
+      </div>
+      <ol start="2">
+        <li>Se calculan los parámetros de una transformación de Helmert
+3D para cada punto de calibración activo, utilizando la información de
+todas las parejas de datos que definen los vértices de los triángulos
+que se apoyan en ese punto (ver listado&nbsp;<span class="Archivo">Helmert.res</span>).
+De esta forma, la transformación Helmert 3D que se aplicará al punto 1
+será la calculada para los puntos 1, 2, 3, 4, 8 y 10,que son los
+vértices con los que comparte triángulos. De igual forma, la
+transformación aplicada al punto 3 será la calculada según los puntos
+1, 3, 4 y 5 y la transformación para el punto 4 será la correspondiente
+a un Helmert 3D calculada para los puntos 1, 3, 4, 5, 6, 7 y 10.<br />
+        </li>
+      </ol>
+      <ol start="3">
+        <li>Al transformar la cartografía para cada punto se utilizan
+las tres transformaciones de los vértices del triángulo que los
+contienen, ponderadas en función de la posición del punto dentro del
+triángulo. Para los puntos que no estén dentro de ningún triángulo, se
+utiliza la transformación del punto más cercano. Aplicando esto a la
+figura anterior, la transformación que sufrirá el punto amarillo
+pertenciente a la cartografía será una transformación ponderada de las
+transformaciones calculadas para los puntos 1, 3 y 4 anteriormente
+mencinados. La ponderación se efectuará según la distancia del punto
+amarillo a cada uno de esos vértices del triángulo que lo contiene.<br />
+        </li>
+      </ol>
+Al salir del cuadro de diálogo, la transformación (Helmert
+3D tanto estática como dinámica) queda activa y pueden ser usadas por
+otras utilidades del programa, como el seguimiento de datos desde un
+GPS, etc.<br />
+      <br />
+      <img style="width: 153px; height: 65px; margin-left: 7px;" alt="" src="Imagenes/helmert3D_gps.png" align="right" />Para
+la trasformación de Helmert3D (estática o dinámica) existe la
+posibilidad de introducir las coordenadas originales como datos
+(latitud, longitud, altura) leidos mediante un <a href="EDM_gps.html">GPS</a>. En este caso el programa actúa de la siguiente forma:<br />
+      <ol>
+        <li>Se trasforman las coordenadas (latitud, longitud) WGS84 en (X,Y) en el <a href="EDM_georreferenciacion#crs">CRS</a> origen, mediante la trasformación que haya definida en el cuadro de diálogo de <a href="EDM_georreferenciacion#crs">CRS</a> (por ejemplo, si se tiene definida una trasformación de ED50 a WGS84, las coordenadas X e Y se obtienen en ED50).</li>
+      </ol>
+      <ol start="2">
+        <li>Si hay definido para el CRS destino un <a href="EDM_georreferenciacion.html#rejilla">sistema de referencia vertical</a> (como el&nbsp;<span class="Archivo">EGM08_REDNAP.gzb</span>)
+se transforma la altura dato en Z (altura sobre el nivel del mar). Si
+no, se supone que la altura dato ya está sobre el nivel del mar.</li>
+      </ol>
+      <ol start="3">
+        <li>Estas coordenadas (X,Y,Z) se utilizan como originales. Si
+se conocen los valores finales de estas coordenadas, entonces es
+posible definir una transformación de coordenadas (para la calibración
+local).</li>
+      </ol>
+      <ol start="4">
+        <li>En estas circunstancias, si se conecta el <a href="EDM_gps.html">seguimiento de GPS</a>, las coordenadas leidas se procesan primero por la trasformación de <a href="EDM_georreferenciacion#crs">CRS</a> (incluyendo el <a href="EDM_georreferenciacion.html#rejilla">sistema de referencia vertical</a>) y luego por la transformación de Helmert 3D (estática o dinámica).</li>
+      </ol>
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Transformación de cotas</span> por 1, 2 ó 3 puntos:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Por un punto</span>: Se aplica el incremento de cota (&#8710;Z) único a todos los puntos.</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Por dos puntos</span>: Se
+crea un plano (X,Y,&#8710;Z) cuya línea de máxima pendiente la forman los dos
+puntos dato, y a cada punto se le aplica el &#8710;Z que le corresponda según
+su posición (X,Y).</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li><span style="font-weight: bold;">Por tres puntos</span>: Se
+crea un plano (X,Y,&#8710;Z) con los tres puntos dato, y a cada punto se le
+aplica el &#8710;Z que le corresponda según su posición (X,Y).</li>
+      </ul>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Intercambiar X por Y</span>:
+Cambiar los valores de la coordenada X por los de la coordenada Y y
+viceversa. Esto es útil, por ejemplo, en aquellos casos en los que se
+ha importado una nube de puntos donde la primera columna son ordenadas
+y la segunda abcisas.</li>
+      </ul><ul><li><span class="Parf_negrita">Translación + Escala (por parámetros)</span>: En este caso se da el nuevo origen X e Y y el factor de Escala que se aplican según se muestra en el cuadro de diálogo:</li><ul><li>Xfinal = (Xoriginal - Origen_X)/FactorEscala.</li><li>Yfinal = (Yoriginal - Origen_Y)/FactorEscala.</li></ul></ul>
+      <br /><img style="width: 132px; height: 82px; margin-left: 7px;" alt="" src="Imagenes/transf_coord_guardar_cargar.png" align="right" /> Los datos de partida originales y finales se pueden <span style="font-weight: bold;">guardar</span> y <span style="font-weight: bold;">cargar</span>, bien en conjunto, bien por separado, mediante ficheros de extensión&nbsp;<span class="Archivo">.dtc</span>.<br />
+      <br />
+Cuando se carga uno de estos ficheros no se inicializan el resto de
+datos y se busca su posición por el nombre. Si no existe ningún nombre
+igual, se añade a la lista en el primer nombre vacío. Este tipo de
+archivos son compatibles entre sí, de modo que de un fichero total
+pueden leerse solo las coordenadas originale o las finales, o bien un
+fichero de coordenadas finales puede leerse como originales, etc.<br />
+      <br />
+Las opciones de cargar coordenadas originales o finales admiten también ficheros con las extensión&nbsp;<a href="OL_replanteo_planta.html#def_bases"><span class="Archivo">.bas</span></a> y&nbsp;<a href="EDM_topografia.html#ficheros_toc"><span class="Archivo">.toc</span></a>.<br />
+Para poder cargar un fichero .toc la columna <span style="font-weight: bold;">Nombre</span>
+(por defecto con los valores P1, P2, P3...) del menú Transformación de
+Coordenadas deberá coincidir con la primera columna del fichero .toc
+(primera columna número de punto, segunda columna X, tercera columna Y,
+cuarta columna Z) que carguemos.<br />
+<br />
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,1144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Trabajo con GPS en tiempo real</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TRABAJO CON GPS EN TIEMPO REAL<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td class="Parrafo" style="width: 694px;">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#modo_configuracion">Modo de trabajo </a><span style="font-style: italic;"><a href="#modo_configuracion">Configuración</a></span><br />
+      <span style="font-style: italic;">
+      </span></div>
+
+      <div style="margin-left: 80px;"><a href="#definicion">Definición del GPS</a><br />
+      <a href="#conexion">Conexión con el GPS</a><br /><a href="#actividad">Registro de actividad del GPS</a><br />
+      <a href="#zoom_auto">Zoom automático</a><br />
+      </div>
+      
+      <div style="margin-left: 40px;"><span style="font-style: italic;">
+
+
+
+      </span><a href="#modo_seguimiento">
+Modo de trabajo <span style="font-style: italic;">Seguimiento</span></a><br />
+      </div>
+
+<div style="margin-left: 80px;"><a href="#precision_comando">Precisión por comando</a><br />
+      <a href="#precision_gga">Precisión GGA</a><br />
+      <a href="#informacion_eco">
+Información Eco</a><br />
+
+      <a href="#replanteo">Replanteo</a><br />
+      <a href="#cartografia">Cartografía</a><br />
+      <a href="#desatendido">Desatendido</a><br />
+      <a href="#auto_toc">Auto TOC</a><br /></div>
+      <div style="margin-left: 40px;"><a href="#uso_gps">Uso del GPS</a><br />
+      </div>
+<div style="margin-left: 80px;"><a href="#ubicacion_gps">Ubicación</a><br /><a href="#dibujo_gps">Dibujo</a><br /><a href="#replanteo_gps">Replanteo</a><br /><a href="#anotaciones">Anotaciones</a><br /></div><br /><br /><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br /><br /><img style="width: 117px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/acceso_CRS.png" align="right" />Para
+trabajar con un GPS se deben ajustar los <a href="EDM_georreferenciacion.html#crs">sistemas de referencia de coordenadas</a> de la
+cartografía y del GPS a fin de que las coordenadas de ambos sean
+coherentes entre sí. Para ello se debe acceder al menú <span style="font-weight: bold;">Configuración</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <a href="EDM_georreferenciacion.html"><span style="font-weight: bold;">Sistema Referencia Coordenadas&#8230;</span></a> o pulsar el icono correspondiente situado en la zona inferior izquierda de la pantalla de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.<br /><br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 38px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 634px; text-align: justify;">El
+programa hace transformaciones entre CRSs en tiempo real incluso con
+correcciones Helmert 3D si hay alguna definida, tal y como se explica
+en el apartado <a href="EDM_georreferenciacion.html#transf_crs_tiempo_real_helmert_3D"><span style="font-style: italic;">Transformaciones entre CRSs en tiempo real con corrección por Helmert 3D</span></a> del capítulo dedicado a <a href="EDM_georreferenciacion.html">georreferenciación</a>.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+A continuación se entra en la opción <span style="font-weight: bold;">Herramientas</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Útiles</span><span style="font-weight: bold;" class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Conexión con GPS</span> o el botón&nbsp;<img style="width: 17px; height: 17px;" alt="" src="Imagenes/icono_toolBarGPS_gps.png" /> de la <a href="EDM_barras_herramientas.html">barra herramientas</a> GPS para trabajar con dicho dispositivo.<br /><br />
+
+
+
+      <div style="text-align: center;"><img style="width: 396px; height: 466px;" alt="" src="Imagenes/acceso_gps.png" /><br />
+      </div>
+<br /><img style="width: 126px; height: 118px; margin-left: 7px;" alt="" src="Imagenes/toolBar_gps.png" align="right" />Esto da lugar a un menú en el que se definen los parámetros de trabajo con el GPS. Este menú tiene dos <span style="font-weight: bold;">modos de trabajo</span>:<br />
+      <ul>
+        <li><a href="#modo_configuracion"><span style="font-weight: bold;">Configuración</span></a>, por defecto, para configurar las características del los dispositivos GPS y conectar con ellos.</li>
+      </ul>
+
+
+      <ul>
+
+        <li><a href="#modo_seguimiento"><span style="font-weight: bold;">Seguimiento</span></a>, para obtener información de dicho dispositivo.</li>
+      </ul>
+<br /><span class="Titulo_2"><a name="modo_configuracion">Modo de trabajo <span style="font-style: italic;">Configuración</span></a></span><br />
+      <br />
+      En este menú es importante definir:<br />
+
+
+      <ul>
+        <li>La posición relativa de la antena del GPS respecto al punto que se desea medir.</li>
+
+      </ul>
+      <ul>
+        <li>La conexión entre el programa ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+
+y el dispositivo a través del puerto COM correspondiente y que le haya
+asignado el PC (normalmente a través de una conexión bluetooth o USB).</li>
+
+      </ul>
+      <div style="text-align: center;"><img style="width: 625px; height: 361px;" alt="" src="Imagenes/gps_configuracion.png" /><br />
+      </div>
+
+      <br />
+También aparece un botón que permite pasar al modo de <a href="#modo_seguimiento"><span style="font-style: italic;">Seguimiento</span></a>. Si se cierra este cuadro de diálogo no se altera el estado de conexión y visualización del GPS en las ventanas de CARTOGRAFÍA.<br />
+      <br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="definicion">Definición del GPS</a></span><br />
+      <br />
+Para poder trabajar con este menú, hay que definir los dispositivos GPS
+a los que se va a conectar el programa. Para ello se utiliza el área <span style="font-weight: bold;">G.P.S.</span> del cuadro de diálogo.<br />
+
+      <br />
+Lo normal es que la antena GPS no esté a ras del suelo o semienterrada
+para calcular las coordenadas de un punto en el suelo, sino fijada en
+un vehículo o en un jalón que sirve de soporte a dicha antena. En esta
+área del menú se define la posición relativa de la antena respecto al
+punto que se quiere medir. De todas formas, es habitual que ese tipo de
+corrección se configure en el propio dispositivo GPS y que no sea
+necesario hacerlo en este menú.<br />
+
+      <br />
+
+      <img style="width: 435px; height: 75px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_gps.png" align="right" />Existe la posibilidad de que se definan dos dispositivos GPS, cada uno en una línea de opciones <span style="font-weight: bold;">Nombre</span>, <span style="font-weight: bold;">Delta X</span>, <span style="font-weight: bold;">Delta Y</span> y <span style="font-weight: bold;">Delta Z</span>.<br />
+
+      <br />
+
+Hay que introducir al menos un dato en alguna de las líneas para que se
+considere que se está trabajando con un GPS. Por ejemplo, con un jalón
+(bastón) que sitúa el punto de recepción de medida de la antena a 2
+metros de altura, bastaría con rellenar el valor <span style="font-weight: bold;">Delta Z</span> del primer o segundo GPS con el valor 2.<br />
+
+      <br />
+Una vez que se introduce un valor, se da un nombre al GPS de manera
+automática, por defecto GPS1. Este nombre puede cambiarse por cualquier
+otro que desee el usuario. En caso de que el primer dato que se rellene
+sea el propio nombre del GPS no se cambia de manera automática por
+ningún valor por defecto.<br />
+      <br />
+Los campos de <span style="font-weight: bold;">Error</span> hacen
+referencia a un error sistemático observable en las medidas del GPS, de
+tal forma que las lecturas efectuadas por el aparato también son
+corregidas según estos valores. El botón <span style="font-weight: bold;">[Autocorrección por punto]</span>
+permite rellenar estos campos de forma automática seleccionando el
+punto de la cartografía (generalmente con algún tipo de enganche
+activado) en el que está el GPS.<br />
+      <br />
+      <img style="width: 104px; height: 186px; margin-right: 7px;" alt="" src="Imagenes/gps_simbolo.png" align="left" />Cuando
+se define un GPS, aparece un punto amarillo en los gráficos que se
+muestran a la derecha de este menú. Estos gráficos son símbolos
+(modificables por el usuario en el <a href="EDM_definicion_tipos.html#definir_simbolo">editor de símbolos</a>)
+que representan la estructura que sujeta la antena del GPS. El punto
+amarillo se sitúa, respecto al origen de coordenadas de cada símbolo,
+según las coordenadas relativas especificadas en el menú. El campo <span style="font-weight: bold;">Símbolo</span>
+
+
+del área G. P. S. del menú permite indicar qué símbolo se desea
+utilizar para representar la antena del dispositivo GPS (por defecto,
+S950). Las opciones <span style="font-weight: bold;">Símbolo</span> y <span style="font-weight: bold;">Símbolo P</span> (símbolo perfil) del área <span style="font-weight: bold;">Móvil</span>
+
+del menú permiten indicar qué símbolos se desea utilizar para
+representar la estructura que sujeta la antena del GPS y que se posará
+en el punto que se desea medir. Se puede definir un esquema de planta y
+otro de perfil de dicha estructura.<br />
+      <br />
+En el área <span style="font-weight: bold;">Móvil</span> también se puede indicar un nombre descriptivo de la configuración de este menú y hay dos botones que permiten <span style="font-weight: bold;">guardar</span> y <span style="font-weight: bold;">cargar</span>
+
+
+dicha configuración. La última configuración guardada o cargada se
+utilizará como configuración por defecto la próxima vez que se inicie
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. Guardar la configuración del GPS
+no sólo es útil para no tener que realizarla casa vez que se quiera
+utilizar un GPS, sino que permite la conexión directa desde el botón de
+conexión&nbsp;<img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarGPS_puerto.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS.<br />
+
+      <br />
+      <div style="text-align: center;"><img style="width: 435px; height: 37px;" alt="" src="Imagenes/dialogo_gps_movil.png" /><br />
+
+      </div>
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="conexion">Conexión con el GPS</a></span><br />
+      <br />
+Ya sea mediante bluetooth, USB o puerto serie, el dispositivo GPS debe
+conectarse al ordenador dejando disponible un puerto COM para la
+comunicación. En el área <span style="font-weight: bold;">Conexión</span> se gestiona la configuración de los puertos a los que debe acceder ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> y el estado de conexión con los dispositivos.<br /><br /><div style="text-align: center;"><img style="width: 406px; height: 77px;" alt="" src="Imagenes/dialogo_gps_conexion.png" /><br /></div><br />Al definir un GPS en el área <span style="font-weight: bold;">G.P.S.</span>
+
+
+se agrega automáticamente al selector de dispositivos de este área.
+Aunque se puede tener conectados dos GPS y se representarán ambos en la
+cartografía y otras ventanas, sólo se adquirirán coordenadas del GPS
+que esté activado en dicho selector.<br /><br />Los valores con los que se puede gestionar la conexión son el <span style="font-weight: bold;">puerto COM</span>, la <span style="font-weight: bold;">velocidad</span> de conexión, los <span style="font-weight: bold;">bits de dato</span>, la <span style="font-weight: bold;">paridad</span> y los <span style="font-weight: bold;">bits de parada</span>. Mediante el botón <span style="font-weight: bold;">[Conectar]</span> se realiza la conexión entre ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+
+
+y el dispositivo GPS. A la derecha de este área hay unas líneas en
+blanco en las que se mostrará información recibida del dispositivo.<br /><br />
+
+      En la siguiente imagen se muestra un ejemplo en el que se configura un dispositivo GPS, al que se ha llamado <span style="font-style: italic;">GPS 1</span>,
+que tiene una antena que, situada en el jalón adecuado, está a 2 metros
+de altura sobre el suelo. Dicho dispositivo se conecta al puerto COM2,
+a 38400 bits/s, con 8 bits de dato, sin paridad y con 1 bit de parada
+(COM2, 38400, 8/N/1). También se muestran los comandos GGA y GST
+recibidos.<br /><br /><div style="text-align: center;"><img style="width: 583px; height: 337px;" alt="" src="Imagenes/dialogo_gps_ejemplo_conexion.png" /><br /></div><br /><img style="width: 294px; height: 143px; margin-right: 7px;" alt="" src="Imagenes/ejem_gps.png" align="left" />Durante la conexión, el botón <span style="font-weight: bold;">[Conectar]</span> (o el icono <img style="width: 18px; height: 18px;" alt="" src="Imagenes/icono_toolBarGPS_puerto.png" />) cambia a <span style="font-weight: bold;">[Desconectar]</span> (icono <img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono_toolBarGPS_puerto_on.png" />) y aparece el botón <span style="font-weight: bold;">[Pausa]</span> en la parte superior del menú. Al pulsar sobre este botón (o sobre el icono <img style="width: 21px; height: 20px;" alt="" src="Imagenes/icono_toolBarGPS_pausa.png" />) se alterna con el botón <span style="font-weight: bold;">[Atender]</span>, que ocupa el mismo sitio, y gestionan, sin perder la conexión, la atención al dispositivo GPS.<br /><br />Mientras
+que se atiende al GPS en las ventanas de cartografía aparece un símbolo
+como el que aparece en la imagen indicando en todo momento la posición
+del GPS.<br /><br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="actividad">Registro de actividad del GPS</a></span><br /><br />Por último, en el área de <span style="font-weight: bold;">Registro</span>
+
+
+se puede activar que se <span style="font-weight: bold;">dibuje</span> una línea del <span style="font-weight: bold;">tipo</span> indicado que una todas las posiciones en
+las que ha estado el GPS (con independencia de cómo se gestionen las
+coordenadas que se reciben), es decir, su <span style="font-weight: bold;">trayectoria</span>. Si se desea, también es posible generar un
+archivo de &#8220;log&#8221; con toda la actividad del GPS así como generar un
+archivo de <a href="EDM_topografia.html#ficheros_toc">formato&nbsp;<span class="Archivo">.toc</span></a> en que se guarden todas las coordenadas del ubicación del GPS que se hayan considerado para trabajar con ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. Los botones [Reset] permiten reiniciar el archivo de 'log' o el&nbsp;<span class="Archivo">.toc</span>.<br /><br /><div style="text-align: center;"><img style="width: 435px; height: 82px;" alt="" src="Imagenes/dialogo_gps_registro.png" /><br /></div><br />Para
+los casos en que el redibujado sea muy lento se puede indicar una
+frecuencia máxima de redibujados por segundo. Si se activa la opción <span style="font-weight: bold; font-style: italic;">Autoguardar cartografía</span> entonces el programa salva la cartografía de forma automática según el <span style="font-weight: bold;">intervalo</span> especificado.<br /><br />
+<br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="zoom_auto">Zoom automático</a></span><br />
+      <br />
+En esta zona del menú se puede establecer que el programa, de forma
+automática, centre la vista de la cartografía en la posición del GPS
+cada vez que éste se salga de la vista actual. Si se establecen unos <span style="font-weight: bold;">márgenes</span> (en %), entonces este <span style="font-weight: bold;">desplazamiento automático</span>
+se produce cuando la posición del GPS alcance esos márgenes en lugar de
+esperar a que se 'salga' de la vista. Al activar la opción <span style="font-weight: bold; font-style: italic;">Línea</span>, entonces en pantalla se muestran dichos márgenes.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 435px; height: 37px;" alt="" src="Imagenes/dialogo_gps_zoom_auto.png" /><br />
+      </div>
+      <br />
+<br />
+      <span class="Titulo_2"><a name="modo_seguimiento">Modo de trabajo <span style="font-style: italic;">Seguimiento</span></a></span><br /><br />En este modo se configura la información que ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> va a mostrar al usuario acerca de la posición y el estado del GPS.<br /><br /><img style="width: 301px; height: 90px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_seguimiento_1.png" align="right" />En modo de <span style="font-style: italic;">Seguimiento</span> el menú de trabajo con GPS se reduce a la mínima expresión con el fin de dejar toda la ventana de trabajo al usuario.<br /><br />El botón <span style="font-weight: bold;">[Configuración]</span> vuelve o pasa al modo de <a href="#modo_configuracion"><span style="font-style: italic;">Configuración</span></a>. Los botones <span style="font-weight: bold;">[Pausa]</span> / <span style="font-weight: bold;">[Atender]</span> gestionan la atención al dispositivo GPS (sin perder la conexión) y el botón&nbsp;<img style="width: 15px; height: 15px;" alt="" src="Imagenes/boton_cerrar_ventana.png" /> oculta el menú.<br /><br />En
+un recuadro azul se muestra la información básica del GPS activo
+(posición, precisión y error). Esta información se actualiza con cada
+lectura correcta de los datos que envía el GPS, con cada "época".<br /><br />La opción de <a href="#zoom_auto"><span style="font-weight: bold; font-style: italic;">Auto Zoom</span></a> es la misma que se establece en la configuración.<br /><br />El <span style="font-weight: bold;">código .toc</span> es el texto que se adjunta a cada línea del <a href="EDM_topografia.html#ficheros_toc">archivo&nbsp;<span class="Archivo">.toc</span></a>
+si es que se ha indicado que se cree este archivo en la parte de <a href="#actividad">registro de actividad</a> de la configuración del GPS. Este código puede ser variado
+en cualquier momento que el usuario lo desee, y se enviará con los
+siguientes datos de ese archivo hasta que se cambie este código.<br /><br /><img style="width: 302px; height: 96px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_seguimiento_2.png" align="right" />El botón <span style="font-weight: bold;">[Anotación]</span> permite guardar la información que el usuario desea obtener del GPS en un archivo especial de <a href="#anotaciones">anotaciones</a>.
+Por otro lado, un selector permite configurar la forma en que se
+muestra este menú en este modo y la forma en que se muestra el símbolo
+del GPS en la cartografía. Este selector ofrece las siguientes opciones:<br /><ul><li><span style="font-weight: bold;">Minimizado</span>:
+Es la opción por defecto, y también se accede mediante el icono <img style="width: 18px; height: 11px;" alt="" src="Imagenes/icono_toolBarGPS_minimizar.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS. Simplemente muestra el menú como se ve en las
+imágenes anteriores. No influye en la apariencia e información que
+presenta el símbolo del GPS.</li></ul><ul><li><a href="#precision_comando"><span style="font-weight: bold;">Precisión por comando</span></a>: Establece los parámetros de dibujado del símbolo del GPS en función de la información de error de los comandos GST o RRE.</li></ul><ul><li><a href="#precision_gga"><span style="font-weight: bold;">Precisión GGA</span></a>:
+Establece los parámetros de dibujado del símbolo del GPS en función de
+la información de precisión del comando GGA (útil cuando el dispositivo
+GPS no emite los comandos de evaluación del error).</li></ul><ul><li><a href="#informacion_eco"><span style="font-weight: bold;">Información Eco</span></a>: Indica qué información textual va a aparecer junto al símbolo del GPS.</li></ul><ul><li><a href="#replanteo"><span style="font-weight: bold;">Replanteo</span></a>: Establece los parámetros de replanteo de puntos, líneas y elementos de ejes.</li></ul>
+      <ul>
+        <li><a href="#cartografia"><span style="font-weight: bold;">Cartografía</span></a>: Permite crear <a href="EDM_entidades_basicas.html#lineas">líneas</a> en la cartografía.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#desatendido"><span style="font-weight: bold;">Desatendido</span></a>: Permite crear <a href="EDM_entidades_basicas.html#lineas">líneas</a> y <a href="EDM_entidades_basicas.html#simbolos">símbolos</a>
+en la cartografía pero, a diferencia del caso anterior, la toma de
+datos se efectúa de forma automática sin atención del usuario.<br />
+ </li>
+      </ul>
+      <ul>
+        <li><a href="#auto_toc"><span style="font-weight: bold;">Auto TOC</span></a>: Permite crear un <a href="EDM_topografia.html#ficheros_toc">archivo&nbsp;<span class="Archivo">.toc</span></a> con códigos y comando de forma automática.<br />
+        </li>
+      </ul>
+<br /><span style="font-weight: bold; font-style: italic;"><a name="precision_comando">Precisión por comando</a></span><br /><br /><img style="width: 383px; height: 180px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_seguimiento_3.png" align="right" />Al
+seleccionar esta opción, también accesible mediante el icono <img style="width: 21px; height: 21px;" alt="" src="Imagenes/icono_toolBarGPS_precision.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS, se muestra un menú similar al de la imagen. Si
+el dispositivo GPS emite comandos GST o RRE, es el sistema de gestión
+de precisión por defecto, y aparece marcado en la casilla de la parte
+superior del menú.<br />
+
+
+      <br />
+Se definen 4 tipos de precisión y los <span style="font-weight: bold;">errores máximos admisibles</span> en XY
+y en Z para cada uno de ellos. Se indica para cada tipo de precisión un
+símbolo que se mostrará en la posición del GPS en las ventanas de
+cartografía. Se establece el número de <span style="font-weight: bold;">épocas</span>, con precisión
+adecuada, necesarias para empezar a admitir los valores que devuelve el
+GPS. Si ese número es 0 se admitirían todas las lecturas, si es 1 o
+mayor (hasta 50) sólo se admiten las lecturas que tengan alguna
+precisión admisible. Las precisiones admisibles pueden ser la máxima o
+desde la máxima hasta la 2, 3 ó 4.<br />
+      <br />
+El número de épocas admitidas se reinicia a 0 cuando la posición del
+GPS cambia en una distancia mayor que el error máximo admisible. Cuando
+el número de épocas que se utiliza es mayor que 1, se considera como
+posición y error del GPS la media de las posiciones y de los errores de
+las últimas n épocas admitidas.<br />
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;"><a name="precision_gga">Precisión GGA</a></span><br /><br />
+En caso de no estar disponible los comandos GST o RRE, se puede utilizar
+este sistema de gestión de precisión. En él las valoraciones de la
+precisión dependen del fabricante del dispositivo GPS. El
+funcionamiento es similar al del tipo de precisión anterior:<br />
+      <br />
+
+      <div style="text-align: center;"><img style="width: 386px; height: 211px;" alt="" src="Imagenes/dialogo_gps_seguimiento_4.png" /><br />
+
+      </div>
+<br /><br /><span style="font-weight: bold; font-style: italic;"><a name="informacion_eco">Información Eco</a></span><br /><br />
+En esta opción, a la que también se accede mediante el icono <img style="width: 22px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_eco.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a>
+GPS, se indican qué informaciones textuales se muestran en pantalla,
+independientemente de los cálculos que se estén realizando.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 384px; height: 195px;" alt="" src="Imagenes/dialogo_gps_seguimiento_5.png" /><br />
+      </div>
+      <br />
+
+Las posibilidades que ofrece el programa son:<br />
+      <br />
+
+      <table style="text-align: left; width: 625px; height: 349px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 116px;">Dato<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 98px;">Entorno<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 383px;">Significado<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Coordenada XY<br />
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Cualquiera<br />
+            </td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestran las coordenadas X e Y devueltas por el GPS.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <span style="font-style: italic;"><br />
+            </span>
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">X 354035.657 Y 4607921-842</span><br />
+            </div>
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Coordenada Z<br />
+
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Cualquiera</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la coordenada Z devuelta por el GPS.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Z GPS 592.325</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 116px;">Épocas en tolerancia<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Cualquiera</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se
+muestra el número de épocas del GPS en que ha dado una posición con
+precisión admisible y dentro de un rango que permita suponer que el GPS
+está quieto.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Época 24</span><br />
+            </div>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Precisión<br />
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Cualquiera</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la precisión y el error del GPS. Se muestra el error en XY y en Z.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Error XY 0.546 Z 0.823 (Precisión 4 (Mínima))</span><br />
+            </div>
+
+            <br />
+            </td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Superficie actual<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Cualquiera</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la diferencia de cota entre la <a href="EDM_control_entidades.html#control_superficies">superficie</a> actual y la posición del GPS.<br />
+
+
+            <br />
+Ejemplo: <span style="font-style: italic;">(Z Sup. Act. -Z GPS) 1.342</span><br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Cota actual<br />
+
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Cualquiera</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la diferencia entre la cota actual y la cota del GPS.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Cota Act. -Z GPS) -2.342</span><br />
+
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">PK y distancia<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Planta o Alzado<br />
+
+            </td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra el PK de la posición del GPS y la distancia que la separa del eje actual.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><span style="font-style: italic;"><br />
+            <br />
+            </span>
+            <div style="margin-left: 40px;"><span style="font-style: italic;">PK 5398.452 d 5.274</span><br />
+
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Azimut<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Planta o Alzado</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra el azimut del eje actual en el PK del GPS.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Az 233.451</span><br />
+            </div>
+            <br />
+
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Elementos planta<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Planta o Alzado</td>
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestran los parámetros del elemento de Planta en que se encuentra el GPS.<br />
+
+            <br />
+            <span style="text-decoration: underline;">Ejemplos</span><br />
+
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">A 420 (R -1935.465) L 165.939 ó R 300.000 L 24.568</span><span style="font-style: italic;"><br />
+            <span style="font-style: italic;">RECTA L 164.525</span><br style="font-style: italic;" />
+            </span></div>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 116px;">Z rasante<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Alzado<br />
+            </td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la cota de la <a href="OL_rasantes_diseno.html">rasante</a> del eje actual en el PK del GPS.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Z Ras 187.398</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 116px;">Z rasante - Z GPS<br />
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Alzado</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la diferencia de cota entre la <a href="OL_rasantes_diseno.html">rasante</a> y el GPS en el PK del GPS. Es positiva si la rasante es más alta.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Zras -Z GPS) 2.496</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Pendiente rasante<br />
+
+            </td>
+            <td style="vertical-align: top; width: 98px; text-align: center;">Alzado</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;">Se muestra la pendiente de la <a href="OL_rasantes_diseno.html">rasante</a> en el PK del GPS.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Pend. Ras 1.453%</span><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 116px;">Peralte<br />
+            </td>
+
+            <td style="vertical-align: top; width: 98px; text-align: center;">Alzado</td>
+
+            <td style="vertical-align: top; width: 383px; text-align: justify;"><a href="OL_peraltes.html">Peralte</a> en la posición del GPS.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Peralte 2.000%</span><br />
+
+            </div>
+
+            <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      Los datos se muestran agrupados por colores, lo que permite su lectura de forma clara.<br />
+
+      <br />
+La posición de esta ventana puede ser <span style="font-weight: bold;">fija</span>, según las coordenadas de ventana especificadas por el usuario en píxeles, o <span style="font-weight: bold;">relativa</span> a
+la posición del símbolo del GPS en valores proporcionales al tamaño
+aparente de dicho símbolo.<br />
+      <br />
+Los datos a su vez se pueden mostrar en tres <span style="font-weight: bold;">tamaños</span> de fuente diferentes: <span style="font-weight: bold;">pequeña</span>, <span style="font-weight: bold;">mediana</span> o <span style="font-weight: bold;">grande</span>.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 550px; height: 380px;" alt="" src="Imagenes/ejem_gps_info_eco.png" /><br />
+      </div>
+<br /><br /><span style="font-weight: bold; font-style: italic;"><a name="replanteo">Replanteo</a></span><br /><br />En
+esta opción se indican qué informaciones textuales acompañan al símbolo
+del GPS con la intención de realizar replanteos específicos:<br />
+      <ul>
+        <li><a href="#replanteo_eje">Para eje</a> (elementos de ejes de obra).</li>
+        <li><a href="#replanteo_punto">Puntos</a>.</li>
+        <li><a href="#replanteo_linea">Líneas</a>.</li>
+
+
+        <li><a href="#replanteo_perfil">Perfiles</a> (<a href="EDM_editor_perfiles.html">editor de perfiles</a>).</li>
+      </ul>
+      <br /><a name="replanteo_eje">REPLANTEO PARA EJE</a><br />
+      <br />
+Se utilizan para replantear puntos, perfiles o superficies del eje con
+el que se esté trabajando, y también se accede mediante el icono <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_repEje.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS. Estos replanteos sólo son aplicables en el
+entorno de ALZADO.<br />
+      <br />
+
+
+      <div style="text-align: center;"><img style="width: 384px; height: 312px;" alt="" src="Imagenes/dialogo_gps_seguimiento_6.png" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; width: 635px; height: 165px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 132px;">Dato<br />
+            </td>
+
+
+            <td style="vertical-align: top; text-align: center; font-weight: bold; width: 483px;">Significado<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Z Ras. peralte - Z GPS<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Se
+muestra la diferencia de cota entre la posición del GPS y la cota de la
+rasante (teniendo en cota el peralte) más un valor indicado por el
+usuario (<span style="font-weight: bold;">Inc Z</span>).<br />
+            <br />
+<span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">((Z RasPer (682.272) + Inc Z) - Z GPS) 3.573</span><br />
+            </div>
+            <br />
+<div style="text-align: center;"><img style="width: 257px; height: 124px;" alt="" src="Imagenes/ejem_gps_rep_zper_zgps.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Distancia a código/supericie<br />
+
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Se
+muestra la distancia y la diferencia de cota entre el punto
+correspondiente a la superficie y código indicados y la posición del
+GPS. Es positiva si para llegar al código hay que alejarse del eje. En
+una línea se muestra la distancia y en otra la diferencia de cota.
+Permite especificar la superficie, el código y un incremento de cota
+que se suma a la cota del código.<br />
+            <br />En
+caso de que se especifique como código el valor 0.0 se utiliza el
+vértice más cercano de la superficie al GPS como punto para realizar
+las
+medidas.<br />
+            <br />
+El <span style="font-weight: bold;">bloqueo de punto</span> implica que se utilice el vértice del perfil con un número de orden específico.<br />
+            <br />
+<span style="text-decoration: underline;">Ejemplo</span><br />
+
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Dis GPS -Dis Cód 1.0 (Sup 67)(1.500)) 10.209</span><br />
+            <span style="font-style: italic;">((Cota Cód (682.452) + Inc Z) - Z GPS) 1.452</span><br />
+            </div>
+            <br />
+En el texto informativo se indica el valor del código, la superficie,
+la distancia del código al eje y la distancia en XY entre el código y
+el GPS en la primera línea; en la segunda se indica la cota del código
+y la diferencia de cotas.<br />
+            <br />
+
+            <div style="text-align: center;"><img style="width: 305px; height: 152px;" alt="" src="Imagenes/ejem_gps_rep_sup_cod.png" /><br />
+            </div>
+
+            <br />
+Si se activa la opción <span style="font-weight: bold;">Retranqueo</span> entonces también se muestra una línea, llamada línea de retranqueo, que une el código de la superficie indicado con el vértice <span style="font-weight: bold;">anterior</span> o el <span style="font-weight: bold;">siguiente</span> (según se seleccione). El eco además mostrará la siguiente información adicional:<br />
+            <ul>
+              <li>La distancia horizontal y vertical desde el GPS a dicha línea.</li>
+            </ul>
+            <ul>
+              <li>La distancia horizontal y vertical a un punto de la línea de retranqueo situado a la <span style="font-weight: bold;">distancia horizontal</span> de retranqueo indicada por el usuario y medida desde el código.</li>
+            </ul><img style="width: 247px; height: 146px; margin-left: 7px;" alt="" src="Imagenes/ejem_gps_retranqueo_eco.png" align="right" />La
+imagen inferior se corresponde con un retranqueo a 1 m de distancia
+desde el código -11 de la superficie 65 (en rojo) considerando la línea
+que une dicho código con el punto anterior de la misma superficie<br />
+            <br />
+A la derecha también se muestra el eco con la información de dicho retranqueo.<br />
+            <br />
+            <br />
+
+            <div style="text-align: center;"><img style="width: 349px; height: 165px;" alt="" src="Imagenes/ejem_gps_retranqueo.png" /><br />
+            </div>
+
+            <br />
+Si se activa la opción <span style="font-weight: bold; font-style: italic;">Pendiente-&gt;Distancia</span>
+entonces la distancia al punto de retranqueo, en lugar de medirse en
+horizontal, se mide teniendo en cuenta la pendiente de la línea de
+retranqueo.<br />
+<br />
+            <img style="width: 234px; height: 144px; margin-left: 7px;" alt="" src="Imagenes/dialogo_gps_eco_dist_cod_sup.png" align="right" />Al pulsar sobre el botón <span style="font-weight: bold;">[Distancia a código/superficie]</span> se muestra un cuadro de diálogo en el que el usuario puede especificar qué información desea que se muestre en el eco.<br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Distancia a superficie perfiles<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Se
+muestra la diferencia de cota entre el GPS y una superficie de
+perfiles. Permite especificar la superficie de perfiles con la que se
+va a trabajar y un incremento de cota que se suma a la cota de la
+superficie.<br />
+            <br />
+
+El segmento de la superficie de perfiles es el que corta con la
+vertical del GPS excepto que se <span style="font-weight: bold;">bloquee</span>, en cuyo caso se utiliza el
+segmento con un número de orden específico.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">(Cota Sup. 67 (682.274) - Z GPS) -0.874 Pend. Per.16.7%</span><br />
+
+            <span style="font-style: italic;">Distancia talud 2.45 Ancho elemento 5.00</span><br />
+            </div>
+
+            <br />
+En el texto informativo se indica la superficie, la cota de la
+superficie en la posición XY del GPS y la diferencia de cota. Además,
+si la posición del GPS está dentro de los perfiles, se indica la
+pendiente transversal del perfil, en una segunda línea la distancia
+horizontal al perfil y el ancho del elemento (definido por dos puntos
+correlativos del perfil) en la posición del GPS.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 311px; height: 155px;" alt="" src="Imagenes/ejem_gps_rep_dist_sup_perf.png" /><br />
+            </div>
+            <br />
+
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 132px;">Distancia símbolo perfil<br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Se
+muestra la distancia de la posición del GPS al símbolo especificado.
+Permite especificar el tipo de símbolo y un incremento de cota, que se
+suma a la cota del símbolo.<br />
+            <br />
+
+Si en los perfiles hay más de un símbolo del tipo especificado, se
+realizan las mediciones con respecto al símbolo más cercano a la
+posición del GPS.<br />
+            <br />
+El bloqueo de símbolo implica que se utilice símbolo con un número de orden específico.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Distancia a símbolo (309) 14.342</span><br />
+
+            <span style="font-style: italic;">Horizontal (Dist Simb - Dist GPS) 14.148</span><br />
+            <span style="font-style: italic;">Vertical ((Cota Simb + Inc Z) - Z GPS) 2.639</span><br />
+            </div>
+            <br />
+
+En el texto informativo se muestra el código del símbolo con el que se
+están haciendo las mediciones y la distancia horizontal y vertical
+entre el GPS y el símbolo.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 306px; height: 153px;" alt="" src="Imagenes/ejem_gps_rep_dist_simb_perf.png" /><br />
+
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Mostrar perfil de GPS en Alzado<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">Permite
+seleccionar si se muestra en la ventana de la sección real del eje el
+perfil indicado por la posición del cursor o el indicado por la
+posición del GPS.<br />
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 132px;">Usar perfiles no interpolados<br />
+            </td>
+
+            <td style="vertical-align: top; text-align: justify; width: 483px;">En
+caso de que se muestre el perfil de GPS en Alzado, se obliga a que el
+programa muestre, en la ventana de sección real, el perfil más cercano
+de los calculados al PK del GPS.<br />
+
+            <br />
+Si está marcada la opción de <span style="font-weight: bold; font-style: italic;">PK y Distancia</span>
+se modifica la línea de información resultante para indicar si se debe
+avanzar o retroceder y cuánto, a lo largo del eje, para llegar al PK
+que se muestra.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; width: 132px;">Utilizar perfil de PK<br />
+
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 483px;">En
+caso de que se muestre el perfil de GPS en ALZADO, se obliga a que el
+programa muestre, en la ventana de sección real, el perfil del PK
+seleccionado por el usuario. Permite introducir el PK deseado y avanzar
+o retroceder PKs a intervalos configurables por el usuario. Los botones  <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_avanzar.png" /> y <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_retroceder.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS también permiten avanzar y retroceder PKs.<br />
+            <br />
+En caso de que se marque esta opción y la de <span style="font-weight: bold; font-style: italic;">Usar perfiles no interpolados</span> prevalece esta opción.<br />
+            <br />
+
+Si está marcada la opción de <span style="font-weight: bold; font-style: italic;">PK y Distancia</span>
+
+se modifica la línea de información resultante para indicar si se debe
+avanzar o retroceder y cuánto, a lo largo del eje, para llegar al PK
+que se muestra.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br /><a name="replanteo_punto">REPLANTEO DE PUNTO</a><br />
+
+      <br />Esta opción, a la que también se mediante el icono <img style="width: 21px; height: 18px;" alt="" src="Imagenes/icono_toolBarGPS_repPunto.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS, permite replantear puntos tomando como referencia: el Norte, una base o
+el punto anterior que se seleccionó para replantear. Está disponible en
+cualquier entorno.<br />
+<br /><div style="text-align: center;"><img style="width: 384px; height: 240px;" alt="" src="Imagenes/dialogo_gps_seguimiento_7.png" /><br /></div><br />
+      Los puntos que se van a replantear se pican en la ventana de cartografía de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>,
+si bien se pueden aprovechar todas las opciones de "enganche". De forma
+similar se pueden seleccionar las bases. Cuando se selecciona un nuevo
+punto para replantear, el antiguo pasa a ser el "punto anterior".<br /><br />
+      <table style="text-align: left; width: 650px; height: 96px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 166px;">Dato<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 464px;">Significado<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 166px;">Replanteo punto (NORTE)<br />
+
+            </td>
+            <td style="vertical-align: top; width: 464px; text-align: justify;">Se
+muestra la distancia desde la posición del GPS hasta la del punto
+seleccionado (círculo). Permite especificar un incremento de cota sobre
+el punto.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Replanteo Punto (NORTE): Distancia 10.097</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Retroceder 1.384</span><br style="font-style: italic;" />
+
+            <span style="font-style: italic;">Izquierda 10.002</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Subir 0.771</span><br />
+            </div>
+            <br />
+En el texto informativo se indica la distancia al punto en XY. En
+líneas sucesivas se muestra el sentido del avance a realizar para
+llegar al punto seleccionado.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 296px; height: 197px;" alt="" src="Imagenes/ejem_gps_rep_punto_norte.png" /><br />
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 166px;">Replanteo punto (BASE)<br />
+            </td>
+            <td style="vertical-align: top; width: 464px; text-align: justify;">Se
+muestra la distancia desde la posición del GPS hasta la del punto
+seleccionado (círculo) e indica la dirección en la que está la base. En
+caso de que ésta esté visible en el área cartográfica dibujada, también
+la marca (triángulo). Permite especificar un incremento de cota sobre
+el punto.<br />
+            <br />
+
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Replanteo Punto (BASE): Distancia 5.364</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Avanzar 4.412</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Izquierda 3.050</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Subir 0.635</span><br />
+
+            </div>
+            <br />
+En el texto informativo se indica la distancia al punto en XY. En
+líneas sucesivas se muestra el sentido del avance a realizar para
+llegar al punto seleccionado, siempre con orientación a la base.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 326px; height: 185px;" alt="" src="Imagenes/ejem_gps_rep_punto_base.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td style="vertical-align: top; width: 166px;">Replanteo punto (ANTERIOR)<br />
+            </td>
+            <td style="vertical-align: top; width: 464px; text-align: justify;">Se
+muestra la distancia desde la posición del GPS hasta la del punto
+seleccionado (círculo). En caso de que esté visible en el área
+cartográfica dibujada, también marca el punto anterior seleccionado
+para replanteo (cuadrado). Permite especificar un incremento de cota
+sobre el punto.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Replanteo Punto (ANTERIOR): Distancia 4.937</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Avanzar 4.657</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Derecha 1.640</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Subir 0.691</span><br />
+            </div>
+            <br />
+En el texto informativo se indica la distancia al punto en XY. En
+líneas sucesivas se muestra el sentido del avance a realizar para
+llegar al punto seleccionado, siempre con orientación al punto anterior
+replanteado.<br />
+
+            <br />
+            <div style="text-align: center;"><img style="width: 334px; height: 143px;" alt="" src="Imagenes/ejem_gps_rep_punto_anterior.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+<br /><a name="replanteo_linea">REPLANTEO DE LÍNEA</a><br />
+      <br />También accesible mediante el icono <img style="width: 17px; height: 21px;" alt="" src="Imagenes/icono_toolBarGPS_repLinea.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS, permite tomando como referencia una línea de la cartografía, replantearla o replantear líneas paralelas a ella.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 359px; height: 210px;" alt="" src="Imagenes/dialogo_gps_seguimiento_8.png" /><br />
+      </div>
+      <br />
+      <table style="text-align: left; width: 665px; height: 50px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 101px;">Dato<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 544px;">Significado<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 101px;">Replanteo línea<br />
+
+            </td>
+            <td style="vertical-align: top; width: 544px;">
+            <div style="text-align: justify;">Se muestra la distancia
+desde la posición del GPS hasta el punto en que se proyecta sobre la
+línea seleccionada. Permite especificar un incremento de cota sobre la
+línea. El bloqueo de segmento implica que se utilice el segmento con un
+número de orden específico.<br />
+            <br />
+            <span style="text-decoration: underline;">Ejemplo</span><br />
+            <br />
+            <div style="margin-left: 40px;"><span style="font-style: italic;">Replanteo Línea. PK 2421.104</span><br style="font-style: italic;" />
+
+            <span style="font-style: italic;">Distancia a Línea 3.059</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">((Cota Línea + Inc Z) - Z GPS) 1.957</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">PK Singular Ant 2420.928 Singular Sig 2430.974</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Dist. P Singular más cerca 0.176</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Pendiente Segmento Línea 0.680%</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Pendiente GPS (Línea + Inc Z) 63. 958%</span><br style="font-style: italic;" />
+
+            <span style="font-style: italic;">Pendiente de Paralela: 1.000%</span><br style="font-style: italic;" />
+            <span style="font-style: italic;">Dif. Cota con Paralela: 1.987</span><br />
+            </div>
+            <br />
+En el texto informativo se indica la distancia recorrida a lo largo de
+la línea como PK, la distancia entre el GPS y su proyección en la
+línea, la pendiente del segmento de la línea sobre el que se proyecta,
+la pendiente desde el GPS al punto de proyección, la pendiente de
+generación de línea paralela a la replanteada y la diferencia de cota
+con esa paralela.<br />
+            <br />
+<br />
+            <br />
+            </div>
+            <div style="text-align: center;"><img style="width: 294px; height: 235px;" alt="" src="Imagenes/ejem_gps_rep_linea.png" /><br />
+
+            </div>
+            <br />
+            <span class="Parf_negrita">PK </span>= replantear un punto
+que esté en un pk del recorrido de la línea y a una distancia (positiva
+a la derecha, negativa a la izquierda de dicho recorrido) trasversal de
+dicha línea.<br />
+Si el pk es negativo se proyecta el punto sobre la prolongación del
+primer segmento de la línea. Si es mayor que la longitud de la línea se
+protyecta sobre la prolongación del último segmento.<br />
+<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br /><a name="replanteo_perfil">REPLANTEO DE PERFILES</a><br />
+
+      <br />También accesible mediante el icono <img style="width: 19px; height: 19px;" alt="" src="Imagenes/icono_toolBarGPS_repPerfil.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> GPS, permite tomando como referencia un perfil y estando dentro del <a href="EDM_editor_perfiles.html">editor de perfiles</a>, las mismas opciones ya vistas en el apartado de <a href="#replanteo_eje"><span style="font-style: italic;">Replanteo para eje</span></a>. El enganche a GPS también está disponible dentro del <a href="EDM_editor_perfiles.html">editor de perfiles</a>, lo que resulta muy útil.<br />
+      <br />
+&nbsp;<img style="width: 650px; height: 214px;" alt="gps_replanteo_perfiles" src="Imagenes/gps_replanteo_perfiles.png" /><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 384px; height: 283px;" alt="" src="Imagenes/dialogo_gps_seguimiento_9.png" /><br />
+      </div>
+      <br />
+      El
+punto que se que se calcula como retranqueo de un código de un perfil
+se puede pasar automáticamente para ser utilizado en replanteo de punto
+y que el sistema oriente al usuario para localizarlo como si se
+introdugesen sus coordenadas en el menú de Replanteo de Punto.<br />
+<br />
+      <span style="font-weight: bold; font-style: italic;"><a name="cartografia">Cartografía</a></span><br />
+      <br />
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;"><a name="desatendido">Desatendido</a></span><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="auto_toc">
+Auto TOC<br />
+      <br />
+      </a></span><a name="auto_toc">El nuevo menú admite los
+diccionarios de códigos y los comandos utilizados en Topografía. Además
+los comandos están disponibles en una barra de herramientas.<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><a name="auto_toc">&nbsp;</a><img style="width: 427px; height: 372px;" alt="gps_autotoc" src="Imagenes/gps_autotoc.png" /><br />
+      <br />
+      <div style="text-align: left;">Menú con diccionario cargado<br />
+      </div>
+      <br />
+      <img style="width: 505px; height: 323px;" alt="gps_autotoc_diccionario" src="Imagenes/gps_autotoc_diccionario.png" /><br />
+      <br />
+      <div style="text-align: left;">La opción ACTIVAR: permite activar
+o desactivar los códigos que se pueden seleccionar en dicho menú de
+entre todos los códigos cargados desde el diccionario.<br />
+      </div>
+      <img style="width: 407px; height: 283px;" alt="gps_autotoc_activacion" src="Imagenes/gps_autotoc_activacion.png" /><br />
+      <br />
+      <br />
+      <div style="text-align: left;">Con la barra de herramientas disponible para los comandos: <br />
+      </div>
+      <br />
+      <img style="width: 103px; height: 125px;" alt="gps_gpstoc_barra" src="Imagenes/gps_gpstoc_barra.png" /><br />
+      <br />
+      <br />
+      <br />
+      </div>
+      <a name="auto_toc" /><span style="font-weight: bold; font-style: italic;"><a name="auto_toc"><br />
+      </a></span>
+<br />
+<br /><span class="Titulo_2"><a name="uso_gps">Uso del GPS</a></span><br /><br />Una
+vez configurado el sistema de atención al dispositivo GPS, éste se
+queda trabajando de forma autónoma, mostrando la información solicitada
+de manera continua.<br /><br />Esto permite la utilización del GPS para
+realizar tres funciones de trabajo: ubicación, dibujo y replanteo.
+Estas funciones se ejecutan de manera simultánea durante todo el tiempo
+de conexión con el GPS.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="ubicacion_gps">Ubicación</a></span><br /><br />Es
+la función más sencilla, el GPS informa de su posición, la muestra en
+la cartografía cargada y se ocupa de actualizar la vista de la
+cartografía cuando se va a salir de los límites presentados en pantalla.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="dibujo_gps">Dibujo</a></span><br /><br /><img style="width: 271px; height: 489px; margin-left: 7px;" alt="" src="Imagenes/ejem_gps_dibujo.png" align="right" />Se
+puede utilizar la posición del GPS para cualquier entrada de datos que
+admita enganche. Cuando se está atendiendo al GPS, en el menú de
+enganches aparece la opción GPS. La activación de este enganche también
+se puede efectuar a través del icono&nbsp;<img style="width: 10px; height: 13px;" alt="" src="Imagenes/icono_toolBarEnganches_gps.png" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> de enganches. De esta forma se puede utilizar la posición del GPS para situar cualquier elemento de cartografía.<br /><br />Así,
+cuando esté esta opción activada y se requiera al usuario una
+información de coordenadas en las que se deba picar un punto con el
+cursor (para crear/modificar símbolos, rótulos, células y líneas o
+crear/modificar alineaciones&#8230;), al hacer clic con el dispositivo
+señalador (ratón o lápiz en pantallas táctiles) se tomarán las
+coordenadas del GPS con independencia de la situación del cursor.<br /><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="replanteo_gps">Replanteo</a></span><br /><br />Las
+opciones de replanteo comentadas anteriormente permiten evaluar el
+estado de una obra tomando como referencia la información de un eje, un
+punto o una línea. Para utilizarlas basta con seleccionar la
+visualización de estas opciones en los menús de replanteo.<br /><br />La
+información que se muestra como "eco" junto al GPS y en los dibujos
+cartografía, perfiles y rasantes indican cuanto hay que avanzar,
+excavar o rellenar para llegar al modelo teórico del proyecto de la
+obra.<br /><br />
+
+<br /><span style="font-weight: bold; font-style: italic;"><a name="anotaciones">Anotaciones</a></span><br /><br />Toda
+la información mostrada en el eco del GPS y los datos que permiten
+deducir dicha información pueden guardarse en un archivo para su
+posterior revisión. Para realizar esta función está el menú de <span style="font-weight: bold;">Anotaciones</span>.<br /><br /><img style="width: 282px; height: 281px; margin-right: 7px;" alt="" src="Imagenes/ejem_gps_anotaciones.png" align="left" />Al
+pulsar sobre cualquier botón de anotaciones (disponible en varios menús
+de GPS y en la barra de herramientas mediante el icono <img style="width: 16px; height: 15px;" alt="" src="Imagenes/icono_toolBarGPS_anota.png" />)
+aparece un menú en el que se muestra toda la información del eco más
+los datos que permiten deducirlos. Este menú posibilita repasar esa
+información y aceptarla como válida o rechazarla. En caso de que se
+acepte se guarda en un archivo llamado&nbsp;<span class="Archivo">AnotacionesGPS.csv</span> que se guarda en la carpeta de proyecto y que es directamente utilizable por programas de hojas de cálculo comerciales.<br /><br />En
+caso de que el archivo no exista se crea automáticamente, y en caso de
+que ya exista se añaden las anotaciones a continuación. Cada anotación
+lleva la fecha y hora en que ha sido realizada.<br /><br />También se puede realizar una anotación pulsando la tecla &lt;Enter&gt; si ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+es la aplicación activa y no se está editando algún texto en ella. Esta
+opción es muy útil para tablets PC que tienen un botón con dicha
+función, aunque no tengan teclado.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <span style="font-weight: normal;" class="Titulo_2"><span class="Texto_cursiva"><span class="Titulo_2"><span class="Apartados">Itinerarios:</span></span></span></span><br />
+      <br />
+&nbsp;<img style="width: 448px; height: 301px;" alt="gps_gestion_itinerarios" src="Imagenes/gps_gestion_itinerarios.png" align="left" hspace="5" vspace="5" />El gestor de GPS de Istram cuenta con una opción: Itinerarios.<br />
+Cada punto o tipo de punto replanteable es susceptible de ser enviado a
+una lista de "waypoints" que conforman un itinerario de trabajo.<br />
+Los tipos de punto que dependen de un PK, o son relativos a la
+proyección sobre una línea, se recalculan para cada PK en que se
+encuentre el GPS.<br />
+      <br />
+Esto permite, entre otras cosas, no tener que ir caracterizando cada
+siguiente punto de búsqueda en el trabajo en obra, sino que se puden
+preparar en la ofina y salir a campo con ellos guardados.<br />
+      <br />
+Por defecto Istram guiará hasta el punto más cercano pero se puede
+pedir que se guíe hasta un punto concreto. Se pueden activar y
+desactivar puntos del itinerario y cambiarlos de orden. Además se
+pueden guardar en archivos para ser utilizados en otra ocasión.<br />
+      <br />
+<br /><span class="Parrafo" /></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Cuencas hidrográficas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CUENCAS HIDROGRÁFICAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br /></span></span><span class="Parrafo"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span></span><span class="Parrafo"><span class="Parrafo"> permite el cálculo de cuencas hidrográficas según tres métodos distintos:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><a href="#triangulacion"><span style="font-weight: bold;">A partir de un .edm/.edb, por triangulación</span></a>, válido para efectuar un estudio rápido pero elemental.</span></span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><a href="#ttp"><span style="font-weight: bold;">A partir de un .ttp</span></a>,
+que efectúa un cálculo más complejo y preciso y que conduce a la
+obtención de más información sobre la cuenta objeto del estudio.</span></span></li>
+      </ul>
+      <ul>
+        <li><a href="#ch_mdt">A partir de un modelo MDT Rejilla</a><br />
+        </li>
+      </ul>
+
+      <span class="Parrafo"><span class="Parrafo">
+      Ambos métodos funcionan mediante el análisis de triangulaciones</span></span><span class="Parrafo"><span class="Parrafo">, por lo que en ambos casos aparece la opción <span style="font-weight: bold; font-style: italic;">Chequear .ttp</span>
+que, si está activada, provoca que el programa compruebe que la triangulación
+efectuada con el primer método es correcta (previniendo los posibles problemas que pudieran
+surgir derivados de un EDM defectuoso), o que la triangulación de partida del segundo método es válida.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      </span></span><span class="Titulo_2"><a name="triangulacion">A partir de un .edm/.edb, por triangulación</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+Este método permite calcular el área de la cuenca que vierte sobre un punto seleccionado.<br />
+      <br />
+</span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 549px; height: 132px;" alt="" src="Imagenes/dialogo_cuencas_hidrograf_triang.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+Con este método, sólo es necesario partir de un&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> en el que esté declarada la <a style="font-weight: bold;" href="EDM_control_entidades.html#control_superficies">superficie</a> que conforma la cuenca hidrográfica y un <span style="font-weight: bold;">contorno</span> sobre el que se limitará el estudio.<br />
+      <br />
+Una vez establecidos estos parámetros, bastará con pulsar sobre el botón <span style="font-weight: bold;">[Generar]</span> para que el programa calcule y dibuje la cuenca hidrográfica, </span></span><span class="Parrafo"><span class="Parrafo">procediendo entonces el programa a triangular el EDM dentro del contorno seleccionado para efectuar el estudio.</span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 437px; height: 312px;" alt="" src="Imagenes/ejem_cuenca_hidrograf_triang.png" /><br />
+      </span></span><span class="Parrafo"><span class="Parrafo"><span class="Info">Ejemplo de cálculo de cuenca hidrográfica
+según triangulación</span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+      <br />
+      </span></span><span class="Titulo_2"><a name="ttp">A partir de un .ttp</a></span><br />
+      <span class="Parrafo"><span class="Parrafo"><br />Este método de generación de cuencas hidrográficas toma como base de partida un <a href="EDM_topografia.html#ficheros_ttp">archivo .ttp</a> de triangulación topográfica. </span></span><span class="Parrafo">El <a href="EDM_topografia.html#ficheros_ttp">archivo <span class="Archivo">.ttp</span></a> se declara a través del índice de la lista de <a href="EDM_control_entidades.html#control_ttps">control de TTPs</a> accesible mediante el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_control_ttps.png" />.</span><span class="Parrafo"><span class="Parrafo"> Una vez declarado en el cuadro de diálogo, sólo resta que el usuario, tras pulsar sobre el botón <span style="font-weight: bold;">[Generar]</span>,
+seleccione un punto de la malla de triángulos que pertenezca a una
+vaguada para que el programa analice todos los recorridos del agua (también llamadas <span style="font-weight: bold;">líneas de agua</span>)
+desde todos los vértices de los triángulos marcando aquellos que pasen
+por el punto seleccionado.<br />
+      <br />
+Tenemos las posibilidad de generar la cuenca hidrográfica para una <span style="font-weight: bold;">línea</span>, tomando como modelo del terreno un superficie de tipo MDT Rejilla.<br />
+      <br />
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 549px; height: 132px;" alt="" src="Imagenes/dialogo_cuencas_hidrograf_ttp.png" /></span></span><br />
+      <span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><br />
+El programa ofrece dos tipos de resultados mediante este método:<br />
+      </span></span>
+      <ul>
+        <li><span class="Parrafo"><span class="Parrafo"><span style="font-weight: bold;">Resultados en forma de listado</span> (de nombre&nbsp;<span class="Archivo">cuencas.res</span>) con la siguiente información:</span></span></li>
+      </ul>
+      <ul>
+        <ul>
+          <li><span class="Parrafo"><span class="Parrafo">Coordenadas X e Y del origen (puntos seleccionado por el usuario).</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Cotas mínima, máxima y desnivel de la cuenca hidrográfica.</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Área 2D de la cuenca.</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo">Longitud del recorrido de mayor desnivel en 2D y en 3D.</span></span></li>
+          <li><span class="Parrafo"><span class="Parrafo"><a href="MS_curva_hipsometrica.html">Curva Hipsométrica</a>. Altura media, altura calculada en el 50% de área total.</span></span></li>
+          <ul>
+            <li><span class="Parrafo"><span class="Parrafo">Altura media de cada intervalo</span></span></li>
+            <li><span class="Parrafo"><span class="Parrafo">Área parcial</span></span></li>
+            <li><span class="Parrafo"><span class="Parrafo">Área acumulada</span></span></li>
+            <li><span class="Parrafo"><span class="Parrafo">Porcentaje de área por intervalo<br />
+              </span></span></li>
+          </ul>
+
+        </ul>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 406px; height: 375px;" alt="" src="Imagenes/ejem_cuenca_hidrograf_ttp_list.png" /><br />
+</span></span></div>
+      <ul>
+        <li><span style="font-weight: bold;">Resultados gráficos</span>:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Líneas
+que representan los recorridos de las vaguadas principales hasta el
+punto seleccionado (que se pintan con el tipo de línea L1306), teniendo
+en cuenta que en el momento en que una línea de agua confluya en otra,
+esta última pasa a ser vaguada principal.<br />
+</li>
+          <li>Línea de la vaguada correspondiente al recorrido de mayor desnivel (se pinta con el tipo de línea L1303).<br />
+</li>
+          <li>Contorno de la cuenca (si se deja marcada la opción <span style="font-weight: bold; font-style: italic;">Crear contorno</span>, y que se pinta con el tipo de línea L78).<br />
+          </li>
+          <li>Líneas de agua analizadas (si está marcada la opción <span style="font-weight: bold; font-style: italic;">Conservar líneas de agua</span>, y para las que se usa el tipo de línea L1307 en aquellas que quedan dentro de la cuenca y L1302 para las que quedan fuera).<br />
+          </li>
+        </ul>
+      </ul>
+      <span class="Parrafo"><span class="Parrafo">
+      </span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><img style="width: 601px; height: 283px;" alt="" src="Imagenes/ejem_cuenca_hidrograf_ttp.png" /><br />
+      <span class="Info">Ejemplo de cálculo de cuenca hidrográfica
+según .ttp</span><br />
+      </span></span><span class="Parrafo"><span class="Parrafo" /></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <a name="ch_mdt" /><span class="Titulo_2">A partir de un modelo MDT Rejilla</span><br />
+      <br />
+      <br />
+</span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img style="width: 549px; height: 132px;" alt="" src="Imagenes/cuenca_hidro_mdt.png" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+<br />
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

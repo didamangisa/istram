@@ -1,0 +1,1368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Libreta Topografica</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LIBRETA TOPOGRÁFICA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><span class="Parrafo"><br /></span>
+Esta herramienta despliega un menú
+de datos en pantalla, con utilidades para cargar ficheros procedentes
+de libretas topográficas de campo, con bases para replanteo, puntos ya
+calculados por libreta, o lecturas acimutales, verticales y distancias
+para calcular una radiación de puntos y una poligonal
+topográfica/geodésica. El sistema admite lecturas en círculo directo
+solamente, o lecturas en círculo directo y círculo inverso. Durante el
+cálculo, las bases y puntos se pueden ver en pantalla en su posición
+sobre el mapa o sin él, como ayuda para la detección de errores.<br />
+
+      
+      <ul>
+
+        <li><a href="#general">General</a></li>
+        <li><a href="#ficheros">Ficheros</a></li>
+        <li><a href="#ver">Ver</a></li>
+        <li><a href="#buscar">Buscar</a></li>
+        <li><a href="#calcular">Calcular</a></li>
+        <li><a href="#itinerarios">Itinerarios</a></li>
+        <li><a href="#salidas">Salidas</a></li>
+        <li><a href="#calculo">Cálculo de una poligonal con la libreta topográfica</a></li>
+        <li><a href="#red">Cálculo de una red con la libreta topográfica</a><br />
+        </li>
+
+
+      
+      </ul>
+
+      <a name="general"><span class="Titulo_2">General</span><br />
+
+      <br />
+
+       
+      
+      </a><div style="text-align: center;"><img style="width: 512px; height: 258px;" alt="" src="Imagenes/edm_libreta_general.png" /><br />
+
+
+      </div>
+
+      <br />
+
+
+Mediante las casillas C1, C2, C3
+podremos escribir diferentes observaciones de identificación del
+trabajo y saldrán reflejados en los listados de resultados. En el caso
+de no escribir ningún texto ISTAM/ISPOL las llenará con "OBRA",
+"TRABAJO" y "TRAZADO" respectivamente<br />
+
+
+      <br />
+
+
+Identificamos mediante la casilla EJE
+el número de eje, por si la radiación representa perfiles saber de que
+eje son.<br />
+
+
+      <br />
+
+
+Tipo: <br />
+
+
+
+      <ul>
+        <li>Fichero de datos con Distancia Geométrica</li>
+        <li>Fichero de datos con Distancia Reducida</li>
+      </ul>
+      
+      El usuario puede seleccionar si los datos de entrada incluyen la distancia geométrica o la distancia reducida.<br />
+
+
+      <br />
+
+
+El sistema reconoce un formato propio y algunos otros de diferentes
+libretas y programas:<br />
+
+
+      
+      
+      <ul>
+
+        <li>ISPOL</li>
+        <li>PSION. (OBD) (2
+diferentes formatos)</li>
+        <li>WILD/LEICA-GRExx-GIF-10
+(5 diferentes formatos particularizados para clientes)</li>
+        <li>SOKKISHA. /</li>
+        <li>ZAS</li>
+        <li>DYC-PSI</li>
+        <li>SDR-set3000</li>
+        <li>SDR5</li>
+        <li>SDR20</li>
+        <li>GEODIMETER.
+Ficheros tipo JOB y tipo AREA</li>
+        <li>GOPLAN.</li>
+        <li>TOPTC</li>
+        <li>TAQUIMETRICO</li>
+        <li>OBS</li>
+        <li>LEA</li>
+        <li>Libretas TOPCON
+GTS-600, GTS-700, GTS-800, GPT-7000</li>
+        <li>GSI</li>
+        <li>Trimble</li>
+        <li>Promapa
+(Portugal)</li>
+        <li>Ficheros
+encolumnados sin cabeceras con el siguiente formato:</li>
+      
+      </ul>
+
+      
+      <div style="margin-left: 40px;">Estación&nbsp;&nbsp; Punto
+visado&nbsp;&nbsp;&nbsp; Horizonatl&nbsp;&nbsp;&nbsp;
+Vertical&nbsp;&nbsp;&nbsp; Distancia geométrica&nbsp;&nbsp;&nbsp;
+altura mira&nbsp;&nbsp;&nbsp; altura instrumento<br />
+
+      </div>
+
+      <br />
+
+
+      Los ficheros de
+entrada independiente de su formato deben llevar la extensión .ltp<br />
+
+
+      
+      
+      <ul>
+
+        <li>AZSAGRE.ltp (Libreta usada por Asturiana de Zinc para Gre3)</li>
+        <li>COPGRE.ltp (Formato de Consejería de Obras Públicas de
+Principado de Asturias)</li>
+        <li>DYC.ltp (Formato usado en Dragados y Construcciones)</li>
+        <li>FCC01.ltp (Formato de FCC GEOPLAN)</li>
+        <li>FCCGRE01.ltp (Formato de FCC)</li>
+        <li>ISPOL.ltp (Formato propio)</li>
+        <li>MSPQ2.ltp (Formato usado en la minería)</li>
+        <li>NECSOGRE.ltp (Libreta usada por NECSO para Gre3)</li>
+        <li>TECNIGRE.ltp (Formato de Tecnia)</li>
+        <li>ZAS1.ltp</li>
+      
+      </ul>
+
+Formato de libreta GSI:<br />
+
+
+      <br />
+
+
+El fichero original es un .gsi de Leica que mediante programas de esta
+casa se transforma a formato .lea. En este momento se renombra a .ltp y
+ya se puede cargar desde Istram.<br />
+
+
+      <br />
+
+
+Un ejemplo del formato aceptado es el siguiente:<br />
+
+
+      <br />
+
+
+
+      
+      <div style="text-align: center;"><img src="Imagenes/edm_libreta_gsi.png" style="width: 627px; height: 116px;" alt="" /><br />
+
+      </div>
+
+      
+      <br />
+
+
+En este tipo de formato la línea que empieza por *11 es puesta en
+estación: sigue 87 altura de mira y 88 altura del aparato.<br />
+
+
+      <br />
+
+
+El resto son parejas de líneas *41 y *11: la primera da el código del
+punto visado y la *11 la lectura; si el código es BR la lectura es para
+orientar y puede haber repeticiones con vuelta de campana y a varias
+bases distintas. Las demás visadas son puntos radiados.<br />
+
+
+      <br />
+
+
+Puede haber al final de las lecturas desde una estación, nuevas visuales a bases para comprobar que no se movió el aparato.<br />
+
+
+      <br />
+
+
+Si se encuentra un *11 sin el *41 delante es un cambio de estación y empieza un nuevo ciclo.<br />
+
+
+      <br />
+
+
+Formato de libreta Trimble (estación total Trimble 5603dr standard):<br />
+
+
+      <br />
+
+
+Con extensión .dc y que habrá que renombrar a la extensión .ltp. Un ejemplo del formato .dc es el siguiente:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/edm_libreta_trimble.png" style="width: 656px; height: 318px;" alt="" /><br />
+
+      </div>
+
+      <br />
+Mediante la casilla <img style="width: 16px; height: 17px;" alt="" src="Imagenes/icono_toolbarEstandar_nuevo.png" /> se reinicializan los datos.<br />
+      <br />
+
+
+      <a name="ficheros"><span class="Titulo_2">Ficheros</span><br />
+
+      <br />
+
+El menú de pantalla de libreta topográfica está dividido por pestañasy
+en tres zonas. La superior con los datos de cabecera e identificación
+del trabajo y las teclas de operación más importantes. Por debajo de
+ella otras dos: una para las bases, que se oculta cuando no se opera en
+ella y otra para las lecturas y resultados de cálculo. La parte
+superior del menú varía según la pestaña seleccionada en cada momento.<br />
+
+      <br />
+
+      
+      
+      </a><div style="text-align: center;"><img style="width: 512px; height: 258px;" alt="" src="Imagenes/edm_libreta_ficheros.png" /><br />
+
+      
+
+      </div>
+
+      <br />
+
+
+Clicando en las casillas <span style="font-weight: bold;">T.L.</span>, <span style="font-weight: bold;">ESTA</span>, <span style="font-weight: bold;">PUNTO</span> podemos localizar un determinado dato implementado en nuestra libreta.<br />
+
+
+      <br />
+
+
+La tabla de bases consta de una línea para cada base que contiene:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img style="width: 352px; height: 105px;" alt="" src="Imagenes/edm_libreta_base.png" /><br />
+
+
+      </div>
+
+      <br />
+
+
+Tipo de base <span style="font-weight: bold;">T.B.</span> Indicaremos un único carácter con los siguientes significados:<br />
+
+
+      
+      
+      <ul>
+
+        <li><span style="font-weight: bold;">B</span>: es base con coordenadas determinadas</li>
+        <li><span style="font-weight: bold;">D</span>: destacada, sus coordenadas se calculan o actualizan durante el proceso.</li>
+        <li><span style="font-weight: bold;">N</span>: base bloqueada, que no queremos quitar del fichero de bases; pero no se usa durante el cálculo, ni se actualiza.</li>
+        
+        <li><span style="font-weight: bold;">S</span>: estacionamiento, sus coordenadas se calculan o actualizan durante el proceso.</li>
+        <li><span style="font-weight: bold;">I</span>: Base para ser calculada por intersección inversa.</li>
+
+
+      
+      </ul>
+      
+
+      <span style="font-weight: bold;">      Base</span>: nombre de la base. Una palabra de hasta 8 caracteres (sin espacios en blanco) combinando letras y números.<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      X Y Z</span>: Las tres coordenadas de la base, en metros.<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      COD</span>: Un código de hasta 4 caracteres para identificación o clasificación.<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      OBSERVA</span>: Observaciones, una frase de hasta 15 caracteres<br />
+
+
+      <br />
+
+
+      Al cargar los ficheros .bas y .ltp desde la pestaña <span style="font-weight: bold;">Ficheros</span>-&gt;<span style="font-weight: bold;">Redes</span>&nbsp;<img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />
+se activa la posibilidad de acceder a la pestaña de <a href="EDM_libreta_topografica.html#itinerarios">Itinerarios</a> para
+calcular las coordenadas de una estación por intersección inversa y
+posteriormente calcular la radiacción desde ella.<br />
+
+
+
+La lectura de la estación debe estar codificada como "<span style="font-weight: bold;">B</span>" y debe tener
+unas coordenadas aproximadas. (No debe estar incluida en las bases).<br />
+
+
+
+Las lecturas a las bases conocidas deben estar codifucadas como "<span style="font-weight: bold;">O</span>", por lo menos se requieren dos.<br />
+
+
+      <br />
+
+
+      <img style="width: 210px; height: 51px;" alt="" src="Imagenes/edm_ficheros_redes_lea.png" align="right" hspace="6" />Se permite cargar ficheros de lecturas con extensión&nbsp;<span class="Archivo">.ltp</span> o&nbsp;<span class="Archivo">.lea</span> y se permiten en estos ficheros líneas vacias.<br />
+
+
+Si no se encuentra ninguna coincidencia entre el fichero de bases y los
+nombres de las estaciones y puntos visados, se presenta un mensaje de
+aviso.<br />
+
+      <br />
+
+Activando la casilla <span style="font-weight: bold;">Promediar</span>,&nbsp;
+se promedian las lecturas múltiples entre una base y un mismo punto. Si
+al promediar algún valor excede de los límites máximos de error
+permitidos se muestra un informe completo del cálculo de promedios. Al
+calcular la red de esta forma, los cálculos son mucho más rápidos, no
+obstante se añade una barra de progreso que permita abortar el proceso
+de compensación de la red.<br />
+
+
+      <br />
+
+
+      <a name="ver"><span class="Titulo_2">Ver</span><br />
+
+      <br />
+
+Para poder visualizar la lista de bases debe estar marcada la casilla Bases en la pestaña <span style="font-weight: bold;">Ver</span>.<br />
+
+      <br />
+
+      
+      </a><div style="text-align: center;"><img style="width: 512px; height: 363px;" alt="" src="Imagenes/edm_libreta_ver.png" /><br />
+
+
+      </div>
+      <br />
+
+
+      <img style="width: 195px; height: 51px;" alt="" src="Imagenes/edm_libreta_bases_operar.png" align="left" hspace="6" />Desde la pestaña <a href="EDM_libreta_topografica.html#ficheros">ficheros</a> podemos operar con bases.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <br />
+
+
+      
+      <ul>
+        <li><span style="font-weight: bold;">Añade</span>: Añade una nueva línea al final de la lista para rellenar a mano con una nueva base.</li>
+        <li><span style="font-weight: bold;">Inserta</span>: Inserta una línea delante de la primera que se ve en la tabla.</li>
+        <li><span style="font-weight: bold;">Borra</span>: Borra la base de la primera línea de la tabla.</li>
+        <li><span style="font-weight: bold;">Carga</span> <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />: Borra las bases que
+estén cargadas actualmente y carga uno de los ficheros de bases
+disponibles de extensión&nbsp;.bas para trabajar con él.</li>
+        <li><span style="font-weight: bold;">Guarda</span> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" />: Escribe las bases
+que estén cargadas actualmente, en un archivo con extensión&nbsp;<span class="Archivo">.bas</span>.
+Si después del cálculo, la tabla recibió bases S, al salvar pregunta si
+las pasa a bases B o las salva como S.</li>
+        <li><span style="font-weight: bold;">Añade F</span>: Concatena las bases que estén cargadas actualmente con las bases de un fichero&nbsp;<span class="Archivo">.bas</span> seleccionado.</li>
+        <li><span style="font-weight: bold;">Chequear</span>:
+"Chequea Bases" compara los nombres de bases que se declaran para
+estaciones y orientaciones, con las que hay en la tabla de bases, y da
+un mensaje si hay alguna sin declarar. Las destacadas también
+aparecerán si aún no se ha calculado ninguna vez, y por tanto no han
+pasado a la tabla de bases.</li>
+      </ul>
+      <img style="width: 135px; height: 51px;" alt="" src="Imagenes/edm_libreta_ltp.png" align="left" hspace="6" />Equivalente
+a estas funciones para la tabla de bases las tenemos para la gestión de
+la tabla de lecturas y cálculos. Las opciones siguientes son similares
+a las descritas anteriormente.<br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <br />
+
+
+      <img style="width: 144px; height: 24px;" alt="" src="Imagenes/edm_libreta_teclas_activas.png" align="middle" hspace="8" />Para las lecturas disponemos de cuatro teclas activas.<br />
+
+
+      
+      <ul>
+        <li>T.L.: Tipo de línea
+de datos. Permite buscar las líneas de datos según el Tipo que está
+declarado en la misma columna. Los tipos son:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li><span style="font-weight: bold;">B</span>: Base, se hace
+estación en una base cuyas coordenadas figurarán en la tabla de bases.
+Tiene como datos su nombre: palabra de hasta 8 caracteres sin espacios
+en blanco. Las coordenadas X Y y Z se le asignarán de la línea
+correspondiente de la tabla de bases.</li>
+          <li><span style="font-weight: bold;">S</span>:&nbsp;Estación equivalente a una base, pero que lleva sus coordenadas aquí, no se leerán del fichero de bases.</li>
+          <li><span style="font-weight: bold;">H</span>: Altura del instrumento
+y de la mira o prisma. Seguido de los dos datos (en m). Hasta nuevo
+cambio se aplicarán en los cálculos.</li>
+          <li><span style="font-weight: bold;">O</span>:
+Orientación, lleva el nombre de otra estación para orientar, y las
+lecturas acimutal, vertical y distancia geométrica de esa lectura. Sólo
+se utilizará, y es imprescindible, la lectura acimutal. La lectura
+acimutal puede ser 0.0. Si la estación la hacemos orientando con 0.0 al
+Norte, de modo que las lecturas acimutales son absolutas, no hace falta
+incluir esta lectura O después de una B o S, y antes de empezar a dar
+los puntos radiados.</li>
+          <li><span style="font-weight: bold;">N</span>:&nbsp;Desorientación:
+ángulo acimutal conocido de la orientación del aparato. Sustituye a la
+línea O de lectura a base conocida. Sólo lleva el ángulo acimutal.</li>
+          <li><span style="font-weight: bold;">M</span>:&nbsp;Altura
+de la mira. Cambio de altura de la mira o prisma, sin cambiar el
+aparato. Hasta nuevo cambio se aplicará esta altura en los cálculos.</li>
+          <li><span style="font-weight: bold;">U</span>:&nbsp;Altura de la mira sólo para la siguiente lectura. Después se vuelve a la altura anterior.</li>
+          <li><span style="font-weight: bold;">C</span>:
+Indica la lectura de cierre de una poligonal; en el caso de que ésta
+sea observada con cierre angular, anotaríamos la lectura angular a la
+base de referencia.</li>
+          <li><span style="font-weight: bold;">(en blanco)</span>:
+Nada o carácter blanco en esta posición declaran una lectura a un
+punto. Lleva como datos el nombre del punto (8 caracteres sin blancos),
+y las lecturas acimutal, vertical y distancia geométrica.</li>
+          <li><span style="font-weight: bold;">D</span>:
+Destacado, los datos son los mismos que en el caso anterior de punto
+radiado, y se calculará igual, con la salvedad de que en cuanto el
+calculador pase por él, las coordenadas resultantes se añadirán o
+modificarán en la tabla de bases, y se asignarán también a los puntos
+estación u orientación que los usen (en líneas posteriores). Si hubiese
+en la tabla de bases una B del mismo nombre, sus coordenadas no serían
+alteradas y se generará un mensaje de aviso.</li>
+          <li><span style="font-weight: bold;">T</span>:&nbsp;Indica
+nuevo perfil transversal. Los puntos que siguen pertenecen a un perfil
+transversal cuyo Pk. o punto kilométrico, se da en el campo que sigue.
+Una nueva orden T cambia de perfil en cualquier momento.</li>
+          <li><span style="font-weight: bold;">L</span>:
+Indica nueva línea (polilínea). Es interesante, para la mayor parte de
+los trabajos de campo levantar series de puntos seguidos a lo largo de
+líneas del terreno con algún significado: límite de finca, contorno de
+un edificio, arista de explanación, cabeza o pie de talud, etc. El
+sistema encadena los puntos en secuencia hasta que una nueva orden L o
+T cambian a una nueva serie. Sigue un código de hasta 4 caracteres sin
+blancos que normalmente identifica el tipo de línea representado. Si el
+código es un entero entre 0 y 999 se puede usar como Tipo de Línea (L*)
+para el mapa, que es exportado en el mapa y en el .top. Si el código es
+un número negativo, todos los puntos calculados desde ese momento hasta
+que cambiemos la orden, se generan como puntos sueltos de relleno, que
+van a intervenir en el cálculo de la malla de triángulos, pero no
+estarán encadenados formando una polilínea. Si utilzamos la orden Dibujar
+de la libreta topográfica, esos puntos se materializan con el tipo de
+punto especificado en la casilla del código, quitando el signo negativo.</li>
+          <li><span style="font-weight: bold;">V</span>:&nbsp;Cálculo
+de las coordenadas X, Y y Z del fondo de un sondeo, el rumbo
+(centesimal) y la pendiente (sexagesimal). Los datos son el nombre de
+dos puntos dados inmediatamente antes de la declaración V uno es la
+embocadura del sondeo y el otro el extremo de una varilla introducida
+en el sondeo; el tercer dato es la longitud del sondeo</li>
+          <li class="Parrafo"><span style="font-weight: bold;">I</span>: Base para ser calculada por
+intersección inversa. Después de ella tiene que haber varias lecturas O
+a bases conocidas. El calculador utilizará las tres primeras, con
+repeticiones si las tiene, para calcular la intersección inversa. La
+base resuelta se añade a la tabla de bases y a un listado de
+intersecciones inversas (dentro de la pestaña Salidas).</li>
+
+        </ul>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img style="width: 513px; height: 125px;" alt="" src="Imagenes/lib_top_inversa.png" /><br />
+
+      </div>
+<ul>
+        <li><span style="font-weight: bold;">ESTA</span>:&nbsp;Con esta tecla, el sistema busca en toda la lista de datos, una estación en un punto cuyo nombre daremos.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">PUNTO</span>:&nbsp;Permite buscar en la tabla, todas las lecturas a puntos, buscándolas por su nombre.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">+</span>:&nbsp;&nbsp;Repite
+la última búsqueda por tipos de lectura (T.L.), estación (ESTA) o punto
+visado (PUNTO) a partir de la línea en que estamos.</li>
+      </ul>
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">Todas
+estas líneas pueden ir acompañadas de un código de hasta 4 caracteres, y un
+campo de observaciones de hasta 15, como comentarios o ayudas de interpretación
+de la libreta.</p>
+
+
+Dentro de esta pestaña distinguiremos:<br />
+
+
+      <br />
+
+
+      <div style="text-align: center;"><img style="width: 540px; height: 96px;" alt="" src="Imagenes/edm_libreta_ver_dialogo.png" /><br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Lecturas</span> / <span style="font-weight: bold;">Coordenadas</span>: Los
+campos de la tabla de lecturas pueden alternar los datos de las lecturas o los
+datos de coordenadas, es decir, presentan las coordenadas X, Y y Z de los
+puntos radiados, una vez calculados, en lugar de las lecturas acimutal,
+vertical y distancia geométrica. En las líneas O de orientación, conmuta entre
+las coordenadas de la base para orientar, y la lectura de orientación.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Bases</span>:&nbsp;Permite mostrar o no la tabla de bases.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Mapa</span>: El
+dibujo de las bases, y puntos calculados se activa y desactiva con esta tecla.
+No provoca sin embargo el refresco de la pantalla. Recordamos que para ver la
+zona de pantalla cubierta por este menú podemos usar la tecla de función
+&lt;F3&gt;. Si no hay cartografía de fondo cargada, el sistema calcula las
+coordenadas de la zona ocupada por el dibujo para centrar la pantalla en ella.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">AltCar</span>: Altura
+de los caracteres que se presentan sobre el dibujo. Dependiendo del tamaño y
+densidad de los puntos, se desea seleccionar uno adecuado para ver el dibujo lo
+más claramente que se pueda.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Decimales</span>: Número de decimales entre 0 y 4. Para las lecturas de ángulos vertical y horizontal se utiliza un decimal más. <br />
+
+
+        </li>
+      </ul>
+Los ficheros de datos de bases&nbsp;<span class="Archivo">.bas</span> y de lecturas&nbsp;<span class="Archivo">.ltp</span>&nbsp; guardan las coordenadas con cuatro decimales. <br />
+
+
+      <br />
+
+
+      <a name="buscar"><span class="Titulo_2">Buscar </span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 538px; height: 94px;" alt="" src="Imagenes/edm_libreta_buscar.png" /><br />
+
+
+      </div>
+      <br />
+
+
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">Esta pestaña permite buscar una
+lectura en la tabla especificando uno de los siguientes criterios de búsqueda:</p>
+      <p class="MsoNormal" style="text-align: left;" align="left"><img style="width: 317px; height: 200px;" alt="" src="Imagenes/edm_libreta_buscar_poligono.png" align="right" hspace="6" /><br />
+
+
+      </p>
+
+
+      <ul>
+        <li><span style="font-weight: bold;">Tipo de lectura</span>:&nbsp;comando de la lectura &#8220;B&#8221;, &#8220;H&#8221;, &#8220;M&#8221;, &#8220;O&#8221;, &#8220;D&#8221;, &#8220;S&#8221;, etc.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Estacionamiento</span>:&nbsp;base en la que se ha producido un posicionamiento.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Punto por nombre</span>:&nbsp;nombre de un punto visado.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Punto por picado</span>:&nbsp;Retira
+el menú de pantalla y pide que se seleccione uno de los puntos en el
+dibujo. Después de identificado, regresa al menú, colocando en cabecera
+de la tabla la línea de datos en la que se declara o calcula el punto
+de que se trata. Durante el dibujo se presentan con diferentes colores
+las bases, los destacados y las lecturas, y las visuales de lectura, de
+orientación, o las cadenas de puntos.</li>
+      </ul>
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">El punto que está en la cabeza
+de la tabla se señala sobre el dibujo con un polígono verde de tamaño
+invariable para localización en el dibujo del dato en que estamos.</p>
+
+
+      <a name="calcular"><span class="Titulo_2">Calcular</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 419px; height: 73px;" alt="" src="Imagenes/edm_libreta_calcular.png" /><br />
+
+
+      </div>
+      <br />
+
+
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">En el
+menú <a href="EDM_georreferenciacion.html">U.T.M.</a> al que accedemos desde el menú Configuración &#8594; <a href="EDM_georreferenciacion.html">Sistema referencia coordenadas</a>, se definen las
+compensaciones a utilizar en los cálculos, también se puede acceder mediante Configurar. Para
+seleccionar simplemente el cálculo en UTM se puede marcar la casilla&nbsp; UTM.</p>
+
+
+      <ul>
+        <li><img style="width: 218px; height: 165px;" alt="" src="Imagenes/edm_libreta_calcular_utm.png" align="right" hspace="6" /><span style="font-weight: bold;">Poligonal</span>: Ordena calcular la poligonal</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Radiación</span>: Ordena el cálculo de la libreta de radiación</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Calcular</span>: Procede al cálculo de la poligonal o radiación.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Invertir Estaciones</span>: Invierte el orden de los estacionamientos en las lecturas, para el cálculo de poligonales.<br />
+        </li>
+      </ul>
+
+      <ul>
+        <li><span style="font-weight: bold;">Automático</span>: Activa
+o desactiva el cálculo automático de la libreta. Si está activado, cada vez que
+terminamos una modificación de los datos, la libreta se vuelve a calcular
+completa sin necesidad de ejecutar la orden "Radiación".</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Intersección inversa</span>:
+Las estaciones identificadas con&nbsp;<span class="Parf_negrita">I</span> se calculan por intersección
+inversa. Sus coordenadas se suben a la lista de bases y se cargan en la
+libreta. Se genera un listado que se puede ver en la pestaña Salida,
+mediante el comando listar intersección inversa.</li></ul>
+      <div style="margin-left: 40px;">El calculador utilizará las tres
+primeras lecturas a bases conocidas&nbsp;<span class="Parf_negrita">O</span> después de la&nbsp;<span class="Parf_negrita">I</span> para calcular la trisección. Si
+tiene repetición las promediará. El cálculo de la poligonal y radiación
+empieza por comprobar si hay intersecciones inversas I y las resuelve
+antes de obtener la poligonal o la radiación.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 415px; height: 182px;" alt="" src="Imagenes/lib_top_cal_inv.png" /><br />
+      <br />
+      <div style="text-align: left;">En la pestaña de <a href="EDM_libreta_topografica.html#salidas">Salidas</a> podré obtener el listado de intersección inversa:&nbsp;<span class="Archivo">int_inversa.res</span><br />
+      <br />
+      <div style="text-align: center;"><img style="width: 609px; height: 346px;" alt="" src="Imagenes/lib_top_list_inv.png" /><br />
+      </div>
+      </div>
+      </div>
+      </div>
+      <ul>
+        <li>A continuación ya podemos picar la orden "<span style="font-weight: bold;">Radiación</span>" y calculará la
+radiación utilizando como coordenadas de la estación, las calculadas en
+el paso anterior.&nbsp; <br />
+        </li>
+
+      
+      </ul>
+
+      <img style="width: 109px; height: 47px;" alt="" src="Imagenes/edm_libreta_calcular_desviacion.png" align="left" hspace="6" />Se
+pueden definir unos valores máximos de desviación con respecto al
+promedio, de las lecturas de ángulos vertical y azimutal y de la
+distancia. Si alguna de las lecturas no cumple con estos valores, al
+realizar el cálculo se muestra un listado con las desviaciones de todas
+las lecturas, destacando aquellas que exceden de la tolerancia.<br />
+      <br />
+      <a name="itinerarios"><span class="Titulo_2">Itinerarios</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 541px; height: 93px;" alt="" src="Imagenes/edm_libreta_itinerarios.png" /><br />
+
+
+      </div>
+      <br />
+
+
+      <ul>
+        <li><span style="font-weight: bold;">Origen</span>: Selección
+del origen del itinerario a calcular picando gráficamente la base
+correspondiente.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Destino</span>: Selección
+del destino del itinerario a calcular picando gráficamente la base
+correspondiente.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Itinerario</span>: Selecciona del conjunto de lecturas inicial las adecuadas para generar la
+poligonal partiendo del origen y llegando al destino seleccionados. En caso de
+haber varias soluciones el programa nos irá preguntando el recorrido a seguir
+para el cálculo de la poligonal. <br />
+
+
+          </li>
+      </ul>
+      <ul>
+        <li class="Parrafo"><span style="font-weight: bold;">Calcular</span>: Después
+de pulsar la opción &#8220;Itinerario&#8221; se realizan los cálculos de cada uno de los
+itinerarios seleccionados a modo de tanteos. El programa nos ofrece como
+resultado un listado llamado poligo.res.</li>
+      </ul>
+      <div style="text-align: center;"><img style="width: 450px; height: 156px;" alt="" src="Imagenes/edm_libreta_itinerarios_calculo.png" /><br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Aceptar</span>: Confirmación del cálculo realizado para ese itinerario, las bases pasan a
+formar parte del fichero de bases.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Radiar</span>: Calcula la radiación desde todas las bases a todos los puntos que se
+encuentran en el fichero de entrada (<span class="Archivo">.ltp</span>).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Int. Inversa</span>: Calcula
+las coordenadas de un punto que el usuario selecciona por el método de mínimos
+cuadrados.</li>
+      </ul>
+      <a name="salidas"><span class="Titulo_2">Salidas</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 541px; height: 93px;" alt="" src="Imagenes/edm_libreta_salidas.png" /><br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Dibujar</span>: Las
+imágenes gráficas que vemos durante el cálculo, no son elementos
+gráficos que realmente estén en el mapa, sino que se superponen a él
+para presentación. Basta abandonar esta sesión con la tecla Fin, o
+desactivar el dibujo con la tecla Ver / Mapa para que el gráfico
+desaparezca de la pantalla. Si usamos la tecla Dibujar volcaremos sobre
+el mapa las cadenas poligonales y perfiles en 3 dimensiones. Los
+puntos calculados también se volcarán utilizando como tipo de punto el que esté
+seleccionado como Tipo de Punto Actual. Las etiquetas de identificación de los
+puntos generarán textos en el mismo tamaño y posición en que los visualizamos
+hasta ahora.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Borrar</span> <img style="width: 23px; height: 23px;" alt="" src="Imagenes/icono_basura.png" />: Borra el dibujo producido con la última orden "Dibujar".</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Exportar</span>: Esta
+tecla da paso a un menú emergente que permite escoger el formato de
+exportación de la libreta topográfica. Se pueden exportar los datos
+como ficheros de perfiles transversales (<span class="Archivo">.per</span>), o como ficheros con la
+nube de puntos calculada en formatos&nbsp;<span class="Archivo">.top</span> y&nbsp;<span class="Archivo">.toc</span>.</li>
+      </ul>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">.per</span>:
+Obtención de un fichero de perfiles transversales, a partir de la nube
+de puntos, o de las series de puntos asignados a perfiles.</div>
+      <div style="margin-left: 40px;">
+
+      <p class="MsoNormal" style="text-align: left;" align="left"><img style="width: 89px; height: 71px;" alt="" src="Imagenes/edm_libreta_salidas_exportacion.png" align="right" hspace="6" />Para
+crearlo, el sistema pedirá que se seleccione uno de los ficheros de formato .TRC que se generan cuando hacemos el cálculo de
+una serie de puntos a lo largo de un eje (típicamente cada 20 m). De ese fichero .TRC obtiene las coordenadas del centro de cada
+perfil, y el acimut del eje en ese punto. Pide una tolerancia transversal y
+otra longitudinal, y estudiando los puntos que hay dentro de cada rectángulo de
+tolerancia, construirá con ellos un transversal en términos de distancia al eje
+y cota, proyectando los puntos seleccionados sobre el transversal. Se puede
+optar por ignorar el agrupamiento en transversales de los puntos dato (Puntos
+Sueltos) o tenerlo en cuenta rigurosamente. Estos perfiles pueden usarse
+posteriormente para medición o seguimiento durante la construcción de la obra.</p>
+
+
+      </div>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">.top</span>: Generación
+de ficheros .top con la nube de
+puntos calculada, incluyendo las cadenas y perfiles que se declararon en la
+libreta de campo, o aquí durante el proceso, para ser tratados posteriormente
+en triangulación y generación de isolíneas, o de un mapa topográfico en
+general. Este mapa topográfico, incluyendo las isolíneas, puede ser una segunda
+vía para la obtención de perfiles de la superficie en los puntos que deseemos,
+en otras áreas de ISTRAM®/ISPOL®.
+
+
+
+      <p class="MsoNormal" style="text-align: left;" align="left">&nbsp;Al
+guardar un fichero .top desde
+esta opción se añaden al mismo y en la columna de comentarios las columnas de COD. (códigos) y Observaciones de la libreta.</p>
+
+
+      </div>
+      <div style="margin-left: 40px;"><span style="font-weight: bold;">.toc</span>:
+Generación de ficheros .toc con la nube de puntos calculada, paralela a
+lo explicado en el párrafo anterior. Al guardar un fichero .toc desde
+esta opción se añaden al mismo y en la columna de comentarios las
+columnas de COD (códigos) y Observaciones de la libreta.<br />
+
+
+      </div>
+      <ul>
+        <li><span style="font-weight: bold;">Listar</span> <img style="width: 12px; height: 13px;" alt="" src="Imagenes/icono_notepad.png" />/ <span style="font-weight: bold;">Imprimir</span> <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_impresion.png" />/ <span style="font-weight: bold;">Salvar <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_guardar.png" /></span>: Estas tres teclas despliegan un menú para
+seleccionar uno de los cuatro ficheros: ltop.res
+(cálculo de la radiación), poligo.res (cálculo de poligonal). Este
+listado consta de varias zonas donde se presenta la información.</li>
+        <ul>
+          <li>En la página OBSERVACIONES DE CAMPO CORREGIDAS
+se incluye la observación desde la primera estación al punto para orientar.</li>
+          <li>Si no se aplica ninguna compensación (o
+solamente esfericidad y refracción) en la página LISTADO DE COORDENADAS no se
+muestra el coeficiente de anamorfosis y, aparece en la cabecera COORDENADAS
+PLANAS.</li>
+          <li>Se incluyen en las cabeceras de las páginas
+los comentarios C1, C2 y C3.</li>
+          <li>Cuatro decimales de las coordenadas calculadas.<br />
+
+
+</li>
+
+        </ul>
+      </ul>
+      <div style="margin-left: 40px;">poli.res. Datos
+intermedios del cálculo de poligonal.</div>
+      <br />
+
+
+      <div style="margin-left: 40px;">Listar: Utiliza un
+comando anotado en el fichero de la librería de nombre ISIMPRIM para lanzar a
+impresora ese listado.
+
+      </div>
+      <br />
+
+
+      <div style="margin-left: 40px;">Imprimir: Utiliza
+un comando anotado en el fichero de la librería de nombre ISIMPRIM para lanzar
+a impresora ese listado.
+
+      </div>
+      <br />
+
+
+      <div style="margin-left: 40px;">Salvar:
+Pregunta el nombre de un fichero, ofrecerá .lst pero puede ser
+cualquiera, para renombrar y evitar la sobreescritura automática del
+fichero ltop.res.<br />
+
+
+      </div>
+      <ul>
+        <li><img style="width: 86px; height: 44px;" alt="" src="Imagenes/edm_libreta_salidas_reiniciar.png" align="right" hspace="6" /><span style="font-weight: bold;">Reiniciar</span>:
+Inicializa la tabla completa borrando de memoria todas las bases y
+lecturas, para comenzar un trabajo nuevo. Cuando se haya terminado el
+proceso de modificaciones y cálculos, y después de haber salvado la
+tabla de bases y la de lecturas, por si se requiere reprocesar los
+datos, es conveniente pulsar Reiniciar para liberar memoria, antes de
+cerrar la ventana con la tecla X.
+Si no se borra la información, ésta permanece en memoria y latente, de
+modo que al volver a arrancar la libreta topográfica se encuentra
+operativa para continuar su trabajo.<br />
+
+
+        </li>
+      </ul>
+      <a name="calculo"><span class="Titulo_2">Cálculo de una poligonal con la libreta topográfica</span><br />
+
+      <br />
+
+      
+      </a><div style="text-align: center;"><img style="width: 419px; height: 73px;" alt="" src="Imagenes/edm_libreta_calcular.png" /><br />
+
+      </div>
+
+      <br />
+      <span style="font-weight: bold;">
+      Poligonal más Calcular</span>:
+Ordena el cálculo de una poligonal, reflejada en la libreta
+topográfica. La metodología de preparación de la libreta para cálculo
+de una poligonal es la siguiente:<br />
+      <br />
+En primer lugar, resuelve las estaciones con lecturas a bases conocidas
+y las pasa a la lista de bases con clave [I], calculadas por
+intersección inversa.<br />
+
+      <br />
+
+      La
+primera línea de la libreta, es la primera base de estación de la
+poligonal, de coordenadas conocidas, y que es recomendable que esté en
+el fichero de bases. Las siguientes líneas pueden ser, o bien la
+desorientación, o bien la lectura a las bases de referencia (se puede
+comenzar una poligonal orientando a dos bases), con el objeto de que el
+programa calcule la desorientación de partida. Si tenemos lecturas en
+CD y CI, el programa calculará la lectura promedio.<br />
+
+      <br />
+
+
+
+      <p class="MsoNormal">Se
+pueden realizar varias lecturas con círculo a la derecha y a la izquierda o con
+una sola posición. El programa promedia previamente las lecturas en cada
+posición del círculo. Si alguna lectura solo tiene ángulo Azimutal y hay otras
+completas (Azimutal, Vertical, DistanciaGeom) se emplean solo las lecturas
+completas.</p>
+
+
+      A
+continuación reflejamos en las casillas correspondientes, la altura del
+aparato y la altura del prisma. Una vez contempladas las
+características de salida, añadimos una línea tipo &#8220;D&#8221; (destacada),
+para anotar la lectura a la segunda estación de la poligonal, y primera
+de la que vamos a obtener, coordenadas. De esta manera, ya tenemos
+completadas todas las anotaciones de salida.<br />
+
+      <br />
+
+      A
+continuación añadimos una línea tipo &#8220;S&#8221;, para señalar la segunda
+estación (normalmente será la &#8220;destacada&#8221; dada en las lecturas
+anteriores). La estación se completa con alturas de aparato y mira,
+orientación (O) a la estación anterior y destacada (D) a la estación
+siguiente de la poligonal.<br />
+
+      <br />
+
+      Si
+en algún estacionamiento de un punto de la poligonal no se completa con
+la lectura al siguiente punto y se vuelve a estacionar en el mismo
+punto, se desecha el estacionamiento incompleto.<br />
+
+      <br />
+
+      De
+esta manera seguiríamos haciendo anotaciones en la libreta, hasta
+llegar a la estación de cierre. A partir de aquí se puede trabajar de
+dos maneras. Si la poligonal está observada, teniendo en cuenta el
+error angular de cierre, suponiendo que desde la última base de
+coordenadas conocidas hemos observado otra de coordenadas también
+conocidas, podremos calcular el error angular de cierre de nuestro
+trabajo, y por lo tanto, estas lecturas, deberán ir reflejadas en una
+línea tipo &#8220;C&#8221;. Si no necesitamos obtener el error de cierre angular,
+no se precisa hacer esta última visual, y por tanto las últimas
+anotaciones necesarias en la libreta, serán las lecturas entre la
+penúltima base de la poligonal, cuyas coordenadas queremos calcular y
+la última base, que será de coordenadas conocidas, en la que haremos el
+cierre de la poligonal; pero que no será necesario estacionar. Si la
+última visada es a un punto o base de coordenadas desconocidas, no
+podremos cerrar ni compensar la poligonal, quedando ésta abierta,
+calculada como una cadena de destacadas.<br />
+
+      <br />
+
+      El
+programa después de leer alguna "C" si se encuentra con una "B" o una
+"S" da por finalizada la entrada de datos de la poligonal. De este
+modo, si en un fichero vienen datos de varias poligonales siempre
+calcularía la primera.<br />
+
+      <br />
+
+      En
+poligonales cerradas, si las visuales de Cierre del último punto son
+hacia la base desde que se inició la poligonal, el programa busca las
+visuales recíprocas desde esta base al último punto, realizadas en
+aquel primer estacionamiento, estas visuales no deben llevar ningún
+código.<br />
+
+
+      <br />
+
+El modo de cálculo a realizar, se configura desde el menú de
+Configuración &gt; Sistema referencia coordenadas, en la opción <span style="font-weight: bold;">U.T.M.</span>,
+donde le diremos al programa si queremos calcular en coordenadas planas
+o coordenadas U.T.M., y el método de compensación a utilizar. Esta
+configuración también está accesible desde el botón Configurar. La
+casilla U.T.M. es un atajo para marcar únicamente el cálculo en
+coordenadas U.T.M.<br />
+
+      <br />
+
+      El
+programa genera unos listados de cálculo en ficheros de nombre poli.res
+y poligo.res, donde se reflejan los datos de campo, y todo el cálculo
+de la misma, hasta la compensación, y coeficientes de anamorfosis, en
+el caso de querer obtener el cálculo en proyección U.T.M.<br />
+
+      <br />
+
+A continuación se detalla un ejemplo de una libreta topográfica tipo, para el cálculo de una poligonal.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img style="width: 484px; height: 446px;" alt="" src="Imagenes/edm_libreta_listado_poligonal.png" /><br />
+
+      </div>
+
+      <br />
+
+En caso de disponer de una poligonal con radiaciones en los
+estacionamientos, el modo de cálculo consistiría en Calcular primero
+teniendo seleccionada la opción Poligonal y posteriormente Calcular
+teniendo seleccionada la opción <span style="font-weight: bold;">Radiación</span>. es posible calcular N
+poligonales.<br />
+
+      <br />
+
+Hay ejemplos de libreta topográfica en varios formatos en el directorio "DEMO" a modo de muestra.<br />
+
+      <br />
+
+      <a name="red"><span class="Titulo_2">Cálculo de una red con la libreta topográfica</span><br />
+
+      <br />
+
+      </a><div style="text-align: center;"><img style="width: 537px; height: 91px;" alt="" src="Imagenes/edm_libreta_redes.png" /><br />
+
+
+      </div>
+      <br />
+      <span style="font-weight: bold;">
+
+      Carga de la red</span> :<br />
+
+
+      <br />
+
+
+Previamente, debe recordar seleccionar las opciones de cálculo desde el
+menú Configuración &gt; Sistema referencia coordenadas, en la opción
+U.T.M. donde le diremos al programa si queremos calcular en coordenadas
+planas o coordenadas U.T.M., y el método de compensación a utilizar.<br />
+
+
+      <br />
+
+
+      <span style="font-weight: bold;">Carga</span> <img style="width: 17px; height: 16px;" alt="" src="Imagenes/icono_toolBarEstandar_abrir.png" />: Borra las bases y
+las lecturas que estén cargadas actualmente y solicita el fichero de
+bases&nbsp;<span class="Archivo">.bas</span> y el fichero de lecturas&nbsp;<span class="Archivo">.ltp</span>. el formato del fichero de
+lecturas debe ser el formato .lea, aunque renombrada la extensión a&nbsp;<span class="Archivo">.ltp</span>.<br />
+
+
+
+
+      <p class="MsoNormal">Una vez
+cargados los datos, se muestra un
+esquema de la red con las coordenadas aproximadas calculadas inicialmente. En
+este momento sólo se rotulan las bases fijas y se dibujan las visuales, con lo
+que ya se puede realizar una comprobación visual inicial.</p>
+
+
+
+
+      <p class="MsoNormal">En el proceso de
+carga de la red se produce el siguiente filtrado:</p>
+
+
+      <ul>
+        <li>Promedios de
+círculos directos e inversos.</li>
+        <li>Eliminación de
+lecturas con distancia geométrica igual a cero.</li>
+        <li>Lecturas que se desvían de la media una cantidad mayor que las tolerancias.</li>
+      </ul>
+
+
+
+
+      En este momento en la libreta se muestran las lecturas de la red ofreciendo la posibilidad de editar o eliminar los datos.<br />
+
+
+      
+
+      <br />
+
+
+      Simplificar códigos:
+
+Si se marca esta casilla:<br />
+
+
+      
+      
+      <ul>
+
+        <li>Los estacionamientos "B" y "S" pasan todos a "B".</li>
+        <li>Las lecturas de orientación "O", destacadas "D" y cierre "C" pasan todas a "O".</li>
+        <li>Se ignoran las lecturas de radiación " ".</li>
+      
+      </ul>
+
+      Cálculo de la red:<br />
+
+
+      <br />
+
+
+      
+      <div style="text-align: center;"><img style="width: 542px; height: 94px;" alt="" src="Imagenes/edm_libreta_calculo_redes.png" /><br />
+
+      </div>
+
+      <br />
+
+
+      Comandos para trabajar con redes:<br />
+
+
+      
+
+      
+      <p class="MsoNormal">Una
+red de poligonales o itinerarios se compensa en su totalidad por el
+método de Mínimos Cuadrados Primero se realiza una compensación en
+planimetría y después en altimetría. El proceso finaliza mostrando el
+listado con el resultado de la compensación.</p>
+
+
+
+      <span style="font-weight: bold;">      Calcular</span>: 
+
+      
+      <p class="MsoNormal">La red de poligonales o itinerarios se compensa por el método de Mínimos Cuadrados.&nbsp;</p>
+
+
+
+      
+      <p class="MsoNormal Parrafo">Para obtener las coordenadas iniciales
+aproximadas de cada punto que servirán como partida al algoritmo de Mínimos
+Cuadrados, se generan poligonales de manera automática, siguiendo criterios
+jerárquicos, con el fin de conseguir poligonales apoyadas y
+referenciadas a bases de coordenadas conocidas.</p>
+
+
+
+      En primer
+lugar se generan todas las poligonales que arrancan de una base fija,
+orientan a otra base fija; y finalizan estacionando en base fija y
+cerrando a otra base fija.<br />
+
+
+      <br />
+
+
+Cuando ya no se encuentran más poligonales del nivel anterior, se
+generan las poligonales que arrnacan en una base fija, orientan hacia
+un punto con coordenadas por una poligonal previa, y finalizan cerrando
+hacia otra base fija.<br />
+
+
+      <br />
+
+
+Si termina la categoría anterior se intentan generar las que arrancan
+en base fija, orientan hacia un punto con coordenadas calculadas por
+una poligonal previa, y finalizan estacionando en base fija y cerrando
+hacia otra fija.<br />
+
+
+      
+
+      
+      <p class="MsoNormal Parrafo">En este momento la
+libreta contiene las poligonales de ISTRAM®/ISPOL® generadas automáticamente en lugar de las
+lecturas de la red. Estas poligonales se calculan también de manera automática.</p>
+
+
+
+      En el directorio de trabajo se han creado
+tantos ficheros redpolig&lt;numero&gt;.res como poligonales haya en la
+libreta y estén ya calculadas. estos ficheros proporcionan un listado
+con todos los cálculos de la poligonal.<br />
+
+
+      
+
+      
+      <p class="MsoNormal Parrafo">Con las coordenadas
+aproximadas calculadas mediante las poligonales se procede al cálculo de la red
+por el método de Mínimos Cuadrados, realizándose en primer lugar una
+compensación en planimetría y posteriormente en altimetría.</p>
+
+
+
+      Al terminar el proceso de cálculo de lared
+se muestra un informe detallado (<span class="Archivo">mmcc.txt</span>) que contiene un resumen con
+los datos generales de la configuración del algoritmo; las correcciones
+empleadas, el elipsoide y el huso; las observaciones de distancia,
+acimut y ángulos originales y corregidas; observaciones de desnivel
+originales y corregidas; información sobre la convergencia del
+algoritmo y el listado de coordenadas definitivas.<br />
+
+
+      <br />
+
+
+      La
+representación gráfica de la red consta de las estaciones y las
+lecturas entre ellas. En los extremos de las lecturas se dibuja una
+punta de flecha para indicar el sentido, indicando su color el tipo de
+lectura, rojo lectura de ida, y amarillo lectura de ida y vuelta.<br />
+
+
+      
+
+      
+      <p class="MsoNormal">Haciendo zoom sobre
+una intersección de poligonales se puede ver que los puntos cuyas
+coordenadas han sido calculadas por más de una poligonal muestran unas
+marcas magenta con los resultados obtenidos por cada una de las
+poligonales. También se dibuja una marca azul oscuro que corresponde
+con las coordenadas aproximadas calculadas inicialmente.</p>
+
+
+
+      El
+punto que está en la cabeza de la tabla de lecturas se señala sobre el
+dibujo con un polígono verde de tamaño invariable para localización en
+el dibujo del dato en que estamos.<br />
+
+
+      <br />
+El número máximo de itinerarios (poligonales) que pueden pasar por cada
+punto es de 500, una vez se realiza el cálculo de la red.<br />
+      <br />
+Se incluye el cálculo de redes con lecturas a puntos destacados
+radiados sin estacionamiento recíproco. El cálculo se realiza con la
+siguiente secuencia:<br />
+      <br />
+1) En la carga y optativamente se puede realizar un promedio de lecturas repetidas y con circulo directo e inverso.<br />
+2) Se realiza un primer cáculo por radiación de las coordenadas aproximadas de todos los puntos.<br />
+3) Se buscan itinerarios que constituyan poligonales independientes.<br />
+4) Se compensan estas poligonales, pudiendo obtener varios juegos de coordenadas diferentes para un mismo punto.<br />
+5) Se compensa globalmente toda la red por mínimos cuadrados.<br />
+6) Se calculan los puntos destacados a partir de las estaciones ya compensadas.<br />
+7) Se vuelve a compensar globalmente toda la red incluyendo estos puntos.&nbsp; <br />
+      <br />
+
+
+      Resultados:<br />
+
+
+      
+      
+      <ul class="Parrafo">
+
+        <li><span style="font-weight: bold;">MMCC</span>.txt: Permite
+mostrar el listado&nbsp;<span class="Archivo">MMCC.txt</span> con el resultado de la última compensación
+realizada. dicho listado contiene un resumen con los datos generales de
+la configuración del algoritmo; las corecciones empleadas, el elipsoide
+y el huso; las observaciones de distancia, acimut y ángulos originales
+y corregidas; observaciones de desnivel originales y corregidas;
+información sobre la convergencia del algoritmo y el listado de
+coordenadas definitivas. <br />
+
+</li>
+      
+      </ul>
+
+      
+      <div style="margin-left: 40px;">Este listado se obtiene con cuatro decimales.<br />
+
+      </div>
+
+      
+      <ul class="Parrafo">
+
+        <li><span style="font-weight: bold;">puntos.toc</span>:
+Permite visualizar el fichero puntosC.toc que contiene las coordenadas
+definitivas obtenidas en la compensación, en formato .toc.<br />
+
+        </li>
+      
+      </ul>
+
+      Cálculo manual:<br />
+
+
+      <br />
+      <span style="font-weight: bold;">
+
+      PoligM</span>, <span style="font-weight: bold;">CalcM</span>, <span style="font-weight: bold;">BorraP</span>,
+(poligonal manual, cálculo manual, borrar poligonal) permiten generar
+poligonales de manera manual, pinchando sobre las estaciones inicial y
+final, y calcular o borrar dichas poligonales.<span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><span class="Parrafo"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><span class="Parrafo"><br />
+      <br />
+      <br />
+      </span><span class="Parrafo"><span style="font-weight: bold;"><br />
+
+
+</span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

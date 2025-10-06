@@ -1,0 +1,740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Importación de archivos .dwg/.dxf</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>IMPORTACIÓN DE ARCHIVOS .dwg/.dxf<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+      <span class="Parrafo"><br />
+      </span>
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      <a href="#opciones">Opciones</a><br />
+      <a href="#gestor_capas">Gestor de capas</a><br />
+      <a href="#conversion_lineas">Conversión de líneas</a><br />
+      <a href="#conversion_rotulos">Conversión de rótulos</a><br />
+      <a href="#conversion_simbolos">Conversión de símbolos</a><br />
+      <a href="#conversion_imagenes">Conversión de imágenes</a><br />
+      <a href="#diccionarios">Diccionarios</a><br />
+      <a href="#importacion_rapida">Importación rápida de objetos DWG/DXF</a><br />
+      </div>
+<br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br /><br />
+      <img style="width: 103px; height: 324px; margin-left: 7px;" alt="" src="Imagenes/importar_dwg_dxf.png" align="right" />Una vez seleccionada la opción <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Importar</span> &#8594; <span style="font-weight: bold;">DWG/DXF</span>, se muestra el menú que permite gestionar todo lo necesario a la hora de importar uno o varios archivos con ese formato.<br /><br />El botón <span style="font-weight: bold;">[FIN]</span> sirve para finalizar la importación, y si se pulsa sobre dicho botón se cierra el menú de importación DWG/DXF.<br /><br />Los botones <span style="font-weight: bold;">[Pan]</span>, <span style="font-weight: bold;">[Zoom]</span>, <span style="font-weight: bold;">[Ant]</span>, <span style="font-weight: bold;">[Dec]</span>, <span style="font-weight: bold;">[Redi]</span>, <span style="font-weight: bold;">[NoD]</span> tienen la misma funcionalidad que en el resto de menús de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.<br /><br />
+El programa es compatible con cualquier versión de archivos&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span>.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="opciones">Opciones</a></span><br />
+      <br />
+Al hacer clic sobre el botón <span style="font-weight: bold;">[OPCIONES]</span>
+se despliega un menú flotante que muestra los ajustes básicos a la hora
+de tratar los ficheros DWG/DXF que se pretenden importar.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 384px; height: 507px;" alt="" src="Imagenes/opc_imp_dwg_dxf.png" /><br />
+      </div>
+      <br />
+El desplegable <span style="font-weight: bold;">Tipo de importación</span>
+permite al usuario seleccionar entre cuatro formas distintas de
+importación, si bien éste puede seguir cargando ficheros de
+configuración para dichas opciones. Las configuraciones predefinidas
+son:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Por defecto</span>: Opciones para el importador con las que se realiza una importación con las opciones habituales.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Original Autocad</span>:
+Al seleccionar esta forma, se activan las casillas necesarias para que,
+al finalizar la importación, el aspecto del dibujo resultante sea
+similar al original del DWG/DXF.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Original Ispol</span>:
+Cuando se selecciona esta opción, el importador trata de recuperar un
+fichero que presumiblemente se ha generado con el mismo ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Rápida</span>: Esta opción desmarca todas las opciones de manera que se intenta hacer una importación lo más rápida y simple posible.</li>
+      </ul>
+Las opciones de importación de este cuadro de diálogo se describen a continuación:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Número de tramos entre puntos de control para splines</span>:
+Este valor indica las partes en que se quieren dividir los segmentos de
+un spline para que al generar una línea a partir de él, dicha línea sea
+lo más aproximada posible al mismo. Cuanto mayor sea el valor, más se
+aproximará la línea al spline. Por defecto su valor es 10.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Flecha para los arcos</span>:
+En este campo se indica el valor de la flecha para generar polilíneas a
+partir de circunferencias, elipses, arcos de circunferencia, arcos de
+elipse y en general cualquier elemento que esté compuesto por arcos.
+Por defecto toma el valor del campo <span style="font-weight: bold;">Flecha</span> que se indica en el cuadro de diálogo <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Opciones</span> &#8594; <span style="font-weight: bold;">Suavizado de curvas</span>.
+Este valor es válido solamente a la hora de procesar los ficheros que
+se deseen importar, es decir, si se modifica en este cuadro de diálogo,
+el valor de <span style="font-weight: bold;">Flecha</span> global no se ve modificado. El desplegable correspondiente está compuesto por tres valores predefinidos de <span style="font-weight: bold;">Flecha</span> (si bien se puede introducir el valor que se desee) que son:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 250px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 122px; font-weight: bold; text-align: right;">Normal (cartografía):<br />
+
+Medio (perfiles):<br />
+
+Fino (detalles):<br />
+            </td>
+            <td style="vertical-align: top; width: 108px; font-weight: bold;">0.01<br />
+0.001<br />
+0.0001</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Filtrado de polilíneas</span>: En este campo se indican los valores <span style="font-weight: bold;">Tolerancia lateral</span> y <span style="font-weight: bold;">Distancia máxima</span>
+para realizar un filtrado de las polilíneas después de que se hayan
+procesado los ficheros de importación. Por defecto se toman los valores
+que se indican en el cuadro de diálogo <span style="font-weight: bold;">Herramientas</span> &#8594; <span style="font-weight: bold;">Depurar Cartografía</span> &#8594; <span style="font-weight: bold;">Definir parámetros de depuración</span>.
+Estos valores son sólo válidos a la hora de procesar los ficheros que
+se deseen importar, es decir, si se modifican en este cuadro de
+diálogo, los valores <span style="font-weight: bold;">Tolerancia lateral</span> y <span style="font-weight: bold;">Distancia máxima global</span>
+no se ven modificados. El desplegable correspondiente está compuesto
+por tres valores predefinidos (si bien se puede introducir los valores
+que se deseen) que son:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 393px; height: 111px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Tolerancia lateral<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Distancia máxima<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Normal (cartografía)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">0.25<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">10.0000<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Medio (perfiles)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">0.05<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">2.0000<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">Fino (detalles)<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">0.0005<br />
+            </td>
+            <td style="vertical-align: middle; text-align: center;">0.0200<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <br />
+      <div style="margin-left: 40px;">Para que el filtrado se lleve a cabo, la casilla tiene que estar activa.<br />
+      </div>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;"><a name="explotar_bloques">Explotar bloques (Mantiene símbolos)</a></span>:
+Si esta opción está marcada, entonces cuando se crean los puntos a
+partir de los bloques del DWG/DXF éstos estarán formados por el punto
+de inserción más la información gráfica asociada al bloque. Si por el
+contrario la opción no está marcada, entonces cuando se detecta un
+bloque en el dibujo a importar sólo se mostrará en pantalla el punto de
+inserción, permaneciendo la información gráfica del bloque oculta, si
+bien ésta se puede mostrar posteriormente desde el diálogo de SÍMBOLOS.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Asignar a las líneas su color DWG/DXF</span>:
+Si esta opción está marcada, las líneas que se generen a partir de los
+ficheros importados se muestran con el color que tienen en el dibujo
+DWG/DXF. Si por el contrario la opción no está marcada, las líneas se
+muestran con color por tipo. Toda la información correspondiente al
+color de las líneas se puede manipular después de realizar la
+importación desde el dialogo de configuración de LÍNEAS.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Detectar los modelos y tipos en el nombre de las capas (M1L78, R0,&#8230;)</span>:
+Cuando esta opción está seleccionada, al importar los ficheros se
+intenta detectar el tipo y el modelo de cada entidad si éstos están
+codificados en la capa a la que pertenece el elemento. Para ello las
+capas tienen que ser del tipo MxTy donde &#8216;x&#8217; se interpreta como el
+modelo e &#8216;y&#8217; como el tipo. Esta opción es útil cuando se intenta
+recuperar una cartografía que se generó previamente conISTRAM <sup>®</sup>/ISPOL<sup>®</sup>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Crear estilos de texto a partir de los DWG/DXF, índice</span>:
+Si está activada esta opción, entonces se comprueba si los estilos de
+texto definidos en el DWG/DXF encajan con los estilos definidos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. En el caso de que algún estilo del DWG/DXF no se corresponda con ningún estilo de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> se procede a su creación, para la que se usarán los estilos que estén libres a partir del índice indicado.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Mantener la justificación de los textos</span>: Con esta opción seleccionada, los textos cargados del fichero mantienen su justificación original.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Generar fichero de log</span>: Al estar esta opción seleccionada, después de traducir cada fichero&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> se crea un pequeño informe en un fichero con nombre&nbsp;<span class="Archivo">Info DWG fecha hora.txt</span> que se muestra un resumen de las entidades encontradas en el fichero a traducir.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Forzar lectura de bloques escalados</span>:
+Si esta opción NO está activa entonces sólo se importan las referencias
+a bloque con factores de escala en (X,Y,Z) = (1,1,1). En caso
+contrario, se importarán las referencias a bloque con cualquier escala
+en (X,Y,Z).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Generar símbolos a partir de círculos, radio máximo</span>:
+Al activar está opción, todos los círculos de radio inferior al
+indicado en la opción pasan a ser símbolos de tipo 0 (este tipo se
+puede modificar en el cuadro de diálogo de traducción de símbolos). El
+punto de inserción del símbolo es el centro del círculo, y éste toma la
+misma cota que el círculo que lo generó.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Obtener la cota del atributo, atributo</span>:
+Con esta casilla activada, los símbolos que tengan un atributo del
+mismo nombre que el indicado en la opción pasan a tener como cota el
+valor de dicho atributo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">Obtener el atributo (símbolo ISPOL) a partir del atributo (DWG/DXF)</span>:
+Esta opción funciona de la misma manera que la anterior salvo que en
+vez de asignar el valor del atributo a la cota del símbolo, lo asigna
+al atributo del símbolo.<br />
+          <br />
+</li>
+        <li><span style="font-weight: bold; font-style: italic;">Coeficiente para la cota (Z)</span>: Aplica el coeficiente indicado a los valores de cota provenientes del archivo a importar.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Asignar cada capa a un modelo distinto</span>:
+Asigna los objetos de cada capa del archivo a importar a un modelo
+distinto, elegido de entre los no ocupados a partir del especificado en
+la caja de texto contigua.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Generar tipos de línea a partir de las capas</span>:
+Genera nuevos tipos de lineas a partir de los utilizados en el archivo
+a importar, con números elegidos entre los no ocupados a partir del
+especificado en la caja de texto contigua.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Generar tipos de símbolo a partir de bloques</span>:
+Genera nuevos símbolos a partir de los bloques del archivo a importar,
+con números elegidos entre los no ocupados a partir del especificado en
+la caja de texto contigua.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Descartar elementos en capas no activas o no visibles</span>: Fuerza a la importación a ignorar los elementos que NO estén en una capa activa o visible.<br />
+          <br />
+        </li>
+        <li><span style="font-weight: bold; font-style: italic;">Datos de origen en coordenadas geográficas</span>:
+Al activar esta opción, y cargar el archivo, se mostrará en pantalla
+con las coordenadas latitud-longitud en grados/minutos/segundos.<br />
+        </li>
+
+      </ul>
+      <ul>
+        <li>Se puede <span style="font-weight: bold;">escalar</span> en <span style="font-weight: bold;">X</span>, <span style="font-weight: bold;">Y</span>, <span style="font-weight: bold;">Z</span> a la hora de realizar la importación.</li></ul>
+      <ul>
+        <li><span style="font-weight: bold; font-style: italic;">NO ajustar la vista al finalizar la lectura</span>: Si está activa esta opción se mantiene el zoom actual sin ajustar la vista al final de la lectura de los ficheros.<br />
+        </li>
+
+      
+      </ul>
+
+
+Una vez se tengan definidos los ajustes de importación, ya se está en condiciones de seleccionar los ficheros&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> que se quieren importar. Para ello se pulsa sobre el botón <span style="font-weight: bold;">[Cargar DWG/DXF]</span>
+y a continuación aparece un selector de ficheros que permite elegir los
+archivos a importar (con un máximo de 10 a la vez). Comienza el proceso
+de importación, consistente en generar primero la base de datos con la
+información del fichero y a continuación interpretar la misma. Una
+barra de progreso muestran cada una de estas fases del proceso.<br />
+      <br />
+Todas las entidades se traducen a tipo 0 y modelo 0. Los bloques
+DWG/DXF se traducen a símbolos de tipo 0 y se explotan geométricamente
+para que posteriormente se puedan generar símbolos nuevos a partir de
+ellos. Si algún elemento está en una capa no visible o no utilizada en
+el DWG/DXF entonces éste pasa a tener tipo -1, por lo que permanece
+desactivo.<br />
+      <br />
+También se convierten los objetos del tipo ACAD_PROXY_ENTITY que se
+puedan explotar en su lectura. Estos nuevos objetos que se traducen en
+el importador, son aquellos que se pueden explotar en el DWG/DXF&nbsp;
+y posteriormente guardar el fichero que los contiene con la entidad
+explotada. Sigue habiendo elementos del tipo ACAD_PROXY_ENTITY que no
+se pueden interpretar ya que la aplicación con la que se crearon no
+permite que estos elementos se exploten.<br />
+      <br />Contempla el tratamiento de los elementos Surface/Superficie en el importador.<br /><br />
+Los círculos de radio 0 se traducen a símbolos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.
+En el diálogo de traducción de símbolos éstos aparecen con nombre
+CIRCLE_0. Además, cuando concluye la importación, si se encontraron
+elementos de este tipo (círculos de radio 0) se muestra un mensaje con
+el número de ocurrencias del elemento.<br />
+      <br />
+Una vez haya finalizado el proceso de traducción de los ficheros, es
+decir, cuando aparezca la cartografía en pantalla, el único paso que
+queda es personalizar las nuevas entidades que se crearon tras la
+importación. Esto se puede hacer manualmente modificando cada entidad
+(líneas, símbolos y textos) o bien de forma automática mediante un
+diccionario que hayamos creado previamente. Las entidades que se
+importan actualmente son líneas, polilíneas, faces, arcos, círculos,
+elipses, splines, sólidos, polilíneas 2D, polilíneas 3D, rellenos,
+textos, atributos, multitextos, acotaciones alineadas, acotaciones
+rotadas, acotaciones radiales, acotaciones diamétricas, acotaciones
+angulares, referencias a bloque, puntos y ciertos objetos creados con
+aplicaciones que trabajan con ficheros DWG/DXF. En todo momento se
+presenta información en pantalla acerca del número de combinaciones
+traducidas. Además, al mover el ratón sobre cualquier botón, aparece
+una etiqueta indicando la funcionalidad de dicho botón.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="gestor_capas">Gestor de capas</a></span><br />
+      <br />
+      <img style="width: 288px; height: 221px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_gestor_capas.png" align="right" />Existe un pequeño y práctico gestor de capas (del DWG/DXF) al cual se accede a través del botón <span style="font-weight: bold;">[CAPAS]</span> del menú vertical de la derecha. Al pulsar sobre dicho botón se presenta un diálogo con el aspecto que se muestra a la derecha.<br />
+      <br />
+Las casillas <span style="font-weight: bold; font-style: italic;">Ver todas</span> y <span style="font-weight: bold; font-style: italic;">Ocultar todas</span> sirven para mostrar u ocultar respectivamente todas las capas importadas.<br />
+      <br />
+La información que se muestra de cada capa es la siguiente:<br />
+      <br />
+      <table style="text-align: left; height: 50px; width: 269px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 148px; font-weight: bold;">1<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 13px; font-weight: bold;">2<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 16px; font-weight: bold;">3<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 15px; font-weight: bold;">4<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 17px; font-weight: bold;">5<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 11px; font-weight: bold;">6<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 17px; font-weight: bold;">7<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 13px; font-weight: bold;">8<br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="8" rowspan="1" style="vertical-align: top; width: 13px;"><img style="width: 265px; height: 15px;" alt="" src="Imagenes/imp_dwg_gestor_capas_dat.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ol>
+        <li>Nombre de la capa DWG/DXF</li>
+        <li>Capa visible/no visible en DWG/DXF</li>
+        <li>Capa utilizada/no utilizada en DWG/DXF</li>
+        <li>Capa bloqueada/no bloqueada en DWG/DXF</li>
+        <li>En la capa hay/no hay líneas</li>
+        <li>En la capa hay/no hay textos</li>
+        <li>En la capa hay/no hay símbolos</li>
+        <li>Casilla para visualizar o no visualizar la capa en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></li>
+      </ol>
+En caso de que la capa tenga líneas, textos y/o símbolos, picando sobre los botones <span style="font-weight: bold;">5</span>, <span style="font-weight: bold;">6</span> y <span style="font-weight: bold;">7</span>
+se pasa a los diálogos de edición de líneas, rótulos y símbolos
+respectivamente, con todos los elementos de esa capa seleccionados.<br />
+      <br />
+En la parte inferior de este cuadro de diálogo aparece un campo de
+texto que permite realizar búsquedas de capas, de tal forma que si se
+introduce el nombre de la capa en el campo de búsqueda y se pulsa la
+tecla &lt;Enter&gt; o se hace clic sobre el icono&nbsp;<img style="width: 14px; height: 15px;" alt="" src="Imagenes/icono_prismaticos.png" /> de la derecha, si existe una capa que coincida con la introducida, entonces se muestra en la primera fila del diálogo.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_lineas">Conversión de líneas</a></span><br />
+      <br />
+Al pulsar sobre el botón de líneas <span style="font-weight: bold;">5</span> o sobre el botón <span style="font-weight: bold;">[LÍNEAS]</span> del menú vertical o sobre la pestaña <span style="font-weight: bold;">[Líneas]</span>, se muestra un diálogo con el siguiente aspecto:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 679px; height: 221px;" alt="" src="Imagenes/imp_dwg_lineas.png" /><br />
+      </div>
+      <br />
+Mientras esté activo el menú de importación, se modifica el
+comportamiento de las etiquetas informativas de las líneas, de tal
+forma que el programa resalta todas aquellas líneas que pertenezcan a
+la misma capa que la línea sobre la que está situado el cursor del
+ratón.<br />
+      <br />
+La información que se almacena de cada elemento es la siguiente:<br />
+      <br />
+      <table style="text-align: left; width: 532px; height: 69px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="15" rowspan="1" style="vertical-align: top; width: 58px;"><span style="font-size: 9pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;; color: black;"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:396.75pt;
+ height:36pt'>
+ <v:imagedata src="file:///C:\Users\soporte\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png"
+  o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="../../Users/soporte/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" v:shapes="_x0000_i1025" height="48" width="529" /><!--[endif]--></span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 13px;">1<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 16px;">2<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 13px;">3<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 13px;">4<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 41px;">5<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 38px;">6<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 39px;">7<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 39px;">8<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 52px;">9<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 37px;">10<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 39px;">11<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 45px;">12<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 16px;">13<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 42px;">14<br />
+            </td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 58px;">15<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ol>
+        <li>Informa si la capa DWG/DXF del elemento está visible y utilizada.</li>
+      </ol>
+      <ol start="2">
+        <li>Indica si en la capa DWG/DXF del elemento también hay rótulos. Si este botón estuviera decorado con la letra <span style="font-weight: bold;">A</span>,
+entonces al hacer clic sobre él se muestra el diálogo de edición de
+rótulos, apareciendo en la primera fila la primera combinación de
+rótulos que se encontraron en esa capa DWG/DXF. Si el botón no está
+decorado entonces no se realiza ninguna acción al picar sobre el botón.</li>
+      </ol>
+      <ol start="3">
+        <li>Indica si en la capa DWG/DXF del elemento también hay
+bloques. Si este botón estuviera decorado con el símbolo de un bloque
+DWG/DXF, entonces al picar sobre él se abre el diálogo de edición de
+símbolos, mostrándose en la primera fila la primera combinación de
+bloques que se encontraron en esa capa DWG/DXF. Si el botón no está
+decorado entonces no se realiza ninguna acción al picar sobre el botón.</li>
+      </ol>
+      <ol start="4">
+        <li>Indica si la fila está seleccionada. Basta sólo con pulsar
+la entidad en la ventana gráfica y ésta será seleccionada. La actuación
+sobre elementos seleccionados se describe más adelante.</li>
+      </ol>
+      <ol start="5">
+        <li>Indica el nombre de la capa DWG/DXF. Simplemente es un elemento informativo.</li>
+      </ol>
+      <ol start="6">
+        <li>Indica el color DWG/DXF. Su valor puede ser <span style="font-weight: bold;">capa</span> (el elemento hereda el color de su capa DWG/DXF), <span style="font-weight: bold;">bloque</span> (el elemento se definió con color por bloque) o un valor entre <span style="font-weight: bold;">1</span> y <span style="font-weight: bold;">255</span>
+que indica el índice de la paleta de colores DWG/DXF. Al hacer clic
+sobre este botón se seleccionan todas las combinaciones de líneas que
+tengan el mismo color, incluyendo además las combinaciones que pudieran
+estar ya seleccionadas.</li>
+      </ol>
+      <ol start="7">
+        <li>Informa del tipo de grosor de línea en el DWG/DXF.</li>
+      </ol>
+      <ol start="8">
+        <li>Informa del tipo de estilo de línea en el DWG/DXF.</li>
+      </ol>
+      <ol start="9">
+        <li>Representa el color del elemento en el DWG/DXF.</li>
+      </ol>
+      <ol start="10">
+        <li>Este campo se puede editar y sirve para modificar el modelo
+de la combinación de líneas asociadas a la fila. Por defecto su valor
+es 0. El desplegable sirve para traducir el modelo de los elementos que
+estén seleccionados a su color, grosor ó 0.</li>
+      </ol>
+      <ol start="11">
+        <li>Este campo se puede editar y sirve para modificar el tipo
+de la combinación de líneas asociadas a la fila. Por defecto su valor
+es 0. Si en este campo estuviera el valor -1 entonces las líneas
+importadas asociadas a esa combinación pasar a estar inactivas enISTRAM <sup>®</sup>/ISPOL<sup>®</sup>. Con el desplegable se traduce el tipo de los elementos seleccionados a su color, grosor o 0.</li>
+      </ol>
+      <ol start="12">
+        <li>Nombre del tipo de conversión (campo informativo).</li>
+      </ol>
+      <ol start="13">
+        <li>Casilla que indica si la línea se representa con el color
+que tenía en el DWG/DXF o con el color por tipo. Por defecto el color
+es el del tipo.</li>
+      </ol>
+      <ol start="14">
+        <li>Color de representación en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. Justo encima se muestran, además, dos botones. El botón <span style="font-weight: bold;">[A]</span> activa todas las líneas y el botón <span style="font-weight: bold;">[D]</span> desactiva aquellas líneas traducidas.</li>
+      </ol>
+      <ol start="15">
+        <li>Líneas importadas (totales y por capa DWG/DXF).</li>
+      </ol>
+Otras opciones del diálogo son:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 114px;">[Todas] / [Ninguna]</td>
+            <td style="vertical-align: top; width: 558px;">Seleccionar/des-selecciona todas las combinaciones de líneas.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; width: 114px;">[No traducidas]</td>
+            <td style="vertical-align: top; width: 558px;">Selecciona todas las líneas no traducidas, es decir, las que mantienen su tipo en 0.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <img style="width: 150px; height: 177px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_selec_multip.png" align="right" />Por
+último, para realizar conversiones de múltiples elementos, se tiene la
+parte derecha del diálogo, cuya funcionalidad se detalla a continuación.<br />
+      <br />
+En el campo <span style="font-weight: bold;">Modelo</span> se introduce
+el modelo que se quiere designar a los elementos que estén
+seleccionados en la parte izquierda del diálogo. Si como se muestra en
+el ejemplo después de este campo aparece el caracter <span style="font-style: italic;">#</span>,
+esto indica que todos los elementos que se han seleccionado en la parte
+izquierda del menú no tienen el mismo modelo. Si por el contrario no
+hay ningún elemento seleccionado o todos los que están seleccionados
+tienen el mismo modelo, entonces en este campo se muestra el modelo
+común a todos los seleccionados y no aparece el caracter <span style="font-style: italic;">#</span>.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+El campo <span style="font-weight: bold;">Tipo</span> tiene la misma filosofía de trabajo que el de <span style="font-weight: bold;">Modelo</span>,
+es decir, si todos los elementos seleccionados tienen el mismo tipo o
+no hay ningún elemento seleccionado entonces no aparece el caracter <span style="font-style: italic;">#</span>
+en la parte derecha del campo y el campo muestra el tipo de los
+elementos seleccionados que es el mismo. Para desactivar todos los
+elementos seleccionados en la parte izquierda del diálogo hay que
+escribir en este campo el valor -1. En el botón deshabilitado a la
+derecha de este campo se muestra el nombre del tipo.<br />
+      <br />
+En el campo gráfico de la parte inferior de la figura se muestra el color de representación en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> de los elementos seleccionados en la parte izquierda del menú.<br />
+      <br />
+En cuanto a los botones:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 107px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold;">[Aceptar]<br />
+            </td>
+            <td style="vertical-align: top; width: 596px; text-align: justify;">Este botón sirve para cerrar el diálogo de edición de líneas manteniendo los cambios que se hayan hecho.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold;">[Cancelar]<br />
+            </td>
+            <td style="vertical-align: top; width: 596px; text-align: justify;">Al pulsar sobre este botón se cierra el diálogo perdiendo los cambios
+hechos desde la última vez que se pulsó el botón <span style="font-weight: bold;">[Aplicar]</span>.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 76px; font-weight: bold;">[Aplicar]<br />
+            </td>
+            <td style="vertical-align: top; width: 596px; text-align: justify;">El botón aplicar sirve para no perder los cambios que se van haciendo
+en el diálogo. Tiene la misma funcionalidad que el botón <span style="font-weight: bold;">[Aceptar]</span> pero
+éste no cierra el diálogo de edición.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_rotulos">Conversión de rótulos</a></span><br />
+      <br />
+Su funcionamiento es similar al <a href="#conversion_lineas">caso de líneas</a>,
+con la diferencia de que aquí se muestra el estilo de rótulo del
+DWG/DXF, el ángulo oblicuo (es decir, la inclinación del texto) y la
+relación ancho/alto.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 668px; height: 206px;" alt="" src="Imagenes/imp_dwg_rotulos.png" /><br />
+      </div>
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_simbolos">Conversión de símbolos</a></span><br />
+      <br />
+De nuevo el cuadro de diálogo es muy similar al <a href="#conversion_lineas">caso del correspondiente a líneas</a>, aunque aquí es necesario reseñar que pulsando sobre el nombre del símbolo, ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> ofrece la posibilidad de incorporar ese tipo de símbolo a la librería.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 631px; height: 206px;" alt="" src="Imagenes/imp_dwg_simbolos.png" /><br />
+      </div>
+      <br />
+Así, en el ejemplo mostrado, si se pulsa sobre <span style="font-weight: bold;">[S9]</span> se despliega el siguiente cuadro de diálogo:<br />
+      <br />
+      <img style="width: 332px; height: 146px; margin-right: 7px;" alt="" src="Imagenes/imp_dwg_crear_simb.png" align="left" />Desde
+aquí es posible generar un símbolo a partir del bloque importado y
+asignar este símbolo creado bien al bloque seleccionado (opción por
+defecto), bien a todos los bloques con el mismo nombre, bien a la
+selección actual o sólo generar el símbolo pero no asignarlo.<br />
+      <br />
+También es posible seleccionar todos los bloques con ese nombre, sin generar el símbolo.<br />
+      <br />
+Para seleccionar símbolos en pantalla no es necesario hacer clic sobre
+el punto de inserción del símbolo creado a partir del bloque DWG/DXF,
+se puede seleccionar haciendo clic directamente sobre una línea
+asociada al símbolo. Tras hacer esto, aparece en la primera fila del
+diálogo la información del símbolo asociado a esa línea.<br />
+      <br />
+Desde la columna EXPLOTAR, correspondiente a las casillas de la columna encabezada con el icono <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_explotar.png" />, es posible mostrar u ocultar los bloques DWG/DXF importados. Funciona de la siguiente manera:<br />
+      <ul>
+        <li>Si desde las <a href="#opciones"><span style="font-weight: bold;">[OPCIONES]</span></a> del menú vertical está marcada la casilla <a href="#explotar_bloques"><span style="font-weight: bold;">Explotar bloques (Mantiene símbolos)</span></a>
+entonces estas casillas también estarán marcadas, los símbolos se
+habrán explotado en líneas y desde aquí, si se desactivan, esos
+símbolos no aparecerán y por tanto sólo se importará el punto de
+inserción.</li>
+      </ul>
+      <ul>
+        <li>Si la opción <a href="#explotar_bloques"><span style="font-weight: bold;">Explotar bloques (Mantiene símbolos)</span></a>
+NO está marcada, entonces desde aquí es posible explotar los símbolos
+al marcar las casillas correspondientes (de lo contrario, sólo se
+importarán los puntos de inserción).</li>
+      </ul>
+Es posible actuar de forma global sobre todas las capas de símbolos al pulsar directamente sobre el icono <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_explotar.png" />.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="conversion_imagenes">Conversión de imágenes</a></span><br />
+      <br />
+Las imágenes contenidas en los ficheros con formato .dwg/.dxf son
+también importadas. Es importante que la carpeta de trabajo de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> sea la misma que la carpeta donde se encuentra el fichero&nbsp;<span class="Archivo">.dwg</span>/<span class="Archivo">.dxf</span> que contiene las imágenes, para evitar problemas de las rutas que hacen referencia a las imágenes mismas.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="diccionarios">Diccionarios</a></span><br />
+&nbsp;<br />
+Una vez personalizada la traducción de todos los elementos que
+interesen, es posible guardar esa información en un fichero en disco
+para cargarlo en posteriores traducciones y evitar hacer más de una vez
+el mismo trabajo. Para ello se hace clic en el botón <span style="font-weight: bold;">[GUARDAR DICC.]</span> del menú de la derecha o en el icono&nbsp;<img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" />
+del cuadro de diálogo y aparece un selector de ficheros en el que se
+asigna un nombre al diccionario de conversión. La diferencia entre usar
+el botón <span style="font-weight: bold;">[GUARDAR DICC.]</span> o el icono <img style="width: 14px; height: 14px;" alt="" src="Imagenes/icono_guardar.png" /> radica en que en el primer caso siempre se solicita un nombre para el fichero&nbsp;<span class="Archivo">.cod</span> mientras que en el segundo caso sólo lo hará si no se ha creado previamente.<br />
+      <br />
+      <img style="width: 309px; height: 84px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_dicc_cargar.png" align="right" />Para cargar esta información en posteriores sesiones hay que pulsar en el botón <span style="font-weight: bold;">[CARGAR DICC.]</span> o sobre el icono&nbsp;<img style="width: 16px; height: 14px;" alt="" src="Imagenes/icono_abrir.png" />
+y seleccionar el fichero que se guardó anteriormente. A continuación el
+programa ofrece la opción de cargar diccionarios atendiendo sólo a la
+capa en vez de a toda la combinación de propiedades, ofreciendo dos
+posibilidades:&nbsp;&nbsp;&nbsp;&nbsp; <br />
+      <ul>
+        <li><span style="font-weight: bold;">Normal</span> (por
+defecto): En este caso se consideran todos los campos (capa, color,
+grosor y estilo), de tal forma que la importación es, entonces, por
+combinaciones de estos campos. Si el diccionario no contempla todas las
+combinaciones posibles, entonces el programa crea una nueva entrada por
+cada una de las combinaciones no contemplada por el diccionario.</li>
+      </ul>
+      <ul>
+        <li>Teniendo en cuenta <span style="font-weight: bold;">exclusivamente la capa</span>: El importador sólo atiende al nombre de la capa para aplicarle el diccionario y, por tanto, no se crean nuevas entradas.</li>
+      </ul>
+      <img style="width: 234px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/imp_dwg_dicc_cargar_2.png" align="right" />Una
+vez cargado el fichero el programa pregunta si se desea aplicar la
+información cargada en el diccionario o simplemente almacenarla en
+memoria.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+Si se responde que <span style="font-weight: bold;">SÍ</span>, entonces
+las combinaciones de elementos cargadas de fichero que coincidan con
+alguna combinación actual en memoria serán aplicadas a la cartografía
+actual; si por el contrario se responde que <span style="font-weight: bold;">NO</span>, simplemente se carga la información en memoria pero no se aplican cambios en la cartografía actual.<br />
+      <br />
+Para cargar los diccionarios de versiones antiguas del programa, es
+decir, versiones anteriores a la que permite cargar ficheros&nbsp;<span class="Archivo">.dwg</span>, hay que pulsar sobre el botón <span style="font-weight: bold;">[DICC. ANTIG.]</span>
+y seleccionar el diccionario que a cargar. En este caso se cargan las
+combinaciones que coincidan con las de pantalla, y como en el caso
+anterior, hay que decir si sólo se desea cargar la información o
+también aplicarla a la cartografía que hay en pantalla.<br />
+      <br />
+Si se desea cargar un diccionario pero no se sabe muy bien qué información almacena, pulsando sobre el botón <span style="font-weight: bold;">[EDITAR DICC.]</span> aparece un selector de ficheros donde se escoge el diccionario a visualizar en el bloc de notas.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="importacion_rapida">Importación rápida de objetos DWG/DXF</a></span><br />
+      <br />
+El programa contempla la posibilidad de copiar desde Autocad<sup>®</sup> una o varios objetos gráficos y pegarlos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>. Resulta muy cómodo emplear la combinación de teclas &lt;Ctrl + C&gt; para copiar la/s entidades desde Autocad<sup>®</sup> y &lt;Ctrl + V&gt; para pegarlas en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.<br />
+      <br />
+Es muy útil hacer uso de esta metodología para, por ejemplo, importar
+una línea para un recinto o como línea de referencia para algún
+elemento de obra lineal sin necesidad de pasar por la pantalla de
+importación.<br />
+      <br />
+De todas formas, esta funcionalidad está restringida únicamente a las siguientes clases de objetos gráficos DWG/DXF:<br />
+      <ul>
+        <li>Líneas</li>
+        <li>Polilíneas 2D y 3D</li>
+        <li>Arcos</li>
+        <li>Círculos</li>
+        <li>Elipses</li>
+        <li>Splines</li>
+      </ul>
+Una vez pegadas en el entorno ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, se convertirán en líneas pertenecientes al tipo y modelo actual.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; width: 635px; text-align: justify;">Para un correcto funcionamiento de esta utilidad, puede ser preciso que el programa Autocad<sup>®</sup> permanezca abierto hasta que se realice el pegado.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br />
+<span class="Parrafo">
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

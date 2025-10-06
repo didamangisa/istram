@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Volumen por .ttp</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>VOLUMEN POR .ttp<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"> <span class="Parrafo"><br />
+      </span><span class="Parrafo">Desde
+este menú se pueden medir los <span style="font-weight: bold;">volúmenes de desmonte y terraplén</span> entre
+dos <a href="EDM_topografia.html#ficheros_ttp">ficheros&nbsp;<span class="Archivo">.ttp</span></a> (que pueden compartir puntos y mallas) utilizando
+opcionalmente una línea de <span style="font-weight: bold;">contorno</span>. Si no se declara esta línea de
+contorno, la cubicación se hará en todo el área común compartido por
+los&nbsp;<a href="EDM_topografia.html#ficheros_ttp"><span class="Archivo">.ttp</span></a>. Estos recintos de desmonte y terraplén se generan y se miden
+por separado calculándose los volúmenes y baricentros para cada recinto.<br />
+      <br />
+Los <a href="EDM_topografia.html#ficheros_ttp">archivos&nbsp;<span class="Archivo">.ttp</span></a> se declaran a través de los índices de la lista de <a href="EDM_control_entidades.html#control_ttps">control de TTPs</a> accesible mediante el botón <img style="width: 16px; height: 16px;" alt="" src="Imagenes/icono_control_ttps.png" />.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 648px; height: 254px;" alt="" src="Imagenes/diagrama_vol_ttp.png" /></span><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo">
+&nbsp;<br /></span>
+      <div style="text-align: center;"><img style="width: 600px; height: 234px;" alt="" src="Imagenes/vol_ttp.png" /><br />
+      </div>
+      <span class="Parrafo"><br />
+      </span><span class="Parrafo">En los apartados <span style="font-weight: bold;">Desmonte</span>&nbsp;y <span style="font-weight: bold;">Terraplén</span>
+existe un parámetro (diferente para cada uno) que puede ser utilizado
+como tolerancia o como altura mínima. Para un terreno original (ttp1) y
+un terreno final (ttp2):<br /></span><ul><li><span class="Parrafo">Si se utiliza ese parámetro como <span style="font-weight: bold;">tolerancia</span>,
+el terreno final se baja esa cantidad en zonas de terraplén para
+ahorrar material y se sube la cantidad definida en zonas de desmonte
+para ahorrar excavación.</span></li><li><span class="Parrafo">Si ese parámetro se utiliza cono <span style="font-weight: bold;">altura mínima</span>, no se modifican los terrenos, pero sólo se mide terraplén o desmonte en zonas donde la cota roja supere los valores previstos.</span><img style="width: 92px; height: 105px; margin-left: 7px;" alt="" src="Imagenes/vol_ttp_recintos.png" align="right" /></li></ul><span class="Parrafo">El desplegable <span style="font-weight: bold;">Recintos</span>
+permite seleccionar si se desean crear los recintos de desmonte, los de
+terrapl</span><span class="Parrafo">én</span><span class="Parrafo">,</span><span class="Parrafo"> ambos o ninguno. En el caso de que el usuario seleccione que
+se genere algún tipo de recintos entonces, además de inse</span><span class="Parrafo">r</span><span class="Parrafo">tarse
+un símbolo y un nombre de los tipos y tamaño especificados por el
+usuario para cada recinto en la posición de</span><span class="Parrafo">l baricentro, marcando las
+casillas VD y VT rotulará bajo el nombre del recinto el volúmen del
+mismo. Se detalla en
+el listado la cubicación de cada uno de estos recintos siempre que esta
+medición sea superior al <span style="font-weight: bold;">volumen mínimo</span> para cada recinto.<br />
+      </span><br /><span class="Parrafo">
+Los recintos se crearán con líneas del <span style="font-weight: bold;">tipo</span>
+arriba indicado (por defecto se usa el tipo de línea 72 (relleno azul)
+para desmonte y el tipo de línea 71 (relleno rojo) para terraplén.<br />
+      <br />
+Es posible crear una <span style="font-weight: bold;">línea de referencia</span>,
+del tipo indicado, por cada contorno generado. Estas líneas unen cada
+baricentro con el punto de inicio de cada contorno, lo que resulta muy
+útil en aquellos casos en los que el baricentro cae fuera del recinto,
+pues permite identificar visualmente cada área con su baricentro.<br />
+      <br />
+También se puede evitar la creación de recintos cuyo volumen sea inferior al <span style="font-weight: bold;">volumen mínimo</span> prefijado.<br />
+<br />
+Desde el apartado <span style="font-weight: bold;">DIBUJAR</span>, puede activarse el dibujo de los triángulos
+anotando para cada uno de ellos su área y el volumen de desmonte o
+terraplén que aporta además de rotular en cada recinto el volumen de desmonte o terraplén.<br />
+      <br /></span>
+      
+      <span class="Parrafo">
+      </span><img style="width: 234px; height: 139px; margin-left: 7px;" alt="" src="Imagenes/opciones_vol_ttp.png" align="right" /><span class="Parrafo">
+      En el listado que se genera (<span class="Archivo">volumen.res</span>) se ofrece por defecto la siguiente información:<br /></span>
+      <ul>
+        <li><span class="Parrafo">Coordenadas (X,Y) de los baricentros del desmonte y terraplén total.</span></li></ul>
+      <ul>
+
+        <li><span class="Parrafo">Volúmenes en desmonte y terraplén. El <span style="font-weight: bold;">nombre</span> usado para estas mediciones será el que figura en el campo situado encima de los tipos de línea usados para pintar las áreas.</span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo">Superficies en 2D.</span></li>
+      </ul>
+      <ul>
+
+        <li><span class="Parrafo">Superficie 3D sobre la superficie 1 y superficie en 3D sobre la superficie 2.</span></li>
+      
+      </ul>
+
+      <span class="Parrafo"><a name="opc">El botón <span style="font-weight: bold;">[Opciones]</span></a> desplega un cuadro de diálogo en el que el usuario puede seleccionar qué mediciones se listarán tras pulsar el botón <span style="font-weight: bold;">[Generar medición]</span>.<br />
+      <br />
+Se da la posibilidad de <span style="font-weight: bold;">guardar/cargar</span> la configuración:<br />
+</span>
+      <ul>
+        <li><span class="Parrafo">Nombres y tipos de línea para desmonte y terraplén</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Cálculo y representación de recintos de Desmonte/Terraplén. </span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Dibujos.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo">Parámetros para las curvas de llenado.</span></li>
+      </ul>
+      <span class="Parrafo">Al guardar o cargar una configuración o al
+Generar la medición se guarda también un archivo ISPOL.vxt que hace que
+una posterior sesión de ISTRAM, se inicie el cuadro de diálogo con los
+últimos valores utilizados.<br />
+      <span class="Parrafo"><br />
+Se muestra a continuación un ejemplo:<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 574px; height: 306px;" alt="" src="Imagenes/ejemplo_list_vol_ttp.png" /></span><br />
+
+      <span class="Parrafo"></span></div><span class="Parrafo"><br />
+Se pueden modificar los textos de las mediciones DESMONTE y TERRAPLÉN para el listado volumen.res. <br />
+<br />
+Esta herramienta presenta además las siguientes opciones:<br />
+      <br />
+      </span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 426px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 161px;"><span class="Parrafo">
+[Generar ttp +Alto]<br />
+            [Generar ttp +Bajo]<br />
+            </span></td>
+            <td style="vertical-align: top; height: 5px; width: 511px; text-align: justify;"><span class="Parrafo">Estas funciones permiten
+generar un&nbsp;<a href="EDM_topografia.html#ficheros_ttp"><span class="Archivo">.ttp</span></a> con la superficie más alta o la más baja de la dos
+implicadas.</span><br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 161px;"><span style="font-weight: bold;">[Generar .ttp dZ Desmonte]</span><br style="font-weight: bold;" />
+            <span style="font-weight: bold;" class="Parrafo"><span class="Parrafo"><span class="Parrafo">[Generar .ttp dZ Terraplén]</span></span></span><br />
+            </td>
+            <td style="vertical-align: top; width: 511px; text-align: justify;"> Crean respectivamente un archivo&nbsp;<a href="EDM_topografia.html#ficheros_ttp"><span class="Archivo">.ttp</span></a>
+con los triángulos a los que se la asocia como Z la diferencia de cota
+entre las dos superficies, pero guardando sólo los que están en zona de
+desmonte o sólo los de zona de terraplén.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 161px;"><span class="Parrafo">Chequear .ttp</span></td>
+            <td style="vertical-align: top; height: 8px; width: 511px; text-align: justify;"><span class="Parrafo">Hace que tras cargarse cada fichero completamente se
+realice un chequeo en busca de incoherencias (mallas que se cruzan,&#8230;).</span><br />
+            <br />
+</td>
+          </tr>
+          <tr><td><span style="font-weight: bold;">Generar .ttp final</span></td><td>Esta herramienta se activa cuando tenemos definida una tolerancia para el Desmonte y el Terraplén. Se genera el archivo <span style="font-style: italic;">VxT_ttp_final.ttp </span>que también se muestra en el cuadro de diálogo de Control de TTPs.<br />Este
+fichero contiene el terreno final: en zonas de desmonte es el terreno
+propuesto (ttp2) subido la tolerancia de desmonte, en zonas de
+terraplén es el terreno propuesto (ttp2) bajado la tolerancia de
+terraplén, en las zonas que están entre la tolerancia de desmonte y la
+de terraplén sigue por el terreno original (ttp 1).</td></tr><tr>
+
+            <td style="vertical-align: top; height: 18px; font-weight: bold; width: 161px;"><span class="Parrafo">Crear .ttp dZ</span></td>
+            <td style="vertical-align: top; height: 18px; width: 511px; text-align: justify;"><span class="Parrafo">Permite crear un fichero&nbsp;<a href="EDM_topografia.html#ficheros_ttp"><span class="Archivo">.ttp</span></a> en el que la cota de los
+puntos es la diferencia de cota entre los dos ficheros&nbsp;<a href="EDM_topografia.html#ficheros_ttp"><span class="Archivo">.ttp</span></a>
+originales.
+Este fichero puede utilizarse por ejemplo para generar un <a href="MS_isopacas.html">mapa de isopacas</a> (se recomienda al cargar estos ficheros en TOPOGRAFÍA activar
+la posibilidad de cargar puntos repetidos y desactivar el chequeo
+del&nbsp;<a href="EDM_topografia.html#ficheros_ttp"><span class="Archivo">.ttp</span></a>).</span><br />
+            <br />
+</td>
+          </tr><tr>
+            <td style="vertical-align: top; width: 161px;"><span style="font-weight: bold;">CURVAS DE LLENADO</span><br />
+            </td>
+            <td style="vertical-align: top; width: 511px; text-align: justify;"><span class="Parrafo">Da la posibilidad de realizar curvas de llenado
+entre las dos superficies según dos <span style="font-weight: bold;">cotas</span> y un <span style="font-weight: bold;">intervalo</span> definido por
+el usuario:<br />
+            <br />
+</span>
+            <div style="text-align: center;"><span class="Parrafo"><img style="width: 540px; height: 52px;" alt="" src="Imagenes/vol_ttp_curvas_llenado.png" /></span><br />
+            <span class="Parrafo"></span></div>
+            <span class="Parrafo"><br />
+Al calgular las curvas de llenado también se dibujarán sobre las
+superficies las líneas con las distintas cotas de llenado según el tipo
+indicado (un valor -1 hará que no se dibujen).<br />
+            <br />
+            </span></td>
+          </tr>
+
+        </tbody>
+      </table></span><br />
+<div style="text-align: center;"><img style="width: 477px; height: 408px;" alt="" src="Imagenes/concepto_vol_ttp.png" /><br />
+      </div>
+      <br />
+      <span style="font-weight: bold;">Cubicar por niveles</span><br />
+      <br />
+Posibilidad que permite medir un tramo único entre dos cotas, o en
+varios tramos entre dos cotas con un intervalo. Se genera un listado
+niveles.res con la medición de desmonte y terraplén en cada tramo, las
+areas ocupadas y el baricentro en desmonte y en terrapñén.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"></span><img style="width: 600px; height: 292px;" alt="" src="Imagenes/volumen_ttp_cubicar_niveles.png" /><br />
+      <span class="Parrafo"></span></div>
+      <span class="Parrafo"><br /><span style="font-weight: bold;">Generar objetos BIM</span><br /><br />Al pulsar la nueva función&nbsp;<span style="font-weight: bold;">Generar objetos BIM</span>
+los objetos resultantes (Desmonte y Terraplén) de la cubicación pasan
+al árbol BIM en una carpeta propia de este módulo. Reciben los
+atributos de Volumen, Superficie 2D, Superficie 3D superior, Superficie
+3D inferior y coordenadas del Baricentro. &nbsp;En la siguiente imagen
+se muestra el menú Volumen por TTP, el cual integra un visor de los
+objetos BIM.<br /><br /></span><div style="text-align: center;"><span class="Parrafo"></span><img style="width: 600px; height: 562px;" alt="" src="Imagenes/vol_ttp_obj_bim.png" /><br /><span class="Parrafo"></span></div><span class="Parrafo"><span style="font-weight: bold;"><br />
+Utilización de contornos</span><br /><br />Podemos seleccionar una
+polilínea cerrada (contorno) dentro de la cual realizaremos la
+cubicación. Esto se hará clicando sobre SIN CONTORNO y seleccionando la
+polilínea en pantalla. Además, si tenemos guardado nuestro contorno en
+algún archivo *.edm/*.edb&nbsp; nos permite abrirlo una vez hemos
+seleccionado el contorno, esto hará que aparezca el nombre del archivo
+en el listado volumen.res<br />
+      </span><span class="Parrafo"><br />
+      </span></td>
+    </tr><tr>
+      <td style="vertical-align: top;">
+      <div style="text-align: center;"><img style="width: 600px; height: 234px;" alt="" src="Imagenes/vol_ttp_contorno.PNG" /><br />
+      </div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+</body></html>

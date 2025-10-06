@@ -1,0 +1,1578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Control de entidades</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>CONTROL DE ENTIDADES GRÁFICAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      <div style="margin-left: 40px;"><a href="#tipos">Control de tipos</a><br />
+      </div>
+<div style="margin-left: 80px;"><a href="#control_lineas">Control de líneas</a><br /><a href="#control_simbolos">Control de símbolos</a><br /><a href="#control_textos">Control de textos</a><br /><a href="#control_celulas">Control de células</a><br /><a href="#tabla_tipos">Tabla de tipos</a><br /></div>
+      <div style="margin-left: 40px;"><a href="#control_grupos">Control de grupos</a><br />
+      <a href="#control_modelos">Control de modelos</a><br />
+      </div>
+<div style="margin-left: 80px;"><a href="#tabla_modelos">Tabla de modelos</a><br /></div>
+      <div style="margin-left: 40px;"><a href="#control_de_procedencias">Control de procedencias</a><br />
+<a href="#control_superficies">Control de superficies</a><br />
+      <div style="margin-left: 40px;"><a href="#modo_extrac_perf_transv">Modos de extracción de perfiles transversales</a><br />
+      <a href="#utiles">Utilidades</a><br />
+<a href="#control_sup_cartograficas">Control de superficies cartográficas</a><br />
+      <a href="#control_ttps">Control de TTPs</a><br />
+      </div>
+
+      </div>
+      <br />
+A partir del menú desplegable de Control podremos <span style="font-weight: bold;">Activar Todo</span>.
+Mediante este comando se activan todos los tipos de líneas, símbolos,
+textos y células. Además se activa también todos los grupos de capas,
+todos los modelos y todas las <a href="#control_de_procedencias">procedencias</a>.<br />
+Mediante la función <span style="font-weight: bold;">Desactivar Todos</span> desactivas todos los tipos de líneas, símbolos, textos y células. Además desactivas todos los grupos de capas<br />
+      <br />
+Mediante el comando <span style="font-weight: bold;">A*</span> podremos activar todos los tipos de entidades antes comentados y con el comando <span style="font-weight: bold;">D*</span> podremos desactivar todos los tipos de entidades antes comentados. Son análogos a las opciones comentadas previamente.<br />
+      <br />
+Los comandos AL, DL, AS, DS, AR, DR, AC, DC, AM y DM aceptan el carácter "*" como comodín.<br />
+Ejemplos:<br />
+      <ul>
+        <li>AL3* -&gt; Activa las líneas del tipo 30 al 39.</li>
+        <li>DS0* -&gt; Desactiva los símbolos del tipo 0 al 9.</li>
+        <li>DC8**-&gt; Desactiva las células del tipo 800 al 899.</li>
+        <li>AM1*2-&gt; Activa los modelos 102,112,122,132,142,152,162,172,182 y 192.</li>
+      </ul>Una
+vez que estamos escribiendo un comando podemos navegar por los comandos
+anteriormente usados mediante las teclas de las flechas arriba y abajo.<br />
+
+<br /><span class="Titulo_2"><a name="tipos">Control de tipos</a></span><br /><br />Se
+encuadran bajo este nombre todas las operaciones relacionadas con la
+activación/desactivación de los distintos tipos de entidades gráficas,
+declaración de tipo actual, obtención de información,&#8230;<br /><br />Desde el menú <span style="font-weight: bold;">Control</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Control de tipos</span>
+se tiene acceso a la gestión de los tipos, y una vez abierto el cuadro
+de diálogo es posible moverse entre las diferentes clases de entidades.
+A este cuadro de diálogo también se accede mediante el icono&nbsp;<img src="Imagenes/icono_control_tipos.png" style="width: 15px; height: 15px;" alt="" /> de la barra de herramientas estándar.<br /><br /><br />
+
+<span style="font-weight: bold; font-style: italic;"><a name="control_lineas">Control de líneas</a></span><br /><br />A través de esta pestaña se tiene acceso a todas las opciones relacionadas con la gestión de los tipos de línea en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a través del siguiente cuadro de diálogo:<br /><br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_lineas.png" style="width: 481px; height: 342px;" alt="" /><br />
+      </div>
+<br />Por defecto, sólo se muestran los tipos de línea en uso (opción <span style="font-weight: bold; font-style: italic;">Ver usados</span>). Si se desea ver todos los tipos de línea disponibles, entonces habrá que seleccionar la opción <span style="font-weight: bold; font-style: italic;">Ver todos</span>. También se ofrece la posibilidad de <span style="font-weight: bold;">filtrar</span>
+las líneas según las listas establecidas en la paleta de líneas y que
+permiten clasificar los tipos de línea de la librería con ciertos
+criterios (división administrativa, relieve y altimetría, hidrografía y
+costas, señalización, edificios y construcciones,&#8230;).<br /><br />Es
+posible ordenar los tipos según su número, nombre, grosor,&#8230; Para ello
+basta con hacer clic con el botón secundario del ratón sobre la
+cabecera de la columna. Es posible volver a la ordenación inicial en
+cualquier momento pulsando sobre el botón <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="" />.<br /><br />El <span style="font-weight: bold;">tipo actual</span> (con el que se dibujará cualquier línea que cree el usuario) aparece sombreado, y el <span style="font-weight: bold;">tipo seleccionado</span> es el resaltado con el marco negro. <br /><br />Para cada tipo, el cuadro de diálogo muestra ocho columnas con la siguiente información:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Tipo</span> (valor informativo, no modificable y que corresponde con el estilo).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Nombre del tipo</span> (valor informativo correspondiente al nombre del estilo, y que se puede modificar en el menú de definición de líneas).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Estado de activación</span>,
+de tal forma que si la casilla está marcada, implica que el tipo está
+activado.<br />
+</li>
+      </ul>
+      <div style="margin-left: 40px;">Es posible actuar sobre el estado de activación de todos los tipos de línea simultáneamente mediante las siguientes opciones:<br />
+      <br />
+      <table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 119px; font-weight: bold;">[Activar todos]</td>
+            <td style="vertical-align: top; width: 512px; text-align: justify;">Activa todos los tipos de línea.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 119px; font-weight: bold;">[Desactivar todos]</td>
+            <td style="vertical-align: top; width: 512px; text-align: justify;">Desactiva todos los tipos de línea.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 119px; font-weight: bold;">[Invertir activación]</td>
+            <td style="vertical-align: top; width: 512px; text-align: justify;">Cambia el estado de activación de cada tipo de línea, pasando a activos los que estuvieran desactivos y viceversa.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Para activar o desactivar un intervalo de tipos de línea, entonces se
+selecciona con el ratón un rango de tipos de línea y se activa o
+desactiva uno de ellos, pasando todos al estado de selección de este
+último.<br />
+      <br />
+Además, también se pueden activar y desactivar tipos de línea mediante el teclado con los comandos <span style="font-style: italic;">AL#</span>,&nbsp; <span style="font-style: italic;">DL#</span> y <span style="font-style: italic;">TL#</span>, que permiten activar, desactivar y seleccionar como actual el tipo de línea <span style="font-style: italic;">#</span> respectivamente. Los comandos <span style="font-style: italic;">ALT</span> y <span style="font-style: italic;">DLT</span> activan y desactivan todos las líneas.<br />Otra
+forma de desactivar un tipo de línea sería una vez seleccionada la
+línea si clicamos con el botón derecho del ratón y seleccionamos <span style="font-style: italic;">Desactivar tipo </span>&nbsp;en el menú contextual.<br />
+      </div>
+      <ul>
+        <li><img src="Imagenes/represent_tipo_linea.png" style="width: 81px; height: 29px; margin-left: 7px;" alt="" align="right" /><span style="font-weight: bold;">Representación</span> del tipo de línea. Se recuerda que la parte superior corresponde a la representación de la línea en <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">Decorado</span></a> y la inferior al <a href="EDM_modo_decoracion_pantalla.html#modo_dec">modo <span style="font-style: italic;">No decorado</span></a>.</li>
+      </ul>
+      <ul>
+        
+        <li><span style="font-weight: bold;">Grosor</span> en modo <span style="font-style: italic;">Pantalla</span>. Se recuerda que, para que se visualicen los grosores, debe de estar activada la opción <span style="font-style: italic; font-weight: bold;">Grosores</span> en <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Visualización</span>.</li>
+
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Pantalla</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Grosor</span> en modo <span style="font-style: italic;">Papel</span>. Se recuerda que, para que se visualicen los grosores, debe de estar activada la opción <span style="font-style: italic; font-weight: bold;">Grosores en configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Visualización</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Papel</span> (también llamado <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo de <span style="font-style: italic;">Impresión</span></a> o <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Plumas</span></a>).</li>
+      </ul>
+Es posible guardar toda la configuración referente al control de líneas, símbolos, textos y células desde el botón <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" />, que genera un fichero de extensión&nbsp;<span class="Archivo">.eac</span>. Esta configuración se puede recuperar mediante el botón <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="" />.<br /><br />En
+la parte inferior del cuadro de diálogo se informa del número de tipos
+de línea totales, mostrados y activos. Se dispone aquí también de una
+serie de botones para gestionar los tipos de línea:<br /><br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Borrar]<br />
+            </td>
+            <td style="vertical-align: top; width: 594px;">Borra todas las líneas de los tipos seleccionados.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Cambiar]<br />
+            </td>
+            <td style="vertical-align: top; width: 594px;">Cambia las líneas de los tipos seleccionados al tipo de línea actual.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Recuento]<br />
+            </td>
+            <td style="vertical-align: top; width: 594px;">Muestra un mensaje indicando el número de líneas de los tipos seleccionados.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+<br /><span style="font-weight: bold; font-style: italic;"><a name="control_simbolos">Control de símbolos</a></span><br /><br />
+Esta pestaña da acceso a todas las opciones relacionadas con la gestión de los tipos de símbolo en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a través del siguiente cuadro de diálogo:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_simbolos.png" style="width: 481px; height: 342px;" alt="" /><br />
+      </div>
+      <br />
+Por defecto, sólo se muestran los tipos de símbolo en uso (opción <span style="font-weight: bold; font-style: italic;">Ver usados</span>). Si se desea ver todos los tipos de símbolo disponibles, entonces habrá que seleccionar la opción <span style="font-weight: bold; font-style: italic;">Ver todos</span>. También se ofrece la posibilidad de <span style="font-weight: bold;">filtrar</span>
+los símbolos según las listas establecidas en la paleta de símbolos y que
+permiten clasificar los tipos de símbolo de la librería con ciertos
+criterios (división administrativa, relieve y altimetría, hidrografía y
+costas, señalización, edificios y construcciones,&#8230;).<br />
+      <br />
+Es
+posible ordenar los tipos según su número, nombre, escala,&#8230; Para ello
+basta con hacer clic con el botón secundario del ratón sobre la
+cabecera de la columna. Es posible volver a la ordenación inicial en
+cualquier momento pulsando sobre el botón <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="" />.<br />
+      <br />
+El <span style="font-weight: bold;">tipo actual</span> (con el que se dibujará cualquier símbolo que cree el usuario) aparece sombreado, y el <span style="font-weight: bold;">tipo seleccionado</span> es el resaltado con el marco negro. <br />
+      <br />
+Para cada tipo, el cuadro de diálogo muestra ocho columnas con la siguiente información:<br />
+      <ul>
+<li><span style="font-weight: bold;">Tipo</span> (valor informativo, no modificable y que corresponde con el estilo).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Nombre del tipo</span> (valor informativo correspondiente al nombre del estilo, y que se puede modificar en el menú de definición de símbolos).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Estado de activación</span>, de
+tal forma que si la casilla está marcada, implica que el tipo está
+activado.<br />
+</li>
+      </ul>
+
+      <div style="margin-left: 40px;">Es posible actuar sobre el estado de activación de todos los tipos de símbolo simultáneamente mediante las siguientes opciones:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Activar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Activa todos los tipos de símbolo.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Desactivar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Desactiva todos los tipos de símbolo.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Invertir activación]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Cambia el estado de activación de cada tipo de símbolo, pasando a activos los que estuvieran desactivos y viceversa.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Para activar o desactivar un intervalo de tipos de símbolo, entonces se
+selecciona con el ratón un rango de tipos de línea y se activa o
+desactiva uno de ellos, pasando todos al estado de selección de este
+último.<br />
+<br />
+Además, también se pueden activar y desactivar tipos de símbolo mediante el teclado con los comandos <span style="font-style: italic;">AS#</span>,&nbsp; <span style="font-style: italic;">DS#</span> y <span style="font-style: italic;">TS#</span>, que permiten activar, desactivar y seleccionar como actual el tipo de símbolo <span style="font-style: italic;">#</span> respectivamente. Los comandos <span style="font-style: italic;">AST</span> y <span style="font-style: italic;">DST</span> activan y desactivan todos los símbolos.</div>
+      <ul>
+        <li><span style="font-weight: bold;">Representación</span> del tipo de símbolo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color </span>con el que se muestra en modo <span style="font-style: italic;">Pantalla</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Papel</span> (también llamado <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo de <span style="font-style: italic;">Impresión</span></a> o <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Plumas</span></a>).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Factor de escala</span> del tipo de símbolo.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Billboard</span>, relacionado con el VIRTUAL 3D, hace referencia al nombre de ese símbolo en el fichero&nbsp;<span class="Archivo">ispol3dbb.cfg</span> de la librería.</li>
+      </ul>
+Es posible guardar toda la configuración referente al control de líneas, símbolos, textos y células desde el botón <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" />, que genera un fichero de extensión&nbsp;<span class="Archivo">.eac</span>. Esta configuración se puede recuperar mediante el botón <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="" />.<br />
+      <br />
+En
+la parte inferior del cuadro de diálogo se informa del número de tipos
+de símbolos totales, mostrados y activos. Se dispone aquí también de una
+serie de botones para gestionar los tipos de símbolo:<br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Borrar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Borra todos los símbolos de los tipos seleccionados.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Cambiar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Cambia los símbolos de los tipos seleccionados al tipo de símbolo actual.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Recuento]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Muestra un mensaje indicando el número de símbolos de los tipos seleccionados.<br />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_textos">Control de textos</a></span><br /><br />
+Desde esta pestaña se tiene acceso a todas las opciones relacionadas con la gestión de los tipos de texto en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a través del siguiente cuadro de diálogo:<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_textos.png" style="width: 481px; height: 342px;" alt="" /><br />
+      </div>
+
+      <br />
+
+Por defecto, sólo se muestran los tipos de texto en uso (opción <span style="font-weight: bold; font-style: italic;">Ver usados</span>). Si se desea ver todos los tipos de texto disponibles, entonces habrá que seleccionar la opción <span style="font-weight: bold; font-style: italic;">Ver todos</span>. También se ofrece la posibilidad de <span style="font-weight: bold;">filtrar</span>
+los textos según las listas establecidas en la paleta de textos y que
+permiten clasificar los tipos de texto de la librería con ciertos
+criterios (división administrativa, relieve y altimetría, hidrografía y
+costas, señalización, edificios y construcciones,&#8230;).<br />
+
+      <br />
+
+Es
+posible ordenar los tipos según su número, nombre, fuente,&#8230; Para ello
+basta con hacer clic con el botón secundario del ratón sobre la
+cabecera de la columna. Es posible volver a la ordenación inicial en
+cualquier momento pulsando sobre el botón <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="" />.<br />
+
+      <br />
+
+El <span style="font-weight: bold;">tipo actual</span> (con el que se dibujará cualquier texto que cree el usuario) aparece sombreado, y el <span style="font-weight: bold;">tipo seleccionado</span> es el resaltado con el marco negro. <br />
+
+      <br />
+
+Para cada tipo, el cuadro de diálogo muestra diez columnas con la siguiente información:<br />
+
+      <ul>
+<li><span style="font-weight: bold;">Tipo</span> (valor informativo, no modificable y que corresponde con el estilo).</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Nombre del tipo</span> (valor informativo correspondiente al nombre del estilo, y que se puede modificar en el menú de definición de textos).</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Estado de activación</span>, de
+tal forma que si la casilla está marcada, implica que el tipo está
+activado.</li>
+      </ul>
+
+
+      <div style="margin-left: 40px;">Es posible actuar sobre el estado de activación de todos los tipos de símbolo simultáneamente mediante las siguientes opciones:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Activar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Activa todos los tipos de texto.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Desactivar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Desactiva todos los tipos de texto.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Invertir activación]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Cambia el estado de activación de cada tipo de texto, pasando a activos los que estuvieran desactivos y viceversa.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Para activar o desactivar un intervalo de tipos de texto, entonces se
+selecciona con el ratón un rango de tipos de texto y se activa o
+desactiva uno de ellos, pasando todos al estado de selección de este
+último.<br />
+<br />
+Además, también se pueden activar y desactivar tipos de texto o rótulo mediante el teclado con los comandos <span style="font-style: italic;">AR#</span>,&nbsp; <span style="font-style: italic;">DR#</span> y <span style="font-style: italic;">TR#</span>, que permiten activar, desactivar y seleccionar como actual el tipo de texto <span style="font-style: italic;">#</span> respectivamente. Los comandos <span style="font-style: italic;">ART</span> y <span style="font-style: italic;">DRT</span> activan y desactivan todos los textos.</div>
+
+      <ul>
+<li><span style="font-weight: bold;">Representación</span> del tipo de texto.</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Índice de color </span>con el que se muestra el texto en modo <span style="font-style: italic;">Pantalla</span>.</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Papel</span> (también llamado <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo de <span style="font-style: italic;">Impresión</span></a> o <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Plumas</span></a>).</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color de relleno</span> del texto en modo <span style="font-style: italic;">Pantalla</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color de relleno</span> del texto en modo <span style="font-style: italic;">Papel</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color de fondo</span> del texto en modo <span style="font-style: italic;">Pantalla</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color de fondo</span> del texto en modo <span style="font-style: italic;">Papel</span>.</li>
+      </ul>
+
+
+      <p class="MsoNormal"><span style="" lang="ES-TRAD">Los seis índices de color anteriores corresponden
+con el primer intervalo de tamaños mostrado en el menú de definición del tipo
+de texto correspondiente, y sólo son modificables desde dicho menú.<o:p /></span></p>
+
+
+      Es posible guardar toda la configuración referente al control de líneas, símbolos, textos y células desde el botón <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" />, que genera un fichero de extensión&nbsp;<span class="Archivo">.eac</span>. Esta configuración se puede recuperar mediante el botón <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="" />.<br />
+
+      <br />
+
+En
+la parte inferior del cuadro de diálogo se informa del número de tipos
+de texto totales, mostrados y activos. Se dispone aquí también de una
+serie de botones para gestionar los tipos de texto:<br />
+
+      <br />
+
+
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Borrar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Borra todos los textos de los tipos seleccionados.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Cambiar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Cambia los textos de los tipos seleccionados al tipo de texto actual.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Recuento]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Muestra un mensaje indicando el número de textos de los tipos seleccionados.<br />
+      </td>
+    </tr>
+  </tbody>
+      </table>
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_celulas">Control de células</a></span><br />
+      <br />
+Desde esta pestaña se tiene acceso a todas las opciones relacionadas con la gestión de los tipos de célula en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a través del siguiente cuadro de diálogo:<br />
+
+
+      <br />
+
+
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_celulas.png" style="width: 481px; height: 342px;" alt="" /><br />
+      </div>
+
+
+      <br />
+
+
+Por defecto, sólo se muestran los tipos de célula en uso (opción <span style="font-weight: bold; font-style: italic;">Ver usados</span>). Si se desea ver todos los tipos de célula disponibles, entonces habrá que seleccionar la opción <span style="font-weight: bold; font-style: italic;">Ver todos</span>. También se ofrece la posibilidad de <span style="font-weight: bold;">filtrar</span>
+las células según las listas establecidas en la paleta de células y que
+permiten clasificar los tipos de símbolo de la librería con ciertos
+criterios (división administrativa, relieve y altimetría, hidrografía y
+costas, señalización, edificios y construcciones,&#8230;).<br />
+
+
+      <br />
+
+
+Es
+posible ordenar los tipos según su número, nombre, escala,&#8230; Para ello
+basta con hacer clic con el botón secundario del ratón sobre la
+cabecera de la columna. Es posible volver a la ordenación inicial en
+cualquier momento pulsando sobre el botón <img src="Imagenes/boton_ordenar.png" style="width: 15px; height: 15px;" alt="" />.<br />
+
+
+      <br />
+
+
+El <span style="font-weight: bold;">tipo actual</span> (con el que se dibujará cualquier célula que cree el usuario) aparece sombreado, y el <span style="font-weight: bold;">tipo seleccionado</span> es el resaltado con el marco negro. <br />
+
+
+      <br />
+
+
+Para cada tipo, el cuadro de diálogo muestra ocho columnas con la siguiente información:<br />
+
+
+      <ul>
+<li><span style="font-weight: bold;">Tipo</span> (valor informativo, no modificable y que corresponde con el estilo).</li>
+      </ul>
+
+
+
+      <ul>
+<li><span style="font-weight: bold;">Nombre del tipo</span> (valor informativo correspondiente al nombre del estilo, y que se puede modificar en el menú de definición de células).</li>
+      </ul>
+
+
+
+      <ul>
+<li><span style="font-weight: bold;">Estado de activación</span>, de
+tal forma que si la casilla está marcada, implica que el tipo está
+activado.</li>
+      </ul>
+
+
+
+      <div style="margin-left: 40px;">Es posible actuar sobre el estado de activación de todos los tipos de célula simultáneamente mediante las siguientes opciones:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Activar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Activa todos los tipos de célula.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Desactivar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Desactiva todos los tipos de célula.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Invertir activación]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Cambia el estado de activación de cada tipo de célula, pasando a activos los que estuvieran desactivos y viceversa.</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+Para activar o desactivar un intervalo de tipos de célula, entonces se
+selecciona con el ratón un rango de tipos de célula y se activa o
+desactiva uno de ellos, pasando todos al estado de selección de este
+último.<br />
+<br />
+Además, también se pueden activar y desactivar tipos de célula mediante el teclado con los comandos <span style="font-style: italic;">AC#</span>,&nbsp; <span style="font-style: italic;">DC#</span> y <span style="font-style: italic;">TC#</span>, que permiten activar, desactivar y seleccionar como actual el tipo de célula <span style="font-style: italic;">#</span> respectivamente. Los comandos <span style="font-style: italic;">ACT</span> y <span style="font-style: italic;">DCT</span> activan y desactivan todas las células.</div>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Representación</span> del tipo de célula.</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Índice de color </span>con el que se muestra en modo <span style="font-style: italic;">Pantalla</span>.</li>
+      </ul>
+
+
+      <ul>
+<li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Papel</span> (también llamado <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo de <span style="font-style: italic;">Impresión</span></a> o <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Plumas</span></a>).</li>
+      </ul>
+
+      <ul>
+<li><span style="font-weight: bold;">Factor de escala</span> del tipo de célula.<br />
+</li></ul>
+      <ul>
+<li><span style="font-weight: bold;">Billboard</span>, relacionado con el VIRTUAL 3D, hace referencia al nombre de esa célula en el fichero&nbsp;<span class="Archivo">ispol3dbb.cfg</span> de la librería.</li>
+      </ul>
+
+Es posible guardar toda la configuración referente al control de líneas, símbolos, textos y células desde el botón <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" />, que genera un fichero de extensión&nbsp;<span class="Archivo">.eac</span>. Esta configuración se puede recuperar mediante el botón <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="" />.<br />
+
+      <br />
+
+En
+la parte inferior del cuadro de diálogo se informa del número de tipos
+de células totales, mostradas y activas. Se dispone aquí también de una
+serie de botones para gestionar los tipos de símbolo:<br />
+
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Borrar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Borra todos las células de los tipos seleccionados.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Cambiar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Cambia las células de los tipos seleccionados al tipo de célula actual.<br />
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Recuento]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Muestra un mensaje indicando el número de células de los tipos seleccionados.<br />
+      </td>
+    </tr>
+  </tbody>
+      
+      </table>
+
+
+      <br />
+
+      <br /><span style="font-weight: bold; font-style: italic;"><a name="tabla_tipos">Tabla de tipos</a></span><br /><br /><img src="Imagenes/acceso_tabla_tipos.png" style="width: 94px; height: 21px; margin-left: 7px;" alt="" align="right" />Además
+de las formas de control de tips comentadas, existe la posibilidad de
+activar tipos desde la tabla que se abre al pulsar sobre el icono
+correspondiente en la zona del área de mensajes.&nbsp;&nbsp;&nbsp;
+&nbsp;<br /><br /><img src="Imagenes/tabla_tipos.png" style="width: 270px; height: 201px;" alt="" align="left" hspace="5" />Esta
+opción muestra un menú donde aparecen todos los tipos presentes en la
+cartografía representada, permitiendo también activarlos o
+desactivarlos. Basta con seleccionar el tipo de entidad para ver la
+correspondiente tabla y, directamente, pulsar sobre cada tipo a
+activar/desactivar. También ofrece un acceso a la <a href="#tabla_modelos">tabla de modelos</a>.<br /><br />Ofrece además la posibilidad de activar o desactivar todos los tipos y modelos en una sola acción mediante los botones <span style="font-weight: bold;">[Activar todo]</span> y <span style="font-weight: bold;">[Desactivar todo]</span> respectivamente.<br /><br /><br /><br /><br /><br /><br />
+<br /><span class="Titulo_2"><a name="control_grupos">Control de grupos</a></span><br /><br />
+Desde el menú <span style="font-weight: bold;">Control</span> &#8594; <span style="font-weight: bold;">Control de grupos</span> se tiene acceso a todas las opciones relacionadas con la gestión de los grupos de tipos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a través del siguiente cuadro de diálogo:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_grupos.png" style="width: 543px; height: 301px;" alt="" /><br />
+      </div>
+&nbsp;<br />
+El objetivo es poder activar y desactivar conjuntos de tipos en una
+sola acción. Cada grupo puede contener aquellos tipos que se desee,
+mientras que un tipo, a lo sumo, puede estar contenida en un grupo.<br />
+      <br />
+Para crear un nuevo grupo de tipos basta con pulsar sobre el botón <span style="font-weight: bold;">[Añadir]</span>.
+Por defecto, el primer grupo ya existe (aunque se encuentra vacío), con
+lo que no es necesario crearlo. Cada grupo tiene además un nombre
+descriptivo asignado, por defecto <span style="font-style: italic;">Grupo #</span> (siendo <span style="font-style: italic;">#</span>
+el número de grupo). El grupo y, por tanto, todos los tipos asociados a
+él, permanecerán activos mientras esté marcada la casilla <span style="font-weight: bold;">Activo</span>. El botón <span style="font-weight: bold;">[Eliminar]</span> borra el grupo seleccionado.<br />
+      <br />
+      <img src="Imagenes/dialogo_control_grupos_2.png" style="width: 318px; height: 198px; margin-left: 7px;" alt="" align="right" />Para añadir o quitar tipos de una determinada clase, es necesario pulsar sobre el botón <span style="font-weight: bold;">[Cambiar]</span>
+de la clase de entidad en cuestión. Se abre entonces un cuadro con dos
+columnas, representándose en la izquierda los tipos de esa clase de
+entidad que actualmente contiene el grupo, y en la parte derecha los
+tipos presentes en el dibujo y que aún no pertenecen a ningún grupo.
+Basta con pulsar sobre los botones <span style="font-weight: bold;">[&gt;&gt;]</span> y <span style="font-weight: bold;">[&lt;&lt;]</span>
+para pasarlos de un lado a otro, según se muestra en la imagen. Una vez
+se cierre este cuadro, se vuelve al cuadro de control de grupos con la
+nueva disposición.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+Los grupos de tipos creados y su estado de activación se pueden guardar
+en disco, así como cargarlos posteriormente, mediante ficheros de
+extensión&nbsp;<span class="Archivo">.grc</span>.<br />
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="control_modelos">Control de modelos</a></span><br /><br />
+Desde el menú <span style="font-weight: bold;">Control</span> &#8594; <span style="font-weight: bold;">Control de modelos</span> se tiene acceso a todas las opciones relacionadas con la gestión de los modelos en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> a través del siguiente cuadro de diálogo:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_modelos.png" style="width: 455px; height: 309px;" alt="" /><br />
+      </div>
+      <br />
+      La asignación de modelos es automática en los siguientes casos:<br />
+      <ul>
+        <li>Al cargar una cartografía, ésta puede tener uno o varios
+modelos preasignados, y si no los tuviera, entonces se carga en el
+modelo 0.</li>
+      </ul>
+      <ul>
+        <li>En OBRA LINEAL, el dibujo de cada eje se asigna a un modelo del mismo número (eje 1 en el modelo 1, eje 2 en el modelo 2,&#8230;).</li>
+      </ul>
+      <ul>
+        <li>En MODELADO DE SUPERFICES, el dibujo de cada explanación se asigna también a un modelo del mismo número.</li>
+      </ul>
+      <ul>
+        <li>En diversas opciones menos significativas de los distintos módulos también se asignan automáticamente modelos.</li>
+      </ul>
+En cuanto a la asignación manual de modelos, las posibilidades que tiene el usuario son:<br />
+      <ul>
+        <li>Que al cargar uno o varios archivos de dibujo, éstos vayan a un determinado modelo y sus sucesivos (opción <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Gestión archivos por modelos</span> &#8594; <span style="font-weight: bold;">Abrir archivos en modelos sucesivos</span>).</li>
+      </ul>
+      <ul>
+        <li>Si se ha usado la opción anterior, que cada modelo se guarde en su archivo (opción <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Gestión archivos por modelos</span> &#8594; <span style="font-weight: bold;">Guardar cada modelo en su archivo</span>).</li>
+      </ul>
+      <ul>
+        <li>Que al guardar el dibujo, no se guarde en ningún modelo (opción <span style="font-weight: bold;">Archivo</span> &#8594; <span style="font-weight: bold;">Gestión archivos por modelos</span> &#8594; <span style="font-weight: bold;">Guardar sin modelos en un archivo</span>).</li>
+      </ul>
+      <ul>
+        <li>Cambiar entidades de un modelo a otro.</li>
+      </ul>
+      <ul>
+        <li>En algunas utilidades se crean tablas de datos que van al
+modelo indicado por el usuario (aunque el programa siempre ofrece uno).</li>
+      </ul>
+Por defecto, sólo se muestran los modelos en uso (opción <span style="font-weight: bold; font-style: italic;">Ver usados</span>). Si se desea ver todos los modelos disponibles, entonces habrá que seleccionar la opción <span style="font-weight: bold; font-style: italic;">Ver todos</span>. Con la opción <span style="font-weight: bold; font-style: italic;">Nombre</span> se pueden filtrar los modelos en la tabla por su nombre. El <span style="font-weight: bold;">modelo actual</span>
+(al que irá a parar cualquier entidad de dibujo que se cree y que
+también es posible cambiar desde este cuadro de diálogo) aparece
+sombreado, y el <span style="font-weight: bold;">modelo seleccionado</span> es el resaltado con el marco negro. Si se desea seleccionar un intervalo de modelos, entonces se indica en <span style="font-weight: bold;">Seleccionar rango de modelos</span> y se pulsa sobre el botón <img src="Imagenes/boton_selec_rango.png" style="width: 15px; height: 15px;" alt="" />.
+En el caso de que se esté trabajando dentro del módulo de OBRA LINEAL,
+puede ser interesante que el rango corresponda a los ejes. Pulsando
+sobre el botón <span style="font-weight: bold;">[Cargar O.L.]</span>
+se crea directamente ese intervalo sin necesidad de que lo especifique
+el usuario. Esto es útil para borrar el dibujo de los ejes en planta
+sin necesidad de desactivar el resto de la cartografía.<br />
+      <br />
+A partir de la casilla <img src="Imagenes/icono_escoba.png" style="width: 18px; height: 15px;" alt="" /> se pueden borrar los nombres de los modelos que no contienen ninguna entidad (líneas, textos, puntos y células).<br />
+<br />
+Es posible ordenar los modelos según su número, nombre,&#8230; Para ello
+basta con hacer clic con el botón secundario del ratón sobre la
+cabecera de la columna.<br />
+      <br />
+La opción <span style="font-weight: bold; font-style: italic;">Color por modelo</span>
+permite colorear las entidades presentes en el dibujo en base a su
+modelo y no a su tipo, asignando colores a los distintos modelos. Esta
+opción actua también sobre la rotulación temporal de las alineaciones
+en el menú de Planta.<br />
+      <br />
+Cuando se asigna a un modelo el mismo índice de color que el de fondo
+de la ventana, las entidades pertenecientes a este modelo se dibujan
+como es habitual, sin tener en cuenta el color del modelo.<br />
+      <br />
+Para cada modelo, el cuadro de diálogo muestra siete columnas con la siguiente información:<br />
+      <ul>
+<li><span style="font-weight: bold;">Número de modelo</span> (valor informativo, no modificable).</li>
+      </ul>
+
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Nombre del modelo</span> (opcional), permite identificar de forma más clara a un modelo.</li>
+      </ul>
+
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Estado de activación</span>, de
+tal forma que si la casilla está marcada, implica que el tipo está
+activado.<br />
+</li>
+      </ul>
+
+
+
+
+      
+      <div style="margin-left: 40px;">Es posible actuar sobre el estado de activación de todos los modelos simultáneamente mediante las siguientes opciones:<br />
+<br />
+<table style="text-align: left; width: 651px; height: 88px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Activar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Activa todos los modelos.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Desactivar todos]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Desactiva todos los modelos.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 119px; font-weight: bold;">[Invertir activación]</td>
+      <td style="vertical-align: top; width: 512px; text-align: justify;">Cambia el estado de activación de cada modelo, pasando a activos los que estuvieran desactivos y viceversa.</td>
+    </tr>
+  </tbody>
+</table>
+<br />Para activar o desactivar un intervalo de modelos, entonces se
+selecciona un rango de modelos bien con el ratón, bien con la opción
+      <span style="font-style: italic; font-weight: bold;">Seleccionar rango de modelos</span>, y se activa o desactiva uno de ellos,
+pasando todos al estado de selección de este último.<br />
+
+      <br />
+
+Además, también se pueden activar y desactivar modelos mediante el
+teclado con los comandos AM#,&nbsp; DM# y TM#, que permiten activar,
+desactivar y seleccionar como actual el modelo # respectivamente. Los
+comandos AMT y DMT activan y desactivan todos los modelos.<br />
+<br />
+Además, también se pueden activar y desactivar tipos de célula mediante el teclado con los comandos <span style="font-style: italic;">AM#</span>,&nbsp; <span style="font-style: italic;">DM#</span> y <span style="font-style: italic;">TM#</span>, que permiten activar, desactivar y seleccionar como actual el MODELO <span style="font-style: italic;">#</span> respectivamente. Los comandos <span style="font-style: italic;">AMT</span> y <span style="font-style: italic;">DMT</span> activan y desactivan todos los modelos.</div>
+
+
+
+      
+      <ul>
+<li><span style="font-weight: bold;">Representación</span> del tipo de célula.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Pantalla</span> al activar la opción <span style="font-style: italic; font-weight: bold;">Color por modelo</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Índice de color</span> con el que se muestra en modo <span style="font-style: italic;">Papel</span> (también llamado <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo de <span style="font-style: italic;">Impresión</span></a> o <a href="EDM_modo_decoracion_pantalla.html#modo_pan">modo <span style="font-style: italic;">Plumas</span></a>) al activar la opción <span style="font-style: italic; font-weight: bold;">Color por modelo</span>.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Grado de atenuación</span>
+(100 implica no atenuado y 0 totalmente atenuado y, por tanto,
+invisible). Para ver los modelos atenuados, debe estar marcada la
+opción <span style="font-style: italic; font-weight: bold;">Aplicar atenuación</span>. Si se cambia el grado de atenuación, es necesario pulsar sobre el botón <span style="font-weight: bold;">[Aplicar]</span> para que surta efecto. Desde el menú <span style="font-weight: bold;">Ver</span> &#8594; <a href="EDM_visualizacion.html#atenuacion_modelos"><span style="font-weight: bold;">Atenuación de modelos</span></a> se muestra una visión general del estado de atenuación de los modelos, y también es posible su modificación.<br />
+</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Descripción</span> (opcional), que permite, por ejemplo, identificar el contenido de cada modelo.</li>
+      </ul>
+      <br />La opción <span style="font-weight: bold; font-style: italic;">Dibujar por orden</span> junto a la columna <span style="font-weight: bold;">Orden</span>,
+para cada modelo, perrmiten dibujar los modelos según el orden
+indicado, dibujando primero los modelos cuyos números sean más bajos.<br /><br />Es posible guardar toda lo configuración referente al control de modelos desde el botón <img src="Imagenes/icono_guardar.png" style="width: 14px; height: 14px;" alt="" />, que genera un fichero de extensión&nbsp;<span class="Archivo">.mod</span>. Esta configuración se puede recuperar mediante el botón <img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="" />.<br />
+      <br />
+En la parte inferior del cuadro de diálogo se informa del número de
+modelos totales, usados y activos. Se dispone aquí también de una serie
+de botones para gestionar el contenido de los modelos:<br />
+      <br />
+
+
+
+      
+      
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+    <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Añadir]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Las entidades seleccionadas se trasladan al modelo actual. Si no
+hubiera ninguna entidad seleccionada, entonces el programa solicita en
+el área de mensajes que se seleccionen y se acepte. En este caso, el
+proceso es cíclico, de manera que el programa solicita una nueva
+selección para incorporar al modelo actual hasta que se pulse la tecla
+&lt;Esc&gt; o se cancele la operación.</td>
+          </tr>
+<tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Borrar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Borra todas las entidades pertenecientes a los modelos seleccionados.
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Cambiar]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Mueve
+las entidades de los modelos seleccionados al modelo actual. Copia el
+nombre y la descripción del modelo origen al modelo actual cuando éste
+(el modelo actual) no tiene ningún elemento, ni nombre, ni descripción.
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 71px; font-weight: bold;">[Recuento]<br />
+      </td>
+      <td style="vertical-align: top; width: 594px;">Muestra un mensaje indicando la clase y número de entidades de los modelos seleccionados.
+      </td>
+    </tr>
+  </tbody>
+      
+      
+      </table>
+
+
+
+      <br /><br /><span style="font-weight: bold; font-style: italic;"><a name="tabla_modelos">Tabla de modelos</a></span><br /><br /><img src="Imagenes/acceso_tabla_modelos.png" style="width: 80px; height: 38px; margin-left: 7px;" alt="" align="right" />La
+tabla de modelos se despliega al pulsar sobre el icono con la letra &#8216;M&#8217;
+situado en la zona de iconos de la parte inferior de la interfaz o al
+pulsar la tecla F6.&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <img src="Imagenes/tabla_modelos.png" style="width: 209px; height: 368px; margin-right: 7px;" alt="" align="left" />La
+tabla está diseñada para poder visualizar el estado de activación de
+los modelos de una forma más rápida, pues se muestran en intervalos de
+200 modelos. También permite modificar el <span style="font-weight: bold;">modelo actual</span>.<br />
+      <br />
+Los modelos activos se muestran como botones pulsados, y los desactivos
+en forma de botones sin pulsar. Los modelos que no están en uso se
+muestran como botones sobre los que no se puede pulsar. Basta, por
+tanto, con pulsar sobre algún modelo existente para modificar su estado
+de activación.<br />
+      <br />
+Así, en la imagen adjunta el modelo actual es el 6, existen entidades
+gráficas en los modelos 0 al 14 además de en el 50 y 52, y todos ellos
+están activos a excepción del 11 y 12.<br /><br />Disponemos de dos botones ("A" y "D") delante de cada fila de modelos para poder activar/desactivar una fila entera de modelos.<br />
+      <br />
+En cuanto a las opciones de la parte inferior:<br />
+      <br />
+      <table style="text-align: left; width: 476px; height: 103px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Act. todos]</td>
+            <td style="vertical-align: top; width: 373px; text-align: justify;">Activa todos los modelos.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Des. todos]</td>
+            <td style="vertical-align: top; width: 373px; text-align: justify;">Desactiva todos los modelos.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 71px; font-weight: bold;">[Incluir]</td>
+            <td style="vertical-align: top; width: 373px; text-align: justify;">Permite mover entidades de unos modelos a otro. Al usar esta opción, el
+programa pregunta por el modelo destino y luego solicita la selección
+de entidades que pasarán a ese modelo.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Seleccionar]</td>
+            <td style="vertical-align: top;">Cambia el modelo actual por el modelo al que pertenezca una entidad que se seleccione en pantalla.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Desactivar]</td>
+            <td style="vertical-align: top; text-align: justify;">Permite desactivar un modelo seleccionando en pantalla alguna entidad contenida en él.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Renumerar] </td>
+            <td style="vertical-align: top; text-align: justify;">Permite cambiar el número a un modelo, pasando además éste a ser el actual.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[LÍNEAS]<br />
+[SÍMBOLOS]<br />
+[RÓTULOS]<br />
+[CÉLULAS]</td>
+            <td style="vertical-align: top; text-align: justify;">Permite activar o desactivar todas las líneas, símbolos, rótulos o células de los modelos activos.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Cualquier cambio del estado de activación de los modelos mediante esta
+tabla exige un redibujado (por ejemplo, haciendo zoom con la rueda del
+ratón) para poder ver los cambios en el dibujo.<br />
+      <br />
+      <span class="Titulo_2"><a name="control_de_procedencias">Control de procedencias</a></span><br />
+
+      <br />
+
+      <img src="Imagenes/control_procedencias_hint.png" style="width: 117px; height: 108px;" alt="" align="right" hspace="6" />Los elementos de ISTRAM<sup>®</sup>/ISPOL<sup>® </sup>referentes
+a líneas, símbolos, textos, células, contienen información sobre su
+procedencia, que puede verse en el hint que aparece al parar el cursor
+sobre el elemento, es decir, cuando me sitúo encima de cualquier línea
+de la pantalla gráfica.<br />
+
+      <br />
+
+La procedencia puede ser el nombre de un archivo edm, el módulo de
+Istram en el que se han creado o la herramienta o el archivo de datos
+concreto utilizado para su creación, como por ejemplo una explanada,
+una rotulación mediante un fichero .ali, un modo de dibujo del eje
+mediante un .lil...<br />
+
+      <br />
+
+Podemos diferenciar las siguientes procedencias: Eje en planta, Z-L3D,
+ISPOL.ali, ISPOL.lil, ISPOL.gui, ISPOL.gut, Obras de fábrica, Marcas
+Viales, Rotulación del eje, Rotulación según perfiles, Rotulación
+Anchos/Peraltes, Rotulación puntos altos/bajos, Trayectorias, Dibujar
+Línea 3D, Recintos de riegos, Acotación de entronques, Dibujos Geopak,
+Aparatos de vía (Planta), Isletas (Cruces con glorietas).<br />
+
+      <br />
+
+Para poder entrar en este menú podemos acceder desde el menú
+desplegable de Control, Control de Procedencias o a partir del acceso
+directo situado en la parte superior de la pantalla <img src="Imagenes/control_procedencias_icono.png" style="width: 26px; height: 26px;" alt="" align="top" vspace="0" />.<br />
+
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/control_procedencias_cuadro_dialogo.png" style="width: 419px; height: 216px;" alt="" /><br />
+
+      </div>
+      <br />
+
+A partir de las casillas <span style="font-weight: bold;">Activar todo</span> y <span style="font-weight: bold;">Desactivar todo</span>
+podremos activar o desctivar todos los elementos en función de la
+procedencia. También podemos con el "tic" de cada procedencia activar o
+desactivar una en conreto.<br /><br />
+
+      Es
+posible marcar algunas procedencias con el tic que se encuentra a la
+derecha del nombre de la procedencia de modo que al redibujar en
+pantalla o en planos las procedencias destacadas se dibujan en una
+segunda pasada de forma que los rellenos de sus líneas (relleno sólido
+o sólido tapa), símbolos, textos y células taparán a todos los
+elementos de las procedencias no destacadas.<br />
+
+Mediante el icono de la basura&nbsp;<img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" align="top" /> podemos borrar según procedencia y mediante el icono de la escoba&nbsp;<img src="Imagenes/icono_limpiar.png" style="width: 22px; height: 22px;" alt="" /> podemos limpiar la procedencia. <br />
+
+Esto evita la pérdida de entidades creadas por otras herramientas o en otros módulos.<br />
+
+      <br />
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo"><a name="control_superficies"><span class="Parrafo"><span class="Titulo_2">Control de superficies</span></span></a><br />
+      <br />
+
+Las superficies son el tipo de entidad compuesta más significativa del ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, pues a partir de ellas se obtendrán perfiles del terreno, se cubicará, se deducirán determinadas cotas, etc.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span style="font-weight: normal;" class="Titulo_2"><img src="Imagenes/control_sup_global_resultados.png" style="width: 515px; height: 342px;" alt="" /></span><br />
+      <span style="font-weight: normal;" class="Titulo_2" /></div>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo">
+      <br />
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite trabajar con diversas tipologías de superficies:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Superficies cartográficas</span>, compuestas por objetos gráficos del EDM. La <a href="#control_sup_cartograficas">superficie cartográfica</a> es la tipología más usada tradicionalmente por el programa y la única existente en versiones antiguas.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Triangulaciones topográficas</span> contenidas en <a href="EDM_topografia.html#ficheros_ttp">archivos&nbsp;<span class="Archivo">.ttp</span></a>.
+También es una tipología tradicional en el programa y la única usada
+por diversos programas del mercado. La gestión de triangulaciones se
+efectúa desde el <a href="#control_ttps">control de TTPs</a>.<br />
+        </li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Rejillas</span> procedentes de <a href="EDM_imagenes.html#ascii_grid_geotiff_cota">archivos ASCII-GRID o de imágenes GeoTIFF 3D</a>, obtenidos generalmente a partir de <a href="EDM_imagenes.html#srtm">archivos SRTM</a> de la NASA y ampliamente usados por programas como Google Earth<sup>®</sup>.<br /></li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Base de datos láser</span> obtenida de la herramienta de <a href="EDM_datos_laser.html">tratamiento de datos láser</a> obtenidos de escáneres.<br />
+        </li>
+      </ul>Cuando se activa el modo de <a href="EDM_coordenadas_enganches.html#enganches">enganche</a> a superficie, el programa &#8220;engancha&#8221; el cursor a la <span style="font-weight: bold;">superficie actual</span>.<br />
+      <br />
+El cuadro de diálogo accesible desde <span style="font-weight: bold;">Control</span> &#8594; <span style="font-weight: bold;">Control de superficies MDT</span> y también desde el icono&nbsp;<img src="Imagenes/icono_toolBarEstandar_superf.png" style="width: 20px; height: 20px;" alt="" /> de la <a href="EDM_barras_herramientas.html">barra de herramientas</a> estándar, está pensado para gestionar y unificar los diferentes tipos de modelos digitales del terreno:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/superficies_combinadas.png" style="width: 609px; height: 283px;" alt="" /><br />
+      </div>
+      <br />
+Desde cada una de estas superficies se puede acceder al cuadro de
+diálogo particular. En el cuadro también se define para cada superficie
+MDT un tipo de línea para su representación en los <a href="OL_perf_transv.html">perfles transversales</a>.<br />
+      <br />
+Podemos eliminar un dato mediante la casilla <img src="Imagenes/isdim_icono_papelera.png" style="width: 20px; height: 20px;" alt="" />. Podremos <span style="font-weight: bold;">activar</span> o <span style="font-weight: bold;">descativar</span>
+una determinada superficie MDT con la casilla que hay en cada una de
+ellas, o podemos activar o desactivarlas todas a la vez con los iconos <img src="Imagenes/icono_tickaspa.png" style="width: 22px; height: 13px;" alt="" />.<br />
+      <br />
+Al desactivar una superficie MDT, no se cortarán perfiles con ella y además:<br />
+</span>
+      <ul>
+        <li>Si la superficie es cartográfica se desactivarán los elementos que la componen: líneas, puntos, textos y modelos.</li>
+        <li>Si la superficie es un TTP se desactiva su visualización.</li>
+        <li>Si la superficie son Datos Laser se desactiva la visualización de la rejilla.</li>
+        <li>Si la superficie es una rejilla MDT se desactiva la
+visualización de la rejilla y si es de tipo dinámico también se
+desactiva la visualización de las imágenes que lo componen.<br />
+        </li>
+      </ul>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo">Activando la casilla <span style="font-weight: bold;">Enganche</span>
+utiliza la superficie que tengamos designada como actual en el uso del
+enganche a superficie (menú desplegable de Ver &gt; Enganches &gt;
+Enganche a superficie). Desactivando la casilla <span style="font-weight: bold;">Perfiles</span> volveríamos al menú tradicional de extracción de Transversales en el cual no dispondría de control de superficies MDT. En <span style="font-weight: bold;">Simplificar N.D.P.</span>
+podemos definir (de 1 a 5) el nivel de simplificación de las nubes
+densas de puntos para acelerar la extracción de perfiles sobre ellas.<br />
+      <br />
+Los botones <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span> permiten salvar y recuperar respectivamente las superficies declaradas en el proyecto mediante el uso de archivos&nbsp;<span class="Archivo">.csm</span>.<br />
+      <br />
+Como máximo se podrán tener cargadas 120 superficies. Se podrán cortar
+simultaneamente para la extracción de perfiles transversales.<br />
+<br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; text-align: justify;">Al
+salir del programa, se guarda la configuración del control de
+superficies en la carpeta temporal del directorio de trabajo. Al volver
+a entrar en el programa en este directorio, se carga automaticamente la
+última configuración del control de superficies.</td>
+    </tr>
+  </tbody>
+      
+      </table>
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="modo_extrac_perf_transv">Modos de extracción de perfiles transversales</a></span><br />
+      <br />
+La extración de <a href="OL_perf_transv.html">perfiles transversales</a> depende del tipo de superficie:<br />
+      <ul>
+        <li><img src="Imagenes/modo_extrac_perf_sup_cart.png" style="width: 96px; height: 81px;" alt="" align="right" hspace="8" />Las <a style="font-weight: bold;" href="#control_sup_cartograficas">superficies cartográficas</a>
+pueden usarse directamente u obligar a que se efectúe realizar una
+triangulación local. Esto último se consigue indicando la opción <span style="font-weight: bold; font-style: italic;">Triangular</span> que provoca que la extracción de los transversales se efectúe utilizando una
+triangulación de las líneas y puntos que pertenecen a la superficie del
+terreno.<br />
+
+      <br />
+Esta técnica permite que los perfiles
+obtenidos se adapten con más fidelidad a la topografía existente, y
+puede ser una solución válida para su proyecto, aunque como ya se ha
+dicho, la mejor representación es un modelo digital triangulado
+generado con ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.</li>
+      </ul>
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/extrac_perf_triang.png" style="width: 404px; height: 180px;" alt="" /><br />
+      </div>
+
+      
+      <ul>
+
+        
+        </ul></span>
+      <div style="margin-left: 40px;"><span style="font-weight: bold; font-style: italic;">Extraplomos</span>:
+Equivale a poner en Transversales-&gt;Opciones:Paredes pseudoverticales
+y con extraplomos. Pero permite combinar superficies con diferentes
+modos.<br />
+Es de utilidad para extraer perfiles de objetos exportados a edm del
+árbol BIM, incluso de los importados IFC. Para ver su geometría en el
+perfil.<br />
+      </div>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo">
+      <ul>
+        <li>Las <span style="font-weight: bold;">procedentes de triangulaciones</span>
+(TTPs) pueden utilizarse
+cortando las mallas ó los triángulos. En este segundo caso, el perfil
+es igual salvo que se ocultan los segmentos del perfil donde no hay
+triángulo, lo que permite tener en cuenta <span style="font-weight: bold;">huecos</span>
+en la cartografía y, por tanto, sus correspondientes discontinuidades
+en los perfiles. La gestión de triangulaciones se hace desde el <a href="#control_ttps">control de TTPs</a>.<br />
+        </li>
+
+
+      
+      
+      </ul>
+
+      <ul>
+        <li><a name="sup_rejilla">Las de tipo<span style="font-weight: bold;"> rejilla</span> </a>permiten generar perfiles transversales
+apoyándose en un <a href="ascii_grid.html">fichero ASCII-GRID</a> o en una imagen GeoTIFF con cota.
+Como ambos tipos de archivo pueden cargarse como imagen, el programa
+ofrece dos posibilidades:</li>
+      </ul>
+
+      
+      <ol style="margin-left: 40px;">
+<li>Usar los ficheros cargados como imagen y que, por tanto, están activos en el árbol de imágenes (tipo de datos <span style="font-weight: bold;">dinámico</span>,
+ficheros .asc). Es el modo recomendado, especialmente en el caso de
+grandes cantidades de datos. Los ficheros dinámicos no permanecen en
+memoria frente a los estáticos que sí permanecen.<br />
+
+</li>
+      </ol>
+
+      
+      <ol style="margin-left: 40px;" start="2">
+<li>No usar imágenes sino directamente seleccionar el
+fichero. Esta segunda opción es válida únicamente para archivos en
+          <a href="ascii_grid.html">formato ASCII-GRID</a> (tipo de datos <span style="font-weight: bold;">estático</span>). Son ficheros de tipo .txt, .asc, .grd, .hgt. <br />
+</li>
+      </ol></span>
+      <div style="margin-left: 40px;">En el primer caso el programa va
+cargando y descargando dinamicamente MDTs en función de las zonas por
+donde se van extrayendo perfiles. En particular desde este cuadro de
+diálogo se puede extraer por picado una zona cualquiera a partir de las
+imágenes.<br />
+Se puede generar con el tipo de línea actual la rejilla en forma de líneas cartográficas mediante la casilla <span style="font-weight: bold;">Crear las líneas de rejilla</span>.<br />
+Mediante el comando <span style="font-weight: bold;">Cargar zona</span> podremos seleccionar una determinada sección de la imagen cargada establecida por <span style="font-weight: bold;">Filas</span> y <span style="font-weight: bold;">Columnas</span>. Mediante la casilla <span style="font-weight: bold;">Ver rejilla MDT</span> veremos mediante una cuadrícula las filas y columnas de la imagen.<br />
+      </div>
+      <span style="font-weight: normal;" class="Titulo_2 Parrafo"><br />
+
+      <div style="margin-left: 40px; text-align: center;"><img src="Imagenes/dialogo_mdt_rejilla.png" style="width: 466px; height: 282px;" alt="" /><br />
+      </div>
+      <br />
+      <div style="margin-left: 40px;">La opción <span style="font-weight: bold;">Ver rejilla MDT</span>&nbsp; permite visualizar
+la zona cubierta por la misma. En caso de una rejilla muy densa no
+generará líneas para cada columna y para cada fila, y sólo para algunas
+de ellas.<br />
+      <br />Desde este cuadro también se acceden a las <a href="EDM_control_entidades.html#utiles">utilidades</a> que permiten alterar la cota de entidades gráficas.<br />
+      <br />
+Mediante el icono&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> se podrá guardar un fichero&nbsp;<span class="Archivo">.xyz</span> con las coordenadas X,Y,Z del fichero rejilla.<br />
+      <br />
+Se podrán definir hasta cinco modelos de rejilla ya sean estáticos o dinámicos.<br /><br /><img src="Imagenes/mdt_rej_int.png" style="width: 150px; height: 87px; float: right;" alt="" hspace="5" />Dentro
+del menú de control de superficies MDT, al escoger el Tipo MDT Rejilla
+te permite en la columna de Opciones seleccionar si deseas <span class="Parf_negrita">interpolar</span> o <span class="Parf_negrita">no</span> deseas realizar la <span class="Parf_negrita">interpolación</span> de los datos.<br /><br />En
+el Control de MDT Rejilla se admiten hasta 100 Datos, ahora bien si
+varios archivos representan la misma superficie en diferente zona es
+más eficiente cargarlo como un único árbol de imágenes (un solo
+dato)&nbsp; y utilizar diferentes datos cuando se representan distintos
+niveles.<br /><br />Los botones <span style="font-weight: bold;">[Iniciar]</span>, <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span>
+permiten inicializar, salvar y recuperar respectivamente las
+superficies declaradas en el proyecto mediante el uso de archivos .crm<br /><br />
+      </div>
+
+      
+      <ul>
+        <li>En el caso de <a href="EDM_datos_laser.html"><span style="font-weight: bold;">datos láser</span></a>,
+el único requerimiento es que se haya creado la base de datos de la
+nube de puntos. La extracción de perfiles es muy eficiente en el uso de
+memoria, pues el programa trabaja con los datos en disco lo que aporta
+como ventaja adicional que el tamaño de los datos a analizar no supone
+ningún límite a la hora de obtener los perfiles.<br />
+        </li>
+      </ul>
+      <br />
+En la columna <span style="font-weight: bold;">Nº</span> se indica el
+índice de esa superficie dentro de las superficies de su tipo. Así, por
+ejemplo, si hay definidas 4 superficies cartográficas, éstas será la 1,
+2, 3 y 4.<br />
+      <br />
+En la columna <span style="font-weight: bold;">Sup. Perfil</span> se
+indica el número de superficie en el perfil. Un '0' indica que no se
+cortarán perfiles contra esa superficie, mientras que las que tengan
+asignado un valor mayor quedarán indentificadas de tal forma que se
+obtendrá una línea en el perfil transversal por cada superficie
+(perfiles multisuperficie).<br />
+      <br />
+      <br />
+SUPERFICIES COMBINADAS<br />
+      <br />
+
+ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> permite trabajar con superficies procedentes de la combinación de otras superficies de cara a la obtención de <a href="OL_perf_transv.html">perfiles transversales</a>.
+Para ello, basta con asignar el mismo número de superficie de perfil a
+aquellas superficies que conforman una sola. Para la representación del
+perfil se usará el tipo de línea de la primera de ellas.<br />
+      <br />
+La combinación de superficies de cara a perfiles transversales funciona de forma similar a la operación <a href="EDM_editor_perfiles.html#completar"><span style="font-style: italic;">completar</span></a> del <a href="EDM_editor_perfiles.html">editor de perfiles</a>:
+el programa usa la primera superficie de la combinación para crear el
+perfil y donde no exista en el perfil, se completa con el resto de
+superficies de la combinación (el perfil resultante será el de ir
+completando la primera con las siguientes que poseen el mismo número).<br />
+      <br />
+Así, en el siguiente ejemplo, hay definidas 5 superficies:<br />
+      <ul>
+        <li>La superficie 1 es de tipo cartográfica que a su vez es la
+primera de todas las superficies cartográficas existentes. En el perfil
+transversal se representará con una línea de tipo L104.</li>
+      </ul>
+      <ul>
+        <li>La superficie 3 está formada por la triangulación L3 y su representación en el perfil transversal será con el tipo de línea 66.</li>
+      </ul>
+      <ul>
+        <li>La superficie 5 es de tipo rejilla y se representa con el tipo de línea L103 en los transversales.</li>
+      </ul>
+      <ul>
+        <li>La superficie 7 proviene de una base de datos láser y se usará el tipo de línea L108 para su representación transversal.</li>
+      </ul>
+      <ul>
+        <li>La superficie 8 es de tipo cartográfica y es la segunda de
+todas las superficies cartográficas existentes. Además, en el perfil
+transversal se usará el tipo de línea L1 para su representación.<br />
+        </li>
+      </ul>
+Y de cara a la obtención de perfiles transversales las superficies 7 y
+8 (de tipo datos láser y cartográfica respectivamente), conforman una
+sola superficie de cara a obtener transversales, y será la superficie
+del perfil 4 de un total de 4 que aparecerán en los transversales.
+Además, para su representación en el perfil transversal se usará el
+tipo de línea L108 por ser la superficie 7 la primera de la combinación.<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/superficies_combinadas.png" style="width: 609px; height: 289px;" alt="" /><br />
+      </div>
+      <br />Si
+se dispone de parejas de superficies que constituyen el techo y la base
+de un mismo cuerpo cerrado, se pueden generar directamente los perfiles
+transversales de estos cuerpos añadiendo en la columna <span style="font-weight: bold;">Sup. Perfil </span>la
+superficie del techo o base de un cuerpo N y, en una fila posterior, la
+superficie complementaria como -N. El generador de perfiles cierra
+entonces la superficie N con la -N. <br />Puede haber varios cuerpos cerrados simultánemente.<br /><br />Se dispone hasta 1000 el número de superficies MDT que se pueden definir.<br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="utiles">Utilidades</a></span><br />
+      <br />
+
+      
+También existen una serie de <span style="font-weight: bold;">utilidades</span> relacionadas con la modificación
+de las cotas de líneas y símbolos, adaptándolas a la <span style="font-weight: bold;">superficie actual</span>:<br />
+      <br />
+
+
+      
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Obtener cota]</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Opción que muestra en el área de mensajes la cota que tiene un punto
+(X,Y) dado sobre la superficie actual.<br />
+            <br />
+</td>
+    </tr>
+    
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Líneas a cota]<br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Pone en cota cada uno de los vértices de las líneas activas utilizando
+la superficie actual para interpolar la cota en cada uno.<br /><br /><a name="modo_interpolacion"><img src="Imagenes/modo_interp_cota_linea.png" style="width: 146px; height: 84px; margin-left: 7px;" alt="" align="right" />En el caso de que la superficie actual</a> sea una <a href="#control_sup_cartograficas">superficie cartográfica</a>, o una <a href="#control_ttps">triangulación</a> para el cálculo de la cota de cada vértice se hace uso del <span style="font-weight: bold;">modo de interpolación</span> indicado de entre los siguientes:<br /><ul><li><span style="font-weight: bold;">Interpolación completa</span>: <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En este caso se buscan las intersecciones con líneas de la superficie </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">que da cota, se calculan por perfiles ortogonales N-S y E-O la cota de
+los puntos inicial y final y, por último, se interpola la cota en los
+vértices de la propia línea a partir de los puntos con cota que ya ha
+recibido por intersecciones.</span></span></span></span></span></span> También se crean nuevos vértices en los cortes con las líneas de la
+superficie que da cota. Es el modo de interpolación más exacto y
+efectivo en casi todos los casos, y es el seleccionado por defecto.<br /></li></ul><ul><li><span style="font-weight: bold;">Sólo interpolación lineal</span>: <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">En este modo se asigna un nuevo punto en el corte con las líneas de la
+superficie </span></span></span></span></span></span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">dadora de cota, e interpolando la cota en cada uno de los
+vértices de la línea original (por el procedimiento de secciones
+ortogonales) y en ambos extremos.</span></span></span></span></span></span> También se crean nuevos vértices
+en esos cortes. Este modo de interpolación está indicado para líneas de
+río, arroyos, divisorias o vaguadas.<br /></li></ul><ul><li><span style="font-weight: bold;">No añadir vértices</span>:
+Es igual que la interpolación lineal pero no se crean nuevos vértices
+en los cortes con las líneas de la superficie que da cota.<br /></li></ul>
+            
+</td>
+    </tr><tr>
+            <td style="vertical-align: top; font-weight: bold;">[Símbolos a cota]</td>
+            <td style="vertical-align: top; text-align: justify;">Esta opción pone todos los símbolos activos en cota utilizando la superficie actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">[Textos a cota]</td>
+            <td style="vertical-align: top; text-align: justify;">Esta opción pone todos los textos activos en cota utilizando la superficie actual.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">[Selección a cota]</span>
+      </td>
+      <td style="vertical-align: top; text-align: justify;">Pone en superficie los elementos seleccionados por el usuario. En este
+caso, el programa da la opción de elegir la superficie con cota a
+utilizar, y usará el <a href="EDM_control_entidades.html#modo_interpolacion"><span style="font-weight: bold;">modo de interpolación</span></a> seleccionado si se trata de una <a href="#control_sup_cartograficas">superficie cartográfica</a>.<br />
+</td>
+    </tr><tr><td><span style="font-weight: bold;">[Densificar]</span></td><td>Subdivide
+en el TTP actual cada triángulo por otros 4 insertando un punto en
+medio de cada malla. Puede pulsarse varias veces para un mayor nivel de
+densificación.</td></tr>
+
+  </tbody>
+      
+      </table>
+
+
+
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_sup_cartograficas">Control de superficies cartográficas</a></span><br />
+<br />
+Una superficie cartográfica en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> es una entidad gráfica compuesta de:<br />
+      <ul>
+        <li>Todas las líneas de uno o más tipos</li>
+        <li>Todos los símbolos de uno o más tipos</li>
+        <li>Todos los textos de uno o más tipos<br />
+        </li>
+
+        <li>Uno o más modelos</li>
+        <li>Cualquier combinación de lo anterior</li>
+        <li>Un fichero edm/edb completo<br />
+        </li>
+
+      </ul>Se
+podría decir, por tanto, que está representada por todas las líneas,
+símbolos y textos que están sobre la superficie teórica y que, por
+tanto, la
+representan.<br />
+      <br />
+Por defecto, la superficie cartográfica número 1 está representada por todas las
+líneas de tipo 26 y 27 (curvas de nivel normales y maestras
+respectivamente). El usuario podría, por ejemplo, incluir también ahí
+otros tipos de línea que representen bordes de carreteras, caminos,
+casas, vallas, etc. siempre que tengan una cota válida, pues el modelo
+digital que representa una superficie cartográfica se verá alterado si alguna de
+esas líneas está fuera de cota.<br />
+      <br />
+Si las entidades que determinan una determinada superficie cartográfica son
+independientes del tipo al que pertenecen (por ejemplo, unas
+determinadas líneas y símbolo pero NO todas las del mismo tipo),
+entonces bastaría con incluir el/los modelo/s que las contienen en la
+superficie cartográfica. De esta forma, las posibilidades de definición de
+superficies cartográfica en ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> son amplísimas debido a su gran versatilidad.<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img src="Imagenes/icono_info.png" style="width: 32px; height: 32px;" alt="" /><br />
+            </td>
+            <td class="Info" style="vertical-align: middle; text-align: justify;">En el menú <span style="font-weight: bold;">Herramientas</span> &#8594; <a href="EDM_cotas.html"><span style="font-weight: bold;">Cotas</span></a> se disponen varias herramientas para poner en cota líneas que, por ejemplo, procedan de una importación 2D.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Un tipo de línea, de símbolo, de texto o de modelo puede pertenecer a más de una superficie cartográfica.
+Por ejemplo, la línea de "cabeza de desmonte" y la de "pie de
+terraplén" pueden pertenecer simultáneamente a la superficie de la
+carretera y a la superficie topográfica original.<br />
+      <br />
+Se puede también definir una superficie cartográfica mediante todos los
+elementos (líneas, símbolos y textos) contenidos en un archivo edm/edb.
+Cuando se cargan desde aquí estos archivos, no son editables.<br />
+Se almacenan en procedencias 1200, 1201, ?.. Se puede ocultar su
+dibujado mediante el botón Ver edm/edm o definir un nivel de atenuación
+(0-100). También se puede archivar la ruta completa de estos archivos
+dentro de los ficheros .sup y .csm si se ha activado Configuración-&gt;
+Topografía: [ ] Guardar Ruta en .ctp y .csm.<br />
+      <br /><br style="font-weight: bold; font-style: italic;" />
+      OPCIONES DE CONTROL DE SUPERFICIES CARTOGRÁFICAS<br />
+      <br />
+La declaración y modificación de superficies se efectúa desde el menú <span style="font-weight: bold;">Control</span> &#8594; <span style="font-weight: bold;">Control de superficies cartográficas</span> (accesible también desde el botón <img src="Imagenes/icono_superf_carto.png" style="width: 16px; height: 16px;" alt="" />) a través del siguiente cuadro de diálogo:<br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_superficies_cartograficas.png" style="width: 600px; height: 381px;" alt="" /><br />
+      </div>
+      <br />
+En él se muestran las diferentes superficies cartográficas declaradas, su nombre y
+las entidades que componen cada una. Por una cuestión de claridad, sólo
+se muestra los tipos o modelos que pertenecen a cada superificie cartográfica según
+su clase, existiendo una pestaña para cada uno (líneas, símbolos, textos
+y modelos). Así, si la pestaña seleccionada es <span style="font-style: italic;">Líneas</span>, aparecen los tipos de línea que componen cada superficie cartográfica, si es <span style="font-style: italic;">Puntos</span> se muestran los tipos de símbolos que también pertenecen a la superficie cartográfica, si es <span style="font-style: italic;">Textos</span> de muestran los tipos de textos de la superficie cartográfica y si es <span style="font-style: italic;">Modelos</span> se muestra el nombre y número de cada uno de los modelos que también pertenezcan a dicha superficie cartográfica.<br />
+Mediante el icono <img src="Imagenes/icono_tic.png" style="width: 24px; height: 23px;" alt="" /> establecemos cual es la superficie actual, para poder añadir a ésta las líneas, símbolos...que necesitemos incluir.<br />
+      <br />
+
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle;"><img src="Imagenes/icono_aviso.png" style="width: 32px; height: 32px;" alt="" /><br />
+      </td>
+      <td class="Info" style="vertical-align: middle; text-align: justify;">Al obtener <a href="OL_perf_transv.html">perfiles transversales</a> de una superficie cartográfica, el programa
+representa los mismos con el primer tipo de línea declarado en Líneas.</td>
+    </tr>
+  </tbody>
+      </table>
+
+      <br />
+Para añadir un tipo o un modelo a una superficie cartográfica, basta con pulsar sobre el botón <span style="font-weight: bold;">[Añadir línea]</span> / <span style="font-weight: bold;">[Añadir punto]</span> / <span style="font-weight: bold;">[Añadir texto]</span> / <span style="font-weight: bold;">[Añadir modelo]</span> (según la pestaña activa) y teclear o hacer clic en pantalla sobre una entidad de ese tipo o modelo.<br />
+      <br />
+      Para eliminar un tipo o modelo de la superficie cartográfica actual, se usa el botón <span style="font-weight: bold;">[Borrar línea]</span> / <span style="font-weight: bold;">[Borrar punto]</span> / <span style="font-weight: bold;">[Borrar texto]</span> / <span style="font-weight: bold;">[Borrar modelo]</span>
+y a continuación o bien se teclea o se hace clic en pantalla sobre una
+entidad de ese tipo o modelo, o bien se pulsa sobre el icono <img src="Imagenes/icono_papelera.png" style="width: 16px; height: 16px;" alt="" /> asociado al mismo.<br /><br />
+Otras opciones para la gestión de superficies cartográficas son:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 107px;">[Elegir superficie]</td>
+      <td style="vertical-align: top; text-align: justify; width: 565px;">Como ya se ha explicado, permite seleccionar una superficie como
+            <span style="font-weight: bold;">superficie actual</span>. Para ello basta con seleccionar en el mapa una de
+las líneas que pertenezcan a la superficie cartográfica deseada. La elección de un
+tipo de línea que pertenece a más de una superficie cartográfica conduce a la
+elección de la primera superficie cartográfica que la tenga declarada. Si el modo de
+selección está puesto en <span style="font-weight: bold;">NUMÉRICA</span>, entonces el número de la superficie cartográfica
+se introduce por teclado. También se puede elegir la <span style="font-weight: bold;">superficie actual</span>
+mediante el deslizador horizontal que aparece en el menú.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 107px;">[Añadir superficie] </td>
+      <td style="vertical-align: top; text-align: justify; width: 565px;">Crea una nueva superficie cartográfica vacía añadiéndolo al final. La primera superficie siempre existe aunque esté vacía.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 107px;">[Borrar superficie]<br /><br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 565px;">Elimina la superficie cartográfica actual (que aparece siempre en la columna izquierda), renumerándose las siguientes.<br />
+            <br />
+</td>
+    </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Guardar] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /></span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Salva en un fichero de extensión&nbsp;<span class="Archivo">.sup</span> la definición actual de
+superficies cartográficas para que pueda usarse en una sesión posterior de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Cargar] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /></span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Permite usar una definición de superficies cartográfica guardada en un fichero<span class="Archivo">.sup</span>.
+Las definiciones del fichero cargado sustituyen a las definiciones que
+estuviesen en vigor.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Ordenar]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify;">Ordena en valores crecientes los tipos de las líneas, símbolos y modelos que componen cada superficie cartográfica.</td>
+          </tr>
+
+  </tbody>
+      </table>
+
+      <br />
+Estas definiciones de superficies cartográficas son visibles desde cualquier punto del sistema ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>, no se pierden al salir de este menú. Al salir de sesión se genera en el directorio de trabajo el fichero&nbsp;<span class="Archivo">ISPOL.sup</span>
+con el estado actual de definición de superficies cartográfica. Al iniciar una nueva
+sesión, si en la carpeta de trabajo existe el fichero&nbsp;<span class="Archivo">ISPOL.sup</span>,
+éste se carga automáticamente, recuperando así el estado de definición
+de superficies cartográficas con el que se cerró la sesión anterior. Si no encuentra
+el fichero&nbsp;<span class="Archivo">ISPOL.sup</span> se crea por defecto una superficie cartográfica constituida por las líneas 26 y 27.<br />
+      <br />
+Las cuatro opciones siguientes permiten, entre otras cosas comprobar,
+la asignación a superficies cartográficas de los diferentes tipos de líneas y
+símbolos:<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Desactivar actual]</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Esta opción desactiva todos los tipos de líneas y símbolos de la superficie cartográfica actual.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Activar actual] </td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Esta opción activa todos los tipos de líneas y símbolos de la superficie cartográfica actual.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold; width: 116px;">[Desactivar todas]<br />
+
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 556px;">Está opción desactiva todos las tipos presentes, pertenezcan a alguna superficie cartográfica o no.</td>
+    </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">[Activar todas]</span><br />
+            </td>
+            <td style="vertical-align: top;">Activa todos los tipos presentes, pertenezcan a alguna superficie cartográfica o no.</td>
+          </tr>
+
+  </tbody>
+      </table>
+
+      <br />
+Desde este cuadro también se acceden a las mismas <a href="#utiles">utilidades</a> que permiten alterar la cota de entidades gráficas.<br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="control_ttps">Control de TTPs</a></span><br />
+      <br />
+Desde este cuadro de diálogo, accesible desde el menú <span style="font-weight: bold;">Control</span> &#8594; <span style="font-weight: bold;">Control de TTPs</span> o desde el botón <img src="Imagenes/icono_control_ttps.png" style="width: 16px; height: 16px;" alt="" />, es pobile gestionar modelos digitales del terreno procedentes de <a href="EDM_topografia.html#ficheros_ttp">archivos&nbsp;<span class="Archivo">.ttp</span></a>.
+Estos modelos pueden ser utilizados en el módulo de OBRA LINEAL para la
+extracción de perfiles transversales, en el de MODELADO DE SUPERFICIES
+para aquellas utilidades que requieren uno o dos de estos modelos, o
+también para el modelo que se crea en <a href="EDM_topografia.html">TOPOGRAFÍA</a>.<br />
+      <br />
+Al cortar perfiles transversales mediante ficheros .ttp, se cortan
+perfiles contra todos los TTPs activos del cuadro de diálogo Control de
+TTPs. Se da la posibilidad de usar hasta 1000 TTPs/TTGs que se pueden cargar simultaneamente.<br />
+<br />
+El cuadro de diálogo permite cargar&nbsp;<img src="Imagenes/icono_abrir.png" style="width: 16px; height: 14px;" alt="" /> o descargar&nbsp;<img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" /> archivos, definir un
+tipo de línea para su representación y activar o desactivar su
+visualización <img src="Imagenes/icono_topo_tic.png" style="width: 20px; height: 20px;" alt="" />. También podemos almacenar la configuración actual o volver a cargar una configuración guardada.<br />
+</span>Al lado de cada&nbsp;<span class="Archivo">.ttp</span> cargado tenemos la posibilidad de editarlo acudiendo al menú de <a href="EDM_topografia.html">Topografía</a> <img src="Imagenes/icono_toolBarEstandar_topo.png" style="width: 14px; height: 16px;" alt="" />.<span style="font-weight: normal;" class="Titulo_2 Parrafo"><br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/dialogo_control_superficies.png" style="width: 610px; height: 260px;" alt="" /><br />
+      </div>
+      <br />
+También es posible seleccionar un TTP como actual. El TTP seleccionado como actual:<br />
+      <ul>
+        <li>Se utiliza para extraer la cota en el <a href="EDM_coordenadas_enganches.html#enganches">enganche</a> a TTP.</li>
+        <li>Puede tener distinta <span style="font-weight: bold;">atenuación</span> que el resto, para poder destacarlo.</li>
+        <li>Es el que se edita en <a href="EDM_topografia.html">TOPOGRAFÍA</a>.</li>
+        <li>Es el que se muestra en VIRTUAL 3D.</li></ul>
+Desde este cuadro también se acceden a las mismas <a href="EDM_control_entidades.html#utiles">utilidades</a> que permiten alterar la cota de entidades gráficas.<br />
+      <br />
+      <span style="font-weight: bold;">[Suavizar cotas]</span> nos
+permite hacer una copia del TTP actual modificando las cotas de sus
+puntos en función de las cotas de los puntos próximos, suavizando así
+las variaciones bruscas entre ellos que provocan "picos".<br />
+      <br /><span class="Parrafo"><span class="Titulo_2">
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

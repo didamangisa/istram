@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Llanuras de inundación</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LLANURAS DE INUNDACIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"> <br />
+      <div style="margin-left: 40px;"><a href="#generalidades">Generalidades</a><br />
+      </div>
+      <div style="margin-left: 80px;"><a href="#formato_csv">Formato .csv</a><br />
+      <a href="#formato_sdf">Formato .sdf</a><br />
+      <a href="#opc_generales">Opciones generales</a><br />
+      <a href="#leeves">Leeves</a><br />
+      </div>
+      <div style="margin-left: 40px;"><a href="#calc_perfiles">Cálculo por perfiles</a><br />
+      <a href="#calc_triang">Cálculo por triangulación</a><br />
+      <a href="#calc_rejilla">Cálculo por rejilla</a><br />
+      </div>
+<br /><br /><span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br /><br /><span class="Parrafo">
+      </span><span class="Parrafo">Mediante
+esta opción es posible calcular y dibujar sobre la cartografía las
+llanuras de inundación generadas por ríos y por elementos puntuales a
+una determinada cota a partir de ficheros&nbsp;<span class="Archivo">.sdf</span> de HEC-RAS<sup>®</sup> o&nbsp;<span class="Archivo">.csv</span> procedentes de una hoja de cálculo. El programa representa tanto las zonas inundadas como las islas.<br />
+      <br />
+
+      </span><div style="text-align: center;"><span class="Parrafo"><img style="width: 636px; height: 241px;" alt="" src="Imagenes/diagrama_llanuras_inund.png" /></span><br /></div><br />Al pulsar sobre el botón <span style="font-weight: bold;">[Llanuras de inundación]</span> se despliega el siguiente cuadro de diálogo:<br /><br /><div style="text-align: center;"><img style="width: 547px; height: 256px;" alt="" src="Imagenes/dialogo_llanuras_inundacion.png" /><br /></div><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="formato_csv">Formato .csv</a></span><br /><br />En dicho formato existirá una cabecera que tendrá al menos las columnas de&nbsp;<span class="Archivo">Arroyo/río</span>,&nbsp;<span class="Archivo">X</span>,&nbsp;<span class="Archivo">Y</span>,&nbsp;<span class="Archivo">AZIMUT</span> y&nbsp;<span class="Archivo">Perfil</span>,
+y a continuación tendrá tantas cotas como fuese necesario. Todas estas
+columnas han de ir separadas por punto y coma &lt;;&gt;. La última
+columna llamada&nbsp;<span class="Archivo">TEXTO</span> es utilizada
+para incluir un texto en los perfiles. El resto de las columnas puede
+tener el nombre que se desee, pero la columna del texto ha de llamarse
+obligatoriamente&nbsp;<span class="Archivo">TEXTO</span> y se admiten etiquetas de hasta 100 caracteres. A continuación se muestra un ejemplo:<br /><br /><div class="Archivo" style="margin-left: 40px;">ARROYO/RIO;X;Y;AZIMUT;Perfil;Cota (T_50);Cota (T_100);Cota (T_500);TEXTO<br />GUADARRANQUE;281744.03;4017552.41;225.05;62;11.12;12.57;14.73;<br />GUADARRANQUE;281631.09;4017280.38;235.38;61;10.85;12.24;14.22; Perfil 61<br /></div><br /><br /><span style="font-weight: bold; font-style: italic;"><a name="formato_sdf">Formato .sdf</a></span><br /><br /><img style="width: 391px; height: 339px; margin-left: 7px;" alt="" src="Imagenes/hec-ras_export.png" align="right" />Este formato es el propio del programa <span class="Parrafo">HEC-RAS<sup>®</sup></span>
+y admite varios ríos en un único fichero. Además, el programa tiene en
+cuenta los nombres de los PROFILE (PROFILE NAMES) para mostrarlos en el
+cuadro de diálogo, en la parte de cotas. Si el fichero&nbsp;<span class="Archivo">.sdf</span> viene con varias cotas para el estudio, éstas también se tienen en cuenta para la generación de la llanura de inundación.<br /><br />Para la obtención de un fichero&nbsp;<span class="Archivo">.sdf</span> que contenga toda la información que necesita ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> para su correcta lectura, dentro del programa <span class="Parrafo">HEC-RAS<sup>®</sup></span> se debe acudir al menú <span style="font-weight: bold;">File</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <span style="font-weight: bold;">Export GIS Data</span> y configurar el cuadro de diálogo según se muestra en la imagen (el cuadro puede variar según la versión).<br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <table style="text-align: left; width: 690px; height: 44px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 37px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; width: 629px; text-align: justify;">El programa <span class="Parrafo">HEC-RAS<sup>®</sup></span> ha sido desarrollado por la US Army Corps of Engineers y su descarga es libre y gratuita desde <a href="http://www.hec.usace.army.mil/software/hec-ras">http://www.hec.usace.army.mil/software/hec-ras</a>.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br /><br />
+      <span style="font-weight: bold; font-style: italic;"><a name="opc_generales">Opciones generales</a></span><br />
+      <br />
+      <table style="text-align: left; width: 691px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[RÍO] / [PUNTO]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Esta
+botón conmutable permite seleccionar el cálculo de una llanura de
+inundación provocada por un río o por un elemento puntual a una cota.
+En este último caso se necesita únicamente:<br />
+            <ul>
+              <li>Punto origen de la inundación.</li>
+              <li>Contorno límite de análisis.</li>
+              <li>Tipo línea que delimitará la inundación.</li>
+              <li>Método de cálculo (por perfiles no es permitido).</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[CSV] / [SDF]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Permite seleccionar el tipo de fichero que muestra el botón.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Mostrar etiquetas] [Ocultar etiquetas]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Permite
+desplegar un cuadro en el cual se pueden añadir textos a cada uno de
+los perfiles, y rotularlos con distintos estilos y tamaños. Este texto
+se puede crear directamente en el fichero .csv. Para que coja los datos
+de etiquetas del .csv, la última columna de éste ha de llamarse TEXTO.
+Se admiten etiquetas de hasta 100 caracteres. Un ejemplo sería:<br />
+            <br />
+            <div class="Archivo">ARROYO/RIO;X;Y;AZIMUT;PERFIL;COTA_MNN;TEXTO<br />
+COLLADO;262260.561;4004940.600;384.136;1;100.089;PK -0.000 //
+02/01/2003&nbsp;&nbsp;&nbsp;
+COLLADO;262244.430;4005035.329;14.178;2;88.099;PK -100.000 // 03/01/2003<br />
+            </div>
+            <br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Cargar]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Carga un fichero de formato&nbsp;<a href="#formato_sdf"><span class="Archivo">.sdf</span></a> ó&nbsp;<a href="#formato_csv"><span class="Archivo">.csv</span></a>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Guardar]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Salva los datos previamente cargados, en un fichero <a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Borrador]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Para ficheros <a href="MS_llanuras_inundacion.html#formato_sdf"><span class="Archivo">.sdf</span></a>,
+se cargarán solamente la información del campo WATER SURFACE EXTENTS
+para así poder mostrar en pantalla la línea de inundación que generó <span class="Parrafo">HEC-RAS<sup>®</sup></span>.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Generar]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Genera
+las láminas de inundación de las cotas tipo que se seleccionen y con
+los tipos de línea seleccionados. Cuando se generan llanuras de
+inundación se pregunta si se desea que se generen perfiles de ISTRAM <sup>®</sup>/ISPOL<sup>®</sup>. Si la respuesta es afirmativa, se crearán perfiles contra el terreno y la lámina de agua.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Deshacer]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Borra las líneas generadas para las láminas de agua.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Añadir P]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Este
+botón permite añadir un perfil. Tras pulsar sobre él se debe
+seleccionar el segmento (entre 2 perfiles ya existentes) en el que se
+desea añadir el nuevo perfil. Tras esto, se debe hacer clic sobre el
+punto en el que se desea situar y también se le debe indicar el azimut
+gráficamente.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Modificar P]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Para
+modificar un perfil no hay más que hacer clic sobre el número que lo
+etiqueta. Tras seleccionarlo, es posible modificar el punto, y
+finalmente se establecerá el azimut.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold;">[Borrar P]</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: justify; width: 562px;">Si tras pulsar sobre este botón se hace clic sobre el número de un perfil, automáticamente éste será eliminado.<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+
+      <span style="font-style: italic;"><span style="font-weight: bold;">Parámetros de cálculo</span></span><br />
+
+      <br />
+
+      <table style="text-align: left; width: 691px; height: 142px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 109px;"><span style="font-weight: bold; font-style: italic;"><a name="incluir_islas">Incluir islas</a></span></td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Activa el cálculo de islas.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">Resolución<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Permite ajustar la equidistancia para calcular perfiles.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">Semiancho de banda<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Usado
+para el método de perfiles. El programa admite un semiancho variable,
+de tal forma que se asigna a cada perfil un semiancho ignorándose por
+tanto el valor establecido como semiancho de banda. Estos semianchos
+variables se pueden salvar y recuperar mediante los botones <span style="font-weight: bold;">[Cargar]</span> y <span style="font-weight: bold;">[Guardar]</span> situados en la parte inferior a través de ficheros&nbsp;<span class="Archivo">.sma</span>.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">Superficie terreno<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">En este campo se indica la superficie de referencia.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">TIPOS DE LINEA<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Las
+tres casillas de activación de esta parte del menú permiten activar la
+representación de las tres cotas tipo que como máximo se pueden
+representar, correspondientes normalmente a periodos de retorno. Las
+líneas que se utilizan por defecto son líneas que rellenan su interior,
+adecuadas para representar láminas de agua.<br />
+            <br />
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 109px; font-weight: bold;">MÉTODO<br />
+</td>
+      <td style="vertical-align: top; text-align: justify; width: 562px;">Existen 3 métodos para abordar el problema de las llanuras de inundación:<br />
+            <ul>
+              <li><a href="#calc_perfiles">Por perfiles</a>.</li>
+              <li><a href="#calc_triang">Por triangulación</a>.</li>
+              <li><a href="#calc_rejilla">Por rejilla</a>.</li>
+            </ul>
+Todos ellos muestran resultados similares, siendo unos adecuados para
+cálculos rápidos, y otros para cálculos más precisos pero más lentos.<br />
+</td>
+    </tr>
+    
+    
+    
+    
+    
+  </tbody>
+      </table>
+
+      <br />
+
+      <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="leeves">Leeves</a></span><br />
+<br />Al importar ficheros <a href="#formato_sdf">.sdf</a> de <span class="Parrafo">HEC-RAS<sup>®</sup></span> se importan los <span style="font-style: italic;">levees</span>
+(diques) que estén declarados en él, es decir, son líneas que el agua
+NO traspasa. El usuario puede escoger el modo de importación:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Símbolo</span>: Creará un símbolo en la ubicación de cada levee con la cota de la misma. Esta opción es útil únicamente como representación.</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Línea</span>: Creará una línea uniendo los <span style="font-style: italic;">levees</span> del lado derecho y otra línea uniendo los <span style="font-style: italic;">levees</span>
+del lado izquierdo. Esta opción resulta muy útil para generar un
+recinto para el uso de los métodos de rejilla y triangulación. El
+usuario tendría dos lados del recinto y tendría que completar el resto,
+bien uniendo ambas líneas de <span style="font-style: italic;">levees</span> o bien añadiendo nuevos puntos.</li>
+      </ul>
+<br /><span class="Titulo_2"><a name="calc_perfiles">Cálculo por perfiles</a></span><br />
+      <br />
+Este método NO es adecuado para ríos con demasiadas curvaturas, pues en
+ese caso se cortarían los perfiles y los resultados podrían ser
+erróneos. Los datos que se deben introducir en este menú, para este
+primer método, son los siguientes:<br />
+      <ul>
+        <li>Mediante el botón <span style="font-weight: bold;">[Cargar]</span> se elegirá el fichero de cotas de inundación. Una vez que se haya cargado el fichero (<a href="#formato_csv"><span class="Archivo">.csv</span></a> o&nbsp;<a href="#formato_sdf"><span class="Archivo">.sdf</span></a>), en la parte central del menú se cargará un tipo de línea para cada tipo de cota leída.</li>
+      </ul>
+      <ul>
+        <li>Otros datos a configurar son la resolución, el semiancho de
+banda y la superficie del terreno. Por defecto, para todos los perfiles
+se considerará como semiancho de banda el establecido en el campo <span style="font-weight: bold;">Semiancho de banda</span>; no obstante, si se desea, se puede modificar para cada perfil en la parte derecha del menú (<span style="font-weight: bold;">semiancho variable</span>).</li>
+      </ul>
+      <ul>
+        <li>Es posible añadir, modificar y eliminar perfiles. Esto
+puede ser interesante en el caso de que el fichero cargado no tenga el
+suficiente detalle.</li>
+      </ul>
+      <ul>
+        <li>Cuando un perfil es "artificial", es decir, ha sido añadido
+o modificado por el usuario, se mostrará en color rojo. En caso de ser
+un perfil leído tal cual del fichero <a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a>, se mostrará en color azul.</li>
+      </ul>
+      <ul>
+        <li>A la hora de generar las islas, se puede seleccionar la
+cota deseada mediante la casilla de verificación correspondiente de la
+cota. Si la opción <a href="#incluir_islas"><span style="font-weight: bold; font-style: italic;">Incluir islas</span></a>
+se encuentra desactivada, se generarán los contornos de las islas en
+color rosa. En caso de encontrarse activada, se generarán las islas
+dentro del contorno de esa cota.</li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="calc_triang">Cálculo por triangulación</a></span><br />
+      <br />
+Este segundo método es el que llega a más nivel de detalle en la
+creación de islas, aunque también es el más lento. Su funcionamiento se
+basa en triangular el terreno dentro del contorno seleccionado para
+obtener las llanuras de inundación.<br />
+      <br />
+La metodología a seguir para la ejecución de este método es la siguiente:<br />
+      <ol>
+        <li>Cargar el fichero <a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a> o <a href="MS_llanuras_inundacion.html#formato_sdf"><span class="Archivo">.sdf</span></a>.</li>
+        <li>Elegir las cotas. </li>
+        <li>Activar la opción <span style="font-weight: bold; font-style: italic;">Triángulos</span>.</li>
+        <li>Dibujar una línea envolvente de algún tipo de línea que no exista en la cartografía.</li>
+        <li>Seleccionar el contorno que limitará la zona de estudio.</li>
+        <li>Establecer el valor del ancho teórico del río. Este campo
+se puede dejar con valor 0, pero se obtienen mejores resultados
+rellenado en él el valor de anchura medio del río.</li>
+        <li>Si se desea dar la cota de la superficie a los bordes de las llanuras de inundación, activar la opción <span style="font-weight: bold; font-style: italic;">Dar cotas</span>.</li>
+        <li>Pulsar el botón <span style="font-weight: bold;">[Generar]</span>.</li>
+      </ol>
+      <br />
+      <span class="Titulo_2"><a name="calc_rejilla">Cálculo por rejilla</a></span><br /><br />
+El procedimiento de este método es similar al de triángulos, pero en
+lugar de utilizar todos los puntos para la triangulación, utiliza una
+rejilla ficticia. Este método llega a mayor nivel de precisión respecto
+al método de perfiles, pero tiene una menor precisión que el método de
+triángulos. El método de rejilla supera en velocidad al método de
+triángulos obteniendo un resultado bastante bueno.<br />
+      <br />
+La metodología a seguir para la ejecución de este método es la siguiente:<br />
+      <ol>
+        <li>Cargar el fichero <a href="MS_llanuras_inundacion.html#formato_csv"><span class="Archivo">.csv</span></a> o <a href="MS_llanuras_inundacion.html#formato_sdf"><span class="Archivo">.sdf</span></a>.</li>
+        <li>Elegir las cotas.</li>
+        <li>Activar la opción <span style="font-weight: bold; font-style: italic;">Rejilla</span>.</li>
+        <li>Dibujar una línea envolvente de algún tipo de línea que no exista en la cartografía.</li>
+        <li>Seleccionar el contorno que limitará la zona de estudio.</li>
+        <li>Establecer el valor del campo rejilla. En este campo se
+establece el tamaño de cada celda cuadrada de la rejilla a utilizar
+para la triangulación. Cuando más pequeña sea más preciso será el
+resultado, pero también será más lento de conseguir.</li>
+        <li>Establecer el valor del ancho teórico del río. Este campo
+se puede dejar con valor 0, pero se obtienen mejores resultados
+rellenado en él el valor de anchura medio del río.</li>
+        <li>Si se desea dar la cota de la superficie a los bordes de las llanuras de inundación, activar la casilla <span style="font-weight: bold; font-style: italic;">Dar cotas</span>.</li>
+        <li>Pulsar el botón <span style="font-weight: bold;">[Generar]</span>.</li>
+      </ol>
+      <div class="Info" style="text-align: center;"><img style="width: 525px; height: 306px;" alt="" src="Imagenes/ejem_llanura_inundacion.png" /><br />
+      <br />
+Ejemplo de llanura de inundación<br />
+      </div>
+      <br />
+<span class="Parrafo"><span class="Parrafo" /></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Librerías</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>LIBRERÍAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="outline-width: 2px;">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br />
+      Los objetos gráficos de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+(líneas, símbolos, textos y células) tienen declarado en los ficheros&nbsp;<span class="Archivo">.edm</span> su tipo asociado, pero no la representación correspondiente. Esta
+representación está recogida en la LIBRERÍA que no es más que una
+carpeta que contiene un conjunto de ficheros, cada uno de los cuales
+declara un tipo.<br /><br />Existen así la serie de los <span style="font-style: italic;">L#</span> para
+representar las líneas, los <span style="font-style: italic;">S#</span> para los puntos, los <span style="font-style: italic;">R#</span> para los textos
+y los <span style="font-style: italic;">C#</span> para las células, donde <span style="font-style: italic;">#</span> es un número de 0 a 9999 excepto
+para los rótulos, cuyo número está limitado a 999.<br /><br />Estos
+ficheros describen las características y comandos necesarios para ser
+ejecutados ligados a un símbolo, una línea o un texto y contienen toda
+la representación gráfica que se ejecutará cada vez que un objeto de su
+tipo esté presente en el dibujo.<br /><br />En la librería, además de los anteriores, existen ficheros de configuración que afectan al estado o al comportamiento de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+en diversas operaciones, como pueden ser tablas de normativa, modos de
+dibujo de ejes de obra lineal, ficheros de configuración,&#8230;<br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+contempla el manejo de una librería "distribuida" o, si se prefiere,
+varias librerías según una escala <span style="font-weight: bold;">jerárquica</span> de búsqueda. Así, durante
+el arranque se establecen por defecto las siguientes rutas o &#8220;paths&#8221;
+para cada librería:<br /><br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; height: 27px; width: 422px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td class="Archivo" style="vertical-align: top; width: 121px;">./lib/<br />
+/ISPOL/libuser/<br />
+/ISPOL/lib/<br />
+            </td>
+            <td style="vertical-align: top; width: 283px; font-weight: bold;">Librería primaria, local o de proyecto<br />
+Librería secundaria, global o de usuario<br />
+Librería terciaria, básica o de programa</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+<br />La última es la librería base. Acompaña a cada nueva revisión de ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> y satisface todas las demandas de simbología que el programa maneja automáticamente.<br /><br />La
+segunda es la librería general del usuario y la primera es la librería
+particular de cada proyecto, pues puede haber una en cada carpeta de
+trabajo (<span class="Archivo">./lib/</span> hace referencia a una subcarpeta de la carpeta de
+trabajo).<br /><br />ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> buscará los
+objetos de librería que precise en la librería primaria <span class="Archivo">./lib</span>, lo que
+no encuentre ahí lo irá a buscar a la secundaria o general de usuario<span class="Archivo">/ISPOL/libuser/</span>, y por último busca en&nbsp;<span class="Archivo">/ISPOL/lib</span> (librería terciaria o
+de base).<br /><br />La librería local y la de usuario pueden ser carpetas vacías o incluso no existir. No obstante no es aconsejable usar ISTRAM<sup>®</sup>/ISPOL<sup>®</sup>
+sin tener al menos una librería secundaria o de usuario, para que
+recoja las modificaciones propias sin afectar a la de base, y mejor
+aún, una librería local del proyecto que permita modificar localmente
+los objetos de librería que se deseen sin afectar a los otros proyectos.<br /><br />
+      <table style="text-align: left; width: 692px; height: 50px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 36px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 588px; text-align: justify;"><span class="Info">Las
+librerías primaria y secundaria están previstas para recoger las
+variaciones del usuario, pues un fichero de librería que aparezca en la
+librería primaria oculta o sustituye a los que haya en la secundaria y
+ambos a la de base. Por ello se reservan para su utilización por los
+usuarios los tipos de líneas, símbolos y células a partir del 5000 y
+los rótulos a partir del 700.</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Desde el menú <span style="font-weight: bold;">Archivo</span> &#8594;
+      <span style="font-weight: bold;">Explorador de archivos</span>, se tiene un acceso directo a las diferentes
+librerías mediante el Explorador de archivos de Windows<sup>®</sup>, así como a la
+carpeta de trabajo actual.<br /><br />
+      <div style="text-align: center;"><img style="width: 277px; height: 252px;" alt="" src="Imagenes/acceso_libreria.png" /></div>
+<br /><br />
+      <span class="Titulo_2">Configuración de las librerías</span><br /><br />Es
+posible alterar el funcionamiento por defecto de las librerías mediante
+el menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Preferencias</span> &#8594; <span style="font-weight: bold;">Librerías</span>, que despliega el
+siguiente cuadro de diálogo:<br /><br />
+      <div style="text-align: center;"><img style="width: 533px; height: 360px;" alt="" src="Imagenes/config_libreria.png" /><br />
+      </div>
+<br />Desde aquí se
+puede alterar la jerarquía de las librerías, seleccionar otras, etc.,
+así como obtener un listado de todas las entidades gráficas mediante el
+botón <span style="font-weight: bold;">[Listar entidades]</span>.<br />
+      <br />
+Salvo que se defina otra cosa en los ficheros de congiguración ISTRAM
+utilizará por defecto como librería local la subcarpeta lib que cualga
+de la carpeta de trabajo. Sí no existe esta carpeta, ISTRAM la crea al
+arrancar.<br />
+<br />El botón <span style="font-weight: bold;">[D]</span> reasigna en cada caso
+la librería que el programa asume por defecto. Si no existe la
+ubicación por defecto de esa librería entonces, tras pulsar el botón,
+el programa pregunta por otra ubicación.<br /><br />La <span style="font-weight: bold;">librería ISSOL</span>
+(por defecto,<span class="Archivo">\ispol\libsol\</span>) es la utilizada por el módulo de VIRTUAL
+3D, y en cuanto a la ruta de <span style="font-weight: bold;">Utilidades</span>, se indica dónde se guardan los
+distintos conversores de formato usados por el programa para la
+importación/exportación de archivos.<br /><br />En resumen:<br />
+      <ul>
+        <li>En cada carpeta de trabajo puede existir (y es aconsejable que exista)
+un subdirectorio<span class="Archivo">.\lib</span> que contendrá la librería primaria o local.</li>
+      </ul>
+      <ul>
+        <li>Los nombres y rutas de las tres librerías mencionadas pueden
+modificarse y particularizarse en cada carpeta de trabajo (siempre que
+se guarde la configuración).</li>
+      </ul>
+      <ul>
+        <li>La librería básica o de programa no debe modificarse, pues una actualización la rescribiría.</li>
+      </ul>
+      <ul>
+        <li>Los nombres y direcciones de las tres librerías también pueden
+modificarse durante la ejecución del programa.</li>
+      </ul>
+
+      <span class="Parrafo"><span class="Titulo_2"> </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

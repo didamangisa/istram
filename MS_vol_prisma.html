@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Volumen por prismas</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>VOLUMEN POR PRISMAS<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo">
+	  <span class="Parrafo"><br />
+Calcula el volumen delimitado por dos superficies y un contorno
+cerrado. La línea de contorno no tiene por que pertenecer a ninguna de
+las superficies y se utiliza como directriz de un prisma vertical. <br />
+      <br />
+Este algoritmo calcula el volumen como suma de volúmenes de <span style="font-weight: bold;">prismas de
+base cuadrada</span> separando los volúmenes de desmonte y terraplén.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 650px; height: 255px;" alt="" src="Imagenes/diagrama_vol_prisma.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+      <br />
+      En la siguientes figuras se esquematiza el <span style="font-weight: bold;">concepto</span> de cubicación por prismas:<br />
+      <br />
+      </span>
+      <table style="text-align: left; height: 232px; width: 689px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 313px;"><img style="width: 296px; height: 228px;" alt="" src="Imagenes/concepto_vol_prisma_1.png" /><br />
+            </td>
+            <td style="vertical-align: top; text-align: right; width: 364px;"><img style="width: 372px; height: 223px;" alt="" src="Imagenes/concepto_vol_prisma_2.png" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="Parrafo"><br />
+      <br />
+Los parámetros de entrada solicitados por ISTRAM<sup>®</sup>/ISPOL<sup>®</sup> son, en cualquier caso:<br /></span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Superficie inferior</span> y <span style="font-weight: bold;">superficie superior</span>, lo que
+permite establecer el criterio de desmonte y terraplén de una
+superficie respecto a la otra.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Línea de contorno</span>, dentro del cual se efectuará la cubicación.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Resolución</span>, es decir, longitud del lado del prisma
+de base cuadrada. En las zonas de contorno, éste se subdivide a su vez
+en triángulos menores que se adaptan a esta línea.</span></li>
+      </ul>
+      <span class="Parrafo">
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 609px; height: 132px;" alt="" src="Imagenes/vol_prismas.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+&nbsp;<br />
+      El usuario tiene la posibilidad de <span style="font-weight: bold; font-style: italic;">Fijar un punto de la rejilla</span> cuyas
+coordenadas conozca. Dado este punto, el programa calcula el
+resto de la rejilla hasta el contorno seleccionado. Si no se activa
+esta opción, el programa calcula automáticamente una rejilla por
+defecto.<br />
+      <br />
+La comparación entre ambas superficies, dentro del contorno indicado,
+da la medición de desmonte (superficie definida como inferior por
+encima) o terraplén (superficie definida como inferior por debajo). El
+volumen es calculado como suma de volúmenes de prismas de base cuadrada.<br />
+      <br />
+La opción <span style="font-weight: bold; font-style: italic;">Dibujar los prismas</span>,
+vuelca los prismas usados para el cálculo sobre la cartografía con los
+tipos de línea indicados para desmonte y para terraplén (por defecto,
+L54 y L60 respectivamente). El botón <span style="font-weight: bold;">[B]</span> borra esos prismas.<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img style="width: 536px; height: 355px;" alt="" src="Imagenes/ejem_vol_prisma.png" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo">
+
+      <br />
+      </span><img style="width: 234px; height: 289px; margin-left: 7px;" alt="" src="Imagenes/opciones_vol_prisma.png" align="right" /><span class="Parrafo"><a name="opc">El botón <span style="font-weight: bold;">[Opciones]</span> desplega un cuadro de diálogo en el que el usuario puede seleccionar qué mediciones se listarán tras pulsar el botón <span style="font-weight: bold;">[Generar medición]</span>.<br />
+      <br />
+Si se activa la casilla <span style="font-weight: bold; font-style: italic;">Listar cotas</span>, en el listado se
+incluye la coordenada central de cada prisma y las cotas promedio en
+cada prisma de la superficie inferior y de la superficie superior.<br />
+      <br />
+Al listar esta casilla también se lista el porcentaje de participación
+del prisma en el volúmen de desmonte y en el volúmen de terraplén. La
+suma será inferior a 100, en los prismas atravesados por el contorno.<br />
+<br />
+      </a></span><span class="Parrafo">
+      </span><span class="Parrafo"><table style="text-align: left; width: 452px; height: 51px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; width: 41px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; width: 630px; text-align: justify;"><span class="Parrafo"><span class="Info">Debe de tenerse en cuenta que, si se activa la opción <span style="font-weight: bold;">Listar cotas</span>,
+el listado puede ser muy largo, por lo que si en la cubicación se han
+usado más de un millón de prismas, esta información no se obtendrá.</span></span></td>
+          </tr>
+        </tbody>
+      </table></span><br />
+
+      <span class="Parrafo">El resultado se refleja en la barra de estado en forma de volúmenes de
+desmonte y terraplén, además de aparecer en el listado&nbsp;<span class="Archivo">volprisma.res</span> el
+promedio del desmonte y terraplén junto con otra información de
+interés. <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><span class="Archivo">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =====================================================<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * *
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+VOLUMEN POR
+PRISMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* * *<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =====================================================<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Superficie definida como primera (1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Superficie 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Superficie definida como segunda (2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Superficie 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Resolución
+empleada&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.000<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Area del contorno
+cubicado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+112893.705<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perímetro del contorno
+cubicado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1326.858<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Area 3D de la superficie
+(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+127117.545<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Area 3D de la superficie
+(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+121068.310<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Area en
+Desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+54010.780<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Area en
+Terraplén&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+57600.255<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desnivel
+promedio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+5.239<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desnivel promedio en
+desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6.603<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desnivel promedio en
+terraplén&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4.077<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volúmenes totales resultantes<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volumen
+Desmonte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+356651.793<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volumen
+Terraplén&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+234815.056<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volumen
+Desmonte-Terraplén&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+121836.737<br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cota Inferior superficie
+(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+24.000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cota superior superficie
+(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+83.000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cota Inferior superficie
+(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+26.614<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cota superior superficie
+(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+78.766<br />
+      <br />
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Xc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Yc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Z1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Z2&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+------------ ------------&nbsp;&nbsp; ----------&nbsp;&nbsp; ----------<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104602.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.416&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 76.341<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104603.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+76.213&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 76.131<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104604.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+75.849&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.779<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104605.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+75.526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.538<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104606.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+75.210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.346<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104607.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74.847&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75.160<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+601433.708&nbsp; 4104608.497&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+74.350&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 74.848<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<br /></span>
+      </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span>
+      </span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

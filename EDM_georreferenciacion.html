@@ -1,0 +1,1292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Georreferenciación</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>GEORREFERENCIACIÓN<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo">
+      <div style="margin-left: 40px;"><br />
+      <a href="#generalidades">Generalidades</a><br />
+      <a href="#crs">Sistema de referencia de coordenadas (C.R.S.)</a><br />
+      </div>
+
+      
+      
+      <div style="margin-left: 80px;"><a href="#transf_crs">
+Transformaciones entre CRSs</a><br />
+      <div style="margin-left: 40px;"><a href="#rejilla">Transformaciones
+con archivos de rejilla. Transformación ED50 a ETRS89 y su inversa</a><br />
+      <a href="#kml">Exportación a ficheros .kml de Google Earth<sup>®</sup></a><br />
+      <a href="#transf_local">Definición manual de transformaciones
+locales entres CRSs</a><br />
+      <a href="#transf_crs_tiempo_real_helmert_3D">Transformación entre CRSs en tiempo real con corrección por Helmert 3D</a><br />
+      </div>
+      </div>
+      
+      <div style="margin-left: 40px;"><a href="#Utilidades">Utilidades</a><br />
+      <div style="margin-left: 40px;"><a href="#huso">Cambio de huso</a><br />
+      <a href="EDM_georreferenciacion.html#utm_geograficas">Paso de UTM a geográficas y viceversa</a><br />
+      <a href="#imp_coord_geograf">Importación de coordenadas geográficas</a><br />
+      <a href="#coord_geocentricas">Paso de coordenadas geocéntricas al sistema de proyección del CRS actual</a><br />
+      <a href="#Listar_Coorde">Listar Coordenadas Geográficas</a><br /><a href="#Geograficas_a_XY">Geograficas a XY</a><br />
+      </div>
+
+      
+      
+      <a href="#Compensaciones_UTM">Compensaciones UTM</a><br />
+      <div style="margin-left: 40px;"><a href="#compens_radiaciones">Compensaciones para el cálculo de
+radiaciones</a><br />
+      <a href="#correcciones_replanteo">Correcciones para replanteo de
+puntos</a><br />
+</div></div>
+      <div style="margin-left: 40px;"><a href="EDM_georreferenciacion.html#predefinidos">Modo predefinidos<br />
+      </a></div>
+      <div style="margin-left: 40px;">
+      <div style="margin-left: 40px;">
+      </div>
+
+
+      
+      </div>
+
+
+      
+      
+      
+      
+      
+      <br />
+      <br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+      <br />
+      <img style="width: 117px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/acceso_CRS.png" align="right" />Este
+apartado describe cómo configurar el sistema de referencia de
+coordenadas (CRS) en el que se está trabajando, y cómo hacer cambios de
+CRS A este cuadro de diálogo se accede tanto desde <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Sistema referencia coordenadas</span> como
+desde el icono HUSO de la parte inferior. <br />
+      <br />
+      <br />
+      <div style="text-align: center;"><img style="width: 460px; height: 91px;" alt="" src="Imagenes/dialogo_proyeccion.png" /><br />
+      </div>
+      <br />
+El cuadro de diálogo con el que nos encontramos al entrar nos permite a su vez:<br />
+      <ul>
+        <li>Seleccionar un C.R.S. desde la base de datos completa <img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%2520base%2520datos%2520completa.png" />, desde los <span style="font-weight: bold;">favoritos</span> <img style="width: 20px; height: 20px;" alt="" src="Imagenes/icono%20favoritos.png" />, desde archivo&nbsp;<span class="Archivo">.crs</span> o acceder al cuadro de diálogo completo <img style="width: 50px; height: 20px;" alt="" src="Imagenes/icono%20crs.png" />.
+Al seleccionar un nuevo CRS si no tiene ninguna transformación
+asociada, se trata de buscar alguna transformación asociada a su CRS de
+base.</li>
+        <li>Inicializar:&nbsp;<img style="width: 16px; height: 17px;" alt="nuevo" src="Imagenes/icono_toolbarEstandar_nuevo.png" />&nbsp;
+en modo usuario, descarga el CRS actual u origen. En modo predefinidos
+toma el CRS predeterminado. En ninguno de los dos casos realiza
+transformación alguna con la información cargada (cartografía, ttps,
+etc...).<br />
+        </li>
+
+      </ul>
+      <ul>
+        <li>Acceder a otro cuadro de diálogo para definir o modificar los parámetros para las <span style="font-weight: bold;">compensaciones UTM</span> en los cálculos de las libretas topográficas o en la generación de listados de replanteo.</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Definir las compensaciones a utilizar en los cálculos de
+distancias y cotas de la libreta topográfica.</li>
+          <li>Definir el modo de corrección a aplicar en la compensación
+de poligonales en la libreta topográfica.</li>
+          <li>Definir los parámetros para la determinación de los
+coeficientes de anamorfosis tanto para los cálculos de la libreta
+topográfica como para los <a href="OL_listados_replanteos.html">listados
+de replanteo</a> de los módulos de OBRA LINEAL y MODELADO DE
+SUPERFICIES.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Acceder a otro cuadro de diálogo de <span style="font-weight: bold;">utilidades</span> como el cambio de Huso o el tratamiento de coordenadas geográficas o geocéntricas.</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>Cambio de Huso</li>
+          <li>Pasar de coordenadas X,Y a Geográficas<br />
+          </li>
+          <li>Cargar ficheros de bases en coordenadas geográficas</li>
+          <li>Pasar de coordenadas Geocéntricas a X,Y,Z.</li>
+        </ul>
+      </ul>En el cuadro de diálogo de gestión de CRSs dispones de las siguientes posibilidades:<br />
+      <ul>
+        <li>Se puedeexpandir/contraer el cuadro de diálogo ocultando
+los datos de : Datum, Elipsoide, Meridiano, Sistema, Proyección y SR
+Vertical.</li>
+      </ul>
+      <ul>
+        <li>Posibilidad de cargar un CRS Actual sin modificar el CRS destino.</li>
+      </ul>
+      <ul>
+        <li>Posibilidad de cambiar el CRS Destino sin alterar el CRS Actual</li>
+      </ul>
+      <ul>
+        <li>Posibilidad de selecconar una transformación de la base de datos entre el CRS Actual y CRS Destino presentes.</li>
+      </ul>
+      <ul>
+        <li>Posibilidad de Guardar un archivo .crs simplificado (en la
+librería) con los Códigos de los CRSs Actual y Destino y los parámetros
+de la transformación. </li>
+      </ul>
+
+
+      <br />
+      <span class="Titulo_2"><a name="crs">Sistema de referencia de
+coordenadas (CRS)</a></span><br />
+      <br />
+Pulsando sobre el botón <span style="font-weight: bold;">[C.R.S.]</span>,
+se accede al cuadro de diálogo que permite particularizar el sistema de
+referencia usado o realizar conversiones entre sistemas de referencia
+de coordenadas.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 169px;" alt="" src="Imagenes/dialogo_crs.png" /><br />
+      </div>
+      <br />Clicando el la casilla CRS desplegamos el menú:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 357px;" alt="" src="Imagenes/crs_largo.png" /><br />
+      </div>
+      <br />
+Los <span style="font-weight: bold;">sistemas de referencia de
+coordenadas</span> o <span style="font-weight: bold;">CRS</span>
+(acrónimo anglosajón de Coordinates Reference System) están
+normalizados por la OGP (International Association of Oil and Gas
+Producers), hasta 2005 conocida como EPSG (European Petroleum Survey
+Group), y más concretamente, por el OGP Surveying and Positioning
+Committee que regularmente actualiza y publica una base de datos con
+todos los parámetros de los diferentes sistemas de referencia de
+coordenadas y descripciones para las transformaciones de coordenadas.
+Esta base de datos es de libre distribución y se encuentra disponible
+en <a href="http://www.epsg.org">http://www.epsg.org</a>. <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>
+hace uso de esta base de datos (y la actualiza periódicamente), para
+poder configurar y realizar las modificaciones que se describen más
+adelante. La última actualización que existe en el programa que hace
+referencia a la base de datos de CRS, Datums, Elipsoides, Meridianos,
+Proyecciones, Sistemas de Coordenadas y Transformaciones entre CRS es
+la EPSG V10.051 de Enero 2022.<br />
+      <br />
+Un CRS queda definido por un <span style="font-weight: bold;">datum</span>,
+un tipo de <span style="font-weight: bold;">sistema de coordenadas</span>
+y un tipo de <span style="font-weight: bold;">proyección</span>, según
+muestra el siguiente esquema:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 490px; height: 238px;" alt="" src="Imagenes/esquema_crs.png" /><br />
+      </div>
+      <br />
+Un datum, a su vez, queda definido por un <span style="font-weight: bold;">elipsoide</span> y por un <span style="font-weight: bold;">meridiano</span>
+de referencia. Así, por ejemplo, el CRS ED50 usa como datum el European
+Datum 1950 (también llamado, a su vez, ED50 que da nombre al CRS),
+tiene como elipsoide el Internacional 1924 (también llamado elipsoide
+de Hayford 1909) y meridiano de referencia el de Greenwich.<br />
+      <br />
+En cuanto al sistema de coordenadas, éste puede ser <span style="font-weight: bold;">esférico</span> (apenas usado) o <span style="font-weight: bold;">elipsoidal</span>
+(las coordenadas naturales son latitud, longitud y, si no se usa un
+sistema vertical, también cota). Si, en el caso de un sistema
+elipsoidal se define una proyección concreta (por ejemplo, fijando el
+huso para UTM), entonces se trata de un sistema <span style="font-weight: bold;">cartesiano</span>
+(las coordenadas naturales con X, Y y/o Z). Así, por ejemplo, si el CRS
+elegido es un ED50 específico para un huso (por ejemplo, el ED50 / UTM
+zone 30N de código 23030), el sistema pasa a ser cartesiano.<br />
+      <br />
+La coordenada Z puede estar calculada según uno de estos sistemas o
+bien de manera independiente mediante un sistema de coordenadas
+unidimensional <span style="font-weight: bold;">vertical</span> (caso
+del European Terrestial Reference System 1989, ETRS89, de uso obligado
+en España a partir del 2015).<br />
+      <br />
+El tipo de <span style="font-weight: bold;">proyección</span> consta
+de una operación. Las principales operaciones existentes son:<br />
+      <div style="margin-left: 40px;">
+      <table style="text-align: left; width: 652px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 282px;">
+            <ul>
+              <li>Mercator (1SP)</li>
+              <li>Mercator (2SP)</li>
+              <li>Transverse Mercator (UTM y Gauss-Kruger)<br />
+              </li>
+              <li>Cassini-Soldner&nbsp;&nbsp;&nbsp; </li>
+            </ul>
+            </td>
+            <td style="vertical-align: top; width: 350px;">
+            <ul>
+              <li>Oblique Mercator</li>
+              <li>Hotine Oblique Mercator</li>
+              <li>Lambert Conical (1SP)</li>
+              <li>Lambert Conical (2SP)</li>
+              <li>Oblique Stereographic</li>
+              <li>Krovak (9819)</li>
+              <li>Krovak orientada al norte (1041)</li>
+              <li>Disponemos de la Operación 9822:ALBERS EQUAL AREA,
+utilizada por algunas proyecciones como p.e. 19984:British Columbia
+Albers, definida para el CRS 3005: NAD83/BC Albers.<br />
+              </li>
+
+
+            </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+Cada operación, a excepción de la UTM, lleva asociada unos parámetros.
+Por ejemplo, las operaciones Transverse Mercator y Oblique
+Stereographic usan los siguientes parámetros:<br />
+      <ul>
+        <li>Latitud del origen natural</li>
+        <li>Longitud del origen natural</li>
+        <li>Factor de escala del origen natural</li>
+        <li>Falso Este</li>
+        <li>Falso Norte</li>
+      </ul>
+Si en el cuadro de diálogo se pulsa sobre el botón <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span>, se despliega
+la siguiente tabla:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 169px;" alt="" src="Imagenes/selec_crs.png" /><br />
+      </div>
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 231px;" alt="" src="Imagenes/datum_tabla.png" /><br />
+      </div>
+<br />
+En dicha tabla, la primera columna corresponde al código identificativo
+del CRS (códigos establecidos por la antigua EPSG, actual OGP), la
+segunda columna al nombre del CRS, la tercera al alias (es decir, otro
+nombre por el que se conoce al CRS) y después se disponen los códigos
+identificativos (según la OGP) del datum, sistema de coordenadas y tipo
+de proyección de los que se compone el CRS.<br />
+      <br />
+Para seleccionar en esta tabla y cargar el CRS marcado, hay que pulsar el botón&nbsp;<span class="Parf_negrita">[Seleccionar: xxxxx]</span><br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 23px;" border="0" cellpadding="0" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Popdemos tener una lista de CRS favoritos. el usuario puede ir añadiendo a esta lista el CRS actual.<br />
+            </td>
+            <td style="vertical-align: top;"><img style="width: 101px; height: 40px;" alt="" src="Imagenes/crs_favoritos.png" align="right" hspace="5" /><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<br />
+Si se hubiera pulsado sobre el botón <span style="font-weight: bold;">[Datum]</span>,
+entonces se habría desplegado la misma tabla pero filtrada según todos
+los CRS que tuvieran el datum indicado justo debajo.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 333px; height: 78px;" alt="" src="Imagenes/crs_datum.png" /><br />
+      </div>
+      <br />
+Basta con seleccionar un CRS y cerrar esta tabla para que el programa,
+tras pedir confirmación al usuario, cambie el CRS.<br />
+      <br />
+De la misma forma, al pulsar sobre el botón <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span>
+para el datum, se abre una nueva tabla con todos los datums existentes,
+indicando para cada uno su correspondiente código identificativos según
+la OGP, nombre, alias y los códigos identificativos del elipsoide y
+meridiano usados. De nuevo, basta con seleccionar uno para que quede
+establecido tras cerrar la tabla y ser confirmado por el usuario.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 231px;" alt="" src="Imagenes/selec_datum.png" /><br />
+      </div>
+      <br />
+En este caso, si se hubiera pulsado sobre el botón <span style="font-weight: bold;">[Elipsoide]</span> la tabla estaría
+filtrada según todos los datums que hagan uso del elipsoide indicado
+más abajo.<br />
+      <br />
+El sistema de coordenadas indica el usado para el CRS seleccionado. El
+botón <span style="font-weight: bold;">[ver]</span>
+simplemente muestra la tabla con los códigos OGP identificativos para
+cada sistema, sin dar opción al usuario a cambiar este dato por no
+tener sentido.<br />
+      <br />
+En cuanto al sistema de proyección empleado, el botón <span style="font-weight: bold;">[ver]</span> despliega la siguiente tabla a
+modo informativo:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 255px;" alt="" src="Imagenes/crs_proyecciones.png" /><br />
+      </div>
+      <br />
+En ella se puede ver el código identificativo según la OGP para el
+sistema de proyección, el nombre de dicho sistema de proyección, el
+código y el nombre correspondiente a la operación que usa el sistema y
+los parámetros del mismo.<br />
+      <br />
+Para aquellos CRS que no tienen asociada una proyección concreta se
+entiende que se utiliza una proyección UTM en el huso
+indicado.&nbsp;&nbsp; <br />
+      <br />
+Finalmente, y volviendo al datum, puede seleccionarse tanto el
+elipsoide como el meridiano de referencia. Al pulsar sobre el botón <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span>
+correspondiente al elipsoide, la tabla que se despliega es la siguiente:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 682px; height: 255px;" alt="" src="Imagenes/crs_elipsoides.png" /><br />
+      </div>
+      <br />
+En ella se muestra el código identificativo (según la OGP) del
+elipsoide, el nombre y alias del mismo, los radios mayor y menor y la
+inversa del coeficiente de achatamiento. Tras seleccionar uno y cerrar
+la tabla, éste pasará a ser el elipsoide de trabajo tras confirmación
+del usuario.<br />
+      <br />
+En el caso del meridiano, al pulsar sobre el botón <span style="font-weight: bold;">[ver]</span> se muestra, de manera
+informativa, el código OGP, el nombre del meridiano y su longitud
+relativa al meridiano de Greenwich.<br />
+      <br />
+Utilizando, por tanto, este cuadro de diálogo, es posible establecer el
+CRS de la cartografía con la que se está trabajando. En un fichero&nbsp;<span class="Archivo">.edm</span>/<span class="Archivo">.edb</span> se
+guarda tanto el CRS como el huso y la transformación de coordenadas
+(que se explica a continuación).<br />
+      <br />
+      <table style="text-align: left; width: 692px; height: 27px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 35px;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td class="Info" style="vertical-align: top; text-align: justify; width: 637px;"><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span> establece
+por defecto el C.R.S. 4258 (ETRS89), a no ser
+que el EDM ya tenga uno asociado o esté indicado otro distinto en el
+archivo de configuración del programa.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+&nbsp;&nbsp;&nbsp; <br />
+      <span style="font-weight: bold; font-style: italic;"><a name="transf_crs"> Transformaciones entre CRSs</a></span><br />
+      <br />
+      <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>contempla
+las operaciones Transverse Mercator (UTM y Gauss-Kruger),
+oblicua estereográfica y Lambert cónica 2SP (2 paralelos estándar,
+utilizada por ejemplo el código 2154: RGF93/Lambert-93 de uso frecuente
+en Francia) de
+cara a la transformación de coordenadas. La elección de cualquier otra
+provocará un mensaje de aviso. Si necesita cualquier otra operación
+para un sistema de proyección, no dude en ponerse en contacto con
+Buhodra Ingeniería, S.A. para que se le programe.<br />
+      <br />
+La transformación de coordenadas afecta a la cartografía, a la <a href="EDM_topografia.html">topografía</a>, a las <a href="EDM_imagenes.html">imágenes</a> y si se está en el menú&nbsp;<a href="OL_planta_diseno.html">de OBRA LINEAL, también a los </a><a href="OL_planta_diseno.html">ejes en planta</a>, al archivo de <a href="OL_lineas_frontera.html">lineas de frontera</a>,
+al archivo de Obras de Fábrica (embocadura y desagüe) y a las Líneas 3D
+de las Secciones Tipo de los taludes de Desmonte, Terraplén o Cunetas. También afecta a la transformación de las
+coordenadas de las bases cargadas en el menú de replanteo de Obras
+Lineales.<br />
+      <br />
+La transformación tiene lugar entre coordenadas geocéntricas, de tal
+manera que sigue el siguiente esquema:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 590px; height: 57px;" alt="" src="Imagenes/esquema_transf_crs.png" /><br />
+      </div>
+      <br />
+El paso de coordenadas cartesianas a geográficas sólo es necesario si
+el sistema de coordenadas natural del CRS es cartesiano.<br />
+      <br />
+Para realizar una transformación estándar de coordenadas es necesario
+seguir los siguientes pasos:<br />
+      <ol>
+        <li>Seleccionar una transformación estándar. Estas
+transformaciones están tabuladas según la OGP. Al pulsar el botón <span style="font-weight: bold;">[&nbsp;&nbsp;&nbsp; &#8230;]</span>
+se despliega toda la tabla, identificando cada transformación con un
+código y mostrándose además el nombre de dicha transformación, la zona
+de uso, los códigos de los CRS origen y destino y los siete parámetros
+de transformación Helmert de coordenadas geocéntricas (traslación de
+ejes en metros, rotación de ejes en segundos sexagesimales y factor de
+escala en partes por millón). Es aconsejable escoger primero el CRS
+origen y luego pulsar sobre el botón <span style="font-weight: bold;">[CRS]</span>
+para que las transformaciones aparezcan filtradas según el CRS origen.</li>
+      </ol>
+      <ol start="2">
+        <li>Si el CRS origen, destino o ambos usan proyección UTM,
+entonces habrá que especificar el huso de trabajo, de lo contrario, se
+ignorará este dato. Si se está trabajando en el hemisferio sur, será
+necesario indicar el valor del huso con signo negativo.</li>
+      </ol>
+      <ol start="3">
+        <li>Finalmente, basta con pulsar sobre el botón <span style="font-weight: bold;">[Transformar]</span>
+para ejecutar la transformación de coordenadas. Una vez que se ha
+efectuado, el programa intercambia automáticamente los CRS origen y
+destino, lo que permite al usuario efectuar la transformación inversa
+(es decir, volver a las coordenadas originales) simplemente con pulsar
+de nuevo el mismo botón.</li>
+      </ol>
+      <div style="text-align: center;"><img style="width: 675px; height: 84px;" alt="" src="Imagenes/dialogo_crs_transf.png" /><br />
+      </div>
+      <br />
+El botón <span style="font-weight: bold;">[Intercambiar]</span>
+permite
+revertir la transformación. Esto es útil, por ejemplo, cuando se desea
+pasar del CRS WGS 84 al ED50. El usuario cargará la transformación de
+código 1145 (que es la inversa) y pulsará dicho botón.<br />
+      <br />
+El botón <span style="font-weight: bold;">[Nueva]</span> permite al
+usuario definir unos parámetros de
+transformación local, aunque limitados únicamente a una traslación de
+los ejes geocéntricos (<span style="font-weight: bold;">dX</span>, <span style="font-weight: bold;">dY</span>, <span style="font-weight: bold;">dZ</span>).
+En el apartado <a href="#kml"><span style="font-style: italic;">Exportación a ficheros .kml de Google Earth</span><sup style="font-style: italic;">®</sup></a>
+se explica cómo hacer uso de esta
+opción.<br />
+      <br />
+      <br />
+      <a name="rejilla">TRANSFORMACIONES CON ARCHIVOS DE REJILLA</a><br />
+      <br />
+      <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>
+permite realizar una trasformación entre CRSs
+utilizando archivos de rejilla en formato NTV2. La librería del
+programa incorpora las siguientes rejillas asociadas a transformaciones:<br />
+      <br />
+      <table style="text-align: left; width: 618px; height: 165px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; text-align: center; height: 30px; font-weight: bold;">NOMBRE
+DEL ARCHIVO<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold;">TRANSFORMACIÓN<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold;">PUBLICADO
+POR<br />
+            </td>
+            <td style="vertical-align: top; text-align: center; font-weight: bold;">ÁMBITO
+DE APLICACIÓN<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">peninsula_ED50_ETRS89.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ED50 &#8594;
+ETRS89<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">I.G.N.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Península
+Ibérica<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">peninsula_ETRS89_ED50.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ETRS89
+&#8594; ED50<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Buhodra
+Ingeniería, S.A.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Península
+Ibérica<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">cat_ED50_ETRS89.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ED50 &#8594;
+ETRS89</td>
+            <td style="vertical-align: top; text-align: center;">I.C.C.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Cataluña<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">cat_ETRS89_ED50.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ETRS89
+&#8594; ED50</td>
+            <td style="vertical-align: top; text-align: center;">Buhodra
+Ingeniería, S.A.</td>
+            <td style="vertical-align: top; text-align: center;">Cataluña<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">baleares_ED50_ETRS89.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ED50 &#8594;
+ETRS89</td>
+            <td style="vertical-align: top; text-align: center;">I.G.N.<br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">Islas
+Baleares<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center;"><span class="Archivo">baleares_ETRS89_ED50.gsb</span><br />
+            </td>
+            <td style="vertical-align: top; text-align: center;">ETRS89
+&#8594; ED50</td>
+            <td style="vertical-align: top; text-align: center;">Buhodra
+Ingeniería, S.A.</td>
+            <td style="vertical-align: top; text-align: center;">Islas
+Baleares<br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+Al activar la opción <span style="font-weight: bold; font-style: italic;">Rejilla</span>, se pide
+seleccionar el fichero y desde
+éste, se leen los nombres de los CRSs origen y destino. Al pulsar <span style="font-weight: bold;">[Transformar]</span> se calcula
+para cada punto el incremento de latitud y de
+longitud que le corresponden mediante una interpolación bilineal de los
+valores asociados a los cuatro nodos de la rejilla que lo envuelven.<br />
+      <br />
+      <img style="width: 314px; height: 55px; margin-right: 7px;" alt="" src="Imagenes/crs_rejilla_z.png" align="left" />Las rejillas&nbsp;<span class="Archivo">.gsb</span>
+sólo tienen efecto sobre las coordenadas X e
+Y. Sin embargo, también existen rejillas para transformaciones del
+      <span style="font-weight: bold;">sistema de referencia vertical</span> debidas a la ondulación del geoide
+(aportan la altura del geoide sobre el elipsoide).<br />
+      <br />
+Estos archivos tienen extensión&nbsp;<span class="Archivo">.gzb</span>, y en la librería se incluyen los archivos&nbsp;<span class="Archivo">EGM08_REDNAP.gzb</span> (genérico para la Península Ibérica),&nbsp;<span class="Archivo">EGM08_REDNAP_Canarial.gzb</span> (para las Islas Canarias) y el&nbsp;<span class="Archivo">EGM08_cat.gzb</span> (para la zona de Cataluña).<br />
+      <br />
+En nuestra libreria hay archivos para la transformacion de CRS
+utilizando rejillas de datos en formato NTV2, para la Peninsula y
+Baleares publicados por el IGN, y para Cataluña por el ICC. Hay dos
+versiones, los actuales publicados en 2008 y 2009, y los antiguos que
+han quedado obsoletos, publicados en 2003 y 2005. Habíamos quitado de
+nuestras librerías la version antigua; pero para proyectos que las
+hayan&nbsp; utilizado, volvemos a incluirlas con nombres de archivo que
+las identifiquen con más claridad.<br />
+      <br />
+ANTIGUAS: peninsula_2003.gsb; INV_peninsula_2003.gsb; baleares_2005.gsb; INV_baleares_2005.gsb<br />
+      <br />
+ACTUALES:peninsula_ED50_ETRS89.gsb;peninsula_ETRS89_ED50.gsb;baleares_ED50_ETRS89.gsb;
+baleares_ETRS89_ED50.gsb; cat_ED50_ETRS89.gsb; cat_ETRS89_ED50.gsb.<br />
+<br />
+      <a name="kml">EXPORTACIÓN A FICHEROS .kml DE GOOGLE EARTH<sup>®</sup></a><br />
+      <br />
+La exportación de ficheros .kml se explica <a href="EDM_exportacion.html#kml">aquí</a>.<br />
+      <br />
+      <br />
+      <a name="transf_local">DEFINICIÓN MANUAL DE TRANSFORMACIONES
+LOCALES ENTRE CRSs</a><br />
+      <br />
+      <img style="width: 116px; height: 74px;" alt="" src="Imagenes/crs_local.png" align="right" hspace="4" /><span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>®</sup></span>
+posibilita que los usuarios definan determinados CRSs
+locales así como transformaciones entre CRSs. El uso de un fichero de
+usuario es posible a través del botón <span style="font-weight: bold;">[Cargar]</span>.<br />
+      <br />
+Al arrancar <span class="Parrafo">ISTRAM<sup>®</sup>/ISPOL<sup>® </sup></span>en
+vacío, o al cargar un archivo sin CRS predeterminado o con la opción
+Archivo &gt; Nuevo, se descarga la información del CRS Actual y no se
+define ningún CRS por defecto.<br />
+      <br />
+Al cargar un CRS o una Transformación desde un archivo .crs, se nos
+muestra el nombre del archivo en el cuadro de diálogo CRS. Una vez
+definido un CRS Actual, si guardamos un archivo .edm o un binario .edb
+o la copia de seguridad entonces queda guardado con ellos el nombre del
+archivo CRS e identificado por tanto con el CRS Actual.<br />
+De este modo al iniciar una nueva sesión o al cargar el archivo .edm o
+el .edb se establece el sistema de referencia de coordenadas definido
+en aquel archivo .crs.<br />
+      <br />
+En la librería de programa se incluyen varios ficheros de ejemplo.&nbsp;<span class="Archivo">ElCobre.crs</span>, es el más simple de
+todos:&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Definición de un CRS mediante una nueva proyección.<br />
+# Se define el nombre del CRS y el nombre y <br />
+# parámetros de la proyección.<br />
+# El DATUM (ELIPSOIDE y MERIDIANO), el SISTEMA y la<br />
+# OPERACIÓN deben ser códigos de la base de datos.<br />
+# También se define aquí el CRS destino y el HUSO.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+WGS8 84 / EL COBRE / UTM zone 19S<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;SISTEMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+4400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Cartesian)<br />
+&nbsp;OPERACION&nbsp;&nbsp;&nbsp;&nbsp;
+9807&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transverse Mercator<br />
+&nbsp;PROYECCION&nbsp;&nbsp;&nbsp; EL COBRE<br />
+&nbsp;Lat.Orig.Nat&nbsp; 0.000000000<br />
+&nbsp;Lon.Orig.Nat&nbsp; -70.5000000<br />
+&nbsp;Fac.Esc.O.N.&nbsp; 1.000188147<br />
+&nbsp;FalsoEste&nbsp;&nbsp;&nbsp;&nbsp; 200000.0000<br />
+&nbsp;FalsoNorte&nbsp;&nbsp;&nbsp; 7000000.000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_destino&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;HUSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (19S)<br />
+#----------------------------------------------------<br />
+&nbsp;FIN<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+El fichero&nbsp;<span class="Archivo">Oviedo.crs</span> también supone
+un buen ejemplo de uso, pues ya usa los parámetros de transformación
+(aunque sólo los de traslación,
+por lo que se trata de una transformación de tres parámetros):<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Definición de un CRS mediante una nueva proyección.<br />
+# Se define el Nombre del CRS y el nombre y <br />
+# parámetros de la proyección.<br />
+# El DATUM (ELIPSOIDE y MERIDIANO), el SISTEMA y la<br />
+# OPERACIÓN deben ser códigos de la base de datos.<br />
+# También se define aquí el CRS destino y el HUSO.<br />
+# Puede también definirse una transformación de 3 o 7 parámetros<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ED50 / OVIEDO<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6230&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (European Datum 1950)<br />
+&nbsp;SISTEMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6422&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ellipsoidal)<br />
+&nbsp;OPERACION&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+&nbsp;PROYECCION&nbsp;&nbsp;&nbsp; OVIEDO<br />
+#Lat.Orig.Nat&nbsp; 0.000000000<br />
+#Lon.Orig.Nat&nbsp; 0.000000000<br />
+#Fac.Esc.O.N.&nbsp; 0.000000000<br />
+#FalsoEste&nbsp;&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#FalsoNorte&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_destino&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;HUSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30<br />
+&nbsp;TRANSFORMACION ED50 a WGS84 (Oviedo)<br />
+&nbsp;dX -141.00000000&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY -102.00000000&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ -165.00000000&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; segundos<br />
+&nbsp;rY&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; segundos<br />
+&nbsp;rZ&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; segundos<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp; 0.00000000&nbsp;&nbsp;&nbsp; Partes Por
+Millon<br />
+#----------------------------------------------------<br />
+&nbsp;FIN<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+El fichero&nbsp;<span class="Archivo">Cat_ED50_WGS84.crs</span> permite
+efectuar transformaciones locales de siete parámetros:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Definición de un CRS mediante una nueva proyección.<br />
+# Se define el Nombre del CRS y el nombre y <br />
+# parámetros de la proyección.<br />
+# El DATUM (ELIPSOIDE y MERIDIANO), el SISTEMA y la<br />
+# OPERACION deben ser códigos de la base de datos.<br />
+# También se define aquí el CRS destino y el HUSO.<br />
+# Puede también definirse una transformación de 3 o 7 parámetros<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ED50 / CATALUÑA<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6230&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (European Datum 1950)<br />
+&nbsp;SISTEMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6422&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ellipsoidal)<br />
+&nbsp;OPERACION&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+&nbsp;PROYECCION&nbsp;&nbsp;&nbsp; CATALUÑA<br />
+#Lat.Orig.Nat&nbsp; 0.000000000<br />
+#Lon.Orig.Nat&nbsp; 0.000000000<br />
+#Fac.Esc.O.N.&nbsp; 0.000000000<br />
+#FalsoEste&nbsp;&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#FalsoNorte&nbsp;&nbsp;&nbsp; 0.000000000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_destino&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;HUSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31<br />
+&nbsp;TRANSFORMACION ED50 a WGS84 (ICC Cataluña)<br />
+&nbsp;dX&nbsp;&nbsp;&nbsp;&nbsp;
+-128.14907000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-70.93672000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ&nbsp;&nbsp;&nbsp;&nbsp;
+-182.41914000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX_rad&nbsp;&nbsp;&nbsp; 0.000002632283&nbsp; radianes<br />
+&nbsp;rY_rad&nbsp;&nbsp;&nbsp; 0.000002701445&nbsp; radianes<br />
+&nbsp;rZ_rad&nbsp;&nbsp;&nbsp; 0.000008649425&nbsp; radianes<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11.51502700&nbsp;&nbsp;&nbsp;&nbsp; Partes Por Millon<br />
+#----------------------------------------------------<br />
+&nbsp;FIN<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+El fichero&nbsp;<span class="Archivo">Cat_ED50_GWS84b.crs</span> supone
+otro ejemplo de
+transformación de siete parámetros, aunque éste tiene la particularidad
+de que el CRS origen, en lugar de definirme manualmente, se usa uno de
+los existentes mediante el comando <span style="font-style: italic;">CRS_ORIGEN</span>:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Definición de una Transformación.<br />
+# Se define el código del CRS. <br />
+# También se define aquí el CRS destino y el HUSO.<br />
+# Puede también definirse una transformación de 3 o 7 parámetros<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_origen&nbsp;&nbsp;&nbsp; 4230&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(ED50)<br />
+&nbsp;CRS_destino&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS
+84)<br />
+&nbsp;HUSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31<br />
+&nbsp;TRANSFORMACION ED50 a WGS84 (ICC Cataluña)<br />
+&nbsp;dX&nbsp;&nbsp;&nbsp;&nbsp;
+-128.14907000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-70.93672000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ&nbsp;&nbsp;&nbsp;&nbsp;
+-182.41914000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX_rad&nbsp;&nbsp;&nbsp; 0.000002632283&nbsp; radianes<br />
+&nbsp;rY_rad&nbsp;&nbsp;&nbsp; 0.000002701445&nbsp; radianes<br />
+&nbsp;rZ_rad&nbsp;&nbsp;&nbsp; 0.000008649425&nbsp; radianes<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11.51502700&nbsp;&nbsp;&nbsp;&nbsp; Partes Por Millon<br />
+#----------------------------------------------------<br />
+&nbsp;FIN<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />El archivo&nbsp;<span class="Archivo">N_Algerie_Clarke_WGS84.crs</span>
+define un CRS con una proyección Lambert Conic Conformal(2SP) para el
+norte de Argelia y una transformación de este CRS al WGS84 en el huso
+32:<br />
+      <br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# CRS: Clarke Nord Algerie<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CLARKE Nord Algerie<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6671&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Voirol 1879)<br />
+&nbsp;SISTEMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4499&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Cartesian)<br />
+&nbsp;OPERACION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9802&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lambert Conic Conformal (2SP)<br />
+&nbsp;PROYECCION&nbsp;&nbsp;&nbsp;&nbsp; Nord Algerie<br />
+&nbsp;Lat.Falso.Ori&nbsp; 36.000000000<br />
+&nbsp;Lon.Falso.Ori&nbsp;&nbsp; 2.700000000<br />
+&nbsp;Lat.Primer.SP&nbsp; 37.566182509<br />
+&nbsp;Lat.Segund.SP&nbsp; 34.423190119<br />
+&nbsp;Est.Falso.Ori&nbsp; 500135.00000<br />
+&nbsp;Nor.Falso.Ori&nbsp; 300090.00000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_destino&nbsp;&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;HUSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (32N)<br />
+#----------------------------------------------------<br />
+&nbsp;TRANSFORMACION CLARKE Nord Algerie a WGS84<br />
+&nbsp;dX&nbsp;&nbsp;&nbsp;&nbsp; -156.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -94.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;dZ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 311.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m<br />
+&nbsp;rX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s<br />
+&nbsp;rY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s<br />
+&nbsp;rZ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.8140000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s<br />
+&nbsp;dE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -6.0000000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Partes Por Millon<br />
+#----------------------------------------------------<br />
+&nbsp;FIN<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />
+El archivo&nbsp;<span class="Archivo">LTM_Chile(-71).crs</span> contiene la proyección Local Trasverse Mercator utilizada en Chile con los siguientes parámetros:<br /><br />
+      <div class="Archivo" style="margin-left: 40px;">#----------------------------------------------------<br />
+# Definicion de un CRS mediante una nueva proyeccion.<br />
+# Se define el Nombre del CRS y el nombre y <br />
+# parametros de la protcción.<br />
+# El DATUM (ELIPSOIDE y MERIDIANO), el SISTEMA y la<br />
+# OPERACION deben ser códigos de la base de datos.<br />
+# Tambien se define aqui el CRS destino y el HUSO.<br />
+#----------------------------------------------------<br />
+&nbsp;CRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WGS8 84 / LTM_CHILE / UTM zone 19S<br />
+&nbsp;DATUM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;SISTEMA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Cartesian)<br />
+&nbsp;OPERACION&nbsp;&nbsp;&nbsp;&nbsp; 9807&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transverse Mercator<br />
+&nbsp;PROYECCION&nbsp;&nbsp;&nbsp; LTM CHILE (-71)<br />
+&nbsp;Lat.Orig.Nat&nbsp; 0.000000000<br />
+&nbsp;Lon.Orig.Nat&nbsp; -71.0000000<br />
+&nbsp;Fac.Esc.O.N.&nbsp; 1.000047037<br />
+&nbsp;FalsoEste&nbsp;&nbsp;&nbsp;&nbsp; 200000.0000<br />
+&nbsp;FalsoNorte&nbsp;&nbsp;&nbsp; 7000000.000<br />
+#----------------------------------------------------<br />
+&nbsp;CRS_destino&nbsp;&nbsp; 4326&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WGS 84)<br />
+&nbsp;HUSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (19S)<br />
+#----------------------------------------------------<br />
+&nbsp;FIN<br />
+#----------------------------------------------------<br />
+      </div>
+      <br />Otro
+de los CRS locales que dispone la librería de ISPOL es el archivo:
+OSGB36_to_WGS84(6).crs para transformar cartografía en Inglaterra entre
+estos dos sistemas. Debe utilizarse este archivo en lugar de la
+transformación EPSG 1314,<br />
+ya que esta no funciona correctamente, por que en la base de datos de la EPSG al crs de origen utilizado le falta la proyección.<br />
+      <br />
+También podrás disponer del fichero&nbsp; Texas_Central_Lambert2SP.crs
+que incorpora la posibilidad de definir algunos parámetros: (Este del
+Falso Origen y Norte del Falso Origen) en piés. (US_Feet).<br />
+      <br />
+El archivo S-JTSK(EN)_Zvolen.crs que permite transformar desde el CRS
+(5221) S-JTSK(Ferro)/Krovak East North, al (4326) WGS84. Este CRS
+corresponde a la zona de Zvolen (Eslovaquia).<br />
+<br />
+      <div style="text-align: center;"><img style="width: 354px; height: 252px;" alt="" src="Imagenes/crs_Zloven.png" /><br />
+      </div>
+      <br />
+En la librería están disponibles más archivos&nbsp;<span class="Archivo">.crs</span>, como por ejemplo&nbsp;<span class="Archivo">MGI_Balkans_Zone_7_a_WGS84.crs</span> para una determinada zona de Serbia o el&nbsp;<span class="Archivo">Bolivia_Lambert.crs</span> para una extensa zona de Bolivia o el&nbsp;<span class="Archivo">SIRES-DMQ.crs</span>
+que define un CRS utilizado en Ecuador, basado en el Datum WGS84 y con
+un sistema de proyección UTM modificado para Quito (TMQ), zona 17S
+modificada... En resumen, en este tipo de ficheros se
+define:<br />
+      <ul>
+        <li>Un <span style="font-weight: bold;">CRS origen</span>. El
+comando <span style="font-style: italic;">CRS</span> permite definirlo
+manualmente, mientras que si se usa el comando <span style="font-style: italic;">CRS_ORIGEN</span> entonces se
+usa uno de los existentes según su código OGP. Si se escoge el primer
+caso (definición manual), entonces habrá que declarar (se toma como ejemplo el archivo&nbsp;<span class="Archivo">ElCobre.crs</span> anteriormente mencionado):</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ul style="list-style-type: circle;">
+        <li>El nombre para el nuevo CRS: WGS 84 / EL COBRE / zone 19S</li>
+        <li>El código del datum: 6326 (WGS 84)</li>
+        <li>El código del sistema: SISTEMA 4400 (Cartesian)</li>
+        <li>La operación: 9807 Trasverse Mercator</li>
+        <li>Nombre para la proyección: EL COBRE</li>
+        <li>Parámetros de la proyección:</li>
+      </ul>
+      <div style="margin-left: 40px;">
+      <ol>
+        <li>Latitud en el origen natural: 0.000000000</li>
+        <li>Longitud en el origen natural: -70.5000000</li>
+        <li>Factor de escala en el origen natural: 1.000188147</li>
+        <li>Falso Este: 200000.0000</li>
+        <li>Falso Norte: 7000000.000</li>
+      </ol>
+      </div>
+      </div>
+      <ul>
+        <li>El <span style="font-weight: bold;">CRS de destino</span>,
+de entre los existentes, según su código OGP.</li>
+        <li><span style="font-weight: bold;">Zona</span> o huso.</li>
+        <li>Opcionalmente, los <span style="font-weight: bold;">parámetros
+de la transformación</span>, que podrán ser 3 (sólo los de traslación)
+ó los 7:</li>
+      </ul>
+      <ul style="list-style-type: circle; margin-left: 40px;">
+        <li>Parámetros de <span style="font-weight: bold;">traslación</span>
+en metros (comandos <span style="font-style: italic;">dX</span>, <span style="font-style: italic;">dy</span> y <span style="font-style: italic;">dz</span>).</li>
+        <li>Parámetros de <span style="font-weight: bold;">rotación</span>
+en segundos (comandos <span style="font-style: italic;">rX</span>, <span style="font-style: italic;">rY</span> y <span style="font-style: italic;">rZ</span>) ó en radianes (comandos <span style="font-style: italic;">rX_rad</span>, <span style="font-style: italic;">rY_rad</span> y <span style="font-style: italic;">rZ_rad</span>).</li>
+        <li><span style="font-weight: bold;">Factor de escala</span>,
+en partes por millón (comando dE), de tal forma que <img style="width: 79px; height: 28px; margin-bottom: 5px;" alt="" src="Imagenes/crs_escala.png" align="middle" />.</li>
+      </ul>Disponemos
+en la libreria 5 CRSs, que permiten transforamr desde los 5 sistemas de
+referencia actuales de Colombia al nuevo sistema de proyección único:<br /><ul><li>MAGNA_SIRGAS-ColombiaFarWestZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaWestZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaBogotaZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaEastCentralZone_Colombia73W.crs</li><li>MAGNA_SIRGAS-ColombiaEastZone_Colombia73W.crs</li></ul><div style="text-align: center;"><img style="width: 600px; height: 313px;" alt="" src="Imagenes/magnasirgas_colom.png" /><br /></div><br />También disponemos de otro que permite transformar desde este sistema hacia WGS84:<br /><ul><li>Colombia(73W)_WGS84.crs</li></ul>Disponemos
+dentro de&nbsp;la OPEREACIÓN para para las PROYECCIONES utilizadas en
+Colombia en zonas urbanas el código EPSG 1052, que dan lugar una serie
+de CRSs como EPSG 6247:MAGNA-SIRGAS/Bogota urban grid o EPSG
+6349:MAGNA-SIRGAS/Cali urban grid,etc....<br /><br /><div style="text-align: center;"><img style="width: 600px; height: 313px;" alt="" src="Imagenes/crs_colombia_urban.png" /><br /><br /></div><span style="font-weight: bold; font-style: italic;"><a name="transf_crs_tiempo_real_helmert_3D">Transformación entre CRSs en tiempo real con corrección por Helmert 3D</a></span><br />
+      <br />
+La herramienta de <a href="EDM_gps.html">seguimiento de coordenadas de GPS</a> utiliza simultáneamente el cambio de CRS más una transformación de coordenadas Helmert 3D si es que hay alguna definida.<br />
+      <br />
+      <span style="text-decoration: underline;">Ejemplo</span><br />
+      <br />
+Supóngase una cartografia que está referenciada en el CRS ED50 y que en el cuadro de diálogo de <a href="#transf_crs">transformaciones entre CRSs</a>
+aparece como CRS actual el ED50 y destino el WGS84. Así mismo hay
+definida un transformación de 3 ó 7 parámetros para el cambio de CRS.<br />
+      <br />
+Simultáneamente en el cuadro de diálogo de <span style="font-weight: bold;">Herramientas</span> <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span></span></span> <a href="EDM_transf_coord.html"><span style="font-weight: bold;">Transformación de coordenadas</span></a>,
+hay definida una transformación Helmert 3D, estática o dinámica, a
+partir de un conjunto de bases de las que se tienen las lecturas GPS
+pasadas a ED50 con la transformación de CRS anterior y las coordenadas
+reales en ED50 de esas bases.<br />
+      <br />
+Al conectar el GPS, las lecturas que se van obteniendo son pasadas
+primero del WGS84 al ED50 utilizando la transformación de CRS y las
+coordenadas obtenidas son ajustadas después mediante la <a href="EDM_transf_coord.html">transformación de coordenadas</a> Helmert 3D.<br />
+      <br />
+Si el GPS no devuelve la altura sobre el nivel del mar, se puede cargar
+con el CRS destino (WGS84) un sistema de referencia vertical <span class="Archivo">con una <a href="#rejilla">rejilla</a></span> regular.<br />
+      <br />
+      <a name="Utilidades"><span class="Titulo_2">Utilidades</span><br />
+      <br />
+      </a><div style="text-align: center;"><img style="width: 458px; height: 124px;" alt="" src="Imagenes/crs_utilidades.png" /><br />
+
+      </div>
+      <br />
+
+
+      <a name="huso"><span class="Titulo_2">Cambio de huso</span></a><br />
+      <br />
+      <img style="width: 117px; height: 69px; margin-left: 7px;" alt="" src="Imagenes/acceso_CRS.png" align="right" /> Como es lógico, los
+cambios de huso sólo tienen sentido para aquellos
+CRS que usen como sistema de proyección la UTM, pues otros tipos de
+proyecciones como Transverse Mercator (Gauss-Kruger) u Oblique
+Stereographic definen en cada caso particular su propio origen natural.<br />
+      <br />
+Para realizar un cambio de huso, es necesario acceder a la opción desde
+el menú <span style="font-weight: bold;">Configuración</span> &#8594; <span style="font-weight: bold;">Sistema referencia coordenadas</span> y
+también desde
+el icono HUSO de la parte inferior. Todo ello en Utilidades.<br />
+&nbsp;&nbsp;&nbsp; &nbsp;<br />
+      <img style="width: 447px; height: 61px;" alt="" src="Imagenes/cambio_huso.png" align="right" hspace="4" />Basta entonces con
+indicar el <span style="font-weight: bold;">huso origen</span> y el <span style="font-weight: bold;">huso destino</span> y, tras
+pulsar el botón <span style="font-weight: bold;">[CAMBIO DE HUSO]</span>,
+el programa ejecutará la
+transformación de coordenadas.<br />
+<br />
+El cambio se lleva a efecto tanto sobre la cartografía, como sobre la <a href="EDM_topografia.html">topografía</a>, los ejes y las imágenes
+cargadas.<br />
+      <br />
+      <br />
+
+      <span class="Titulo_2"><a name="utm_geograficas">Paso de UTM a
+geográficas y viceversa</a></span><br />
+
+      <br />
+
+Esta utilidad permite transformar las coordenadas UTM (huso de origen)
+a geográficas y las geográficas a UTM (huso de destino).<br />
+
+      <br />
+
+Cuando se está en coordenadas geográficas en el eco de coordenadas se
+presentan la longitud y la latitud, p.ej. -6/20/15.2346&nbsp;
++42/55/10.1234.<br />
+
+      <br />
+
+En geográficas, el orden de las coordenadas que se guardan en el&nbsp;<span class="Archivo">.edm</span>
+(y en el&nbsp;<span class="Archivo">.top</span>/<span class="Archivo">.toc</span>)
+y las que se utilizan para las medidas es 1/20 de
+segundo; esta unidad es muy próxima al metro y permite hacer vistas 3D
+sin demasiada distorsión.<br />
+
+      <br />
+
+Si se escribe un fichero&nbsp;<span class="Archivo">.edm</span> estando
+en geográficas, el programa lo
+reconocerá al volver a cargarlo pero no se deben cargar conjuntamente
+ficheros en UTM y Geográficas.<br />
+
+      <br />
+
+Al trabajar o cambiar la escala, el significado de la misma es el
+siguiente, p.ej.:<br />
+
+      <br />
+
+ESCALA 1:1000 &#8594; 1 metro de papel representa 1000 × (1/20 segundo) &#8594; 1
+metro &#8594; 50 segundos.<br />
+      <br />
+      <span class="Titulo_2"><a name="imp_coord_geograf">Importación de coordenadas geográficas</a></span><br />
+      <br />El botón <span style="font-weight: bold;">[Cargar COORDENADAS GEOGRÁFICAS]</span> permite cargar ficheros con puntos en coordenadas geográficas que, además, pueden estar asociadas a <a href="OL_replanteo_planta.html#def_bases">bases de replanteo</a>.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 450px; height: 28px;" alt="" src="Imagenes/cargar_geo.png" /><br />
+      </div>
+      <br />
+Una
+vez seleccionado el archivo, se muestra un cuadro de diálogo en el que
+se debe indicar si los datos están referidos a longitud Este u Oeste,
+de tal forma que, en el segundo caso, el programa cambiará el signo a
+los datos:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 337px; height: 147px;" alt="" src="Imagenes/cargar_geo_2.png" align="middle" /><br />
+      </div>
+      <br />
+Los archivos de coordenadas geográficas pueden tener cualquier extensión (por defecto, el programa propone <span class="Archivo">.geo</span>), admitiéndose los siguientes formatos:<br />
+      <ul>
+        <li>Con las cuatro primeras columnas de la forma <span style="font-style: italic;">Nombre</span> <span style="font-style: italic;">Longitud</span> <span style="font-style: italic;">Latitud</span> <span style="font-style: italic;">Altitud</span>, de tal forma que la longitud y latitud están expresados en grados, minutos y segundos separados por una barra:<br />
+        </li>
+      </ul>
+
+      
+      <table style="text-align: left; height: 96px; width: 443px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 228px; height: 30px;">Nombre
+(sin espacios en blanco)</td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 60px;">Longitud</td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 61px;">Latitud</td>
+            <td style="vertical-align: top; font-weight: bold; text-align: center; width: 60px;">Altitud</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 228px;">ALMONACID_SIERRA_COOPERATIVA&nbsp;&nbsp;
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">1/19/32</td>
+            <td style="vertical-align: top; text-align: center; width: 61px;">41/23/46</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">598</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 228px;">ALMONACID_SIERRA_D_G_A&nbsp;
+            <br />
+            </td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">1/19/05</td>
+            <td style="vertical-align: top; text-align: center; width: 61px;">41/23/53</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">600</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; text-align: center; width: 228px;">CARIÑENA__LA_PARDINA</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">1/12/57</td>
+            <td style="vertical-align: top; text-align: center; width: 61px;"> 41/24/16</td>
+            <td style="vertical-align: top; text-align: center; width: 60px;">496</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <ul>
+        <li>Con tas cuatro primeras columnas también de la forma <span style="font-style: italic;">Nombre</span> <span style="font-style: italic;">Longitud</span> <span style="font-style: italic;">Latitud</span> <span style="font-style: italic;">Altitud</span>, pero con la longitud y latitud expresados en grados totales con decimales.<br />
+        </li>
+      </ul>
+En el campo <span style="font-weight: bold;">Saltar</span> es posible
+especificar el número de líneas que se van a obviar al inicio del
+archivo y que normalmente se corresponderan con la cabecera. Para
+facilitar esto, el botón <span style="font-weight: bold;">[Ver cabecera]</span>
+permite visualizar las primeras líneas del archivo, lo que resulta muy
+útil en archivos muy grandes que resultan difíciles de abrir con un
+editor de textos convencional.<br />
+      <br />
+Otro posible formato a cargar es el siguiente: (N/S)Latitud(g)&nbsp; (E/W)Longitud(g).<br />
+      <br />
+      <div style="margin-left: 40px;">p.e:<br />
+      <br />
+S25.38557 W57.12265<br />
+S25.38999 W57.06684<br />
+S25.38042 W56.98954<br />
+S25.39120 W56.96494<br />
+      <br />
+Antes de cargar este archivo debemos asegurarnos de seleccionar el CRS
+actual y Huso adecuados para transformar estos datos a UTM.<br />
+      </div>
+<br />
+Este cuadro también da la opción de crear un fichero de bases&nbsp;<span class="Archivo">.bas</span> para <a href="OL_replanteo_planta.html">replanteo de ejes</a>.<br />
+      <br />A la hora de importar puntos en coordenadas geográficas, es preciso
+tener presente las siguientes consideraciones:<br />
+      <ul>
+        <li>Antes de pulsar la opción debe seleccionarse el <span style="font-weight: bold;">huso destino</span>.</li>
+      </ul>
+      <ul>
+        <li>Se genera por cada punto un símbolo (S43) y un rótulo (del
+estilo y tamaño actuales).</li>
+      </ul>
+      <ul>
+        <li>Si previamente no hay nada cargado, esta opción ajusta los
+bordes y el offset. Si ya hay algún elemento, sólo ajusta los bordes.</li>
+      </ul>
+      <ul>
+        <li>Se recomienda poner la escala adecuada previamente.</li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="coord_geocentricas">Paso de coordenadas geocéntricas al sistema de proyección del CRS actual</a></span><br />
+      <br />
+      <img style="width: 361px; height: 102px; margin-left: 7px;" alt="" src="Imagenes/geocentricas_xyz.png" align="right" />El botón <span style="font-weight: bold;">[Geocéntricas -&gt; XYZ]</span> abre un cuadro de diálogo que permite la conversión de coordenadas geocéntricas a coordenadas en el sistema de proyección del <a href="#crs">CRS</a> declarado como actual. La conversión se efectúa en el <span style="font-weight: bold;">huso origen</span> que esté establecido.<br />
+      <br />
+
+En el campo <span style="font-weight: bold;">Saltar</span> es posible
+especificar el número de líneas que se van a obviar al inicio del
+archivo y que normalmente se corresponderan con la cabecera. Para
+facilitar esto, el botón <span style="font-weight: bold;">[Ver cabecera]</span>
+permite visualizar las primeras líneas del archivo, lo que resulta muy
+útil en archivos muy grandes que resultan difíciles de abrir con un
+editor de textos convencional.<br />
+      <br />
+El archivo de salida será un fichero ASCII de tres columnas (X, Y y Z), extensión&nbsp;<span class="Archivo">.xyz</span> y el nombre que declare el usuario.<br />
+      <br />
+      <a name="Listar_Coorde"><span class="Titulo_2">Listar Coordenadas Geográficas</span><br />
+      <br />
+Realiza un listado&nbsp;<span class="Archivo">geo.res</span> con todas
+los puntos de elementos activos (líneas, puntos, textos), en
+coordenadas geográficas en formato: latitud longitud altura. La latitud
+y longitud en grados sexagesimales con decimales. Para la opción de
+Cargar Coordenadas Geográficas se añade como formato de entrada el que
+se genera con la utilidad anterior.<br />
+Se añade a este listado información complementaria de los elementos:<br />
+En el caso de puntos de líneas:<br />
+&nbsp; L&lt;tipo de línea&gt; ,&nbsp; Número de línea , Número de punto.<br />
+&nbsp;En el caso de Símbolos de Puntos aislados: <br />
+&nbsp; S&lt;tipo de punto&gt;,&nbsp; Número del punto, Atributo (puede ser un número del punto,<br />
+&nbsp; pk, etc.).<br />
+En el caso de un texto: <br />
+&nbsp; R&lt;estilo del texto&gt;&nbsp; , Número el texto, Texto.<br /><br /></a><a name="Geograficas_a_XY"><span class="Titulo_2">Geograficas a XY</span><br /><br />Cuando
+la cartografía esta en coordenadas geográficas, es decir las X son
+Longitudes en grados sexagesimales en decimales y las Y son Latitudes
+en grados sexagesimales en decimales, entonces se comprueba que todas
+las coordenadas están dentro de rango (-180 &lt; X &lt; 180) y (-90
+&lt; Y &lt; 90) y que se ha establecido un CRS válido. Al aceptar se
+realiza la transformación.<br />
+<br />
+      <br />
+      </a><a name="Compensaciones_UTM"><span class="Titulo_2">Compensaciones UTM</span><br />
+      <br />
+      </a><div style="text-align: center;"><a name="Compensaciones_UTM"><img style="width: 459px; height: 177px;" alt="" src="Imagenes/compensaciones%20utm.png" /><br />
+      </a></div>
+<a name="Compensaciones_UTM"><br />
+      </a><a name="compens_radiaciones"><span class="Titulo_2">Compensaciones para el cálculo de radiaciones</span></a><br />
+      <br />
+      <img style="width: 212px; height: 121px; margin-left: 7px;" alt="" src="Imagenes/crs_compens_radiac.png" align="right" />Deben
+seleccionarse aquellas que se deseen utilizar de entre las siguientes:<br />
+      <ul>
+        <li>Compensación para la cota por esfericidad y refracción.</li>
+        <li>Reducción de la distancia al nivel del mar.</li>
+        <li>Pasar la distancia de la cuerda al arco.</li>
+        <li>Pasar al plano de la U.T.M.</li>
+      </ul>
+El coeficiente de anamorfosis se calcula como producto <span style="font-weight: bold;">K&#8217;</span> × <span style="font-weight: bold;">Factor de Escala Global</span>.<br />
+      <br />
+El <span style="font-weight: bold;">factor de escala</span> globar se
+define numéricamente. El botón <span style="font-weight: bold;">[0]</span>
+adyacente inicializa su valor a 0.9996000.<br />
+      <br />
+      <span style="font-weight: bold;">K&#8217;</span> se calcula
+automáticamente de entre las siguientes posibilidades en función de las
+coordenadas y del <span style="font-weight: bold;">huso</span>
+definido:<br />
+      <ul>
+        <li>POR ESTACIÓN.<br />
+</li>
+        <li>PROMEDIO ENTRE BASE-PUNTO</li>
+        <li>ÚNICA, introduciendo numéricamente su valor.</li>
+      </ul>
+Para calcular la corrección del cierre de poligonales se permiten los
+tres siguientes métodos:<br />
+      <ul>
+        <li>Proporcional a las coordenadas parciales.</li>
+        <li>Proporcional a la longitud de los tramos.</li>
+        <li>Proporcional al número de tramos.</li>
+        <li>Por el método de SANGUET.<br />
+</li>
+      </ul>
+      <br />
+      <span class="Titulo_2"><a name="correcciones_replanteo">Correcciones
+para replanteo de puntos</a></span><br />
+      <br />
+      <img style="width: 211px; height: 121px; margin-left: 7px;" alt="" src="Imagenes/crs_correcciones_replanteos.png" align="right" /> Al
+activar en REPLANTEO DE PUNTOS (módulo de OBRA LINEAL) la opción U.T.M.
+el programa analiza las tablas de parámetros: <br />
+      <ul>
+        <li>Esfericidad y refracción.</li>
+        <li>Reducción al nivel del mar.</li>
+        <li>Paso de la cuerda al arco.</li>
+        <li>Paso al plano U.T.M.<br />
+</li>
+      </ul>
+Estas compensaciones se aplican en sentido inverso. La de esfericidad y
+refracción no opera, pues en el menú de Replanteo no se trabaja con la
+cota de los puntos.<br />
+      <br />
+Corrección por anamorfosis: <span style="font-weight: bold;">K</span>
+= <span style="font-weight: bold;">Factor de Escala Global</span>
+×&nbsp; <span style="font-weight: bold;">K'</span>&nbsp;&nbsp; siendo:<br />
+      <br />
+La distancia a un punto es&nbsp; <span style="font-weight: bold;">Dp</span>
+= <span style="font-weight: bold;">Distancia Trigonométrica</span> / <span style="font-weight: bold;">K</span><br />
+      <br />
+      <br />
+      <span style="font-weight: bold; font-style: italic;">Fórmulas
+para visuales largas </span><br />
+      <br />
+Introduce la posibilidad de activar una formulación más precisa para el
+caso de trabajar con visuales muy largas o muy inclinadas o a cotas
+elevadas.<br />
+      <br />
+Al activar la formulación para visuales largas se activan conjuntamente
+las correcciones de esfericidad y refracción y la reducción al nivel
+del mar (o paso a la cuerda del elipsoide).<br />
+      <br />
+      <a name="predefinidos"><span class="Titulo_2">Modo predefinidos</span><br />
+      </a><br />
+La ventana inicial de selección de CRS arranca por defecto en modo
+Usuario, pero seleccionándolo en la lista desplegable podemos poner la
+herramienta en modo Predefinidos.<br />
+Para trabajar en el modo&nbsp;<span class="Parf_negrita">[Predefinidos]</span> se recomienda utilizar CRSs en sistema&nbsp;<span class="Parf_negrita">[Cartesian]</span> y no&nbsp;<span class="Parf_negrita">[ellipsoidal]</span>.
+Por ejemplo: Si tenemos Cartografía en el ED50 Huso 29, en lugar de
+utilizar el CRS 4230 (ED50) con el huso 29, debemos utilizar el CRS:
+23029 (ED50 / UTM zone 29N).<br />
+      <br />
+Si estamos en Modo Predefinidos, al cargar uno o varios archivos edm/edb:<br />
+      <ul>
+        <li>Si el primer archivo esta en un CRS (p.e. 23030) diferente
+al predeterminado (p.e. 23029), se nos pregunta si queremos asumir el
+nuevo CRS (23030) o deseamos transformar el archivo al predeterminado
+(23029).</li>
+        <li>Los siguientes archivos, si no coinciden con el CRS en el que se ha cargado el primero, se transforman automaticamente.<br />
+        </li>
+      </ul>
+
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img style="width: 600px; height: 78px;" alt="" src="Imagenes/dialogo_proyeccion_predefinidos.png" /><br />
+      </div>
+
+      <br />
+
+Desde este modo podemos cargar un CRS desde la lista de favoritos o, abriendo <span style="font-weight: bold;">[Mas...]</span>, desde la lista completa de la EPSG. Podemos añadir el CRS actual a la lista de favoritos mediante el botón <span style="font-weight: bold;">[Añadir]</span> o <span style="font-weight: bold;">[Establecer como predeterminado]</span> el CRS actual, de modo que se cargue al comenzar un proyecto nuevo.<br />
+
+      <br />
+El modo CRS seleccionado (<span style="font-style: italic;">usuario</span> o <span style="font-style: italic;">predefinidos</span>)
+se guarda en el archivo de configuración de Istram, y también se
+almacena en los archivos topográficos que guardemos (archivos&nbsp;<span class="Archivo">.ttg</span>,&nbsp;<span class="Archivo">.toc</span>,&nbsp;<span class="Archivo">.top</span>...).
+Al abrir estos archivos, si no tuvieramos definido un CRS
+predeterminado, el programa tomará (previo permiso) el que está
+almacenado en el archivo. Si ya tuvieramos uno definido, transformará
+automáticamente las coordenadas del guardado en el archivo al que
+estamos usando.<br />
+      <br />
+
+También podemos cargar una transformación desde la lista de la EPSG o desde un archivo&nbsp;<span class="Archivo">.crs</span>.</td>
+    </tr><tr>
+      <td style="vertical-align: top;"><br />
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body></html>

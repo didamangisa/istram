@@ -1,0 +1,3499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Topografia</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>TOPOGRAFIA<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody style="">
+    <tr>
+      <td style="width: 694px;" class="Parrafo"><br /><a href="#generalidades">
+      Generalidades</a><br /><a href="#tipos_fichero">
+Tipos de ficheros topográficos</a><br />
+      <div style="margin-left: 40px;"><a href="#ficheros_top">Ficheros .top</a><br /><a href="#ficheros_toc">
+Ficheros .toc</a><br /><a href="#ficheros_de_cartografia">
+Ficheros de cartografía .edm/.edb</a><br /><a href="#ficheros_temporales">
+Ficheros temporales .ttp</a><br /><a href="#ficheros_rejilla">
+Ficheros de rejilla (LIDAR), ficheros LandXML y otros tipos de ficheros</a><br />
+      </div><a href="#conversiones">
+Conversiones entre cartografía y topografía</a><br /><a href="#gestion">
+      Gestión de ficheros topográficos</a><br />
+      <div style="margin-left: 40px;"><a href="#insertar_ttp">Insertar triangulación</a><br />
+<a href="#carga">Carga de ficheros</a><br /><a href="#visualizacion">
+Visualización de datos</a><br /><a href="#guardado_top">
+Guardado de ficheros topográficos</a><br />
+      <a href="#Guardar_seleccion_en_TTP">Guardar selección en TTP</a><br />
+      <a href="#ttg">Insertar/Añadir TTP/TTG</a><br /><a href="#InsertarExpresTTPs"><span style="color: rgb(0, 79, 175);">Insertar Exprés TTPs</span></a><br /><a href="#guardado">
+Guardado y recuperación rápida de datos</a><br /><a href="#importacion">
+Importación de ficheros topográficos</a><br /><a href="#previsualizacion">
+Previsualización y edición manual</a><br /><a href="#generar">
+Generar ficheros .top/.toc</a><br />
+      </div><a href="#cargar_gen">Cargar fichero genérico con datos de topografía</a><br />
+<a href="#opciones">Opciones de topografía</a><br /><a href="#puntos">
+Edición de puntos topográficos</a><br />
+      <table style="text-align: left; width: 692px; height: 117px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 261px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#anadir_punto">Añadir punto</a><br />
+            <a href="EDM_topografia.html#borrar_punto">Borrar punto</a><br />
+            <a href="EDM_topografia.html#editar_buscar_p">Buscar/Editar</a><br />
+            <a href="#buscarpc">Buscar puntos cercanos</a><br />
+            <a href="EDM_topografia.html#moverp">Mover punto</a><br />
+            <a href="EDM_topografia.html#insertarenmalla">Insertar en malla</a><br />
+            <a href="EDM_topografia.html#renumerar">Renumerar</a><br />
+            <a href="EDM_topografia.html#deformar">Deformar</a></div>
+
+
+
+
+
+
+            </td>
+            <td style="vertical-align: top; width: 411px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#activar">Activar</a><br />
+            <a href="EDM_topografia.html#raiz">Raiz</a><br />
+            <a href="EDM_topografia.html#seleccion_prop">Selección por propiedades</a><br />
+            <a href="EDM_topografia.html#incrementarz">Incrementar Z por selección</a><br />
+            <a href="EDM_topografia.html#informacion">Información sobre máximos y mínimos</a><br />
+            <a href="EDM_topografia.html#listar_p">Listar puntos</a></div>
+
+
+
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#premallado">Edición de mallas de premallado</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 263px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#generar_pre">Recargar conversión</a><br />
+            <a href="EDM_topografia.html#crear_x_pol">Crear por polilínea</a><br />
+            <a href="EDM_topografia.html#borrar_pre">Borrar todo</a><br />
+            <a href="#borrar_vent">Borrar por ventana</a><br />
+</div>
+
+
+            </td>
+            <td style="vertical-align: top; width: 409px;">
+            <div style="margin-left: 40px;"><a href="EDM_topografia.html#copiar_lin_pre">Copiar líneas</a><br />
+            <a href="EDM_topografia.html#dicc_codigos">Códigos y Comandos</a><br />
+            <a href="EDM_topografia.html#cambiar_tipo_pre">Cambiar tipo</a><br />
+            <a href="#pasar_atributos">Pasar atributos</a><br />
+            <a href="#pasar_atributos_a_varias_mallas">Pasar atributos a varias mallas</a><br />
+</div>
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#usuario">Edición de mallas de usuario</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 258px;">
+            <div style="margin-left: 40px; width: 224px;"><a href="EDM_topografia.html#anadir_mall">Añadir</a><br />
+            <a href="EDM_topografia.html#encadenar_mall">Encadenar</a><br />
+            <a href="EDM_topografia.html#borrar_banda">Borrar todo</a><br />
+            <a href="#borrar_vent_m">Borrar por ventana</a><br />
+</div>
+
+
+            </td>
+            <td style="vertical-align: top; width: 414px;">
+            <div style="margin-left: 40px;"><a href="#cortar_long_mall">Cortar por longitud</a><br />
+            <a href="#cambiar_tipo_mall">
+Cambiar tipo</a><br />
+            <a href="EDM_topografia.html#pasar_atributos_m">Pasar atributos</a><br />
+
+            <a href="EDM_topografia.html#pasar_atributos_a_varias_mallas_m">Pasar atributos a varias mallas</a><br />
+</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#contornos">Edición de contornos, Cierres e Islas</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 261px;"><a href="#crear_ci">Crear Cierre o Isla</a>:<br />
+            <div style="margin-left: 40px;"><a href="#crear_ci_puntos">Por puntos</a><br />
+            <a href="#crear_ci_lin_cerr">
+Por línea cerrada</a><br />
+            <a href="#crear_ci_tipo">
+Por tipo de línea</a><br />
+            <a href="#crear_ci_mod">
+Por modelo</a><br />
+            <a href="#crear_ci_mall">
+Por malla de premallado</a><br />
+            <a href="#crear_ci_tri">
+Por bode de triángulos</a><br />
+            <a href="#crear_ci_conv">
+Convexo</a><br />
+            </div>
+            <br />
+            </td>
+            <td style="vertical-align: top; width: 411px;">
+            <div style="margin-left: 40px;"><a href="#ci_borrar">Borrar</a><br />
+            <a href="#ci_modificar">
+Modificar</a><br />
+            <a href="#ci_limpiar">
+Limpiar islas</a><br />
+
+            <a href="#ci_volcar">Volcar contornos a EDM</a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#automatica">Edición de mallas automáticas. Triangulación</a><br />
+      <table style="text-align: left; width: 692px; height: 100px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px; width: 222px;"><a href="#triangulacion">Triangulación</a><br />
+            <a href="#completar_tri">Completar triangulación</a><br />
+            <a href="#un_triang">Crear un triángulo</a><br />
+            <a href="#borrar_triang">Borrar</a><br />
+            </div>
+            </td>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 26px; width: 346px;"><a href="#limpiar_tri">Limpiar</a><br />
+            <a href="#cambiar_tri">Cambiar</a><br />
+            <a href="#medida_tri">Medida</a><br />
+            <a href="#Informacion_de_pendiente">Información de pendiente</a><br />
+            <a href="#vaciar_tri">Vaciar</a><br />
+            <a href="#guardar_tri">Guardar por recintos</a><br />
+            <a href="#fitrar_tri">Filtrar</a><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#isolineas">Creación de curvas de nivel. Isolíneas</a><br />
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 40px; width: 232px;"><a href="#crear_iso">Crear</a><br />
+            <a href="#borrar_iso">Borrar</a><br />
+            </div>
+            </td>
+            <td style="vertical-align: top;">
+            <div style="margin-left: 28px; width: 369px;"><a href="#redondear_iso">Redondear</a><br />
+            <a href="#interpolar_iso">Interpolar</a><br />
+            <a href="#suavizar_terreno">Suavizar terreno</a><br />
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+<a href="#herramientas">Otras herramientas</a><br />
+<br />
+      <span class="Titulo_2"><a name="generalidades">Generalidades</a></span><br />
+
+      <br />
+
+Este área del programa está dedicada a la creación y edición del modelo
+digital del terreno constituido por una nube de puntos sueltos (tal
+como se obtienen de trabajos topográficos de campo) y su conversión en
+el modelo de malla triangular, así como la obtención del mapa de líneas
+3D y de nivel que representen.<br />
+
+      <br />
+
+&nbsp;El menú de TOPOGRAFÍA está disponible tanto desde la barra de herramientas del programa mediante el icono&nbsp;<img src="Imagenes/icono_toolBarEstandar_topo.png" style="width: 14px; height: 16px;" alt="" /> como desde el menú <span style="font-weight: bold;">Herramientas &#8594; Topografía</span>.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">[Fin]</span>: Su función es
+salir del menú. Al abandonar este entorno de trabajo los datos de
+nodos, mallas y triángulos desaparecen aunque NO se borran de memoria.
+Aún así, es recomendable haber guardado los datos o efectuado la
+conversión a EDM, razón por la que el programa presenta en pantalla un
+aviso requiriendo confirmación de la salida.<br />
+
+      <br />
+
+&nbsp;Al salir del menú de TOPOGRAFÍA, no se descargan los nodos, las
+mallas ni los triángulos. Esta información constituye un modelo digital
+del terreno que puede utilizarse, por ejemplo, en el <a href="OL_perf_transv.html">menú de <span style="font-weight: bold;">TRANSVERSALES</span></a> (módulo de OBRA LINEAL) para la extracción de los perfiles del terreno (<a href="EDM_control_entidades.html#control_ttps">opción TTP</a>).<br />
+
+      <br />
+
+&nbsp;La opción Ver TTP del <a href="EDM_preferencias.html#visualizacion">menú</a> <span style="font-weight: bold;">Configuración &#8594; Preferencias &#8594; Visualización</span>
+permite activar/desactivar la visualización de estas mallas fuera del
+menú de TOPOGRAFÍA. Obviamente, al volver a TOPOGRAFÍA esta información
+sigue disponible para el usuario.<br />
+
+      &nbsp;
+      <br />
+
+      <span class="Titulo_2"><a name="tipos_fichero">Tipos de ficheros topográficos</a></span><br />
+
+
+      <br />
+
+
+Los datos de entrada pueden proceder de ficheros <a href="EDM_topografia.html#ficheros_top">.top</a>, <a href="EDM_topografia.html#ficheros_toc">.toc</a> (más
+habituales que los .top), ficheros de cartografía .edm, ficheros .ttp,
+ficheros de rejilla (tipo ASCII GRID), etc. Se describen a continuación
+los más habituales, lo cual no quiere decir que el programa no admita
+más tipos de archivos disponibles desde <span style="font-weight: bold;">Herramientas &#8594; Conversores</span>.<br />
+
+
+&nbsp;Clicando en la casilla del interrogante (mirar figura), nos
+muestra un ejemplo del fichero de entrada que deberá ser similar al que
+carguemos para convertirlo a un fichero .top o .toc.<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img style="width: 594px; height: 327px;" alt="" src="Imagenes/conversores_topo.png" /><br />
+
+
+      </div>
+
+
+      <br />
+
+
+
+
+      <a name="ficheros_top"><span class="Apartados">Ficheros .top</span><br />
+      <br />
+&nbsp;Son ficheros en código ASCII que contienen para cada punto 6 datos numéricos (separados por blancos), de la forma:<br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I&nbsp;&nbsp;&nbsp; J&nbsp;&nbsp;&nbsp; K&nbsp;&nbsp;&nbsp;
+X&nbsp;&nbsp;&nbsp; Y&nbsp;&nbsp;&nbsp; Z&nbsp;&nbsp;&nbsp; TXT<br />
+      <br />
+&nbsp;donde:<br />
+      <br />
+      </a>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 50px; font-weight: bold; text-align: center;">I</td>
+            <td style="vertical-align: top;">Es el número identificador del punto.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">J</td>
+            <td style="vertical-align: top;">Representa el número de secuencia del punto si pertenece a una
+poligonal determinada (cabeza o pie de talud, borde de camino, de río,
+etc. Varios puntos seguidos en el fichero definen una poligonal si sus
+números de secuencia están en orden ascendente. Por ejemplo, 5 puntos
+seguidos en un fichero .top, definen una poligonal si su número de
+secuencia son: 0 1 2 3 4 5, 1 2 3 4 5, 1 4 5 7 8; es decir, un punto
+forma poligonal con el anterior si su número de secuencia es mayor que
+el del punto anterior. Un código menor o igual que el anterior rompe la
+secuencia.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">K</td>
+            <td style="vertical-align: top;">Indica el tipo de línea a la que pertenece el punto. Si se trata de
+secuencias de un solo punto, pueden ser interpretadas como puntos
+sueltos, de modo que pueden pasar al mapa utilizando este código como
+tipo de punto. A este valor también se le denomina clave del punto.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">X Y Z</td>
+            <td style="vertical-align: top;">Son las coordenadas del punto (normalmente en metros, con un punto decimal si es preciso).<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">TXT</td>
+            <td style="vertical-align: top;">Es una columna opcional final que puede admitir un texto. Estos textos
+son editables desde el menú de edición de puntos de topografía.</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+&nbsp;&nbsp;<br />
+
+
+&nbsp;Ejemplo:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;">&nbsp;<img src="Imagenes/ejemplo_top_1.png" style="width: 354px; height: 143px;" alt="" /><br />
+
+      </div>
+
+
+      <br />
+
+
+También puede haber ficheros .top que representen una única línea (por
+ejemplo, el eje de una obra lineal con puntos a una cierta
+equidistancia) con la peculiaridad de que la segunda columna sea un
+único valor constante como se aprecia en el ejemplo:<br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_top_2.png" style="width: 354px; height: 144px;" alt="" /><br />
+
+      </div>
+
+
+      <br />
+
+
+&nbsp;Este tipo de ficheros topográficos están en desuso a favor de los archivos en formato .toc.<br />
+
+
+      <br />
+
+
+      <a name="ficheros_toc"><span class="Apartados">Ficheros .toc</span><br />
+      <br />
+&nbsp;El formato .toc es un formato para topografía de campo, más útil
+y extendido que el clásico .top, para traer, codificadas de campo,
+cadenas de puntos sueltos o encadenados formando poligonales de lados
+rectos y con arcos circulares solos o entremezclados.<br />
+      <br />
+&nbsp;Permite que el topógrafo levante en campo simultáneamente varias
+cadenas sin terminar y vaya completándolas, de tal forma que, por
+ejemplo, puede tomarse una línea de borde de calle, un bordillo de
+acera y una línea de edificación mientras se camina calle adelante,
+tomando puntos alternativamente en una y otra línea; no obliga a
+recorrer una y terminarla antes de cambiar a otra, pueden intercalarse
+puntos sueltos.<br />
+      <br />
+&nbsp;Un punto puede tener varios códigos, porque sea el corte entre un
+borde de parcela y un camino (se declaran varias parejas código-comando
+separados por una coma (,) hasta un máximo de 15 caracteres en total).
+Un borde de acera puede ser de tramos rectos y, al llegar a la esquina,
+continuar con un arco de círculo representado por un punto inicial,
+cuantos puntos intermedios se precisen para describir la curva (mínimo
+un punto) y otro final, continuando después la polilínea de segmentos
+rectos o acabándola según se desee. Una glorieta puede tomarse con sólo
+tres puntos o cuantos intermedios sean necesarios para representarla
+(por razones de planta o de la cota).<br />
+      <br />
+&nbsp;Los códigos que declaran el tipo de línea y el encadenamiento son
+definibles por el usuario, si bien el programa dispone de unos por
+defecto.<br />
+      <br />
+&nbsp;Los ficheros .toc son ficheros en código ASCII que contienen para
+cada punto 4 datos numéricos (separados por blancos) y una cadena de
+caracteres opcional de la forma:<br />
+      <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I&nbsp;&nbsp;&nbsp; X&nbsp;&nbsp;&nbsp; Y&nbsp;&nbsp;&nbsp;
+Z&nbsp;&nbsp;&nbsp; TXT<br />
+      <br />
+donde:<br />
+      <br />
+      </a>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 50px; font-weight: bold; text-align: center;">I</td>
+            <td style="vertical-align: top;">Es el número identificador del punto.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">X Y Z</td>
+            <td style="vertical-align: top;">Son las coordenadas del punto (normalmente en metros, con un punto decimal si es preciso).</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; text-align: center;">TXT</td>
+            <td style="vertical-align: top;">Es una columna opcional final que puede admitir un texto. Estos textos
+son editables desde la edición de puntos topográficos que veremos más
+adelante.<br />
+
+            <br />
+
+&nbsp;Cada texto puede tener el formato XXX YY #comentario, donde XXX es un código de tres caracteres e YY es un comando.<br />
+
+            <br />
+
+YY puede estar formado por uno o dos caracteres (en función del
+comando) y puede tomar diferentes valores para definir una polilínea o
+una circular, por ejemplo:<br />
+
+            <br />
+&nbsp;&nbsp;&nbsp;
+I&nbsp; &#8594; Inicio de cadena.<br />
+&nbsp;&nbsp;&nbsp;
+F &#8594; Fin de cadena.<br />
+&nbsp;&nbsp;&nbsp;
+C &#8594; Cierra la polilínea con un segmento de este punto al primero de la cadena.<br />
+
+            <br />
+
+&nbsp;También se pueden interpretar varios códigos con varios comandos en un
+mismo punto, por ejemplo, la secuencia EDF I,BAC F podría indicar
+inicio de edificio y fin de borde de acera.</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+
+ Al interpretar los comandos es posible partir de un fichero .toc con
+los datos tomados sobre dos cadenas leídas en zig-zag y, entonces,
+encadenaría los del mismo código siguiendo los comandos: <br />
+
+
+      <br />
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_toc.png" style="width: 213px; height: 97px;" alt="" /><br />
+
+      </div>
+
+
+            <br />
+Durante la carga de los archivos .toc, despues de los comandos de&nbsp;
+encadenamiento usuales, se admite colocar dos comandos H0.20
+V-0.50&nbsp; que generan una paralela a la cadena original.&nbsp; Ver
+el ejemplo NUBE.toc en la carpeta de trabajo Demo.<br />
+<br />
+
+
+&nbsp;Se permite también la carga de ficheros .toc cuyo primer campo,
+en lugar de un valor numérico, sea una cadena. Por ejemplo, el primer
+campo de un punto podría ser BR001A. El programa, al cargar este campo,
+lo sustituiría por 110011, es decir, cada carácter no numérico lo
+sustituirá por un 1 y los valores numéricos los mantendrá tal cual.<br />
+
+
+      <br />
+
+
+      <a name="ficheros_de_cartografia"><span class="Apartados">Ficheros de cartografía .edm/.edb</span><br />
+      <br />
+      </a><img style="width: 323px; height: 270px;" alt="" src="Imagenes/topo_conv_edm_top.png" align="right" hspace="8" />La herramienta de TOPOGRAFÍA admite un tercer tipo de ficheros de entrada, los .edm /.edb de cartografía, que se pueden <span style="font-weight: bold;">convertir</span> a ficheros del tipo .top/.toc que contendrán puntos topográficos (o nodos) y mallas.<br />
+
+      <br />
+
+&nbsp;Estos puntos, así como las mallas de triangulación y los propios
+triángulos, no son objetos gráficos del entorno EDM, es decir, no
+pertenecen al mapa y sólo son manipulables por las opciones de este
+menú. Si se sale de él NO son accesibles y, por tanto, requiere una
+conversión que permita obtener los objetos gráficos correspondientes
+(puntos y líneas) a partir de elementos topográficos (nodos y mallas).
+La forma de efectuar esta conversión se explica más adelante.<br />
+
+      <br />
+
+&nbsp;Los puntos o nodos constituyen el modelo digital del terreno
+básico para este entorno. Los nodos se encadenan de dos en dos por
+mallas de uno de los tres tipos posibles: las que crea el programa
+(automáticas o de triangulación), las que están definidas en el fichero
+de datos de entrada (de premallado) o las que el usuario añade
+interactivamente (manuales o de usuario). Las primeras se presentan en
+color magenta, las segundas en cyan y las últimas en el color que tenga
+el tipo de línea actual.<br />
+
+      <br />
+
+&nbsp;Los triángulos se forman por relación lógica entre ternas de
+mallas. El modelo de mallas constituye un modelo digital del terreno
+que, si se desea usar en otra zona del programa para obtener planos,
+secciones, etc., debe hacer la conversión oportuna como ya se ha
+comentado.<br />
+
+      <br />
+
+      <span class="Apartados"><a name="ficheros_temporales">Ficheros temporales de topografía .ttp</a></span><br />
+
+
+      <br />
+
+
+&nbsp;Los ficheros .ttp son archivos de topografía que contienen un
+estado intermedio de edición topográfica (nodos, mallas, triángulos,
+cierres e islas,&#8230;), lo que permite reanudar el trabajo en sesiones
+distintas y desde el mismo estado en el que se dejó.<br />
+
+
+      <br />
+
+
+&nbsp;Como estos ficheros también pueden contener triangulaciones y por
+tanto superficies, son usados en diferentes partes del programa, como
+en los módulos VIRTUAL 3D, OBRA LINEAL y en ciertas opciones de
+cubicación del módulo de MODELADO DE SUPERFICIES, para crear ficheros
+del tipo &#8220;caras 3D&#8221; (3D faces) en formato .dxf, etc.<br />
+
+
+      <br />
+
+
+&nbsp;Es posible tener cargadas en memoria varias triangulaciones. El
+programa dispone de un gestor de archivos .ttp accesible desde <span style="font-weight: bold;">Control &#8594; </span><a href="EDM_control_entidades.html#control_ttps">Control de TTPs</a>.<br />
+
+      <br />
+
+      <a name="ficheros_rejilla"><span class="Apartados">Ficheros de rejilla (LIDAR), ficheros LandXML y otros tipos de ficheros</span><br />
+      <br />
+&nbsp;Los ficheros de rejilla (grid) son nubes de puntos equidistantes
+según cierta densidad. Es un formato internacional muy usado. En el
+caso del ASCII-GRID, deberá tener extensión .txt, .grd o .asc y un
+formato como el siguiente:<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img src="Imagenes/ejemplo_asciiGrid.png" style="width: 444px; height: 110px;" alt="" /><br />
+
+      </div>
+
+
+            <br />
+
+
+&nbsp;Los archivos <a href="land_xml.html">LandXML</a> se corresponden con triangulaciones guardadas según un archivo con ese estándar y de extensión .xml.<br />
+
+
+      <br />
+
+
+&nbsp;Los ficheros de extensión .xyz son archivos ASCII de 3 columnas
+que contienen exclusivamente las coordenadas X,Y,Z de cada punto
+separadas por espacios o tabulaciones.<br />
+
+
+      <br />
+
+
+&nbsp;Los archivos .3d son ficheros de triangulación generados por el
+propio programa en distintos menús, incluyendo el propio de TOPOGRAFÍA.
+Se recuerda al usuario que, además de poder cargarse aquí, también se
+pueden exportar directamente a formato .dxf caras3D (3D-faces) desde el
+menú <span style="font-weight: bold;">Archivo &#8594; Exportar</span>.<br />
+
+
+      <br />
+
+
+&nbsp;Lo ficheros de extensión .asc son archivos ASCII de 3 columnas
+que contienen exclusivamente las coordenadas X,Y,Z de cada punto
+separadas por comas.<br />
+
+
+      <br />
+
+
+      <a name="conversiones"><span class="Titulo_2">Conversiones entre cartografía y topografía</span><br />
+      <br />
+      </a><img style="width: 209px; height: 82px;" alt="" src="Imagenes/convers_edm_top.png" align="right" hspace="5" />Desde el desplegable de <span style="font-weight: bold;">Topografía &gt; Conversión</span>
+se da acceso a las opciones que permiten convertir las líneas, símbolos
+y textos del EDM a mallas y puntos topográficos y
+viceversa.<br />
+      <br />
+También se dispone&nbsp; la posibilidad de convertir una selección de elementos a topografía/cartografía. <br />
+
+      <br />
+
+Cuando se ejecuta la opción <span style="font-weight: bold;">[Topografía] &#8594; [Conversión] &#8594; [Convertir a topografía (EDM a TOP)]</span> el programa despliega una ventana desde la que te permite borrar los elementos EDM.<br />
+
+      <br />
+
+Al activar la casilla <span style="font-weight: bold;">Pasar atributo de símbolo a nº de punto</span>
+el programa asigna como número de punto topográfico la parte entera del
+atributo del símbolo de procedencia si lo tuviera. En el caso de que no
+se marque esta casilla, una vez convertido todo a un archivo de
+topografía, se renumerarían todos los puntos.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_edm_top_dialogo.png" style="width: 256px; height: 192px;" alt="" /><br />
+
+      </div>
+
+
+            <br />
+
+
+      <span style="font-weight: bold;">Crear .toc con códigos</span>.
+Mediante esta herramienta se puede generar un fichero .toc a partir de
+una cartografía en la que están asociados textos a los símbolos en
+forma de códigos.<br />
+
+
+      <br /><a name="top_edm">
+
+
+La <span style="font-weight: bold;">conversión</span> inversa se hace con la opción <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; [Convertir a cartografía(TOP a EDM)]</span>,
+que despliega el cuadro de diálogo encargado de convertir los puntos
+y/o mallas de topografía a símbolos y líneas EDM, dividiéndose en dos
+partes. A partir de la casilla Convertir realizaremos la conversión en
+función de las diferentes opciones que veremos a continuación (también se podría realizar una <span style="font-weight: bold;">conversión por selección de elementos a cartografía (TOP a EDM)</span>:<br />
+
+
+      <br />
+
+
+      
+      
+      </a><div style="text-align: center;"><img src="Imagenes/dialogo_convers_top_edm.png" style="width: 633px; height: 493px;" alt="" /><br />
+
+
+      </div>
+
+
+            <br />
+
+
+
+&nbsp;<span style="font-weight: bold;">1. Mallas</span>: Si se desea generar polilíneas EDM a partir de las mallas topográficas, entonces es necesario marcar la casilla <span style="font-weight: bold;">Mallas a líneas</span>. Si se desean convertir los triángulos a polilineas cerradas de cuatro puntos, deberemos marcar <span style="font-weight: bold;">Triángulos a polilineas</span> y escoger con qué tipo de linea se generarán las polilineas.<br />
+
+
+
+&nbsp;<br />
+
+
+
+Las mallas pueden ser:<br />
+
+
+
+      
+      
+      <ul>
+
+
+        <li>De <span style="font-weight: bold;">usuario (U)</span>: Son las que se crean al unir los nodos topográficos interactivamente.</li>
+        <li>De <span style="font-weight: bold;">premallado (P)</span>: Vienen definidas en el fichero de datos de entrada,
+bien a través de un fichero .top/.toc (claves y códigos), un fichero
+.ttp (temporal de topografía) o porque procede de la conversión desde
+el EDM y se le asigna a cada vértice y símbolo original un nodo
+topográfico cuya clave será el tipo del que procede.</li>
+        <li><span style="font-weight: bold;">Automáticas (A)</span>: Las que crea el programa mediante el algoritmo de triangulación.</li>
+        <li><span style="font-weight: bold;">Tipo de malla (U-XX, P-XX, A-XX</span>, siendo XX el número de la polilínea) :
+A la malla se le puede asignar un tipo de línea concreto. Ya se verá
+más adelante en elEditor de mallas.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      
+      <div style="text-align: center;"><img style="width: 660px; height: 464px;" alt="" src="Imagenes/ejemplo_tipo_malla_UAP.png" /><br />
+      </div>
+      <br />
+
+
+
+
+En esta imagen, al activar la casilla Tipo malla, se muestran en la
+pantalla de manera dinámica los textos que identifican las mallas que
+tenemos definidas.<br />
+
+
+
+      <br />
+
+
+
+Acto seguido indicaremos como realizaremos la conversión:<br />
+
+
+
+      <br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_mallas_lineas_tipos.png" style="width: 441px; height: 192px;" alt="" />&nbsp;<br />
+
+
+      </div>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Usar los tipos asignados a las mallas</span>: El programa convertirá las
+mallas de usuario, de premallado y automáticas según los tipos de línea
+que hayamos indicado en las casillas <span style="font-weight: bold;">Mallas de usuario</span>, <span style="font-weight: bold;">Mallas de
+premallado</span> y <span style="font-weight: bold;">Mallas automáticas</span> respectivamente. En el caso de tener
+mallas por tipo (U-XX, P-XX, A-XX) tomará el tipo de línea que tenga la
+propia malla. <br />
+
+
+
+          <br />
+
+
+
+Seleccionado esta opción no tendrá en cuenta la clave.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Usar la clave de los puntos topográficos que forman parte de la malla
+como tipos</span>: Mediante esta casilla el programa convertirá a línea en
+función de la clave de cada uno de los nodos topográficos. No tendrá en
+cuenta los valores que hayamos definido en las casillas Mallas de
+usuario, Mallas de premallado y Mallas automáticas.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <div style="text-align: center;"><img style="width: 500px; height: 360px;" alt="" src="Imagenes/topo_conv_clave.png" /><br />
+
+
+      </div>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Usar los tipos de línea por defecto únicamente</span>: Esta opción es idéntica
+a la primera pero en este caso, aquellas mallas que estén definidas por
+su tipo, se convertirán al tipo de línea que esté definida en las
+casillas de usuario, premallado o automáticas y se convertirán al tipo
+de línea que tenga la propia malla.</li>
+      
+      
+      </ul>
+
+
+      Conviene advertir que todos los puntos de una misma malla deberán tener
+la misma clave, pues de lo contrario se considerará como punto suelto. <br />
+
+
+
+      <br />
+
+
+
+Si se activa la casilla de verificación <span style="font-weight: bold;">Sólo Contorno</span>
+únicamente se salvarán aquellas mallas de usuario que no lleven adosado
+un triángulo en alguno de sus dos lados. Si en el contorno existen
+mallas automáticas debe quedar activada también la correspondiente
+opción.<br />
+
+
+
+      <br />
+
+
+
+La opción <span style="font-weight: bold;">Guardar también automáticas</span>
+(activada por defecto) provoca que también se vuelquen las mallas
+procedentes de la triangulación, de lo contrario, sólo se convertirán
+las mallas de premallado y las de usuario.<br />
+
+
+
+      <br />
+
+
+
+El programa pasará cada línea procedente de una malla en consonancia
+con el modelo asignado a los puntos que la conforman, excepto si se
+activa la casilla <span style="font-weight: bold;">Guardar en modelo actual</span> que, como indica, hace que cada línea se genere en el modelo actual.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;<span style="font-weight: bold;">2. Puntos topográficos</span>:
+En esta segunda parte del cuadro de diálogo se concretan las distintas
+cuestiones relacionadas con la conversión de puntos topográficos a
+símbolos EDM, empezando por indicar si se desea hacer tal conversión,
+por lo que, en caso afirmativo, será necesario marcar la casilla <span style="font-weight: bold;">Puntos a símbolos</span>.<br />
+
+
+
+&nbsp;<br />
+
+
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_dialogo_puntos_a_simb.png" style="width: 624px; height: 232px;" alt="" /><br />
+
+
+      </div>
+
+
+            <br />
+
+
+
+De manera análoga a las mallas, cada punto topográfico se convertirá en un símbolo EDM del tipo indicado (opción <span style="font-weight: bold;">Usar el siguiente tipo</span>, por defecto del tipo 1) o en consonancia con su clave (opción <span style="font-weight: bold;">Usar la clave del punto topográfico como tipo</span>).
+También se puede forzar a que todos los puntos pasen al modelo actual
+en lugar de respetar el que tengan asignado de mano activando la
+casilla <span style="font-weight: bold;">Guardar en modelo actual</span>.<br />
+
+
+
+      <br />
+
+
+
+La opción <span style="font-weight: bold;">Guardar número en atributo</span>
+hace que el atributo del símbolo EDM generado se corresponda con el
+número del punto topográfico del que procede. De esta forma, si se
+utiliza un símbolo que rotule el atributo, se representará su número.<br />
+
+
+
+      <br />
+
+
+
+Al hacer la conversión, y de manera adicional, también se puede volcar
+otra información al EDM relacionada con cada punto topográfico. Esta
+información puede generarse en el EDM en forma de símbolo o de rótulo
+(dependiendo de si el botón conmutable indica <span style="font-weight: bold;">[S]</span> ó <span style="font-weight: bold;">[R]</span>), a la distancia del punto indicada (según los valores expresados en <span style="font-weight: bold;">M.x</span> y <span style="font-weight: bold;">M.y</span>) y puede ser la siguiente:<br />
+
+
+
+      
+      
+      <ul>
+
+
+        <li>La <span style="font-weight: bold;">cota</span></li>
+        <li>La <span style="font-weight: bold;">clave</span></li>
+        <li>El <span style="font-weight: bold;">número</span> de punto</li>
+        <li>El <span style="font-weight: bold;">texto</span> asociado al punto. En este caso únicamente pasará al EDM en forma de rótulo</li>
+      
+      
+      </ul>
+
+
+      A la información que se genera en forma de rótulo se le puede indicar
+el tamaño y el punto de inserción relativo al mismo (enganche
+horizontal y vertical).<br />
+
+
+
+      <br />
+
+
+
+&nbsp;Una vez relleno este cuadro de diálogo con las preferencias de
+conversión, tan sólo resta indicar si se desean volcar únicamente los
+puntos topográficos <span style="font-weight: bold;">sueltos</span> (los que no pertenezcan a ninguna malla) o <span style="font-weight: bold;">todos</span>.
+Normalmente, al volcar una topografía al EDM, no interesará que por
+cada malla genere por un lado las líneas EDM con sus vértices y, por
+otro, símbolos procedentes de los puntos topográficos que coincidan con
+esos vértices, por lo que se marcará la opción Sueltos.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;Mediante la casilla <span style="font-weight: bold;">Convertir inactivos</span> se especifica si se desea prescindir de los puntos topográficos que no se encuentren activos en la topografía.<br />
+
+
+
+      <br />
+
+
+
+&nbsp;Finalmente, para generar el EDM, bastará con pulsar sobre el botón <span style="font-weight: bold;">[Convertir]</span>
+situado en la parte inferior del cuadro de diálogo. Si se hace un uso
+repetido de esta opción de conversión y siempre con la misma
+configuración, resultará interesante guardarla para, en posteriores
+sesiones, cargarla y proceder a la conversión rápidamente. Los botones <span style="font-weight: bold;">[Guardar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" /> y <span style="font-weight: bold;">[Cargar]</span>&nbsp;<img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /> situado también en la parte inferior efectúan esta tarea mediante ficheros de extensión .cnv.<br />
+
+
+
+      <br />
+
+
+
+      <a name="gestion"><span class="Titulo_2">Gestión de ficheros topográficos</span><br />
+      <br />
+      </a><img style="width: 109px; height: 249px;" alt="" src="Imagenes/topo_menu_ficheros.png" align="right" hspace="7" />El menú <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros]</span>
+también permite comunicar este módulo con el resto del programa y con
+ficheros externos tanto a nivel de lectura como de escritura. De esta
+manera, el usuario puede cargar la información necesaria para la
+elaboración del modelo digital del terreno. <br />
+
+      <br />
+
+&nbsp;Todos los pasos intermedios pueden ser salvados en ficheros .ttp
+(ficheros temporales de topografía), los cuales pueden, por supuesto,
+ser cargados en cualquier momento. Esta funcionalidad es muy importante
+teniendo en cuenta que para conjuntos de datos grandes los tiempos de
+computación de determinadas fases del proceso son enormes, teniendo así
+la oportunidad de grabar procesos.<br />
+
+      <br />
+
+&nbsp;Como paso final es posible grabar los datos definitivos, bien
+enviándolos directamente a la propia aplicación (que está dispuesta a
+recibir los datos utilizando las opciones apropiadas) o grabarlos en
+ficheros para que puedan ser cargados más adelante. <br />
+
+      <br />
+
+      <a name="insertar_ttp">ISTRAM®/ISPOL® permite fusionar dos modelos triangulados de forma automática mediante la opción <span style="font-weight: bold;">Ficheros &#8594; Insertar TTP/TTG</span>.<br />
+
+
+      <br />
+
+
+Esta opción inserta un fichero .ttp o .ttg en una zona ya triangulada,
+sustituyendo en ésta los triángulos originales por los del .ttp/.ttg. Al
+usar esta opción, debe tenerse en cuenta que:<br />
+
+      
+      
+      </a><ul>
+
+
+        <li>Las mallas de premallado (color cyan) y de usuario se respetan siempre.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li>Las mallas automáticas cercanas pueden sufrir alguna modificación al establecerse la condición de Delaunay.</li>
+      
+      
+      </ul>Esta
+opción permite dar un margen, de modo que del ttp original se eliminan
+todos los puntos que estén dentro del contorno del ttp que se inserta
+ampliado al margen definido.<br />
+
+      <br />
+
+
+Es posible tener cargadas en memoria varias triangulaciones. El
+programa dispone de un gestor de archivos .ttp accesible desde <span style="font-weight: bold;">Control &#8594; Control de TTPs</span>.<br />
+
+
+
+      <br />
+
+
+
+      <a name="carga"><span class="Apartados">Carga de ficheros topográficos</span><br />
+      <br />
+      </a><img style="width: 187px; height: 319px; float: right;" alt="" src="Imagenes/topo_cargar.png" hspace="5" /><img style="width: 105px; height: 109px;" alt="" src="Imagenes/topo_car_guar.png" align="left" hspace="5" />Desde el menú <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; Cargar</span> es posible leer uno o varios ficheros topográfico para cargarlos y poder trabajar con ellos.<br />
+
+      <br />
+
+&nbsp;Previamente al selector de ficheros, aparece un pequeño cuadro de
+diálogo que permite filtrar el tipo de ficheros a cargar e indicar
+ciertas opciones de carga. Es posible cargar varios ficheros
+simultáneamente aunque sean de diferente formato.<br />
+
+      <br />
+
+&nbsp;Tras escoger el/los fichero/s a cargar, el programa muestra un
+cuadro de diálogo con los mínimos y máximos de X, Y, Z que el usuario
+puede modificar para restringir el área a cargar.<br />
+
+      <br />
+
+&nbsp;Durante la carga se pueden chequear repeticiones de puntos, por
+lo que no puede haber dos puntos con las mismas coordenadas
+planimétricas, aunque su cota sea distinta. El programa considera que
+dos puntos son repetidos si distan entre sí menos de lo indicado en el
+parámetro <span style="font-weight: bold;">tolerancia</span> de las opciones de Topografía.<br />
+
+      <br />
+
+&nbsp;Durante la carga de un fichero .top/.toc se leen los puntos y, si
+procede, se genera el premallado pertinente acorde con las preferencias
+indicadas. <br />
+
+      <br />
+
+&nbsp;En ocasiones, un fichero .top/.toc corresponde a una nube de
+puntos equidistantes entre sí formando una rejilla. Este tipo de
+ficheros suele contener un número elevadísimo de puntos (cientos de
+miles o millones) y muy poco espaciados entre sí (nubes densas), por lo
+que su tratamiento puede ser algo lento. La opción <span style="font-weight: bold;">Leer un punto cada</span>
+(.top/.toc) sirve para indicar si leer todos los puntos o saltar puntos
+con el intervalo indicado, lo que permite filtrar datos muy densos. Por
+defecto vale 1 y así se leerán todos los puntos. Si, por ejemplo, se
+desea leer un punto de cada tres el usuario debería ponerle a ese campo
+el valor 3. En caso de tener una malla de puntos muy elevada quizás sea
+mejor tratarlo como una base de datos laser.<br />
+
+      <br />
+
+&nbsp;Si ya hubiera un fichero .ttp en memoria y a continuación se
+carga otro se mantienen las islas y los cierres siempre y cuando no se
+crucen. En caso de que haya cruces entre islas o cierres se muestra un
+mensaje de error y no se cargarán.<br />
+      <br />
+      <span style="font-weight: bold;">Cargar LandXML</span>: Se
+permite la lectura de ficheros LandXML con CgPoints en Topografía. Si
+tienen atributo "code" entonces este se interpreta como el código del
+punto. Si tienen atributo "name" puede pasar que sea un número, con lo
+cual se asigna al número del punto o que no lo sea, entonces se añade
+como otro código al punto y se le asigna 0 como número de punto. Así
+tenemos con número de punto 0 todos los puntos a los que no se les pudo
+asignar el número desde el fichero LandXML.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">Cargar .toc con repetidos</span>.
+Por defecto está desactivada. A veces puede interesar cargar un archivo
+.toc con puntos repetidos cuando vienen comandos que se desean
+interpretar o se va a tratar como cartografía. Si se activa esta opción
+y se carga un .toc que pueda traer puntos repetidos, antes de
+triangular, debe realizarse un chequeo de puntos para eliminar los
+repetidos.<br />
+      <br />
+      <span style="font-weight: bold;">Bloques con atributos DWG/DXF</span>:
+Esta casilla es un acceso directo al importador de ficheros DWG/DXF.
+Cuando se importan ficheros DWG/DXF dentro de Topografía se muestra una
+pregunta que solicita si se quiere o no analizar el/los ficheros que se
+van a importar. Se comprueba si éstos tienen bloques y en ese caso se
+muestra una pantalla con los bloques obtenidos de los ficheros. En esta
+pantalla se puede indicar que bloques van a generar puntos en
+topografía. Es posible realizar la lectura de sólidos 3D.<br />
+
+      <br />
+
+      <a name="visualizacion"><span class="Apartados">Visualización de datos</span><br />
+      <br />
+      </a><img style="width: 106px; height: 108px;" alt="" src="Imagenes/visualizacion_datos_topo.png" align="right" hspace="5" />A
+modo informativo, pueden visualizarse en pantalla los diferentes datos
+asociados a cada punto topográfico. Para ello se utilizan las casillas <span style="font-weight: bold;">Punto</span>, <span style="font-weight: bold;">Cota</span>, <span style="font-weight: bold;">Texto</span> y <span style="font-weight: bold;">Clave</span> que vemos en la figura adjunta:<br />
+
+      
+      
+      <ul>
+
+
+        <li>El número de punto.</li>
+        <li>La cota: El número de decimales con el que se representa puede ser configurado desde las opciones de Topografía.</li>
+        <li>El texto asociado al punto.</li>
+        <li>La clave (tipo) asociada al punto.</li>
+      
+      
+      </ul>Con respecto al colorido:<br />
+      <ul>
+        <li>Color triángulos</li>
+        <li>Contorno de triángulos: Se puede activar para visualizar
+sólamente el borde de los triángulos. La opción es mutuamente
+excluyente con "Color triángulos".<br />
+        </li>
+        <li>Color de mallas</li>
+      </ul>
+Tipo de entidad:<br />
+      <ul>
+        <li>Tipo de malla</li>
+        <li>Malla<br />
+        </li>
+      </ul>
+
+
+
+            <a name="guardado_top"><span class="Apartados">Guardado de ficheros topográficos</span><br />
+      <br />&nbsp;
+</a><img style="width: 181px; height: 326px;" alt="" src="Imagenes/topo_guardar.png" align="right" hspace="8" />Desde <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; Guardar como</span> es posible obtener ficheros topográficos en diversos formatos, como vemos a continuación. Además, la opción de <span style="font-weight: bold;">Guardar</span>,
+salva los cambios del ttp abierto sobre el mismo fichero que se ha
+cargado previamente sin preguntar confirmación. Cuando no exista un
+fichero abierto, se guardará en "Topografia.ttp". <br />
+
+      
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">TTP</span>: Genera un fichero de extensión .ttp con el estado actual de
+edición de nodos, mallas, triángulos, cierres e islas. En los ficheros
+temporales se salva también el tipo de línea con el que se ha creado
+cada malla de usuario. Este tipo de ficheros permite retomar en
+cualquier otro momento el estado de edición topográfica actual.</li>
+      
+      
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">TTG</span>: Se guarda un
+tipo de fichero *.ttg que es como un .ttp simplificado que sólo
+contiene coordenadas de los puntos y puntos que conforman cada
+triángulo. También se puede cargar desde el Control de TTPs.<br />
+        </li>
+      </ul>
+
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">TOP / TOC</span>: Con esta opción se guardan los puntos de pantalla a un fichero .top/.toc, dependiendo del formato seleccionado.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">XYZ</span>: Genera un fichero de extensión .xyz que consta de tres columnas correspondientes a las tres coordenadas de cada punto.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">NXYZ</span>:
+También genera un fichero de extensión .xyz pero en este caso de
+cuatro columnas: número de punto, coordenada X, coordenada Y y
+coordenada Z. Se permite guardar el Texto asociado al punto topográfico
+en un archivo .xyz con la opción NXYZT. Para ver la opción hay que
+darle a "Mostrar otros formatos" en el diálogo de guardar topografia.<br />
+</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">NXYZC</span>: Igualmente genera un fichero de extensión .xyz similar al
+anterior, pero al que le añade una quinta columna correspondiente al
+código.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Escamas .3d</span>: Permite generar un fichero .3d con los triángulos que se
+puede, por ejemplo, para convertir en un fichero &#8220;caras 3D&#8221; (3D faces)
+en formato .dxf, para utilizar en el estudio de pérdidas de trazado del
+análisis de visibilidad, etc.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Escamas .3do</span>: Genera un fichero .3do de escamas 3D útil para la representación de sólidos en el módulo Virtual 3D®.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">3D-Caras .dxf</span>: Permite guardar la triangulación en formato .dxf,
+legible directamente por diferentes equipos GPS y programas de modelado.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">LandXML</span>:
+Permite crear un fichero de extensión .xml compatible con el estándar
+internacional LandXML, se permite seleccionar la versión con la que se
+quiere escribir el fichero a exportar.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">DGN</span>: Permite almacenar la triangulación en un fichero de Microstation (.dgn).</li>
+      
+      
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>STL (impresion 3D)</li>
+      </ul>
+      <ul style="font-weight: bold;">
+        <li>OBJ</li>
+      </ul>
+      <ul>
+        <li><span style="font-weight: bold;">Civil Estudio</span>: Opción de guardar a formato Civil Estudio.Además, la exportación a Civil Estudio está también disponible en: <br />
+        </li>
+        <ul style="text-align: left;">
+          <li>Obra Lineal-&gt;ALZADO-&gt;HERRAMIENTAS-&gt;Triang. superficie</li>
+          <li>Obra Lineal-&gt;ALZADO-&gt;HERRAMIENTAS-&gt;Triangular superficie vista</li>
+          <li>Edición de perfiles-&gt;ÚTILES-&gt;Triang. superficie</li>
+        </ul>
+      </ul>
+      <a name="Guardar_seleccion_en_TTP"><span style="font-weight: bold;">Guardar selección en TTP</span><br />
+      <br />
+Opción de guardar como un ttp una selección de puntos topográficos, con
+las correspondientes mallas y triángulos si todos sus puntos han sido
+seleccionados. La opción se encuentra dentro del menú superior, en
+"Topografia", "Guardar selección en TTP".<br />
+      <br />
+      </a><div style="text-align: center;"><a name="Guardar_seleccion_en_TTP"><img style="width: 350px; height: 289px;" alt="" src="Imagenes/ttp_guardar_seleccion.png" /><br /></a><a name="Guardar_seleccion_en_TTP">
+      </a></div>
+<a name="Guardar_seleccion_en_TTP">      <br />
+      </a><a name="ttg"><span style="font-weight: bold;">Insertar/Añadir TTP/TTG</span><br />
+      <br />
+Este algoritmo permite añadir la información de un
+archivo TTP/TTG&nbsp; que tenga sus puntos/triángulos en zonas donde ya
+hay datos, en zonas donde no los haya, o parte solapada y parte no. Es
+posible seleccionar hasta 10 archivos que se irán insertando/añadiendo sucesivamente.<br /><br /><br /></a><a style="font-weight: bold;" name="InsertarExpresTTPs"><span style="font-weight: bold;">Insertar Exprés TTPs</span><br /><br />Esta
+herramienta permite a partir de un .TTP&nbsp; chequeado y con al menos
+un cierre insertar uno o varios .TTPs también previamente depurados y
+delimitados con cierres. Solo se inserta la parte de estos TTPs que
+esté dentro de los cierres originales. Este algoritmo agiliza
+considerablemente al de Inertar/Añadir TTP/TTG.<br /><br /><br /><br />
+      <br />
+
+
+
+
+            </a><a name="guardado"><span class="Apartados">Guardado y recuperación rápida de datos</span><br />
+      <br />
+      <img src="Imagenes/topo_guardar_temp.png" style="width: 309px; height: 139px;" alt="" align="right" hspace="6" />Con la opción <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594;[Guardar TMP]</span>
+se puede guardar el estado actual de los datos topográficos para que
+puedan ser recuperados en cualquier otro momento mediante la opción <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; [Recuperar TMP]</span>.<br />
+      <br />
+&nbsp;En este proceso, el programa por defecto guarda los datos
+topográficos en el fichero is#temp.ttp (que es el que se carga con la
+opción <span style="font-weight: bold;">Recuperar</span>) y también la
+cartografía en el fichero is#temp.edb. Este último se puede cargar de
+manera habitual, como cualquier otro fichero .edm/.edb.<br />
+      <br />
+&nbsp;De todas formas, el programa permite cambiar el nombre de estos ficheros temporales.<br />
+      <br />
+En el menú de la derecha disponemos de un acceso rápido a los botones
+que permiten guardar y cargar la topografía en un fichero temporal. <br />
+      <br />
+</a>
+      <div style="text-align: center;"><img style="width: 148px; height: 320px;" alt="" src="Imagenes/ttp_guarda_temp.png" /><br />
+      </div>
+
+      <br />
+
+      <a name="importacion"><span class="Apartados">Importación de ficheros topográficos</span><br />
+      <br />
+      <img src="Imagenes/importar_topo.png" style="width: 189px; height: 154px;" alt="" align="right" hspace="6" />Desde el menú <span style="font-weight: bold;">Herramientas &#8594; Conversores</span>
+el usuario tiene disponibles varios importadores de ficheros de datos
+topográficos. Alguno de ellos también está disponible de forma directa
+desde el menú <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; Importar</span>, tal y como se describe a continuación.<br />
+      </a>
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">ODB -&gt; TOP</span>: Esta opción generará un fichero .top partiendo de los
+ficheros .odb y .cod que establezca el usuario. El campo texto de los
+ficheros.top estará compuesto por el código y el comando que
+corresponda según lo leído en el fichero .odb.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">TOP -&gt; EDM</span>: Carga directamente la información del .top como líneas y
+puntos EDM con los tipos definidos en la tercera columna del fichero
+.top y sin chequear cruces de mallas.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">XYZ -&gt; Líneas EDM</span>: Esta opción carga ficheros .xyz que se encuentren
+ordenados por filas paralelas al eje X y crea una línea EDM por cada
+fila. Pide la distancia de filtrado a utilizar (la distancia en Y entre
+filas).</li>
+      
+      
+      </ul>
+
+
+      &nbsp;<a name="previsualizacion"><span class="Apartados">Previsualización y edición manual</span><br />
+      <br />
+&nbsp;Desde el menú <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; Editar</span>
+es posible modificar mediante una tabla el fichero que elija el
+usuario. Los tipos de ficheros editables son los .toc, .top y .ttp.<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img style="width: 600px; height: 351px;" alt="" src="Imagenes/topo_editar_fichero.png" /><br />
+
+      </div>
+
+
+            <br />
+
+&nbsp;La opción <span style="font-weight: bold;">[Topografía] &#8594; [Ficheros] &#8594; Ver</span> permite realizar una previsualización de los ficheros .top y .ttp<br />
+
+      <br />
+
+      <a name="generar"><span class="Apartados">Generar fichero .top/.toc</span><br />
+      <br />
+      <img src="Imagenes/topo_generar_dialogo.png" style="width: 201px; height: 180px;" alt="" align="right" hspace="6" />&nbsp;Permite
+guardar un fichero de topografía (.top o .toc) convirtiendo las líneas
+y símbolos en nodos y mallas de premallado. Los textos no los guarda.<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      </a><a name="cargar_gen"><span class="Titulo_2">Cargar fichero genérico con datos de topografía</span></a><br />
+      <br />
+Desde el menú desplegable de <span style="font-weight: bold;">Topografía &#8594; Ficheros &#8594; Cargar fichero genérico con datos de topografía </span>podremos cargar ficheros con otros formatos (por ejemplo ficheros .txt) mediante un proceso que explicamos a continuación.<br />
+      <br />
+Una vez seleccionemos el fichero a cargar el asistente de importación
+nos ofrecerá dos opciones para comenzar a realizar la lectura del
+fichero:<br />
+      <ul>
+        <li><span style="font-weight: bold;">Delimitados</span>: Los campos están separados por carácteres como comas o tabuladores</li>
+        <li><span style="font-weight: bold;">De ancho fijo</span>: Los campos están alineados en columnas de un ancho concreto.<br />
+        </li>
+      </ul>
+En este primer paso le puedes indicar al programa desde que línea del fichero quieres <span style="font-weight: bold;">comenzar a importar</span>.<br />
+      <br />
+Finalmente clicando en la casilla <span style="font-weight: bold;">Siguiente</span> pasaremos al siguiente paso de la importación.<br style="font-weight: bold;" />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 402px;" alt="" src="Imagenes/topo_imp_paso1.png" /><br />
+      </div>
+      <br />
+Se puede <span style="font-weight: bold;">cargar la configuración</span>
+del asistente para abrir ficheros genéricos de datos en topografia, y
+de esta forma facilitar la carga de&nbsp; varios ficheros de datos
+iguales. <br />
+      <br />
+En el segundo paso podremos establecer la separación entre columnas:<br />
+      <ul>
+        <li style="font-weight: bold;">Tabulador</li>
+        <li><span style="font-weight: bold;">Otro</span>: pudiendo ser una <span style="font-weight: bold;">,</span> o un<span style="font-weight: bold;"> . </span>etc...</li>
+      </ul>
+Al finalizar este paso clicaremos en la casilla <span style="font-weight: bold;">Siguiente</span>.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 372px;" alt="" src="Imagenes/topo_imp_paso2.png" /><br />
+      </div>
+      <br />
+En este último paso asignaremos a cada columna el <span style="font-weight: bold;">número</span> de punto, la coordenada <span style="font-weight: bold;">X</span>, <span style="font-weight: bold;">Y</span>, Z (<span style="font-weight: bold;">cota</span>), la <span style="font-weight: bold;">clave</span>, el <span style="font-weight: bold;">texto</span> o el <span style="font-weight: bold;">modelo</span>.<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 684px; height: 432px;" alt="" src="Imagenes/topo_imp_paso3.png" /><br />
+      </div>
+      <br />Se puede <span style="font-weight: bold;">guardar la configuración</span>
+del asistente.<br />
+      <br />
+Para acabar la importación deberemos clicar en la casilla <span style="font-weight: bold;">Finalizar</span> para ver los puntos topográficos cargados en nuestr pantalla.<br />
+      <br />
+
+      <a name="opciones"><span class="Titulo_2">Opciones de Topografía</span><br />
+      <br />
+&nbsp;Desde el menú <span style="font-weight: bold;">Configuración &#8594; Preferencias &#8594; Opciones &#8594; Topografía</span>, disponible también directamente mediante el menú de <span style="font-weight: bold;">[Topografía] &#8594; [Opciones]</span>, es posible configurar las siguientes cuestiones relacionadas con la carga:<br />
+      <br />
+Disponemos de un parámetro en la configuración que permite acelerar los
+redibujados en pantalla de los modelos TTPs presentes.
+Configuración-&gt;Preferencias-&gt;Visualización: <span style="font-weight: bold;">Máximo puntos de TTP en pantalla</span>.<br />
+Se estima de un modo aproximado para el nivel actual de Zoom, cuantos puntos del TTP entran en la pantalla:<br />
+</a>
+      <ul>
+        <li>Si el número es inferior al configurado, se dibuja todo el modelo.</li>
+        <li>Si excede al configurado: Se dibujan los bordes y las
+mallas de usuario o premallado y se omiten las mallas automáticas de
+bordes de triánngulos adyacentes. Se dibujan los contornos de Cierres e
+Islas pero sin remarcar los puntos.</li>
+        <li>Si se excede 25 veces el número configurado, solo se
+dibujan las mallas de borde y los contornos de de islas y cierres pero
+sin resaltar.</li>
+      </ul>
+En Topografía: Si el número estimado de puntos excede al configurado:<br />
+      <ul>
+        <li>Ya no se rotulan&nbsp; los valores de Punto, Cota, Clave,
+Texto Asociado. Y se va reducuiendo&nbsp; el número de puntos que se
+muestran.</li>
+        <li>No se dibujan las mallas automáticas salvo las de borde. Si
+se dibujan las de usuario y las de premallado. Si se excede 25 veces el
+número configurado, ya no se dibuja ningunamalla.</li>
+        <li>No se redibujan los triángulos ni su contorno.</li>
+        <li>Si se dibujan los contornos de Cierre e Islas, pero no se remarcan sus puntos.</li>
+      </ul>
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img style="width: 450px; height: 381px;" alt="" src="Imagenes/opciones_topo.png" /><br />
+
+      </div>
+
+
+            <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 120px; font-weight: bold; text-align: left;">Coodenadas .top/.toc</td>
+            <td style="vertical-align: top;">Se permite seleccionar para la carga de ficheros .top y .toc si el fichero viene en formato XYZ ó YXZ.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Tolerancia</td>
+            <td style="vertical-align: top;">Para dos puntos cuya distancia sea inferior a este valor, el programa considera que son puntos repetidos.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Guardar fichero de repetidos</td>
+            <td style="vertical-align: top;">Si se activa esta casilla, cuando se encuentren puntos repetidos en la
+carga de un fichero .ttp, .top o .toc se generará un fichero
+repetidos.res con el listado de los mismos.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">No guardar puntos repetidos en .toc</span><br />
+            </td>
+            <td style="vertical-align: top;">Con esta casilla activa,
+se fuerza al programa a no guardar los puntos repetidos en archivos
+.toc. Esto también implica que no se guardarán las mallas en el archivo.<br />
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Cargar .ttp con repetidos</td>
+            <td style="vertical-align: top;">Si esta casilla se encuentra activada será posible cargar ficheros .ttp
+con puntos repetidos, aunque luego la aplicación no dejará triangularlo.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Cargar .toc con repetidos</td>
+            <td style="vertical-align: top;">Por defecto desactiva. A veces puede interesar cargar un archivo .toc
+con puntos repetidos cuando vienen comandos que se desean interpretar o
+se va a tratar como cartografía. Si se activa esta opción y se carga un
+.toc que pueda traer puntos repetidos, antes de triangular debe
+realizarse un chequeo de puntos para eliminar los repetidos.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Chequear .ttp</td>
+            <td style="vertical-align: top;">Especifica si al cargar un fichero .ttp se comprueba la consistencia de
+las mallas (buscar mallas que se crucen,&#8230;). Con la opción activada, el
+proceso de carga de ficheros de este tipo es más lento.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Leer un punto cada (.top/.toc)</td>
+            <td style="vertical-align: top;">Carga un nodo topográfico de cada x, siendo x el valor especificado en la casilla adjunta.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Chequear mallas al editar cierres</td>
+            <td style="vertical-align: top;">Permite deshabilitar el chequeo de intersección con mallas en las
+funciones de añadir o eliminar puntos a los cierres. Esto permite
+editar y completar cierres con mayor libertad (temporalmente pueden
+cruzarse cierres y mallas) pero al final de la edición conviene volver
+a habilitar la opción y realizar un chequeo de mallas y cierres.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Decimales en cota</td>
+            <td style="vertical-align: top;">Número de decimales con el que se representarán las cotas de los puntos
+topográficos cuando se indica al programa que las muestre (botón
+[co/CO]).<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Insertar punto de corte</td>
+            <td style="vertical-align: top;">Con esta casilla activada, en el caso de que se crucen mallas de
+premallado en la carga, en vez de eliminarlas creará un punto en el
+punto de corte. De este modo, dos mallas que se cruzan pasarán a ser
+cuatro mallas con un punto común. El usuario puede establecer la cota
+que desea para ese punto de corte: la cota de la primera malla, la de
+la segunda o un promedio de ambas. Los puntos que se crean se pueden
+identificar porque en el campo texto tendrán un &#8220;+&#8221;. Esta función sólo
+se activa en la conversión de EDM a TOP o durante la carga de un
+fichero .top.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Atenuación de mallas</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite atenuar mallas de usuario, premallado y automáticas.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 369px; height: 133px;" alt="" src="Imagenes/topo_aten.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;">Tratamiento de repetidos</td>
+            <td style="vertical-align: top;">Se especifica aquí el comportamiento del programa al cargar un fichero
+con puntos repetidos (más/menos la tolerancia): si quedarse con el
+primero o hacer una media de las coordenadas de los puntos iguales. El
+segundo caso sólo funcionará si los puntos repetidos, además de tener
+las coordenadas iguales (más/menos la tolerancia), también tienen el
+mismo número de punto.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Descargar .ttp al salir</td>
+            <td style="vertical-align: top;">Si ese activa esta opción, al abandonar el menú de TOPOGRAFÍA el
+programa descarga de memoria todos los datos referentes a la misma.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Guardar Ruta en .ctp y .csm</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite
+recuperar desde estos archivos, los ficheros&nbsp; ttp o ttg cargados
+desde otras carpetas diferentes a la de trabajo o a ./ttp. No se
+recomienda esta opción si se se van a exportar<br />
+datos mediante archivos .isa<br />
+            </td>
+          </tr><tr><td><span style="font-weight: bold;">Guardar Ruta de N.D.P. en .cnd y .csm</span></td><td>Similar
+a la anterior, permite guardar bases de datos de Nubes Densas de Puntos
+en carpetas diferentes a la de trabajo. En este caso, no tiene afección
+en el .isa.</td></tr>
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+Todas estas opciones se guardan con la configuración del programa<br />
+
+      <br />
+
+      <a name="puntos"><span class="Titulo_2">Edición de puntos topográficos</span><br />
+      <br />
+      </a><img style="width: 339px; height: 57px;" alt="" src="Imagenes/topo_puntos_dialogo.png" align="right" hspace="7" />Antes
+de pasar a describir las opciones de edición, conviene indicar que,
+cuando se está en el entorno de TOPOGRAFÍA, se activa la posibilidad
+del <span style="font-weight: bold;">enganche a puntos topográficos</span>, lo que permite enlazar de manera correcta las mallas que se definan en relación a los puntos de topografía.<br />
+
+Podremos clicar en la casilla de <span style="font-weight: bold;">Eng. Libre</span> y seleccionar el enganche a puntos topográficos (esquina inferior izquierda de la pantalla).<br />
+
+      <br />
+
+      <img src="Imagenes/desplegable_puntos.png" alt="" style="width: 176px; height: 276px;" align="left" hspace="6" />Desde el desplegable <span style="font-weight: bold;">[Topografía] &#8594; [Puntos]</span> se accede a una serie de opciones relacionadas con las opciones de edición de puntos topográficos:<br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><img src="Imagenes/icono_topo_anad_p.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="anadir_punto">Añadir punto</a></span></td>
+            <td style="vertical-align: top;">Tenemos las siguientes opciones:<br />
+            <br />
+            <img src="Imagenes/icono_topo_anad_p.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Añadir punto</span>: Incorpora un nuevo punto gráfica o numéricamente.<br />
+            <br />
+            <img src="Imagenes/icono_topo_anad_p2.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Añadir punto introduciendo cota</span>:
+Incorpora un nuevo punto gráfica o numéricamente, de la misma manera
+que con la opción anterior, solo que se introduce posteriormente la
+cota a la que queremos situar el punto.<br />
+<br />
+
+            <br />
+
+Si ya se ha ejecutado la triangulación y la adición de un punto se hace
+dentro de un triángulo existente, entonces la cota que se le asigna es
+el promedio de las de los tres vértices. El triángulo original es
+destruido y creados tres en su lugar con vértice en el nuevo punto.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_triang_punt.png" style="width: 459px; height: 331px;" alt="" /><br />
+            </div>
+            <br />
+Si no hay triangulación entonces se usa como cota la cota actual, salvo que se haya especificado&nbsp; otra mediante el teclado.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="borrar_punto">Borrar</a></td>
+            <td style="vertical-align: top;">Tenemos las siguientes opciones:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topografia_borrar_opciones.png" style="width: 81px; height: 60px;" alt="" align="middle" /><br />
+            </div>
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_punt.png" style="width: 26px; height: 25px;" alt="" />&nbsp;Borrar puntos</span>: Elimina los nodos topográficos clicando sobre ellos. A
+partir de esta herramienta también se puede hacer una ventana para
+eliminar todos aquellos puntos topográficos que estén dentro de la
+ventana.<br />
+            <br />
+            <img src="Imagenes/icono_topo_borrar_recinto.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;">Borrar recinto</span>: Elimina los nodos topográficos que estén en el interior
+de un recinto cerrado. Nos aparecerá un cuadro de diálogo mediante el
+cual podremos seleccionar:<br />
+            <ul>
+              <li>Una línea cerrada</li>
+              <li>Todas las líneas cerradas de un determinado tipo</li>
+              <li>Todas las líneas cerradas de un determinado modelo</li>
+            </ul>
+
+
+
+            <div style="text-align: center;"><img src="Imagenes/dialogo_borrar_recinto_topo.png" style="width: 177px; height: 162px;" alt="" /><br />
+            </div>
+            <br />
+            <img style="width: 28px; height: 28px;" alt="" src="Imagenes/icono_topo_borrar_ext_recinto.png" />&nbsp;<span style="font-weight: bold;">Borrar por recinto exterior</span>:opción de borrar los puntos topográficos exteriores a un recinto.<br />
+<br />
+            <img src="Imagenes/icono_topo_borrar_cod.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;">Borrar por código</span>: Permite eliminar todos aquellos nodos topográficos
+de un determinado código en función del que hayamos activado.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_borr_cod.png" style="width: 309px; height: 222px;" alt="" /><br />
+            </div>
+            <br />
+            <img src="Imagenes/topo_recuper_pto_b.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;">Recuperar punto borrado</span>: Permite rescatar aquel o aquellos puntos que hayan sido eliminados.<br />
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_editar_busc.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="editar_buscar_p">Editar/Buscar</a></span> </td>
+            <td style="vertical-align: top;">Permite modificar coordenadas, número, clave (tipo), texto y modelo del
+punto. Tras
+modificar un punto topográfico, el programa rehará la triangulación si
+fuera necesario. El usuario puede ir seleccionando interactivamente
+diferentes puntos de la topografía, pues el cuadro de diálogo
+actualizará su contenido al último punto seleccionado.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/editar_punto_topo.png" style="width: 506px; height: 170px;" alt="" /><br />
+            </div>
+            <br />
+La propiedad Modelo hace referencia al modelo al que pasará el punto
+tras efectuar la conversión a EDM. Hay que tener en cuenta que en la
+triangulación se utilizarán únicamente puntos que tengan asignados
+modelos activos.<br />
+
+            <br />
+
+Este cuadro de diálogo permite, además, seleccionar un campo por el
+que localizar los puntos que cumplan con ese criterio. Esto se logra
+con el botón <img src="Imagenes/icono_topo_buscar.png" style="width: 17px; height: 20px;" alt="" />. Una vez encontrado un punto, hará un zoom sobre él y lo
+destacará del resto de puntos. Si existen más puntos con el mismo
+valor, serán destacados de forma secuencial pulsando sucesivamente este
+botón.<br /><br /><span style="font-weight: bold;">Mantener vista</span> permite mantener el encuadre al punto siguiente después de borrar el punto actual.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 26px; height: 25px;" alt="" src="Imagenes/icono_topo_bptos_cer.png" />&nbsp;<span style="font-weight: bold;"><a name="buscarpc">Buscar puntos cercanos</a></span><a name="buscarpc"><br />
+            </a></td>
+            <td style="vertical-align: top;">Esta herramienta permite buscar y modificar puntos topográficos que estén a una <span style="font-weight: bold;">distancia</span> <span style="font-weight: bold;">entre puntos</span> muy próxima, menor que un determinado valor,&nbsp; y con una <span style="font-weight: bold;">diferencia de cota</span> que establezcamos.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 286px; height: 244px;" alt="" src="Imagenes/dialogo_bpc.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_mov_punt.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="moverp"><span style="font-weight: bold;">Mover</span></a></td>
+            <td style="vertical-align: top;">Esta opción permite mover gráficamente un punto antes o después de
+triangular. Si no está triangulado el programa comprueba que en la
+nueva posición las mallas de premallado asociadas al punto no corten a
+otras mallas. Si está triangulado se comprueba que las mallas de los
+triángulos que salen del punto no corten con otras mallas existentes.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 125px;"><img src="Imagenes/icono_topo_insertar_malla.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="insertarenmalla">Insertar en malla</a></span></td>
+            <td style="vertical-align: top;">Esta opción permite insertar puntos mediante el ratón en mallas
+existentes. El punto toma la cota en función de la de los dos puntos
+que forman la malla. La malla se sustituye por dos mallas nuevas. La
+opción queda activada de forma cíclica.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_renumerar.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="renumerar">Renumerar</a></span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/renumerar_puntos_topo.png" style="width: 183px; height: 165px;" alt="" align="right" hspace="6" />Con esta opción es posible cambiar la numeración de los puntos
+partiendo de un valor inicial establecido por el usuario. Esta
+renumeración puede aplicarse a todos o a un intervalo de puntos. En
+este segundo caso, el intervalo se establece numérica o gráficamente.<br />
+            <br />
+Activando la opción <span style="font-weight: bold;">Mantener saltos</span> es posible seleccionar si se
+respetan los saltos de numeración de los puntos al añadir el valor
+inicial.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_deformar.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="deformar">Deformación</a></span></td>
+            <td style="vertical-align: top;">&nbsp;Con esta opción es posible modificar las cotas en un radio establecido
+en la distancia de deformación y siguiendo una curva de Gauss que puede
+modificar el usuario con los deslizadores verticales. Se debe indicar
+además el <span style="font-weight: bold;">incremento de cota</span> (positivo o negativo) y el <span style="font-weight: bold;">coeficiente de
+deformación</span>. También se pide desde qué punto aplicar la fórmula. Como
+resultado se obtendrá que los puntos a una distancia dentro de la
+distancia de deformación verán su cota modificada siguiendo la fórmula
+y el incremento de cota.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/deformacion_topo.png" style="width: 527px; height: 172px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_activar.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="activar">Activación</a></span></td>
+            <td style="vertical-align: top;"><img src="Imagenes/activacion_topo.png" style="width: 183px; height: 256px;" alt="" align="right" hspace="6" />Permite activar/desactivar puntos en función de su código o de su clave.<br />
+
+            <br />
+
+&nbsp;En esta opción se muestran las distintas claves que hay en los puntos
+cargados. El usuario puede activar/desactivar las claves que considere
+oportunas de modo que cuando se realice una triangulación, ésta
+únicamente considerará los puntos que tengan claves activas.<br />
+
+            <br />
+
+&nbsp;El código que se utiliza para las activaciones es el código que llevan los puntos que vienen en los ficheros .toc.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_raiz.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<span style="font-weight: bold;"><a name="raiz">Raíz</a></span></td>
+            <td style="vertical-align: top;">Esta función solicita una raíz y modifica los textos de los puntos que
+tengan esa raíz poniendo el resto del texto como si fuera un
+comentario. Por ejemplo, si como raíz se introduce BKM y existen puntos
+con los textos BKM25, BKM4,&#8230; los transformará en BKM #25, BKM #4,...</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_propiedades.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="seleccion_prop">Selección por propiedades</a></td>
+            <td style="vertical-align: top;"><img style="width: 211px; height: 144px;" alt="" src="Imagenes/seleccion_puntos_topo.png" align="right" hspace="7" />Esta opción sirve para seleccionar varios puntos de la nube de puntos
+que tengan una <span style="font-weight: bold;">propiedad</span> común. Para este fin se le solicita al usuario
+que introduzca la propiedad por la que desea filtrar, qué <span style="font-weight: bold;">operador</span> y el
+            <span style="font-weight: bold;">valor</span>. Para deseleccionar puntos se puede pulsar &lt;Esc&gt; o, desde
+este cuadro de diálogo, como operador seleccionar Ninguno.<br />
+
+            <br />
+
+Si se marca la casilla <span style="font-weight: bold;">Enlazar con la selección anterior</span> entonces a
+los puntos seleccionados previamente se les unen los procedentes de la
+nueva selección.<br />
+
+            <br />
+
+Cuando hay una selección de puntos activa entonces las opciones de
+Borrar y Borrar recinto sólo afectan a los puntos seleccionados.
+            <br />
+            <br />
+Una vez realizada la selección de puntos topográficos, al clicar en <span style="font-weight: bold;">Aplicar</span> podremos realizar otras selecciones sin perder la selección previa. Cuando hayamos finalizado la selección <span style="font-weight: bold;">Aceptaremos</span> y podremos modificar mediante el siguiente cuadro de diálogo la cota, el número de punto, la clave, el texto y
+el modelo simultáneamente a todos los puntos seleccionados.<br />
+También podríamos <span style="font-weight: bold;">eliminar</span> los elementos seleccionados.<br />
+            <br />
+            
+            <div style="text-align: center;"><img style="width: 181px; height: 154px;" alt="" src="Imagenes/topo_dialogo_modif.png" /><br />
+            </div>
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="incrementarz">Incrementar Z<br />
+</a></td>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_incrementarz.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Incremento Z por selección</span>:
+Permite incrementar la cota de puntos que seleccionemos
+interactivamente o mediante una ventana clicando en el botón izquierdo
+del ratón sin soltar el mismo. Todos los puntos que queden dentro de la
+ventana quedarán seleccionados.<br />
+            <br />
+            <img src="Imagenes/icono_topo_increz_rec.png" style="width: 26px; height: 25px;" alt="" /> <span style="font-weight: bold;">Incremento Z por recinto</span>:
+Permite incremetar la cota dentro de un recinto cerrado (línea que
+tendré que tener dibujada en la pantalla previamete con la
+característica de ser cerrada), lo que
+posibilita discriminar un conjunto de puntos sin necesidad de
+seleccionarlos previamente.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_max_min.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="informacion">Información sobre máximos y mínimos<br />
+</a></td>
+            <td style="vertical-align: top;">Muestra un cuadro
+con información de los datos cargados en el menú de Topografía y con
+las coordenadas mínima y máxima del mismo.<br />
+Al clicar en el icono&nbsp;<img src="Imagenes/icono_topo_ojo.png" style="width: 20px; height: 13px;" alt="" /> te lleva al punto seleccionado y al menú de edición del mismo.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_informacion.png" style="width: 253px; height: 266px;" alt="" /><br />
+            </div>
+            <br />
+</td>
+          </tr>
+          
+          
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_list_p.png" style="width: 26px; height: 25px;" alt="" />&nbsp;<a name="listar_p">Listar puntos<br />
+</a></td>
+            <td style="vertical-align: top;">Permite ver la
+información de los puntos cargados y editarla desde una rejilla de
+datos. Al clicar en cualquier casilla de la rejilla el programa te
+situa en el punto topográfico correspondiente a esa casilla.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_rejilla_datos_listar.png" style="width: 486px; height: 214px;" alt="" /><br />
+            </div>
+            <br />
+</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+        <a name="premallado"><span class="Titulo_2">Edición de mallas de Premallado</span><br />
+      <br />
+      </a><img style="width: 338px; height: 51px;" alt="" src="Imagenes/dialogo_topo_premallado.png" /><br />
+
+      <br />
+
+&nbsp;El entorno de TOPOGRAFÍA diferencia entre tres tipos de mallas:<br />
+
+      
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Mallas de premallado</span>: Vienen definidas en el fichero de datos de
+entrada, bien a través de un fichero .top/.toc (claves y códigos), un
+fichero .ttp (temporal de topografía) o porque procede de la conversión
+desde el EDM y se le asigna a cada vértice y símbolo original un nodo
+topográfico cuya clave será el tipo del que procede. Se representan de
+color cyan.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Mallas de usuario o manuales</span>: Son las que el usuario añade
+interactivamente y se representan con el color correspondiente al tipo
+de línea actual.</li>
+      
+      
+      </ul>
+
+
+            
+      
+      <ul>
+
+
+        <li><span style="font-weight: bold;">Mallas automáticas o de triangulación</span>: Las crea el programa mediante el algoritmo de triangulación y son de color magenta.<br />
+
+
+La edición de mallas de premallado consta de las siguientes opciones agrupadas en el menú <span style="font-weight: bold;">[Topografía] &#8594; [Premallado]</span>:</li>
+      
+      
+      </ul>
+
+
+       <img style="width: 150px; height: 168px;" alt="" src="Imagenes/menu_premallado.png" align="right" /><br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+
+      <br />
+      <br />
+      <br />
+<br />
+
+&nbsp;<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 120px;"><img src="Imagenes/icono_topo_generar.png" style="width: 26px; height: 26px;" alt="" /> <a name="generar_pre"><span style="font-weight: bold;">Recargar conversión<br />
+</span></a></td>
+            <td style="vertical-align: top;">&nbsp;Vuelve a generar las mallas de premallado, aunque las convierte en
+mallas de usuario. Esta generación puede no ser tan perfecta como la
+que se hace desde la carga, pues es posible que se haya perdido parte
+de la información debida a puntos repetidos que hayan sido filtrados.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_crear_polilinea.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="crear_x_pol">Crear por polilínea</a></td>
+            <td style="vertical-align: top;">Permite realizar un premallado partiendo de una polilínea e indicándole
+una distancia que será la tolerancia permitida entre la línea y los
+puntos de topografía.<br />
+
+            <br />
+
+&nbsp;El proceso calcula las proyecciones y distancias de los puntos a la línea, ordena el vector de puntos y une esos puntos.<br />
+
+            <br />
+
+&nbsp;Este procedimiento sería útil en el caso de tener que realizar el
+premallado con puntos que no tienen códigos, de esta forma sigue la
+traza de la línea uniendo los puntos que estén a menor distancia que la
+indicada.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_premall_polilinea.png" style="width: 384px; height: 267px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_borrar_prem.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="borrar_pre">Borrar todo<br />
+</a></td>
+            <td style="vertical-align: top;">Elimina todas las mallas de premallado.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 26px; height: 26px;" alt="" src="Imagenes/topo_icono_borrar_vent.png" /> <span style="font-weight: bold;"><a name="borrar_vent">Borrar por ventana</a></span><a name="borrar_vent"><br />
+            </a></td>
+            <td style="vertical-align: top;">Elimina todas las mallas
+que estén dentro o parcialmente dentro de la ventana que realicemos.
+clicando el botón izquierdo del ratón. <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_copiar_lin.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="copiar_lin_pre">Copiar líneas</a></td>
+            <td style="vertical-align: top;">Copia al sistema de edición gráfica las líneas predefinidas en el
+fichero de datos, utilizando para ello los códigos de secuencia y de
+tipo de línea que tengan los puntos dato.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_cod_y_com.png" style="width: 26px; height: 26px;" alt="" /> <a name="dicc_codigos">Códigos y comandos<br />
+</a></td>
+            <td style="vertical-align: top;">Al pulsar en esta opción se abre una ventana para el tratamiento de los
+textos asociados a los puntos que provienen de ficheros .toc. Todas
+estas opciones conforman un diccionario de códigos que se puede salvar
+o cargar con las opciones <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span> respectivamente. Los
+ficheros de diccionario de códigos también tienen extensión .cod (no
+confundir, por tanto, con los diccionarios de importación de archivos
+.dxf/.dwg y .dgn).<br />
+            <br />
+Estos archivos .cod se pueden guardar o cargar en la librería de
+nuestro proyecto o en su defecto en la librería de la carpeta ISPOL.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_dicc_cod_topo.png" style="width: 543px; height: 264px;" alt="" /><br />
+            </div>
+            <br />
+En esta pantalla aparecen los distintos <span style="font-weight: bold;">códigos</span> de texto que tienen los nodos topográficos y para cada código de texto, el usuario puede establecer si se
+trata de una <span style="font-weight: bold;">línea</span> o un punto suelto <img src="Imagenes/linea_punto.png" style="width: 80px; height: 20px;" alt="" />. <br />
+            <br />
+Si el fichero cargado es un&nbsp;<span class="Archivo">.toc</span>,
+esta pantalla aparece con los códigos que contiene el fichero. Si un
+código aparece con comandos de inicio y fin de línea será considerado
+como línea, en caso contrario será considerado como punto.<br />
+            <br />
+Los <span style="font-weight: bold;">códigos</span> se pueden listar alfabéticamente con el botón&nbsp;<img src="Imagenes/icono_topo_ord_alfab.png" style="width: 18px; height: 19px;" alt="" /> [<span style="font-weight: bold;">Ordenar
+alfabeticamente</span>]. El botón&nbsp;<img src="Imagenes/icono_topo_buscar.png" style="width: 17px; height: 20px;" alt="" /> <span style="font-weight: bold;">[Buscar]</span> permite localizar rápidamente un
+código en el diccionario. Además, cada código puede estar activo o no,
+dependiendo de si está marcada la casilla&nbsp;<img src="Imagenes/icono_topo_tic.png" style="width: 20px; height: 20px;" alt="" /> que aparece al lado de cada
+uno. Es posible activar y desactivar todos los códigos. Los códigos
+desactivados no intervendrán en las operaciones de encadenar o
+interpretar.<br />
+            <br />
+Podremos crear nuestro propio diccionario mediante la adición de datos a partir del comando&nbsp;<img src="Imagenes/icono_anadir_codigos.png" style="width: 15px; height: 15px;" alt="" /> que luego podremos guardar mediante un archivo&nbsp;<span class="Archivo">.cod</span> como mencionábamos anteriormente.<br />
+            <br />
+A partir del icono <img src="Imagenes/icono_topo_borrar_codigos.png" style="width: 15px; height: 15px;" alt="" /> se podrán borrar los datos del diccionario que tengamos cargado.<br />
+<br />
+Una vez configurado el diccionario, es momento de pasar a efectuar
+ciertas operaciones que hagan uso de él, de entre las siguientes:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Recargar códigos</span> el programa permite añadir
+a la lista de códigos nuevos códigos de puntos topográficos que
+pudiesen haberse añadido a posteriori.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Rellenado rápido</span> permite asociar el mismo tipo de elemento en el
+diccionario de códigos. Al indicar el prefijo y el tipo, se rellenará
+ese tipo en todas las entradas del diccionario que empiecen por ese
+prefijo. Sería útil en el caso de haber tomado puntos en campo
+representativos del mismo elemento codificados, por ejemplo, de la
+forma ARB01, ARB02,..., ARB0n, de tal forma que al indicar el prefijo
+común a todos ellos (ARB) y el tipo de símbolo con el que se quiere
+representar (por ejemplo 9), representará todos los puntos que tienen
+ese código con ese tipo de símbolo.</li>
+            </ul>
+
+
+            <br />
+
+            <div style="text-align: center;"><img src="Imagenes/topo_rell_rapido_dialogo.png" style="width: 159px; height: 197px;" alt="" /></div>
+            <ul>
+<li><span style="font-weight: bold;">Código a clave</span>: Sustituye la clave de los puntos cargados según el
+tipo de línea o símbolo&nbsp; que hayamos definido en el diccionario. Los
+puntos deben tener en el campo de texto el código del diccionario.</li>
+            </ul>
+
+
+            <ul>
+<ul><li><span style="font-weight: bold;">De todos los códigos</span>: Convierte la clave de cada nodo topográfico al tipo asignado en nuestro diccionario, ya sea Línea o Punto.</li><li><span style="font-weight: bold;">Sólo de los códigos definidos como "Punto"</span>:
+Convierte la clave de cada nodo topográfico al tipo asignado en nuestro
+diccionario, pero sólo aquellos que estén definidos como Puntos.<br />
+    </li></ul>
+            </ul>
+
+
+            <div style="text-align: center;"><img src="Imagenes/topo_codigo_aclave_dialogo.png" style="width: 200px; height: 109px;" alt="" /></div>
+
+            <ul>
+              </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Crear EDM</span>:
+Transforma las mallas que estén encadenadas a líneas y los nodos o
+puntos sueltos a símbolos con el tipo de malla y nodo que hayamos
+establecido en el diccionario. Crea también símbolos en las mallas
+encadenadas que podremos desactivar en el propio menú de <a href="EDM_control_entidades.html#control_simbolos">control de tipos de símbolo</a> si no nos interesase.</li>
+            </ul>
+            <div style="margin-left: 40px;">Otra opción para pasar de mallas y nodos a líneas y símbolos es ir al menú desplegable de Topografía &gt; Conevrsión &gt; <a href="EDM_topografia.html#conversiones">Convertir a cartografía (TOP a EDM)</a>.<br />
+            </div>
+            <ul>
+              <li><span style="font-weight: bold;">Encadenar</span>: Une los puntos que tengan el mismo código. El programa te
+deja escoger si deseas unir sólo los puntos de un determinado código,
+considerar todos los códigos o excluir un código.</li>
+
+            
+            </ul>
+
+
+
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_encadenar.png" style="width: 166px; height: 109px;" alt="" /><br />
+            </div>
+
+            <ul>
+              </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Borrar</span>: Permite suprimir todas las mallas.<br />
+              </li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Interpretar</span>:
+Une los puntos que tengan el mismo código chequeando previamente las
+mallas e interpretando los comandos (Inicio de cadena I, Fin de cadena
+F, Inicio de curva CI...)<br />
+
+
+                <br />
+
+
+Tanto en la operación de <span style="font-weight: bold;">encadenar</span> como en la de <span style="font-weight: bold;">interpretar</span>, cuando se
+trate de puntos sueltos el programa no intentará encadenarlos. En el
+caso de ser línea, intentará encadenarlo y mostrará sus mallas en ese
+tipo de línea si se encuentra activa la opción de dibujar con colores
+propios las mallas del menú flotante de topografía.<br />
+
+
+              </li>
+
+            
+            </ul>
+
+
+
+            <div style="text-align: center;"><img src="Imagenes/topo_interpretar_col_mall.png" style="width: 329px; height: 60px;" alt="" /><br />
+            </div><br />
+<ul>
+              <li><span style="font-weight: bold;">Borrar ficticios</span>: Elimina aquellos puntos ficticios que el programa ha
+creado para poder discretizar arcos pero que no son puntos topográficos
+dato.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Flecha máxima</span>: Hace referencia a la precisión con que se discretizarán los arcos.</li>
+            </ul>
+
+
+
+Además, si se tiene marcada la opción <span style="font-weight: bold;">Permitir cruces (no triangular)</span>
+el programa, al interpretar el fichero .toc, no borra las mallas que se
+cruzan. Esta opción resulta útil en el caso de que no se vayan a
+triangular los datos obtenidos del .toc, sino que directamente se pasen
+a un fichero .edm/.edb.<br />
+
+            <br /><span style="font-weight: bold; font-style: italic;">Configurar comandos</span> <span style="font-weight: bold; font-style: italic;">TOC</span>:<br />
+            <br />
+            <img src="Imagenes/comandos_toc.png" style="width: 142px; height: 256px;" alt="" align="right" hspace="6" />Los ficheros .toc pueden llevar los siguientes comandos:<br />
+
+            <br />
+
+I: Punto de Inicio de una cadena.<br />
+
+            <br />
+
+F: Punto final de una cadena. <br />
+            <br />
+
+C: Cierre recto.<br />
+&nbsp;
+            <br />
+
+CI: Punto de inicio de una curva.<br />
+
+            <br />
+
+CC: Punto intermedio de una curva en la cadena.<br />
+&nbsp;
+            <br />
+
+CF:Punto final de una curva.<br />
+&nbsp;
+            <br />
+
+CP: Punto de cierre de una cadena en el primer punto de ésta. Para la
+creación del arco el programa usará el punto del comando CP (p.ej. i),
+el punto anterior más cercano a i que tenga su mismo código, y el punto
+inicio de la cadena. En la creación del arco creará los puntos
+ficticios que sean necesarios de acuerdo al valor de precisión para la
+discretización de arcos.<br />
+
+            <br />
+
+PF: Punto ficticio (creado por el programa para dibujar una curva).<br />
+&nbsp;
+            <br />
+
+R: Rectángulo.<br />
+            <br />
+El usuario puede establecer cuáles son los comandos que se corresponden
+con las diversas opciones (inicio cadena, fin cadena,&#8230;) o aceptar los
+que sugiere el programa.<br />
+
+            <br />
+
+&nbsp;Estos comandos se pueden guardar en la librería (en un fichero de
+extensión .cmn) para poder ser usados en otras sesiones del programa.<br />
+            <br />
+Nota: Es bastante útil utilizar el botón derecho del ratón para
+ayudarte a ver dinámicamente la numeración de los puntos, de las
+mallas... o para realizar una conversión a un fichero de cartografía (<span class="Archivo">.edm</span>)<br />
+            <br />
+Al realizar esta conversión queremos señalar que si pretendemos que los
+nodos de topografía pasen a puntos con el símbolo establecido en el
+diccionario de códigos deberemos activar la casilla <span style="font-weight: bold;">Usar la clave del punto topográfico como tipo</span> según la figura adjunta:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_aclaracion_cod.png" style="width: 546px; height: 203px;" alt="" /><br />
+            </div>
+
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_cambiar_tipo.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cambiar_tipo_pre">Cambiar clase de malla<br />
+            </a></td>
+            <td style="vertical-align: top;">Mediante esta herramienta podremos cambiar los tipos de mallas de premallado, usuario o automáticas.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 384px; height: 330px;" alt="" src="Imagenes/topo_dialogo_camb_tipo.png" /><br />
+            </div>
+            <br />
+Las mallas seleccionadas se pueden elimnar pulsando sobre la casilla <span style="font-weight: bold;">Borrar mallas</span>.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><img style="width: 27px; height: 25px;" alt="" src="Imagenes/icono_topo_pas_atr.png" /><span style="font-weight: bold;"><a name="pasar_atributos">Pasar atributos</a></span><a name="pasar_atributos"><br />
+            </a></td>
+            <td style="vertical-align: top;">Pide reiteradamente dos mallas, una para tomar su clase y tipo y otra para ponerle dicha clase y tipo.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 28px; height: 26px;" alt="" src="Imagenes/pasar_atributos_v.png" /><span style="font-weight: bold;"><a name="pasar_atributos_a_varias_mallas">Pasar atributos a varias mallas</a></span><a name="pasar_atributos_a_varias_mallas"><br />
+            </a></td>
+            <td style="vertical-align: top;">Pide una malla para tomar su clase y tipo y posteriormente va pidiendo sucesivas mallas para ponerle dichos atributos.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img style="width: 34px; height: 32px;" alt="" src="Imagenes/icono_corte.png" /> Corte</span><br />
+            </td>
+            <td style="vertical-align: top;"><span style="color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Esta
+opción solicita una banda al usuario para realizar el corte y muestra
+el perfil correspondiente en la parte inferior derecha de la ventana
+gráfica.</span></td>
+          </tr>
+
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+   <a name="usuario"><span class="Titulo_2">Edición de mallas de usuario</span><br />
+      <br />
+      </a><img style="width: 340px; height: 56px;" alt="" src="Imagenes/dialogo_topo_mallas_us.png" /><br />
+
+      <br />
+
+      <img style="width: 156px; height: 204px;" alt="" src="Imagenes/menu_mallas_usuario.png" align="right" hspace="5" />Las
+mallas de usuario pueden representarse con un color personalizado. Para
+ello, basta con cambiar el tipo de línea actual por uno que tenga el
+color deseado y dejar el <span style="font-weight: bold;">Color mallas</span> activado. Si este botón se desactiva, entonces las mallas de usuario se dibujan de color amarillo.<br />
+
+      <br />
+
+En cuanto a las posibilidades con las mallas de usuario, ISTRAM®/ISPOL®
+presenta las siguientes opciones agrupadas en el menú MALLAS:<br />
+
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 110px; font-weight: bold;"><img src="Imagenes/icono_topo_mallas_anad.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="anadir_mall">Añadir</a></td>
+            <td style="vertical-align: top;">A las mallas de premallado se le pueden añadir manualmente cuantas se
+desee siempre que no se corten con otras mallas de premallado o de
+usuario ya existentes. Si ya hubiera una triangulación, y por lo tanto
+existiesen mallas automáticas (de color magenta), aún se podría añadir
+mallas, y éstas podrían cruzar a las automáticas, pero no a las de
+premallado o usuario. Añadir una malla de usuario coincidiendo con una
+ya existente automática sólo implica su conversión a tipo de usuario.<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="encadenar_mall">Encadenar</a></td>
+            <td style="vertical-align: top;">Tres opciones:<br />
+            <ul>
+              <li><img src="Imagenes/icono_topo_enc_uno_a_uno.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<span style="font-weight: bold;">Encadenar uno a uno</span>:
+Opción similar a Añadir, pero con la ventaja de poder crear mallas
+encadenadas. Con esta opción si se pica en un lugar donde no hay punto
+topográfico, lo crea para asi poder crear la malla.<br />
+</li>
+            </ul>
+            <ul>
+              <li><img src="Imagenes/icono_topo_enc_edm.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<span style="font-weight: bold;">Encadenar creando líneas EDM</span>: Esta opción es análoga a la de Encadenar, pero además crea una línea EDM del tipo actual por debajo de las mallas.<br />
+              </li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;"><img src="Imagenes/icono_topo_encad.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Encadenar</span>: Aparece un cuadro de diálogo mediante el cual podré encadenar mediante las siguientes opciones:</li>
+            </ul>
+            <ul>
+              <ul>
+                <li><span style="font-weight: bold;">Todos</span>: Une mediante mallas en función del número de punto.</li>
+                <li><span style="font-weight: bold;">Unir por clave de línea</span>: Encadema mallas en función de la clave, pudiendo seleccionar una determinada <span style="font-weight: bold;">clave</span>, <span style="font-weight: bold;">todas</span> las claves o una <span style="font-weight: bold;">clave a excluir</span>.</li>
+                <li><span style="font-weight: bold;">Unir por teclado</span>: Permite indicarle al programa de que nodo a que nodo deseas encadenar mediante el número de los mismos.</li>
+                <li><span style="font-weight: bold;">Intervalo</span>: Se encadena en función del valor que iniquemos en el cuadro de diálogo. Cada nodo, cada 2 nodos, etc...<br />
+                </li>
+              </ul>
+            </ul>
+            <div style="text-align: center;"><img src="Imagenes/topo_dialogo_encad.png" style="width: 234px; height: 117px;" alt="" /><br />
+            </div>
+            <br />
+Al pulsar la tecla <span style="font-weight: bold;">[ESCAPE]</span>
+mientras se utilizan estas opciones, se interrumpe la cadena actual,
+pero no se abandona la opción y se puede iniciar una nueva cadena.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_borr_banda.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="borrar_banda">Borrar por banda</a></td>
+            <td style="vertical-align: top;">Permite eliminar por banda mallas de cualquier tipo y los triángulos
+apoyados en ellas (si los hay). Este dominio queda vacío de triángulos
+y el hueco creado no puede volver a triangularse. En el hueco no se
+generan isolíneas.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 26px; height: 26px;" alt="" src="Imagenes/topo_icono_borrar_vent.png" /> <a name="borrar_vent_m"><span style="font-weight: bold;">Borrar por ventana</span><br />
+            </a></td>
+            <td style="vertical-align: top;">Elimina todas las mallas que estén dentro o parcialmente dentro de la
+ventana que realicemos. clicando el botón izquierdo del ratón.</td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_cort_long.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cortar_long_mall">Cortar por longitud</a></td>
+            <td style="vertical-align: top;">Esta opción interpola puntos en las mallas que tengan una longitud
+mayor que el valor dado. Para los puntos creados se interpolan las tres
+coordenadas X, Y, Z y los puntos creados en una malla serán
+equidistantes con una distancia igual o menor a la longitud dada.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_cambiar_tipo_malla.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cambiar_tipo_mall">Cambiar clase de malla</a></span><a name="cambiar_tipo_mall"><br />
+            </a></td>
+            <td style="vertical-align: top;">Mediante esta herramienta podremos cambiar los tipos de mallas de premallado, usuario o automáticas.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 384px; height: 330px;" alt="" src="Imagenes/topo_dialogo_camb_tipo.png" /><br />
+            </div>
+            <br />
+Las mallas seleccionadas se pueden elimnar pulsando sobre la casilla <span style="font-weight: bold;">Borrar mallas</span>.<br />
+<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><img style="width: 27px; height: 25px;" alt="" src="Imagenes/icono_topo_pas_atr.png" /><span style="font-weight: bold;"><a name="pasar_atributos_m">Pasar atributos</a></span></td>
+            <td style="vertical-align: top;">Pide reiteradamente dos mallas, una para tomar su clase y tipo y otra para ponerle dicha clase y tipo.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img style="width: 28px; height: 26px;" alt="" src="Imagenes/pasar_atributos_v.png" /><span style="font-weight: bold;"><a name="pasar_atributos_a_varias_mallas_m">Pasar atributos a varias mallas</a></span></td>
+            <td style="vertical-align: top;">Pide una malla para tomar su clase y tipo y posteriormente va pidiendo sucesivas mallas para ponerle dichos atributos.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img style="width: 34px; height: 32px;" alt="" src="Imagenes/icono_corte.png" /> Corte</span><br />
+            </td>
+            <td style="vertical-align: top;"><span style="color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; display: inline ! important; float: none;">Esta
+opción solicita una banda al usuario para realizar el corte y muestra
+el perfil correspondiente en la parte inferior derecha de la ventana
+gráfica.</span></td>
+          </tr>
+
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+      <a name="contornos"><span class="Titulo_2">Edición de Contornos, Cierres e Islas </span><br />
+      <br />
+      </a><img style="width: 339px; height: 57px;" alt="" src="Imagenes/dialogo_topo_contornos.png" /><br />
+
+      <br />
+
+Tanto los cierres como las islas son recintos que pueden contener o no
+puntos topográficos en su interior. La diferencia es que a la hora de
+triangular el programa sólo tendrá en cuenta los puntos del interior de
+los cierres mientras que omitirá los puntos interiores a las islas.<br />
+
+      <br />
+
+      <img src="Imagenes/ejemplo_cierres_islas.png" style="width: 265px; height: 208px;" alt="" align="right" hspace="6" />Conviene
+advertir que los recintos aquí referidos son propios del entorno
+cartográfico, por lo tanto no hay que confundirlos con los recintos EDM
+aunque, por supuesto, es posible obtener recintos topográficos a partir
+de estos últimos. A la hora de triangular, el programa realiza los
+siguientes pasos:<br />
+
+      
+      
+      <ol>
+
+
+        <li>Si no hay cierres ni islas activos, triangula toda la nube de puntos
+respetando las mallas de premallado y de usuario existentes.</li>
+        <li>Si sólo existen cierres activos, entonces únicamente triangula dentro de los cierres.</li>
+        <li>Si sólo existes islas activas, entonces triangula todo excepto el interior de las islas.</li>
+        <li>Si hay tanto islas como cierres activos, entonces respeta los cierres y
+las islas interiores a cierres (como se muestra en la imagen).</li>
+      
+      
+      </ol>
+
+
+            <br />
+
+      <img src="Imagenes/cierres_islas_activar.png" style="width: 179px; height: 32px;" alt="" align="left" hspace="6" />La
+activación y desactivación de los cierres y las islas se indica en el
+menú, de tal manera que, pulsando sobre los botones conmutables, se
+indica si se activan o no los cierres y las islas. Obviamente, tanto
+los cierres como las islas se incluyen en la triangulación una vez
+generada ésta, y además se guardan en los ficheros .ttp.<br />
+
+      <br />
+
+El trabajo con cierres e islas dota, pues, de mucha flexibilidad a la
+hora de trabajar con triangulaciones, pues permite, por ejemplo, ir
+actualizando una triangulación en función del avance de una obra.<br />
+
+      <br />
+
+      <span style="font-weight: bold; font-style: italic;">Creación y edición de cierres e islas</span><br />
+
+      <br />
+
+Las opciones para crear y trabajar con cierres e islas son las siguientes:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 110px; font-weight: bold;"><a name="crear_ci">Crear</a></td>
+            <td style="vertical-align: top;">Distinguimos las
+siguientes opciones para crear los cierres o las islas en función de la
+opción que tengamos activa como veíamos con anterioridad:<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierre_crear_ppuntos.png" style="width: 26px; height: 26px;" alt="" /> /&nbsp;<img src="Imagenes/icono_topo_isla_puntos.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;"><a name="crear_ci_puntos">Crear por puntos cierre / isla</a></span><a name="crear_ci_puntos">: Genera el cierre a partir de los puntos topográficos que haya en la pantalla clicando sobre cada uno de ellos.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierres_linea_cerr.png" style="width: 26px; height: 26px;" alt="" /> /&nbsp;<img src="Imagenes/icono_topo_isla_lcerrada.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;"></span></a><a name="crear_ci_lin_cerr"><span style="font-weight: bold;">Crear por línea cerrada cierre / isla</span>: Esta opción genera un cierre/isla apoyándose en una línea cerrada de la
+cartografía EDM. Al utilizar esta opción, el programa pide seleccionar
+la línea EDM y un margen de tolerancia en el que se buscarán puntos
+topográficos (es recomendable usar un valor grande, por exceso, ya que
+el algoritmo usa el punto más próximo independientemente de la
+tolerancia). Además, se insertan también como vértices del cierre todos
+aquellos puntos de la topografía que estén sobre los segmentos de la
+línea aunque no sean vértices de la línea.<br />
+
+            <br />
+
+La línea EDM que se use de referencia debe tener un número de puntos
+mayor o igual al que se pretende tenga la línea de cierre/isla (un
+vértice en las proximidades de cada punto de la topografía). Por
+ejemplo, para triangular una obra lineal, se puede usar la línea de
+contorno de expropiación de la obra y una tolerancia de más de 5 metros.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierre_por_tipol.png" style="width: 26px; height: 26px;" alt="" /> /&nbsp;<img src="Imagenes/icono_topo_isla_tipol.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;"></span></a><a name="crear_ci_tipo"><span style="font-weight: bold;">Crear por tipo de línea</span> <span style="font-weight: bold;">cierre / isla</span>: Con esta opción se selecciona un tipo de línea y el programa busca
+automáticamente todas las líneas de ese tipo y genera así un
+cierre/isla con cada una de las líneas encontradas. Resulta muy
+apropiado cuando se necesita generar una gran cantidad de cierres o
+islas.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierres_modelo.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;">/&nbsp;<img src="Imagenes/icono_topo_isla_modelo.png" style="width: 26px; height: 26px;" alt="" /> </span></a><a name="crear_ci_mod"><span style="font-weight: bold;">Crear por modelo cierre / isla</span>: Esta opción solicita al usuario el modelo en el que están las líneas
+cerradas que quiere que se transformen en cierres o islas. El programa
+buscará todas las líneas cerradas de ese modelo y creará los
+correspondientes cierres/islas. Esta opción también es muy útil para
+generar simultáneamente un gran número de cierres o islas.<br />
+            <br />
+            <img src="Imagenes/icono_topo_cierres_malla.png" style="width: 26px; height: 26px;" alt="" /> <span style="font-weight: bold;">/&nbsp;<img src="Imagenes/icono_topo_isla_malla.png" style="width: 26px; height: 26px;" alt="" /> </span></a><a name="crear_ci_mall"><span style="font-weight: bold;">Crear por malla</span> <span style="font-weight: bold;">cierre / isla</span>:
+El programa selecciona una malla, la cual la transforma internamente en
+una línea y mediante una tolerancia dada trata de buscar el punto
+topográfico más cercano para crear un cierre por esos puntos. Esta
+malla tiene que ser del mismo tipo, formada por lo menos por dos
+segmentos de malla consecutivos para que se pueda cerrar el futuro
+cierre o isla.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_cierres_borde_triang.png" style="width: 26px; height: 26px;" alt="" />&nbsp;</span></a><a name="crear_ci_tri"><span style="font-weight: bold;">Crear por borde de triángulos</span>: Genera el cierre por el borde de la triangulación ya definida.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_cierres_convexo.png" style="width: 26px; height: 26px;" alt="" />&nbsp;</span></a><a name="crear_ci_conv"><span style="font-weight: bold;">Crear convexo</span>: Genera el cierre convexo de la nube de puntos (sería el borde
+equivalente al que se generase al realizar una triangulación normal).
+Esta opción es exclusiva de cierres.<br />
+            <br />
+            </a></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><a name="ci_borrar">Borrar</a></td>
+            <td style="vertical-align: top;">Se distinguen las siguientes opciones:<br />
+            <br />
+            <img src="Imagenes/icono_topo_borrar_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<span style="font-weight: bold;">Borrar</span>: Elimina un cierre/isla seleccionado por el usuario.<br />
+            <br />
+            <img src="Imagenes/icono_topo_borrartod_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<span style="font-weight: bold;">Borrar todos</span>: Elimina todos los cierres/islas.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="ci_modificar">Modificar / Cambiar Tipo</a></span><a name="ci_modificar"><br />
+            </a></td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_modif_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Modificar</span>: Voy a poder variar un cierre o una isla ya generado incluyendo nuevos puntos, eliminando puntos o añadiendo puntos al mismo.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/topo_notificacion_modif_cierre.png" style="width: 338px; height: 51px;" alt="" /><br />
+            </div>
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_cambiar_tipo_cierre.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Cambiar tipo</span>: Permite pasar un cierre a una isla y al contrario.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_limpiar_islas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="ci_limpiar">Limpiar islas</a></span><a name="ci_limpiar"><br />
+            </a></td>
+            <td style="vertical-align: top;">Una vez realizada la triangulación, limpia los triángulos interiores de
+las islas. Durante la triangulación, la limpieza de islas no se realiza
+de forma automática, salvo que esté activa explícitamente la opción
+Islas. Esta opción es exclusiva de islas.<br />
+Para una limpieza correcta las islas deben pasar por las mallas
+correspondientes, sin poder cortar a mallas existentes. Previamente a
+la limpieza de las islas se recomienda realizar un <a href="EDM_topografia.html#herramientas">chequeo</a> de puntos, mallas, triángulos, islas y cierres para poder borrar aquellas mallas que puedan cruzar la isla.<br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_volcar_contor.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="ci_volcar">Volcar contornos a EDM</a></span><a name="ci_volcar"><br />
+            </a></td>
+            <td style="vertical-align: top;">Convierte los cierres/islas en líneas EDM. </td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+Mediante la casilla <span style="font-weight: bold;">Chequear mallas al editar</span>
+cierres/islas, que permite deshabilitar el chequeo de intersección con
+mallas en las funciones de añadir o eliminar puntos a los cierres. Esto
+permite editar y completar cierres con mayor libertad (temporalmente
+pueden cruzarse cierres y mallas) pero al final de la edición conviene
+volver a habilitar la opción y realizar un chequeo de mallas y cierres.<br />
+
+      <br />
+
+      <a name="automatica"><span class="Titulo_2">Edición de mallas automáticas. Triangulación</span><br />
+      <br />
+Se describen a continuación las posibilidades del programa de cara a
+crear y editar triangulaciones. Todas ellas están agrupadas bajo el
+menú desplegable <span style="font-weight: bold;">[Topografía] &#8594; [Triángulos]</span>:<br />
+      <br />
+      </a>
+      <div style="text-align: center;"><img style="width: 346px; height: 57px;" alt="" src="Imagenes/topo_triang_dialogo.png" /><br />
+      </div>
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Triangulación</td>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_triangulacion.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="triangulacion"><span style="font-weight: bold;">Triangulación</span>: Se trata de un algoritmo muy eficiente que triangula teniendo en cuenta
+las mallas de premallado y de usuario existentes. El programa no impone
+ninguna barrera en cuanto al número de puntos máximo a considerar,
+estando únicamente limitado por la máquina en la que se esté ejecutando
+la triangulación. Es aconsejable, por tanto, que en caso de tratarse
+millones de puntos se libere al máximo la memoria RAM del ordenador.<br />
+            <br />
+            </a><div style="text-align: center;"><img src="Imagenes/topo_dialogo_triang.png" style="width: 177px; height: 147px;" alt="" /><br />
+
+            </div>
+            <br />
+
+&nbsp;El programa genera la triangulación haciendo uso de rellenos de
+distintos colores para, visualmente, diferenciar variaciones de cota.
+El programa usa colores cálidos para cotas bajas y fríos para cotas
+altas. Para desactivar esta visualización, basta con desactivar la casilla <span style="font-weight: bold;">Color triángulos</span> y redibujar para que desaparezcan estos
+rellenos. Una nueva activación sobre él provocará que aparezcan de nuevo.<br />
+
+            <br />
+
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_triang.png" style="width: 320px; height: 304px;" alt="" /><br />
+
+            </div>
+            <br />
+
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_completar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;</span><a name="completar_tri">Completar: Esta opción permite volver a realizar una triangulación apoyándose en
+otra realizada previamente a la que se han añadido nuevos puntos
+provenientes, por ejemplo, de otro fichero.<br />
+            <br />
+            <img src="Imagenes/icono_topo_un_triang.png" style="width: 26px; height: 26px;" alt="" /> </a><a name="un_triang"><span style="font-weight: bold;">Crear un triángulo</span>: Permite generar un triángulo seleccionando los tres puntos del mismo.<br />
+<br />
+            </a></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="borrar_triang">Borrar triángulos</a></span><a name="borrar_triang"><br />
+            </a></td>
+            <td style="vertical-align: top;">Distinguimos las siguientes opciones:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_uno_triang.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Borrar uno</span>: Permite ir borrando individualmente triángulos ya generados mediante el
+ratón. No elimina los triángulos cuando ello implique borrar una malla
+de usuario o de premallado (para estos casos usar la opción Borrar
+mallas o Borrar por banda del menú Mallas).<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_borr_mallas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Borrar mallas</span>: Opción análoga a la existente en el submenú de Mallas.<br />
+            <br />
+            <img style="width: 26px; height: 26px;" alt="" src="Imagenes/topo_icono_borrar_vent.png" /> <span style="font-weight: bold;">Borrar por ventana</span>: Elimina todas las mallas que estén dentro o parcialmente dentro de la
+ventana que realicemos. clicando el botón izquierdo del ratón.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_borr_long.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Borrar por longitud</span>:&nbsp; Elimina las mallas automáticas cuya longitud sea mayor que la que se
+da en respuesta a su petición. También pregunta si lo hace sólo desde
+la periferia, en cuyo caso sólo eliminará las mallas automáticas
+colindantes con el borde exterior o con algún "agujero".<br />
+
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_borr_long.png" style="width: 169px; height: 132px;" alt="" /><br />
+            </div>
+            <br /><span style="font-weight: bold;">Altura mínima del triángulo</span>: Cuando se analiza una malla automática, (no de premallado ni definida<br />
+por el usuario) y esta malla no tiene la longitud máxima para eliminar
+el triangulo, entonces se comprueba también la altura del triángulo
+entre esa malla y el vértice opuesto. Si la altura no cumple el mínimo
+definido se elimina el triángulo.<br />
+Esto permite eliminar también ciertos triángulos afilados que se forman por el contorno de la triangulación.<br />
+            <br />
+
+
+Las mallas de premallado y de usuario no se eliminan, por tanto una
+periferia de mallas más largas que la longitud de control, completada
+con mallas de premallado o usuario y que formen un perímetro cerrado,
+forman un área protegida que no será borrada.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_borrar_tod.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Borrar todos</span>: Destruye todas las mallas automáticas y todos los triángulos
+permitiendo volver a triangular posteriormente. Las mallas de
+premallado y usuario permanecen.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="limpiar_tri">Limpiar</a></span><a name="limpiar_tri"><br />
+            </a></td>
+            <td style="vertical-align: top;">Distinguimos las siguientes opciones:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_limpiar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Limpiar</span>: Si después de triangulado se añadieron mallas de usuario cruzadas, la
+opción puede usarse para destruir los triángulos incompatibles con las
+mallas creadas.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_limpiar_islas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Limpiar islas</span>: Elimina, una vez realizada la triangulación, los triángulos interiores
+de las islas (ejecuta, por tanto, la misma acción que Limpiar del menú Contornos.<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_limp_planos.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Limpiar planos</span>: Sustituye los triángulos que pueden formarse apoyando sus tres
+vértices sobre una misma cadena de premallado en zonas cóncavas de las
+mismas. Esto es típico cuando las premallas proceden de líneas de
+nivel, formándose triángulos con puntos de la misma cadena en lugar de
+apoyarse en dos cadenas diferentes.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_triang_cambiar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="cambiar_tri">Cambiar</a></td>
+            <td style="vertical-align: top;">Permite cambiar de forma interactiva dos triángulos que poseen un mismo
+lado común por los otros dos, cuyo lado común sería la otra diagonal
+del cuadrilátero que éstos definen.<br />
+
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><img src="Imagenes/icono_topo_triang_medida.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="medida_tri"><span style="font-weight: bold;">Medida</span></a></td>
+            <td style="vertical-align: top;">Esta opción solicita la cota de un plano de comparación y devuelve:<br />
+            <ul>
+              <li>El área 2D de la proyección en planta de los triángulos.</li>
+              <li>El área 3D correspondiente a la superficie real de los triángulos.</li>
+              <li>El volumen del prisma comprendido entre la superficie triangulada y el plano de comparación.</li>
+              <li>Las pendientes mínima, máxima y media ponderarda, calculadas en tanto por ciento y en grados sexagesimales.<br />
+              </li>
+
+            </ul>
+Si se desea calcular el volumen entre dos superficies se debe tener en cuenta que:<br />
+            <ul>
+              <li>Las dos superficies han de tener el mismo contorno.</li>
+              <li>Las superficies no deben cortarse, pues se compensaría el desmonte con el terraplén.</li>
+              <li>Han de triangularse por separado y deben medirse utilizando el mismo plano de comparación.</li>
+              <li>El volumen final es la diferencia de los dos volúmenes parciales.</li>
+            </ul>
+
+
+
+
+
+Esta opción genera además en la carpeta de trabajo un fichero en la
+carpeta de trabajo de nombre topomed.res con el siguiente formato:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_triang_medida.png" style="width: 509px; height: 280px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><a name="Informacion_de_pendiente"><span style="font-weight: bold;">Información de pendiente</span><br />
+            </a></td>
+            <td style="vertical-align: top;">Utilidad para medir el
+área, pendiente media ponderada, pendiente mínima y pediente máxima de
+los triángulos que cumplan que su pendiente este entre dos datos dados
+por el usuario. Se permite la generación de un listado con la
+información.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 337px; height: 356px;" alt="" src="Imagenes/ttp_informacion_pendiente.png" /><br />
+            </div>
+            <br />
+Se permite seleccionar y modificar la selección de los triángulos
+mediante criterios de pendiente máxima y/o mínima, además de permitir
+añadir o quitar triángulos a la selección gráficamente.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="vaciar_tri">Vaciar</a></span><a name="vaciar_tri"><br />
+            </a></td>
+            <td style="vertical-align: top;">Dos opciones:<br />
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_vaciar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Vaciar</span>: Esta opción trabaja cuando los datos ya están triangulados, y elimina
+todos los puntos, mallas y triángulos que están dentro/fuera del
+recinto que se elige.<br />
+            <br />
+            Los triángulos que cortan al borde del recinto se descomponen creando
+las mallas y puntos necesarios sobre el propio borde del recinto,
+aunque el usuario puede elegir si desea para los bordes la cota de la
+línea del recinto o la de los triángulos (según esté marcada o no la
+opción Utilizar Z recinto).<br />
+            <br />
+Se dispone de la casilla <span style="font-weight: bold;">Mantener los tipos originales de las mallas</span>.
+Al activar esta opción las mallas externas al recinto seleccionado, no
+cambian su definición y permanecen con su estilo dado ya sea malla de
+usuario, de premallado o automática.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 234px; height: 184px;" alt="" src="Imagenes/topo_vaciar.png" /><br />
+            </div>
+<span style="font-weight: bold;">
+            <br />
+            <span style="font-weight: bold;"><img src="Imagenes/icono_topo_triang_vaciarttp.png" style="width: 26px; height: 26px;" alt="" />&nbsp;Vaciar por ttp</span>:
+            </span>Elimina de la triangulación actual, la zona ocupada por un archivo
+.ttp. Esto permite obtener modelos que no se solapan para Virtual 3D.<span style="font-weight: bold;"><br />
+            <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_triang_guard_rec.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="guardar_tri">Guardar por recintos</a></td>
+            <td style="vertical-align: top;">Permite generar, por cada recinto seleccionado, un fichero .ttp,
+.dwg/.dxf o un .dgn con el modelo de puntos mallas y triángulos incluidos en él.<br />
+Se puede guardar bien todos los recintos en un único fichero .dgn o cada recinto en un fichero .dgn.<br />
+Las entidades que se crean en el fichero .dgn son: Shape.<br />
+            <br />
+La selección de los recintos cerrados puede ser según líneas
+individuales o según tipo de línea. El nombre de los archivos generados
+va en función del nombre de base designado.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_triang_guardar_rec.png" style="width: 384px; height: 267px;" alt="" /><br />
+            </div>
+<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;"><img src="Imagenes/icono_topo_triang_filtrar.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="fitrar_tri">Filtrar</a></td>
+            <td style="vertical-align: top;">Permite 'aligerar' de forma notable una triangulación, pues este
+algoritmo elimina aquellos puntos de la triangulación tales que, no
+estando en el borde de la triangulación ni perteneciendo a una malla de
+premallado o de usuario, cumplan que la diferencia entre su cota y la
+que corresponde a sus coordenadas en el modelo generado sin este punto,
+esté por debajo de una tolerancia prefijada. <br />
+            <br />
+Se permiten dos tipos de filtrados:<br />
+            <ul>
+              <li><span style="font-weight: bold;">Planos</span>: Elimina los puntos, cuya cota relativa a la superficie que se forma si se elimina, esta por debajo de un valor prefijado.</li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">Picos</span>: Elimina los puntos, cuya cota relativa a la superficie que se forma si se elimina, esta por encima de un valor prefijado.</li>
+            </ul>
+En ambos casos No se elimina el punto si la distancia al punto más
+próximo de los que forman triángulos con él es superior a un valor dado.<br />
+            <ul>
+              <li><span style="font-weight: bold;">Ambos</span>: Realiza los dos filtrados simultaneamente.</li>
+            </ul>
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_triang_filtrar.png" style="width: 249px; height: 148px;" alt="" /><br />
+            </div>
+            <br />
+</td>
+          </tr>
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />En la vista 3D alámbrica desde Topografía se muestran los puntos topográficos y las mallas (incluidas las de los triángulos).<br /><br />
+
+  <a name="isolineas"><span class="Titulo_2">Creación de curvas de nivel. Isolíneas</span><br />
+      <br />
+      </a><img style="width: 346px; height: 57px;" alt="" src="Imagenes/dialogo_topo_isolineas.png" /><br />
+
+      <br />
+
+Las curvas de nivel son la forma más común para reconocer un terreno.
+Sin embargo, a la hora de calcular perfiles y dependiendo del tipo de
+relieve, puede ser aconsejable establecer un tipo u otro de intervalo
+de generación de isolíneas. Desde el menú desplegable <span style="font-weight: bold;">[Topografía] &#8594; [Isolíneas]</span> están disponibles las siguientes opciones:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_crear_isol.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="crear_iso">Crear isolíneas</a></span><a name="crear_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Genera líneas de nivel y líneas maestras a la distancia elegida sobre el modelo de triángulos.<br />
+            <br />
+Al programa tendremos que indicarle la <span style="font-weight: bold;">equidistancia</span> entre líneas de nivel.&nbsp; Automáticamente les asigna los
+tipos L26 (líneas <span style="font-weight: bold;">Normal</span>) y L27 (líneas <span style="font-weight: bold;">Maestras</span>) y las incorpora al modelo actual.<br />
+            <br />
+Durante el progreso del proceso de generación de isolíneas, éste puede
+ser interrumpido con la tecla &lt;<span style="font-weight: bold;">Esc</span>&gt;. Las que hayan sido generadas
+hasta el momento desaparecen.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_crear_cn.png" style="width: 361px; height: 244px;" alt="" /><br />
+            </div>
+            <br />
+Si se
+activa la casilla <span style="font-weight: bold;">Una sola&nbsp; curva de cota</span> generará una sola línea de la cota que se desee en lugar de
+hacerlo en secuencia equiespaciada.<br />
+            <br />
+Al tener calculadas las isolíneas y, efectuando las operaciones más
+comunes (añadir y eliminar puntos y mallas topográficas, editar
+puntos,&#8230;), el programa las recalcula automáticamente.<br />
+            <br />
+Pueden generarse isolíneas cuantas veces se desee, de modo que conviene ser cauto para no duplicar líneas del mapa.<br />
+            <br />
+            <span style="font-weight: bold;">Etiquetado de líneas de nivel</span>:
+Activando esta casilla el programa nos da la posibilidad mediante el
+cuadro de diálogo que aparece en pantalla de etiquetar mediante un
+símbolo (S34 o S42) las líneas de nivel normales (L26) y las líneas
+maestras (L27).<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_borrar_isol.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="borrar_iso">Borrar isolíneas</a></span><a name="borrar_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Permite rechazar las últimas isolíneas generadas con la opción Crear.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_redond_cotas.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="redondear_iso">Redondear cotas</a></span><a name="redondear_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Esta función desactiva las líneas que no sean de nivel, redondea las
+cotas de las líneas de nivel que no tengan valores exactos e intenta
+empalmar las líneas de igual cota empleando las tolerancias indicadas.<br />
+Mediante este comando se cambian las cotas (Z) de las curvas de nivel. Si se trae un fichero de triangulacion (<span class="Archivo">.ttp</span>) y se quieren deducir nuevas cotas deberíamos crear nuevas isolíneas.<br />
+            <br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img src="Imagenes/icono_topo_interp_isol.png" style="width: 26px; height: 26px;" alt="" />&nbsp;<a name="interpolar_iso">Interpolar isolíneas</a></span><a name="interpolar_iso"><br />
+            </a></td>
+            <td style="vertical-align: top;">Permite intercalar curvas de nivel. Para ello, el usuario debe indicar:<br />
+            <ul>
+              <li>Las cotas de inicio y fin.</li>
+            </ul>
+            <ul>
+              <li>La equidistancia entre isolíneas.</li>
+            </ul>
+            <ul>
+              <li>La longitud máxima de malla a considerar para la triangulación parcial.</li>
+            </ul>
+            <ul>
+              <li>
+Un símbolo con cota si se desea considerar las cotas de todos los
+símbolos de ese mismo tipo (si no se desea considerar ninguno, entonces
+basta con hacer clic en cualquier otra zona de la pantalla).</li>
+            </ul>
+&nbsp;
+
+
+Con estos datos el programa crea internamente una triangulación a
+partir de los vértices de las curvas de nivel y de los puntos del tipo
+seleccionado. A continuación, desecha aquellas mallas de longitud
+superior a la indicada y, finalmente, genera las isolíneas según la
+equidistancia indicada y entre las cotas de inicio y fin.</td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><img style="width: 29px; height: 24px;" alt="" src="Imagenes/icono_topo_suav.png" /><a name="suavizar_terreno">Suavizar terreno</a></span><a name="suavizar_terreno"><br />
+            </a></td>
+            <td style="vertical-align: top;">Esta herramienta, crea
+líneas de nivel, sobre un modelo del terreno obtenido suavizando el
+modelo de puntos topográficos, de un modo análogo a la herramienta de
+crear curvas de nivel suavizadas,de las utilidades de <a href="EDM_datos_laser.html#utiles">Nubes densas de puntos</a>.<br />
+            </td>
+          </tr>
+
+        </tbody>
+      
+      
+      </table>
+
+
+            <br />
+
+&nbsp;<a name="herramientas"><span class="Titulo_2">Otras herramientas:</span><br />
+      <br />
+      <span style="font-weight: bold;">Borrar todo</span>: <br />
+      <br />
+ Desde el menú desplegable de <span style="font-weight: bold;">Topografía</span> puedes con la orden <span style="font-weight: bold;">Borrar todo</span> eliminar todos los elementos topográficos (y, opcionalmente, la cartografía) de memoria de forma definitiva.<br />
+Desde el menú fijo, en la parte derecha de la pantalla también tienes
+la casilla Borrar todo, mediante la cual realizarías la misma opción
+que hemos comentado.<br />
+      <br />
+      </a>
+      
+      <div style="text-align: center;"><img src="Imagenes/topo_borrar_todo.png" style="width: 148px; height: 123px;" alt="" /><br />
+
+      </div>
+
+
+
+            <br />
+
+      <span style="font-weight: bold;">Chequear</span>:<br />
+
+      <br />
+
+Permite comprobar si hay puntos repetidos, mallas que se cruzan y chequea los triángulos que hagan referencia a mallas y
+puntos existentes. Si se encuentra alguna inconsistencia, se elimina el
+triángulo y quedará reflejado este hecho en el fichero errortopog.res.<br /><br />
+Activando <span style="font-weight: bold;">Islas y cierres</span> realiza el chequeo de las mismas por si detecta mallas que se cruzan.<br />
+      <br />
+Activando <span style="font-weight: bold;">Crear triángulos en huecos</span>
+se buscan grupos de tres mallas que formen un triángulo y que tengan un
+triángulo adosado por el lado de fuera pero no por dentro, para después
+crear esos triángulos interiores.<br />
+
+      <br />
+
+      
+      
+      <div style="text-align: center;"><img src="Imagenes/dialogo_topo_chequear.png" style="width: 219px; height: 120px;" alt="" /><br />
+
+      </div>
+
+
+       <br />
+
+      Es importante realizar un chequeo previo para&nbsp; los ficheros .ttp que podremos utilizar como superficie.<br />
+
+      <br />
+
+      <span style="font-weight: bold;">Útiles</span>:<br />
+
+      <br />
+
+&nbsp;Desde el botón <span style="font-weight: bold;">[Topografía] &#8594; [Útiles]</span> se despliega un cuadro con las siguientes opciones:<br />
+
+      <br />
+
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+
+
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; width: 75px; font-weight: bold;">Automático</td>
+            <td style="vertical-align: top;">Realiza de forma
+automática la secuencia Premallado &#8211; Triangulación &#8211; Eliminación de
+triángulos planos &#8211;&nbsp; Creación de isolíneas.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><a name="sondeos">Sondeos</a></span><a name="sondeos"><br />
+            </a></td>
+            <td style="vertical-align: top;"><img src="Imagenes/sondeos_topo_esquema.png" style="width: 280px; height: 220px;" alt="" align="right" hspace="6" />Definición de superficies con datos de sondeos<br />
+
+            <br />
+
+La información recogida de un sondeo permite obtener los modelos
+digitales de las superficies atravesadas. Sus datos están referidos a
+la boca de sondeo, expresando el ángulo vertical y longitud de cada
+tramo.<br />
+
+            <br />
+
+Cada punto de contacto con las diferentes capas de materiales,
+codificadas en el ejemplo aquí mostrado con los números 76, 77 y 78, se
+da en función del azimut (AZ) y del ángulo vertical (AV) del tramo del
+sondeo hasta ese punto, indicándose en una tercera columna la longitud
+del mismo.<br />
+
+            <br />
+
+También es posible dar un nombre a cada sondeo y a cada punto del sondeo (material).<br />
+
+            <br />
+
+&nbsp;La opción <span style="font-weight: bold;">[Útiles] &#8594; SONDEOS</span> despliega un cuadro de diálogo con todas
+esta información y varias opciones para manipular los sondeos:<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_sondeos_topo.png" style="width: 592px; height: 133px;" alt="" /><br />
+            </div>
+            <br />
+Como se ve, es posible construir interactivamente un archivo de sondeos
+nuevo o modificar (añadiendo datos, por ejemplo) uno existente,
+mediante las opciones <span style="font-weight: bold;">[Borrar]</span>, <span style="font-weight: bold;">[Insertar]</span>, <span style="font-weight: bold;">[Añadir]</span>, <span style="font-weight: bold;">[Iniciar]</span>, etc.
+Así, mediante el botón <span style="font-weight: bold;">[Añadir]</span> (que crea un dato nuevo al final) o
+[Insertar] (que lo crea en la posición actual), se van introduciendo
+nuevos datos de sondeos.<br />
+
+            <br />
+
+&nbsp;Si el dato que se ha introducido es una boca de sondeo (punto de la
+superficie del terreno), entonces la fila deberá comenzar por <span style="font-weight: bold;">[S]</span> (de
+comienzo de Sondeo), y si se trata de un punto de contacto con un nuevo
+material, entonces el botón conmutable deberá mostrar <span style="font-weight: bold;">[T]</span> (de Tramo de
+sondeo).<br />
+
+            <br />
+
+&nbsp;Como se puede ver en la imagen del cuadro de diálogo, cuando se trata
+de una embocadura de sondeo los datos que se introducen son sus
+coordenadas y en caso de tratarse de un tramo, el azimut, el ángulo
+vertical, la longitud y la clave (es decir, el número que identifica al
+material).<br />
+
+            <br />
+
+&nbsp;En la vista 3D pueden apreciarse las columnas de sondeos representadas bajo la superficie:<br />
+            <br />
+            <img src="Imagenes/ejemplo_sondeos_planta.png" style="width: 327px; height: 229px;" alt="" /><br />
+            <br />
+            <img src="Imagenes/ejemplo_sondeos_3D.png" style="width: 334px; height: 221px;" alt="" align="right" /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+Esta herramienta permite obtener la triangulación de cada superficie de
+contacto y representarla con el tipo de línea que elija el usuario. Por
+ejemplo, si en el campo <span style="font-weight: bold;">Clave</span> se indica 76 y en <span style="font-weight: bold;">Tipo</span> 23, y a
+continuación:<br />
+            <ul>
+              <li>Se pulsa sobre el botón <span style="font-weight: bold;">[Crear nube puntos]</span> para generar la nube de
+puntos topográfica correspondiente a las intersecciones de cada sondeo
+con la capa de material codificada con la clave 76. Lógicamente, esta
+nube de puntos se puede salvar desde <span style="font-weight: bold;">[FICHEROS] &#8594; Guardar</span> en cualquier
+de los formatos de archivos topográficos disponibles.</li>
+            </ul>
+            <ul>
+              <li>Se usa la opción <span style="font-weight: bold;">[Triangular]</span> para obtener la triangulación de la nube
+generada en el paso anterior. Esta triangulación, junto con la nube de
+puntos, también se puede salvar mediante un fichero .ttp desde
+                <span style="font-weight: bold;">[FICHEROS] &#8594; Guardar</span>.</li>
+            </ul>
+            <ul>
+              <li>Ya solo resta volcar las mallas automáticas obtenidas en el paso
+anterior al EDM mediante la opción <span style="font-weight: bold;">[Volcar triángulos]</span>, lo que creará
+líneas del tipo indicado (en el ejemplo, de tipo 23) por cada malla
+procedente de la triangulación.<br />
+
+
+El resultado de esta operación se muestra en la imagen:</li>
+            </ul>
+
+
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_sondeos_triang.png" style="width: 463px; height: 274px;" alt="" /><br />
+            </div>
+            <br />
+Para borrar la triangulación, basta con pulsar sobre el botón <span style="font-weight: bold;">[Borrar
+triángulos]</span>. Se ha conseguido así construir una superficie limitante de
+capa (techo o muro) a partir de lo que no deja de ser una nube
+subterránea de puntos identificativos constituida, en este caso, por el
+tipo de línea 23.<br />
+
+            <br />
+
+Si se repite este proceso para cada uno de las capas de material
+utilizando tipos de líneas distintos, se acaba obteniendo un EDM que
+las contiene a todas. <br />
+
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/ejemplo_sondeos_triangl_varios.png" style="width: 286px; height: 172px;" alt="" /><br />
+            </div>
+            <br />
+
+&nbsp;Por tanto, es posible definir una superficie por capa y obtener
+perfiles en los que aparezcan todas, distinguiéndose así perfectamente
+todos los materiales y, por tanto, siendo posible su cubicación en un
+proyecto de obra lineal, excavación, etc. según una estratigrafía tan
+precisa como haya permitido la malla de sondeos.<br />
+
+            <br />
+Mediante la herramienta <span style="font-weight: bold;">Copiar</span>:<br />
+            <br />
+Se permite copiar un sondeo seleccionando graficamente la cabeza de un
+sondeo y la nueva posición. Si existe algún enganche activado, la cota
+de la cabeza del nuevo sondeo toma la cota enganchada.<br />
+            <br />
+ Los datos de sondeos se pueden guardar en ficheros .sdo para ser
+cargados posteriormente mediante los botones <span style="font-weight: bold;">[Guardar]</span> y <span style="font-weight: bold;">[Cargar]</span>
+respectivamente.<br />
+            <br />
+Mediante la herramienta [<span style="font-weight: bold;">Cargar .txt]</span>:<br />
+
+            <br />
+
+Permite cargar archivos con el siguiente formato:<br />
+
+            <br />
+
+**UNIDAD GEOTECNICA<br />
+
+PointID,X,Y,Z,Espesor,Unidad geotécnica<br />
+
+S- 1,508298.606,4788528.829,53.6,16.5,QRV<br />
+
+S- 1,508298.606,4788528.829,53.6,2.5,QA<br />
+
+S- 1,508298.606,4788528.829,53.6,0.5,C<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,14.3,QRV<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,7.7,QA<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,1.2,QE<br />
+
+S- 2 (DP),508385.835,4788591.354,43.8,0.9,C<br />
+            <br />
+En el EDITOR DE PERFILES existe, así mismo, la opción [Sondeos] que
+permite proyectar éstos sobre una serie de perfiles transversales.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Replanteo</span><br />
+            </td>
+            <td style="vertical-align: top;">Nos permite realizar un replanteo al estilo del menú de Obra Lineal.<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Información</td>
+            <td style="vertical-align: top;">Esta opción muestra el número de puntos, mallas y triángulos existentes en cada momento.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/dialogo_topo_inf.png" style="width: 267px; height: 245px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Corte</td>
+            <td style="vertical-align: top;">Esta opción solicita una banda al usuario para realizar el corte y
+muestra el perfil correspondiente en la parte inferior derecha de la
+ventana gráfica.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Murete</td>
+            <td style="vertical-align: top;">Sirve para que el programa cree automáticamente mallas paralelas a dos
+existentes, por ejemplo si en campo se toma el pie de un muro para que
+cree las mallas de la cabeza de ese muro.<br />
+            <br />
+Solicita el incremento horizontal, el incremento vertical y las dos
+mallas sobre las que realizar el murete. El resultado es que generará
+una malla paralela a cada una de las mallas seleccionadas. Las mallas
+paralelas se situarán a la distancia dada según el incremento
+horizontal, y su cota será la de la malla de referencia más el
+incremento vertical dado.<br />
+            <br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Escalón</td>
+            <td style="vertical-align: top;">Esta opción le pide al usuario un incremento horizontal, un incremento
+vertical y una malla de referencia. El resultado es la creación de una
+malla paralela a la malla de referencia según el incremento horizontal
+y con una cota como la de la malla de referencia más el incremento
+vertical. <br />
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">XYZ -&gt; EDM</td>
+            <td style="vertical-align: top;">Con esta opción es posible convertir varios ficheros con puntos de
+topografía en formatos XYZ, aXYZ, abXYZ, abcXYZ, abcdXYZ, abcdeXYZ ó
+YXZ a puntos en EDM.<br />
+
+            <br />
+
+Es posible indicar que se carguen automáticamente esos puntos en
+pantalla (opción Cargar puntos) y/o crear directamente ficheros .edb
+con los puntos (opción Crear edbs).<br />
+
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/puntos_a_edm.png" style="width: 288px; height: 123px;" alt="" /><br />
+            </div>
+            <br />
+
+Para facilitar la importación de varios ficheros de puntos de una sola
+vez, se creará una lista en la que se listarán los ficheros de la
+extensión que haya indicado el usuario y automáticamente se realizará
+la conversión de todos los ficheros de la lista. Tras la conversión en
+pantalla se mostrarán las zonas que abarca cada fichero y un breve
+resumen de sus datos. Este mismo resumen se lista en el fichero de
+extensión .ls2 que se genera en la conversión.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Lib Minería</span><br />
+            </td>
+            <td style="vertical-align: top;">Libreta Topográfica<br />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold;">Cortar por línea</td>
+            <td style="vertical-align: top;">Inserta en las mallas de la triangulación las intersecciones de éstas
+con una línea seleccionada por el usuario y subdivide los triángulos
+utilizando los nuevos vértices.<br />
+
+            <br />
+
+De esta forma, la integración de un modelo triangulado en otro es más
+sencilla, al tener la posibilidad de disponer de los puntos límite del
+recinto a integrar dentro del modelo triangulado a recortar.<br />
+
+            <br />
+
+La combinación de esta función junto con la de [Puntos] &#8594; Borrar
+recinto es muy útil a la hora de mezclar o actualizar modelos .ttp.</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Nubes densas de puntos</span><br />
+            </td>
+            <td style="vertical-align: top;">Menú de <a href="EDM_datos_laser.html">Nubes densas de puntos</a><br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Generar puntos con la pendiente</span><br />
+            </td>
+            <td style="vertical-align: top;">Herramienta similar a la que se encuentra en la herramienta: <a href="MS_pendiente_ttp.html">Pendientes sgún archivo TTP</a>.<br />
+            <br />
+            <div style="text-align: center;"><img style="width: 309px; height: 109px;" alt="" src="Imagenes/topo_gen_pend.png" /><br />
+            </div>
+            <br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Coordenadas originales .toc</span><br />
+            </td>
+            <td style="vertical-align: top;">Esta utilidad complementa a Alzado-&gt;Herramientas-&gt;<a href="OL_desarrollar_toc.html">Desarrollar.toc</a>.<br />
+Ejemplo: Se pretende medir la superficie de unas láminas de revestimiento colocadas en las paredes interiores de un túnel. <br />
+Se han tomado los puntos de los contornos y puntos interiores de las
+láminas&nbsp; y se guardan en un archivo laminas.toc (Este archivo no
+se puede triangular directamnete, pues puede haber puntos superpuestos
+y extraplomos).<br />
+Con la herramienta Alzado-&gt;Herramientas-&gt;Desarrollar.toc se
+obtiene un archivo&nbsp; des#lamina.toc que se puede cargar en
+topografía (previamente eliminamos&nbsp; cualquier otra información
+cargada ya que el sistema de coordenadas es&nbsp; diferente). Este
+archivo se puede triangular y depurar desde el menú de&nbsp; topografía.<br />
+Con la triangulación depurada en pantalla ejecutamos:
+Topografía-&gt;Útiles-&gt;Coordenadas originales .toc y seleccionamos
+el archivo original laminas.toc, lo que cambia las coordenadas de los
+puntos pero manteniendo la topología de mallas y triángulos.<br />
+Podemos entonces medir la superficie de las láminas con: Topografía-&gt;Triángulos-&gt;Medida.<br />
+También podemos archivar un .ttp con la geometría, teniendo en cuenta
+que para volver a cargarlo debemos desactivar todos los chequeos y
+permitir puntos repetidos&nbsp; pues puede haber triángulos que se
+corten en planta.<br />
+            </td>
+          </tr>
+
+
+        </tbody>
+      
+      
+      </table>
+
+
+      &nbsp;<br />
+
+      <span style="font-weight: bold;">Libreta Topográfica</span>: <br />
+
+      <br />
+
+Menú de explicación de la <a href="EDM_libreta_topografica.html">Libreta Topográfica</a>.<br />
+
+      <br />
+
+      <span class="Parrafo"><span class="Titulo_2"></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

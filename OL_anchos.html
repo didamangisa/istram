@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Anchos de calzadas principales</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img src="Imagenes/home_button.jpg" style="border: 0px solid ; width: 33px; height: 33px;" alt="" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ANCHOS DE LAS CALZADAS PRINCIPALES<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 698px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 692px;" class="obsolete Parrafo"><br />
+      
+      <ul>
+        <li><a href="#anchos"><span class="Parrafo">Anchos</span></a></li>
+        <li><a href="#anc_ind"><span class="Parrafo">Anchos Independientes</span></a></li>
+      </ul>
+      <span class="Parrafo">Este menú permite realizar la definición de
+la ley de anchos (y sobreanchos) de las
+calzadas principales:<br />
+      <br />
+      <div style="text-align: center; width: 692px;"><img src="Imagenes/modelo_anchos.png" style="width: 375px; height: 294px;" alt="" /><br />
+      </div>
+      <br />
+En la ventana gráfica aparece un menú en el que pueden introducirse
+manualmente los anchos a derecha e izquierda de las calzadas o
+semicalzadas principales y los PK&#8217;s correspondientes.<br />
+      <br />
+      </span><span class="Parrafo"><br />
+      <span class="Parrafo"> Para carreteras, los valores de A0,A1,y A2 admiten el siguiente tipo de selección <span style="font-weight: bold;">(Selecc Ancho)</span>:<br />
+</span>
+      <ol>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Numérica</span>: Se introduce el ancho por teclado</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Clic</span>.&nbsp;&nbsp; : Se picará en pantalla graficamente.</span></li>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Clic. (Cambiar PK)</span>: Modifica también el PK al del punto picado.</span></li>
+      </ol>
+      <span class="Parrafo">En las selecciones por clic, si cambiamos el A2, se respetan A0 y A1 y si cambiamos A1 se respeta el A0.<br /><br />La opción <span class="Parf_negrita">PKs usuario</span>
+permite introducir los PKs en valores de usuario. La opción se puede
+activar/descativar y el estado de activación se guarda en el archivo
+.vol<br />
+<br /><a name="anchos">
+Normalmente se rellenará el valor <span style="font-weight: bold;">ANCHO
+1</span> reservando el valor <span style="font-weight: bold;">ANCHO 2</span>
+para los sobreanchos que el programa inserta automáticamente para los
+carriles de aceleración y deceleración en los entronques y el <span style="font-weight: bold;">ANCHO 0</span> para carriles interiores. En autovías y autopistas con </a><a href="OL_peraltes.html#doble_peralte">peralte doble</a>, si no está definido el <span style="font-weight: bold;">ANCHO 0</span>, se divide el <span style="font-weight: bold;">ANCHO 1</span> en dos carriles iguales, pero si se define <span style="font-weight: bold;">ANCHO 0</span> se usa este valor para colocar la límatesa de los peraltes.<br />
+      <br />
+Desde las cabeceras <span style="font-weight: bold;">Ancho 0</span>, <span style="font-weight: bold;">Ancho 1</span>, <span style="font-weight: bold;">Ancho 2</span>, en cada lado, se puede asignar un mismo valor a todos los datos de cada carril.<br /><br />
+
+Cuando en un tramo aparecen <span style="font-weight: bold;">sobreanchos</span> creados por un carril de cambio
+de velocidad, el valor que aparece en la columna eje indica el número
+del eje ramal que entra o sale del eje actual y que provocó ese
+sobreancho. Con el botón <span style="font-weight: bold;">[B]</span>
+(borrar sobreanchos por eje) es posible eliminar los <span style="font-weight: bold;">ANCHO 2</span> inducidos por ese eje que
+entra o sale del actual y se compacta además la información. Si se
+indica como eje a eliminar el 0, el programa elimina los <span style="font-weight: bold;">ANCHO 2</span> creados manualmente o por
+opciones como anchos por línea y que se explica más adelante.<br />
+      <br />
+Utilizando las siguientes teclas es posible rellenar y corregir la
+tabla de datos:<br />
+
+      <br />
+      <table style="text-align: left; width: 692px; height: 73px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold;">[Añadir]</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify;">Permite
+añadir un nuevo dato a continuación de los ya definidos, por la
+izquierda (I) o la derecha (D).<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold;">[Repetir]</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify;">Copia
+el dato
+actual, es decir, el primero que se muestra en la lista, por la
+izquierda (I) o la derecha (D).<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+
+            <td style="vertical-align: top; height: 18px; font-weight: bold;">[Borrar]</td>
+            <td style="vertical-align: top; height: 18px; text-align: justify;">Borra
+el
+dato actual, es decir, el primero que se muestra en la lista, por la
+izquierda (I) o la derecha (D).<br />
+            <br />
+</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+
+      <div style="text-align: center;"><img src="Imagenes/dialogo_anchos_1.png" style="width: 620px; height: 240px;" alt="" /><br />
+      </div>
+      <br />
+      </span><span class="Parrafo"><table style="text-align: left; width: 692px; height: 1623px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; height: 5px; font-weight: bold; width: 98px;">[Iz*&lt;=Dr*]</td>
+            <td style="vertical-align: top; height: 5px; text-align: justify; width: 574px;">Copia
+todos los datos del lado derecho al izquierdo.<br />
+
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 8px; font-weight: bold; width: 98px;">[Iz*=&gt;Dr*]</td>
+            <td style="vertical-align: top; height: 8px; text-align: justify; width: 574px;">Copia
+todos los datos del lado izquierdo al derecho.<br />
+            <br />
+</td>
+
+          </tr>
+          <tr>
+            <td style="vertical-align: top; height: 37px; font-weight: bold; width: 98px;">[Guardar] <img src="Imagenes/icono_toolBarEstandar_guardar.png" style="width: 16px; height: 16px;" alt="" />&nbsp;[Cargar] <img src="Imagenes/icono_toolBarEstandar_abrir.png" style="width: 17px; height: 16px;" alt="" /><br />
+            </td>
+            <td style="vertical-align: top; height: 37px; text-align: justify; width: 574px;"><span class="Parrafo">Genera
+o recupera un fichero con la ley de anchos de extensión .anc. Las
+tablas parciales de ALZADO como ésta pueden salvarse en un archivo
+particular, aunque no es necesario más que si se desea conservar una
+solución parcial. El archivo&nbsp;<span class="Archivo">.vol</span>
+contiene todo el alzado y es este contenido de todo el alzado el que el
+programa utiliza en los cálculos.<br />
+
+            <br />
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; height: 44px; width: 98px;"><a name="automatico">[Automático]</a></td>
+            <td style="vertical-align: top; text-align: justify; height: 44px; width: 574px;"><img src="Imagenes/dialogo_anchos_automatico.png" style="width: 234px; height: 109px; margin-left: 7px;" alt="" align="right" />Crea
+de modo automático la ley<span class="Parrafo"> de anchos en función de
+unos anchos de
+base y de la longitud del vehículo tipo que se pide, determinando los
+sobreanchos necesarios en las curvas en función de su radio.<br />
+            <br />
+Las
+transiciones se realizan durante las clotoides. Si se da ancho cero (0)
+para una de las dos calzadas, ésta no existe y sólo se darán
+sobreanchos a la otra.<br />
+            <br />
+Los sobreanchos se anulan manteniéndose los
+anchos nominales si se da longitud 0 al vehículo tipo.<br />
+            <br />
+
+</span></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; font-weight: bold; height: 79px; width: 98px;"><a name="tabla">[Tabla]</a></td>
+            <td class="Parrafo" style="vertical-align: top; text-align: justify; height: 79px; width: 574px;">Permite
+calcular la ley de sobreanchos utilizando una de las tablas&nbsp;<span class="Archivo">.tsa</span> de la librería donde se asocian sobreanchos con radios y se define
+por dónde se debe realizar la transición a los sobreanchos, aunque lo
+más usual es asociar esta tabla desde la <a href="OL_general.html">pestaña GENERAL</a>. El usuario
+puede crear y modificar cuantas tablas de sobreanchos precise. Por
+ejemplo, la tabla <span class="Archivo">exterior.tsa</span>
+
+permite aplicar los sobreanchos sólo por
+el lado exterior de la curva. La tabla más actual para la normativa
+española de carreteras es la <span class="Parrafo"><a href="OL_ES_31IC_rev2016_tsa.html"><span class="Archivo">ES_31IC_rev2016.tsa</span></a></span>. También disponemos de las antiguas tablas de sobreanchos: <span class="Parrafo"><a href="OL_ES_31IC_rev2015_tsa.html"><span class="Archivo">ES_31IC_rev2015.tsa</span></a> y</span>&nbsp; <a target="_blank" href="OL_ES_31IC_rev2001_tsa.html"><span class="Archivo">ES_31IC_rev2001.tsa</span></a>.<br />
+            <br />
+</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 98px;"><span style="font-weight: bold;">[Tabla-&gt;GRUPO]</span><br />
+            </td>
+            <td style="vertical-align: top; width: 574px; text-align: justify;">Esta opción sólo aparece si el eje tiene asociada una <a href="OL_anchos.html#tabla">tabla de sobreanchos</a> en la <a href="OL_general.html">pestaña GENERAL</a>. En tal caso, al pulsar el botón el programa aplica dicha tabla a todos los ejes del <a href="OL_grupos.html">grupo</a> al que pertenece el eje.<br />
+
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; height: 55px; width: 98px;"><span style="font-weight: bold;"><a name="por_linea">[Por línea]</a></span>
+            </td>
+            <td class="Parrafo" style="vertical-align: top; height: 55px; width: 574px;">
+
+            <div style="text-align: justify;"><img src="Imagenes/dialogo_anchos_linea.png" style="width: 239px; height: 227px; float: right;" alt="" hspace="5" />Permite
+definir como ley de anchos cualquier línea que se selecciona
+gráficamente en pantalla. Esto permite adaptar el ancho al espacio disponible <span class="Parrafo">en proyectos de ensanche y mejora o en
+trazados urbanos</span>.<br />
+            </div>
+            <br />
+La herramienta permite introducir también un incremento sobre la distancia
+resultante (positivo indica un incremento a la derecha y negativo a la
+izquierda de la línea).<br />
+            <br />Se puede definir una distancia (<span style="font-style: italic;">solo múltiplos de</span>) para definir con que frecuencia toma un punto el programa. Si se deja a 0, Istram añade los siguientes puntos:<br />
+            <ul>
+              <li>PKs donde se proyectan los puntos de la linea.</li>
+              <li>PKs singulares del eje en planta.</li>
+              <li>PKs donde se calculan perfiles (bien por tener perfil del terreno, bien porque se haya marcado un evento para interpolar).</li>
+            </ul>
+            <span class="Parrafo">Activando la opción <span style="font-weight: bold;">Exclusivamente en puntos de la línea</span>, no generará datos en los PKs singulares en planta ni en los perfiles del terreno o interpolados.<br /><br />Existen
+dos formas de asignar los anchos en la tabla:<br />
+            <ul><li>Si se elige la opción <span style="font-weight: bold; font-style: italic;">Anchos</span><span style="font-style: italic;">,</span> el valor calculado por la
+posición de la línea se coloca en la columna <span style="font-weight: bold;">ANCHO 1</span> y el valor definido por el
+usuario en <span style="font-weight: bold;">ANCHO 2</span> se traslada
+a la columna <span style="font-weight: bold;">ANCHO 2</span> de la
+tabla de anchos.</li></ul>
+            <ul><li>Con la opción <span style="font-weight: bold; font-style: italic;">Sobreanchos</span><span style="font-style: italic;">,</span> la columna <span style="font-weight: bold;">ANCHO 1</span> se rellenará con el ancho de
+base indicado y la diferencia hasta el ancho total pasará como <span style="font-weight: bold;">ANCHO 2</span>. En el caso de que el ancho
+calculado sea menor que el ancho de base, entonces se asigna a <span style="font-weight: bold;">ANCHO 1</span> el ancho calculado y un
+valor nulo a <span style="font-weight: bold;">ANCHO 2</span>.</li></ul>
+La opción <span style="font-style: italic; font-weight: bold;">Restablecer
+valores en</span>
+permite restablecer los valores de los anchos previamente existentes</span><span class="Parrafo">ermite cargar ficheros
+.anc. Eli</span><span class="Parrafo"> en
+una distancia determinada a partir del primer y último punto de la
+línea insertados.<br />
+            <br />
+La opción <span style="font-weight: bold; font-style: italic;">Distancia de búsqueda</span> permite definir una cierta distancia a partir de la cual los puntos más lejanos seran ignorados.<br />
+            <br />
+La opción <span style="font-style: italic; font-weight: bold;">Tolerancia para filtrar</span>
+permite redondear el valor del ancho con esta tolerancia y se evita que
+haya más de dos datos seguidos en un tramo con el mismo valor de ancho,
+dejando sólo el primero y el último de cada tramo.<br /><br />Posibilidad de utilizar simultáneamente<span class="Parf_negrita"> todas las líneas del tipo elegido</span>.<br />
+<br />
+            </span></td>
+          </tr>
+          <tr><td><img src="Imagenes/icono_anchos_trayec.png" style="width: 28px; height: 28px;" alt="" /></td><td>Para
+las carreteras (no autovías de calzada doble) el icono&nbsp;<img src="Imagenes/icono_anchos_trayec.png" style="width: 20px; height: 20px;" alt="" /> permite
+calcular la ley de anchos a partir de la envolvente de un estudio de
+trayectorias, empleando una plantilla de vehículo. Se puede
+seleccionar:<br /><ul><li>El tipo de vehículo para realizar la simulación.</li><li>Si se desea analizar la calzada derecha, la izquierda (el vehículo circula en sentido contrario), o ambas.</li><li>Equidistancia de calculo de la trayectoria.</li><li>Equidistancia para extraer un dato de ancho (Luego se compactan para evitar más de dos datos seguidos con el mismo ancho).</li><li>Ancho mínimo de la calzada.</li><li>Margen
+izquierdo. Es la distancia al eje a la que el conductor mantiene la
+esquina delantera izquierda del morro del vehiculo. Si el valor es
+negativo esa distancia es por dentro de la calzada por la que circula.</li><li>Margen
+derecho. Es la distancia mínima de la envolvente del lado derecho del
+vehículo según el sentido de avance y el borde de la calzada.</li></ul>Otro modo sería emplear un archivo *.try:<br /><ul><li>Se
+ocultan algunas casillas, puesto que el estudio que se realiza será el
+definido en el archivo .try (Distancia al eje, Distancia del morro al
+eje, Distancia del morro aun borde, ...)</li><li>La trayectoria se
+realiza en una unica dirección en sentido creciente de PKS,&nbsp; y la
+misma envolvente servirá para determinar los anchos de ambos lados.</li></ul>De
+cualquiera de las dos maneras, se utilizará la envolvente de la
+trayectoria para generar valores de anchos en el area de actuación. En
+el caso de usar un archivo .try, hará caso también de los PKs de inicio
+y final del estudio.<br />
+            <br />
+</td></tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Anular A0==0</span><br />
+            </td>
+            <td style="vertical-align: top;">Para autovías con <a href="OL_peraltes.html#doble_peralte">doble peralte</a>,
+por defecto, si A0==0 se divide A1 en dos partes iguales. Se añade la
+posibilidad de que si A0==0 se anula la calzada interior, en este caso
+los peraltes del arcén interior van relacionados con los de la calzada
+exterior.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/OL_anchos_A0_0.png" style="width: 501px; height: 194px;" alt="" /><br />
+            </div>
+            <br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Insertar</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite cargar ficheros
+.anc. Elimina primero los datos de anchos del lado y tramo que traen el
+nuevo archivo e inserta sus datos. En la realización del entronque se
+genera archivos de este tipo.<br />
+            </td>
+          </tr>
+<tr>
+            <td style="vertical-align: top; width: 98px;"><span style="font-weight: bold;"><a name="boton_b"><span class="Parrafo"><img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" /></span></a><span style="font-weight: bold;" /></span></td>
+            <td style="vertical-align: top; text-align: justify; width: 574px;">Este botón&nbsp;<img src="Imagenes/icono_basura.png" style="width: 23px; height: 23px;" alt="" /> pregunta el ramal del cual quieren borrarse los sobreanchos procedentes de <a href="OL_entronques.html">entronques</a> y los elimina.<br />
+            </td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Insertar cuña</span><br />
+            </td>
+            <td style="vertical-align: top;">Permite hacer una transición de anchos (en el <span style="font-weight: bold;">ancho 1</span> o en el <span style="font-weight: bold;">ancho 2</span>) mediante los datos que introduzcanos en las casillas <span style="font-weight: bold;">Pk inicial</span> y <span style="font-weight: bold;">Pk final</span> con los valores de <span style="font-weight: bold;">Ancho</span> correspondientes.<br />
+            <br />
+            <div style="text-align: center;"><img src="Imagenes/anchos_insertar_cuna.png" style="width: 316px; height: 252px;" alt="" /><br />
+            </div>
+            <br />La transición, por defecto, se realiza de forma <span style="font-weight: bold;">lineal</span>, pero podemos especificar una ley de anchos para establecer la cuña usando una tabla&nbsp;<span class="Archivo">.den</span> <span class="Parrafo"><span class="Parrafo">(comando TD4 de la tabla <img src="Imagenes/icono_notepad.png" style="width: 12px; height: 13px;" alt="" />), de manera que podemos usar una transición <span style="font-weight: bold;">parabólica</span> si lo deseamos. Hay transiciones parabólicas definidas en tablas como por ejemplo </span></span><span class="Parrafo"><span class="Parrafo"><span class="Archivo">CHILE_2013c.den</span></span></span> o <span class="Parrafo"><span class="Parrafo"><span class="Archivo">ES_31_IC_rev2016b.den</span></span></span>.<span class="Parrafo"><br />
+            <span class="Parrafo"><br />
+            </span>
+            <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/anchos_insertar_cuna_chile.png" style="width: 316px; height: 252px;" alt="" /></span><br />
+            <span class="Parrafo" /></div>
+            <br />
+En el caso de&nbsp; <span style="font-weight: bold;">Ancho 2</span>, se puede introducir un número ficticio de <span style="font-weight: bold;">eje</span> <span style="font-weight: bold;">de referencia</span> (puede ser negativo) para poder eliminar facilmente los <a href="OL_anchos.html#boton_b">datos añadidos</a>.<br />
+            </span></td>
+          </tr><tr>
+            <td style="vertical-align: top;"><span class="Parf_negrita">Int.</span><br />
+            </td>
+            <td style="vertical-align: top;">En los datos intermedios
+disponemos de la opción de interpolar el valor de los anchos, entre los
+datos anterior y siguiente, en función del PK.<br />
+            </td>
+          </tr>
+
+
+
+        </tbody>
+      </table></span><br />
+      <span style="font-weight: bold;">Visualización de anchos: </span>cuadro de diálogo un diagrama con los anchos. <br />
+      <br />
+      <div style="text-align: center;"><img src="Imagenes/anc_vis.png" style="width: 624px; height: 579px;" alt="" /><br />
+      <br />
+      <div style="text-align: justify;">Para la visualización del punto
+en el que estamos aplicando los anchos se muestra en pantalla una línea
+resaltada coincidente con el PK de los datos actuales de cada lado:<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 695px; height: 151px;" alt="" src="Imagenes/anchos_destacada.png" /><br />
+      </div>
+      </div>
+
+      </div>
+<br /><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Titulo_2"><a name="asistente">Asistente de curvas</a></span><a name="asistente"><br />
+      <br />
+Una vez se ha introducido una ley de anchos mediante el uso de una </a><a href="OL_anchos.html#tabla">tabla de diseño .tsa</a>, podemos hacer uso del Asistente de curvas, al que podemos acceder usando el icono <img src="Imagenes/icono_asistente_peraltes.png" style="width: 22px; height: 22px;" alt="" align="middle" /><br />
+      <br />
+</span></span></span></span>
+      <div style="text-align: center;"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><img src="Imagenes/dialogo_anchos_asistente.png" alt="" style="width: 624px; height: 579px;" /></span></span></span></span><br />
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo" /></span></span></span></div>
+      <br />
+      <span class="Parrafo">Con esta herramienta se muestran una serie</span><span class="Parrafo"> de datos organizados por curvas o PI: Ve (velocidad específica), R (radio de la curva),</span><span class="Parrafo">
+sentido de la curva, Sa (sobreancho) LtS (longitud de la transición
+sobreanchos), P% (peralte), Le (longitud de sus clotoides) y LtP
+(longitud transición peraltes).<br /><br />Podemos
+establecer dos datos individualizados para cada una
+de las curvas desde esta ventana: S (sobreancho curva) y LtS (longitud
+de transición desde cero al sobreancho y desde el sobreancho a cero).<br /><br />Existe una herramienta similar para los <a href="OL_peraltes.html#asistente">peraltes</a>.<br />
+      </span><br /><br />
+      <span class="Parrafo"><a name="anc_ind"><span class="Titulo_2">Anchos Independientes</span><br />
+<br />Posibilidad de definir tanto para carreteras como para autovías,
+hasta cuatro carriles independientes por cada lado. Cada carril (<span style="font-weight: bold;">Ancho 0</span>, <span style="font-weight: bold;">Ancho 1</span>, <span style="font-weight: bold;">Ancho 2</span> y <span style="font-weight: bold;">Ancho 3</span>) se define con su propia tabla de pks y anchos.<br />
+      <br />
+      </a></span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/anchos_ind.png" style="width: 624px; height: 241px;" alt="" /></span><a name="anc_ind"><br />
+      <span class="Parrafo" /></a></div>
+      <span class="Parrafo"><br />Si la carretera o autovía dispone de más de cuatro carriles independientes por cada lado se activa la opción de&nbsp;<img src="Imagenes/checkbox_enabled.png" style="width: 12px; height: 12px;" alt="checkbox_enable" /> <span style="font-weight: bold;">10 anchos.</span>
+Las opciones son las mimas pero el menú se amplía hasta 10 pestañas por
+lado para definir cada geometría. Los valores de los anchos también se
+pueden obtener con una herramienta de anchos<span style="font-weight: bold;"> por línea</span>.
+En este caso debe definirse siempre empezando por los carriles
+interiores, ya que para determinar el ancho de un carril, se calcula la
+distancia al eje de la línea y se descuenta los anchos ocupados por la
+mediana, arcen interior y los carriles mas internos.<br />
+</span><span class="Parrafo"><br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/anchos_ind_01.png" style="width: 459px; height: 257px;" alt="" /><br />
+      <br />
+</span><img src="Imagenes/anchos_ind_10a.png" style="width: 500px; height: 278px;" alt="img_10anchos" /><span class="Parrafo"><br />
+Imagen del menú con 10 anchos independientes activados</span><a name="anc_ind"><br />
+
+      <span class="Parrafo" /></a></div>
+      <span class="Parrafo"><br /></span><span class="Parrafo">También se puede usar la herramienta <span style="font-weight: bold;">Copiar anchos</span> para copiar los datos completos de uno</span><span class="Parrafo"> cualquiera</span><span class="Parrafo"> de los carriles "generales" a otro carril cualquiera de esta ventana de anchos independientes.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/anchos_ind_02.png" style="width: 500px; height: 234px;" alt="" /><br />
+      <br />
+      </span><span class="Parrafo" /></div>
+      <span class="Parrafo"><br />Se puede guardar un fichero .loa para los anchos.<br />
+      <br />
+La herramienta <span style="font-weight: bold;">Filtrar</span>, con un funcionamiento similar a la herramienta de <a href="OL_rasantes_herramientas.html#filtrar">Rasante</a>, permite filtrar a partir de una máxima diferencia de valor y
+distancia entre los tramos de anchos. Esta opción es útil, por ejemplo,
+cuando nos encontramos con anchos por línea, para reducir el número de
+tramos de anchos independientes.<br />
+<br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/anchos_ind_filtrar.png" style="width: 462px; height: 156px;" alt="" /></span><br />
+      <span class="Parrafo" /></div>
+      <span class="Parrafo"><br />En el cuadro de diálogo de anchos independientes también se puede definir un peralte
+independiente para cada uno de estos carriles. Puede haber carriles que
+usen el peralte general y otros que usen su peralte propio, hay que
+marcarlo específicamente. <br /><br /></span><span class="Parrafo">El
+convenio de signos por defecto es el Clásico, se puede activar la
+casilla correspondiente para utilizar el Internacional. Esta
+configuración se guarda en el .vol. Si se cambia el convenio general,
+no afecta a este menú.</span><br />
+      <span class="Parrafo"><br />El peralte también se puede determinar por línea conjuntamente con el
+ancho o separadamente. Cuando se calcula el peralte por línea se pueden
+elegir varias opciones para definir el peralte del carril que estamos
+editando:</span><br />
+<ul>
+        <li><span style="font-weight: bold;">Peralte principal</span>: Copia el peralte de la ley de peraltes definida para ese lado de la calzada.</li>
+        <li><span style="font-weight: bold;">Peralte independiente</span>: Usa el peralte definido en este cuadro de diálogo.</li>
+        <li><span style="font-weight: bold;">Prolongada</span>: Copia el peralte del carril que le precede (salvo para el ancho 0).</li>
+        <li><span style="font-weight: bold;">Peralte interior</span>: Si estamos definiendo una autovía con doble peralte o doble peralte independiente, copia el peralte del carril interior.</li>
+        <li><span style="font-weight: bold;">Bombeo aumentado</span>: Copia el peralte de bombeo del carril que le precede más el incremento que pongamos en la casilla <span style="font-weight: bold;">dP</span>.<br />
+        </li>
+      </ul>
+      <span class="Parrafo">
+      <br />
+
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/per_ind.png" style="width: 459px; height: 279px;" alt="" /></span><a name="anc_ind"><br />
+      <span class="Parrafo" /></a></div>
+      <span class="Parrafo"><span class="Parf_negrita"><br />Ver &nbsp;en Rasante y Sección Real</span>:
+de esta forma el peralte se visualiza en la ventana de la Sección Real
+y en la banda de peralte del menú de Rasantes. Puede usarse una carril
+diferente en cada lado, p.e. Izquierda-&gt;Peralte del
+Ancho1&nbsp;&nbsp; y Derecha-&gt;Peralte del Ancho2.<br /><br />
+      Igual que disponemos de <span style="font-weight: bold;">Copiar anchos</span>, también tenemos una herramienta llamada <span style="font-weight: bold;">Copiar peraltes</span>
+que funciona de manera análoga: permite copiar la ley de peralte
+"general" de cualquiera de las cuatro tablas (exterior/interior en la
+derecha/izquierda) hacia cualquiera de las ocho calzadas
+independientes. Además, para esta calzada cambiará su peralte a
+"Peralte independiente".</span><span class="Parrafo"><br />
+<br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/per_ind_02.png" alt="" style="width: 500px; height: 234px;" /></span></div>
+      <br />
+      <span class="Parrafo"><br />Se puede guardar un fichero .lop para los peraltes.<br />
+      <br />
+Al igual que en los anchos, a la hora de definir los peraltes independientes, tenemos una herramienta para filtrar los peraltes.<br />
+<br />También se puede definir para cada carril a partir de esos <span style="font-weight: bold;">anchos</span> y <span style="font-weight: bold;">peraltes</span> la <span style="font-weight: bold;">subrasante</span> de manera independiente.<br />
+      <br />
+      </span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/sub_ind.png" style="width: 459px; height: 257px;" alt="" /></span><a name="anc_ind"><br />
+      <span class="Parrafo" /></a></div>
+      <span class="Parrafo"><br />
+Para que se ejecuten los datos de subrasante independiente hay que activar en el carril correspondiente <span style="font-weight: bold;">Subrasante independiente</span>.<br />
+      <br />
+De esta forma se define con los siguientes parámetros por PKs:<br />
+      <br />
+      <span style="font-weight: bold;">Espesor</span>:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Relativo</span>: Desde el final de la subrasante del carril que le precede.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Absoluto</span>. Desde la rasante en el código de inicio de cada carril (1, 1.2, 1.5 o 1.9)</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Mínimo</span>. Se comprueba el espesor en el punto inetrior y exterior del carril.</span></li>
+      </ul>
+      <span class="Parrafo"><span style="font-weight: bold;">Sobreancho</span>: Se extiende la subrasante, dentro del siguiente carril.<br />
+      <br />
+      <span style="font-weight: bold;">Pendiente</span>:<br />
+      </span>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Prolongada + inc</span>: Sigue con la pendiente de la subrasante del carril anterior más un incremento.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Paralela + inc</span>. Utiliza la misma pendiente de la rasante del carril más un incremento.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Subrasante + inc</span>. Utiliza la pendiente teórica de la subrasante más un incremento.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Peralte + inc</span>: Utiliza el peralte teórico de la calzada principal más un incremento.</span></li>
+      </ul>
+      <ul>
+        <li><span class="Parrafo"><span style="font-weight: bold;">Fija</span>.</span></li>
+      </ul>
+      <span class="Parrafo">Si la sección lleva bordillos, los
+espesores y distancias de referencia se toman de la sección original
+antes de modificarla con los bordillos.<br /><br />Se puede guardar un fichero .los para la subrasante.<br />
+      <br />
+      <small><small><small><small><span class="Titulo_2"><span class="Parrafo">Copiar calzadas Auxiliares</span></span></small></small></small></small><br />
+      <br />
+Igual que ocurre con las opciones de copiar anchos y peraltes, esta
+herramienta copia los datos de&nbsp; anchos de la tabla de calzadas
+auxiliares para la tabla de anchos independientes También se puede
+copiar la pendiente transversal (Peralte).<br />
+      <br />
+</span>
+      <div style="text-align: center;"><span class="Parrafo"><img src="Imagenes/anchos_ind_copiarcaux1.png" style="width: 612px; height: 372px;" alt="" /><br />
+      <br />
+      <img src="Imagenes/anchos_ind_copiarcaux2.png" style="width: 612px; height: 326px;" alt="" /><br />
+      <br />
+      </span><span class="Parrafo" /></div>
+      <span class="Parrafo"><br />
+      <span style="color: black;" class="Nota">Nota: Después de copiar
+todos los datos de Calzadas Auxiliares, es necesario eliminar los datos
+de esta tabla para que no se generen por duplicado.</span><br />
+      <br />
+<span class="Parrafo">
+
+      </span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

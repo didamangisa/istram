@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>Análisis .top/.toc</title>
+  
+
+  
+  
+  <link href="classic.css" rel="stylesheet" type="text/css" /></head><body>
+<table border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td><span class="Parrafo"> <a href="index.html"><img style="border: 0px solid ; width: 33px; height: 33px;" alt="" src="Imagenes/home_button.jpg" name="Inicio" id="Inicio" /></a> <a href="http://www.istram.net/index.php?opcion=11"><img src="Imagenes/icono_ispol.png" border="0" height="30" width="30" /></a>
+      <a href="mailto:soporte@istram.net?subject=Soporte%20ISPOL"><img src="Imagenes/help.png" border="0" height="30" width="30" /> </a> <a href="http://www.youtube.com/user/Buhodra"><img src="Imagenes/icono-youtube_30x30.png" border="0" height="30" width="30" /> </a> <a href="http://www.facebook.com/board.php?uid=172144086144018#%21/pages/Buhodra-Ingenieria-SA/172144086144018"><img src="Imagenes/facebook30x30.png" border="0" height="30" width="30" /> </a>
+      <a href="http://twitter.com/IstramBuhodra"><img src="Imagenes/twitter.png" border="0" height="30" width="30" /></a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table bgcolor="#ffcc33" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td class="Titulo_2">
+      <div align="center"><strong>ANÁLISIS DE CARTOGRAFÍA MEDIANTE UN
+FICHERO .top/.toc<br />
+      </strong></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 700px;" border="0" cellpadding="0" width="700">
+
+  <tbody>
+    <tr>
+      <td style="width: 694px;" class="obsolete Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      </span></span>Esta opción nos permite realizar el análisis aritmético de una nube de puntos (<span class="Archivo">.top</span>/<span class="Archivo">.toc</span>) con respecto a una superficie cualquiera.<br />
+      <br />
+      A partir de una superficie de comparación y un fichero&nbsp;<span class="Archivo">.top</span> ó&nbsp;<span class="Archivo">.toc</span> de referencia, <span style="font-weight: bold;">[Analizar .top/.toc]</span> genera una nube de puntos cuyas coordenadas se corresponden con las del fichero&nbsp;<span class="Archivo">.top</span>/<span class="Archivo">.toc</span> de referencia, y cuyas cotas son la diferencia de cota entre los puntos del fichero y la superficie dada (es un&nbsp;<span class="Archivo">.top</span>/<span class="Archivo">.toc</span> para <a href="MS_isopacas.html">isopacas</a>).<br />
+      <br />
+      <div style="text-align: center;"><img style="width: 466px; height: 124px;" alt="" src="Imagenes/dialogo_analizar_top.png" /><br />
+      </div>
+
+      <br />
+El análisis de los archivos&nbsp;<span class="Archivo">.toc</span> o&nbsp;<span class="Archivo">.top</span> se realizará con la <a href="EDM_control_entidades.html#control_superficies">superficie MDT</a> actual ya sea una superficie cartográfica, un TTP, una Rejilla MDT o Datos Laser.<br />
+      <br />
+Se genera además un listado&nbsp;<span class="Archivo">DZTOP.res</span> con la siguiente información:<br />
+      <ul>
+        <li>Número de punto</li>
+        <li>X punto</li>
+        <li>Y punto</li>
+        <li>Z1 punto</li>
+        <li>Z2 de la superficie</li>
+        <li>Diferencia de cota (Z1-Z2)&nbsp;&nbsp;&nbsp;&nbsp; <br />
+        </li>
+      </ul>
+      <table style="text-align: left; width: 692px; height: 62px;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle;"><img style="width: 32px; height: 32px;" alt="" src="Imagenes/icono_aviso.png" /><br />
+            </td>
+            <td style="vertical-align: middle; text-align: justify;"><span class="Info">Para
+extraer las cotas de superficies se cambia la tolerancia de búsqueda.
+En lugar de utilizar la tolerancia lateral para filtrado (relacionada
+con la percepción visual y de valor por defecto 0.250) se utiliza la
+tolerancia para igual (valor que se considera para que dos puntos sean
+iguales). De este modo, se obtienen cotas más precisas en superficies
+que tienen puntos muy próximos. Esta tolerancia puede cambiarse desde
+el menú <span style="font-weight: bold;">Configuración</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span><span class="Info"> <span style="font-weight: bold;">Preferencias</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span><span class="Info"> <span style="font-weight: bold;">Opciones</span> </span><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo">&#8594;</span></span></span></span><span class="Info"> <span style="font-weight: bold;">Topografía</span> o con el comando de teclado 'Stoler'.</span><br />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><span class="Parrafo"><br />
+      <span class="Parrafo"><span class="Parrafo"> </span></span></span></span></span></span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>
